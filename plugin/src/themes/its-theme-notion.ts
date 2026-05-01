@@ -16551,6 +16551,32 @@ html[saved-theme="dark"] body h1.article-title {
   font-size: var(--inline-title-size, 34px);
 }
 
+html[saved-theme="dark"] body h1::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h1-weight, 700);
+  background: rgb(76, 81, 83) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(76, 81, 83);
+  border-bottom-color: rgb(235, 235, 235);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(235, 235, 235);
+  border-left-width: 0px;
+  border-right-color: rgb(235, 235, 235);
+  border-right-width: 0px;
+  border-top-color: rgb(235, 235, 235);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--header-arrow-icon-color, rgb(235, 235, 235));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 700px);
+}
+
 html[saved-theme="dark"] body h2 {
   --collapse-icon-color: var(--headers, #4e5b6f);
   --collapse-icon-color-collapsed: var(--text-dl, #5D6265);
@@ -16597,6 +16623,67 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
   font-family: var(--inline-title-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
 }
 
+html[saved-theme="dark"] body h2::after {
+  --collapse-icon-color: var(--headers, #4e5b6f);
+  --collapse-icon-color-collapsed: var(--text-dl, #5D6265);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h2-weight, 700);
+  --h1-background: var(--illusion-h1-background, transparent);
+  --h1-border-line-height: var(--illusion-border-line-height, 0);
+  --h1-color: var(--illusion-header-text, #EBEBEB);
+  --h1-padding: var(--illusion-header-padding, 0);
+  --h1-shadow: var(--illusion-box-shadow, transparent);
+  --h2-background: var(--illusion-h2-background, transparent);
+  --h2-border-line-height: var(--illusion-border-line-height, 0);
+  --h2-color: var(--illusion-header-text, #EBEBEB);
+  --h2-padding: var(--illusion-header-padding, 0);
+  --h2-shadow: var(--illusion-box-shadow, transparent);
+  --h3-background: var(--illusion-h3-background, transparent);
+  --h3-border-line-height: var(--illusion-border-line-height, 0);
+  --h3-color: var(--illusion-header-text, #EBEBEB);
+  --h3-padding: var(--illusion-header-padding, 0);
+  --h3-shadow: var(--illusion-box-shadow, transparent);
+  --h4-background: var(--illusion-h4-background, transparent);
+  --h4-border-line-height: var(--illusion-border-line-height, 0);
+  --h4-color: var(--illusion-header-text, #EBEBEB);
+  --h4-padding: var(--illusion-header-padding, 0);
+  --h4-shadow: var(--illusion-box-shadow, transparent);
+  --h5-background: var(--illusion-h5-background, transparent);
+  --h5-border-line-height: var(--illusion-border-line-height, 0);
+  --h5-color: var(--illusion-header-text, #EBEBEB);
+  --h5-padding: var(--illusion-header-padding, 0);
+  --h5-shadow: var(--illusion-box-shadow, transparent);
+  --h6-background: var(--illusion-h6-background, transparent);
+  --h6-border-line-height: var(--illusion-border-line-height, 0);
+  --h6-color: var(--illusion-header-text, #EBEBEB);
+  --h6-padding: var(--illusion-header-padding, 0);
+  --h6-shadow: var(--illusion-box-shadow, transparent);
+  --header-arrow-icon-color: var(--text-dl, #4e5b6f);
+  --headers: var(--illusion-header-text, #EBEBEB);
+  --heading-formatting: var(--illusion-header-text, #5D6265);
+  background: rgb(76, 81, 83) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(76, 81, 83);
+  border-bottom-color: rgb(235, 235, 235);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(235, 235, 235);
+  border-left-width: 0px;
+  border-right-color: rgb(235, 235, 235);
+  border-right-width: 0px;
+  border-top-color: rgb(235, 235, 235);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h2-color, rgb(235, 235, 235));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 525.297px);
+}
+
 html[saved-theme="dark"] body h3 {
   --collapse-icon-color: var(--headers, #4e5b6f);
   --collapse-icon-color-collapsed: var(--text-dl, #5D6265);
@@ -16636,6 +16723,67 @@ html[saved-theme="dark"] body h3 {
   --heading-formatting: var(--illusion-header-text, #5D6265);
   color: var(--h3-color, rgb(235, 235, 235));
   font-family: var(--h3-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
+}
+
+html[saved-theme="dark"] body h3::after {
+  --collapse-icon-color: var(--headers, #4e5b6f);
+  --collapse-icon-color-collapsed: var(--text-dl, #5D6265);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h3-weight, 700);
+  --h1-background: var(--illusion-h1-background, transparent);
+  --h1-border-line-height: var(--illusion-border-line-height, 0);
+  --h1-color: var(--illusion-header-text, #EBEBEB);
+  --h1-padding: var(--illusion-header-padding, 0);
+  --h1-shadow: var(--illusion-box-shadow, transparent);
+  --h2-background: var(--illusion-h2-background, transparent);
+  --h2-border-line-height: var(--illusion-border-line-height, 0);
+  --h2-color: var(--illusion-header-text, #EBEBEB);
+  --h2-padding: var(--illusion-header-padding, 0);
+  --h2-shadow: var(--illusion-box-shadow, transparent);
+  --h3-background: var(--illusion-h3-background, transparent);
+  --h3-border-line-height: var(--illusion-border-line-height, 0);
+  --h3-color: var(--illusion-header-text, #EBEBEB);
+  --h3-padding: var(--illusion-header-padding, 0);
+  --h3-shadow: var(--illusion-box-shadow, transparent);
+  --h4-background: var(--illusion-h4-background, transparent);
+  --h4-border-line-height: var(--illusion-border-line-height, 0);
+  --h4-color: var(--illusion-header-text, #EBEBEB);
+  --h4-padding: var(--illusion-header-padding, 0);
+  --h4-shadow: var(--illusion-box-shadow, transparent);
+  --h5-background: var(--illusion-h5-background, transparent);
+  --h5-border-line-height: var(--illusion-border-line-height, 0);
+  --h5-color: var(--illusion-header-text, #EBEBEB);
+  --h5-padding: var(--illusion-header-padding, 0);
+  --h5-shadow: var(--illusion-box-shadow, transparent);
+  --h6-background: var(--illusion-h6-background, transparent);
+  --h6-border-line-height: var(--illusion-border-line-height, 0);
+  --h6-color: var(--illusion-header-text, #EBEBEB);
+  --h6-padding: var(--illusion-header-padding, 0);
+  --h6-shadow: var(--illusion-box-shadow, transparent);
+  --header-arrow-icon-color: var(--text-dl, #4e5b6f);
+  --headers: var(--illusion-header-text, #EBEBEB);
+  --heading-formatting: var(--illusion-header-text, #5D6265);
+  background: rgb(76, 81, 83) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(76, 81, 83);
+  border-bottom-color: rgb(235, 235, 235);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(235, 235, 235);
+  border-left-width: 0px;
+  border-right-color: rgb(235, 235, 235);
+  border-right-width: 0px;
+  border-top-color: rgb(235, 235, 235);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h3-color, rgb(235, 235, 235));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 401.688px);
 }
 
 html[saved-theme="dark"] body h4 {
@@ -16679,6 +16827,67 @@ html[saved-theme="dark"] body h4 {
   font-family: var(--h4-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
 }
 
+html[saved-theme="dark"] body h4::after {
+  --collapse-icon-color: var(--headers, #4e5b6f);
+  --collapse-icon-color-collapsed: var(--text-dl, #5D6265);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h4-weight, 700);
+  --h1-background: var(--illusion-h1-background, transparent);
+  --h1-border-line-height: var(--illusion-border-line-height, 0);
+  --h1-color: var(--illusion-header-text, #EBEBEB);
+  --h1-padding: var(--illusion-header-padding, 0);
+  --h1-shadow: var(--illusion-box-shadow, transparent);
+  --h2-background: var(--illusion-h2-background, transparent);
+  --h2-border-line-height: var(--illusion-border-line-height, 0);
+  --h2-color: var(--illusion-header-text, #EBEBEB);
+  --h2-padding: var(--illusion-header-padding, 0);
+  --h2-shadow: var(--illusion-box-shadow, transparent);
+  --h3-background: var(--illusion-h3-background, transparent);
+  --h3-border-line-height: var(--illusion-border-line-height, 0);
+  --h3-color: var(--illusion-header-text, #EBEBEB);
+  --h3-padding: var(--illusion-header-padding, 0);
+  --h3-shadow: var(--illusion-box-shadow, transparent);
+  --h4-background: var(--illusion-h4-background, transparent);
+  --h4-border-line-height: var(--illusion-border-line-height, 0);
+  --h4-color: var(--illusion-header-text, #EBEBEB);
+  --h4-padding: var(--illusion-header-padding, 0);
+  --h4-shadow: var(--illusion-box-shadow, transparent);
+  --h5-background: var(--illusion-h5-background, transparent);
+  --h5-border-line-height: var(--illusion-border-line-height, 0);
+  --h5-color: var(--illusion-header-text, #EBEBEB);
+  --h5-padding: var(--illusion-header-padding, 0);
+  --h5-shadow: var(--illusion-box-shadow, transparent);
+  --h6-background: var(--illusion-h6-background, transparent);
+  --h6-border-line-height: var(--illusion-border-line-height, 0);
+  --h6-color: var(--illusion-header-text, #EBEBEB);
+  --h6-padding: var(--illusion-header-padding, 0);
+  --h6-shadow: var(--illusion-box-shadow, transparent);
+  --header-arrow-icon-color: var(--text-dl, #4e5b6f);
+  --headers: var(--illusion-header-text, #EBEBEB);
+  --heading-formatting: var(--illusion-header-text, #5D6265);
+  background: rgb(76, 81, 83) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(76, 81, 83);
+  border-bottom-color: rgb(235, 235, 235);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(235, 235, 235);
+  border-left-width: 0px;
+  border-right-color: rgb(235, 235, 235);
+  border-right-width: 0px;
+  border-top-color: rgb(235, 235, 235);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h4-color, rgb(235, 235, 235));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 271.906px);
+}
+
 html[saved-theme="dark"] body h5 {
   --collapse-icon-color: var(--headers, #4e5b6f);
   --collapse-icon-color-collapsed: var(--text-dl, #5D6265);
@@ -16720,10 +16929,97 @@ html[saved-theme="dark"] body h5 {
   font-family: var(--h5-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
 }
 
+html[saved-theme="dark"] body h5::after {
+  --collapse-icon-color: var(--headers, #4e5b6f);
+  --collapse-icon-color-collapsed: var(--text-dl, #5D6265);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h5-weight, 700);
+  --h1-background: var(--illusion-h1-background, transparent);
+  --h1-border-line-height: var(--illusion-border-line-height, 0);
+  --h1-color: var(--illusion-header-text, #EBEBEB);
+  --h1-padding: var(--illusion-header-padding, 0);
+  --h1-shadow: var(--illusion-box-shadow, transparent);
+  --h2-background: var(--illusion-h2-background, transparent);
+  --h2-border-line-height: var(--illusion-border-line-height, 0);
+  --h2-color: var(--illusion-header-text, #EBEBEB);
+  --h2-padding: var(--illusion-header-padding, 0);
+  --h2-shadow: var(--illusion-box-shadow, transparent);
+  --h3-background: var(--illusion-h3-background, transparent);
+  --h3-border-line-height: var(--illusion-border-line-height, 0);
+  --h3-color: var(--illusion-header-text, #EBEBEB);
+  --h3-padding: var(--illusion-header-padding, 0);
+  --h3-shadow: var(--illusion-box-shadow, transparent);
+  --h4-background: var(--illusion-h4-background, transparent);
+  --h4-border-line-height: var(--illusion-border-line-height, 0);
+  --h4-color: var(--illusion-header-text, #EBEBEB);
+  --h4-padding: var(--illusion-header-padding, 0);
+  --h4-shadow: var(--illusion-box-shadow, transparent);
+  --h5-background: var(--illusion-h5-background, transparent);
+  --h5-border-line-height: var(--illusion-border-line-height, 0);
+  --h5-color: var(--illusion-header-text, #EBEBEB);
+  --h5-padding: var(--illusion-header-padding, 0);
+  --h5-shadow: var(--illusion-box-shadow, transparent);
+  --h6-background: var(--illusion-h6-background, transparent);
+  --h6-border-line-height: var(--illusion-border-line-height, 0);
+  --h6-color: var(--illusion-header-text, #EBEBEB);
+  --h6-padding: var(--illusion-header-padding, 0);
+  --h6-shadow: var(--illusion-box-shadow, transparent);
+  --header-arrow-icon-color: var(--text-dl, #4e5b6f);
+  --headers: var(--illusion-header-text, #EBEBEB);
+  --heading-formatting: var(--illusion-header-text, #5D6265);
+  background: rgb(76, 81, 83) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(76, 81, 83);
+  border-bottom-color: rgb(235, 235, 235);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(235, 235, 235);
+  border-left-width: 0px;
+  border-right-color: rgb(235, 235, 235);
+  border-right-width: 0px;
+  border-top-color: rgb(235, 235, 235);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h5-color, rgb(235, 235, 235));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 154.5px);
+}
+
 html[saved-theme="dark"] body h6 {
   --font-weight: var(--h6-weight, 700);
   color: var(--h6-color, rgb(235, 235, 235));
   font-family: var(--h6-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
+}
+
+html[saved-theme="dark"] body h6::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h6-weight, 700);
+  background: rgb(76, 81, 83) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(76, 81, 83);
+  border-bottom-color: rgb(235, 235, 235);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(235, 235, 235);
+  border-left-width: 0px;
+  border-right-color: rgb(235, 235, 235);
+  border-right-width: 0px;
+  border-top-color: rgb(235, 235, 235);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h6-color, rgb(235, 235, 235));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: 0px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -33229,6 +33525,32 @@ html[saved-theme="light"] body h1.article-title {
   font-size: var(--inline-title-size, 34px);
 }
 
+html[saved-theme="light"] body h1::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h1-weight, 700);
+  background: rgb(233, 233, 231) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(233, 233, 231);
+  border-bottom-color: rgb(55, 53, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(55, 53, 47);
+  border-left-width: 0px;
+  border-right-color: rgb(55, 53, 47);
+  border-right-width: 0px;
+  border-top-color: rgb(55, 53, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--header-arrow-icon-color, rgb(55, 53, 47));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 700px);
+}
+
 html[saved-theme="light"] body h2 {
   --collapse-icon-color: var(--headers, #4e5b6f);
   --collapse-icon-color-collapsed: var(--text-dl, #CFCECD);
@@ -33275,6 +33597,67 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
   font-family: var(--inline-title-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
 }
 
+html[saved-theme="light"] body h2::after {
+  --collapse-icon-color: var(--headers, #4e5b6f);
+  --collapse-icon-color-collapsed: var(--text-dl, #CFCECD);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h2-weight, 700);
+  --h1-background: var(--illusion-h1-background, transparent);
+  --h1-border-line-height: var(--illusion-border-line-height, 0);
+  --h1-color: var(--illusion-header-text, #37352f);
+  --h1-padding: var(--illusion-header-padding, 0);
+  --h1-shadow: var(--illusion-box-shadow, transparent);
+  --h2-background: var(--illusion-h2-background, transparent);
+  --h2-border-line-height: var(--illusion-border-line-height, 0);
+  --h2-color: var(--illusion-header-text, #37352f);
+  --h2-padding: var(--illusion-header-padding, 0);
+  --h2-shadow: var(--illusion-box-shadow, transparent);
+  --h3-background: var(--illusion-h3-background, transparent);
+  --h3-border-line-height: var(--illusion-border-line-height, 0);
+  --h3-color: var(--illusion-header-text, #37352f);
+  --h3-padding: var(--illusion-header-padding, 0);
+  --h3-shadow: var(--illusion-box-shadow, transparent);
+  --h4-background: var(--illusion-h4-background, transparent);
+  --h4-border-line-height: var(--illusion-border-line-height, 0);
+  --h4-color: var(--illusion-header-text, #37352f);
+  --h4-padding: var(--illusion-header-padding, 0);
+  --h4-shadow: var(--illusion-box-shadow, transparent);
+  --h5-background: var(--illusion-h5-background, transparent);
+  --h5-border-line-height: var(--illusion-border-line-height, 0);
+  --h5-color: var(--illusion-header-text, #37352f);
+  --h5-padding: var(--illusion-header-padding, 0);
+  --h5-shadow: var(--illusion-box-shadow, transparent);
+  --h6-background: var(--illusion-h6-background, transparent);
+  --h6-border-line-height: var(--illusion-border-line-height, 0);
+  --h6-color: var(--illusion-header-text, #37352f);
+  --h6-padding: var(--illusion-header-padding, 0);
+  --h6-shadow: var(--illusion-box-shadow, transparent);
+  --header-arrow-icon-color: var(--text-dl, #4e5b6f);
+  --headers: var(--illusion-header-text, #37352f);
+  --heading-formatting: var(--illusion-header-text, #CFCECD);
+  background: rgb(233, 233, 231) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(233, 233, 231);
+  border-bottom-color: rgb(55, 53, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(55, 53, 47);
+  border-left-width: 0px;
+  border-right-color: rgb(55, 53, 47);
+  border-right-width: 0px;
+  border-top-color: rgb(55, 53, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h2-color, rgb(55, 53, 47));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 525.297px);
+}
+
 html[saved-theme="light"] body h3 {
   --collapse-icon-color: var(--headers, #4e5b6f);
   --collapse-icon-color-collapsed: var(--text-dl, #CFCECD);
@@ -33314,6 +33697,67 @@ html[saved-theme="light"] body h3 {
   --heading-formatting: var(--illusion-header-text, #CFCECD);
   color: var(--h3-color, rgb(55, 53, 47));
   font-family: var(--h3-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
+}
+
+html[saved-theme="light"] body h3::after {
+  --collapse-icon-color: var(--headers, #4e5b6f);
+  --collapse-icon-color-collapsed: var(--text-dl, #CFCECD);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h3-weight, 700);
+  --h1-background: var(--illusion-h1-background, transparent);
+  --h1-border-line-height: var(--illusion-border-line-height, 0);
+  --h1-color: var(--illusion-header-text, #37352f);
+  --h1-padding: var(--illusion-header-padding, 0);
+  --h1-shadow: var(--illusion-box-shadow, transparent);
+  --h2-background: var(--illusion-h2-background, transparent);
+  --h2-border-line-height: var(--illusion-border-line-height, 0);
+  --h2-color: var(--illusion-header-text, #37352f);
+  --h2-padding: var(--illusion-header-padding, 0);
+  --h2-shadow: var(--illusion-box-shadow, transparent);
+  --h3-background: var(--illusion-h3-background, transparent);
+  --h3-border-line-height: var(--illusion-border-line-height, 0);
+  --h3-color: var(--illusion-header-text, #37352f);
+  --h3-padding: var(--illusion-header-padding, 0);
+  --h3-shadow: var(--illusion-box-shadow, transparent);
+  --h4-background: var(--illusion-h4-background, transparent);
+  --h4-border-line-height: var(--illusion-border-line-height, 0);
+  --h4-color: var(--illusion-header-text, #37352f);
+  --h4-padding: var(--illusion-header-padding, 0);
+  --h4-shadow: var(--illusion-box-shadow, transparent);
+  --h5-background: var(--illusion-h5-background, transparent);
+  --h5-border-line-height: var(--illusion-border-line-height, 0);
+  --h5-color: var(--illusion-header-text, #37352f);
+  --h5-padding: var(--illusion-header-padding, 0);
+  --h5-shadow: var(--illusion-box-shadow, transparent);
+  --h6-background: var(--illusion-h6-background, transparent);
+  --h6-border-line-height: var(--illusion-border-line-height, 0);
+  --h6-color: var(--illusion-header-text, #37352f);
+  --h6-padding: var(--illusion-header-padding, 0);
+  --h6-shadow: var(--illusion-box-shadow, transparent);
+  --header-arrow-icon-color: var(--text-dl, #4e5b6f);
+  --headers: var(--illusion-header-text, #37352f);
+  --heading-formatting: var(--illusion-header-text, #CFCECD);
+  background: rgb(233, 233, 231) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(233, 233, 231);
+  border-bottom-color: rgb(55, 53, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(55, 53, 47);
+  border-left-width: 0px;
+  border-right-color: rgb(55, 53, 47);
+  border-right-width: 0px;
+  border-top-color: rgb(55, 53, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h3-color, rgb(55, 53, 47));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 401.688px);
 }
 
 html[saved-theme="light"] body h4 {
@@ -33357,6 +33801,67 @@ html[saved-theme="light"] body h4 {
   font-family: var(--h4-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
 }
 
+html[saved-theme="light"] body h4::after {
+  --collapse-icon-color: var(--headers, #4e5b6f);
+  --collapse-icon-color-collapsed: var(--text-dl, #CFCECD);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h4-weight, 700);
+  --h1-background: var(--illusion-h1-background, transparent);
+  --h1-border-line-height: var(--illusion-border-line-height, 0);
+  --h1-color: var(--illusion-header-text, #37352f);
+  --h1-padding: var(--illusion-header-padding, 0);
+  --h1-shadow: var(--illusion-box-shadow, transparent);
+  --h2-background: var(--illusion-h2-background, transparent);
+  --h2-border-line-height: var(--illusion-border-line-height, 0);
+  --h2-color: var(--illusion-header-text, #37352f);
+  --h2-padding: var(--illusion-header-padding, 0);
+  --h2-shadow: var(--illusion-box-shadow, transparent);
+  --h3-background: var(--illusion-h3-background, transparent);
+  --h3-border-line-height: var(--illusion-border-line-height, 0);
+  --h3-color: var(--illusion-header-text, #37352f);
+  --h3-padding: var(--illusion-header-padding, 0);
+  --h3-shadow: var(--illusion-box-shadow, transparent);
+  --h4-background: var(--illusion-h4-background, transparent);
+  --h4-border-line-height: var(--illusion-border-line-height, 0);
+  --h4-color: var(--illusion-header-text, #37352f);
+  --h4-padding: var(--illusion-header-padding, 0);
+  --h4-shadow: var(--illusion-box-shadow, transparent);
+  --h5-background: var(--illusion-h5-background, transparent);
+  --h5-border-line-height: var(--illusion-border-line-height, 0);
+  --h5-color: var(--illusion-header-text, #37352f);
+  --h5-padding: var(--illusion-header-padding, 0);
+  --h5-shadow: var(--illusion-box-shadow, transparent);
+  --h6-background: var(--illusion-h6-background, transparent);
+  --h6-border-line-height: var(--illusion-border-line-height, 0);
+  --h6-color: var(--illusion-header-text, #37352f);
+  --h6-padding: var(--illusion-header-padding, 0);
+  --h6-shadow: var(--illusion-box-shadow, transparent);
+  --header-arrow-icon-color: var(--text-dl, #4e5b6f);
+  --headers: var(--illusion-header-text, #37352f);
+  --heading-formatting: var(--illusion-header-text, #CFCECD);
+  background: rgb(233, 233, 231) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(233, 233, 231);
+  border-bottom-color: rgb(55, 53, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(55, 53, 47);
+  border-left-width: 0px;
+  border-right-color: rgb(55, 53, 47);
+  border-right-width: 0px;
+  border-top-color: rgb(55, 53, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h4-color, rgb(55, 53, 47));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 271.906px);
+}
+
 html[saved-theme="light"] body h5 {
   --collapse-icon-color: var(--headers, #4e5b6f);
   --collapse-icon-color-collapsed: var(--text-dl, #CFCECD);
@@ -33398,10 +33903,97 @@ html[saved-theme="light"] body h5 {
   font-family: var(--h5-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
 }
 
+html[saved-theme="light"] body h5::after {
+  --collapse-icon-color: var(--headers, #4e5b6f);
+  --collapse-icon-color-collapsed: var(--text-dl, #CFCECD);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h5-weight, 700);
+  --h1-background: var(--illusion-h1-background, transparent);
+  --h1-border-line-height: var(--illusion-border-line-height, 0);
+  --h1-color: var(--illusion-header-text, #37352f);
+  --h1-padding: var(--illusion-header-padding, 0);
+  --h1-shadow: var(--illusion-box-shadow, transparent);
+  --h2-background: var(--illusion-h2-background, transparent);
+  --h2-border-line-height: var(--illusion-border-line-height, 0);
+  --h2-color: var(--illusion-header-text, #37352f);
+  --h2-padding: var(--illusion-header-padding, 0);
+  --h2-shadow: var(--illusion-box-shadow, transparent);
+  --h3-background: var(--illusion-h3-background, transparent);
+  --h3-border-line-height: var(--illusion-border-line-height, 0);
+  --h3-color: var(--illusion-header-text, #37352f);
+  --h3-padding: var(--illusion-header-padding, 0);
+  --h3-shadow: var(--illusion-box-shadow, transparent);
+  --h4-background: var(--illusion-h4-background, transparent);
+  --h4-border-line-height: var(--illusion-border-line-height, 0);
+  --h4-color: var(--illusion-header-text, #37352f);
+  --h4-padding: var(--illusion-header-padding, 0);
+  --h4-shadow: var(--illusion-box-shadow, transparent);
+  --h5-background: var(--illusion-h5-background, transparent);
+  --h5-border-line-height: var(--illusion-border-line-height, 0);
+  --h5-color: var(--illusion-header-text, #37352f);
+  --h5-padding: var(--illusion-header-padding, 0);
+  --h5-shadow: var(--illusion-box-shadow, transparent);
+  --h6-background: var(--illusion-h6-background, transparent);
+  --h6-border-line-height: var(--illusion-border-line-height, 0);
+  --h6-color: var(--illusion-header-text, #37352f);
+  --h6-padding: var(--illusion-header-padding, 0);
+  --h6-shadow: var(--illusion-box-shadow, transparent);
+  --header-arrow-icon-color: var(--text-dl, #4e5b6f);
+  --headers: var(--illusion-header-text, #37352f);
+  --heading-formatting: var(--illusion-header-text, #CFCECD);
+  background: rgb(233, 233, 231) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(233, 233, 231);
+  border-bottom-color: rgb(55, 53, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(55, 53, 47);
+  border-left-width: 0px;
+  border-right-color: rgb(55, 53, 47);
+  border-right-width: 0px;
+  border-top-color: rgb(55, 53, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h5-color, rgb(55, 53, 47));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 154.5px);
+}
+
 html[saved-theme="light"] body h6 {
   --font-weight: var(--h6-weight, 700);
   color: var(--h6-color, rgb(55, 53, 47));
   font-family: var(--h6-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
+}
+
+html[saved-theme="light"] body h6::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h6-weight, 700);
+  background: rgb(233, 233, 231) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(233, 233, 231);
+  border-bottom-color: rgb(55, 53, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(55, 53, 47);
+  border-left-width: 0px;
+  border-right-color: rgb(55, 53, 47);
+  border-right-width: 0px;
+  border-top-color: rgb(55, 53, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h6-color, rgb(55, 53, 47));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: 0px;
 }
 
 html[saved-theme="light"] body hr {
@@ -37454,29 +38046,6 @@ li.task-list-item[data-task="<"]::before {
 html[saved-theme="dark"] body h1.article-title,
 html[saved-theme="light"] body h1.article-title {
   font-size: 2rem;
-  background-color: transparent;
-}
-
-/* Fix: heading sizing */
-html[saved-theme="dark"] body h1,
-html[saved-theme="light"] body h1,
-html[saved-theme="dark"] body h2,
-html[saved-theme="light"] body h2,
-html[saved-theme="dark"] body h3,
-html[saved-theme="light"] body h3,
-html[saved-theme="dark"] body h4,
-html[saved-theme="light"] body h4,
-html[saved-theme="dark"] body h5,
-html[saved-theme="light"] body h5,
-html[saved-theme="dark"] body h6,
-html[saved-theme="light"] body h6,
-html[saved-theme="dark"] body .graph > h3,
-html[saved-theme="light"] body .graph > h3,
-html[saved-theme="dark"] body .backlinks > h3,
-html[saved-theme="light"] body .backlinks > h3,
-html[saved-theme="dark"] body button.desktop-explorer h2,
-html[saved-theme="light"] body button.desktop-explorer h2 {
-  background-color: transparent;
 }
 `,
 };

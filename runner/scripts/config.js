@@ -257,7 +257,22 @@ const sets = {
     "margin-inline-start",
     "margin-inline-end",
   ],
-  headings: ["color", "font-family", "text-shadow"],
+  headings: {
+    default: ["color", "font-family", "text-shadow"],
+    after: [
+      ...defaults.border,
+      ...defaults.margin,
+      "width",
+      "height",
+      "background-color",
+      "background-image",
+      "background",
+      "content",
+
+      "color",
+    ],
+  },
+
   callouts: {
     container: [
       "--callout-color",
@@ -859,49 +874,98 @@ export const config = [
     publishSelector: `.published-container .markdown-rendered h1`,
     quartzSelector: "h1",
     pseudoElement: "",
-    properties: sets.headings,
+    properties: sets.headings.default,
   },
   {
     obsidianSelector: `h2[data-heading=\"This is a heading 2\"]`,
     publishSelector: `.published-container .markdown-rendered h2`,
     quartzSelector: "h2",
     pseudoElement: "",
-    properties: sets.headings,
+    properties: sets.headings.default,
   },
   {
     obsidianSelector: `h3[data-heading=\"This is a heading 3\"]`,
     publishSelector: `.published-container .markdown-rendered h3`,
     quartzSelector: "h3",
     pseudoElement: "",
-    properties: sets.headings,
+    properties: sets.headings.default,
   },
   {
     obsidianSelector: `h4[data-heading=\"This is a heading 4\"]`,
     publishSelector: `.published-container .markdown-rendered h4`,
     quartzSelector: "h4",
     pseudoElement: "",
-    properties: sets.headings,
+    properties: sets.headings.default,
   },
   {
     obsidianSelector: `h5[data-heading=\"This is a heading 5\"]`,
     publishSelector: `.published-container .markdown-rendered h5`,
     quartzSelector: "h5",
     pseudoElement: "",
-    properties: sets.headings,
+    properties: sets.headings.default,
   },
   {
     obsidianSelector: `h6[data-heading=\"This is a heading 6\"]`,
     publishSelector: `.published-container .markdown-rendered h6`,
     quartzSelector: "h6",
     pseudoElement: "",
-    properties: sets.headings,
+    properties: sets.headings.default,
   },
   {
     obsidianSelector: `div.inline-title`,
     publishSelector: null, //TODO
     quartzSelector: "h2.page-title, h2.page-title a",
     pseudoElement: "",
-    properties: sets.headings,
+    properties: sets.headings.default,
+  },
+  {
+    obsidianSelector: `h1[data-heading=\"This is a heading 1\"]::after`,
+    publishSelector: `.published-container .markdown-rendered h1`,
+    quartzSelector: "h1::after",
+    pseudoElement: "::after",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `h2[data-heading=\"This is a heading 2\"]::after`,
+    publishSelector: `.published-container .markdown-rendered h2`,
+    quartzSelector: "h2::after",
+    pseudoElement: "::after",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `h3[data-heading=\"This is a heading 3\"]::after`,
+    publishSelector: `.published-container .markdown-rendered h3`,
+    quartzSelector: "h3::after",
+    pseudoElement: "::after",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `h4[data-heading=\"This is a heading 4\"]::after`,
+    publishSelector: `.published-container .markdown-rendered h4`,
+    quartzSelector: "h4::after",
+    pseudoElement: "::after",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `h5[data-heading=\"This is a heading 5\"]::after`,
+    publishSelector: `.published-container .markdown-rendered h5`,
+    quartzSelector: "h5::after",
+    pseudoElement: "::after",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `h6[data-heading=\"This is a heading 6\"]::after`,
+    publishSelector: `.published-container .markdown-rendered h6`,
+    quartzSelector: "h6::after",
+    pseudoElement: "::after",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `div.inline-title::after`,
+    publishSelector: null, //TODO
+    quartzSelector: "h2.page-title, h2.page-title a::after",
+    pseudoElement: "::after",
+    properties: sets.headings.after,
   },
   // outline
   {
@@ -2569,7 +2633,7 @@ export const config = [
     publishSelector: `.page-header .page-title`,
     quartzSelector: ".page-header h2.page-title",
     pseudoElement: "",
-    properties: sets.headings,
+    properties: sets.headings.default,
   },
   // === TRANSCLUDE / EMBED ===
   {

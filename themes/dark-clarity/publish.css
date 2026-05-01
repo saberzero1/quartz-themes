@@ -3113,7 +3113,7 @@ body body.theme-light div.search-results .suggestion-item.is-selected {
   color: rgb(34, 34, 34);
 }
 body body.theme-light .published-container .markdown-rendered h1 {
-  color: var(--text-title-h1, rgb(121, 107, 245));
+  color: rgb(34, 34, 34);
   font-family: var(
     --font-family-preview,
     "Zhudou Sans Normal SS02",
@@ -3123,9 +3123,28 @@ body body.theme-light .published-container .markdown-rendered h1 {
     sans-serif
   );
   text-shadow: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-light .published-container .markdown-rendered h2 {
-  color: var(--text-title-h2, rgb(144, 135, 248));
+  color: rgb(34, 34, 34);
   font-family: var(
     --h2-font,
     "Zhudou Sans Normal SS02",
@@ -3135,9 +3154,28 @@ body body.theme-light .published-container .markdown-rendered h2 {
     sans-serif
   );
   text-shadow: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-light .published-container .markdown-rendered h3 {
-  color: var(--text-title-h3, rgb(174, 174, 255));
+  color: rgb(34, 34, 34);
   font-family: var(
     --h3-font,
     "Zhudou Sans Normal SS02",
@@ -3147,9 +3185,28 @@ body body.theme-light .published-container .markdown-rendered h3 {
     sans-serif
   );
   text-shadow: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-light .published-container .markdown-rendered h4 {
-  color: var(--text-title-h4, rgb(255, 189, 169));
+  color: rgb(34, 34, 34);
   font-family: var(
     --h4-font,
     "Zhudou Sans Normal SS02",
@@ -3159,9 +3216,28 @@ body body.theme-light .published-container .markdown-rendered h4 {
     sans-serif
   );
   text-shadow: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-light .published-container .markdown-rendered h5 {
-  color: var(--text-title-h5, rgb(250, 173, 143));
+  color: rgb(34, 34, 34);
   font-family: var(
     --h5-font,
     "Zhudou Sans Normal SS02",
@@ -3171,9 +3247,28 @@ body body.theme-light .published-container .markdown-rendered h5 {
     sans-serif
   );
   text-shadow: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-light .published-container .markdown-rendered h6 {
-  color: var(--text-title-h6, rgb(245, 107, 77));
+  color: rgb(34, 34, 34);
   font-family: var(
     --h6-font,
     "Zhudou Sans Normal SS02",
@@ -3183,6 +3278,25 @@ body body.theme-light .published-container .markdown-rendered h6 {
     sans-serif
   );
   text-shadow: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body
   body.theme-light
@@ -5139,7 +5253,7 @@ body body.theme-dark div.search-results .suggestion-item.is-selected {
   color: rgb(222, 222, 222);
 }
 body body.theme-dark .published-container .markdown-rendered h1 {
-  color: var(--text-title-h1, rgb(121, 107, 245));
+  color: rgb(218, 218, 218);
   font-family: var(
     --font-family-preview,
     "Zhudou Sans Normal SS02",
@@ -5149,9 +5263,28 @@ body body.theme-dark .published-container .markdown-rendered h1 {
     sans-serif
   );
   text-shadow: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
-  color: var(--text-title-h2, rgb(131, 121, 236));
+  color: rgb(218, 218, 218);
   font-family: var(
     --h2-font,
     "Zhudou Sans Normal SS02",
@@ -5161,9 +5294,28 @@ body body.theme-dark .published-container .markdown-rendered h2 {
     sans-serif
   );
   text-shadow: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
-  color: var(--text-title-h3, rgb(162, 162, 210));
+  color: rgb(218, 218, 218);
   font-family: var(
     --h3-font,
     "Zhudou Sans Normal SS02",
@@ -5173,9 +5325,28 @@ body body.theme-dark .published-container .markdown-rendered h3 {
     sans-serif
   );
   text-shadow: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
-  color: var(--text-title-h4, rgb(251, 214, 203));
+  color: rgb(218, 218, 218);
   font-family: var(
     --h4-font,
     "Zhudou Sans Normal SS02",
@@ -5185,9 +5356,28 @@ body body.theme-dark .published-container .markdown-rendered h4 {
     sans-serif
   );
   text-shadow: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
-  color: var(--text-title-h5, rgb(213, 149, 124));
+  color: rgb(218, 218, 218);
   font-family: var(
     --h5-font,
     "Zhudou Sans Normal SS02",
@@ -5197,9 +5387,28 @@ body body.theme-dark .published-container .markdown-rendered h5 {
     sans-serif
   );
   text-shadow: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
-  color: var(--text-title-h6, rgb(207, 94, 68));
+  color: rgb(218, 218, 218);
   font-family: var(
     --h6-font,
     "Zhudou Sans Normal SS02",
@@ -5209,6 +5418,25 @@ body body.theme-dark .published-container .markdown-rendered h6 {
     sans-serif
   );
   text-shadow: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body
   body.theme-dark

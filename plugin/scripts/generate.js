@@ -767,7 +767,15 @@ function resolveThemeKey(themeId, themesMeta) {
   return themeId;
 }
 
-function buildModeCSS(data, mode, bothModes, config, aspectMap, warnings) {
+function buildModeCSS(
+  data,
+  mode,
+  bothModes,
+  config,
+  aspectMap,
+  warnings,
+  classToggleVarPrefixes,
+) {
   const aspectSelectors = new Map();
   const baseVars = {};
 
@@ -844,6 +852,22 @@ function buildModeCSS(data, mode, bothModes, config, aspectMap, warnings) {
       ) {
         continue;
       }
+      if (
+        classToggleVarPrefixes &&
+        classToggleVarPrefixes.length > 0 &&
+        typeof value === "string" &&
+        value.includes("var(")
+      ) {
+        const varRefMatch = value.match(/var\(\s*--([^,)]+)/);
+        if (
+          varRefMatch &&
+          classToggleVarPrefixes.some((prefix) =>
+            varRefMatch[1].startsWith(prefix),
+          )
+        ) {
+          continue;
+        }
+      }
       const normalized = normalizeSvgDataUriValue(value);
       let selectorMap = aspectSelectors.get(aspect);
       if (!selectorMap) {
@@ -876,6 +900,24 @@ function buildModeCSS(data, mode, bothModes, config, aspectMap, warnings) {
       }
       // Skip if this property already matches the body/root baseline value
       if (baseVars[prop] === value) continue;
+      // Skip bridge declarations contaminated by class-toggle state that was
+      // active during extraction. When a class-toggle (e.g. ".illusion") was
+      // ON during DOM extraction, elements inherit overridden variable values
+      // like `--h1-color: var(--illusion-header-text, ...)` instead of the
+      // base value `var(--headers, ...)`.  These should not leak into the
+      // generated base CSS — the class-toggle CSS is already captured
+      // separately in classSettings.
+      if (classToggleVarPrefixes && classToggleVarPrefixes.length > 0) {
+        const varRefMatch = value.match(/var\(\s*--([^,)]+)/);
+        if (
+          varRefMatch &&
+          classToggleVarPrefixes.some((prefix) =>
+            varRefMatch[1].startsWith(prefix),
+          )
+        ) {
+          continue;
+        }
+      }
       let selectorMap = aspectSelectors.get(aspect);
       if (!selectorMap) {
         selectorMap = new Map();
@@ -1255,6 +1297,24 @@ async function main() {
     const bothModes = hasDark && hasLight;
     const warnings = new Set();
 
+    const allStyleSettings =
+      cssSettingsBlocks && cssSettingsBlocks.length > 0
+        ? cssSettingsBlocks.flatMap((b) => b?.settings ?? [])
+        : (themeMeta.style_settings?.settings ?? []);
+    const classToggleVarPrefixes = allStyleSettings
+      .filter(
+        (s) =>
+          s &&
+          (s.type === "class-toggle" ||
+            (s.type === "class-select" && s.options)),
+      )
+      .flatMap((s) =>
+        s.type === "class-toggle"
+          ? [s.id]
+          : (s.options || []).map((o) => o?.value).filter(Boolean),
+      )
+      .filter(Boolean);
+
     let effectiveConfig = config;
     let effectiveAspectMap = aspectMap;
     if (autoConfigModule) {
@@ -1287,6 +1347,7 @@ async function main() {
           effectiveConfig,
           effectiveAspectMap,
           warnings,
+          classToggleVarPrefixes,
         )
       : {};
     const lightAspectCSS = hasLight
@@ -1297,6 +1358,7 @@ async function main() {
           effectiveConfig,
           effectiveAspectMap,
           warnings,
+          classToggleVarPrefixes,
         )
       : {};
 
@@ -1361,10 +1423,6 @@ async function main() {
       );
     }
 
-    const allStyleSettings =
-      cssSettingsBlocks && cssSettingsBlocks.length > 0
-        ? cssSettingsBlocks.flatMap((b) => b?.settings ?? [])
-        : (themeMeta.style_settings?.settings ?? []);
     const classSettings = extractClassSettings(themeId, allStyleSettings);
 
     const moduleContent = renderThemeModule({

@@ -1684,81 +1684,51 @@ html[saved-theme="dark"] body h2 {
   --graph-node-unresolved: #727e93;
   --graph-tag: #c14343;
   --graph-text: #bccad8;
-  --h1-background: var(--illusion-h1-background, transparent);
   --h1-border-color: #7c2929;
   --h1-border-left-color: #283345;
   --h1-border-line-color: #283345;
-  --h1-border-line-height: var(--illusion-border-line-height, 4px);
   --h1-border-right-color: #283345;
-  --h1-color: var(--illusion-header-text, #c14343);
   --h1-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h1-padding: var(--illusion-header-padding, 0);
-  --h1-shadow: var(--illusion-box-shadow, transparent);
   --h1-text-align: start;
-  --h2-background: var(--illusion-h2-background, transparent);
   --h2-border-color: #652121;
   --h2-border-left-color: #283345;
   --h2-border-line-color: #283345;
-  --h2-border-line-height: var(--illusion-border-line-height, 4px);
   --h2-border-right-color: #283345;
-  --h2-color: var(--illusion-header-text, #c14343);
   --h2-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h2-padding: var(--illusion-header-padding, 0);
-  --h2-shadow: var(--illusion-box-shadow, transparent);
   --h2-size: 30px;
   --h2-text-align: start;
   --h2-weight: 700;
-  --h3-background: var(--illusion-h3-background, transparent);
   --h3-border-color: #471d1d;
   --h3-border-left-color: #283345;
   --h3-border-line-color: #283345;
-  --h3-border-line-height: var(--illusion-border-line-height, 4px);
   --h3-border-right-color: #283345;
-  --h3-color: var(--illusion-header-text, #c14343);
   --h3-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h3-padding: var(--illusion-header-padding, 0);
-  --h3-shadow: var(--illusion-box-shadow, transparent);
   --h3-size: 26px;
   --h3-text-align: start;
   --h3-weight: 700;
-  --h4-background: var(--illusion-h4-background, transparent);
   --h4-border-color: #381919;
   --h4-border-left-color: #283345;
   --h4-border-line-color: #283345;
-  --h4-border-line-height: var(--illusion-border-line-height, 4px);
   --h4-border-right-color: #283345;
-  --h4-color: var(--illusion-header-text, #c14343);
   --h4-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h4-padding: var(--illusion-header-padding, 0);
-  --h4-shadow: var(--illusion-box-shadow, transparent);
   --h4-size: 22px;
   --h4-text-align: start;
   --h4-weight: 700;
-  --h5-background: var(--illusion-h5-background, transparent);
   --h5-border-color: #424c61;
   --h5-border-left-color: #283345;
   --h5-border-line-color: #283345;
-  --h5-border-line-height: var(--illusion-border-line-height, 4px);
   --h5-border-right-color: #283345;
-  --h5-color: var(--illusion-header-text, #c14343);
   --h5-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --h5-line-height: 1.5;
-  --h5-padding: var(--illusion-header-padding, 0);
-  --h5-shadow: var(--illusion-box-shadow, transparent);
   --h5-size: 20px;
   --h5-text-align: start;
   --h5-weight: 700;
-  --h6-background: var(--illusion-h6-background, transparent);
   --h6-border-color: #2e333d;
   --h6-border-left-color: #283345;
   --h6-border-line-color: #283345;
-  --h6-border-line-height: var(--illusion-border-line-height, 4px);
   --h6-border-right-color: #283345;
-  --h6-color: var(--illusion-header-text, #c14343);
   --h6-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --h6-line-height: 1.5;
-  --h6-padding: var(--illusion-header-padding, 0);
-  --h6-shadow: var(--illusion-box-shadow, transparent);
   --h6-size: 18px;
   --h6-text-align: start;
   --h6-weight: 700;
@@ -1775,7 +1745,6 @@ html[saved-theme="dark"] body h2 {
   --he-title-bar-inactive-pinned-bg: #1a1e24;
   --header-arrow-icon-color: var(--text-dl, #4e5b6f);
   --header-border-line-color: #283345;
-  --heading-formatting: var(--illusion-header-text, #586477);
   --heading-spacing: 10px;
   --heading-spacing-bottom: 10px;
   --heading-spacing-top: 10px;
@@ -2232,81 +2201,51 @@ html[saved-theme="dark"] body h3 {
   --graph-node-unresolved: #727e93;
   --graph-tag: #c14343;
   --graph-text: #bccad8;
-  --h1-background: var(--illusion-h1-background, transparent);
   --h1-border-color: #7c2929;
   --h1-border-left-color: #283345;
   --h1-border-line-color: #283345;
-  --h1-border-line-height: var(--illusion-border-line-height, 4px);
   --h1-border-right-color: #283345;
-  --h1-color: var(--illusion-header-text, #c14343);
   --h1-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h1-padding: var(--illusion-header-padding, 0);
-  --h1-shadow: var(--illusion-box-shadow, transparent);
   --h1-text-align: start;
-  --h2-background: var(--illusion-h2-background, transparent);
   --h2-border-color: #652121;
   --h2-border-left-color: #283345;
   --h2-border-line-color: #283345;
-  --h2-border-line-height: var(--illusion-border-line-height, 4px);
   --h2-border-right-color: #283345;
-  --h2-color: var(--illusion-header-text, #c14343);
   --h2-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h2-padding: var(--illusion-header-padding, 0);
-  --h2-shadow: var(--illusion-box-shadow, transparent);
   --h2-size: 30px;
   --h2-text-align: start;
   --h2-weight: 700;
-  --h3-background: var(--illusion-h3-background, transparent);
   --h3-border-color: #471d1d;
   --h3-border-left-color: #283345;
   --h3-border-line-color: #283345;
-  --h3-border-line-height: var(--illusion-border-line-height, 4px);
   --h3-border-right-color: #283345;
-  --h3-color: var(--illusion-header-text, #c14343);
   --h3-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h3-padding: var(--illusion-header-padding, 0);
-  --h3-shadow: var(--illusion-box-shadow, transparent);
   --h3-size: 26px;
   --h3-text-align: start;
   --h3-weight: 700;
-  --h4-background: var(--illusion-h4-background, transparent);
   --h4-border-color: #381919;
   --h4-border-left-color: #283345;
   --h4-border-line-color: #283345;
-  --h4-border-line-height: var(--illusion-border-line-height, 4px);
   --h4-border-right-color: #283345;
-  --h4-color: var(--illusion-header-text, #c14343);
   --h4-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h4-padding: var(--illusion-header-padding, 0);
-  --h4-shadow: var(--illusion-box-shadow, transparent);
   --h4-size: 22px;
   --h4-text-align: start;
   --h4-weight: 700;
-  --h5-background: var(--illusion-h5-background, transparent);
   --h5-border-color: #424c61;
   --h5-border-left-color: #283345;
   --h5-border-line-color: #283345;
-  --h5-border-line-height: var(--illusion-border-line-height, 4px);
   --h5-border-right-color: #283345;
-  --h5-color: var(--illusion-header-text, #c14343);
   --h5-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --h5-line-height: 1.5;
-  --h5-padding: var(--illusion-header-padding, 0);
-  --h5-shadow: var(--illusion-box-shadow, transparent);
   --h5-size: 20px;
   --h5-text-align: start;
   --h5-weight: 700;
-  --h6-background: var(--illusion-h6-background, transparent);
   --h6-border-color: #2e333d;
   --h6-border-left-color: #283345;
   --h6-border-line-color: #283345;
-  --h6-border-line-height: var(--illusion-border-line-height, 4px);
   --h6-border-right-color: #283345;
-  --h6-color: var(--illusion-header-text, #c14343);
   --h6-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --h6-line-height: 1.5;
-  --h6-padding: var(--illusion-header-padding, 0);
-  --h6-shadow: var(--illusion-box-shadow, transparent);
   --h6-size: 18px;
   --h6-text-align: start;
   --h6-weight: 700;
@@ -2323,7 +2262,6 @@ html[saved-theme="dark"] body h3 {
   --he-title-bar-inactive-pinned-bg: #1a1e24;
   --header-arrow-icon-color: var(--text-dl, #4e5b6f);
   --header-border-line-color: #283345;
-  --heading-formatting: var(--illusion-header-text, #586477);
   --heading-spacing: 10px;
   --heading-spacing-bottom: 10px;
   --heading-spacing-top: 10px;
@@ -2780,81 +2718,51 @@ html[saved-theme="dark"] body h4 {
   --graph-node-unresolved: #727e93;
   --graph-tag: #c14343;
   --graph-text: #bccad8;
-  --h1-background: var(--illusion-h1-background, transparent);
   --h1-border-color: #7c2929;
   --h1-border-left-color: #283345;
   --h1-border-line-color: #283345;
-  --h1-border-line-height: var(--illusion-border-line-height, 4px);
   --h1-border-right-color: #283345;
-  --h1-color: var(--illusion-header-text, #c14343);
   --h1-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h1-padding: var(--illusion-header-padding, 0);
-  --h1-shadow: var(--illusion-box-shadow, transparent);
   --h1-text-align: start;
-  --h2-background: var(--illusion-h2-background, transparent);
   --h2-border-color: #652121;
   --h2-border-left-color: #283345;
   --h2-border-line-color: #283345;
-  --h2-border-line-height: var(--illusion-border-line-height, 4px);
   --h2-border-right-color: #283345;
-  --h2-color: var(--illusion-header-text, #c14343);
   --h2-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h2-padding: var(--illusion-header-padding, 0);
-  --h2-shadow: var(--illusion-box-shadow, transparent);
   --h2-size: 30px;
   --h2-text-align: start;
   --h2-weight: 700;
-  --h3-background: var(--illusion-h3-background, transparent);
   --h3-border-color: #471d1d;
   --h3-border-left-color: #283345;
   --h3-border-line-color: #283345;
-  --h3-border-line-height: var(--illusion-border-line-height, 4px);
   --h3-border-right-color: #283345;
-  --h3-color: var(--illusion-header-text, #c14343);
   --h3-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h3-padding: var(--illusion-header-padding, 0);
-  --h3-shadow: var(--illusion-box-shadow, transparent);
   --h3-size: 26px;
   --h3-text-align: start;
   --h3-weight: 700;
-  --h4-background: var(--illusion-h4-background, transparent);
   --h4-border-color: #381919;
   --h4-border-left-color: #283345;
   --h4-border-line-color: #283345;
-  --h4-border-line-height: var(--illusion-border-line-height, 4px);
   --h4-border-right-color: #283345;
-  --h4-color: var(--illusion-header-text, #c14343);
   --h4-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h4-padding: var(--illusion-header-padding, 0);
-  --h4-shadow: var(--illusion-box-shadow, transparent);
   --h4-size: 22px;
   --h4-text-align: start;
   --h4-weight: 700;
-  --h5-background: var(--illusion-h5-background, transparent);
   --h5-border-color: #424c61;
   --h5-border-left-color: #283345;
   --h5-border-line-color: #283345;
-  --h5-border-line-height: var(--illusion-border-line-height, 4px);
   --h5-border-right-color: #283345;
-  --h5-color: var(--illusion-header-text, #c14343);
   --h5-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --h5-line-height: 1.5;
-  --h5-padding: var(--illusion-header-padding, 0);
-  --h5-shadow: var(--illusion-box-shadow, transparent);
   --h5-size: 20px;
   --h5-text-align: start;
   --h5-weight: 700;
-  --h6-background: var(--illusion-h6-background, transparent);
   --h6-border-color: #2e333d;
   --h6-border-left-color: #283345;
   --h6-border-line-color: #283345;
-  --h6-border-line-height: var(--illusion-border-line-height, 4px);
   --h6-border-right-color: #283345;
-  --h6-color: var(--illusion-header-text, #c14343);
   --h6-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --h6-line-height: 1.5;
-  --h6-padding: var(--illusion-header-padding, 0);
-  --h6-shadow: var(--illusion-box-shadow, transparent);
   --h6-size: 18px;
   --h6-text-align: start;
   --h6-weight: 700;
@@ -2871,7 +2779,6 @@ html[saved-theme="dark"] body h4 {
   --he-title-bar-inactive-pinned-bg: #1a1e24;
   --header-arrow-icon-color: var(--text-dl, #4e5b6f);
   --header-border-line-color: #283345;
-  --heading-formatting: var(--illusion-header-text, #586477);
   --heading-spacing: 10px;
   --heading-spacing-bottom: 10px;
   --heading-spacing-top: 10px;
@@ -3328,81 +3235,51 @@ html[saved-theme="dark"] body h5 {
   --graph-node-unresolved: #727e93;
   --graph-tag: #c14343;
   --graph-text: #bccad8;
-  --h1-background: var(--illusion-h1-background, transparent);
   --h1-border-color: #7c2929;
   --h1-border-left-color: #283345;
   --h1-border-line-color: #283345;
-  --h1-border-line-height: var(--illusion-border-line-height, 4px);
   --h1-border-right-color: #283345;
-  --h1-color: var(--illusion-header-text, #c14343);
   --h1-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h1-padding: var(--illusion-header-padding, 0);
-  --h1-shadow: var(--illusion-box-shadow, transparent);
   --h1-text-align: start;
-  --h2-background: var(--illusion-h2-background, transparent);
   --h2-border-color: #652121;
   --h2-border-left-color: #283345;
   --h2-border-line-color: #283345;
-  --h2-border-line-height: var(--illusion-border-line-height, 4px);
   --h2-border-right-color: #283345;
-  --h2-color: var(--illusion-header-text, #c14343);
   --h2-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h2-padding: var(--illusion-header-padding, 0);
-  --h2-shadow: var(--illusion-box-shadow, transparent);
   --h2-size: 30px;
   --h2-text-align: start;
   --h2-weight: 700;
-  --h3-background: var(--illusion-h3-background, transparent);
   --h3-border-color: #471d1d;
   --h3-border-left-color: #283345;
   --h3-border-line-color: #283345;
-  --h3-border-line-height: var(--illusion-border-line-height, 4px);
   --h3-border-right-color: #283345;
-  --h3-color: var(--illusion-header-text, #c14343);
   --h3-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h3-padding: var(--illusion-header-padding, 0);
-  --h3-shadow: var(--illusion-box-shadow, transparent);
   --h3-size: 26px;
   --h3-text-align: start;
   --h3-weight: 700;
-  --h4-background: var(--illusion-h4-background, transparent);
   --h4-border-color: #381919;
   --h4-border-left-color: #283345;
   --h4-border-line-color: #283345;
-  --h4-border-line-height: var(--illusion-border-line-height, 4px);
   --h4-border-right-color: #283345;
-  --h4-color: var(--illusion-header-text, #c14343);
   --h4-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h4-padding: var(--illusion-header-padding, 0);
-  --h4-shadow: var(--illusion-box-shadow, transparent);
   --h4-size: 22px;
   --h4-text-align: start;
   --h4-weight: 700;
-  --h5-background: var(--illusion-h5-background, transparent);
   --h5-border-color: #424c61;
   --h5-border-left-color: #283345;
   --h5-border-line-color: #283345;
-  --h5-border-line-height: var(--illusion-border-line-height, 4px);
   --h5-border-right-color: #283345;
-  --h5-color: var(--illusion-header-text, #c14343);
   --h5-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --h5-line-height: 1.5;
-  --h5-padding: var(--illusion-header-padding, 0);
-  --h5-shadow: var(--illusion-box-shadow, transparent);
   --h5-size: 20px;
   --h5-text-align: start;
   --h5-weight: 700;
-  --h6-background: var(--illusion-h6-background, transparent);
   --h6-border-color: #2e333d;
   --h6-border-left-color: #283345;
   --h6-border-line-color: #283345;
-  --h6-border-line-height: var(--illusion-border-line-height, 4px);
   --h6-border-right-color: #283345;
-  --h6-color: var(--illusion-header-text, #c14343);
   --h6-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --h6-line-height: 1.5;
-  --h6-padding: var(--illusion-header-padding, 0);
-  --h6-shadow: var(--illusion-box-shadow, transparent);
   --h6-size: 18px;
   --h6-text-align: start;
   --h6-weight: 700;
@@ -3419,7 +3296,6 @@ html[saved-theme="dark"] body h5 {
   --he-title-bar-inactive-pinned-bg: #1a1e24;
   --header-arrow-icon-color: var(--text-dl, #4e5b6f);
   --header-border-line-color: #283345;
-  --heading-formatting: var(--illusion-header-text, #586477);
   --heading-spacing: 10px;
   --heading-spacing-bottom: 10px;
   --heading-spacing-top: 10px;
@@ -4904,31 +4780,19 @@ html[saved-theme="dark"] body table {
   width: 196.766px;
 }
 
-html[saved-theme="dark"] body tbody tr:nth-child(odd) {
-  background-color: var(--table-row-alt-background, rgba(6, 8, 12, 0.376));
-}
-
 html[saved-theme="dark"] body td {
   border-bottom-color: rgb(26, 30, 36);
   border-left-color: rgb(26, 30, 36);
   border-right-color: rgb(26, 30, 36);
   border-top-color: rgb(26, 30, 36);
-  color: var(--table-text-color, rgb(188, 202, 216));
 }
 
 html[saved-theme="dark"] body th {
-  --latex-color: var(--table-header-color, #e5ebee);
   border-bottom-color: rgb(26, 30, 36);
   border-left-color: rgb(26, 30, 36);
   border-right-color: rgb(26, 30, 36);
   border-top-color: rgb(26, 30, 36);
   border-top-left-radius: var(--radius-s, 0px);
-  color: var(--table-header-color, rgb(229, 235, 238));
-  font-weight: var(--table-header-weight, 700);
-}
-
-html[saved-theme="dark"] body tr {
-  background-color: var(--table-header-background, rgb(101, 33, 33));
 }`,
     code: `html[saved-theme="dark"] body code {
   background-color: var(--code-background, rgb(35, 40, 49));
@@ -16022,42 +15886,37 @@ html[saved-theme="dark"] body h1.article-title {
   font-size: var(--inline-title-size, 34px);
 }
 
+html[saved-theme="dark"] body h1::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h1-weight, 700);
+  background: rgb(40, 51, 69) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(40, 51, 69);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--header-arrow-icon-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 700px);
+}
+
 html[saved-theme="dark"] body h2 {
   --collapse-icon-color: var(--headers, #4e5b6f);
   --collapse-icon-color-collapsed: var(--text-dl, #586477);
   --font-weight: var(--h2-weight, 700);
-  --h1-background: var(--illusion-h1-background, transparent);
-  --h1-border-line-height: var(--illusion-border-line-height, 4px);
-  --h1-color: var(--illusion-header-text, #c14343);
-  --h1-padding: var(--illusion-header-padding, 0);
-  --h1-shadow: var(--illusion-box-shadow, transparent);
-  --h2-background: var(--illusion-h2-background, transparent);
-  --h2-border-line-height: var(--illusion-border-line-height, 4px);
-  --h2-color: var(--illusion-header-text, #c14343);
-  --h2-padding: var(--illusion-header-padding, 0);
-  --h2-shadow: var(--illusion-box-shadow, transparent);
-  --h3-background: var(--illusion-h3-background, transparent);
-  --h3-border-line-height: var(--illusion-border-line-height, 4px);
-  --h3-color: var(--illusion-header-text, #c14343);
-  --h3-padding: var(--illusion-header-padding, 0);
-  --h3-shadow: var(--illusion-box-shadow, transparent);
-  --h4-background: var(--illusion-h4-background, transparent);
-  --h4-border-line-height: var(--illusion-border-line-height, 4px);
-  --h4-color: var(--illusion-header-text, #c14343);
-  --h4-padding: var(--illusion-header-padding, 0);
-  --h4-shadow: var(--illusion-box-shadow, transparent);
-  --h5-background: var(--illusion-h5-background, transparent);
-  --h5-border-line-height: var(--illusion-border-line-height, 4px);
-  --h5-color: var(--illusion-header-text, #c14343);
-  --h5-padding: var(--illusion-header-padding, 0);
-  --h5-shadow: var(--illusion-box-shadow, transparent);
-  --h6-background: var(--illusion-h6-background, transparent);
-  --h6-border-line-height: var(--illusion-border-line-height, 4px);
-  --h6-color: var(--illusion-header-text, #c14343);
-  --h6-padding: var(--illusion-header-padding, 0);
-  --h6-shadow: var(--illusion-box-shadow, transparent);
   --header-arrow-icon-color: var(--text-dl, #4e5b6f);
-  --heading-formatting: var(--illusion-header-text, #586477);
   color: var(--h2-color, rgb(193, 67, 67));
   font-family: var(--h2-font, "Calisto MT", "Palatino Black", "Book Antiqua", Georgia, "Suez One", serif);
 }
@@ -16067,130 +15926,179 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
   font-family: var(--inline-title-font, "Calisto MT", "Palatino Black", "Book Antiqua", Georgia, "Suez One", serif);
 }
 
+html[saved-theme="dark"] body h2::after {
+  --collapse-icon-color: var(--headers, #4e5b6f);
+  --collapse-icon-color-collapsed: var(--text-dl, #586477);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h2-weight, 700);
+  --header-arrow-icon-color: var(--text-dl, #4e5b6f);
+  background: rgb(40, 51, 69) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(40, 51, 69);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h2-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 525.297px);
+}
+
 html[saved-theme="dark"] body h3 {
   --collapse-icon-color: var(--headers, #4e5b6f);
   --collapse-icon-color-collapsed: var(--text-dl, #586477);
   --font-weight: var(--h3-weight, 700);
-  --h1-background: var(--illusion-h1-background, transparent);
-  --h1-border-line-height: var(--illusion-border-line-height, 4px);
-  --h1-color: var(--illusion-header-text, #c14343);
-  --h1-padding: var(--illusion-header-padding, 0);
-  --h1-shadow: var(--illusion-box-shadow, transparent);
-  --h2-background: var(--illusion-h2-background, transparent);
-  --h2-border-line-height: var(--illusion-border-line-height, 4px);
-  --h2-color: var(--illusion-header-text, #c14343);
-  --h2-padding: var(--illusion-header-padding, 0);
-  --h2-shadow: var(--illusion-box-shadow, transparent);
-  --h3-background: var(--illusion-h3-background, transparent);
-  --h3-border-line-height: var(--illusion-border-line-height, 4px);
-  --h3-color: var(--illusion-header-text, #c14343);
-  --h3-padding: var(--illusion-header-padding, 0);
-  --h3-shadow: var(--illusion-box-shadow, transparent);
-  --h4-background: var(--illusion-h4-background, transparent);
-  --h4-border-line-height: var(--illusion-border-line-height, 4px);
-  --h4-color: var(--illusion-header-text, #c14343);
-  --h4-padding: var(--illusion-header-padding, 0);
-  --h4-shadow: var(--illusion-box-shadow, transparent);
-  --h5-background: var(--illusion-h5-background, transparent);
-  --h5-border-line-height: var(--illusion-border-line-height, 4px);
-  --h5-color: var(--illusion-header-text, #c14343);
-  --h5-padding: var(--illusion-header-padding, 0);
-  --h5-shadow: var(--illusion-box-shadow, transparent);
-  --h6-background: var(--illusion-h6-background, transparent);
-  --h6-border-line-height: var(--illusion-border-line-height, 4px);
-  --h6-color: var(--illusion-header-text, #c14343);
-  --h6-padding: var(--illusion-header-padding, 0);
-  --h6-shadow: var(--illusion-box-shadow, transparent);
   --header-arrow-icon-color: var(--text-dl, #4e5b6f);
-  --heading-formatting: var(--illusion-header-text, #586477);
   color: var(--h3-color, rgb(193, 67, 67));
   font-family: var(--h3-font, "Calisto MT", "Palatino Black", "Book Antiqua", Georgia, "Suez One", serif);
+}
+
+html[saved-theme="dark"] body h3::after {
+  --collapse-icon-color: var(--headers, #4e5b6f);
+  --collapse-icon-color-collapsed: var(--text-dl, #586477);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h3-weight, 700);
+  --header-arrow-icon-color: var(--text-dl, #4e5b6f);
+  background: rgb(40, 51, 69) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(40, 51, 69);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h3-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 401.688px);
 }
 
 html[saved-theme="dark"] body h4 {
   --collapse-icon-color: var(--headers, #4e5b6f);
   --collapse-icon-color-collapsed: var(--text-dl, #586477);
   --font-weight: var(--h4-weight, 700);
-  --h1-background: var(--illusion-h1-background, transparent);
-  --h1-border-line-height: var(--illusion-border-line-height, 4px);
-  --h1-color: var(--illusion-header-text, #c14343);
-  --h1-padding: var(--illusion-header-padding, 0);
-  --h1-shadow: var(--illusion-box-shadow, transparent);
-  --h2-background: var(--illusion-h2-background, transparent);
-  --h2-border-line-height: var(--illusion-border-line-height, 4px);
-  --h2-color: var(--illusion-header-text, #c14343);
-  --h2-padding: var(--illusion-header-padding, 0);
-  --h2-shadow: var(--illusion-box-shadow, transparent);
-  --h3-background: var(--illusion-h3-background, transparent);
-  --h3-border-line-height: var(--illusion-border-line-height, 4px);
-  --h3-color: var(--illusion-header-text, #c14343);
-  --h3-padding: var(--illusion-header-padding, 0);
-  --h3-shadow: var(--illusion-box-shadow, transparent);
-  --h4-background: var(--illusion-h4-background, transparent);
-  --h4-border-line-height: var(--illusion-border-line-height, 4px);
-  --h4-color: var(--illusion-header-text, #c14343);
-  --h4-padding: var(--illusion-header-padding, 0);
-  --h4-shadow: var(--illusion-box-shadow, transparent);
-  --h5-background: var(--illusion-h5-background, transparent);
-  --h5-border-line-height: var(--illusion-border-line-height, 4px);
-  --h5-color: var(--illusion-header-text, #c14343);
-  --h5-padding: var(--illusion-header-padding, 0);
-  --h5-shadow: var(--illusion-box-shadow, transparent);
-  --h6-background: var(--illusion-h6-background, transparent);
-  --h6-border-line-height: var(--illusion-border-line-height, 4px);
-  --h6-color: var(--illusion-header-text, #c14343);
-  --h6-padding: var(--illusion-header-padding, 0);
-  --h6-shadow: var(--illusion-box-shadow, transparent);
   --header-arrow-icon-color: var(--text-dl, #4e5b6f);
-  --heading-formatting: var(--illusion-header-text, #586477);
   color: var(--h4-color, rgb(193, 67, 67));
   font-family: var(--h4-font, "Calisto MT", "Palatino Black", "Book Antiqua", Georgia, "Suez One", serif);
+}
+
+html[saved-theme="dark"] body h4::after {
+  --collapse-icon-color: var(--headers, #4e5b6f);
+  --collapse-icon-color-collapsed: var(--text-dl, #586477);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h4-weight, 700);
+  --header-arrow-icon-color: var(--text-dl, #4e5b6f);
+  background: rgb(40, 51, 69) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(40, 51, 69);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h4-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 271.906px);
 }
 
 html[saved-theme="dark"] body h5 {
   --collapse-icon-color: var(--headers, #4e5b6f);
   --collapse-icon-color-collapsed: var(--text-dl, #586477);
   --font-weight: var(--h5-weight, 700);
-  --h1-background: var(--illusion-h1-background, transparent);
-  --h1-border-line-height: var(--illusion-border-line-height, 4px);
-  --h1-color: var(--illusion-header-text, #c14343);
-  --h1-padding: var(--illusion-header-padding, 0);
-  --h1-shadow: var(--illusion-box-shadow, transparent);
-  --h2-background: var(--illusion-h2-background, transparent);
-  --h2-border-line-height: var(--illusion-border-line-height, 4px);
-  --h2-color: var(--illusion-header-text, #c14343);
-  --h2-padding: var(--illusion-header-padding, 0);
-  --h2-shadow: var(--illusion-box-shadow, transparent);
-  --h3-background: var(--illusion-h3-background, transparent);
-  --h3-border-line-height: var(--illusion-border-line-height, 4px);
-  --h3-color: var(--illusion-header-text, #c14343);
-  --h3-padding: var(--illusion-header-padding, 0);
-  --h3-shadow: var(--illusion-box-shadow, transparent);
-  --h4-background: var(--illusion-h4-background, transparent);
-  --h4-border-line-height: var(--illusion-border-line-height, 4px);
-  --h4-color: var(--illusion-header-text, #c14343);
-  --h4-padding: var(--illusion-header-padding, 0);
-  --h4-shadow: var(--illusion-box-shadow, transparent);
-  --h5-background: var(--illusion-h5-background, transparent);
-  --h5-border-line-height: var(--illusion-border-line-height, 4px);
-  --h5-color: var(--illusion-header-text, #c14343);
-  --h5-padding: var(--illusion-header-padding, 0);
-  --h5-shadow: var(--illusion-box-shadow, transparent);
-  --h6-background: var(--illusion-h6-background, transparent);
-  --h6-border-line-height: var(--illusion-border-line-height, 4px);
-  --h6-color: var(--illusion-header-text, #c14343);
-  --h6-padding: var(--illusion-header-padding, 0);
-  --h6-shadow: var(--illusion-box-shadow, transparent);
   --header-arrow-icon-color: var(--text-dl, #4e5b6f);
-  --heading-formatting: var(--illusion-header-text, #586477);
   color: var(--h5-color, rgb(193, 67, 67));
   font-family: var(--h5-font, "Calisto MT", "Palatino Black", "Book Antiqua", Georgia, "Suez One", serif);
+}
+
+html[saved-theme="dark"] body h5::after {
+  --collapse-icon-color: var(--headers, #4e5b6f);
+  --collapse-icon-color-collapsed: var(--text-dl, #586477);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h5-weight, 700);
+  --header-arrow-icon-color: var(--text-dl, #4e5b6f);
+  background: rgb(40, 51, 69) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(40, 51, 69);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h5-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 154.5px);
 }
 
 html[saved-theme="dark"] body h6 {
   --font-weight: var(--h6-weight, 700);
   color: var(--h6-color, rgb(193, 67, 67));
   font-family: var(--h6-font, "Calisto MT", "Palatino Black", "Book Antiqua", Georgia, "Suez One", serif);
+}
+
+html[saved-theme="dark"] body h6::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h6-weight, 700);
+  background: rgb(40, 51, 69) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(40, 51, 69);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h6-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: 0px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -16356,15 +16264,8 @@ html[saved-theme="dark"] body .canvas-sidebar {
   border-color: rgb(11, 15, 19);
   box-shadow: var(--input-shadow, rgb(11, 15, 19) 2px 2px 0px 0px);
 }`,
-    bases: `html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
-  background-color: var(--table-row-alt-background, rgba(6, 8, 12, 0.376));
-}
-
-html[saved-theme="dark"] body .bases-table thead th {
-  --latex-color: var(--table-header-color, #e5ebee);
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
   border-color: rgb(26, 30, 36);
-  color: var(--table-header-color, rgb(229, 235, 238));
-  font-weight: var(--table-header-weight, 700);
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(47, 59, 77);
@@ -18167,87 +18068,56 @@ html[saved-theme="light"] body h2 {
   --graph-node-tag: #000000;
   --graph-node-unresolved: #727e93;
   --graph-text: #30353a;
-  --h1-background: var(--illusion-h1-background, transparent);
   --h1-border-color: #bb5555;
   --h1-border-left-color: #ccd6eb;
   --h1-border-line-color: #ccd6eb;
-  --h1-border-line-height: var(--illusion-border-line-height, 4px);
   --h1-border-right-color: #ccd6eb;
-  --h1-color: var(--illusion-header-text, #c14343);
   --h1-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h1-padding: var(--illusion-header-padding, 0);
-  --h1-shadow: var(--illusion-box-shadow, transparent);
   --h1-text-align: start;
-  --h2-background: var(--illusion-h2-background, transparent);
   --h2-border-color: #a53f3f;
   --h2-border-left-color: #ccd6eb;
   --h2-border-line-color: #ccd6eb;
-  --h2-border-line-height: var(--illusion-border-line-height, 4px);
   --h2-border-right-color: #ccd6eb;
-  --h2-color: var(--illusion-header-text, #c14343);
   --h2-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h2-padding: var(--illusion-header-padding, 0);
-  --h2-shadow: var(--illusion-box-shadow, transparent);
   --h2-size: 30px;
   --h2-text-align: start;
   --h2-weight: 700;
-  --h3-background: var(--illusion-h3-background, transparent);
   --h3-border-color: #862c2c;
   --h3-border-left-color: #ccd6eb;
   --h3-border-line-color: #ccd6eb;
-  --h3-border-line-height: var(--illusion-border-line-height, 4px);
   --h3-border-right-color: #ccd6eb;
-  --h3-color: var(--illusion-header-text, #c14343);
   --h3-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h3-padding: var(--illusion-header-padding, 0);
-  --h3-shadow: var(--illusion-box-shadow, transparent);
   --h3-size: 26px;
   --h3-text-align: start;
   --h3-weight: 700;
-  --h4-background: var(--illusion-h4-background, transparent);
   --h4-border-color: #662828;
   --h4-border-left-color: #ccd6eb;
   --h4-border-line-color: #ccd6eb;
-  --h4-border-line-height: var(--illusion-border-line-height, 4px);
   --h4-border-right-color: #ccd6eb;
-  --h4-color: var(--illusion-header-text, #c14343);
   --h4-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h4-padding: var(--illusion-header-padding, 0);
-  --h4-shadow: var(--illusion-box-shadow, transparent);
   --h4-size: 22px;
   --h4-text-align: start;
   --h4-weight: 700;
-  --h5-background: var(--illusion-h5-background, transparent);
   --h5-border-color: #697795;
   --h5-border-left-color: #ccd6eb;
   --h5-border-line-color: #ccd6eb;
-  --h5-border-line-height: var(--illusion-border-line-height, 4px);
   --h5-border-right-color: #ccd6eb;
-  --h5-color: var(--illusion-header-text, #c14343);
   --h5-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --h5-line-height: 1.5;
-  --h5-padding: var(--illusion-header-padding, 0);
-  --h5-shadow: var(--illusion-box-shadow, transparent);
   --h5-size: 20px;
   --h5-text-align: start;
   --h5-weight: 700;
-  --h6-background: var(--illusion-h6-background, transparent);
   --h6-border-color: #a4aec2;
   --h6-border-left-color: #ccd6eb;
   --h6-border-line-color: #ccd6eb;
-  --h6-border-line-height: var(--illusion-border-line-height, 4px);
   --h6-border-right-color: #ccd6eb;
-  --h6-color: var(--illusion-header-text, #c14343);
   --h6-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --h6-line-height: 1.5;
-  --h6-padding: var(--illusion-header-padding, 0);
-  --h6-shadow: var(--illusion-box-shadow, transparent);
   --h6-size: 18px;
   --h6-text-align: start;
   --h6-weight: 700;
   --header-arrow-icon-color: var(--text-dl, #4e5b6f);
   --header-border-line-color: #ccd6eb;
-  --heading-formatting: var(--illusion-header-text, #a6bbde);
   --heading-spacing: 10px;
   --heading-spacing-bottom: 10px;
   --heading-spacing-top: 10px;
@@ -18697,87 +18567,56 @@ html[saved-theme="light"] body h3 {
   --graph-node-tag: #000000;
   --graph-node-unresolved: #727e93;
   --graph-text: #30353a;
-  --h1-background: var(--illusion-h1-background, transparent);
   --h1-border-color: #bb5555;
   --h1-border-left-color: #ccd6eb;
   --h1-border-line-color: #ccd6eb;
-  --h1-border-line-height: var(--illusion-border-line-height, 4px);
   --h1-border-right-color: #ccd6eb;
-  --h1-color: var(--illusion-header-text, #c14343);
   --h1-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h1-padding: var(--illusion-header-padding, 0);
-  --h1-shadow: var(--illusion-box-shadow, transparent);
   --h1-text-align: start;
-  --h2-background: var(--illusion-h2-background, transparent);
   --h2-border-color: #a53f3f;
   --h2-border-left-color: #ccd6eb;
   --h2-border-line-color: #ccd6eb;
-  --h2-border-line-height: var(--illusion-border-line-height, 4px);
   --h2-border-right-color: #ccd6eb;
-  --h2-color: var(--illusion-header-text, #c14343);
   --h2-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h2-padding: var(--illusion-header-padding, 0);
-  --h2-shadow: var(--illusion-box-shadow, transparent);
   --h2-size: 30px;
   --h2-text-align: start;
   --h2-weight: 700;
-  --h3-background: var(--illusion-h3-background, transparent);
   --h3-border-color: #862c2c;
   --h3-border-left-color: #ccd6eb;
   --h3-border-line-color: #ccd6eb;
-  --h3-border-line-height: var(--illusion-border-line-height, 4px);
   --h3-border-right-color: #ccd6eb;
-  --h3-color: var(--illusion-header-text, #c14343);
   --h3-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h3-padding: var(--illusion-header-padding, 0);
-  --h3-shadow: var(--illusion-box-shadow, transparent);
   --h3-size: 26px;
   --h3-text-align: start;
   --h3-weight: 700;
-  --h4-background: var(--illusion-h4-background, transparent);
   --h4-border-color: #662828;
   --h4-border-left-color: #ccd6eb;
   --h4-border-line-color: #ccd6eb;
-  --h4-border-line-height: var(--illusion-border-line-height, 4px);
   --h4-border-right-color: #ccd6eb;
-  --h4-color: var(--illusion-header-text, #c14343);
   --h4-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h4-padding: var(--illusion-header-padding, 0);
-  --h4-shadow: var(--illusion-box-shadow, transparent);
   --h4-size: 22px;
   --h4-text-align: start;
   --h4-weight: 700;
-  --h5-background: var(--illusion-h5-background, transparent);
   --h5-border-color: #697795;
   --h5-border-left-color: #ccd6eb;
   --h5-border-line-color: #ccd6eb;
-  --h5-border-line-height: var(--illusion-border-line-height, 4px);
   --h5-border-right-color: #ccd6eb;
-  --h5-color: var(--illusion-header-text, #c14343);
   --h5-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --h5-line-height: 1.5;
-  --h5-padding: var(--illusion-header-padding, 0);
-  --h5-shadow: var(--illusion-box-shadow, transparent);
   --h5-size: 20px;
   --h5-text-align: start;
   --h5-weight: 700;
-  --h6-background: var(--illusion-h6-background, transparent);
   --h6-border-color: #a4aec2;
   --h6-border-left-color: #ccd6eb;
   --h6-border-line-color: #ccd6eb;
-  --h6-border-line-height: var(--illusion-border-line-height, 4px);
   --h6-border-right-color: #ccd6eb;
-  --h6-color: var(--illusion-header-text, #c14343);
   --h6-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --h6-line-height: 1.5;
-  --h6-padding: var(--illusion-header-padding, 0);
-  --h6-shadow: var(--illusion-box-shadow, transparent);
   --h6-size: 18px;
   --h6-text-align: start;
   --h6-weight: 700;
   --header-arrow-icon-color: var(--text-dl, #4e5b6f);
   --header-border-line-color: #ccd6eb;
-  --heading-formatting: var(--illusion-header-text, #a6bbde);
   --heading-spacing: 10px;
   --heading-spacing-bottom: 10px;
   --heading-spacing-top: 10px;
@@ -19227,87 +19066,56 @@ html[saved-theme="light"] body h4 {
   --graph-node-tag: #000000;
   --graph-node-unresolved: #727e93;
   --graph-text: #30353a;
-  --h1-background: var(--illusion-h1-background, transparent);
   --h1-border-color: #bb5555;
   --h1-border-left-color: #ccd6eb;
   --h1-border-line-color: #ccd6eb;
-  --h1-border-line-height: var(--illusion-border-line-height, 4px);
   --h1-border-right-color: #ccd6eb;
-  --h1-color: var(--illusion-header-text, #c14343);
   --h1-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h1-padding: var(--illusion-header-padding, 0);
-  --h1-shadow: var(--illusion-box-shadow, transparent);
   --h1-text-align: start;
-  --h2-background: var(--illusion-h2-background, transparent);
   --h2-border-color: #a53f3f;
   --h2-border-left-color: #ccd6eb;
   --h2-border-line-color: #ccd6eb;
-  --h2-border-line-height: var(--illusion-border-line-height, 4px);
   --h2-border-right-color: #ccd6eb;
-  --h2-color: var(--illusion-header-text, #c14343);
   --h2-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h2-padding: var(--illusion-header-padding, 0);
-  --h2-shadow: var(--illusion-box-shadow, transparent);
   --h2-size: 30px;
   --h2-text-align: start;
   --h2-weight: 700;
-  --h3-background: var(--illusion-h3-background, transparent);
   --h3-border-color: #862c2c;
   --h3-border-left-color: #ccd6eb;
   --h3-border-line-color: #ccd6eb;
-  --h3-border-line-height: var(--illusion-border-line-height, 4px);
   --h3-border-right-color: #ccd6eb;
-  --h3-color: var(--illusion-header-text, #c14343);
   --h3-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h3-padding: var(--illusion-header-padding, 0);
-  --h3-shadow: var(--illusion-box-shadow, transparent);
   --h3-size: 26px;
   --h3-text-align: start;
   --h3-weight: 700;
-  --h4-background: var(--illusion-h4-background, transparent);
   --h4-border-color: #662828;
   --h4-border-left-color: #ccd6eb;
   --h4-border-line-color: #ccd6eb;
-  --h4-border-line-height: var(--illusion-border-line-height, 4px);
   --h4-border-right-color: #ccd6eb;
-  --h4-color: var(--illusion-header-text, #c14343);
   --h4-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h4-padding: var(--illusion-header-padding, 0);
-  --h4-shadow: var(--illusion-box-shadow, transparent);
   --h4-size: 22px;
   --h4-text-align: start;
   --h4-weight: 700;
-  --h5-background: var(--illusion-h5-background, transparent);
   --h5-border-color: #697795;
   --h5-border-left-color: #ccd6eb;
   --h5-border-line-color: #ccd6eb;
-  --h5-border-line-height: var(--illusion-border-line-height, 4px);
   --h5-border-right-color: #ccd6eb;
-  --h5-color: var(--illusion-header-text, #c14343);
   --h5-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --h5-line-height: 1.5;
-  --h5-padding: var(--illusion-header-padding, 0);
-  --h5-shadow: var(--illusion-box-shadow, transparent);
   --h5-size: 20px;
   --h5-text-align: start;
   --h5-weight: 700;
-  --h6-background: var(--illusion-h6-background, transparent);
   --h6-border-color: #a4aec2;
   --h6-border-left-color: #ccd6eb;
   --h6-border-line-color: #ccd6eb;
-  --h6-border-line-height: var(--illusion-border-line-height, 4px);
   --h6-border-right-color: #ccd6eb;
-  --h6-color: var(--illusion-header-text, #c14343);
   --h6-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --h6-line-height: 1.5;
-  --h6-padding: var(--illusion-header-padding, 0);
-  --h6-shadow: var(--illusion-box-shadow, transparent);
   --h6-size: 18px;
   --h6-text-align: start;
   --h6-weight: 700;
   --header-arrow-icon-color: var(--text-dl, #4e5b6f);
   --header-border-line-color: #ccd6eb;
-  --heading-formatting: var(--illusion-header-text, #a6bbde);
   --heading-spacing: 10px;
   --heading-spacing-bottom: 10px;
   --heading-spacing-top: 10px;
@@ -19757,87 +19565,56 @@ html[saved-theme="light"] body h5 {
   --graph-node-tag: #000000;
   --graph-node-unresolved: #727e93;
   --graph-text: #30353a;
-  --h1-background: var(--illusion-h1-background, transparent);
   --h1-border-color: #bb5555;
   --h1-border-left-color: #ccd6eb;
   --h1-border-line-color: #ccd6eb;
-  --h1-border-line-height: var(--illusion-border-line-height, 4px);
   --h1-border-right-color: #ccd6eb;
-  --h1-color: var(--illusion-header-text, #c14343);
   --h1-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h1-padding: var(--illusion-header-padding, 0);
-  --h1-shadow: var(--illusion-box-shadow, transparent);
   --h1-text-align: start;
-  --h2-background: var(--illusion-h2-background, transparent);
   --h2-border-color: #a53f3f;
   --h2-border-left-color: #ccd6eb;
   --h2-border-line-color: #ccd6eb;
-  --h2-border-line-height: var(--illusion-border-line-height, 4px);
   --h2-border-right-color: #ccd6eb;
-  --h2-color: var(--illusion-header-text, #c14343);
   --h2-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h2-padding: var(--illusion-header-padding, 0);
-  --h2-shadow: var(--illusion-box-shadow, transparent);
   --h2-size: 30px;
   --h2-text-align: start;
   --h2-weight: 700;
-  --h3-background: var(--illusion-h3-background, transparent);
   --h3-border-color: #862c2c;
   --h3-border-left-color: #ccd6eb;
   --h3-border-line-color: #ccd6eb;
-  --h3-border-line-height: var(--illusion-border-line-height, 4px);
   --h3-border-right-color: #ccd6eb;
-  --h3-color: var(--illusion-header-text, #c14343);
   --h3-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h3-padding: var(--illusion-header-padding, 0);
-  --h3-shadow: var(--illusion-box-shadow, transparent);
   --h3-size: 26px;
   --h3-text-align: start;
   --h3-weight: 700;
-  --h4-background: var(--illusion-h4-background, transparent);
   --h4-border-color: #662828;
   --h4-border-left-color: #ccd6eb;
   --h4-border-line-color: #ccd6eb;
-  --h4-border-line-height: var(--illusion-border-line-height, 4px);
   --h4-border-right-color: #ccd6eb;
-  --h4-color: var(--illusion-header-text, #c14343);
   --h4-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
-  --h4-padding: var(--illusion-header-padding, 0);
-  --h4-shadow: var(--illusion-box-shadow, transparent);
   --h4-size: 22px;
   --h4-text-align: start;
   --h4-weight: 700;
-  --h5-background: var(--illusion-h5-background, transparent);
   --h5-border-color: #697795;
   --h5-border-left-color: #ccd6eb;
   --h5-border-line-color: #ccd6eb;
-  --h5-border-line-height: var(--illusion-border-line-height, 4px);
   --h5-border-right-color: #ccd6eb;
-  --h5-color: var(--illusion-header-text, #c14343);
   --h5-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --h5-line-height: 1.5;
-  --h5-padding: var(--illusion-header-padding, 0);
-  --h5-shadow: var(--illusion-box-shadow, transparent);
   --h5-size: 20px;
   --h5-text-align: start;
   --h5-weight: 700;
-  --h6-background: var(--illusion-h6-background, transparent);
   --h6-border-color: #a4aec2;
   --h6-border-left-color: #ccd6eb;
   --h6-border-line-color: #ccd6eb;
-  --h6-border-line-height: var(--illusion-border-line-height, 4px);
   --h6-border-right-color: #ccd6eb;
-  --h6-color: var(--illusion-header-text, #c14343);
   --h6-font: "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --h6-line-height: 1.5;
-  --h6-padding: var(--illusion-header-padding, 0);
-  --h6-shadow: var(--illusion-box-shadow, transparent);
   --h6-size: 18px;
   --h6-text-align: start;
   --h6-weight: 700;
   --header-arrow-icon-color: var(--text-dl, #4e5b6f);
   --header-border-line-color: #ccd6eb;
-  --heading-formatting: var(--illusion-header-text, #a6bbde);
   --heading-spacing: 10px;
   --heading-spacing-bottom: 10px;
   --heading-spacing-top: 10px;
@@ -21282,31 +21059,19 @@ html[saved-theme="light"] body table {
   width: 196.766px;
 }
 
-html[saved-theme="light"] body tbody tr:nth-child(odd) {
-  background-color: var(--table-row-alt-background, rgba(208, 221, 239, 0.384));
-}
-
 html[saved-theme="light"] body td {
   border-bottom-color: rgb(248, 251, 255);
   border-left-color: rgb(248, 251, 255);
   border-right-color: rgb(248, 251, 255);
   border-top-color: rgb(248, 251, 255);
-  color: var(--table-text-color, rgb(48, 53, 58));
 }
 
 html[saved-theme="light"] body th {
-  --latex-color: var(--table-header-color, #e5ebee);
   border-bottom-color: rgb(248, 251, 255);
   border-left-color: rgb(248, 251, 255);
   border-right-color: rgb(248, 251, 255);
   border-top-color: rgb(248, 251, 255);
   border-top-left-radius: var(--radius-s, 0px);
-  color: var(--table-header-color, rgb(229, 235, 238));
-  font-weight: var(--table-header-weight, 700);
-}
-
-html[saved-theme="light"] body tr {
-  background-color: var(--table-header-background, rgb(193, 67, 67));
 }`,
     code: `html[saved-theme="light"] body code {
   background-color: var(--code-background, rgb(241, 245, 255));
@@ -32094,42 +31859,37 @@ html[saved-theme="light"] body h1.article-title {
   font-size: var(--inline-title-size, 34px);
 }
 
+html[saved-theme="light"] body h1::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h1-weight, 700);
+  background: rgb(204, 214, 235) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(204, 214, 235);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--header-arrow-icon-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 700px);
+}
+
 html[saved-theme="light"] body h2 {
   --collapse-icon-color: var(--headers, #4e5b6f);
   --collapse-icon-color-collapsed: var(--text-dl, #a6bbde);
   --font-weight: var(--h2-weight, 700);
-  --h1-background: var(--illusion-h1-background, transparent);
-  --h1-border-line-height: var(--illusion-border-line-height, 4px);
-  --h1-color: var(--illusion-header-text, #c14343);
-  --h1-padding: var(--illusion-header-padding, 0);
-  --h1-shadow: var(--illusion-box-shadow, transparent);
-  --h2-background: var(--illusion-h2-background, transparent);
-  --h2-border-line-height: var(--illusion-border-line-height, 4px);
-  --h2-color: var(--illusion-header-text, #c14343);
-  --h2-padding: var(--illusion-header-padding, 0);
-  --h2-shadow: var(--illusion-box-shadow, transparent);
-  --h3-background: var(--illusion-h3-background, transparent);
-  --h3-border-line-height: var(--illusion-border-line-height, 4px);
-  --h3-color: var(--illusion-header-text, #c14343);
-  --h3-padding: var(--illusion-header-padding, 0);
-  --h3-shadow: var(--illusion-box-shadow, transparent);
-  --h4-background: var(--illusion-h4-background, transparent);
-  --h4-border-line-height: var(--illusion-border-line-height, 4px);
-  --h4-color: var(--illusion-header-text, #c14343);
-  --h4-padding: var(--illusion-header-padding, 0);
-  --h4-shadow: var(--illusion-box-shadow, transparent);
-  --h5-background: var(--illusion-h5-background, transparent);
-  --h5-border-line-height: var(--illusion-border-line-height, 4px);
-  --h5-color: var(--illusion-header-text, #c14343);
-  --h5-padding: var(--illusion-header-padding, 0);
-  --h5-shadow: var(--illusion-box-shadow, transparent);
-  --h6-background: var(--illusion-h6-background, transparent);
-  --h6-border-line-height: var(--illusion-border-line-height, 4px);
-  --h6-color: var(--illusion-header-text, #c14343);
-  --h6-padding: var(--illusion-header-padding, 0);
-  --h6-shadow: var(--illusion-box-shadow, transparent);
   --header-arrow-icon-color: var(--text-dl, #4e5b6f);
-  --heading-formatting: var(--illusion-header-text, #a6bbde);
   color: var(--h2-color, rgb(193, 67, 67));
   font-family: var(--h2-font, "Calisto MT", "Palatino Black", "Book Antiqua", Georgia, "Suez One", serif);
 }
@@ -32139,130 +31899,179 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
   font-family: var(--inline-title-font, "Calisto MT", "Palatino Black", "Book Antiqua", Georgia, "Suez One", serif);
 }
 
+html[saved-theme="light"] body h2::after {
+  --collapse-icon-color: var(--headers, #4e5b6f);
+  --collapse-icon-color-collapsed: var(--text-dl, #a6bbde);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h2-weight, 700);
+  --header-arrow-icon-color: var(--text-dl, #4e5b6f);
+  background: rgb(204, 214, 235) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(204, 214, 235);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h2-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 525.297px);
+}
+
 html[saved-theme="light"] body h3 {
   --collapse-icon-color: var(--headers, #4e5b6f);
   --collapse-icon-color-collapsed: var(--text-dl, #a6bbde);
   --font-weight: var(--h3-weight, 700);
-  --h1-background: var(--illusion-h1-background, transparent);
-  --h1-border-line-height: var(--illusion-border-line-height, 4px);
-  --h1-color: var(--illusion-header-text, #c14343);
-  --h1-padding: var(--illusion-header-padding, 0);
-  --h1-shadow: var(--illusion-box-shadow, transparent);
-  --h2-background: var(--illusion-h2-background, transparent);
-  --h2-border-line-height: var(--illusion-border-line-height, 4px);
-  --h2-color: var(--illusion-header-text, #c14343);
-  --h2-padding: var(--illusion-header-padding, 0);
-  --h2-shadow: var(--illusion-box-shadow, transparent);
-  --h3-background: var(--illusion-h3-background, transparent);
-  --h3-border-line-height: var(--illusion-border-line-height, 4px);
-  --h3-color: var(--illusion-header-text, #c14343);
-  --h3-padding: var(--illusion-header-padding, 0);
-  --h3-shadow: var(--illusion-box-shadow, transparent);
-  --h4-background: var(--illusion-h4-background, transparent);
-  --h4-border-line-height: var(--illusion-border-line-height, 4px);
-  --h4-color: var(--illusion-header-text, #c14343);
-  --h4-padding: var(--illusion-header-padding, 0);
-  --h4-shadow: var(--illusion-box-shadow, transparent);
-  --h5-background: var(--illusion-h5-background, transparent);
-  --h5-border-line-height: var(--illusion-border-line-height, 4px);
-  --h5-color: var(--illusion-header-text, #c14343);
-  --h5-padding: var(--illusion-header-padding, 0);
-  --h5-shadow: var(--illusion-box-shadow, transparent);
-  --h6-background: var(--illusion-h6-background, transparent);
-  --h6-border-line-height: var(--illusion-border-line-height, 4px);
-  --h6-color: var(--illusion-header-text, #c14343);
-  --h6-padding: var(--illusion-header-padding, 0);
-  --h6-shadow: var(--illusion-box-shadow, transparent);
   --header-arrow-icon-color: var(--text-dl, #4e5b6f);
-  --heading-formatting: var(--illusion-header-text, #a6bbde);
   color: var(--h3-color, rgb(193, 67, 67));
   font-family: var(--h3-font, "Calisto MT", "Palatino Black", "Book Antiqua", Georgia, "Suez One", serif);
+}
+
+html[saved-theme="light"] body h3::after {
+  --collapse-icon-color: var(--headers, #4e5b6f);
+  --collapse-icon-color-collapsed: var(--text-dl, #a6bbde);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h3-weight, 700);
+  --header-arrow-icon-color: var(--text-dl, #4e5b6f);
+  background: rgb(204, 214, 235) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(204, 214, 235);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h3-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 401.688px);
 }
 
 html[saved-theme="light"] body h4 {
   --collapse-icon-color: var(--headers, #4e5b6f);
   --collapse-icon-color-collapsed: var(--text-dl, #a6bbde);
   --font-weight: var(--h4-weight, 700);
-  --h1-background: var(--illusion-h1-background, transparent);
-  --h1-border-line-height: var(--illusion-border-line-height, 4px);
-  --h1-color: var(--illusion-header-text, #c14343);
-  --h1-padding: var(--illusion-header-padding, 0);
-  --h1-shadow: var(--illusion-box-shadow, transparent);
-  --h2-background: var(--illusion-h2-background, transparent);
-  --h2-border-line-height: var(--illusion-border-line-height, 4px);
-  --h2-color: var(--illusion-header-text, #c14343);
-  --h2-padding: var(--illusion-header-padding, 0);
-  --h2-shadow: var(--illusion-box-shadow, transparent);
-  --h3-background: var(--illusion-h3-background, transparent);
-  --h3-border-line-height: var(--illusion-border-line-height, 4px);
-  --h3-color: var(--illusion-header-text, #c14343);
-  --h3-padding: var(--illusion-header-padding, 0);
-  --h3-shadow: var(--illusion-box-shadow, transparent);
-  --h4-background: var(--illusion-h4-background, transparent);
-  --h4-border-line-height: var(--illusion-border-line-height, 4px);
-  --h4-color: var(--illusion-header-text, #c14343);
-  --h4-padding: var(--illusion-header-padding, 0);
-  --h4-shadow: var(--illusion-box-shadow, transparent);
-  --h5-background: var(--illusion-h5-background, transparent);
-  --h5-border-line-height: var(--illusion-border-line-height, 4px);
-  --h5-color: var(--illusion-header-text, #c14343);
-  --h5-padding: var(--illusion-header-padding, 0);
-  --h5-shadow: var(--illusion-box-shadow, transparent);
-  --h6-background: var(--illusion-h6-background, transparent);
-  --h6-border-line-height: var(--illusion-border-line-height, 4px);
-  --h6-color: var(--illusion-header-text, #c14343);
-  --h6-padding: var(--illusion-header-padding, 0);
-  --h6-shadow: var(--illusion-box-shadow, transparent);
   --header-arrow-icon-color: var(--text-dl, #4e5b6f);
-  --heading-formatting: var(--illusion-header-text, #a6bbde);
   color: var(--h4-color, rgb(193, 67, 67));
   font-family: var(--h4-font, "Calisto MT", "Palatino Black", "Book Antiqua", Georgia, "Suez One", serif);
+}
+
+html[saved-theme="light"] body h4::after {
+  --collapse-icon-color: var(--headers, #4e5b6f);
+  --collapse-icon-color-collapsed: var(--text-dl, #a6bbde);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h4-weight, 700);
+  --header-arrow-icon-color: var(--text-dl, #4e5b6f);
+  background: rgb(204, 214, 235) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(204, 214, 235);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h4-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 271.906px);
 }
 
 html[saved-theme="light"] body h5 {
   --collapse-icon-color: var(--headers, #4e5b6f);
   --collapse-icon-color-collapsed: var(--text-dl, #a6bbde);
   --font-weight: var(--h5-weight, 700);
-  --h1-background: var(--illusion-h1-background, transparent);
-  --h1-border-line-height: var(--illusion-border-line-height, 4px);
-  --h1-color: var(--illusion-header-text, #c14343);
-  --h1-padding: var(--illusion-header-padding, 0);
-  --h1-shadow: var(--illusion-box-shadow, transparent);
-  --h2-background: var(--illusion-h2-background, transparent);
-  --h2-border-line-height: var(--illusion-border-line-height, 4px);
-  --h2-color: var(--illusion-header-text, #c14343);
-  --h2-padding: var(--illusion-header-padding, 0);
-  --h2-shadow: var(--illusion-box-shadow, transparent);
-  --h3-background: var(--illusion-h3-background, transparent);
-  --h3-border-line-height: var(--illusion-border-line-height, 4px);
-  --h3-color: var(--illusion-header-text, #c14343);
-  --h3-padding: var(--illusion-header-padding, 0);
-  --h3-shadow: var(--illusion-box-shadow, transparent);
-  --h4-background: var(--illusion-h4-background, transparent);
-  --h4-border-line-height: var(--illusion-border-line-height, 4px);
-  --h4-color: var(--illusion-header-text, #c14343);
-  --h4-padding: var(--illusion-header-padding, 0);
-  --h4-shadow: var(--illusion-box-shadow, transparent);
-  --h5-background: var(--illusion-h5-background, transparent);
-  --h5-border-line-height: var(--illusion-border-line-height, 4px);
-  --h5-color: var(--illusion-header-text, #c14343);
-  --h5-padding: var(--illusion-header-padding, 0);
-  --h5-shadow: var(--illusion-box-shadow, transparent);
-  --h6-background: var(--illusion-h6-background, transparent);
-  --h6-border-line-height: var(--illusion-border-line-height, 4px);
-  --h6-color: var(--illusion-header-text, #c14343);
-  --h6-padding: var(--illusion-header-padding, 0);
-  --h6-shadow: var(--illusion-box-shadow, transparent);
   --header-arrow-icon-color: var(--text-dl, #4e5b6f);
-  --heading-formatting: var(--illusion-header-text, #a6bbde);
   color: var(--h5-color, rgb(193, 67, 67));
   font-family: var(--h5-font, "Calisto MT", "Palatino Black", "Book Antiqua", Georgia, "Suez One", serif);
+}
+
+html[saved-theme="light"] body h5::after {
+  --collapse-icon-color: var(--headers, #4e5b6f);
+  --collapse-icon-color-collapsed: var(--text-dl, #a6bbde);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h5-weight, 700);
+  --header-arrow-icon-color: var(--text-dl, #4e5b6f);
+  background: rgb(204, 214, 235) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(204, 214, 235);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h5-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 154.5px);
 }
 
 html[saved-theme="light"] body h6 {
   --font-weight: var(--h6-weight, 700);
   color: var(--h6-color, rgb(193, 67, 67));
   font-family: var(--h6-font, "Calisto MT", "Palatino Black", "Book Antiqua", Georgia, "Suez One", serif);
+}
+
+html[saved-theme="light"] body h6::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h6-weight, 700);
+  background: rgb(204, 214, 235) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(204, 214, 235);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h6-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: 0px;
 }
 
 html[saved-theme="light"] body hr {
@@ -32428,15 +32237,8 @@ html[saved-theme="light"] body .canvas-sidebar {
   border-color: rgb(225, 233, 246);
   box-shadow: var(--input-shadow, rgb(225, 233, 246) 2px 2px 0px 0px);
 }`,
-    bases: `html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
-  background-color: var(--table-row-alt-background, rgba(208, 221, 239, 0.384));
-}
-
-html[saved-theme="light"] body .bases-table thead th {
-  --latex-color: var(--table-header-color, #e5ebee);
+    bases: `html[saved-theme="light"] body .bases-table thead th {
   border-color: rgb(248, 251, 255);
-  color: var(--table-header-color, rgb(229, 235, 238));
-  font-weight: var(--table-header-weight, 700);
 }`,
     properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgb(181, 194, 216);
@@ -36320,29 +36122,6 @@ li.task-list-item[data-task="<"]::before {
 html[saved-theme="dark"] body h1.article-title,
 html[saved-theme="light"] body h1.article-title {
   font-size: 2rem;
-  background-color: transparent;
-}
-
-/* Fix: heading sizing */
-html[saved-theme="dark"] body h1,
-html[saved-theme="light"] body h1,
-html[saved-theme="dark"] body h2,
-html[saved-theme="light"] body h2,
-html[saved-theme="dark"] body h3,
-html[saved-theme="light"] body h3,
-html[saved-theme="dark"] body h4,
-html[saved-theme="light"] body h4,
-html[saved-theme="dark"] body h5,
-html[saved-theme="light"] body h5,
-html[saved-theme="dark"] body h6,
-html[saved-theme="light"] body h6,
-html[saved-theme="dark"] body .graph > h3,
-html[saved-theme="light"] body .graph > h3,
-html[saved-theme="dark"] body .backlinks > h3,
-html[saved-theme="light"] body .backlinks > h3,
-html[saved-theme="dark"] body button.desktop-explorer h2,
-html[saved-theme="light"] body button.desktop-explorer h2 {
-  background-color: transparent;
 }
 `,
   classSettings: {

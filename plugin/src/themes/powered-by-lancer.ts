@@ -529,7 +529,6 @@ html[saved-theme="dark"] body html {
   padding-right: 0px;
   padding-top: 0px;
   text-transform: uppercase;
-  transform: matrix(1, 0, -1, 1, 0, 0);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
@@ -861,7 +860,6 @@ html[saved-theme="dark"] body h2 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, -1, 1, 0, 0);
 }
 
 html[saved-theme="dark"] body h3 {
@@ -1145,7 +1143,6 @@ html[saved-theme="dark"] body h3 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, -1, 1, 0, 0);
 }
 
 html[saved-theme="dark"] body h4 {
@@ -1429,7 +1426,6 @@ html[saved-theme="dark"] body h4 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, -1, 1, 0, 0);
 }
 
 html[saved-theme="dark"] body h5 {
@@ -1713,7 +1709,6 @@ html[saved-theme="dark"] body h5 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, -1, 1, 0, 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
@@ -2750,6 +2745,32 @@ html[saved-theme="dark"] body h1.article-title {
   font-size: var(--inline-title-size, 48px);
 }
 
+html[saved-theme="dark"] body h1::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h1-weight, 700);
+  background: rgb(43, 43, 43) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(43, 43, 43);
+  border-bottom-color: rgb(231, 231, 231);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(231, 231, 231);
+  border-left-width: 0px;
+  border-right-color: rgb(231, 231, 231);
+  border-right-width: 0px;
+  border-top-color: rgb(231, 231, 231);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-title-h1, rgb(231, 231, 231));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 24px;
+}
+
 html[saved-theme="dark"] body h2 {
   color: var(--text-title-h2, rgb(231, 231, 231));
   font-family: var(--font-headers, Helvetica);
@@ -2760,9 +2781,61 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
   font-family: var(--inline-title-font, Helvetica);
 }
 
+html[saved-theme="dark"] body h2::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h2-weight, 680);
+  background: rgb(43, 43, 43) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(43, 43, 43);
+  border-bottom-color: rgb(231, 231, 231);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(231, 231, 231);
+  border-left-width: 0px;
+  border-right-color: rgb(231, 231, 231);
+  border-right-width: 0px;
+  border-top-color: rgb(231, 231, 231);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-title-h2, rgb(231, 231, 231));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 12.7969px;
+}
+
 html[saved-theme="dark"] body h3 {
   color: var(--text-title-h3, rgb(231, 231, 231));
   font-family: var(--font-headers, Helvetica);
+}
+
+html[saved-theme="dark"] body h3::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h3-weight, 660);
+  background: rgb(43, 43, 43) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(43, 43, 43);
+  border-bottom-color: rgb(231, 231, 231);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(231, 231, 231);
+  border-left-width: 0px;
+  border-right-color: rgb(231, 231, 231);
+  border-right-width: 0px;
+  border-top-color: rgb(231, 231, 231);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-title-h3, rgb(231, 231, 231));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 11.1875px;
 }
 
 html[saved-theme="dark"] body h4 {
@@ -2770,9 +2843,61 @@ html[saved-theme="dark"] body h4 {
   font-family: var(--font-headers, Helvetica);
 }
 
+html[saved-theme="dark"] body h4::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h4-weight, 640);
+  background: rgb(43, 43, 43) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(43, 43, 43);
+  border-bottom-color: rgb(231, 231, 231);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(231, 231, 231);
+  border-left-width: 0px;
+  border-right-color: rgb(231, 231, 231);
+  border-right-width: 0px;
+  border-top-color: rgb(231, 231, 231);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-title-h4, rgb(231, 231, 231));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 10px;
+}
+
 html[saved-theme="dark"] body h5 {
   color: var(--text-title-h5, rgb(216, 216, 216));
   font-family: var(--font-headers, Helvetica);
+}
+
+html[saved-theme="dark"] body h5::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h5-weight, 620);
+  background: rgb(43, 43, 43) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(43, 43, 43);
+  border-bottom-color: rgb(216, 216, 216);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(216, 216, 216);
+  border-left-width: 0px;
+  border-right-color: rgb(216, 216, 216);
+  border-right-width: 0px;
+  border-top-color: rgb(216, 216, 216);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-title-h5, rgb(216, 216, 216));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 9px;
 }
 
 html[saved-theme="dark"] body h6 {
@@ -3550,7 +3675,6 @@ html[saved-theme="light"] body html {
   padding-right: 0px;
   padding-top: 0px;
   text-transform: uppercase;
-  transform: matrix(1, 0, -1, 1, 0, 0);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
@@ -3880,7 +4004,6 @@ html[saved-theme="light"] body h2 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, -1, 1, 0, 0);
 }
 
 html[saved-theme="light"] body h3 {
@@ -4162,7 +4285,6 @@ html[saved-theme="light"] body h3 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, -1, 1, 0, 0);
 }
 
 html[saved-theme="light"] body h4 {
@@ -4444,7 +4566,6 @@ html[saved-theme="light"] body h4 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, -1, 1, 0, 0);
 }
 
 html[saved-theme="light"] body h5 {
@@ -4726,7 +4847,6 @@ html[saved-theme="light"] body h5 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, -1, 1, 0, 0);
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
@@ -5770,6 +5890,32 @@ html[saved-theme="light"] body h1.article-title {
   font-size: var(--inline-title-size, 48px);
 }
 
+html[saved-theme="light"] body h1::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h1-weight, 700);
+  background: rgb(231, 231, 231) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(231, 231, 231);
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-title-h1, rgb(255, 255, 255));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 24px;
+}
+
 html[saved-theme="light"] body h2 {
   color: var(--text-title-h2, rgb(255, 255, 255));
   font-family: var(--font-headers, Helvetica);
@@ -5780,9 +5926,61 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
   font-family: var(--inline-title-font, Helvetica);
 }
 
+html[saved-theme="light"] body h2::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h2-weight, 680);
+  background: rgb(231, 231, 231) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(231, 231, 231);
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-title-h2, rgb(255, 255, 255));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 12.7969px;
+}
+
 html[saved-theme="light"] body h3 {
   color: var(--text-title-h3, rgb(255, 255, 255));
   font-family: var(--font-headers, Helvetica);
+}
+
+html[saved-theme="light"] body h3::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h3-weight, 660);
+  background: rgb(231, 231, 231) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(231, 231, 231);
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-title-h3, rgb(255, 255, 255));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 11.1875px;
 }
 
 html[saved-theme="light"] body h4 {
@@ -5790,9 +5988,61 @@ html[saved-theme="light"] body h4 {
   font-family: var(--font-headers, Helvetica);
 }
 
+html[saved-theme="light"] body h4::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h4-weight, 640);
+  background: rgb(231, 231, 231) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(231, 231, 231);
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-title-h4, rgb(255, 255, 255));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 10px;
+}
+
 html[saved-theme="light"] body h5 {
   color: var(--text-title-h5, rgb(255, 255, 255));
   font-family: var(--font-headers, Helvetica);
+}
+
+html[saved-theme="light"] body h5::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h5-weight, 620);
+  background: rgb(231, 231, 231) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(231, 231, 231);
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-title-h5, rgb(255, 255, 255));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 9px;
 }
 
 html[saved-theme="light"] body h6 {

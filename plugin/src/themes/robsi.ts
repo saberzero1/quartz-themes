@@ -777,7 +777,6 @@ html[saved-theme="dark"] body html {
   --traffic-lights-offset-y: 40px;
   --yellow: rgb(224, 175, 104);
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(to right, rgb(255, 117, 127) 30%, rgba(0, 0, 0, 0) 70%);
   border-bottom-color: rgb(255, 117, 127);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -805,7 +804,6 @@ html[saved-theme="dark"] body html {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, 0, 1, 0, 3);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
@@ -1172,7 +1170,6 @@ html[saved-theme="dark"] body h2 {
   --traffic-lights-offset-y: 40px;
   --yellow: rgb(224, 175, 104);
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(to right, rgb(187, 154, 247) 30%, rgba(0, 0, 0, 0) 70%);
   border-bottom-color: rgb(187, 154, 247);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1200,7 +1197,6 @@ html[saved-theme="dark"] body h2 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, 0, 1, 0, 3);
 }
 
 html[saved-theme="dark"] body h3 {
@@ -1521,7 +1517,6 @@ html[saved-theme="dark"] body h3 {
   --traffic-lights-offset-y: 40px;
   --yellow: rgb(224, 175, 104);
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(to right, rgb(158, 206, 106) 30%, rgba(0, 0, 0, 0) 70%);
   border-bottom-color: rgb(158, 206, 106);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1549,7 +1544,6 @@ html[saved-theme="dark"] body h3 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, 0, 1, 0, 3);
 }
 
 html[saved-theme="dark"] body h4 {
@@ -1870,7 +1864,6 @@ html[saved-theme="dark"] body h4 {
   --traffic-lights-offset-y: 40px;
   --yellow: rgb(224, 175, 104);
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(to right, rgb(125, 207, 255) 30%, rgba(0, 0, 0, 0) 70%);
   border-bottom-color: rgb(125, 207, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1898,7 +1891,6 @@ html[saved-theme="dark"] body h4 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, 0, 1, 0, 3);
 }
 
 html[saved-theme="dark"] body h5 {
@@ -2219,7 +2211,6 @@ html[saved-theme="dark"] body h5 {
   --traffic-lights-offset-y: 40px;
   --yellow: rgb(224, 175, 104);
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(to right, rgb(122, 162, 247) 30%, rgba(0, 0, 0, 0) 70%);
   border-bottom-color: rgb(122, 162, 247);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -2247,7 +2238,6 @@ html[saved-theme="dark"] body h5 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, 0, 1, 0, 3);
 }
 
 html[saved-theme="dark"] body h6 {
@@ -2568,7 +2558,6 @@ html[saved-theme="dark"] body h6 {
   --traffic-lights-offset-y: 40px;
   --yellow: rgb(224, 175, 104);
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(to right, rgb(224, 175, 104) 30%, rgba(0, 0, 0, 0) 70%);
   border-bottom-color: rgb(224, 175, 104);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -2595,7 +2584,6 @@ html[saved-theme="dark"] body h6 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, 0, 1, 0, 3);
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
@@ -4329,6 +4317,33 @@ html[saved-theme="dark"] body h1.article-title {
   color: var(--inline-title-color, rgb(255, 117, 127));
 }
 
+html[saved-theme="dark"] body h1::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h1-weight, 700);
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(255, 117, 127) 30%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(255, 117, 127) 30%, rgba(0, 0, 0, 0) 70%);
+  border-bottom-color: rgb(255, 117, 127);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(255, 117, 127);
+  border-left-width: 0px;
+  border-right-color: rgb(255, 117, 127);
+  border-right-width: 0px;
+  border-top-color: rgb(255, 117, 127);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-width: 0px;
+  color: var(--h1-color, rgb(255, 117, 127));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 700px;
+}
+
 html[saved-theme="dark"] body h2 {
   color: var(--h2-color, rgb(187, 154, 247));
   font-family: var(--font-family-heading, Inter, system-ui, -apple-system, sans-serif);
@@ -4338,9 +4353,63 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
   color: var(--inline-title-color, rgb(255, 117, 127));
 }
 
+html[saved-theme="dark"] body h2::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h2-weight, 680);
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(187, 154, 247) 30%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(187, 154, 247) 30%, rgba(0, 0, 0, 0) 70%);
+  border-bottom-color: rgb(187, 154, 247);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(187, 154, 247);
+  border-left-width: 0px;
+  border-right-color: rgb(187, 154, 247);
+  border-right-width: 0px;
+  border-top-color: rgb(187, 154, 247);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-width: 0px;
+  color: var(--h2-color, rgb(187, 154, 247));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 670px;
+}
+
 html[saved-theme="dark"] body h3 {
   color: var(--h3-color, rgb(158, 206, 106));
   font-family: var(--font-family-heading, Inter, system-ui, -apple-system, sans-serif);
+}
+
+html[saved-theme="dark"] body h3::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h3-weight, 660);
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(158, 206, 106) 30%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(158, 206, 106) 30%, rgba(0, 0, 0, 0) 70%);
+  border-bottom-color: rgb(158, 206, 106);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(158, 206, 106);
+  border-left-width: 0px;
+  border-right-color: rgb(158, 206, 106);
+  border-right-width: 0px;
+  border-top-color: rgb(158, 206, 106);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-width: 0px;
+  color: var(--h3-color, rgb(158, 206, 106));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 670px;
 }
 
 html[saved-theme="dark"] body h4 {
@@ -4348,14 +4417,95 @@ html[saved-theme="dark"] body h4 {
   font-family: var(--font-family-heading, Inter, system-ui, -apple-system, sans-serif);
 }
 
+html[saved-theme="dark"] body h4::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h4-weight, 640);
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(125, 207, 255) 30%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(125, 207, 255) 30%, rgba(0, 0, 0, 0) 70%);
+  border-bottom-color: rgb(125, 207, 255);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(125, 207, 255);
+  border-left-width: 0px;
+  border-right-color: rgb(125, 207, 255);
+  border-right-width: 0px;
+  border-top-color: rgb(125, 207, 255);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-width: 0px;
+  color: var(--h4-color, rgb(125, 207, 255));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 670px;
+}
+
 html[saved-theme="dark"] body h5 {
   color: var(--h5-color, rgb(122, 162, 247));
   font-family: var(--font-family-heading, Inter, system-ui, -apple-system, sans-serif);
 }
 
+html[saved-theme="dark"] body h5::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h5-weight, 620);
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(122, 162, 247) 30%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(122, 162, 247) 30%, rgba(0, 0, 0, 0) 70%);
+  border-bottom-color: rgb(122, 162, 247);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(122, 162, 247);
+  border-left-width: 0px;
+  border-right-color: rgb(122, 162, 247);
+  border-right-width: 0px;
+  border-top-color: rgb(122, 162, 247);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-width: 0px;
+  color: var(--h5-color, rgb(122, 162, 247));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 670px;
+}
+
 html[saved-theme="dark"] body h6 {
   color: var(--h6-color, rgb(224, 175, 104));
   font-family: var(--font-family-heading, Inter, system-ui, -apple-system, sans-serif);
+}
+
+html[saved-theme="dark"] body h6::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h6-weight, 600);
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(224, 175, 104) 30%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(224, 175, 104) 30%, rgba(0, 0, 0, 0) 70%);
+  border-bottom-color: rgb(224, 175, 104);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(224, 175, 104);
+  border-left-width: 0px;
+  border-right-color: rgb(224, 175, 104);
+  border-right-width: 0px;
+  border-top-color: rgb(224, 175, 104);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-width: 0px;
+  color: var(--h6-color, rgb(224, 175, 104));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 670px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -5421,7 +5571,6 @@ html[saved-theme="light"] body html {
   --traffic-lights-offset-y: 40px;
   --yellow: rgb(180, 120, 0);
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(to right, rgb(200, 50, 70) 30%, rgba(0, 0, 0, 0) 70%);
   border-bottom-color: rgb(200, 50, 70);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -5449,7 +5598,6 @@ html[saved-theme="light"] body html {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, 0, 1, 0, 3);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
@@ -5809,7 +5957,6 @@ html[saved-theme="light"] body h2 {
   --traffic-lights-offset-y: 40px;
   --yellow: rgb(180, 120, 0);
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(to right, rgb(102, 63, 191) 30%, rgba(0, 0, 0, 0) 70%);
   border-bottom-color: rgb(102, 63, 191);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -5837,7 +5984,6 @@ html[saved-theme="light"] body h2 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, 0, 1, 0, 3);
 }
 
 html[saved-theme="light"] body h3 {
@@ -6151,7 +6297,6 @@ html[saved-theme="light"] body h3 {
   --traffic-lights-offset-y: 40px;
   --yellow: rgb(180, 120, 0);
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(to right, rgb(20, 140, 80) 30%, rgba(0, 0, 0, 0) 70%);
   border-bottom-color: rgb(20, 140, 80);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -6179,7 +6324,6 @@ html[saved-theme="light"] body h3 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, 0, 1, 0, 3);
 }
 
 html[saved-theme="light"] body h4 {
@@ -6493,7 +6637,6 @@ html[saved-theme="light"] body h4 {
   --traffic-lights-offset-y: 40px;
   --yellow: rgb(180, 120, 0);
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(to right, rgb(0, 120, 180) 30%, rgba(0, 0, 0, 0) 70%);
   border-bottom-color: rgb(0, 120, 180);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -6521,7 +6664,6 @@ html[saved-theme="light"] body h4 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, 0, 1, 0, 3);
 }
 
 html[saved-theme="light"] body h5 {
@@ -6835,7 +6977,6 @@ html[saved-theme="light"] body h5 {
   --traffic-lights-offset-y: 40px;
   --yellow: rgb(180, 120, 0);
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(to right, rgb(30, 70, 160) 30%, rgba(0, 0, 0, 0) 70%);
   border-bottom-color: rgb(30, 70, 160);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -6863,7 +7004,6 @@ html[saved-theme="light"] body h5 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, 0, 1, 0, 3);
 }
 
 html[saved-theme="light"] body h6 {
@@ -7177,7 +7317,6 @@ html[saved-theme="light"] body h6 {
   --traffic-lights-offset-y: 40px;
   --yellow: rgb(180, 120, 0);
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(to right, rgb(180, 120, 0) 30%, rgba(0, 0, 0, 0) 70%);
   border-bottom-color: rgb(180, 120, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -7204,7 +7343,6 @@ html[saved-theme="light"] body h6 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  transform: matrix(1, 0, 0, 1, 0, 3);
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
@@ -8931,6 +9069,33 @@ html[saved-theme="light"] body h1.article-title {
   color: var(--inline-title-color, rgb(200, 50, 70));
 }
 
+html[saved-theme="light"] body h1::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h1-weight, 700);
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(200, 50, 70) 30%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(200, 50, 70) 30%, rgba(0, 0, 0, 0) 70%);
+  border-bottom-color: rgb(200, 50, 70);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(200, 50, 70);
+  border-left-width: 0px;
+  border-right-color: rgb(200, 50, 70);
+  border-right-width: 0px;
+  border-top-color: rgb(200, 50, 70);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-width: 0px;
+  color: var(--h1-color, rgb(200, 50, 70));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 700px;
+}
+
 html[saved-theme="light"] body h2 {
   color: var(--h2-color, rgb(102, 63, 191));
   font-family: var(--font-family-heading, Inter, system-ui, -apple-system, sans-serif);
@@ -8940,9 +9105,63 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
   color: var(--inline-title-color, rgb(200, 50, 70));
 }
 
+html[saved-theme="light"] body h2::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h2-weight, 680);
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(102, 63, 191) 30%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(102, 63, 191) 30%, rgba(0, 0, 0, 0) 70%);
+  border-bottom-color: rgb(102, 63, 191);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(102, 63, 191);
+  border-left-width: 0px;
+  border-right-color: rgb(102, 63, 191);
+  border-right-width: 0px;
+  border-top-color: rgb(102, 63, 191);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-width: 0px;
+  color: var(--h2-color, rgb(102, 63, 191));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 670px;
+}
+
 html[saved-theme="light"] body h3 {
   color: var(--h3-color, rgb(20, 140, 80));
   font-family: var(--font-family-heading, Inter, system-ui, -apple-system, sans-serif);
+}
+
+html[saved-theme="light"] body h3::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h3-weight, 660);
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(20, 140, 80) 30%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(20, 140, 80) 30%, rgba(0, 0, 0, 0) 70%);
+  border-bottom-color: rgb(20, 140, 80);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(20, 140, 80);
+  border-left-width: 0px;
+  border-right-color: rgb(20, 140, 80);
+  border-right-width: 0px;
+  border-top-color: rgb(20, 140, 80);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-width: 0px;
+  color: var(--h3-color, rgb(20, 140, 80));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 670px;
 }
 
 html[saved-theme="light"] body h4 {
@@ -8950,14 +9169,95 @@ html[saved-theme="light"] body h4 {
   font-family: var(--font-family-heading, Inter, system-ui, -apple-system, sans-serif);
 }
 
+html[saved-theme="light"] body h4::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h4-weight, 640);
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(0, 120, 180) 30%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(0, 120, 180) 30%, rgba(0, 0, 0, 0) 70%);
+  border-bottom-color: rgb(0, 120, 180);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(0, 120, 180);
+  border-left-width: 0px;
+  border-right-color: rgb(0, 120, 180);
+  border-right-width: 0px;
+  border-top-color: rgb(0, 120, 180);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-width: 0px;
+  color: var(--h4-color, rgb(0, 120, 180));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 670px;
+}
+
 html[saved-theme="light"] body h5 {
   color: var(--h5-color, rgb(30, 70, 160));
   font-family: var(--font-family-heading, Inter, system-ui, -apple-system, sans-serif);
 }
 
+html[saved-theme="light"] body h5::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h5-weight, 620);
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(30, 70, 160) 30%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(30, 70, 160) 30%, rgba(0, 0, 0, 0) 70%);
+  border-bottom-color: rgb(30, 70, 160);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(30, 70, 160);
+  border-left-width: 0px;
+  border-right-color: rgb(30, 70, 160);
+  border-right-width: 0px;
+  border-top-color: rgb(30, 70, 160);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-width: 0px;
+  color: var(--h5-color, rgb(30, 70, 160));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 670px;
+}
+
 html[saved-theme="light"] body h6 {
   color: var(--h6-color, rgb(180, 120, 0));
   font-family: var(--font-family-heading, Inter, system-ui, -apple-system, sans-serif);
+}
+
+html[saved-theme="light"] body h6::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h6-weight, 600);
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(180, 120, 0) 30%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(180, 120, 0) 30%, rgba(0, 0, 0, 0) 70%);
+  border-bottom-color: rgb(180, 120, 0);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(180, 120, 0);
+  border-left-width: 0px;
+  border-right-color: rgb(180, 120, 0);
+  border-right-width: 0px;
+  border-top-color: rgb(180, 120, 0);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-width: 0px;
+  color: var(--h6-color, rgb(180, 120, 0));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 670px;
 }
 
 html[saved-theme="light"] body hr {

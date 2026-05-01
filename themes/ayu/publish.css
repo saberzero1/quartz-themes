@@ -3901,7 +3901,7 @@ body body.theme-light div.search-results .suggestion-item.is-selected {
   color: rgb(89, 83, 113);
 }
 body body.theme-light .published-container .markdown-rendered h1 {
-  color: var(--text-title-h1, rgb(92, 99, 105));
+  color: rgb(34, 34, 34);
   font-family: var(
     --font-family-mdpreview,
     "Skolar PE",
@@ -3912,9 +3912,28 @@ body body.theme-light .published-container .markdown-rendered h1 {
     "Times New Roman"
   );
   text-shadow: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-light .published-container .markdown-rendered h2 {
-  color: var(--text-title-h2, rgb(92, 99, 105));
+  color: rgb(34, 34, 34);
   font-family: var(
     --font-family-mdpreview,
     "Skolar PE",
@@ -3925,9 +3944,28 @@ body body.theme-light .published-container .markdown-rendered h2 {
     "Times New Roman"
   );
   text-shadow: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-light .published-container .markdown-rendered h3 {
-  color: var(--text-title-h3, rgb(92, 99, 105));
+  color: rgb(34, 34, 34);
   font-family: var(
     --font-family-mdpreview,
     "Skolar PE",
@@ -3938,9 +3976,28 @@ body body.theme-light .published-container .markdown-rendered h3 {
     "Times New Roman"
   );
   text-shadow: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-light .published-container .markdown-rendered h4 {
-  color: var(--text-title-h4, rgb(92, 99, 105));
+  color: rgb(34, 34, 34);
   font-family: var(
     --font-family-mdpreview,
     "Skolar PE",
@@ -3951,9 +4008,28 @@ body body.theme-light .published-container .markdown-rendered h4 {
     "Times New Roman"
   );
   text-shadow: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-light .published-container .markdown-rendered h5 {
-  color: var(--text-title-h5, rgb(92, 99, 105));
+  color: rgb(34, 34, 34);
   font-family: var(
     --font-family-mdpreview,
     "Skolar PE",
@@ -3964,9 +4040,28 @@ body body.theme-light .published-container .markdown-rendered h5 {
     "Times New Roman"
   );
   text-shadow: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-light .published-container .markdown-rendered h6 {
-  color: var(--text-title-h6, rgb(92, 99, 105));
+  color: rgb(34, 34, 34);
   font-family: var(
     --font-family-mdpreview,
     "Skolar PE",
@@ -3977,6 +4072,25 @@ body body.theme-light .published-container .markdown-rendered h6 {
     "Times New Roman"
   );
   text-shadow: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body
   body.theme-light
@@ -6007,7 +6121,7 @@ body body.theme-dark div.search-results .suggestion-item.is-selected {
   color: rgb(89, 83, 113);
 }
 body body.theme-dark .published-container .markdown-rendered h1 {
-  color: var(--text-title-h1, rgb(92, 99, 105));
+  color: rgb(218, 218, 218);
   font-family: var(
     --font-family-mdpreview,
     "Skolar PE",
@@ -6018,9 +6132,28 @@ body body.theme-dark .published-container .markdown-rendered h1 {
     "Times New Roman"
   );
   text-shadow: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
-  color: var(--text-title-h2, rgb(92, 99, 105));
+  color: rgb(218, 218, 218);
   font-family: var(
     --font-family-mdpreview,
     "Skolar PE",
@@ -6031,9 +6164,28 @@ body body.theme-dark .published-container .markdown-rendered h2 {
     "Times New Roman"
   );
   text-shadow: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
-  color: var(--text-title-h3, rgb(92, 99, 105));
+  color: rgb(218, 218, 218);
   font-family: var(
     --font-family-mdpreview,
     "Skolar PE",
@@ -6044,9 +6196,28 @@ body body.theme-dark .published-container .markdown-rendered h3 {
     "Times New Roman"
   );
   text-shadow: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
-  color: var(--text-title-h4, rgb(92, 99, 105));
+  color: rgb(218, 218, 218);
   font-family: var(
     --font-family-mdpreview,
     "Skolar PE",
@@ -6057,9 +6228,28 @@ body body.theme-dark .published-container .markdown-rendered h4 {
     "Times New Roman"
   );
   text-shadow: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
-  color: var(--text-title-h5, rgb(92, 99, 105));
+  color: rgb(218, 218, 218);
   font-family: var(
     --font-family-mdpreview,
     "Skolar PE",
@@ -6070,9 +6260,28 @@ body body.theme-dark .published-container .markdown-rendered h5 {
     "Times New Roman"
   );
   text-shadow: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
-  color: var(--text-title-h6, rgb(92, 99, 105));
+  color: rgb(218, 218, 218);
   font-family: var(
     --font-family-mdpreview,
     "Skolar PE",
@@ -6083,6 +6292,25 @@ body body.theme-dark .published-container .markdown-rendered h6 {
     "Times New Roman"
   );
   text-shadow: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body
   body.theme-dark

@@ -887,7 +887,6 @@ html body .page > div#quartz-body div.sidebar.right {
   --traffic-lights-offset-x: 40px;
   --traffic-lights-offset-y: 40px;
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(90deg, rgb(232, 216, 163) 0%, rgba(0, 0, 0, 0) 100%);
   border-bottom-color: rgba(232, 216, 163, 0.6);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -900,7 +899,6 @@ html body .page > div#quartz-body div.sidebar.right {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  box-shadow: rgb(232, 216, 163) 0px 0px 5px 0px;
   color: var(--yellow, rgba(232, 216, 163, 0.6));
   content: "▓▒░";
   font-family: var(--font-interface, "Share Tech Mono", "Courier New", monospace);
@@ -1248,7 +1246,6 @@ html body h2 {
   --traffic-lights-offset-x: 40px;
   --traffic-lights-offset-y: 40px;
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(90deg, rgb(232, 216, 163) 0%, rgba(0, 0, 0, 0) 100%);
   border-bottom-color: rgba(232, 216, 163, 0.5);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1261,7 +1258,6 @@ html body h2 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
-  box-shadow: rgb(232, 216, 163) 0px 0px 5px 0px;
   color: var(--yellow, rgba(232, 216, 163, 0.5));
   content: "▒░";
   font-family: var(--font-interface, "Share Tech Mono", "Courier New", monospace);
@@ -15830,6 +15826,32 @@ html body h1.article-title {
   font-weight: var(--inline-title-weight, 400);
 }
 
+html body h1::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(232, 216, 163) 0%, rgba(0, 0, 0, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(90deg, rgb(232, 216, 163) 0%, rgba(0, 0, 0, 0) 100%);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--yellow, rgb(232, 216, 163));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 700px;
+}
+
 html body h2 {
   color: var(--yellow, rgb(232, 216, 163));
   font-family: var(--font-interface, "Share Tech Mono", "Courier New", monospace);
@@ -15839,6 +15861,32 @@ html body h2 {
 html body h2.page-title, html h2.page-title a {
   color: var(--inline-title-color, rgb(232, 216, 163));
   font-family: var(--inline-title-font, VT323, "Share Tech Mono", "Courier New", monospace);
+}
+
+html body h2::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(232, 216, 163) 0%, rgba(0, 0, 0, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(90deg, rgb(232, 216, 163) 0%, rgba(0, 0, 0, 0) 100%);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--yellow, rgb(232, 216, 163));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 662px;
 }
 
 html body h3 {

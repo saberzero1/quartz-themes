@@ -4313,6 +4313,32 @@ html[saved-theme="dark"] body h1.article-title {
   font-weight: var(--inline-title-weight, 900);
 }
 
+html[saved-theme="dark"] body h1::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h1-weight, 700);
+  background: rgb(212, 212, 212) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgb(212, 212, 212));
+  border-bottom-color: rgb(212, 212, 212);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
+  border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
+  border-top-color: rgb(212, 212, 212);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-strong, rgb(212, 212, 212));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 0px;
+}
+
 html[saved-theme="dark"] body h2 {
   color: var(--h2-color, rgb(212, 212, 212));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
@@ -4323,9 +4349,61 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
   font-family: var(--inline-title-font, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
+html[saved-theme="dark"] body h2::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h2-weight, 680);
+  background: rgb(212, 212, 212) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgb(212, 212, 212));
+  border-bottom-color: rgb(212, 212, 212);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
+  border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
+  border-top-color: rgb(212, 212, 212);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h2-color, rgb(212, 212, 212));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 0px;
+}
+
 html[saved-theme="dark"] body h3 {
   color: var(--h3-color, rgb(212, 212, 212));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+}
+
+html[saved-theme="dark"] body h3::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h3-weight, 660);
+  background: rgb(212, 212, 212) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgb(212, 212, 212));
+  border-bottom-color: rgb(212, 212, 212);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
+  border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
+  border-top-color: rgb(212, 212, 212);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h3-color, rgb(212, 212, 212));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 0px;
 }
 
 html[saved-theme="dark"] body h4 {
@@ -4333,14 +4411,92 @@ html[saved-theme="dark"] body h4 {
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
+html[saved-theme="dark"] body h4::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h4-weight, 640);
+  background: rgb(212, 212, 212) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgb(212, 212, 212));
+  border-bottom-color: rgb(212, 212, 212);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
+  border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
+  border-top-color: rgb(212, 212, 212);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h4-color, rgb(212, 212, 212));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 0px;
+}
+
 html[saved-theme="dark"] body h5 {
   color: var(--h5-color, rgb(212, 212, 212));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
+html[saved-theme="dark"] body h5::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h5-weight, 620);
+  background: rgb(212, 212, 212) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgb(212, 212, 212));
+  border-bottom-color: rgb(212, 212, 212);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
+  border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
+  border-top-color: rgb(212, 212, 212);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h5-color, rgb(212, 212, 212));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 0px;
+}
+
 html[saved-theme="dark"] body h6 {
   color: var(--h6-color, rgb(212, 212, 212));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+}
+
+html[saved-theme="dark"] body h6::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h6-weight, 600);
+  background: rgb(212, 212, 212) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(212, 212, 212);
+  border-bottom-color: rgb(212, 212, 212);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
+  border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
+  border-top-color: rgb(212, 212, 212);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h6-color, rgb(212, 212, 212));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 0px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -8965,6 +9121,32 @@ html[saved-theme="light"] body h1.article-title {
   font-weight: var(--inline-title-weight, 900);
 }
 
+html[saved-theme="light"] body h1::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h1-weight, 700);
+  background: rgb(64, 64, 64) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgb(64, 64, 64));
+  border-bottom-color: rgb(64, 64, 64);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
+  border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
+  border-top-color: rgb(64, 64, 64);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-strong, rgb(64, 64, 64));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 0px;
+}
+
 html[saved-theme="light"] body h2 {
   color: var(--h2-color, rgb(64, 64, 64));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
@@ -8975,9 +9157,61 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
   font-family: var(--inline-title-font, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
+html[saved-theme="light"] body h2::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h2-weight, 680);
+  background: rgb(64, 64, 64) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgb(64, 64, 64));
+  border-bottom-color: rgb(64, 64, 64);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
+  border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
+  border-top-color: rgb(64, 64, 64);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h2-color, rgb(64, 64, 64));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 0px;
+}
+
 html[saved-theme="light"] body h3 {
   color: var(--h3-color, rgb(64, 64, 64));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+}
+
+html[saved-theme="light"] body h3::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h3-weight, 660);
+  background: rgb(64, 64, 64) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgb(64, 64, 64));
+  border-bottom-color: rgb(64, 64, 64);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
+  border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
+  border-top-color: rgb(64, 64, 64);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h3-color, rgb(64, 64, 64));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 0px;
 }
 
 html[saved-theme="light"] body h4 {
@@ -8985,14 +9219,92 @@ html[saved-theme="light"] body h4 {
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
+html[saved-theme="light"] body h4::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h4-weight, 640);
+  background: rgb(64, 64, 64) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgb(64, 64, 64));
+  border-bottom-color: rgb(64, 64, 64);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
+  border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
+  border-top-color: rgb(64, 64, 64);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h4-color, rgb(64, 64, 64));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 0px;
+}
+
 html[saved-theme="light"] body h5 {
   color: var(--h5-color, rgb(64, 64, 64));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
+html[saved-theme="light"] body h5::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h5-weight, 620);
+  background: rgb(64, 64, 64) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgb(64, 64, 64));
+  border-bottom-color: rgb(64, 64, 64);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
+  border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
+  border-top-color: rgb(64, 64, 64);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h5-color, rgb(64, 64, 64));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 0px;
+}
+
 html[saved-theme="light"] body h6 {
   color: var(--h6-color, rgb(64, 64, 64));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+}
+
+html[saved-theme="light"] body h6::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h6-weight, 600);
+  background: rgb(64, 64, 64) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(64, 64, 64);
+  border-bottom-color: rgb(64, 64, 64);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
+  border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
+  border-top-color: rgb(64, 64, 64);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h6-color, rgb(64, 64, 64));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 0px;
 }
 
 html[saved-theme="light"] body hr {

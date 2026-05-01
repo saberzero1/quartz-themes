@@ -2916,31 +2916,167 @@ body body.theme-light .published-container .markdown-rendered h1 {
   color: var(--text-title-h1, rgb(255, 255, 255));
   font-family: var(--font-headers, Helvetica);
   text-shadow: none;
+  border: 0px rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 24px;
+  height: auto;
+  background-color: rgb(231, 231, 231);
+  background-image: none;
+  background: rgb(231, 231, 231) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  content: "";
 }
 body body.theme-light .published-container .markdown-rendered h2 {
   color: var(--text-title-h2, rgb(255, 255, 255));
   font-family: var(--font-headers, Helvetica);
   text-shadow: none;
+  border: 0px rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 12.7969px;
+  height: auto;
+  background-color: rgb(231, 231, 231);
+  background-image: none;
+  background: rgb(231, 231, 231) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  content: "";
 }
 body body.theme-light .published-container .markdown-rendered h3 {
   color: var(--text-title-h3, rgb(255, 255, 255));
   font-family: var(--font-headers, Helvetica);
   text-shadow: none;
+  border: 0px rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 11.1875px;
+  height: auto;
+  background-color: rgb(231, 231, 231);
+  background-image: none;
+  background: rgb(231, 231, 231) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  content: "";
 }
 body body.theme-light .published-container .markdown-rendered h4 {
   color: var(--text-title-h4, rgb(255, 255, 255));
   font-family: var(--font-headers, Helvetica);
   text-shadow: none;
+  border: 0px rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 10px;
+  height: auto;
+  background-color: rgb(231, 231, 231);
+  background-image: none;
+  background: rgb(231, 231, 231) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  content: "";
 }
 body body.theme-light .published-container .markdown-rendered h5 {
   color: var(--text-title-h5, rgb(255, 255, 255));
   font-family: var(--font-headers, Helvetica);
   text-shadow: none;
+  border: 0px rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 9px;
+  height: auto;
+  background-color: rgb(231, 231, 231);
+  background-image: none;
+  background: rgb(231, 231, 231) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  content: "";
 }
 body body.theme-light .published-container .markdown-rendered h6 {
-  color: var(--text-title-h6, rgb(100, 10, 13));
+  color: rgb(34, 34, 34);
   font-family: var(--font-headers, Helvetica);
   text-shadow: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body
   body.theme-light
@@ -4834,31 +4970,167 @@ body body.theme-dark .published-container .markdown-rendered h1 {
   color: var(--text-title-h1, rgb(231, 231, 231));
   font-family: var(--font-headers, Helvetica);
   text-shadow: none;
+  border: 0px rgb(231, 231, 231);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 24px;
+  height: auto;
+  background-color: rgb(43, 43, 43);
+  background-image: none;
+  background: rgb(43, 43, 43) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  content: "";
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
   color: var(--text-title-h2, rgb(231, 231, 231));
   font-family: var(--font-headers, Helvetica);
   text-shadow: none;
+  border: 0px rgb(231, 231, 231);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 12.7969px;
+  height: auto;
+  background-color: rgb(43, 43, 43);
+  background-image: none;
+  background: rgb(43, 43, 43) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  content: "";
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
   color: var(--text-title-h3, rgb(231, 231, 231));
   font-family: var(--font-headers, Helvetica);
   text-shadow: none;
+  border: 0px rgb(231, 231, 231);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 11.1875px;
+  height: auto;
+  background-color: rgb(43, 43, 43);
+  background-image: none;
+  background: rgb(43, 43, 43) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  content: "";
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
   color: var(--text-title-h4, rgb(231, 231, 231));
   font-family: var(--font-headers, Helvetica);
   text-shadow: none;
+  border: 0px rgb(231, 231, 231);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 10px;
+  height: auto;
+  background-color: rgb(43, 43, 43);
+  background-image: none;
+  background: rgb(43, 43, 43) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  content: "";
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
   color: var(--text-title-h5, rgb(216, 216, 216));
   font-family: var(--font-headers, Helvetica);
   text-shadow: none;
+  border: 0px rgb(216, 216, 216);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 9px;
+  height: auto;
+  background-color: rgb(43, 43, 43);
+  background-image: none;
+  background: rgb(43, 43, 43) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  content: "";
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
-  color: var(--text-title-h6, rgb(199, 231, 199));
+  color: rgb(218, 218, 218);
   font-family: var(--font-headers, Helvetica);
   text-shadow: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  content: normal;
 }
 body
   body.theme-dark

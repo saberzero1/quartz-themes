@@ -16332,6 +16332,32 @@ html[saved-theme="dark"] body h1.article-title {
   font-size: var(--inline-title-size, 34px);
 }
 
+html[saved-theme="dark"] body h1::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h1-weight, 700);
+  background: rgb(145, 46, 46) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(145, 46, 46);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--header-arrow-icon-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 700px);
+}
+
 html[saved-theme="dark"] body h2 {
   --collapse-icon-color: var(--headers, #4E5B6F);
   --collapse-icon-color-collapsed: var(--text-dl, #586477);
@@ -16377,6 +16403,66 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
   font-family: var(--inline-title-font, "Calisto MT");
 }
 
+html[saved-theme="dark"] body h2::after {
+  --collapse-icon-color: var(--headers, #4E5B6F);
+  --collapse-icon-color-collapsed: var(--text-dl, #586477);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h2-weight, 700);
+  --h1-background: var(--illusion-h1-background, transparent);
+  --h1-border-line-height: var(--illusion-border-line-height, 4px);
+  --h1-color: var(--illusion-header-text, #C14343);
+  --h1-padding: var(--illusion-header-padding, 0);
+  --h1-shadow: var(--illusion-box-shadow, transparent);
+  --h2-background: var(--illusion-h2-background, transparent);
+  --h2-border-line-height: var(--illusion-border-line-height, 4px);
+  --h2-color: var(--illusion-header-text, #C14343);
+  --h2-padding: var(--illusion-header-padding, 0);
+  --h2-shadow: var(--illusion-box-shadow, transparent);
+  --h3-background: var(--illusion-h3-background, transparent);
+  --h3-border-line-height: var(--illusion-border-line-height, 4px);
+  --h3-color: var(--illusion-header-text, #C14343);
+  --h3-padding: var(--illusion-header-padding, 0);
+  --h3-shadow: var(--illusion-box-shadow, transparent);
+  --h4-background: var(--illusion-h4-background, transparent);
+  --h4-border-line-height: var(--illusion-border-line-height, 4px);
+  --h4-color: var(--illusion-header-text, #C14343);
+  --h4-padding: var(--illusion-header-padding, 0);
+  --h4-shadow: var(--illusion-box-shadow, transparent);
+  --h5-background: var(--illusion-h5-background, transparent);
+  --h5-border-line-height: var(--illusion-border-line-height, 4px);
+  --h5-color: var(--illusion-header-text, #C14343);
+  --h5-padding: var(--illusion-header-padding, 0);
+  --h5-shadow: var(--illusion-box-shadow, transparent);
+  --h6-background: var(--illusion-h6-background, transparent);
+  --h6-border-line-height: var(--illusion-border-line-height, 4px);
+  --h6-color: var(--illusion-header-text, #C14343);
+  --h6-padding: var(--illusion-header-padding, 0);
+  --h6-shadow: var(--illusion-box-shadow, transparent);
+  --header-arrow-icon-color: var(--text-dl, #4E5B6F);
+  --heading-formatting: var(--illusion-header-text, #586477);
+  background: rgb(193, 67, 67) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(193, 67, 67);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h2-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 556.188px);
+}
+
 html[saved-theme="dark"] body h3 {
   --collapse-icon-color: var(--headers, #4E5B6F);
   --collapse-icon-color-collapsed: var(--text-dl, #586477);
@@ -16415,6 +16501,66 @@ html[saved-theme="dark"] body h3 {
   --heading-formatting: var(--illusion-header-text, #586477);
   color: var(--h3-color, rgb(193, 67, 67));
   font-family: var(--h3-font, "Calisto MT");
+}
+
+html[saved-theme="dark"] body h3::after {
+  --collapse-icon-color: var(--headers, #4E5B6F);
+  --collapse-icon-color-collapsed: var(--text-dl, #586477);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h3-weight, 700);
+  --h1-background: var(--illusion-h1-background, transparent);
+  --h1-border-line-height: var(--illusion-border-line-height, 4px);
+  --h1-color: var(--illusion-header-text, #C14343);
+  --h1-padding: var(--illusion-header-padding, 0);
+  --h1-shadow: var(--illusion-box-shadow, transparent);
+  --h2-background: var(--illusion-h2-background, transparent);
+  --h2-border-line-height: var(--illusion-border-line-height, 4px);
+  --h2-color: var(--illusion-header-text, #C14343);
+  --h2-padding: var(--illusion-header-padding, 0);
+  --h2-shadow: var(--illusion-box-shadow, transparent);
+  --h3-background: var(--illusion-h3-background, transparent);
+  --h3-border-line-height: var(--illusion-border-line-height, 4px);
+  --h3-color: var(--illusion-header-text, #C14343);
+  --h3-padding: var(--illusion-header-padding, 0);
+  --h3-shadow: var(--illusion-box-shadow, transparent);
+  --h4-background: var(--illusion-h4-background, transparent);
+  --h4-border-line-height: var(--illusion-border-line-height, 4px);
+  --h4-color: var(--illusion-header-text, #C14343);
+  --h4-padding: var(--illusion-header-padding, 0);
+  --h4-shadow: var(--illusion-box-shadow, transparent);
+  --h5-background: var(--illusion-h5-background, transparent);
+  --h5-border-line-height: var(--illusion-border-line-height, 4px);
+  --h5-color: var(--illusion-header-text, #C14343);
+  --h5-padding: var(--illusion-header-padding, 0);
+  --h5-shadow: var(--illusion-box-shadow, transparent);
+  --h6-background: var(--illusion-h6-background, transparent);
+  --h6-border-line-height: var(--illusion-border-line-height, 4px);
+  --h6-color: var(--illusion-header-text, #C14343);
+  --h6-padding: var(--illusion-header-padding, 0);
+  --h6-shadow: var(--illusion-box-shadow, transparent);
+  --header-arrow-icon-color: var(--text-dl, #4E5B6F);
+  --heading-formatting: var(--illusion-header-text, #586477);
+  background: rgb(191, 94, 94) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(191, 94, 94);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h3-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 432.594px);
 }
 
 html[saved-theme="dark"] body h4 {
@@ -16457,6 +16603,66 @@ html[saved-theme="dark"] body h4 {
   font-family: var(--h4-font, "Calisto MT");
 }
 
+html[saved-theme="dark"] body h4::after {
+  --collapse-icon-color: var(--headers, #4E5B6F);
+  --collapse-icon-color-collapsed: var(--text-dl, #586477);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h4-weight, 700);
+  --h1-background: var(--illusion-h1-background, transparent);
+  --h1-border-line-height: var(--illusion-border-line-height, 4px);
+  --h1-color: var(--illusion-header-text, #C14343);
+  --h1-padding: var(--illusion-header-padding, 0);
+  --h1-shadow: var(--illusion-box-shadow, transparent);
+  --h2-background: var(--illusion-h2-background, transparent);
+  --h2-border-line-height: var(--illusion-border-line-height, 4px);
+  --h2-color: var(--illusion-header-text, #C14343);
+  --h2-padding: var(--illusion-header-padding, 0);
+  --h2-shadow: var(--illusion-box-shadow, transparent);
+  --h3-background: var(--illusion-h3-background, transparent);
+  --h3-border-line-height: var(--illusion-border-line-height, 4px);
+  --h3-color: var(--illusion-header-text, #C14343);
+  --h3-padding: var(--illusion-header-padding, 0);
+  --h3-shadow: var(--illusion-box-shadow, transparent);
+  --h4-background: var(--illusion-h4-background, transparent);
+  --h4-border-line-height: var(--illusion-border-line-height, 4px);
+  --h4-color: var(--illusion-header-text, #C14343);
+  --h4-padding: var(--illusion-header-padding, 0);
+  --h4-shadow: var(--illusion-box-shadow, transparent);
+  --h5-background: var(--illusion-h5-background, transparent);
+  --h5-border-line-height: var(--illusion-border-line-height, 4px);
+  --h5-color: var(--illusion-header-text, #C14343);
+  --h5-padding: var(--illusion-header-padding, 0);
+  --h5-shadow: var(--illusion-box-shadow, transparent);
+  --h6-background: var(--illusion-h6-background, transparent);
+  --h6-border-line-height: var(--illusion-border-line-height, 4px);
+  --h6-color: var(--illusion-header-text, #C14343);
+  --h6-padding: var(--illusion-header-padding, 0);
+  --h6-shadow: var(--illusion-box-shadow, transparent);
+  --header-arrow-icon-color: var(--text-dl, #4E5B6F);
+  --heading-formatting: var(--illusion-header-text, #586477);
+  background: rgb(97, 175, 239) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(97, 175, 239);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h4-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 247.188px);
+}
+
 html[saved-theme="dark"] body h5 {
   --collapse-icon-color: var(--headers, #4E5B6F);
   --collapse-icon-color-collapsed: var(--text-dl, #586477);
@@ -16497,10 +16703,96 @@ html[saved-theme="dark"] body h5 {
   font-family: var(--h5-font, "Calisto MT");
 }
 
+html[saved-theme="dark"] body h5::after {
+  --collapse-icon-color: var(--headers, #4E5B6F);
+  --collapse-icon-color-collapsed: var(--text-dl, #586477);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h5-weight, 700);
+  --h1-background: var(--illusion-h1-background, transparent);
+  --h1-border-line-height: var(--illusion-border-line-height, 4px);
+  --h1-color: var(--illusion-header-text, #C14343);
+  --h1-padding: var(--illusion-header-padding, 0);
+  --h1-shadow: var(--illusion-box-shadow, transparent);
+  --h2-background: var(--illusion-h2-background, transparent);
+  --h2-border-line-height: var(--illusion-border-line-height, 4px);
+  --h2-color: var(--illusion-header-text, #C14343);
+  --h2-padding: var(--illusion-header-padding, 0);
+  --h2-shadow: var(--illusion-box-shadow, transparent);
+  --h3-background: var(--illusion-h3-background, transparent);
+  --h3-border-line-height: var(--illusion-border-line-height, 4px);
+  --h3-color: var(--illusion-header-text, #C14343);
+  --h3-padding: var(--illusion-header-padding, 0);
+  --h3-shadow: var(--illusion-box-shadow, transparent);
+  --h4-background: var(--illusion-h4-background, transparent);
+  --h4-border-line-height: var(--illusion-border-line-height, 4px);
+  --h4-color: var(--illusion-header-text, #C14343);
+  --h4-padding: var(--illusion-header-padding, 0);
+  --h4-shadow: var(--illusion-box-shadow, transparent);
+  --h5-background: var(--illusion-h5-background, transparent);
+  --h5-border-line-height: var(--illusion-border-line-height, 4px);
+  --h5-color: var(--illusion-header-text, #C14343);
+  --h5-padding: var(--illusion-header-padding, 0);
+  --h5-shadow: var(--illusion-box-shadow, transparent);
+  --h6-background: var(--illusion-h6-background, transparent);
+  --h6-border-line-height: var(--illusion-border-line-height, 4px);
+  --h6-color: var(--illusion-header-text, #C14343);
+  --h6-padding: var(--illusion-header-padding, 0);
+  --h6-shadow: var(--illusion-box-shadow, transparent);
+  --header-arrow-icon-color: var(--text-dl, #4E5B6F);
+  --heading-formatting: var(--illusion-header-text, #586477);
+  background: rgb(47, 59, 77) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(47, 59, 77);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h5-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 185.391px);
+}
+
 html[saved-theme="dark"] body h6 {
   --font-weight: var(--h6-weight, 700);
   color: var(--h6-color, rgb(193, 67, 67));
   font-family: var(--h6-font, "Calisto MT");
+}
+
+html[saved-theme="dark"] body h6::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h6-weight, 700);
+  background: rgb(42, 46, 53) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(42, 46, 53);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h6-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: 0px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -32726,6 +33018,32 @@ html[saved-theme="light"] body h1.article-title {
   font-size: var(--inline-title-size, 34px);
 }
 
+html[saved-theme="light"] body h1::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h1-weight, 700);
+  background: rgb(187, 85, 85) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(187, 85, 85);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--header-arrow-icon-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 700px);
+}
+
 html[saved-theme="light"] body h2 {
   --collapse-icon-color: var(--headers, #4E5B6F);
   --collapse-icon-color-collapsed: var(--text-dl, #A6BBDE);
@@ -32771,6 +33089,66 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
   font-family: var(--inline-title-font, "Calisto MT");
 }
 
+html[saved-theme="light"] body h2::after {
+  --collapse-icon-color: var(--headers, #4E5B6F);
+  --collapse-icon-color-collapsed: var(--text-dl, #A6BBDE);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h2-weight, 700);
+  --h1-background: var(--illusion-h1-background, transparent);
+  --h1-border-line-height: var(--illusion-border-line-height, 4px);
+  --h1-color: var(--illusion-header-text, #C14343);
+  --h1-padding: var(--illusion-header-padding, 0);
+  --h1-shadow: var(--illusion-box-shadow, transparent);
+  --h2-background: var(--illusion-h2-background, transparent);
+  --h2-border-line-height: var(--illusion-border-line-height, 4px);
+  --h2-color: var(--illusion-header-text, #C14343);
+  --h2-padding: var(--illusion-header-padding, 0);
+  --h2-shadow: var(--illusion-box-shadow, transparent);
+  --h3-background: var(--illusion-h3-background, transparent);
+  --h3-border-line-height: var(--illusion-border-line-height, 4px);
+  --h3-color: var(--illusion-header-text, #C14343);
+  --h3-padding: var(--illusion-header-padding, 0);
+  --h3-shadow: var(--illusion-box-shadow, transparent);
+  --h4-background: var(--illusion-h4-background, transparent);
+  --h4-border-line-height: var(--illusion-border-line-height, 4px);
+  --h4-color: var(--illusion-header-text, #C14343);
+  --h4-padding: var(--illusion-header-padding, 0);
+  --h4-shadow: var(--illusion-box-shadow, transparent);
+  --h5-background: var(--illusion-h5-background, transparent);
+  --h5-border-line-height: var(--illusion-border-line-height, 4px);
+  --h5-color: var(--illusion-header-text, #C14343);
+  --h5-padding: var(--illusion-header-padding, 0);
+  --h5-shadow: var(--illusion-box-shadow, transparent);
+  --h6-background: var(--illusion-h6-background, transparent);
+  --h6-border-line-height: var(--illusion-border-line-height, 4px);
+  --h6-color: var(--illusion-header-text, #C14343);
+  --h6-padding: var(--illusion-header-padding, 0);
+  --h6-shadow: var(--illusion-box-shadow, transparent);
+  --header-arrow-icon-color: var(--text-dl, #4E5B6F);
+  --heading-formatting: var(--illusion-header-text, #A6BBDE);
+  background: rgb(193, 67, 67) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(193, 67, 67);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h2-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 556.188px);
+}
+
 html[saved-theme="light"] body h3 {
   --collapse-icon-color: var(--headers, #4E5B6F);
   --collapse-icon-color-collapsed: var(--text-dl, #A6BBDE);
@@ -32809,6 +33187,66 @@ html[saved-theme="light"] body h3 {
   --heading-formatting: var(--illusion-header-text, #A6BBDE);
   color: var(--h3-color, rgb(193, 67, 67));
   font-family: var(--h3-font, "Calisto MT");
+}
+
+html[saved-theme="light"] body h3::after {
+  --collapse-icon-color: var(--headers, #4E5B6F);
+  --collapse-icon-color-collapsed: var(--text-dl, #A6BBDE);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h3-weight, 700);
+  --h1-background: var(--illusion-h1-background, transparent);
+  --h1-border-line-height: var(--illusion-border-line-height, 4px);
+  --h1-color: var(--illusion-header-text, #C14343);
+  --h1-padding: var(--illusion-header-padding, 0);
+  --h1-shadow: var(--illusion-box-shadow, transparent);
+  --h2-background: var(--illusion-h2-background, transparent);
+  --h2-border-line-height: var(--illusion-border-line-height, 4px);
+  --h2-color: var(--illusion-header-text, #C14343);
+  --h2-padding: var(--illusion-header-padding, 0);
+  --h2-shadow: var(--illusion-box-shadow, transparent);
+  --h3-background: var(--illusion-h3-background, transparent);
+  --h3-border-line-height: var(--illusion-border-line-height, 4px);
+  --h3-color: var(--illusion-header-text, #C14343);
+  --h3-padding: var(--illusion-header-padding, 0);
+  --h3-shadow: var(--illusion-box-shadow, transparent);
+  --h4-background: var(--illusion-h4-background, transparent);
+  --h4-border-line-height: var(--illusion-border-line-height, 4px);
+  --h4-color: var(--illusion-header-text, #C14343);
+  --h4-padding: var(--illusion-header-padding, 0);
+  --h4-shadow: var(--illusion-box-shadow, transparent);
+  --h5-background: var(--illusion-h5-background, transparent);
+  --h5-border-line-height: var(--illusion-border-line-height, 4px);
+  --h5-color: var(--illusion-header-text, #C14343);
+  --h5-padding: var(--illusion-header-padding, 0);
+  --h5-shadow: var(--illusion-box-shadow, transparent);
+  --h6-background: var(--illusion-h6-background, transparent);
+  --h6-border-line-height: var(--illusion-border-line-height, 4px);
+  --h6-color: var(--illusion-header-text, #C14343);
+  --h6-padding: var(--illusion-header-padding, 0);
+  --h6-shadow: var(--illusion-box-shadow, transparent);
+  --header-arrow-icon-color: var(--text-dl, #4E5B6F);
+  --heading-formatting: var(--illusion-header-text, #A6BBDE);
+  background: rgb(206, 109, 109) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(206, 109, 109);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h3-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 432.594px);
 }
 
 html[saved-theme="light"] body h4 {
@@ -32851,6 +33289,66 @@ html[saved-theme="light"] body h4 {
   font-family: var(--h4-font, "Calisto MT");
 }
 
+html[saved-theme="light"] body h4::after {
+  --collapse-icon-color: var(--headers, #4E5B6F);
+  --collapse-icon-color-collapsed: var(--text-dl, #A6BBDE);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h4-weight, 700);
+  --h1-background: var(--illusion-h1-background, transparent);
+  --h1-border-line-height: var(--illusion-border-line-height, 4px);
+  --h1-color: var(--illusion-header-text, #C14343);
+  --h1-padding: var(--illusion-header-padding, 0);
+  --h1-shadow: var(--illusion-box-shadow, transparent);
+  --h2-background: var(--illusion-h2-background, transparent);
+  --h2-border-line-height: var(--illusion-border-line-height, 4px);
+  --h2-color: var(--illusion-header-text, #C14343);
+  --h2-padding: var(--illusion-header-padding, 0);
+  --h2-shadow: var(--illusion-box-shadow, transparent);
+  --h3-background: var(--illusion-h3-background, transparent);
+  --h3-border-line-height: var(--illusion-border-line-height, 4px);
+  --h3-color: var(--illusion-header-text, #C14343);
+  --h3-padding: var(--illusion-header-padding, 0);
+  --h3-shadow: var(--illusion-box-shadow, transparent);
+  --h4-background: var(--illusion-h4-background, transparent);
+  --h4-border-line-height: var(--illusion-border-line-height, 4px);
+  --h4-color: var(--illusion-header-text, #C14343);
+  --h4-padding: var(--illusion-header-padding, 0);
+  --h4-shadow: var(--illusion-box-shadow, transparent);
+  --h5-background: var(--illusion-h5-background, transparent);
+  --h5-border-line-height: var(--illusion-border-line-height, 4px);
+  --h5-color: var(--illusion-header-text, #C14343);
+  --h5-padding: var(--illusion-header-padding, 0);
+  --h5-shadow: var(--illusion-box-shadow, transparent);
+  --h6-background: var(--illusion-h6-background, transparent);
+  --h6-border-line-height: var(--illusion-border-line-height, 4px);
+  --h6-color: var(--illusion-header-text, #C14343);
+  --h6-padding: var(--illusion-header-padding, 0);
+  --h6-shadow: var(--illusion-box-shadow, transparent);
+  --header-arrow-icon-color: var(--text-dl, #4E5B6F);
+  --heading-formatting: var(--illusion-header-text, #A6BBDE);
+  background: rgb(85, 153, 208) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(85, 153, 208);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h4-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 247.188px);
+}
+
 html[saved-theme="light"] body h5 {
   --collapse-icon-color: var(--headers, #4E5B6F);
   --collapse-icon-color-collapsed: var(--text-dl, #A6BBDE);
@@ -32891,10 +33389,96 @@ html[saved-theme="light"] body h5 {
   font-family: var(--h5-font, "Calisto MT");
 }
 
+html[saved-theme="light"] body h5::after {
+  --collapse-icon-color: var(--headers, #4E5B6F);
+  --collapse-icon-color-collapsed: var(--text-dl, #A6BBDE);
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h5-weight, 700);
+  --h1-background: var(--illusion-h1-background, transparent);
+  --h1-border-line-height: var(--illusion-border-line-height, 4px);
+  --h1-color: var(--illusion-header-text, #C14343);
+  --h1-padding: var(--illusion-header-padding, 0);
+  --h1-shadow: var(--illusion-box-shadow, transparent);
+  --h2-background: var(--illusion-h2-background, transparent);
+  --h2-border-line-height: var(--illusion-border-line-height, 4px);
+  --h2-color: var(--illusion-header-text, #C14343);
+  --h2-padding: var(--illusion-header-padding, 0);
+  --h2-shadow: var(--illusion-box-shadow, transparent);
+  --h3-background: var(--illusion-h3-background, transparent);
+  --h3-border-line-height: var(--illusion-border-line-height, 4px);
+  --h3-color: var(--illusion-header-text, #C14343);
+  --h3-padding: var(--illusion-header-padding, 0);
+  --h3-shadow: var(--illusion-box-shadow, transparent);
+  --h4-background: var(--illusion-h4-background, transparent);
+  --h4-border-line-height: var(--illusion-border-line-height, 4px);
+  --h4-color: var(--illusion-header-text, #C14343);
+  --h4-padding: var(--illusion-header-padding, 0);
+  --h4-shadow: var(--illusion-box-shadow, transparent);
+  --h5-background: var(--illusion-h5-background, transparent);
+  --h5-border-line-height: var(--illusion-border-line-height, 4px);
+  --h5-color: var(--illusion-header-text, #C14343);
+  --h5-padding: var(--illusion-header-padding, 0);
+  --h5-shadow: var(--illusion-box-shadow, transparent);
+  --h6-background: var(--illusion-h6-background, transparent);
+  --h6-border-line-height: var(--illusion-border-line-height, 4px);
+  --h6-color: var(--illusion-header-text, #C14343);
+  --h6-padding: var(--illusion-header-padding, 0);
+  --h6-shadow: var(--illusion-box-shadow, transparent);
+  --header-arrow-icon-color: var(--text-dl, #4E5B6F);
+  --heading-formatting: var(--illusion-header-text, #A6BBDE);
+  background: rgb(181, 194, 216) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(181, 194, 216);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h5-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: var(--header-arrow-icon-size, 185.391px);
+}
+
 html[saved-theme="light"] body h6 {
   --font-weight: var(--h6-weight, 700);
   color: var(--h6-color, rgb(193, 67, 67));
   font-family: var(--h6-font, "Calisto MT");
+}
+
+html[saved-theme="light"] body h6::after {
+  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
+  --font-weight: var(--h6-weight, 700);
+  background: rgb(204, 214, 235) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(204, 214, 235);
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h6-color, rgb(193, 67, 67));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing-top, 0px);
+  width: 0px;
 }
 
 html[saved-theme="light"] body hr {
@@ -36960,29 +37544,6 @@ li.task-list-item[data-task="<"]::before {
 html[saved-theme="dark"] body h1.article-title,
 html[saved-theme="light"] body h1.article-title {
   font-size: 2rem;
-  background-color: transparent;
-}
-
-/* Fix: heading sizing */
-html[saved-theme="dark"] body h1,
-html[saved-theme="light"] body h1,
-html[saved-theme="dark"] body h2,
-html[saved-theme="light"] body h2,
-html[saved-theme="dark"] body h3,
-html[saved-theme="light"] body h3,
-html[saved-theme="dark"] body h4,
-html[saved-theme="light"] body h4,
-html[saved-theme="dark"] body h5,
-html[saved-theme="light"] body h5,
-html[saved-theme="dark"] body h6,
-html[saved-theme="light"] body h6,
-html[saved-theme="dark"] body .graph > h3,
-html[saved-theme="light"] body .graph > h3,
-html[saved-theme="dark"] body .backlinks > h3,
-html[saved-theme="light"] body .backlinks > h3,
-html[saved-theme="dark"] body button.desktop-explorer h2,
-html[saved-theme="light"] body button.desktop-explorer h2 {
-  background-color: transparent;
 }
 `,
 };

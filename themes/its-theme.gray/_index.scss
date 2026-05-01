@@ -4601,6 +4601,192 @@ body {
     text-shadow: none;
   }
 
+  h1::after {
+    border: 0px rgb(110, 122, 146);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin-top: var(--heading-spacing-top, 0px);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    width: var(--header-arrow-icon-size, 700px);
+    height: auto;
+    background-color: rgb(204, 214, 235);
+    background-image: none;
+    background: rgb(204, 214, 235) none repeat scroll 0% 0% / auto padding-box border-box;
+    content: "";
+    color: var(--header-arrow-icon-color, rgb(110, 122, 146));
+  }
+
+  h2::after {
+    border: 0px rgb(110, 122, 146);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin-top: var(--heading-spacing-top, 0px);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    width: var(--header-arrow-icon-size, 525.297px);
+    height: auto;
+    background-color: rgb(204, 214, 235);
+    background-image: none;
+    background: rgb(204, 214, 235) none repeat scroll 0% 0% / auto padding-box border-box;
+    content: "";
+    color: var(--h2-color, rgb(110, 122, 146));
+  }
+
+  h3::after {
+    border: 0px rgb(110, 122, 146);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin-top: var(--heading-spacing-top, 0px);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    width: var(--header-arrow-icon-size, 401.688px);
+    height: auto;
+    background-color: rgb(204, 214, 235);
+    background-image: none;
+    background: rgb(204, 214, 235) none repeat scroll 0% 0% / auto padding-box border-box;
+    content: "";
+    color: var(--h3-color, rgb(110, 122, 146));
+  }
+
+  h4::after {
+    border: 0px rgb(110, 122, 146);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin-top: var(--heading-spacing-top, 0px);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    width: var(--header-arrow-icon-size, 271.906px);
+    height: auto;
+    background-color: rgb(204, 214, 235);
+    background-image: none;
+    background: rgb(204, 214, 235) none repeat scroll 0% 0% / auto padding-box border-box;
+    content: "";
+    color: var(--h4-color, rgb(110, 122, 146));
+  }
+
+  h5::after {
+    border: 0px rgb(110, 122, 146);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin-top: var(--heading-spacing-top, 0px);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    width: var(--header-arrow-icon-size, 154.5px);
+    height: auto;
+    background-color: rgb(204, 214, 235);
+    background-image: none;
+    background: rgb(204, 214, 235) none repeat scroll 0% 0% / auto padding-box border-box;
+    content: "";
+    color: var(--h5-color, rgb(110, 122, 146));
+  }
+
+  h6::after {
+    border: 0px rgb(110, 122, 146);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin-top: var(--heading-spacing-top, 0px);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    width: 0px;
+    height: auto;
+    background-color: rgb(204, 214, 235);
+    background-image: none;
+    background: rgb(204, 214, 235) none repeat scroll 0% 0% / auto padding-box border-box;
+    content: "";
+    color: var(--h6-color, rgb(110, 122, 146));
+  }
+
+  h2.page-title,
+  h2.page-title a::after {
+    border: 0px rgb(34, 34, 34);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    content: normal;
+    color: rgb(34, 34, 34);
+  }
+
   li.depth-0 {
     font-weight: var(--nav-item-weight, 700);
   }
@@ -34280,6 +34466,192 @@ html[saved-theme="dark"] {
       color: var(--inline-title-color, rgb(157, 177, 202));
       font-family: var(--inline-title-font, Norwester, Staatliches, "Racing Sans One", Heavitas, "Playfair Display", serif);
       text-shadow: none;
+    }
+
+    h1::after {
+      border: 0px rgb(157, 177, 202);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      margin-top: var(--heading-spacing-top, 0px);
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      width: var(--header-arrow-icon-size, 700px);
+      height: auto;
+      background-color: rgb(36, 43, 61);
+      background-image: none;
+      background: rgb(36, 43, 61) none repeat scroll 0% 0% / auto padding-box border-box;
+      content: "";
+      color: var(--header-arrow-icon-color, rgb(157, 177, 202));
+    }
+
+    h2::after {
+      border: 0px rgb(157, 177, 202);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      margin-top: var(--heading-spacing-top, 0px);
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      width: var(--header-arrow-icon-size, 525.297px);
+      height: auto;
+      background-color: rgb(36, 43, 61);
+      background-image: none;
+      background: rgb(36, 43, 61) none repeat scroll 0% 0% / auto padding-box border-box;
+      content: "";
+      color: var(--h2-color, rgb(157, 177, 202));
+    }
+
+    h3::after {
+      border: 0px rgb(157, 177, 202);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      margin-top: var(--heading-spacing-top, 0px);
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      width: var(--header-arrow-icon-size, 401.688px);
+      height: auto;
+      background-color: rgb(36, 43, 61);
+      background-image: none;
+      background: rgb(36, 43, 61) none repeat scroll 0% 0% / auto padding-box border-box;
+      content: "";
+      color: var(--h3-color, rgb(157, 177, 202));
+    }
+
+    h4::after {
+      border: 0px rgb(157, 177, 202);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      margin-top: var(--heading-spacing-top, 0px);
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      width: var(--header-arrow-icon-size, 271.906px);
+      height: auto;
+      background-color: rgb(36, 43, 61);
+      background-image: none;
+      background: rgb(36, 43, 61) none repeat scroll 0% 0% / auto padding-box border-box;
+      content: "";
+      color: var(--h4-color, rgb(157, 177, 202));
+    }
+
+    h5::after {
+      border: 0px rgb(157, 177, 202);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      margin-top: var(--heading-spacing-top, 0px);
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      width: var(--header-arrow-icon-size, 154.5px);
+      height: auto;
+      background-color: rgb(36, 43, 61);
+      background-image: none;
+      background: rgb(36, 43, 61) none repeat scroll 0% 0% / auto padding-box border-box;
+      content: "";
+      color: var(--h5-color, rgb(157, 177, 202));
+    }
+
+    h6::after {
+      border: 0px rgb(157, 177, 202);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      margin-top: var(--heading-spacing-top, 0px);
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      width: 0px;
+      height: auto;
+      background-color: rgb(36, 43, 61);
+      background-image: none;
+      background: rgb(36, 43, 61) none repeat scroll 0% 0% / auto padding-box border-box;
+      content: "";
+      color: var(--h6-color, rgb(157, 177, 202));
+    }
+
+    h2.page-title,
+    h2.page-title a::after {
+      border: 0px rgb(218, 218, 218);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      margin: 0px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      width: auto;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0);
+      background-image: none;
+      content: normal;
+      color: rgb(218, 218, 218);
     }
 
     li.depth-0 {
