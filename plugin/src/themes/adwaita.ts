@@ -243,11 +243,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(255, 255, 255));
-  font-size: 15px;
-}
-
 html[saved-theme="dark"] body p {
   font-family: "??", Cantarell, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
@@ -1607,11 +1602,6 @@ html[saved-theme="light"] body del {
   color: rgba(0, 0, 0, 0.8);
   outline: rgba(0, 0, 0, 0.8) none 0px;
   text-decoration-color: rgba(0, 0, 0, 0.8);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgba(0, 0, 0, 0.8));
-  font-size: 15px;
 }
 
 html[saved-theme="light"] body p {

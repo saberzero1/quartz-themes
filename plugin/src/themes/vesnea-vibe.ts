@@ -576,10 +576,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: var(--cutepink2, rgb(214, 51, 132));
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(249, 232, 236));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(206, 54, 190);
 }
@@ -2500,10 +2496,6 @@ html[saved-theme="light"] body del {
   outline: color(srgb 0.46735 0.4195 0.6805 / 0.6) none 0px;
   text-decoration: line-through rgb(214, 51, 132);
   text-decoration-color: var(--cutepink2, rgb(214, 51, 132));
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(39, 35, 67));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

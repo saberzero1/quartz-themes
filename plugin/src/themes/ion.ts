@@ -276,10 +276,6 @@ html body del {
   text-decoration-color: rgb(236, 210, 198);
 }
 
-html body h1.article-title {
-  color: var(--ion-color, rgb(236, 210, 198));
-}
-
 html body li.task-list-item input[type="checkbox"] {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px -0.16667em hsl(258, 88%, 50%)) drop-shadow(0px 0px -0.16667em hsl(258, 88%, 50%)));
   --ion-h: var(--accent-h, 258);

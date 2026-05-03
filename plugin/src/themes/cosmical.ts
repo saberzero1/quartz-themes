@@ -389,10 +389,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: oklch(1 0 0);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, oklch(1 0 0));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: oklch(0.58 0 0);
 }
@@ -2321,10 +2317,6 @@ html[saved-theme="light"] body del {
   color: oklch(0 0 0);
   outline: oklch(0 0 0) none 0px;
   text-decoration-color: oklch(0 0 0);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, oklch(0 0 0));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

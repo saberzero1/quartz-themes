@@ -603,8 +603,8 @@ body {
   }
 
   .text-highlight {
-    background-color: rgb(255, 255, 0);
-    color: rgb(0, 0, 0);
+    background-color: rgba(var(--color-accent-rgb), 0.2);
+    color: var(--text-accent, rgb(247, 69, 69));
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -642,15 +642,6 @@ body {
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
-    border: 0px rgb(0, 0, 0);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
   }
 
   del {
@@ -3171,6 +3162,20 @@ body {
     border-bottom-right-radius: 24.5px;
   }
 
+  .search-highlight {
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
+    border: 0px rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
   li.task-list-item input[type="checkbox"] {
     border-color: rgb(102, 102, 102);
     border-radius: 0px;
@@ -3181,12 +3186,6 @@ body {
   li.task-list-item input[type="checkbox"]:checked {
     background-color: var(--checkbox-color, rgba(0, 0, 0, 0));
     border-color: rgba(0, 0, 0, 0);
-  }
-
-  h1.article-title {
-    color: var(--inline-title-color, rgb(255, 255, 255));
-    font-size: var(--inline-title-size, 80px);
-    font-weight: var(--inline-title-weight, 900);
   }
 
   .stacked-page {
@@ -3200,6 +3199,12 @@ body {
 
   .stacked-page.active {
     border-color: rgb(197, 197, 197);
+  }
+
+  h1.article-title {
+    color: var(--inline-title-color, rgb(255, 255, 255));
+    font-size: var(--inline-title-size, 80px);
+    font-weight: var(--inline-title-weight, 900);
   }
 
   li.task-list-item[data-task="_"] {

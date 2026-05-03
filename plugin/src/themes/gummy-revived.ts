@@ -342,10 +342,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(189, 189, 189);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(189, 189, 189));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   background-color: rgb(31, 31, 31);
   border-color: rgb(255, 255, 255);
@@ -3044,10 +3040,6 @@ html[saved-theme="light"] body del {
   font-family: "??", "Space Grotesk", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(90, 90, 90) none 0px;
   text-decoration-color: rgb(90, 90, 90);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(90, 90, 90));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

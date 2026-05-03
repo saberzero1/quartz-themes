@@ -381,10 +381,6 @@ html[saved-theme="dark"] body del {
   font-family: "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  font-size: 16px;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   background-color: rgb(38, 40, 53);
   border-color: rgb(93, 109, 126);
@@ -1994,10 +1990,6 @@ html[saved-theme="light"] body .text-highlight {
 
 html[saved-theme="light"] body del {
   font-family: "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html[saved-theme="light"] body h1.article-title {
-  font-size: 16px;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

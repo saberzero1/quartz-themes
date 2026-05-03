@@ -632,8 +632,8 @@ body {
   }
 
   .text-highlight {
-    background-color: rgb(255, 255, 0);
-    color: rgb(0, 0, 0);
+    background-color: var(--text-highlight-bg, rgba(255, 208, 0, 0.4));
+    color: var(--text-normal, rgb(34, 34, 34));
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -671,15 +671,6 @@ body {
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
-    border: 0px rgb(0, 0, 0);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
   }
 
   del {
@@ -3101,6 +3092,20 @@ body {
     border-bottom-right-radius: 24.5px;
   }
 
+  .search-highlight {
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
+    border: 0px rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
   li.task-list-item input[type="checkbox"] {
     border-color: rgb(171, 171, 171);
     border-radius: 12px;
@@ -3111,12 +3116,6 @@ body {
   li.task-list-item input[type="checkbox"]:checked {
     background-color: var(--checkbox-color, rgb(152, 115, 247));
     border-color: rgb(152, 115, 247);
-  }
-
-  h1.article-title {
-    color: var(--inline-title-color, rgb(255, 196, 68));
-    font-size: var(--inline-title-size, 25.888px);
-    font-weight: var(--inline-title-weight, 700);
   }
 
   .stacked-page {
@@ -3130,6 +3129,12 @@ body {
 
   .stacked-page.active {
     border-color: rgb(2, 2, 34);
+  }
+
+  h1.article-title {
+    color: var(--inline-title-color, rgb(255, 196, 68));
+    font-size: var(--inline-title-size, 25.888px);
+    font-weight: var(--inline-title-weight, 700);
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -4160,8 +4165,8 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: rgb(255, 255, 0);
-      color: rgb(0, 0, 0);
+      background-color: var(--text-highlight-bg, rgba(255, 208, 0, 0.4));
+      color: var(--text-normal, rgb(218, 218, 218));
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -4199,15 +4204,6 @@ html[saved-theme="dark"] {
       animation-direction: normal;
       animation-fill-mode: none;
       animation-play-state: running;
-      border: 0px rgb(0, 0, 0);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
     }
 
     del {
@@ -6629,6 +6625,20 @@ html[saved-theme="dark"] {
       border-bottom-right-radius: 24.5px;
     }
 
+    .search-highlight {
+      background-color: rgb(255, 255, 0);
+      color: rgb(0, 0, 0);
+      border: 0px rgb(0, 0, 0);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+    }
+
     li.task-list-item input[type="checkbox"] {
       border-color: rgb(102, 102, 102);
       border-radius: 12px;
@@ -6639,12 +6649,6 @@ html[saved-theme="dark"] {
     li.task-list-item input[type="checkbox"]:checked {
       background-color: var(--checkbox-color, rgb(138, 92, 245));
       border-color: rgb(138, 92, 245);
-    }
-
-    h1.article-title {
-      color: var(--inline-title-color, rgb(255, 196, 68));
-      font-size: var(--inline-title-size, 25.888px);
-      font-weight: var(--inline-title-weight, 700);
     }
 
     .stacked-page {
@@ -6658,6 +6662,12 @@ html[saved-theme="dark"] {
 
     .stacked-page.active {
       border-color: rgb(221, 221, 253);
+    }
+
+    h1.article-title {
+      color: var(--inline-title-color, rgb(255, 196, 68));
+      font-size: var(--inline-title-size, 25.888px);
+      font-weight: var(--inline-title-weight, 700);
     }
   }
 }

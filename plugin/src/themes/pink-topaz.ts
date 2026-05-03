@@ -428,12 +428,6 @@ html[saved-theme="dark"] body footer {
   --bar-height: calc(22px + var(--bar-vertical-padding));
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(239, 233, 217));
-  font-size: var(--font-size-file-header-title, 12.1875px);
-  font-weight: 600;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(239, 233, 217);
 }
@@ -2294,12 +2288,6 @@ html[saved-theme="light"] body del {
 
 html[saved-theme="light"] body footer {
   --bar-height: calc(22px + var(--bar-vertical-padding));
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(55, 41, 26));
-  font-size: var(--font-size-file-header-title, 12.1875px);
-  font-weight: 600;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

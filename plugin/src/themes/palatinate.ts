@@ -469,7 +469,6 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 }
 
 html[saved-theme="dark"] body h1::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h1-weight, 700);
   background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
@@ -501,7 +500,6 @@ html[saved-theme="dark"] body h2 {
 }
 
 html[saved-theme="dark"] body h2::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h2-weight, 680);
   background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
@@ -533,7 +531,6 @@ html[saved-theme="dark"] body h3 {
 }
 
 html[saved-theme="dark"] body h3::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h3-weight, 660);
   background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
@@ -565,7 +562,6 @@ html[saved-theme="dark"] body h4 {
 }
 
 html[saved-theme="dark"] body h4::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h4-weight, 640);
   background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
@@ -597,7 +593,6 @@ html[saved-theme="dark"] body h5 {
 }
 
 html[saved-theme="dark"] body h5::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h5-weight, 620);
   background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
@@ -1051,7 +1046,6 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 }
 
 html[saved-theme="light"] body h1::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h1-weight, 700);
   background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
@@ -1083,7 +1077,6 @@ html[saved-theme="light"] body h2 {
 }
 
 html[saved-theme="light"] body h2::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h2-weight, 680);
   background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
@@ -1115,7 +1108,6 @@ html[saved-theme="light"] body h3 {
 }
 
 html[saved-theme="light"] body h3::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h3-weight, 660);
   background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
@@ -1147,7 +1139,6 @@ html[saved-theme="light"] body h4 {
 }
 
 html[saved-theme="light"] body h4::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h4-weight, 640);
   background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
@@ -1179,7 +1170,6 @@ html[saved-theme="light"] body h5 {
 }
 
 html[saved-theme="light"] body h5::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h5-weight, 620);
   background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);

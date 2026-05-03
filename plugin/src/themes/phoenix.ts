@@ -411,10 +411,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(234, 218, 217);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(234, 218, 217));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(98, 94, 94);
 }
@@ -2185,10 +2181,6 @@ html[saved-theme="light"] body del {
   font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
   outline: rgb(30, 30, 30) none 0px;
   text-decoration-color: rgb(30, 30, 30);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(30, 30, 30));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

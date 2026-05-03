@@ -391,10 +391,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(255, 255, 255));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   background-color: var(--input-color, rgba(10, 10, 10, 0.8));
   border-color: rgb(42, 42, 42);
@@ -2480,10 +2476,6 @@ html[saved-theme="light"] body del {
   font-family: "EB Garamond", Georgia, serif;
   outline: rgb(32, 33, 36) none 0px;
   text-decoration-color: rgb(32, 33, 36);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(32, 33, 36));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

@@ -1818,11 +1818,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(211, 213, 211);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(211, 213, 211));
-  font-size: 14.5622px;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(90, 143, 205);
   border-radius: 2px;
@@ -5304,11 +5299,6 @@ html[saved-theme="light"] body del {
   color: rgb(8, 8, 8);
   outline: rgb(8, 8, 8) none 0px;
   text-decoration-color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(8, 8, 8));
-  font-size: 14.5622px;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

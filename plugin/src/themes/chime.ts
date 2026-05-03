@@ -417,11 +417,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(160, 167, 196);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(160, 167, 196));
-  font-size: 14px;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(125, 127, 149);
   border-radius: 8px;
@@ -2514,11 +2509,6 @@ html[saved-theme="light"] body del {
   font-family: "??", "??", Arima, cursive;
   outline: rgb(89, 79, 103) none 0px;
   text-decoration-color: rgb(89, 79, 103);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(89, 79, 103));
-  font-size: 14px;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

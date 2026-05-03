@@ -314,11 +314,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(244, 244, 244);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(244, 244, 244));
-  font-size: 14px;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-radius: 0px;
 }
@@ -2037,11 +2032,6 @@ html[saved-theme="light"] body del {
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(38, 38, 38) none 0px;
   text-decoration-color: rgb(38, 38, 38);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(38, 38, 38));
-  font-size: 14px;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

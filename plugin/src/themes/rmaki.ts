@@ -188,10 +188,6 @@ html body del {
   text-decoration-color: rgb(218, 231, 246);
 }
 
-html body h1.article-title {
-  color: var(--editor-title, rgb(218, 231, 246));
-}
-
 html body p {
   font-family: "Fira Code", monospace;
 }`,

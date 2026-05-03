@@ -1193,10 +1193,6 @@ html[saved-theme="dark"] body footer {
   --vault-profile-color: var(--opp-text-normal, oklch(0.98 0 0));
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, oklch(0.98 0 0));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: oklch(0.48 0 0);
   border-radius: 800px;
@@ -3008,7 +3004,6 @@ html[saved-theme="dark"] body .callout[data-callout="aside"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -3557,7 +3552,6 @@ html[saved-theme="dark"] body .callout[data-callout="attachment"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -4149,7 +4143,6 @@ html[saved-theme="dark"] body .callout[data-callout="code"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -4698,7 +4691,6 @@ html[saved-theme="dark"] body .callout[data-callout="columns"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -5289,7 +5281,6 @@ html[saved-theme="dark"] body .callout[data-callout="email"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -5924,7 +5915,6 @@ html[saved-theme="dark"] body .callout[data-callout="file"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -6473,7 +6463,6 @@ html[saved-theme="dark"] body .callout[data-callout="goal"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -7022,7 +7011,6 @@ html[saved-theme="dark"] body .callout[data-callout="images"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -7613,7 +7601,6 @@ html[saved-theme="dark"] body .callout[data-callout="infobox"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -8162,7 +8149,6 @@ html[saved-theme="dark"] body .callout[data-callout="kanban"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -8711,7 +8697,6 @@ html[saved-theme="dark"] body .callout[data-callout="link"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -9260,7 +9245,6 @@ html[saved-theme="dark"] body .callout[data-callout="mail"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -9809,7 +9793,6 @@ html[saved-theme="dark"] body .callout[data-callout="minus"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -10358,7 +10341,6 @@ html[saved-theme="dark"] body .callout[data-callout="negative"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -10950,7 +10932,6 @@ html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -11499,7 +11480,6 @@ html[saved-theme="dark"] body .callout[data-callout="phone"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -12048,7 +12028,6 @@ html[saved-theme="dark"] body .callout[data-callout="plus"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -12597,7 +12576,6 @@ html[saved-theme="dark"] body .callout[data-callout="positive"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -13361,7 +13339,6 @@ html[saved-theme="dark"] body .callout[data-callout="url"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.19 0 0);
   --flair-color: oklch(0.98 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -15526,10 +15503,6 @@ html[saved-theme="light"] body footer {
   --vault-profile-color: var(--opp-text-normal, oklch(0 0 0));
 }
 
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, oklch(0 0 0));
-}
-
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
   border-color: oklch(0.6 0 0);
   border-radius: 800px;
@@ -17343,7 +17316,6 @@ html[saved-theme="light"] body .callout[data-callout="aside"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -17890,7 +17862,6 @@ html[saved-theme="light"] body .callout[data-callout="attachment"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -18480,7 +18451,6 @@ html[saved-theme="light"] body .callout[data-callout="code"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -19027,7 +18997,6 @@ html[saved-theme="light"] body .callout[data-callout="columns"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -19616,7 +19585,6 @@ html[saved-theme="light"] body .callout[data-callout="email"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -20249,7 +20217,6 @@ html[saved-theme="light"] body .callout[data-callout="file"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -20796,7 +20763,6 @@ html[saved-theme="light"] body .callout[data-callout="goal"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -21343,7 +21309,6 @@ html[saved-theme="light"] body .callout[data-callout="images"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -21932,7 +21897,6 @@ html[saved-theme="light"] body .callout[data-callout="infobox"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -22479,7 +22443,6 @@ html[saved-theme="light"] body .callout[data-callout="kanban"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -23026,7 +22989,6 @@ html[saved-theme="light"] body .callout[data-callout="link"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -23573,7 +23535,6 @@ html[saved-theme="light"] body .callout[data-callout="mail"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -24120,7 +24081,6 @@ html[saved-theme="light"] body .callout[data-callout="minus"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -24667,7 +24627,6 @@ html[saved-theme="light"] body .callout[data-callout="negative"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -25257,7 +25216,6 @@ html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -25804,7 +25762,6 @@ html[saved-theme="light"] body .callout[data-callout="phone"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -26351,7 +26308,6 @@ html[saved-theme="light"] body .callout[data-callout="plus"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -26898,7 +26854,6 @@ html[saved-theme="light"] body .callout[data-callout="positive"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
@@ -27660,7 +27615,6 @@ html[saved-theme="light"] body .callout[data-callout="url"] {
   --enable-bw-table: 0;
   --flair-background: oklch(0.95 0 0);
   --flair-color: oklch(0 0 0);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";

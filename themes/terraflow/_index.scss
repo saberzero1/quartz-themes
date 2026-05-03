@@ -906,8 +906,8 @@ body {
   }
 
   .text-highlight {
-    background-color: rgb(255, 255, 0);
-    color: rgb(0, 0, 0);
+    background-color: rgba(var(--highlight-bg-rgb, var(--primary-color-rgb)), 0.34);
+    color: var(--highlight-bg-light-color, rgb(45, 31, 14));
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -945,15 +945,6 @@ body {
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
-    border: 0px rgb(0, 0, 0);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
   }
 
   del {
@@ -3497,6 +3488,20 @@ body {
     border-bottom-right-radius: 6px;
   }
 
+  .search-highlight {
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
+    border: 0px rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
   li.task-list-item input[type="checkbox"] {
     border-color: rgb(174, 78, 54);
     border-radius: 6px;
@@ -3507,12 +3512,6 @@ body {
   li.task-list-item input[type="checkbox"]:checked {
     background-color: var(--checkbox-color, rgb(174, 78, 54));
     border-color: rgb(174, 78, 54);
-  }
-
-  h1.article-title {
-    color: var(--primary-color, rgb(217, 119, 86));
-    font-size: var(--inline-title-size, 25.888px);
-    font-weight: var(--inline-title-weight, 700);
   }
 
   .stacked-page {
@@ -3526,6 +3525,12 @@ body {
 
   .stacked-page.active {
     border-color: rgb(61, 46, 26);
+  }
+
+  h1.article-title {
+    color: var(--primary-color, rgb(217, 119, 86));
+    font-size: var(--inline-title-size, 25.888px);
+    font-weight: var(--inline-title-weight, 700);
   }
 
   .callout[data-callout="video"] {
@@ -10098,8 +10103,8 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: rgb(255, 255, 0);
-      color: rgb(0, 0, 0);
+      background-color: rgba(var(--highlight-bg-rgb, var(--primary-color-rgb)), 0.34);
+      color: var(--highlight-bg-light-color, rgb(242, 192, 136));
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -10137,15 +10142,6 @@ html[saved-theme="dark"] {
       animation-direction: normal;
       animation-fill-mode: none;
       animation-play-state: running;
-      border: 0px rgb(0, 0, 0);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
     }
 
     del {
@@ -12690,6 +12686,20 @@ html[saved-theme="dark"] {
       border-bottom-right-radius: 6px;
     }
 
+    .search-highlight {
+      background-color: rgb(255, 255, 0);
+      color: rgb(0, 0, 0);
+      border: 0px rgb(0, 0, 0);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+    }
+
     li.task-list-item input[type="checkbox"] {
       border-color: rgb(226, 122, 90);
       border-radius: 6px;
@@ -12700,12 +12710,6 @@ html[saved-theme="dark"] {
     li.task-list-item input[type="checkbox"]:checked {
       background-color: var(--checkbox-color, rgb(226, 122, 90));
       border-color: rgb(226, 122, 90);
-    }
-
-    h1.article-title {
-      color: var(--primary-color, rgb(240, 145, 111));
-      font-size: var(--inline-title-size, 25.888px);
-      font-weight: var(--inline-title-weight, 700);
     }
 
     .stacked-page {
@@ -12719,6 +12723,12 @@ html[saved-theme="dark"] {
 
     .stacked-page.active {
       border-color: rgb(232, 220, 198);
+    }
+
+    h1.article-title {
+      color: var(--primary-color, rgb(240, 145, 111));
+      font-size: var(--inline-title-size, 25.888px);
+      font-weight: var(--inline-title-weight, 700);
     }
 
     .callout[data-callout="video"] {

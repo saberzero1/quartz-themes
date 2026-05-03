@@ -461,10 +461,6 @@ html[saved-theme="dark"] body footer {
   --status-bar-background: var(--bg5, hsl(230/**/15%22%));
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(195, 200, 223));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(138, 143, 168);
   border-radius: 8px;
@@ -2754,10 +2750,6 @@ html[saved-theme="light"] body del {
 
 html[saved-theme="light"] body footer {
   --status-bar-background: var(--bg5, hsl(230/**/25%88%));
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(31, 41, 92));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

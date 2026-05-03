@@ -485,10 +485,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(197, 184, 161);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(197, 184, 161));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(158, 158, 158);
   border-radius: 2px;
@@ -2665,10 +2661,6 @@ html[saved-theme="light"] body del {
   font-family: "iA Writer Quattro S";
   outline: rgb(38, 38, 38) none 0px;
   text-decoration-color: rgb(38, 38, 38);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(38, 38, 38));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

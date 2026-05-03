@@ -403,8 +403,8 @@ body {
   }
 
   .text-highlight {
-    background-color: rgb(255, 255, 0);
-    color: rgb(0, 0, 0);
+    background-color: var(--content-text-highlighted-bg, rgb(223, 225, 77));
+    color: var(--content-text-highlighted, rgb(53, 53, 53));
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -427,15 +427,6 @@ body {
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
-    border: 0px rgb(0, 0, 0);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
   }
 
   del {
@@ -2767,6 +2758,20 @@ body {
     border-bottom-right-radius: 27.5625px;
   }
 
+  .search-highlight {
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
+    border: 0px rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
   li.task-list-item input[type="checkbox"] {
     border-color: rgb(81, 86, 99);
     border-radius: 4px;
@@ -2777,12 +2782,6 @@ body {
   li.task-list-item input[type="checkbox"]:checked {
     background-color: var(--checkbox-color, rgb(76, 120, 204));
     border-color: rgb(76, 120, 204);
-  }
-
-  h1.article-title {
-    color: var(--inline-title-color, rgb(218, 218, 218));
-    font-size: var(--inline-title-size, 29.124px);
-    font-weight: var(--inline-title-weight, 700);
   }
 
   .stacked-page {
@@ -2796,6 +2795,12 @@ body {
 
   .stacked-page.active {
     border-color: rgb(218, 218, 218);
+  }
+
+  h1.article-title {
+    color: var(--inline-title-color, rgb(218, 218, 218));
+    font-size: var(--inline-title-size, 29.124px);
+    font-weight: var(--inline-title-weight, 700);
   }
 
   html {

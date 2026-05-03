@@ -285,10 +285,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(145, 145, 145);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(145, 145, 145));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(153, 153, 153);
 }
@@ -1931,10 +1927,6 @@ html[saved-theme="light"] body del {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   outline: rgb(51, 51, 51) none 0px;
   text-decoration-color: rgb(51, 51, 51);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(51, 51, 51));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

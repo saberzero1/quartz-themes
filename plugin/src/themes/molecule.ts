@@ -19,11 +19,7 @@ html body {
 html body html {
   --default-font: 'JetBrains Mono';
 }`,
-    typography: `html body h1.article-title {
-  font-weight: 600;
-}
-
-html body p {
+    typography: `html body p {
   font-family: "??", "??", "JetBrains Mono", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     links: `html body a.external-link, html footer a {

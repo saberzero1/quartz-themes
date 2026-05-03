@@ -540,12 +540,6 @@ html[saved-theme="dark"] body footer {
   --status-bar-border-width: var(--border-width, 1px);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(255, 255, 255));
-  font-size: 11px;
-  font-weight: max(var(--file-header-font-weight),var(--font-medium));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(153, 153, 155);
   border-radius: 100px;
@@ -2182,7 +2176,6 @@ html[saved-theme="dark"] body .callout[data-callout="banner-icon"] {
   --dropdown-padding: 0 2.4em 0 0.8em;
   --flair-background: color-mix(in srgb, #2e2e32, #fff 10%);
   --flair-color: #fff;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Adwaita Sans", "Adwaita Sans Text", '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -2738,7 +2731,6 @@ html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
   --dropdown-padding: 0 2.4em 0 0.8em;
   --flair-background: color-mix(in srgb, #2e2e32, #fff 10%);
   --flair-color: #fff;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Adwaita Sans", "Adwaita Sans Text", '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -4267,12 +4259,6 @@ html[saved-theme="light"] body del {
 
 html[saved-theme="light"] body footer {
   --status-bar-border-width: var(--border-width, 1px);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(51, 51, 56));
-  font-size: 11px;
-  font-weight: max(var(--file-header-font-weight),var(--font-medium));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
@@ -5850,7 +5836,6 @@ html[saved-theme="light"] body .callout[data-callout="banner-icon"] {
   --dropdown-padding: 0 2.4em 0 0.8em;
   --flair-background: color-mix(in srgb, #ebebed, #333338 10%);
   --flair-color: #333338;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Adwaita Sans", "Adwaita Sans Text", '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -6404,7 +6389,6 @@ html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
   --dropdown-padding: 0 2.4em 0 0.8em;
   --flair-background: color-mix(in srgb, #ebebed, #333338 10%);
   --flair-color: #333338;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Adwaita Sans", "Adwaita Sans Text", '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;

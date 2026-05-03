@@ -893,10 +893,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(157, 157, 157);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(157, 157, 157));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(119, 142, 85);
   border-radius: 50%;
@@ -2111,7 +2107,6 @@ html[saved-theme="dark"] body .callout[data-callout="sparkle"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #9d9d9d;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Noto Sans', sans-serif;
   --font-mermaid: '??', 'Noto Sans', sans-serif, 'Noto Sans', sans-serif;
   --font-monospace: '??', '??', 'JetBrains Mono', monospace;
@@ -3681,10 +3676,6 @@ html[saved-theme="light"] body del {
   text-decoration-color: rgb(64, 64, 64);
 }
 
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(64, 64, 64));
-}
-
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(89, 109, 58);
   border-radius: 50%;
@@ -4899,7 +4890,6 @@ html[saved-theme="light"] body .callout[data-callout="sparkle"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #e1e1e1;
   --flair-color: #404040;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', 'Noto Sans', sans-serif;
   --font-mermaid: '??', 'Noto Sans', sans-serif, 'Noto Sans', sans-serif;
   --font-monospace: '??', '??', 'JetBrains Mono', monospace;

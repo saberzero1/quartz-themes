@@ -183,10 +183,6 @@ html body .text-highlight {
   background-color: var(--text-highlight-bg, rgba(158, 206, 106, 0.4));
 }
 
-html body h1.article-title {
-  font-size: 14px;
-}
-
 html body li.task-list-item input[type="checkbox"] {
   border-color: rgba(86, 95, 137, 0.533);
 }`,

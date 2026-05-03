@@ -512,10 +512,6 @@ html body footer {
   --titlebar-text-color: var(--text-muted, hsl(232, 60%, 50%));
 }
 
-html body h1.article-title {
-  color: var(--text-normal, rgb(0, 0, 0));
-}
-
 html body li.task-list-item input[type="checkbox"] {
   border-color: rgb(158, 159, 169);
 }
@@ -1787,7 +1783,6 @@ html body h1.article-title {
 }
 
 html body h1::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h1-weight, 700);
   background: rgb(232, 241, 252) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(232, 241, 252);
@@ -1821,7 +1816,6 @@ html body h2.page-title, html h2.page-title a {
 }
 
 html body h2::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h2-weight, 680);
   background: rgb(232, 241, 252) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(232, 241, 252);

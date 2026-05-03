@@ -267,10 +267,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(223, 204, 195);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(223, 204, 195));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(147, 104, 78);
 }
@@ -1878,10 +1874,6 @@ html[saved-theme="light"] body del {
   font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(35, 25, 21) none 0px;
   text-decoration-color: rgb(35, 25, 21);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(35, 25, 21));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

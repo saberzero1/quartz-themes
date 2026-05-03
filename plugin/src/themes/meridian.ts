@@ -182,10 +182,6 @@ html[saved-theme="dark"] body footer {
   opacity: 0.5;
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(204, 204, 204));
-}
-
 html[saved-theme="dark"] body p {
   color: var(--text-muted, rgb(112, 112, 112));
   outline: rgb(112, 112, 112) none 0px;
@@ -1581,10 +1577,6 @@ html[saved-theme="light"] body del {
 
 html[saved-theme="light"] body footer {
   opacity: 0.5;
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body p {

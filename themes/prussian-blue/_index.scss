@@ -760,8 +760,8 @@ body {
   }
 
   .text-highlight {
-    background-color: rgb(255, 255, 0);
-    color: rgb(0, 0, 0);
+    background-color: var(--text-highlight-bg, rgb(18, 40, 134));
+    color: var(--text-highlight-fg, rgb(15, 17, 22));
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -797,15 +797,6 @@ body {
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
-    border: 0px rgb(0, 0, 0);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
   }
 
   del {
@@ -3306,6 +3297,20 @@ body {
     border-bottom-right-radius: 7.35px;
   }
 
+  .search-highlight {
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
+    border: 0px rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
   li.task-list-item input[type="checkbox"] {
     border-color: rgb(18, 40, 134);
     border-radius: 0px;
@@ -3316,12 +3321,6 @@ body {
   li.task-list-item input[type="checkbox"]:checked {
     background-color: var(--checkbox-color, rgb(18, 40, 134));
     border-color: rgb(18, 40, 134);
-  }
-
-  h1.article-title {
-    color: var(--inline-title-color, rgb(18, 40, 134));
-    font-size: var(--inline-title-size, 31.0656px);
-    font-weight: var(--inline-title-weight, 700);
   }
 
   .stacked-page {
@@ -3335,6 +3334,12 @@ body {
 
   .stacked-page.active {
     border-color: rgb(235, 235, 251);
+  }
+
+  h1.article-title {
+    color: var(--inline-title-color, rgb(18, 40, 134));
+    font-size: var(--inline-title-size, 31.0656px);
+    font-weight: var(--inline-title-weight, 700);
   }
 
   li.task-list-item[data-task="_"] {

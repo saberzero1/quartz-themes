@@ -463,10 +463,6 @@ html body del {
   text-decoration-color: oklch(0.92 0.004 279.29);
 }
 
-html body h1.article-title {
-  color: var(--text-normal, oklch(0.92 0.004 279.29));
-}
-
 html body li.task-list-item input[type="checkbox"] {
   border-color: oklch(0.485 0.039 279.29);
   border-radius: 100%;

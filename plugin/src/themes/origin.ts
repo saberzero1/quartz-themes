@@ -276,10 +276,6 @@ html[saved-theme="dark"] body del {
   font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  font-weight: 600;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-radius: 3px;
 }
@@ -1812,11 +1808,6 @@ html[saved-theme="light"] body del {
   font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
   outline: rgb(46, 51, 56) none 0px;
   text-decoration-color: rgb(46, 51, 56);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(46, 51, 56));
-  font-weight: 600;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

@@ -425,17 +425,24 @@ export function generateAutoConfig(themeName, options = {}) {
  * @returns {Array} - Merged config
  */
 export function mergeConfigs(manualConfig, autoConfig) {
-  // Build lookup of manual obsidian selectors
-  const manualSelectors = new Set(
+  // Build lookups of manual selectors — both obsidian and quartz — so auto
+  // entries that would produce duplicate CSS blocks are filtered out.
+  const manualObsidianSelectors = new Set(
     manualConfig.map((m) => m.obsidianSelector).filter(Boolean),
+  );
+  const manualQuartzSelectors = new Set(
+    manualConfig.map((m) => m.quartzSelector).filter(Boolean),
   );
 
   // Start with all manual entries
   const merged = [...manualConfig];
 
-  // Add auto entries that don't conflict with manual
+  // Add auto entries that don't conflict with manual on either selector
   for (const autoEntry of autoConfig) {
-    if (!manualSelectors.has(autoEntry.obsidianSelector)) {
+    if (
+      !manualObsidianSelectors.has(autoEntry.obsidianSelector) &&
+      !manualQuartzSelectors.has(autoEntry.quartzSelector)
+    ) {
       merged.push(autoEntry);
     }
   }

@@ -339,11 +339,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(248, 248, 242);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(248, 248, 242));
-  font-size: 14px;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(117, 158, 147);
   border-radius: 50%;
@@ -2179,11 +2174,6 @@ html[saved-theme="light"] body del {
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(21, 24, 30) none 0px;
   text-decoration-color: rgb(21, 24, 30);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(21, 24, 30));
-  font-size: 14px;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

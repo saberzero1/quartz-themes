@@ -555,10 +555,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: color(srgb 0.849412 0.872745 0.910588 / 0.7);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, color(srgb 0.849412 0.872745 0.910588 / 0.7));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   background-color: rgb(from var(--mono-rgb-100) r g b/0.05);
   border-color: color(srgb 0.849412 0.872745 0.910588 / 0.15);
@@ -2218,7 +2214,6 @@ html[saved-theme="dark"] body .callout-title {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: color-mix(in srgb, hsl(212, 100%, 50%) 4%, #09090b);
   --flair-color: color-mix(in srgb, color-mix(in srgb, hsl(212, 100%, 50%) 5%, #e4e4e7) 70%, transparent);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Instrument", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: "Monaspace", monospace;
@@ -3104,7 +3099,6 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h2::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h2-weight, 600);
   background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 119, 255) 0%, color(srgb 0 0.466667 1 / 0.2) 60%, rgba(0, 0, 0, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
@@ -3952,10 +3946,6 @@ html[saved-theme="light"] body del {
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: color(srgb 0.1426 0.32234 0.3934 / 0.7) none 0px;
   text-decoration-color: color(srgb 0.1426 0.32234 0.3934 / 0.7);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, color(srgb 0.1426 0.32234 0.3934 / 0.7));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
@@ -5622,7 +5612,6 @@ html[saved-theme="light"] body .callout-title {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: color-mix(in srgb, hsl(197, 95%, 67%) 6%, color-mix(in srgb, hsl(197, 95%, 67%) 3%, #fcfcfc));
   --flair-color: color-mix(in srgb, color-mix(in srgb, hsl(197, 95%, 67%) 40%, #000000) 70%, transparent);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Instrument", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: "Monaspace", monospace;
@@ -6597,7 +6586,6 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h2::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h2-weight, 600);
   background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(91, 205, 251) 0%, color(srgb 0.3565 0.80585 0.9835 / 0.2) 60%, rgba(0, 0, 0, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);

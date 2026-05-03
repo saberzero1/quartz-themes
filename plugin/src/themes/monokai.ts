@@ -291,11 +291,6 @@ html[saved-theme="dark"] body footer {
   --bar-height: calc(22px + var(--bar-vertical-padding)*2);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(255, 255, 255));
-  font-weight: 600;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(250, 216, 114);
 }
@@ -1918,11 +1913,6 @@ html[saved-theme="light"] body del {
 
 html[saved-theme="light"] body footer {
   --bar-height: calc(22px + var(--bar-vertical-padding)*2);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(44, 41, 45));
-  font-weight: 600;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

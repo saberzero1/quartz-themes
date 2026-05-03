@@ -715,12 +715,6 @@ html body del {
   text-decoration-color: rgb(124, 132, 156);
 }
 
-html body h1.article-title {
-  color: var(--text-normal, rgb(185, 195, 223));
-  font-size: 14px;
-  font-weight: var(--file-header-font-weight, 500);
-}
-
 html body li.task-list-item input[type="checkbox"] {
   background-color: rgb(30, 31, 36);
   border-color: rgb(67, 72, 81);
@@ -1917,7 +1911,6 @@ html body .callout[data-callout="con"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(230, 8%, 10%);
   --flair-color: hsl(224, 37%, 80%);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'DM Sans', 'Inter', -apple-system
     BlinkMacSystemFont, 'Segoe UI', 'Ubuntu',
     Helvetica, Arial, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2408,7 +2401,6 @@ html body .callout[data-callout="idea"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(230, 8%, 10%);
   --flair-color: hsl(224, 37%, 80%);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'DM Sans', 'Inter', -apple-system
     BlinkMacSystemFont, 'Segoe UI', 'Ubuntu',
     Helvetica, Arial, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2845,7 +2837,6 @@ html body .callout[data-callout="pro"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(230, 8%, 10%);
   --flair-color: hsl(224, 37%, 80%);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'DM Sans', 'Inter', -apple-system
     BlinkMacSystemFont, 'Segoe UI', 'Ubuntu',
     Helvetica, Arial, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3282,7 +3273,6 @@ html body .callout[data-callout="related"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: hsl(230, 8%, 10%);
   --flair-color: hsl(224, 37%, 80%);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'DM Sans', 'Inter', -apple-system
     BlinkMacSystemFont, 'Segoe UI', 'Ubuntu',
     Helvetica, Arial, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;

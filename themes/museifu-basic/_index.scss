@@ -491,8 +491,8 @@ body {
   }
 
   .text-highlight {
-    background-color: rgb(255, 255, 0);
-    color: rgb(0, 0, 0);
+    background-color: var(--text-highlight-bg, color(srgb 0.54032 0.3608 0.9592 / 0.3));
+    color: var(--accent-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -515,15 +515,6 @@ body {
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
-    border: 0px rgb(0, 0, 0);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
   }
 
   del {
@@ -2790,6 +2781,20 @@ body {
     border-bottom-right-radius: 24.5px;
   }
 
+  .search-highlight {
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
+    border: 0px rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
   li.task-list-item input[type="checkbox"] {
     border-color: rgb(138, 92, 245);
     border-radius: 15px;
@@ -2800,12 +2805,6 @@ body {
   li.task-list-item input[type="checkbox"]:checked {
     background-color: var(--checkbox-color, rgb(138, 92, 245));
     border-color: rgb(138, 92, 245);
-  }
-
-  h1.article-title {
-    color: var(--inline-title-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
-    font-size: var(--inline-title-size, 25.888px);
-    font-weight: var(--inline-title-weight, 700);
   }
 
   .stacked-page {
@@ -2819,6 +2818,12 @@ body {
 
   .stacked-page.active {
     border-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  }
+
+  h1.article-title {
+    color: var(--inline-title-color, color(srgb 0.300178 0.200444 0.532889 / 0.9));
+    font-size: var(--inline-title-size, 25.888px);
+    font-weight: var(--inline-title-weight, 700);
   }
 
   li.task-list-item[data-task="_"] {
@@ -8190,8 +8195,8 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: rgb(255, 255, 0);
-      color: rgb(0, 0, 0);
+      background-color: var(--text-highlight-bg, color(srgb 0.54032 0.3608 0.9592 / 0.3));
+      color: var(--accent-color, color(srgb 0.862096 0.80824 0.98776));
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -8214,15 +8219,6 @@ html[saved-theme="dark"] {
       animation-direction: normal;
       animation-fill-mode: none;
       animation-play-state: running;
-      border: 0px rgb(0, 0, 0);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
     }
 
     del {
@@ -10489,6 +10485,20 @@ html[saved-theme="dark"] {
       border-bottom-right-radius: 24.5px;
     }
 
+    .search-highlight {
+      background-color: rgb(255, 255, 0);
+      color: rgb(0, 0, 0);
+      border: 0px rgb(0, 0, 0);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+    }
+
     li.task-list-item input[type="checkbox"] {
       border-color: rgb(138, 92, 245);
       border-radius: 15px;
@@ -10499,12 +10509,6 @@ html[saved-theme="dark"] {
     li.task-list-item input[type="checkbox"]:checked {
       background-color: var(--checkbox-color, rgb(138, 92, 245));
       border-color: rgb(138, 92, 245);
-    }
-
-    h1.article-title {
-      color: var(--inline-title-color, color(srgb 0.862096 0.80824 0.98776));
-      font-size: var(--inline-title-size, 25.888px);
-      font-weight: var(--inline-title-weight, 700);
     }
 
     .stacked-page {
@@ -10518,6 +10522,12 @@ html[saved-theme="dark"] {
 
     .stacked-page.active {
       border-color: color(srgb 0.862096 0.80824 0.98776);
+    }
+
+    h1.article-title {
+      color: var(--inline-title-color, color(srgb 0.862096 0.80824 0.98776));
+      font-size: var(--inline-title-size, 25.888px);
+      font-weight: var(--inline-title-weight, 700);
     }
 
     li.task-list-item[data-task="_"] {

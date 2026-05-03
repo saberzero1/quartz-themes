@@ -497,8 +497,8 @@ body {
   }
 
   .text-highlight {
-    background-color: rgb(255, 255, 0);
-    color: rgb(0, 0, 0);
+    background-color: var(--text-highlight-bg, rgba(255, 208, 0, 0.4));
+    color: var(--text-normal, rgb(8, 8, 8));
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -521,15 +521,6 @@ body {
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
-    border: 0px rgb(0, 0, 0);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
   }
 
   del {
@@ -2831,6 +2822,20 @@ body {
     border-bottom-right-radius: 24.5px;
   }
 
+  .search-highlight {
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
+    border: 0px rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
   li.task-list-item input[type="checkbox"] {
     border-color: rgb(171, 171, 171);
     border-radius: 4px;
@@ -2841,12 +2846,6 @@ body {
   li.task-list-item input[type="checkbox"]:checked {
     background-color: var(--checkbox-color, rgb(152, 115, 247));
     border-color: rgb(152, 115, 247);
-  }
-
-  h1.article-title {
-    color: var(--inline-title-color, rgb(8, 8, 8));
-    font-size: var(--inline-title-size, 25.888px);
-    font-weight: var(--inline-title-weight, 700);
   }
 
   .stacked-page {
@@ -2860,6 +2859,12 @@ body {
 
   .stacked-page.active {
     border-color: rgb(8, 8, 8);
+  }
+
+  h1.article-title {
+    color: var(--inline-title-color, rgb(8, 8, 8));
+    font-size: var(--inline-title-size, 25.888px);
+    font-weight: var(--inline-title-weight, 700);
   }
 
   li.task-list-item[data-task="_"] {
@@ -7165,8 +7170,8 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: rgb(255, 255, 0);
-      color: rgb(0, 0, 0);
+      background-color: var(--text-highlight-bg, rgba(255, 208, 0, 0.4));
+      color: var(--text-normal, rgb(245, 247, 250));
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -7189,15 +7194,6 @@ html[saved-theme="dark"] {
       animation-direction: normal;
       animation-fill-mode: none;
       animation-play-state: running;
-      border: 0px rgb(0, 0, 0);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
     }
 
     del {
@@ -9497,6 +9493,20 @@ html[saved-theme="dark"] {
       border-bottom-right-radius: 24.5px;
     }
 
+    .search-highlight {
+      background-color: rgb(255, 255, 0);
+      color: rgb(0, 0, 0);
+      border: 0px rgb(0, 0, 0);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+    }
+
     li.task-list-item input[type="checkbox"] {
       border-color: rgb(102, 102, 102);
       border-radius: 4px;
@@ -9507,12 +9517,6 @@ html[saved-theme="dark"] {
     li.task-list-item input[type="checkbox"]:checked {
       background-color: var(--checkbox-color, rgba(0, 0, 0, 0));
       border-color: rgb(255, 255, 255);
-    }
-
-    h1.article-title {
-      color: var(--inline-title-color, rgb(245, 247, 250));
-      font-size: var(--inline-title-size, 25.888px);
-      font-weight: var(--inline-title-weight, 700);
     }
 
     .stacked-page {
@@ -9526,6 +9530,12 @@ html[saved-theme="dark"] {
 
     .stacked-page.active {
       border-color: rgb(245, 247, 250);
+    }
+
+    h1.article-title {
+      color: var(--inline-title-color, rgb(245, 247, 250));
+      font-size: var(--inline-title-size, 25.888px);
+      font-weight: var(--inline-title-weight, 700);
     }
 
     li.task-list-item[data-task="_"] {

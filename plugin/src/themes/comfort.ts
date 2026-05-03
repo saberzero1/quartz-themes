@@ -261,10 +261,6 @@ html body del {
   text-decoration-color: rgb(111, 110, 106);
 }
 
-html body h1.article-title {
-  color: var(--text-normal, rgb(111, 110, 106));
-}
-
 html body p {
   color: var(--text-muted, rgb(141, 156, 141));
   font-family: "Times New Roman";

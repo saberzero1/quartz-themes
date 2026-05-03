@@ -401,10 +401,6 @@ html body footer {
   opacity: 0.6;
 }
 
-html body h1.article-title {
-  color: var(--text-normal, rgb(231, 186, 154));
-}
-
 html body li.task-list-item input[type="checkbox"] {
   border-color: rgb(163, 117, 84);
 }

@@ -687,8 +687,8 @@ body {
   }
 
   .text-highlight {
-    background-color: rgb(255, 255, 0);
-    color: rgb(0, 0, 0);
+    background-color: var(--text-highlight-bg, rgba(249, 151, 207, 0));
+    color: var(--text-normal, rgb(255, 179, 101));
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -711,15 +711,6 @@ body {
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
-    border: 0px rgb(0, 0, 0);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
   }
 
   del {
@@ -3021,6 +3012,20 @@ body {
     border-bottom-right-radius: 30.625px;
   }
 
+  .search-highlight {
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
+    border: 0px rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
   li.task-list-item input[type="checkbox"] {
     border-color: rgb(102, 102, 102);
     border-radius: 4px;
@@ -3031,12 +3036,6 @@ body {
   li.task-list-item input[type="checkbox"]:checked {
     background-color: var(--checkbox-color, rgba(101, 115, 136, 0.76));
     border-color: rgb(180, 73, 73);
-  }
-
-  h1.article-title {
-    color: var(--inline-title-color, rgba(255, 255, 255, 0.867));
-    font-size: var(--inline-title-size, 32.36px);
-    font-weight: var(--inline-title-weight, 700);
   }
 
   .stacked-page {
@@ -3050,6 +3049,12 @@ body {
 
   .stacked-page.active {
     border-color: rgba(255, 255, 255, 0.867);
+  }
+
+  h1.article-title {
+    color: var(--inline-title-color, rgba(255, 255, 255, 0.867));
+    font-size: var(--inline-title-size, 32.36px);
+    font-weight: var(--inline-title-weight, 700);
   }
 
   li.task-list-item[data-task="_"] {

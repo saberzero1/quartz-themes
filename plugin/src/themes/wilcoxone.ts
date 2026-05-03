@@ -324,10 +324,6 @@ html body del {
   text-decoration-color: rgb(232, 238, 231);
 }
 
-html body h1.article-title {
-  color: var(--text-normal, rgb(232, 238, 231));
-}
-
 html body li.task-list-item input[type="checkbox"] {
   border-color: rgb(153, 153, 153);
 }

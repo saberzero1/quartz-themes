@@ -730,7 +730,6 @@ html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #dadada;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-1-open: "╔";
   --folder-2-open: "╔";
   --folder-3-open: "╔";
@@ -1024,7 +1023,6 @@ html[saved-theme="dark"] body .callout[data-callout="one"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #dadada;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-1-open: "╔";
   --folder-2-open: "╔";
   --folder-3-open: "╔";
@@ -1377,7 +1375,6 @@ html[saved-theme="dark"] body .callout[data-callout="three"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #dadada;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-1-open: "╔";
   --folder-2-open: "╔";
   --folder-3-open: "╔";
@@ -1710,7 +1707,6 @@ html[saved-theme="dark"] body .callout[data-callout="two"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #363636;
   --flair-color: #dadada;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-1-open: "╔";
   --folder-2-open: "╔";
   --folder-3-open: "╔";
@@ -2890,7 +2886,6 @@ html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #222222;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-1-open: "╔";
   --folder-2-open: "╔";
   --folder-3-open: "╔";
@@ -3182,7 +3177,6 @@ html[saved-theme="light"] body .callout[data-callout="one"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #222222;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-1-open: "╔";
   --folder-2-open: "╔";
   --folder-3-open: "╔";
@@ -3533,7 +3527,6 @@ html[saved-theme="light"] body .callout[data-callout="three"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #222222;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-1-open: "╔";
   --folder-2-open: "╔";
   --folder-3-open: "╔";
@@ -3864,7 +3857,6 @@ html[saved-theme="light"] body .callout[data-callout="two"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #222222;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-1-open: "╔";
   --folder-2-open: "╔";
   --folder-3-open: "╔";

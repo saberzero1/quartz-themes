@@ -2491,13 +2491,6 @@ export const config = [
   },
   // === POPOVER COMPONENT ===
   {
-    obsidianSelector: `.popover.hover-popover`,
-    publishSelector: `.popover`,
-    quartzSelector: ".popover",
-    pseudoElement: "",
-    properties: sets.tooltip,
-  },
-  {
     obsidianSelector: `.popover.hover-popover .markdown-preview-view`,
     publishSelector: `.popover .markdown-preview-view`,
     quartzSelector: ".popover > .popover-inner",
@@ -2636,13 +2629,6 @@ export const config = [
     properties: sets.headings.default,
   },
   // === TRANSCLUDE / EMBED ===
-  {
-    obsidianSelector: `.internal-embed.is-loaded`,
-    publishSelector: `.internal-embed`,
-    quartzSelector: ".transclude",
-    pseudoElement: "",
-    properties: sets.embed,
-  },
   {
     obsidianSelector: `.internal-embed.is-loaded .markdown-embed`,
     publishSelector: `.internal-embed .markdown-embed`,
@@ -2795,7 +2781,7 @@ export const config = [
   {
     obsidianSelector: `mark.search-result-highlight`,
     publishSelector: `.search-highlight`,
-    quartzSelector: ".text-highlight",
+    quartzSelector: ".search-highlight",
     pseudoElement: "",
     properties: ["background-color", "color", ...defaults.border],
   },
@@ -2841,13 +2827,6 @@ export const config = [
     pseudoElement: "",
     properties: ["color", "font-size"],
   },
-  {
-    obsidianSelector: `.view-header-title`,
-    publishSelector: null,
-    quartzSelector: "h1.article-title",
-    pseudoElement: "",
-    properties: ["color", "font-size", "font-weight", "text-decoration"],
-  },
   // Stacked pages
   {
     obsidianSelector: `.workspace-leaf`,
@@ -2891,14 +2870,6 @@ export const config = [
     quartzSelector: "input:focus",
     pseudoElement: "",
     properties: ["border-color", "box-shadow"],
-  },
-  // Content meta
-  {
-    obsidianSelector: `.frontmatter-container`,
-    publishSelector: null,
-    quartzSelector: ".content-meta",
-    pseudoElement: "",
-    properties: ["color", "font-size"],
   },
   // Article title
   {

@@ -550,10 +550,6 @@ html body del {
   text-decoration-color: rgb(163, 163, 163);
 }
 
-html body h1.article-title {
-  color: var(--text-normal, rgb(163, 163, 163));
-}
-
 html body li.task-list-item input[type="checkbox"] {
   background-color: rgb(from var(--mono-rgb-100) r g b/0.05);
   border-color: color(srgb 1 1 1 / 0.15);
@@ -2201,7 +2197,6 @@ html body .callout-title {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #000000;
   --flair-color: #a3a3a3;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Instrument", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', "Instrument", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: "Monaspace", monospace;
@@ -3072,7 +3067,6 @@ html body h2.page-title, html h2.page-title a {
 }
 
 html body h2::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h2-weight, 600);
   background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(0, 119, 255) 0%, color(srgb 0 0.466667 1 / 0.2) 60%, rgba(0, 0, 0, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);

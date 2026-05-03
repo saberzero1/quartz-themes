@@ -308,11 +308,6 @@ html body footer {
   --bar-height: calc(22px + var(--bar-vertical-padding)*2);
 }
 
-html body h1.article-title {
-  color: var(--text-normal, rgb(220, 221, 222));
-  font-weight: 600;
-}
-
 html body li.task-list-item input[type="checkbox"] {
   border-color: rgb(81, 86, 99);
 }

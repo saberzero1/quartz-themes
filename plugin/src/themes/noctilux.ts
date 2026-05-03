@@ -271,10 +271,6 @@ html body footer {
   opacity: 0.7;
 }
 
-html body h1.article-title {
-  color: var(--text-normal, rgb(255, 255, 255));
-}
-
 html body li.task-list-item input[type="checkbox"]:checked {
   background-color: var(--checkbox-color, rgb(94, 92, 255));
   border-color: rgb(94, 92, 255);

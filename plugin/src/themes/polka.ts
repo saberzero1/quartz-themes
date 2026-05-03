@@ -446,11 +446,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(250, 247, 245);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(250, 247, 245));
-  font-size: 14px;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(250, 247, 245);
   border-radius: 2px;
@@ -2701,11 +2696,6 @@ html[saved-theme="light"] body del {
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(0, 0, 0));
-  font-size: 14px;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

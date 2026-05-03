@@ -948,12 +948,6 @@ html[saved-theme="dark"] body footer {
   --bar-height: calc(22px + var(--bar-vertical-padding));
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(198, 198, 198));
-  font-size: var(--font-size-file-header-title, 11.7px);
-  font-weight: 700;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(123, 123, 123);
   border-radius: 3px;
@@ -2097,7 +2091,6 @@ html[saved-theme="dark"] body .callout[data-callout="cloze"] {
   --external-link-color: hsl(208, 64%, 49%);
   --flair-background: #2b2b2b;
   --flair-color: #c6c6c6;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-family-folder-file-title: '??',Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   --font-family-inline-code: '??', 'JetBrains Mono', Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-strong: Bookerly, 'Inter', "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R", "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -2554,7 +2547,6 @@ html[saved-theme="dark"] body .callout[data-callout="icon"] {
   --external-link-color: hsl(208, 64%, 49%);
   --flair-background: #2b2b2b;
   --flair-color: #c6c6c6;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-family-folder-file-title: '??',Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   --font-family-inline-code: '??', 'JetBrains Mono', Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-strong: Bookerly, 'Inter', "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R", "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -2961,7 +2953,6 @@ html[saved-theme="dark"] body .callout[data-callout="kanban"] {
   --external-link-color: hsl(208, 64%, 49%);
   --flair-background: #2b2b2b;
   --flair-color: #c6c6c6;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-family-folder-file-title: '??',Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   --font-family-inline-code: '??', 'JetBrains Mono', Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-strong: Bookerly, 'Inter', "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R", "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -3417,7 +3408,6 @@ html[saved-theme="dark"] body .callout[data-callout="stickies"] {
   --external-link-color: hsl(208, 64%, 49%);
   --flair-background: #2b2b2b;
   --flair-color: #c6c6c6;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-family-folder-file-title: '??',Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   --font-family-inline-code: '??', 'JetBrains Mono', Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-strong: Bookerly, 'Inter', "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R", "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -3800,7 +3790,6 @@ html[saved-theme="dark"] body .callout[data-callout="stickies2"] {
   --external-link-color: hsl(208, 64%, 49%);
   --flair-background: #2b2b2b;
   --flair-color: #c6c6c6;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-family-folder-file-title: '??',Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   --font-family-inline-code: '??', 'JetBrains Mono', Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-strong: Bookerly, 'Inter', "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R", "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -4183,7 +4172,6 @@ html[saved-theme="dark"] body .callout[data-callout="stickies3"] {
   --external-link-color: hsl(208, 64%, 49%);
   --flair-background: #2b2b2b;
   --flair-color: #c6c6c6;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-family-folder-file-title: '??',Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   --font-family-inline-code: '??', 'JetBrains Mono', Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-strong: Bookerly, 'Inter', "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R", "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -4588,7 +4576,6 @@ html[saved-theme="dark"] body .callout[data-callout="timeline"] {
   --external-link-color: hsl(208, 64%, 49%);
   --flair-background: #2b2b2b;
   --flair-color: #c6c6c6;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-family-folder-file-title: '??',Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   --font-family-inline-code: '??', 'JetBrains Mono', Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-strong: Bookerly, 'Inter', "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R", "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -6431,12 +6418,6 @@ html[saved-theme="light"] body footer {
   --bar-height: calc(22px + var(--bar-vertical-padding));
 }
 
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(14, 14, 14));
-  font-size: var(--font-size-file-header-title, 11.7px);
-  font-weight: 700;
-}
-
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(156, 156, 156);
   border-radius: 3px;
@@ -7577,7 +7558,6 @@ html[saved-theme="light"] body .callout[data-callout="cloze"] {
   --external-link-color: hsl(207, 77%, 54%);
   --flair-background: #efefef;
   --flair-color: #0e0e0e;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-family-folder-file-title: '??',Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   --font-family-inline-code: '??', 'JetBrains Mono', Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-strong: Bookerly, 'Inter', "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R", "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -8031,7 +8011,6 @@ html[saved-theme="light"] body .callout[data-callout="icon"] {
   --external-link-color: hsl(207, 77%, 54%);
   --flair-background: #efefef;
   --flair-color: #0e0e0e;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-family-folder-file-title: '??',Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   --font-family-inline-code: '??', 'JetBrains Mono', Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-strong: Bookerly, 'Inter', "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R", "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -8435,7 +8414,6 @@ html[saved-theme="light"] body .callout[data-callout="kanban"] {
   --external-link-color: hsl(207, 77%, 54%);
   --flair-background: #efefef;
   --flair-color: #0e0e0e;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-family-folder-file-title: '??',Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   --font-family-inline-code: '??', 'JetBrains Mono', Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-strong: Bookerly, 'Inter', "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R", "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -8888,7 +8866,6 @@ html[saved-theme="light"] body .callout[data-callout="stickies"] {
   --external-link-color: hsl(207, 77%, 54%);
   --flair-background: #efefef;
   --flair-color: #0e0e0e;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-family-folder-file-title: '??',Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   --font-family-inline-code: '??', 'JetBrains Mono', Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-strong: Bookerly, 'Inter', "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R", "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -9268,7 +9245,6 @@ html[saved-theme="light"] body .callout[data-callout="stickies2"] {
   --external-link-color: hsl(207, 77%, 54%);
   --flair-background: #efefef;
   --flair-color: #0e0e0e;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-family-folder-file-title: '??',Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   --font-family-inline-code: '??', 'JetBrains Mono', Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-strong: Bookerly, 'Inter', "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R", "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -9648,7 +9624,6 @@ html[saved-theme="light"] body .callout[data-callout="stickies3"] {
   --external-link-color: hsl(207, 77%, 54%);
   --flair-background: #efefef;
   --flair-color: #0e0e0e;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-family-folder-file-title: '??',Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   --font-family-inline-code: '??', 'JetBrains Mono', Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-strong: Bookerly, 'Inter', "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R", "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -10050,7 +10025,6 @@ html[saved-theme="light"] body .callout[data-callout="timeline"] {
   --external-link-color: hsl(207, 77%, 54%);
   --flair-background: #efefef;
   --flair-color: #0e0e0e;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-family-folder-file-title: '??',Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   --font-family-inline-code: '??', 'JetBrains Mono', Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-strong: Bookerly, 'Inter', "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R", "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;

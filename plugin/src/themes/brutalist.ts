@@ -709,10 +709,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(160, 160, 160);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-muted, rgb(179, 179, 179));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   background-color: var(--checkbox-bg-unchecked, rgb(47, 47, 47));
   border-color: rgb(255, 255, 255);
@@ -1610,7 +1606,6 @@ html[saved-theme="dark"] body .callout[data-callout="banner"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #323232;
   --flair-color: #a0a0a0;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-default: 'Marcellus', serif;
   --font-interface: 'Marcellus', serif;
   --font-mermaid: 'Lora', serif;
@@ -3145,11 +3140,6 @@ html[saved-theme="light"] body del {
   text-decoration-color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-muted, rgb(34, 34, 34));
-  font-weight: 700;
-}
-
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
   background-color: var(--checkbox-bg-unchecked, rgb(169, 169, 169));
   border-color: rgb(0, 0, 0);
@@ -4051,7 +4041,6 @@ html[saved-theme="light"] body .callout[data-callout="banner"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #B0B0B0;
   --flair-color: #000000;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-default: 'Marcellus', serif;
   --font-interface: 'Marcellus', serif;
   --font-mermaid: 'Lora', serif;

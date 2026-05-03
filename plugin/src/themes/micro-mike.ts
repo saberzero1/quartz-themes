@@ -1363,12 +1363,6 @@ html body del {
   text-decoration-color: rgb(163, 165, 170);
 }
 
-html body h1.article-title {
-  color: var(--text-normal, rgb(163, 165, 170));
-  font-size: 20px;
-  font-weight: 100;
-}
-
 html body li.task-list-item input[type="checkbox"] {
   border-color: rgb(111, 116, 124);
   border-radius: 0px;
@@ -2640,7 +2634,6 @@ html body hr {
   padding-top: 0px;
 }`,
     explorer: `html body .nav-files-container .nav-file-title {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   color: var(--nav-item-color, rgb(179, 179, 179));
   cursor: var(--cursor, default);
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2648,7 +2641,6 @@ html body hr {
 }
 
 html body .nav-files-container .nav-file-title.is-active {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   background-color: var(--nav-item-background-active, rgba(255, 255, 255, 0.067));
   border-bottom-color: rgb(163, 165, 170);
   border-bottom-left-radius: 0px;

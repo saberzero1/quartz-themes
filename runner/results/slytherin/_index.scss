@@ -522,8 +522,8 @@ body {
   }
 
   .text-highlight {
-    background-color: rgb(255, 255, 0);
-    color: rgb(0, 0, 0);
+    background-color: var(--text-highlight-bg, rgba(0, 80, 59, 0.5));
+    color: var(--text-normal, rgb(144, 144, 144));
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -559,15 +559,6 @@ body {
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
-    border: 0px rgb(0, 0, 0);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
   }
 
   del {
@@ -2934,6 +2925,20 @@ body {
     border-bottom-right-radius: 14px;
   }
 
+  .search-highlight {
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
+    border: 0px rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
   li.task-list-item input[type="checkbox"] {
     border-color: rgb(255, 255, 255);
     border-radius: 50%;
@@ -2944,12 +2949,6 @@ body {
   li.task-list-item input[type="checkbox"]:checked {
     background-color: var(--background-modifier-accent, rgb(83, 15, 240));
     border-color: rgb(83, 15, 240);
-  }
-
-  h1.article-title {
-    color: var(--inline-title-color, rgb(144, 144, 144));
-    font-size: var(--inline-title-size, 25.888px);
-    font-weight: var(--inline-title-weight, 600);
   }
 
   .stacked-page {
@@ -2963,6 +2962,12 @@ body {
 
   .stacked-page.active {
     border-color: rgb(144, 144, 144);
+  }
+
+  h1.article-title {
+    color: var(--inline-title-color, rgb(144, 144, 144));
+    font-size: var(--inline-title-size, 25.888px);
+    font-weight: var(--inline-title-weight, 600);
   }
 
   li.task-list-item[data-task="_"] {

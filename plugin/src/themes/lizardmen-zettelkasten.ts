@@ -142,12 +142,6 @@ html body del {
   text-decoration-color: rgb(225, 232, 237);
 }
 
-html body h1.article-title {
-  color: var(--text-normal, rgb(0, 0, 0));
-  font-size: 14px;
-  font-weight: 600;
-}
-
 html body p {
   font-weight: 500;
 }`,

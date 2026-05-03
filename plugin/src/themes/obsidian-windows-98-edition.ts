@@ -69,10 +69,6 @@ html body html {
   padding-right: 3px;
   padding-top: 3px;
 }`,
-    typography: `html body h1.article-title {
-  font-size: 11px;
-  font-weight: 700;
-}`,
     checkboxes: `html body input[type=checkbox] {
   margin-right: 6.6px;
 }

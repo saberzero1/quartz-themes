@@ -727,11 +727,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(244, 244, 240);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(244, 244, 240));
-  font-size: 12px;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(112, 110, 109);
   border-radius: 16px;
@@ -2328,7 +2323,6 @@ html[saved-theme="dark"] body .callout[data-callout="alarm"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2682,7 +2676,6 @@ html[saved-theme="dark"] body .callout[data-callout="annotation"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3036,7 +3029,6 @@ html[saved-theme="dark"] body .callout[data-callout="aside"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3391,7 +3383,6 @@ html[saved-theme="dark"] body .callout[data-callout="bookmark"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3774,7 +3765,6 @@ html[saved-theme="dark"] body .callout[data-callout="cons"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4128,7 +4118,6 @@ html[saved-theme="dark"] body .callout[data-callout="cue"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4511,7 +4500,6 @@ html[saved-theme="dark"] body .callout[data-callout="debug"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4865,7 +4853,6 @@ html[saved-theme="dark"] body .callout[data-callout="event"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5277,7 +5264,6 @@ html[saved-theme="dark"] body .callout[data-callout="favorite"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5631,7 +5617,6 @@ html[saved-theme="dark"] body .callout[data-callout="favourite"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5985,7 +5970,6 @@ html[saved-theme="dark"] body .callout[data-callout="grid"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6335,7 +6319,6 @@ html[saved-theme="dark"] body .callout[data-callout="idea"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6718,7 +6701,6 @@ html[saved-theme="dark"] body .callout[data-callout="law"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7072,7 +7054,6 @@ html[saved-theme="dark"] body .callout[data-callout="location"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7426,7 +7407,6 @@ html[saved-theme="dark"] body .callout[data-callout="negative"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7809,7 +7789,6 @@ html[saved-theme="dark"] body .callout[data-callout="notification"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8163,7 +8142,6 @@ html[saved-theme="dark"] body .callout[data-callout="positive"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8517,7 +8495,6 @@ html[saved-theme="dark"] body .callout[data-callout="proof"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8871,7 +8848,6 @@ html[saved-theme="dark"] body .callout[data-callout="pros"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9283,7 +9259,6 @@ html[saved-theme="dark"] body .callout[data-callout="reference"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9637,7 +9612,6 @@ html[saved-theme="dark"] body .callout[data-callout="reminder"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9991,7 +9965,6 @@ html[saved-theme="dark"] body .callout[data-callout="reward"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10345,7 +10318,6 @@ html[saved-theme="dark"] body .callout[data-callout="rule"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(22, 22, 22);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -11995,11 +11967,6 @@ html[saved-theme="light"] body del {
   text-decoration-color: rgb(22, 22, 22);
 }
 
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(22, 22, 22));
-  font-size: 12px;
-}
-
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(169, 168, 165);
   border-radius: 16px;
@@ -13596,7 +13563,6 @@ html[saved-theme="light"] body .callout[data-callout="alarm"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -13948,7 +13914,6 @@ html[saved-theme="light"] body .callout[data-callout="annotation"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -14300,7 +14265,6 @@ html[saved-theme="light"] body .callout[data-callout="aside"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -14653,7 +14617,6 @@ html[saved-theme="light"] body .callout[data-callout="bookmark"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -15034,7 +14997,6 @@ html[saved-theme="light"] body .callout[data-callout="cons"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -15386,7 +15348,6 @@ html[saved-theme="light"] body .callout[data-callout="cue"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -15767,7 +15728,6 @@ html[saved-theme="light"] body .callout[data-callout="debug"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -16119,7 +16079,6 @@ html[saved-theme="light"] body .callout[data-callout="event"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -16529,7 +16488,6 @@ html[saved-theme="light"] body .callout[data-callout="favorite"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -16881,7 +16839,6 @@ html[saved-theme="light"] body .callout[data-callout="favourite"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -17233,7 +17190,6 @@ html[saved-theme="light"] body .callout[data-callout="grid"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -17581,7 +17537,6 @@ html[saved-theme="light"] body .callout[data-callout="idea"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -17962,7 +17917,6 @@ html[saved-theme="light"] body .callout[data-callout="law"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -18314,7 +18268,6 @@ html[saved-theme="light"] body .callout[data-callout="location"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -18666,7 +18619,6 @@ html[saved-theme="light"] body .callout[data-callout="negative"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -19047,7 +18999,6 @@ html[saved-theme="light"] body .callout[data-callout="notification"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -19399,7 +19350,6 @@ html[saved-theme="light"] body .callout[data-callout="positive"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -19751,7 +19701,6 @@ html[saved-theme="light"] body .callout[data-callout="proof"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -20103,7 +20052,6 @@ html[saved-theme="light"] body .callout[data-callout="pros"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -20513,7 +20461,6 @@ html[saved-theme="light"] body .callout[data-callout="reference"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -20865,7 +20812,6 @@ html[saved-theme="light"] body .callout[data-callout="reminder"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -21217,7 +21163,6 @@ html[saved-theme="light"] body .callout[data-callout="reward"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -21569,7 +21514,6 @@ html[saved-theme="light"] body .callout[data-callout="rule"] {
   --focus: hsl(199.5deg, 38.8%, 40.4%);
   --focus-inset: rgb(253, 254, 254);
   --focus-inverse: rgb(253, 254, 254);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-editor: ??, '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: '??', inter, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;

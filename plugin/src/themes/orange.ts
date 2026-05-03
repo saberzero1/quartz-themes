@@ -189,10 +189,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(204, 204, 204);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(204, 204, 204));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
   background-color: var(--checkbox-color, rgb(205, 128, 50));
   border-color: rgb(205, 128, 50);

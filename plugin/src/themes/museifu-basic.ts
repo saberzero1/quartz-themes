@@ -276,10 +276,6 @@ html[saved-theme="dark"] body footer {
   opacity: 0;
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, color(srgb 0.862096 0.80824 0.98776));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(138, 92, 245);
   border-radius: 15px;
@@ -2238,10 +2234,6 @@ html[saved-theme="light"] body del {
 
 html[saved-theme="light"] body footer {
   opacity: 0;
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, color(srgb 0.300178 0.200444 0.532889 / 0.9));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

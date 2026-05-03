@@ -519,11 +519,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(198, 206, 239);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(198, 206, 239));
-  font-size: var(--font-size-file-header-title, 12.09px);
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(165, 172, 201);
 }
@@ -1873,7 +1868,6 @@ html[saved-theme="dark"] body .callout[data-callout="seealso"] {
   --external-link-color: rgba(235, 188, 186, 0.8);
   --flair-background: rgb(65, 69, 89);
   --flair-color: rgb(198, 206, 239);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-family-folder-file-title: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-family-inline-code: monospace;
   --font-family-tag: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3280,11 +3274,6 @@ html[saved-theme="light"] body del {
   text-decoration-color: rgb(76, 79, 105);
 }
 
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(76, 79, 105));
-  font-size: var(--font-size-file-header-title, 12.09px);
-}
-
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(108, 111, 133);
 }
@@ -4633,7 +4622,6 @@ html[saved-theme="light"] body .callout[data-callout="seealso"] {
   --external-link-color: rgba(222, 149, 132, 0.8);
   --flair-background: rgb(221, 225, 238);
   --flair-color: rgb(76, 79, 105);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-family-folder-file-title: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-family-inline-code: monospace;
   --font-family-tag: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;

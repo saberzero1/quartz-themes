@@ -299,10 +299,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(204, 204, 204);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(204, 204, 204));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(204, 204, 204);
 }
@@ -1867,10 +1863,6 @@ html[saved-theme="light"] body del {
   font-family: "iA Writer Quattro V", sans-serif;
   outline: rgb(26, 26, 26) none 0px;
   text-decoration-color: rgb(26, 26, 26);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

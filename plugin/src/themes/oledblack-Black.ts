@@ -152,10 +152,6 @@ html body del {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
-}
-
-html body h1.article-title {
-  color: var(--text-normal, rgb(255, 255, 255));
 }`,
     lists: `html body dd {
   color: rgb(255, 255, 255);

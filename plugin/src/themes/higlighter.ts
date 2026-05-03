@@ -916,10 +916,6 @@ html[saved-theme="light"] body del {
   text-decoration-color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(0, 0, 0));
-}
-
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(156, 156, 156);
 }

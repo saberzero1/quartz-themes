@@ -549,281 +549,6 @@ body {
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
-    --background-modifier-border: hsl(0, 0%, 87%);
-    --background-modifier-border-focus: hsl(0, 0%, 75%);
-    --background-modifier-border-hover: hsl(0, 0%, 83%);
-    --background-primary: hsl(0, 0%, 90%);
-    --background-primary-alt: hsl(0, 0%, 93%);
-    --background-secondary: hsl(0, 0%, 95%);
-    --background-secondary-alt: hsl(0, 0%, 95%);
-    --blockquote-border-color: hsl(258, 88%, 66%);
-    --canvas-background: hsl(0, 0%, 90%);
-    --caret-color: hsl(0, 0%, -5%);
-    --checkbox-border-color: hsl(0, 0%, calc(95% - 3s5%));
-    --checkbox-border-color-hover: hsl(0, 0%, 40%);
-    --checkbox-color: hsl(258, 88%, 66%);
-    --checkbox-color-hover: hsl(258, 88%, 56%);
-    --checkbox-marker-color: hsl(0, 0%, 90%);
-    --checklist-done-color: hsl(0, 0%, 40%);
-    --collapse-icon-color: hsl(0, 0%, calc(95% - 3s5%));
-    --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --color-accent: hsl(360, 70%, 60%);
-    --divider-color: hsl(0, 0%, 87%);
-    --divider-color-hover: hsl(258, 88%, 66%);
-    --flair-color: hsl(0, 0%, -5%);
-    --graph-node: hsl(0, 0%, 40%);
-    --graph-node-focused: hsl(258, 88%, 66%);
-    --graph-node-unresolved: hsl(0, 0%, calc(95% - 3s5%));
-    --graph-text: hsl(0, 0%, -5%);
-    --heading-formatting: hsl(0, 0%, calc(95% - 3s5%));
-    --hr-color: hsl(0, 0%, 87%);
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(258, 88%, 56%);
-    --link-color: hsl(258, 88%, 66%);
-    --link-color-hover: hsl(258, 88%, 56%);
-    --link-external-color: hsl(258, 88%, 66%);
-    --link-external-color-hover: hsl(258, 88%, 56%);
-    --link-unresolved-color: hsl(258, 88%, 66%);
-    --menu-background: hsl(0, 0%, 95%);
-    --menu-border-color: hsl(0, 0%, 83%);
-    --pdf-background: hsl(0, 0%, 90%);
-    --pdf-page-background: hsl(0, 0%, 90%);
-    --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
-    --pdf-sidebar-background: hsl(0, 0%, 90%);
-    --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
-    --search-clear-button-color: hsl(0, 0%, 40%);
-    --search-icon-color: hsl(0, 0%, 40%);
-    --search-result-background: hsl(0, 0%, 90%);
-    --setting-group-heading-color: hsl(0, 0%, -5%);
-    --setting-items-background: hsl(0, 0%, 93%);
-    --setting-items-border-color: hsl(0, 0%, 87%);
-    --shiki-active-tab-border-color: hsl(0, 0%, 40%);
-    --shiki-code-background: hsl(0, 0%, 93%);
-    --shiki-code-comment: hsl(0, 0%, calc(95% - 3s5%));
-    --shiki-code-normal: hsl(0, 0%, 40%);
-    --shiki-code-punctuation: hsl(0, 0%, 40%);
-    --shiki-gutter-border-color: hsl(0, 0%, 87%);
-    --shiki-gutter-text-color: hsl(0, 0%, calc(95% - 3s5%));
-    --shiki-gutter-text-color-highlight: hsl(0, 0%, 40%);
-    --shiki-highlight-neutral: hsl(0, 0%, 40%);
-    --shiki-terminal-dots-color: hsl(0, 0%, calc(95% - 3s5%));
-    --suggestion-background: hsl(0, 0%, 90%);
-    --tab-background-active: hsl(0, 0%, 90%);
-    --tab-divider-color: hsl(0, 0%, 83%);
-    --tab-outline-color: hsl(0, 0%, 87%);
-    --tab-switcher-background: hsl(0, 0%, 95%);
-    --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 95%), transparent);
-    --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(360, 70%, 60%);
-    --tab-text-color: hsl(0, 0%, calc(95% - 3s5%));
-    --tab-text-color-active: hsl(0, 0%, 40%);
-    --tab-text-color-focused: hsl(0, 0%, 40%);
-    --tab-text-color-focused-active: hsl(0, 0%, 40%);
-    --tab-text-color-focused-active-current: hsl(0, 0%, -5%);
-    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
-    --table-add-button-border-color: hsl(0, 0%, 87%);
-    --table-border-color: hsl(0, 0%, 87%);
-    --table-drag-handle-background-active: hsl(258, 88%, 66%);
-    --table-drag-handle-color: hsl(0, 0%, calc(95% - 3s5%));
-    --table-header-border-color: hsl(0, 0%, 87%);
-    --table-header-color: hsl(0, 0%, -5%);
-    --table-selection-border-color: hsl(258, 88%, 66%);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(258, 88%, 56%);
-    --text-faint: hsl(0, 0%, calc(95% - 3s5%));
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: hsl(0, 0%, 40%);
-    --text-normal: hsl(0, 0%, -5%);
-    --text-selection: hsl(0, 0%, 89%);
-    font-size: 5.632px;
-    line-height: 19.712px;
-    --accent-h: 258;
-    --accent-l: 66%;
-    --accent-s: 88%;
-    --background-match-highlight: hsla(258, 40%, 62%, 0.2);
-    --background-modifier-accent: hsl(258, 88%, 68%);
-    --background-secondary-table: hsl(0, 0%, 93%);
-    --background-tertiary: hsl(0, 0%, 83%);
-    --background-translucent: hsla(0, 0%, 95%, 0.85);
-    --background-transparent: hsla(0, 0%, 95%, 0);
-    --button-background: hsl(0, 0%, 85%);
-    --button-background-active: hsl(0, 0%, 70%);
-    --color-accent-bright: hsla(360, 70%, 65%, 1.9);
-    --color-accent-hover: hsl(360, 70%, 64%);
-    --color-accent-hover-invert: hsl(0, 0%, 40%);
-    --color-accent-shadow: hsla(360, 70%, 70%, 0.4);
-    --cursor: default;
-    --font-medium: 500;
-    --font-normal: 400;
-    --font-small: 0.933em;
-    --font-smaller: 0.875em;
-    --line-shadow: hsl(0, 0%, 80%);
-    --quote-opening-modifier: hsl(0, 0%, 80%);
-    --text-shadow: hsl(0, 0%, 90%);
-    letter-spacing: 0.32px;
-    text-shadow: rgba(0, 0, 0, 0) 0px 0px 20px;
-    background-image: none;
-    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-error: #e93147;
-    --background-modifier-error-hover: #e93147;
-    --background-modifier-error-rgb: 233, 49, 71;
-    --background-modifier-form-field: #ffffff;
-    --background-modifier-form-field-hover: #ffffff;
-    --background-modifier-hover: rgba(0, 0, 0, 0.067);
-    --background-modifier-success: #08b94e;
-    --background-modifier-success-rgb: 8, 185, 78;
-    --blur-background: color-mix(in srgb, hsl(0, 0%, 90%) 65%, transparent) linear-gradient(hsl(0, 0%, 90%), color-mix(in srgb, hsl(0, 0%, 90%) 65%, transparent));
-    --blur-l: blur(16px) saturate(1.5) brightness(1.15);
-    --blur-m: blur(10px) saturate(1.5) brightness(1.15);
-    --blur-s: blur(6px) saturate(1.5) brightness(1.15);
-    --bold-weight: 600;
-    --button-corner-shape: round;
-    --button-radius: 5px;
-    --callout-blend-mode: darken;
-    --callout-bug: 233, 49, 71;
-    --callout-default: 8, 109, 221;
-    --callout-error: 233, 49, 71;
-    --callout-example: 120, 82, 238;
-    --callout-fail: 233, 49, 71;
-    --callout-important: 0, 191, 188;
-    --callout-info: 8, 109, 221;
-    --callout-padding: 12px 12px 12px 24px;
-    --callout-question: 236, 117, 0;
-    --callout-radius: 4px;
-    --callout-success: 8, 185, 78;
-    --callout-summary: 0, 191, 188;
-    --callout-tip: 0, 191, 188;
-    --callout-title-weight: 600;
-    --callout-todo: 8, 109, 221;
-    --callout-warning: 236, 117, 0;
-    --canvas-controls-icon-size: 16px;
-    --canvas-controls-icon-stroke: 2px;
-    --canvas-controls-radius: 4px;
-    --canvas-dot-pattern: #e0e0e0;
-    --checkbox-radius: 4px;
-    --checkbox-size: 16px;
-    --clickable-icon-radius: 4px;
-    --color-accent-1: hsl(257, 88.88%, 70.95%);
-    --color-accent-2: hsl(255, 89.76%, 75.9%);
-    --color-accent-hsl: 258, 88%, 66%;
-    --divider-vertical-height: 100%;
-    --dropdown-background: #ffffff;
-    --dropdown-background-hover: #fafafa;
-    --dropdown-background-position: right 0.5em top 50%, 0 0;
-    --dropdown-background-size: 1em auto, 100%;
-    --dropdown-padding: 0 1.9em 0 0.8em;
-    --flair-background: #ffffff;
-    --font-interface: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    --font-mermaid: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-    --font-print: "??", "??", "??", "Arial";
-    --font-text: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    --font-weight: var(--link-weight, 400);
-    --graph-line: #d4d4d4;
-    --graph-node-attachment: #e0ac00;
-    --graph-node-tag: #08b94e;
-    --h5-line-height: 1.5;
-    --h6-line-height: 1.5;
-    --heading-spacing: 2.5rem;
-    --interactive-accent-hsl: 258, 88%, 66%;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
-    --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
-    --link-weight: 400;
-    --list-indent: 2.25em;
-    --menu-border-width: 1px;
-    --menu-corner-shape: round;
-    --menu-padding: 6px;
-    --menu-radius: 8px;
-    --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
-    --popover-font-size: 16px;
-    --raised-background: color-mix(in srgb, hsl(0, 0%, 90%) 65%, transparent) linear-gradient(hsl(0, 0%, 90%), color-mix(in srgb, hsl(0, 0%, 90%) 65%, transparent));
-    --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
-    --resizer-size: 20px;
-    --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
-    --scrollbar-bg: rgba(0, 0, 0, 0.05);
-    --scrollbar-radius: 12px;
-    --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
-    --setting-group-heading-size: 15px;
-    --setting-group-heading-weight: 600;
-    --setting-items-padding: 20px;
-    --setting-items-radius: 12px;
-    --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
-    --shiki-code-block-border-radius: 4px;
-    --shiki-code-block-spacing: 1rem;
-    --shiki-code-function: #08b94e;
-    --shiki-code-important: #ec7500;
-    --shiki-code-keyword: #d53984;
-    --shiki-code-property: #00bfbc;
-    --shiki-code-string: #e0ac00;
-    --shiki-code-value: #7852ee;
-    --shiki-gutter-border-width: 1px;
-    --shiki-highlight-green: rgba(8, 185, 78, 0.5);
-    --shiki-highlight-green-background: rgba(8, 185, 78, 0.1);
-    --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
-    --shiki-highlight-red: rgba(233, 49, 71, 0.5);
-    --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
-    --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
-    --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
-    --sync-avatar-color-1: #e93147;
-    --sync-avatar-color-2: #ec7500;
-    --sync-avatar-color-3: #e0ac00;
-    --sync-avatar-color-4: #08b94e;
-    --sync-avatar-color-5: #00bfbc;
-    --sync-avatar-color-6: #086ddd;
-    --sync-avatar-color-7: #7852ee;
-    --sync-avatar-color-8: #d53984;
-    --tab-font-size: 13px;
-    --tab-radius: 4px;
-    --tab-stacked-font-size: 13px;
-    --tab-stacked-header-width: 40px;
-    --tab-switcher-preview-radius: 16px;
-    --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --table-add-button-border-width: 1px;
-    --table-column-alt-background: transparent;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
-    --table-drag-handle-color-active: white;
-    --table-header-background: transparent;
-    --table-header-border-width: 1px;
-    --table-header-size: 16px;
-    --table-header-weight: 600;
-    --table-line-height: 1.3;
-    --table-row-alt-background: transparent;
-    --table-row-alt-background-hover: transparent;
-    --table-row-background-hover: transparent;
-    --table-row-last-border-width: 1px;
-    --table-selection: hsla(258, 88%, 66%, 0.1);
-    --table-selection-blend-mode: darken;
-    --table-text-size: 16px;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-border-color: hsla(258, 88%, 66%, 0.15);
-    --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
-    --tag-size: 0.875em;
-    --text-error: #e93147;
-    --text-success: #08b94e;
-    --text-warning: #ec7500;
-    --touch-radius-l: 52px;
-    --touch-radius-m: 44px;
-    --touch-radius-s: 40px;
-    --touch-radius-xl: 60px;
-    --touch-radius-xs: 30px;
-    --touch-radius-xxs: 24px;
-    --traffic-lights-offset-x: 40px;
-    --traffic-lights-offset-y: 40px;
-    --zoom-multiplier: 1;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-color: rgb(228, 103, 103);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-width: 0px;
-    content: "↩";
-    margin: 0px 0px 0px 2px;
-    padding: 0px;
   }
 
   a.internal-link,
@@ -1116,8 +841,8 @@ body {
   }
 
   .text-highlight {
-    background-color: rgb(255, 255, 0);
-    color: rgb(0, 0, 0);
+    background-color: var(--text-highlight-bg, rgba(255, 251, 104, 0.32));
+    color: var(--text-normal, rgb(0, 0, 0));
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1153,15 +878,6 @@ body {
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
-    border: 0px rgb(0, 0, 0);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
   }
 
   del {
@@ -3540,6 +3256,20 @@ body {
     border-bottom-right-radius: 21.56px;
   }
 
+  .search-highlight {
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
+    border: 0px rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
   li.task-list-item input[type="checkbox"] {
     border-color: rgb(224, 82, 82);
     border-radius: 20%;
@@ -3550,12 +3280,6 @@ body {
   li.task-list-item input[type="checkbox"]:checked {
     background-color: var(--checkbox-color, rgba(0, 0, 0, 0));
     border-color: rgba(0, 0, 0, 0);
-  }
-
-  h1.article-title {
-    color: var(--inline-title-color, rgb(0, 0, 0));
-    font-size: var(--inline-title-size, 22.7814px);
-    font-weight: var(--inline-title-weight, 700);
   }
 
   .stacked-page {
@@ -3569,6 +3293,12 @@ body {
 
   .stacked-page.active {
     border-color: rgb(0, 0, 0);
+  }
+
+  h1.article-title {
+    color: var(--inline-title-color, rgb(0, 0, 0));
+    font-size: var(--inline-title-size, 22.7814px);
+    font-weight: var(--inline-title-weight, 700);
   }
 
   li.task-list-item[data-task="_"] {
@@ -10892,282 +10622,6 @@ html[saved-theme="dark"] {
       animation-direction: normal;
       animation-fill-mode: none;
       animation-play-state: running;
-      --background-modifier-border: hsl(0, 0%, 15%);
-      --background-modifier-border-focus: hsl(0, 0%, 30%);
-      --background-modifier-border-hover: hsl(0, 0%, 20%);
-      --background-primary: hsl(0, 0%, 6%);
-      --background-primary-alt: hsl(0, 0%, 7%);
-      --background-secondary: hsl(0, 0%, 10%);
-      --background-secondary-alt: hsl(0, 0%, 10%);
-      --blockquote-border-color: hsl(258, 88%, 85%);
-      --canvas-background: hsl(0, 0%, 6%);
-      --caret-color: hsl(0, 0%, 80%);
-      --checkbox-border-color: hsl(0, 0%, 30%);
-      --checkbox-border-color-hover: hsl(0, 0%, 55%);
-      --checkbox-color: hsl(258, 88%, 85%);
-      --checkbox-color-hover: hsl(258, 88%, 95%);
-      --checkbox-marker-color: hsl(0, 0%, 6%);
-      --checklist-done-color: hsl(0, 0%, 55%);
-      --collapse-icon-color: hsl(0, 0%, 30%);
-      --collapse-icon-color-collapsed: hsl(258, 88%, 85%);
-      --color-accent: hsl(360, 70%, 60%);
-      --divider-color: hsl(0, 0%, 15%);
-      --divider-color-hover: hsl(258, 88%, 85%);
-      --flair-color: hsl(0, 0%, 80%);
-      --graph-node: hsl(0, 0%, 55%);
-      --graph-node-focused: hsl(258, 88%, 85%);
-      --graph-node-unresolved: hsl(0, 0%, 30%);
-      --graph-text: hsl(0, 0%, 80%);
-      --heading-formatting: hsl(0, 0%, 30%);
-      --hr-color: hsl(0, 0%, 15%);
-      --interactive-accent: hsl(258, 88%, 85%);
-      --interactive-accent-hover: hsl(258, 88%, 95%);
-      --link-color: hsl(258, 88%, 85%);
-      --link-color-hover: hsl(258, 88%, 95%);
-      --link-external-color: hsl(258, 88%, 85%);
-      --link-external-color-hover: hsl(258, 88%, 95%);
-      --link-unresolved-color: hsl(258, 88%, 85%);
-      --menu-background: hsl(0, 0%, 10%);
-      --menu-border-color: hsl(0, 0%, 20%);
-      --pdf-background: hsl(0, 0%, 6%);
-      --pdf-page-background: hsl(0, 0%, 6%);
-      --pdf-shadow: 0 0 0 1px hsl(0, 0%, 15%);
-      --pdf-sidebar-background: hsl(0, 0%, 6%);
-      --pdf-thumbnail-shadow: 0 0 0 1px hsl(0, 0%, 15%);
-      --search-clear-button-color: hsl(0, 0%, 55%);
-      --search-icon-color: hsl(0, 0%, 55%);
-      --search-result-background: hsl(0, 0%, 6%);
-      --setting-group-heading-color: hsl(0, 0%, 80%);
-      --setting-items-background: hsl(0, 0%, 7%);
-      --setting-items-border-color: hsl(0, 0%, 15%);
-      --shiki-active-tab-border-color: hsl(0, 0%, 55%);
-      --shiki-code-background: hsl(0, 0%, 7%);
-      --shiki-code-comment: hsl(0, 0%, 30%);
-      --shiki-code-normal: hsl(0, 0%, 55%);
-      --shiki-code-punctuation: hsl(0, 0%, 55%);
-      --shiki-gutter-border-color: hsl(0, 0%, 15%);
-      --shiki-gutter-text-color: hsl(0, 0%, 30%);
-      --shiki-gutter-text-color-highlight: hsl(0, 0%, 55%);
-      --shiki-highlight-neutral: hsl(0, 0%, 55%);
-      --shiki-terminal-dots-color: hsl(0, 0%, 30%);
-      --suggestion-background: hsl(0, 0%, 6%);
-      --tab-background-active: hsl(0, 0%, 6%);
-      --tab-divider-color: hsl(0, 0%, 20%);
-      --tab-outline-color: hsl(0, 0%, 15%);
-      --tab-switcher-background: hsl(0, 0%, 10%);
-      --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 10%), transparent);
-      --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(360, 70%, 60%);
-      --tab-text-color: hsl(0, 0%, 30%);
-      --tab-text-color-active: hsl(0, 0%, 55%);
-      --tab-text-color-focused: hsl(0, 0%, 55%);
-      --tab-text-color-focused-active: hsl(0, 0%, 55%);
-      --tab-text-color-focused-active-current: hsl(0, 0%, 80%);
-      --tab-text-color-focused-highlighted: hsl(258, 88%, 85%);
-      --table-add-button-border-color: hsl(0, 0%, 15%);
-      --table-border-color: hsl(0, 0%, 15%);
-      --table-drag-handle-background-active: hsl(258, 88%, 85%);
-      --table-drag-handle-color: hsl(0, 0%, 30%);
-      --table-header-border-color: hsl(0, 0%, 15%);
-      --table-header-color: hsl(0, 0%, 80%);
-      --table-selection-border-color: hsl(258, 88%, 85%);
-      --tag-color: hsl(258, 88%, 85%);
-      --tag-color-hover: hsl(258, 88%, 85%);
-      --text-accent: hsl(258, 88%, 85%);
-      --text-accent-hover: hsl(258, 88%, 95%);
-      --text-faint: hsl(0, 0%, 30%);
-      --text-highlight-bg: rgba(168, 220, 250, 0.33);
-      --text-muted: hsl(0, 0%, 55%);
-      --text-normal: hsl(0, 0%, 80%);
-      --text-selection: rgb(50, 50, 50);
-      font-size: 5.632px;
-      line-height: 19.712px;
-      --accent-h: 258;
-      --accent-l: 66%;
-      --accent-s: 88%;
-      --background-match-highlight: hsla(258, 40%, 62%, 0.2);
-      --background-modifier-accent: hsl(258, 88%, 75%);
-      --background-secondary-table: hsl(0, 0%, 8%);
-      --background-tertiary: hsl(0, 0%, 14%);
-      --background-translucent: hsla(0, 0%, 10%, 0.85);
-      --background-transparent: hsla(0, 0%, 10%, 0);
-      --button-background: hsl(0, 0%, 15%);
-      --button-background-active: hsl(0, 0%, 40%);
-      --color-accent-bright: hsla(360, 70%, 80%, 0.9);
-      --color-accent-hover: hsl(360, 70%, 70%);
-      --color-accent-hover-invert: hsl(0, 0%, 55%);
-      --color-accent-shadow: hsla(360, 70%, 70%, 0.2);
-      --color-accent-shadow-more: hsla(360, 70%, 70%, 0.1);
-      --cursor: default;
-      --font-medium: 500;
-      --font-normal: 400;
-      --font-small: 0.933em;
-      --font-smaller: 0.875em;
-      --line-shadow: hsl(0, 0%, 12%);
-      --quote-opening-modifier: hsl(0, 0%, 25%);
-      --text-shadow: hsl(0, 0%, 13%);
-      letter-spacing: 0.32px;
-      text-shadow: rgba(0, 0, 0, 0) 0px 0px 20px;
-      background-image: none;
-      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-      --background-modifier-error: #fb464c;
-      --background-modifier-error-hover: #fb464c;
-      --background-modifier-error-rgb: 251, 70, 76;
-      --background-modifier-form-field: #2a2a2a;
-      --background-modifier-form-field-hover: #2a2a2a;
-      --background-modifier-hover: rgba(255, 255, 255, 0.067);
-      --background-modifier-success: #44cf6e;
-      --background-modifier-success-rgb: 68, 207, 110;
-      --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-      --blur-l: blur(16px) saturate(1.5) brightness(1.15);
-      --blur-m: blur(10px) saturate(1.5) brightness(1.15);
-      --blur-s: blur(6px) saturate(1.5) brightness(1.15);
-      --bold-weight: 600;
-      --button-corner-shape: round;
-      --button-radius: 5px;
-      --callout-blend-mode: lighten;
-      --callout-bug: 251, 70, 76;
-      --callout-default: 2, 122, 255;
-      --callout-error: 251, 70, 76;
-      --callout-example: 168, 130, 255;
-      --callout-fail: 251, 70, 76;
-      --callout-important: 83, 223, 221;
-      --callout-info: 2, 122, 255;
-      --callout-padding: 12px 12px 12px 24px;
-      --callout-question: 233, 151, 63;
-      --callout-radius: 4px;
-      --callout-success: 68, 207, 110;
-      --callout-summary: 83, 223, 221;
-      --callout-tip: 83, 223, 221;
-      --callout-title-weight: 600;
-      --callout-todo: 2, 122, 255;
-      --callout-warning: 233, 151, 63;
-      --canvas-controls-icon-size: 16px;
-      --canvas-controls-icon-stroke: 2px;
-      --canvas-controls-radius: 4px;
-      --canvas-dot-pattern: #363636;
-      --checkbox-radius: 4px;
-      --checkbox-size: 16px;
-      --clickable-icon-radius: 4px;
-      --color-accent-1: hsl(255, 89.76%, 75.9%);
-      --color-accent-2: hsl(253, 92.4%, 85.14%);
-      --color-accent-hsl: 258, 88%, 66%;
-      --divider-vertical-height: 100%;
-      --dropdown-background: #363636;
-      --dropdown-background-hover: #3f3f3f;
-      --dropdown-background-position: right 0.5em top 50%, 0 0;
-      --dropdown-background-size: 1em auto, 100%;
-      --dropdown-padding: 0 1.9em 0 0.8em;
-      --flair-background: #363636;
-      --font-interface: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-      --font-mermaid: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-      --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-      --font-print: "??", "??", "??", "Arial";
-      --font-text: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-      --font-weight: var(--link-weight, 400);
-      --graph-line: #3f3f3f;
-      --graph-node-attachment: #e0de71;
-      --graph-node-tag: #44cf6e;
-      --h5-line-height: 1.5;
-      --h6-line-height: 1.5;
-      --heading-spacing: 2.5rem;
-      --interactive-accent-hsl: 258, 88%, 66%;
-      --interactive-hover: #3f3f3f;
-      --interactive-normal: #363636;
-      --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
-      --link-weight: 400;
-      --list-indent: 2.25em;
-      --menu-border-width: 1px;
-      --menu-corner-shape: round;
-      --menu-padding: 6px;
-      --menu-radius: 8px;
-      --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
-      --popover-font-size: 16px;
-      --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-      --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
-      --resizer-size: 20px;
-      --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-      --scrollbar-bg: rgba(255, 255, 255, 0.05);
-      --scrollbar-radius: 12px;
-      --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
-      --setting-group-heading-size: 15px;
-      --setting-group-heading-weight: 600;
-      --setting-items-padding: 20px;
-      --setting-items-radius: 12px;
-      --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
-      --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
-      --shiki-code-block-border-radius: 4px;
-      --shiki-code-block-spacing: 1rem;
-      --shiki-code-function: #44cf6e;
-      --shiki-code-important: #e9973f;
-      --shiki-code-keyword: #fa99cd;
-      --shiki-code-property: #53dfdd;
-      --shiki-code-string: #e0de71;
-      --shiki-code-value: #a882ff;
-      --shiki-gutter-border-width: 1px;
-      --shiki-highlight-green: rgba(68, 207, 110, 0.5);
-      --shiki-highlight-green-background: rgba(68, 207, 110, 0.1);
-      --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
-      --shiki-highlight-red: rgba(251, 70, 76, 0.5);
-      --shiki-highlight-red-background: rgba(251, 70, 76, 0.1);
-      --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
-      --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
-      --sync-avatar-color-1: #fb464c;
-      --sync-avatar-color-2: #e9973f;
-      --sync-avatar-color-3: #e0de71;
-      --sync-avatar-color-4: #44cf6e;
-      --sync-avatar-color-5: #53dfdd;
-      --sync-avatar-color-6: #027aff;
-      --sync-avatar-color-7: #a882ff;
-      --sync-avatar-color-8: #fa99cd;
-      --tab-font-size: 13px;
-      --tab-radius: 4px;
-      --tab-stacked-font-size: 13px;
-      --tab-stacked-header-width: 40px;
-      --tab-switcher-preview-radius: 16px;
-      --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-      --table-add-button-border-width: 1px;
-      --table-column-alt-background: transparent;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
-      --table-drag-handle-color-active: white;
-      --table-header-background: transparent;
-      --table-header-border-width: 1px;
-      --table-header-size: 16px;
-      --table-header-weight: 600;
-      --table-line-height: 1.3;
-      --table-row-alt-background: transparent;
-      --table-row-alt-background-hover: transparent;
-      --table-row-background-hover: transparent;
-      --table-row-last-border-width: 1px;
-      --table-selection: hsla(258, 88%, 66%, 0.1);
-      --table-selection-blend-mode: lighten;
-      --table-text-size: 16px;
-      --tag-background: hsla(258, 88%, 66%, 0.1);
-      --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-      --tag-border-color: hsla(258, 88%, 66%, 0.15);
-      --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
-      --tag-size: 0.875em;
-      --text-error: #fb464c;
-      --text-success: #44cf6e;
-      --text-warning: #e9973f;
-      --touch-radius-l: 52px;
-      --touch-radius-m: 44px;
-      --touch-radius-s: 40px;
-      --touch-radius-xl: 60px;
-      --touch-radius-xs: 30px;
-      --touch-radius-xxs: 24px;
-      --traffic-lights-offset-x: 40px;
-      --traffic-lights-offset-y: 40px;
-      --zoom-multiplier: 1;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-color: rgba(240, 168, 168, 0.9);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-width: 0px;
-      content: "↩";
-      margin: 0px 0px 0px 2px;
-      padding: 0px;
     }
 
     a.internal-link,
@@ -11460,8 +10914,8 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: rgb(255, 255, 0);
-      color: rgb(0, 0, 0);
+      background-color: var(--text-highlight-bg, rgba(255, 251, 104, 0.06));
+      color: var(--text-normal, rgb(255, 252, 125));
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -11497,15 +10951,6 @@ html[saved-theme="dark"] {
       animation-direction: normal;
       animation-fill-mode: none;
       animation-play-state: running;
-      border: 0px rgb(0, 0, 0);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
     }
 
     del {
@@ -13884,6 +13329,20 @@ html[saved-theme="dark"] {
       border-bottom-right-radius: 21.56px;
     }
 
+    .search-highlight {
+      background-color: rgb(255, 255, 0);
+      color: rgb(0, 0, 0);
+      border: 0px rgb(0, 0, 0);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+    }
+
     li.task-list-item input[type="checkbox"] {
       border-color: rgb(224, 82, 82);
       border-radius: 20%;
@@ -13894,12 +13353,6 @@ html[saved-theme="dark"] {
     li.task-list-item input[type="checkbox"]:checked {
       background-color: var(--checkbox-color, rgba(0, 0, 0, 0));
       border-color: rgba(0, 0, 0, 0);
-    }
-
-    h1.article-title {
-      color: var(--inline-title-color, rgb(204, 204, 204));
-      font-size: var(--inline-title-size, 22.7814px);
-      font-weight: var(--inline-title-weight, 700);
     }
 
     .stacked-page {
@@ -13913,6 +13366,12 @@ html[saved-theme="dark"] {
 
     .stacked-page.active {
       border-color: rgb(204, 204, 204);
+    }
+
+    h1.article-title {
+      color: var(--inline-title-color, rgb(204, 204, 204));
+      font-size: var(--inline-title-size, 22.7814px);
+      font-weight: var(--inline-title-weight, 700);
     }
 
     li.task-list-item[data-task="_"] {

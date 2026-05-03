@@ -565,11 +565,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(179, 179, 179);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(179, 179, 179));
-  font-size: 14px;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   background-color: rgb(85, 85, 85);
   border-color: rgb(117, 117, 117);
@@ -2210,7 +2205,6 @@ html[saved-theme="dark"] body .callout[data-callout="aside"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #555555;
   --flair-color: #b3b3b3;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Aspekta", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: "Monaspace", monospace;
   --font-weight: 400;
@@ -3944,10 +3938,6 @@ html[saved-theme="light"] body del {
   font-weight: 500;
 }
 
-html[saved-theme="light"] body h1.article-title {
-  font-size: 14px;
-}
-
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
   background-color: rgb(211, 211, 211);
   border-color: rgb(211, 211, 211);
@@ -5193,7 +5183,6 @@ html[saved-theme="light"] body .callout[data-callout="aside"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #f8f5f3;
   --flair-color: #222222;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', "Aspekta", sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: "Monaspace", monospace;
   --font-weight: 400;

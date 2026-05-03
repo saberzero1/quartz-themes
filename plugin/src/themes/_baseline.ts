@@ -1102,12 +1102,6 @@ html[saved-theme="dark"] body footer {
   opacity: 1;
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(218, 218, 218));
-  font-size: 13px;
-  font-weight: 400;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   background-color: rgba(0, 0, 0, 0);
   border-color: rgb(102, 102, 102);
@@ -6004,12 +5998,6 @@ html[saved-theme="light"] body del {
 
 html[saved-theme="light"] body footer {
   opacity: 1;
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(34, 34, 34));
-  font-size: 13px;
-  font-weight: 400;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

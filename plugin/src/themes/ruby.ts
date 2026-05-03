@@ -68,10 +68,6 @@ html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="d
   font-family: Inter;
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  font-size: 16.25px;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
   background-color: var(--checkbox-color, rgb(112, 51, 51));
   border-color: rgb(112, 51, 51);
@@ -628,10 +624,6 @@ html[saved-theme="light"] body html {
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--text-normal, rgb(34, 34, 34));
   font-family: Inter;
-}
-
-html[saved-theme="light"] body h1.article-title {
-  font-size: 16.25px;
 }
 
 html[saved-theme="light"] body p {

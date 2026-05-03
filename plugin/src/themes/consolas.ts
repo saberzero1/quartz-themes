@@ -122,10 +122,6 @@ html body .text-highlight {
 
 html body del {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html body h1.article-title {
-  color: var(--color-default, rgb(138, 92, 245));
 }`,
     links: `html body a.external-link, html footer a {
   --font-weight: var(--link-weight, 450);

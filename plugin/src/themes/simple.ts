@@ -152,11 +152,6 @@ html[saved-theme="dark"] body del {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--color-base-60, rgb(153, 153, 153));
-  font-size: 12px;
-}
-
 html[saved-theme="dark"] body p {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
@@ -976,11 +971,6 @@ html[saved-theme="light"] body .text-highlight {
 
 html[saved-theme="light"] body del {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--color-base-60, rgb(112, 112, 112));
-  font-size: 12px;
 }
 
 html[saved-theme="light"] body p {

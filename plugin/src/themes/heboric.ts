@@ -350,10 +350,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(186, 189, 196);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(186, 189, 196));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(106, 111, 124);
   border-radius: 3px;
@@ -2187,10 +2183,6 @@ html[saved-theme="light"] body del {
   font-family: "??", "??", "New York", Georgia, ui-serif, serif;
   outline: rgb(85, 85, 85) none 0px;
   text-decoration-color: rgb(85, 85, 85);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(85, 85, 85));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

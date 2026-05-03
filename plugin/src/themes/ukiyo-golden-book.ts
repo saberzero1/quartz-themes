@@ -425,11 +425,6 @@ html[saved-theme="dark"] body footer {
   opacity: 0.5;
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(70, 12, 12));
-  font-size: 14px;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(152, 34, 34);
@@ -2759,11 +2754,6 @@ html[saved-theme="light"] body del {
 
 html[saved-theme="light"] body footer {
   opacity: 0.5;
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(95, 79, 73));
-  font-size: 14px;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

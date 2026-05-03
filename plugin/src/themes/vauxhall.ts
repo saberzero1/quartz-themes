@@ -750,10 +750,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: color(srgb 0.91 0.88 1);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, color(srgb 0.91 0.88 1));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: color(srgb 0.3064 0.26904 0.5056);
 }
@@ -1824,7 +1820,6 @@ html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
     hsl(255, 100%, 80%)
   );
   --flair-color: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -3432,10 +3427,6 @@ html[saved-theme="light"] body del {
   text-decoration-color: color(srgb 0.125 0 0.5);
 }
 
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, color(srgb 0.125 0 0.5));
-}
-
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
   border-color: color(srgb 0.652 0.5532 0.988);
 }
@@ -4486,7 +4477,6 @@ html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: color-mix(in srgb, hsl(238, 60%, 95%) 25%, #fff);
   --flair-color: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;

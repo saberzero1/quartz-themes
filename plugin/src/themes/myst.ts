@@ -198,10 +198,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: color(srgb 0.737255 0.745098 0.768627 / 0.5);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(188, 190, 196));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-radius: 0px;
 }`,
@@ -1292,7 +1288,6 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h1::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h1-weight, 700);
   background: rgba(201, 201, 201, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: var(--myst-header-line-color, rgba(201, 201, 201, 0.314));
@@ -1328,7 +1323,6 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h2::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h2-weight, 680);
   background: rgba(201, 201, 201, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: var(--myst-header-line-color, rgba(201, 201, 201, 0.314));
@@ -1359,7 +1353,6 @@ html[saved-theme="dark"] body h3 {
 }
 
 html[saved-theme="dark"] body h3::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h3-weight, 660);
   background: rgba(201, 201, 201, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: var(--myst-header-line-color, rgba(201, 201, 201, 0.314));
@@ -1390,7 +1383,6 @@ html[saved-theme="dark"] body h4 {
 }
 
 html[saved-theme="dark"] body h4::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h4-weight, 640);
   background: rgba(201, 201, 201, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: var(--myst-header-line-color, rgba(201, 201, 201, 0.314));
@@ -1421,7 +1413,6 @@ html[saved-theme="dark"] body h5 {
 }
 
 html[saved-theme="dark"] body h5::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h5-weight, 620);
   background: rgba(201, 201, 201, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: var(--myst-header-line-color, rgba(201, 201, 201, 0.314));
@@ -1452,7 +1443,6 @@ html[saved-theme="dark"] body h6 {
 }
 
 html[saved-theme="dark"] body h6::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h6-weight, 600);
   background: rgba(201, 201, 201, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(201, 201, 201, 0.314);
@@ -1817,10 +1807,6 @@ html[saved-theme="light"] body del {
   font-family: "??", Theme-Font, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: color(srgb 0 0 0 / 0.3) none 0px;
   text-decoration-color: color(srgb 0 0 0 / 0.3);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
@@ -2910,7 +2896,6 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h1::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h1-weight, 700);
   background: rgba(0, 0, 0, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0.314));
@@ -2946,7 +2931,6 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h2::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h2-weight, 680);
   background: rgba(0, 0, 0, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0.314));
@@ -2977,7 +2961,6 @@ html[saved-theme="light"] body h3 {
 }
 
 html[saved-theme="light"] body h3::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h3-weight, 660);
   background: rgba(0, 0, 0, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0.314));
@@ -3008,7 +2991,6 @@ html[saved-theme="light"] body h4 {
 }
 
 html[saved-theme="light"] body h4::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h4-weight, 640);
   background: rgba(0, 0, 0, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0.314));
@@ -3039,7 +3021,6 @@ html[saved-theme="light"] body h5 {
 }
 
 html[saved-theme="light"] body h5::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h5-weight, 620);
   background: rgba(0, 0, 0, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0.314));
@@ -3070,7 +3051,6 @@ html[saved-theme="light"] body h6 {
 }
 
 html[saved-theme="light"] body h6::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h6-weight, 600);
   background: rgba(0, 0, 0, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0.314);

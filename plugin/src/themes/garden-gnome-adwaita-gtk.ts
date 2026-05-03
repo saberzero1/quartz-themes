@@ -332,11 +332,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, hsl(0, 0%, 19%));
   background-color: var(--tab-container-background, rgb(48, 48, 48));
 }`,
-    typography: `html[saved-theme="dark"] body h1.article-title {
-  font-weight: 600;
-}
-
-html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
+    typography: `html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
   background-color: var(--checkbox-color, rgb(53, 132, 228));
   border-color: rgb(53, 132, 228);
 }
@@ -1839,11 +1835,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, hsl(0, 0%, 92%));
   background-color: var(--tab-container-background, rgb(235, 235, 235));
 }`,
-    typography: `html[saved-theme="light"] body h1.article-title {
-  font-weight: 600;
-}
-
-html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
+    typography: `html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
   background-color: var(--checkbox-color, rgb(53, 132, 228));
   border-color: rgb(53, 132, 228);
 }

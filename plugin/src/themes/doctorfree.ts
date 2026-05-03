@@ -335,11 +335,6 @@ html[saved-theme="dark"] body footer {
   opacity: 0.4;
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(248, 248, 242));
-  font-size: 18px;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(127, 219, 202);
 }
@@ -2019,11 +2014,6 @@ html[saved-theme="light"] body del {
 
 html[saved-theme="light"] body footer {
   opacity: 0.4;
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(248, 248, 242));
-  font-size: 18px;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

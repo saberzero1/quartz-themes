@@ -330,10 +330,6 @@ html[saved-theme="dark"] body footer {
   --bar-height: calc(22px + var(--bar-vertical-padding)*2);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(222, 222, 222));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
   background-color: var(--checkbox-color, rgb(76, 120, 204));
   border-color: rgb(76, 120, 204);
@@ -1222,7 +1218,6 @@ html[saved-theme="dark"] body .callout[data-callout="folder"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #20242b;
   --flair-color: #dedede;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-color1: hsl( 246 87% 69% / 0.2);
   --folder-color2: hsl( 245 75% 70% / 0.2);
   --folder-color3: hsl( 240 35% 73% / 0.2);
@@ -2478,7 +2473,6 @@ html[saved-theme="light"] body .callout[data-callout="folder"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #ffffff;
   --flair-color: #222222;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --folder-color1: hsl( 246 87% 69%  / 0.2);
   --folder-color2: hsl( 245 89% 75%  / 0.2);
   --folder-color3: hsl( 240 99% 84%  / 0.2);

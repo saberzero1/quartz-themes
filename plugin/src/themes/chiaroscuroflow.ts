@@ -167,10 +167,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(255, 255, 255));
-}
-
 html[saved-theme="dark"] body p {
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }`,
@@ -1465,10 +1461,6 @@ html[saved-theme="light"] body del {
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(12, 9, 9) none 0px;
   text-decoration-color: rgb(12, 9, 9);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(12, 9, 9));
 }
 
 html[saved-theme="light"] body p {

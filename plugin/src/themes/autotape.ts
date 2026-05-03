@@ -207,10 +207,6 @@ html[saved-theme="dark"] body .text-highlight {
   background-color: var(--text-highlight-bg, rgba(158, 206, 106, 0.4));
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  font-size: 14px;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgba(86, 95, 137, 0.533);
   border-radius: 0px;
@@ -1065,10 +1061,6 @@ html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="
 
 html[saved-theme="light"] body .text-highlight {
   background-color: var(--text-highlight-bg, rgba(72, 94, 48, 0.4));
-}
-
-html[saved-theme="light"] body h1.article-title {
-  font-size: 14px;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

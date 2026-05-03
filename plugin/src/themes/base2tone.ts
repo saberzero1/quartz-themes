@@ -245,44 +245,6 @@ html body .page > div#quartz-body div.sidebar.right {
   background-color: var(--tab-container-background, rgb(84, 75, 104));
   border-left-color: rgb(84, 75, 104);
   color: rgb(241, 235, 255);
-}
-
-html body html {
-  --D0-rgb: 207,136,74;
-  --baseA0: hsl(var(--uno), 18%, 17%);
-  --baseA1: hsl(var(--uno), 17%, 22%);
-  --baseA2: hsl(var(--uno), 16%, 35%);
-  --baseA3: hsl(var(--uno), 15%, 40%);
-  --baseA4: hsl(var(--uno), 14%, 45%);
-  --baseA5: hsl(var(--uno), 13%, 53%);
-  --baseA6: hsl(var(--uno), 12%, 61%);
-  --baseA7: hsl(var(--uno), 11%, 69%);
-  --baseB0: hsl(var(--uno), 75%, 61%);
-  --baseB1: hsl(var(--uno), 80%, 66%);
-  --baseB2: hsl(var(--uno), 87%, 71%);
-  --baseB3: hsl(var(--uno), 97%, 76%);
-  --baseB4: hsl(var(--uno), 97%, 81%);
-  --baseB5: hsl(var(--uno), 97%, 86%);
-  --baseB6: hsl(var(--uno), 97%, 91%);
-  --baseB7: hsl(var(--uno), 100%, 96%);
-  --baseC0: hsl(var(--duo), 4%, 46%);
-  --baseC1: hsl(var(--duo), 5%, 53%);
-  --baseC2: hsl(var(--duo), 6%, 60%);
-  --baseC3: hsl(var(--duo), 6%, 67%);
-  --baseC4: hsl(var(--duo), 8%, 74%);
-  --baseC5: hsl(var(--duo), 13%, 82%);
-  --baseC6: hsl(var(--duo), 18%, 90%);
-  --baseC7: hsl(var(--duo), 23%, 98%);
-  --baseD0: hsl(var(--duo), 58%, 55%);
-  --baseD1: hsl(var(--duo), 63%, 60%);
-  --baseD2: hsl(var(--duo), 80%, 65%);
-  --baseD3: hsl(var(--duo), 85%, 68%);
-  --baseD4: hsl(var(--duo), 90%, 71%);
-  --baseD5: hsl(var(--duo), 95%, 75%);
-  --baseD6: hsl(var(--duo), 100%, 80%);
-  --baseD7: hsl(var(--duo), 100%, 85%);
-  --duo: 28;
-  --uno: 260;
 }`,
     typography: `html body .markdown-rendered p > b, html b {
   color: var(--bold-color, rgb(241, 235, 255));
@@ -321,10 +283,6 @@ html body del {
   text-decoration-color: rgb(241, 235, 255);
 }
 
-html body h1.article-title {
-  color: var(--text-normal, rgb(241, 235, 255));
-}
-
 html body li.task-list-item input[type="checkbox"] {
   border-color: rgb(208, 185, 254);
 }
@@ -340,298 +298,8 @@ html body p {
   text-decoration-color: rgb(225, 210, 254);
 }`,
     links: `html body a.external-link, html footer a {
-  --background-accent: hsl(260, 14%, 45%);
-  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-  --background-modifier-border: hsl(260, 16%, 35%);
-  --background-modifier-border-focus: #555555;
-  --background-modifier-border-hover: #3f3f3f;
-  --background-modifier-error: #fb464c;
-  --background-modifier-error-hover: #fb464c;
-  --background-modifier-error-rgb: 251, 70, 76;
-  --background-modifier-form-field: #2a2a2a;
-  --background-modifier-form-field-hover: #2a2a2a;
-  --background-modifier-hover: rgba(255, 255, 255, 0.067);
-  --background-modifier-success: #44cf6e;
-  --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: hsl(260, 18%, 17%);
-  --background-primary-alt: hsl(260, 17%, 22%);
-  --background-secondary: hsl(260, 16%, 35%);
-  --background-secondary-alt: hsl(260, 17%, 22%);
-  --blockquote-border-color: hsl(28, 58%, 55%);
-  --blur-background: color-mix(in srgb, hsl(260, 18%, 17%) 65%, transparent) linear-gradient(hsl(260, 18%, 17%), color-mix(in srgb, hsl(260, 18%, 17%) 65%, transparent));
-  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
-  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
-  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
-  --bold-weight: 600;
-  --bullet: hsl(28, 58%, 55%);
-  --button-corner-shape: round;
-  --button-radius: 5px;
-  --callout-blend-mode: lighten;
-  --callout-bug: 251, 70, 76;
-  --callout-default: 2, 122, 255;
-  --callout-error: 251, 70, 76;
-  --callout-example: 168, 130, 255;
-  --callout-fail: 251, 70, 76;
-  --callout-important: 83, 223, 221;
-  --callout-info: 2, 122, 255;
-  --callout-padding: 12px 12px 12px 24px;
-  --callout-question: 233, 151, 63;
-  --callout-radius: 4px;
-  --callout-success: 68, 207, 110;
-  --callout-summary: 83, 223, 221;
-  --callout-tip: 83, 223, 221;
-  --callout-title-weight: 600;
-  --callout-todo: 2, 122, 255;
-  --callout-warning: 233, 151, 63;
-  --canvas-background: hsl(260, 18%, 17%);
-  --canvas-controls-icon-size: 16px;
-  --canvas-controls-icon-stroke: 2px;
-  --canvas-controls-radius: 4px;
-  --canvas-dot-pattern: #363636;
-  --caret-color: hsl(260, 100%, 96%);
-  --checkbox-border-color: hsl(260, 97%, 86%);
-  --checkbox-border-color-hover: hsl(260, 97%, 91%);
-  --checkbox-color: hsl(28, 58%, 55%);
-  --checkbox-color-hover: hsl(28, 63%, 60%);
-  --checkbox-marker-color: hsl(260, 18%, 17%);
-  --checkbox-radius: 4px;
-  --checkbox-size: 16px;
-  --checklist-done-color: hsl(260, 97%, 91%);
-  --clickable-icon-radius: 4px;
-  --code-background: hsl(260, 17%, 22%);
-  --code-border-color: hsl(260, 16%, 35%);
-  --code-bracket-background: rgba(255, 255, 255, 0.067);
-  --code-comment: hsl(260, 97%, 86%);
-  --code-function: #e0de71;
-  --code-important: #e9973f;
-  --code-keyword: #fa99cd;
-  --code-normal: hsl(260, 100%, 96%);
-  --code-operator: #fb464c;
-  --code-property: #53dfdd;
-  --code-punctuation: hsl(260, 97%, 91%);
-  --code-radius: 4px;
-  --code-size: 0.875em;
-  --code-string: #44cf6e;
-  --code-tag: #fb464c;
-  --code-value: #a882ff;
-  --collapse-icon-color: hsl(260, 97%, 86%);
-  --collapse-icon-color-collapsed: hsl(260, 75%, 61%);
-  --color-accent: hsl(258, 88%, 66%);
-  --color-accent-1: hsl(255, 89.76%, 75.9%);
-  --color-accent-2: hsl(253, 92.4%, 85.14%);
-  --color-accent-hsl: 258, 88%, 66%;
-  --divider-color: hsl(260, 16%, 35%);
-  --divider-color-hover: hsl(28, 58%, 55%);
-  --divider-vertical-height: 100%;
-  --dropdown-background: hsl(260, 18%, 17%);
-  --dropdown-background-hover: hsl(28, 58%, 55%);
-  --dropdown-background-position: right 0.5em top 50%, 0 0;
-  --dropdown-background-size: 1em auto, 100%;
-  --dropdown-padding: 0 1.9em 0 0.8em;
-  --flair-background: hsl(260, 18%, 17%);
-  --flair-color: hsl(260, 100%, 96%);
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
-  --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  --font-print: '??', '??', '??', 'Arial';
-  --font-text: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-weight: var(--link-weight, 400);
-  --graph-line: #3f3f3f;
-  --graph-node: hsl(260, 97%, 91%);
-  --graph-node-attachment: #e0de71;
-  --graph-node-focused: hsl(260, 75%, 61%);
-  --graph-node-tag: #44cf6e;
-  --graph-node-unresolved: hsl(260, 97%, 86%);
-  --graph-text: hsl(260, 100%, 96%);
-  --h5-line-height: 1.5;
-  --h6-line-height: 1.5;
-  --heading-formatting: hsl(260, 97%, 86%);
-  --heading-spacing: 2.5rem;
-  --hr-color: hsl(260, 16%, 35%);
-  --inline-code: hsl(28, 58%, 55%);
-  --interactive-accent: hsl(28, 58%, 55%);
-  --interactive-accent-hover: hsl(28, 63%, 60%);
-  --interactive-accent-hsl: 258, 88%, 66%;
-  --interactive-accent-rgb: 207,136,74;
-  --interactive-hover: hsl(28, 58%, 55%);
-  --interactive-normal: hsl(260, 18%, 17%);
-  --link-color: hsl(260, 75%, 61%);
-  --link-color-hover: hsl(260, 80%, 66%);
-  --link-external: hsl(28, 58%, 55%);
-  --link-external-color: hsl(260, 75%, 61%);
-  --link-external-color-hover: hsl(260, 80%, 66%);
-  --link-internal: hsl(28, 90%, 71%);
-  --link-unresolved-color: hsl(260, 75%, 61%);
-  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
-  --link-weight: 400;
-  --list-indent: 2.25em;
-  --menu-background: hsl(260, 16%, 35%);
-  --menu-border-color: #3f3f3f;
-  --menu-border-width: 1px;
-  --menu-corner-shape: round;
-  --menu-padding: 6px;
-  --menu-radius: 8px;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
-  --operators: hsl(260, 15%, 40%);
-  --pdf-background: hsl(260, 18%, 17%);
-  --pdf-page-background: hsl(260, 18%, 17%);
-  --pdf-shadow: 0 0 0 1px hsl(260, 16%, 35%);
-  --pdf-sidebar-background: hsl(260, 18%, 17%);
-  --pdf-thumbnail-shadow: 0 0 0 1px hsl(260, 16%, 35%);
-  --popover-font-size: 16px;
-  --raised-background: color-mix(in srgb, hsl(260, 18%, 17%) 65%, transparent) linear-gradient(hsl(260, 18%, 17%), color-mix(in srgb, hsl(260, 18%, 17%) 65%, transparent));
-  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
-  --resizer-size: 20px;
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-  --scrollbar-bg: rgba(255, 255, 255, 0.05);
-  --scrollbar-radius: 12px;
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
-  --search-clear-button-color: hsl(260, 97%, 91%);
-  --search-icon-color: hsl(260, 97%, 91%);
-  --search-result-background: hsl(260, 18%, 17%);
-  --setting-group-heading-color: hsl(260, 100%, 96%);
-  --setting-group-heading-size: 15px;
-  --setting-group-heading-weight: 600;
-  --setting-items-background: hsl(260, 17%, 22%);
-  --setting-items-border-color: hsl(260, 16%, 35%);
-  --setting-items-padding: 20px;
-  --setting-items-radius: 12px;
-  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
-  --shiki-active-tab-border-color: hsl(260, 97%, 91%);
-  --shiki-code-background: hsl(260, 17%, 22%);
-  --shiki-code-block-border-radius: 4px;
-  --shiki-code-block-spacing: 1rem;
-  --shiki-code-comment: hsl(260, 97%, 86%);
-  --shiki-code-function: #44cf6e;
-  --shiki-code-important: #e9973f;
-  --shiki-code-keyword: #fa99cd;
-  --shiki-code-normal: hsl(260, 97%, 91%);
-  --shiki-code-property: #53dfdd;
-  --shiki-code-punctuation: hsl(260, 97%, 91%);
-  --shiki-code-string: #e0de71;
-  --shiki-code-value: #a882ff;
-  --shiki-gutter-border-color: hsl(260, 16%, 35%);
-  --shiki-gutter-border-width: 1px;
-  --shiki-gutter-text-color: hsl(260, 97%, 86%);
-  --shiki-gutter-text-color-highlight: hsl(260, 97%, 91%);
-  --shiki-highlight-green: rgba(68, 207, 110, 0.5);
-  --shiki-highlight-green-background: rgba(68, 207, 110, 0.1);
-  --shiki-highlight-neutral: hsl(260, 97%, 91%);
-  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
-  --shiki-highlight-red: rgba(251, 70, 76, 0.5);
-  --shiki-highlight-red-background: rgba(251, 70, 76, 0.1);
-  --shiki-terminal-dots-color: hsl(260, 97%, 86%);
-  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
-  --suggestion-background: hsl(260, 18%, 17%);
-  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
-  --sync-avatar-color-1: #fb464c;
-  --sync-avatar-color-2: #e9973f;
-  --sync-avatar-color-3: #e0de71;
-  --sync-avatar-color-4: #44cf6e;
-  --sync-avatar-color-5: #53dfdd;
-  --sync-avatar-color-6: #027aff;
-  --sync-avatar-color-7: #a882ff;
-  --sync-avatar-color-8: #fa99cd;
-  --tab-background-active: hsl(260, 18%, 17%);
-  --tab-divider-color: #3f3f3f;
-  --tab-font-size: 13px;
-  --tab-outline-color: hsl(260, 16%, 35%);
-  --tab-radius: 4px;
-  --tab-stacked-font-size: 13px;
-  --tab-stacked-header-width: 40px;
-  --tab-switcher-background: hsl(260, 16%, 35%);
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(260, 16%, 35%), transparent);
-  --tab-switcher-preview-radius: 16px;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
-  --tab-text-color: hsl(260, 97%, 86%);
-  --tab-text-color-active: hsl(260, 97%, 91%);
-  --tab-text-color-focused: hsl(260, 97%, 91%);
-  --tab-text-color-focused-active: hsl(260, 97%, 91%);
-  --tab-text-color-focused-active-current: hsl(260, 100%, 96%);
-  --tab-text-color-focused-highlighted: hsl(260, 75%, 61%);
-  --table-add-button-border-color: hsl(260, 16%, 35%);
-  --table-add-button-border-width: 1px;
-  --table-border-color: hsl(260, 16%, 35%);
-  --table-column-alt-background: transparent;
-  --table-column-first-border-width: 1px;
-  --table-column-last-border-width: 1px;
-  --table-drag-handle-background-active: hsl(28, 58%, 55%);
-  --table-drag-handle-color: hsl(260, 97%, 86%);
-  --table-drag-handle-color-active: hsl(28, 23%, 98%);
-  --table-header-background: transparent;
-  --table-header-border-color: hsl(260, 16%, 35%);
-  --table-header-border-width: 1px;
-  --table-header-color: hsl(260, 100%, 96%);
-  --table-header-size: 16px;
-  --table-header-weight: 600;
-  --table-line-height: 1.3;
-  --table-row-alt-background: transparent;
-  --table-row-alt-background-hover: transparent;
-  --table-row-background-hover: transparent;
-  --table-row-last-border-width: 1px;
-  --table-selection: hsla(258, 88%, 66%, 0.1);
-  --table-selection-blend-mode: lighten;
-  --table-selection-border-color: hsl(28, 58%, 55%);
-  --table-text-size: 16px;
-  --tag-background: hsla(258, 88%, 66%, 0.1);
-  --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-  --tag-border-color: hsla(258, 88%, 66%, 0.15);
-  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
-  --tag-color: hsl(260, 75%, 61%);
-  --tag-color-hover: hsl(260, 75%, 61%);
-  --tag-size: 0.875em;
-  --text-accent: hsl(260, 75%, 61%);
-  --text-accent-hover: hsl(260, 80%, 66%);
-  --text-error: #fb464c;
-  --text-faint: hsl(260, 97%, 86%);
-  --text-highlight-bg: hsl(28, 58%, 55%);
-  --text-muted: hsl(260, 97%, 91%);
-  --text-normal: hsl(260, 100%, 96%);
-  --text-on-accent: hsl(28, 23%, 98%);
-  --text-selection: hsla(260, 75%, 61%, 0.25);
-  --text-success: #44cf6e;
-  --text-warning: #e9973f;
-  --touch-radius-l: 52px;
-  --touch-radius-m: 44px;
-  --touch-radius-s: 40px;
-  --touch-radius-xl: 60px;
-  --touch-radius-xs: 30px;
-  --touch-radius-xxs: 24px;
-  --traffic-lights-offset-x: 40px;
-  --traffic-lights-offset-y: 40px;
-  --zoom-multiplier: 1;
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(207, 136, 74);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-width: 0px;
-  border-left-color: rgb(207, 136, 74);
-  border-left-width: 0px;
-  border-right-color: rgb(207, 136, 74);
-  border-right-width: 0px;
-  border-top-color: rgb(207, 136, 74);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-width: 0px;
   color: var(--link-external, rgb(207, 136, 74));
-  content: "↗";
-  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-size: 12px;
-  font-style: italic;
-  font-weight: var(--link-weight, 400);
-  line-height: 18px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
   outline: rgb(207, 136, 74) none 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
   text-decoration-color: rgb(207, 136, 74);
 }
 
@@ -644,6 +312,10 @@ html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
 html body a.internal-link.broken {
   color: var(--link-unresolved-color, rgb(131, 81, 230));
   outline: rgb(131, 81, 230) none 0px;
+}
+
+html body li.task-list-item[data-task="_"] {
+  color: rgb(241, 235, 255);
 }`,
     lists: `html body dd {
   color: rgb(241, 235, 255);
@@ -770,7 +442,45 @@ html body .transclude-inner {
   border-right-color: rgb(241, 235, 255);
   border-top-color: rgb(241, 235, 255);
 }`,
-    checkboxes: `html body input[type=checkbox] {
+    checkboxes: `html body html {
+  --D0-rgb: 207,136,74;
+  --baseA0: hsl(var(--uno), 18%, 17%);
+  --baseA1: hsl(var(--uno), 17%, 22%);
+  --baseA2: hsl(var(--uno), 16%, 35%);
+  --baseA3: hsl(var(--uno), 15%, 40%);
+  --baseA4: hsl(var(--uno), 14%, 45%);
+  --baseA5: hsl(var(--uno), 13%, 53%);
+  --baseA6: hsl(var(--uno), 12%, 61%);
+  --baseA7: hsl(var(--uno), 11%, 69%);
+  --baseB0: hsl(var(--uno), 75%, 61%);
+  --baseB1: hsl(var(--uno), 80%, 66%);
+  --baseB2: hsl(var(--uno), 87%, 71%);
+  --baseB3: hsl(var(--uno), 97%, 76%);
+  --baseB4: hsl(var(--uno), 97%, 81%);
+  --baseB5: hsl(var(--uno), 97%, 86%);
+  --baseB6: hsl(var(--uno), 97%, 91%);
+  --baseB7: hsl(var(--uno), 100%, 96%);
+  --baseC0: hsl(var(--duo), 4%, 46%);
+  --baseC1: hsl(var(--duo), 5%, 53%);
+  --baseC2: hsl(var(--duo), 6%, 60%);
+  --baseC3: hsl(var(--duo), 6%, 67%);
+  --baseC4: hsl(var(--duo), 8%, 74%);
+  --baseC5: hsl(var(--duo), 13%, 82%);
+  --baseC6: hsl(var(--duo), 18%, 90%);
+  --baseC7: hsl(var(--duo), 23%, 98%);
+  --baseD0: hsl(var(--duo), 58%, 55%);
+  --baseD1: hsl(var(--duo), 63%, 60%);
+  --baseD2: hsl(var(--duo), 80%, 65%);
+  --baseD3: hsl(var(--duo), 85%, 68%);
+  --baseD4: hsl(var(--duo), 90%, 71%);
+  --baseD5: hsl(var(--duo), 95%, 75%);
+  --baseD6: hsl(var(--duo), 100%, 80%);
+  --baseD7: hsl(var(--duo), 100%, 85%);
+  --duo: 28;
+  --uno: 260;
+}
+
+html body input[type=checkbox] {
   border-bottom-color: rgb(208, 185, 254);
   border-left-color: rgb(208, 185, 254);
   border-right-color: rgb(208, 185, 254);
@@ -962,10 +672,6 @@ html body li.task-list-item[data-task="Y"] {
 }
 
 html body li.task-list-item[data-task="Z"] {
-  color: rgb(241, 235, 255);
-}
-
-html body li.task-list-item[data-task="_"] {
   color: rgb(241, 235, 255);
 }
 

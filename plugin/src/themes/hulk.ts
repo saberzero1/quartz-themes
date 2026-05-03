@@ -227,11 +227,6 @@ html body del {
   text-decoration-color: rgb(187, 192, 197);
 }
 
-html body h1.article-title {
-  color: var(--text-normal, rgb(187, 192, 197));
-  font-size: 14px;
-}
-
 html body li.task-list-item input[type="checkbox"] {
   border-color: rgba(187, 192, 197, 0.4);
   border-radius: 50%;

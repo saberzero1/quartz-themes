@@ -294,10 +294,6 @@ html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="d
 
 html[saved-theme="dark"] body .text-highlight {
   background-color: var(--text-highlight-bg, rgba(236, 235, 0, 0.4));
-}
-
-html[saved-theme="dark"] body h1.article-title {
-  font-weight: 700;
 }`,
     links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: var(--link-external-color, rgb(0, 113, 227));
@@ -1503,10 +1499,6 @@ html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="
 
 html[saved-theme="light"] body .text-highlight {
   background-color: var(--text-highlight-bg, rgba(236, 235, 0, 0.4));
-}
-
-html[saved-theme="light"] body h1.article-title {
-  font-weight: 700;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

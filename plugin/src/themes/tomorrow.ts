@@ -208,10 +208,6 @@ html body del {
   text-decoration-color: rgb(197, 200, 198);
 }
 
-html body h1.article-title {
-  color: var(--text-normal, rgb(197, 200, 198));
-}
-
 html body p {
   color: var(--text-muted, rgb(150, 152, 150));
   outline: rgb(150, 152, 150) none 0px;

@@ -339,10 +339,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(239, 241, 245);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(239, 241, 245));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(177, 186, 205);
 }
@@ -2051,10 +2047,6 @@ html[saved-theme="light"] body del {
   font-family: Avenir, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(41, 44, 46) none 0px;
   text-decoration-color: rgb(41, 44, 46);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(41, 44, 46));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

@@ -356,11 +356,6 @@ html[saved-theme="dark"] body footer {
   opacity: 0.5;
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(204, 194, 183));
-  font-size: 14px;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(134, 128, 116);
@@ -1331,7 +1326,6 @@ html[saved-theme="dark"] body .callout[data-callout="col"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #504431;
   --flair-color: #ccc2b7;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', "CMU Typewriter Text";
   --font-mermaid: '??', '??', "CMU Typewriter Text";
   --font-monospace: '??', '??', "JetBrains Mono";
@@ -1619,7 +1613,6 @@ html[saved-theme="dark"] body .callout[data-callout="cont"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #504431;
   --flair-color: #ccc2b7;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', "CMU Typewriter Text";
   --font-mermaid: '??', '??', "CMU Typewriter Text";
   --font-monospace: '??', '??', "JetBrains Mono";
@@ -1902,7 +1895,6 @@ html[saved-theme="dark"] body .callout[data-callout="container"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #504431;
   --flair-color: #ccc2b7;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', "CMU Typewriter Text";
   --font-mermaid: '??', '??', "CMU Typewriter Text";
   --font-monospace: '??', '??', "JetBrains Mono";
@@ -3376,11 +3368,6 @@ html[saved-theme="light"] body footer {
   opacity: 0.5;
 }
 
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(95, 79, 73));
-  font-size: 14px;
-}
-
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
   background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-color: rgb(122, 109, 104);
@@ -4380,7 +4367,6 @@ html[saved-theme="light"] body .callout[data-callout="col"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #e1c4a6;
   --flair-color: #5f4f49;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', "CMU Typewriter Text";
   --font-mermaid: '??', '??', "CMU Typewriter Text";
   --font-monospace: '??', '??', "JetBrains Mono";
@@ -4665,7 +4651,6 @@ html[saved-theme="light"] body .callout[data-callout="cont"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #e1c4a6;
   --flair-color: #5f4f49;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', "CMU Typewriter Text";
   --font-mermaid: '??', '??', "CMU Typewriter Text";
   --font-monospace: '??', '??', "JetBrains Mono";
@@ -4945,7 +4930,6 @@ html[saved-theme="light"] body .callout[data-callout="container"] {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --flair-background: #e1c4a6;
   --flair-color: #5f4f49;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', '??', '??', "CMU Typewriter Text";
   --font-mermaid: '??', '??', "CMU Typewriter Text";
   --font-monospace: '??', '??', "JetBrains Mono";

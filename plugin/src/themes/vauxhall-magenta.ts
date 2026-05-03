@@ -749,10 +749,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: color(srgb 0.96 0.88 1);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, color(srgb 0.96 0.88 1));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: color(srgb 0.439067 0.2664 0.5056);
 }
@@ -2852,10 +2848,6 @@ html[saved-theme="light"] body del {
   color: color(srgb 0.333333 0 0.5);
   outline: color(srgb 0.333333 0 0.5) none 0px;
   text-decoration-color: color(srgb 0.333333 0 0.5);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, color(srgb 0.333333 0 0.5));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

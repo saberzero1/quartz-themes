@@ -44,10 +44,6 @@ html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="d
   font-family: Inter;
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  font-size: 16.25px;
-}
-
 html[saved-theme="dark"] body p {
   font-family: "??", "??", "Dank Mono", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
@@ -568,10 +564,6 @@ html[saved-theme="light"] body {
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--text-normal, rgb(34, 34, 34));
   font-family: Inter;
-}
-
-html[saved-theme="light"] body h1.article-title {
-  font-size: 16.25px;
 }
 
 html[saved-theme="light"] body p {

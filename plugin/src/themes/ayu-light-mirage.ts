@@ -448,10 +448,6 @@ html[saved-theme="dark"] body del {
   text-decoration-thickness: from-font;
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(204, 202, 194));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgba(138, 145, 153, 0.4);
 }
@@ -2510,10 +2506,6 @@ html[saved-theme="light"] body del {
   text-decoration-color: rgba(255, 115, 131, 0.8);
   text-decoration-style: wavy;
   text-decoration-thickness: from-font;
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, rgb(92, 97, 102));
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

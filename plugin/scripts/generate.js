@@ -879,6 +879,11 @@ function buildModeCSS(
         propMap = new Map();
         selectorMap.set(selector, propMap);
       }
+      if (propMap.has(prop) && propMap.get(prop) !== normalized) {
+        warnings.add(
+          `[overwrite] ${selector} :: ${prop} overwritten (${mapping.obsidianSelector})`,
+        );
+      }
       propMap.set(prop, normalized);
     }
 
@@ -898,6 +903,10 @@ function buildModeCSS(
       ) {
         continue;
       }
+      // Skip build-tool artifact properties (e.g. PostCSS's --csstools-* vars)
+      if (prop.startsWith("--csstools-")) continue;
+      // Skip bridge values referencing build-tool artifact variables
+      if (/var\(\s*--csstools-/.test(value)) continue;
       // Skip if this property already matches the body/root baseline value
       if (baseVars[prop] === value) continue;
       // Skip bridge declarations contaminated by class-toggle state that was

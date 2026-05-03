@@ -739,11 +739,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: oklch(0.525 0.0225 318);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, oklch(0.85 0.0125 318));
-  font-weight: 490;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(255, 255, 255);
   border-radius: 50%;
@@ -2350,7 +2345,6 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h1::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h1-weight, 330);
   background: oklch(1 0.09375 318 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: oklch(1 0.09375 318 / 0.1);
@@ -2388,7 +2382,6 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   background: oklch(1 0.09375 318 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: oklch(1 0.09375 318 / 0.1);
   border-bottom-color: oklch(0.895 0.0005 318);
@@ -3511,11 +3504,6 @@ html[saved-theme="light"] body del {
   font-weight: 420;
   outline: oklch(0.715 0.0105 281) none 0px;
   text-decoration-color: oklch(0.715 0.0105 281);
-}
-
-html[saved-theme="light"] body h1.article-title {
-  color: var(--text-normal, oklch(0.3 0.0005 281));
-  font-weight: 490;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
@@ -5121,7 +5109,6 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h1::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-weight: var(--h1-weight, 330);
   background: oklch(0 0 0 / 0.092) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: oklch(0 0 0 / 0.092);
@@ -5159,7 +5146,6 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a::after {
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   background: oklch(0 0 0 / 0.092) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: oklch(0 0 0 / 0.092);
   border-bottom-color: oklch(0.24 0.0005 281);

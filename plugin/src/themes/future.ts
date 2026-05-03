@@ -390,10 +390,6 @@ html body del {
   text-decoration-color: rgb(47, 47, 47);
 }
 
-html body h1.article-title {
-  color: var(--text-normal, rgb(47, 47, 47));
-}
-
 html body li.task-list-item input[type="checkbox"] {
   border-color: rgb(148, 148, 148);
   border-radius: 13.3333px;
@@ -1254,7 +1250,6 @@ html body .callout-title {
   --dropdown-padding: 0px 0px 0px 12px;
   --flair-background: #ffffff;
   --flair-color: #2f2f2f;
-  --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df);
   --font-interface: '??', 'Inter', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-mermaid: '??', 'Inter', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;

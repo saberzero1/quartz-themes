@@ -222,10 +222,6 @@ html[saved-theme="dark"] body del {
   text-decoration-color: rgb(144, 144, 144);
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  color: var(--text-normal, rgb(144, 144, 144));
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-radius: 100px;
 }

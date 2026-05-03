@@ -731,10 +731,6 @@ html[saved-theme="dark"] body del {
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html[saved-theme="dark"] body h1.article-title {
-  font-weight: 700;
-}
-
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   background-color: var(--background-paper, rgba(0, 0, 0, 0));
   border-radius: 12px;
@@ -2412,10 +2408,6 @@ html[saved-theme="light"] body .text-highlight {
 
 html[saved-theme="light"] body del {
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html[saved-theme="light"] body h1.article-title {
-  font-weight: 700;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
