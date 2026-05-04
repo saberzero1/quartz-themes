@@ -39,12 +39,22 @@ export const theme: ThemeData = {
   --callout-bug: var(--color-red-rgb, 197,
     65,
     40);
+  --callout-default: var(--callout-default, 8, 109, 221);
   --callout-error: var(--color-red-rgb, 197,
     65,
     40);
+  --callout-example: var(--callout-example, 120, 82, 238);
   --callout-fail: var(--color-red-rgb, 197,
     65,
     40);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #fcfef3);
   --canvas-color-1: var(--color-red-rgb, 197,
     65,
@@ -185,7 +195,7 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, #6f6e6a);
   --vault-profile-color-hover: var(--vault-profile-color, #6f6e6a);
   --yellow: #e1d5ac;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
 }
 
 html body {
@@ -240,6 +250,13 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(111, 110, 106);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(111, 110, 106));
+  font-family: 宋体, SimSun;
+  outline: rgb(111, 110, 106) none 0px;
+  text-decoration-color: rgb(111, 110, 106);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--bold-color, rgb(111, 110, 106));
   font-family: 宋体, SimSun;
@@ -282,19 +299,31 @@ html body a.internal-link.broken {
   font-family: 宋体, SimSun;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(111, 110, 106);
+  border-left-color: rgb(111, 110, 106);
+  border-right-color: rgb(111, 110, 106);
+  border-top-color: rgb(111, 110, 106);
   color: rgb(111, 110, 106);
+  font-family: 宋体, SimSun;
 }
 
 html body dt {
+  border-bottom-color: rgb(111, 110, 106);
+  border-left-color: rgb(111, 110, 106);
+  border-right-color: rgb(111, 110, 106);
+  border-top-color: rgb(111, 110, 106);
   color: rgb(111, 110, 106);
+  font-family: 宋体, SimSun;
 }
 
 html body ol > li {
   color: rgb(111, 110, 106);
+  margin-left: 24px;
 }
 
 html body ul > li {
   color: rgb(111, 110, 106);
+  margin-left: 24px;
 }
 
 html body ul.overflow {
@@ -304,6 +333,7 @@ html body ul.overflow {
   border-top-color: rgb(111, 110, 106);
 }`,
     blockquotes: `html body blockquote {
+  color: var(--blockquote-color, rgb(111, 110, 106));
   font-family: 宋体, SimSun;
 }`,
     tables: `html body .table-container {
@@ -316,7 +346,6 @@ html body ul.overflow {
 html body table {
   color: rgb(111, 110, 106);
   font-family: 宋体, SimSun;
-  width: 180.766px;
 }
 
 html body td {
@@ -385,10 +414,12 @@ html body video {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   border-left-color: rgb(141, 156, 141);
+  border-radius: 6px;
   border-right-color: rgb(141, 156, 141);
   border-top-color: rgb(141, 156, 141);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  color: var(--text-muted, rgb(141, 156, 141));
 }
 
 html body .footnotes {
@@ -400,6 +431,7 @@ html body .transclude {
   border-bottom-color: rgb(111, 110, 106);
   border-right-color: rgb(111, 110, 106);
   border-top-color: rgb(111, 110, 106);
+  color: rgb(111, 110, 106);
 }
 
 html body .transclude-inner {
@@ -407,6 +439,7 @@ html body .transclude-inner {
   border-left-color: rgb(111, 110, 106);
   border-right-color: rgb(111, 110, 106);
   border-top-color: rgb(111, 110, 106);
+  color: rgb(111, 110, 106);
 }`,
     checkboxes: `html body .katex-display > .katex {
   font-family: 宋体, SimSun;
@@ -1304,6 +1337,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-bottom-right-radius: 4px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  color: var(--pill-color, rgb(252, 253, 254));
 }
 
 html body a.internal-link.tag-link::before {
@@ -1311,6 +1345,10 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(111, 110, 106);
+  border-left-color: rgb(111, 110, 106);
+  border-right-color: rgb(111, 110, 106);
+  border-top-color: rgb(111, 110, 106);
   color: var(--h1-color, rgb(111, 110, 106));
   font-family: var(--h1-font, 宋体, SimSun);
 }
@@ -1320,33 +1358,61 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(111, 110, 106);
+  border-left-color: rgb(111, 110, 106);
+  border-right-color: rgb(111, 110, 106);
+  border-top-color: rgb(111, 110, 106);
   color: var(--h2-color, rgb(111, 110, 106));
   font-family: var(--h2-font, 宋体, SimSun);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(111, 110, 106);
+  border-left-color: rgb(111, 110, 106);
+  border-right-color: rgb(111, 110, 106);
+  border-top-color: rgb(111, 110, 106);
   color: var(--inline-title-color, rgb(111, 110, 106));
   font-family: var(--inline-title-font, 宋体, SimSun);
 }
 
 html body h3 {
+  border-bottom-color: rgb(111, 110, 106);
+  border-left-color: rgb(111, 110, 106);
+  border-right-color: rgb(111, 110, 106);
+  border-top-color: rgb(111, 110, 106);
   color: var(--h3-color, rgb(111, 110, 106));
   font-family: var(--h3-font, 宋体, SimSun);
+  margin-top: var(--heading-spacing, 40px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(111, 110, 106);
+  border-left-color: rgb(111, 110, 106);
+  border-right-color: rgb(111, 110, 106);
+  border-top-color: rgb(111, 110, 106);
   color: var(--h4-color, rgb(111, 110, 106));
   font-family: var(--h4-font, 宋体, SimSun);
+  margin-top: var(--heading-spacing, 40px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(111, 110, 106);
+  border-left-color: rgb(111, 110, 106);
+  border-right-color: rgb(111, 110, 106);
+  border-top-color: rgb(111, 110, 106);
   color: var(--h5-color, rgb(111, 110, 106));
   font-family: var(--h5-font, 宋体, SimSun);
+  margin-top: var(--heading-spacing, 40px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(111, 110, 106);
+  border-left-color: rgb(111, 110, 106);
+  border-right-color: rgb(111, 110, 106);
+  border-top-color: rgb(111, 110, 106);
   color: var(--h6-color, rgb(111, 110, 106));
   font-family: var(--h6-font, 宋体, SimSun);
+  margin-top: 40px;
 }
 
 html body hr {
@@ -1369,6 +1435,26 @@ html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(98, 102, 102));
   font-family: "Times New Roman";
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(111, 110, 106);
@@ -1491,6 +1577,15 @@ html body .canvas-sidebar {
   font-family: 宋体, SimSun;
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(141, 156, 141);
+  border-left-color: rgb(141, 156, 141);
+  border-right-color: rgb(141, 156, 141);
+  border-top-color: rgb(141, 156, 141);
+  color: rgb(141, 156, 141);
+  font-family: 宋体, SimSun;
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(141, 156, 141);
   border-left-color: rgb(141, 156, 141);
@@ -1498,6 +1593,14 @@ html body .metadata-properties {
   border-top-color: rgb(141, 156, 141);
   color: rgb(141, 156, 141);
   font-family: 宋体, SimSun;
+}
+
+html body .metadata-property-key {
+  color: rgb(141, 156, 141);
+}
+
+html body .metadata-property-value {
+  color: rgb(141, 156, 141);
 }
 
 html body .note-properties {
@@ -1564,6 +1667,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(111, 110, 106);
+  border-left-color: rgb(111, 110, 106);
+  border-right-color: rgb(111, 110, 106);
+  border-top-color: rgb(111, 110, 106);
   color: var(--text-normal, rgb(111, 110, 106));
 }
 

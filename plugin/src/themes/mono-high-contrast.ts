@@ -39,6 +39,19 @@ export const theme: ThemeData = {
   --blockquote-border-color: var(--interactive-accent, #555555);
   --button-interactive-normal: var(--black, #ffffff);
   --button-text-normal: var(--white, #000000);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #000000);
   --canvas-card-label-color: var(--text-faint, #999999);
   --caret-color: var(--text-normal, #ffffff);
@@ -209,7 +222,9 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, #ffffff);
   --vault-profile-color-hover: var(--vault-profile-color, #ffffff);
   --white: #000000;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -256,6 +271,12 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, rgb(255, 255, 255));
+  outline: rgb(255, 255, 255) none 0px;
+  text-decoration-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--italic-color, rgb(255, 255, 255));
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
@@ -313,10 +334,18 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
 }
 
@@ -336,6 +365,10 @@ html[saved-theme="dark"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: var(--text-faint, rgb(153, 153, 153));
+}
+
+html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(255, 255, 255));
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(255, 255, 255);
@@ -358,7 +391,6 @@ html[saved-theme="dark"] body table {
   border-top-style: solid;
   border-top-width: 1px;
   color: rgb(255, 255, 255);
-  width: 209px;
 }
 
 html[saved-theme="dark"] body td {
@@ -461,6 +493,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(153, 153, 153);
   border-right-color: rgb(153, 153, 153);
   border-top-color: rgb(153, 153, 153);
+  color: var(--text-muted, rgb(153, 153, 153));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -473,6 +506,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(85, 85, 85);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -480,6 +514,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(255, 255, 255);
@@ -1334,6 +1369,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   --pill-color-hover: var(--tag-color-hover, #ffffff);
   --pill-color-remove: var(--tag-color, #ffffff);
   --pill-color-remove-hover: var(--tag-color-hover, #ffffff);
+  color: var(--pill-color, rgb(255, 255, 255));
   font-family: "FuraMono Nerd Font", monospace;
 }
 
@@ -1342,7 +1378,13 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--text-normal, rgb(255, 255, 255));
+  margin-bottom: 12.944px;
+  padding-bottom: 7.7664px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1350,27 +1392,61 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--text-normal, rgb(255, 255, 255));
+  margin-bottom: 11.696px;
+  padding-bottom: 7.0176px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--inline-title-color, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--text-normal, rgb(255, 255, 255));
+  margin-bottom: 10.544px;
+  padding-bottom: 6.3264px;
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--text-normal, rgb(255, 255, 255));
+  margin-bottom: 9.504px;
+  padding-bottom: 5.7024px;
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--text-normal, rgb(255, 255, 255));
+  margin-bottom: 8.608px;
+  padding-bottom: 5.1648px;
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--text-normal, rgb(255, 255, 255));
+  margin-bottom: 8px;
+  padding-bottom: 4.8px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -1389,6 +1465,22 @@ html[saved-theme="dark"] body hr {
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(255, 255, 255));
   font-family: "FuraMono Nerd Font", monospace;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(255, 255, 255);
@@ -1516,12 +1608,30 @@ html[saved-theme="dark"] body .bases-table thead th {
   color: var(--text-muted, rgb(153, 153, 153));
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(153, 153, 153);
+  border-left-color: rgb(153, 153, 153);
+  border-right-color: rgb(153, 153, 153);
+  border-top-color: rgb(153, 153, 153);
+  color: rgb(153, 153, 153);
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(153, 153, 153);
   border-left-color: rgb(153, 153, 153);
   border-right-color: rgb(153, 153, 153);
   border-top-color: rgb(153, 153, 153);
   color: rgb(153, 153, 153);
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(153, 153, 153);
+  font-family: var(--metadata-label-font, "FuraMono Nerd Font", monospace);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(153, 153, 153);
+  font-family: var(--metadata-input-font, "FuraMono Nerd Font", monospace);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -1584,8 +1694,13 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--text-normal, rgb(255, 255, 255));
   font-family: "FuraMono Nerd Font", monospace;
+  font-weight: 600;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -1667,6 +1782,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --blockquote-border-color: var(--interactive-accent, #aaaaaa);
   --button-interactive-normal: var(--black, #000000);
   --button-text-normal: var(--white, #ffffff);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-card-label-color: var(--text-faint, #666666);
   --caret-color: var(--text-normal, #000000);
   --checkbox-border-color: var(--black, #000000);
@@ -1822,7 +1950,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-profile-color: var(--text-normal, #000000);
   --vault-profile-color-hover: var(--vault-profile-color, #000000);
   --white: #ffffff;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -1868,6 +1998,12 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--italic-color, rgb(0, 0, 0));
+  outline: rgb(0, 0, 0) none 0px;
+  text-decoration-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--italic-color, rgb(0, 0, 0));
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
@@ -1925,10 +2061,18 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
 }
 
@@ -1948,6 +2092,10 @@ html[saved-theme="light"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: var(--text-faint, rgb(102, 102, 102));
+}
+
+html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(0, 0, 0));
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(0, 0, 0);
@@ -1970,7 +2118,6 @@ html[saved-theme="light"] body table {
   border-top-style: solid;
   border-top-width: 1px;
   color: rgb(0, 0, 0);
-  width: 209px;
 }
 
 html[saved-theme="light"] body td {
@@ -2073,6 +2220,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(102, 102, 102);
   border-right-color: rgb(102, 102, 102);
   border-top-color: rgb(102, 102, 102);
+  color: var(--text-muted, rgb(102, 102, 102));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2085,6 +2233,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(170, 170, 170);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2092,6 +2241,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(0, 0, 0);
@@ -2941,6 +3091,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-hover: var(--tag-color-hover, #000000);
   --pill-color-remove: var(--tag-color, #000000);
   --pill-color-remove-hover: var(--tag-color-hover, #000000);
+  color: var(--pill-color, rgb(0, 0, 0));
   font-family: "FuraMono Nerd Font", monospace;
 }
 
@@ -2949,7 +3100,13 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--text-normal, rgb(0, 0, 0));
+  margin-bottom: 12.944px;
+  padding-bottom: 7.7664px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -2957,27 +3114,61 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--text-normal, rgb(0, 0, 0));
+  margin-bottom: 11.696px;
+  padding-bottom: 7.0176px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--inline-title-color, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--text-normal, rgb(0, 0, 0));
+  margin-bottom: 10.544px;
+  padding-bottom: 6.3264px;
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--text-normal, rgb(0, 0, 0));
+  margin-bottom: 9.504px;
+  padding-bottom: 5.7024px;
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--text-normal, rgb(0, 0, 0));
+  margin-bottom: 8.608px;
+  padding-bottom: 5.1648px;
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--text-normal, rgb(0, 0, 0));
+  margin-bottom: 8px;
+  padding-bottom: 4.8px;
 }
 
 html[saved-theme="light"] body hr {
@@ -2996,6 +3187,22 @@ html[saved-theme="light"] body hr {
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(0, 0, 0));
   font-family: "FuraMono Nerd Font", monospace;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(0, 0, 0);
@@ -3122,12 +3329,30 @@ html[saved-theme="light"] body .bases-table thead th {
   color: var(--text-muted, rgb(102, 102, 102));
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(102, 102, 102);
+  border-left-color: rgb(102, 102, 102);
+  border-right-color: rgb(102, 102, 102);
+  border-top-color: rgb(102, 102, 102);
+  color: rgb(102, 102, 102);
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(102, 102, 102);
   border-left-color: rgb(102, 102, 102);
   border-right-color: rgb(102, 102, 102);
   border-top-color: rgb(102, 102, 102);
   color: rgb(102, 102, 102);
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(102, 102, 102);
+  font-family: var(--metadata-label-font, "FuraMono Nerd Font", monospace);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(102, 102, 102);
+  font-family: var(--metadata-input-font, "FuraMono Nerd Font", monospace);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -3189,8 +3414,13 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--text-normal, rgb(0, 0, 0));
   font-family: "FuraMono Nerd Font", monospace;
+  font-weight: 600;
 }
 
 html[saved-theme="light"] body abbr {

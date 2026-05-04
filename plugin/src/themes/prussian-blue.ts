@@ -35,12 +35,20 @@ export const theme: ThemeData = {
   --calendar-hover: var(--teal0, #2F459C);
   --calendar-today: var(--frost0, #122886);
   --calendar-week: var(--frost0, #122886);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
   --callout-default: var(--color-blue-rgb, #2F459C);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
   --callout-important: var(--color-cyan-rgb, #2F459C);
   --callout-info: var(--color-blue-rgb, #2F459C);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
   --callout-summary: var(--color-cyan-rgb, #2F459C);
   --callout-tip: var(--color-cyan-rgb, #2F459C);
   --callout-todo: var(--color-blue-rgb, #2F459C);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #0f1116);
   --canvas-card-label-color: var(--text-faint, #889ef9);
   --canvas-color-5: var(--color-cyan-rgb, #2F459C);
@@ -294,7 +302,9 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, #ebebfb);
   --vault-profile-color-hover: var(--vault-profile-color, #ebebfb);
   --yellow: #FCC200;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -375,6 +385,12 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(252, 194, 0);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(252, 194, 0));
+  outline: rgb(252, 194, 0) none 0px;
+  text-decoration-color: rgb(252, 194, 0);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--bold-color, rgb(197, 27, 12));
   outline: rgb(197, 27, 12) none 0px;
@@ -428,7 +444,12 @@ html body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(47, 69, 157, 0.3));
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(235, 235, 251);
+  border-left-color: rgb(235, 235, 251);
+  border-right-color: rgb(235, 235, 251);
+  border-top-color: rgb(235, 235, 251);
   color: rgb(235, 235, 251);
+  font-size: 19.2px;
 }
 
 html body dl {
@@ -437,15 +458,26 @@ html body dl {
 }
 
 html body dt {
+  border-bottom-color: rgb(235, 235, 251);
+  border-left-color: rgb(235, 235, 251);
+  border-right-color: rgb(235, 235, 251);
+  border-top-color: rgb(235, 235, 251);
   color: rgb(235, 235, 251);
+  font-size: 19.2px;
 }
 
 html body ol > li {
   color: rgb(235, 235, 251);
+  margin-left: 36.623px;
+  padding-bottom: var(--list-spacing, 1.44px);
+  padding-top: var(--list-spacing, 1.44px);
 }
 
 html body ul > li {
   color: rgb(235, 235, 251);
+  margin-left: 36.623px;
+  padding-bottom: var(--list-spacing, 1.44px);
+  padding-top: var(--list-spacing, 1.44px);
 }
 
 html body ul.overflow {
@@ -456,6 +488,11 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--text-faint, rgb(136, 158, 249));
+}
+
+html body blockquote {
+  color: var(--blockquote-color, rgb(235, 235, 251));
+  line-height: 28.8px;
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(235, 235, 251);
@@ -587,6 +624,7 @@ html body video {
   border-left-color: rgb(18, 40, 134);
   border-right-color: rgb(18, 40, 134);
   border-top-color: rgb(18, 40, 134);
+  color: var(--text-muted, rgb(18, 40, 134));
 }
 
 html body .footnotes {
@@ -599,6 +637,7 @@ html body .transclude {
   border-left-color: rgb(47, 69, 157);
   border-right-color: rgb(235, 235, 251);
   border-top-color: rgb(235, 235, 251);
+  color: rgb(235, 235, 251);
 }
 
 html body .transclude-inner {
@@ -606,6 +645,7 @@ html body .transclude-inner {
   border-left-color: rgb(235, 235, 251);
   border-right-color: rgb(235, 235, 251);
   border-top-color: rgb(235, 235, 251);
+  color: rgb(235, 235, 251);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(18, 40, 134);
@@ -1612,6 +1652,9 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-top-color: rgba(47, 69, 157, 0.15);
   border-top-left-radius: 8.4px;
   border-top-right-radius: 8.4px;
+  color: var(--pill-color, rgb(18, 40, 134));
+  font-size: 16.8px;
+  line-height: var(--line-height-tight, 16.8px);
 }
 
 html body a.internal-link.tag-link::before {
@@ -1619,7 +1662,14 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(18, 40, 134);
+  border-left-color: rgb(18, 40, 134);
+  border-right-color: rgb(18, 40, 134);
+  border-top-color: rgb(18, 40, 134);
   color: var(--h1-color, rgb(18, 40, 134));
+  font-size: var(--h1-size, 31.0656px);
+  letter-spacing: var(--h1-letter-spacing, -0.465984px);
+  line-height: var(--h1-line-height, 37.2787px);
 }
 
 html body h1.article-title {
@@ -1628,27 +1678,69 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(18, 40, 134);
+  border-left-color: rgb(18, 40, 134);
+  border-right-color: rgb(18, 40, 134);
+  border-top-color: rgb(18, 40, 134);
   color: var(--h2-color, rgb(18, 40, 134));
+  font-size: var(--h2-size, 28.0704px);
+  letter-spacing: var(--h2-letter-spacing, -0.308774px);
+  line-height: var(--h2-line-height, 33.6845px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(18, 40, 134);
+  border-left-color: rgb(18, 40, 134);
+  border-right-color: rgb(18, 40, 134);
+  border-top-color: rgb(18, 40, 134);
   color: var(--inline-title-color, rgb(18, 40, 134));
+  font-size: var(--inline-title-size, 31.0656px);
+  letter-spacing: -0.465984px;
+  line-height: var(--inline-title-line-height, 37.2787px);
+  margin-bottom: 15.5328px;
 }
 
 html body h3 {
+  border-bottom-color: rgb(18, 40, 134);
+  border-left-color: rgb(18, 40, 134);
+  border-right-color: rgb(18, 40, 134);
+  border-top-color: rgb(18, 40, 134);
   color: var(--h3-color, rgb(18, 40, 134));
+  font-size: var(--h3-size, 25.3056px);
+  letter-spacing: var(--h3-letter-spacing, -0.202445px);
+  line-height: var(--h3-line-height, 32.8973px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(18, 40, 134);
+  border-left-color: rgb(18, 40, 134);
+  border-right-color: rgb(18, 40, 134);
+  border-top-color: rgb(18, 40, 134);
   color: var(--h4-color, rgb(18, 40, 134));
+  font-size: var(--h4-size, 22.8096px);
+  letter-spacing: var(--h4-letter-spacing, -0.114048px);
+  line-height: var(--h4-line-height, 31.9334px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(18, 40, 134);
+  border-left-color: rgb(18, 40, 134);
+  border-right-color: rgb(18, 40, 134);
+  border-top-color: rgb(18, 40, 134);
   color: var(--h5-color, rgb(18, 40, 134));
+  font-size: var(--h5-size, 20.6592px);
+  letter-spacing: var(--h5-letter-spacing, -0.0413184px);
+  line-height: var(--h5-line-height, 30.9888px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(18, 40, 134);
+  border-left-color: rgb(18, 40, 134);
+  border-right-color: rgb(18, 40, 134);
+  border-top-color: rgb(18, 40, 134);
   color: var(--h6-color, rgb(18, 40, 134));
+  font-size: var(--h6-size, 19.2px);
+  line-height: var(--h6-line-height, 28.8px);
 }
 
 html body hr {
@@ -1669,6 +1761,22 @@ html body hr {
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(18, 40, 134));
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(235, 235, 251);
@@ -1795,12 +1903,30 @@ html body .bases-table thead th {
   color: var(--text-muted, rgb(18, 40, 134));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(18, 40, 134);
+  border-left-color: rgb(18, 40, 134);
+  border-right-color: rgb(18, 40, 134);
+  border-top-color: rgb(18, 40, 134);
+  color: rgb(18, 40, 134);
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(18, 40, 134);
   border-left-color: rgb(18, 40, 134);
   border-right-color: rgb(18, 40, 134);
   border-top-color: rgb(18, 40, 134);
   color: rgb(18, 40, 134);
+}
+
+html body .metadata-property-key {
+  color: rgb(18, 40, 134);
+  font-size: 19.2px;
+}
+
+html body .metadata-property-value {
+  color: rgb(18, 40, 134);
+  font-size: 19.2px;
 }
 
 html body .note-properties {
@@ -1873,6 +1999,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(235, 235, 251);
+  border-left-color: rgb(235, 235, 251);
+  border-right-color: rgb(235, 235, 251);
+  border-top-color: rgb(235, 235, 251);
   color: var(--text-normal, rgb(235, 235, 251));
 }
 

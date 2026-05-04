@@ -33,6 +33,19 @@ export const theme: ThemeData = {
   --bases-table-header-weight: var(--font-weight, 450);
   --bases-table-summary-background-hover: var(--background-modifier-hover, hsl(258, 88%, 66%));
   --bodyFont: var(--font-text-theme, "Ligconsolata");
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --checkbox-border-color-hover: var(--color-ui-current, hsl(60, 100%, 50%));
   --checkbox-marker-color: var(--color-ui-active, hsl(48, 100%, 50%));
   --code-background: var(--background-primary-alt, hsl(258, 20%, 23%));
@@ -84,7 +97,7 @@ export const theme: ThemeData = {
   --tab-text-color-focused-active-current: var(--color-ui-current, hsl(60, 100%, 50%));
   --textHighlight: var(--background-modifier-hover, var(--background-ui-current, hsl(258, 88%, 66%)));
   --titleFont: var(--font-text-theme, "Ligconsolata");
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
 }
 
 html body {
@@ -110,6 +123,11 @@ html body .markdown-rendered p > em, html em {
 
 html body .markdown-rendered p > i, html i {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
+  font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 650;
 }
 
 html body .markdown-rendered p > strong, html strong {
@@ -140,6 +158,21 @@ html body a.internal-link.broken {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--link-weight, 450);
 }`,
+    lists: `html body dd {
+  font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html body dt {
+  font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html body ol > li {
+  margin-left: 24px;
+}
+
+html body ul > li {
+  margin-left: 24px;
+}`,
     blockquotes: `html body .data-footnote-backref {
   --font-weight: var(--link-weight, 450);
 }
@@ -149,7 +182,6 @@ html body blockquote {
 }`,
     tables: `html body table {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  width: 199.031px;
 }
 
 html body td {
@@ -854,6 +886,10 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body h1 {
+  border-bottom-color: rgb(255, 255, 0);
+  border-left-color: rgb(255, 255, 0);
+  border-right-color: rgb(255, 255, 0);
+  border-top-color: rgb(255, 255, 0);
   color: var(--color-alt-1, rgb(255, 255, 0));
   font-family: var(--h1-font, "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -863,36 +899,71 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(255, 230, 0);
+  border-left-color: rgb(255, 230, 0);
+  border-right-color: rgb(255, 230, 0);
+  border-top-color: rgb(255, 230, 0);
   color: var(--color-alt-2, rgb(255, 230, 0));
   font-family: var(--h2-font, "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(138, 92, 245);
+  border-left-color: rgb(138, 92, 245);
+  border-right-color: rgb(138, 92, 245);
+  border-top-color: rgb(138, 92, 245);
   color: var(--inline-title-color, rgb(138, 92, 245));
   font-family: var(--inline-title-font, "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html body h3 {
+  border-bottom-color: rgb(255, 204, 0);
+  border-left-color: rgb(255, 204, 0);
+  border-right-color: rgb(255, 204, 0);
+  border-top-color: rgb(255, 204, 0);
   color: var(--color-alt-3, rgb(255, 204, 0));
   font-family: var(--h3-font, "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html body h4 {
+  border-bottom-color: rgb(255, 178, 0);
+  border-left-color: rgb(255, 178, 0);
+  border-right-color: rgb(255, 178, 0);
+  border-top-color: rgb(255, 178, 0);
   color: var(--color-alt-4, rgb(255, 178, 0));
   font-family: var(--h4-font, "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html body h5 {
+  border-bottom-color: rgb(255, 153, 0);
+  border-left-color: rgb(255, 153, 0);
+  border-right-color: rgb(255, 153, 0);
+  border-top-color: rgb(255, 153, 0);
   color: var(--color-alt-5, rgb(255, 153, 0));
   font-family: var(--h5-font, "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html body h6 {
+  border-bottom-color: rgb(255, 128, 0);
+  border-left-color: rgb(255, 128, 0);
+  border-right-color: rgb(255, 128, 0);
+  border-top-color: rgb(255, 128, 0);
   color: var(--color-alt-6, rgb(255, 128, 0));
   font-family: var(--h6-font, "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
+}`,
+    explorer: `html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(138, 92, 245);
@@ -921,10 +992,18 @@ html body .darkmode svg {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+html body .metadata-container .metadata-property {
+  font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
 html body .metadata-properties {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     misc: `html body .page-header h2.page-title {
+  border-bottom-color: rgb(138, 92, 245);
+  border-left-color: rgb(138, 92, 245);
+  border-right-color: rgb(138, 92, 245);
+  border-top-color: rgb(138, 92, 245);
   color: var(--color-default, rgb(138, 92, 245));
 }
 

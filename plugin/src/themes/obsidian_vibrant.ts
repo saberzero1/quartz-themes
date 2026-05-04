@@ -19,6 +19,19 @@ export const theme: ThemeData = {
   --bases-table-cell-background-active: var(--background-primary, #222222);
   --bases-table-header-background: var(--background-primary, #222222);
   --bases-table-summary-background: var(--background-primary, #222222);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #222222);
   --caret-color: var(--text-normal, #ffffff);
   --checkbox-marker-color: var(--background-primary, #222222);
@@ -135,6 +148,12 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(0, 255, 255);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--text-italics, rgb(0, 255, 255));
+  outline: rgb(0, 255, 255) none 0px;
+  text-decoration-color: rgb(0, 255, 255);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--text-bold, rgb(255, 0, 0));
   outline: rgb(255, 0, 0) none 0px;
@@ -183,10 +202,18 @@ html body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(0, 255, 0));
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
 }
 
 html body dt {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
 }
 
@@ -204,6 +231,9 @@ html body ul.overflow {
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
 }`,
+    blockquotes: `html body blockquote {
+  color: var(--text-normal, rgb(255, 255, 255));
+}`,
     tables: `html body .spacer {
   background-color: var(--background-primary, rgb(34, 34, 34));
 }
@@ -217,7 +247,7 @@ html body .table-container {
 
 html body table {
   color: rgb(255, 255, 255);
-  width: 231.219px;
+  text-align: justify;
 }
 
 html body td {
@@ -296,6 +326,7 @@ html body .transclude {
   border-bottom-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 html body .transclude-inner {
@@ -303,6 +334,7 @@ html body .transclude-inner {
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(255, 255, 255);
@@ -1422,6 +1454,10 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body h1 {
+  border-bottom-color: rgb(255, 0, 0);
+  border-left-color: rgb(255, 0, 0);
+  border-right-color: rgb(255, 0, 0);
+  border-top-color: rgb(255, 0, 0);
   color: var(--text-title-h1, rgb(255, 0, 0));
 }
 
@@ -1430,26 +1466,52 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(0, 255, 0);
+  border-left-color: rgb(0, 255, 0);
+  border-right-color: rgb(0, 255, 0);
+  border-top-color: rgb(0, 255, 0);
   color: var(--text-title-h2, rgb(0, 255, 0));
 }
 
 html body h2.page-title, html h2.page-title a {
+  background: rgba(0, 0, 0, 0) linear-gradient(120deg, rgb(255, 217, 0) 30%, rgb(255, 0, 176) 70%, rgb(255, 0, 176) 100%) repeat scroll 0% 0% / 100% padding-box text;
+  background-image: linear-gradient(120deg, rgb(255, 217, 0) 30%, rgb(255, 0, 176) 70%, rgb(255, 0, 176) 100%);
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--inline-title-color, rgb(255, 255, 255));
 }
 
 html body h3 {
+  border-bottom-color: rgb(255, 255, 0);
+  border-left-color: rgb(255, 255, 0);
+  border-right-color: rgb(255, 255, 0);
+  border-top-color: rgb(255, 255, 0);
   color: var(--text-title-h3, rgb(255, 255, 0));
 }
 
 html body h4 {
+  border-bottom-color: rgb(0, 255, 255);
+  border-left-color: rgb(0, 255, 255);
+  border-right-color: rgb(0, 255, 255);
+  border-top-color: rgb(0, 255, 255);
   color: var(--text-title-h4, rgb(0, 255, 255));
 }
 
 html body h5 {
+  border-bottom-color: rgb(255, 165, 0);
+  border-left-color: rgb(255, 165, 0);
+  border-right-color: rgb(255, 165, 0);
+  border-top-color: rgb(255, 165, 0);
   color: var(--text-title-h5, rgb(255, 165, 0));
 }
 
 html body h6 {
+  border-bottom-color: rgb(255, 0, 170);
+  border-left-color: rgb(255, 0, 170);
+  border-right-color: rgb(255, 0, 170);
+  border-top-color: rgb(255, 0, 170);
   color: var(--text-title-h6, rgb(255, 0, 170));
 }
 
@@ -1478,6 +1540,14 @@ html body hr {
 }`,
     explorer: `html body .nav-files-container {
   background-color: var(--background-primary, rgb(34, 34, 34));
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(255, 255, 255);
@@ -1586,7 +1656,23 @@ html body .canvas-sidebar {
   border-color: rgb(88, 88, 88);
   color: var(--accent-color-text, rgb(255, 255, 0));
 }`,
-    properties: `html body .metadata-properties {
+    properties: `html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(34, 34, 34);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(34, 34, 34);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgb(34, 34, 34);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: rgb(34, 34, 34);
+  border-top-style: solid;
+  border-top-width: 2px;
+  padding-top: 2px;
+}
+
+html body .metadata-properties {
   border-bottom-color: rgb(51, 51, 51);
   border-bottom-left-radius: 7.55906px;
   border-bottom-right-radius: 7.55906px;
@@ -1645,6 +1731,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(255, 255, 0);
+  border-left-color: rgb(255, 255, 0);
+  border-right-color: rgb(255, 255, 0);
+  border-top-color: rgb(255, 255, 0);
   color: var(--accent-color-text, rgb(255, 255, 0));
 }
 

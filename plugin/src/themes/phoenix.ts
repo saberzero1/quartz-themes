@@ -30,7 +30,20 @@ export const theme: ThemeData = {
   --button-text-color: var(--background-secondary-alt, #161414);
   --callout-bg-darken-pct: 0%;
   --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-5, 12px 12px 12px 20px);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #212121);
   --canvas-card-label-color: var(--text-faint, #625e5e);
   --caret-color: var(--text-normal, #eadad9);
@@ -266,6 +279,8 @@ export const theme: ThemeData = {
   --vault-profile-color-hover: var(--vault-profile-color, #eadad9);
   --vim-cursor: var(--r-bright-orange, #fe750e);
   --quartz-icon-color: currentColor;
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -389,6 +404,14 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   text-decoration-color: rgb(234, 218, 217);
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(234, 218, 217));
+  font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
+  font-weight: 700;
+  outline: rgb(234, 218, 217) none 0px;
+  text-decoration-color: rgb(234, 218, 217);
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: var(--bold-color, rgb(234, 218, 217));
   font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
@@ -444,19 +467,31 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(234, 218, 217);
+  border-left-color: rgb(234, 218, 217);
+  border-right-color: rgb(234, 218, 217);
+  border-top-color: rgb(234, 218, 217);
   color: rgb(234, 218, 217);
+  font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(234, 218, 217);
+  border-left-color: rgb(234, 218, 217);
+  border-right-color: rgb(234, 218, 217);
+  border-top-color: rgb(234, 218, 217);
   color: rgb(234, 218, 217);
+  font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(234, 218, 217);
+  margin-left: 26.6953px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(234, 218, 217);
+  margin-left: 26.6953px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -470,6 +505,7 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(234, 218, 217));
   font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
@@ -483,7 +519,6 @@ html[saved-theme="dark"] body table {
   color: rgb(234, 218, 217);
   font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
   margin-top: var(--heading-spacing, 0px);
-  width: 195.062px;
 }
 
 html[saved-theme="dark"] body td {
@@ -584,6 +619,7 @@ html[saved-theme="dark"] body .transclude {
   border-top-color: rgb(50, 48, 47);
   border-top-style: solid;
   border-top-width: 2px;
+  color: rgb(234, 218, 217);
   padding-bottom: 1px;
   padding-left: 5px;
 }
@@ -596,6 +632,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-right-style: solid;
   border-top-color: rgb(234, 218, 217);
   border-top-style: solid;
+  color: rgb(234, 218, 217);
   margin-left: 10px;
   margin-right: 10px;
   padding-left: 10px;
@@ -1485,6 +1522,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   --pill-color-hover: var(--tag-color-hover, #fe750e);
   --pill-color-remove: var(--tag-color, #fe750e);
   --pill-color-remove-hover: var(--tag-color-hover, #fe750e);
+  color: var(--pill-color, rgb(254, 117, 14));
   font-family: "??", "??", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -1494,8 +1532,20 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   --font-weight: var(--h1-weight, 500);
+  border-bottom-color: rgb(188, 1, 4);
+  border-left-color: rgb(188, 1, 4);
+  border-right-color: rgb(188, 1, 4);
+  border-top-color: rgb(188, 1, 4);
   color: var(--text-title-h1, rgb(188, 1, 4));
   font-family: var(--h1-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
+  font-size: var(--h1-size, 35.2px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h1-letter-spacing, -0.528px);
+  line-height: var(--h1-line-height, 42.24px);
+  margin-bottom: 0px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 2px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1506,37 +1556,109 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 500);
+  border-bottom-color: rgb(234, 79, 13);
+  border-left-color: rgb(234, 79, 13);
+  border-right-color: rgb(234, 79, 13);
+  border-top-color: rgb(234, 79, 13);
   color: var(--text-title-h2, rgb(234, 79, 13));
   font-family: var(--h2-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
+  font-size: var(--h2-size, 32px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h2-letter-spacing, -0.352px);
+  line-height: var(--h2-line-height, 38.4px);
+  margin-bottom: 0px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 2px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(234, 218, 217);
+  border-left-color: rgb(234, 218, 217);
+  border-right-color: rgb(234, 218, 217);
+  border-top-color: rgb(234, 218, 217);
   color: var(--inline-title-color, rgb(234, 218, 217));
   font-family: var(--inline-title-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
+  font-size: var(--inline-title-size, 35.2px);
+  font-weight: var(--inline-title-weight, 500);
+  letter-spacing: -0.528px;
+  line-height: var(--inline-title-line-height, 42.24px);
+  margin-bottom: 17.6px;
 }
 
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, 500);
+  border-bottom-color: rgb(254, 117, 14);
+  border-left-color: rgb(254, 117, 14);
+  border-right-color: rgb(254, 117, 14);
+  border-top-color: rgb(254, 117, 14);
   color: var(--text-title-h3, rgb(254, 117, 14));
   font-family: var(--h3-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
+  font-size: var(--h3-size, 29.6px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h3-letter-spacing, -0.2368px);
+  line-height: var(--h3-line-height, 38.48px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 2px;
 }
 
 html[saved-theme="dark"] body h4 {
   --font-weight: var(--h4-weight, 500);
+  border-bottom-color: rgb(254, 163, 15);
+  border-left-color: rgb(254, 163, 15);
+  border-right-color: rgb(254, 163, 15);
+  border-top-color: rgb(254, 163, 15);
   color: var(--text-title-h4, rgb(254, 163, 15));
   font-family: var(--h4-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
+  font-size: var(--h4-size, 25.6px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h4-letter-spacing, -0.128px);
+  line-height: var(--h4-line-height, 35.84px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 2px;
 }
 
 html[saved-theme="dark"] body h5 {
   --font-weight: var(--h5-weight, 500);
+  border-bottom-color: rgb(192, 201, 10);
+  border-left-color: rgb(192, 201, 10);
+  border-right-color: rgb(192, 201, 10);
+  border-top-color: rgb(192, 201, 10);
   color: var(--text-title-h5, rgb(192, 201, 10));
   font-family: var(--h5-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
+  font-size: var(--h5-size, 23.52px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h5-letter-spacing, -0.04704px);
+  line-height: var(--h5-line-height, 35.28px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 2px;
 }
 
 html[saved-theme="dark"] body h6 {
   --font-weight: var(--h6-weight, 500);
+  border-bottom-color: rgb(39, 202, 199);
+  border-left-color: rgb(39, 202, 199);
+  border-right-color: rgb(39, 202, 199);
+  border-top-color: rgb(39, 202, 199);
   color: var(--text-title-h6, rgb(39, 202, 199));
   font-family: var(--h6-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
+  font-size: var(--h6-size, 21.6px);
+  font-weight: var(--font-weight, 500);
+  line-height: var(--h6-line-height, 32.4px);
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 2px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -1554,6 +1676,18 @@ html[saved-theme="dark"] body hr {
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "??", "??", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(234, 218, 217);
@@ -1635,8 +1769,20 @@ html[saved-theme="dark"] body .canvas-sidebar {
   font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  font-family: var(--metadata-label-font, "??", "??", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  font-family: var(--metadata-input-font, "??", "??", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -1687,6 +1833,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(234, 218, 217);
+  border-left-color: rgb(234, 218, 217);
+  border-right-color: rgb(234, 218, 217);
+  border-top-color: rgb(234, 218, 217);
   color: var(--text-normal, rgb(234, 218, 217));
   font-family: "??", "??", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -1768,7 +1918,20 @@ html[saved-theme="dark"] body ul.tags > li {
   --button-text-color: var(--text-on-accent, white);
   --callout-bg-darken-pct: 5%;
   --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-5, 12px 12px 12px 20px);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #dbc5af);
   --canvas-card-label-color: var(--text-faint, #534f4e);
   --caret-color: var(--text-normal, #1e1e1e);
@@ -2037,7 +2200,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-profile-color: var(--text-normal, #1e1e1e);
   --vault-profile-color-hover: var(--vault-profile-color, #1e1e1e);
   --vim-cursor: var(--r-bright-orange, #fe750e);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -2161,6 +2326,14 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   text-decoration-color: rgb(30, 30, 30);
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(30, 30, 30));
+  font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
+  font-weight: 700;
+  outline: rgb(30, 30, 30) none 0px;
+  text-decoration-color: rgb(30, 30, 30);
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--bold-color, rgb(30, 30, 30));
   font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
@@ -2219,19 +2392,31 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(30, 30, 30);
+  border-left-color: rgb(30, 30, 30);
+  border-right-color: rgb(30, 30, 30);
+  border-top-color: rgb(30, 30, 30);
   color: rgb(30, 30, 30);
+  font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(30, 30, 30);
+  border-left-color: rgb(30, 30, 30);
+  border-right-color: rgb(30, 30, 30);
+  border-top-color: rgb(30, 30, 30);
   color: rgb(30, 30, 30);
+  font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(30, 30, 30);
+  margin-left: 26.6953px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(30, 30, 30);
+  margin-left: 26.6953px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -2245,6 +2430,7 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(30, 30, 30));
   font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
@@ -2258,7 +2444,6 @@ html[saved-theme="light"] body table {
   color: rgb(30, 30, 30);
   font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
   margin-top: var(--heading-spacing, 0px);
-  width: 195.062px;
 }
 
 html[saved-theme="light"] body td {
@@ -2345,6 +2530,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(83, 79, 78);
   border-right-color: rgb(83, 79, 78);
   border-top-color: rgb(83, 79, 78);
+  color: var(--text-muted, rgb(83, 79, 78));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2363,6 +2549,7 @@ html[saved-theme="light"] body .transclude {
   border-top-color: rgb(50, 48, 47);
   border-top-style: solid;
   border-top-width: 2px;
+  color: rgb(30, 30, 30);
   padding-bottom: 1px;
   padding-left: 5px;
 }
@@ -2375,6 +2562,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-right-style: solid;
   border-top-color: rgb(30, 30, 30);
   border-top-style: solid;
+  color: rgb(30, 30, 30);
   margin-left: 10px;
   margin-right: 10px;
   padding-left: 10px;
@@ -3264,6 +3452,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-hover: var(--tag-color-hover, #fe750e);
   --pill-color-remove: var(--tag-color, #fe750e);
   --pill-color-remove-hover: var(--tag-color-hover, #fe750e);
+  color: var(--pill-color, rgb(254, 117, 14));
   font-family: "??", "??", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -3273,8 +3462,20 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   --font-weight: var(--h1-weight, 500);
+  border-bottom-color: rgb(188, 1, 4);
+  border-left-color: rgb(188, 1, 4);
+  border-right-color: rgb(188, 1, 4);
+  border-top-color: rgb(188, 1, 4);
   color: var(--text-title-h1, rgb(188, 1, 4));
   font-family: var(--h1-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
+  font-size: var(--h1-size, 35.2px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h1-letter-spacing, -0.528px);
+  line-height: var(--h1-line-height, 42.24px);
+  margin-bottom: 0px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 2px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -3285,37 +3486,109 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 500);
+  border-bottom-color: rgb(234, 79, 13);
+  border-left-color: rgb(234, 79, 13);
+  border-right-color: rgb(234, 79, 13);
+  border-top-color: rgb(234, 79, 13);
   color: var(--text-title-h2, rgb(234, 79, 13));
   font-family: var(--h2-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
+  font-size: var(--h2-size, 32px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h2-letter-spacing, -0.352px);
+  line-height: var(--h2-line-height, 38.4px);
+  margin-bottom: 0px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 2px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(30, 30, 30);
+  border-left-color: rgb(30, 30, 30);
+  border-right-color: rgb(30, 30, 30);
+  border-top-color: rgb(30, 30, 30);
   color: var(--inline-title-color, rgb(30, 30, 30));
   font-family: var(--inline-title-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
+  font-size: var(--inline-title-size, 35.2px);
+  font-weight: var(--inline-title-weight, 500);
+  letter-spacing: -0.528px;
+  line-height: var(--inline-title-line-height, 42.24px);
+  margin-bottom: 17.6px;
 }
 
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, 500);
+  border-bottom-color: rgb(254, 117, 14);
+  border-left-color: rgb(254, 117, 14);
+  border-right-color: rgb(254, 117, 14);
+  border-top-color: rgb(254, 117, 14);
   color: var(--text-title-h3, rgb(254, 117, 14));
   font-family: var(--h3-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
+  font-size: var(--h3-size, 29.6px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h3-letter-spacing, -0.2368px);
+  line-height: var(--h3-line-height, 38.48px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 2px;
 }
 
 html[saved-theme="light"] body h4 {
   --font-weight: var(--h4-weight, 500);
+  border-bottom-color: rgb(254, 163, 15);
+  border-left-color: rgb(254, 163, 15);
+  border-right-color: rgb(254, 163, 15);
+  border-top-color: rgb(254, 163, 15);
   color: var(--text-title-h4, rgb(254, 163, 15));
   font-family: var(--h4-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
+  font-size: var(--h4-size, 25.6px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h4-letter-spacing, -0.128px);
+  line-height: var(--h4-line-height, 35.84px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 2px;
 }
 
 html[saved-theme="light"] body h5 {
   --font-weight: var(--h5-weight, 500);
+  border-bottom-color: rgb(192, 201, 10);
+  border-left-color: rgb(192, 201, 10);
+  border-right-color: rgb(192, 201, 10);
+  border-top-color: rgb(192, 201, 10);
   color: var(--text-title-h5, rgb(192, 201, 10));
   font-family: var(--h5-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
+  font-size: var(--h5-size, 23.52px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h5-letter-spacing, -0.04704px);
+  line-height: var(--h5-line-height, 35.28px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 2px;
 }
 
 html[saved-theme="light"] body h6 {
   --font-weight: var(--h6-weight, 500);
+  border-bottom-color: rgb(39, 202, 199);
+  border-left-color: rgb(39, 202, 199);
+  border-right-color: rgb(39, 202, 199);
+  border-top-color: rgb(39, 202, 199);
   color: var(--text-title-h6, rgb(39, 202, 199));
   font-family: var(--h6-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter);
+  font-size: var(--h6-size, 21.6px);
+  font-weight: var(--font-weight, 500);
+  line-height: var(--h6-line-height, 32.4px);
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 2px;
 }
 
 html[saved-theme="light"] body hr {
@@ -3335,6 +3608,22 @@ html[saved-theme="light"] body hr {
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(83, 79, 78));
   font-family: "??", "??", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(30, 30, 30);
@@ -3459,6 +3748,15 @@ html[saved-theme="light"] body .canvas-sidebar {
   font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(83, 79, 78);
+  border-left-color: rgb(83, 79, 78);
+  border-right-color: rgb(83, 79, 78);
+  border-top-color: rgb(83, 79, 78);
+  color: rgb(83, 79, 78);
+  font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(83, 79, 78);
   border-left-color: rgb(83, 79, 78);
@@ -3466,6 +3764,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(83, 79, 78);
   color: rgb(83, 79, 78);
   font-family: system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(83, 79, 78);
+  font-family: var(--metadata-label-font, "??", "??", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(83, 79, 78);
+  font-family: var(--metadata-input-font, "??", "??", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -3528,6 +3836,10 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(30, 30, 30);
+  border-left-color: rgb(30, 30, 30);
+  border-right-color: rgb(30, 30, 30);
+  border-top-color: rgb(30, 30, 30);
   color: var(--text-normal, rgb(30, 30, 30));
   font-family: "??", "??", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }

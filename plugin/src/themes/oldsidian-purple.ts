@@ -23,10 +23,23 @@ export const theme: ThemeData = {
   --blockquote-border-color: var(--interactive-accent, #6C41D8);
   --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
   --callout-border-opacity: 1;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
   --callout-content-padding: var(--size-4-2) var(--size-4-2) var(--size-4-2) var(--size-4-3, 8px 8px 8px 12px);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 0);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 5px);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
   --callout-title-padding: var(--size-4-2) var(--size-4-2) var(--size-4-2) var(--size-4-3, 8px 8px 8px 12px);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #262626ff);
   --checkbox-color: var(--interactive-accent, #6C41D8);
   --checkbox-marker-color: var(--background-primary, #262626ff);
@@ -870,6 +883,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color-hover: var(--tag-color-hover, #814CFF);
   --pill-color-remove: var(--tag-color, #814CFF);
   --pill-color-remove-hover: var(--tag-color-hover, #814CFF);
+  color: var(--pill-color, rgb(129, 76, 255));
 }
 
 html body a.internal-link.tag-link::before {

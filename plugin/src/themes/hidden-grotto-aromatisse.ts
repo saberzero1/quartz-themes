@@ -37,8 +37,20 @@ export const theme: ThemeData = {
   --bases-table-summary-background: var(--background-primary, hsl(300, 20%, 28%));
   --blockquote-border-color: var(--grotto-accent, hsl(0, 50%, 60%));
   --bodyFont: var(--font-text, var(--grotto-font-main, 'Quicksand'));
+  --callout-bug: var(--callout-bug, 251, 70, 76);
   --callout-default: var(--grotto-callout-color, hsl(40, 0%, 86%));
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 0px);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, hsl(300, 20%, 28%));
   --canvas-card-label-color: var(--text-faint, hsl(40, 0%, 76%));
   --canvas-controls-radius: var(--radius-s, 0px);
@@ -518,7 +530,9 @@ export const theme: ThemeData = {
   --touch-radius-xxs: var(--touch-size-xxs, 0px);
   --vault-profile-color: var(--text-normal, hsl(40, 0%, 86%));
   --vault-profile-color-hover: var(--vault-profile-color, hsl(40, 0%, 86%));
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -569,6 +583,14 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--grotto-italic-color, rgb(204, 102, 102));
+  font-family: Quicksand;
+  font-weight: var(--grotto-italic-weight, 500);
+  outline: rgb(204, 102, 102) none 0px;
+  text-decoration-color: rgb(204, 102, 102);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--grotto-italic-color, rgb(204, 102, 102));
   font-family: Quicksand;
   font-weight: var(--grotto-italic-weight, 500);
@@ -643,20 +665,32 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(204, 102, 102, 0.3));
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(219, 219, 219);
+  border-left-color: rgb(219, 219, 219);
+  border-right-color: rgb(219, 219, 219);
+  border-top-color: rgb(219, 219, 219);
   color: rgb(219, 219, 219);
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(219, 219, 219);
+  border-left-color: rgb(219, 219, 219);
+  border-right-color: rgb(219, 219, 219);
+  border-top-color: rgb(219, 219, 219);
   color: rgb(219, 219, 219);
+  font-family: Quicksand;
   font-weight: 500;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(219, 219, 219);
+  margin-left: 24px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(219, 219, 219);
+  margin-left: 24px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -671,7 +705,9 @@ html[saved-theme="dark"] body ul.overflow {
 
 html[saved-theme="dark"] body blockquote {
   background-color: var(--grotto-blockquote-background-color, rgba(0, 0, 0, 0));
+  color: var(--grotto-blockquote-color, rgb(219, 219, 219));
   font-family: Quicksand;
+  font-weight: 500;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(219, 219, 219);
@@ -684,7 +720,6 @@ html[saved-theme="dark"] body table {
   color: rgb(219, 219, 219);
   font-family: Quicksand;
   margin-top: var(--heading-spacing, 0px);
-  width: 187.766px;
 }
 
 html[saved-theme="dark"] body td {
@@ -787,10 +822,12 @@ html[saved-theme="dark"] body video {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-left-color: rgb(194, 194, 194);
+  border-radius: 0px;
   border-right-color: rgb(194, 194, 194);
   border-top-color: rgb(194, 194, 194);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  color: var(--text-muted, rgb(194, 194, 194));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -811,6 +848,7 @@ html[saved-theme="dark"] body .transclude {
   border-top-color: rgb(219, 219, 219);
   border-top-style: solid;
   border-top-width: 1px;
+  color: var(--grotto-embed-color, rgb(219, 219, 219));
   padding-bottom: 16px;
 }
 
@@ -823,6 +861,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-right-style: solid;
   border-top-color: rgb(219, 219, 219);
   border-top-style: solid;
+  color: var(--grotto-embed-color, rgb(219, 219, 219));
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: Quicksand;
@@ -2112,6 +2151,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: var(--background-primary, rgb(86, 57, 86));
   font-family: Quicksand;
   font-weight: var(--pill-weight, 500);
 }
@@ -2121,8 +2161,28 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  background: rgb(204, 102, 102) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--grotto-header-1-background-color, rgb(204, 102, 102));
+  border-bottom-color: rgb(219, 219, 219);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(219, 219, 219);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgb(219, 219, 219);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: rgb(219, 219, 219);
+  border-top-style: solid;
+  border-top-width: 2px;
   color: var(--grotto-header-1-color, rgb(219, 219, 219));
   font-family: var(--h1-font, Quicksand);
+  font-size: var(--grotto-header-1-size, 24px);
+  font-weight: var(--grotto-header-weight, 500);
+  line-height: var(--grotto-header-line-height, 32px);
+  margin-bottom: 0px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -2130,33 +2190,133 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  background: rgb(219, 219, 219) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--grotto-header-2-background-color, rgb(219, 219, 219));
+  border-bottom-color: rgb(219, 219, 219);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(219, 219, 219);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgb(219, 219, 219);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: rgb(219, 219, 219);
+  border-top-style: solid;
+  border-top-width: 2px;
   color: var(--grotto-header-2-color, rgb(86, 57, 86));
   font-family: var(--h2-font, Quicksand);
+  font-size: var(--grotto-header-2-size, 24px);
+  font-weight: var(--grotto-header-weight, 500);
+  line-height: var(--grotto-header-line-height, 32px);
+  margin-bottom: 0px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(219, 219, 219);
+  border-left-color: rgb(219, 219, 219);
+  border-right-color: rgb(219, 219, 219);
+  border-top-color: rgb(219, 219, 219);
   color: var(--inline-title-color, rgb(219, 219, 219));
   font-family: var(--inline-title-font, Quicksand);
 }
 
 html[saved-theme="dark"] body h3 {
+  background-color: var(--grotto-header-3-background-color, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(219, 219, 219);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(219, 219, 219);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgb(219, 219, 219);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: rgb(219, 219, 219);
+  border-top-style: solid;
+  border-top-width: 2px;
   color: var(--grotto-header-3-color, rgb(219, 219, 219));
   font-family: var(--h3-font, Quicksand);
+  font-size: var(--grotto-header-3-size, 24px);
+  font-weight: var(--grotto-header-weight, 500);
+  line-height: var(--grotto-header-line-height, 32px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 html[saved-theme="dark"] body h4 {
+  background-color: var(--grotto-header-4-background-color, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(219, 219, 219);
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+  border-left-color: rgb(219, 219, 219);
+  border-right-color: rgb(219, 219, 219);
+  border-top-color: rgb(219, 219, 219);
   color: var(--grotto-header-4-color, rgb(219, 219, 219));
   font-family: var(--h4-font, Quicksand);
+  font-size: var(--grotto-header-4-size, 24px);
+  font-weight: var(--grotto-header-weight, 500);
+  line-height: var(--grotto-header-line-height, 32px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-left: 7px;
+  padding-right: 7px;
+  text-decoration: underline 2px rgb(86, 57, 86);
 }
 
 html[saved-theme="dark"] body h5 {
+  background-color: var(--grotto-header-5-background-color, rgba(0, 0, 0, 0));
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-style: solid;
+  border-top-width: 2px;
   color: var(--grotto-header-5-color, rgb(219, 219, 219));
   font-family: var(--h5-font, Quicksand);
+  font-size: var(--grotto-header-5-size, 24px);
+  font-weight: var(--grotto-header-weight, 500);
+  line-height: var(--grotto-header-line-height, 32px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-left: 7px;
+  padding-right: 7px;
+  text-decoration: underline 2px rgb(204, 102, 102);
 }
 
 html[saved-theme="dark"] body h6 {
+  background-color: var(--grotto-header-6-background-color, rgba(0, 0, 0, 0));
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-style: solid;
+  border-top-width: 2px;
   color: var(--grotto-header-6-color, rgb(219, 219, 219));
   font-family: var(--h6-font, Quicksand);
+  font-size: var(--grotto-header-6-size, 24px);
+  font-weight: var(--grotto-header-weight, 500);
+  line-height: var(--grotto-header-line-height, 32px);
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -2194,6 +2354,22 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   color: var(--grotto-filenav-color, rgb(219, 219, 219));
   font-family: Quicksand;
   font-weight: var(--nav-item-weight, 500);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(219, 219, 219);
@@ -2228,6 +2404,7 @@ html[saved-theme="dark"] body li.depth-0 {
 
 html[saved-theme="dark"] body footer ul li a {
   color: var(--grotto-statusbar-color, rgb(219, 219, 219));
+  font-weight: 500;
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(219, 219, 219);
@@ -2334,6 +2511,19 @@ html[saved-theme="dark"] body .canvas-sidebar {
   font-family: Quicksand;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(194, 194, 194);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-left-color: rgb(194, 194, 194);
+  border-right-color: rgb(194, 194, 194);
+  border-top-color: rgb(194, 194, 194);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: rgb(194, 194, 194);
+  font-family: Quicksand;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(194, 194, 194);
   border-left-color: rgb(194, 194, 194);
@@ -2341,6 +2531,17 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(194, 194, 194);
   color: rgb(194, 194, 194);
   font-family: Quicksand;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(194, 194, 194);
+  font-family: var(--metadata-label-font, Quicksand);
+  font-weight: 500;
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(194, 194, 194);
+  font-family: var(--metadata-input-font, Quicksand);
 }
 
 html[saved-theme="dark"] body .note-properties-key {
@@ -2406,6 +2607,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(219, 219, 219);
+  border-left-color: rgb(219, 219, 219);
+  border-right-color: rgb(219, 219, 219);
+  border-top-color: rgb(219, 219, 219);
   color: var(--text-normal, rgb(219, 219, 219));
   font-family: Quicksand;
 }
@@ -2515,8 +2720,20 @@ html[saved-theme="dark"] body ul.tags > li {
   --bases-table-summary-background: var(--background-primary, hsl(40, 0%, 86%));
   --blockquote-border-color: var(--grotto-accent, hsl(0, 50%, 60%));
   --bodyFont: var(--font-text, var(--grotto-font-main, 'Quicksand'));
+  --callout-bug: var(--callout-bug, 233, 49, 71);
   --callout-default: var(--grotto-callout-color, hsl(300, 20%, 20%));
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 0px);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, hsl(40, 0%, 86%));
   --canvas-card-label-color: var(--text-faint, hsl(300, 20%, 32%));
   --canvas-controls-radius: var(--radius-s, 0px);
@@ -2997,7 +3214,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --touch-radius-xxs: var(--touch-size-xxs, 0px);
   --vault-profile-color: var(--text-normal, hsl(300, 20%, 20%));
   --vault-profile-color-hover: var(--vault-profile-color, hsl(300, 20%, 20%));
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -3048,6 +3267,14 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--grotto-italic-color, rgb(204, 102, 102));
+  font-family: Quicksand;
+  font-weight: var(--grotto-italic-weight, 500);
+  outline: rgb(204, 102, 102) none 0px;
+  text-decoration-color: rgb(204, 102, 102);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--grotto-italic-color, rgb(204, 102, 102));
   font-family: Quicksand;
   font-weight: var(--grotto-italic-weight, 500);
@@ -3122,20 +3349,32 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(204, 102, 102, 0.3));
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(61, 41, 61);
+  border-left-color: rgb(61, 41, 61);
+  border-right-color: rgb(61, 41, 61);
+  border-top-color: rgb(61, 41, 61);
   color: rgb(61, 41, 61);
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(61, 41, 61);
+  border-left-color: rgb(61, 41, 61);
+  border-right-color: rgb(61, 41, 61);
+  border-top-color: rgb(61, 41, 61);
   color: rgb(61, 41, 61);
+  font-family: Quicksand;
   font-weight: 500;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(61, 41, 61);
+  margin-left: 24px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(61, 41, 61);
+  margin-left: 24px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -3150,7 +3389,9 @@ html[saved-theme="light"] body ul.overflow {
 
 html[saved-theme="light"] body blockquote {
   background-color: var(--grotto-blockquote-background-color, rgba(0, 0, 0, 0));
+  color: var(--grotto-blockquote-color, rgb(61, 41, 61));
   font-family: Quicksand;
+  font-weight: 500;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(61, 41, 61);
@@ -3163,7 +3404,6 @@ html[saved-theme="light"] body table {
   color: rgb(61, 41, 61);
   font-family: Quicksand;
   margin-top: var(--heading-spacing, 0px);
-  width: 187.766px;
 }
 
 html[saved-theme="light"] body td {
@@ -3266,10 +3506,12 @@ html[saved-theme="light"] body video {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-left-color: rgb(98, 65, 98);
+  border-radius: 0px;
   border-right-color: rgb(98, 65, 98);
   border-top-color: rgb(98, 65, 98);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  color: var(--text-muted, rgb(98, 65, 98));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -3290,6 +3532,7 @@ html[saved-theme="light"] body .transclude {
   border-top-color: rgb(61, 41, 61);
   border-top-style: solid;
   border-top-width: 1px;
+  color: var(--grotto-embed-color, rgb(61, 41, 61));
   padding-bottom: 16px;
 }
 
@@ -3302,6 +3545,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-right-style: solid;
   border-top-color: rgb(61, 41, 61);
   border-top-style: solid;
+  color: var(--grotto-embed-color, rgb(61, 41, 61));
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: Quicksand;
@@ -4591,6 +4835,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: var(--background-primary, rgb(219, 219, 219));
   font-family: Quicksand;
   font-weight: var(--pill-weight, 500);
 }
@@ -4600,8 +4845,28 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  background: rgb(204, 102, 102) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--grotto-header-1-background-color, rgb(204, 102, 102));
+  border-bottom-color: rgb(61, 41, 61);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(61, 41, 61);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgb(61, 41, 61);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: rgb(61, 41, 61);
+  border-top-style: solid;
+  border-top-width: 2px;
   color: var(--grotto-header-1-color, rgb(219, 219, 219));
   font-family: var(--h1-font, Quicksand);
+  font-size: var(--grotto-header-1-size, 24px);
+  font-weight: var(--grotto-header-weight, 500);
+  line-height: var(--grotto-header-line-height, 32px);
+  margin-bottom: 0px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -4609,33 +4874,133 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  background: rgb(61, 41, 61) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--grotto-header-2-background-color, rgb(61, 41, 61));
+  border-bottom-color: rgb(61, 41, 61);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(61, 41, 61);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgb(61, 41, 61);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: rgb(61, 41, 61);
+  border-top-style: solid;
+  border-top-width: 2px;
   color: var(--grotto-header-2-color, rgb(219, 219, 219));
   font-family: var(--h2-font, Quicksand);
+  font-size: var(--grotto-header-2-size, 24px);
+  font-weight: var(--grotto-header-weight, 500);
+  line-height: var(--grotto-header-line-height, 32px);
+  margin-bottom: 0px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(61, 41, 61);
+  border-left-color: rgb(61, 41, 61);
+  border-right-color: rgb(61, 41, 61);
+  border-top-color: rgb(61, 41, 61);
   color: var(--inline-title-color, rgb(61, 41, 61));
   font-family: var(--inline-title-font, Quicksand);
 }
 
 html[saved-theme="light"] body h3 {
+  background-color: var(--grotto-header-3-background-color, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(61, 41, 61);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(61, 41, 61);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgb(61, 41, 61);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: rgb(61, 41, 61);
+  border-top-style: solid;
+  border-top-width: 2px;
   color: var(--grotto-header-3-color, rgb(61, 41, 61));
   font-family: var(--h3-font, Quicksand);
+  font-size: var(--grotto-header-3-size, 24px);
+  font-weight: var(--grotto-header-weight, 500);
+  line-height: var(--grotto-header-line-height, 32px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 html[saved-theme="light"] body h4 {
+  background-color: var(--grotto-header-4-background-color, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(61, 41, 61);
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+  border-left-color: rgb(61, 41, 61);
+  border-right-color: rgb(61, 41, 61);
+  border-top-color: rgb(61, 41, 61);
   color: var(--grotto-header-4-color, rgb(61, 41, 61));
   font-family: var(--h4-font, Quicksand);
+  font-size: var(--grotto-header-4-size, 24px);
+  font-weight: var(--grotto-header-weight, 500);
+  line-height: var(--grotto-header-line-height, 32px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-left: 7px;
+  padding-right: 7px;
+  text-decoration: underline 2px rgb(219, 219, 219);
 }
 
 html[saved-theme="light"] body h5 {
+  background-color: var(--grotto-header-5-background-color, rgba(0, 0, 0, 0));
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-style: solid;
+  border-top-width: 2px;
   color: var(--grotto-header-5-color, rgb(61, 41, 61));
   font-family: var(--h5-font, Quicksand);
+  font-size: var(--grotto-header-5-size, 24px);
+  font-weight: var(--grotto-header-weight, 500);
+  line-height: var(--grotto-header-line-height, 32px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-left: 7px;
+  padding-right: 7px;
+  text-decoration: underline 2px rgb(204, 102, 102);
 }
 
 html[saved-theme="light"] body h6 {
+  background-color: var(--grotto-header-6-background-color, rgba(0, 0, 0, 0));
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-style: solid;
+  border-top-width: 2px;
   color: var(--grotto-header-6-color, rgb(61, 41, 61));
   font-family: var(--h6-font, Quicksand);
+  font-size: var(--grotto-header-6-size, 24px);
+  font-weight: var(--grotto-header-weight, 500);
+  line-height: var(--grotto-header-line-height, 32px);
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 html[saved-theme="light"] body hr {
@@ -4673,6 +5038,22 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   color: var(--grotto-filenav-color, rgb(61, 41, 61));
   font-family: Quicksand;
   font-weight: var(--nav-item-weight, 500);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(61, 41, 61);
@@ -4707,6 +5088,7 @@ html[saved-theme="light"] body li.depth-0 {
 
 html[saved-theme="light"] body footer ul li a {
   color: var(--grotto-statusbar-color, rgb(61, 41, 61));
+  font-weight: 500;
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(61, 41, 61);
@@ -4813,6 +5195,19 @@ html[saved-theme="light"] body .canvas-sidebar {
   font-family: Quicksand;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(98, 65, 98);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-left-color: rgb(98, 65, 98);
+  border-right-color: rgb(98, 65, 98);
+  border-top-color: rgb(98, 65, 98);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: rgb(98, 65, 98);
+  font-family: Quicksand;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(98, 65, 98);
   border-left-color: rgb(98, 65, 98);
@@ -4820,6 +5215,17 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(98, 65, 98);
   color: rgb(98, 65, 98);
   font-family: Quicksand;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(98, 65, 98);
+  font-family: var(--metadata-label-font, Quicksand);
+  font-weight: 500;
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(98, 65, 98);
+  font-family: var(--metadata-input-font, Quicksand);
 }
 
 html[saved-theme="light"] body .note-properties-key {
@@ -4885,6 +5291,10 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(61, 41, 61);
+  border-left-color: rgb(61, 41, 61);
+  border-right-color: rgb(61, 41, 61);
+  border-top-color: rgb(61, 41, 61);
   color: var(--text-normal, rgb(61, 41, 61));
   font-family: Quicksand;
 }

@@ -1,7 +1,7 @@
 /*──────────────────────────────────────
 Things 3 Theme for Obsidian
-Version 2.6.14
-@paralloid, 2026-04-02
+Version 2.6.15
+@paralloid, 2026-04-30
 ───────────────────────────────────────*/
 
 /* @settings
@@ -317,6 +317,15 @@ body:not(.is-mobile).theme-light {
     }
 }
 
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 @keyframes fade-in-modal {
     from {
         opacity: 0;
@@ -442,12 +451,6 @@ body:not(.is-mobile) body.button-close-left .workspace-tab-header-inner-close-bu
     padding: 0 0px;
     padding-inline-start: 4px;
 }
-
-/* body:not(.button-close-left) .workspace-tabs:not(.mod-stacked) .workspace-tab-header:hover .workspace-tab-header-inner-close-button,
-body:not(.button-close-left) .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
-    pointer-events: all;
-    animation: fade-in 0.4s
-} */
 
 body.button-close-left .workspace-tabs:not(.mod-stacked) .workspace-tab-header:hover .workspace-tab-header-inner-close-button,
 body.button-close-left .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner-close-button {
@@ -661,14 +664,12 @@ a.tag:not(.bases-rendered-value) {
     border: none;
     text-decoration: none;
     font-family: 'Formular', var(--font-text);
-    padding: 1px 1rem 0px 10px;
+    padding: 0px 10px 0px 3px;
 }
 
 .bases-rendered-value a.tag {
     padding-left: 5px !important;
     padding-right: 5px !important;
-    padding-top: 3px !important;
-    padding-bottom: 3px !important;
 }
 
 .theme-dark a.tag {
@@ -1195,18 +1196,23 @@ body.is-tablet .nav-file-title:hover {
     right: 2px;
 }
 
-body:not(.is-mobile) .nav-files-container .tree-item:not(.is-collapsed) .nav-folder-children {
+body {
+    --anim-duration-fast: 0.2s;
+    --anim-duration-medium: 0.3s;
+}
+
+.nav-files-container .tree-item:not(.is-collapsed) .nav-folder-children {
     isolation: isolate;
-    animation: fade-in 0.3s linear;
+    animation: fade-in var(--anim-duration-fast) linear;
+}
+
+.nav-files-container .tree-item.is-collapsed .nav-folder-children {
+    isolation: isolate;
+    animation: fade-out var(--anim-duration-medium) ease-out;
 }
 
 .is-mobile .nav-files-container {
     transform: translateZ(0);
-}
-
-.is-mobile .nav-files-container .tree-item:not(.is-collapsed) .nav-file {
-    isolation: isolate;
-    animation: fade-in 0.4s ease-out;
 }
 
 .nav-file-title-content, .nav-folder-title-content {

@@ -12,6 +12,19 @@ export const theme: ThemeData = {
   --bases-table-border-color: var(--table-border-color, #dadada);
   --bases-table-row-background-hover: var(--table-row-background-hover, #1e1e1e);
   --bold-color: #a68af9;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --h4-color: #a68af9;
   --link-color: var(--text-accent, #5980f7);
   --link-color-hover: var(--text-accent-hover, #8aa5f9);
@@ -35,6 +48,12 @@ html[saved-theme="dark"] body {
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: var(--bold-color, rgb(166, 138, 249));
+  outline: rgb(166, 138, 249) none 0px;
+  text-decoration-color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(166, 138, 249));
   outline: rgb(166, 138, 249) none 0px;
   text-decoration-color: rgb(166, 138, 249);
 }
@@ -440,7 +459,18 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
-    search: `html[saved-theme="dark"] body h4 {
+    search: `html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(54, 54, 54);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  padding-bottom: 15px;
+}
+
+html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(166, 138, 249);
+  border-left-color: rgb(166, 138, 249);
+  border-right-color: rgb(166, 138, 249);
+  border-top-color: rgb(166, 138, 249);
   color: var(--h4-color, rgb(166, 138, 249));
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
@@ -460,6 +490,19 @@ html[saved-theme="dark"] body .bases-table thead th {
   --bases-table-border-color: var(--table-border-color, #222222);
   --bases-table-row-background-hover: var(--table-row-background-hover, #ffffff);
   --bold-color: #8a5cf5;
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --h4-color: #8a5cf5;
   --lightgray: var(--background-secondary, var(--color-base-20, #fafafa));
   --link-color: var(--text-accent, #2C54F2);
@@ -504,6 +547,12 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: var(--bold-color, rgb(138, 92, 245));
+  outline: rgb(138, 92, 245) none 0px;
+  text-decoration-color: rgb(138, 92, 245);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(138, 92, 245));
   outline: rgb(138, 92, 245) none 0px;
   text-decoration-color: rgb(138, 92, 245);
 }
@@ -913,7 +962,18 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-bottom-color: rgb(250, 250, 250);
 }
 
+html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(224, 224, 224);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  padding-bottom: 15px;
+}
+
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(138, 92, 245);
+  border-left-color: rgb(138, 92, 245);
+  border-right-color: rgb(138, 92, 245);
+  border-top-color: rgb(138, 92, 245);
   color: var(--h4-color, rgb(138, 92, 245));
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {

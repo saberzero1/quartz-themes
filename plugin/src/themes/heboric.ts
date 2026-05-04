@@ -38,8 +38,21 @@ export const theme: ThemeData = {
   --bodyFont: var(--font-text, var(--font-text-override), var(--font-text-theme), var(--serif));
   --button-radius: var(--radius-s, 3px);
   --callout-border-width: var(--border-width, 1px);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 1rem);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 3px);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, hsl(221, 8%, 17%));
   --canvas-card-label-color: var(--text-faint, hsl(221, 8%, 45%));
   --canvas-controls-radius: var(--radius-s, 3px);
@@ -274,7 +287,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, hsl(221, 8%, 75%));
   --vault-profile-color: var(--text-normal, hsl(221, 8%, 75%));
   --vault-profile-color-hover: var(--vault-profile-color, hsl(221, 8%, 75%));
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -323,6 +338,13 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, rgb(186, 189, 196));
+  font-family: "??", "??", "New York", Georgia, ui-serif, serif;
+  outline: rgb(186, 189, 196) none 0px;
+  text-decoration-color: rgb(186, 189, 196);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--italic-color, rgb(186, 189, 196));
   font-family: "??", "??", "New York", Georgia, ui-serif, serif;
   outline: rgb(186, 189, 196) none 0px;
@@ -387,19 +409,31 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(186, 189, 196);
+  border-left-color: rgb(186, 189, 196);
+  border-right-color: rgb(186, 189, 196);
+  border-top-color: rgb(186, 189, 196);
   color: rgb(186, 189, 196);
+  font-family: "??", "??", "New York", Georgia, ui-serif, serif;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(186, 189, 196);
+  border-left-color: rgb(186, 189, 196);
+  border-right-color: rgb(186, 189, 196);
+  border-top-color: rgb(186, 189, 196);
   color: rgb(186, 189, 196);
+  font-family: "??", "??", "New York", Georgia, ui-serif, serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(186, 189, 196);
+  margin-left: 24px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(186, 189, 196);
+  margin-left: 24px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -414,6 +448,7 @@ html[saved-theme="dark"] body ul.overflow {
 
 html[saved-theme="dark"] body blockquote {
   background-color: var(--blockquote-background-color, rgb(40, 42, 47));
+  color: var(--blockquote-color, rgb(186, 189, 196));
   font-family: "??", "??", "New York", Georgia, ui-serif, serif;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
@@ -426,7 +461,6 @@ html[saved-theme="dark"] body blockquote {
 html[saved-theme="dark"] body table {
   color: rgb(186, 189, 196);
   font-family: "??", "??", "New York", Georgia, ui-serif, serif;
-  width: 204.625px;
 }
 
 html[saved-theme="dark"] body td {
@@ -528,6 +562,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(186, 189, 196);
   border-right-color: rgb(186, 189, 196);
   border-top-color: rgb(186, 189, 196);
+  color: var(--text-muted, rgb(186, 189, 196));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -540,6 +575,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(200, 100, 100);
   border-right-color: rgb(186, 189, 196);
   border-top-color: rgb(186, 189, 196);
+  color: rgb(186, 189, 196);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -547,6 +583,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(186, 189, 196);
   border-right-color: rgb(186, 189, 196);
   border-top-color: rgb(186, 189, 196);
+  color: rgb(186, 189, 196);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "??", "??", "New York", Georgia, ui-serif, serif;
@@ -1557,6 +1594,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-bottom-right-radius: 3px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  color: var(--pill-color, rgb(241, 242, 243));
   font-family: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
 }
 
@@ -1565,8 +1603,18 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(94, 99, 110);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(241, 242, 243);
+  border-right-color: rgb(241, 242, 243);
+  border-top-color: rgb(241, 242, 243);
   color: var(--h1-color, rgb(241, 242, 243));
   font-family: var(--h1-font, "SF Pro", ui-sans-serif, sans-serif);
+  font-size: var(--h1-size, 32px);
+  letter-spacing: var(--h1-letter-spacing, -0.48px);
+  line-height: var(--h1-line-height, 38.4px);
+  padding-bottom: 4px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1575,31 +1623,74 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(94, 99, 110);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(241, 242, 243);
+  border-right-color: rgb(241, 242, 243);
+  border-top-color: rgb(241, 242, 243);
   color: var(--h2-color, rgb(241, 242, 243));
   font-family: var(--h2-font, "SF Pro", ui-sans-serif, sans-serif);
+  font-size: var(--h2-size, 26.4px);
+  letter-spacing: var(--h2-letter-spacing, -0.2904px);
+  line-height: var(--h2-line-height, 31.68px);
+  padding-bottom: 1.6px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(241, 242, 243);
+  border-left-color: rgb(241, 242, 243);
+  border-right-color: rgb(241, 242, 243);
+  border-top-color: rgb(241, 242, 243);
   color: var(--inline-title-color, rgb(241, 242, 243));
   font-family: var(--inline-title-font, "SF Pro", ui-sans-serif, sans-serif);
+  font-size: var(--inline-title-size, 40px);
+  letter-spacing: -0.6px;
+  line-height: var(--inline-title-line-height, 48px);
+  margin-bottom: 20px;
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(214, 216, 220);
+  border-left-color: rgb(214, 216, 220);
+  border-right-color: rgb(214, 216, 220);
+  border-top-color: rgb(214, 216, 220);
   color: var(--h3-color, rgb(214, 216, 220));
   font-family: var(--h3-font, "SF Pro", ui-sans-serif, sans-serif);
+  font-size: var(--h3-size, 24px);
+  letter-spacing: var(--h3-letter-spacing, -0.192px);
+  line-height: var(--h3-line-height, 31.2px);
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(214, 216, 220);
+  border-left-color: rgb(214, 216, 220);
+  border-right-color: rgb(214, 216, 220);
+  border-top-color: rgb(214, 216, 220);
   color: var(--h4-color, rgb(214, 216, 220));
   font-family: var(--h4-font, "SF Pro", ui-sans-serif, sans-serif);
+  font-size: var(--h4-size, 20px);
+  letter-spacing: var(--h4-letter-spacing, -0.1px);
+  line-height: var(--h4-line-height, 28px);
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(214, 216, 220);
+  border-left-color: rgb(214, 216, 220);
+  border-right-color: rgb(214, 216, 220);
+  border-top-color: rgb(214, 216, 220);
   color: var(--h5-color, rgb(214, 216, 220));
   font-family: var(--h5-font, "SF Pro", ui-sans-serif, sans-serif);
+  font-size: var(--h5-size, 18px);
+  letter-spacing: var(--h5-letter-spacing, -0.036px);
+  line-height: var(--h5-line-height, 27px);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(214, 216, 220);
+  border-left-color: rgb(214, 216, 220);
+  border-right-color: rgb(214, 216, 220);
+  border-top-color: rgb(214, 216, 220);
   color: var(--h6-color, rgb(214, 216, 220));
   font-family: var(--h6-font, "SF Pro", ui-sans-serif, sans-serif);
 }
@@ -1632,6 +1723,26 @@ html[saved-theme="dark"] body hr {
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(186, 189, 196));
   font-family: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(186, 189, 196);
@@ -1768,6 +1879,15 @@ html[saved-theme="dark"] body .canvas-sidebar {
   font-family: var(--sans-serif, "SF Pro", ui-sans-serif, sans-serif);
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(186, 189, 196);
+  border-left-color: rgb(186, 189, 196);
+  border-right-color: rgb(186, 189, 196);
+  border-top-color: rgb(186, 189, 196);
+  color: rgb(186, 189, 196);
+  font-family: "SF Pro", ui-sans-serif, sans-serif;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(186, 189, 196);
   border-left-color: rgb(186, 189, 196);
@@ -1775,6 +1895,16 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(186, 189, 196);
   color: rgb(186, 189, 196);
   font-family: "SF Pro", ui-sans-serif, sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(186, 189, 196);
+  font-family: var(--metadata-label-font, "??", "??", "SF Pro", ui-sans-serif, sans-serif);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(186, 189, 196);
+  font-family: var(--metadata-input-font, "??", "??", "SF Pro", ui-sans-serif, sans-serif);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -1842,6 +1972,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(186, 189, 196);
+  border-left-color: rgb(186, 189, 196);
+  border-right-color: rgb(186, 189, 196);
+  border-top-color: rgb(186, 189, 196);
   color: var(--text-normal, rgb(186, 189, 196));
   font-family: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
 }
@@ -1932,8 +2066,21 @@ html[saved-theme="dark"] body ul.tags > li {
   --bodyFont: var(--font-text, var(--font-text-override), var(--font-text-theme), var(--serif));
   --button-radius: var(--radius-s, 3px);
   --callout-border-width: var(--border-width, 1px);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 1rem);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 3px);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #fefefe);
   --canvas-controls-radius: var(--radius-s, 3px);
   --caret-color: var(--text-normal, #555555);
@@ -2114,7 +2261,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --titlebar-text-color-focused: var(--text-normal, #555555);
   --vault-profile-color: var(--text-normal, #555555);
   --vault-profile-color-hover: var(--vault-profile-color, #555555);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
 }
 
 html[saved-theme="light"] body {
@@ -2158,6 +2305,13 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--italic-color, rgb(85, 85, 85));
+  font-family: "??", "??", "New York", Georgia, ui-serif, serif;
+  outline: rgb(85, 85, 85) none 0px;
+  text-decoration-color: rgb(85, 85, 85);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--italic-color, rgb(85, 85, 85));
   font-family: "??", "??", "New York", Georgia, ui-serif, serif;
   outline: rgb(85, 85, 85) none 0px;
@@ -2221,19 +2375,31 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(85, 85, 85);
+  border-left-color: rgb(85, 85, 85);
+  border-right-color: rgb(85, 85, 85);
+  border-top-color: rgb(85, 85, 85);
   color: rgb(85, 85, 85);
+  font-family: "??", "??", "New York", Georgia, ui-serif, serif;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(85, 85, 85);
+  border-left-color: rgb(85, 85, 85);
+  border-right-color: rgb(85, 85, 85);
+  border-top-color: rgb(85, 85, 85);
   color: rgb(85, 85, 85);
+  font-family: "??", "??", "New York", Georgia, ui-serif, serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(85, 85, 85);
+  margin-left: 24px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(85, 85, 85);
+  margin-left: 24px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -2244,6 +2410,7 @@ html[saved-theme="light"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
   background-color: var(--blockquote-background-color, rgb(254, 254, 254));
+  color: var(--blockquote-color, rgb(85, 85, 85));
   font-family: "??", "??", "New York", Georgia, ui-serif, serif;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
@@ -2256,7 +2423,6 @@ html[saved-theme="light"] body ul.overflow {
 html[saved-theme="light"] body table {
   color: rgb(85, 85, 85);
   font-family: "??", "??", "New York", Georgia, ui-serif, serif;
-  width: 204.625px;
 }
 
 html[saved-theme="light"] body td {
@@ -2341,6 +2507,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(85, 85, 85);
   border-right-color: rgb(85, 85, 85);
   border-top-color: rgb(85, 85, 85);
+  color: var(--text-muted, rgb(85, 85, 85));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2353,6 +2520,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(200, 100, 100);
   border-right-color: rgb(85, 85, 85);
   border-top-color: rgb(85, 85, 85);
+  color: rgb(85, 85, 85);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2360,6 +2528,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(85, 85, 85);
   border-right-color: rgb(85, 85, 85);
   border-top-color: rgb(85, 85, 85);
+  color: rgb(85, 85, 85);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", "??", "New York", Georgia, ui-serif, serif;
@@ -3361,6 +3530,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-bottom-right-radius: 3px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  color: var(--pill-color, rgb(250, 250, 250));
   font-family: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
 }
 
@@ -3369,8 +3539,18 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(212, 212, 212);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--h1-color, rgb(0, 0, 0));
   font-family: var(--h1-font, "SF Pro", ui-sans-serif, sans-serif);
+  font-size: var(--h1-size, 32px);
+  letter-spacing: var(--h1-letter-spacing, -0.48px);
+  line-height: var(--h1-line-height, 38.4px);
+  padding-bottom: 4px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -3379,31 +3559,74 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(212, 212, 212);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--h2-color, rgb(0, 0, 0));
   font-family: var(--h2-font, "SF Pro", ui-sans-serif, sans-serif);
+  font-size: var(--h2-size, 26.4px);
+  letter-spacing: var(--h2-letter-spacing, -0.2904px);
+  line-height: var(--h2-line-height, 31.68px);
+  padding-bottom: 1.6px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--inline-title-color, rgb(0, 0, 0));
   font-family: var(--inline-title-font, "SF Pro", ui-sans-serif, sans-serif);
+  font-size: var(--inline-title-size, 40px);
+  letter-spacing: -0.6px;
+  line-height: var(--inline-title-line-height, 48px);
+  margin-bottom: 20px;
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(68, 68, 68);
+  border-left-color: rgb(68, 68, 68);
+  border-right-color: rgb(68, 68, 68);
+  border-top-color: rgb(68, 68, 68);
   color: var(--h3-color, rgb(68, 68, 68));
   font-family: var(--h3-font, "SF Pro", ui-sans-serif, sans-serif);
+  font-size: var(--h3-size, 24px);
+  letter-spacing: var(--h3-letter-spacing, -0.192px);
+  line-height: var(--h3-line-height, 31.2px);
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(68, 68, 68);
+  border-left-color: rgb(68, 68, 68);
+  border-right-color: rgb(68, 68, 68);
+  border-top-color: rgb(68, 68, 68);
   color: var(--h4-color, rgb(68, 68, 68));
   font-family: var(--h4-font, "SF Pro", ui-sans-serif, sans-serif);
+  font-size: var(--h4-size, 20px);
+  letter-spacing: var(--h4-letter-spacing, -0.1px);
+  line-height: var(--h4-line-height, 28px);
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(68, 68, 68);
+  border-left-color: rgb(68, 68, 68);
+  border-right-color: rgb(68, 68, 68);
+  border-top-color: rgb(68, 68, 68);
   color: var(--h5-color, rgb(68, 68, 68));
   font-family: var(--h5-font, "SF Pro", ui-sans-serif, sans-serif);
+  font-size: var(--h5-size, 18px);
+  letter-spacing: var(--h5-letter-spacing, -0.036px);
+  line-height: var(--h5-line-height, 27px);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(68, 68, 68);
+  border-left-color: rgb(68, 68, 68);
+  border-right-color: rgb(68, 68, 68);
+  border-top-color: rgb(68, 68, 68);
   color: var(--h6-color, rgb(68, 68, 68));
   font-family: var(--h6-font, "SF Pro", ui-sans-serif, sans-serif);
 }`,
@@ -3430,6 +3653,22 @@ html[saved-theme="light"] body h6 {
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(85, 85, 85));
   font-family: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(85, 85, 85);
@@ -3556,6 +3795,15 @@ html[saved-theme="light"] body .canvas-sidebar {
   font-family: var(--sans-serif, "SF Pro", ui-sans-serif, sans-serif);
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(85, 85, 85);
+  border-left-color: rgb(85, 85, 85);
+  border-right-color: rgb(85, 85, 85);
+  border-top-color: rgb(85, 85, 85);
+  color: rgb(85, 85, 85);
+  font-family: "SF Pro", ui-sans-serif, sans-serif;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(85, 85, 85);
   border-left-color: rgb(85, 85, 85);
@@ -3563,6 +3811,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(85, 85, 85);
   color: rgb(85, 85, 85);
   font-family: "SF Pro", ui-sans-serif, sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(85, 85, 85);
+  font-family: var(--metadata-label-font, "??", "??", "SF Pro", ui-sans-serif, sans-serif);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(85, 85, 85);
+  font-family: var(--metadata-input-font, "??", "??", "SF Pro", ui-sans-serif, sans-serif);
 }
 
 html[saved-theme="light"] body .note-properties-key {
@@ -3626,6 +3884,10 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(85, 85, 85);
+  border-left-color: rgb(85, 85, 85);
+  border-right-color: rgb(85, 85, 85);
+  border-top-color: rgb(85, 85, 85);
   color: var(--text-normal, rgb(85, 85, 85));
   font-family: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
 }

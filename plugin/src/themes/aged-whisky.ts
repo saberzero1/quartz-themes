@@ -29,7 +29,20 @@ export const theme: ThemeData = {
   --bases-table-summary-background: var(--background-primary, #090909);
   --button-radius: var(--input-radius, 0px);
   --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 0px);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #090909);
   --canvas-card-label-color: var(--text-faint, #54453a);
   --canvas-controls-radius: var(--radius-s, 0px);
@@ -221,7 +234,9 @@ export const theme: ThemeData = {
   --toggle-thumb-radius: 0px;
   --vault-profile-color: var(--text-normal, #adadad);
   --vault-profile-color-hover: var(--vault-profile-color, #adadad);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -270,6 +285,13 @@ html body .markdown-rendered p > em, html em {
 }
 
 html body .markdown-rendered p > i, html i {
+  color: var(--italic-color, rgb(173, 173, 173));
+  font-family: "yu gothic ui", sans-serif;
+  outline: rgb(173, 173, 173) none 0px;
+  text-decoration-color: rgb(173, 173, 173);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
   color: var(--italic-color, rgb(173, 173, 173));
   font-family: "yu gothic ui", sans-serif;
   outline: rgb(173, 173, 173) none 0px;
@@ -338,7 +360,13 @@ html body a.internal-link.broken {
   outline: rgb(141, 106, 80) none 0px;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(173, 173, 173);
+  border-left-color: rgb(173, 173, 173);
+  border-right-color: rgb(173, 173, 173);
+  border-top-color: rgb(173, 173, 173);
   color: rgb(173, 173, 173);
+  font-family: "yu gothic ui", sans-serif;
+  font-size: 12.5px;
 }
 
 html body dl {
@@ -347,15 +375,27 @@ html body dl {
 }
 
 html body dt {
+  border-bottom-color: rgb(173, 173, 173);
+  border-left-color: rgb(173, 173, 173);
+  border-right-color: rgb(173, 173, 173);
+  border-top-color: rgb(173, 173, 173);
   color: rgb(173, 173, 173);
+  font-family: "yu gothic ui", sans-serif;
+  font-size: 12.5px;
 }
 
 html body ol > li {
   color: rgb(173, 173, 173);
+  margin-left: 20.8557px;
+  padding-bottom: var(--list-spacing, 0.9375px);
+  padding-top: var(--list-spacing, 0.9375px);
 }
 
 html body ul > li {
   color: rgb(173, 173, 173);
+  margin-left: 20.8557px;
+  padding-bottom: var(--list-spacing, 0.9375px);
+  padding-top: var(--list-spacing, 0.9375px);
 }
 
 html body ul.overflow {
@@ -369,7 +409,10 @@ html body ul.overflow {
 }
 
 html body blockquote {
+  color: var(--blockquote-color, rgb(173, 173, 173));
   font-family: "yu gothic ui", sans-serif;
+  letter-spacing: 0.1px;
+  line-height: 21.25px;
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(173, 173, 173);
@@ -381,7 +424,6 @@ html body blockquote {
 html body table {
   color: rgb(173, 173, 173);
   font-family: "yu gothic ui", sans-serif;
-  width: 161.953px;
 }
 
 html body td {
@@ -398,6 +440,7 @@ html body th {
   border-right-color: rgb(9, 9, 9);
   border-top-color: rgb(9, 9, 9);
   color: var(--table-header-color, rgb(173, 173, 173));
+  letter-spacing: 0.1px;
 }`,
     code: `html body code {
   background-color: var(--code-background, rgb(20, 20, 20));
@@ -475,10 +518,12 @@ html body video {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-left-color: rgb(173, 173, 173);
+  border-radius: 0px;
   border-right-color: rgb(173, 173, 173);
   border-top-color: rgb(173, 173, 173);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  color: var(--text-muted, rgb(173, 173, 173));
 }
 
 html body .footnotes {
@@ -490,6 +535,7 @@ html body .transclude {
   border-bottom-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
   border-top-color: rgb(173, 173, 173);
+  color: rgb(173, 173, 173);
 }
 
 html body .transclude-inner {
@@ -497,6 +543,7 @@ html body .transclude-inner {
   border-left-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
   border-top-color: rgb(173, 173, 173);
+  color: rgb(173, 173, 173);
 }`,
     checkboxes: `html body .katex-display > .katex {
   font-family: "yu gothic ui", sans-serif;
@@ -1631,6 +1678,9 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-bottom-right-radius: 21.875px;
   border-top-left-radius: 21.875px;
   border-top-right-radius: 21.875px;
+  color: var(--pill-color, rgb(171, 174, 174));
+  font-size: 10.9375px;
+  line-height: var(--line-height-tight, 10.9375px);
 }
 
 html body a.internal-link.tag-link::before {
@@ -1638,8 +1688,21 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  background: rgb(20, 20, 20) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(20, 20, 20);
+  border-bottom-color: rgb(150, 137, 136);
+  border-left-color: rgb(150, 137, 136);
+  border-right-color: rgb(150, 137, 136);
+  border-top-color: rgb(150, 137, 136);
   color: var(--h1-color, rgb(150, 137, 136));
   font-family: var(--h1-font, palatino, serif);
+  font-size: var(--h1-size, 20.225px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h1-letter-spacing, -0.303375px);
+  line-height: var(--h1-line-height, 24.27px);
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-top: 4px;
 }
 
 html body h1.article-title {
@@ -1649,33 +1712,110 @@ html body h1.article-title {
 }
 
 html body h2 {
+  background: rgb(20, 20, 20) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(20, 20, 20);
+  border-bottom-color: rgb(150, 137, 136);
+  border-left-color: rgb(150, 137, 136);
+  border-right-color: rgb(150, 137, 136);
+  border-top-color: rgb(150, 137, 136);
   color: var(--h2-color, rgb(150, 137, 136));
   font-family: var(--h2-font, palatino, serif);
+  font-size: var(--h2-size, 18.275px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h2-letter-spacing, -0.201025px);
+  line-height: var(--h2-line-height, 21.93px);
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-top: 4px;
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(142, 116, 109);
+  border-left-color: rgb(142, 116, 109);
+  border-right-color: rgb(142, 116, 109);
+  border-top-color: rgb(142, 116, 109);
   color: var(--inline-title-color, rgb(142, 116, 109));
   font-family: var(--inline-title-font, palatino, serif);
+  font-size: var(--inline-title-size, 18.75px);
+  font-weight: var(--inline-title-weight, 200);
+  letter-spacing: -0.28125px;
+  line-height: var(--inline-title-line-height, 22.5px);
+  margin-bottom: 9.375px;
 }
 
 html body h3 {
+  background: rgb(20, 20, 20) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(20, 20, 20);
+  border-bottom-color: rgb(150, 137, 136);
+  border-left-color: rgb(150, 137, 136);
+  border-right-color: rgb(150, 137, 136);
+  border-top-color: rgb(150, 137, 136);
   color: var(--h3-color, rgb(150, 137, 136));
   font-family: var(--h3-font, palatino, serif);
+  font-size: var(--h3-size, 16.475px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h3-letter-spacing, -0.1318px);
+  line-height: var(--h3-line-height, 21.4175px);
+  margin-top: var(--heading-spacing, 40px);
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-top: 4px;
 }
 
 html body h4 {
+  background: rgb(20, 20, 20) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(20, 20, 20);
+  border-bottom-color: rgb(150, 137, 136);
+  border-left-color: rgb(150, 137, 136);
+  border-right-color: rgb(150, 137, 136);
+  border-top-color: rgb(150, 137, 136);
   color: var(--h4-color, rgb(150, 137, 136));
   font-family: var(--h4-font, palatino, serif);
+  font-size: var(--h4-size, 14.85px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h4-letter-spacing, -0.07425px);
+  line-height: var(--h4-line-height, 20.79px);
+  margin-top: var(--heading-spacing, 40px);
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-top: 4px;
 }
 
 html body h5 {
+  background: rgb(20, 20, 20) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(20, 20, 20);
+  border-bottom-color: rgb(150, 137, 136);
+  border-left-color: rgb(150, 137, 136);
+  border-right-color: rgb(150, 137, 136);
+  border-top-color: rgb(150, 137, 136);
   color: var(--h5-color, rgb(150, 137, 136));
   font-family: var(--h5-font, palatino, serif);
+  font-size: var(--h5-size, 13.45px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h5-letter-spacing, -0.0269px);
+  line-height: var(--h5-line-height, 20.175px);
+  margin-top: var(--heading-spacing, 40px);
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-top: 4px;
 }
 
 html body h6 {
+  background: rgb(20, 20, 20) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgb(20, 20, 20);
+  border-bottom-color: rgb(150, 137, 136);
+  border-left-color: rgb(150, 137, 136);
+  border-right-color: rgb(150, 137, 136);
+  border-top-color: rgb(150, 137, 136);
   color: var(--h6-color, rgb(150, 137, 136));
   font-family: var(--h6-font, palatino, serif);
+  font-size: var(--h6-size, 12.5px);
+  font-weight: var(--font-weight, 400);
+  line-height: var(--h6-line-height, 18.75px);
+  margin-top: 40px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-top: 4px;
 }
 
 html body hr {
@@ -1702,6 +1842,26 @@ html body hr {
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(100, 95, 90));
   font-family: "yu gothic ui", sans-serif;
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(173, 173, 173);
@@ -1837,6 +1997,15 @@ html body .canvas-sidebar {
   font-family: "yu gothic ui", sans-serif;
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(173, 173, 173);
+  border-left-color: rgb(173, 173, 173);
+  border-right-color: rgb(173, 173, 173);
+  border-top-color: rgb(173, 173, 173);
+  color: rgb(173, 173, 173);
+  font-family: "yu gothic ui", sans-serif;
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(173, 173, 173);
   border-left-color: rgb(173, 173, 173);
@@ -1844,6 +2013,16 @@ html body .metadata-properties {
   border-top-color: rgb(173, 173, 173);
   color: rgb(173, 173, 173);
   font-family: "yu gothic ui", sans-serif;
+}
+
+html body .metadata-property-key {
+  color: rgb(173, 173, 173);
+  font-size: 12.5px;
+}
+
+html body .metadata-property-value {
+  color: rgb(173, 173, 173);
+  font-size: 12.5px;
 }
 
 html body .note-properties {
@@ -1909,8 +2088,13 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(173, 173, 173);
+  border-left-color: rgb(173, 173, 173);
+  border-right-color: rgb(173, 173, 173);
+  border-top-color: rgb(173, 173, 173);
   color: var(--text-normal, rgb(173, 173, 173));
   font-family: palatino, serif;
+  letter-spacing: 1px;
 }
 
 html body abbr {

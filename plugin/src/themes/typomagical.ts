@@ -424,6 +424,19 @@ export const theme: ThemeData = {
   --blockquote-border-thickness: 1px;
   --bodyFont: var(--font-text-theme, var(--font-default, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif));
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --checkbox-color: var(--interactive-accent, hsl(258, 88%, 79%));
   --checkbox-color-hover: var(--interactive-accent-hover, hsl(255, 89.76%, 90.85%));
   --code-normal: var(--text-normal, #62d770);
@@ -514,6 +527,10 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
 }
@@ -556,12 +573,27 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration: rgba(183, 154, 249, 0.3);
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(183, 154, 249, 0.3));
 }`,
+    lists: `html[saved-theme="dark"] body dd {
+  font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+}
+
+html[saved-theme="dark"] body dt {
+  font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+}
+
+html[saved-theme="dark"] body ol > li {
+  margin-left: 24px;
+}
+
+html[saved-theme="dark"] body ul > li {
+  margin-left: 24px;
+}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+  line-height: 23.2px;
 }`,
     tables: `html[saved-theme="dark"] body table {
   font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
-  width: 188.859px;
 }
 
 html[saved-theme="dark"] body td {
@@ -1102,6 +1134,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-left-color: rgba(183, 154, 249, 0.15);
   border-right-color: rgba(183, 154, 249, 0.15);
   border-top-color: rgba(183, 154, 249, 0.15);
+  color: var(--pill-color, rgb(238, 182, 98));
   font-family: var(--font-links, "Alegreya SC", Spectral, serif);
 }
 
@@ -1112,6 +1145,9 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 html[saved-theme="dark"] body h1 {
   color: var(--text-title-h1, rgb(218, 218, 218));
   font-family: var(--font-title, "Playfair Display");
+  font-weight: var(--title-weight, 400);
+  line-height: var(--line-height-headings, 31.0656px);
+  padding-bottom: 7px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1122,31 +1158,48 @@ html[saved-theme="dark"] body h1.article-title {
 html[saved-theme="dark"] body h2 {
   color: var(--text-title-h2, rgb(218, 218, 218));
   font-family: var(--h2-font, "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+  font-weight: var(--heading-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.70176px);
+  line-height: var(--line-height-headings, 28.0704px);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   color: var(--text-title-h1, rgb(218, 218, 218));
   font-family: var(--inline-title-font, "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+  font-weight: var(--inline-title-weight, 400);
+  padding-bottom: 7px;
 }
 
 html[saved-theme="dark"] body h3 {
   color: var(--text-title-h3, rgb(218, 218, 218));
   font-family: var(--h3-font, "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+  font-weight: var(--heading-weight, 600);
+  letter-spacing: var(--h3-letter-spacing, -0.63264px);
+  line-height: var(--line-height-headings, 25.3056px);
 }
 
 html[saved-theme="dark"] body h4 {
   color: var(--text-title-h4, rgb(218, 218, 218));
   font-family: var(--h4-font, "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+  font-weight: var(--heading-weight, 600);
+  letter-spacing: var(--h4-letter-spacing, -0.57024px);
+  line-height: var(--line-height-headings, 22.8096px);
 }
 
 html[saved-theme="dark"] body h5 {
   color: var(--text-title-h5, rgb(218, 218, 218));
   font-family: var(--h5-font, "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+  font-weight: var(--heading-weight, 600);
+  letter-spacing: var(--h5-letter-spacing, -0.51648px);
+  line-height: var(--line-height-headings, 20.6592px);
 }
 
 html[saved-theme="dark"] body h6 {
   color: var(--text-title-h6, rgb(218, 218, 218));
   font-family: var(--h6-font, "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+  font-weight: var(--heading-weight, 600);
+  letter-spacing: var(--h6-letter-spacing, -0.48px);
+  line-height: var(--line-height-headings, 19.2px);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -1184,8 +1237,20 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
   font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  font-family: var(--metadata-label-font, "??", "??", "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  font-family: var(--metadata-input-font, "??", "??", "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
@@ -1231,6 +1296,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --blockquote-border-thickness: 1px;
   --bodyFont: var(--font-text-theme, var(--font-default, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif));
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --code-normal: var(--text-normal, #4db95a);
   --file-header-font: var(--font-interface, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
@@ -1300,6 +1378,10 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
 }
@@ -1333,12 +1415,27 @@ html[saved-theme="light"] body a.internal-link.broken {
   outline: rgb(213, 174, 207) none 0px;
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
+    lists: `html[saved-theme="light"] body dd {
+  font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+}
+
+html[saved-theme="light"] body dt {
+  font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+}
+
+html[saved-theme="light"] body ol > li {
+  margin-left: 24px;
+}
+
+html[saved-theme="light"] body ul > li {
+  margin-left: 24px;
+}`,
     blockquotes: `html[saved-theme="light"] body blockquote {
   font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+  line-height: 23.2px;
 }`,
     tables: `html[saved-theme="light"] body table {
   font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
-  width: 188.859px;
 }
 
 html[saved-theme="light"] body td {
@@ -1870,6 +1967,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-remove: var(--tag-color, #222222);
   --pill-color-remove-hover: var(--tag-color-hover, #222222);
   background-color: var(--pill-background, rgb(238, 182, 98));
+  color: var(--pill-color, rgb(34, 34, 34));
   font-family: var(--font-links, "Alegreya SC", Spectral, serif);
 }
 
@@ -1880,6 +1978,9 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 html[saved-theme="light"] body h1 {
   color: var(--text-title-h1, rgb(34, 34, 34));
   font-family: var(--font-title, "Playfair Display");
+  font-weight: var(--title-weight, 400);
+  line-height: var(--line-height-headings, 31.0656px);
+  padding-bottom: 7px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -1890,31 +1991,48 @@ html[saved-theme="light"] body h1.article-title {
 html[saved-theme="light"] body h2 {
   color: var(--text-title-h2, rgb(34, 34, 34));
   font-family: var(--h2-font, "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+  font-weight: var(--heading-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.70176px);
+  line-height: var(--line-height-headings, 28.0704px);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   color: var(--text-title-h1, rgb(34, 34, 34));
   font-family: var(--inline-title-font, "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+  font-weight: var(--inline-title-weight, 400);
+  padding-bottom: 7px;
 }
 
 html[saved-theme="light"] body h3 {
   color: var(--text-title-h3, rgb(34, 34, 34));
   font-family: var(--h3-font, "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+  font-weight: var(--heading-weight, 600);
+  letter-spacing: var(--h3-letter-spacing, -0.63264px);
+  line-height: var(--line-height-headings, 25.3056px);
 }
 
 html[saved-theme="light"] body h4 {
   color: var(--text-title-h4, rgb(34, 34, 34));
   font-family: var(--h4-font, "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+  font-weight: var(--heading-weight, 600);
+  letter-spacing: var(--h4-letter-spacing, -0.57024px);
+  line-height: var(--line-height-headings, 22.8096px);
 }
 
 html[saved-theme="light"] body h5 {
   color: var(--text-title-h5, rgb(34, 34, 34));
   font-family: var(--h5-font, "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+  font-weight: var(--heading-weight, 600);
+  letter-spacing: var(--h5-letter-spacing, -0.51648px);
+  line-height: var(--line-height-headings, 20.6592px);
 }
 
 html[saved-theme="light"] body h6 {
   color: var(--text-title-h6, rgb(34, 34, 34));
   font-family: var(--h6-font, "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+  font-weight: var(--heading-weight, 600);
+  letter-spacing: var(--h6-letter-spacing, -0.48px);
+  line-height: var(--line-height-headings, 19.2px);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
@@ -1952,8 +2070,20 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
   font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  font-family: var(--metadata-label-font, "??", "??", "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  font-family: var(--metadata-input-font, "??", "??", "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
 }
 
 html[saved-theme="light"] body .note-properties-tags {

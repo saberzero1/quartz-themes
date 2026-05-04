@@ -8,6 +8,19 @@ export const theme: ThemeData = {
   --blockquote-bg-image: none;
   --blockquote-border-color: var(--interactive-accent, #9f363c);
   --border-color: var(--col-crystal, #c5e6e5);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --checkbox-color: var(--interactive-accent, #9f363c);
   --checkbox-color-hover: var(--interactive-accent-hover, #d9363f);
   --code-editor-color: var(--col-desat-cyan, #8dc3c7);
@@ -231,20 +244,23 @@ html body a.internal-link.broken {
   outline: rgb(217, 54, 63) none 0px;
 }`,
     lists: `html body ol > li {
+  margin-bottom: 8px;
   text-align: left;
 }
 
 html body ul > li {
+  margin-bottom: 8px;
   text-align: left;
 }`,
     blockquotes: `html body blockquote {
   background-color: var(--blockquote-bg-color, rgb(22, 23, 30));
   font-family: var(--font-serif, Petrona, serif);
+  font-weight: 500;
+  line-height: 25.6px;
   padding-bottom: var(--padding-bq-bottom, 32px);
 }`,
     tables: `html body table {
   font-family: var(--font-serif, Petrona, serif);
-  width: 664px;
 }
 
 html body tbody tr:nth-child(even) {
@@ -684,6 +700,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color-hover: var(--tag-color-hover, #d9363f);
   --pill-color-remove: var(--tag-color, #f1f0ee);
   --pill-color-remove-hover: var(--tag-color-hover, #d9363f);
+  color: var(--pill-color, rgb(241, 240, 238));
 }
 
 html body a.internal-link.tag-link::before {
@@ -691,33 +708,78 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(241, 240, 238);
+  border-left-color: rgb(241, 240, 238);
+  border-right-color: rgb(241, 240, 238);
+  border-top-color: rgb(241, 240, 238);
   color: var(--title-color, rgb(241, 240, 238));
   font-family: var(--font-smallcaps, "Vollkorn SC", serif);
+  font-size: var(--font-size-huge, 33.6px);
+  letter-spacing: var(--h1-letter-spacing, -0.504px);
+  line-height: var(--h1-line-height, 40.32px);
 }
 
 html body h2 {
+  border-bottom-color: rgb(241, 240, 238);
+  border-left-color: rgb(241, 240, 238);
+  border-right-color: rgb(241, 240, 238);
+  border-top-color: rgb(241, 240, 238);
   color: var(--title-color, rgb(241, 240, 238));
   font-family: var(--font-serif, Petrona, serif);
+  font-size: var(--font-size-larger, 30.4px);
+  letter-spacing: var(--h2-letter-spacing, -0.3344px);
+  line-height: var(--h2-line-height, 36.48px);
+  padding-top: var(--margin-header-top, 24.32px);
 }
 
 html body h3 {
+  border-bottom-color: rgb(241, 240, 238);
+  border-left-color: rgb(241, 240, 238);
+  border-right-color: rgb(241, 240, 238);
+  border-top-color: rgb(241, 240, 238);
   color: var(--title-color, rgb(241, 240, 238));
   font-family: var(--font-smallcaps, "Vollkorn SC", serif);
+  font-size: var(--font-size-large, 25.6px);
+  letter-spacing: var(--h3-letter-spacing, -0.2048px);
+  line-height: var(--h3-line-height, 33.28px);
+  padding-top: var(--margin-header-top, 20.48px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(241, 240, 238);
+  border-left-color: rgb(241, 240, 238);
+  border-right-color: rgb(241, 240, 238);
+  border-top-color: rgb(241, 240, 238);
   color: var(--title-color, rgb(241, 240, 238));
   font-family: var(--font-serif, Petrona, serif);
+  font-size: var(--font-size-bigger, 24px);
+  letter-spacing: var(--h4-letter-spacing, -0.12px);
+  line-height: var(--h4-line-height, 33.6px);
+  padding-top: var(--margin-header-top, 19.2px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(241, 240, 238);
+  border-left-color: rgb(241, 240, 238);
+  border-right-color: rgb(241, 240, 238);
+  border-top-color: rgb(241, 240, 238);
   color: var(--title-color, rgb(241, 240, 238));
   font-family: var(--font-smallcaps, "Vollkorn SC", serif);
+  font-size: var(--font-size-big, 19.2px);
+  letter-spacing: var(--h5-letter-spacing, -0.0384px);
+  line-height: var(--h5-line-height, 28.8px);
+  padding-top: var(--margin-header-top, 15.36px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(137, 137, 137);
+  border-left-color: rgb(137, 137, 137);
+  border-right-color: rgb(137, 137, 137);
+  border-top-color: rgb(137, 137, 137);
   color: var(--subtitle-color, rgb(137, 137, 137));
   font-family: var(--font-smallcaps, "Vollkorn SC", serif);
+  font-size: var(--font-size-plus, 17.6px);
+  line-height: var(--h6-line-height, 26.4px);
 }
 
 html body hr {
@@ -738,6 +800,7 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
 }`,
     footer: `html body footer {
   font-family: Lato, sans-serif;
+  text-align: justify;
 }`,
     recentNotes: `html body .recent-notes > h3 {
   font-family: Lato, sans-serif;

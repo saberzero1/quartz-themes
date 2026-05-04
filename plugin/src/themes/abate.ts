@@ -35,11 +35,17 @@ export const theme: ThemeData = {
   --callout-border-opacity: 0.5;
   --callout-border-width: var(--divider-width, 1px);
   --callout-bug: var(--color-red-rgb, 184, 30, 25);
+  --callout-default: var(--callout-default, 8, 109, 221);
   --callout-error: var(--color-red-rgb, 184, 30, 25);
   --callout-example: var(--color-purple-rgb, 102, 69, 204);
   --callout-fail: var(--color-red-rgb, 184, 30, 25);
+  --callout-info: var(--callout-info, 8, 109, 221);
   --callout-question: var(--color-orange-rgb, 237, 96, 2);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-success: var(--color-green-rgb, 5, 144, 61);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
   --callout-warning: var(--color-orange-rgb, 237, 96, 2);
   --canvas-background: var(--background-primary, #fdf6e3);
   --canvas-color-1: var(--color-red-rgb, 184, 30, 25);
@@ -197,6 +203,15 @@ html body .page > div#quartz-body div.sidebar {
 html body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #fdf6e3);
   background-color: var(--tab-container-background, rgb(253, 246, 227));
+}`,
+    lists: `html body ol > li {
+  padding-bottom: var(--list-spacing, 3.2px);
+  padding-top: var(--list-spacing, 3.2px);
+}
+
+html body ul > li {
+  padding-bottom: var(--list-spacing, 3.2px);
+  padding-top: var(--list-spacing, 3.2px);
 }`,
     code: `html body code {
   background-color: var(--code-background, rgb(253, 246, 227));
@@ -726,7 +741,14 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
 }
 
 html body h1 {
+  border-bottom-color: rgb(15, 71, 97);
+  border-left-color: rgb(15, 71, 97);
+  border-right-color: rgb(15, 71, 97);
+  border-top-color: rgb(15, 71, 97);
   color: var(--h1-color, rgb(15, 71, 97));
+  font-size: var(--h1-size, 32px);
+  letter-spacing: var(--h1-letter-spacing, -0.48px);
+  line-height: var(--h1-line-height, 48px);
 }
 
 html body h1.article-title {
@@ -737,31 +759,79 @@ html body h1.article-title {
 
 html body h2 {
   --font-weight: var(--h2-weight, 600);
+  border-bottom-color: rgb(18, 89, 122);
+  border-left-color: rgb(18, 89, 122);
+  border-right-color: rgb(18, 89, 122);
+  border-top-color: rgb(18, 89, 122);
   color: var(--h2-color, rgb(18, 89, 122));
+  font-size: var(--h2-size, 25.6px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.2816px);
+  line-height: var(--h2-line-height, 38.4px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--inline-title-color, rgb(0, 0, 0));
+  font-size: var(--inline-title-size, 40px);
+  font-weight: var(--inline-title-weight, 900);
+  letter-spacing: -0.6px;
+  line-height: var(--inline-title-line-height, 60px);
+  margin-bottom: 20px;
 }
 
 html body h3 {
   --font-weight: var(--h3-weight, 400);
+  border-bottom-color: rgb(22, 108, 148);
+  border-left-color: rgb(22, 108, 148);
+  border-right-color: rgb(22, 108, 148);
+  border-top-color: rgb(22, 108, 148);
   color: var(--h3-color, rgb(22, 108, 148));
+  font-size: var(--h3-size, 21.6px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h3-letter-spacing, -0.1728px);
+  line-height: var(--h3-line-height, 32.4px);
 }
 
 html body h4 {
   --font-weight: var(--h4-weight, 400);
+  border-bottom-color: rgb(26, 126, 173);
+  border-left-color: rgb(26, 126, 173);
+  border-right-color: rgb(26, 126, 173);
+  border-top-color: rgb(26, 126, 173);
   color: var(--h4-color, rgb(26, 126, 173));
+  font-size: var(--h4-size, 19.2px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h4-letter-spacing, -0.096px);
+  line-height: var(--h4-line-height, 28.8px);
 }
 
 html body h5 {
   --font-weight: var(--h5-weight, 300);
+  border-bottom-color: rgb(30, 145, 199);
+  border-left-color: rgb(30, 145, 199);
+  border-right-color: rgb(30, 145, 199);
+  border-top-color: rgb(30, 145, 199);
   color: var(--h5-color, rgb(30, 145, 199));
+  font-size: var(--h5-size, 19.2px);
+  font-weight: var(--font-weight, 300);
+  letter-spacing: var(--h5-letter-spacing, -0.0384px);
+  line-height: var(--h5-line-height, 28.8px);
 }
 
 html body h6 {
   --font-weight: var(--h6-weight, 300);
+  border-bottom-color: rgb(34, 164, 224);
+  border-left-color: rgb(34, 164, 224);
+  border-right-color: rgb(34, 164, 224);
+  border-top-color: rgb(34, 164, 224);
   color: var(--h6-color, rgb(34, 164, 224));
+  font-size: var(--h6-size, 17.6px);
+  font-weight: var(--font-weight, 300);
+  line-height: var(--h6-line-height, 26.4px);
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
@@ -777,6 +847,14 @@ html body h6 {
     explorer: `html body .nav-files-container .tree-item-children {
   border-left-color: rgba(40, 40, 40, 0.12);
   border-left-width: 2px;
+}
+
+html body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     footer: `html body footer {
   background-color: var(--status-bar-background, rgb(253, 246, 227));

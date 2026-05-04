@@ -21,6 +21,19 @@ export const theme: ThemeData = {
   --bases-table-header-color: var(--text-muted, #c2c2c2);
   --bases-table-summary-background: var(--background-primary, #3e3e3e);
   --blockquote-border-color: var(--interactive-accent, #d88736);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #3e3e3e);
   --canvas-card-label-color: var(--text-faint, rgb(194, 194, 194, 0.50));
   --caret-color: var(--text-normal, #c2c2c2);
@@ -184,7 +197,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, #c2c2c2);
   --vault-profile-color: var(--text-normal, #c2c2c2);
   --vault-profile-color-hover: var(--vault-profile-color, #c2c2c2);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -235,6 +250,14 @@ html body .markdown-rendered p > em, html em {
 html body .markdown-rendered p > i, html i {
   color: var(--italic-color, rgb(194, 194, 194));
   font-family: Avenir, "Avenir Next", sans-serif;
+  outline: rgb(194, 194, 194) none 0px;
+  text-decoration-color: rgb(194, 194, 194);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(194, 194, 194));
+  font-family: Avenir, "Avenir Next", sans-serif;
+  font-weight: 900;
   outline: rgb(194, 194, 194) none 0px;
   text-decoration-color: rgb(194, 194, 194);
 }
@@ -296,7 +319,13 @@ html body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(216, 135, 54));
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(194, 194, 194);
+  border-left-color: rgb(194, 194, 194);
+  border-right-color: rgb(194, 194, 194);
+  border-top-color: rgb(194, 194, 194);
   color: rgb(194, 194, 194);
+  font-family: Avenir, "Avenir Next", sans-serif;
+  font-size: 14.5px;
 }
 
 html body dl {
@@ -305,15 +334,27 @@ html body dl {
 }
 
 html body dt {
+  border-bottom-color: rgb(194, 194, 194);
+  border-left-color: rgb(194, 194, 194);
+  border-right-color: rgb(194, 194, 194);
+  border-top-color: rgb(194, 194, 194);
   color: rgb(194, 194, 194);
+  font-family: Avenir, "Avenir Next", sans-serif;
+  font-size: 14.5px;
 }
 
 html body ol > li {
   color: rgb(194, 194, 194);
+  margin-left: 24.1926px;
+  padding-bottom: var(--list-spacing, 1.0875px);
+  padding-top: var(--list-spacing, 1.0875px);
 }
 
 html body ul > li {
   color: rgb(194, 194, 194);
+  margin-left: 24.1926px;
+  padding-bottom: var(--list-spacing, 1.0875px);
+  padding-top: var(--list-spacing, 1.0875px);
 }
 
 html body ul.overflow {
@@ -327,7 +368,9 @@ html body ul.overflow {
 }
 
 html body blockquote {
+  color: var(--blockquote-color, rgb(194, 194, 194));
   font-family: Avenir, "Avenir Next", sans-serif;
+  line-height: 22px;
 }`,
     tables: `html body .spacer {
   background-color: var(--background-primary, rgb(62, 62, 62));
@@ -343,7 +386,6 @@ html body .table-container {
 html body table {
   color: rgb(194, 194, 194);
   font-family: Avenir, "Avenir Next", sans-serif;
-  width: 195.062px;
 }
 
 html body td {
@@ -419,6 +461,7 @@ html body video {
   border-left-color: rgb(194, 194, 194);
   border-right-color: rgb(194, 194, 194);
   border-top-color: rgb(194, 194, 194);
+  color: var(--text-muted, rgb(194, 194, 194));
 }
 
 html body .footnotes {
@@ -435,6 +478,7 @@ html body .transclude {
   border-right-color: rgb(194, 194, 194);
   border-top-color: rgb(25, 25, 25);
   border-top-style: solid;
+  color: rgb(194, 194, 194);
 }
 
 html body .transclude-inner {
@@ -445,6 +489,7 @@ html body .transclude-inner {
   border-right-color: rgb(194, 194, 194);
   border-top-color: rgb(25, 25, 25);
   border-top-style: solid;
+  color: rgb(194, 194, 194);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgba(194, 194, 194, 0.5);
@@ -1314,6 +1359,9 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-bottom-right-radius: 25.375px;
   border-top-left-radius: 25.375px;
   border-top-right-radius: 25.375px;
+  color: var(--pill-color, rgb(216, 135, 54));
+  font-size: 12.6875px;
+  line-height: var(--line-height-tight, 12.6875px);
 }
 
 html body a.internal-link.tag-link::before {
@@ -1321,8 +1369,16 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(194, 194, 194);
+  border-left-color: rgb(194, 194, 194);
+  border-right-color: rgb(194, 194, 194);
+  border-top-color: rgb(194, 194, 194);
   color: var(--text-title-h1, rgb(194, 194, 194));
   font-family: var(--font-family, Avenir, "Avenir Next", sans-serif);
+  font-size: var(--font-size-h1, 23px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h1-letter-spacing, -0.345px);
+  line-height: var(--font-line-height, 22px);
 }
 
 html body h1.article-title {
@@ -1331,33 +1387,79 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(194, 194, 194);
+  border-left-color: rgb(194, 194, 194);
+  border-right-color: rgb(194, 194, 194);
+  border-top-color: rgb(194, 194, 194);
   color: var(--text-title-h2, rgb(194, 194, 194));
   font-family: var(--font-family, Avenir, "Avenir Next", sans-serif);
+  font-size: var(--font-size-h2, 22px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.242px);
+  line-height: var(--font-line-height, 22px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(194, 194, 194);
+  border-left-color: rgb(194, 194, 194);
+  border-right-color: rgb(194, 194, 194);
+  border-top-color: rgb(194, 194, 194);
   color: var(--inline-title-color, rgb(194, 194, 194));
   font-family: var(--inline-title-font, Avenir, "Avenir Next", sans-serif);
+  font-size: var(--inline-title-size, 23.461px);
+  letter-spacing: -0.351915px;
+  line-height: var(--inline-title-line-height, 28.1532px);
+  margin-bottom: 11.7305px;
 }
 
 html body h3 {
+  border-bottom-color: rgb(194, 194, 194);
+  border-left-color: rgb(194, 194, 194);
+  border-right-color: rgb(194, 194, 194);
+  border-top-color: rgb(194, 194, 194);
   color: var(--text-title-h3, rgb(194, 194, 194));
   font-family: var(--font-family, Avenir, "Avenir Next", sans-serif);
+  font-size: var(--font-size-h3, 21px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h3-letter-spacing, -0.168px);
+  line-height: var(--font-line-height, 22px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(194, 194, 194);
+  border-left-color: rgb(194, 194, 194);
+  border-right-color: rgb(194, 194, 194);
+  border-top-color: rgb(194, 194, 194);
   color: var(--text-title-h4, rgb(194, 194, 194));
   font-family: var(--font-family, Avenir, "Avenir Next", sans-serif);
+  font-size: var(--font-size-h4, 20px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h4-letter-spacing, -0.1px);
+  line-height: var(--font-line-height, 22px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(194, 194, 194);
+  border-left-color: rgb(194, 194, 194);
+  border-right-color: rgb(194, 194, 194);
+  border-top-color: rgb(194, 194, 194);
   color: var(--text-title-h5, rgb(194, 194, 194));
   font-family: var(--font-family, Avenir, "Avenir Next", sans-serif);
+  font-size: var(--font-size-h5, 19px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h5-letter-spacing, -0.038px);
+  line-height: var(--font-line-height, 22px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(194, 194, 194);
+  border-left-color: rgb(194, 194, 194);
+  border-right-color: rgb(194, 194, 194);
+  border-top-color: rgb(194, 194, 194);
   color: var(--text-title-h6, rgb(194, 194, 194));
   font-family: var(--font-family, Avenir, "Avenir Next", sans-serif);
+  font-size: var(--font-size-h6, 18px);
+  line-height: var(--font-line-height, 22px);
 }
 
 html body hr {
@@ -1376,6 +1478,22 @@ html body hr {
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(194, 194, 194));
   font-family: var(--font-family, Avenir, "Avenir Next", sans-serif);
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(194, 194, 194);
@@ -1394,10 +1512,14 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-right-color: rgb(36, 36, 36);
   border-top-color: rgb(36, 36, 36);
   color: var(--status-bar-text-color, rgb(194, 194, 194));
+  padding-bottom: 0px;
+  padding-left: 30px;
+  padding-top: 0px;
 }
 
 html body footer ul li a {
   color: rgb(194, 194, 194);
+  font-size: 10px;
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgb(194, 194, 194);
@@ -1497,6 +1619,15 @@ html body .canvas-sidebar {
   font-family: Avenir, "Avenir Next", sans-serif;
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(194, 194, 194);
+  border-left-color: rgb(194, 194, 194);
+  border-right-color: rgb(194, 194, 194);
+  border-top-color: rgb(194, 194, 194);
+  color: rgb(194, 194, 194);
+  font-family: Avenir, "Avenir Next", sans-serif;
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(194, 194, 194);
   border-left-color: rgb(194, 194, 194);
@@ -1504,6 +1635,16 @@ html body .metadata-properties {
   border-top-color: rgb(194, 194, 194);
   color: rgb(194, 194, 194);
   font-family: Avenir, "Avenir Next", sans-serif;
+}
+
+html body .metadata-property-key {
+  color: rgb(194, 194, 194);
+  font-size: 14.5px;
+}
+
+html body .metadata-property-value {
+  color: rgb(194, 194, 194);
+  font-size: 14.5px;
 }
 
 html body .note-properties {
@@ -1567,7 +1708,13 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(194, 194, 194);
+  border-left-color: rgb(194, 194, 194);
+  border-right-color: rgb(194, 194, 194);
+  border-top-color: rgb(194, 194, 194);
   color: var(--text-normal, rgb(194, 194, 194));
+  font-size: var(--font-size-header-titles, 13.5px);
+  line-height: 28px;
 }
 
 html body abbr {

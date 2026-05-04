@@ -19,6 +19,19 @@ export const theme: ThemeData = {
   --bases-table-row-background-hover: var(--table-row-background-hover, #171717);
   --bases-table-summary-background-hover: var(--background-modifier-hover, hsla(153, 47%, 49%, 0.05));
   --blockquote-border-color: var(--interactive-accent, hsl(153, 47%, 49%));
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --caret-color: var(--text-normal, #EEEEEE);
   --checkbox-color: var(--interactive-accent, hsl(153, 47%, 49%));
   --checkbox-color-hover: var(--interactive-accent-hover, hsl(150, 47.94%, 56.35%));
@@ -134,6 +147,12 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   text-decoration-color: rgb(238, 238, 238);
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(238, 238, 238));
+  outline: rgb(238, 238, 238) none 0px;
+  text-decoration-color: rgb(238, 238, 238);
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: var(--bold-color, rgb(238, 238, 238));
   outline: rgb(238, 238, 238) none 0px;
@@ -175,10 +194,18 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(66, 184, 131, 0.3));
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: rgb(238, 238, 238);
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: rgb(238, 238, 238);
 }
 
@@ -198,6 +225,7 @@ html[saved-theme="dark"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   background-color: hsla(var(--interactive-accent-hsl), 0.1);
+  color: var(--blockquote-color, rgb(238, 238, 238));
   padding-bottom: 8px;
   padding-top: 8px;
 }`,
@@ -289,6 +317,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(66, 184, 131);
   border-right-color: rgb(238, 238, 238);
   border-top-color: rgb(238, 238, 238);
+  color: rgb(238, 238, 238);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -296,6 +325,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(238, 238, 238);
   border-right-color: rgb(238, 238, 238);
   border-top-color: rgb(238, 238, 238);
+  color: rgb(238, 238, 238);
 }`,
     checkboxes: `html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
   color: rgb(238, 238, 238);
@@ -1130,6 +1160,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-left-color: rgba(66, 184, 131, 0.15);
   border-right-color: rgba(66, 184, 131, 0.15);
   border-top-color: rgba(66, 184, 131, 0.15);
+  color: var(--pill-color, rgb(90, 197, 144));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -1137,7 +1168,14 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: var(--h1-color, rgb(238, 238, 238));
+  font-size: var(--h1-size, 35.2px);
+  letter-spacing: var(--h1-letter-spacing, -0.528px);
+  line-height: var(--h1-line-height, 42.24px);
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1146,30 +1184,81 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: var(--h2-color, rgb(238, 238, 238));
+  font-size: var(--h2-size, 28px);
+  letter-spacing: var(--h2-letter-spacing, -0.308px);
+  line-height: var(--h2-line-height, 33.6px);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: var(--inline-title-color, rgb(238, 238, 238));
+  font-size: var(--inline-title-size, 35.2px);
+  letter-spacing: -0.528px;
+  line-height: var(--inline-title-line-height, 42.24px);
+  margin-bottom: 17.6px;
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: var(--h3-color, rgb(238, 238, 238));
+  font-size: var(--h3-size, 22.4px);
+  letter-spacing: var(--h3-letter-spacing, -0.1792px);
+  line-height: var(--h3-line-height, 29.12px);
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: var(--h4-color, rgb(238, 238, 238));
+  font-size: var(--h4-size, 19.2px);
+  letter-spacing: var(--h4-letter-spacing, -0.096px);
+  line-height: var(--h4-line-height, 26.88px);
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: var(--h5-color, rgb(238, 238, 238));
+  font-size: var(--h5-size, 16px);
+  letter-spacing: var(--h5-letter-spacing, -0.032px);
+  line-height: var(--h5-line-height, 24px);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: var(--h6-color, rgb(238, 238, 238));
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
+}`,
+    explorer: `html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(238, 238, 238);
@@ -1259,6 +1348,10 @@ html[saved-theme="dark"] body .stacked-page.active {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: var(--text-normal, rgb(238, 238, 238));
 }
 
@@ -1323,6 +1416,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --bases-table-row-background-hover: var(--table-row-background-hover, #f2f2f2);
   --bases-table-summary-background-hover: var(--background-modifier-hover, hsla(153, 47%, 49%, 0.05));
   --blockquote-border-color: var(--interactive-accent, hsl(152, 47.47%, 52.675%));
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --caret-color: var(--text-normal, #34495e);
   --checkbox-color: var(--interactive-accent, hsl(152, 47.47%, 52.675%));
   --checkbox-color-hover: var(--interactive-accent-hover, hsl(150, 47.94%, 56.35%));
@@ -1450,6 +1556,12 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   text-decoration-color: rgb(52, 73, 94);
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(52, 73, 94));
+  outline: rgb(52, 73, 94) none 0px;
+  text-decoration-color: rgb(52, 73, 94);
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--bold-color, rgb(52, 73, 94));
   outline: rgb(52, 73, 94) none 0px;
@@ -1491,10 +1603,18 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(66, 184, 131, 0.3));
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(52, 73, 94);
+  border-left-color: rgb(52, 73, 94);
+  border-right-color: rgb(52, 73, 94);
+  border-top-color: rgb(52, 73, 94);
   color: rgb(52, 73, 94);
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(52, 73, 94);
+  border-left-color: rgb(52, 73, 94);
+  border-right-color: rgb(52, 73, 94);
+  border-top-color: rgb(52, 73, 94);
   color: rgb(52, 73, 94);
 }
 
@@ -1514,6 +1634,7 @@ html[saved-theme="light"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
   background-color: hsla(var(--interactive-accent-hsl), 0.1);
+  color: var(--blockquote-color, rgb(52, 73, 94));
   padding-bottom: 8px;
   padding-top: 8px;
 }`,
@@ -1605,6 +1726,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(77, 192, 138);
   border-right-color: rgb(52, 73, 94);
   border-top-color: rgb(52, 73, 94);
+  color: rgb(52, 73, 94);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -1612,6 +1734,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(52, 73, 94);
   border-right-color: rgb(52, 73, 94);
   border-top-color: rgb(52, 73, 94);
+  color: rgb(52, 73, 94);
 }`,
     checkboxes: `html[saved-theme="light"] body li.task-list-item[data-task="#"] {
   color: rgb(52, 73, 94);
@@ -2447,6 +2570,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-left-color: rgba(66, 184, 131, 0.15);
   border-right-color: rgba(66, 184, 131, 0.15);
   border-top-color: rgba(66, 184, 131, 0.15);
+  color: var(--pill-color, rgb(66, 184, 131));
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -2454,7 +2578,14 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(52, 73, 94);
+  border-left-color: rgb(52, 73, 94);
+  border-right-color: rgb(52, 73, 94);
+  border-top-color: rgb(52, 73, 94);
   color: var(--h1-color, rgb(52, 73, 94));
+  font-size: var(--h1-size, 35.2px);
+  letter-spacing: var(--h1-letter-spacing, -0.528px);
+  line-height: var(--h1-line-height, 42.24px);
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -2463,30 +2594,81 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(52, 73, 94);
+  border-left-color: rgb(52, 73, 94);
+  border-right-color: rgb(52, 73, 94);
+  border-top-color: rgb(52, 73, 94);
   color: var(--h2-color, rgb(52, 73, 94));
+  font-size: var(--h2-size, 28px);
+  letter-spacing: var(--h2-letter-spacing, -0.308px);
+  line-height: var(--h2-line-height, 33.6px);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(52, 73, 94);
+  border-left-color: rgb(52, 73, 94);
+  border-right-color: rgb(52, 73, 94);
+  border-top-color: rgb(52, 73, 94);
   color: var(--inline-title-color, rgb(52, 73, 94));
+  font-size: var(--inline-title-size, 35.2px);
+  letter-spacing: -0.528px;
+  line-height: var(--inline-title-line-height, 42.24px);
+  margin-bottom: 17.6px;
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(52, 73, 94);
+  border-left-color: rgb(52, 73, 94);
+  border-right-color: rgb(52, 73, 94);
+  border-top-color: rgb(52, 73, 94);
   color: var(--h3-color, rgb(52, 73, 94));
+  font-size: var(--h3-size, 22.4px);
+  letter-spacing: var(--h3-letter-spacing, -0.1792px);
+  line-height: var(--h3-line-height, 29.12px);
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(52, 73, 94);
+  border-left-color: rgb(52, 73, 94);
+  border-right-color: rgb(52, 73, 94);
+  border-top-color: rgb(52, 73, 94);
   color: var(--h4-color, rgb(52, 73, 94));
+  font-size: var(--h4-size, 19.2px);
+  letter-spacing: var(--h4-letter-spacing, -0.096px);
+  line-height: var(--h4-line-height, 26.88px);
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(52, 73, 94);
+  border-left-color: rgb(52, 73, 94);
+  border-right-color: rgb(52, 73, 94);
+  border-top-color: rgb(52, 73, 94);
   color: var(--h5-color, rgb(52, 73, 94));
+  font-size: var(--h5-size, 16px);
+  letter-spacing: var(--h5-letter-spacing, -0.032px);
+  line-height: var(--h5-line-height, 24px);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(52, 73, 94);
+  border-left-color: rgb(52, 73, 94);
+  border-right-color: rgb(52, 73, 94);
+  border-top-color: rgb(52, 73, 94);
   color: var(--h6-color, rgb(52, 73, 94));
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
+}`,
+    explorer: `html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(52, 73, 94);
@@ -2584,6 +2766,10 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(52, 73, 94);
+  border-left-color: rgb(52, 73, 94);
+  border-right-color: rgb(52, 73, 94);
+  border-top-color: rgb(52, 73, 94);
   color: var(--text-normal, rgb(52, 73, 94));
 }
 

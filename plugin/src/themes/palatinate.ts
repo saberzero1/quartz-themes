@@ -59,6 +59,19 @@ export const theme: ThemeData = {
   --altaccent-lighter: #E3E5E8;
   --altaccent-middle: #277f8e;
   --altaccent2-middle: #ad3fc9;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --header-font: 'Caveat Brush';
   --infobox-header: #F2EDFF;
   --quartz-icon-color: currentColor;
@@ -81,7 +94,15 @@ html[saved-theme="dark"] body html {
   --header-font: 'Caveat Brush';
   --infobox-header: #F2EDFF;
 }`,
+    lists: `html[saved-theme="dark"] body ol > li {
+  padding-left: 5px;
+}
+
+html[saved-theme="dark"] body ul > li {
+  padding-left: 5px;
+}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
+  line-height: 22.5px;
   padding-bottom: 10px;
   padding-top: 10px;
 }`,
@@ -466,6 +487,9 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
     search: `html[saved-theme="dark"] body h1 {
   color: var(--text-normal, rgb(218, 218, 218));
   font-family: var(--header-font, "Caveat Brush");
+  font-size: var(--h1-size, 43.2px);
+  letter-spacing: var(--h1-letter-spacing, -0.648px);
+  line-height: var(--h1-line-height, 51.84px);
 }
 
 html[saved-theme="dark"] body h1::after {
@@ -497,6 +521,9 @@ html[saved-theme="dark"] body h1::after {
 html[saved-theme="dark"] body h2 {
   color: var(--text-normal, rgb(218, 218, 218));
   font-family: var(--header-font, "Caveat Brush");
+  font-size: var(--h2-size, 40px);
+  letter-spacing: var(--h2-letter-spacing, -0.44px);
+  line-height: var(--h2-line-height, 48px);
 }
 
 html[saved-theme="dark"] body h2::after {
@@ -528,6 +555,9 @@ html[saved-theme="dark"] body h2::after {
 html[saved-theme="dark"] body h3 {
   color: var(--text-normal, rgb(218, 218, 218));
   font-family: var(--header-font, "Caveat Brush");
+  font-size: var(--h3-size, 33.6px);
+  letter-spacing: var(--h3-letter-spacing, -0.2688px);
+  line-height: var(--h3-line-height, 43.68px);
 }
 
 html[saved-theme="dark"] body h3::after {
@@ -559,6 +589,9 @@ html[saved-theme="dark"] body h3::after {
 html[saved-theme="dark"] body h4 {
   color: var(--text-normal, rgb(218, 218, 218));
   font-family: var(--header-font, "Caveat Brush");
+  font-size: var(--h4-size, 30.4px);
+  letter-spacing: var(--h4-letter-spacing, -0.152px);
+  line-height: var(--h4-line-height, 42.56px);
 }
 
 html[saved-theme="dark"] body h4::after {
@@ -590,6 +623,9 @@ html[saved-theme="dark"] body h4::after {
 html[saved-theme="dark"] body h5 {
   color: var(--text-normal, rgb(218, 218, 218));
   font-family: var(--header-font, "Caveat Brush");
+  font-size: var(--h5-size, 27.2px);
+  letter-spacing: var(--h5-letter-spacing, -0.0544px);
+  line-height: var(--h5-line-height, 40.8px);
 }
 
 html[saved-theme="dark"] body h5::after {
@@ -621,9 +657,16 @@ html[saved-theme="dark"] body h5::after {
 html[saved-theme="dark"] body h6 {
   color: var(--text-normal, rgb(218, 218, 218));
   font-family: var(--header-font, "Caveat Brush");
+  font-size: var(--h6-size, 24px);
+  line-height: var(--h6-line-height, 36px);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
+}`,
+    misc: `html[saved-theme="dark"] body .page-header h2.page-title {
+  line-height: 25px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }`,
   },
   light: {
@@ -636,6 +679,19 @@ html[saved-theme="dark"] body h6 {
   --altaccent-lighter: #E3E5E8;
   --altaccent-middle: #277f8e;
   --altaccent2-middle: #ad3fc9;
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --header-font: 'Caveat Brush';
   --infobox-header: #F2EDFF;
   --quartz-icon-color: currentColor;
@@ -658,7 +714,15 @@ html[saved-theme="light"] body html {
   --header-font: 'Caveat Brush';
   --infobox-header: #F2EDFF;
 }`,
+    lists: `html[saved-theme="light"] body ol > li {
+  padding-left: 5px;
+}
+
+html[saved-theme="light"] body ul > li {
+  padding-left: 5px;
+}`,
     blockquotes: `html[saved-theme="light"] body blockquote {
+  line-height: 22.5px;
   padding-bottom: 10px;
   padding-top: 10px;
 }`,
@@ -1043,6 +1107,9 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
     search: `html[saved-theme="light"] body h1 {
   color: var(--text-normal, rgb(34, 34, 34));
   font-family: var(--header-font, "Caveat Brush");
+  font-size: var(--h1-size, 43.2px);
+  letter-spacing: var(--h1-letter-spacing, -0.648px);
+  line-height: var(--h1-line-height, 51.84px);
 }
 
 html[saved-theme="light"] body h1::after {
@@ -1074,6 +1141,9 @@ html[saved-theme="light"] body h1::after {
 html[saved-theme="light"] body h2 {
   color: var(--text-normal, rgb(34, 34, 34));
   font-family: var(--header-font, "Caveat Brush");
+  font-size: var(--h2-size, 40px);
+  letter-spacing: var(--h2-letter-spacing, -0.44px);
+  line-height: var(--h2-line-height, 48px);
 }
 
 html[saved-theme="light"] body h2::after {
@@ -1105,6 +1175,9 @@ html[saved-theme="light"] body h2::after {
 html[saved-theme="light"] body h3 {
   color: var(--text-normal, rgb(34, 34, 34));
   font-family: var(--header-font, "Caveat Brush");
+  font-size: var(--h3-size, 33.6px);
+  letter-spacing: var(--h3-letter-spacing, -0.2688px);
+  line-height: var(--h3-line-height, 43.68px);
 }
 
 html[saved-theme="light"] body h3::after {
@@ -1136,6 +1209,9 @@ html[saved-theme="light"] body h3::after {
 html[saved-theme="light"] body h4 {
   color: var(--text-normal, rgb(34, 34, 34));
   font-family: var(--header-font, "Caveat Brush");
+  font-size: var(--h4-size, 30.4px);
+  letter-spacing: var(--h4-letter-spacing, -0.152px);
+  line-height: var(--h4-line-height, 42.56px);
 }
 
 html[saved-theme="light"] body h4::after {
@@ -1167,6 +1243,9 @@ html[saved-theme="light"] body h4::after {
 html[saved-theme="light"] body h5 {
   color: var(--text-normal, rgb(34, 34, 34));
   font-family: var(--header-font, "Caveat Brush");
+  font-size: var(--h5-size, 27.2px);
+  letter-spacing: var(--h5-letter-spacing, -0.0544px);
+  line-height: var(--h5-line-height, 40.8px);
 }
 
 html[saved-theme="light"] body h5::after {
@@ -1198,9 +1277,16 @@ html[saved-theme="light"] body h5::after {
 html[saved-theme="light"] body h6 {
   color: var(--text-normal, rgb(34, 34, 34));
   font-family: var(--header-font, "Caveat Brush");
+  font-size: var(--h6-size, 24px);
+  line-height: var(--h6-line-height, 36px);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
+}`,
+    misc: `html[saved-theme="light"] body .page-header h2.page-title {
+  line-height: 25px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }`,
   },
 };

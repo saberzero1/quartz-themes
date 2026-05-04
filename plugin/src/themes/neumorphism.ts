@@ -14,6 +14,19 @@ export const theme: ThemeData = {
   --border-radius: 10px;
   --box-shadow: calc(var(--gap)/2) calc(var(--gap)/2) calc(var(--gap)*2) light-dark(var(--light-shadow-first), var(--dark-shadow-first)),
     calc(var(--gap)/2*-1) calc(var(--gap)/2*-1) calc(var(--gap)*2) light-dark(var(--light-shadow-second), var(--dark-shadow-second));
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --dark-background: #1c1c1c;
   --dark-shadow-first: #0a0a0a;
   --dark-shadow-second: #111111;
@@ -432,6 +445,19 @@ html[saved-theme="dark"] body .stacked-page-header {
   --border-radius: 10px;
   --box-shadow: calc(var(--gap)/2) calc(var(--gap)/2) calc(var(--gap)*2) light-dark(var(--light-shadow-first), var(--dark-shadow-first)),
     calc(var(--gap)/2*-1) calc(var(--gap)/2*-1) calc(var(--gap)*2) light-dark(var(--light-shadow-second), var(--dark-shadow-second));
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --dark-background: #1c1c1c;
   --dark-shadow-first: #0a0a0a;
   --dark-shadow-second: #111111;

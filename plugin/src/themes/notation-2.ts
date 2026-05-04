@@ -159,6 +159,7 @@ export const theme: ThemeData = {
   --callout-important: var(--color-cyan-rgb, 29, 40, 46);
   --callout-info: var(--color-blue-rgb, 54, 73, 84);
   --callout-question: var(--color-orange-rgb, 89, 74, 58);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 3px);
   --callout-success: var(--color-green-rgb, 53, 76, 75);
   --callout-summary: var(--color-cyan-rgb, 29, 40, 46);
@@ -483,7 +484,9 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, rgba(255, 255, 255, 0.9));
   --vault-profile-color-hover: var(--vault-profile-color, rgba(255, 255, 255, 0.9));
   --vault-profile-font-size: var(--font-ui-small, 0.95em);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -532,6 +535,13 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, rgba(255, 255, 255, 0.9));
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  outline: rgba(255, 255, 255, 0.9) none 0px;
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--italic-color, rgba(255, 255, 255, 0.9));
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   outline: rgba(255, 255, 255, 0.9) none 0px;
@@ -611,19 +621,35 @@ html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
   color: rgba(255, 255, 255, 0.9);
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgba(255, 255, 255, 0.9);
+  border-left-color: rgba(255, 255, 255, 0.9);
+  border-right-color: rgba(255, 255, 255, 0.9);
+  border-top-color: rgba(255, 255, 255, 0.9);
   color: rgba(255, 255, 255, 0.9);
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgba(255, 255, 255, 0.9);
+  border-left-color: rgba(255, 255, 255, 0.9);
+  border-right-color: rgba(255, 255, 255, 0.9);
+  border-top-color: rgba(255, 255, 255, 0.9);
   color: rgba(255, 255, 255, 0.9);
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgba(255, 255, 255, 0.9);
+  margin-left: 26.6953px;
+  padding-bottom: var(--list-spacing, 4.8px);
+  padding-top: var(--list-spacing, 4.8px);
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgba(255, 255, 255, 0.9);
+  margin-left: 26.6953px;
+  padding-bottom: var(--list-spacing, 4.8px);
+  padding-top: var(--list-spacing, 4.8px);
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -637,7 +663,9 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgba(255, 255, 255, 0.9));
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 26.4px;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgba(255, 255, 255, 0.9);
@@ -649,7 +677,7 @@ html[saved-theme="dark"] body blockquote {
 html[saved-theme="dark"] body table {
   color: rgba(255, 255, 255, 0.9);
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  width: 195.062px;
+  text-align: left;
 }
 
 html[saved-theme="dark"] body td {
@@ -743,6 +771,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgba(255, 255, 255, 0.7);
   border-right-color: rgba(255, 255, 255, 0.7);
   border-top-color: rgba(255, 255, 255, 0.7);
+  color: var(--text-muted, rgba(255, 255, 255, 0.7));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -755,6 +784,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(46, 170, 220);
   border-right-color: rgba(255, 255, 255, 0.9);
   border-top-color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -762,6 +792,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgba(255, 255, 255, 0.9);
   border-right-color: rgba(255, 255, 255, 0.9);
   border-top-color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
@@ -2259,7 +2290,10 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-top-color: rgba(34, 130, 226, 0.15);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  color: var(--text-normal, rgba(255, 255, 255, 0.9));
   font-family: "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: var(--font-ui-smaller, 12.6px);
+  line-height: var(--line-height-tight, 12.6px);
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -2268,8 +2302,17 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   --font-weight: var(--h1-weight, 600);
+  background-color: var(--h1-bg, rgba(0, 0, 0, 0));
+  border-bottom-color: rgba(255, 255, 255, 0.9);
+  border-left-color: rgba(255, 255, 255, 0.9);
+  border-right-color: rgba(255, 255, 255, 0.9);
+  border-top-color: rgba(255, 255, 255, 0.9);
   color: var(--h1-color, rgba(255, 255, 255, 0.9));
   font-family: var(--h1-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
+  font-size: var(--h1-size, 30px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h1-letter-spacing, -0.45px);
+  line-height: var(--h1-line-height, 36px);
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -2280,34 +2323,84 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 600);
+  background-color: var(--h2-bg, rgba(0, 0, 0, 0));
+  border-bottom-color: rgba(255, 255, 255, 0.9);
+  border-left-color: rgba(255, 255, 255, 0.9);
+  border-right-color: rgba(255, 255, 255, 0.9);
+  border-top-color: rgba(255, 255, 255, 0.9);
   color: var(--h2-color, rgba(255, 255, 255, 0.9));
   font-family: var(--h2-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
+  font-size: var(--h2-size, 24px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.264px);
+  line-height: var(--h2-line-height, 28.8px);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgba(255, 255, 255, 0.9);
+  border-left-color: rgba(255, 255, 255, 0.9);
+  border-right-color: rgba(255, 255, 255, 0.9);
+  border-top-color: rgba(255, 255, 255, 0.9);
   color: var(--text-normal, rgba(255, 255, 255, 0.9));
   font-family: var(--inline-title-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
+  font-size: var(--inline-title-size, 0px);
+  font-weight: var(--inline-title-weight, 600);
+  line-height: var(--inline-title-line-height, 0px);
+  margin-bottom: 1px;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-top: 1px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
 }
 
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, 600);
+  background-color: var(--h3-bg, rgba(0, 0, 0, 0));
+  border-bottom-color: rgba(255, 255, 255, 0.9);
+  border-left-color: rgba(255, 255, 255, 0.9);
+  border-right-color: rgba(255, 255, 255, 0.9);
+  border-top-color: rgba(255, 255, 255, 0.9);
   color: var(--h3-color, rgba(255, 255, 255, 0.9));
   font-family: var(--h3-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
+  font-size: var(--h3-size, 20px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h3-letter-spacing, -0.16px);
+  line-height: var(--h3-line-height, 26px);
 }
 
 html[saved-theme="dark"] body h4 {
   --font-weight: var(--h4-weight, 600);
+  background-color: var(--h4-bg, rgba(0, 0, 0, 0));
+  border-bottom-color: rgba(255, 255, 255, 0.9);
+  border-left-color: rgba(255, 255, 255, 0.9);
+  border-right-color: rgba(255, 255, 255, 0.9);
+  border-top-color: rgba(255, 255, 255, 0.9);
   color: var(--h4-color, rgba(255, 255, 255, 0.9));
   font-family: var(--h4-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
+  font-weight: var(--font-weight, 600);
 }
 
 html[saved-theme="dark"] body h5 {
   --font-weight: var(--h5-weight, 600);
+  background-color: var(--h5-bg, rgba(0, 0, 0, 0));
+  border-bottom-color: rgba(255, 255, 255, 0.9);
+  border-left-color: rgba(255, 255, 255, 0.9);
+  border-right-color: rgba(255, 255, 255, 0.9);
+  border-top-color: rgba(255, 255, 255, 0.9);
   color: var(--h5-color, rgba(255, 255, 255, 0.9));
   font-family: var(--h5-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
+  font-weight: var(--font-weight, 600);
 }
 
 html[saved-theme="dark"] body h6 {
+  background-color: var(--h6-bg, rgba(0, 0, 0, 0));
+  border-bottom-color: rgba(255, 255, 255, 0.9);
+  border-left-color: rgba(255, 255, 255, 0.9);
+  border-right-color: rgba(255, 255, 255, 0.9);
+  border-top-color: rgba(255, 255, 255, 0.9);
   color: var(--h6-color, rgba(255, 255, 255, 0.9));
   font-family: var(--h6-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
 }
@@ -2350,6 +2443,30 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   color: var(--text-muted, rgba(255, 255, 255, 0.7));
   font-family: "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: var(--font-bold, 500);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgba(255, 255, 255, 0.9);
@@ -2377,10 +2494,12 @@ html[saved-theme="dark"] body li.depth-0 {
   border-top-color: rgba(255, 255, 255, 0.14);
   color: var(--status-bar-text-color, rgba(255, 255, 255, 0.7));
   font-family: "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: var(--status-bar-font-size, 13.968px);
 }
 
 html[saved-theme="dark"] body footer ul li a {
   color: rgba(255, 255, 255, 0.7);
+  font-size: 13.968px;
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgba(255, 255, 255, 0.9);
@@ -2492,6 +2611,15 @@ html[saved-theme="dark"] body .canvas-sidebar {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgba(255, 255, 255, 0.7);
+  border-left-color: rgba(255, 255, 255, 0.7);
+  border-right-color: rgba(255, 255, 255, 0.7);
+  border-top-color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgba(255, 255, 255, 0.7);
   border-left-color: rgba(255, 255, 255, 0.7);
@@ -2499,6 +2627,17 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgba(255, 255, 255, 0.7);
   color: rgba(255, 255, 255, 0.7);
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: var(--text-muted, rgba(255, 255, 255, 0.7));
+  font-family: var(--metadata-label-font, "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
+  font-size: var(--font-ui-smaller, 14.4px);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--metadata-input-font, "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -2568,8 +2707,15 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgba(255, 255, 255, 0.9);
+  border-left-color: rgba(255, 255, 255, 0.9);
+  border-right-color: rgba(255, 255, 255, 0.9);
+  border-top-color: rgba(255, 255, 255, 0.9);
   color: var(--text-normal, rgba(255, 255, 255, 0.9));
   font-family: "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 41.2832px;
+  font-weight: 700;
+  line-height: 53.6682px;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -2691,6 +2837,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-important: var(--color-cyan-rgb, 231, 243, 248);
   --callout-info: var(--color-blue-rgb, 221, 235, 241);
   --callout-question: var(--color-orange-rgb, 250, 235, 221);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 3px);
   --callout-success: var(--color-green-rgb, 221, 237, 234);
   --callout-summary: var(--color-cyan-rgb, 231, 243, 248);
@@ -3017,7 +3164,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-profile-color: var(--text-normal, rgba(55, 53, 47, 0.9));
   --vault-profile-color-hover: var(--vault-profile-color, rgba(55, 53, 47, 0.9));
   --vault-profile-font-size: var(--font-ui-small, 0.95em);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -3065,6 +3214,13 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--italic-color, rgba(55, 53, 47, 0.9));
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  outline: rgba(55, 53, 47, 0.9) none 0px;
+  text-decoration-color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--italic-color, rgba(55, 53, 47, 0.9));
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   outline: rgba(55, 53, 47, 0.9) none 0px;
@@ -3144,19 +3300,35 @@ html[saved-theme="light"] body li.task-list-item[data-task="_"] {
   color: rgba(55, 53, 47, 0.9);
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgba(55, 53, 47, 0.9);
+  border-left-color: rgba(55, 53, 47, 0.9);
+  border-right-color: rgba(55, 53, 47, 0.9);
+  border-top-color: rgba(55, 53, 47, 0.9);
   color: rgba(55, 53, 47, 0.9);
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgba(55, 53, 47, 0.9);
+  border-left-color: rgba(55, 53, 47, 0.9);
+  border-right-color: rgba(55, 53, 47, 0.9);
+  border-top-color: rgba(55, 53, 47, 0.9);
   color: rgba(55, 53, 47, 0.9);
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgba(55, 53, 47, 0.9);
+  margin-left: 26.6953px;
+  padding-bottom: var(--list-spacing, 4.8px);
+  padding-top: var(--list-spacing, 4.8px);
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgba(55, 53, 47, 0.9);
+  margin-left: 26.6953px;
+  padding-bottom: var(--list-spacing, 4.8px);
+  padding-top: var(--list-spacing, 4.8px);
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -3170,7 +3342,9 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgba(55, 53, 47, 0.9));
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 26.4px;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgba(55, 53, 47, 0.9);
@@ -3182,7 +3356,7 @@ html[saved-theme="light"] body blockquote {
 html[saved-theme="light"] body table {
   color: rgba(55, 53, 47, 0.9);
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  width: 195.062px;
+  text-align: left;
 }
 
 html[saved-theme="light"] body td {
@@ -3276,6 +3450,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgba(55, 53, 47, 0.7);
   border-right-color: rgba(55, 53, 47, 0.7);
   border-top-color: rgba(55, 53, 47, 0.7);
+  color: var(--text-muted, rgba(55, 53, 47, 0.7));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -3288,6 +3463,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(46, 170, 220);
   border-right-color: rgba(55, 53, 47, 0.9);
   border-top-color: rgba(55, 53, 47, 0.9);
+  color: rgba(55, 53, 47, 0.9);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -3295,6 +3471,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgba(55, 53, 47, 0.9);
   border-right-color: rgba(55, 53, 47, 0.9);
   border-top-color: rgba(55, 53, 47, 0.9);
+  color: rgba(55, 53, 47, 0.9);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
@@ -4786,7 +4963,10 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-top-color: rgba(34, 130, 226, 0.15);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  color: var(--text-normal, rgba(55, 53, 47, 0.9));
   font-family: "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: var(--font-ui-smaller, 12.6px);
+  line-height: var(--line-height-tight, 12.6px);
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -4795,8 +4975,17 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   --font-weight: var(--h1-weight, 600);
+  background-color: var(--h1-bg, rgba(0, 0, 0, 0));
+  border-bottom-color: rgba(55, 53, 47, 0.9);
+  border-left-color: rgba(55, 53, 47, 0.9);
+  border-right-color: rgba(55, 53, 47, 0.9);
+  border-top-color: rgba(55, 53, 47, 0.9);
   color: var(--h1-color, rgba(55, 53, 47, 0.9));
   font-family: var(--h1-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
+  font-size: var(--h1-size, 30px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h1-letter-spacing, -0.45px);
+  line-height: var(--h1-line-height, 36px);
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -4807,34 +4996,84 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 600);
+  background-color: var(--h2-bg, rgba(0, 0, 0, 0));
+  border-bottom-color: rgba(55, 53, 47, 0.9);
+  border-left-color: rgba(55, 53, 47, 0.9);
+  border-right-color: rgba(55, 53, 47, 0.9);
+  border-top-color: rgba(55, 53, 47, 0.9);
   color: var(--h2-color, rgba(55, 53, 47, 0.9));
   font-family: var(--h2-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
+  font-size: var(--h2-size, 24px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.264px);
+  line-height: var(--h2-line-height, 28.8px);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgba(55, 53, 47, 0.9);
+  border-left-color: rgba(55, 53, 47, 0.9);
+  border-right-color: rgba(55, 53, 47, 0.9);
+  border-top-color: rgba(55, 53, 47, 0.9);
   color: var(--text-normal, rgba(55, 53, 47, 0.9));
   font-family: var(--inline-title-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
+  font-size: var(--inline-title-size, 0px);
+  font-weight: var(--inline-title-weight, 600);
+  line-height: var(--inline-title-line-height, 0px);
+  margin-bottom: 1px;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-top: 1px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
 }
 
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, 600);
+  background-color: var(--h3-bg, rgba(0, 0, 0, 0));
+  border-bottom-color: rgba(55, 53, 47, 0.9);
+  border-left-color: rgba(55, 53, 47, 0.9);
+  border-right-color: rgba(55, 53, 47, 0.9);
+  border-top-color: rgba(55, 53, 47, 0.9);
   color: var(--h3-color, rgba(55, 53, 47, 0.9));
   font-family: var(--h3-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
+  font-size: var(--h3-size, 20px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h3-letter-spacing, -0.16px);
+  line-height: var(--h3-line-height, 26px);
 }
 
 html[saved-theme="light"] body h4 {
   --font-weight: var(--h4-weight, 600);
+  background-color: var(--h4-bg, rgba(0, 0, 0, 0));
+  border-bottom-color: rgba(55, 53, 47, 0.9);
+  border-left-color: rgba(55, 53, 47, 0.9);
+  border-right-color: rgba(55, 53, 47, 0.9);
+  border-top-color: rgba(55, 53, 47, 0.9);
   color: var(--h4-color, rgba(55, 53, 47, 0.9));
   font-family: var(--h4-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
+  font-weight: var(--font-weight, 600);
 }
 
 html[saved-theme="light"] body h5 {
   --font-weight: var(--h5-weight, 600);
+  background-color: var(--h5-bg, rgba(0, 0, 0, 0));
+  border-bottom-color: rgba(55, 53, 47, 0.9);
+  border-left-color: rgba(55, 53, 47, 0.9);
+  border-right-color: rgba(55, 53, 47, 0.9);
+  border-top-color: rgba(55, 53, 47, 0.9);
   color: var(--h5-color, rgba(55, 53, 47, 0.9));
   font-family: var(--h5-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
+  font-weight: var(--font-weight, 600);
 }
 
 html[saved-theme="light"] body h6 {
+  background-color: var(--h6-bg, rgba(0, 0, 0, 0));
+  border-bottom-color: rgba(55, 53, 47, 0.9);
+  border-left-color: rgba(55, 53, 47, 0.9);
+  border-right-color: rgba(55, 53, 47, 0.9);
+  border-top-color: rgba(55, 53, 47, 0.9);
   color: var(--h6-color, rgba(55, 53, 47, 0.9));
   font-family: var(--h6-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
 }
@@ -4877,6 +5116,30 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   color: var(--text-muted, rgba(55, 53, 47, 0.7));
   font-family: "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: var(--font-bold, 500);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgba(55, 53, 47, 0.9);
@@ -4904,10 +5167,12 @@ html[saved-theme="light"] body li.depth-0 {
   border-top-color: rgba(55, 53, 47, 0.14);
   color: var(--status-bar-text-color, rgba(55, 53, 47, 0.7));
   font-family: "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: var(--status-bar-font-size, 13.968px);
 }
 
 html[saved-theme="light"] body footer ul li a {
   color: rgba(55, 53, 47, 0.7);
+  font-size: 13.968px;
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgba(55, 53, 47, 0.9);
@@ -5018,6 +5283,15 @@ html[saved-theme="light"] body .canvas-sidebar {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgba(55, 53, 47, 0.7);
+  border-left-color: rgba(55, 53, 47, 0.7);
+  border-right-color: rgba(55, 53, 47, 0.7);
+  border-top-color: rgba(55, 53, 47, 0.7);
+  color: rgba(55, 53, 47, 0.7);
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgba(55, 53, 47, 0.7);
   border-left-color: rgba(55, 53, 47, 0.7);
@@ -5025,6 +5299,17 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgba(55, 53, 47, 0.7);
   color: rgba(55, 53, 47, 0.7);
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: var(--text-muted, rgba(55, 53, 47, 0.7));
+  font-family: var(--metadata-label-font, "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
+  font-size: var(--font-ui-smaller, 14.4px);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgba(55, 53, 47, 0.7);
+  font-family: var(--metadata-input-font, "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol");
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -5093,8 +5378,15 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgba(55, 53, 47, 0.9);
+  border-left-color: rgba(55, 53, 47, 0.9);
+  border-right-color: rgba(55, 53, 47, 0.9);
+  border-top-color: rgba(55, 53, 47, 0.9);
   color: var(--text-normal, rgba(55, 53, 47, 0.9));
   font-family: "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 41.2832px;
+  font-weight: 700;
+  line-height: 53.6682px;
 }
 
 html[saved-theme="light"] body abbr {

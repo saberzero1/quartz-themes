@@ -35,7 +35,20 @@ export const theme: ThemeData = {
   --bases-table-cell-background-selected: var(--table-selection, hsla(#d8d9cf, 91%, 55%, 0.1));
   --blockquote-border-color: var(--interactive-accent, hsl(#d8d9cf, 91%, 55%));
   --callout-border-opacity: 0.7;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 20px);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --checkbox-color: var(--interactive-accent, hsl(#d8d9cf, 91%, 55%));
   --checkbox-color-hover: var(--interactive-accent-hover, hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15)));
   --collapse-icon-color-collapsed: var(--text-accent, hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15)));
@@ -670,6 +683,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-left-color: rgb(218, 218, 218);
   border-right-color: rgb(218, 218, 218);
   border-top-color: rgb(218, 218, 218);
+  color: var(--pill-color, rgb(218, 218, 218));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -678,8 +692,16 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   --font-weight: var(--h1-weight, 400);
+  border-bottom-color: rgb(237, 237, 237);
+  border-left-color: rgb(237, 237, 237);
+  border-right-color: rgb(237, 237, 237);
+  border-top-color: rgb(237, 237, 237);
   color: var(--h1-color, rgb(237, 237, 237));
   font-family: var(--h1-font, Arvo, serif);
+  font-size: var(--h1-size, 32px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h1-letter-spacing, -0.48px);
+  line-height: var(--h1-line-height, 38.4px);
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -690,37 +712,85 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 400);
+  border-bottom-color: rgb(237, 237, 237);
+  border-left-color: rgb(237, 237, 237);
+  border-right-color: rgb(237, 237, 237);
+  border-top-color: rgb(237, 237, 237);
   color: var(--h2-color, rgb(237, 237, 237));
   font-family: var(--h2-font, Arvo, serif);
+  font-size: var(--h2-size, 27.2px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h2-letter-spacing, -0.2992px);
+  line-height: var(--h2-line-height, 32.64px);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(226, 104, 104);
+  border-left-color: rgb(226, 104, 104);
+  border-right-color: rgb(226, 104, 104);
+  border-top-color: rgb(226, 104, 104);
   color: var(--inline-title-color, rgb(226, 104, 104));
   font-family: var(--inline-title-font, "Permanent Marker", cursive);
+  font-size: var(--inline-title-size, 38.4px);
+  font-weight: var(--inline-title-weight, 400);
+  letter-spacing: -0.576px;
+  line-height: var(--inline-title-line-height, 46.08px);
+  margin-bottom: 19.2px;
 }
 
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, 400);
+  border-bottom-color: rgb(237, 237, 237);
+  border-left-color: rgb(237, 237, 237);
+  border-right-color: rgb(237, 237, 237);
+  border-top-color: rgb(237, 237, 237);
   color: var(--h3-color, rgb(237, 237, 237));
   font-family: var(--h3-font, Arvo, serif);
+  font-size: var(--h3-size, 24px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h3-letter-spacing, -0.192px);
+  line-height: var(--h3-line-height, 31.2px);
 }
 
 html[saved-theme="dark"] body h4 {
   --font-weight: var(--h4-weight, 400);
+  border-bottom-color: rgb(237, 237, 237);
+  border-left-color: rgb(237, 237, 237);
+  border-right-color: rgb(237, 237, 237);
+  border-top-color: rgb(237, 237, 237);
   color: var(--h4-color, rgb(237, 237, 237));
   font-family: var(--h4-font, Arvo, serif);
+  font-size: var(--h4-size, 20.8px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h4-letter-spacing, -0.104px);
+  line-height: var(--h4-line-height, 29.12px);
 }
 
 html[saved-theme="dark"] body h5 {
   --font-weight: var(--h5-weight, 400);
+  border-bottom-color: rgb(237, 237, 237);
+  border-left-color: rgb(237, 237, 237);
+  border-right-color: rgb(237, 237, 237);
+  border-top-color: rgb(237, 237, 237);
   color: var(--h5-color, rgb(237, 237, 237));
   font-family: var(--h5-font, Arvo, serif);
+  font-size: var(--h5-size, 17.6px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h5-letter-spacing, -0.0352px);
+  line-height: var(--h5-line-height, 26.4px);
 }
 
 html[saved-theme="dark"] body h6 {
   --font-weight: var(--h6-weight, 400);
+  border-bottom-color: rgb(237, 237, 237);
+  border-left-color: rgb(237, 237, 237);
+  border-right-color: rgb(237, 237, 237);
+  border-top-color: rgb(237, 237, 237);
   color: var(--h6-color, rgb(237, 237, 237));
   font-family: var(--h6-font, Arvo, serif);
+  font-size: var(--h6-size, 12.8px);
+  font-weight: var(--font-weight, 400);
+  line-height: var(--h6-line-height, 19.2px);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -735,6 +805,14 @@ html[saved-theme="dark"] body h6 {
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-width: 0px;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(255, 135, 135);
@@ -804,7 +882,20 @@ html[saved-theme="dark"] body .darkmode svg {
   --bases-table-summary-background: var(--background-primary, #d8d9cf);
   --blockquote-border-color: var(--interactive-accent, hsl(calc(#d8d9cf - 1), calc(91% * 1.01), calc(55% * 1.075)));
   --callout-border-opacity: 0.7;
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 20px);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #d8d9cf);
   --checkbox-color: var(--interactive-accent, hsl(calc(#d8d9cf - 1), calc(91% * 1.01), calc(55% * 1.075)));
   --checkbox-color-hover: var(--interactive-accent-hover, hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15)));
@@ -1489,6 +1580,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-left-color: rgb(34, 34, 34);
   border-right-color: rgb(34, 34, 34);
   border-top-color: rgb(34, 34, 34);
+  color: var(--pill-color, rgb(34, 34, 34));
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -1497,8 +1589,16 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   --font-weight: var(--h1-weight, 400);
+  border-bottom-color: rgb(255, 135, 135);
+  border-left-color: rgb(255, 135, 135);
+  border-right-color: rgb(255, 135, 135);
+  border-top-color: rgb(255, 135, 135);
   color: var(--h1-color, rgb(255, 135, 135));
   font-family: var(--h1-font, Arvo, serif);
+  font-size: var(--h1-size, 32px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h1-letter-spacing, -0.48px);
+  line-height: var(--h1-line-height, 38.4px);
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -1509,37 +1609,85 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 400);
+  border-bottom-color: rgb(255, 135, 135);
+  border-left-color: rgb(255, 135, 135);
+  border-right-color: rgb(255, 135, 135);
+  border-top-color: rgb(255, 135, 135);
   color: var(--h2-color, rgb(255, 135, 135));
   font-family: var(--h2-font, Arvo, serif);
+  font-size: var(--h2-size, 27.2px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h2-letter-spacing, -0.2992px);
+  line-height: var(--h2-line-height, 32.64px);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(226, 104, 104);
+  border-left-color: rgb(226, 104, 104);
+  border-right-color: rgb(226, 104, 104);
+  border-top-color: rgb(226, 104, 104);
   color: var(--inline-title-color, rgb(226, 104, 104));
   font-family: var(--inline-title-font, "Permanent Marker", cursive);
+  font-size: var(--inline-title-size, 38.4px);
+  font-weight: var(--inline-title-weight, 400);
+  letter-spacing: -0.576px;
+  line-height: var(--inline-title-line-height, 46.08px);
+  margin-bottom: 19.2px;
 }
 
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, 400);
+  border-bottom-color: rgb(255, 135, 135);
+  border-left-color: rgb(255, 135, 135);
+  border-right-color: rgb(255, 135, 135);
+  border-top-color: rgb(255, 135, 135);
   color: var(--h3-color, rgb(255, 135, 135));
   font-family: var(--h3-font, Arvo, serif);
+  font-size: var(--h3-size, 24px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h3-letter-spacing, -0.192px);
+  line-height: var(--h3-line-height, 31.2px);
 }
 
 html[saved-theme="light"] body h4 {
   --font-weight: var(--h4-weight, 400);
+  border-bottom-color: rgb(255, 135, 135);
+  border-left-color: rgb(255, 135, 135);
+  border-right-color: rgb(255, 135, 135);
+  border-top-color: rgb(255, 135, 135);
   color: var(--h4-color, rgb(255, 135, 135));
   font-family: var(--h4-font, Arvo, serif);
+  font-size: var(--h4-size, 20.8px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h4-letter-spacing, -0.104px);
+  line-height: var(--h4-line-height, 29.12px);
 }
 
 html[saved-theme="light"] body h5 {
   --font-weight: var(--h5-weight, 400);
+  border-bottom-color: rgb(255, 135, 135);
+  border-left-color: rgb(255, 135, 135);
+  border-right-color: rgb(255, 135, 135);
+  border-top-color: rgb(255, 135, 135);
   color: var(--h5-color, rgb(255, 135, 135));
   font-family: var(--h5-font, Arvo, serif);
+  font-size: var(--h5-size, 17.6px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h5-letter-spacing, -0.0352px);
+  line-height: var(--h5-line-height, 26.4px);
 }
 
 html[saved-theme="light"] body h6 {
   --font-weight: var(--h6-weight, 400);
+  border-bottom-color: rgb(255, 135, 135);
+  border-left-color: rgb(255, 135, 135);
+  border-right-color: rgb(255, 135, 135);
+  border-top-color: rgb(255, 135, 135);
   color: var(--h6-color, rgb(255, 135, 135));
   font-family: var(--h6-font, Arvo, serif);
+  font-size: var(--h6-size, 12.8px);
+  font-weight: var(--font-weight, 400);
+  line-height: var(--h6-line-height, 19.2px);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
@@ -1554,6 +1702,14 @@ html[saved-theme="light"] body h6 {
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container .tree-item-children {
   border-left-width: 0px;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(255, 135, 135);

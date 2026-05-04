@@ -20,6 +20,19 @@ export const theme: ThemeData = {
   --bases-table-cell-background-active: var(--background-primary, #15141b);
   --bases-table-header-background: var(--background-primary, #15141b);
   --bases-table-summary-background: var(--background-primary, #15141b);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #15141b);
   --canvas-dot-pattern: var(--color-base-30, #61ffca);
   --checkbox-marker-color: var(--background-primary, #15141b);
@@ -505,6 +518,10 @@ html body hr {
 }`,
     explorer: `html body .nav-files-container .tree-item-children {
   border-left-color: rgb(237, 236, 238);
+}
+
+html body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     footer: `html body footer {
   background-color: var(--status-bar-background, rgb(17, 15, 24));

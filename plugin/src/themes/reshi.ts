@@ -772,7 +772,9 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, #9d9d9d);
   --vault-profile-color-hover: var(--vault-profile-color, #9d9d9d);
   --white: #a3a3a3;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -871,6 +873,13 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   text-decoration-color: rgb(236, 217, 147);
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(236, 217, 147));
+  font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
+  outline: rgb(236, 217, 147) none 0px;
+  text-decoration-color: rgb(236, 217, 147);
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: var(--bold-color, rgb(119, 142, 85));
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
@@ -930,19 +939,31 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(228, 201, 103));
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(157, 157, 157);
+  border-left-color: rgb(157, 157, 157);
+  border-right-color: rgb(157, 157, 157);
+  border-top-color: rgb(157, 157, 157);
   color: rgb(157, 157, 157);
+  font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(157, 157, 157);
+  border-left-color: rgb(157, 157, 157);
+  border-right-color: rgb(157, 157, 157);
+  border-top-color: rgb(157, 157, 157);
   color: rgb(157, 157, 157);
+  font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(157, 157, 157);
+  margin-left: 27.4561px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(157, 157, 157);
+  margin-left: 27.4561px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -956,6 +977,7 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(112, 112, 112));
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
@@ -968,7 +990,6 @@ html[saved-theme="dark"] body blockquote {
 html[saved-theme="dark"] body table {
   color: rgb(157, 157, 157);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
-  width: 201.359px;
 }
 
 html[saved-theme="dark"] body tbody tr:nth-child(even) {
@@ -1071,10 +1092,12 @@ html[saved-theme="dark"] body video {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-left-color: rgb(112, 112, 112);
+  border-radius: 0px;
   border-right-color: rgb(112, 112, 112);
   border-top-color: rgb(112, 112, 112);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  color: var(--text-muted, rgb(112, 112, 112));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -1091,6 +1114,7 @@ html[saved-theme="dark"] body .transclude {
   border-top-color: rgb(157, 157, 157);
   border-top-style: solid;
   border-top-width: 1px;
+  color: rgb(157, 157, 157);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -1100,6 +1124,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-right-color: rgb(157, 157, 157);
   border-top-color: rgb(157, 157, 157);
   border-top-style: solid;
+  color: rgb(157, 157, 157);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
@@ -2632,7 +2657,10 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-top-width: 2px;
+  color: var(--background-primary, rgb(37, 37, 37));
   font-family: "??", "??", "??", "Noto Sans", sans-serif;
+  font-size: 12px;
+  line-height: var(--line-height-tight, 12px);
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -2641,8 +2669,16 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   --font-weight: var(--h1-weight, 650);
+  border-bottom-color: rgb(119, 142, 85);
+  border-left-color: rgb(119, 142, 85);
+  border-right-color: rgb(119, 142, 85);
+  border-top-color: rgb(119, 142, 85);
   color: var(--h1-color, rgb(119, 142, 85));
   font-family: var(--h1-font, "Noto Sans", sans-serif);
+  font-size: var(--h1-size, 28.832px);
+  font-weight: var(--font-weight, 650);
+  letter-spacing: var(--h1-letter-spacing, -0.43248px);
+  line-height: var(--h1-line-height, 34.5984px);
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -2653,37 +2689,83 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 650);
+  border-bottom-color: rgb(224, 194, 82);
+  border-left-color: rgb(224, 194, 82);
+  border-right-color: rgb(224, 194, 82);
+  border-top-color: rgb(224, 194, 82);
   color: var(--h2-color, rgb(224, 194, 82));
   font-family: var(--h2-font, "Noto Sans", sans-serif);
+  font-size: var(--h2-size, 25.632px);
+  font-weight: var(--font-weight, 650);
+  letter-spacing: var(--h2-letter-spacing, -0.281952px);
+  line-height: var(--h2-line-height, 30.7584px);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(157, 157, 157);
+  border-left-color: rgb(157, 157, 157);
+  border-right-color: rgb(157, 157, 157);
+  border-top-color: rgb(157, 157, 157);
   color: var(--inline-title-color, rgb(157, 157, 157));
   font-family: var(--inline-title-font, "Noto Sans", sans-serif);
+  font-size: var(--inline-title-size, 36.8px);
+  font-weight: var(--inline-title-weight, 650);
+  letter-spacing: -0.552px;
+  line-height: var(--inline-title-line-height, 47.84px);
+  margin-bottom: 18.4px;
 }
 
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, 650);
+  border-bottom-color: rgb(132, 158, 95);
+  border-left-color: rgb(132, 158, 95);
+  border-right-color: rgb(132, 158, 95);
+  border-top-color: rgb(132, 158, 95);
   color: var(--h3-color, rgb(132, 158, 95));
   font-family: var(--h3-font, "Noto Sans", sans-serif);
+  font-size: var(--h3-size, 22.784px);
+  font-weight: var(--font-weight, 650);
+  letter-spacing: var(--h3-letter-spacing, -0.182272px);
+  line-height: var(--h3-line-height, 29.6192px);
 }
 
 html[saved-theme="dark"] body h4 {
   --font-weight: var(--h4-weight, 650);
+  border-bottom-color: rgb(228, 201, 103);
+  border-left-color: rgb(228, 201, 103);
+  border-right-color: rgb(228, 201, 103);
+  border-top-color: rgb(228, 201, 103);
   color: var(--h4-color, rgb(228, 201, 103));
   font-family: var(--h4-font, "Noto Sans", sans-serif);
+  font-size: var(--h4-size, 20.256px);
+  font-weight: var(--font-weight, 650);
+  letter-spacing: var(--h4-letter-spacing, -0.10128px);
+  line-height: var(--h4-line-height, 28.3584px);
 }
 
 html[saved-theme="dark"] body h5 {
   --font-weight: var(--h5-weight, 650);
+  border-bottom-color: rgb(145, 168, 110);
+  border-left-color: rgb(145, 168, 110);
+  border-right-color: rgb(145, 168, 110);
+  border-top-color: rgb(145, 168, 110);
   color: var(--h5-color, rgb(145, 168, 110));
   font-family: var(--h5-font, "Noto Sans", sans-serif);
+  font-size: var(--h5-size, 18px);
+  font-weight: var(--font-weight, 650);
+  letter-spacing: var(--h5-letter-spacing, -0.036px);
+  line-height: var(--h5-line-height, 27px);
 }
 
 html[saved-theme="dark"] body h6 {
   --font-weight: var(--h6-weight, 650);
+  border-bottom-color: rgb(232, 209, 125);
+  border-left-color: rgb(232, 209, 125);
+  border-right-color: rgb(232, 209, 125);
+  border-top-color: rgb(232, 209, 125);
   color: var(--h6-color, rgb(232, 209, 125));
   font-family: var(--h6-font, "Noto Sans", sans-serif);
+  font-weight: var(--font-weight, 650);
 }
 
 html[saved-theme="dark"] body hr {
@@ -2720,6 +2802,30 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(157, 157, 157));
   font-family: "??", "??", "??", "Noto Sans", sans-serif;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(157, 157, 157);
@@ -2872,6 +2978,19 @@ html[saved-theme="dark"] body .canvas-sidebar {
   padding-top: 12px;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(112, 112, 112);
+  border-left-color: rgb(112, 112, 112);
+  border-right-color: rgb(112, 112, 112);
+  border-top-color: rgb(112, 112, 112);
+  color: rgb(112, 112, 112);
+  font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 6px;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(112, 112, 112);
   border-left-color: rgb(112, 112, 112);
@@ -2879,6 +2998,16 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(112, 112, 112);
   color: rgb(112, 112, 112);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(112, 112, 112);
+  font-family: var(--metadata-label-font, "??", "??", "??", "Noto Sans", sans-serif);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(112, 112, 112);
+  font-family: var(--metadata-input-font, "??", "??", "??", "Noto Sans", sans-serif);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -2954,6 +3083,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(157, 157, 157);
+  border-left-color: rgb(157, 157, 157);
+  border-right-color: rgb(157, 157, 157);
+  border-top-color: rgb(157, 157, 157);
   color: var(--text-normal, rgb(157, 157, 157));
   font-family: "??", "??", "??", "Noto Sans", sans-serif;
 }
@@ -3555,7 +3688,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-profile-color: var(--text-normal, #404040);
   --vault-profile-color-hover: var(--vault-profile-color, #404040);
   --white: #a3a3a3;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -3654,6 +3789,13 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   text-decoration-color: rgb(106, 106, 106);
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(106, 106, 106));
+  font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
+  outline: rgb(106, 106, 106) none 0px;
+  text-decoration-color: rgb(106, 106, 106);
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--bold-color, rgb(89, 109, 58));
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
@@ -3713,19 +3855,31 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(62, 76, 40));
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: rgb(64, 64, 64);
+  font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: rgb(64, 64, 64);
+  font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(64, 64, 64);
+  margin-left: 27.4561px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(64, 64, 64);
+  margin-left: 27.4561px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -3739,6 +3893,7 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(85, 85, 85));
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
@@ -3751,7 +3906,6 @@ html[saved-theme="light"] body blockquote {
 html[saved-theme="light"] body table {
   color: rgb(64, 64, 64);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
-  width: 201.359px;
 }
 
 html[saved-theme="light"] body tbody tr:nth-child(even) {
@@ -3854,10 +4008,12 @@ html[saved-theme="light"] body video {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-left-color: rgb(85, 85, 85);
+  border-radius: 0px;
   border-right-color: rgb(85, 85, 85);
   border-top-color: rgb(85, 85, 85);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  color: var(--text-muted, rgb(85, 85, 85));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -3874,6 +4030,7 @@ html[saved-theme="light"] body .transclude {
   border-top-color: rgb(64, 64, 64);
   border-top-style: solid;
   border-top-width: 1px;
+  color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -3883,6 +4040,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
   border-top-style: solid;
+  color: rgb(64, 64, 64);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
@@ -5414,7 +5572,10 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-top-width: 2px;
+  color: var(--background-primary, rgb(236, 236, 236));
   font-family: "??", "??", "??", "Noto Sans", sans-serif;
+  font-size: 12px;
+  line-height: var(--line-height-tight, 12px);
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -5423,8 +5584,16 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   --font-weight: var(--h1-weight, 650);
+  border-bottom-color: rgb(89, 109, 58);
+  border-left-color: rgb(89, 109, 58);
+  border-right-color: rgb(89, 109, 58);
+  border-top-color: rgb(89, 109, 58);
   color: var(--h1-color, rgb(89, 109, 58));
   font-family: var(--h1-font, "Noto Sans", sans-serif);
+  font-size: var(--h1-size, 28.832px);
+  font-weight: var(--font-weight, 650);
+  letter-spacing: var(--h1-letter-spacing, -0.43248px);
+  line-height: var(--h1-line-height, 34.5984px);
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -5435,37 +5604,83 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 650);
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: var(--h2-color, rgb(64, 64, 64));
   font-family: var(--h2-font, "Noto Sans", sans-serif);
+  font-size: var(--h2-size, 25.632px);
+  font-weight: var(--font-weight, 650);
+  letter-spacing: var(--h2-letter-spacing, -0.281952px);
+  line-height: var(--h2-line-height, 30.7584px);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: var(--inline-title-color, rgb(64, 64, 64));
   font-family: var(--inline-title-font, "Noto Sans", sans-serif);
+  font-size: var(--inline-title-size, 36.8px);
+  font-weight: var(--inline-title-weight, 650);
+  letter-spacing: -0.552px;
+  line-height: var(--inline-title-line-height, 47.84px);
+  margin-bottom: 18.4px;
 }
 
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, 650);
+  border-bottom-color: rgb(75, 92, 49);
+  border-left-color: rgb(75, 92, 49);
+  border-right-color: rgb(75, 92, 49);
+  border-top-color: rgb(75, 92, 49);
   color: var(--h3-color, rgb(75, 92, 49));
   font-family: var(--h3-font, "Noto Sans", sans-serif);
+  font-size: var(--h3-size, 22.784px);
+  font-weight: var(--font-weight, 650);
+  letter-spacing: var(--h3-letter-spacing, -0.182272px);
+  line-height: var(--h3-line-height, 29.6192px);
 }
 
 html[saved-theme="light"] body h4 {
   --font-weight: var(--h4-weight, 650);
+  border-bottom-color: rgb(51, 51, 51);
+  border-left-color: rgb(51, 51, 51);
+  border-right-color: rgb(51, 51, 51);
+  border-top-color: rgb(51, 51, 51);
   color: var(--h4-color, rgb(51, 51, 51));
   font-family: var(--h4-font, "Noto Sans", sans-serif);
+  font-size: var(--h4-size, 20.256px);
+  font-weight: var(--font-weight, 650);
+  letter-spacing: var(--h4-letter-spacing, -0.10128px);
+  line-height: var(--h4-line-height, 28.3584px);
 }
 
 html[saved-theme="light"] body h5 {
   --font-weight: var(--h5-weight, 650);
+  border-bottom-color: rgb(62, 76, 40);
+  border-left-color: rgb(62, 76, 40);
+  border-right-color: rgb(62, 76, 40);
+  border-top-color: rgb(62, 76, 40);
   color: var(--h5-color, rgb(62, 76, 40));
   font-family: var(--h5-font, "Noto Sans", sans-serif);
+  font-size: var(--h5-size, 18px);
+  font-weight: var(--font-weight, 650);
+  letter-spacing: var(--h5-letter-spacing, -0.036px);
+  line-height: var(--h5-line-height, 27px);
 }
 
 html[saved-theme="light"] body h6 {
   --font-weight: var(--h6-weight, 650);
+  border-bottom-color: rgb(32, 32, 32);
+  border-left-color: rgb(32, 32, 32);
+  border-right-color: rgb(32, 32, 32);
+  border-top-color: rgb(32, 32, 32);
   color: var(--h6-color, rgb(32, 32, 32));
   font-family: var(--h6-font, "Noto Sans", sans-serif);
+  font-weight: var(--font-weight, 650);
 }
 
 html[saved-theme="light"] body hr {
@@ -5502,6 +5717,30 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(64, 64, 64));
   font-family: "??", "??", "??", "Noto Sans", sans-serif;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(64, 64, 64);
@@ -5654,6 +5893,19 @@ html[saved-theme="light"] body .canvas-sidebar {
   padding-top: 12px;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(85, 85, 85);
+  border-left-color: rgb(85, 85, 85);
+  border-right-color: rgb(85, 85, 85);
+  border-top-color: rgb(85, 85, 85);
+  color: rgb(85, 85, 85);
+  font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 6px;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(85, 85, 85);
   border-left-color: rgb(85, 85, 85);
@@ -5661,6 +5913,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(85, 85, 85);
   color: rgb(85, 85, 85);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(85, 85, 85);
+  font-family: var(--metadata-label-font, "??", "??", "??", "Noto Sans", sans-serif);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(85, 85, 85);
+  font-family: var(--metadata-input-font, "??", "??", "??", "Noto Sans", sans-serif);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -5736,6 +5998,10 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: var(--text-normal, rgb(64, 64, 64));
   font-family: "??", "??", "??", "Noto Sans", sans-serif;
 }

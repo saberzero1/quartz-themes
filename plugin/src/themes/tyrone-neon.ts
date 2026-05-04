@@ -26,7 +26,20 @@ export const theme: ThemeData = {
   --bases-table-header-color: var(--text-muted, #737373);
   --bases-table-summary-background: var(--background-primary, #000000);
   --button-radius: var(--input-radius, 20px);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 20px);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #000000);
   --canvas-controls-radius: var(--radius-s, 20px);
   --caret-color: var(--text-normal, #d4d4d4);
@@ -156,7 +169,7 @@ export const theme: ThemeData = {
   --toggle-thumb-radius: 20px;
   --vault-profile-color: var(--text-normal, #d4d4d4);
   --vault-profile-color-hover: var(--vault-profile-color, #d4d4d4);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
 }
 
 html[saved-theme="dark"] body {
@@ -206,6 +219,13 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, rgb(212, 212, 212));
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+  outline: rgb(212, 212, 212) none 0px;
+  text-decoration-color: rgb(212, 212, 212);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--italic-color, rgb(212, 212, 212));
   font-family: Inter, "Segoe UI", system-ui, sans-serif;
   outline: rgb(212, 212, 212) none 0px;
@@ -264,7 +284,13 @@ html[saved-theme="dark"] body a.internal-link.broken {
   outline: rgb(138, 92, 245) none 0px;
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: rgb(212, 212, 212);
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
 }
 
 html[saved-theme="dark"] body dl {
@@ -273,15 +299,27 @@ html[saved-theme="dark"] body dl {
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: rgb(212, 212, 212);
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(212, 212, 212);
+  margin-left: 28.3447px;
+  padding-bottom: var(--list-spacing, 1.125px);
+  padding-top: var(--list-spacing, 1.125px);
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(212, 212, 212);
+  margin-left: 28.3447px;
+  padding-bottom: var(--list-spacing, 1.125px);
+  padding-top: var(--list-spacing, 1.125px);
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -291,6 +329,7 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-color: rgb(212, 212, 212);
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(212, 212, 212));
   font-family: Inter, "Segoe UI", system-ui, sans-serif;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
@@ -303,7 +342,6 @@ html[saved-theme="dark"] body ul.overflow {
 html[saved-theme="dark"] body table {
   color: rgb(212, 212, 212);
   font-family: Inter, "Segoe UI", system-ui, sans-serif;
-  width: 194.844px;
 }
 
 html[saved-theme="dark"] body td {
@@ -375,10 +413,12 @@ html[saved-theme="dark"] body video {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-left-color: rgb(115, 115, 115);
+  border-radius: 20px;
   border-right-color: rgb(115, 115, 115);
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  color: var(--text-muted, rgb(115, 115, 115));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -390,6 +430,7 @@ html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
+  color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -397,6 +438,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
+  color: rgb(212, 212, 212);
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-left-radius: 20px;
@@ -1336,6 +1378,9 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-bottom-right-radius: 26.25px;
   border-top-left-radius: 26.25px;
   border-top-right-radius: 26.25px;
+  color: var(--pill-color, rgb(138, 92, 245));
+  font-size: 13.125px;
+  line-height: var(--line-height-tight, 13.125px);
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -1343,8 +1388,16 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: var(--h1-color, rgb(212, 212, 212));
   font-family: var(--h1-font, Inter, "Segoe UI", system-ui, sans-serif);
+  font-size: var(--h1-size, 24.27px);
+  letter-spacing: var(--h1-letter-spacing, -0.36405px);
+  line-height: var(--h1-line-height, 29.124px);
+  margin-bottom: 9.708px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1353,33 +1406,84 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: var(--h2-color, rgb(212, 212, 212));
   font-family: var(--h2-font, Inter, "Segoe UI", system-ui, sans-serif);
+  font-size: var(--h2-size, 21.93px);
+  letter-spacing: var(--h2-letter-spacing, -0.24123px);
+  line-height: var(--h2-line-height, 26.316px);
+  margin-bottom: 8.772px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: var(--inline-title-color, rgb(212, 212, 212));
   font-family: var(--inline-title-font, Inter, "Segoe UI", system-ui, sans-serif);
+  font-size: var(--inline-title-size, 24.27px);
+  letter-spacing: -0.36405px;
+  line-height: var(--inline-title-line-height, 29.124px);
+  margin-bottom: 12.135px;
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: var(--h3-color, rgb(212, 212, 212));
   font-family: var(--h3-font, Inter, "Segoe UI", system-ui, sans-serif);
+  font-size: var(--h3-size, 19.77px);
+  letter-spacing: var(--h3-letter-spacing, -0.15816px);
+  line-height: var(--h3-line-height, 25.701px);
+  margin-bottom: 7.908px;
+  margin-top: var(--heading-spacing, 23.724px);
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: var(--h4-color, rgb(212, 212, 212));
   font-family: var(--h4-font, Inter, "Segoe UI", system-ui, sans-serif);
+  font-size: var(--h4-size, 17.82px);
+  letter-spacing: var(--h4-letter-spacing, -0.0891px);
+  line-height: var(--h4-line-height, 24.948px);
+  margin-bottom: 7.128px;
+  margin-top: var(--heading-spacing, 21.384px);
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: var(--h5-color, rgb(212, 212, 212));
   font-family: var(--h5-font, Inter, "Segoe UI", system-ui, sans-serif);
+  font-size: var(--h5-size, 16.14px);
+  letter-spacing: var(--h5-letter-spacing, -0.03228px);
+  line-height: var(--h5-line-height, 24.21px);
+  margin-bottom: 6.456px;
+  margin-top: var(--heading-spacing, 19.368px);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: var(--h6-color, rgb(212, 212, 212));
   font-family: var(--h6-font, Inter, "Segoe UI", system-ui, sans-serif);
+  font-size: var(--h6-size, 15px);
+  line-height: var(--h6-line-height, 22.5px);
+  margin-bottom: 6px;
+  margin-top: 18px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -1401,6 +1505,18 @@ html[saved-theme="dark"] body hr {
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(115, 115, 115));
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(212, 212, 212);
@@ -1526,6 +1642,15 @@ html[saved-theme="dark"] body .canvas-sidebar {
   font-family: Inter, "Segoe UI", system-ui, sans-serif;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(115, 115, 115);
+  border-left-color: rgb(115, 115, 115);
+  border-right-color: rgb(115, 115, 115);
+  border-top-color: rgb(115, 115, 115);
+  color: rgb(115, 115, 115);
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgb(115, 115, 115);
@@ -1533,6 +1658,16 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(115, 115, 115);
   color: rgb(115, 115, 115);
   font-family: Inter, "Segoe UI", system-ui, sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(115, 115, 115);
+  font-size: 15px;
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(115, 115, 115);
+  font-size: 15px;
 }
 
 html[saved-theme="dark"] body .note-properties-key {
@@ -1592,6 +1727,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: var(--text-normal, rgb(212, 212, 212));
 }
 
@@ -1676,7 +1815,20 @@ html[saved-theme="dark"] body ul.tags > li {
   --bases-table-group-background: var(--background-primary-alt, #ffffff);
   --bases-table-header-color: var(--text-muted, #737373);
   --button-radius: var(--input-radius, 20px);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 20px);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-controls-radius: var(--radius-s, 20px);
   --caret-color: var(--text-normal, #404040);
   --checkbox-border-color-hover: var(--text-muted, #737373);
@@ -1777,7 +1929,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --toggle-thumb-radius: 20px;
   --vault-profile-color: var(--text-normal, #404040);
   --vault-profile-color-hover: var(--vault-profile-color, #404040);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
 }
 
 html[saved-theme="light"] body {
@@ -1832,6 +1984,13 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   text-decoration-color: rgb(64, 64, 64);
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(64, 64, 64));
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+  outline: rgb(64, 64, 64) none 0px;
+  text-decoration-color: rgb(64, 64, 64);
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--bold-color, rgb(64, 64, 64));
   font-family: Inter, "Segoe UI", system-ui, sans-serif;
@@ -1876,7 +2035,13 @@ html[saved-theme="light"] body a.internal-link.broken {
   font-weight: var(--link-weight, 500);
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: rgb(64, 64, 64);
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
 }
 
 html[saved-theme="light"] body dl {
@@ -1885,15 +2050,27 @@ html[saved-theme="light"] body dl {
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: rgb(64, 64, 64);
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(64, 64, 64);
+  margin-left: 28.3447px;
+  padding-bottom: var(--list-spacing, 1.125px);
+  padding-top: var(--list-spacing, 1.125px);
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(64, 64, 64);
+  margin-left: 28.3447px;
+  padding-bottom: var(--list-spacing, 1.125px);
+  padding-top: var(--list-spacing, 1.125px);
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -1903,6 +2080,7 @@ html[saved-theme="light"] body ul.overflow {
   border-top-color: rgb(64, 64, 64);
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(64, 64, 64));
   font-family: Inter, "Segoe UI", system-ui, sans-serif;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
@@ -1915,7 +2093,6 @@ html[saved-theme="light"] body ul.overflow {
 html[saved-theme="light"] body table {
   color: rgb(64, 64, 64);
   font-family: Inter, "Segoe UI", system-ui, sans-serif;
-  width: 194.844px;
 }
 
 html[saved-theme="light"] body td {
@@ -1987,10 +2164,12 @@ html[saved-theme="light"] body video {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-left-color: rgb(115, 115, 115);
+  border-radius: 20px;
   border-right-color: rgb(115, 115, 115);
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  color: var(--text-muted, rgb(115, 115, 115));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2002,6 +2181,7 @@ html[saved-theme="light"] body .transclude {
   border-bottom-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
+  color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2009,6 +2189,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
+  color: rgb(64, 64, 64);
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-left-radius: 20px;
@@ -2941,11 +3122,21 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-bottom-right-radius: 26.25px;
   border-top-left-radius: 26.25px;
   border-top-right-radius: 26.25px;
+  font-size: 13.125px;
+  line-height: var(--line-height-tight, 13.125px);
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: var(--h1-color, rgb(64, 64, 64));
   font-family: var(--h1-font, Inter, "Segoe UI", system-ui, sans-serif);
+  font-size: var(--h1-size, 24.27px);
+  letter-spacing: var(--h1-letter-spacing, -0.36405px);
+  line-height: var(--h1-line-height, 29.124px);
+  margin-bottom: 9.708px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -2954,33 +3145,84 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: var(--h2-color, rgb(64, 64, 64));
   font-family: var(--h2-font, Inter, "Segoe UI", system-ui, sans-serif);
+  font-size: var(--h2-size, 21.93px);
+  letter-spacing: var(--h2-letter-spacing, -0.24123px);
+  line-height: var(--h2-line-height, 26.316px);
+  margin-bottom: 8.772px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: var(--inline-title-color, rgb(64, 64, 64));
   font-family: var(--inline-title-font, Inter, "Segoe UI", system-ui, sans-serif);
+  font-size: var(--inline-title-size, 24.27px);
+  letter-spacing: -0.36405px;
+  line-height: var(--inline-title-line-height, 29.124px);
+  margin-bottom: 12.135px;
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: var(--h3-color, rgb(64, 64, 64));
   font-family: var(--h3-font, Inter, "Segoe UI", system-ui, sans-serif);
+  font-size: var(--h3-size, 19.77px);
+  letter-spacing: var(--h3-letter-spacing, -0.15816px);
+  line-height: var(--h3-line-height, 25.701px);
+  margin-bottom: 7.908px;
+  margin-top: var(--heading-spacing, 23.724px);
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: var(--h4-color, rgb(64, 64, 64));
   font-family: var(--h4-font, Inter, "Segoe UI", system-ui, sans-serif);
+  font-size: var(--h4-size, 17.82px);
+  letter-spacing: var(--h4-letter-spacing, -0.0891px);
+  line-height: var(--h4-line-height, 24.948px);
+  margin-bottom: 7.128px;
+  margin-top: var(--heading-spacing, 21.384px);
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: var(--h5-color, rgb(64, 64, 64));
   font-family: var(--h5-font, Inter, "Segoe UI", system-ui, sans-serif);
+  font-size: var(--h5-size, 16.14px);
+  letter-spacing: var(--h5-letter-spacing, -0.03228px);
+  line-height: var(--h5-line-height, 24.21px);
+  margin-bottom: 6.456px;
+  margin-top: var(--heading-spacing, 19.368px);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: var(--h6-color, rgb(64, 64, 64));
   font-family: var(--h6-font, Inter, "Segoe UI", system-ui, sans-serif);
+  font-size: var(--h6-size, 15px);
+  line-height: var(--h6-line-height, 22.5px);
+  margin-bottom: 6px;
+  margin-top: 18px;
 }
 
 html[saved-theme="light"] body hr {
@@ -3002,6 +3244,18 @@ html[saved-theme="light"] body hr {
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(115, 115, 115));
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(64, 64, 64);
@@ -3126,6 +3380,15 @@ html[saved-theme="light"] body .canvas-sidebar {
   font-family: Inter, "Segoe UI", system-ui, sans-serif;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(115, 115, 115);
+  border-left-color: rgb(115, 115, 115);
+  border-right-color: rgb(115, 115, 115);
+  border-top-color: rgb(115, 115, 115);
+  color: rgb(115, 115, 115);
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgb(115, 115, 115);
@@ -3133,6 +3396,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(115, 115, 115);
   color: rgb(115, 115, 115);
   font-family: Inter, "Segoe UI", system-ui, sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(115, 115, 115);
+  font-size: 15px;
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(115, 115, 115);
+  font-size: 15px;
 }
 
 html[saved-theme="light"] body .note-properties-key {
@@ -3186,6 +3459,10 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: var(--text-normal, rgb(64, 64, 64));
 }
 

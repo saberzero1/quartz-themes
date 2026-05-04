@@ -80,6 +80,7 @@ export const theme: ThemeData = {
   --callout-note-border: #9e9e9e;
   --callout-note-text: #e0e0e0;
   --callout-question: var(--color-orange-rgb, 205, 133, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 4px);
   --callout-success: var(--color-green-rgb, #1b2d1b);
   --callout-success-border: #66bb6a;
@@ -300,7 +301,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, #ffffff);
   --vault-profile-color: var(--text-normal, #ffffff);
   --vault-profile-color-hover: var(--vault-profile-color, #ffffff);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -369,6 +372,13 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   text-decoration-color: rgb(139, 227, 235);
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(139, 227, 235));
+  font-family: "EB Garamond", Georgia, serif;
+  outline: rgb(139, 227, 235) none 0px;
+  text-decoration-color: rgb(139, 227, 235);
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: var(--bold-color, rgb(255, 255, 255));
   font-family: "EB Garamond", Georgia, serif;
@@ -428,19 +438,35 @@ html[saved-theme="dark"] body a.internal-link.broken {
   outline: rgb(204, 153, 255) none 0px;
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
+  font-family: "EB Garamond", Georgia, serif;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
+  font-family: "EB Garamond", Georgia, serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(255, 255, 255);
+  margin-bottom: 4px;
+  margin-left: 23.0401px;
+  margin-top: 4px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(255, 255, 255);
+  margin-bottom: 4px;
+  margin-left: 23.0401px;
+  margin-top: 4px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -459,6 +485,7 @@ html[saved-theme="dark"] body ul.overflow {
 
 html[saved-theme="dark"] body blockquote {
   background-color: rgba(var(--background-secondary-rgb), 0.8);
+  color: var(--blockquote-color, rgb(255, 255, 255));
   font-family: "EB Garamond", Georgia, serif;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
@@ -488,7 +515,6 @@ html[saved-theme="dark"] body table {
   border-top-width: 1px;
   color: rgb(255, 255, 255);
   font-family: "EB Garamond", Georgia, serif;
-  width: 662px;
 }
 
 html[saved-theme="dark"] body tbody tr:nth-child(even) {
@@ -590,6 +616,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(208, 208, 208);
   border-right-color: rgb(208, 208, 208);
   border-top-color: rgb(208, 208, 208);
+  color: var(--text-muted, rgb(208, 208, 208));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -602,6 +629,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(255, 215, 0);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -609,6 +637,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "EB Garamond", Georgia, serif;
@@ -1797,6 +1826,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   --pill-color-remove: var(--tag-color, #cc99ff);
   --pill-color-remove-hover: var(--tag-color-hover, #cc99ff);
   background-color: var(--pill-background, rgb(26, 35, 50));
+  color: var(--pill-color, rgb(204, 153, 255));
   font-family: "EB Garamond", Georgia, serif;
 }
 
@@ -1805,6 +1835,10 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(205, 145, 158);
+  border-left-color: rgb(205, 145, 158);
+  border-right-color: rgb(205, 145, 158);
+  border-top-color: rgb(205, 145, 158);
   color: var(--h1-color, rgb(205, 145, 158));
   font-family: var(--h1-font, "EB Garamond", Georgia, serif);
 }
@@ -1814,31 +1848,55 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(218, 165, 32);
+  border-left-color: rgb(218, 165, 32);
+  border-right-color: rgb(218, 165, 32);
+  border-top-color: rgb(218, 165, 32);
   color: var(--h2-color, rgb(218, 165, 32));
   font-family: var(--h2-font, "EB Garamond", Georgia, serif);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(205, 145, 158);
+  border-left-color: rgb(205, 145, 158);
+  border-right-color: rgb(205, 145, 158);
+  border-top-color: rgb(205, 145, 158);
   color: var(--inline-title-color, rgb(205, 145, 158));
   font-family: var(--inline-title-font, "EB Garamond", Georgia, serif);
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(143, 188, 143);
+  border-left-color: rgb(143, 188, 143);
+  border-right-color: rgb(143, 188, 143);
+  border-top-color: rgb(143, 188, 143);
   color: var(--h3-color, rgb(143, 188, 143));
   font-family: var(--h3-font, "EB Garamond", Georgia, serif);
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(95, 158, 160);
+  border-left-color: rgb(95, 158, 160);
+  border-right-color: rgb(95, 158, 160);
+  border-top-color: rgb(95, 158, 160);
   color: var(--h4-color, var(--h3-color));
   font-family: var(--h4-font, "EB Garamond", Georgia, serif);
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(147, 112, 219);
+  border-left-color: rgb(147, 112, 219);
+  border-right-color: rgb(147, 112, 219);
+  border-top-color: rgb(147, 112, 219);
   color: var(--h5-color, var(--h3-color));
   font-family: var(--h5-font, "EB Garamond", Georgia, serif);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(205, 133, 63);
+  border-left-color: rgb(205, 133, 63);
+  border-right-color: rgb(205, 133, 63);
+  border-top-color: rgb(205, 133, 63);
   color: var(--h6-color, var(--h3-color));
   font-family: var(--h6-font, "EB Garamond", Georgia, serif);
 }
@@ -1880,6 +1938,22 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--text-normal, rgb(255, 255, 255));
   font-family: "EB Garamond", Georgia, serif;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(255, 255, 255);
@@ -2015,6 +2089,15 @@ html[saved-theme="dark"] body .bases-table thead th {
   font-family: "EB Garamond", Georgia, serif;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(208, 208, 208);
+  border-left-color: rgb(208, 208, 208);
+  border-right-color: rgb(208, 208, 208);
+  border-top-color: rgb(208, 208, 208);
+  color: rgb(208, 208, 208);
+  font-family: "EB Garamond", Georgia, serif;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(208, 208, 208);
   border-left-color: rgb(208, 208, 208);
@@ -2022,6 +2105,16 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(208, 208, 208);
   color: rgb(208, 208, 208);
   font-family: "EB Garamond", Georgia, serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(208, 208, 208);
+  font-family: var(--metadata-label-font, "EB Garamond", Georgia, serif);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(208, 208, 208);
+  font-family: var(--metadata-input-font, "EB Garamond", Georgia, serif);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -2090,8 +2183,13 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--text-normal, rgb(255, 255, 255));
   font-family: "EB Garamond", Georgia, serif;
+  line-height: 20.8px;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -2191,22 +2289,30 @@ html[saved-theme="dark"] body ul.tags > li {
   --border-color-focus: #9aa0a6;
   --border-color-hover: #bdc1c6;
   --border-radius: 8px;
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
   --callout-error: var(--color-red-rgb, #ffebee);
   --callout-error-border: #f44336;
   --callout-error-text: #c62828;
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
   --callout-info: var(--color-blue-rgb, #e3f2fd);
   --callout-info-border: #2196f3;
   --callout-info-text: #0d47a1;
   --callout-note: #f5f5f5;
   --callout-note-border: #757575;
   --callout-note-text: #424242;
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 4px);
   --callout-success: var(--color-green-rgb, #e8f5e8);
   --callout-success-border: #4caf50;
   --callout-success-text: #2e7d32;
+  --callout-summary: var(--callout-summary, 0, 191, 188);
   --callout-tip: var(--color-cyan-rgb, #f3e5f5);
   --callout-tip-border: #9c27b0;
   --callout-tip-text: #6a1b9a;
+  --callout-todo: var(--callout-todo, 8, 109, 221);
   --callout-warning: var(--color-orange-rgb, #fff3e0);
   --callout-warning-border: #ff9800;
   --callout-warning-text: #e65100;
@@ -2388,7 +2494,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --titlebar-text-color-focused: var(--text-normal, #202124);
   --vault-profile-color: var(--text-normal, #202124);
   --vault-profile-color-hover: var(--vault-profile-color, #202124);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -2456,6 +2564,13 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   text-decoration-color: rgb(139, 69, 19);
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(139, 69, 19));
+  font-family: "EB Garamond", Georgia, serif;
+  outline: rgb(139, 69, 19) none 0px;
+  text-decoration-color: rgb(139, 69, 19);
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--bold-color, rgb(32, 33, 36));
   font-family: "EB Garamond", Georgia, serif;
@@ -2514,19 +2629,35 @@ html[saved-theme="light"] body a.internal-link.broken {
   outline: rgb(204, 153, 255) none 0px;
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(32, 33, 36);
+  border-left-color: rgb(32, 33, 36);
+  border-right-color: rgb(32, 33, 36);
+  border-top-color: rgb(32, 33, 36);
   color: rgb(32, 33, 36);
+  font-family: "EB Garamond", Georgia, serif;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(32, 33, 36);
+  border-left-color: rgb(32, 33, 36);
+  border-right-color: rgb(32, 33, 36);
+  border-top-color: rgb(32, 33, 36);
   color: rgb(32, 33, 36);
+  font-family: "EB Garamond", Georgia, serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(32, 33, 36);
+  margin-bottom: 4px;
+  margin-left: 23.0401px;
+  margin-top: 4px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(32, 33, 36);
+  margin-bottom: 4px;
+  margin-left: 23.0401px;
+  margin-top: 4px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -2544,6 +2675,7 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(32, 33, 36));
   font-family: "EB Garamond", Georgia, serif;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
@@ -2573,7 +2705,6 @@ html[saved-theme="light"] body table {
   border-top-width: 1px;
   color: rgb(32, 33, 36);
   font-family: "EB Garamond", Georgia, serif;
-  width: 662px;
 }
 
 html[saved-theme="light"] body tbody tr:nth-child(even) {
@@ -2667,6 +2798,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(95, 99, 104);
   border-right-color: rgb(95, 99, 104);
   border-top-color: rgb(95, 99, 104);
+  color: var(--text-muted, rgb(95, 99, 104));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2679,6 +2811,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(26, 115, 232);
   border-right-color: rgb(32, 33, 36);
   border-top-color: rgb(32, 33, 36);
+  color: rgb(32, 33, 36);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2686,6 +2819,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(32, 33, 36);
   border-right-color: rgb(32, 33, 36);
   border-top-color: rgb(32, 33, 36);
+  color: rgb(32, 33, 36);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "EB Garamond", Georgia, serif;
@@ -4022,6 +4156,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-remove: var(--tag-color, #cc99ff);
   --pill-color-remove-hover: var(--tag-color-hover, #cc99ff);
   background-color: var(--pill-background, rgb(232, 240, 254));
+  color: var(--pill-color, rgb(204, 153, 255));
   font-family: "EB Garamond", Georgia, serif;
 }
 
@@ -4030,6 +4165,10 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(139, 0, 0);
+  border-left-color: rgb(139, 0, 0);
+  border-right-color: rgb(139, 0, 0);
+  border-top-color: rgb(139, 0, 0);
   color: var(--h1-color, rgb(139, 0, 0));
   font-family: var(--h1-font, "EB Garamond", Georgia, serif);
 }
@@ -4039,31 +4178,55 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(184, 134, 11);
+  border-left-color: rgb(184, 134, 11);
+  border-right-color: rgb(184, 134, 11);
+  border-top-color: rgb(184, 134, 11);
   color: var(--h2-color, rgb(184, 134, 11));
   font-family: var(--h2-font, "EB Garamond", Georgia, serif);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(139, 0, 0);
+  border-left-color: rgb(139, 0, 0);
+  border-right-color: rgb(139, 0, 0);
+  border-top-color: rgb(139, 0, 0);
   color: var(--inline-title-color, rgb(139, 0, 0));
   font-family: var(--inline-title-font, "EB Garamond", Georgia, serif);
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(46, 139, 87);
+  border-left-color: rgb(46, 139, 87);
+  border-right-color: rgb(46, 139, 87);
+  border-top-color: rgb(46, 139, 87);
   color: var(--h3-color, rgb(46, 139, 87));
   font-family: var(--h3-font, "EB Garamond", Georgia, serif);
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(70, 130, 180);
+  border-left-color: rgb(70, 130, 180);
+  border-right-color: rgb(70, 130, 180);
+  border-top-color: rgb(70, 130, 180);
   color: var(--h4-color, var(--h3-color));
   font-family: var(--h4-font, "EB Garamond", Georgia, serif);
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(153, 50, 204);
+  border-left-color: rgb(153, 50, 204);
+  border-right-color: rgb(153, 50, 204);
+  border-top-color: rgb(153, 50, 204);
   color: var(--h5-color, var(--h3-color));
   font-family: var(--h5-font, "EB Garamond", Georgia, serif);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(105, 105, 105);
+  border-left-color: rgb(105, 105, 105);
+  border-right-color: rgb(105, 105, 105);
+  border-top-color: rgb(105, 105, 105);
   color: var(--h6-color, var(--h3-color));
   font-family: var(--h6-font, "EB Garamond", Georgia, serif);
 }
@@ -4105,6 +4268,22 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--text-normal, rgb(32, 33, 36));
   font-family: "EB Garamond", Georgia, serif;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(32, 33, 36);
@@ -4238,6 +4417,15 @@ html[saved-theme="light"] body .bases-table thead th {
   font-family: "EB Garamond", Georgia, serif;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(95, 99, 104);
+  border-left-color: rgb(95, 99, 104);
+  border-right-color: rgb(95, 99, 104);
+  border-top-color: rgb(95, 99, 104);
+  color: rgb(95, 99, 104);
+  font-family: "EB Garamond", Georgia, serif;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(95, 99, 104);
   border-left-color: rgb(95, 99, 104);
@@ -4245,6 +4433,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(95, 99, 104);
   color: rgb(95, 99, 104);
   font-family: "EB Garamond", Georgia, serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(95, 99, 104);
+  font-family: var(--metadata-label-font, "EB Garamond", Georgia, serif);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(95, 99, 104);
+  font-family: var(--metadata-input-font, "EB Garamond", Georgia, serif);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -4312,8 +4510,13 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(32, 33, 36);
+  border-left-color: rgb(32, 33, 36);
+  border-right-color: rgb(32, 33, 36);
+  border-top-color: rgb(32, 33, 36);
   color: var(--text-normal, rgb(32, 33, 36));
   font-family: "EB Garamond", Georgia, serif;
+  line-height: 20.8px;
 }
 
 html[saved-theme="light"] body abbr {

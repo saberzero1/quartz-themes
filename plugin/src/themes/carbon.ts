@@ -94,7 +94,20 @@ export const theme: ThemeData = {
   --bases-table-summary-background: var(--background-primary, #161616);
   --blockquote-border-color: var(--interactive-accent, hsl(219, 99%, 53%));
   --button-radius: var(--input-radius, 0px);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 0px);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #161616);
   --canvas-controls-radius: var(--radius-s, 0px);
   --caret-color: var(--text-normal, #F4F4F4);
@@ -234,7 +247,7 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, #F4F4F4);
   --vault-profile-color-hover: var(--vault-profile-color, #F4F4F4);
   --vault-profile-font-size: var(--font-ui-small, 14px);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
 }
 
 html[saved-theme="dark"] body {
@@ -286,6 +299,13 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, rgb(244, 244, 244));
+  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  outline: rgb(244, 244, 244) none 0px;
+  text-decoration-color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--italic-color, rgb(244, 244, 244));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(244, 244, 244) none 0px;
@@ -348,19 +368,35 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(16, 100, 254, 0.3));
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(244, 244, 244);
+  border-left-color: rgb(244, 244, 244);
+  border-right-color: rgb(244, 244, 244);
+  border-top-color: rgb(244, 244, 244);
   color: rgb(244, 244, 244);
+  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(244, 244, 244);
+  border-left-color: rgb(244, 244, 244);
+  border-right-color: rgb(244, 244, 244);
+  border-top-color: rgb(244, 244, 244);
   color: rgb(244, 244, 244);
+  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(244, 244, 244);
+  margin-left: 28.8001px;
+  padding-bottom: var(--list-spacing, 0.8px);
+  padding-top: var(--list-spacing, 0.8px);
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(244, 244, 244);
+  margin-left: 28.8001px;
+  padding-bottom: var(--list-spacing, 0.8px);
+  padding-top: var(--list-spacing, 0.8px);
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -370,6 +406,7 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-color: rgb(244, 244, 244);
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(244, 244, 244));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
@@ -383,7 +420,6 @@ html[saved-theme="dark"] body ul.overflow {
 html[saved-theme="dark"] body table {
   color: rgb(244, 244, 244);
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  width: 187.484px;
 }
 
 html[saved-theme="dark"] body td {
@@ -480,6 +516,7 @@ html[saved-theme="dark"] body video {
   background-color: var(--background-secondary, rgb(38, 38, 38));
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   margin-bottom: 12px;
@@ -502,6 +539,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
   border-top-color: rgb(244, 244, 244);
+  color: rgb(244, 244, 244);
   margin-bottom: 12px;
   margin-top: 12px;
   padding-bottom: 6px;
@@ -515,6 +553,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(244, 244, 244);
   border-right-color: rgb(244, 244, 244);
   border-top-color: rgb(244, 244, 244);
+  color: rgb(244, 244, 244);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
@@ -1457,6 +1496,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-left-color: rgba(16, 100, 254, 0.15);
   border-right-color: rgba(16, 100, 254, 0.15);
   border-top-color: rgba(16, 100, 254, 0.15);
+  color: var(--pill-color, rgb(56, 136, 255));
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
@@ -1466,8 +1506,16 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   --font-weight: var(--h1-weight, 400);
+  border-bottom-color: rgb(56, 136, 255);
+  border-left-color: rgb(56, 136, 255);
+  border-right-color: rgb(56, 136, 255);
+  border-top-color: rgb(56, 136, 255);
   color: var(--text-accent, rgb(56, 136, 255));
   font-family: var(--h1-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  font-size: var(--h1-size, 32px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h1-letter-spacing, -0.48px);
+  line-height: var(--h1-line-height, 38.4px);
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1477,31 +1525,70 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 400);
+  border-bottom-color: rgb(244, 244, 244);
+  border-left-color: rgb(244, 244, 244);
+  border-right-color: rgb(244, 244, 244);
+  border-top-color: rgb(244, 244, 244);
   color: var(--h2-color, rgb(244, 244, 244));
   font-family: var(--h2-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  font-size: var(--h2-size, 28px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h2-letter-spacing, -0.308px);
+  line-height: var(--h2-line-height, 33.6px);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(56, 136, 255);
+  border-left-color: rgb(56, 136, 255);
+  border-right-color: rgb(56, 136, 255);
+  border-top-color: rgb(56, 136, 255);
   color: var(--text-accent, rgb(56, 136, 255));
   font-family: var(--inline-title-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  font-weight: var(--inline-title-weight, 400);
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(244, 244, 244);
+  border-left-color: rgb(244, 244, 244);
+  border-right-color: rgb(244, 244, 244);
+  border-top-color: rgb(244, 244, 244);
   color: var(--h3-color, rgb(244, 244, 244));
   font-family: var(--h3-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  font-size: var(--h3-size, 16px);
+  letter-spacing: var(--h3-letter-spacing, -0.128px);
+  line-height: var(--h3-line-height, 20.8px);
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(244, 244, 244);
+  border-left-color: rgb(244, 244, 244);
+  border-right-color: rgb(244, 244, 244);
+  border-top-color: rgb(244, 244, 244);
   color: var(--h4-color, rgb(244, 244, 244));
   font-family: var(--h4-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  font-size: var(--h4-size, 16px);
+  letter-spacing: var(--h4-letter-spacing, -0.08px);
+  line-height: var(--h4-line-height, 22.4px);
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(244, 244, 244);
+  border-left-color: rgb(244, 244, 244);
+  border-right-color: rgb(244, 244, 244);
+  border-top-color: rgb(244, 244, 244);
   color: var(--h5-color, rgb(244, 244, 244));
   font-family: var(--h5-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  font-size: var(--h5-size, 16px);
+  letter-spacing: var(--h5-letter-spacing, -0.032px);
+  line-height: var(--h5-line-height, 24px);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(244, 244, 244);
+  border-left-color: rgb(244, 244, 244);
+  border-right-color: rgb(244, 244, 244);
+  border-top-color: rgb(244, 244, 244);
   color: var(--h6-color, rgb(244, 244, 244));
   font-family: var(--h6-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
@@ -1535,6 +1622,14 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-weight: var(--nav-item-weight, 500);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(244, 244, 244);
@@ -1653,9 +1748,42 @@ html[saved-theme="dark"] body .canvas-sidebar {
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   background-color: var(--background-secondary, rgb(38, 38, 38));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  font-family: var(--metadata-label-font, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: var(--text-normal, rgb(244, 244, 244));
+  font-family: var(--metadata-input-font, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -1715,8 +1843,14 @@ html[saved-theme="dark"] body .stacked-page.active {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(244, 244, 244);
+  border-left-color: rgb(244, 244, 244);
+  border-right-color: rgb(244, 244, 244);
+  border-top-color: rgb(244, 244, 244);
   color: var(--text-normal, rgb(244, 244, 244));
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-size: 14px;
+  line-height: 18.2px;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -1805,7 +1939,20 @@ html[saved-theme="dark"] body ul.tags > li {
   --bases-table-summary-background: var(--background-primary, #FFFFFF);
   --blockquote-border-color: var(--interactive-accent, hsl(218, 99.99%, 56.975%));
   --button-radius: var(--input-radius, 0px);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 0px);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #FFFFFF);
   --canvas-controls-radius: var(--radius-s, 0px);
   --caret-color: var(--text-normal, #262626);
@@ -1950,7 +2097,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-profile-color: var(--text-normal, #262626);
   --vault-profile-color-hover: var(--vault-profile-color, #262626);
   --vault-profile-font-size: var(--font-ui-small, 14px);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
 }
 
 html[saved-theme="light"] body {
@@ -2006,6 +2153,13 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--italic-color, rgb(38, 38, 38));
+  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  outline: rgb(38, 38, 38) none 0px;
+  text-decoration-color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--italic-color, rgb(38, 38, 38));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   outline: rgb(38, 38, 38) none 0px;
@@ -2068,19 +2222,35 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(16, 100, 254, 0.3));
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(38, 38, 38);
+  border-left-color: rgb(38, 38, 38);
+  border-right-color: rgb(38, 38, 38);
+  border-top-color: rgb(38, 38, 38);
   color: rgb(38, 38, 38);
+  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(38, 38, 38);
+  border-left-color: rgb(38, 38, 38);
+  border-right-color: rgb(38, 38, 38);
+  border-top-color: rgb(38, 38, 38);
   color: rgb(38, 38, 38);
+  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(38, 38, 38);
+  margin-left: 28.8001px;
+  padding-bottom: var(--list-spacing, 0.8px);
+  padding-top: var(--list-spacing, 0.8px);
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(38, 38, 38);
+  margin-left: 28.8001px;
+  padding-bottom: var(--list-spacing, 0.8px);
+  padding-top: var(--list-spacing, 0.8px);
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -2090,6 +2260,7 @@ html[saved-theme="light"] body ul.overflow {
   border-top-color: rgb(38, 38, 38);
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(38, 38, 38));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
@@ -2103,7 +2274,6 @@ html[saved-theme="light"] body ul.overflow {
 html[saved-theme="light"] body table {
   color: rgb(38, 38, 38);
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  width: 187.484px;
 }
 
 html[saved-theme="light"] body td {
@@ -2200,6 +2370,7 @@ html[saved-theme="light"] body video {
   background-color: var(--background-secondary, rgb(244, 244, 244));
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   margin-bottom: 12px;
@@ -2222,6 +2393,7 @@ html[saved-theme="light"] body .transclude {
   border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
   border-top-color: rgb(38, 38, 38);
+  color: rgb(38, 38, 38);
   margin-bottom: 12px;
   margin-top: 12px;
   padding-bottom: 6px;
@@ -2235,6 +2407,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(38, 38, 38);
   border-right-color: rgb(38, 38, 38);
   border-top-color: rgb(38, 38, 38);
+  color: rgb(38, 38, 38);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
@@ -3174,6 +3347,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-left-color: rgba(16, 100, 254, 0.15);
   border-right-color: rgba(16, 100, 254, 0.15);
   border-top-color: rgba(16, 100, 254, 0.15);
+  color: var(--pill-color, rgb(15, 98, 254));
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
@@ -3183,8 +3357,16 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   --font-weight: var(--h1-weight, 400);
+  border-bottom-color: rgb(15, 98, 254);
+  border-left-color: rgb(15, 98, 254);
+  border-right-color: rgb(15, 98, 254);
+  border-top-color: rgb(15, 98, 254);
   color: var(--text-accent, rgb(15, 98, 254));
   font-family: var(--h1-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  font-size: var(--h1-size, 32px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h1-letter-spacing, -0.48px);
+  line-height: var(--h1-line-height, 38.4px);
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -3194,31 +3376,70 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 400);
+  border-bottom-color: rgb(38, 38, 38);
+  border-left-color: rgb(38, 38, 38);
+  border-right-color: rgb(38, 38, 38);
+  border-top-color: rgb(38, 38, 38);
   color: var(--h2-color, rgb(38, 38, 38));
   font-family: var(--h2-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  font-size: var(--h2-size, 28px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h2-letter-spacing, -0.308px);
+  line-height: var(--h2-line-height, 33.6px);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(15, 98, 254);
+  border-left-color: rgb(15, 98, 254);
+  border-right-color: rgb(15, 98, 254);
+  border-top-color: rgb(15, 98, 254);
   color: var(--text-accent, rgb(15, 98, 254));
   font-family: var(--inline-title-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  font-weight: var(--inline-title-weight, 400);
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(38, 38, 38);
+  border-left-color: rgb(38, 38, 38);
+  border-right-color: rgb(38, 38, 38);
+  border-top-color: rgb(38, 38, 38);
   color: var(--h3-color, rgb(38, 38, 38));
   font-family: var(--h3-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  font-size: var(--h3-size, 16px);
+  letter-spacing: var(--h3-letter-spacing, -0.128px);
+  line-height: var(--h3-line-height, 20.8px);
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(38, 38, 38);
+  border-left-color: rgb(38, 38, 38);
+  border-right-color: rgb(38, 38, 38);
+  border-top-color: rgb(38, 38, 38);
   color: var(--h4-color, rgb(38, 38, 38));
   font-family: var(--h4-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  font-size: var(--h4-size, 16px);
+  letter-spacing: var(--h4-letter-spacing, -0.08px);
+  line-height: var(--h4-line-height, 22.4px);
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(38, 38, 38);
+  border-left-color: rgb(38, 38, 38);
+  border-right-color: rgb(38, 38, 38);
+  border-top-color: rgb(38, 38, 38);
   color: var(--h5-color, rgb(38, 38, 38));
   font-family: var(--h5-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+  font-size: var(--h5-size, 16px);
+  letter-spacing: var(--h5-letter-spacing, -0.032px);
+  line-height: var(--h5-line-height, 24px);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(38, 38, 38);
+  border-left-color: rgb(38, 38, 38);
+  border-right-color: rgb(38, 38, 38);
+  border-top-color: rgb(38, 38, 38);
   color: var(--h6-color, rgb(38, 38, 38));
   font-family: var(--h6-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
@@ -3252,6 +3473,14 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-weight: var(--nav-item-weight, 500);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(38, 38, 38);
@@ -3371,9 +3600,42 @@ html[saved-theme="light"] body .canvas-sidebar {
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   background-color: var(--background-secondary, rgb(244, 244, 244));
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  font-family: var(--metadata-label-font, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: var(--text-normal, rgb(38, 38, 38));
+  font-family: var(--metadata-input-font, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -3437,8 +3699,14 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(38, 38, 38);
+  border-left-color: rgb(38, 38, 38);
+  border-right-color: rgb(38, 38, 38);
+  border-top-color: rgb(38, 38, 38);
   color: var(--text-normal, rgb(38, 38, 38));
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-size: 14px;
+  line-height: 18.2px;
 }
 
 html[saved-theme="light"] body abbr {

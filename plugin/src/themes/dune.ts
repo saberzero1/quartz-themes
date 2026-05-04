@@ -58,13 +58,26 @@ export const theme: ThemeData = {
   --callout-bg-g: hsl(111deg 42% 45% / 50%);
   --callout-bg-m: var(--dark-gray, dimgray);
   --callout-bg-r: hsl(0deg 69.87% 53.14% / 50%);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
   --callout-gap: 0.5rem;
+  --callout-info: var(--callout-info, 2, 122, 255);
   --callout-margin: 4px;
   --callout-min-width: 200px;
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
   --callout-title-b: var(--light-blue, #99ccff);
   --callout-title-g: var(--light-green, #ace573);
   --callout-title-m: var(--light-gray, #bfbfbf);
   --callout-title-r: var(--light-red, #ff8080);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-dot-pattern: var(--color-base-30, darkgray);
   --checkbox-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgb(44, 99, 210)transform: scale(1.3)msFilter:'%3E%3Cpath d='M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z'%3E%3C/path%3E%3C/svg%3E");
   --checkm-btn: 1.4em;
@@ -7231,6 +7244,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   --pill-color-remove: var(--tag-color, hsl(258, 88%, 66%));
   --pill-color-remove-hover: var(--tag-color-hover, hsl(258, 88%, 66%));
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
+  color: var(--pill-color, rgb(138, 92, 245));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -7239,6 +7253,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   color: var(--text-accent-special, rgb(218, 218, 218));
+  font-size: calc(var(--h1-size) + var(--custom-fsz-3));
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -7247,28 +7262,38 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   font-family: var(--custom-font-h, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: calc(var(--h2-size) + var(--custom-fsz-3)/2);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(55, 141, 255);
+  border-left-color: rgb(55, 141, 255);
+  border-right-color: rgb(55, 141, 255);
+  border-top-color: rgb(55, 141, 255);
   color: var(--text-accent-special, rgb(55, 141, 255));
+  margin-bottom: 36.2432px;
 }
 
 html[saved-theme="dark"] body h3 {
   font-family: var(--custom-font-h, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: calc(var(--h3-size) + var(--custom-fsz-3)/2.5);
 }
 
 html[saved-theme="dark"] body h4 {
   font-family: var(--custom-font-h, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: calc(var(--h4-size) + var(--custom-fsz-3)/3);
 }
 
 html[saved-theme="dark"] body h5 {
   color: var(--h4-color, rgb(218, 218, 218));
   font-family: var(--custom-font-h, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: calc(var(--h5-size) + var(--custom-fsz-3)/3.5);
 }
 
 html[saved-theme="dark"] body h6 {
   color: var(--h4-color, rgb(218, 218, 218));
   font-family: var(--movies-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: calc(var(--h6-size) + var(--custom-fsz-3)/4);
 }
 
 html[saved-theme="dark"] body hr {
@@ -7292,6 +7317,10 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(255, 255, 255));
   font-weight: var(--nav-item-weight, 700);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
 }`,
     toc: `html[saved-theme="dark"] body li.depth-0 {
   font-weight: var(--nav-item-weight, 700);
@@ -7386,13 +7415,26 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-bg-g: var(--light-green, #ace573);
   --callout-bg-m: var(--light-gray, #bfbfbf);
   --callout-bg-r: var(--light-red, #ff8080);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
   --callout-gap: 0.5rem;
+  --callout-info: var(--callout-info, 8, 109, 221);
   --callout-margin: 4px;
   --callout-min-width: 200px;
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
   --callout-title-b: var(--dark-blue, #378dff);
   --callout-title-g: var(--dark-green, #52a543);
   --callout-title-m: var(--dark-gray, dimgray);
   --callout-title-r: var(--dark-red, #db3434);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-dot-pattern: var(--slant-blue, #566370);
   --checkbox-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgb(44, 99, 210)transform: scale(1.3)msFilter:'%3E%3Cpath d='M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z'%3E%3C/path%3E%3C/svg%3E");
   --checkm-btn: 1.4em;
@@ -14512,6 +14554,7 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   color: var(--text-accent-special, rgb(34, 34, 34));
+  font-size: calc(var(--h1-size) + var(--custom-fsz-3));
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -14520,28 +14563,38 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   font-family: var(--custom-font-h, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: calc(var(--h2-size) + var(--custom-fsz-3)/2);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(0, 128, 255);
+  border-left-color: rgb(0, 128, 255);
+  border-right-color: rgb(0, 128, 255);
+  border-top-color: rgb(0, 128, 255);
   color: var(--text-accent-special, rgb(0, 128, 255));
+  margin-bottom: 36.2432px;
 }
 
 html[saved-theme="light"] body h3 {
   font-family: var(--custom-font-h, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: calc(var(--h3-size) + var(--custom-fsz-3)/2.5);
 }
 
 html[saved-theme="light"] body h4 {
   font-family: var(--custom-font-h, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: calc(var(--h4-size) + var(--custom-fsz-3)/3);
 }
 
 html[saved-theme="light"] body h5 {
   color: var(--h4-color, rgb(34, 34, 34));
   font-family: var(--custom-font-h, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: calc(var(--h5-size) + var(--custom-fsz-3)/3.5);
 }
 
 html[saved-theme="light"] body h6 {
   color: var(--h4-color, rgb(34, 34, 34));
   font-family: var(--movies-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: calc(var(--h6-size) + var(--custom-fsz-3)/4);
 }
 
 html[saved-theme="light"] body hr {
@@ -14565,6 +14618,10 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(34, 34, 34));
   font-weight: var(--nav-item-weight, 700);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
 }`,
     toc: `html[saved-theme="light"] body li.depth-0 {
   font-weight: var(--nav-item-weight, 700);

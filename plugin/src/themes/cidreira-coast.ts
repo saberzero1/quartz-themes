@@ -65,8 +65,13 @@ export const theme: ThemeData = {
   --callout-example: var(--color-purple-rgb, 140, 108, 145);
   --callout-fail: var(--color-red-rgb, 175, 62, 77);
   --callout-info: var(--color-blue-rgb, 28, 129, 176);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-success: var(--color-green-rgb, 80, 193, 178);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
   --callout-todo: var(--color-blue-rgb, 28, 129, 176);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, rgb(244, 226, 205));
   --canvas-card-label-color: var(--text-faint, rgba(0, 0, 0, 0.3));
   --canvas-color-1: var(--color-red-rgb, 175, 62, 77);
@@ -336,7 +341,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, rgba(0, 0, 0, 0.9));
   --vault-profile-color: var(--text-normal, rgba(0, 0, 0, 0.9));
   --vault-profile-color-hover: var(--vault-profile-color, rgba(0, 0, 0, 0.9));
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -388,6 +395,14 @@ html body .markdown-rendered p > em, html em {
 }
 
 html body .markdown-rendered p > i, html i {
+  color: var(--color-red, rgb(175, 62, 77));
+  font-family: Petrona;
+  font-weight: 700;
+  outline: rgb(175, 62, 77) none 0px;
+  text-decoration-color: rgb(175, 62, 77);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
   color: var(--color-red, rgb(175, 62, 77));
   font-family: Petrona;
   font-weight: 700;
@@ -466,7 +481,13 @@ html body li.task-list-item[data-task="_"] {
   text-decoration-line: line-through;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-left-color: rgba(0, 0, 0, 0.9);
+  border-right-color: rgba(0, 0, 0, 0.9);
+  border-top-color: rgba(0, 0, 0, 0.9);
   color: rgba(0, 0, 0, 0.9);
+  font-family: Petrona;
+  font-size: 18px;
 }
 
 html body dl {
@@ -475,15 +496,27 @@ html body dl {
 }
 
 html body dt {
+  border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-left-color: rgba(0, 0, 0, 0.9);
+  border-right-color: rgba(0, 0, 0, 0.9);
+  border-top-color: rgba(0, 0, 0, 0.9);
   color: rgba(0, 0, 0, 0.9);
+  font-family: Petrona;
+  font-size: 18px;
 }
 
 html body ol > li {
   color: rgba(0, 0, 0, 0.9);
+  margin-left: 27px;
+  padding-bottom: var(--list-spacing, 1.35px);
+  padding-top: var(--list-spacing, 1.35px);
 }
 
 html body ul > li {
   color: rgba(0, 0, 0, 0.9);
+  margin-left: 27px;
+  padding-bottom: var(--list-spacing, 1.35px);
+  padding-top: var(--list-spacing, 1.35px);
 }
 
 html body ul.overflow {
@@ -498,8 +531,10 @@ html body ul.overflow {
 
 html body blockquote {
   background-color: var(--shade-10, rgba(0, 0, 0, 0.1));
+  color: var(--text-muted, rgba(0, 0, 0, 0.9));
   font-family: Petrona;
   font-style: var(--blockquote-font-style, italic);
+  line-height: 21.6px;
   padding-bottom: 11px;
   padding-top: 11px;
 }`,
@@ -528,7 +563,7 @@ html body table {
   margin-bottom: var(--editor-line-height-rem, 0px);
   margin-left: 185.031px;
   margin-right: 185.031px;
-  width: 203.359px;
+  text-align: justify;
 }
 
 html body td {
@@ -654,6 +689,7 @@ html body video {
   border-left-color: rgba(0, 0, 0, 0.5);
   border-right-color: rgba(0, 0, 0, 0.5);
   border-top-color: rgba(0, 0, 0, 0.5);
+  color: var(--text-muted, rgba(0, 0, 0, 0.5));
 }
 
 html body .footnotes {
@@ -666,6 +702,7 @@ html body .transclude {
   border-left-color: rgb(140, 108, 145);
   border-right-color: rgba(0, 0, 0, 0.9);
   border-top-color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.9);
 }
 
 html body .transclude-inner {
@@ -673,6 +710,7 @@ html body .transclude-inner {
   border-left-color: rgba(0, 0, 0, 0.9);
   border-right-color: rgba(0, 0, 0, 0.9);
   border-top-color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.9);
 }`,
     checkboxes: `html body html {
   --accent-d: calc(var(--accent-l) + 2%);
@@ -1856,7 +1894,10 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-bottom-right-radius: 31.5px;
   border-top-left-radius: 31.5px;
   border-top-right-radius: 31.5px;
+  color: var(--pill-color, rgb(120, 88, 111));
   font-family: "??", "??", Petrona, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 15.75px;
+  line-height: var(--line-height-tight, 15.75px);
 }
 
 html body a.internal-link.tag-link::before {
@@ -1865,8 +1906,22 @@ html body a.internal-link.tag-link::before {
 
 html body h1 {
   --font-weight: var(--h1-weight, 500);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgba(0, 0, 0, 0.9);
+  border-right-color: rgba(0, 0, 0, 0.9);
+  border-top-color: rgba(0, 0, 0, 0.9);
   color: var(--h1-color, rgba(0, 0, 0, 0.9));
   font-family: var(--h1-font, Petrona);
+  font-size: var(--h1-size, 29.124px);
+  font-weight: var(--h1-weight, 500);
+  letter-spacing: var(--h1-letter-spacing, -0.43686px);
+  line-height: var(--h1-line-height, 34.9488px);
+  margin-bottom: calc(var(--h2-margin-bottom)*var(--editor-line-height-small-rem));
+  margin-top: calc(var(--h2-margin-top)*var(--editor-line-height-small-rem));
+  padding-bottom: 5px;
+  padding-top: 15px;
 }
 
 html body h1.article-title {
@@ -1877,37 +1932,107 @@ html body h1.article-title {
 
 html body h2 {
   --font-weight: var(--h2-weight, 500);
+  border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-left-color: rgba(0, 0, 0, 0.9);
+  border-right-color: rgba(0, 0, 0, 0.9);
+  border-top-color: rgba(0, 0, 0, 0.9);
   color: var(--h2-color, rgba(0, 0, 0, 0.9));
   font-family: var(--h2-font, Petrona);
+  font-size: var(--h2-size, 26.316px);
+  font-weight: var(--h2-weight, 500);
+  letter-spacing: var(--h2-letter-spacing, -0.289476px);
+  line-height: var(--h2-line-height, 31.5792px);
+  margin-bottom: calc(var(--h2-margin-bottom)*var(--editor-line-height-small-rem));
+  margin-top: calc(var(--h2-margin-top)*var(--editor-line-height-small-rem));
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-left-color: rgba(0, 0, 0, 0.9);
+  border-right-color: rgba(0, 0, 0, 0.9);
+  border-top-color: rgba(0, 0, 0, 0.9);
   color: var(--inline-title-color, rgba(0, 0, 0, 0.9));
   font-family: var(--inline-title-font, Petrona);
+  font-size: var(--inline-title-size, 29.124px);
+  font-weight: var(--inline-title-weight, 500);
+  letter-spacing: -0.43686px;
+  line-height: var(--inline-title-line-height, 34.9488px);
+  margin-bottom: 14.562px;
 }
 
 html body h3 {
   --font-weight: var(--h3-weight, 500);
+  border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-left-color: rgba(0, 0, 0, 0.9);
+  border-right-color: rgba(0, 0, 0, 0.9);
+  border-top-color: rgba(0, 0, 0, 0.9);
   color: var(--h3-color, rgba(0, 0, 0, 0.9));
   font-family: var(--h3-font, Petrona);
+  font-size: var(--h3-size, 23.724px);
+  font-weight: var(--h3-weight, 500);
+  letter-spacing: var(--h3-letter-spacing, -0.189792px);
+  line-height: var(--h3-line-height, 30.8412px);
+  margin-bottom: calc(var(--h3-margin-bottom)*var(--editor-line-height-small-rem));
+  margin-left: 11px;
+  margin-top: calc(var(--h3-margin-top)*var(--editor-line-height-small-rem));
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 html body h4 {
   --font-weight: var(--h4-weight, 500);
+  border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-left-color: rgba(0, 0, 0, 0.9);
+  border-right-color: rgba(0, 0, 0, 0.9);
+  border-top-color: rgba(0, 0, 0, 0.9);
   color: var(--h4-color, rgba(0, 0, 0, 0.9));
   font-family: var(--h4-font, Petrona);
+  font-size: var(--h4-size, 21.384px);
+  font-weight: var(--h4-weight, 500);
+  letter-spacing: var(--h4-letter-spacing, -0.10692px);
+  line-height: var(--h4-line-height, 29.9376px);
+  margin-bottom: calc(var(--h4-margin-bottom)*var(--editor-line-height-small-rem));
+  margin-left: 22px;
+  margin-top: calc(var(--h4-margin-top)*var(--editor-line-height-small-rem));
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 html body h5 {
   --font-weight: var(--h5-weight, 500);
+  border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-left-color: rgba(0, 0, 0, 0.9);
+  border-right-color: rgba(0, 0, 0, 0.9);
+  border-top-color: rgba(0, 0, 0, 0.9);
   color: var(--h5-color, rgba(0, 0, 0, 0.9));
   font-family: var(--h5-font, Petrona);
+  font-size: var(--h5-size, 19.368px);
+  font-weight: var(--h5-weight, 500);
+  letter-spacing: var(--h5-letter-spacing, -0.038736px);
+  line-height: var(--h5-line-height, 29.052px);
+  margin-bottom: calc(var(--h5-margin-bottom)*var(--editor-line-height-small-rem));
+  margin-top: calc(var(--h5-margin-top)*var(--editor-line-height-small-rem));
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 html body h6 {
   --font-weight: var(--h6-weight, 500);
+  border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-left-color: rgba(0, 0, 0, 0.9);
+  border-right-color: rgba(0, 0, 0, 0.9);
+  border-top-color: rgba(0, 0, 0, 0.9);
   color: var(--text-normal, rgba(0, 0, 0, 0.9));
   font-family: var(--h6-font, Petrona);
+  font-size: var(--h6-size, 18px);
+  font-weight: var(--h6-weight, 500);
+  line-height: var(--h6-line-height, 27px);
+  margin-bottom: calc(var(--h6-margin-bottom)*var(--editor-line-height-small-rem));
+  margin-top: calc(var(--h6-margin-top)*var(--editor-line-height-small-rem));
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 html body hr {
@@ -1935,6 +2060,22 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   color: var(--text-normal, rgba(0, 0, 0, 0.9));
   font-family: Quicksand;
   font-weight: var(--nav-item-weight, 500);
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgba(0, 0, 0, 0.9);
@@ -1959,10 +2100,15 @@ html body li.depth-0 {
   border-top-left-radius: var(--radius-m, 8px);
   color: var(--text-muted, rgba(0, 0, 0, 0.5));
   font-family: Quicksand;
+  font-size: var(--status-bar-font-size, 11px);
+  padding-bottom: 8px;
+  padding-left: 0px;
+  padding-top: 8px;
 }
 
 html body footer ul li a {
   color: rgba(0, 0, 0, 0.5);
+  font-size: 11px;
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgba(0, 0, 0, 0.9);
@@ -2071,6 +2217,15 @@ html body .bases-table thead th {
   font-family: Petrona;
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+  border-left-color: rgba(0, 0, 0, 0.5);
+  border-right-color: rgba(0, 0, 0, 0.5);
+  border-top-color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Petrona;
+}
+
 html body .metadata-properties {
   border-bottom-color: rgba(0, 0, 0, 0.5);
   border-left-color: rgba(0, 0, 0, 0.5);
@@ -2078,6 +2233,18 @@ html body .metadata-properties {
   border-top-color: rgba(0, 0, 0, 0.5);
   color: rgba(0, 0, 0, 0.5);
   font-family: Petrona;
+}
+
+html body .metadata-property-key {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: var(--metadata-label-font, "??", "??", Petrona, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: 18px;
+}
+
+html body .metadata-property-value {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: var(--metadata-input-font, "??", "??", Petrona, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: 18px;
 }
 
 html body .note-properties {
@@ -2141,8 +2308,18 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-left-color: rgba(0, 0, 0, 0.9);
+  border-right-color: rgba(0, 0, 0, 0.9);
+  border-top-color: rgba(0, 0, 0, 0.9);
   color: var(--text-normal, rgba(0, 0, 0, 0.9));
   font-family: "??", "??", Petrona, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  margin-left: 7px;
+  padding-bottom: 3px;
+  padding-top: 3px;
 }
 
 html body abbr {

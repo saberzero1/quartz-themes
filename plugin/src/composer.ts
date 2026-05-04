@@ -287,12 +287,12 @@ function transformCheckboxCSS(css: string, iconFonts: string[]): string {
           `${sel} input[type="checkbox"] {\n` +
           `  mask-image: none !important;\n` +
           `  -webkit-mask-image: none !important;\n` +
-          `  background-color: transparent !important;\n` +
-          `  width: 0 !important;\n` +
-          `  height: 0 !important;\n` +
-          `  margin: 0 !important;\n` +
-          `  padding: 0 !important;\n` +
-          `  border: none !important;\n` +
+          `  background-color: transparent;\n` +
+          `  width: 0;\n` +
+          `  height: 0;\n` +
+          `  margin: 0;\n` +
+          `  padding: 0;\n` +
+          `  border: none;\n` +
           `  overflow: hidden;\n` +
           `}`,
       )

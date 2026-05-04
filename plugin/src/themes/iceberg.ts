@@ -28,6 +28,19 @@ export const theme: ThemeData = {
   --blue: #84a0c6;
   --brightBlack: #6b7089;
   --brightWhite: #d2d4de;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #161821);
   --canvas-card-label-color: var(--text-faint, #6b7089);
   --caret-color: var(--text-normal, #c6c8d1);
@@ -179,7 +192,9 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, #c6c8d1);
   --vault-profile-color-hover: var(--vault-profile-color, #c6c8d1);
   --white: #c6c8d1;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -257,6 +272,14 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(210, 212, 222);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--text-strong, rgb(210, 212, 222));
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-weight: 700;
+  outline: rgb(210, 212, 222) none 0px;
+  text-decoration-color: rgb(210, 212, 222);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--text-strong, rgb(210, 212, 222));
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
@@ -313,19 +336,31 @@ html body a.internal-link.broken {
   outline: rgb(226, 164, 120) none 0px;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(198, 200, 209);
+  border-left-color: rgb(198, 200, 209);
+  border-right-color: rgb(198, 200, 209);
+  border-top-color: rgb(198, 200, 209);
   color: rgb(198, 200, 209);
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 html body dt {
+  border-bottom-color: rgb(198, 200, 209);
+  border-left-color: rgb(198, 200, 209);
+  border-right-color: rgb(198, 200, 209);
+  border-top-color: rgb(198, 200, 209);
   color: rgb(198, 200, 209);
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 html body ol > li {
   color: rgb(198, 200, 209);
+  margin-left: 26.6953px;
 }
 
 html body ul > li {
   color: rgb(198, 200, 209);
+  margin-left: 26.6953px;
 }
 
 html body ul.overflow {
@@ -339,6 +374,7 @@ html body ul.overflow {
 }
 
 html body blockquote {
+  color: var(--text-muted, rgb(107, 112, 137));
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }`,
     tables: `html body .table-container {
@@ -351,7 +387,6 @@ html body blockquote {
 html body table {
   color: rgb(198, 200, 209);
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  width: 195.062px;
 }
 
 html body td {
@@ -407,6 +442,7 @@ html body video {
   border-left-color: rgb(107, 112, 137);
   border-right-color: rgb(107, 112, 137);
   border-top-color: rgb(107, 112, 137);
+  color: var(--text-muted, rgb(107, 112, 137));
 }
 
 html body .footnotes {
@@ -419,6 +455,7 @@ html body .transclude {
   border-left-color: rgb(132, 160, 198);
   border-right-color: rgb(198, 200, 209);
   border-top-color: rgb(198, 200, 209);
+  color: rgb(198, 200, 209);
 }
 
 html body .transclude-inner {
@@ -426,6 +463,7 @@ html body .transclude-inner {
   border-left-color: rgb(198, 200, 209);
   border-right-color: rgb(198, 200, 209);
   border-top-color: rgb(198, 200, 209);
+  color: rgb(198, 200, 209);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(107, 112, 137);
@@ -1271,6 +1309,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color-hover: var(--tag-color-hover, #e2a478);
   --pill-color-remove: var(--tag-color, #e2a478);
   --pill-color-remove-hover: var(--tag-color-hover, #e2a478);
+  color: var(--pill-color, rgb(226, 164, 120));
 }
 
 html body a.internal-link.tag-link::before {
@@ -1278,8 +1317,15 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(198, 200, 209);
+  border-left-color: rgb(198, 200, 209);
+  border-right-color: rgb(198, 200, 209);
+  border-top-color: rgb(198, 200, 209);
   color: var(--text, rgb(198, 200, 209));
   font-family: var(--h1-font, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif);
+  font-size: var(--h1-size, 25.6px);
+  letter-spacing: var(--h1-letter-spacing, -0.384px);
+  line-height: var(--h1-line-height, 30.72px);
 }
 
 html body h1.article-title {
@@ -1287,31 +1333,67 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(198, 200, 209);
+  border-left-color: rgb(198, 200, 209);
+  border-right-color: rgb(198, 200, 209);
+  border-top-color: rgb(198, 200, 209);
   color: var(--text, rgb(198, 200, 209));
   font-family: var(--h2-font, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif);
+  font-size: var(--h2-size, 22.4px);
+  letter-spacing: var(--h2-letter-spacing, -0.2464px);
+  line-height: var(--h2-line-height, 26.88px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(198, 200, 209);
+  border-left-color: rgb(198, 200, 209);
+  border-right-color: rgb(198, 200, 209);
+  border-top-color: rgb(198, 200, 209);
   color: var(--inline-title-color, rgb(198, 200, 209));
   font-family: var(--inline-title-font, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif);
 }
 
 html body h3 {
+  border-bottom-color: rgb(198, 200, 209);
+  border-left-color: rgb(198, 200, 209);
+  border-right-color: rgb(198, 200, 209);
+  border-top-color: rgb(198, 200, 209);
   color: var(--text, rgb(198, 200, 209));
   font-family: var(--h3-font, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif);
+  font-size: var(--h3-size, 19.2px);
+  letter-spacing: var(--h3-letter-spacing, -0.1536px);
+  line-height: var(--h3-line-height, 24.96px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(198, 200, 209);
+  border-left-color: rgb(198, 200, 209);
+  border-right-color: rgb(198, 200, 209);
+  border-top-color: rgb(198, 200, 209);
   color: var(--text, rgb(198, 200, 209));
   font-family: var(--h4-font, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif);
+  font-size: var(--h4-size, 16px);
+  letter-spacing: var(--h4-letter-spacing, -0.08px);
+  line-height: var(--h4-line-height, 22.4px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(198, 200, 209);
+  border-left-color: rgb(198, 200, 209);
+  border-right-color: rgb(198, 200, 209);
+  border-top-color: rgb(198, 200, 209);
   color: var(--text, rgb(198, 200, 209));
   font-family: var(--h5-font, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif);
+  font-size: var(--h5-size, 16px);
+  letter-spacing: var(--h5-letter-spacing, -0.032px);
+  line-height: var(--h5-line-height, 24px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(198, 200, 209);
+  border-left-color: rgb(198, 200, 209);
+  border-right-color: rgb(198, 200, 209);
+  border-top-color: rgb(198, 200, 209);
   color: var(--text, rgb(198, 200, 209));
   font-family: var(--h6-font, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif);
 }`,
@@ -1324,6 +1406,22 @@ html body h6 {
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(107, 112, 137));
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(198, 200, 209);
@@ -1434,6 +1532,15 @@ html body .canvas-sidebar {
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(107, 112, 137);
+  border-left-color: rgb(107, 112, 137);
+  border-right-color: rgb(107, 112, 137);
+  border-top-color: rgb(107, 112, 137);
+  color: rgb(107, 112, 137);
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(107, 112, 137);
   border-left-color: rgb(107, 112, 137);
@@ -1441,6 +1548,14 @@ html body .metadata-properties {
   border-top-color: rgb(107, 112, 137);
   color: rgb(107, 112, 137);
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+html body .metadata-property-key {
+  color: rgb(107, 112, 137);
+}
+
+html body .metadata-property-value {
+  color: rgb(107, 112, 137);
 }
 
 html body .note-properties-key {
@@ -1499,7 +1614,14 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(198, 200, 209);
+  border-left-color: rgb(198, 200, 209);
+  border-right-color: rgb(198, 200, 209);
+  border-top-color: rgb(198, 200, 209);
   color: var(--text-normal, rgb(198, 200, 209));
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.2px;
 }
 
 html body abbr {

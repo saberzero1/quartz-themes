@@ -375,7 +375,9 @@ export const theme: ThemeData = {
   --vault-name-font-weight: 500;
   --vault-profile-color: var(--text-normal, #d8dce3);
   --vault-profile-color-hover: var(--vault-profile-color, #d8dce3);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -425,6 +427,13 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, rgb(216, 220, 227));
+  font-family: "??", "??", Arial, Archivo, sans-serif;
+  outline: rgb(216, 220, 227) none 0px;
+  text-decoration-color: rgb(216, 220, 227);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--italic-color, rgb(216, 220, 227));
   font-family: "??", "??", Arial, Archivo, sans-serif;
   outline: rgb(216, 220, 227) none 0px;
@@ -490,19 +499,31 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(27, 111, 228, 0.3));
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(216, 220, 227);
+  border-left-color: rgb(216, 220, 227);
+  border-right-color: rgb(216, 220, 227);
+  border-top-color: rgb(216, 220, 227);
   color: rgb(216, 220, 227);
+  font-family: "??", "??", Arial, Archivo, sans-serif;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(216, 220, 227);
+  border-left-color: rgb(216, 220, 227);
+  border-right-color: rgb(216, 220, 227);
+  border-top-color: rgb(216, 220, 227);
   color: rgb(216, 220, 227);
+  font-family: "??", "??", Arial, Archivo, sans-serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(216, 220, 227);
+  margin-left: 26.6953px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(216, 220, 227);
+  margin-left: 26.6953px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -516,6 +537,7 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(216, 220, 227));
   font-family: "??", "??", Arial, Archivo, sans-serif;
   font-style: var(--blockquote-font-style, italic);
 }`,
@@ -534,7 +556,6 @@ html[saved-theme="dark"] body table {
   background-color: var(--background-secondary-alt, rgb(36, 38, 41));
   color: rgb(216, 220, 227);
   font-family: "??", "??", Arial, Archivo, sans-serif;
-  width: 204.531px;
 }
 
 html[saved-theme="dark"] body td {
@@ -636,10 +657,12 @@ html[saved-theme="dark"] body video {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-left-color: rgb(208, 212, 217);
+  border-radius: 0px;
   border-right-color: rgb(208, 212, 217);
   border-top-color: rgb(208, 212, 217);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  color: var(--text-muted, rgb(208, 212, 217));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -652,6 +675,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(27, 111, 228);
   border-right-color: rgb(216, 220, 227);
   border-top-color: rgb(216, 220, 227);
+  color: rgb(216, 220, 227);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -659,6 +683,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(216, 220, 227);
   border-right-color: rgb(216, 220, 227);
   border-top-color: rgb(216, 220, 227);
+  color: rgb(216, 220, 227);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "??", "??", Arial, Archivo, sans-serif;
@@ -2088,6 +2113,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-top-color: rgba(27, 111, 228, 0.15);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  color: var(--pill-color, rgb(95, 142, 236));
   font-family: "??", "??", "??", Arial, Archivo, sans-serif;
 }
 
@@ -2097,8 +2123,19 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   --font-weight: var(--h1-weight, 500);
+  border-bottom-color: rgba(218, 225, 234, 0.192);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(216, 220, 227);
+  border-right-color: rgb(216, 220, 227);
+  border-top-color: rgb(216, 220, 227);
   color: var(--h1-color, rgb(216, 220, 227));
   font-family: var(--h1-font, "Linux Libertine", Georgia, Times, serif);
+  font-size: var(--h1-size, 27.2px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h1-letter-spacing, -0.408px);
+  line-height: var(--h1-line-height, 35.36px);
+  margin-bottom: 6.8px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -2109,37 +2146,93 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, bold);
+  border-bottom-color: rgb(216, 220, 227);
+  border-left-color: rgb(216, 220, 227);
+  border-right-color: rgb(216, 220, 227);
+  border-top-color: rgb(216, 220, 227);
   color: var(--h2-color, rgb(216, 220, 227));
   font-family: var(--h2-font, "??", "??", Arial, Archivo, sans-serif);
+  font-size: var(--h2-size, 20px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h2-letter-spacing, -0.22px);
+  line-height: var(--h2-line-height, 24px);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgba(218, 225, 234, 0.192);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(216, 220, 227);
+  border-right-color: rgb(216, 220, 227);
+  border-top-color: rgb(216, 220, 227);
   color: var(--inline-title-color, rgb(216, 220, 227));
   font-family: var(--inline-title-font, "Linux Libertine", Georgia, Times, serif);
+  font-size: var(--inline-title-size, 27.2px);
+  font-weight: var(--inline-title-weight, 500);
+  letter-spacing: -0.408px;
+  line-height: var(--inline-title-line-height, 32.64px);
+  margin-bottom: 13.6px;
 }
 
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, bold);
+  border-bottom-color: rgb(216, 220, 227);
+  border-left-color: rgb(216, 220, 227);
+  border-right-color: rgb(216, 220, 227);
+  border-top-color: rgb(216, 220, 227);
   color: var(--h3-color, rgb(216, 220, 227));
   font-family: var(--h3-font, "??", "??", Arial, Archivo, sans-serif);
+  font-size: var(--h3-size, 18.72px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h3-letter-spacing, -0.14976px);
+  line-height: var(--h3-line-height, 24.336px);
 }
 
 html[saved-theme="dark"] body h4 {
   --font-weight: var(--h4-weight, bold);
+  border-bottom-color: rgb(216, 220, 227);
+  border-left-color: rgb(216, 220, 227);
+  border-right-color: rgb(216, 220, 227);
+  border-top-color: rgb(216, 220, 227);
   color: var(--h4-color, rgb(216, 220, 227));
   font-family: var(--h4-font, "??", "??", Arial, Archivo, sans-serif);
+  font-size: var(--h4-size, 17.92px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h4-letter-spacing, -0.0896px);
+  line-height: var(--h4-line-height, 25.088px);
 }
 
 html[saved-theme="dark"] body h5 {
   --font-weight: var(--h5-weight, bold);
+  border-bottom-color: rgb(216, 220, 227);
+  border-left-color: rgb(216, 220, 227);
+  border-right-color: rgb(216, 220, 227);
+  border-top-color: rgb(216, 220, 227);
   color: var(--h5-color, rgb(216, 220, 227));
   font-family: var(--h5-font, "??", "??", Arial, Archivo, sans-serif);
+  font-size: var(--h5-size, 16px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h5-letter-spacing, -0.032px);
+  line-height: var(--h5-line-height, 24px);
 }
 
 html[saved-theme="dark"] body h6 {
   --font-weight: var(--h6-weight, bold);
+  background: rgba(117, 147, 189, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--h6-background, rgba(117, 147, 189, 0.15));
+  border-bottom-color: rgb(216, 220, 227);
+  border-left-color: rgb(216, 220, 227);
+  border-right-color: rgb(216, 220, 227);
+  border-top-color: rgb(216, 220, 227);
   color: var(--h6-color, rgb(216, 220, 227));
   font-family: var(--h6-font, "??", "??", Arial, Archivo, sans-serif);
+  font-size: var(--h6-size, 15.84px);
+  font-weight: var(--font-weight, 700);
+  line-height: var(--h6-line-height, 23.76px);
+  padding-bottom: 3.168px;
+  padding-left: 3.168px;
+  padding-right: 3.168px;
+  padding-top: 3.168px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -2181,6 +2274,22 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(208, 212, 217));
   font-family: "??", "??", "??", Arial, Archivo, sans-serif;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(216, 220, 227);
@@ -2318,6 +2427,15 @@ html[saved-theme="dark"] body .canvas-sidebar {
   font-family: "??", "??", Arial, Archivo, sans-serif;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(208, 212, 217);
+  border-left-color: rgb(208, 212, 217);
+  border-right-color: rgb(208, 212, 217);
+  border-top-color: rgb(208, 212, 217);
+  color: rgb(208, 212, 217);
+  font-family: "??", "??", Arial, Archivo, sans-serif;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(208, 212, 217);
   border-left-color: rgb(208, 212, 217);
@@ -2325,6 +2443,16 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(208, 212, 217);
   color: rgb(208, 212, 217);
   font-family: "??", "??", Arial, Archivo, sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(208, 212, 217);
+  font-family: var(--metadata-label-font, "??", "??", "??", Arial, Archivo, sans-serif);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(208, 212, 217);
+  font-family: var(--metadata-input-font, "??", "??", "??", Arial, Archivo, sans-serif);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -2395,6 +2523,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(216, 220, 227);
+  border-left-color: rgb(216, 220, 227);
+  border-right-color: rgb(216, 220, 227);
+  border-top-color: rgb(216, 220, 227);
   color: var(--text-normal, rgb(216, 220, 227));
   font-family: "??", "??", "??", Arial, Archivo, sans-serif;
 }
@@ -2735,7 +2867,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --titlebar-text-color: var(--text-muted, #5a5a5a);
   --vault-name-font-size: 1.4em;
   --vault-name-font-weight: 500;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -2760,6 +2894,10 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  font-family: "??", "??", Arial, Archivo, sans-serif;
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   font-family: "??", "??", Arial, Archivo, sans-serif;
 }
 
@@ -2812,6 +2950,21 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration: rgba(27, 111, 228, 0.3);
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(27, 111, 228, 0.3));
 }`,
+    lists: `html[saved-theme="light"] body dd {
+  font-family: "??", "??", Arial, Archivo, sans-serif;
+}
+
+html[saved-theme="light"] body dt {
+  font-family: "??", "??", Arial, Archivo, sans-serif;
+}
+
+html[saved-theme="light"] body ol > li {
+  margin-left: 26.6953px;
+}
+
+html[saved-theme="light"] body ul > li {
+  margin-left: 26.6953px;
+}`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: var(--text-faint, rgb(152, 152, 152));
 }
@@ -2827,7 +2980,6 @@ html[saved-theme="light"] body blockquote {
 html[saved-theme="light"] body table {
   background-color: var(--background-secondary-alt, rgb(248, 249, 250));
   font-family: "??", "??", Arial, Archivo, sans-serif;
-  width: 204.531px;
 }
 
 html[saved-theme="light"] body td {
@@ -2899,10 +3051,12 @@ html[saved-theme="light"] body figure {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-left-color: rgb(90, 90, 90);
+  border-radius: 0px;
   border-right-color: rgb(90, 90, 90);
   border-top-color: rgb(90, 90, 90);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  color: var(--text-muted, rgb(90, 90, 90));
 }
 
 html[saved-theme="light"] body .transclude {
@@ -3885,6 +4039,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-top-color: rgba(27, 111, 228, 0.15);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  color: var(--pill-color, rgb(24, 85, 205));
   font-family: "??", "??", "??", Arial, Archivo, sans-serif;
 }
 
@@ -3894,7 +4049,15 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   --font-weight: var(--h1-weight, 500);
+  border-bottom-color: rgb(162, 169, 177);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
   font-family: var(--h1-font, "Linux Libertine", Georgia, Times, serif);
+  font-size: var(--h1-size, 27.2px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h1-letter-spacing, -0.408px);
+  line-height: var(--h1-line-height, 35.36px);
+  margin-bottom: 6.8px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -3905,30 +4068,63 @@ html[saved-theme="light"] body h1.article-title {
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, bold);
   font-family: var(--h2-font, "??", "??", Arial, Archivo, sans-serif);
+  font-size: var(--h2-size, 20px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h2-letter-spacing, -0.22px);
+  line-height: var(--h2-line-height, 24px);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(162, 169, 177);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
   font-family: var(--inline-title-font, "Linux Libertine", Georgia, Times, serif);
+  font-size: var(--inline-title-size, 27.2px);
+  font-weight: var(--inline-title-weight, 500);
+  letter-spacing: -0.408px;
+  line-height: var(--inline-title-line-height, 32.64px);
+  margin-bottom: 13.6px;
 }
 
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, bold);
   font-family: var(--h3-font, "??", "??", Arial, Archivo, sans-serif);
+  font-size: var(--h3-size, 18.72px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h3-letter-spacing, -0.14976px);
+  line-height: var(--h3-line-height, 24.336px);
 }
 
 html[saved-theme="light"] body h4 {
   --font-weight: var(--h4-weight, bold);
   font-family: var(--h4-font, "??", "??", Arial, Archivo, sans-serif);
+  font-size: var(--h4-size, 17.92px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h4-letter-spacing, -0.0896px);
+  line-height: var(--h4-line-height, 25.088px);
 }
 
 html[saved-theme="light"] body h5 {
   --font-weight: var(--h5-weight, bold);
   font-family: var(--h5-font, "??", "??", Arial, Archivo, sans-serif);
+  font-size: var(--h5-size, 16px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h5-letter-spacing, -0.032px);
+  line-height: var(--h5-line-height, 24px);
 }
 
 html[saved-theme="light"] body h6 {
   --font-weight: var(--h6-weight, bold);
+  background: rgb(235, 235, 210) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--h6-background, rgb(235, 235, 210));
   font-family: var(--h6-font, "??", "??", Arial, Archivo, sans-serif);
+  font-size: var(--h6-size, 15.84px);
+  font-weight: var(--font-weight, 700);
+  line-height: var(--h6-line-height, 23.76px);
+  padding-bottom: 3.168px;
+  padding-left: 3.168px;
+  padding-right: 3.168px;
+  padding-top: 3.168px;
 }
 
 html[saved-theme="light"] body hr {
@@ -3970,6 +4166,14 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(90, 90, 90));
   font-family: "??", "??", "??", Arial, Archivo, sans-serif;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(90, 90, 90);
@@ -4059,6 +4263,15 @@ html[saved-theme="light"] body .breadcrumb-element p {
   font-family: "??", "??", Arial, Archivo, sans-serif;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(90, 90, 90);
+  border-left-color: rgb(90, 90, 90);
+  border-right-color: rgb(90, 90, 90);
+  border-top-color: rgb(90, 90, 90);
+  color: rgb(90, 90, 90);
+  font-family: "??", "??", Arial, Archivo, sans-serif;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(90, 90, 90);
   border-left-color: rgb(90, 90, 90);
@@ -4066,6 +4279,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(90, 90, 90);
   color: rgb(90, 90, 90);
   font-family: "??", "??", Arial, Archivo, sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(90, 90, 90);
+  font-family: var(--metadata-label-font, "??", "??", "??", Arial, Archivo, sans-serif);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(90, 90, 90);
+  font-family: var(--metadata-input-font, "??", "??", "??", Arial, Archivo, sans-serif);
 }
 
 html[saved-theme="light"] body .note-properties {

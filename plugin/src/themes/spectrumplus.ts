@@ -42,6 +42,19 @@ export const theme: ThemeData = {
   --bases-table-header-background: var(--background-primary, rgb(36, 36, 36));
   --bases-table-summary-background: var(--background-primary, rgb(36, 36, 36));
   --blockquote-border-color: var(--interactive-accent, rgb(255, 190, 0));
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, rgb(36, 36, 36));
   --caret-color: var(--text-normal, rgb(201, 201, 201));
   --chart-color-1: rgb(245, 112, 76);
@@ -317,6 +330,14 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(237, 228, 130);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--accent-3, rgb(237, 228, 130));
+  font-family: "JetBrains Mono";
+  font-weight: 900;
+  outline: rgb(237, 228, 130) none 0px;
+  text-decoration-color: rgb(237, 228, 130);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--accent-1, rgb(245, 112, 76));
   font-family: "JetBrains Mono";
@@ -368,19 +389,33 @@ html body a.internal-link.broken {
   outline: rgb(255, 190, 0) none 0px;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(201, 201, 201);
+  border-left-color: rgb(201, 201, 201);
+  border-right-color: rgb(201, 201, 201);
+  border-top-color: rgb(201, 201, 201);
   color: rgb(201, 201, 201);
+  font-family: "JetBrains Mono";
 }
 
 html body dt {
+  border-bottom-color: rgb(201, 201, 201);
+  border-left-color: rgb(201, 201, 201);
+  border-right-color: rgb(201, 201, 201);
+  border-top-color: rgb(201, 201, 201);
   color: rgb(201, 201, 201);
+  font-family: "JetBrains Mono";
 }
 
 html body ol > li {
   color: rgb(201, 201, 201);
+  margin-bottom: var(--size-2-5, 10px);
+  margin-left: 28.8001px;
 }
 
 html body ul > li {
   color: rgb(201, 201, 201);
+  margin-bottom: var(--size-2-5, 10px);
+  margin-left: 28.8001px;
 }
 
 html body ul.overflow {
@@ -394,6 +429,7 @@ html body ul.overflow {
 }
 
 html body blockquote {
+  color: var(--blockquote-color, rgb(201, 201, 201));
   font-family: "JetBrains Mono";
 }`,
     tables: `html body .table-container {
@@ -406,7 +442,6 @@ html body blockquote {
 html body table {
   color: rgb(201, 201, 201);
   font-family: "JetBrains Mono";
-  width: 150.219px;
 }
 
 html body tbody tr:nth-child(even) {
@@ -476,6 +511,7 @@ html body video {
   border-left-color: rgb(0, 0, 0);
   border-left-style: solid;
   border-left-width: 1px;
+  border-radius: 8.75px;
   border-right-color: rgb(0, 0, 0);
   border-right-style: solid;
   border-right-width: 1px;
@@ -499,6 +535,7 @@ html body .transclude {
   border-bottom-width: 1px;
   border-left-color: rgb(0, 0, 0);
   border-left-width: 1px;
+  border-radius: 10px;
   border-right-color: rgb(0, 0, 0);
   border-right-style: solid;
   border-right-width: 1px;
@@ -507,6 +544,7 @@ html body .transclude {
   border-top-right-radius: 10px;
   border-top-style: solid;
   border-top-width: 1px;
+  color: rgb(201, 201, 201);
 }
 
 html body .transclude-inner {
@@ -517,6 +555,7 @@ html body .transclude-inner {
   border-right-style: solid;
   border-top-color: rgb(201, 201, 201);
   border-top-style: solid;
+  color: rgb(201, 201, 201);
 }`,
     checkboxes: `html body .katex-display > .katex {
   font-family: "JetBrains Mono";
@@ -1378,6 +1417,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color-hover: var(--tag-color-hover, rgb(255, 190, 0));
   --pill-color-remove: var(--tag-color, rgb(255, 190, 0));
   --pill-color-remove-hover: var(--tag-color-hover, rgb(255, 190, 0));
+  color: var(--pill-color, rgb(255, 190, 0));
   font-family: "JetBrains Mono";
 }
 
@@ -1386,6 +1426,10 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(245, 112, 76);
+  border-left-color: rgb(245, 112, 76);
+  border-right-color: rgb(245, 112, 76);
+  border-top-color: rgb(245, 112, 76);
   color: var(--accent-1, rgb(245, 112, 76));
   font-family: var(--h1-font, "JetBrains Mono");
 }
@@ -1395,31 +1439,55 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(245, 161, 76);
+  border-left-color: rgb(245, 161, 76);
+  border-right-color: rgb(245, 161, 76);
+  border-top-color: rgb(245, 161, 76);
   color: var(--accent-2, rgb(245, 161, 76));
   font-family: var(--h2-font, "JetBrains Mono");
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(201, 201, 201);
+  border-left-color: rgb(201, 201, 201);
+  border-right-color: rgb(201, 201, 201);
+  border-top-color: rgb(201, 201, 201);
   color: var(--inline-title-color, rgb(201, 201, 201));
   font-family: var(--inline-title-font, "JetBrains Mono");
 }
 
 html body h3 {
+  border-bottom-color: rgb(237, 228, 130);
+  border-left-color: rgb(237, 228, 130);
+  border-right-color: rgb(237, 228, 130);
+  border-top-color: rgb(237, 228, 130);
   color: var(--accent-3, rgb(237, 228, 130));
   font-family: var(--h3-font, "JetBrains Mono");
 }
 
 html body h4 {
+  border-bottom-color: rgb(170, 222, 98);
+  border-left-color: rgb(170, 222, 98);
+  border-right-color: rgb(170, 222, 98);
+  border-top-color: rgb(170, 222, 98);
   color: var(--accent-4, rgb(170, 222, 98));
   font-family: var(--h4-font, "JetBrains Mono");
 }
 
 html body h5 {
+  border-bottom-color: rgb(98, 222, 172);
+  border-left-color: rgb(98, 222, 172);
+  border-right-color: rgb(98, 222, 172);
+  border-top-color: rgb(98, 222, 172);
   color: var(--accent-5, rgb(98, 222, 172));
   font-family: var(--h5-font, "JetBrains Mono");
 }
 
 html body h6 {
+  border-bottom-color: rgb(98, 183, 222);
+  border-left-color: rgb(98, 183, 222);
+  border-right-color: rgb(98, 183, 222);
+  border-top-color: rgb(98, 183, 222);
   color: var(--accent-6, rgb(98, 183, 222));
   font-family: var(--h6-font, "JetBrains Mono");
 }`,
@@ -1432,6 +1500,14 @@ html body h6 {
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "JetBrains Mono";
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(201, 201, 201);
@@ -1503,8 +1579,20 @@ html body .canvas-sidebar {
   font-family: "JetBrains Mono";
 }
 
+html body .metadata-container .metadata-property {
+  font-family: "JetBrains Mono";
+}
+
 html body .metadata-properties {
   font-family: "JetBrains Mono";
+}
+
+html body .metadata-property-key {
+  font-family: var(--metadata-label-font, "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}
+
+html body .metadata-property-value {
+  font-family: var(--metadata-input-font, "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html body .note-properties-tags {
@@ -1551,8 +1639,13 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(201, 201, 201);
+  border-left-color: rgb(201, 201, 201);
+  border-right-color: rgb(201, 201, 201);
+  border-top-color: rgb(201, 201, 201);
   color: var(--text-normal, rgb(201, 201, 201));
   font-family: "JetBrains Mono";
+  line-height: 27.2px;
 }
 
 html body abbr {

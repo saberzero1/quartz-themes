@@ -248,6 +248,19 @@ export const theme: ThemeData = {
   --blue: #4c86a8;
   --blue-faint: #6b9ab6;
   --brown: #806443;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #181d27);
   --canvas-card-label-color: var(--text-faint, #b2b2b8);
   --caret-color: var(--text-normal, #d8d7df);
@@ -399,6 +412,8 @@ export const theme: ThemeData = {
   --yellow: #ffd85e;
   --yellow-faint: #ffe699;
   --quartz-icon-color: currentColor;
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -481,6 +496,13 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(216, 215, 223);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(216, 215, 223));
+  font-family: "Bai Jamjuree";
+  outline: rgb(216, 215, 223) none 0px;
+  text-decoration-color: rgb(216, 215, 223);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--bold-color, rgb(216, 215, 223));
   font-family: "Bai Jamjuree";
@@ -535,19 +557,31 @@ html body a.internal-link.broken {
   outline: rgb(255, 230, 153) none 0px;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(216, 215, 223);
+  border-left-color: rgb(216, 215, 223);
+  border-right-color: rgb(216, 215, 223);
+  border-top-color: rgb(216, 215, 223);
   color: rgb(216, 215, 223);
+  font-family: "Bai Jamjuree";
 }
 
 html body dt {
+  border-bottom-color: rgb(216, 215, 223);
+  border-left-color: rgb(216, 215, 223);
+  border-right-color: rgb(216, 215, 223);
+  border-top-color: rgb(216, 215, 223);
   color: rgb(216, 215, 223);
+  font-family: "Bai Jamjuree";
 }
 
 html body ol > li {
   color: rgb(216, 215, 223);
+  margin-left: 31.008px;
 }
 
 html body ul > li {
   color: rgb(216, 215, 223);
+  margin-left: 31.008px;
 }
 
 html body ul.overflow {
@@ -561,6 +595,7 @@ html body ul.overflow {
 }
 
 html body blockquote {
+  color: var(--blockquote-color, rgb(216, 215, 223));
   font-family: "Bai Jamjuree";
 }`,
     tables: `html body .table-container {
@@ -573,7 +608,6 @@ html body blockquote {
 html body table {
   color: rgb(216, 215, 223);
   font-family: "Bai Jamjuree";
-  width: 194.781px;
 }
 
 html body td {
@@ -668,6 +702,7 @@ html body .transclude {
   border-left-color: rgb(219, 84, 97);
   border-right-color: rgb(216, 215, 223);
   border-top-color: rgb(216, 215, 223);
+  color: rgb(216, 215, 223);
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -677,6 +712,7 @@ html body .transclude-inner {
   border-left-color: rgb(216, 215, 223);
   border-right-color: rgb(216, 215, 223);
   border-top-color: rgb(216, 215, 223);
+  color: rgb(216, 215, 223);
   margin-left: 10px;
   margin-right: 10px;
 }`,
@@ -1524,6 +1560,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color-hover: var(--tag-color-hover, #ffe699);
   --pill-color-remove: var(--tag-color, #ffe699);
   --pill-color-remove-hover: var(--tag-color-hover, #ffe699);
+  color: var(--pill-color, rgb(255, 230, 153));
 }
 
 html body a.internal-link.tag-link::before {
@@ -1531,8 +1568,16 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(190, 183, 223);
+  border-left-color: rgb(190, 183, 223);
+  border-right-color: rgb(190, 183, 223);
+  border-top-color: rgb(190, 183, 223);
   color: var(--text-title-h1, rgb(190, 183, 223));
   font-family: var(--font-monospace, "Bai Jamjuree");
+  font-size: var(--h1-size, 34px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h1-letter-spacing, -0.51px);
+  line-height: var(--h1-line-height, 40.8px);
 }
 
 html body h1.article-title {
@@ -1540,33 +1585,76 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(255, 216, 94);
+  border-left-color: rgb(255, 216, 94);
+  border-right-color: rgb(255, 216, 94);
+  border-top-color: rgb(255, 216, 94);
   color: var(--text-title-h2, rgb(255, 216, 94));
   font-family: var(--font-monospace, "Bai Jamjuree");
+  font-size: var(--h2-size, 26px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h2-letter-spacing, -0.286px);
+  line-height: var(--h2-line-height, 31.2px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(255, 216, 94);
+  border-left-color: rgb(255, 216, 94);
+  border-right-color: rgb(255, 216, 94);
+  border-top-color: rgb(255, 216, 94);
   color: var(--text-title-h2, rgb(255, 216, 94));
   font-family: var(--inline-title-font, "Bai Jamjuree");
 }
 
 html body h3 {
+  border-bottom-color: rgb(255, 79, 0);
+  border-left-color: rgb(255, 79, 0);
+  border-right-color: rgb(255, 79, 0);
+  border-top-color: rgb(255, 79, 0);
   color: var(--text-title-h3, rgb(255, 79, 0));
   font-family: var(--font-monospace, "Bai Jamjuree");
+  font-size: var(--h3-size, 22px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h3-letter-spacing, -0.176px);
+  line-height: var(--h3-line-height, 28.6px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(76, 134, 168);
+  border-left-color: rgb(76, 134, 168);
+  border-right-color: rgb(76, 134, 168);
+  border-top-color: rgb(76, 134, 168);
   color: var(--text-title-h4, rgb(76, 134, 168));
   font-family: var(--font-monospace, "Bai Jamjuree");
+  font-size: var(--h4-size, 20px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h4-letter-spacing, -0.1px);
+  line-height: var(--h4-line-height, 28px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(128, 100, 67);
+  border-left-color: rgb(128, 100, 67);
+  border-right-color: rgb(128, 100, 67);
+  border-top-color: rgb(128, 100, 67);
   color: var(--text-title-h5, rgb(128, 100, 67));
   font-family: var(--font-monospace, "Bai Jamjuree");
+  font-size: var(--h5-size, 18px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h5-letter-spacing, -0.036px);
+  line-height: var(--h5-line-height, 27px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(201, 202, 217);
+  border-left-color: rgb(201, 202, 217);
+  border-right-color: rgb(201, 202, 217);
+  border-top-color: rgb(201, 202, 217);
   color: var(--text-title-h6, rgb(201, 202, 217));
   font-family: var(--font-monospace, "Bai Jamjuree");
+  font-size: var(--h6-size, 18px);
+  font-weight: var(--font-weight, 500);
+  line-height: var(--h6-line-height, 27px);
 }
 
 html body hr {
@@ -1585,6 +1673,18 @@ html body hr {
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "Bai Jamjuree";
   font-weight: var(--nav-item-weight, 700);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(216, 215, 223);
@@ -1669,6 +1769,10 @@ html body .canvas-sidebar {
   font-family: "Bai Jamjuree";
 }
 
+html body .metadata-container .metadata-property {
+  font-family: "Bai Jamjuree";
+}
+
 html body .metadata-properties {
   font-family: "Bai Jamjuree";
 }
@@ -1721,7 +1825,12 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(216, 215, 223);
+  border-left-color: rgb(216, 215, 223);
+  border-right-color: rgb(216, 215, 223);
+  border-top-color: rgb(216, 215, 223);
   color: var(--text-normal, rgb(216, 215, 223));
+  font-weight: 700;
 }
 
 html body abbr {

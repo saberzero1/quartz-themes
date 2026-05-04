@@ -45,6 +45,19 @@ export const theme: ThemeData = {
   --bloom-size-m: calc(var(--bloom-size)*0.75);
   --bloom-size-s: calc(var(--bloom-size)/3);
   --border-bloom: var(--bloom-box), var(--bloom-box) inset;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #000);
   --canvas-card-label-color: var(--text-faint, #000);
   --canvas-dot-pattern: var(--color-base-30, #000);
@@ -204,7 +217,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, hsl(20, 50%, 85%));
   --vault-profile-color: var(--text-normal, hsl(20, 50%, 85%));
   --vault-profile-color-hover: var(--vault-profile-color, hsl(20, 50%, 85%));
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -255,6 +270,13 @@ html body .markdown-rendered p > i, html i {
   color: var(--ion-color, rgb(236, 210, 198));
   outline: rgb(236, 210, 198) none 0px;
   text-decoration-color: rgb(236, 210, 198);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.125em hsl(20, 50%, 50%)) drop-shadow(0px 0px 0.125em hsl(20, 50%, 50%)));
+  color: var(--ion-color, rgb(249, 240, 236));
+  outline: rgb(249, 240, 236) none 0px;
+  text-decoration-color: rgb(249, 240, 236);
 }
 
 html body .markdown-rendered p > strong, html strong {
@@ -322,10 +344,18 @@ html body a.internal-link.broken {
   outline: rgb(203, 183, 250) none 0px;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(236, 210, 198);
+  border-left-color: rgb(236, 210, 198);
+  border-right-color: rgb(236, 210, 198);
+  border-top-color: rgb(236, 210, 198);
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
 html body dt {
+  border-bottom-color: rgb(236, 210, 198);
+  border-left-color: rgb(236, 210, 198);
+  border-right-color: rgb(236, 210, 198);
+  border-top-color: rgb(236, 210, 198);
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
@@ -348,6 +378,10 @@ html body ul.overflow {
   --ion-h: var(--accent-h, 258);
   --ion-s: var(--accent-s, 88%);
   color: var(--ion-color, rgb(203, 183, 250));
+}
+
+html body blockquote {
+  color: var(--ion-color, rgb(236, 210, 198));
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(236, 210, 198);
@@ -365,6 +399,7 @@ html body td {
   border-left-color: rgb(236, 210, 198);
   border-right-color: rgb(236, 210, 198);
   border-top-color: rgb(236, 210, 198);
+  box-shadow: var(--bloom-box, rgba(191, 106, 64, 0.3) 0px 0px 1.5px 1.5px inset) inset;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
@@ -373,6 +408,7 @@ html body th {
   border-left-color: rgb(236, 210, 198);
   border-right-color: rgb(236, 210, 198);
   border-top-color: rgb(236, 210, 198);
+  box-shadow: rgba(191, 106, 64, 0.3) 0px 0px 1.5px 1.5px inset;
   color: var(--ion-color, rgb(236, 210, 198));
 }`,
     code: `html body code {
@@ -430,6 +466,7 @@ html body video {
   border-left-color: rgb(236, 210, 198);
   border-right-color: rgb(236, 210, 198);
   border-top-color: rgb(236, 210, 198);
+  color: var(--ion-color, rgb(236, 210, 198));
 }
 
 html body .footnotes {
@@ -441,6 +478,7 @@ html body .transclude {
   border-bottom-color: rgb(236, 210, 198);
   border-right-color: rgb(236, 210, 198);
   border-top-color: rgb(236, 210, 198);
+  color: var(--ion-color, rgb(236, 210, 198));
 }
 
 html body .transclude-inner {
@@ -448,6 +486,7 @@ html body .transclude-inner {
   border-left-color: rgb(236, 210, 198);
   border-right-color: rgb(236, 210, 198);
   border-top-color: rgb(236, 210, 198);
+  color: var(--ion-color, rgb(236, 210, 198));
 }`,
     checkboxes: `html body input[type=checkbox] {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px -0.16667em hsl(258, 88%, 50%)) drop-shadow(0px 0px -0.16667em hsl(258, 88%, 50%)));
@@ -1716,12 +1755,20 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  color: var(--ion-color, rgb(236, 210, 198));
+}
+
 html body a.internal-link.tag-link::before {
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
 html body h1 {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(10, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(10, 100%, 50%)));
+  border-bottom-color: rgb(255, 213, 204);
+  border-left-color: rgb(255, 213, 204);
+  border-right-color: rgb(255, 213, 204);
+  border-top-color: rgb(255, 213, 204);
   color: var(--ion-color, rgb(255, 213, 204));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
@@ -1733,36 +1780,60 @@ html body h1.article-title {
 
 html body h2 {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(60, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(60, 100%, 50%)));
+  border-bottom-color: rgb(255, 255, 204);
+  border-left-color: rgb(255, 255, 204);
+  border-right-color: rgb(255, 255, 204);
+  border-top-color: rgb(255, 255, 204);
   color: var(--ion-color, rgb(255, 255, 204));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
 
 html body h2.page-title, html h2.page-title a {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(20, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(20, 100%, 50%)));
+  border-bottom-color: rgb(255, 221, 204);
+  border-left-color: rgb(255, 221, 204);
+  border-right-color: rgb(255, 221, 204);
+  border-top-color: rgb(255, 221, 204);
   color: var(--ion-color, rgb(255, 221, 204));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
 
 html body h3 {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(110, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(110, 100%, 50%)));
+  border-bottom-color: rgb(213, 255, 204);
+  border-left-color: rgb(213, 255, 204);
+  border-right-color: rgb(213, 255, 204);
+  border-top-color: rgb(213, 255, 204);
   color: var(--ion-color, rgb(213, 255, 204));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
 
 html body h4 {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(160, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(160, 100%, 50%)));
+  border-bottom-color: rgb(204, 255, 238);
+  border-left-color: rgb(204, 255, 238);
+  border-right-color: rgb(204, 255, 238);
+  border-top-color: rgb(204, 255, 238);
   color: var(--ion-color, rgb(204, 255, 238));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
 
 html body h5 {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(210, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(210, 100%, 50%)));
+  border-bottom-color: rgb(204, 230, 255);
+  border-left-color: rgb(204, 230, 255);
+  border-right-color: rgb(204, 230, 255);
+  border-top-color: rgb(204, 230, 255);
   color: var(--ion-color, rgb(204, 230, 255));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
 
 html body h6 {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(260, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(260, 100%, 50%)));
+  border-bottom-color: rgb(221, 204, 255);
+  border-left-color: rgb(221, 204, 255);
+  border-right-color: rgb(221, 204, 255);
+  border-top-color: rgb(221, 204, 255);
   color: var(--ion-color, rgb(221, 204, 255));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
@@ -1793,6 +1864,22 @@ html body hr {
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--ion-color, rgb(236, 210, 198));
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: var(--ion-color, rgb(236, 210, 198));
@@ -1911,11 +1998,27 @@ html body .canvas-sidebar {
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(236, 210, 198);
+  border-left-color: rgb(236, 210, 198);
+  border-right-color: rgb(236, 210, 198);
+  border-top-color: rgb(236, 210, 198);
+  color: var(--ion-color, rgb(236, 210, 198));
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(236, 210, 198);
   border-left-color: rgb(236, 210, 198);
   border-right-color: rgb(236, 210, 198);
   border-top-color: rgb(236, 210, 198);
+  color: var(--ion-color, rgb(236, 210, 198));
+}
+
+html body .metadata-property-key {
+  color: var(--ion-color, rgb(236, 210, 198));
+}
+
+html body .metadata-property-value {
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
@@ -1975,6 +2078,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(236, 210, 198);
+  border-left-color: rgb(236, 210, 198);
+  border-right-color: rgb(236, 210, 198);
+  border-top-color: rgb(236, 210, 198);
   color: var(--ion-color, rgb(236, 210, 198));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }

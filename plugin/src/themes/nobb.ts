@@ -10,7 +10,20 @@ export const theme: ThemeData = {
   --blockquote-border-color: var(--nobb-color, rgb(250, 81, 81));
   --blockquote-border-thickness: 0.15em;
   --button-radius: var(--input-radius, 0px);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 0px);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-controls-radius: var(--radius-s, 0px);
   --caret-color: var(--text-normal, #bbbbbb);
   --checkbox-radius: var(--radius-s, 0px);
@@ -110,6 +123,13 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(187, 187, 187);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(255, 41, 41));
+  font-weight: 900;
+  outline: rgb(255, 41, 41) none 0px;
+  text-decoration-color: rgb(255, 41, 41);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--bold-color, rgb(255, 41, 41));
   outline: rgb(255, 41, 41) none 0px;
@@ -133,19 +153,31 @@ html body li.task-list-item input[type="checkbox"] {
   border-radius: 0px;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(187, 187, 187);
+  border-left-color: rgb(187, 187, 187);
+  border-right-color: rgb(187, 187, 187);
+  border-top-color: rgb(187, 187, 187);
   color: rgb(187, 187, 187);
 }
 
 html body dt {
+  border-bottom-color: rgb(187, 187, 187);
+  border-left-color: rgb(187, 187, 187);
+  border-right-color: rgb(187, 187, 187);
+  border-top-color: rgb(187, 187, 187);
   color: rgb(187, 187, 187);
 }
 
 html body ol > li {
   color: rgb(187, 187, 187);
+  margin-bottom: 3.2px;
+  margin-top: 3.2px;
 }
 
 html body ul > li {
   color: rgb(187, 187, 187);
+  margin-bottom: 3.2px;
+  margin-top: 3.2px;
 }
 
 html body ul.overflow {
@@ -153,6 +185,9 @@ html body ul.overflow {
   border-left-color: rgb(187, 187, 187);
   border-right-color: rgb(187, 187, 187);
   border-top-color: rgb(187, 187, 187);
+}`,
+    blockquotes: `html body blockquote {
+  color: var(--blockquote-color, rgb(187, 187, 187));
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(187, 187, 187);
@@ -163,7 +198,6 @@ html body ul.overflow {
 
 html body table {
   color: rgb(187, 187, 187);
-  width: 241.938px;
 }
 
 html body td {
@@ -172,6 +206,7 @@ html body td {
 
 html body th {
   color: var(--table-header-color, rgb(187, 187, 187));
+  letter-spacing: 0.88px;
 }`,
     code: `html body code {
   background-color: var(--code-background, rgb(0, 0, 0));
@@ -236,6 +271,7 @@ html body video {
     embeds: `html body .file-embed {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
@@ -249,6 +285,7 @@ html body .transclude {
   border-bottom-color: rgb(187, 187, 187);
   border-right-color: rgb(187, 187, 187);
   border-top-color: rgb(187, 187, 187);
+  color: rgb(187, 187, 187);
 }
 
 html body .transclude-inner {
@@ -256,6 +293,7 @@ html body .transclude-inner {
   border-left-color: rgb(187, 187, 187);
   border-right-color: rgb(187, 187, 187);
   border-top-color: rgb(187, 187, 187);
+  color: rgb(187, 187, 187);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-left-radius: 0px;
@@ -1163,6 +1201,10 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body h1 {
+  border-bottom-color: rgb(187, 187, 187);
+  border-left-color: rgb(187, 187, 187);
+  border-right-color: rgb(187, 187, 187);
+  border-top-color: rgb(187, 187, 187);
   color: var(--h1-color, rgb(187, 187, 187));
 }
 
@@ -1171,27 +1213,58 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(250, 81, 81);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h2-color, rgb(255, 255, 255));
+  letter-spacing: var(--h2-letter-spacing, 0.35088px);
+  padding-left: 11.696px;
+  padding-right: 11.696px;
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(187, 187, 187);
+  border-left-color: rgb(187, 187, 187);
+  border-right-color: rgb(187, 187, 187);
+  border-top-color: rgb(187, 187, 187);
   color: var(--inline-title-color, rgb(187, 187, 187));
 }
 
 html body h3 {
   --font-weight: var(--h3-weight, 500);
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h3-color, rgb(255, 255, 255));
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h3-letter-spacing, 0.31632px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(187, 187, 187);
+  border-left-color: rgb(187, 187, 187);
+  border-right-color: rgb(187, 187, 187);
+  border-top-color: rgb(187, 187, 187);
   color: var(--h4-color, rgb(187, 187, 187));
 }
 
 html body h5 {
+  border-bottom-color: rgb(187, 187, 187);
+  border-left-color: rgb(187, 187, 187);
+  border-right-color: rgb(187, 187, 187);
+  border-top-color: rgb(187, 187, 187);
   color: var(--h5-color, rgb(187, 187, 187));
 }
 
 html body h6 {
+  border-bottom-color: rgb(187, 187, 187);
+  border-left-color: rgb(187, 187, 187);
+  border-right-color: rgb(187, 187, 187);
+  border-top-color: rgb(187, 187, 187);
   color: var(--h6-color, rgb(187, 187, 187));
 }`,
     scrollbars: `html body .callout {
@@ -1200,6 +1273,13 @@ html body h6 {
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+}`,
+    explorer: `html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(187, 187, 187);
@@ -1297,6 +1377,10 @@ html body .stacked-page.active {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(187, 187, 187);
+  border-left-color: rgb(187, 187, 187);
+  border-right-color: rgb(187, 187, 187);
+  border-top-color: rgb(187, 187, 187);
   color: var(--text-normal, rgb(187, 187, 187));
 }
 

@@ -307,7 +307,8 @@ export const theme: ThemeData = {
   --yellow-4-rgb: 245, 194,  17;
   --yellow-5: #e5a50a;
   --yellow-5-rgb: 229, 165,  10;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
 }
 
 html[saved-theme="dark"] body {
@@ -393,8 +394,10 @@ html[saved-theme="dark"] body .transclude {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-left-color: rgb(53, 132, 228);
+  border-radius: 12px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  box-shadow: var(--shadow-frame, rgba(0, 0, 0, 0.133) 0px 2px 6px 0px);
   padding-bottom: 8px;
   padding-left: 12px;
   padding-right: 12px;
@@ -404,8 +407,10 @@ html[saved-theme="dark"] body .transclude {
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+  border-radius: 12px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  box-shadow: var(--shadow-frame, rgba(0, 0, 0, 0.133) 0px 2px 6px 0px);
 }`,
     checkboxes: `html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
@@ -1368,11 +1373,18 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-top-color: rgba(92, 161, 245, 0.15);
   border-top-left-radius: 24.36px;
   border-top-right-radius: 24.36px;
+  color: var(--pill-color, rgb(98, 160, 234));
   font-family: system-ui;
+  font-size: 12.18px;
+  line-height: var(--line-height-tight, 12.18px);
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(98, 160, 234);
+}
+
+html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  margin-bottom: 6.472px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 154, 153, 150);
@@ -1411,6 +1423,14 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: system-ui;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(218, 218, 218);
@@ -1457,6 +1477,16 @@ html[saved-theme="dark"] body .darkmode svg {
   padding-top: 0px;
 }
 
+html[saved-theme="dark"] body .metadata-property-key {
+  font-family: var(--metadata-label-font, system-ui);
+  font-size: 13.92px;
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  font-family: var(--metadata-input-font, system-ui);
+  font-size: 13.92px;
+}
+
 html[saved-theme="dark"] body .note-properties-tags {
   --pill-background: var(--tag-background, hsla(213, 88%, 66%, 0.1));
   --pill-background-hover: var(--tag-background-hover, hsla(213, 88%, 66%, 0.2));
@@ -1487,6 +1517,7 @@ html[saved-theme="dark"] body .stacked-page-header {
 
 html[saved-theme="dark"] body .page-header h2.page-title {
   font-family: system-ui;
+  font-weight: 600;
 }
 
 html[saved-theme="dark"] body input[type=text] {
@@ -1810,7 +1841,8 @@ html[saved-theme="dark"] body ul.tags > li {
   --yellow-4-rgb: 245, 194,  17;
   --yellow-5: #e5a50a;
   --yellow-5-rgb: 229, 165,  10;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
 }
 
 html[saved-theme="light"] body {
@@ -1896,8 +1928,10 @@ html[saved-theme="light"] body .transclude {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-left-color: rgb(53, 132, 228);
+  border-radius: 12px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  box-shadow: var(--shadow-frame, rgba(0, 0, 0, 0.133) 0px 2px 6px 0px);
   padding-bottom: 8px;
   padding-left: 12px;
   padding-right: 12px;
@@ -1907,8 +1941,10 @@ html[saved-theme="light"] body .transclude {
 html[saved-theme="light"] body .transclude-inner {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+  border-radius: 12px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  box-shadow: var(--shadow-frame, rgba(0, 0, 0, 0.133) 0px 2px 6px 0px);
 }`,
     checkboxes: `html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
@@ -2871,11 +2907,18 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-top-color: rgba(92, 161, 245, 0.15);
   border-top-left-radius: 24.36px;
   border-top-right-radius: 24.36px;
+  color: var(--pill-color, rgb(28, 113, 216));
   font-family: system-ui;
+  font-size: 12.18px;
+  line-height: var(--line-height-tight, 12.18px);
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(28, 113, 216);
+}
+
+html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  margin-bottom: 6.472px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 94,  92, 100);
@@ -2914,6 +2957,14 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: system-ui;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(34, 34, 34);
@@ -2960,6 +3011,16 @@ html[saved-theme="light"] body .darkmode svg {
   padding-top: 0px;
 }
 
+html[saved-theme="light"] body .metadata-property-key {
+  font-family: var(--metadata-label-font, system-ui);
+  font-size: 13.92px;
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  font-family: var(--metadata-input-font, system-ui);
+  font-size: 13.92px;
+}
+
 html[saved-theme="light"] body .note-properties-tags {
   --pill-background: var(--tag-background, hsla(213, 88%, 66%, 0.1));
   --pill-background-hover: var(--tag-background-hover, hsla(213, 88%, 66%, 0.2));
@@ -2990,6 +3051,7 @@ html[saved-theme="light"] body .stacked-page-header {
 
 html[saved-theme="light"] body .page-header h2.page-title {
   font-family: system-ui;
+  font-weight: 600;
 }
 
 html[saved-theme="light"] body input[type=text] {

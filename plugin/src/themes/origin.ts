@@ -48,6 +48,7 @@ export const theme: ThemeData = {
   --callout-info: var(--color-cyan-rgb, 0, 184, 212);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 0);
   --callout-question: var(--color-green-rgb, 100, 221, 23);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 3px);
   --callout-success: var(--color-dark-green-rgb, 0, 191, 165);
   --callout-summary: var(--color-light-blue-rgb, 0, 176, 255);
@@ -228,6 +229,7 @@ export const theme: ThemeData = {
   --traffic-lights-offset-x: var(--header-height, 30px);
   --traffic-lights-offset-y: var(--header-height, 30px);
   --quartz-icon-color: currentColor;
+  --collapse-icon-color: var(--nav-collapse-icon-color);
 }
 
 html[saved-theme="dark"] body {
@@ -261,6 +263,10 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
 }
 
@@ -307,6 +313,21 @@ html[saved-theme="dark"] body a.internal-link.broken {
   font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
   outline: rgb(67, 42, 157) none 0px;
 }`,
+    lists: `html[saved-theme="dark"] body dd {
+  font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
+}
+
+html[saved-theme="dark"] body dt {
+  font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
+}
+
+html[saved-theme="dark"] body ol > li {
+  margin-left: 30.1875px;
+}
+
+html[saved-theme="dark"] body ul > li {
+  margin-left: 30.1875px;
+}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
   padding-bottom: 12.8px;
@@ -314,7 +335,6 @@ html[saved-theme="dark"] body a.internal-link.broken {
 }`,
     tables: `html[saved-theme="dark"] body table {
   font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
-  width: 196.766px;
 }
 
 html[saved-theme="dark"] body td {
@@ -362,6 +382,7 @@ html[saved-theme="dark"] body figure {
   background-color: var(--background-primary-alt, rgb(0, 0, 0));
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-radius: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -1274,6 +1295,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   --pill-color-hover: var(--tag-color-hover, hsl(253, 58%, 39%));
   --pill-color-remove: var(--tag-color, hsl(253, 58%, 39%));
   --pill-color-remove-hover: var(--tag-color-hover, hsl(253, 58%, 39%));
+  color: var(--pill-color, rgb(67, 42, 157));
   font-family: "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
 }
 
@@ -1334,6 +1356,14 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 3px;
@@ -1383,8 +1413,20 @@ html[saved-theme="dark"] body .breadcrumb-element p {
   font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  font-family: var(--metadata-label-font, "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  font-family: var(--metadata-input-font, "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif);
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
@@ -1416,6 +1458,7 @@ html[saved-theme="dark"] body .stacked-page.active {
 
 html[saved-theme="dark"] body .page-header h2.page-title {
   font-family: "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
+  font-weight: 600;
 }
 
 html[saved-theme="dark"] body input[type=text] {
@@ -1475,6 +1518,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-info: var(--color-cyan-rgb, 0, 184, 212);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 0);
   --callout-question: var(--color-green-rgb, 100, 221, 23);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 3px);
   --callout-success: var(--color-dark-green-rgb, 0, 191, 165);
   --callout-summary: var(--color-light-blue-rgb, 0, 176, 255);
@@ -1735,7 +1779,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --traffic-lights-offset-y: var(--header-height, 30px);
   --vault-profile-color: var(--text-normal, #2e3338);
   --vault-profile-color-hover: var(--vault-profile-color, #2e3338);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -1783,6 +1829,13 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--italic-color, rgb(46, 51, 56));
+  font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
+  outline: rgb(46, 51, 56) none 0px;
+  text-decoration-color: rgb(46, 51, 56);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--italic-color, rgb(46, 51, 56));
   font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
   outline: rgb(46, 51, 56) none 0px;
@@ -1846,19 +1899,31 @@ html[saved-theme="light"] body a.internal-link.broken {
   outline: rgb(124, 97, 219) none 0px;
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(46, 51, 56);
+  border-left-color: rgb(46, 51, 56);
+  border-right-color: rgb(46, 51, 56);
+  border-top-color: rgb(46, 51, 56);
   color: rgb(46, 51, 56);
+  font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(46, 51, 56);
+  border-left-color: rgb(46, 51, 56);
+  border-right-color: rgb(46, 51, 56);
+  border-top-color: rgb(46, 51, 56);
   color: rgb(46, 51, 56);
+  font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(46, 51, 56);
+  margin-left: 30.1875px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(46, 51, 56);
+  margin-left: 30.1875px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -1872,6 +1937,7 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(46, 51, 56));
   font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
   padding-bottom: 12.8px;
   padding-top: 12.8px;
@@ -1886,7 +1952,6 @@ html[saved-theme="light"] body blockquote {
 html[saved-theme="light"] body table {
   color: rgb(46, 51, 56);
   font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
-  width: 196.766px;
 }
 
 html[saved-theme="light"] body td {
@@ -1980,10 +2045,12 @@ html[saved-theme="light"] body video {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-left-color: rgb(136, 136, 136);
+  border-radius: 5px;
   border-right-color: rgb(136, 136, 136);
   border-top-color: rgb(136, 136, 136);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  color: var(--text-muted, rgb(136, 136, 136));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -1996,6 +2063,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(118, 91, 215);
   border-right-color: rgb(46, 51, 56);
   border-top-color: rgb(46, 51, 56);
+  color: rgb(46, 51, 56);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2003,6 +2071,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(46, 51, 56);
   border-right-color: rgb(46, 51, 56);
   border-top-color: rgb(46, 51, 56);
+  color: rgb(46, 51, 56);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
@@ -3057,6 +3126,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-hover: var(--tag-color-hover, hsl(253, 63%, 62%));
   --pill-color-remove: var(--tag-color, hsl(253, 63%, 62%));
   --pill-color-remove-hover: var(--tag-color-hover, hsl(253, 63%, 62%));
+  color: var(--pill-color, rgb(124, 97, 219));
   font-family: "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
 }
 
@@ -3065,6 +3135,10 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(46, 51, 56);
+  border-left-color: rgb(46, 51, 56);
+  border-right-color: rgb(46, 51, 56);
+  border-top-color: rgb(46, 51, 56);
   color: var(--h1-color, rgb(46, 51, 56));
   font-family: var(--h1-font, "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif);
 }
@@ -3074,31 +3148,55 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(46, 51, 56);
+  border-left-color: rgb(46, 51, 56);
+  border-right-color: rgb(46, 51, 56);
+  border-top-color: rgb(46, 51, 56);
   color: var(--h2-color, rgb(46, 51, 56));
   font-family: var(--h2-font, "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(46, 51, 56);
+  border-left-color: rgb(46, 51, 56);
+  border-right-color: rgb(46, 51, 56);
+  border-top-color: rgb(46, 51, 56);
   color: var(--inline-title-color, rgb(46, 51, 56));
   font-family: var(--inline-title-font, "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif);
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(46, 51, 56);
+  border-left-color: rgb(46, 51, 56);
+  border-right-color: rgb(46, 51, 56);
+  border-top-color: rgb(46, 51, 56);
   color: var(--h3-color, rgb(46, 51, 56));
   font-family: var(--h3-font, "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(46, 51, 56);
+  border-left-color: rgb(46, 51, 56);
+  border-right-color: rgb(46, 51, 56);
+  border-top-color: rgb(46, 51, 56);
   color: var(--h4-color, rgb(46, 51, 56));
   font-family: var(--h4-font, "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(46, 51, 56);
+  border-left-color: rgb(46, 51, 56);
+  border-right-color: rgb(46, 51, 56);
+  border-top-color: rgb(46, 51, 56);
   color: var(--h5-color, rgb(46, 51, 56));
   font-family: var(--h5-font, "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(46, 51, 56);
+  border-left-color: rgb(46, 51, 56);
+  border-right-color: rgb(46, 51, 56);
+  border-top-color: rgb(46, 51, 56);
   color: var(--h6-color, rgb(46, 51, 56));
   font-family: var(--h6-font, "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif);
 }
@@ -3136,6 +3234,26 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(136, 136, 136));
   font-family: "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(46, 51, 56);
@@ -3273,6 +3391,15 @@ html[saved-theme="light"] body .canvas-sidebar {
   font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(136, 136, 136);
+  border-left-color: rgb(136, 136, 136);
+  border-right-color: rgb(136, 136, 136);
+  border-top-color: rgb(136, 136, 136);
+  color: rgb(136, 136, 136);
+  font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(136, 136, 136);
   border-left-color: rgb(136, 136, 136);
@@ -3280,6 +3407,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(136, 136, 136);
   color: rgb(136, 136, 136);
   font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(136, 136, 136);
+  font-family: var(--metadata-label-font, "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(136, 136, 136);
+  font-family: var(--metadata-input-font, "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -3341,8 +3478,13 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(46, 51, 56);
+  border-left-color: rgb(46, 51, 56);
+  border-right-color: rgb(46, 51, 56);
+  border-top-color: rgb(46, 51, 56);
   color: var(--text-normal, rgb(46, 51, 56));
   font-family: "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
+  font-weight: 600;
 }
 
 html[saved-theme="light"] body abbr {

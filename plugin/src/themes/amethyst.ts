@@ -20,6 +20,19 @@ export const theme: ThemeData = {
   --background-statusbar: #3e3471;
   --background-suggestion: #3e3471;
   --background-table-header: #3e3471;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --color-active-action: #8875ff;
   --color-sidedock-hover: #7a6ae6;
   --default-font: 'Dank Mono', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -37,6 +50,11 @@ html[saved-theme="dark"] body {
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: var(--text-normal, rgb(218, 218, 218));
   font-family: Inter;
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  font-family: Inter;
+  font-weight: 700;
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
@@ -509,12 +527,21 @@ html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   background-color: var(--background-table-header, rgb(62, 52, 113));
   color: var(--table-header-color, rgb(255, 255, 255));
 }`,
+    properties: `html[saved-theme="dark"] body .metadata-property-key {
+  font-family: var(--metadata-label-font, "??", "??", "Dank Mono", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  font-family: var(--metadata-input-font, "??", "??", "Dank Mono", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}`,
     misc: `html[saved-theme="dark"] body .navigation-progress {
   background-color: var(--background-statusbar, rgb(62, 52, 113));
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
   font-family: var(--font-custom, Quotable, "Dank Mono", Inter);
+  font-size: 16.25px;
+  line-height: 21.125px;
 }
 
 html[saved-theme="dark"] body input[type=text] {
@@ -542,6 +569,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --background-statusbar: #705dcf;
   --background-suggestion: rgba(112, 93, 207, 0.75);
   --background-table-header: #705dcf;
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --color-active-action: #705dcf;
   --color-sidedock-hover: #2e3338;
   --default-font: 'Dank Mono', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -559,6 +599,11 @@ html[saved-theme="light"] body {
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: var(--text-normal, rgb(34, 34, 34));
   font-family: Inter;
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  font-family: Inter;
+  font-weight: 700;
 }
 
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
@@ -1031,12 +1076,21 @@ html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   background-color: var(--background-table-header, rgb(112, 93, 207));
   color: var(--table-header-color, rgb(255, 255, 255));
 }`,
+    properties: `html[saved-theme="light"] body .metadata-property-key {
+  font-family: var(--metadata-label-font, "??", "??", "Dank Mono", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  font-family: var(--metadata-input-font, "??", "??", "Dank Mono", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}`,
     misc: `html[saved-theme="light"] body .navigation-progress {
   background-color: var(--background-statusbar, rgb(112, 93, 207));
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
   font-family: var(--font-custom, Quotable, "Dank Mono", Inter);
+  font-size: 16.25px;
+  line-height: 21.125px;
 }
 
 html[saved-theme="light"] body input[type=text] {

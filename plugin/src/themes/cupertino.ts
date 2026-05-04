@@ -76,6 +76,7 @@ export const theme: ThemeData = {
   --callout-info: var(--color-blue-rgb, 53, 132, 228);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 16px);
   --callout-question: var(--color-orange-rgb, 230, 97, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 9px);
   --callout-size: var(--font-text-size, 16px);
   --callout-success: var(--color-green-rgb, 38, 162, 105);
@@ -453,7 +454,9 @@ export const theme: ThemeData = {
   --vault-profile-font-size: var(--font-ui-small, 11px);
   --view-top-spacing-markdown: 0px;
   --workspace-background-translucent: rgb(from var(--background-secondary) r g b / var(--translucent-dark-opacity));
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -510,6 +513,14 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: var(--italic-color, rgb(255, 255, 255));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  outline: rgb(255, 255, 255) none 0px;
+  text-decoration-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(255, 255, 255));
+  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 700;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
@@ -571,19 +582,33 @@ html[saved-theme="dark"] body a.internal-link.broken {
   transition: opacity 0.16s ease-in-out;
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
+  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
+  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(255, 255, 255);
+  padding-bottom: var(--list-spacing, 2.8px);
+  padding-top: var(--list-spacing, 2.8px);
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(255, 255, 255);
+  padding-bottom: var(--list-spacing, 2.8px);
+  padding-top: var(--list-spacing, 2.8px);
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -598,7 +623,9 @@ html[saved-theme="dark"] body ul.overflow {
 
 html[saved-theme="dark"] body blockquote {
   background-color: var(--blockquote-background-color, rgb(46, 46, 50));
+  color: var(--blockquote-color, rgb(255, 255, 255));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 25.6px;
   padding-bottom: 16px;
   padding-top: 16px;
 }`,
@@ -613,7 +640,6 @@ html[saved-theme="dark"] body table {
   color: rgb(255, 255, 255);
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   margin-top: var(--heading-spacing, 28px);
-  width: 654px;
 }
 
 html[saved-theme="dark"] body tbody {
@@ -739,10 +765,12 @@ html[saved-theme="dark"] body video {
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
   border-left-color: rgb(210, 210, 210);
+  border-radius: 9px;
   border-right-color: rgb(210, 210, 210);
   border-top-color: rgb(210, 210, 210);
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
+  color: var(--text-muted, rgb(210, 210, 210));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -755,9 +783,11 @@ html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-right-radius: 9px;
   border-left-color: rgb(154, 153, 150);
+  border-radius: 0px 9px 9px 0px;
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
   border-top-right-radius: 9px;
+  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -766,6 +796,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3349,11 +3380,19 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-top-right-radius: 8px;
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--pill-weight, 500);
+  line-height: var(--line-height-tight, 18.2px);
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h1-color, rgb(255, 255, 255));
   font-family: var(--h1-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h1-size, 24px);
+  line-height: var(--h1-line-height, 28.8px);
+  margin-bottom: 28px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -3362,33 +3401,107 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h2-color, rgb(255, 255, 255));
   font-family: var(--h2-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h2-size, 20px);
+  line-height: var(--h2-line-height, 24px);
+  margin-bottom: 28px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--inline-title-color, rgb(255, 255, 255));
   font-family: var(--inline-title-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--inline-title-size, 24px);
+  line-height: var(--inline-title-line-height, 28.8px);
+  margin-bottom: 12px;
+}
+
+html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a::before {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: var(--inline-title-color, rgb(255, 255, 255));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 714px;
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h3-color, rgb(255, 255, 255));
   font-family: var(--h3-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h3-size, 18px);
+  line-height: var(--h3-line-height, 23.4px);
+  margin-bottom: 28px;
+  margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h4-color, rgb(255, 255, 255));
   font-family: var(--h4-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h4-size, 16px);
+  line-height: var(--h4-line-height, 22.4px);
+  margin-bottom: 28px;
+  margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h5-color, rgb(255, 255, 255));
   font-family: var(--h5-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h5-size, 16px);
+  line-height: var(--h5-line-height, 25.6px);
+  margin-bottom: 28px;
+  margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h6-color, rgb(255, 255, 255));
   font-family: var(--h6-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h6-size, 14px);
+  line-height: var(--h6-line-height, 22.4px);
+  margin-bottom: 28px;
+  margin-top: 28px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -3428,6 +3541,22 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(210, 210, 210));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(255, 255, 255);
@@ -3458,10 +3587,14 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(210, 210, 210));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: var(--status-bar-font-size, 9.02px);
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body footer ul li a {
   color: rgb(210, 210, 210);
+  font-size: 9.02px;
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(255, 255, 255);
@@ -3575,6 +3708,19 @@ html[saved-theme="dark"] body .canvas-sidebar {
   padding-top: 0px;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(210, 210, 210);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-left-color: rgb(210, 210, 210);
+  border-right-color: rgb(210, 210, 210);
+  border-top-color: rgb(210, 210, 210);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  color: rgb(210, 210, 210);
+  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   background-color: var(--background-primary-alt, rgb(46, 46, 50));
   border-bottom-color: rgb(210, 210, 210);
@@ -3587,6 +3733,16 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-right-radius: 12px;
   color: rgb(210, 210, 210);
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(210, 210, 210);
+  font-family: var(--metadata-label-font, "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(210, 210, 210);
+  font-family: var(--metadata-input-font, "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -3652,8 +3808,15 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--text-normal, rgb(255, 255, 255));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 11px;
+  font-weight: max(var(--file-header-font-weight),var(--font-medium));
+  line-height: 14.3px;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -3798,6 +3961,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-info: var(--color-blue-rgb, 98, 160, 234);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 16px);
   --callout-question: var(--color-orange-rgb, 255, 120, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 9px);
   --callout-size: var(--font-text-size, 16px);
   --callout-success: var(--color-green-rgb, 46, 194, 126);
@@ -4175,7 +4339,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-profile-font-size: var(--font-ui-small, 11px);
   --view-top-spacing-markdown: 0px;
   --workspace-background-translucent: var(--background-secondary, #ebebed);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -4231,6 +4397,14 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: var(--italic-color, rgb(51, 51, 56));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  outline: rgb(51, 51, 56) none 0px;
+  text-decoration-color: rgb(51, 51, 56);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(51, 51, 56));
+  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 700;
   outline: rgb(51, 51, 56) none 0px;
   text-decoration-color: rgb(51, 51, 56);
 }
@@ -4292,19 +4466,33 @@ html[saved-theme="light"] body a.internal-link.broken {
   transition: opacity 0.16s ease-in-out;
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(51, 51, 56);
+  border-left-color: rgb(51, 51, 56);
+  border-right-color: rgb(51, 51, 56);
+  border-top-color: rgb(51, 51, 56);
   color: rgb(51, 51, 56);
+  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(51, 51, 56);
+  border-left-color: rgb(51, 51, 56);
+  border-right-color: rgb(51, 51, 56);
+  border-top-color: rgb(51, 51, 56);
   color: rgb(51, 51, 56);
+  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(51, 51, 56);
+  padding-bottom: var(--list-spacing, 2.8px);
+  padding-top: var(--list-spacing, 2.8px);
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(51, 51, 56);
+  padding-bottom: var(--list-spacing, 2.8px);
+  padding-top: var(--list-spacing, 2.8px);
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -4319,7 +4507,9 @@ html[saved-theme="light"] body ul.overflow {
 
 html[saved-theme="light"] body blockquote {
   background-color: var(--blockquote-background-color, rgb(243, 243, 245));
+  color: var(--blockquote-color, rgb(51, 51, 56));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 25.6px;
   padding-bottom: 16px;
   padding-top: 16px;
 }`,
@@ -4334,7 +4524,6 @@ html[saved-theme="light"] body table {
   color: rgb(51, 51, 56);
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   margin-top: var(--heading-spacing, 28px);
-  width: 654px;
 }
 
 html[saved-theme="light"] body tbody {
@@ -4460,10 +4649,12 @@ html[saved-theme="light"] body video {
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
   border-left-color: rgb(92, 92, 96);
+  border-radius: 9px;
   border-right-color: rgb(92, 92, 96);
   border-top-color: rgb(92, 92, 96);
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
+  color: var(--text-muted, rgb(92, 92, 96));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -4476,9 +4667,11 @@ html[saved-theme="light"] body .transclude {
   border-bottom-color: rgb(51, 51, 56);
   border-bottom-right-radius: 9px;
   border-left-color: rgb(154, 153, 150);
+  border-radius: 0px 9px 9px 0px;
   border-right-color: rgb(51, 51, 56);
   border-top-color: rgb(51, 51, 56);
   border-top-right-radius: 9px;
+  color: rgb(51, 51, 56);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -4487,6 +4680,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(51, 51, 56);
   border-right-color: rgb(51, 51, 56);
   border-top-color: rgb(51, 51, 56);
+  color: rgb(51, 51, 56);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7005,11 +7199,19 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-top-right-radius: 8px;
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--pill-weight, 500);
+  line-height: var(--line-height-tight, 18.2px);
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(51, 51, 56);
+  border-left-color: rgb(51, 51, 56);
+  border-right-color: rgb(51, 51, 56);
+  border-top-color: rgb(51, 51, 56);
   color: var(--h1-color, rgb(51, 51, 56));
   font-family: var(--h1-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h1-size, 24px);
+  line-height: var(--h1-line-height, 28.8px);
+  margin-bottom: 28px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -7018,33 +7220,107 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(51, 51, 56);
+  border-left-color: rgb(51, 51, 56);
+  border-right-color: rgb(51, 51, 56);
+  border-top-color: rgb(51, 51, 56);
   color: var(--h2-color, rgb(51, 51, 56));
   font-family: var(--h2-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h2-size, 20px);
+  line-height: var(--h2-line-height, 24px);
+  margin-bottom: 28px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(51, 51, 56);
+  border-left-color: rgb(51, 51, 56);
+  border-right-color: rgb(51, 51, 56);
+  border-top-color: rgb(51, 51, 56);
   color: var(--inline-title-color, rgb(51, 51, 56));
   font-family: var(--inline-title-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--inline-title-size, 24px);
+  line-height: var(--inline-title-line-height, 28.8px);
+  margin-bottom: 12px;
+}
+
+html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a::before {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: var(--inline-title-color, rgb(51, 51, 56));
+  content: "";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 714px;
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(51, 51, 56);
+  border-left-color: rgb(51, 51, 56);
+  border-right-color: rgb(51, 51, 56);
+  border-top-color: rgb(51, 51, 56);
   color: var(--h3-color, rgb(51, 51, 56));
   font-family: var(--h3-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h3-size, 18px);
+  line-height: var(--h3-line-height, 23.4px);
+  margin-bottom: 28px;
+  margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(51, 51, 56);
+  border-left-color: rgb(51, 51, 56);
+  border-right-color: rgb(51, 51, 56);
+  border-top-color: rgb(51, 51, 56);
   color: var(--h4-color, rgb(51, 51, 56));
   font-family: var(--h4-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h4-size, 16px);
+  line-height: var(--h4-line-height, 22.4px);
+  margin-bottom: 28px;
+  margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(51, 51, 56);
+  border-left-color: rgb(51, 51, 56);
+  border-right-color: rgb(51, 51, 56);
+  border-top-color: rgb(51, 51, 56);
   color: var(--h5-color, rgb(51, 51, 56));
   font-family: var(--h5-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h5-size, 16px);
+  line-height: var(--h5-line-height, 25.6px);
+  margin-bottom: 28px;
+  margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(51, 51, 56);
+  border-left-color: rgb(51, 51, 56);
+  border-right-color: rgb(51, 51, 56);
+  border-top-color: rgb(51, 51, 56);
   color: var(--h6-color, rgb(51, 51, 56));
   font-family: var(--h6-font, "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h6-size, 14px);
+  line-height: var(--h6-line-height, 22.4px);
+  margin-bottom: 28px;
+  margin-top: 28px;
 }
 
 html[saved-theme="light"] body hr {
@@ -7084,6 +7360,22 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(92, 92, 96));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(51, 51, 56);
@@ -7114,10 +7406,14 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(92, 92, 96));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: var(--status-bar-font-size, 9.02px);
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body footer ul li a {
   color: rgb(92, 92, 96);
+  font-size: 9.02px;
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(51, 51, 56);
@@ -7230,6 +7526,19 @@ html[saved-theme="light"] body .canvas-sidebar {
   padding-top: 0px;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(92, 92, 96);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-left-color: rgb(92, 92, 96);
+  border-right-color: rgb(92, 92, 96);
+  border-top-color: rgb(92, 92, 96);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  color: rgb(92, 92, 96);
+  font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   background-color: var(--background-primary-alt, rgb(255, 255, 255));
   border-bottom-color: rgb(92, 92, 96);
@@ -7242,6 +7551,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-right-radius: 12px;
   color: rgb(92, 92, 96);
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(92, 92, 96);
+  font-family: var(--metadata-label-font, "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(92, 92, 96);
+  font-family: var(--metadata-input-font, "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -7307,8 +7626,15 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(51, 51, 56);
+  border-left-color: rgb(51, 51, 56);
+  border-right-color: rgb(51, 51, 56);
+  border-top-color: rgb(51, 51, 56);
   color: var(--text-normal, rgb(51, 51, 56));
   font-family: "??", "Adwaita Sans", "Adwaita Sans Text", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 11px;
+  font-weight: max(var(--file-header-font-weight),var(--font-medium));
+  line-height: 14.3px;
 }
 
 html[saved-theme="light"] body abbr {

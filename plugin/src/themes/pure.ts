@@ -4,6 +4,19 @@ export const theme: ThemeData = {
   meta: { name: "pure", modes: ["dark", "light"], variations: [], fonts: [] },
   dark: {
     base: `:root:root[saved-theme="dark"] {
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --collapse-icon-color: var(--text-muted, #b3b3b3);
   --collapse-icon-color-collapsed: var(--text-muted, #b3b3b3);
   --list-bullet-size: 4px;
@@ -11,6 +24,7 @@ export const theme: ThemeData = {
   --list-marker-color-hover: var(--text-faint, #666666);
   --nav-collapse-icon-color: var(--collapse-icon-color, #b3b3b3);
   --quartz-icon-color: currentColor;
+  --collapse-icon-color: var(--nav-collapse-icon-color);
 }
 
 html[saved-theme="dark"] body {
@@ -778,9 +792,25 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
 }`,
+    explorer: `html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}`,
   },
   light: {
     base: `:root:root {
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --collapse-icon-color: var(--text-muted, #5c5c5c);
   --collapse-icon-color-collapsed: var(--text-muted, #5c5c5c);
   --list-bullet-size: 4px;
@@ -788,6 +818,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --list-marker-color-hover: var(--text-faint, #ababab);
   --nav-collapse-icon-color: var(--collapse-icon-color, #5c5c5c);
   --quartz-icon-color: currentColor;
+  --collapse-icon-color: var(--nav-collapse-icon-color);
 }
 
 html[saved-theme="light"] body {
@@ -1554,6 +1585,9 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
+}`,
+    explorer: `html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
   },
 };

@@ -21,14 +21,21 @@ export const theme: ThemeData = {
   --bases-table-summary-background: var(--background-primary, #2a2a2a);
   --blockquote-border-color: var(--interactive-accent, hsl(85, 45%, 40%));
   --bold-color: var(--color-red-alt, hsl(355, 65%, 70%));
+  --callout-bug: var(--callout-bug, 251, 70, 76);
   --callout-default: var(--color-blue-rgb, 116, 185, 241);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
   --callout-important: var(--color-yellow-rgb, 228, 212, 129);
   --callout-info: var(--color-blue-rgb, 116, 185, 241);
   --callout-padding: 8.2px 12px 8px var(--list-indent);
   --callout-question: var(--color-green-alt-rgb, 152, 195, 121);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
   --callout-summary: var(--color-cyan-rgb, 86, 182, 194);
   --callout-tip: var(--color-cyan-rgb, 86, 182, 194);
   --callout-todo: var(--color-orange-rgb, 233, 151, 63);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #2a2a2a);
   --canvas-color-3: var(--color-yellow-rgb, 228, 212, 129);
   --canvas-color-5: var(--color-cyan-rgb, 86, 182, 194);
@@ -217,6 +224,12 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(228, 212, 129);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(228, 212, 129));
+  outline: rgb(228, 212, 129) none 0px;
+  text-decoration-color: rgb(228, 212, 129);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--bold-color, rgb(228, 129, 137));
   outline: rgb(228, 129, 137) none 0px;
@@ -254,6 +267,15 @@ html body a.internal-link.broken {
   outline: rgb(132, 171, 63) none 0px;
   text-decoration: underline rgba(110, 148, 56, 0.3);
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(110, 148, 56, 0.3));
+}`,
+    lists: `html body ol > li {
+  padding-bottom: var(--list-spacing, 0px);
+  padding-top: var(--list-spacing, 0px);
+}
+
+html body ul > li {
+  padding-bottom: var(--list-spacing, 0px);
+  padding-top: var(--list-spacing, 0px);
 }`,
     tables: `html body td {
   border-bottom-color: rgb(102, 102, 102);
@@ -818,6 +840,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-left-color: rgba(110, 148, 56, 0.15);
   border-right-color: rgba(110, 148, 56, 0.15);
   border-top-color: rgba(110, 148, 56, 0.15);
+  color: var(--pill-color, rgb(132, 171, 63));
 }
 
 html body a.internal-link.tag-link::before {
@@ -825,7 +848,14 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(228, 129, 137);
+  border-left-color: rgb(228, 129, 137);
+  border-right-color: rgb(228, 129, 137);
+  border-top-color: rgb(228, 129, 137);
   color: var(--h1-color, rgb(228, 129, 137));
+  font-size: var(--h1-size, 27.5px);
+  letter-spacing: var(--h1-letter-spacing, -0.4125px);
+  margin-bottom: 0px;
 }
 
 html body h1.article-title {
@@ -835,27 +865,74 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(228, 212, 129);
+  border-left-color: rgb(228, 212, 129);
+  border-right-color: rgb(228, 212, 129);
+  border-top-color: rgb(228, 212, 129);
   color: var(--h2-color, rgb(228, 212, 129));
+  font-size: var(--h2-size, 25px);
+  letter-spacing: var(--h2-letter-spacing, -0.275px);
+  margin-bottom: 0px;
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(85, 85, 85);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(179, 179, 179);
+  border-right-color: rgb(179, 179, 179);
+  border-top-color: rgb(179, 179, 179);
   color: var(--inline-title-color, rgb(179, 179, 179));
+  font-size: var(--inline-title-size, 25px);
+  font-weight: var(--inline-title-weight, 680);
+  letter-spacing: -0.375px;
+  line-height: 24px;
+  margin-bottom: 4px;
 }
 
 html body h3 {
+  border-bottom-color: rgb(116, 185, 241);
+  border-left-color: rgb(116, 185, 241);
+  border-right-color: rgb(116, 185, 241);
+  border-top-color: rgb(116, 185, 241);
   color: var(--h3-color, rgb(116, 185, 241));
+  font-size: var(--h3-size, 22px);
+  letter-spacing: var(--h3-letter-spacing, -0.176px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(209, 154, 102);
+  border-left-color: rgb(209, 154, 102);
+  border-right-color: rgb(209, 154, 102);
+  border-top-color: rgb(209, 154, 102);
   color: var(--h4-color, rgb(209, 154, 102));
+  font-size: var(--h4-size, 20px);
+  letter-spacing: var(--h4-letter-spacing, -0.1px);
+  line-height: var(--h4-line-height, 28px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(152, 195, 121);
+  border-left-color: rgb(152, 195, 121);
+  border-right-color: rgb(152, 195, 121);
+  border-top-color: rgb(152, 195, 121);
   color: var(--h5-color, rgb(152, 195, 121));
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(168, 130, 255);
+  border-left-color: rgb(168, 130, 255);
+  border-right-color: rgb(168, 130, 255);
+  border-top-color: rgb(168, 130, 255);
   color: var(--h6-color, rgb(168, 130, 255));
+  margin-bottom: 0px;
+  margin-top: 0px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 116, 185, 241);

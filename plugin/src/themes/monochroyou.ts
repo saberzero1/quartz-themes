@@ -21,7 +21,20 @@ export const theme: ThemeData = {
   --bases-table-header-background: var(--background-primary, hsl(258, 20%, 7%));
   --bases-table-summary-background: var(--background-primary, hsl(258, 20%, 7%));
   --button-radius: var(--input-radius, 100px);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 100px);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, hsl(258, 20%, 7%));
   --canvas-controls-radius: var(--radius-s, 100px);
   --checkbox-marker-color: var(--background-primary, hsl(258, 20%, 7%));
@@ -639,6 +652,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   --pill-color: var(--tag-color, hsl(258, 100%, 80%));
   --pill-color-remove: var(--tag-color, hsl(258, 100%, 80%));
   background-color: var(--pill-background, rgb(31, 0, 102));
+  color: var(--pill-color, rgb(184, 153, 255));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -663,6 +677,14 @@ html[saved-theme="dark"] body hr {
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(255, 255, 255));
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 100px;
@@ -781,7 +803,20 @@ html[saved-theme="dark"] body ul.tags > li {
   --bases-table-summary-background: var(--background-primary, hsl(258, 100%, 97%));
   --blockquote-border-color: var(--interactive-accent, hsl(258, 100%, 31%));
   --button-radius: var(--input-radius, 100px);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 100px);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, hsl(258, 100%, 97%));
   --canvas-controls-radius: var(--radius-s, 100px);
   --checkbox-color: var(--interactive-accent, hsl(258, 100%, 31%));
@@ -1469,6 +1504,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color: var(--tag-color, hsl(258, 100%, 31%));
   --pill-color-remove: var(--tag-color, hsl(258, 100%, 31%));
   background-color: var(--pill-background, rgb(201, 179, 255));
+  color: var(--pill-color, rgb(47, 0, 158));
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -1493,6 +1529,14 @@ html[saved-theme="light"] body hr {
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(0, 0, 0));
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 100px;

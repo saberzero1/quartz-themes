@@ -25,6 +25,19 @@ export const theme: ThemeData = {
   --bases-table-header-background: var(--background-primary, #1a1b26);
   --bases-table-summary-background: var(--background-primary, #1a1b26);
   --bold-color: #bb9af7;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #1a1b26);
   --canvas-card-label-color: var(--text-faint, #565f8988);
   --checkbox-border-color: var(--text-faint, #565f8988);
@@ -126,6 +139,8 @@ export const theme: ThemeData = {
   --titlebar-border-color: var(--background-modifier-border, #999999);
   --vault-profile-font-size: var(--font-ui-small, 14px);
   --quartz-icon-color: currentColor;
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -168,6 +183,12 @@ html body .markdown-rendered p > em, html em {
 }
 
 html body .markdown-rendered p > i, html i {
+  color: var(--italic-color, rgb(154, 165, 206));
+  outline: rgb(154, 165, 206) none 0px;
+  text-decoration-color: rgb(154, 165, 206);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
   color: var(--italic-color, rgb(154, 165, 206));
   outline: rgb(154, 165, 206) none 0px;
   text-decoration-color: rgb(154, 165, 206);
@@ -605,7 +626,14 @@ html body .search > .search-container > .search-space > input {
 }
 
 html body h1 {
+  border-bottom-color: rgb(122, 162, 247);
+  border-left-color: rgb(122, 162, 247);
+  border-right-color: rgb(122, 162, 247);
+  border-top-color: rgb(122, 162, 247);
   color: var(--h1-color, rgb(122, 162, 247));
+  font-size: var(--h1-size, 20px);
+  letter-spacing: var(--h1-letter-spacing, -0.3px);
+  line-height: var(--h1-line-height, 24px);
 }
 
 html body h1.article-title {
@@ -614,27 +642,71 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(122, 162, 247);
+  border-left-color: rgb(122, 162, 247);
+  border-right-color: rgb(122, 162, 247);
+  border-top-color: rgb(122, 162, 247);
   color: var(--h2-color, rgb(122, 162, 247));
+  font-size: var(--h2-size, 20px);
+  letter-spacing: var(--h2-letter-spacing, -0.22px);
+  line-height: var(--h2-line-height, 24px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  background: rgba(0, 0, 0, 0) -webkit-radial-gradient(center, rgb(187, 154, 247), rgb(247, 118, 142)) repeat scroll 0% 0% / auto padding-box text;
+  background-image: radial-gradient(center, rgb(187, 154, 247), rgb(247, 118, 142));
+  border-bottom-color: rgb(122, 162, 247);
+  border-left-color: rgb(122, 162, 247);
+  border-right-color: rgb(122, 162, 247);
+  border-top-color: rgb(122, 162, 247);
   color: var(--inline-title-color, rgb(122, 162, 247));
+  font-size: var(--inline-title-size, 20px);
+  letter-spacing: -0.3px;
+  line-height: var(--inline-title-line-height, 24px);
+  margin-bottom: 10px;
 }
 
 html body h3 {
+  border-bottom-color: rgb(122, 162, 247);
+  border-left-color: rgb(122, 162, 247);
+  border-right-color: rgb(122, 162, 247);
+  border-top-color: rgb(122, 162, 247);
   color: var(--h3-color, rgb(122, 162, 247));
+  font-size: var(--h3-size, 20px);
+  letter-spacing: var(--h3-letter-spacing, -0.16px);
+  line-height: var(--h3-line-height, 26px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(122, 162, 247);
+  border-left-color: rgb(122, 162, 247);
+  border-right-color: rgb(122, 162, 247);
+  border-top-color: rgb(122, 162, 247);
   color: var(--h4-color, rgb(122, 162, 247));
+  font-size: var(--h4-size, 20px);
+  letter-spacing: var(--h4-letter-spacing, -0.1px);
+  line-height: var(--h4-line-height, 28px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(122, 162, 247);
+  border-left-color: rgb(122, 162, 247);
+  border-right-color: rgb(122, 162, 247);
+  border-top-color: rgb(122, 162, 247);
   color: var(--h5-color, rgb(122, 162, 247));
+  font-size: var(--h5-size, 20px);
+  letter-spacing: var(--h5-letter-spacing, -0.04px);
+  line-height: var(--h5-line-height, 30px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(122, 162, 247);
+  border-left-color: rgb(122, 162, 247);
+  border-right-color: rgb(122, 162, 247);
+  border-top-color: rgb(122, 162, 247);
   color: var(--h6-color, rgb(122, 162, 247));
+  font-size: var(--h6-size, 20px);
+  line-height: var(--h6-line-height, 30px);
 }
 
 html body hr {
@@ -645,12 +717,20 @@ html body hr {
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
 }`,
+    explorer: `html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}`,
     footer: `html body footer {
   background-color: var(--status-bar-background, rgb(26, 27, 38));
   border-bottom-color: rgb(153, 153, 153);
   border-left-color: rgb(153, 153, 153);
   border-right-color: rgb(153, 153, 153);
   border-top-color: rgb(153, 153, 153);
+  font-size: var(--status-bar-font-size, 13px);
+}
+
+html body footer ul li a {
+  font-size: 13px;
 }`,
     breadcrumbs: `html body .breadcrumb-element p {
   color: var(--text-faint, rgba(86, 95, 137, 0.533));
@@ -684,6 +764,11 @@ html body .stacked-page-header {
 }`,
     misc: `html body .navigation-progress {
   background-color: var(--status-bar-background, rgb(26, 27, 38));
+}
+
+html body .page-header h2.page-title {
+  font-size: 14px;
+  line-height: 18.2px;
 }
 
 html body kbd {

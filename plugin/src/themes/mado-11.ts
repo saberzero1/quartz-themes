@@ -48,9 +48,22 @@ export const theme: ThemeData = {
   --button-padding-icon: 7px;
   --button-padding-long: 11px 15px;
   --button-radius: var(--input-radius, 4px);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
   --callout-content-padding: 0 11px 0 27px;
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 0px);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
   --callout-title-padding: 11px;
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, hsla(215, 17%, 19%, 1));
   --canvas-card-label-color: var(--text-faint, hsla(217, 18%, 50%, 0.7));
   --canvas-dot-pattern: var(--color-base-30, hsla(215, 22%, 13%, 1));
@@ -260,7 +273,9 @@ export const theme: ThemeData = {
   --window-shadow: 0 0 9px var(--color-base-shadow-hover);
   --window-shadow-left: -4px 0 5px var(--color-base-shadow-hover);
   --window-shadow-right: 4px 0 5px var(--color-base-shadow-hover);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -308,6 +323,12 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, rgb(119, 147, 187));
+  outline: rgb(119, 147, 187) none 0px;
+  text-decoration-color: rgb(119, 147, 187);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--italic-color, rgb(119, 147, 187));
   outline: rgb(119, 147, 187) none 0px;
   text-decoration-color: rgb(119, 147, 187);
@@ -365,10 +386,18 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(68, 158, 248, 0.3));
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(186, 186, 186);
+  border-left-color: rgb(186, 186, 186);
+  border-right-color: rgb(186, 186, 186);
+  border-top-color: rgb(186, 186, 186);
   color: rgb(186, 186, 186);
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(186, 186, 186);
+  border-left-color: rgb(186, 186, 186);
+  border-right-color: rgb(186, 186, 186);
+  border-top-color: rgb(186, 186, 186);
   color: rgb(186, 186, 186);
 }
 
@@ -392,6 +421,7 @@ html[saved-theme="dark"] body ul.overflow {
 
 html[saved-theme="dark"] body blockquote {
   background-color: var(--blockquote-background-color, rgb(29, 37, 47));
+  color: var(--blockquote-color, rgb(142, 154, 175));
   padding-bottom: 17px;
   padding-top: 17px;
 }`,
@@ -406,7 +436,6 @@ html[saved-theme="dark"] body table {
   color: rgb(186, 186, 186);
   margin-left: 7px;
   margin-right: 7px;
-  width: 245.219px;
 }
 
 html[saved-theme="dark"] body td {
@@ -511,6 +540,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(130, 143, 166);
   border-right-color: rgb(130, 143, 166);
   border-top-color: rgb(130, 143, 166);
+  color: var(--text-muted, rgb(130, 143, 166));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -526,6 +556,7 @@ html[saved-theme="dark"] body .transclude {
   border-bottom-width: 1px;
   border-left-color: rgb(26, 32, 40);
   border-left-width: 1px;
+  border-radius: 4px;
   border-right-color: rgb(26, 32, 40);
   border-right-style: solid;
   border-right-width: 1px;
@@ -534,6 +565,7 @@ html[saved-theme="dark"] body .transclude {
   border-top-right-radius: 4px;
   border-top-style: solid;
   border-top-width: 1px;
+  color: rgb(186, 186, 186);
   padding-bottom: 13px;
   padding-left: 23px;
   padding-right: 23px;
@@ -548,6 +580,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-right-style: solid;
   border-top-color: rgb(186, 186, 186);
   border-top-style: solid;
+  color: rgb(186, 186, 186);
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgba(105, 122, 150, 0.7);
@@ -2362,6 +2395,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-left-color: rgba(68, 158, 248, 0.15);
   border-right-color: rgba(68, 158, 248, 0.15);
   border-top-color: rgba(68, 158, 248, 0.15);
+  color: var(--pill-color, rgb(67, 159, 234));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -2369,6 +2403,10 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(186, 186, 186);
+  border-left-color: rgb(186, 186, 186);
+  border-right-color: rgb(186, 186, 186);
+  border-top-color: rgb(186, 186, 186);
   color: var(--h1-color, rgb(186, 186, 186));
 }
 
@@ -2377,27 +2415,55 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(186, 186, 186);
+  border-left-color: rgb(186, 186, 186);
+  border-right-color: rgb(186, 186, 186);
+  border-top-color: rgb(186, 186, 186);
   color: var(--h2-color, rgb(186, 186, 186));
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(186, 186, 186);
+  border-left-color: rgb(186, 186, 186);
+  border-right-color: rgb(186, 186, 186);
+  border-top-color: rgb(186, 186, 186);
   color: var(--inline-title-color, rgb(186, 186, 186));
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(186, 186, 186);
+  border-left-color: rgb(186, 186, 186);
+  border-right-color: rgb(186, 186, 186);
+  border-top-color: rgb(186, 186, 186);
   color: var(--h3-color, rgb(186, 186, 186));
+  margin-top: var(--heading-spacing, 33px);
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(186, 186, 186);
+  border-left-color: rgb(186, 186, 186);
+  border-right-color: rgb(186, 186, 186);
+  border-top-color: rgb(186, 186, 186);
   color: var(--h4-color, rgb(186, 186, 186));
+  margin-top: var(--heading-spacing, 33px);
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(186, 186, 186);
+  border-left-color: rgb(186, 186, 186);
+  border-right-color: rgb(186, 186, 186);
+  border-top-color: rgb(186, 186, 186);
   color: var(--h5-color, rgb(186, 186, 186));
+  margin-top: var(--heading-spacing, 33px);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(186, 186, 186);
+  border-left-color: rgb(186, 186, 186);
+  border-right-color: rgb(186, 186, 186);
+  border-top-color: rgb(186, 186, 186);
   color: var(--h6-color, rgb(186, 186, 186));
+  margin-top: 33px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -2435,6 +2501,26 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--color-accent-2, rgb(71, 163, 255));
   font-weight: var(--nav-item-weight, 500);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(186, 186, 186);
@@ -2557,11 +2643,27 @@ html[saved-theme="dark"] body .canvas-sidebar {
   color: var(--text-muted, rgb(130, 143, 166));
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(130, 143, 166);
+  border-left-color: rgb(130, 143, 166);
+  border-right-color: rgb(130, 143, 166);
+  border-top-color: rgb(130, 143, 166);
+  color: rgb(130, 143, 166);
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(130, 143, 166);
   border-left-color: rgb(130, 143, 166);
   border-right-color: rgb(130, 143, 166);
   border-top-color: rgb(130, 143, 166);
+  color: rgb(130, 143, 166);
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(130, 143, 166);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
   color: rgb(130, 143, 166);
 }
 
@@ -2630,6 +2732,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(186, 186, 186);
+  border-left-color: rgb(186, 186, 186);
+  border-right-color: rgb(186, 186, 186);
+  border-top-color: rgb(186, 186, 186);
   color: var(--text-normal, rgb(186, 186, 186));
 }
 
@@ -2730,9 +2836,22 @@ html[saved-theme="dark"] body ul.tags > li {
   --button-padding-icon: 7px;
   --button-padding-long: 11px 15px;
   --button-radius: var(--input-radius, 4px);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
   --callout-content-padding: 0 11px 0 27px;
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 0px);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
   --callout-title-padding: 11px;
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, hsla(204, 45%, 97%, 1));
   --canvas-card-label-color: var(--text-faint, hsla(217, 15%, 73%, 1));
   --caret-color: var(--text-normal, hsla(0, 0%, 13%, 1));
@@ -2923,7 +3042,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --window-shadow: 0 0 9px var(--color-base-shadow-hover);
   --window-shadow-left: -4px 0 5px var(--color-base-shadow-hover);
   --window-shadow-right: 4px 0 5px var(--color-base-shadow-hover);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -2971,6 +3092,12 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--italic-color, rgb(120, 154, 201));
+  outline: rgb(120, 154, 201) none 0px;
+  text-decoration-color: rgb(120, 154, 201);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--italic-color, rgb(120, 154, 201));
   outline: rgb(120, 154, 201) none 0px;
   text-decoration-color: rgb(120, 154, 201);
@@ -3027,10 +3154,18 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(68, 158, 248, 0.3));
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(33, 33, 33);
+  border-left-color: rgb(33, 33, 33);
+  border-right-color: rgb(33, 33, 33);
+  border-top-color: rgb(33, 33, 33);
   color: rgb(33, 33, 33);
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(33, 33, 33);
+  border-left-color: rgb(33, 33, 33);
+  border-right-color: rgb(33, 33, 33);
+  border-top-color: rgb(33, 33, 33);
   color: rgb(33, 33, 33);
 }
 
@@ -3054,6 +3189,7 @@ html[saved-theme="light"] body ul.overflow {
 
 html[saved-theme="light"] body blockquote {
   background-color: var(--blockquote-background-color, rgb(237, 242, 248));
+  color: var(--blockquote-color, rgb(81, 94, 118));
   padding-bottom: 17px;
   padding-top: 17px;
 }`,
@@ -3068,7 +3204,6 @@ html[saved-theme="light"] body table {
   color: rgb(33, 33, 33);
   margin-left: 7px;
   margin-right: 7px;
-  width: 245.219px;
 }
 
 html[saved-theme="light"] body td {
@@ -3165,6 +3300,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(81, 94, 118);
   border-right-color: rgb(81, 94, 118);
   border-top-color: rgb(81, 94, 118);
+  color: var(--text-muted, rgb(81, 94, 118));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -3180,6 +3316,7 @@ html[saved-theme="light"] body .transclude {
   border-bottom-width: 1px;
   border-left-color: rgb(224, 224, 224);
   border-left-width: 1px;
+  border-radius: 4px;
   border-right-color: rgb(224, 224, 224);
   border-right-style: solid;
   border-right-width: 1px;
@@ -3188,6 +3325,7 @@ html[saved-theme="light"] body .transclude {
   border-top-right-radius: 4px;
   border-top-style: solid;
   border-top-width: 1px;
+  color: rgb(33, 33, 33);
   padding-bottom: 13px;
   padding-left: 23px;
   padding-right: 23px;
@@ -3202,6 +3340,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-right-style: solid;
   border-top-color: rgb(33, 33, 33);
   border-top-style: solid;
+  color: rgb(33, 33, 33);
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(176, 184, 196);
@@ -5011,6 +5150,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-left-color: rgba(68, 158, 248, 0.15);
   border-right-color: rgba(68, 158, 248, 0.15);
   border-top-color: rgba(68, 158, 248, 0.15);
+  color: var(--pill-color, rgb(68, 158, 248));
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -5018,6 +5158,10 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(33, 33, 33);
+  border-left-color: rgb(33, 33, 33);
+  border-right-color: rgb(33, 33, 33);
+  border-top-color: rgb(33, 33, 33);
   color: var(--h1-color, rgb(33, 33, 33));
 }
 
@@ -5026,27 +5170,55 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(33, 33, 33);
+  border-left-color: rgb(33, 33, 33);
+  border-right-color: rgb(33, 33, 33);
+  border-top-color: rgb(33, 33, 33);
   color: var(--h2-color, rgb(33, 33, 33));
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(33, 33, 33);
+  border-left-color: rgb(33, 33, 33);
+  border-right-color: rgb(33, 33, 33);
+  border-top-color: rgb(33, 33, 33);
   color: var(--inline-title-color, rgb(33, 33, 33));
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(33, 33, 33);
+  border-left-color: rgb(33, 33, 33);
+  border-right-color: rgb(33, 33, 33);
+  border-top-color: rgb(33, 33, 33);
   color: var(--h3-color, rgb(33, 33, 33));
+  margin-top: var(--heading-spacing, 33px);
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(33, 33, 33);
+  border-left-color: rgb(33, 33, 33);
+  border-right-color: rgb(33, 33, 33);
+  border-top-color: rgb(33, 33, 33);
   color: var(--h4-color, rgb(33, 33, 33));
+  margin-top: var(--heading-spacing, 33px);
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(33, 33, 33);
+  border-left-color: rgb(33, 33, 33);
+  border-right-color: rgb(33, 33, 33);
+  border-top-color: rgb(33, 33, 33);
   color: var(--h5-color, rgb(33, 33, 33));
+  margin-top: var(--heading-spacing, 33px);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(33, 33, 33);
+  border-left-color: rgb(33, 33, 33);
+  border-right-color: rgb(33, 33, 33);
+  border-top-color: rgb(33, 33, 33);
   color: var(--h6-color, rgb(33, 33, 33));
+  margin-top: 33px;
 }
 
 html[saved-theme="light"] body hr {
@@ -5084,6 +5256,26 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--color-accent-2, rgb(43, 145, 247));
   font-weight: var(--nav-item-weight, 500);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(33, 33, 33);
@@ -5197,11 +5389,27 @@ html[saved-theme="light"] body .canvas-sidebar {
   color: var(--text-muted, rgb(81, 94, 118));
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(81, 94, 118);
+  border-left-color: rgb(81, 94, 118);
+  border-right-color: rgb(81, 94, 118);
+  border-top-color: rgb(81, 94, 118);
+  color: rgb(81, 94, 118);
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(81, 94, 118);
   border-left-color: rgb(81, 94, 118);
   border-right-color: rgb(81, 94, 118);
   border-top-color: rgb(81, 94, 118);
+  color: rgb(81, 94, 118);
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(81, 94, 118);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
   color: rgb(81, 94, 118);
 }
 
@@ -5266,6 +5474,10 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(33, 33, 33);
+  border-left-color: rgb(33, 33, 33);
+  border-right-color: rgb(33, 33, 33);
+  border-top-color: rgb(33, 33, 33);
   color: var(--text-normal, rgb(33, 33, 33));
 }
 

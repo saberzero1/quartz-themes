@@ -27,6 +27,19 @@ export const theme: ThemeData = {
   --bases-table-group-background: var(--background-primary-alt, #111);
   --bases-table-header-background: var(--background-primary, #000);
   --bases-table-summary-background: var(--background-primary, #000);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #000);
   --canvas-card-label-color: var(--text-faint, #666);
   --canvas-dot-pattern: var(--color-base-30, #333);
@@ -135,6 +148,8 @@ export const theme: ThemeData = {
   --yellow: rgb(var(--yellow_x));
   --yellow_x: 235,203,139;
   --quartz-icon-color: currentColor;
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -585,6 +600,10 @@ html body .search > .search-container > .search-space > input {
 }
 
 html body h1 {
+  border-bottom-color: rgb(191, 97, 106);
+  border-left-color: rgb(191, 97, 106);
+  border-right-color: rgb(191, 97, 106);
+  border-top-color: rgb(191, 97, 106);
   color: var(--h1-color, rgb(191, 97, 106));
 }
 
@@ -593,26 +612,50 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(235, 203, 139);
+  border-left-color: rgb(235, 203, 139);
+  border-right-color: rgb(235, 203, 139);
+  border-top-color: rgb(235, 203, 139);
   color: var(--h2-color, rgb(235, 203, 139));
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(191, 97, 106);
+  border-left-color: rgb(191, 97, 106);
+  border-right-color: rgb(191, 97, 106);
+  border-top-color: rgb(191, 97, 106);
   color: var(--inline-title-color, rgb(191, 97, 106));
 }
 
 html body h3 {
+  border-bottom-color: rgb(163, 190, 140);
+  border-left-color: rgb(163, 190, 140);
+  border-right-color: rgb(163, 190, 140);
+  border-top-color: rgb(163, 190, 140);
   color: var(--h3-color, rgb(163, 190, 140));
 }
 
 html body h4 {
+  border-bottom-color: rgb(180, 142, 173);
+  border-left-color: rgb(180, 142, 173);
+  border-right-color: rgb(180, 142, 173);
+  border-top-color: rgb(180, 142, 173);
   color: var(--h4-color, rgb(180, 142, 173));
 }
 
 html body h5 {
+  border-bottom-color: rgb(143, 188, 187);
+  border-left-color: rgb(143, 188, 187);
+  border-right-color: rgb(143, 188, 187);
+  border-top-color: rgb(143, 188, 187);
   color: var(--h5-color, rgb(143, 188, 187));
 }
 
 html body h6 {
+  border-bottom-color: rgb(129, 161, 193);
+  border-left-color: rgb(129, 161, 193);
+  border-right-color: rgb(129, 161, 193);
+  border-top-color: rgb(129, 161, 193);
   color: var(--h6-color, rgb(129, 161, 193));
 }
 
@@ -623,6 +666,9 @@ html body hr {
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
+}`,
+    explorer: `html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     footer: `html body footer {
   background-color: var(--status-bar-background, rgb(8, 8, 8));

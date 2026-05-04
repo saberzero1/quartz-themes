@@ -36,6 +36,19 @@ export const theme: ThemeData = {
   dark: {
     base: `:root:root {
   --border: #404040;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --titlebar_active_1: #0a246a;
   --titlebar_active_2: #a6caf0;
   --titlebar_inactive_1: #808080;
@@ -539,10 +552,15 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(0, 0, 0));
   font-family: "Pixelated MS Sans Serif";
+  font-size: var(--status-bar-font-size, 11px);
+  padding-bottom: 1px;
+  padding-left: 1px;
+  padding-top: 3px;
 }
 
 html body footer ul li a {
   color: rgb(0, 0, 0);
+  font-size: 11px;
 }`,
     recentNotes: `html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: var(--nav-item-color, rgb(0, 0, 0));
@@ -585,6 +603,9 @@ html body .stacked-page-header {
 
 html body .page-header h2.page-title {
   font-family: "Pixelated MS Sans Serif", Arial;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 14.3px;
 }
 
 html body input[type=text] {

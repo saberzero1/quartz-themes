@@ -338,7 +338,9 @@ export const theme: ThemeData = {
   --vault-profile-color-hover: var(--vault-profile-color, #eeead1);
   --washed-blue: #74859a;
   --washed-blue-rgb: 116, 133, 154;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -426,6 +428,13 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(248, 194, 96);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(248, 194, 96));
+  font-weight: var(--italic-weight, 700);
+  outline: rgb(248, 194, 96) none 0px;
+  text-decoration-color: rgb(248, 194, 96);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--bold-color, rgb(185, 230, 120));
   outline: rgb(185, 230, 120) none 0px;
@@ -478,10 +487,18 @@ html body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(207, 209, 209));
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(238, 234, 209);
+  border-left-color: rgb(238, 234, 209);
+  border-right-color: rgb(238, 234, 209);
+  border-top-color: rgb(238, 234, 209);
   color: rgb(238, 234, 209);
 }
 
 html body dt {
+  border-bottom-color: rgb(238, 234, 209);
+  border-left-color: rgb(238, 234, 209);
+  border-right-color: rgb(238, 234, 209);
+  border-top-color: rgb(238, 234, 209);
   color: rgb(238, 234, 209);
 }
 
@@ -505,6 +522,7 @@ html body ul.overflow {
 
 html body blockquote {
   background-color: var(--blockquote-background-color, rgb(44, 58, 74));
+  color: var(--blockquote-color, rgb(238, 234, 209));
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(238, 234, 209);
@@ -521,7 +539,6 @@ html body table {
   color: rgb(238, 234, 209);
   margin-left: 225.891px;
   margin-right: 225.891px;
-  width: 210.219px;
 }
 
 html body td {
@@ -627,6 +644,7 @@ html body video {
   border-left-color: rgb(207, 209, 209);
   border-right-color: rgb(207, 209, 209);
   border-top-color: rgb(207, 209, 209);
+  color: var(--text-muted, rgb(207, 209, 209));
 }
 
 html body .footnotes {
@@ -639,6 +657,7 @@ html body .transclude {
   border-left-color: rgb(93, 203, 195);
   border-right-color: rgb(238, 234, 209);
   border-top-color: rgb(238, 234, 209);
+  color: rgb(238, 234, 209);
 }
 
 html body .transclude-inner {
@@ -646,6 +665,7 @@ html body .transclude-inner {
   border-left-color: rgb(238, 234, 209);
   border-right-color: rgb(238, 234, 209);
   border-top-color: rgb(238, 234, 209);
+  color: rgb(238, 234, 209);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgba(255, 213, 128, 0.8);
@@ -1800,6 +1820,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-top-color: rgb(185, 230, 120);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  color: var(--pill-color, rgb(185, 230, 120));
   font-weight: var(--pill-weight, 600);
 }
 
@@ -1808,7 +1829,14 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(255, 105, 93);
+  border-left-color: rgb(255, 105, 93);
+  border-right-color: rgb(255, 105, 93);
+  border-top-color: rgb(255, 105, 93);
   color: var(--h1-color, rgb(255, 105, 93));
+  font-size: var(--h1-size, 36.8px);
+  letter-spacing: var(--h1-letter-spacing, -0.552px);
+  line-height: var(--h1-line-height, 44.16px);
 }
 
 html body h1.article-title {
@@ -1817,27 +1845,69 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(255, 161, 97);
+  border-left-color: rgb(255, 161, 97);
+  border-right-color: rgb(255, 161, 97);
+  border-top-color: rgb(255, 161, 97);
   color: var(--h2-color, rgb(255, 161, 97));
+  font-size: var(--h2-size, 33.6px);
+  letter-spacing: var(--h2-letter-spacing, -0.3696px);
+  line-height: var(--h2-line-height, 40.32px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(255, 105, 93);
+  border-left-color: rgb(255, 105, 93);
+  border-right-color: rgb(255, 105, 93);
+  border-top-color: rgb(255, 105, 93);
   color: var(--inline-title-color, rgb(255, 105, 93));
+  font-size: var(--inline-title-size, 36.8px);
+  letter-spacing: -0.552px;
+  line-height: var(--inline-title-line-height, 44.16px);
+  margin-bottom: 18.4px;
 }
 
 html body h3 {
+  border-bottom-color: rgb(248, 194, 96);
+  border-left-color: rgb(248, 194, 96);
+  border-right-color: rgb(248, 194, 96);
+  border-top-color: rgb(248, 194, 96);
   color: var(--h3-color, rgb(248, 194, 96));
+  font-size: var(--h3-size, 30.4px);
+  letter-spacing: var(--h3-letter-spacing, -0.2432px);
+  line-height: var(--h3-line-height, 39.52px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(185, 230, 120);
+  border-left-color: rgb(185, 230, 120);
+  border-right-color: rgb(185, 230, 120);
+  border-top-color: rgb(185, 230, 120);
   color: var(--h4-color, rgb(185, 230, 120));
+  font-size: var(--h4-size, 27.2px);
+  letter-spacing: var(--h4-letter-spacing, -0.136px);
+  line-height: var(--h4-line-height, 38.08px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(132, 220, 161);
+  border-left-color: rgb(132, 220, 161);
+  border-right-color: rgb(132, 220, 161);
+  border-top-color: rgb(132, 220, 161);
   color: var(--h5-color, rgb(132, 220, 161));
+  font-size: var(--h5-size, 25.6px);
+  letter-spacing: var(--h5-letter-spacing, -0.0512px);
+  line-height: var(--h5-line-height, 38.4px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(93, 203, 195);
+  border-left-color: rgb(93, 203, 195);
+  border-right-color: rgb(93, 203, 195);
+  border-top-color: rgb(93, 203, 195);
   color: var(--h6-color, rgb(93, 203, 195));
+  font-size: var(--h6-size, 24px);
+  line-height: var(--h6-line-height, 36px);
 }
 
 html body hr {
@@ -1871,6 +1941,30 @@ html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title 
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(207, 209, 209));
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(238, 234, 209);
@@ -1990,11 +2084,27 @@ html body .canvas-sidebar {
   color: var(--text-muted, rgb(207, 209, 209));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(207, 209, 209);
+  border-left-color: rgb(207, 209, 209);
+  border-right-color: rgb(207, 209, 209);
+  border-top-color: rgb(207, 209, 209);
+  color: rgb(207, 209, 209);
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(207, 209, 209);
   border-left-color: rgb(207, 209, 209);
   border-right-color: rgb(207, 209, 209);
   border-top-color: rgb(207, 209, 209);
+  color: rgb(207, 209, 209);
+}
+
+html body .metadata-property-key {
+  color: rgb(207, 209, 209);
+}
+
+html body .metadata-property-value {
   color: rgb(207, 209, 209);
 }
 
@@ -2066,6 +2176,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(238, 234, 209);
+  border-left-color: rgb(238, 234, 209);
+  border-right-color: rgb(238, 234, 209);
+  border-top-color: rgb(238, 234, 209);
   color: var(--text-normal, rgb(238, 234, 209));
 }
 

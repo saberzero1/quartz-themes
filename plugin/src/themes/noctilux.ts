@@ -25,6 +25,19 @@ export const theme: ThemeData = {
   --bases-table-header-color: var(--text-muted, #bbb);
   --bases-table-summary-background: var(--background-primary, #0e0e0e);
   --blockquote-border-color: var(--text-accent, #58a6ff);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #0e0e0e);
   --canvas-card-label-color: var(--text-faint, #666);
   --canvas-dot-pattern: var(--color-base-30, #333);
@@ -197,7 +210,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, #fff);
   --vault-profile-color: var(--text-normal, #fff);
   --vault-profile-color-hover: var(--vault-profile-color, #fff);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -244,6 +259,12 @@ html body .markdown-rendered p > em, html em {
 }
 
 html body .markdown-rendered p > i, html i {
+  color: var(--italic-color, rgb(255, 255, 255));
+  outline: rgb(255, 255, 255) none 0px;
+  text-decoration-color: rgb(255, 255, 255);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
   color: var(--italic-color, rgb(255, 255, 255));
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
@@ -299,19 +320,31 @@ html body a.internal-link.broken {
   outline: rgb(88, 166, 255) none 0px;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
 }
 
 html body dt {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
 }
 
 html body ol > li {
   color: rgb(255, 255, 255);
+  margin-bottom: 4px;
+  margin-top: 4px;
 }
 
 html body ul > li {
   color: rgb(255, 255, 255);
+  margin-bottom: 4px;
+  margin-top: 4px;
 }
 
 html body ul.overflow {
@@ -319,6 +352,10 @@ html body ul.overflow {
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
+}`,
+    blockquotes: `html body blockquote {
+  color: var(--blockquote-color, rgb(255, 255, 255));
+  line-height: 25.6px;
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(255, 255, 255);
@@ -413,6 +450,7 @@ html body video {
   border-left-color: rgb(187, 187, 187);
   border-right-color: rgb(187, 187, 187);
   border-top-color: rgb(187, 187, 187);
+  color: var(--text-muted, rgb(187, 187, 187));
 }
 
 html body .footnotes {
@@ -425,6 +463,7 @@ html body .transclude {
   border-left-color: rgb(94, 92, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 html body .transclude-inner {
@@ -432,6 +471,7 @@ html body .transclude-inner {
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }`,
     checkboxes: `html body li.task-list-item[data-task="#"] {
   color: rgb(255, 255, 255);
@@ -1288,6 +1328,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color-remove: var(--tag-color, #58a6ff);
   --pill-color-remove-hover: var(--tag-color-hover, #58a6ff);
   background-color: var(--pill-background, rgba(88, 166, 255, 0.15));
+  color: var(--pill-color, rgb(88, 166, 255));
 }
 
 html body a.internal-link.tag-link::before {
@@ -1295,7 +1336,12 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(15, 182, 214);
+  border-left-color: rgb(15, 182, 214);
+  border-right-color: rgb(15, 182, 214);
+  border-top-color: rgb(15, 182, 214);
   color: var(--h1-color, rgb(15, 182, 214));
+  margin-bottom: 12.944px;
 }
 
 html body h1.article-title {
@@ -1303,27 +1349,77 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(203, 219, 229);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(203, 219, 229);
+  border-right-color: rgb(203, 219, 229);
+  border-top-color: rgb(203, 219, 229);
   color: var(--h2-color, rgb(203, 219, 229));
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(15, 182, 214);
+  border-left-color: rgb(15, 182, 214);
+  border-right-color: rgb(15, 182, 214);
+  border-top-color: rgb(15, 182, 214);
   color: var(--inline-title-color, rgb(15, 182, 214));
 }
 
 html body h3 {
+  border-bottom-color: rgb(203, 219, 229);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(203, 219, 229);
+  border-right-color: rgb(203, 219, 229);
+  border-top-color: rgb(203, 219, 229);
   color: var(--h3-color, rgb(203, 219, 229));
+  margin-bottom: 20px;
+  margin-top: var(--heading-spacing, 45px);
+  padding-bottom: 10px;
 }
 
 html body h4 {
+  border-bottom-color: rgb(203, 219, 229);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(203, 219, 229);
+  border-right-color: rgb(203, 219, 229);
+  border-top-color: rgb(203, 219, 229);
   color: var(--h4-color, rgb(203, 219, 229));
+  margin-bottom: 20px;
+  margin-top: var(--heading-spacing, 45px);
+  padding-bottom: 10px;
 }
 
 html body h5 {
+  border-bottom-color: rgb(203, 219, 229);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(203, 219, 229);
+  border-right-color: rgb(203, 219, 229);
+  border-top-color: rgb(203, 219, 229);
   color: var(--h5-color, rgb(203, 219, 229));
+  line-height: var(--h5-line-height, 27.5456px);
+  margin-bottom: 20px;
+  margin-top: var(--heading-spacing, 45px);
+  padding-bottom: 10px;
 }
 
 html body h6 {
+  border-bottom-color: rgb(203, 219, 229);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(203, 219, 229);
+  border-right-color: rgb(203, 219, 229);
+  border-top-color: rgb(203, 219, 229);
   color: var(--h6-color, rgb(203, 219, 229));
+  line-height: var(--h6-line-height, 25.6px);
+  margin-bottom: 20px;
+  margin-top: 45px;
+  padding-bottom: 10px;
 }
 
 html body hr {
@@ -1342,6 +1438,22 @@ html body hr {
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(187, 187, 187));
   font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(255, 255, 255);
@@ -1461,11 +1573,27 @@ html body .canvas-sidebar {
   color: var(--text-muted, rgb(187, 187, 187));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(187, 187, 187);
+  border-left-color: rgb(187, 187, 187);
+  border-right-color: rgb(187, 187, 187);
+  border-top-color: rgb(187, 187, 187);
+  color: rgb(187, 187, 187);
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(187, 187, 187);
   border-left-color: rgb(187, 187, 187);
   border-right-color: rgb(187, 187, 187);
   border-top-color: rgb(187, 187, 187);
+  color: rgb(187, 187, 187);
+}
+
+html body .metadata-property-key {
+  color: rgb(187, 187, 187);
+}
+
+html body .metadata-property-value {
   color: rgb(187, 187, 187);
 }
 
@@ -1531,6 +1659,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--text-normal, rgb(255, 255, 255));
 }
 

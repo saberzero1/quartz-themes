@@ -56,6 +56,7 @@ export const theme: ThemeData = {
   --callout-important: var(--color-cyan-rgb, 111, 210, 194);
   --callout-info: var(--color-blue-rgb, 136, 198, 227);
   --callout-question: var(--color-orange-rgb, 241, 144, 112);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 8px);
   --callout-success: var(--color-green-rgb, 117, 194, 151);
   --callout-summary: var(--color-cyan-rgb, 111, 210, 194);
@@ -329,7 +330,9 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, #a0a7c4);
   --vault-profile-color-hover: var(--vault-profile-color, #a0a7c4);
   --workspace-background: var(--background-secondary, #2f2837);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -395,6 +398,13 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   text-decoration-color: rgb(160, 167, 196);
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(160, 167, 196));
+  font-family: "??", "??", Arima, cursive;
+  outline: rgb(160, 167, 196) none 0px;
+  text-decoration-color: rgb(160, 167, 196);
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: var(--bold-color, rgb(160, 167, 196));
   font-family: "??", "??", Arima, cursive;
@@ -441,19 +451,31 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(160, 167, 196);
+  border-left-color: rgb(160, 167, 196);
+  border-right-color: rgb(160, 167, 196);
+  border-top-color: rgb(160, 167, 196);
   color: rgb(160, 167, 196);
+  font-family: "??", "??", Arima, cursive;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(160, 167, 196);
+  border-left-color: rgb(160, 167, 196);
+  border-right-color: rgb(160, 167, 196);
+  border-top-color: rgb(160, 167, 196);
   color: rgb(160, 167, 196);
+  font-family: "??", "??", Arima, cursive;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(160, 167, 196);
+  margin-left: 24px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(160, 167, 196);
+  margin-left: 24px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -468,8 +490,10 @@ html[saved-theme="dark"] body ul.overflow {
 
 html[saved-theme="dark"] body blockquote {
   background-color: var(--blockquote-background-color, rgb(47, 40, 55));
+  color: var(--blockquote-color, rgb(160, 167, 196));
   font-family: "??", "??", Arima, cursive;
   font-style: var(--blockquote-font-style, italic);
+  line-height: 27.2px;
   padding-bottom: 10px;
   padding-top: 10px;
 }`,
@@ -483,7 +507,6 @@ html[saved-theme="dark"] body blockquote {
 html[saved-theme="dark"] body table {
   color: rgb(160, 167, 196);
   font-family: "??", "??", Arima, cursive;
-  width: 662px;
 }
 
 html[saved-theme="dark"] body tbody tr:nth-child(odd) {
@@ -599,10 +622,12 @@ html[saved-theme="dark"] body video {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-left-color: rgb(127, 131, 161);
+  border-radius: 10px;
   border-right-color: rgb(127, 131, 161);
   border-top-color: rgb(127, 131, 161);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  color: var(--text-muted, rgb(127, 131, 161));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -614,6 +639,7 @@ html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(160, 167, 196);
   border-right-color: rgb(160, 167, 196);
   border-top-color: rgb(160, 167, 196);
+  color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -621,6 +647,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(160, 167, 196);
   border-right-color: rgb(160, 167, 196);
   border-top-color: rgb(160, 167, 196);
+  color: rgb(160, 167, 196);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "??", "??", Arima, cursive;
@@ -1751,6 +1778,10 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(160, 167, 196);
+  border-left-color: rgb(160, 167, 196);
+  border-right-color: rgb(160, 167, 196);
+  border-top-color: rgb(160, 167, 196);
   color: var(--h1-color, rgb(160, 167, 196));
   font-family: var(--h1-font, "??", "??", Arima, cursive);
 }
@@ -1761,36 +1792,70 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 600);
+  border-bottom-color: rgb(160, 167, 196);
+  border-left-color: rgb(160, 167, 196);
+  border-right-color: rgb(160, 167, 196);
+  border-top-color: rgb(160, 167, 196);
   color: var(--h2-color, rgb(160, 167, 196));
   font-family: var(--h2-font, "??", "??", Arima, cursive);
+  font-weight: var(--font-weight, 600);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(160, 167, 196);
+  border-left-color: rgb(160, 167, 196);
+  border-right-color: rgb(160, 167, 196);
+  border-top-color: rgb(160, 167, 196);
   color: var(--inline-title-color, rgb(160, 167, 196));
   font-family: var(--inline-title-font, "??", "??", Arima, cursive);
 }
 
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, 600);
+  border-bottom-color: rgb(160, 167, 196);
+  border-left-color: rgb(160, 167, 196);
+  border-right-color: rgb(160, 167, 196);
+  border-top-color: rgb(160, 167, 196);
   color: var(--h3-color, rgb(160, 167, 196));
   font-family: var(--h3-font, "??", "??", Arima, cursive);
+  font-weight: var(--font-weight, 600);
+  margin-top: var(--heading-spacing, 42.176px);
 }
 
 html[saved-theme="dark"] body h4 {
   --font-weight: var(--h4-weight, 600);
+  border-bottom-color: rgb(160, 167, 196);
+  border-left-color: rgb(160, 167, 196);
+  border-right-color: rgb(160, 167, 196);
+  border-top-color: rgb(160, 167, 196);
   color: var(--h4-color, rgb(160, 167, 196));
   font-family: var(--h4-font, "??", "??", Arima, cursive);
+  font-weight: var(--font-weight, 600);
+  margin-top: var(--heading-spacing, 38.016px);
 }
 
 html[saved-theme="dark"] body h5 {
   --font-weight: var(--h5-weight, 600);
+  border-bottom-color: rgb(160, 167, 196);
+  border-left-color: rgb(160, 167, 196);
+  border-right-color: rgb(160, 167, 196);
+  border-top-color: rgb(160, 167, 196);
   color: var(--h5-color, rgb(160, 167, 196));
   font-family: var(--h5-font, "??", "??", Arima, cursive);
+  font-weight: var(--font-weight, 600);
+  line-height: var(--h5-line-height, 29.2672px);
+  margin-top: var(--heading-spacing, 34.432px);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(160, 167, 196);
+  border-left-color: rgb(160, 167, 196);
+  border-right-color: rgb(160, 167, 196);
+  border-top-color: rgb(160, 167, 196);
   color: var(--h6-color, rgb(160, 167, 196));
   font-family: var(--h6-font, "??", "??", Arima, cursive);
+  line-height: var(--h6-line-height, 27.2px);
+  margin-top: 32px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -1819,6 +1884,22 @@ html[saved-theme="dark"] body hr {
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(127, 131, 161));
   font-family: "??", "??", "??", Arima, cursive;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(160, 167, 196);
@@ -1960,6 +2041,15 @@ html[saved-theme="dark"] body .bases-table thead th {
   font-family: "??", "??", Arima, cursive;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(127, 131, 161);
+  border-left-color: rgb(127, 131, 161);
+  border-right-color: rgb(127, 131, 161);
+  border-top-color: rgb(127, 131, 161);
+  color: rgb(127, 131, 161);
+  font-family: "??", "??", Arima, cursive;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(127, 131, 161);
   border-left-color: rgb(127, 131, 161);
@@ -1967,6 +2057,16 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(127, 131, 161);
   color: rgb(127, 131, 161);
   font-family: "??", "??", Arima, cursive;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(127, 131, 161);
+  font-family: var(--metadata-label-font, "??", "??", "??", Arima, cursive);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(127, 131, 161);
+  font-family: var(--metadata-input-font, "??", "??", "??", Arima, cursive);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -2021,8 +2121,14 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(160, 167, 196);
+  border-left-color: rgb(160, 167, 196);
+  border-right-color: rgb(160, 167, 196);
+  border-top-color: rgb(160, 167, 196);
   color: var(--text-normal, rgb(160, 167, 196));
   font-family: "??", "??", "??", Arima, cursive;
+  font-size: 14px;
+  line-height: 18.2px;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -2124,6 +2230,7 @@ html[saved-theme="dark"] body sup {
   --callout-important: var(--color-cyan-rgb, 111, 210, 194);
   --callout-info: var(--color-blue-rgb, 136, 198, 227);
   --callout-question: var(--color-orange-rgb, 241, 144, 112);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 8px);
   --callout-success: var(--color-green-rgb, 117, 194, 151);
   --callout-summary: var(--color-cyan-rgb, 111, 210, 194);
@@ -2423,7 +2530,9 @@ html[saved-theme="dark"] body sup {
   --vault-profile-color: var(--text-normal, #594f67);
   --vault-profile-color-hover: var(--vault-profile-color, #594f67);
   --workspace-background: var(--background-secondary, #f4ebeb);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -2483,6 +2592,13 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--italic-color, rgb(89, 79, 103));
+  font-family: "??", "??", Arima, cursive;
+  outline: rgb(89, 79, 103) none 0px;
+  text-decoration-color: rgb(89, 79, 103);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--italic-color, rgb(89, 79, 103));
   font-family: "??", "??", Arima, cursive;
   outline: rgb(89, 79, 103) none 0px;
@@ -2549,19 +2665,31 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(193, 139, 172, 0.3));
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(89, 79, 103);
+  border-left-color: rgb(89, 79, 103);
+  border-right-color: rgb(89, 79, 103);
+  border-top-color: rgb(89, 79, 103);
   color: rgb(89, 79, 103);
+  font-family: "??", "??", Arima, cursive;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(89, 79, 103);
+  border-left-color: rgb(89, 79, 103);
+  border-right-color: rgb(89, 79, 103);
+  border-top-color: rgb(89, 79, 103);
   color: rgb(89, 79, 103);
+  font-family: "??", "??", Arima, cursive;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(89, 79, 103);
+  margin-left: 24px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(89, 79, 103);
+  margin-left: 24px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -2576,8 +2704,10 @@ html[saved-theme="light"] body ul.overflow {
 
 html[saved-theme="light"] body blockquote {
   background-color: var(--blockquote-background-color, rgb(250, 243, 241));
+  color: var(--blockquote-color, rgb(89, 79, 103));
   font-family: "??", "??", Arima, cursive;
   font-style: var(--blockquote-font-style, italic);
+  line-height: 27.2px;
   padding-bottom: 10px;
   padding-top: 10px;
 }`,
@@ -2591,7 +2721,6 @@ html[saved-theme="light"] body blockquote {
 html[saved-theme="light"] body table {
   color: rgb(89, 79, 103);
   font-family: "??", "??", Arima, cursive;
-  width: 662px;
 }
 
 html[saved-theme="light"] body tbody tr:nth-child(odd) {
@@ -2707,10 +2836,12 @@ html[saved-theme="light"] body video {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-left-color: rgb(104, 90, 104);
+  border-radius: 10px;
   border-right-color: rgb(104, 90, 104);
   border-top-color: rgb(104, 90, 104);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  color: var(--text-muted, rgb(104, 90, 104));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2723,6 +2854,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(201, 155, 184);
   border-right-color: rgb(89, 79, 103);
   border-top-color: rgb(89, 79, 103);
+  color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2730,6 +2862,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(89, 79, 103);
   border-right-color: rgb(89, 79, 103);
   border-top-color: rgb(89, 79, 103);
+  color: rgb(89, 79, 103);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", "??", Arima, cursive;
@@ -3869,6 +4002,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-left-color: rgba(193, 139, 172, 0.15);
   border-right-color: rgba(193, 139, 172, 0.15);
   border-top-color: rgba(193, 139, 172, 0.15);
+  color: var(--pill-color, rgb(193, 139, 172));
   font-family: "??", "??", "??", Arima, cursive;
 }
 
@@ -3877,6 +4011,10 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(89, 79, 103);
+  border-left-color: rgb(89, 79, 103);
+  border-right-color: rgb(89, 79, 103);
+  border-top-color: rgb(89, 79, 103);
   color: var(--h1-color, rgb(89, 79, 103));
   font-family: var(--h1-font, "??", "??", Arima, cursive);
 }
@@ -3887,36 +4025,70 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 600);
+  border-bottom-color: rgb(89, 79, 103);
+  border-left-color: rgb(89, 79, 103);
+  border-right-color: rgb(89, 79, 103);
+  border-top-color: rgb(89, 79, 103);
   color: var(--h2-color, rgb(89, 79, 103));
   font-family: var(--h2-font, "??", "??", Arima, cursive);
+  font-weight: var(--font-weight, 600);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(89, 79, 103);
+  border-left-color: rgb(89, 79, 103);
+  border-right-color: rgb(89, 79, 103);
+  border-top-color: rgb(89, 79, 103);
   color: var(--inline-title-color, rgb(89, 79, 103));
   font-family: var(--inline-title-font, "??", "??", Arima, cursive);
 }
 
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, 600);
+  border-bottom-color: rgb(89, 79, 103);
+  border-left-color: rgb(89, 79, 103);
+  border-right-color: rgb(89, 79, 103);
+  border-top-color: rgb(89, 79, 103);
   color: var(--h3-color, rgb(89, 79, 103));
   font-family: var(--h3-font, "??", "??", Arima, cursive);
+  font-weight: var(--font-weight, 600);
+  margin-top: var(--heading-spacing, 42.176px);
 }
 
 html[saved-theme="light"] body h4 {
   --font-weight: var(--h4-weight, 600);
+  border-bottom-color: rgb(89, 79, 103);
+  border-left-color: rgb(89, 79, 103);
+  border-right-color: rgb(89, 79, 103);
+  border-top-color: rgb(89, 79, 103);
   color: var(--h4-color, rgb(89, 79, 103));
   font-family: var(--h4-font, "??", "??", Arima, cursive);
+  font-weight: var(--font-weight, 600);
+  margin-top: var(--heading-spacing, 38.016px);
 }
 
 html[saved-theme="light"] body h5 {
   --font-weight: var(--h5-weight, 600);
+  border-bottom-color: rgb(89, 79, 103);
+  border-left-color: rgb(89, 79, 103);
+  border-right-color: rgb(89, 79, 103);
+  border-top-color: rgb(89, 79, 103);
   color: var(--h5-color, rgb(89, 79, 103));
   font-family: var(--h5-font, "??", "??", Arima, cursive);
+  font-weight: var(--font-weight, 600);
+  line-height: var(--h5-line-height, 29.2672px);
+  margin-top: var(--heading-spacing, 34.432px);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(89, 79, 103);
+  border-left-color: rgb(89, 79, 103);
+  border-right-color: rgb(89, 79, 103);
+  border-top-color: rgb(89, 79, 103);
   color: var(--h6-color, rgb(89, 79, 103));
   font-family: var(--h6-font, "??", "??", Arima, cursive);
+  line-height: var(--h6-line-height, 27.2px);
+  margin-top: 32px;
 }
 
 html[saved-theme="light"] body hr {
@@ -3945,6 +4117,22 @@ html[saved-theme="light"] body hr {
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(104, 90, 104));
   font-family: "??", "??", "??", Arima, cursive;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(89, 79, 103);
@@ -4086,6 +4274,15 @@ html[saved-theme="light"] body .bases-table thead th {
   font-family: "??", "??", Arima, cursive;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(104, 90, 104);
+  border-left-color: rgb(104, 90, 104);
+  border-right-color: rgb(104, 90, 104);
+  border-top-color: rgb(104, 90, 104);
+  color: rgb(104, 90, 104);
+  font-family: "??", "??", Arima, cursive;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(104, 90, 104);
   border-left-color: rgb(104, 90, 104);
@@ -4093,6 +4290,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(104, 90, 104);
   color: rgb(104, 90, 104);
   font-family: "??", "??", Arima, cursive;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(104, 90, 104);
+  font-family: var(--metadata-label-font, "??", "??", "??", Arima, cursive);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(104, 90, 104);
+  font-family: var(--metadata-input-font, "??", "??", "??", Arima, cursive);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -4160,8 +4367,14 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(89, 79, 103);
+  border-left-color: rgb(89, 79, 103);
+  border-right-color: rgb(89, 79, 103);
+  border-top-color: rgb(89, 79, 103);
   color: var(--text-normal, rgb(89, 79, 103));
   font-family: "??", "??", "??", Arima, cursive;
+  font-size: 14px;
+  line-height: 18.2px;
 }
 
 html[saved-theme="light"] body abbr {

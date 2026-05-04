@@ -295,10 +295,14 @@ body {
 	--editor-list-ul-translate-y: -3px;
 	--editor-task-label-margin-left: -9.5px;
 	--editor-task-label-nested-margin-left: -12px;
+	--mac-sidebar-radius: 28px;
 	--bases-table-header-background: var(--table-header-background);
 	--bases-table-row-height: 40px;
 	--italic-color: var(--text-accent);
 	--radius-xxl: 20px;
+	--mac-sidebar-radius: 11px;
+	--prompt-input-height: 40px;
+	--metadata-label-width: 6em;
 }
 
 .theme-dark {
@@ -345,6 +349,12 @@ body {
 	--divider-color: rgba(255, 255, 255, 0.01);
 	--shadow-color: rgba(245, 245, 245, 0.08);
 	--side-split-bg-color: rgba(28, 28, 28, 0.3);
+	--mac-sidebar-panel-bg: linear-gradient(180deg, rgba(72, 56, 39, 0.82), rgba(50, 39, 29, 0.92));
+	--mac-sidebar-inner-bg: rgba(255, 255, 255, 0.04);
+	--mac-sidebar-border: rgba(255, 255, 255, 0.08);
+	--mac-sidebar-divider: rgba(255, 255, 255, 0.06);
+	--mac-sidebar-active-bg: rgba(255, 255, 255, 0.08);
+	--mac-sidebar-tree-shadow: 0 14px 28px rgba(0, 0, 0, 0.22), 0 3px 10px rgba(0, 0, 0, 0.16);
 }
 
 .theme-light {
@@ -389,6 +399,12 @@ body {
 	--text-shadow-color: black;
 	--shadow-color: rgba(0, 0, 0, 0.06);
 	--side-split-bg-color: rgba(248, 248, 248, 0.3);
+	--mac-sidebar-panel-bg: linear-gradient(180deg, rgba(247, 243, 238, 0.9), rgba(239, 233, 226, 0.94));
+	--mac-sidebar-inner-bg: rgba(255, 255, 255, 0.55);
+	--mac-sidebar-border: rgba(74, 52, 34, 0.08);
+	--mac-sidebar-divider: rgba(74, 52, 34, 0.08);
+	--mac-sidebar-active-bg: rgba(0, 0, 0, 0.06);
+	--mac-sidebar-tree-shadow: 0 14px 30px rgba(74, 52, 34, 0.14), 0 2px 8px rgba(74, 52, 34, 0.08);
 }
 
 body:not(.mod-macos).theme-dark {
@@ -425,20 +441,20 @@ body:not(.mod-macos).theme-dark {
 	--mobile-sidebar-min-width: 260px;
 	--mobile-sidebar-max-width: 480px;
 	--ribbon-width: 48px;
-	--editor-list-guide-offset: 4px;
-	--editor-list-guide-content-offset: 11px;
-	--editor-list-ol-width: 36px;
-	--editor-list-ol-font-size: 18px;
-	--editor-list-ol-padding-right: 7px;
-	--editor-list-formatting-margin-right: -6px;
-	--editor-list-ol-margin-left: -7px;
-	--editor-list-ul-width: 24px;
-	--editor-list-ul-font-size: 13px;
-	--editor-list-ul-margin-left: -10px;
-	--editor-list-ul-margin-right: 6px;
-	--editor-list-ul-translate-y: -2px;
-	--editor-task-label-margin-left: -8px;
-	--editor-task-label-nested-margin-left: -10px;
+	--editor-list-guide-offset: 0.38em;
+	--editor-list-guide-content-offset: 0.7em;
+	--editor-list-ol-width: 2.18em;
+	--editor-list-ol-font-size: 1.06em;
+	--editor-list-ol-padding-right: 0.41em;
+	--editor-list-formatting-margin-right: -0.35em;
+	--editor-list-ol-margin-left: -0.58em;
+	--editor-list-ul-width: 1.45em;
+	--editor-list-ul-font-size: 0.76em;
+	--editor-list-ul-margin-left: -0.48em;
+	--editor-list-ul-margin-right: 0.35em;
+	--editor-list-ul-translate-y: -0.12em;
+	--editor-task-label-margin-left: -0.47em;
+	--editor-task-label-nested-margin-left: -0.62em;
 }
 
 body.is-mobile.theme-light {
@@ -492,17 +508,18 @@ body:not(.is-phone) .status-bar {
 	background: var(--glass-bg-color);
 	backdrop-filter: blur(15px) saturate(180%);
 	-webkit-backdrop-filter: blur(15px) saturate(180%);
-	border: 1px solid rgba(255, 255, 255, 0.1);
+	border: 0.5px solid rgba(255, 255, 255, 0.1);
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.15);
 	margin: 0 5px 5px 5px;
 }
 
 
 .is-translucent .workspace-split.mod-root {
-	background-color: var(--glass-bg-color) !important;
-	backdrop-filter: blur(15px) saturate(180%);
+	background: linear-gradient(90deg, transparent, rgb(from var(--glass-bg-color) r g b / 0.7) 10%, rgb(from var(--glass-bg-color) r g b / 0.5)) !important;
+	/* background-color: var(--glass-bg-color) !important; */
+	/* backdrop-filter: blur(15px) saturate(180%);
 	box-shadow: 0 15px 20px var(--shadow-color);
-	border: 0.05px solid var(--divider-color);
+	border: 0.05px solid var(--divider-color); */
 }
 
 .tree-item-self.nav-folder-title.is-clickable.mod-collapsible:hover,
@@ -592,9 +609,9 @@ button:not(.clickable-icon) {
 }
 
 .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container {
-	background: rgba(255, 255, 255, 0.2);
+	/* background: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(15px) saturate(180%);
-	-webkit-backdrop-filter: blur(15px) saturate(180%);
+	-webkit-backdrop-filter: blur(15px) saturate(180%); */
 
 	/* Webkit浏览器的滚动条自定义 */
 	&::-webkit-scrollbar {
@@ -657,6 +674,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 	background-color: var(--background-setting);
 }
 
+.mod-root .workspace-tab-header-inner,
 .workspace-tab-header-inner {
 	border-radius: var(--radius-xl);
 	padding: 4px 8px;
@@ -690,6 +708,104 @@ body:not(.is-grabbing):not(.is-fullscreen).is-hidden-frameless .mod-top .workspa
 .side-dock-actions {
 	overflow-y: auto;
 	max-height: 85%;
+}
+
+/* macOS 26-inspired desktop sidebar */
+body:not(.is-mobile) .workspace-ribbon.mod-left {
+	margin: 5px 0 5px 5px;
+	height: calc(100% - 10px);
+	align-self: center;
+	padding-top: 30px;
+	/* background: var(--mac-sidebar-panel-bg); */
+	border: 1px solid var(--mac-sidebar-border);
+	border-right: 0;
+	border-radius: var(--mac-sidebar-radius) 0 0 var(--mac-sidebar-radius);
+	box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+	/* backdrop-filter: blur(24px) saturate(150%);
+	-webkit-backdrop-filter: blur(24px) saturate(150%); */
+}
+
+body:not(.is-mobile) .workspace-ribbon.mod-left:before {
+	display: none;
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split {
+	margin: 5px 0;
+	height: calc(100% - 10px);
+	align-self: center;
+	border: 1px solid var(--mac-sidebar-border);
+	border-left: 0px solid var(--mac-sidebar-divider);
+	border-radius: 0 20px 20px 0;
+	box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+	/* backdrop-filter: blur(24px) saturate(150%);
+	-webkit-backdrop-filter: blur(24px) saturate(150%); */
+}
+
+
+body:not(.is-mobile) .workspace-split.mod-left-split::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+	pointer-events: none;
+	box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
+	clip-path: inset(-40px -40px -40px 0);
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-tabs .workspace-tab-container {
+	border-left: 1px solid var(--nav-indentation-guide-color);
+}
+
+body:not(.is-translucent) .workspace-split.mod-right-split .workspace-tabs .workspace-leaf-content,
+body:not(.is-translucent) .workspace-split.mod-right-split .workspace-tabs .workspace-tab-header-container {
+	/* background-color: var(--background-primary) !important; */
+}
+
+
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-tabs,
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-leaf,
+body:not(.is-mobile) .workspace-split.mod-left-split .view-content,
+body:not(.is-mobile) .workspace-split.mod-left-split .nav-files-container {
+	background: transparent !important;
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .nav-header {
+	justify-content: flex-start;
+	padding: 10px 12px 12px;
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .nav-buttons-container,
+body:not(.is-mobile) .workspace-split.mod-left-split .nav-header .nav-action-button {
+	display: none;
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .nav-buttons-container {
+	background: var(--mac-sidebar-inner-bg);
+	border: 1px solid var(--mac-sidebar-border);
+	border-radius: 18px;
+	padding: 6px 10px;
+}
+
+
+body:not(.is-mobile) .workspace-split.mod-left-split .tree-item-self,
+body:not(.is-mobile) .workspace-split.mod-left-split .nav-file-title,
+body:not(.is-mobile) .workspace-split.mod-left-split .nav-folder-title {
+	border-radius: var(--radius-xl);
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .tree-item-self {
+	min-height: 32px;
+	padding-right: 10px;
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .nav-file-title.is-active,
+body:not(.is-mobile) .workspace-split.mod-left-split .nav-folder-title.is-active,
+body:not(.is-mobile) .workspace-split.mod-left-split .tree-item-self.nav-folder-title.is-clickable.mod-collapsible:hover,
+body:not(.is-mobile) .workspace-split.mod-left-split .tree-item-self.nav-file-title.tappable.is-clickable:hover {
+	background: var(--mac-sidebar-active-bg);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+	backdrop-filter: none;
+	-webkit-backdrop-filter: none;
 }
 
 /* 设置大纳样式 */
@@ -1912,9 +2028,9 @@ body:not(.is-mobile).is-translucent .view-header {
 .is-translucent .workspace .mod-root .workspace-tabs.mod-stacked .view-header,
 .is-translucent .workspace-tabs.mod-stacked .markdown-source-view.cm-s-obsidian.mod-cm6.node-insert-event.is-readable-line-width.is-live-preview.is-folding,
 .is-translucent .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-leaf {
-	background-color: var(--model-bg-color) !important;
-	backdrop-filter: blur(25px) saturate(180%);
-	-webkit-backdrop-filter: blur(25px) saturate(180%);
+	/* background-color: var(--model-bg-color) !important; */
+	/* backdrop-filter: blur(25px) saturate(180%); */
+	/* -webkit-backdrop-filter: blur(25px) saturate(180%); */
 }
 
 .is-translucent .workspace-split.mod-root .workspace-tabs .view-content {
@@ -2038,7 +2154,7 @@ body:not(.is-mobile) .prompt-input-container {
 
 #editingToolbarModalBar.top :is(.editingToolbarCommandItem, button[class^=editingToolbarCommandsubItem]):not(.editingToolbar-Divider-Line) {
 	padding: 8px;
-	border-radius: 6px;
+	border-radius: var(--radius-xxl);
 }
 
 #editingToolbarModalBar.top {
@@ -2343,7 +2459,8 @@ body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-tab-co
 }
 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-vertical.mod-root {
-	background: var(--win-editor-bg-color) !important;
+	/* background: var(--win-editor-bg-color) !important; */
+	background: linear-gradient(90deg, transparent, rgb(from var(--glass-bg-color) r g b / 0.7) 10%, rgb(from var(--glass-bg-color) r g b / 0.7)) !important;
 }
 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-ribbon.mod-left:before {
@@ -2351,7 +2468,7 @@ body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-ribbon
 }
 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace,
-body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-horizontal,
+/* body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-horizontal, */
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-leaf,
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-ribbon,
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .sidebar-toggle-button.mod-left,
@@ -2462,7 +2579,7 @@ body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-sp
 	/* transform: translate(0, -10px); */
 	position: absolute;
 	left: calc(var(--ribbon-width) * -1);
-	bottom: 0;
+	bottom: 8px;
 }
 
 body.theme-light:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
@@ -2475,7 +2592,7 @@ body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-sp
 	z-index: 99;
 	gap: 15px;
 	padding: var(--size-4-2) var(--size-4-2);
-	border-radius: var(--radius-l);
+	border-radius: var(--radius-xxl);
 }
 
 body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher-icon {
@@ -2494,10 +2611,14 @@ body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-sp
 }
 
 body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon {
-	border-radius: var(--radius-l);
+	border-radius: var(--radius-xxl);
 	padding: 7px;
 }
 
+.clickable-icon:hover {
+	background-color: var(--background-modifier-hover) !important;
+	border-radius: var(--radius-xxl);
+}
 
 
 
@@ -2573,6 +2694,14 @@ body .quiet-outline .n-tree-node-wrapper {
 
 .n-tree .n-tree-node-switcher .n-tree-node-switcher__icon .xicon {
 	display: none;
+}
+
+.n-tree .n-tree-node-switcher.n-tree-node-switcher--expanded {
+	margin-left: -0.2rem;
+}
+
+.quiet-outline .n-tree .n-tree-node-indent {
+	margin: -0.2rem;
 }
 
 /* bases */
@@ -2760,6 +2889,11 @@ main.git-view .tree-item-inner.nav-file-title-content {
 	--icon-size: var(--icon-s);
 }
 
+.app-container .horizontal-main-container .workspace .workspace-split.mod-horizontal.mod-sidedock.mod-right-split {
+	border-left: solid 1px var(--indentation-guide-color);
+	background-color: rgb(from var(--glass-bg-color) r g b / 0.5) !important;
+}
+
 .is-tablet .workspace-drawer.mod-left .workspace-drawer-inner .workspace-drawer-tab-container {
 	/* border-left: solid 1px var(--indentation-guide-color); */
 	/* box-shadow: 1px 0px 1px var(--card-border-color); */
@@ -2901,6 +3035,21 @@ main.git-view .tree-item-inner.nav-file-title-content {
 :not(.is-mobile) .workspace-tab-header-container .workspace-tab-header.is-active {
 	box-shadow: none;
 	background-color: transparent;
+	border-radius: var(--radius-xxl);
+}
+
+body:not(.is-mobile) .workspace-tabs.mod-top .workspace-tab-header-container .sidebar-toggle-button {
+	height: auto;
+}
+
+body:not(.is-mobile) .workspace-tabs.mod-top .workspace-tab-header-container .sidebar-toggle-button .clickable-icon {
+	padding: 8px 8px;
+}
+
+/* body:not(.is-mobile) .workspace-tabs.mod-top .workspace-tab-header-container .sidebar-toggle-button:hover, */
+:not(.is-mobile) .workspace-tab-header-container .workspace-tab-header.is-active:hover {
+	border-radius: var(--radius-xxl) !important;
+	background-color: var(--background-modifier-hover) !important;
 }
 
 .is-phone .mod-root .workspace-leaf-content .view-content {
@@ -2953,15 +3102,35 @@ main.git-view .tree-item-inner.nav-file-title-content {
 /* Daily Note Calendar plugin */
 .workspace-leaf-content[data-type="daily-note-calendar"] .dnc th,
 .workspace-leaf-content[data-type="daily-note-calendar"] .dnc td {
-	font-size: 0.8em;
+	font-size: 0.7em;
+	padding: 0 3px;
+	border-radius: var(--radius-xxl);
+	overflow: hidden;
+
+}
+
+.workspace-leaf-content[data-type="daily-note-calendar"] .dnc td:hover {
+	background-color: var(--text-accent);
+}
+
+.workspace-leaf-content[data-type="daily-note-calendar"] .dnc #today:hover {
+	color: white !important;
+}
+
+.workspace-leaf-content[data-type="daily-note-calendar"] .dnc .has-note,
+.workspace-leaf-content[data-type="daily-note-calendar"] .dnc .selected-day.has-note {
+	border-bottom: 1px solid var(--text-accent);
 }
 
 .workspace-leaf-content[data-type="daily-note-calendar"] .dnc .selected-day.has-note:after {
-	border-bottom: 5px solid var(--text-accent);
+	/* border-bottom: 5px solid var(--text-accent); */
+	content: none;
+
 }
 
 .workspace-leaf-content[data-type="daily-note-calendar"] .dnc .has-note:after {
-	border-bottom: 5px solid var(--text-faint);
+	/* border-bottom: 5px solid var(--text-faint); */
+	content: none;
 }
 
 .workspace-leaf-content[data-type="daily-note-calendar"] .dnc ul li {
@@ -2977,7 +3146,33 @@ main.git-view .tree-item-inner.nav-file-title-content {
 	display: none;
 }
 
-.workspace-leaf-content[data-type="daily-note-calendar"] .dnc .has-note:after {
+/* .workspace-leaf-content[data-type="daily-note-calendar"] .dnc .has-note:after {
 	width: 5px;
 	border-radius: 5px;
+} */
+
+.workspace-leaf-content[data-type="daily-note-calendar"] thead>tr>th,
+.workspace-leaf-content[data-type="daily-note-calendar"] tbody>tr>td,
+.workspace-leaf-content[data-type="daily-note-calendar"] .table-cell-wrapper {
+	line-height: 26px;
+}
+
+.workspace-leaf-content[data-type="daily-note-calendar"],
+.workspace-leaf-content[data-type="daily-note-calendar"] .view-content .dnc,
+.workspace-leaf-content[data-type="daily-note-calendar"] .view-content {
+	padding-bottom: 0 !important;
+}
+
+.workspace-tabs .workspace-leaf:has([data-type="daily-note-calendar"]) {
+	/* padding-top: 20px;
+	background-color: red; */
+}
+
+.omnisearch-input-field {
+	width: 100%;
+	padding: 5px;
+}
+
+.omnisearch-input-container__buttons {
+	display: none;
 }

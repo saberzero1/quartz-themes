@@ -31,6 +31,19 @@ export const theme: ThemeData = {
   --bases-table-header-color: var(--text-muted, #fcfbf1);
   --bases-table-summary-background: var(--background-primary, #161511);
   --blockquote-border-color: var(--interactive-accent, hsl(79, 25%, 40%));
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #161511);
   --canvas-card-label-color: var(--text-faint, #777357);
   --canvas-dot-pattern: var(--color-base-30, #57543f);
@@ -201,7 +214,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, #fcfbf1);
   --vault-profile-color: var(--text-normal, #fcfbf1);
   --vault-profile-color-hover: var(--vault-profile-color, #fcfbf1);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -248,6 +263,12 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, rgb(252, 251, 241));
+  outline: rgb(252, 251, 241) none 0px;
+  text-decoration-color: rgb(252, 251, 241);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--italic-color, rgb(252, 251, 241));
   outline: rgb(252, 251, 241) none 0px;
   text-decoration-color: rgb(252, 251, 241);
@@ -304,10 +325,18 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(111, 128, 77, 0.3));
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(252, 251, 241);
+  border-left-color: rgb(252, 251, 241);
+  border-right-color: rgb(252, 251, 241);
+  border-top-color: rgb(252, 251, 241);
   color: rgb(252, 251, 241);
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(252, 251, 241);
+  border-left-color: rgb(252, 251, 241);
+  border-right-color: rgb(252, 251, 241);
+  border-top-color: rgb(252, 251, 241);
   color: rgb(252, 251, 241);
 }
 
@@ -327,6 +356,10 @@ html[saved-theme="dark"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: var(--text-faint, rgb(119, 115, 87));
+}
+
+html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(252, 251, 241));
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(252, 251, 241);
@@ -408,6 +441,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(252, 251, 241);
   border-right-color: rgb(252, 251, 241);
   border-top-color: rgb(252, 251, 241);
+  color: var(--text-muted, rgb(252, 251, 241));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -420,6 +454,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(111, 128, 77);
   border-right-color: rgb(252, 251, 241);
   border-top-color: rgb(252, 251, 241);
+  color: rgb(252, 251, 241);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -427,6 +462,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(252, 251, 241);
   border-right-color: rgb(252, 251, 241);
   border-top-color: rgb(252, 251, 241);
+  color: rgb(252, 251, 241);
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(119, 115, 87);
@@ -1304,6 +1340,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-left-color: rgba(111, 128, 77, 0.15);
   border-right-color: rgba(111, 128, 77, 0.15);
   border-top-color: rgba(111, 128, 77, 0.15);
+  color: var(--pill-color, rgb(97, 109, 65));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -1311,6 +1348,10 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(252, 251, 241);
+  border-left-color: rgb(252, 251, 241);
+  border-right-color: rgb(252, 251, 241);
+  border-top-color: rgb(252, 251, 241);
   color: var(--h1-color, rgb(252, 251, 241));
 }
 
@@ -1319,26 +1360,50 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(252, 251, 241);
+  border-left-color: rgb(252, 251, 241);
+  border-right-color: rgb(252, 251, 241);
+  border-top-color: rgb(252, 251, 241);
   color: var(--h2-color, rgb(252, 251, 241));
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(252, 251, 241);
+  border-left-color: rgb(252, 251, 241);
+  border-right-color: rgb(252, 251, 241);
+  border-top-color: rgb(252, 251, 241);
   color: var(--inline-title-color, rgb(252, 251, 241));
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(252, 251, 241);
+  border-left-color: rgb(252, 251, 241);
+  border-right-color: rgb(252, 251, 241);
+  border-top-color: rgb(252, 251, 241);
   color: var(--h3-color, rgb(252, 251, 241));
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(252, 251, 241);
+  border-left-color: rgb(252, 251, 241);
+  border-right-color: rgb(252, 251, 241);
+  border-top-color: rgb(252, 251, 241);
   color: var(--h4-color, rgb(252, 251, 241));
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(252, 251, 241);
+  border-left-color: rgb(252, 251, 241);
+  border-right-color: rgb(252, 251, 241);
+  border-top-color: rgb(252, 251, 241);
   color: var(--h5-color, rgb(252, 251, 241));
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(252, 251, 241);
+  border-left-color: rgb(252, 251, 241);
+  border-right-color: rgb(252, 251, 241);
+  border-top-color: rgb(252, 251, 241);
   color: var(--h6-color, rgb(252, 251, 241));
 }
 
@@ -1356,6 +1421,22 @@ html[saved-theme="dark"] body hr {
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(252, 251, 241));
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(252, 251, 241);
@@ -1474,11 +1555,27 @@ html[saved-theme="dark"] body .canvas-sidebar {
   color: var(--text-muted, rgb(252, 251, 241));
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(252, 251, 241);
+  border-left-color: rgb(252, 251, 241);
+  border-right-color: rgb(252, 251, 241);
+  border-top-color: rgb(252, 251, 241);
+  color: rgb(252, 251, 241);
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(252, 251, 241);
   border-left-color: rgb(252, 251, 241);
   border-right-color: rgb(252, 251, 241);
   border-top-color: rgb(252, 251, 241);
+  color: rgb(252, 251, 241);
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(252, 251, 241);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
   color: rgb(252, 251, 241);
 }
 
@@ -1555,6 +1652,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(252, 251, 241);
+  border-left-color: rgb(252, 251, 241);
+  border-right-color: rgb(252, 251, 241);
+  border-top-color: rgb(252, 251, 241);
   color: var(--text-normal, rgb(252, 251, 241));
 }
 
@@ -1643,6 +1744,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --bases-table-header-color: var(--text-muted, #2e2c29);
   --bases-table-summary-background: var(--background-primary, #fcfbf1);
   --blockquote-border-color: var(--interactive-accent, hsl(79, 25%, 67%));
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #fcfbf1);
   --canvas-card-label-color: var(--text-faint, #46473f);
   --canvas-dot-pattern: var(--color-base-30, #989988);
@@ -1814,7 +1928,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --titlebar-text-color-focused: var(--text-normal, #161511);
   --vault-profile-color: var(--text-normal, #161511);
   --vault-profile-color-hover: var(--vault-profile-color, #161511);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -1861,6 +1977,12 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--italic-color, rgb(22, 21, 17));
+  outline: rgb(22, 21, 17) none 0px;
+  text-decoration-color: rgb(22, 21, 17);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--italic-color, rgb(22, 21, 17));
   outline: rgb(22, 21, 17) none 0px;
   text-decoration-color: rgb(22, 21, 17);
@@ -1917,10 +2039,18 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(179, 192, 150, 0.3));
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(22, 21, 17);
+  border-left-color: rgb(22, 21, 17);
+  border-right-color: rgb(22, 21, 17);
+  border-top-color: rgb(22, 21, 17);
   color: rgb(22, 21, 17);
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(22, 21, 17);
+  border-left-color: rgb(22, 21, 17);
+  border-right-color: rgb(22, 21, 17);
+  border-top-color: rgb(22, 21, 17);
   color: rgb(22, 21, 17);
 }
 
@@ -1940,6 +2070,10 @@ html[saved-theme="light"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: var(--text-faint, rgb(70, 71, 63));
+}
+
+html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(22, 21, 17));
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(22, 21, 17);
@@ -2021,6 +2155,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(46, 44, 41);
   border-right-color: rgb(46, 44, 41);
   border-top-color: rgb(46, 44, 41);
+  color: var(--text-muted, rgb(46, 44, 41));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2033,6 +2168,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(179, 192, 150);
   border-right-color: rgb(22, 21, 17);
   border-top-color: rgb(22, 21, 17);
+  color: rgb(22, 21, 17);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2040,6 +2176,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(22, 21, 17);
   border-right-color: rgb(22, 21, 17);
   border-top-color: rgb(22, 21, 17);
+  color: rgb(22, 21, 17);
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(70, 71, 63);
@@ -2917,6 +3054,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-left-color: rgba(179, 192, 150, 0.15);
   border-right-color: rgba(179, 192, 150, 0.15);
   border-top-color: rgba(179, 192, 150, 0.15);
+  color: var(--pill-color, rgb(179, 192, 150));
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -2924,6 +3062,10 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(22, 21, 17);
+  border-left-color: rgb(22, 21, 17);
+  border-right-color: rgb(22, 21, 17);
+  border-top-color: rgb(22, 21, 17);
   color: var(--h1-color, rgb(22, 21, 17));
 }
 
@@ -2932,26 +3074,50 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(22, 21, 17);
+  border-left-color: rgb(22, 21, 17);
+  border-right-color: rgb(22, 21, 17);
+  border-top-color: rgb(22, 21, 17);
   color: var(--h2-color, rgb(22, 21, 17));
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(22, 21, 17);
+  border-left-color: rgb(22, 21, 17);
+  border-right-color: rgb(22, 21, 17);
+  border-top-color: rgb(22, 21, 17);
   color: var(--inline-title-color, rgb(22, 21, 17));
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(22, 21, 17);
+  border-left-color: rgb(22, 21, 17);
+  border-right-color: rgb(22, 21, 17);
+  border-top-color: rgb(22, 21, 17);
   color: var(--h3-color, rgb(22, 21, 17));
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(22, 21, 17);
+  border-left-color: rgb(22, 21, 17);
+  border-right-color: rgb(22, 21, 17);
+  border-top-color: rgb(22, 21, 17);
   color: var(--h4-color, rgb(22, 21, 17));
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(22, 21, 17);
+  border-left-color: rgb(22, 21, 17);
+  border-right-color: rgb(22, 21, 17);
+  border-top-color: rgb(22, 21, 17);
   color: var(--h5-color, rgb(22, 21, 17));
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(22, 21, 17);
+  border-left-color: rgb(22, 21, 17);
+  border-right-color: rgb(22, 21, 17);
+  border-top-color: rgb(22, 21, 17);
   color: var(--h6-color, rgb(22, 21, 17));
 }
 
@@ -2969,6 +3135,22 @@ html[saved-theme="light"] body hr {
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(46, 44, 41));
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(22, 21, 17);
@@ -3087,11 +3269,27 @@ html[saved-theme="light"] body .canvas-sidebar {
   color: var(--text-muted, rgb(46, 44, 41));
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(46, 44, 41);
+  border-left-color: rgb(46, 44, 41);
+  border-right-color: rgb(46, 44, 41);
+  border-top-color: rgb(46, 44, 41);
+  color: rgb(46, 44, 41);
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(46, 44, 41);
   border-left-color: rgb(46, 44, 41);
   border-right-color: rgb(46, 44, 41);
   border-top-color: rgb(46, 44, 41);
+  color: rgb(46, 44, 41);
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(46, 44, 41);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
   color: rgb(46, 44, 41);
 }
 
@@ -3168,6 +3366,10 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(22, 21, 17);
+  border-left-color: rgb(22, 21, 17);
+  border-right-color: rgb(22, 21, 17);
+  border-top-color: rgb(22, 21, 17);
   color: var(--text-normal, rgb(22, 21, 17));
 }
 

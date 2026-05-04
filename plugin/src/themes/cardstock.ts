@@ -43,6 +43,19 @@ export const theme: ThemeData = {
   --beige: #f0eae2;
   --blockquote-border-color: var(--interactive-accent, #c95454);
   --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #2f2a27);
   --canvas-card-label-color: var(--text-faint, #949494);
   --caret-color: var(--text-normal, #ffffff);
@@ -244,7 +257,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, #ffffff);
   --vault-profile-color: var(--text-normal, #ffffff);
   --vault-profile-color-hover: var(--vault-profile-color, #ffffff);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -342,6 +357,13 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   text-decoration-color: rgb(255, 255, 255);
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(255, 255, 255));
+  font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
+  outline: rgb(255, 255, 255) none 0px;
+  text-decoration-color: rgb(255, 255, 255);
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: var(--bold-color, rgb(255, 255, 255));
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
@@ -400,19 +422,33 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(240, 234, 226));
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
+  font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
+  font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(255, 255, 255);
+  margin-left: 26.6953px;
+  padding-bottom: var(--list-spacing, 5px);
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(255, 255, 255);
+  margin-left: 26.6953px;
+  padding-bottom: var(--list-spacing, 5px);
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -430,6 +466,7 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(255, 255, 255));
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -449,7 +486,6 @@ html[saved-theme="dark"] body table {
   color: rgb(255, 255, 255);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   margin-top: var(--heading-spacing, 20px);
-  width: 195.062px;
 }
 
 html[saved-theme="dark"] body td {
@@ -530,6 +566,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(240, 234, 226);
   border-right-color: rgb(240, 234, 226);
   border-top-color: rgb(240, 234, 226);
+  color: var(--text-muted, rgb(240, 234, 226));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -542,6 +579,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(201, 84, 84);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -549,6 +587,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
@@ -1431,6 +1470,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-left-color: rgb(201, 84, 84);
   border-right-color: rgb(201, 84, 84);
   border-top-color: rgb(201, 84, 84);
+  color: var(--pill-color, rgb(201, 84, 84));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -1438,8 +1478,16 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h1-color, rgb(255, 255, 255));
   font-family: var(--font-headings, "Source Serif Pro", "Source Serif 4", "Source Serif", Rockwell, "New York", serif);
+  font-size: var(--h1, 40px);
+  letter-spacing: var(--h1-letter-spacing, -0.6px);
+  line-height: var(--h1-line-height, 48px);
+  margin-bottom: 20px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1448,33 +1496,94 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h2-color, rgb(255, 255, 255));
   font-family: var(--h2-font, "DM Sans", "Avenir Next", Avenir, sans-serif);
+  margin-bottom: 20px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(240, 234, 226);
+  border-left-color: rgb(240, 234, 226);
+  border-right-color: rgb(240, 234, 226);
+  border-top-color: rgb(240, 234, 226);
   color: var(--inline-title-color, rgb(240, 234, 226));
   font-family: var(--inline-title-font, "DM Sans", "Avenir Next", Avenir, sans-serif);
+  font-size: var(--inline-title-size, 16px);
+  letter-spacing: -0.24px;
+  line-height: var(--inline-title-line-height, 19.2px);
+  margin-bottom: 8px;
+}
+
+html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a::before {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(201, 84, 84);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(201, 84, 84);
+  border-left-width: 0px;
+  border-right-color: rgb(201, 84, 84);
+  border-right-width: 0px;
+  border-top-color: rgb(201, 84, 84);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--inline-title-color, rgb(201, 84, 84));
+  content: ">";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 20px;
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h3-color, rgb(255, 255, 255));
   font-family: var(--h3-font, "DM Sans", "Avenir Next", Avenir, sans-serif);
+  margin-bottom: 20px;
+  margin-top: var(--heading-spacing, 20px);
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h4-color, rgb(255, 255, 255));
   font-family: var(--h4-font, "DM Sans", "Avenir Next", Avenir, sans-serif);
+  margin-bottom: 20px;
+  margin-top: var(--heading-spacing, 20px);
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h5-color, rgb(255, 255, 255));
   font-family: var(--h5-font, "DM Sans", "Avenir Next", Avenir, sans-serif);
+  margin-bottom: 20px;
+  margin-top: var(--heading-spacing, 20px);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h6-color, rgb(255, 255, 255));
   font-family: var(--h6-font, "DM Sans", "Avenir Next", Avenir, sans-serif);
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -1491,6 +1600,26 @@ html[saved-theme="dark"] body hr {
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(240, 234, 226));
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(255, 255, 255);
@@ -1611,6 +1740,15 @@ html[saved-theme="dark"] body .canvas-sidebar {
   margin-bottom: 40px;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(240, 234, 226);
+  border-left-color: rgb(240, 234, 226);
+  border-right-color: rgb(240, 234, 226);
+  border-top-color: rgb(240, 234, 226);
+  color: rgb(240, 234, 226);
+  font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(240, 234, 226);
   border-left-color: rgb(240, 234, 226);
@@ -1618,6 +1756,14 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(240, 234, 226);
   color: rgb(240, 234, 226);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(240, 234, 226);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(240, 234, 226);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -1689,6 +1835,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--text-normal, rgb(255, 255, 255));
 }
 
@@ -1779,6 +1929,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --bases-table-summary-background-hover: var(--background-modifier-hover, #f0eae2);
   --beige: #f0eae2;
   --blockquote-border-color: var(--interactive-accent, #c95454);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-card-label-color: var(--text-faint, #949494);
   --caret-color: var(--text-normal, #2d2c2c);
   --checkbox-border-color: var(--text-faint, #949494);
@@ -1967,7 +2130,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --titlebar-text-color-focused: var(--text-normal, #2d2c2c);
   --vault-profile-color: var(--text-normal, #2d2c2c);
   --vault-profile-color-hover: var(--vault-profile-color, #2d2c2c);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -2064,6 +2229,13 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   text-decoration-color: rgb(45, 44, 44);
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(45, 44, 44));
+  font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
+  outline: rgb(45, 44, 44) none 0px;
+  text-decoration-color: rgb(45, 44, 44);
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--bold-color, rgb(45, 44, 44));
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
@@ -2122,19 +2294,33 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(148, 148, 148));
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(45, 44, 44);
+  border-left-color: rgb(45, 44, 44);
+  border-right-color: rgb(45, 44, 44);
+  border-top-color: rgb(45, 44, 44);
   color: rgb(45, 44, 44);
+  font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(45, 44, 44);
+  border-left-color: rgb(45, 44, 44);
+  border-right-color: rgb(45, 44, 44);
+  border-top-color: rgb(45, 44, 44);
   color: rgb(45, 44, 44);
+  font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(45, 44, 44);
+  margin-left: 26.6953px;
+  padding-bottom: var(--list-spacing, 5px);
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(45, 44, 44);
+  margin-left: 26.6953px;
+  padding-bottom: var(--list-spacing, 5px);
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -2152,6 +2338,7 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(45, 44, 44));
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -2171,7 +2358,6 @@ html[saved-theme="light"] body table {
   color: rgb(45, 44, 44);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   margin-top: var(--heading-spacing, 20px);
-  width: 195.062px;
 }
 
 html[saved-theme="light"] body td {
@@ -2252,6 +2438,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(148, 148, 148);
   border-right-color: rgb(148, 148, 148);
   border-top-color: rgb(148, 148, 148);
+  color: var(--text-muted, rgb(148, 148, 148));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2264,6 +2451,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(201, 84, 84);
   border-right-color: rgb(45, 44, 44);
   border-top-color: rgb(45, 44, 44);
+  color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2271,6 +2459,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(45, 44, 44);
   border-right-color: rgb(45, 44, 44);
   border-top-color: rgb(45, 44, 44);
+  color: rgb(45, 44, 44);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
@@ -3146,6 +3335,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-left-color: rgb(201, 84, 84);
   border-right-color: rgb(201, 84, 84);
   border-top-color: rgb(201, 84, 84);
+  color: var(--pill-color, rgb(201, 84, 84));
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -3153,8 +3343,16 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(45, 44, 44);
+  border-left-color: rgb(45, 44, 44);
+  border-right-color: rgb(45, 44, 44);
+  border-top-color: rgb(45, 44, 44);
   color: var(--h1-color, rgb(45, 44, 44));
   font-family: var(--font-headings, "Source Serif Pro", "Source Serif 4", "Source Serif", Rockwell, "New York", serif);
+  font-size: var(--h1, 40px);
+  letter-spacing: var(--h1-letter-spacing, -0.6px);
+  line-height: var(--h1-line-height, 48px);
+  margin-bottom: 20px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -3163,33 +3361,94 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(45, 44, 44);
+  border-left-color: rgb(45, 44, 44);
+  border-right-color: rgb(45, 44, 44);
+  border-top-color: rgb(45, 44, 44);
   color: var(--h2-color, rgb(45, 44, 44));
   font-family: var(--h2-font, "DM Sans", "Avenir Next", Avenir, sans-serif);
+  margin-bottom: 20px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(148, 148, 148);
+  border-left-color: rgb(148, 148, 148);
+  border-right-color: rgb(148, 148, 148);
+  border-top-color: rgb(148, 148, 148);
   color: var(--inline-title-color, rgb(148, 148, 148));
   font-family: var(--inline-title-font, "DM Sans", "Avenir Next", Avenir, sans-serif);
+  font-size: var(--inline-title-size, 16px);
+  letter-spacing: -0.24px;
+  line-height: var(--inline-title-line-height, 19.2px);
+  margin-bottom: 8px;
+}
+
+html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a::before {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(201, 84, 84);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(201, 84, 84);
+  border-left-width: 0px;
+  border-right-color: rgb(201, 84, 84);
+  border-right-width: 0px;
+  border-top-color: rgb(201, 84, 84);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--inline-title-color, rgb(201, 84, 84));
+  content: ">";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 20px;
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(45, 44, 44);
+  border-left-color: rgb(45, 44, 44);
+  border-right-color: rgb(45, 44, 44);
+  border-top-color: rgb(45, 44, 44);
   color: var(--h3-color, rgb(45, 44, 44));
   font-family: var(--h3-font, "DM Sans", "Avenir Next", Avenir, sans-serif);
+  margin-bottom: 20px;
+  margin-top: var(--heading-spacing, 20px);
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(45, 44, 44);
+  border-left-color: rgb(45, 44, 44);
+  border-right-color: rgb(45, 44, 44);
+  border-top-color: rgb(45, 44, 44);
   color: var(--h4-color, rgb(45, 44, 44));
   font-family: var(--h4-font, "DM Sans", "Avenir Next", Avenir, sans-serif);
+  margin-bottom: 20px;
+  margin-top: var(--heading-spacing, 20px);
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(45, 44, 44);
+  border-left-color: rgb(45, 44, 44);
+  border-right-color: rgb(45, 44, 44);
+  border-top-color: rgb(45, 44, 44);
   color: var(--h5-color, rgb(45, 44, 44));
   font-family: var(--h5-font, "DM Sans", "Avenir Next", Avenir, sans-serif);
+  margin-bottom: 20px;
+  margin-top: var(--heading-spacing, 20px);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(45, 44, 44);
+  border-left-color: rgb(45, 44, 44);
+  border-right-color: rgb(45, 44, 44);
+  border-top-color: rgb(45, 44, 44);
   color: var(--h6-color, rgb(45, 44, 44));
   font-family: var(--h6-font, "DM Sans", "Avenir Next", Avenir, sans-serif);
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 html[saved-theme="light"] body hr {
@@ -3206,6 +3465,26 @@ html[saved-theme="light"] body hr {
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(148, 148, 148));
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(45, 44, 44);
@@ -3325,6 +3604,15 @@ html[saved-theme="light"] body .canvas-sidebar {
   margin-bottom: 40px;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(148, 148, 148);
+  border-left-color: rgb(148, 148, 148);
+  border-right-color: rgb(148, 148, 148);
+  border-top-color: rgb(148, 148, 148);
+  color: rgb(148, 148, 148);
+  font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(148, 148, 148);
   border-left-color: rgb(148, 148, 148);
@@ -3332,6 +3620,14 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(148, 148, 148);
   color: rgb(148, 148, 148);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(148, 148, 148);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(148, 148, 148);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -3402,6 +3698,10 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(45, 44, 44);
+  border-left-color: rgb(45, 44, 44);
+  border-right-color: rgb(45, 44, 44);
+  border-top-color: rgb(45, 44, 44);
   color: var(--text-normal, rgb(45, 44, 44));
 }
 

@@ -22,8 +22,20 @@ export const theme: ThemeData = {
   --blockquote-border-color: var(--interactive-accent, hsl(45, 41%, 60%));
   --blockquote-border-thickness: 3px;
   --button-radius: var(--input-radius, 8px);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 20px);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
   --callout-tip: var(--color-starred-rgb, 241, 226, 25);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #110f0f);
   --canvas-color: var(--color-starred-rgb, 241, 226, 25);
   --canvas-color-2: var(--color-goldFusion-rgb, 165, 156, 103);
@@ -162,7 +174,7 @@ export const theme: ThemeData = {
   --titlebar-background-focused: var(--background-secondary, #111111);
   --titlebar-text-color: var(--text-muted, rgb(198 193 135));
   --vault-name-font-size: var(--font-ui-large, 20px);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
 }
 
 html[saved-theme="dark"] body {
@@ -199,6 +211,12 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, rgb(172, 99, 99));
+  outline: rgb(172, 99, 99) none 0px;
+  text-decoration-color: rgb(172, 99, 99);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--italic-color, rgb(172, 99, 99));
   outline: rgb(172, 99, 99) none 0px;
   text-decoration-color: rgb(172, 99, 99);
@@ -279,6 +297,7 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-left-color: rgb(198, 193, 135);
   border-right-color: rgb(198, 193, 135);
   border-top-color: rgb(198, 193, 135);
+  color: var(--text-muted, rgb(198, 193, 135));
 }
 
 html[saved-theme="dark"] body .transclude {
@@ -9469,10 +9488,17 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-left-color: rgba(195, 174, 111, 0.15);
   border-right-color: rgba(195, 174, 111, 0.15);
   border-top-color: rgba(195, 174, 111, 0.15);
+  color: var(--pill-color, rgb(209, 189, 143));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(209, 189, 143);
+}
+
+html[saved-theme="dark"] body h1 {
+  font-size: var(--h1-size, 32px);
+  letter-spacing: var(--h1-letter-spacing, -0.48px);
+  line-height: var(--h1-line-height, 38.4px);
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -9480,8 +9506,40 @@ html[saved-theme="dark"] body h1.article-title {
   font-size: var(--inline-title-size, 36.8px);
 }
 
+html[saved-theme="dark"] body h2 {
+  font-size: var(--h2-size, 27.2px);
+  letter-spacing: var(--h2-letter-spacing, -0.2992px);
+  line-height: var(--h2-line-height, 32.64px);
+}
+
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(251, 70, 76);
+  border-left-color: rgb(251, 70, 76);
+  border-right-color: rgb(251, 70, 76);
+  border-top-color: rgb(251, 70, 76);
   color: var(--inline-title-color, rgb(251, 70, 76));
+  font-size: var(--inline-title-size, 36.8px);
+  letter-spacing: -0.552px;
+  line-height: var(--inline-title-line-height, 44.16px);
+  margin-bottom: 18.4px;
+}
+
+html[saved-theme="dark"] body h3 {
+  font-size: var(--h3-size, 22.4px);
+  letter-spacing: var(--h3-letter-spacing, -0.1792px);
+  line-height: var(--h3-line-height, 29.12px);
+}
+
+html[saved-theme="dark"] body h4 {
+  font-size: var(--h4-size, 19.2px);
+  letter-spacing: var(--h4-letter-spacing, -0.096px);
+  line-height: var(--h4-line-height, 26.88px);
+}
+
+html[saved-theme="dark"] body h5 {
+  font-size: var(--h5-size, 17.6px);
+  letter-spacing: var(--h5-letter-spacing, -0.0352px);
+  line-height: var(--h5-line-height, 26.4px);
 }
 
 html[saved-theme="dark"] body hr {
@@ -9502,6 +9560,10 @@ html[saved-theme="dark"] body hr {
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(198, 193, 135));
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(198, 193, 135);
@@ -9566,11 +9628,27 @@ html[saved-theme="dark"] body .darkmode svg {
   margin-bottom: 0px;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(198, 193, 135);
+  border-left-color: rgb(198, 193, 135);
+  border-right-color: rgb(198, 193, 135);
+  border-top-color: rgb(198, 193, 135);
+  color: rgb(198, 193, 135);
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(198, 193, 135);
   border-left-color: rgb(198, 193, 135);
   border-right-color: rgb(198, 193, 135);
   border-top-color: rgb(198, 193, 135);
+  color: rgb(198, 193, 135);
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(198, 193, 135);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
   color: rgb(198, 193, 135);
 }
 
@@ -9611,6 +9689,10 @@ html[saved-theme="dark"] body .stacked-page-header {
 }`,
     misc: `html[saved-theme="dark"] body .navigation-progress {
   background-color: var(--status-bar-background, rgb(17, 17, 17));
+}
+
+html[saved-theme="dark"] body .page-header h2.page-title {
+  line-height: 23.4px;
 }
 
 html[saved-theme="dark"] body input[type=text] {
@@ -9654,8 +9736,20 @@ html[saved-theme="dark"] body ul.tags > li {
   --blockquote-border-color: var(--interactive-accent, hsl(44, 41.41%, 64.5%));
   --blockquote-border-thickness: 3px;
   --button-radius: var(--input-radius, 8px);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 20px);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
   --callout-tip: var(--color-starred-rgb, 241, 226, 25);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #fefff6);
   --canvas-color: var(--color-starred-rgb, 241, 226, 25);
   --canvas-color-2: var(--color-goldFusion-rgb, 165, 156, 103);
@@ -9795,7 +9889,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --titlebar-background-focused: var(--background-secondary, #fefff6);
   --titlebar-text-color: var(--text-muted, rgb(110 102 3));
   --vault-name-font-size: var(--font-ui-large, 20px);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
 }
 
 html[saved-theme="light"] body {
@@ -9832,6 +9926,12 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--italic-color, rgb(172, 99, 99));
+  outline: rgb(172, 99, 99) none 0px;
+  text-decoration-color: rgb(172, 99, 99);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--italic-color, rgb(172, 99, 99));
   outline: rgb(172, 99, 99) none 0px;
   text-decoration-color: rgb(172, 99, 99);
@@ -9912,6 +10012,7 @@ html[saved-theme="light"] body pre:has(> code) {
   border-left-color: rgb(110, 102, 3);
   border-right-color: rgb(110, 102, 3);
   border-top-color: rgb(110, 102, 3);
+  color: var(--text-muted, rgb(110, 102, 3));
 }
 
 html[saved-theme="light"] body .transclude {
@@ -19046,10 +19147,17 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-left-color: rgba(195, 174, 111, 0.15);
   border-right-color: rgba(195, 174, 111, 0.15);
   border-top-color: rgba(195, 174, 111, 0.15);
+  color: var(--pill-color, rgb(195, 174, 111));
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(195, 174, 111);
+}
+
+html[saved-theme="light"] body h1 {
+  font-size: var(--h1-size, 32px);
+  letter-spacing: var(--h1-letter-spacing, -0.48px);
+  line-height: var(--h1-line-height, 38.4px);
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -19057,8 +19165,40 @@ html[saved-theme="light"] body h1.article-title {
   font-size: var(--inline-title-size, 36.8px);
 }
 
+html[saved-theme="light"] body h2 {
+  font-size: var(--h2-size, 27.2px);
+  letter-spacing: var(--h2-letter-spacing, -0.2992px);
+  line-height: var(--h2-line-height, 32.64px);
+}
+
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(233, 49, 71);
+  border-left-color: rgb(233, 49, 71);
+  border-right-color: rgb(233, 49, 71);
+  border-top-color: rgb(233, 49, 71);
   color: var(--inline-title-color, rgb(233, 49, 71));
+  font-size: var(--inline-title-size, 36.8px);
+  letter-spacing: -0.552px;
+  line-height: var(--inline-title-line-height, 44.16px);
+  margin-bottom: 18.4px;
+}
+
+html[saved-theme="light"] body h3 {
+  font-size: var(--h3-size, 22.4px);
+  letter-spacing: var(--h3-letter-spacing, -0.1792px);
+  line-height: var(--h3-line-height, 29.12px);
+}
+
+html[saved-theme="light"] body h4 {
+  font-size: var(--h4-size, 19.2px);
+  letter-spacing: var(--h4-letter-spacing, -0.096px);
+  line-height: var(--h4-line-height, 26.88px);
+}
+
+html[saved-theme="light"] body h5 {
+  font-size: var(--h5-size, 17.6px);
+  letter-spacing: var(--h5-letter-spacing, -0.0352px);
+  line-height: var(--h5-line-height, 26.4px);
 }
 
 html[saved-theme="light"] body hr {
@@ -19079,6 +19219,10 @@ html[saved-theme="light"] body hr {
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(110, 102, 3));
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(110, 102, 3);
@@ -19143,11 +19287,27 @@ html[saved-theme="light"] body .darkmode svg {
   margin-bottom: 0px;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(110, 102, 3);
+  border-left-color: rgb(110, 102, 3);
+  border-right-color: rgb(110, 102, 3);
+  border-top-color: rgb(110, 102, 3);
+  color: rgb(110, 102, 3);
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(110, 102, 3);
   border-left-color: rgb(110, 102, 3);
   border-right-color: rgb(110, 102, 3);
   border-top-color: rgb(110, 102, 3);
+  color: rgb(110, 102, 3);
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(110, 102, 3);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
   color: rgb(110, 102, 3);
 }
 
@@ -19188,6 +19348,10 @@ html[saved-theme="light"] body .stacked-page-header {
 }`,
     misc: `html[saved-theme="light"] body .navigation-progress {
   background-color: var(--status-bar-background, rgb(254, 255, 246));
+}
+
+html[saved-theme="light"] body .page-header h2.page-title {
+  line-height: 23.4px;
 }
 
 html[saved-theme="light"] body input[type=text] {

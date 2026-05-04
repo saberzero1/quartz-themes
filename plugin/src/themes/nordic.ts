@@ -118,6 +118,7 @@ export const theme: ThemeData = {
   --callout-important: var(--color-cyan-rgb, 97, 177, 191);
   --callout-info: var(--color-blue-rgb, 97, 153, 191);
   --callout-question: var(--color-orange-rgb, 208, 135, 112);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-success: var(--color-green-rgb, 163, 190, 140);
   --callout-summary: var(--color-cyan-rgb, 97, 177, 191);
   --callout-tip: var(--color-cyan-rgb, 97, 177, 191);
@@ -411,7 +412,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, color-mix(in srgb, hsl(210, 34%, 63%), #000 45%));
   --vault-profile-color: var(--text-normal, color-mix(in srgb, hsl(210, 34%, 63%), #000 45%));
   --vault-profile-color-hover: var(--vault-profile-color, color-mix(in srgb, hsl(210, 34%, 63%), #000 45%));
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -493,6 +496,13 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, color(srgb 0.27731 0.3465 0.41569));
+  font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
+  text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--bold-color, color(srgb 0.27731 0.3465 0.41569));
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -551,11 +561,21 @@ html body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(129, 161, 193, 0.3));
 }`,
     lists: `html body dd {
+  border-bottom-color: color(srgb 0.27731 0.3465 0.41569);
+  border-left-color: color(srgb 0.27731 0.3465 0.41569);
+  border-right-color: color(srgb 0.27731 0.3465 0.41569);
+  border-top-color: color(srgb 0.27731 0.3465 0.41569);
   color: color(srgb 0.27731 0.3465 0.41569);
+  font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body dt {
+  border-bottom-color: color(srgb 0.27731 0.3465 0.41569);
+  border-left-color: color(srgb 0.27731 0.3465 0.41569);
+  border-right-color: color(srgb 0.27731 0.3465 0.41569);
+  border-top-color: color(srgb 0.27731 0.3465 0.41569);
   color: color(srgb 0.27731 0.3465 0.41569);
+  font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body ol > li {
@@ -579,6 +599,7 @@ html body ul.overflow {
 html body blockquote {
   --blockquote-background-color: var(--background-primary-alt, #ECEFF4);
   background-color: var(--blockquote-background-color, rgb(236, 239, 244));
+  color: var(--blockquote-color, color(srgb 0.27731 0.3465 0.41569));
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-bottom: 12px;
   padding-top: 12px;
@@ -593,7 +614,6 @@ html body blockquote {
 html body table {
   color: color(srgb 0.27731 0.3465 0.41569);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  width: 180.125px;
 }
 
 html body tbody tr:nth-child(even) {
@@ -681,6 +701,7 @@ html body video {
   border-left-color: color(srgb 0.40336 0.504 0.60464);
   border-right-color: color(srgb 0.40336 0.504 0.60464);
   border-top-color: color(srgb 0.40336 0.504 0.60464);
+  color: var(--text-muted, color(srgb 0.40336 0.504 0.60464));
 }
 
 html body .footnotes {
@@ -693,6 +714,7 @@ html body .transclude {
   border-left-color: rgb(144, 174, 201);
   border-right-color: color(srgb 0.27731 0.3465 0.41569);
   border-top-color: color(srgb 0.27731 0.3465 0.41569);
+  color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body .transclude-inner {
@@ -700,6 +722,7 @@ html body .transclude-inner {
   border-left-color: color(srgb 0.27731 0.3465 0.41569);
   border-right-color: color(srgb 0.27731 0.3465 0.41569);
   border-top-color: color(srgb 0.27731 0.3465 0.41569);
+  color: color(srgb 0.27731 0.3465 0.41569);
 }`,
     checkboxes: `html body .katex-display > .katex {
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2085,6 +2108,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-left-color: rgba(129, 161, 193, 0.15);
   border-right-color: rgba(129, 161, 193, 0.15);
   border-top-color: rgba(129, 161, 193, 0.15);
+  color: var(--pill-color, rgb(129, 161, 193));
 }
 
 html body a.internal-link.tag-link::before {
@@ -2092,6 +2116,10 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(129, 161, 193);
+  border-left-color: rgb(129, 161, 193);
+  border-right-color: rgb(129, 161, 193);
+  border-top-color: rgb(129, 161, 193);
   color: var(--h1-color, rgb(129, 161, 193));
   font-family: var(--h1-font, Norwester);
 }
@@ -2101,31 +2129,55 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(129, 161, 193);
+  border-left-color: rgb(129, 161, 193);
+  border-right-color: rgb(129, 161, 193);
+  border-top-color: rgb(129, 161, 193);
   color: var(--h2-color, rgb(129, 161, 193));
   font-family: var(--h2-font, Norwester);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(129, 161, 193);
+  border-left-color: rgb(129, 161, 193);
+  border-right-color: rgb(129, 161, 193);
+  border-top-color: rgb(129, 161, 193);
   color: var(--inline-title-color, rgb(129, 161, 193));
   font-family: var(--inline-title-font, Norwester);
 }
 
 html body h3 {
+  border-bottom-color: rgb(129, 161, 193);
+  border-left-color: rgb(129, 161, 193);
+  border-right-color: rgb(129, 161, 193);
+  border-top-color: rgb(129, 161, 193);
   color: var(--h3-color, rgb(129, 161, 193));
   font-family: var(--h3-font, Norwester);
 }
 
 html body h4 {
+  border-bottom-color: rgb(129, 161, 193);
+  border-left-color: rgb(129, 161, 193);
+  border-right-color: rgb(129, 161, 193);
+  border-top-color: rgb(129, 161, 193);
   color: var(--h4-color, rgb(129, 161, 193));
   font-family: var(--h4-font, Norwester);
 }
 
 html body h5 {
+  border-bottom-color: rgb(129, 161, 193);
+  border-left-color: rgb(129, 161, 193);
+  border-right-color: rgb(129, 161, 193);
+  border-top-color: rgb(129, 161, 193);
   color: var(--h5-color, rgb(129, 161, 193));
   font-family: var(--h5-font, Norwester);
 }
 
 html body h6 {
+  border-bottom-color: rgb(129, 161, 193);
+  border-left-color: rgb(129, 161, 193);
+  border-right-color: rgb(129, 161, 193);
+  border-top-color: rgb(129, 161, 193);
   color: var(--h6-color, rgb(129, 161, 193));
   font-family: var(--h6-font, Norwester);
 }
@@ -2167,6 +2219,22 @@ html body hr {
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, color(srgb 0.40336 0.504 0.60464));
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: color(srgb 0.27731 0.3465 0.41569);
@@ -2295,6 +2363,15 @@ html body .bases-table thead th {
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: color(srgb 0.40336 0.504 0.60464);
+  border-left-color: color(srgb 0.40336 0.504 0.60464);
+  border-right-color: color(srgb 0.40336 0.504 0.60464);
+  border-top-color: color(srgb 0.40336 0.504 0.60464);
+  color: color(srgb 0.40336 0.504 0.60464);
+  font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
 html body .metadata-properties {
   border-bottom-color: color(srgb 0.40336 0.504 0.60464);
   border-left-color: color(srgb 0.40336 0.504 0.60464);
@@ -2302,6 +2379,14 @@ html body .metadata-properties {
   border-top-color: color(srgb 0.40336 0.504 0.60464);
   color: color(srgb 0.40336 0.504 0.60464);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html body .metadata-property-key {
+  color: color(srgb 0.40336 0.504 0.60464);
+}
+
+html body .metadata-property-value {
+  color: color(srgb 0.40336 0.504 0.60464);
 }
 
 html body .note-properties {
@@ -2368,6 +2453,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: color(srgb 0.27731 0.3465 0.41569);
+  border-left-color: color(srgb 0.27731 0.3465 0.41569);
+  border-right-color: color(srgb 0.27731 0.3465 0.41569);
+  border-top-color: color(srgb 0.27731 0.3465 0.41569);
   color: var(--text-normal, color(srgb 0.27731 0.3465 0.41569));
 }
 

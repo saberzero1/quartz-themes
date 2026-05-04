@@ -43,6 +43,19 @@ export const theme: ThemeData = {
   --bases-table-summary-background-hover: var(--background-modifier-hover, hsla(217, 8%, 34%, 0.16));
   --blockquote-bg: hsla(240, 11%, 2%, 0.07);
   --blockquote-border: hsla(286, 22%, 66%, 1);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #2E3035);
   --canvas-card-label-color: var(--text-faint, hsla(0, 0%, 61%, 1));
   --caret-color: var(--text-normal, hsla(213, 3%, 82%, 1));
@@ -242,7 +255,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, hsla(213, 3%, 82%, 1));
   --vault-profile-color: var(--text-normal, hsla(213, 3%, 82%, 1));
   --vault-profile-color-hover: var(--vault-profile-color, hsla(213, 3%, 82%, 1));
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -327,6 +342,13 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(184, 186, 125);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--text-em, rgb(184, 186, 125));
+  font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  outline: rgb(184, 186, 125) none 0px;
+  text-decoration-color: rgb(184, 186, 125);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--discord-yellow-alt, rgb(222, 175, 99));
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -389,19 +411,35 @@ html body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(228, 129, 192));
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(208, 209, 210);
+  border-left-color: rgb(208, 209, 210);
+  border-right-color: rgb(208, 209, 210);
+  border-top-color: rgb(208, 209, 210);
   color: rgb(208, 209, 210);
+  font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 html body dt {
+  border-bottom-color: rgb(208, 209, 210);
+  border-left-color: rgb(208, 209, 210);
+  border-right-color: rgb(208, 209, 210);
+  border-top-color: rgb(208, 209, 210);
   color: rgb(208, 209, 210);
+  font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 html body ol > li {
   color: rgb(208, 209, 210);
+  margin-bottom: 4px;
+  margin-left: 26.6953px;
+  margin-top: 4px;
 }
 
 html body ul > li {
   color: rgb(208, 209, 210);
+  margin-bottom: 4px;
+  margin-left: 26.6953px;
+  margin-top: 4px;
 }
 
 html body ul.overflow {
@@ -415,7 +453,10 @@ html body ul.overflow {
 }
 
 html body blockquote {
+  color: var(--blockquote-color, rgb(208, 209, 210));
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.2px;
+  line-height: 26.4px;
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(208, 209, 210);
@@ -428,7 +469,6 @@ html body table {
   color: rgb(208, 209, 210);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: var(--heading-spacing, 32px);
-  width: 189.266px;
 }
 
 html body td {
@@ -454,6 +494,7 @@ html body th {
   border-top-width: var(--table-header-border-width, 0px);
   color: var(--table-header-color, rgb(208, 209, 210));
   font-weight: var(--table-header-weight, 700);
+  letter-spacing: -0.2px;
 }
 
 html body thead {
@@ -524,6 +565,7 @@ html body video {
   border-left-color: rgb(141, 145, 150);
   border-right-color: rgb(141, 145, 150);
   border-top-color: rgb(141, 145, 150);
+  color: var(--text-muted, rgb(141, 145, 150));
 }
 
 html body .footnotes {
@@ -535,6 +577,7 @@ html body .transclude {
   border-bottom-color: rgb(208, 209, 210);
   border-right-color: rgb(208, 209, 210);
   border-top-color: rgb(208, 209, 210);
+  color: rgb(208, 209, 210);
   padding-left: 8px;
   padding-right: 4px;
 }
@@ -544,6 +587,7 @@ html body .transclude-inner {
   border-left-color: rgb(208, 209, 210);
   border-right-color: rgb(208, 209, 210);
   border-top-color: rgb(208, 209, 210);
+  color: rgb(208, 209, 210);
   margin-left: 8px;
   margin-right: 4px;
   padding-left: 8px;
@@ -1440,6 +1484,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color-hover: var(--tag-color-hover, hsla(265, 66%, 72%, 1));
   --pill-color-remove: var(--tag-color, hsla(265, 66%, 72%, 1));
   --pill-color-remove-hover: var(--tag-color-hover, hsla(265, 66%, 72%, 1));
+  color: var(--pill-color, rgb(176, 136, 231));
   font-family: "??", "??", Catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -1448,8 +1493,17 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(138, 135, 197);
+  border-left-color: rgb(138, 135, 197);
+  border-right-color: rgb(138, 135, 197);
+  border-top-color: rgb(138, 135, 197);
   color: var(--text-title-h1, rgb(138, 135, 197));
   font-family: var(--h1-font, "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: var(--h1-size, 32px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h1-letter-spacing, -0.48px);
+  line-height: var(--h1-line-height, 40px);
+  margin-bottom: 10px;
 }
 
 html body h1.article-title {
@@ -1457,33 +1511,83 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(140, 149, 212);
+  border-left-color: rgb(140, 149, 212);
+  border-right-color: rgb(140, 149, 212);
+  border-top-color: rgb(140, 149, 212);
   color: var(--text-title-h2, rgb(140, 149, 212));
   font-family: var(--h2-font, "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: var(--h2-size, 26px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.286px);
+  line-height: var(--h2-line-height, 32.5px);
+  margin-bottom: 10px;
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(208, 209, 210);
+  border-left-color: rgb(208, 209, 210);
+  border-right-color: rgb(208, 209, 210);
+  border-top-color: rgb(208, 209, 210);
   color: var(--inline-title-color, rgb(208, 209, 210));
   font-family: var(--inline-title-font, "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html body h3 {
+  border-bottom-color: rgb(140, 149, 212);
+  border-left-color: rgb(140, 149, 212);
+  border-right-color: rgb(140, 149, 212);
+  border-top-color: rgb(140, 149, 212);
   color: var(--text-title-h3, rgb(140, 149, 212));
   font-family: var(--h3-font, "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: var(--h3-size, 22px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h3-letter-spacing, -0.176px);
+  line-height: var(--h3-line-height, 27.5px);
+  margin-bottom: 10px;
+  margin-top: var(--heading-spacing, 10px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(140, 149, 212);
+  border-left-color: rgb(140, 149, 212);
+  border-right-color: rgb(140, 149, 212);
+  border-top-color: rgb(140, 149, 212);
   color: var(--text-title-h4, rgb(140, 149, 212));
   font-family: var(--h4-font, "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: var(--h4-size, 18px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h4-letter-spacing, -0.09px);
+  line-height: var(--h4-line-height, 22.5px);
+  margin-bottom: 10px;
+  margin-top: var(--heading-spacing, 10px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(140, 149, 212);
+  border-left-color: rgb(140, 149, 212);
+  border-right-color: rgb(140, 149, 212);
+  border-top-color: rgb(140, 149, 212);
   color: var(--text-title-h5, rgb(140, 149, 212));
   font-family: var(--h5-font, "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: var(--h5-size, 18px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h5-letter-spacing, -0.036px);
+  line-height: var(--h5-line-height, 22.5px);
+  margin-bottom: 10px;
+  margin-top: var(--heading-spacing, 10px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(120, 144, 151);
+  border-left-color: rgb(120, 144, 151);
+  border-right-color: rgb(120, 144, 151);
+  border-top-color: rgb(120, 144, 151);
   color: var(--text-title-h6, rgb(120, 144, 151));
   font-family: var(--h6-font, "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  line-height: var(--h6-line-height, 20px);
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 html body hr {
@@ -1502,6 +1606,26 @@ html body hr {
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--interactive-active, rgb(208, 209, 210));
   font-family: Catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(208, 209, 210);
@@ -1627,6 +1751,15 @@ html body .canvas-sidebar {
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(141, 145, 150);
+  border-left-color: rgb(141, 145, 150);
+  border-right-color: rgb(141, 145, 150);
+  border-top-color: rgb(141, 145, 150);
+  color: rgb(141, 145, 150);
+  font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(141, 145, 150);
   border-left-color: rgb(141, 145, 150);
@@ -1634,6 +1767,16 @@ html body .metadata-properties {
   border-top-color: rgb(141, 145, 150);
   color: rgb(141, 145, 150);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html body .metadata-property-key {
+  color: rgb(141, 145, 150);
+  font-family: var(--metadata-label-font, "??", "??", Catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}
+
+html body .metadata-property-value {
+  color: rgb(141, 145, 150);
+  font-family: var(--metadata-input-font, "??", "??", Catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html body .note-properties {
@@ -1696,8 +1839,13 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(208, 209, 210);
+  border-left-color: rgb(208, 209, 210);
+  border-right-color: rgb(208, 209, 210);
+  border-top-color: rgb(208, 209, 210);
   color: var(--text-normal, rgb(208, 209, 210));
   font-family: var(--font-editor, "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  line-height: 32px;
 }
 
 html body abbr {

@@ -37,6 +37,19 @@ export const theme: ThemeData = {
   --blockquote-border-color: var(--interactive-accent, #483699);
   --border-xsm: rgba(255, 255, 255, 0.25);
   --border-xsm-alt: rgba(100, 100, 100, 0.25);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #22212c);
   --canvas-card-label-color: var(--text-faint, #6c6498);
   --caret-color: var(--text-normal, #f8f8f2);
@@ -448,7 +461,9 @@ export const theme: ThemeData = {
   --tracking-5: 2.56px;
   --vault-profile-color: var(--text-normal, #f8f8f2);
   --vault-profile-color-hover: var(--vault-profile-color, #f8f8f2);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -600,6 +615,12 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(255, 255, 128);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--md-color-bolditalic, rgb(255, 255, 128));
+  outline: rgb(255, 255, 128) none 0px;
+  text-decoration-color: rgb(255, 255, 128);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--md-color-bold, rgb(255, 184, 108));
   outline: rgb(255, 184, 108) none 0px;
@@ -656,10 +677,18 @@ html body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(114, 195, 213);
+  border-left-color: rgb(114, 195, 213);
+  border-right-color: rgb(114, 195, 213);
+  border-top-color: rgb(114, 195, 213);
   color: rgb(114, 195, 213);
 }
 
 html body dt {
+  border-bottom-color: rgb(114, 195, 213);
+  border-left-color: rgb(114, 195, 213);
+  border-right-color: rgb(114, 195, 213);
+  border-top-color: rgb(114, 195, 213);
   color: rgb(114, 195, 213);
   font-weight: 500;
 }
@@ -684,6 +713,9 @@ html body ul.overflow {
 
 html body blockquote {
   background-color: var(--blockquote-background-color, rgb(21, 19, 31));
+  color: var(--blockquote-color, rgb(114, 195, 213));
+  font-weight: 500;
+  line-height: 27.2px;
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(114, 195, 213);
@@ -698,7 +730,6 @@ html body table {
   border-right-color: rgb(66, 71, 80);
   border-top-color: rgb(66, 71, 80);
   color: rgb(114, 195, 213);
-  width: 554px;
 }
 
 html body tbody tr:nth-child(even) {
@@ -805,6 +836,7 @@ html body video {
   border-left-color: rgb(110, 107, 126);
   border-right-color: rgb(110, 107, 126);
   border-top-color: rgb(110, 107, 126);
+  color: var(--text-muted, rgb(110, 107, 126));
 }
 
 html body .footnotes {
@@ -817,6 +849,8 @@ html body .transclude {
   border-left-color: rgb(169, 147, 205);
   border-right-color: rgb(114, 195, 213);
   border-top-color: rgb(114, 195, 213);
+  box-shadow: 0px 4px 6px -1px var(--shadow-xsm);
+  color: rgb(114, 195, 213);
 }
 
 html body .transclude-inner {
@@ -824,6 +858,8 @@ html body .transclude-inner {
   border-left-color: rgb(248, 248, 242);
   border-right-color: rgb(248, 248, 242);
   border-top-color: rgb(248, 248, 242);
+  box-shadow: 0px 4px 6px -1px var(--shadow-xsm);
+  color: rgb(248, 248, 242);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(66, 71, 80);
@@ -1718,6 +1754,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color-hover: var(--tag-color-hover, #bd93f9);
   --pill-color-remove: var(--tag-color, #bd93f9);
   --pill-color-remove-hover: var(--tag-color-hover, #bd93f9);
+  color: var(--pill-color, rgb(189, 147, 249));
   font-family: "??", "??", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--pill-weight, 500);
 }
@@ -1727,8 +1764,14 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(255, 184, 107);
+  border-left-color: rgb(255, 184, 107);
+  border-right-color: rgb(255, 184, 107);
+  border-top-color: rgb(255, 184, 107);
   color: var(--h1-color, rgb(255, 184, 107));
   font-family: var(--font-header, "Abril Text", Inter, "-apple-system BlinkMacSystemFont", "Segoe UI", Ubuntu, Helvetica, Arial, sans-serif);
+  font-weight: var(--font-bold, 700);
+  line-height: var(--header-line-height, 32.7224px);
 }
 
 html body h1.article-title {
@@ -1736,32 +1779,66 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(255, 122, 198);
+  border-left-color: rgb(255, 122, 198);
+  border-right-color: rgb(255, 122, 198);
+  border-top-color: rgb(255, 122, 198);
   color: var(--h2-color, rgb(255, 122, 198));
   font-family: var(--font-header, "Abril Text", Inter, "-apple-system BlinkMacSystemFont", "Segoe UI", Ubuntu, Helvetica, Arial, sans-serif);
+  font-weight: var(--font-bold, 700);
+  line-height: var(--header-line-height, 29.5675px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(114, 195, 213);
+  border-left-color: rgb(114, 195, 213);
+  border-right-color: rgb(114, 195, 213);
+  border-top-color: rgb(114, 195, 213);
   color: var(--inline-title-color, rgb(114, 195, 213));
 }
 
 html body h3 {
+  border-bottom-color: rgb(189, 147, 249);
+  border-left-color: rgb(189, 147, 249);
+  border-right-color: rgb(189, 147, 249);
+  border-top-color: rgb(189, 147, 249);
   color: var(--h3-color, rgb(189, 147, 249));
   font-family: var(--font-header, "Abril Text", Inter, "-apple-system BlinkMacSystemFont", "Segoe UI", Ubuntu, Helvetica, Arial, sans-serif);
+  font-weight: var(--font-bold, 700);
+  line-height: var(--header-line-height, 26.6552px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(139, 233, 253);
+  border-left-color: rgb(139, 233, 253);
+  border-right-color: rgb(139, 233, 253);
+  border-top-color: rgb(139, 233, 253);
   color: var(--h4-color, rgb(139, 233, 253));
   font-family: var(--font-header, "Abril Text", Inter, "-apple-system BlinkMacSystemFont", "Segoe UI", Ubuntu, Helvetica, Arial, sans-serif);
+  font-weight: var(--font-bold, 700);
+  line-height: var(--header-line-height, 24.0261px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(80, 250, 123);
+  border-left-color: rgb(80, 250, 123);
+  border-right-color: rgb(80, 250, 123);
+  border-top-color: rgb(80, 250, 123);
   color: var(--h5-color, rgb(80, 250, 123));
   font-family: var(--font-header, "Abril Text", Inter, "-apple-system BlinkMacSystemFont", "Segoe UI", Ubuntu, Helvetica, Arial, sans-serif);
+  font-weight: var(--font-bold, 700);
+  line-height: var(--header-line-height, 21.761px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(241, 250, 140);
+  border-left-color: rgb(241, 250, 140);
+  border-right-color: rgb(241, 250, 140);
+  border-top-color: rgb(241, 250, 140);
   color: var(--h6-color, rgb(241, 250, 140));
   font-family: var(--font-header, "Abril Text", Inter, "-apple-system BlinkMacSystemFont", "Segoe UI", Ubuntu, Helvetica, Arial, sans-serif);
+  font-weight: var(--font-bold, 700);
+  line-height: var(--header-line-height, 20.224px);
 }
 
 html body hr {
@@ -1786,6 +1863,22 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   color: var(--color-gray-10, rgb(219, 222, 230));
   font-family: "??", "??", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: var(--font-medium, 500);
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(114, 195, 213);
@@ -1811,6 +1904,9 @@ html body li.depth-0 {
   border-top-width: 0px;
   color: var(--color-gray-70, rgb(82, 87, 102));
   font-family: "??", "??", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  padding-bottom: 0px;
+  padding-left: 8px;
+  padding-top: 2px;
 }
 
 html body footer ul li a {
@@ -1919,12 +2015,31 @@ html body .bases-table thead th {
   color: var(--text-muted, rgb(110, 107, 126));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(110, 107, 126);
+  border-left-color: rgb(110, 107, 126);
+  border-right-color: rgb(110, 107, 126);
+  border-top-color: rgb(110, 107, 126);
+  color: rgb(110, 107, 126);
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(110, 107, 126);
   border-left-color: rgb(110, 107, 126);
   border-right-color: rgb(110, 107, 126);
   border-top-color: rgb(110, 107, 126);
   color: rgb(110, 107, 126);
+}
+
+html body .metadata-property-key {
+  color: rgb(110, 107, 126);
+  font-family: var(--metadata-label-font, "??", "??", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-weight: 500;
+}
+
+html body .metadata-property-value {
+  color: rgb(110, 107, 126);
+  font-family: var(--metadata-input-font, "??", "??", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html body .note-properties {
@@ -1992,8 +2107,15 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(248, 248, 242);
+  border-left-color: rgb(248, 248, 242);
+  border-right-color: rgb(248, 248, 242);
+  border-top-color: rgb(248, 248, 242);
   color: var(--text-normal, rgb(248, 248, 242));
   font-family: "??", "??", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: var(--font-scale-1, 16px);
+  line-height: 20.8px;
+  margin-top: 2px;
 }
 
 html body abbr {

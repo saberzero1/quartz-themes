@@ -39,6 +39,19 @@ export const theme: ThemeData = {
   --blockquote-border-color: var(--interactive-accent, #2ea043);
   --blue: #61afef;
   --callout-blend-mode: var(--highlight-mix-blend-mode, screen);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #0d1117);
   --canvas-card-label-color: var(--text-faint, #6e7681);
   --caret-color: var(--text-normal, #c9d1d9);
@@ -300,7 +313,9 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, #c9d1d9);
   --vault-profile-color-hover: var(--vault-profile-color, #c9d1d9);
   --yellow: #e5c07b;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -438,6 +453,13 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(63, 185, 80);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--color-green-3, rgb(63, 185, 80));
+  font-weight: 700;
+  outline: rgb(63, 185, 80) none 0px;
+  text-decoration-color: rgb(63, 185, 80);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--color-green-3, rgb(63, 185, 80));
   outline: rgb(63, 185, 80) none 0px;
@@ -493,10 +515,18 @@ html body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(201, 209, 217);
+  border-left-color: rgb(201, 209, 217);
+  border-right-color: rgb(201, 209, 217);
+  border-top-color: rgb(201, 209, 217);
   color: rgb(201, 209, 217);
 }
 
 html body dt {
+  border-bottom-color: rgb(201, 209, 217);
+  border-left-color: rgb(201, 209, 217);
+  border-right-color: rgb(201, 209, 217);
+  border-top-color: rgb(201, 209, 217);
   color: rgb(201, 209, 217);
 }
 
@@ -520,7 +550,9 @@ html body ul.overflow {
 
 html body blockquote {
   background-color: var(--blockquote-background-color, rgba(48, 54, 61, 0.35));
+  color: var(--text-normal, rgb(201, 209, 217));
   font-style: var(--blockquote-font-style, italic);
+  line-height: 32px;
   padding-bottom: 16px;
   padding-top: 16px;
 }`,
@@ -533,7 +565,6 @@ html body blockquote {
 
 html body table {
   color: rgb(201, 209, 217);
-  width: 244.172px;
 }
 
 html body td {
@@ -614,6 +645,7 @@ html body video {
   border-left-color: rgb(110, 118, 129);
   border-right-color: rgb(110, 118, 129);
   border-top-color: rgb(110, 118, 129);
+  color: var(--text-muted, rgb(110, 118, 129));
 }
 
 html body .footnotes {
@@ -633,6 +665,7 @@ html body .transclude {
   border-top-color: rgb(33, 38, 45);
   border-top-style: solid;
   border-top-width: 1px;
+  color: rgb(201, 209, 217);
 }
 
 html body .transclude-inner {
@@ -643,6 +676,7 @@ html body .transclude-inner {
   border-right-style: solid;
   border-top-color: rgb(201, 209, 217);
   border-top-style: solid;
+  color: rgb(201, 209, 217);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(110, 118, 129);
@@ -1548,6 +1582,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color-hover: var(--tag-color-hover, #388bfd);
   --pill-color-remove: var(--tag-color, #388bfd);
   --pill-color-remove-hover: var(--tag-color-hover, #388bfd);
+  color: var(--pill-color, rgb(56, 139, 253));
 }
 
 html body a.internal-link.tag-link::before {
@@ -1555,7 +1590,17 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(33, 38, 45);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(201, 209, 217);
+  border-right-color: rgb(201, 209, 217);
+  border-top-color: rgb(201, 209, 217);
   color: var(--h1-color, rgb(201, 209, 217));
+  font-size: var(--h1-size, 24.8px);
+  letter-spacing: var(--h1-letter-spacing, -0.372px);
+  line-height: var(--h1-line-height, 29.76px);
+  padding-bottom: 8px;
 }
 
 html body h1.article-title {
@@ -1564,27 +1609,77 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(33, 38, 45);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(201, 209, 217);
+  border-right-color: rgb(201, 209, 217);
+  border-top-color: rgb(201, 209, 217);
   color: var(--h2-color, rgb(201, 209, 217));
+  font-size: var(--h2-size, 22.4px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h2-letter-spacing, -0.2464px);
+  line-height: var(--h2-line-height, 26.88px);
+  padding-bottom: 8px;
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(201, 209, 217);
+  border-left-color: rgb(201, 209, 217);
+  border-right-color: rgb(201, 209, 217);
+  border-top-color: rgb(201, 209, 217);
   color: var(--inline-title-color, rgb(201, 209, 217));
+  font-size: var(--inline-title-size, 24.8px);
+  letter-spacing: -0.372px;
+  line-height: var(--inline-title-line-height, 29.76px);
+  margin-bottom: 12.4px;
 }
 
 html body h3 {
+  border-bottom-color: rgb(201, 209, 217);
+  border-left-color: rgb(201, 209, 217);
+  border-right-color: rgb(201, 209, 217);
+  border-top-color: rgb(201, 209, 217);
   color: var(--h3-color, rgb(201, 209, 217));
+  font-size: var(--h3-size, 20.8px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h3-letter-spacing, -0.1664px);
+  line-height: var(--h3-line-height, 27.04px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(201, 209, 217);
+  border-left-color: rgb(201, 209, 217);
+  border-right-color: rgb(201, 209, 217);
+  border-top-color: rgb(201, 209, 217);
   color: var(--h4-color, rgb(201, 209, 217));
+  font-size: var(--h4-size, 19.2px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h4-letter-spacing, -0.096px);
+  line-height: var(--h4-line-height, 26.88px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(201, 209, 217);
+  border-left-color: rgb(201, 209, 217);
+  border-right-color: rgb(201, 209, 217);
+  border-top-color: rgb(201, 209, 217);
   color: var(--h5-color, rgb(201, 209, 217));
+  font-size: var(--h5-size, 17.6px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h5-letter-spacing, -0.0352px);
+  line-height: var(--h5-line-height, 26.4px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(201, 209, 217);
+  border-left-color: rgb(201, 209, 217);
+  border-right-color: rgb(201, 209, 217);
+  border-top-color: rgb(201, 209, 217);
   color: var(--h6-color, rgb(201, 209, 217));
+  font-size: var(--h6-size, 17.6px);
+  font-weight: var(--font-weight, 400);
+  line-height: var(--h6-line-height, 26.4px);
 }
 
 html body hr {
@@ -1604,6 +1699,22 @@ html body hr {
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   --text-normal: var(--text-muted, #6e7681);
   color: var(--nav-item-color, rgb(110, 118, 129));
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(201, 209, 217);
@@ -1629,6 +1740,9 @@ html body li.depth-0 {
   border-right-width: 1px;
   border-top-color: rgb(13, 17, 23);
   color: var(--status-bar-text-color, rgb(110, 118, 129));
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-top: 0px;
 }
 
 html body footer ul li a {
@@ -1731,11 +1845,27 @@ html body .canvas-sidebar {
   color: var(--text-muted, rgb(110, 118, 129));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(110, 118, 129);
+  border-left-color: rgb(110, 118, 129);
+  border-right-color: rgb(110, 118, 129);
+  border-top-color: rgb(110, 118, 129);
+  color: rgb(110, 118, 129);
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(110, 118, 129);
   border-left-color: rgb(110, 118, 129);
   border-right-color: rgb(110, 118, 129);
   border-top-color: rgb(110, 118, 129);
+  color: rgb(110, 118, 129);
+}
+
+html body .metadata-property-key {
+  color: rgb(110, 118, 129);
+}
+
+html body .metadata-property-value {
   color: rgb(110, 118, 129);
 }
 
@@ -1800,7 +1930,12 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(201, 209, 217);
+  border-left-color: rgb(201, 209, 217);
+  border-right-color: rgb(201, 209, 217);
+  border-top-color: rgb(201, 209, 217);
   color: var(--text-normal, rgb(201, 209, 217));
+  font-weight: 700;
 }
 
 html body abbr {

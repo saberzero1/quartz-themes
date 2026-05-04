@@ -35,7 +35,20 @@ export const theme: ThemeData = {
   --bases-table-summary-background: var(--background-primary, #FCFEF3);
   --button-radius: var(--input-radius, 0px);
   --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 0px);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #FCFEF3);
   --canvas-card-label-color: var(--text-faint, #A48783);
   --canvas-controls-radius: var(--radius-s, 0px);
@@ -218,7 +231,9 @@ export const theme: ThemeData = {
   --toggle-thumb-radius: 0px;
   --vault-profile-color: var(--text-normal, #666666);
   --vault-profile-color-hover: var(--vault-profile-color, #666666);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -265,6 +280,12 @@ html body .markdown-rendered p > em, html em {
 }
 
 html body .markdown-rendered p > i, html i {
+  color: var(--italic-color, rgb(102, 102, 102));
+  outline: rgb(102, 102, 102) none 0px;
+  text-decoration-color: rgb(102, 102, 102);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
   color: var(--italic-color, rgb(102, 102, 102));
   outline: rgb(102, 102, 102) none 0px;
   text-decoration-color: rgb(102, 102, 102);
@@ -320,10 +341,18 @@ html body a.internal-link.broken {
   outline: rgb(82, 122, 152) none 0px;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(102, 102, 102);
+  border-left-color: rgb(102, 102, 102);
+  border-right-color: rgb(102, 102, 102);
+  border-top-color: rgb(102, 102, 102);
   color: rgb(102, 102, 102);
 }
 
 html body dt {
+  border-bottom-color: rgb(102, 102, 102);
+  border-left-color: rgb(102, 102, 102);
+  border-right-color: rgb(102, 102, 102);
+  border-top-color: rgb(102, 102, 102);
   color: rgb(102, 102, 102);
 }
 
@@ -343,6 +372,10 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--text-faint, rgb(164, 135, 131));
+}
+
+html body blockquote {
+  color: var(--blockquote-color, rgb(102, 102, 102));
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(102, 102, 102);
@@ -440,10 +473,12 @@ html body video {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-left-color: rgb(193, 174, 172);
+  border-radius: 0px;
   border-right-color: rgb(193, 174, 172);
   border-top-color: rgb(193, 174, 172);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  color: var(--text-muted, rgb(193, 174, 172));
 }
 
 html body .footnotes {
@@ -455,6 +490,7 @@ html body .transclude {
   border-bottom-color: rgb(102, 102, 102);
   border-right-color: rgb(102, 102, 102);
   border-top-color: rgb(102, 102, 102);
+  color: rgb(102, 102, 102);
 }
 
 html body .transclude-inner {
@@ -462,6 +498,7 @@ html body .transclude-inner {
   border-left-color: rgb(102, 102, 102);
   border-right-color: rgb(102, 102, 102);
   border-top-color: rgb(102, 102, 102);
+  color: rgb(102, 102, 102);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(164, 135, 131);
@@ -1632,6 +1669,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color-remove: var(--tag-color, #A48783);
   --pill-color-remove-hover: var(--tag-color-hover, #E5DFD3);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
+  color: var(--pill-color, rgb(164, 135, 131));
 }
 
 html body a.internal-link.tag-link::before {
@@ -1639,8 +1677,13 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(164, 135, 131);
+  border-left-color: rgb(164, 135, 131);
+  border-right-color: rgb(164, 135, 131);
+  border-top-color: rgb(164, 135, 131);
   color: var(--h1-color, rgb(164, 135, 131));
   font-family: var(--h1-font, Georgia, serif);
+  font-weight: var(--font-weight, 400);
 }
 
 html body h1.article-title {
@@ -1649,33 +1692,70 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(164, 135, 131);
+  border-left-color: rgb(164, 135, 131);
+  border-right-color: rgb(164, 135, 131);
+  border-top-color: rgb(164, 135, 131);
   color: var(--h2-color, rgb(164, 135, 131));
   font-family: var(--h2-font, Georgia, serif);
+  font-weight: var(--font-weight, 400);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(164, 135, 131);
+  border-left-color: rgb(164, 135, 131);
+  border-right-color: rgb(164, 135, 131);
+  border-top-color: rgb(164, 135, 131);
   color: var(--inline-title-color, rgb(164, 135, 131));
   font-family: var(--inline-title-font, georgia, serif);
+  font-size: var(--inline-title-size, 32px);
+  letter-spacing: -0.48px;
+  line-height: var(--inline-title-line-height, 38.4px);
+  margin-bottom: 16px;
 }
 
 html body h3 {
+  border-bottom-color: rgb(164, 135, 131);
+  border-left-color: rgb(164, 135, 131);
+  border-right-color: rgb(164, 135, 131);
+  border-top-color: rgb(164, 135, 131);
   color: var(--h3-color, rgb(164, 135, 131));
   font-family: var(--h3-font, Georgia, serif);
+  font-weight: var(--font-weight, 400);
+  margin-top: var(--heading-spacing, 40px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(164, 135, 131);
+  border-left-color: rgb(164, 135, 131);
+  border-right-color: rgb(164, 135, 131);
+  border-top-color: rgb(164, 135, 131);
   color: var(--h4-color, rgb(164, 135, 131));
   font-family: var(--h4-font, Georgia, serif);
+  font-weight: var(--font-weight, 400);
+  margin-top: var(--heading-spacing, 40px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(164, 135, 131);
+  border-left-color: rgb(164, 135, 131);
+  border-right-color: rgb(164, 135, 131);
+  border-top-color: rgb(164, 135, 131);
   color: var(--h5-color, rgb(164, 135, 131));
   font-family: var(--h5-font, Georgia, serif);
+  font-weight: var(--font-weight, 400);
+  margin-top: var(--heading-spacing, 40px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(164, 135, 131);
+  border-left-color: rgb(164, 135, 131);
+  border-right-color: rgb(164, 135, 131);
+  border-top-color: rgb(164, 135, 131);
   color: var(--h6-color, rgb(164, 135, 131));
   font-family: var(--h6-font, Georgia, serif);
+  font-weight: var(--font-weight, 400);
+  margin-top: 40px;
 }
 
 html body hr {
@@ -1706,6 +1786,26 @@ html body hr {
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(255, 255, 255));
   font-family: georgia, serif;
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(102, 102, 102);
@@ -1839,11 +1939,27 @@ html body .canvas-sidebar {
   color: var(--text-muted, rgb(193, 174, 172));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(193, 174, 172);
+  border-left-color: rgb(193, 174, 172);
+  border-right-color: rgb(193, 174, 172);
+  border-top-color: rgb(193, 174, 172);
+  color: rgb(193, 174, 172);
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(193, 174, 172);
   border-left-color: rgb(193, 174, 172);
   border-right-color: rgb(193, 174, 172);
   border-top-color: rgb(193, 174, 172);
+  color: rgb(193, 174, 172);
+}
+
+html body .metadata-property-key {
+  color: rgb(193, 174, 172);
+}
+
+html body .metadata-property-value {
   color: rgb(193, 174, 172);
 }
 
@@ -1908,6 +2024,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(102, 102, 102);
+  border-left-color: rgb(102, 102, 102);
+  border-right-color: rgb(102, 102, 102);
+  border-top-color: rgb(102, 102, 102);
   color: var(--text-normal, rgb(102, 102, 102));
 }
 

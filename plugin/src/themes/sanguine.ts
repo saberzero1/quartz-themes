@@ -59,6 +59,19 @@ export const theme: ThemeData = {
   --bases-table-summary-background-hover: var(--background-modifier-hover, #D8B131);
   --blockquote-border-color: var(--interactive-accent, #D92926);
   --bodyFont: var(--font-interface, var(--fnt-head-p, "Slasher Regular"));
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #030308);
   --canvas-card-label-color: var(--text-faint, #83888C);
   --caret-color: var(--text-normal, #83888C);
@@ -392,7 +405,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, #83888C);
   --vault-profile-color: var(--text-normal, #83888C);
   --vault-profile-color-hover: var(--vault-profile-color, #83888C);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -466,6 +481,13 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(217, 41, 38);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--col-pr-txt-italic, rgb(217, 41, 38));
+  font-family: "Slasher Regular";
+  outline: rgb(217, 41, 38) none 0px;
+  text-decoration-color: rgb(217, 41, 38);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--col-pr-txt-strong, rgb(217, 41, 38));
   font-family: "Slasher Regular";
@@ -527,7 +549,13 @@ html body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(255, 0, 0));
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(131, 136, 140);
+  border-left-color: rgb(131, 136, 140);
+  border-right-color: rgb(131, 136, 140);
+  border-top-color: rgb(131, 136, 140);
   color: rgb(131, 136, 140);
+  font-family: "Slasher Regular";
+  font-size: 15px;
 }
 
 html body dl {
@@ -536,15 +564,27 @@ html body dl {
 }
 
 html body dt {
+  border-bottom-color: rgb(131, 136, 140);
+  border-left-color: rgb(131, 136, 140);
+  border-right-color: rgb(131, 136, 140);
+  border-top-color: rgb(131, 136, 140);
   color: rgb(131, 136, 140);
+  font-family: "Slasher Regular";
+  font-size: 15px;
 }
 
 html body ol > li {
   color: rgb(228, 229, 224);
+  margin-left: 24.3002px;
+  padding-bottom: var(--list-spacing, 1.125px);
+  padding-top: var(--list-spacing, 1.125px);
 }
 
 html body ul > li {
   color: rgb(228, 229, 224);
+  margin-left: 24.3002px;
+  padding-bottom: var(--list-spacing, 1.125px);
+  padding-top: var(--list-spacing, 1.125px);
 }
 
 html body ul.overflow {
@@ -558,7 +598,10 @@ html body ul.overflow {
 }
 
 html body blockquote {
+  color: var(--blockquote-color, rgb(131, 136, 140));
   font-family: "Slasher Regular";
+  letter-spacing: 0.5px;
+  line-height: 22.5px;
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(131, 136, 140);
@@ -571,7 +614,6 @@ html body table {
   background-color: var(--col-ed-bckg-table, rgb(3, 3, 8));
   color: var(--col-ed-txt-table, rgb(228, 229, 224));
   font-family: "Slasher Regular";
-  width: 196.234px;
 }
 
 html body tbody {
@@ -593,6 +635,7 @@ html body th {
   border-right-color: rgb(35, 34, 33);
   border-top-color: rgb(35, 34, 33);
   color: var(--col-pr-txt-tableh, rgb(217, 41, 38));
+  letter-spacing: 0.5px;
 }
 
 html body thead {
@@ -657,6 +700,7 @@ html body video {
   border-left-color: rgb(131, 136, 140);
   border-right-color: rgb(131, 136, 140);
   border-top-color: rgb(131, 136, 140);
+  color: var(--text-muted, rgb(131, 136, 140));
 }
 
 html body .footnotes {
@@ -669,6 +713,7 @@ html body .transclude {
   border-left-color: rgb(217, 41, 38);
   border-right-color: rgb(131, 136, 140);
   border-top-color: rgb(131, 136, 140);
+  color: rgb(131, 136, 140);
 }
 
 html body .transclude-inner {
@@ -676,6 +721,7 @@ html body .transclude-inner {
   border-left-color: rgb(131, 136, 140);
   border-right-color: rgb(131, 136, 140);
   border-top-color: rgb(131, 136, 140);
+  color: rgb(131, 136, 140);
 }`,
     checkboxes: `html body .katex-display > .katex {
   font-family: "Slasher Regular";
@@ -1994,7 +2040,10 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-top-color: rgb(255, 73, 73);
   border-top-left-radius: 26.25px;
   border-top-right-radius: 26.25px;
+  color: var(--pill-color, rgb(255, 73, 73));
   font-family: "Slasher Regular";
+  font-size: 13.125px;
+  line-height: var(--line-height-tight, 13.125px);
 }
 
 html body a.internal-link.tag-link::before {
@@ -2002,8 +2051,17 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(217, 41, 38);
+  border-left-color: rgb(217, 41, 38);
+  border-right-color: rgb(217, 41, 38);
+  border-top-color: rgb(217, 41, 38);
   color: var(--col-pr-txt-h1, rgb(217, 41, 38));
   font-family: var(--fnt-pr-headers, "Slasher Regular");
+  font-size: var(--siz-pr-txt-h1, 26.25px);
+  letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+  line-height: var(--h1-line-height, 31.5px);
+  margin-bottom: 0px;
+  padding-bottom: 5px;
 }
 
 html body h1.article-title {
@@ -2012,33 +2070,77 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(217, 41, 38);
+  border-left-color: rgb(217, 41, 38);
+  border-right-color: rgb(217, 41, 38);
+  border-top-color: rgb(217, 41, 38);
   color: var(--col-pr-txt-h2, rgb(217, 41, 38));
   font-family: var(--fnt-pr-headers, "Slasher Regular");
+  font-size: var(--siz-pr-txt-h2, 24px);
+  letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+  line-height: var(--line-height-pr-headers, 20px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(217, 41, 38);
+  border-left-color: rgb(217, 41, 38);
+  border-right-color: rgb(217, 41, 38);
+  border-top-color: rgb(217, 41, 38);
   color: var(--col-pr-txt-title, rgb(217, 41, 38));
   font-family: var(--inline-title-font, "Slasher Title");
+  font-size: var(--inline-title-size, 30px);
+  letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+  line-height: var(--inline-title-line-height, 36px);
+  margin-bottom: 15px;
+  padding-bottom: 2.5px;
 }
 
 html body h3 {
+  border-bottom-color: rgb(217, 41, 38);
+  border-left-color: rgb(217, 41, 38);
+  border-right-color: rgb(217, 41, 38);
+  border-top-color: rgb(217, 41, 38);
   color: var(--col-pr-txt-h3, rgb(217, 41, 38));
   font-family: var(--fnt-pr-headers, "Slasher Regular");
+  font-size: var(--siz-pr-txt-h3, 21.75px);
+  letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+  line-height: var(--line-height-pr-headers, 20px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(217, 41, 38);
+  border-left-color: rgb(217, 41, 38);
+  border-right-color: rgb(217, 41, 38);
+  border-top-color: rgb(217, 41, 38);
   color: var(--col-pr-txt-h4, rgb(217, 41, 38));
   font-family: var(--fnt-pr-headers, "Slasher Regular");
+  font-size: var(--siz-pr-txt-h4, 19.5px);
+  letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+  line-height: var(--line-height-pr-headers, 20px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(217, 41, 38);
+  border-left-color: rgb(217, 41, 38);
+  border-right-color: rgb(217, 41, 38);
+  border-top-color: rgb(217, 41, 38);
   color: var(--col-pr-txt-h5, rgb(217, 41, 38));
   font-family: var(--fnt-pr-headers, "Slasher Regular");
+  font-size: var(--siz-pr-txt-h5, 17.25px);
+  letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+  line-height: var(--line-height-pr-headers, 20px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(217, 41, 38);
+  border-left-color: rgb(217, 41, 38);
+  border-right-color: rgb(217, 41, 38);
+  border-top-color: rgb(217, 41, 38);
   color: var(--col-pr-txt-h6, rgb(217, 41, 38));
   font-family: var(--fnt-pr-headers, "Slasher Regular");
+  font-size: var(--siz-pr-txt-h6, 15px);
+  letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+  line-height: var(--line-height-pr-headers, 20px);
 }
 
 html body hr {
@@ -2063,6 +2165,26 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   color: var(--col-txt-titles, rgb(217, 41, 38));
   font-family: "Slasher Regular";
   font-weight: var(--nav-item-weight, 700);
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(131, 136, 140);
@@ -2194,6 +2316,15 @@ html body .canvas-sidebar {
   font-family: "Slasher Regular";
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(131, 136, 140);
+  border-left-color: rgb(131, 136, 140);
+  border-right-color: rgb(131, 136, 140);
+  border-top-color: rgb(131, 136, 140);
+  color: rgb(131, 136, 140);
+  font-family: "Slasher Regular";
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(131, 136, 140);
   border-left-color: rgb(131, 136, 140);
@@ -2201,6 +2332,18 @@ html body .metadata-properties {
   border-top-color: rgb(131, 136, 140);
   color: rgb(131, 136, 140);
   font-family: "Slasher Regular";
+}
+
+html body .metadata-property-key {
+  color: rgb(131, 136, 140);
+  font-family: var(--metadata-label-font, "Slasher Regular");
+  font-size: 15px;
+}
+
+html body .metadata-property-value {
+  color: rgb(131, 136, 140);
+  font-family: var(--metadata-input-font, "Slasher Regular");
+  font-size: 15px;
 }
 
 html body .note-properties {
@@ -2269,6 +2412,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(131, 136, 140);
+  border-left-color: rgb(131, 136, 140);
+  border-right-color: rgb(131, 136, 140);
+  border-top-color: rgb(131, 136, 140);
   color: var(--text-normal, rgb(131, 136, 140));
   font-family: "Slasher Regular";
 }

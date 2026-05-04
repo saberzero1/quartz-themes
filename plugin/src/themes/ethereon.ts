@@ -42,11 +42,20 @@ export const theme: ThemeData = {
   --bases-table-summary-background-hover: var(--background-modifier-hover, rgba(29, 31, 33, 0.5));
   --blockquote-border-color: var(--interactive-accent, hsl(174, 20%, 48%));
   --blockquote-border-thickness: 4px;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
   --callout-example: var(--color-purple-rgb, 156, 151, 183);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
   --callout-important: var(--color-cyan-rgb, 94, 141, 135);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-success: var(--color-green-rgb, 136, 188, 125);
   --callout-summary: var(--color-cyan-rgb, 94, 141, 135);
   --callout-tip: var(--color-cyan-rgb, 94, 141, 135);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #1d1f21);
   --canvas-card-label-color: var(--text-faint, #808082);
   --canvas-color-3: var(--color-yellow-rgb, 188, 156, 98);
@@ -298,7 +307,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, #e2e0d2);
   --vault-profile-color: var(--text-normal, #e2e0d2);
   --vault-profile-color-hover: var(--vault-profile-color, #e2e0d2);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -347,6 +358,13 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, rgb(226, 224, 210));
+  font-family: Inter, sans-serif;
+  outline: rgb(226, 224, 210) none 0px;
+  text-decoration-color: rgb(226, 224, 210);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--italic-color, rgb(226, 224, 210));
   font-family: Inter, sans-serif;
   outline: rgb(226, 224, 210) none 0px;
@@ -412,19 +430,31 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(98, 147, 142, 0.3));
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(226, 224, 210);
+  border-left-color: rgb(226, 224, 210);
+  border-right-color: rgb(226, 224, 210);
+  border-top-color: rgb(226, 224, 210);
   color: rgb(226, 224, 210);
+  font-family: Inter, sans-serif;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(226, 224, 210);
+  border-left-color: rgb(226, 224, 210);
+  border-right-color: rgb(226, 224, 210);
+  border-top-color: rgb(226, 224, 210);
   color: rgb(226, 224, 210);
+  font-family: Inter, sans-serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(226, 224, 210);
+  margin-left: 30.1875px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(226, 224, 210);
+  margin-left: 30.1875px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -438,6 +468,7 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(226, 224, 210));
   font-family: Inter, sans-serif;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
@@ -450,7 +481,6 @@ html[saved-theme="dark"] body blockquote {
 html[saved-theme="dark"] body table {
   color: rgb(226, 224, 210);
   font-family: Inter, sans-serif;
-  width: 194.844px;
 }
 
 html[saved-theme="dark"] body td {
@@ -531,6 +561,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(167, 166, 168);
   border-right-color: rgb(167, 166, 168);
   border-top-color: rgb(167, 166, 168);
+  color: var(--text-muted, rgb(167, 166, 168));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -543,6 +574,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(98, 147, 142);
   border-right-color: rgb(226, 224, 210);
   border-top-color: rgb(226, 224, 210);
+  color: rgb(226, 224, 210);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -550,6 +582,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(226, 224, 210);
   border-right-color: rgb(226, 224, 210);
   border-top-color: rgb(226, 224, 210);
+  color: rgb(226, 224, 210);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: Inter, sans-serif;
@@ -1455,6 +1488,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-left-color: rgba(98, 147, 142, 0.15);
   border-right-color: rgba(98, 147, 142, 0.15);
   border-top-color: rgba(98, 147, 142, 0.15);
+  color: var(--pill-color, rgb(117, 164, 157));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -1463,8 +1497,14 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   --font-weight: var(--h1-weight, 300);
+  border-bottom-color: rgb(182, 94, 103);
+  border-left-color: rgb(182, 94, 103);
+  border-right-color: rgb(182, 94, 103);
+  border-top-color: rgb(182, 94, 103);
   color: var(--h1-color, rgb(182, 94, 103));
   font-family: var(--h1-font, Inter, sans-serif);
+  font-weight: var(--font-weight, 300);
+  margin-bottom: 0px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1475,37 +1515,76 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 300);
+  border-bottom-color: rgb(188, 135, 98);
+  border-left-color: rgb(188, 135, 98);
+  border-right-color: rgb(188, 135, 98);
+  border-top-color: rgb(188, 135, 98);
   color: var(--h2-color, rgb(188, 135, 98));
   font-family: var(--h2-font, Inter, sans-serif);
+  font-weight: var(--font-weight, 300);
+  margin-bottom: 0px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(128, 128, 130);
+  border-left-color: rgb(128, 128, 130);
+  border-right-color: rgb(128, 128, 130);
+  border-top-color: rgb(128, 128, 130);
   color: var(--inline-title-color, rgb(128, 128, 130));
   font-family: var(--inline-title-font, Inter, sans-serif);
+  font-size: var(--inline-title-size, 21.088px);
+  font-weight: var(--inline-title-weight, 50);
+  letter-spacing: -0.31632px;
+  line-height: var(--inline-title-line-height, 25.3056px);
+  margin-bottom: 10.544px;
 }
 
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, 300);
+  border-bottom-color: rgb(188, 171, 98);
+  border-left-color: rgb(188, 171, 98);
+  border-right-color: rgb(188, 171, 98);
+  border-top-color: rgb(188, 171, 98);
   color: var(--h3-color, rgb(188, 171, 98));
   font-family: var(--h3-font, Inter, sans-serif);
+  font-weight: var(--font-weight, 300);
+  margin-bottom: 0px;
 }
 
 html[saved-theme="dark"] body h4 {
   --font-weight: var(--h4-weight, 300);
+  border-bottom-color: rgb(136, 188, 125);
+  border-left-color: rgb(136, 188, 125);
+  border-right-color: rgb(136, 188, 125);
+  border-top-color: rgb(136, 188, 125);
   color: var(--h4-color, rgb(136, 188, 125));
   font-family: var(--h4-font, Inter, sans-serif);
+  font-weight: var(--font-weight, 300);
+  margin-bottom: 0px;
 }
 
 html[saved-theme="dark"] body h5 {
   --font-weight: var(--h5-weight, 300);
+  border-bottom-color: rgb(196, 202, 214);
+  border-left-color: rgb(196, 202, 214);
+  border-right-color: rgb(196, 202, 214);
+  border-top-color: rgb(196, 202, 214);
   color: var(--h5-color, rgb(196, 202, 214));
   font-family: var(--h5-font, Inter, sans-serif);
+  font-weight: var(--font-weight, 300);
+  margin-bottom: 0px;
 }
 
 html[saved-theme="dark"] body h6 {
   --font-weight: var(--h6-weight, 300);
+  border-bottom-color: rgb(156, 151, 183);
+  border-left-color: rgb(156, 151, 183);
+  border-right-color: rgb(156, 151, 183);
+  border-top-color: rgb(156, 151, 183);
   color: var(--h6-color, rgb(156, 151, 183));
   font-family: var(--h6-font, Inter, sans-serif);
+  font-weight: var(--font-weight, 300);
+  margin-bottom: 0px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -1527,6 +1606,30 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(167, 166, 168));
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(226, 224, 210);
@@ -1547,6 +1650,7 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-color: rgb(68, 70, 72);
   border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(167, 166, 168));
+  padding-top: var(--size-2-3, 6px);
 }
 
 html[saved-theme="dark"] body footer ul li a {
@@ -1648,6 +1752,15 @@ html[saved-theme="dark"] body .canvas-sidebar {
   font-family: Inter, sans-serif;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(167, 166, 168);
+  border-left-color: rgb(167, 166, 168);
+  border-right-color: rgb(167, 166, 168);
+  border-top-color: rgb(167, 166, 168);
+  color: rgb(167, 166, 168);
+  font-family: Inter, sans-serif;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(167, 166, 168);
   border-left-color: rgb(167, 166, 168);
@@ -1655,6 +1768,14 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(167, 166, 168);
   color: rgb(167, 166, 168);
   font-family: Inter, sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(167, 166, 168);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(167, 166, 168);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -1722,6 +1843,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(226, 224, 210);
+  border-left-color: rgb(226, 224, 210);
+  border-right-color: rgb(226, 224, 210);
+  border-top-color: rgb(226, 224, 210);
   color: var(--text-normal, rgb(226, 224, 210));
 }
 
@@ -1822,11 +1947,20 @@ html[saved-theme="dark"] body ul.tags > li {
   --bases-table-summary-background-hover: var(--background-modifier-hover, rgba(226, 224, 226, 0.5));
   --blockquote-border-color: var(--interactive-accent, hsl(173, 20.2%, 51.6%));
   --blockquote-border-thickness: 4px;
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
   --callout-example: var(--color-purple-rgb, 59, 49, 105);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
   --callout-important: var(--color-cyan-rgb, 94, 141, 135);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-success: var(--color-green-rgb, 63, 127, 49);
   --callout-summary: var(--color-cyan-rgb, 94, 141, 135);
   --callout-tip: var(--color-cyan-rgb, 94, 141, 135);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #d8d6d8);
   --canvas-card-label-color: var(--text-faint, #767678);
   --canvas-color-3: var(--color-yellow-rgb, 152, 119, 59);
@@ -2078,7 +2212,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --titlebar-text-color-focused: var(--text-normal, #1d1f21);
   --vault-profile-color: var(--text-normal, #1d1f21);
   --vault-profile-color-hover: var(--vault-profile-color, #1d1f21);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -2127,6 +2263,13 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--italic-color, rgb(29, 31, 33));
+  font-family: Inter, sans-serif;
+  outline: rgb(29, 31, 33) none 0px;
+  text-decoration-color: rgb(29, 31, 33);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--italic-color, rgb(29, 31, 33));
   font-family: Inter, sans-serif;
   outline: rgb(29, 31, 33) none 0px;
@@ -2192,19 +2335,31 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(98, 147, 142, 0.3));
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(29, 31, 33);
+  border-left-color: rgb(29, 31, 33);
+  border-right-color: rgb(29, 31, 33);
+  border-top-color: rgb(29, 31, 33);
   color: rgb(29, 31, 33);
+  font-family: Inter, sans-serif;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(29, 31, 33);
+  border-left-color: rgb(29, 31, 33);
+  border-right-color: rgb(29, 31, 33);
+  border-top-color: rgb(29, 31, 33);
   color: rgb(29, 31, 33);
+  font-family: Inter, sans-serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(29, 31, 33);
+  margin-left: 30.1875px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(29, 31, 33);
+  margin-left: 30.1875px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -2218,6 +2373,7 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(29, 31, 33));
   font-family: Inter, sans-serif;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
@@ -2230,7 +2386,6 @@ html[saved-theme="light"] body blockquote {
 html[saved-theme="light"] body table {
   color: rgb(29, 31, 33);
   font-family: Inter, sans-serif;
-  width: 194.844px;
 }
 
 html[saved-theme="light"] body td {
@@ -2311,6 +2466,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(78, 79, 81);
   border-right-color: rgb(78, 79, 81);
   border-top-color: rgb(78, 79, 81);
+  color: var(--text-muted, rgb(78, 79, 81));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2323,6 +2479,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(107, 157, 151);
   border-right-color: rgb(29, 31, 33);
   border-top-color: rgb(29, 31, 33);
+  color: rgb(29, 31, 33);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2330,6 +2487,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(29, 31, 33);
   border-right-color: rgb(29, 31, 33);
   border-top-color: rgb(29, 31, 33);
+  color: rgb(29, 31, 33);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: Inter, sans-serif;
@@ -3235,6 +3393,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-left-color: rgba(98, 147, 142, 0.15);
   border-right-color: rgba(98, 147, 142, 0.15);
   border-top-color: rgba(98, 147, 142, 0.15);
+  color: var(--pill-color, rgb(98, 147, 142));
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -3243,8 +3402,14 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   --font-weight: var(--h1-weight, 500);
+  border-bottom-color: rgb(147, 57, 66);
+  border-left-color: rgb(147, 57, 66);
+  border-right-color: rgb(147, 57, 66);
+  border-top-color: rgb(147, 57, 66);
   color: var(--h1-color, rgb(147, 57, 66));
   font-family: var(--h1-font, Inter, sans-serif);
+  font-weight: var(--font-weight, 500);
+  margin-bottom: 0px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -3255,37 +3420,76 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 400);
+  border-bottom-color: rgb(152, 98, 59);
+  border-left-color: rgb(152, 98, 59);
+  border-right-color: rgb(152, 98, 59);
+  border-top-color: rgb(152, 98, 59);
   color: var(--h2-color, rgb(152, 98, 59));
   font-family: var(--h2-font, Inter, sans-serif);
+  font-weight: var(--font-weight, 400);
+  margin-bottom: 0px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(118, 118, 120);
+  border-left-color: rgb(118, 118, 120);
+  border-right-color: rgb(118, 118, 120);
+  border-top-color: rgb(118, 118, 120);
   color: var(--inline-title-color, rgb(118, 118, 120));
   font-family: var(--inline-title-font, Inter, sans-serif);
+  font-size: var(--inline-title-size, 21.088px);
+  font-weight: var(--inline-title-weight, 50);
+  letter-spacing: -0.31632px;
+  line-height: var(--inline-title-line-height, 25.3056px);
+  margin-bottom: 10.544px;
 }
 
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, 400);
+  border-bottom-color: rgb(152, 134, 59);
+  border-left-color: rgb(152, 134, 59);
+  border-right-color: rgb(152, 134, 59);
+  border-top-color: rgb(152, 134, 59);
   color: var(--h3-color, rgb(152, 134, 59));
   font-family: var(--h3-font, Inter, sans-serif);
+  font-weight: var(--font-weight, 400);
+  margin-bottom: 0px;
 }
 
 html[saved-theme="light"] body h4 {
   --font-weight: var(--h4-weight, 400);
+  border-bottom-color: rgb(63, 127, 49);
+  border-left-color: rgb(63, 127, 49);
+  border-right-color: rgb(63, 127, 49);
+  border-top-color: rgb(63, 127, 49);
   color: var(--h4-color, rgb(63, 127, 49));
   font-family: var(--h4-font, Inter, sans-serif);
+  font-weight: var(--font-weight, 400);
+  margin-bottom: 0px;
 }
 
 html[saved-theme="light"] body h5 {
   --font-weight: var(--h5-weight, 400);
+  border-bottom-color: rgb(104, 121, 149);
+  border-left-color: rgb(104, 121, 149);
+  border-right-color: rgb(104, 121, 149);
+  border-top-color: rgb(104, 121, 149);
   color: var(--h5-color, rgb(104, 121, 149));
   font-family: var(--h5-font, Inter, sans-serif);
+  font-weight: var(--font-weight, 400);
+  margin-bottom: 0px;
 }
 
 html[saved-theme="light"] body h6 {
   --font-weight: var(--h6-weight, 400);
+  border-bottom-color: rgb(59, 49, 105);
+  border-left-color: rgb(59, 49, 105);
+  border-right-color: rgb(59, 49, 105);
+  border-top-color: rgb(59, 49, 105);
   color: var(--h6-color, rgb(59, 49, 105));
   font-family: var(--h6-font, Inter, sans-serif);
+  font-weight: var(--font-weight, 400);
+  margin-bottom: 0px;
 }
 
 html[saved-theme="light"] body hr {
@@ -3307,6 +3511,30 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(78, 79, 81));
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(29, 31, 33);
@@ -3327,6 +3555,7 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-color: rgb(177, 176, 178);
   border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(78, 79, 81));
+  padding-top: var(--size-2-3, 6px);
 }
 
 html[saved-theme="light"] body footer ul li a {
@@ -3428,6 +3657,15 @@ html[saved-theme="light"] body .canvas-sidebar {
   font-family: Inter, sans-serif;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(78, 79, 81);
+  border-left-color: rgb(78, 79, 81);
+  border-right-color: rgb(78, 79, 81);
+  border-top-color: rgb(78, 79, 81);
+  color: rgb(78, 79, 81);
+  font-family: Inter, sans-serif;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(78, 79, 81);
   border-left-color: rgb(78, 79, 81);
@@ -3435,6 +3673,14 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(78, 79, 81);
   color: rgb(78, 79, 81);
   font-family: Inter, sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(78, 79, 81);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(78, 79, 81);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -3502,6 +3748,10 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(29, 31, 33);
+  border-left-color: rgb(29, 31, 33);
+  border-right-color: rgb(29, 31, 33);
+  border-top-color: rgb(29, 31, 33);
   color: var(--text-normal, rgb(29, 31, 33));
 }
 

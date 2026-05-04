@@ -27,6 +27,19 @@ export const theme: ThemeData = {
 	));
   --blockquote-font-style: italic;
   --bold-color: var(--color-vermillion-red, #e34234);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #1c1c1c);
   --caret-color: var(--text-normal, #909090);
   --checkbox-color: var(--color-muslim-green, #00ac5a);
@@ -203,6 +216,13 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   text-decoration-color: rgb(144, 144, 144);
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(227, 66, 52));
+  font-weight: 400;
+  outline: rgb(227, 66, 52) none 0px;
+  text-decoration-color: rgb(227, 66, 52);
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: var(--bold-color, rgb(227, 66, 52));
   outline: rgb(227, 66, 52) none 0px;
@@ -247,10 +267,18 @@ html[saved-theme="dark"] body a.internal-link.broken {
   outline: rgb(85, 144, 217) none 0px;
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(144, 144, 144);
+  border-left-color: rgb(144, 144, 144);
+  border-right-color: rgb(144, 144, 144);
+  border-top-color: rgb(144, 144, 144);
   color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(144, 144, 144);
+  border-left-color: rgb(144, 144, 144);
+  border-right-color: rgb(144, 144, 144);
+  border-top-color: rgb(144, 144, 144);
   color: rgb(144, 144, 144);
 }
 
@@ -270,7 +298,9 @@ html[saved-theme="dark"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   background-color: var(--blockquote-background-color, oklab(0.653347 0.0000296831 0.0000130534 / 0.03));
+  color: var(--blockquote-color, rgb(216, 210, 201));
   font-style: var(--blockquote-font-style, italic);
+  line-height: 25.6px;
   padding-bottom: 16px;
   padding-top: 16px;
 }`,
@@ -357,6 +387,7 @@ html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(144, 144, 144);
   border-right-color: rgb(144, 144, 144);
   border-top-color: rgb(144, 144, 144);
+  color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -364,6 +395,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(144, 144, 144);
   border-right-color: rgb(144, 144, 144);
   border-top-color: rgb(144, 144, 144);
+  color: rgb(144, 144, 144);
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-left-radius: 100px;
@@ -1269,6 +1301,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-bottom-right-radius: 4px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  color: var(--pill-color, rgb(216, 210, 201));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -1276,7 +1309,13 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(244, 246, 240);
+  border-left-color: rgb(244, 246, 240);
+  border-right-color: rgb(244, 246, 240);
+  border-top-color: rgb(244, 246, 240);
   color: var(--h1-color, rgb(244, 246, 240));
+  font-weight: var(--font-weight, 800);
+  margin-bottom: 38.4px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1284,27 +1323,61 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: oklab(0.653347 0.0000296831 0.0000130534 / 0.16);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(244, 246, 240);
+  border-right-color: rgb(244, 246, 240);
+  border-top-color: rgb(244, 246, 240);
   color: var(--h2-color, rgb(244, 246, 240));
+  font-weight: var(--font-weight, 800);
+  padding-bottom: 12.8px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(144, 144, 144);
+  border-left-color: rgb(144, 144, 144);
+  border-right-color: rgb(144, 144, 144);
+  border-top-color: rgb(144, 144, 144);
   color: var(--inline-title-color, rgb(144, 144, 144));
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(244, 246, 240);
+  border-left-color: rgb(244, 246, 240);
+  border-right-color: rgb(244, 246, 240);
+  border-top-color: rgb(244, 246, 240);
   color: var(--h3-color, rgb(244, 246, 240));
+  font-weight: var(--font-weight, 800);
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(244, 246, 240);
+  border-left-color: rgb(244, 246, 240);
+  border-right-color: rgb(244, 246, 240);
+  border-top-color: rgb(244, 246, 240);
   color: var(--h4-color, rgb(244, 246, 240));
+  font-weight: var(--font-weight, 800);
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(244, 246, 240);
+  border-left-color: rgb(244, 246, 240);
+  border-right-color: rgb(244, 246, 240);
+  border-top-color: rgb(244, 246, 240);
   color: var(--h5-color, rgb(244, 246, 240));
+  font-weight: var(--font-weight, 800);
+  line-height: var(--h5-line-height, 27.5456px);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(244, 246, 240);
+  border-left-color: rgb(244, 246, 240);
+  border-right-color: rgb(244, 246, 240);
+  border-top-color: rgb(244, 246, 240);
   color: var(--h6-color, rgb(244, 246, 240));
+  font-weight: var(--font-weight, 800);
+  line-height: var(--h6-line-height, 25.6px);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -1312,6 +1385,13 @@ html[saved-theme="dark"] body h6 {
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+}`,
+    explorer: `html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(144, 144, 144);
@@ -1446,6 +1526,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(144, 144, 144);
+  border-left-color: rgb(144, 144, 144);
+  border-right-color: rgb(144, 144, 144);
+  border-top-color: rgb(144, 144, 144);
   color: var(--text-normal, rgb(144, 144, 144));
 }
 
@@ -1499,6 +1583,19 @@ html[saved-theme="dark"] body ul.tags > li {
   },
   light: {
     base: `:root:root {
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --quartz-icon-color: currentColor;
 }
 

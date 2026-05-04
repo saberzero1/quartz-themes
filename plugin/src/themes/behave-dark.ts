@@ -36,6 +36,19 @@ export const theme: ThemeData = {
   --blockquote-border: #FACB68;
   --blockquote-border-color: var(--interactive-accent, #61D29D);
   --border-color: #232932;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #2C333D);
   --canvas-card-label-color: var(--text-faint, #909FB5);
   --caret-color: var(--text-normal, #D2D8E1);
@@ -196,7 +209,9 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, #D2D8E1);
   --vault-profile-color-hover: var(--vault-profile-color, #D2D8E1);
   --vim-cursor: #EC9076;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -243,6 +258,12 @@ html body .markdown-rendered p > em, html em {
 }
 
 html body .markdown-rendered p > i, html i {
+  color: var(--text-accent-second, rgb(240, 216, 121));
+  outline: rgb(240, 216, 121) none 0px;
+  text-decoration-color: rgb(240, 216, 121);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
   color: var(--text-accent-second, rgb(240, 216, 121));
   outline: rgb(240, 216, 121) none 0px;
   text-decoration-color: rgb(240, 216, 121);
@@ -299,10 +320,18 @@ html body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(97, 210, 157));
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(210, 216, 225);
+  border-left-color: rgb(210, 216, 225);
+  border-right-color: rgb(210, 216, 225);
+  border-top-color: rgb(210, 216, 225);
   color: rgb(210, 216, 225);
 }
 
 html body dt {
+  border-bottom-color: rgb(210, 216, 225);
+  border-left-color: rgb(210, 216, 225);
+  border-right-color: rgb(210, 216, 225);
+  border-top-color: rgb(210, 216, 225);
   color: rgb(210, 216, 225);
 }
 
@@ -326,6 +355,7 @@ html body ul.overflow {
 
 html body blockquote {
   background-color: var(--pre-code, rgb(67, 77, 91));
+  color: var(--blockquote-color, rgb(210, 216, 225));
   font-style: var(--blockquote-font-style, italic);
 }`,
     tables: `html body .table-container {
@@ -424,6 +454,7 @@ html body video {
   border-left-color: rgb(210, 216, 225);
   border-right-color: rgb(210, 216, 225);
   border-top-color: rgb(210, 216, 225);
+  color: var(--text-muted, rgb(210, 216, 225));
 }
 
 html body .footnotes {
@@ -436,6 +467,7 @@ html body .transclude {
   border-left-color: rgb(97, 210, 157);
   border-right-color: rgb(210, 216, 225);
   border-top-color: rgb(210, 216, 225);
+  color: rgb(210, 216, 225);
 }
 
 html body .transclude-inner {
@@ -443,6 +475,7 @@ html body .transclude-inner {
   border-left-color: rgb(210, 216, 225);
   border-right-color: rgb(210, 216, 225);
   border-top-color: rgb(210, 216, 225);
+  color: rgb(210, 216, 225);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(210, 216, 225);
@@ -1303,6 +1336,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-left-color: rgba(96, 210, 157, 0.15);
   border-right-color: rgba(96, 210, 157, 0.15);
   border-top-color: rgba(96, 210, 157, 0.15);
+  color: var(--pill-color, rgb(97, 210, 157));
 }
 
 html body a.internal-link.tag-link::before {
@@ -1310,7 +1344,12 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(240, 216, 121);
+  border-left-color: rgb(240, 216, 121);
+  border-right-color: rgb(240, 216, 121);
+  border-top-color: rgb(240, 216, 121);
   color: var(--text-title-h1, rgb(240, 216, 121));
+  font-weight: var(--font-weight, 750);
 }
 
 html body h1.article-title {
@@ -1318,27 +1357,56 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(97, 210, 157);
+  border-left-color: rgb(97, 210, 157);
+  border-right-color: rgb(97, 210, 157);
+  border-top-color: rgb(97, 210, 157);
   color: var(--text-title-h2, rgb(97, 210, 157));
+  font-weight: var(--font-weight, 750);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(210, 216, 225);
+  border-left-color: rgb(210, 216, 225);
+  border-right-color: rgb(210, 216, 225);
+  border-top-color: rgb(210, 216, 225);
   color: var(--inline-title-color, rgb(210, 216, 225));
 }
 
 html body h3 {
+  border-bottom-color: rgb(236, 144, 118);
+  border-left-color: rgb(236, 144, 118);
+  border-right-color: rgb(236, 144, 118);
+  border-top-color: rgb(236, 144, 118);
   color: var(--text-title-h3, rgb(236, 144, 118));
+  font-weight: var(--font-weight, 750);
 }
 
 html body h4 {
+  border-bottom-color: rgb(106, 184, 229);
+  border-left-color: rgb(106, 184, 229);
+  border-right-color: rgb(106, 184, 229);
+  border-top-color: rgb(106, 184, 229);
   color: var(--text-title-h4, rgb(106, 184, 229));
+  font-weight: var(--font-weight, 750);
 }
 
 html body h5 {
+  border-bottom-color: rgb(125, 203, 196);
+  border-left-color: rgb(125, 203, 196);
+  border-right-color: rgb(125, 203, 196);
+  border-top-color: rgb(125, 203, 196);
   color: var(--text-title-h5, rgb(125, 203, 196));
+  font-weight: var(--font-weight, 750);
 }
 
 html body h6 {
+  border-bottom-color: rgb(66, 113, 174);
+  border-left-color: rgb(66, 113, 174);
+  border-right-color: rgb(66, 113, 174);
+  border-top-color: rgb(66, 113, 174);
   color: var(--text-title-h6, rgb(66, 113, 174));
+  font-weight: var(--font-weight, 750);
 }
 
 html body hr {
@@ -1355,6 +1423,22 @@ html body hr {
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(210, 216, 225));
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(210, 216, 225);
@@ -1475,11 +1559,27 @@ html body .canvas-sidebar {
   color: var(--text-muted, rgb(210, 216, 225));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(210, 216, 225);
+  border-left-color: rgb(210, 216, 225);
+  border-right-color: rgb(210, 216, 225);
+  border-top-color: rgb(210, 216, 225);
+  color: rgb(210, 216, 225);
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(210, 216, 225);
   border-left-color: rgb(210, 216, 225);
   border-right-color: rgb(210, 216, 225);
   border-top-color: rgb(210, 216, 225);
+  color: rgb(210, 216, 225);
+}
+
+html body .metadata-property-key {
+  color: rgb(210, 216, 225);
+}
+
+html body .metadata-property-value {
   color: rgb(210, 216, 225);
 }
 
@@ -1548,6 +1648,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(210, 216, 225);
+  border-left-color: rgb(210, 216, 225);
+  border-right-color: rgb(210, 216, 225);
+  border-top-color: rgb(210, 216, 225);
   color: var(--text-normal, rgb(210, 216, 225));
 }
 

@@ -39,6 +39,19 @@ export const theme: ThemeData = {
   --bases-table-summary-background-hover: var(--background-modifier-hover, #103422);
   --blockquote-border-color: var(--interactive-accent, #00ff41);
   --border-w: 1.5px;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #000000);
   --canvas-card-label-color: var(--text-faint, #25b07b);
   --caret-color: var(--text-normal, #00ff41);
@@ -211,7 +224,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, #00ff41);
   --vault-profile-color: var(--text-normal, #00ff41);
   --vault-profile-color-hover: var(--vault-profile-color, #00ff41);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -273,6 +288,12 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(0, 255, 65);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(0, 255, 65));
+  outline: rgb(0, 255, 65) none 0px;
+  text-decoration-color: rgb(0, 255, 65);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--bold-color, rgb(0, 255, 65));
   outline: rgb(0, 255, 65) none 0px;
@@ -327,19 +348,31 @@ html body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(0, 255, 85, 0.3));
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(0, 255, 65);
+  border-left-color: rgb(0, 255, 65);
+  border-right-color: rgb(0, 255, 65);
+  border-top-color: rgb(0, 255, 65);
   color: rgb(0, 255, 65);
 }
 
 html body dt {
+  border-bottom-color: rgb(0, 255, 65);
+  border-left-color: rgb(0, 255, 65);
+  border-right-color: rgb(0, 255, 65);
+  border-top-color: rgb(0, 255, 65);
   color: rgb(0, 255, 65);
 }
 
 html body ol > li {
   color: rgb(0, 255, 65);
+  margin-bottom: 3.2px;
+  margin-top: 3.2px;
 }
 
 html body ul > li {
   color: rgb(0, 255, 65);
+  margin-bottom: 3.2px;
+  margin-top: 3.2px;
 }
 
 html body ul.overflow {
@@ -354,6 +387,7 @@ html body ul.overflow {
 
 html body blockquote {
   background-color: var(--blockquote-background-color, oklab(0.252059 -0.043835 0.0183032));
+  color: var(--text-normal, rgb(0, 255, 65));
   padding-bottom: 16px;
   padding-top: 16px;
 }`,
@@ -383,7 +417,6 @@ html body table {
   border-top-style: solid;
   border-top-width: 2px;
   color: rgb(0, 255, 65);
-  width: 662px;
 }
 
 html body tbody tr:nth-child(even) {
@@ -410,6 +443,7 @@ html body th {
   border-right-color: rgb(11, 42, 26);
   border-top-color: rgb(11, 42, 26);
   color: var(--text-accent, rgb(0, 255, 156));
+  letter-spacing: 0.96px;
   padding-bottom: 9.6px;
   padding-left: 11.2px;
   padding-right: 11.2px;
@@ -508,6 +542,8 @@ html body video {
   border-top-color: rgb(10, 122, 63);
   border-top-style: solid;
   border-top-width: 1px;
+  box-shadow: var(--shadow-1, rgb(8, 53, 31) 0px 0px 0px 1px inset, rgba(0, 255, 170, 0.08) 0px 0px 12px 0px);
+  color: var(--text-muted, rgb(122, 255, 224));
 }
 
 html body .footnotes {
@@ -524,6 +560,7 @@ html body .transclude {
   border-bottom-width: 1px;
   border-left-color: rgb(10, 122, 63);
   border-left-width: 1px;
+  border-radius: 8px;
   border-right-color: rgb(10, 122, 63);
   border-right-style: solid;
   border-right-width: 1px;
@@ -532,6 +569,8 @@ html body .transclude {
   border-top-right-radius: 8px;
   border-top-style: solid;
   border-top-width: 1px;
+  box-shadow: var(--shadow-1, rgb(8, 53, 31) 0px 0px 0px 1px inset, rgba(0, 255, 170, 0.08) 0px 0px 12px 0px);
+  color: rgb(0, 255, 65);
 }
 
 html body .transclude-inner {
@@ -542,6 +581,8 @@ html body .transclude-inner {
   border-right-style: solid;
   border-top-color: rgb(0, 255, 65);
   border-top-style: solid;
+  box-shadow: var(--shadow-1, rgb(8, 53, 31) 0px 0px 0px 1px inset, rgba(0, 255, 170, 0.08) 0px 0px 12px 0px);
+  color: rgb(0, 255, 65);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(10, 122, 63);
@@ -1661,6 +1702,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-left-color: rgba(0, 255, 85, 0.15);
   border-right-color: rgba(0, 255, 85, 0.15);
   border-top-color: rgba(0, 255, 85, 0.15);
+  color: var(--pill-color, rgb(0, 255, 156));
 }
 
 html body a.internal-link.tag-link::before {
@@ -1668,7 +1710,19 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  background: rgba(0, 0, 0, 0) linear-gradient(110deg, rgb(0, 255, 156) 0%, rgb(0, 255, 170) 25%, rgb(0, 255, 65) 50%, rgb(0, 255, 156) 75%, rgb(0, 255, 170) 100%) repeat scroll -27.6962% 50% / 200% 100% padding-box text;
+  background-image: linear-gradient(110deg, rgb(0, 255, 156) 0%, rgb(0, 255, 170) 25%, rgb(0, 255, 65) 50%, rgb(0, 255, 156) 75%, rgb(0, 255, 170) 100%);
+  border-bottom-color: rgb(0, 255, 65);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   color: var(--h1-color, rgba(0, 0, 0, 0));
+  font-weight: var(--font-weight, 800);
+  letter-spacing: var(--h1-letter-spacing, 2.07104px);
+  margin-bottom: 20.7104px;
+  padding-bottom: 6.472px;
   text-shadow: 0 0 1px color-mix(in oklab, var(--text-accent) 60%, transparent),
     0 0 6px var(--glow-2),
     0 0 14px var(--glow-1),
@@ -1680,11 +1734,26 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(0, 255, 65);
+  border-left-color: rgb(0, 255, 65);
+  border-right-color: rgb(0, 255, 65);
+  border-top-color: rgb(0, 255, 65);
   color: var(--glow-2, rgb(0, 255, 65));
+  font-weight: var(--font-weight, 700);
 }
 
 html body h2.page-title, html h2.page-title a {
+  background: rgba(0, 0, 0, 0) linear-gradient(110deg, rgb(0, 255, 156) 0%, rgb(0, 255, 170) 25%, rgb(0, 255, 65) 50%, rgb(0, 255, 156) 75%, rgb(0, 255, 170) 100%) repeat scroll -28.8554% 50% / 200% 100% padding-box text;
+  background-image: linear-gradient(110deg, rgb(0, 255, 156) 0%, rgb(0, 255, 170) 25%, rgb(0, 255, 65) 50%, rgb(0, 255, 156) 75%, rgb(0, 255, 170) 100%);
+  border-bottom-color: rgb(0, 255, 65);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   color: var(--inline-title-color, rgba(0, 0, 0, 0));
+  margin-bottom: 20.7104px;
+  padding-bottom: 6.472px;
   text-shadow: 0 0 1px color-mix(in oklab, var(--text-accent) 60%, transparent),
     0 0 6px var(--glow-2),
     0 0 14px var(--glow-1),
@@ -1692,18 +1761,34 @@ html body h2.page-title, html h2.page-title a {
 }
 
 html body h3 {
+  border-bottom-color: rgb(0, 255, 170);
+  border-left-color: rgb(0, 255, 170);
+  border-right-color: rgb(0, 255, 170);
+  border-top-color: rgb(0, 255, 170);
   color: var(--glow-1, rgb(0, 255, 170));
 }
 
 html body h4 {
+  border-bottom-color: rgb(0, 255, 65);
+  border-left-color: rgb(0, 255, 65);
+  border-right-color: rgb(0, 255, 65);
+  border-top-color: rgb(0, 255, 65);
   color: var(--text-normal, rgb(0, 255, 65));
 }
 
 html body h5 {
+  border-bottom-color: rgb(37, 176, 123);
+  border-left-color: rgb(37, 176, 123);
+  border-right-color: rgb(37, 176, 123);
+  border-top-color: rgb(37, 176, 123);
   color: var(--text-faint, rgb(37, 176, 123));
 }
 
 html body h6 {
+  border-bottom-color: rgb(37, 176, 123);
+  border-left-color: rgb(37, 176, 123);
+  border-right-color: rgb(37, 176, 123);
+  border-top-color: rgb(37, 176, 123);
   color: var(--text-faint, rgb(37, 176, 123));
 }
 
@@ -1735,6 +1820,26 @@ html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title 
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--text-normal, rgb(0, 255, 65));
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(0, 255, 65);
@@ -1893,11 +1998,30 @@ html body .bases-table thead th {
   color: var(--text-muted, rgb(122, 255, 224));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(11, 42, 26);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-left-color: rgb(122, 255, 224);
+  border-right-color: rgb(122, 255, 224);
+  border-top-color: rgb(122, 255, 224);
+  color: rgb(122, 255, 224);
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(122, 255, 224);
   border-left-color: rgb(122, 255, 224);
   border-right-color: rgb(122, 255, 224);
   border-top-color: rgb(122, 255, 224);
+  color: rgb(122, 255, 224);
+}
+
+html body .metadata-property-key {
+  color: var(--text-accent, rgb(0, 255, 156));
+  font-weight: 600;
+}
+
+html body .metadata-property-value {
   color: rgb(122, 255, 224);
 }
 
@@ -1969,7 +2093,12 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(0, 255, 65);
+  border-left-color: rgb(0, 255, 65);
+  border-right-color: rgb(0, 255, 65);
+  border-top-color: rgb(0, 255, 65);
   color: var(--text-normal, rgb(0, 255, 65));
+  letter-spacing: 0.52px;
 }
 
 html body abbr {

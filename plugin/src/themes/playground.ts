@@ -381,7 +381,9 @@ export const theme: ThemeData = {
   --yellow-800: oklch(96.5% 0.049 97.11);
   --yellow-900: oklch(98% 0.026 97.11);
   --yellow-rgb: 242, 208, 3;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -440,6 +442,14 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: oklch(0.92 0.004 279.29);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, oklch(0.92 0.004 279.29));
+  font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 700;
+  outline: oklch(0.92 0.004 279.29) none 0px;
+  text-decoration-color: oklch(0.92 0.004 279.29);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--bold-color, oklch(0.92 0.004 279.29));
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -491,19 +501,31 @@ html body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html body dd {
+  border-bottom-color: oklch(0.92 0.004 279.29);
+  border-left-color: oklch(0.92 0.004 279.29);
+  border-right-color: oklch(0.92 0.004 279.29);
+  border-top-color: oklch(0.92 0.004 279.29);
   color: oklch(0.92 0.004 279.29);
+  font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body dt {
+  border-bottom-color: oklch(0.92 0.004 279.29);
+  border-left-color: oklch(0.92 0.004 279.29);
+  border-right-color: oklch(0.92 0.004 279.29);
+  border-top-color: oklch(0.92 0.004 279.29);
   color: oklch(0.92 0.004 279.29);
+  font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body ol > li {
   color: oklch(0.92 0.004 279.29);
+  margin-left: 30.1875px;
 }
 
 html body ul > li {
   color: oklch(0.92 0.004 279.29);
+  margin-left: 30.1875px;
 }
 
 html body ul.overflow {
@@ -517,6 +539,7 @@ html body ul.overflow {
 }
 
 html body blockquote {
+  color: var(--blockquote-color, oklch(0.92 0.004 279.29));
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     tables: `html body .table-container {
@@ -529,7 +552,6 @@ html body blockquote {
 html body table {
   color: oklch(0.92 0.004 279.29);
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  width: 196.766px;
 }
 
 html body td {
@@ -618,6 +640,7 @@ html body video {
   border-left-color: oklch(0.845 0.01 279.29);
   border-right-color: oklch(0.845 0.01 279.29);
   border-top-color: oklch(0.845 0.01 279.29);
+  color: var(--text-muted, oklch(0.845 0.01 279.29));
 }
 
 html body .footnotes {
@@ -629,6 +652,7 @@ html body .transclude {
   border-bottom-color: oklch(0.92 0.004 279.29);
   border-right-color: oklch(0.92 0.004 279.29);
   border-top-color: oklch(0.92 0.004 279.29);
+  color: oklch(0.92 0.004 279.29);
 }
 
 html body .transclude-inner {
@@ -636,6 +660,7 @@ html body .transclude-inner {
   border-left-color: oklch(0.92 0.004 279.29);
   border-right-color: oklch(0.92 0.004 279.29);
   border-top-color: oklch(0.92 0.004 279.29);
+  color: oklch(0.92 0.004 279.29);
 }`,
     checkboxes: `html body .katex-display > .katex {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2058,6 +2083,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color: var(--tag-color, oklch(84.5% 0.06 260.58));
   --pill-color-remove: var(--tag-color, oklch(84.5% 0.06 260.58));
   background-color: var(--gray-100, oklch(0.255 0.021 279.29));
+  color: var(--pill-color, oklch(0.845 0.06 260.58));
 }
 
 html body a.internal-link.tag-link::before {
@@ -2066,8 +2092,14 @@ html body a.internal-link.tag-link::before {
 
 html body h1 {
   --font-weight: var(--h1-weight, 550);
+  border-bottom-color: oklch(0.615 0.17 288);
+  border-left-color: oklch(0.615 0.17 288);
+  border-right-color: oklch(0.615 0.17 288);
+  border-top-color: oklch(0.615 0.17 288);
   color: var(--h1-color, oklch(0.615 0.17 288));
   font-family: var(--h1-font, "Bricolage Grotesque");
+  font-weight: var(--font-weight, 550);
+  letter-spacing: var(--h1-letter-spacing, -0.6472px);
 }
 
 html body h1.article-title {
@@ -2077,37 +2109,69 @@ html body h1.article-title {
 
 html body h2 {
   --font-weight: var(--h2-weight, 500);
+  border-bottom-color: rgb(242, 66, 255);
+  border-left-color: rgb(242, 66, 255);
+  border-right-color: rgb(242, 66, 255);
+  border-top-color: rgb(242, 66, 255);
   color: var(--h2-color, rgb(242, 66, 255));
   font-family: var(--h2-font, "Bricolage Grotesque");
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h2-letter-spacing, -0.46784px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: oklch(0.615 0.17 288);
+  border-left-color: oklch(0.615 0.17 288);
+  border-right-color: oklch(0.615 0.17 288);
+  border-top-color: oklch(0.615 0.17 288);
   color: var(--inline-title-color, oklch(0.615 0.17 288));
   font-family: var(--inline-title-font, "Bricolage Grotesque");
+  font-weight: var(--inline-title-weight, 550);
+  line-height: var(--inline-title-line-height, 27.1824px);
 }
 
 html body h3 {
   --font-weight: var(--h3-weight, 550);
+  border-bottom-color: rgb(255, 116, 23);
+  border-left-color: rgb(255, 116, 23);
+  border-right-color: rgb(255, 116, 23);
+  border-top-color: rgb(255, 116, 23);
   color: var(--h3-color, rgb(255, 116, 23));
   font-family: var(--h3-font, "Bricolage Grotesque");
+  font-weight: var(--font-weight, 550);
 }
 
 html body h4 {
   --font-weight: var(--h4-weight, 650);
+  border-bottom-color: rgb(218, 1, 77);
+  border-left-color: rgb(218, 1, 77);
+  border-right-color: rgb(218, 1, 77);
+  border-top-color: rgb(218, 1, 77);
   color: var(--h4-color, rgb(218, 1, 77));
   font-family: var(--h4-font, "Bricolage Grotesque");
+  font-weight: var(--font-weight, 650);
 }
 
 html body h5 {
   --font-weight: var(--h5-weight, 600);
+  border-bottom-color: oklch(0.845 0.01 279.29);
+  border-left-color: oklch(0.845 0.01 279.29);
+  border-right-color: oklch(0.845 0.01 279.29);
+  border-top-color: oklch(0.845 0.01 279.29);
   color: var(--h5-color, oklch(0.845 0.01 279.29));
   font-family: var(--h5-font, "Bricolage Grotesque");
+  font-weight: var(--font-weight, 600);
 }
 
 html body h6 {
   --font-weight: var(--h6-weight, 650);
+  border-bottom-color: oklch(0.845 0.01 279.29);
+  border-left-color: oklch(0.845 0.01 279.29);
+  border-right-color: oklch(0.845 0.01 279.29);
+  border-top-color: oklch(0.845 0.01 279.29);
   color: var(--h6-color, oklch(0.845 0.01 279.29));
   font-family: var(--h6-font, "Bricolage Grotesque");
+  font-weight: var(--font-weight, 650);
 }
 
 html body hr {
@@ -2137,6 +2201,26 @@ html body hr {
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, oklch(0.845 0.01 279.29));
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: oklch(0.92 0.004 279.29);
@@ -2258,6 +2342,16 @@ html body .canvas-sidebar {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+html body .metadata-container .metadata-property {
+  background-color: color-mix(in oklch, var(--gray-50), transparent);
+  border-bottom-color: oklch(0.845 0.01 279.29);
+  border-left-color: oklch(0.845 0.01 279.29);
+  border-right-color: oklch(0.845 0.01 279.29);
+  border-top-color: oklch(0.845 0.01 279.29);
+  color: oklch(0.845 0.01 279.29);
+  font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
 html body .metadata-properties {
   border-bottom-color: oklch(0.845 0.01 279.29);
   border-left-color: oklch(0.845 0.01 279.29);
@@ -2265,6 +2359,14 @@ html body .metadata-properties {
   border-top-color: oklch(0.845 0.01 279.29);
   color: oklch(0.845 0.01 279.29);
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html body .metadata-property-key {
+  color: oklch(0.845 0.01 279.29);
+}
+
+html body .metadata-property-value {
+  color: oklch(0.845 0.01 279.29);
 }
 
 html body .note-properties {
@@ -2328,6 +2430,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: oklch(0.92 0.004 279.29);
+  border-left-color: oklch(0.92 0.004 279.29);
+  border-right-color: oklch(0.92 0.004 279.29);
+  border-top-color: oklch(0.92 0.004 279.29);
   color: var(--text-normal, oklch(0.92 0.004 279.29));
   font-family: Inter;
 }

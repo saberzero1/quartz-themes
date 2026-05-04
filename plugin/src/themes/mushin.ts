@@ -36,8 +36,21 @@ export const theme: ThemeData = {
   --bases-table-summary-background: var(--background-primary, #1a1a1a);
   --blockquote-border-color: var(--interactive-accent, #8fa68f);
   --breathing-space: var(--size-4-2, 12px);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 16px 16px 16px 24px);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 6px);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #1a1a1a);
   --canvas-controls-radius: var(--radius-s, 6px);
   --caret-color: var(--text-normal, #e8e8e8);
@@ -199,7 +212,7 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, #e8e8e8);
   --vault-profile-color: var(--text-normal, #e8e8e8);
   --vault-profile-color-hover: var(--vault-profile-color, #e8e8e8);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
 }
 
 html[saved-theme="dark"] body {
@@ -254,6 +267,14 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   outline: rgb(232, 232, 232) none 0px;
   text-decoration-color: rgb(232, 232, 232);
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s, opacity 0.2s, transform 0.2s;
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(143, 166, 143));
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  outline: rgb(143, 166, 143) none 0px;
+  text-decoration-color: rgb(143, 166, 143);
   transition: color 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s, opacity 0.2s, transform 0.2s;
 }
 
@@ -320,19 +341,35 @@ html[saved-theme="dark"] body a.internal-link.broken {
   outline: rgb(143, 166, 143) none 0px;
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(232, 232, 232);
+  border-left-color: rgb(232, 232, 232);
+  border-right-color: rgb(232, 232, 232);
+  border-top-color: rgb(232, 232, 232);
   color: rgb(232, 232, 232);
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(232, 232, 232);
+  border-left-color: rgb(232, 232, 232);
+  border-right-color: rgb(232, 232, 232);
+  border-top-color: rgb(232, 232, 232);
   color: rgb(232, 232, 232);
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(232, 232, 232);
+  margin-bottom: 4px;
+  margin-left: 30.1875px;
+  margin-top: 4px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(232, 232, 232);
+  margin-bottom: 4px;
+  margin-left: 30.1875px;
+  margin-top: 4px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -346,8 +383,10 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
+  color: var(--text-muted, rgb(168, 168, 168));
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: var(--blockquote-font-style, italic);
+  line-height: 31.68px;
   padding-bottom: 24px;
   padding-top: 24px;
 }`,
@@ -365,7 +404,6 @@ html[saved-theme="dark"] body .table-container {
 html[saved-theme="dark"] body table {
   color: rgb(232, 232, 232);
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
-  width: 210.844px;
 }
 
 html[saved-theme="dark"] body td {
@@ -463,6 +501,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(168, 168, 168);
   border-right-color: rgb(168, 168, 168);
   border-top-color: rgb(168, 168, 168);
+  color: var(--text-muted, rgb(168, 168, 168));
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -479,6 +518,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(143, 166, 143);
   border-right-color: rgb(232, 232, 232);
   border-top-color: rgb(232, 232, 232);
+  color: rgb(232, 232, 232);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -486,6 +526,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(232, 232, 232);
   border-right-color: rgb(232, 232, 232);
   border-top-color: rgb(232, 232, 232);
+  color: rgb(232, 232, 232);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
@@ -1726,6 +1767,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   --pill-color-hover: var(--tag-color-hover, #8fa68f);
   --pill-color-remove: var(--tag-color, #8fa68f);
   --pill-color-remove-hover: var(--tag-color-hover, #8fa68f);
+  color: var(--pill-color, rgb(143, 166, 143));
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -1734,6 +1776,10 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(143, 166, 143);
+  border-left-color: rgb(143, 166, 143);
+  border-right-color: rgb(143, 166, 143);
+  border-top-color: rgb(143, 166, 143);
   color: var(--mushin-green, rgb(143, 166, 143));
   font-family: var(--h1-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
 }
@@ -1743,31 +1789,55 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(143, 166, 143);
+  border-left-color: rgb(143, 166, 143);
+  border-right-color: rgb(143, 166, 143);
+  border-top-color: rgb(143, 166, 143);
   color: var(--mushin-green, rgb(143, 166, 143));
   font-family: var(--h2-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(232, 232, 232);
+  border-left-color: rgb(232, 232, 232);
+  border-right-color: rgb(232, 232, 232);
+  border-top-color: rgb(232, 232, 232);
   color: var(--inline-title-color, rgb(232, 232, 232));
   font-family: var(--inline-title-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(143, 166, 143);
+  border-left-color: rgb(143, 166, 143);
+  border-right-color: rgb(143, 166, 143);
+  border-top-color: rgb(143, 166, 143);
   color: var(--mushin-green, rgb(143, 166, 143));
   font-family: var(--h3-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(143, 166, 143);
+  border-left-color: rgb(143, 166, 143);
+  border-right-color: rgb(143, 166, 143);
+  border-top-color: rgb(143, 166, 143);
   color: var(--mushin-green, rgb(143, 166, 143));
   font-family: var(--h4-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(143, 166, 143);
+  border-left-color: rgb(143, 166, 143);
+  border-right-color: rgb(143, 166, 143);
+  border-top-color: rgb(143, 166, 143);
   color: var(--mushin-green, rgb(143, 166, 143));
   font-family: var(--h5-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(143, 166, 143);
+  border-left-color: rgb(143, 166, 143);
+  border-right-color: rgb(143, 166, 143);
+  border-top-color: rgb(143, 166, 143);
   color: var(--mushin-green, rgb(143, 166, 143));
   font-family: var(--h6-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
 }
@@ -1806,6 +1876,18 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   color: var(--text-muted, rgb(168, 168, 168));
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   font-weight: var(--nav-item-weight, 600);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(232, 232, 232);
@@ -1833,6 +1915,10 @@ html[saved-theme="dark"] body li.depth-0 {
   border-top-color: rgb(58, 58, 58);
   color: var(--status-bar-text-color, rgb(168, 168, 168));
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: var(--size-4-2, 12px);
+  padding-top: 8px;
 }
 
 html[saved-theme="dark"] body footer ul li a {
@@ -1947,6 +2033,15 @@ html[saved-theme="dark"] body .canvas-sidebar {
   padding-top: 12px;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(168, 168, 168);
+  border-left-color: rgb(168, 168, 168);
+  border-right-color: rgb(168, 168, 168);
+  border-top-color: rgb(168, 168, 168);
+  color: rgb(168, 168, 168);
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(168, 168, 168);
   border-left-color: rgb(168, 168, 168);
@@ -1954,6 +2049,17 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(168, 168, 168);
   color: rgb(168, 168, 168);
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(168, 168, 168);
+  font-family: var(--metadata-label-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  --input-padding: var(--metadata-input-padding, 8px 12px);
+  color: rgb(168, 168, 168);
+  font-family: var(--metadata-input-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -2018,8 +2124,13 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(232, 232, 232);
+  border-left-color: rgb(232, 232, 232);
+  border-right-color: rgb(232, 232, 232);
+  border-top-color: rgb(232, 232, 232);
   color: var(--text-normal, rgb(232, 232, 232));
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 20.8px;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -2114,8 +2225,21 @@ html[saved-theme="dark"] body ul.tags > li {
   --bases-table-summary-background: var(--background-primary, #fafafa);
   --blockquote-border-color: var(--interactive-accent, #6b7d6b);
   --breathing-space: var(--size-4-2, 12px);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 16px 16px 16px 24px);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 6px);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #fafafa);
   --canvas-card-label-color: var(--text-faint, #999999);
   --canvas-controls-radius: var(--radius-s, 6px);
@@ -2298,7 +2422,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --titlebar-text-color-focused: var(--text-normal, #2c2c2c);
   --vault-profile-color: var(--text-normal, #2c2c2c);
   --vault-profile-color-hover: var(--vault-profile-color, #2c2c2c);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -2353,6 +2479,14 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   outline: rgb(44, 44, 44) none 0px;
   text-decoration-color: rgb(44, 44, 44);
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s, opacity 0.2s, transform 0.2s;
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(107, 125, 107));
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  outline: rgb(107, 125, 107) none 0px;
+  text-decoration-color: rgb(107, 125, 107);
   transition: color 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s, opacity 0.2s, transform 0.2s;
 }
 
@@ -2420,19 +2554,35 @@ html[saved-theme="light"] body a.internal-link.broken {
   outline: rgb(107, 125, 107) none 0px;
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(44, 44, 44);
+  border-left-color: rgb(44, 44, 44);
+  border-right-color: rgb(44, 44, 44);
+  border-top-color: rgb(44, 44, 44);
   color: rgb(44, 44, 44);
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(44, 44, 44);
+  border-left-color: rgb(44, 44, 44);
+  border-right-color: rgb(44, 44, 44);
+  border-top-color: rgb(44, 44, 44);
   color: rgb(44, 44, 44);
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(44, 44, 44);
+  margin-bottom: 4px;
+  margin-left: 30.1875px;
+  margin-top: 4px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(44, 44, 44);
+  margin-bottom: 4px;
+  margin-left: 30.1875px;
+  margin-top: 4px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -2446,8 +2596,10 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
+  color: var(--text-muted, rgb(107, 107, 107));
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: var(--blockquote-font-style, italic);
+  line-height: 31.68px;
   padding-bottom: 24px;
   padding-top: 24px;
 }`,
@@ -2465,7 +2617,6 @@ html[saved-theme="light"] body .table-container {
 html[saved-theme="light"] body table {
   color: rgb(44, 44, 44);
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
-  width: 210.844px;
 }
 
 html[saved-theme="light"] body td {
@@ -2563,6 +2714,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(107, 107, 107);
   border-right-color: rgb(107, 107, 107);
   border-top-color: rgb(107, 107, 107);
+  color: var(--text-muted, rgb(107, 107, 107));
   padding-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -2579,6 +2731,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(107, 125, 107);
   border-right-color: rgb(44, 44, 44);
   border-top-color: rgb(44, 44, 44);
+  color: rgb(44, 44, 44);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2586,6 +2739,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(44, 44, 44);
   border-right-color: rgb(44, 44, 44);
   border-top-color: rgb(44, 44, 44);
+  color: rgb(44, 44, 44);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
@@ -3831,6 +3985,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-hover: var(--tag-color-hover, #6b7d6b);
   --pill-color-remove: var(--tag-color, #6b7d6b);
   --pill-color-remove-hover: var(--tag-color-hover, #6b7d6b);
+  color: var(--pill-color, rgb(107, 125, 107));
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -3839,6 +3994,10 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(107, 125, 107);
+  border-left-color: rgb(107, 125, 107);
+  border-right-color: rgb(107, 125, 107);
+  border-top-color: rgb(107, 125, 107);
   color: var(--mushin-green, rgb(107, 125, 107));
   font-family: var(--h1-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
 }
@@ -3848,31 +4007,55 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(107, 125, 107);
+  border-left-color: rgb(107, 125, 107);
+  border-right-color: rgb(107, 125, 107);
+  border-top-color: rgb(107, 125, 107);
   color: var(--mushin-green, rgb(107, 125, 107));
   font-family: var(--h2-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(44, 44, 44);
+  border-left-color: rgb(44, 44, 44);
+  border-right-color: rgb(44, 44, 44);
+  border-top-color: rgb(44, 44, 44);
   color: var(--inline-title-color, rgb(44, 44, 44));
   font-family: var(--inline-title-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(107, 125, 107);
+  border-left-color: rgb(107, 125, 107);
+  border-right-color: rgb(107, 125, 107);
+  border-top-color: rgb(107, 125, 107);
   color: var(--mushin-green, rgb(107, 125, 107));
   font-family: var(--h3-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(107, 125, 107);
+  border-left-color: rgb(107, 125, 107);
+  border-right-color: rgb(107, 125, 107);
+  border-top-color: rgb(107, 125, 107);
   color: var(--mushin-green, rgb(107, 125, 107));
   font-family: var(--h4-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(107, 125, 107);
+  border-left-color: rgb(107, 125, 107);
+  border-right-color: rgb(107, 125, 107);
+  border-top-color: rgb(107, 125, 107);
   color: var(--mushin-green, rgb(107, 125, 107));
   font-family: var(--h5-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(107, 125, 107);
+  border-left-color: rgb(107, 125, 107);
+  border-right-color: rgb(107, 125, 107);
+  border-top-color: rgb(107, 125, 107);
   color: var(--mushin-green, rgb(107, 125, 107));
   font-family: var(--h6-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
 }
@@ -3911,6 +4094,22 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   color: var(--text-muted, rgb(107, 107, 107));
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   font-weight: var(--nav-item-weight, 600);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(44, 44, 44);
@@ -3938,6 +4137,10 @@ html[saved-theme="light"] body li.depth-0 {
   border-top-color: rgb(229, 229, 229);
   color: var(--status-bar-text-color, rgb(107, 107, 107));
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: var(--size-4-2, 12px);
+  padding-top: 8px;
 }
 
 html[saved-theme="light"] body footer ul li a {
@@ -4053,6 +4256,15 @@ html[saved-theme="light"] body .canvas-sidebar {
   padding-top: 12px;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(107, 107, 107);
+  border-left-color: rgb(107, 107, 107);
+  border-right-color: rgb(107, 107, 107);
+  border-top-color: rgb(107, 107, 107);
+  color: rgb(107, 107, 107);
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(107, 107, 107);
   border-left-color: rgb(107, 107, 107);
@@ -4060,6 +4272,17 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(107, 107, 107);
   color: rgb(107, 107, 107);
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(107, 107, 107);
+  font-family: var(--metadata-label-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  --input-padding: var(--metadata-input-padding, 8px 12px);
+  color: rgb(107, 107, 107);
+  font-family: var(--metadata-input-font, Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -4124,8 +4347,13 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(44, 44, 44);
+  border-left-color: rgb(44, 44, 44);
+  border-right-color: rgb(44, 44, 44);
+  border-top-color: rgb(44, 44, 44);
   color: var(--text-normal, rgb(44, 44, 44));
   font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 20.8px;
 }
 
 html[saved-theme="light"] body abbr {

@@ -43,6 +43,19 @@ export const theme: ThemeData = {
   --bg-button-shadow: black;
   --blockquote-border-color: var(--interactive-accent, hsl(222, 94%, 19%));
   --callout-blend-mode: var(--highlight-mix-blend-mode, darken);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #000000);
   --checkbox-color: var(--interactive-accent, hsl(222, 94%, 19%));
   --checkbox-color-hover: var(--interactive-accent-hover, hsl(221, 94.94%, 19.95%));
@@ -183,6 +196,10 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
@@ -228,7 +245,23 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration: underline rgba(3, 30, 94, 0.3);
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(3, 30, 94, 0.3));
 }`,
-    lists: `html[saved-theme="dark"] body ul.overflow {
+    lists: `html[saved-theme="dark"] body dd {
+  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="dark"] body dt {
+  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="dark"] body ol > li {
+  margin-left: 24px;
+}
+
+html[saved-theme="dark"] body ul > li {
+  margin-left: 24px;
+}
+
+html[saved-theme="dark"] body ul.overflow {
   border-left-color: rgb(64, 64, 64);
   border-left-style: solid;
   border-left-width: 5px;
@@ -241,7 +274,6 @@ html[saved-theme="dark"] body a.internal-link.broken {
 }`,
     tables: `html[saved-theme="dark"] body table {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
-  width: 163.938px;
 }`,
     code: `html[saved-theme="dark"] body code {
   background-color: var(--code-background, rgb(5, 5, 5));
@@ -1696,6 +1728,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-left-color: rgba(3, 30, 94, 0.15);
   border-right-color: rgba(3, 30, 94, 0.15);
   border-top-color: rgba(3, 30, 94, 0.15);
+  color: var(--pill-color, rgb(3, 33, 99));
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
@@ -1760,6 +1793,10 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   background-color: var(--background-secondary, rgb(64, 64, 64));
@@ -1781,6 +1818,9 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 0px;
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
@@ -1827,8 +1867,20 @@ html[saved-theme="dark"] body .darkmode svg {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  font-family: var(--metadata-label-font, "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  font-family: var(--metadata-input-font, "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
@@ -1902,6 +1954,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --bg-button-light: white;
   --bg-button-shadow: gray;
   --blockquote-border-color: var(--interactive-accent, hsl(221, 94.94%, 19.95%));
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --checkbox-color: var(--interactive-accent, hsl(221, 94.94%, 19.95%));
   --checkbox-color-hover: var(--interactive-accent-hover, hsl(192, 142.88%, 29.45%));
   --closebutton: url("data:image/svg+xml,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E");
@@ -2010,6 +2075,10 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
@@ -2055,7 +2124,23 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration: underline rgba(3, 30, 94, 0.3);
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(3, 30, 94, 0.3));
 }`,
-    lists: `html[saved-theme="light"] body ul.overflow {
+    lists: `html[saved-theme="light"] body dd {
+  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="light"] body dt {
+  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="light"] body ol > li {
+  margin-left: 24px;
+}
+
+html[saved-theme="light"] body ul > li {
+  margin-left: 24px;
+}
+
+html[saved-theme="light"] body ul.overflow {
   border-left-color: rgb(192, 192, 192);
   border-left-style: solid;
   border-left-width: 5px;
@@ -2068,7 +2153,6 @@ html[saved-theme="light"] body a.internal-link.broken {
 }`,
     tables: `html[saved-theme="light"] body table {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
-  width: 163.938px;
 }`,
     code: `html[saved-theme="light"] body pre:has(> code) {
   border-bottom-left-radius: 0px;
@@ -3510,6 +3594,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-left-color: rgba(3, 30, 94, 0.15);
   border-right-color: rgba(3, 30, 94, 0.15);
   border-top-color: rgba(3, 30, 94, 0.15);
+  color: var(--pill-color, rgb(3, 30, 94));
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
@@ -3574,6 +3659,10 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   background-color: var(--background-secondary, rgb(192, 192, 192));
@@ -3595,6 +3684,9 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 0px;
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
@@ -3637,8 +3729,20 @@ html[saved-theme="light"] body .darkmode svg {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+}
+
 html[saved-theme="light"] body .metadata-properties {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  font-family: var(--metadata-label-font, "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  font-family: var(--metadata-input-font, "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI");
 }
 
 html[saved-theme="light"] body .note-properties-tags {

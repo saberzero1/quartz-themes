@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Slasher Title";
   font-style: normal;
@@ -1554,6 +1555,97 @@ body body.theme-dark i {
   animation-fill-mode: none;
   animation-play-state: running;
 }
+body body.theme-dark u {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(218, 218, 218);
+  cursor: auto;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: underline rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  transform: none;
+  user-select: none;
+  animation-name: none;
+  animation-duration: auto;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark s {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(218, 218, 218);
+  cursor: auto;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: line-through rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  transform: none;
+  user-select: none;
+  animation-name: none;
+  animation-duration: auto;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark strong > em {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--col-pr-txt-italic, rgb(217, 41, 38));
+  cursor: grab;
+  font-family: "Slasher Regular";
+  font-weight: 600;
+  outline: rgb(217, 41, 38) none 0px;
+  text-decoration-color: rgb(217, 41, 38);
+  text-decoration-style: solid;
+  transition: all;
+  user-select: text;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+}
 body body.theme-dark .markdown-rendered mark {
   background-color: var(--col-ed-bckg-highlight, rgb(216, 177, 49));
   color: var(--col-ed-txt-highlight, rgb(35, 34, 33));
@@ -1653,9 +1745,13 @@ body body.theme-dark .markdown-rendered hr {
 body body.theme-dark div.multi-select-pill {
   align-items: normal;
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
+  color: var(--pill-color, rgb(255, 73, 73));
   display: flex;
   font-family: "Slasher Regular";
+  font-size: 13.125px;
   font-weight: var(--pill-weight, 400);
+  line-height: var(--line-height-tight, 13.125px);
+  text-decoration: rgb(218, 218, 218);
   margin-inline-start: 0px;
   border: 0px solid rgb(255, 73, 73);
   border-top-left-radius: 26.25px;
@@ -1673,6 +1769,22 @@ body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-dark .markdown-rendered ul > li {
   color: rgb(228, 229, 224);
   text-align: start;
+  list-style-type: "​";
+  list-style-position: outside;
+  list-style-image: none;
+  padding-top: var(--list-spacing, 1.125px);
+  padding-bottom: var(--list-spacing, 1.125px);
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 0px 0px 0px 24.3002px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
 }
 body body.theme-dark .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
@@ -1692,6 +1804,22 @@ body body.theme-dark .markdown-rendered ul > li::marker {
 body body.theme-dark .markdown-rendered ol > li {
   color: rgb(228, 229, 224);
   text-align: start;
+  list-style-type: "​";
+  list-style-position: outside;
+  list-style-image: none;
+  padding-top: var(--list-spacing, 1.125px);
+  padding-bottom: var(--list-spacing, 1.125px);
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 0px 0px 0px 24.3002px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
 }
 body body.theme-dark .markdown-rendered ol > li::marker {
   background-color: rgba(0, 0, 0, 0);
@@ -1735,6 +1863,10 @@ body body.theme-dark .markdown-rendered code {
     monospace
   );
   padding: 1.96875px 3.9375px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark .markdown-rendered pre > code {
   background-color: rgba(0, 0, 0, 0);
@@ -1749,6 +1881,10 @@ body body.theme-dark .markdown-rendered pre > code {
   border-end-end-radius: 0px;
   overflow-x: visible;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
@@ -1766,6 +1902,10 @@ body body.theme-dark pre[class*="language-"] {
   border-end-end-radius: 0px;
   overflow-x: visible;
   padding: 12px 16px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
@@ -1785,6 +1925,10 @@ body
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 2px;
+  padding-inline-start: 2px;
   margin: 0px 8px 0px -24px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -1814,13 +1958,18 @@ body
 }
 body body.theme-dark .markdown-rendered blockquote {
   background-color: var(--blockquote-background-color, rgba(0, 0, 0, 0));
+  color: var(--blockquote-color, rgb(131, 136, 140));
   font-family: "Slasher Regular";
+  font-weight: 400;
   font-style: normal;
+  line-height: 22.5px;
   padding-bottom: 0px;
   padding-top: 0px;
   padding-inline-start: 0px;
   margin-inline-start: 40px;
   margin-inline-end: 40px;
+  text-decoration: rgb(218, 218, 218);
+  letter-spacing: 0.5px;
 }
 body body.theme-dark .footnote-backref {
   color: var(--text-faint, rgb(131, 136, 140));
@@ -1920,7 +2069,24 @@ body body.theme-dark div.search-results .suggestion-item.is-selected {
 body body.theme-dark .published-container .markdown-rendered h1 {
   color: rgb(218, 218, 218);
   font-family: var(--fnt-pr-headers, "Slasher Regular");
+  font-size: var(--siz-pr-txt-h1, 26.25px);
+  font-weight: var(--font-weight, 700);
+  line-height: var(--h1-line-height, 31.5px);
   text-shadow: none;
+  text-decoration: rgb(218, 218, 218);
+  letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px 0px 5px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -1930,21 +2096,31 @@ body body.theme-dark .published-container .markdown-rendered h1 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
   color: rgb(218, 218, 218);
   font-family: var(--fnt-pr-headers, "Slasher Regular");
+  font-size: var(--siz-pr-txt-h2, 24px);
+  font-weight: var(--font-weight, 680);
+  line-height: var(--line-height-pr-headers, 20px);
   text-shadow: none;
+  text-decoration: rgb(218, 218, 218);
+  letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -1954,21 +2130,31 @@ body body.theme-dark .published-container .markdown-rendered h2 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
   color: rgb(218, 218, 218);
   font-family: var(--fnt-pr-headers, "Slasher Regular");
+  font-size: var(--siz-pr-txt-h3, 21.75px);
+  font-weight: var(--font-weight, 660);
+  line-height: var(--line-height-pr-headers, 20px);
   text-shadow: none;
+  text-decoration: rgb(218, 218, 218);
+  letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -1978,21 +2164,31 @@ body body.theme-dark .published-container .markdown-rendered h3 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
   color: rgb(218, 218, 218);
   font-family: var(--fnt-pr-headers, "Slasher Regular");
+  font-size: var(--siz-pr-txt-h4, 19.5px);
+  font-weight: var(--font-weight, 640);
+  line-height: var(--line-height-pr-headers, 20px);
   text-shadow: none;
+  text-decoration: rgb(218, 218, 218);
+  letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -2002,21 +2198,31 @@ body body.theme-dark .published-container .markdown-rendered h4 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
   color: rgb(218, 218, 218);
   font-family: var(--fnt-pr-headers, "Slasher Regular");
+  font-size: var(--siz-pr-txt-h5, 17.25px);
+  font-weight: var(--font-weight, 620);
+  line-height: var(--line-height-pr-headers, 20px);
   text-shadow: none;
+  text-decoration: rgb(218, 218, 218);
+  letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -2026,21 +2232,31 @@ body body.theme-dark .published-container .markdown-rendered h5 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
   color: rgb(218, 218, 218);
   font-family: var(--fnt-pr-headers, "Slasher Regular");
+  font-size: var(--siz-pr-txt-h6, 15px);
+  font-weight: var(--font-weight, 600);
+  line-height: var(--line-height-pr-headers, 20px);
   text-shadow: none;
+  text-decoration: rgb(218, 218, 218);
+  letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -2050,15 +2266,8 @@ body body.theme-dark .published-container .markdown-rendered h6 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body
@@ -2131,6 +2340,10 @@ body body.theme-dark .callout[data-callout="note"] {
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 12px 12px 12px 24px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: var(--col-ed-bckg-quote-callout, rgb(35, 34, 33));
   background-image: none;
   background: rgb(35, 34, 33) none repeat scroll 0% 0% / auto padding-box
@@ -2151,6 +2364,10 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -2167,6 +2384,10 @@ body body.theme-dark .callout > .callout-content {
     border-box;
   color: rgb(131, 136, 140);
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary, 83, 223, 221);
@@ -2200,6 +2421,10 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -2237,6 +2462,10 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -2274,6 +2503,10 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -2311,6 +2544,10 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -2348,6 +2585,10 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -2385,6 +2626,10 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -2422,6 +2667,10 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -2459,6 +2708,10 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -2496,6 +2749,10 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -2533,6 +2790,10 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -2570,6 +2831,10 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -2607,6 +2872,10 @@ body body.theme-dark .callout[data-callout="quote"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -2618,7 +2887,7 @@ body body.theme-dark .markdown-rendered table {
   color: var(--col-ed-txt-table, rgb(228, 229, 224));
   font-family: "Slasher Regular";
   table-layout: auto;
-  width: 196.234px;
+  text-align: start;
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -2636,6 +2905,11 @@ body body.theme-dark .markdown-rendered table {
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark .markdown-rendered thead {
   background-color: var(--col-pr-bckg-tableh, rgb(35, 34, 33));
@@ -2658,6 +2932,9 @@ body body.theme-dark .markdown-rendered th {
   font-weight: var(--table-header-weight, 600);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
+  box-shadow: none;
+  text-decoration: rgb(218, 218, 218);
+  letter-spacing: 0.5px;
   border-left: var(--table-column-first-border-width, 1px) solid rgb(35, 34, 33);
   border-right: 1px solid rgb(35, 34, 33);
   border-top: var(--table-header-border-width, 1px) solid rgb(35, 34, 33);
@@ -2671,6 +2948,10 @@ body body.theme-dark .markdown-rendered th {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 4px 8px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 1px;
+  padding-inline-start: 1px;
 }
 body body.theme-dark .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
@@ -2678,6 +2959,8 @@ body body.theme-dark .markdown-rendered td {
   font-weight: 400;
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, top);
+  box-shadow: none;
+  text-decoration: rgb(218, 218, 218);
   border: 1px solid rgb(35, 34, 33);
   border-left: var(--table-column-first-border-width, 1px) solid rgb(35, 34, 33);
   border-top-left-radius: 0px;
@@ -2689,6 +2972,10 @@ body body.theme-dark .markdown-rendered td {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 4px 8px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 1px;
+  padding-inline-start: 1px;
 }
 body body.theme-dark .markdown-rendered tr {
   background-color: var(--table-header-background, rgba(0, 0, 0, 0));
@@ -2747,6 +3034,10 @@ body body.theme-dark .markdown-rendered figure {
   margin-inline-end: 40px;
   margin-inline-start: 40px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark .markdown-rendered figcaption {
   color: rgb(131, 136, 140);
@@ -2760,6 +3051,10 @@ body body.theme-dark .markdown-rendered figcaption {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark .markdown-rendered video {
   border-radius: 0px;
@@ -2794,9 +3089,15 @@ body body.theme-dark .markdown-rendered audio {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark .internal-embed {
   background-color: var(--embed-background, rgba(0, 0, 0, 0));
+  color: rgb(131, 136, 140);
+  border-radius: 0px;
   border-color: rgb(131, 136, 140);
   border-left: 2px solid rgb(217, 41, 38);
   border-right-width: 0px;
@@ -2811,6 +3112,8 @@ body body.theme-dark .internal-embed {
 }
 body body.theme-dark .markdown-embed {
   background-color: var(--embed-background, rgba(0, 0, 0, 0));
+  color: rgb(131, 136, 140);
+  border-radius: 0px;
   border-left: solid;
   border-width: 0px;
   border-color: rgb(131, 136, 140);
@@ -2823,6 +3126,8 @@ body body.theme-dark .markdown-embed {
 }
 body body.theme-dark .file-embed {
   background-color: var(--background-primary-alt, rgb(0, 0, 0));
+  color: var(--text-muted, rgb(131, 136, 140));
+  border-radius: 8px;
   border-color: rgb(131, 136, 140);
   border-width: 0px;
   border-top-left-radius: 8px;
@@ -2856,6 +3161,31 @@ body body.theme-dark .metadata-properties {
   border-bottom-right-radius: 0px;
   margin: 0px;
   padding: 0px;
+}
+body body.theme-dark .metadata-container .metadata-property {
+  background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+  color: rgb(131, 136, 140);
+  font-family: "Slasher Regular";
+  border-color: rgb(131, 136, 140);
+  border-width: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+body body.theme-dark .metadata-property-key {
+  color: rgb(131, 136, 140);
+  font-family: var(--metadata-label-font, "Slasher Regular");
+  font-size: 15px;
+  font-weight: 400;
+}
+body body.theme-dark .metadata-property-value {
+  color: rgb(131, 136, 140);
+  font-family: var(--metadata-input-font, "Slasher Regular");
+  font-size: 15px;
 }
 body body.theme-dark progress {
   accent-color: auto;
@@ -2898,6 +3228,10 @@ body body.theme-dark input[type="text"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 4px 8px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 2px;
+  padding-inline-start: 2px;
 }
 body body.theme-dark details {
   background-color: rgba(0, 0, 0, 0);
@@ -2916,6 +3250,10 @@ body body.theme-dark details {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark summary {
   background-color: rgba(0, 0, 0, 0);
@@ -2923,6 +3261,10 @@ body body.theme-dark summary {
   cursor: auto;
   font-weight: 400;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark details[open] {
   background-color: rgba(0, 0, 0, 0);
@@ -2941,6 +3283,10 @@ body body.theme-dark details[open] {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark kbd {
   background-color: var(--code-background, rgb(0, 0, 0));
@@ -2971,6 +3317,10 @@ body body.theme-dark kbd {
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
   padding: 1.3125px 3.28125px;
+  padding-block-end: 1.3125px;
+  padding-block-start: 1.3125px;
+  padding-inline-end: 3.28125px;
+  padding-inline-start: 3.28125px;
 }
 body body.theme-dark dl {
   margin: 15px 0px;
@@ -2978,6 +3328,11 @@ body body.theme-dark dl {
   margin-block-start: 15px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark dt {
   color: rgb(131, 136, 140);
@@ -2987,15 +3342,46 @@ body body.theme-dark dt {
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
+  font-size: 15px;
+  font-family: "Slasher Regular";
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  border: 0px rgb(131, 136, 140);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body body.theme-dark dd {
   color: rgb(131, 136, 140);
+  font-size: 15px;
+  font-family: "Slasher Regular";
   margin: 0px 0px 0px 40px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 40px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  border: 0px rgb(131, 136, 140);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body body.theme-dark sub {
   color: rgb(228, 229, 224);
@@ -3198,6 +3584,8 @@ body body.theme-dark .site-footer {
   background-color: var(--status-bar-background, rgb(3, 3, 8));
   color: var(--status-bar-text-color, rgb(131, 136, 140));
   font-family: "Slasher Regular";
+  font-size: var(--status-bar-font-size, 12px);
+  text-align: start;
   border-color: rgb(35, 34, 33);
   border-style: solid;
   border-width: 1px 0px 0px 1px;
@@ -3205,9 +3593,15 @@ body body.theme-dark .site-footer {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: var(--size-4-2, 8px);
 }
 body body.theme-dark .site-footer a {
   color: rgb(131, 136, 140);
+  font-size: 12px;
+  font-weight: 400;
 }
 body body.theme-dark .nav-header {
   color: rgb(131, 136, 140);
@@ -3272,6 +3666,20 @@ body body.theme-dark .view-header-breadcrumb-separator {
 body body.theme-dark .page-header .page-title {
   color: var(--text-normal, rgb(131, 136, 140));
   font-family: "Slasher Regular";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16.9px;
+  background-color: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  padding: 0px;
+  margin: 0px;
+  border-color: rgb(131, 136, 140);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 body body.theme-dark .math-block {
   background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));

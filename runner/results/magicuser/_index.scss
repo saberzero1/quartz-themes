@@ -1278,6 +1278,116 @@ body {
     animation-play-state: running;
   }
 
+  .markdown-rendered p > u,
+  u {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(34, 34, 34);
+    cursor: auto;
+    filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    text-decoration: underline rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    transform: none;
+    user-select: none;
+    animation-name: none;
+    animation-duration: auto;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+
+  .markdown-rendered p > s,
+  s {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(34, 34, 34);
+    cursor: auto;
+    filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    text-decoration: line-through rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+    text-decoration-line: line-through;
+    text-decoration-style: solid;
+    transform: none;
+    user-select: none;
+    animation-name: none;
+    animation-duration: auto;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+
+  .markdown-rendered p > strong > em,
+  strong > em {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--italic-color, rgb(0, 0, 0));
+    cursor: grab;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 600;
+    outline: rgb(0, 0, 0) none 0px;
+    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-style: solid;
+    transition: all;
+    user-select: text;
+    animation-duration: 0s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+  }
+
   .text-highlight {
     background-color: var(--text-highlight-bg, rgba(255, 255, 0, 0.533));
     color: var(--mu-text-highlight-fg, rgb(0, 0, 0));
@@ -1411,6 +1521,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: var(--pill-background, rgba(139, 108, 239, 0.1));
+    color: var(--pill-color, rgb(139, 108, 239));
     display: flex;
     font-family:
       ui-sans-serif,
@@ -1426,7 +1537,10 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    font-size: 14.928px;
     font-weight: var(--pill-weight, 400);
+    line-height: var(--line-height-tight, 14.928px);
+    text-decoration: rgb(34, 34, 34);
     margin-inline-start: 0px;
     border: 1px solid rgba(0, 114, 211, 0.247);
     border-top-left-radius: 14.928px;
@@ -1446,6 +1560,22 @@ body {
   ul > li {
     color: rgb(0, 0, 0);
     text-align: start;
+    list-style-type: "​";
+    list-style-position: outside;
+    list-style-image: none;
+    padding-top: var(--list-spacing, 1.2px);
+    padding-bottom: var(--list-spacing, 1.2px);
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin: 0px 0px 0px 30.5391px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
   }
 
   ul > li::marker {
@@ -1467,6 +1597,22 @@ body {
   ol > li {
     color: rgb(0, 0, 0);
     text-align: start;
+    list-style-type: "​";
+    list-style-position: outside;
+    list-style-image: none;
+    padding-top: var(--list-spacing, 1.2px);
+    padding-bottom: var(--list-spacing, 1.2px);
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin: 0px 0px 0px 30.5391px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
   }
 
   ol > li::marker {
@@ -1499,6 +1645,10 @@ body {
     color: var(--code-normal, rgb(0, 0, 0));
     font-family: var(--font-monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
     padding: 2.1px 4.2px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   pre > code,
@@ -1515,6 +1665,10 @@ body {
     border-end-end-radius: 0px;
     overflow-x: visible;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     white-space-collapse: preserve;
     text-wrap-mode: nowrap;
   }
@@ -1532,6 +1686,10 @@ body {
     border-end-end-radius: 0px;
     overflow-x: visible;
     padding: 12px 16px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     white-space-collapse: preserve;
     text-wrap-mode: nowrap;
   }
@@ -1548,6 +1706,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
+    padding-block-end: 1px;
+    padding-block-start: 1px;
+    padding-inline-end: 2px;
+    padding-inline-start: 2px;
     margin: 0px 8px 0px -24px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -1576,6 +1738,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color, rgba(207, 207, 207, 0.533));
+    color: var(--blockquote-color, rgb(0, 0, 0));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1590,12 +1753,16 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    font-weight: 400;
     font-style: normal;
+    line-height: 24px;
     padding-bottom: 0px;
     padding-top: 0px;
     padding-inline-start: 0px;
     margin-inline-start: 40px;
     margin-inline-end: 40px;
+    text-decoration: rgb(34, 34, 34);
+    letter-spacing: normal;
   }
 
   .data-footnote-backref {
@@ -1721,18 +1888,6 @@ body {
     color: rgb(0, 0, 0);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
-    border: 0px rgb(0, 0, 0);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-  }
-
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
@@ -1753,44 +1908,245 @@ body {
   h1 {
     color: var(--h1-color, rgb(0, 114, 211));
     font-family: var(--h1-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
+    font-size: var(--h1-size, 32px);
+    font-weight: var(--font-weight, 800);
+    line-height: var(--h1-line-height, 38.4px);
     text-shadow: none;
+    text-decoration: rgb(34, 34, 34);
+    letter-spacing: var(--h1-letter-spacing, -0.48px);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin: 0px 0px 16px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    border: 0px rgb(0, 114, 211);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   h2 {
     color: var(--h2-color, rgb(0, 114, 211));
     font-family: var(--h2-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
+    font-size: var(--h2-size, 24px);
+    font-weight: var(--font-weight, 800);
+    line-height: var(--h2-line-height, 28.8px);
     text-shadow: none;
+    text-decoration: rgb(34, 34, 34);
+    letter-spacing: var(--h2-letter-spacing, -0.264px);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin-top: var(--heading-spacing, 0px);
+    margin-bottom: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    border: 0px rgb(0, 114, 211);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   h3 {
     color: var(--h3-color, rgb(0, 114, 211));
     font-family: var(--h3-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
+    font-size: var(--h3-size, 18.72px);
+    font-weight: var(--font-weight, 800);
+    line-height: var(--h3-line-height, 24.336px);
     text-shadow: none;
+    text-decoration: rgb(34, 34, 34);
+    letter-spacing: var(--h3-letter-spacing, -0.14976px);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin-top: var(--heading-spacing, 16px);
+    margin-bottom: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    border: 0px rgb(0, 114, 211);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   h4 {
     color: var(--h4-color, rgb(0, 114, 211));
     font-family: var(--h4-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
+    font-size: var(--h4-size, 16px);
+    font-weight: var(--font-weight, 800);
+    line-height: var(--h4-line-height, 22.4px);
     text-shadow: none;
+    text-decoration: rgb(34, 34, 34);
+    letter-spacing: var(--h4-letter-spacing, -0.08px);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin-top: var(--heading-spacing, 16px);
+    margin-bottom: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    border: 0px rgb(0, 114, 211);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   h5 {
     color: var(--h5-color, rgb(0, 114, 211));
     font-family: var(--h5-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
+    font-size: var(--h5-size, 13.28px);
+    font-weight: var(--font-weight, 800);
+    line-height: var(--h5-line-height, 19.92px);
     text-shadow: none;
+    text-decoration: rgb(34, 34, 34);
+    letter-spacing: var(--h5-letter-spacing, -0.02656px);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin-top: var(--heading-spacing, 16px);
+    margin-bottom: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    border: 0px rgb(0, 114, 211);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   h6 {
     color: var(--h6-color, rgb(0, 114, 211));
     font-family: var(--h6-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
+    font-size: var(--h6-size, 10.72px);
+    font-weight: var(--font-weight, 800);
+    line-height: var(--h6-line-height, 16.08px);
     text-shadow: none;
+    text-decoration: rgb(34, 34, 34);
+    letter-spacing: normal;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin: 16px 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    border: 0px rgb(0, 114, 211);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   h2.page-title,
   h2.page-title a {
     color: var(--mu-text-title, rgb(163, 0, 207));
     font-family: var(--mu-font-mono, "JetBrains Mono", Consolas, "Roboto Mono", Menlo, Monaco, "Courier New", monospace);
+    font-size: var(--mu-inline-title-font-size, 14.08px);
+    font-weight: var(--inline-title-weight, 700);
+    line-height: var(--inline-title-line-height, 16.896px);
     text-shadow: none;
+    text-decoration: rgb(34, 34, 34);
+    letter-spacing: -0.2112px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin: 0px 0px 7.04px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    border: 0px rgb(163, 0, 207);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   h1::after {
@@ -1955,6 +2311,186 @@ body {
     color: rgb(34, 34, 34);
   }
 
+  h1::before {
+    border: 0px rgb(191, 114, 216);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    width: 17.2344px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    content: "H1 ";
+    color: var(--h1-color, rgb(191, 114, 216));
+  }
+
+  h2::before {
+    border: 0px rgb(191, 114, 216);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin-top: var(--heading-spacing, 0px);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    width: 19.75px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    content: "H2 ";
+    color: var(--h2-color, rgb(191, 114, 216));
+  }
+
+  h3::before {
+    border: 0px rgb(191, 114, 216);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin-top: var(--heading-spacing, 0px);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    width: 19.9844px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    content: "H3 ";
+    color: var(--h3-color, rgb(191, 114, 216));
+  }
+
+  h4::before {
+    border: 0px rgb(191, 114, 216);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin-top: var(--heading-spacing, 0px);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    width: 20.3906px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    content: "H4 ";
+    color: var(--h4-color, rgb(191, 114, 216));
+  }
+
+  h5::before {
+    border: 0px rgb(191, 114, 216);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin-top: var(--heading-spacing, 0px);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    width: 19.7031px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    content: "H5 ";
+    color: var(--h5-color, rgb(191, 114, 216));
+  }
+
+  h6::before {
+    border: 0px rgb(191, 114, 216);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    width: 20.0469px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    content: "H6 ";
+    color: var(--h6-color, rgb(191, 114, 216));
+  }
+
+  h2.page-title,
+  h2.page-title a::before {
+    border: 0px rgb(34, 34, 34);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    content: normal;
+    color: rgb(34, 34, 34);
+  }
+
   li.depth-0 {
     font-weight: var(--nav-item-weight, 400);
   }
@@ -2019,6 +2555,10 @@ body {
     border-end-end-radius: 0px;
     mix-blend-mode: normal;
     padding: 12px 12px 12px 24px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .callout .callout-title {
@@ -2035,6 +2575,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2051,6 +2595,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(0, 0, 0);
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .callout[data-callout="note"] {
@@ -2085,6 +2633,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2101,6 +2653,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(0, 0, 0);
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .callout[data-callout="abstract"] {
@@ -2135,6 +2691,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2151,6 +2711,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(0, 0, 0);
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .callout[data-callout="info"] {
@@ -2185,6 +2749,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2201,6 +2769,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(0, 0, 0);
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .callout[data-callout="todo"] {
@@ -2235,6 +2807,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2251,6 +2827,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(0, 0, 0);
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .callout[data-callout="tip"] {
@@ -2285,6 +2865,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2301,6 +2885,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(0, 0, 0);
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .callout[data-callout="success"] {
@@ -2335,6 +2923,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2351,6 +2943,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(0, 0, 0);
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .callout[data-callout="question"] {
@@ -2385,6 +2981,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2401,6 +3001,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(0, 0, 0);
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .callout[data-callout="warning"] {
@@ -2435,6 +3039,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2451,6 +3059,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(0, 0, 0);
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .callout[data-callout="danger"] {
@@ -2485,6 +3097,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2501,6 +3117,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(0, 0, 0);
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .callout[data-callout="failure"] {
@@ -2535,6 +3155,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2551,6 +3175,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(0, 0, 0);
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .callout[data-callout="bug"] {
@@ -2585,6 +3213,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2601,6 +3233,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(0, 0, 0);
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .callout[data-callout="example"] {
@@ -2635,6 +3271,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2651,6 +3291,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(0, 0, 0);
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .callout[data-callout="quote"] {
@@ -2685,6 +3329,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2701,6 +3349,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(0, 0, 0);
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   table {
@@ -2722,7 +3374,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     table-layout: auto;
-    width: 662px;
+    text-align: start;
     border: 2px solid rgb(0, 72, 130);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2740,6 +3392,11 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   thead {
@@ -2765,6 +3422,9 @@ body {
     font-weight: var(--table-header-weight, 700);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment, top);
+    box-shadow: none;
+    text-decoration: rgb(34, 34, 34);
+    letter-spacing: normal;
     border-left: var(--table-column-first-border-width, 0px) solid rgb(225, 225, 225);
     border-right: 0px solid rgb(0, 72, 130);
     border-top: var(--table-header-border-width, 0px) solid rgb(225, 225, 225);
@@ -2778,6 +3438,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 4px 8px;
+    padding-block-end: 1px;
+    padding-block-start: 1px;
+    padding-inline-end: 1px;
+    padding-inline-start: 1px;
   }
 
   td {
@@ -2786,6 +3450,8 @@ body {
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment, top);
+    box-shadow: none;
+    text-decoration: rgb(34, 34, 34);
     border-left: var(--table-column-first-border-width, 0px) solid rgb(0, 0, 0);
     border-right: 0px solid rgb(0, 72, 130);
     border-top: 0px solid rgb(0, 0, 0);
@@ -2799,6 +3465,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 4px 8px;
+    padding-block-end: 1px;
+    padding-block-start: 1px;
+    padding-inline-end: 1px;
+    padding-inline-start: 1px;
   }
 
   tr {
@@ -2862,6 +3532,10 @@ body {
     margin-inline-end: 40px;
     margin-inline-start: 40px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   figcaption {
@@ -2889,6 +3563,10 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   video {
@@ -2925,10 +3603,16 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .transclude {
     background-color: var(--embed-background, rgba(0, 0, 0, 0));
+    color: rgb(0, 0, 0);
+    border-radius: 0px;
     border-color: rgb(0, 0, 0);
     border-left: 2px solid rgb(155, 131, 242);
     border-right-width: 0px;
@@ -2944,6 +3628,8 @@ body {
 
   .transclude-inner {
     background-color: var(--embed-background, rgba(0, 0, 0, 0));
+    color: rgb(0, 0, 0);
+    border-radius: 0px;
     border-left: solid;
     border-width: 0px;
     border-color: rgb(0, 0, 0);
@@ -2957,6 +3643,8 @@ body {
 
   .file-embed {
     background-color: var(--background-primary-alt, rgb(225, 225, 225));
+    color: var(--text-muted, rgb(53, 53, 53));
+    border-radius: 8px;
     border-color: rgb(53, 53, 53);
     border-width: 0px;
     border-top-left-radius: 8px;
@@ -2994,6 +3682,34 @@ body {
     border-bottom-right-radius: 0px;
     margin: 0px;
     padding: 0px;
+  }
+
+  .metadata-container .metadata-property {
+    background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+    color: rgb(53, 53, 53);
+    font-family: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, Monaco, "Courier New", monospace;
+    border-color: rgb(53, 53, 53);
+    border-width: 0px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+  }
+
+  .metadata-property-key {
+    color: rgb(53, 53, 53);
+    font-family: var(--metadata-label-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .metadata-property-value {
+    color: rgb(53, 53, 53);
+    font-family: var(--metadata-input-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    font-size: 16px;
   }
 
   progress {
@@ -3052,6 +3768,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 4px 8px;
+    padding-block-end: 1px;
+    padding-block-start: 1px;
+    padding-inline-end: 2px;
+    padding-inline-start: 2px;
   }
 
   details {
@@ -3071,6 +3791,10 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   summary {
@@ -3079,6 +3803,10 @@ body {
     cursor: auto;
     font-weight: 400;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   details[open] {
@@ -3098,6 +3826,10 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   kbd {
@@ -3116,6 +3848,10 @@ body {
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
     padding: 1.4px 3.5px;
+    padding-block-end: 1.3125px;
+    padding-block-start: 1.3125px;
+    padding-inline-end: 3.28125px;
+    padding-inline-start: 3.28125px;
   }
 
   dl {
@@ -3124,6 +3860,11 @@ body {
     margin-block-start: 15px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   dt {
@@ -3134,16 +3875,73 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
+    font-size: 16px;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    border: 0px rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   dd {
     color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 40px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    border: 0px rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   sub {
@@ -3507,6 +4305,8 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    font-size: var(--status-bar-font-size, 12px);
+    text-align: start;
     border-color: rgba(0, 127, 255, 0.063);
     border-style: solid;
     border-width: 1px 0px 0px 1px;
@@ -3514,11 +4314,17 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: var(--size-4-2, 8px);
     opacity: var(--ui-status-bar, 1);
   }
 
   footer ul li a {
     color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 400;
   }
 
   .recent-notes > h3 {
@@ -3678,6 +4484,19 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20.8px;
+    background-color: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    padding: 0px;
+    margin: 0px;
+    border-color: rgb(0, 0, 0);
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
   .katex-display {
@@ -10070,322 +10889,6 @@ body {
     font-size: var(--h1-size, 32px);
   }
 
-  .markdown-rendered > h1 {
-    --background-modifier-active-hover: #007fff28;
-    --background-modifier-border: #007fff38;
-    --background-modifier-border-focus: #007fff;
-    --background-modifier-border-hover: #007fff48;
-    --background-modifier-hover: #007fff28;
-    --background-primary: #e8efff;
-    --background-primary-alt: #e1e1e1;
-    --background-secondary: #d1dfff;
-    --background-secondary-alt: #ffffff;
-    --blockquote-border-color: #007fff;
-    --blur-background: color-mix(in srgb, #e8efff 65%, transparent) linear-gradient(#e8efff, color-mix(in srgb, #e8efff 65%, transparent));
-    --bold-weight: 700;
-    --callout-blend-mode: normal;
-    --canvas-background: #e8efff;
-    --checkbox-border-color: #0072d3;
-    --checkbox-border-color-hover: #00bfff;
-    --checkbox-color: #00bfff;
-    --checkbox-color-hover: #00cfff;
-    --checkbox-marker-color: #e8efff;
-    --checklist-done-color: #00cf48;
-    --collapse-icon-color: #0072d3;
-    --collapse-icon-color-collapsed: #0072d3;
-    --color-accent: hsl(254, 80%, 68%);
-    --color-accent-1: hsl(253, 80.8%, 73.1%);
-    --color-accent-2: hsl(251, 81.6%, 78.2%);
-    --color-accent-hsl: 254, 80%, 68%;
-    --divider-color: #007fff10;
-    --divider-color-hover: #007fff;
-    --dropdown-background: #007fff18;
-    --dropdown-background-hover: #007fff38;
-    --flair-background: #007fff18;
-    --font-weight: var(--h1-weight, 800);
-    --graph-line: #007fff;
-    --graph-node: #d372ff;
-    --graph-node-attachment: #007fff;
-    --graph-node-focused: #0048a3;
-    --graph-node-tag: #20cf20;
-    --graph-node-unresolved: #a3a3a3;
-    --graph-text: #000;
-    --hr-color: #0072d3;
-    --interactive-accent: hsl(253, 80.8%, 73.1%);
-    --interactive-accent-hover: hsl(251, 81.6%, 78.2%);
-    --interactive-accent-hsl: 254, 80%, 68%;
-    --interactive-hover: #007fff38;
-    --interactive-normal: #007fff18;
-    --link-color: #a200ff;
-    --link-color-hover: #c300ff;
-    --link-external-color: #0033ff;
-    --link-external-color-hover: #00a3ff;
-    --link-unresolved-color: #a200ff;
-    --link-unresolved-decoration-color: hsla(254, 80%, 68%, 0.3);
-    --list-indent: 2em;
-    --menu-background: #d1dfff;
-    --menu-border-color: #007fff48;
-    --pdf-background: #e8efff;
-    --pdf-page-background: #e8efff;
-    --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
-    --pdf-sidebar-background: #e8efff;
-    --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
-    --raised-background: color-mix(in srgb, #e8efff 65%, transparent) linear-gradient(#e8efff, color-mix(in srgb, #e8efff 65%, transparent));
-    --search-icon-color: #007fff;
-    --search-result-background: #e8efff;
-    --setting-group-heading-color: #0048f1;
-    --setting-group-heading-size: 16px;
-    --setting-items-background: #d1dfff;
-    --setting-items-border-color: #007fff38;
-    --shiki-code-background: #f1f1ff;
-    --shiki-gutter-border-color: #007fff38;
-    --suggestion-background: #e8efff;
-    --tab-background-active: #e8efff;
-    --tab-divider-color: #003364;
-    --tab-font-size: 14px;
-    --tab-outline-color: #007fff10;
-    --tab-stacked-font-size: 14px;
-    --tab-switcher-background: #d1dfff;
-    --tab-switcher-menubar-background: linear-gradient(to top, #d1dfff, transparent);
-    --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(254, 80%, 68%);
-    --tab-text-color: #353535;
-    --tab-text-color-focused-active: #000;
-    --tab-text-color-focused-highlighted: #000;
-    --table-add-button-border-color: #007fff38;
-    --table-column-first-border-width: 0;
-    --table-column-last-border-width: 0;
-    --table-drag-handle-background-active: hsl(253, 80.8%, 73.1%);
-    --table-header-background: #d1dfff;
-    --table-header-border-width: 0;
-    --table-header-color: #000;
-    --table-header-weight: 700;
-    --table-row-alt-background: #e8efff;
-    --table-row-alt-background-hover: #d1dfff;
-    --table-row-background-hover: #0088ff33;
-    --table-row-last-border-width: 0;
-    --table-selection: hsla(254, 80%, 68%, 0.1);
-    --table-selection-blend-mode: normal;
-    --table-selection-border-color: hsl(253, 80.8%, 73.1%);
-    --tag-background: hsla(254, 80%, 68%, 0.1);
-    --tag-background-hover: hsla(254, 80%, 68%, 0.2);
-    --tag-border-color: #0072d33f;
-    --tag-border-color-hover: #00bfff;
-    --tag-color: hsl(254, 80%, 68%);
-    --tag-color-hover: hsl(251, 81.6%, 78.2%);
-    --tag-size: 0.933em;
-    --text-accent: hsl(254, 80%, 68%);
-    --text-accent-hover: hsl(251, 81.6%, 78.2%);
-    --text-highlight-bg: #ffff0088;
-    --text-selection: hsla(254, 80%, 68%, 0.2);
-    color: var(--h1-color, rgb(191, 114, 216));
-    font-family: var(--h1-font, Inter, Helvetica, Arial, sans-serif);
-    font-size: var(--h1-size, 12.8px);
-    font-weight: var(--font-weight, 800);
-    letter-spacing: var(--h1-letter-spacing, 1px);
-    line-height: var(--h1-line-height, 15.36px);
-    --blockquote-background-color: #cfcfcf88;
-    --blockquote-color: #000;
-    --divider-width: 1px;
-    --divider-width-hover: 3px;
-    --h1-color: #0072d3;
-    --h1-font: system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --h2-color: #0072d3;
-    --h2-font: system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --h3-color: #0072d3;
-    --h3-font: system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --h4-color: #0072d3;
-    --h4-font: system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --h5-color: #0072d3;
-    --h5-font: system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --h6-color: #0072d3;
-    --h6-font: system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --hidden-text-underline-foreground-color: #000;
-    --mu-amulet-sat: 50%;
-    --mu-border-width: 1px;
-    --mu-cards-border: #e8efff;
-    --mu-default-mode-border-width: 1px;
-    --mu-fc-fg-color: #000;
-    --mu-fc-height: 400px;
-    --mu-fc-width: 280px;
-    --mu-file-header-border-width: 1px;
-    --mu-folder-icon-closed-selected: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
-    --mu-folder-icon-opened-selected: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
-    --mu-global-font-size: 16px;
-    --mu-hover-underline-offset: 2px;
-    --mu-hover-underline-thickness: 2px;
-    --mu-inline-title-font-size: 0.88em;
-    --mu-laser-area: 82px;
-    --mu-laser-top: 50%;
-    --mu-mobile-side-margins: 16px;
-    --mu-neon-mode-glow-intensity: 0.5em;
-    --mu-new-window-border-width: 1px;
-    --mu-rainbow-hue-1: 0;
-    --mu-rainbow-hue-10: 270;
-    --mu-rainbow-hue-2: 30;
-    --mu-rainbow-hue-3: 60;
-    --mu-rainbow-hue-4: 90;
-    --mu-rainbow-hue-5: 120;
-    --mu-rainbow-hue-6: 150;
-    --mu-rainbow-hue-7: 180;
-    --mu-rainbow-hue-8: 210;
-    --mu-rainbow-hue-9: 240;
-    --mu-reading-glow-border-size: 3px;
-    --mu-reading-glow-radius: 4px;
-    --mu-reading-indicator-width: -0.3rem;
-    --mu-scrollbar-thumb-size: 2px;
-    --mu-scrollbar-thumb-size-adjusted-value: 2;
-    --mu-scrollbar-width: 12px;
-    --mu-sidebar-bottom-vault-profile-bg-color: #d1dfff;
-    --mu-stacked-mode-border-width: 1px;
-    --mu-suggestion-search-panel-bg-color: #d1dfff;
-    --mu-table-color-1: #d1dfff;
-    --mu-table-color-2: #e8efff;
-    --mu-table-inner-border-width: 0px;
-    --mu-table-outer-border-width: 2px;
-    --mu-table-th-foreground-edit: #000;
-    --mu-tags-hashtag-padding: 2px;
-    --mu-text-highlight-fg: #000;
-    --mu-titlebar-button-fg: #5382d3;
-    --mu-transparency-blur-level: 8px;
-    --table-background: #d1dfff;
-    --tag-radius: 1em;
-    --background-modifier-error: #e93147;
-    --background-modifier-error-hover: #e93147;
-    --background-modifier-error-rgb: 233, 49, 71;
-    --background-modifier-form-field: #007fff21;
-    --background-modifier-form-field-hover: #007fff21;
-    --background-modifier-success: #08b94e;
-    --background-modifier-success-rgb: 8, 185, 78;
-    --blur-l: blur(16px) saturate(1.5) brightness(1.15);
-    --blur-m: blur(10px) saturate(1.5) brightness(1.15);
-    --blur-s: blur(6px) saturate(1.5) brightness(1.15);
-    --button-corner-shape: round;
-    --button-radius: 5px;
-    --callout-bug: 233, 49, 71;
-    --callout-default: 8, 109, 221;
-    --callout-error: 233, 49, 71;
-    --callout-example: 120, 82, 238;
-    --callout-fail: 233, 49, 71;
-    --callout-important: 0, 191, 188;
-    --callout-info: 8, 109, 221;
-    --callout-padding: 12px 12px 12px 24px;
-    --callout-question: 236, 117, 0;
-    --callout-radius: 4px;
-    --callout-success: 8, 185, 78;
-    --callout-summary: 0, 191, 188;
-    --callout-tip: 0, 191, 188;
-    --callout-title-weight: 600;
-    --callout-todo: 8, 109, 221;
-    --callout-warning: 236, 117, 0;
-    --canvas-controls-icon-size: 16px;
-    --canvas-controls-icon-stroke: 2px;
-    --canvas-controls-radius: 4px;
-    --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #000;
-    --checkbox-radius: 4px;
-    --checkbox-size: 16px;
-    --clickable-icon-radius: 4px;
-    --divider-vertical-height: 100%;
-    --dropdown-background-position: right 0.5em top 50%, 0 0;
-    --dropdown-background-size: 1em auto, 100%;
-    --dropdown-padding: 0 1.9em 0 0.8em;
-    --flair-color: #000;
-    --font-interface: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    --font-mermaid: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-    --font-print: "??", "??", "??", "Arial";
-    --font-text: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    --h5-line-height: 1.5;
-    --h6-line-height: 1.5;
-    --heading-formatting: #ababab;
-    --heading-spacing: 2.5rem;
-    --link-weight: 400;
-    --menu-border-width: 1px;
-    --menu-corner-shape: round;
-    --menu-padding: 6px;
-    --menu-radius: 8px;
-    --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
-    --popover-font-size: 16px;
-    --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
-    --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
-    --scrollbar-bg: rgba(0, 0, 0, 0.05);
-    --scrollbar-radius: 12px;
-    --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
-    --search-clear-button-color: #353535;
-    --setting-group-heading-weight: 600;
-    --setting-items-padding: 20px;
-    --setting-items-radius: 12px;
-    --shiki-active-tab-border-color: #353535;
-    --shiki-code-block-border-radius: 4px;
-    --shiki-code-block-spacing: 1rem;
-    --shiki-code-comment: #ababab;
-    --shiki-code-function: #08b94e;
-    --shiki-code-important: #ec7500;
-    --shiki-code-keyword: #d53984;
-    --shiki-code-normal: #353535;
-    --shiki-code-property: #00bfbc;
-    --shiki-code-punctuation: #353535;
-    --shiki-code-string: #e0ac00;
-    --shiki-code-value: #7852ee;
-    --shiki-gutter-border-width: 1px;
-    --shiki-gutter-text-color: #ababab;
-    --shiki-gutter-text-color-highlight: #353535;
-    --shiki-highlight-green: rgba(8, 185, 78, 0.5);
-    --shiki-highlight-green-background: rgba(8, 185, 78, 0.1);
-    --shiki-highlight-neutral: #353535;
-    --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
-    --shiki-highlight-red: rgba(233, 49, 71, 0.5);
-    --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
-    --shiki-terminal-dots-color: #ababab;
-    --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
-    --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
-    --sync-avatar-color-1: #e93147;
-    --sync-avatar-color-2: #ec7500;
-    --sync-avatar-color-3: #e0ac00;
-    --sync-avatar-color-4: #08b94e;
-    --sync-avatar-color-5: #00bfbc;
-    --sync-avatar-color-6: #086ddd;
-    --sync-avatar-color-7: #7852ee;
-    --sync-avatar-color-8: #d53984;
-    --tab-radius: 4px;
-    --tab-stacked-header-width: 40px;
-    --tab-switcher-preview-radius: 16px;
-    --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-text-color-active: #353535;
-    --tab-text-color-focused: #353535;
-    --tab-text-color-focused-active-current: #000;
-    --table-add-button-border-width: 1px;
-    --table-column-alt-background: transparent;
-    --table-drag-handle-color: #ababab;
-    --table-drag-handle-color-active: white;
-    --table-header-size: 16px;
-    --table-line-height: 1.3;
-    --text-error: #e93147;
-    --text-faint: #ababab;
-    --text-muted: #353535;
-    --text-normal: #000;
-    --text-success: #08b94e;
-    --text-warning: #ec7500;
-    --touch-radius-l: 52px;
-    --touch-radius-m: 44px;
-    --touch-radius-s: 40px;
-    --touch-radius-xl: 60px;
-    --touch-radius-xs: 30px;
-    --touch-radius-xxs: 24px;
-    --traffic-lights-offset-x: 40px;
-    --traffic-lights-offset-y: 40px;
-    background-color: rgba(0, 0, 0, 0);
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-color: rgb(191, 114, 216);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-width: 0px;
-    content: "H1 ";
-    margin: 0px;
-    padding: 0px;
-  }
-
   li.task-list-item[data-task="x"] {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
@@ -11746,6 +12249,116 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
+    .markdown-rendered p > u,
+    u {
+      background-color: rgba(0, 0, 0, 0);
+      color: rgb(218, 218, 218);
+      cursor: auto;
+      filter: none;
+      backdrop-filter: none;
+      box-shadow: none;
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      font-weight: 400;
+      text-decoration: underline rgb(218, 218, 218);
+      text-decoration-color: rgb(218, 218, 218);
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      transform: none;
+      user-select: none;
+      animation-name: none;
+      animation-duration: auto;
+      animation-timing-function: ease;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-fill-mode: none;
+      animation-play-state: running;
+    }
+
+    .markdown-rendered p > s,
+    s {
+      background-color: rgba(0, 0, 0, 0);
+      color: rgb(218, 218, 218);
+      cursor: auto;
+      filter: none;
+      backdrop-filter: none;
+      box-shadow: none;
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      font-weight: 400;
+      text-decoration: line-through rgb(218, 218, 218);
+      text-decoration-color: rgb(218, 218, 218);
+      text-decoration-line: line-through;
+      text-decoration-style: solid;
+      transform: none;
+      user-select: none;
+      animation-name: none;
+      animation-duration: auto;
+      animation-timing-function: ease;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-fill-mode: none;
+      animation-play-state: running;
+    }
+
+    .markdown-rendered p > strong > em,
+    strong > em {
+      background-color: rgba(0, 0, 0, 0);
+      color: var(--italic-color, rgb(218, 218, 218));
+      cursor: grab;
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      font-weight: 600;
+      outline: rgb(218, 218, 218) none 0px;
+      text-decoration-color: rgb(218, 218, 218);
+      text-decoration-style: solid;
+      transition: all;
+      user-select: text;
+      animation-duration: 0s;
+      animation-timing-function: ease;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+      animation-play-state: running;
+    }
+
     .text-highlight {
       background-color: var(--text-highlight-bg, rgba(255, 255, 0, 0.533));
       color: var(--mu-text-highlight-fg, rgb(218, 218, 218));
@@ -11879,6 +12492,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
       background-color: var(--pill-background, rgba(139, 108, 239, 0.1));
+      color: var(--pill-color, rgb(171, 154, 245));
       display: flex;
       font-family:
         ui-sans-serif,
@@ -11894,7 +12508,10 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      font-size: 14.928px;
       font-weight: var(--pill-weight, 400);
+      line-height: var(--line-height-tight, 14.928px);
+      text-decoration: rgb(218, 218, 218);
       margin-inline-start: 0px;
       border: 1px solid rgba(0, 114, 211, 0.247);
       border-top-left-radius: 14.928px;
@@ -11914,6 +12531,22 @@ html[saved-theme="dark"] {
     ul > li {
       color: rgb(218, 218, 218);
       text-align: start;
+      list-style-type: "​";
+      list-style-position: outside;
+      list-style-image: none;
+      padding-top: var(--list-spacing, 1.2px);
+      padding-bottom: var(--list-spacing, 1.2px);
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      margin: 0px 0px 0px 30.5391px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
     }
 
     ul > li::marker {
@@ -11935,6 +12568,22 @@ html[saved-theme="dark"] {
     ol > li {
       color: rgb(218, 218, 218);
       text-align: start;
+      list-style-type: "​";
+      list-style-position: outside;
+      list-style-image: none;
+      padding-top: var(--list-spacing, 1.2px);
+      padding-bottom: var(--list-spacing, 1.2px);
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      margin: 0px 0px 0px 30.5391px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
     }
 
     ol > li::marker {
@@ -11967,6 +12616,10 @@ html[saved-theme="dark"] {
       color: var(--code-normal, rgb(241, 241, 241));
       font-family: var(--font-monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
       padding: 2.1px 4.2px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     pre > code,
@@ -11983,6 +12636,10 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
       overflow-x: visible;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       white-space-collapse: preserve;
       text-wrap-mode: nowrap;
     }
@@ -12000,6 +12657,10 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
       overflow-x: visible;
       padding: 12px 16px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       white-space-collapse: preserve;
       text-wrap-mode: nowrap;
     }
@@ -12016,6 +12677,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
+      padding-block-end: 1px;
+      padding-block-start: 1px;
+      padding-inline-end: 2px;
+      padding-inline-start: 2px;
       margin: 0px 8px 0px -24px;
       margin-block-end: 0px;
       margin-block-start: 0px;
@@ -12044,6 +12709,7 @@ html[saved-theme="dark"] {
 
     blockquote {
       background-color: var(--blockquote-background-color, rgba(207, 207, 207, 0.125));
+      color: var(--blockquote-color, rgb(218, 218, 218));
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -12058,12 +12724,16 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      font-weight: 400;
       font-style: normal;
+      line-height: 24px;
       padding-bottom: 0px;
       padding-top: 0px;
       padding-inline-start: 0px;
       margin-inline-start: 40px;
       margin-inline-end: 40px;
+      text-decoration: rgb(218, 218, 218);
+      letter-spacing: normal;
     }
 
     .data-footnote-backref {
@@ -12189,18 +12859,6 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card {
-      border: 0px rgb(218, 218, 218);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-    }
-
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
@@ -12221,44 +12879,245 @@ html[saved-theme="dark"] {
     h1 {
       color: var(--h1-color, rgb(0, 163, 255));
       font-family: var(--h1-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
+      font-size: var(--h1-size, 32px);
+      font-weight: var(--font-weight, 800);
+      line-height: var(--h1-line-height, 38.4px);
       text-shadow: none;
+      text-decoration: rgb(218, 218, 218);
+      letter-spacing: var(--h1-letter-spacing, -0.48px);
+      background-color: rgba(0, 0, 0, 0);
+      background-image: none;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      margin: 0px 0px 16px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      border: 0px rgb(0, 163, 255);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
     }
 
     h2 {
       color: var(--h2-color, rgb(0, 163, 255));
       font-family: var(--h2-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
+      font-size: var(--h2-size, 24px);
+      font-weight: var(--font-weight, 800);
+      line-height: var(--h2-line-height, 28.8px);
       text-shadow: none;
+      text-decoration: rgb(218, 218, 218);
+      letter-spacing: var(--h2-letter-spacing, -0.264px);
+      background-color: rgba(0, 0, 0, 0);
+      background-image: none;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      margin-top: var(--heading-spacing, 0px);
+      margin-bottom: 16px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      border: 0px rgb(0, 163, 255);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
     }
 
     h3 {
       color: var(--h3-color, rgb(0, 163, 255));
       font-family: var(--h3-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
+      font-size: var(--h3-size, 18.72px);
+      font-weight: var(--font-weight, 800);
+      line-height: var(--h3-line-height, 24.336px);
       text-shadow: none;
+      text-decoration: rgb(218, 218, 218);
+      letter-spacing: var(--h3-letter-spacing, -0.14976px);
+      background-color: rgba(0, 0, 0, 0);
+      background-image: none;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      margin-top: var(--heading-spacing, 16px);
+      margin-bottom: 16px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      border: 0px rgb(0, 163, 255);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
     }
 
     h4 {
       color: var(--h4-color, rgb(0, 163, 255));
       font-family: var(--h4-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
+      font-size: var(--h4-size, 16px);
+      font-weight: var(--font-weight, 800);
+      line-height: var(--h4-line-height, 22.4px);
       text-shadow: none;
+      text-decoration: rgb(218, 218, 218);
+      letter-spacing: var(--h4-letter-spacing, -0.08px);
+      background-color: rgba(0, 0, 0, 0);
+      background-image: none;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      margin-top: var(--heading-spacing, 16px);
+      margin-bottom: 16px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      border: 0px rgb(0, 163, 255);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
     }
 
     h5 {
       color: var(--h5-color, rgb(0, 163, 255));
       font-family: var(--h5-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
+      font-size: var(--h5-size, 13.28px);
+      font-weight: var(--font-weight, 800);
+      line-height: var(--h5-line-height, 19.92px);
       text-shadow: none;
+      text-decoration: rgb(218, 218, 218);
+      letter-spacing: var(--h5-letter-spacing, -0.02656px);
+      background-color: rgba(0, 0, 0, 0);
+      background-image: none;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      margin-top: var(--heading-spacing, 16px);
+      margin-bottom: 16px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      border: 0px rgb(0, 163, 255);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
     }
 
     h6 {
       color: var(--h6-color, rgb(0, 163, 255));
       font-family: var(--h6-font, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
+      font-size: var(--h6-size, 10.72px);
+      font-weight: var(--font-weight, 800);
+      line-height: var(--h6-line-height, 16.08px);
       text-shadow: none;
+      text-decoration: rgb(218, 218, 218);
+      letter-spacing: normal;
+      background-color: rgba(0, 0, 0, 0);
+      background-image: none;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      margin: 16px 0px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      border: 0px rgb(0, 163, 255);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
     }
 
     h2.page-title,
     h2.page-title a {
       color: var(--mu-text-title, rgb(175, 71, 235));
       font-family: var(--mu-font-mono, "JetBrains Mono", Consolas, "Roboto Mono", Menlo, Monaco, "Courier New", monospace);
+      font-size: var(--mu-inline-title-font-size, 14.08px);
+      font-weight: var(--inline-title-weight, 700);
+      line-height: var(--inline-title-line-height, 16.896px);
       text-shadow: none;
+      text-decoration: rgb(218, 218, 218);
+      letter-spacing: -0.2112px;
+      background-color: rgba(0, 0, 0, 0);
+      background-image: none;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      margin: 0px 0px 7.04px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      border: 0px rgb(175, 71, 235);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
     }
 
     h1::after {
@@ -12423,6 +13282,186 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
     }
 
+    h1::before {
+      border: 0px rgb(163, 95, 191);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      margin: 0px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      width: 17.2344px;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0);
+      background-image: none;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      content: "H1 ";
+      color: var(--h1-color, rgb(163, 95, 191));
+    }
+
+    h2::before {
+      border: 0px rgb(163, 95, 191);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      margin-top: var(--heading-spacing, 0px);
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      width: 19.75px;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0);
+      background-image: none;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      content: "H2 ";
+      color: var(--h2-color, rgb(163, 95, 191));
+    }
+
+    h3::before {
+      border: 0px rgb(163, 95, 191);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      margin-top: var(--heading-spacing, 0px);
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      width: 19.9844px;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0);
+      background-image: none;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      content: "H3 ";
+      color: var(--h3-color, rgb(163, 95, 191));
+    }
+
+    h4::before {
+      border: 0px rgb(163, 95, 191);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      margin-top: var(--heading-spacing, 0px);
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      width: 20.3906px;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0);
+      background-image: none;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      content: "H4 ";
+      color: var(--h4-color, rgb(163, 95, 191));
+    }
+
+    h5::before {
+      border: 0px rgb(163, 95, 191);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      margin-top: var(--heading-spacing, 0px);
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      width: 19.7031px;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0);
+      background-image: none;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      content: "H5 ";
+      color: var(--h5-color, rgb(163, 95, 191));
+    }
+
+    h6::before {
+      border: 0px rgb(163, 95, 191);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      margin: 0px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      width: 20.0469px;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0);
+      background-image: none;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      content: "H6 ";
+      color: var(--h6-color, rgb(163, 95, 191));
+    }
+
+    h2.page-title,
+    h2.page-title a::before {
+      border: 0px rgb(218, 218, 218);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      margin: 0px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      width: auto;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0);
+      background-image: none;
+      content: normal;
+      color: rgb(218, 218, 218);
+    }
+
     li.depth-0 {
       font-weight: var(--nav-item-weight, 400);
     }
@@ -12487,6 +13526,10 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
       mix-blend-mode: normal;
       padding: 12px 12px 12px 24px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .callout .callout-title {
@@ -12503,6 +13546,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12519,6 +13566,10 @@ html[saved-theme="dark"] {
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .callout[data-callout="note"] {
@@ -12553,6 +13604,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12569,6 +13624,10 @@ html[saved-theme="dark"] {
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .callout[data-callout="abstract"] {
@@ -12603,6 +13662,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12619,6 +13682,10 @@ html[saved-theme="dark"] {
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .callout[data-callout="info"] {
@@ -12653,6 +13720,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12669,6 +13740,10 @@ html[saved-theme="dark"] {
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .callout[data-callout="todo"] {
@@ -12703,6 +13778,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12719,6 +13798,10 @@ html[saved-theme="dark"] {
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .callout[data-callout="tip"] {
@@ -12753,6 +13836,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12769,6 +13856,10 @@ html[saved-theme="dark"] {
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .callout[data-callout="success"] {
@@ -12803,6 +13894,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12819,6 +13914,10 @@ html[saved-theme="dark"] {
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .callout[data-callout="question"] {
@@ -12853,6 +13952,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12869,6 +13972,10 @@ html[saved-theme="dark"] {
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .callout[data-callout="warning"] {
@@ -12903,6 +14010,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12919,6 +14030,10 @@ html[saved-theme="dark"] {
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .callout[data-callout="danger"] {
@@ -12953,6 +14068,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12969,6 +14088,10 @@ html[saved-theme="dark"] {
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .callout[data-callout="failure"] {
@@ -13003,6 +14126,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13019,6 +14146,10 @@ html[saved-theme="dark"] {
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .callout[data-callout="bug"] {
@@ -13053,6 +14184,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13069,6 +14204,10 @@ html[saved-theme="dark"] {
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .callout[data-callout="example"] {
@@ -13103,6 +14242,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13119,6 +14262,10 @@ html[saved-theme="dark"] {
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .callout[data-callout="quote"] {
@@ -13153,6 +14300,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13169,6 +14320,10 @@ html[saved-theme="dark"] {
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     table {
@@ -13190,7 +14345,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       table-layout: auto;
-      width: 662px;
+      text-align: start;
       border: 2px solid rgb(0, 72, 130);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -13208,6 +14363,11 @@ html[saved-theme="dark"] {
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     thead {
@@ -13233,6 +14393,9 @@ html[saved-theme="dark"] {
       font-weight: var(--table-header-weight, 700);
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment, top);
+      box-shadow: none;
+      text-decoration: rgb(218, 218, 218);
+      letter-spacing: normal;
       border-left: var(--table-column-first-border-width, 0px) solid rgb(225, 225, 225);
       border-right: 0px solid rgb(0, 72, 130);
       border-top: var(--table-header-border-width, 0px) solid rgb(225, 225, 225);
@@ -13246,6 +14409,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 4px 8px;
+      padding-block-end: 1px;
+      padding-block-start: 1px;
+      padding-inline-end: 1px;
+      padding-inline-start: 1px;
     }
 
     td {
@@ -13254,6 +14421,8 @@ html[saved-theme="dark"] {
       font-weight: 400;
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment, top);
+      box-shadow: none;
+      text-decoration: rgb(218, 218, 218);
       border-left: var(--table-column-first-border-width, 0px) solid rgb(218, 218, 218);
       border-right: 0px solid rgb(0, 72, 130);
       border-top: 0px solid rgb(218, 218, 218);
@@ -13267,6 +14436,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 4px 8px;
+      padding-block-end: 1px;
+      padding-block-start: 1px;
+      padding-inline-end: 1px;
+      padding-inline-start: 1px;
     }
 
     tr {
@@ -13330,6 +14503,10 @@ html[saved-theme="dark"] {
       margin-inline-end: 40px;
       margin-inline-start: 40px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     figcaption {
@@ -13357,6 +14534,10 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     video {
@@ -13393,10 +14574,16 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .transclude {
       background-color: var(--embed-background, rgba(0, 0, 0, 0));
+      color: rgb(218, 218, 218);
+      border-radius: 0px;
       border-color: rgb(218, 218, 218);
       border-left: 2px solid rgb(139, 108, 239);
       border-right-width: 0px;
@@ -13412,6 +14599,8 @@ html[saved-theme="dark"] {
 
     .transclude-inner {
       background-color: var(--embed-background, rgba(0, 0, 0, 0));
+      color: rgb(218, 218, 218);
+      border-radius: 0px;
       border-left: solid;
       border-width: 0px;
       border-color: rgb(218, 218, 218);
@@ -13425,6 +14614,8 @@ html[saved-theme="dark"] {
 
     .file-embed {
       background-color: var(--background-primary-alt, rgb(33, 33, 33));
+      color: var(--text-muted, rgb(179, 179, 179));
+      border-radius: 8px;
       border-color: rgb(179, 179, 179);
       border-width: 0px;
       border-top-left-radius: 8px;
@@ -13462,6 +14653,34 @@ html[saved-theme="dark"] {
       border-bottom-right-radius: 0px;
       margin: 0px;
       padding: 0px;
+    }
+
+    .metadata-container .metadata-property {
+      background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+      color: rgb(179, 179, 179);
+      font-family: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, Monaco, "Courier New", monospace;
+      border-color: rgb(179, 179, 179);
+      border-width: 0px;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+    }
+
+    .metadata-property-key {
+      color: rgb(179, 179, 179);
+      font-family: var(--metadata-label-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .metadata-property-value {
+      color: rgb(179, 179, 179);
+      font-family: var(--metadata-input-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      font-size: 16px;
     }
 
     progress {
@@ -13520,6 +14739,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 4px 8px;
+      padding-block-end: 1px;
+      padding-block-start: 1px;
+      padding-inline-end: 2px;
+      padding-inline-start: 2px;
     }
 
     details {
@@ -13539,6 +14762,10 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     summary {
@@ -13547,6 +14774,10 @@ html[saved-theme="dark"] {
       cursor: auto;
       font-weight: 400;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     details[open] {
@@ -13566,6 +14797,10 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     kbd {
@@ -13584,6 +14819,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 4px;
       border-end-end-radius: 4px;
       padding: 1.4px 3.5px;
+      padding-block-end: 1.3125px;
+      padding-block-start: 1.3125px;
+      padding-inline-end: 3.28125px;
+      padding-inline-start: 3.28125px;
     }
 
     dl {
@@ -13592,6 +14831,11 @@ html[saved-theme="dark"] {
       margin-block-start: 15px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     dt {
@@ -13602,16 +14846,73 @@ html[saved-theme="dark"] {
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
+      font-size: 16px;
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      border: 0px rgb(218, 218, 218);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
     }
 
     dd {
       color: rgb(218, 218, 218);
+      font-size: 16px;
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
       margin: 0px 0px 0px 40px;
       margin-block-end: 0px;
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 40px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      border: 0px rgb(218, 218, 218);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
     }
 
     sub {
@@ -13975,6 +15276,8 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      font-size: var(--status-bar-font-size, 12px);
+      text-align: start;
       border-color: rgba(0, 127, 255, 0.063);
       border-style: solid;
       border-width: 1px 0px 0px 1px;
@@ -13982,11 +15285,17 @@ html[saved-theme="dark"] {
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 4px;
+      padding-right: var(--size-4-2, 8px);
       opacity: var(--ui-status-bar, 1);
     }
 
     footer ul li a {
       color: rgb(241, 241, 241);
+      font-size: 12px;
+      font-weight: 400;
     }
 
     .recent-notes > h3 {
@@ -14146,6 +15455,19 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20.8px;
+      background-color: rgba(0, 0, 0, 0);
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      padding: 0px;
+      margin: 0px;
+      border-color: rgb(218, 218, 218);
+      border-width: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
     }
 
     .katex-display {
@@ -20555,323 +21877,6 @@ html[saved-theme="dark"] {
       border: 0px solid rgba(0, 180, 88, 0.25);
       content: normal;
       font-size: var(--h1-size, 32px);
-    }
-
-    .markdown-rendered > h1 {
-      --background-modifier-active-hover: #007fff28;
-      --background-modifier-border: #007fff38;
-      --background-modifier-border-focus: #007fff;
-      --background-modifier-border-hover: #007fff48;
-      --background-modifier-hover: #007fff28;
-      --background-primary: #002248;
-      --background-primary-alt: #212121;
-      --background-secondary: #001122;
-      --background-secondary-alt: #383838;
-      --blockquote-border-color: #007fff;
-      --blur-background: color-mix(in srgb, #007fff18 65%, transparent) linear-gradient(#007fff18, color-mix(in srgb, #007fff18 65%, transparent));
-      --bold-weight: 700;
-      --callout-blend-mode: normal;
-      --canvas-background: #002248;
-      --checkbox-border-color: #0072d3;
-      --checkbox-border-color-hover: #00bfff;
-      --checkbox-color: #00bfff;
-      --checkbox-color-hover: #00cfff;
-      --checkbox-marker-color: #002248;
-      --checklist-done-color: #00cf48;
-      --collapse-icon-color: #0072d3;
-      --collapse-icon-color-collapsed: #0072d3;
-      --color-accent: hsl(254, 80%, 68%);
-      --color-accent-1: hsl(251, 81.6%, 78.2%);
-      --color-accent-2: hsl(249, 84%, 87.72%);
-      --color-accent-hsl: 254, 80%, 68%;
-      --divider-color: #007fff10;
-      --divider-color-hover: #007fff;
-      --dropdown-background: #007fff18;
-      --dropdown-background-hover: #007fff38;
-      --flair-background: #007fff18;
-      --font-weight: var(--h1-weight, 800);
-      --graph-line: #007fff;
-      --graph-node: #d372ff;
-      --graph-node-attachment: #007fff;
-      --graph-node-focused: #00cfff;
-      --graph-node-tag: #20f120;
-      --graph-node-unresolved: #a3a3a3;
-      --graph-text: #f1f1f1;
-      --hr-color: #0072d3;
-      --interactive-accent: hsl(254, 80%, 68%);
-      --interactive-accent-hover: hsl(251, 81.6%, 78.2%);
-      --interactive-accent-hsl: 254, 80%, 68%;
-      --interactive-hover: #007fff38;
-      --interactive-normal: #007fff18;
-      --link-color: #d372ff;
-      --link-color-hover: #db8fff;
-      --link-external-color: #00a9dd;
-      --link-external-color-hover: #00c3ff;
-      --link-unresolved-color: #d372ff;
-      --link-unresolved-decoration-color: hsla(254, 80%, 68%, 0.3);
-      --list-indent: 2em;
-      --menu-background: #001122;
-      --menu-border-color: #007fff48;
-      --pdf-background: #002248;
-      --pdf-page-background: #002248;
-      --pdf-shadow: 0 0 0 1px #007fff38;
-      --pdf-sidebar-background: #002248;
-      --pdf-thumbnail-shadow: 0 0 0 1px #007fff38;
-      --raised-background: color-mix(in srgb, #007fff18 65%, transparent) linear-gradient(#007fff18, color-mix(in srgb, #007fff18 65%, transparent));
-      --search-icon-color: #007fff;
-      --search-result-background: #002248;
-      --setting-group-heading-color: #00a3ff;
-      --setting-group-heading-size: 16px;
-      --setting-items-background: #001122;
-      --setting-items-border-color: #007fff38;
-      --shiki-code-background: #001122;
-      --shiki-gutter-border-color: #007fff38;
-      --suggestion-background: #002248;
-      --tab-background-active: #002248;
-      --tab-divider-color: #003364;
-      --tab-font-size: 14px;
-      --tab-outline-color: #007fff10;
-      --tab-stacked-font-size: 14px;
-      --tab-switcher-background: #001122;
-      --tab-switcher-menubar-background: linear-gradient(to top, #001122, transparent);
-      --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(254, 80%, 68%);
-      --tab-text-color: #b3b3b3;
-      --tab-text-color-focused-active: #dadada;
-      --tab-text-color-focused-highlighted: #dadada;
-      --table-add-button-border-color: #007fff38;
-      --table-column-first-border-width: 0;
-      --table-column-last-border-width: 0;
-      --table-drag-handle-background-active: hsl(254, 80%, 68%);
-      --table-header-background: #001122;
-      --table-header-border-width: 0;
-      --table-header-color: #f1f1f1;
-      --table-header-weight: 700;
-      --table-row-alt-background: #002248;
-      --table-row-alt-background-hover: #001122;
-      --table-row-background-hover: #0088ff33;
-      --table-row-last-border-width: 0;
-      --table-selection: hsla(254, 80%, 68%, 0.1);
-      --table-selection-blend-mode: normal;
-      --table-selection-border-color: hsl(254, 80%, 68%);
-      --tag-background: hsla(254, 80%, 68%, 0.1);
-      --tag-background-hover: hsla(254, 80%, 68%, 0.2);
-      --tag-border-color: #0072d33f;
-      --tag-border-color-hover: #00bfff;
-      --tag-color: hsl(251, 81.6%, 78.2%);
-      --tag-color-hover: hsl(249, 84%, 87.72%);
-      --tag-size: 0.933em;
-      --text-accent: hsl(251, 81.6%, 78.2%);
-      --text-accent-hover: hsl(249, 84%, 87.72%);
-      --text-highlight-bg: #ffff0088;
-      --text-selection: hsla(254, 80%, 68%, 0.33);
-      color: var(--h1-color, rgb(163, 95, 191));
-      font-family: var(--h1-font, Inter, Helvetica, Arial, sans-serif);
-      font-size: var(--h1-size, 12.8px);
-      font-weight: var(--font-weight, 800);
-      letter-spacing: var(--h1-letter-spacing, 1px);
-      line-height: var(--h1-line-height, 15.36px);
-      --blockquote-background-color: #cfcfcf20;
-      --blockquote-color: #dadada;
-      --divider-width: 1px;
-      --divider-width-hover: 3px;
-      --h1-color: #00a3ff;
-      --h1-font: system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      --h2-color: #00a3ff;
-      --h2-font: system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      --h3-color: #00a3ff;
-      --h3-font: system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      --h4-color: #00a3ff;
-      --h4-font: system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      --h5-color: #00a3ff;
-      --h5-font: system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      --h6-color: #00a3ff;
-      --h6-font: system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      --hidden-text-underline-foreground-color: #dadada;
-      --mu-amulet-sat: 50%;
-      --mu-border-width: 1px;
-      --mu-cards-border: #002248;
-      --mu-default-mode-border-width: 1px;
-      --mu-fc-fg-color: #dadada;
-      --mu-fc-height: 400px;
-      --mu-fc-width: 280px;
-      --mu-file-header-border-width: 1px;
-      --mu-folder-icon-closed-selected: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
-      --mu-folder-icon-opened-selected: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
-      --mu-global-font-size: 16px;
-      --mu-hover-underline-offset: 2px;
-      --mu-hover-underline-thickness: 2px;
-      --mu-inline-title-font-size: 0.88em;
-      --mu-laser-area: 82px;
-      --mu-laser-top: 50%;
-      --mu-mobile-side-margins: 16px;
-      --mu-neon-mode-glow-intensity: 0.5em;
-      --mu-new-window-border-width: 1px;
-      --mu-rainbow-hue-1: 0;
-      --mu-rainbow-hue-10: 270;
-      --mu-rainbow-hue-2: 30;
-      --mu-rainbow-hue-3: 60;
-      --mu-rainbow-hue-4: 90;
-      --mu-rainbow-hue-5: 120;
-      --mu-rainbow-hue-6: 150;
-      --mu-rainbow-hue-7: 180;
-      --mu-rainbow-hue-8: 210;
-      --mu-rainbow-hue-9: 240;
-      --mu-reading-glow-border-size: 3px;
-      --mu-reading-glow-radius: 4px;
-      --mu-reading-indicator-width: -0.3rem;
-      --mu-scrollbar-thumb-size: 2px;
-      --mu-scrollbar-thumb-size-adjusted-value: 2;
-      --mu-scrollbar-width: 12px;
-      --mu-sidebar-bottom-vault-profile-bg-color: #001122;
-      --mu-stacked-mode-border-width: 1px;
-      --mu-suggestion-search-panel-bg-color: #001122;
-      --mu-table-color-1: #001122;
-      --mu-table-color-2: #002248;
-      --mu-table-inner-border-width: 0px;
-      --mu-table-outer-border-width: 2px;
-      --mu-table-th-foreground-edit: #f1f1f1;
-      --mu-tags-hashtag-padding: 2px;
-      --mu-text-highlight-fg: #dadada;
-      --mu-titlebar-button-fg: #5382d3;
-      --mu-transparency-blur-level: 8px;
-      --mu-vault-title: #a273d8;
-      --table-background: #001122;
-      --tag-radius: 1em;
-      --background-modifier-error: #fb464c;
-      --background-modifier-error-hover: #fb464c;
-      --background-modifier-error-rgb: 251, 70, 76;
-      --background-modifier-form-field: #2a2a2a;
-      --background-modifier-form-field-hover: #2a2a2a;
-      --background-modifier-success: #44cf6e;
-      --background-modifier-success-rgb: 68, 207, 110;
-      --blur-l: blur(16px) saturate(1.5) brightness(1.15);
-      --blur-m: blur(10px) saturate(1.5) brightness(1.15);
-      --blur-s: blur(6px) saturate(1.5) brightness(1.15);
-      --button-corner-shape: round;
-      --button-radius: 5px;
-      --callout-bug: 251, 70, 76;
-      --callout-default: 2, 122, 255;
-      --callout-error: 251, 70, 76;
-      --callout-example: 168, 130, 255;
-      --callout-fail: 251, 70, 76;
-      --callout-important: 83, 223, 221;
-      --callout-info: 2, 122, 255;
-      --callout-padding: 12px 12px 12px 24px;
-      --callout-question: 233, 151, 63;
-      --callout-radius: 4px;
-      --callout-success: 68, 207, 110;
-      --callout-summary: 83, 223, 221;
-      --callout-tip: 83, 223, 221;
-      --callout-title-weight: 600;
-      --callout-todo: 2, 122, 255;
-      --callout-warning: 233, 151, 63;
-      --canvas-controls-icon-size: 16px;
-      --canvas-controls-icon-stroke: 2px;
-      --canvas-controls-radius: 4px;
-      --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
-      --checkbox-radius: 4px;
-      --checkbox-size: 16px;
-      --clickable-icon-radius: 4px;
-      --divider-vertical-height: 100%;
-      --dropdown-background-position: right 0.5em top 50%, 0 0;
-      --dropdown-background-size: 1em auto, 100%;
-      --dropdown-padding: 0 1.9em 0 0.8em;
-      --flair-color: #dadada;
-      --font-interface: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-      --font-mermaid: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-      --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-      --font-print: "??", "??", "??", "Arial";
-      --font-text: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-      --h5-line-height: 1.5;
-      --h6-line-height: 1.5;
-      --heading-formatting: #666666;
-      --heading-spacing: 2.5rem;
-      --link-weight: 400;
-      --menu-border-width: 1px;
-      --menu-corner-shape: round;
-      --menu-padding: 6px;
-      --menu-radius: 8px;
-      --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
-      --popover-font-size: 16px;
-      --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
-      --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-      --scrollbar-bg: rgba(255, 255, 255, 0.05);
-      --scrollbar-radius: 12px;
-      --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
-      --search-clear-button-color: #b3b3b3;
-      --setting-group-heading-weight: 600;
-      --setting-items-padding: 20px;
-      --setting-items-radius: 12px;
-      --shiki-active-tab-border-color: #b3b3b3;
-      --shiki-code-block-border-radius: 4px;
-      --shiki-code-block-spacing: 1rem;
-      --shiki-code-comment: #666666;
-      --shiki-code-function: #44cf6e;
-      --shiki-code-important: #e9973f;
-      --shiki-code-keyword: #fa99cd;
-      --shiki-code-normal: #b3b3b3;
-      --shiki-code-property: #53dfdd;
-      --shiki-code-punctuation: #b3b3b3;
-      --shiki-code-string: #e0de71;
-      --shiki-code-value: #a882ff;
-      --shiki-gutter-border-width: 1px;
-      --shiki-gutter-text-color: #666666;
-      --shiki-gutter-text-color-highlight: #b3b3b3;
-      --shiki-highlight-green: rgba(68, 207, 110, 0.5);
-      --shiki-highlight-green-background: rgba(68, 207, 110, 0.1);
-      --shiki-highlight-neutral: #b3b3b3;
-      --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
-      --shiki-highlight-red: rgba(251, 70, 76, 0.5);
-      --shiki-highlight-red-background: rgba(251, 70, 76, 0.1);
-      --shiki-terminal-dots-color: #666666;
-      --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
-      --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
-      --sync-avatar-color-1: #fb464c;
-      --sync-avatar-color-2: #e9973f;
-      --sync-avatar-color-3: #e0de71;
-      --sync-avatar-color-4: #44cf6e;
-      --sync-avatar-color-5: #53dfdd;
-      --sync-avatar-color-6: #027aff;
-      --sync-avatar-color-7: #a882ff;
-      --sync-avatar-color-8: #fa99cd;
-      --tab-radius: 4px;
-      --tab-stacked-header-width: 40px;
-      --tab-switcher-preview-radius: 16px;
-      --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-      --tab-text-color-active: #b3b3b3;
-      --tab-text-color-focused: #b3b3b3;
-      --tab-text-color-focused-active-current: #dadada;
-      --table-add-button-border-width: 1px;
-      --table-column-alt-background: transparent;
-      --table-drag-handle-color: #666666;
-      --table-drag-handle-color-active: white;
-      --table-header-size: 16px;
-      --table-line-height: 1.3;
-      --text-error: #fb464c;
-      --text-faint: #666666;
-      --text-muted: #b3b3b3;
-      --text-normal: #dadada;
-      --text-success: #44cf6e;
-      --text-warning: #e9973f;
-      --touch-radius-l: 52px;
-      --touch-radius-m: 44px;
-      --touch-radius-s: 40px;
-      --touch-radius-xl: 60px;
-      --touch-radius-xs: 30px;
-      --touch-radius-xxs: 24px;
-      --traffic-lights-offset-x: 40px;
-      --traffic-lights-offset-y: 40px;
-      background-color: rgba(0, 0, 0, 0);
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-color: rgb(163, 95, 191);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-width: 0px;
-      content: "H1 ";
-      margin: 0px;
-      padding: 0px;
     }
 
     li.task-list-item[data-task="x"] {

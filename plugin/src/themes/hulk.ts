@@ -20,6 +20,19 @@ export const theme: ThemeData = {
   --bases-table-header-background: var(--background-primary, #1A1B24);
   --bases-table-summary-background: var(--background-primary, #1A1B24);
   --blockquote-border-color: var(--interactive-accent, #00ba00);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #1A1B24);
   --canvas-card-label-color: var(--text-faint, rgba(187, 192, 197, 0.4));
   --caret-color: var(--text-normal, #bbc0c5);
@@ -151,6 +164,8 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, #bbc0c5);
   --vault-profile-color-hover: var(--vault-profile-color, #bbc0c5);
   --quartz-icon-color: currentColor;
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -203,6 +218,13 @@ html body .markdown-rendered p > i, html i {
   font-family: inter;
   outline: rgb(187, 192, 197) none 0px;
   text-decoration-color: rgb(187, 192, 197);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(172, 145, 247));
+  font-family: inter;
+  outline: rgb(172, 145, 247) none 0px;
+  text-decoration-color: rgb(172, 145, 247);
 }
 
 html body .markdown-rendered p > strong, html strong {
@@ -261,7 +283,13 @@ html body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(187, 192, 197);
+  border-left-color: rgb(187, 192, 197);
+  border-right-color: rgb(187, 192, 197);
+  border-top-color: rgb(187, 192, 197);
   color: rgb(187, 192, 197);
+  font-family: inter;
+  font-size: 14px;
 }
 
 html body dl {
@@ -270,15 +298,27 @@ html body dl {
 }
 
 html body dt {
+  border-bottom-color: rgb(187, 192, 197);
+  border-left-color: rgb(187, 192, 197);
+  border-right-color: rgb(187, 192, 197);
+  border-top-color: rgb(187, 192, 197);
   color: rgb(187, 192, 197);
+  font-family: inter;
+  font-size: 14px;
 }
 
 html body ol > li {
   color: rgb(187, 192, 197);
+  margin-left: 26.4961px;
+  padding-bottom: var(--list-spacing, 1.05px);
+  padding-top: var(--list-spacing, 1.05px);
 }
 
 html body ul > li {
   color: rgb(187, 192, 197);
+  margin-left: 26.4961px;
+  padding-bottom: var(--list-spacing, 1.05px);
+  padding-top: var(--list-spacing, 1.05px);
 }
 
 html body ul.overflow {
@@ -293,7 +333,9 @@ html body ul.overflow {
 
 html body blockquote {
   background-color: var(--blockquote-background-color, rgb(26, 27, 36));
+  color: var(--blockquote-color, rgb(187, 192, 197));
   font-family: inter;
+  line-height: 21px;
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(187, 192, 197);
@@ -305,7 +347,6 @@ html body blockquote {
 html body table {
   color: rgb(187, 192, 197);
   font-family: inter;
-  width: 179.109px;
 }
 
 html body td {
@@ -407,6 +448,7 @@ html body .transclude {
   border-left-color: rgb(0, 186, 0);
   border-right-color: rgb(187, 192, 197);
   border-top-color: rgb(187, 192, 197);
+  color: rgb(187, 192, 197);
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -416,6 +458,7 @@ html body .transclude-inner {
   border-left-color: rgb(187, 192, 197);
   border-right-color: rgb(187, 192, 197);
   border-top-color: rgb(187, 192, 197);
+  color: rgb(187, 192, 197);
   margin-left: 10px;
   margin-right: 10px;
   padding-left: 10px;
@@ -1271,6 +1314,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color-hover: var(--tag-color-hover, rgb(0, 186, 0));
   --pill-color-remove: var(--tag-color, rgb(0, 186, 0));
   --pill-color-remove-hover: var(--tag-color-hover, rgb(0, 186, 0));
+  color: var(--pill-color, rgb(0, 186, 0));
 }
 
 html body a.internal-link.tag-link::before {
@@ -1278,8 +1322,15 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(187, 192, 197);
+  border-left-color: rgb(187, 192, 197);
+  border-right-color: rgb(187, 192, 197);
+  border-top-color: rgb(187, 192, 197);
   color: var(--text-title-h1, rgb(187, 192, 197));
   font-family: var(--h1-font, inter);
+  font-size: var(--h1-size, 14px);
+  letter-spacing: var(--h1-letter-spacing, -0.21px);
+  line-height: var(--h1-line-height, 16.8px);
 }
 
 html body h1.article-title {
@@ -1288,33 +1339,80 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(187, 192, 197);
+  border-left-color: rgb(187, 192, 197);
+  border-right-color: rgb(187, 192, 197);
+  border-top-color: rgb(187, 192, 197);
   color: var(--text-title-h2, rgb(187, 192, 197));
   font-family: var(--h2-font, inter);
+  font-size: var(--h2-size, 14px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h2-letter-spacing, -0.154px);
+  line-height: var(--h2-line-height, 16.8px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(187, 192, 197);
+  border-left-color: rgb(187, 192, 197);
+  border-right-color: rgb(187, 192, 197);
+  border-top-color: rgb(187, 192, 197);
   color: var(--inline-title-color, rgb(187, 192, 197));
   font-family: var(--inline-title-font, inter);
+  font-size: var(--inline-title-size, 14px);
+  letter-spacing: -0.21px;
+  line-height: var(--inline-title-line-height, 16.8px);
+  margin-bottom: 7px;
 }
 
 html body h3 {
+  border-bottom-color: rgb(187, 192, 197);
+  border-left-color: rgb(187, 192, 197);
+  border-right-color: rgb(187, 192, 197);
+  border-top-color: rgb(187, 192, 197);
   color: var(--text-title-h3, rgb(187, 192, 197));
   font-family: var(--h3-font, inter);
+  font-size: var(--h3-size, 14px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h3-letter-spacing, -0.112px);
+  line-height: var(--h3-line-height, 18.2px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(187, 192, 197);
+  border-left-color: rgb(187, 192, 197);
+  border-right-color: rgb(187, 192, 197);
+  border-top-color: rgb(187, 192, 197);
   color: var(--text-title-h4, rgb(187, 192, 197));
   font-family: var(--font-family-preview, inter);
+  font-size: var(--h4-size, 14px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h4-letter-spacing, -0.07px);
+  line-height: var(--h4-line-height, 19.6px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(187, 192, 197);
+  border-left-color: rgb(187, 192, 197);
+  border-right-color: rgb(187, 192, 197);
+  border-top-color: rgb(187, 192, 197);
   color: var(--text-title-h5, rgb(187, 192, 197));
   font-family: var(--font-family-preview, inter);
+  font-size: var(--h5-size, 14px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h5-letter-spacing, -0.028px);
+  line-height: var(--h5-line-height, 21px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(172, 145, 247);
+  border-left-color: rgb(172, 145, 247);
+  border-right-color: rgb(172, 145, 247);
+  border-top-color: rgb(172, 145, 247);
   color: var(--text-title-h6, rgb(172, 145, 247));
   font-family: var(--font-family-preview, inter);
+  font-size: var(--h6-size, 14px);
+  font-weight: var(--font-weight, 700);
+  line-height: var(--h6-line-height, 21px);
 }
 
 html body hr {
@@ -1333,6 +1431,18 @@ html body hr {
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: inter;
   font-weight: var(--nav-item-weight, 700);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(187, 192, 197);
@@ -1419,8 +1529,20 @@ html body .canvas-sidebar {
   font-family: inter;
 }
 
+html body .metadata-container .metadata-property {
+  font-family: inter;
+}
+
 html body .metadata-properties {
   font-family: inter;
+}
+
+html body .metadata-property-key {
+  font-size: 14px;
+}
+
+html body .metadata-property-value {
+  font-size: 14px;
 }
 
 html body .note-properties {
@@ -1471,7 +1593,13 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(187, 192, 197);
+  border-left-color: rgb(187, 192, 197);
+  border-right-color: rgb(187, 192, 197);
+  border-top-color: rgb(187, 192, 197);
   color: var(--text-normal, rgb(187, 192, 197));
+  font-size: 14px;
+  line-height: 18.2px;
 }
 
 html body abbr {

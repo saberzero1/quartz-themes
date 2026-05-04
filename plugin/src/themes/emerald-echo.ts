@@ -23,6 +23,19 @@ export const theme: ThemeData = {
   --blockquote-background-color: #1121019c;
   --blockquote-border-color: var(--interactive-accent, #529d5273);
   --bold-color: #41b4b4;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #000000);
   --checkbox-color: var(--interactive-accent, #529d5273);
   --checkbox-color-hover: var(--interactive-accent-hover, #37ff148c);
@@ -93,7 +106,8 @@ export const theme: ThemeData = {
   --text-accent: var(--color-accent-1, #63be63);
   --titlebar-background: var(--background-secondary, #000000);
   --titlebar-background-focused: var(--background-secondary-alt, #000000);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
 }
 
 html[saved-theme="dark"] body {
@@ -131,6 +145,12 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, rgb(216, 228, 58));
+  outline: rgb(216, 228, 58) none 0px;
+  text-decoration-color: rgb(216, 228, 58);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--italic-color, rgb(216, 228, 58));
   outline: rgb(216, 228, 58) none 0px;
   text-decoration-color: rgb(216, 228, 58);
@@ -568,6 +588,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   --pill-color-hover: var(--tag-color-hover, #63be63);
   --pill-color-remove: var(--tag-color, #63be63);
   --pill-color-remove-hover: var(--tag-color-hover, #63be63);
+  color: var(--pill-color, rgb(99, 190, 99));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -575,7 +596,14 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(18, 138, 18);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(44, 206, 16);
+  border-right-color: rgb(44, 206, 16);
+  border-top-color: rgb(44, 206, 16);
   color: var(--h1-color, rgb(44, 206, 16));
+  padding-bottom: 2px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -583,26 +611,56 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(190, 112, 112);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-left-color: rgb(190, 112, 112);
+  border-right-color: rgb(190, 112, 112);
+  border-top-color: rgb(190, 112, 112);
   color: var(--h2-color, rgb(190, 112, 112));
+  padding-bottom: 2px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(44, 206, 16);
+  border-left-color: rgb(44, 206, 16);
+  border-right-color: rgb(44, 206, 16);
+  border-top-color: rgb(44, 206, 16);
   color: var(--inline-title-color, rgb(44, 206, 16));
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(61, 118, 118);
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  border-left-color: rgb(61, 118, 118);
+  border-right-color: rgb(61, 118, 118);
+  border-top-color: rgb(61, 118, 118);
   color: var(--h3-color, rgb(61, 118, 118));
+  padding-bottom: 2px;
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(169, 186, 157);
+  border-left-color: rgb(169, 186, 157);
+  border-right-color: rgb(169, 186, 157);
+  border-top-color: rgb(169, 186, 157);
   color: var(--h4-color, rgb(169, 186, 157));
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(157, 193, 131);
+  border-left-color: rgb(157, 193, 131);
+  border-right-color: rgb(157, 193, 131);
+  border-top-color: rgb(157, 193, 131);
   color: var(--h5-color, rgb(157, 193, 131));
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(72, 110, 2);
+  border-left-color: rgb(72, 110, 2);
+  border-right-color: rgb(72, 110, 2);
+  border-top-color: rgb(72, 110, 2);
   color: var(--h6-color, rgb(72, 110, 2));
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
@@ -610,6 +668,22 @@ html[saved-theme="dark"] body h6 {
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(82, 157, 82);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(82, 157, 82);
@@ -676,6 +750,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --blockquote-background-color: #71974b42;
   --blockquote-border-color: var(--interactive-accent, #529D52);
   --bold-color: #41b4b4;
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --checkbox-color: var(--interactive-accent, #529D52);
   --checkbox-color-hover: var(--interactive-accent-hover, #2e7e2e);
   --code-background: var(--background-primary-alt, #070e00);
@@ -723,7 +810,8 @@ html[saved-theme="dark"] body ul.tags > li {
   --tag-color-hover: var(--text-accent, #529D52);
   --tertiary: var(--interactive-accent-hover, var(--color-accent-2, #2e7e2e));
   --text-accent: var(--color-accent, #529D52);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
 }
 
 html[saved-theme="light"] body {
@@ -743,6 +831,12 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--italic-color, rgb(124, 133, 8));
+  outline: rgb(124, 133, 8) none 0px;
+  text-decoration-color: rgb(124, 133, 8);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--italic-color, rgb(124, 133, 8));
   outline: rgb(124, 133, 8) none 0px;
   text-decoration-color: rgb(124, 133, 8);
@@ -1166,6 +1260,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   --pill-color-hover: var(--tag-color-hover, #529D52);
   --pill-color-remove: var(--tag-color, #529D52);
   --pill-color-remove-hover: var(--tag-color-hover, #529D52);
+  color: var(--pill-color, rgb(82, 157, 82));
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -1173,7 +1268,14 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(18, 138, 18);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(18, 138, 18);
+  border-right-color: rgb(18, 138, 18);
+  border-top-color: rgb(18, 138, 18);
   color: var(--h1-color, rgb(18, 138, 18));
+  padding-bottom: 2px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -1181,26 +1283,56 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(190, 112, 112);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-left-color: rgb(190, 112, 112);
+  border-right-color: rgb(190, 112, 112);
+  border-top-color: rgb(190, 112, 112);
   color: var(--h2-color, rgb(190, 112, 112));
+  padding-bottom: 2px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(82, 157, 82);
+  border-left-color: rgb(82, 157, 82);
+  border-right-color: rgb(82, 157, 82);
+  border-top-color: rgb(82, 157, 82);
   color: var(--inline-title-color, rgb(82, 157, 82));
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(61, 118, 118);
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  border-left-color: rgb(61, 118, 118);
+  border-right-color: rgb(61, 118, 118);
+  border-top-color: rgb(61, 118, 118);
   color: var(--h3-color, rgb(61, 118, 118));
+  padding-bottom: 2px;
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(169, 186, 157);
+  border-left-color: rgb(169, 186, 157);
+  border-right-color: rgb(169, 186, 157);
+  border-top-color: rgb(169, 186, 157);
   color: var(--h4-color, rgb(169, 186, 157));
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(157, 193, 131);
+  border-left-color: rgb(157, 193, 131);
+  border-right-color: rgb(157, 193, 131);
+  border-top-color: rgb(157, 193, 131);
   color: var(--h5-color, rgb(157, 193, 131));
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(72, 110, 2);
+  border-left-color: rgb(72, 110, 2);
+  border-right-color: rgb(72, 110, 2);
+  border-top-color: rgb(72, 110, 2);
   color: var(--h6-color, rgb(72, 110, 2));
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
@@ -1208,6 +1340,22 @@ html[saved-theme="light"] body h6 {
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(82, 157, 82);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(39, 75, 39);

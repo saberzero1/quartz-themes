@@ -64,6 +64,7 @@ export const theme: ThemeData = {
   --callout-important: var(--color-cyan-rgb, 0, 158, 155);
   --callout-info: var(--color-blue-rgb, 2, 95, 200);
   --callout-question: var(--color-orange-rgb, 193, 109, 24);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-success: var(--color-green-rgb, 1, 144, 59);
   --callout-summary: var(--color-cyan-rgb, 0, 158, 155);
   --callout-tip: var(--color-cyan-rgb, 0, 158, 155);
@@ -318,7 +319,9 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, #460c0c);
   --vault-profile-color-hover: var(--vault-profile-color, #460c0c);
   --vault-profile-font-size: var(--font-ui-small, 14px);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -384,6 +387,15 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--color-italic, rgb(70, 12, 12));
+  font-family: "??", "??", "CMU Typewriter Text";
+  outline: rgb(70, 12, 12) none 0px;
+  text-decoration-color: rgb(70, 12, 12);
+  transition: background-color 0.1s ease-in-out;
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   color: var(--color-italic, rgb(70, 12, 12));
   font-family: "??", "??", "CMU Typewriter Text";
@@ -468,7 +480,12 @@ html[saved-theme="dark"] body a.internal-link.broken {
   transition: color 0.1s ease-in-out;
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(70, 12, 12);
+  border-left-color: rgb(70, 12, 12);
+  border-right-color: rgb(70, 12, 12);
+  border-top-color: rgb(70, 12, 12);
   color: rgb(70, 12, 12);
+  font-family: "??", "??", "CMU Typewriter Text";
   margin-left: calc(var(--ribbon-width)*-1 + 10px);
   margin-top: calc(var(--header-height)*-1 + 10px);
 }
@@ -479,17 +496,26 @@ html[saved-theme="dark"] body dl {
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(70, 12, 12);
+  border-left-color: rgb(70, 12, 12);
+  border-right-color: rgb(70, 12, 12);
+  border-top-color: rgb(70, 12, 12);
   color: rgb(70, 12, 12);
+  font-family: "??", "??", "CMU Typewriter Text";
   margin-left: calc(var(--ribbon-width)*-1 + 10px);
   margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(70, 12, 12);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(70, 12, 12);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -504,6 +530,7 @@ html[saved-theme="dark"] body ul.overflow {
 
 html[saved-theme="dark"] body blockquote {
   background-color: var(--background-secondary, rgb(228, 205, 186));
+  color: var(--blockquote-color, rgb(70, 12, 12));
   font-family: "??", "??", "CMU Typewriter Text";
 }`,
     tables: `html[saved-theme="dark"] body .spacer {
@@ -526,7 +553,6 @@ html[saved-theme="dark"] body table {
   margin-left: calc(var(--ribbon-width)*-1 + 10px);
   margin-right: 334.719px;
   margin-top: calc(var(--header-height)*-1 + 10px);
-  width: 194.578px;
 }
 
 html[saved-theme="dark"] body tbody {
@@ -632,6 +658,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(167, 42, 42);
   border-right-color: rgb(167, 42, 42);
   border-top-color: rgb(167, 42, 42);
+  color: var(--text-muted, rgb(167, 42, 42));
   margin-left: calc(var(--ribbon-width)*-1 + 10px);
   margin-top: calc(var(--header-height)*-1 + 10px);
 }
@@ -649,6 +676,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-width: 0px;
   border-right-color: rgb(70, 12, 12);
   border-top-color: rgb(70, 12, 12);
+  color: rgb(70, 12, 12);
   margin-left: calc(var(--ribbon-width)*-1 + 10px);
   margin-top: calc(var(--header-height)*-1 + 10px);
 }
@@ -659,6 +687,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(70, 12, 12);
   border-right-color: rgb(70, 12, 12);
   border-top-color: rgb(70, 12, 12);
+  color: rgb(70, 12, 12);
   margin-left: calc(var(--ribbon-width)*-1 + 10px);
   margin-top: calc(var(--header-height)*-1 + 10px);
 }`,
@@ -1962,6 +1991,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-bottom-right-radius: 4px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  color: var(--pill-color, rgb(206, 119, 38));
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }
 
@@ -1970,8 +2000,15 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(70, 12, 12);
+  border-left-color: rgb(70, 12, 12);
+  border-right-color: rgb(70, 12, 12);
+  border-top-color: rgb(70, 12, 12);
   color: var(--h1-color, rgb(70, 12, 12));
   font-family: var(--h1-font, "??", "??", "CMU Typewriter Text");
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1979,33 +2016,75 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(70, 12, 12);
+  border-left-color: rgb(70, 12, 12);
+  border-right-color: rgb(70, 12, 12);
+  border-top-color: rgb(70, 12, 12);
   color: var(--h2-color, rgb(70, 12, 12));
   font-family: var(--h2-font, "??", "??", "CMU Typewriter Text");
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(70, 12, 12);
+  border-left-color: rgb(70, 12, 12);
+  border-right-color: rgb(70, 12, 12);
+  border-top-color: rgb(70, 12, 12);
   color: var(--inline-title-color, rgb(70, 12, 12));
   font-family: var(--inline-title-font, "??", "??", "CMU Typewriter Text");
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body h3 {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(70, 12, 12);
+  border-left-color: rgb(70, 12, 12);
+  border-right-color: rgb(70, 12, 12);
+  border-top-color: rgb(70, 12, 12);
   color: var(--h3-color, rgb(70, 12, 12));
   font-family: var(--h3-font, "??", "??", "CMU Typewriter Text");
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body h4 {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(70, 12, 12);
+  border-left-color: rgb(70, 12, 12);
+  border-right-color: rgb(70, 12, 12);
+  border-top-color: rgb(70, 12, 12);
   color: var(--h4-color, rgb(70, 12, 12));
   font-family: var(--h4-font, "??", "??", "CMU Typewriter Text");
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body h5 {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(70, 12, 12);
+  border-left-color: rgb(70, 12, 12);
+  border-right-color: rgb(70, 12, 12);
+  border-top-color: rgb(70, 12, 12);
   color: var(--h5-color, rgb(70, 12, 12));
   font-family: var(--h5-font, "??", "??", "CMU Typewriter Text");
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body h6 {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(70, 12, 12);
+  border-left-color: rgb(70, 12, 12);
+  border-right-color: rgb(70, 12, 12);
+  border-top-color: rgb(70, 12, 12);
   color: var(--h6-color, rgb(70, 12, 12));
   font-family: var(--h6-font, "??", "??", "CMU Typewriter Text");
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body hr {
@@ -2043,6 +2122,22 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(228, 205, 186));
   font-family: "??", "??", "??", "CMU Typewriter Text";
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(70, 12, 12);
@@ -2073,10 +2168,15 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-right-radius: 4px;
   color: var(--status-bar-text-color, rgb(241, 221, 205));
   font-family: "??", "??", "??", "CMU Typewriter Text";
+  font-size: var(--status-bar-font-size, 13px);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body footer ul li a {
   color: rgb(241, 221, 205);
+  font-size: 13px;
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(70, 12, 12);
@@ -2202,6 +2302,18 @@ html[saved-theme="dark"] body .bases-table thead th {
   padding-top: 0px;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(167, 42, 42);
+  border-left-color: rgb(167, 42, 42);
+  border-right-color: rgb(167, 42, 42);
+  border-top-color: rgb(167, 42, 42);
+  color: rgb(167, 42, 42);
+  font-family: "??", "??", "CMU Typewriter Text";
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(167, 42, 42);
@@ -2212,6 +2324,16 @@ html[saved-theme="dark"] body .metadata-properties {
   font-family: "??", "??", "CMU Typewriter Text";
   margin-left: calc(var(--ribbon-width)*-1 + 10px);
   margin-top: calc(var(--header-height)*-1 + 10px);
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(167, 42, 42);
+  font-family: var(--metadata-label-font, "??", "??", "??", "CMU Typewriter Text");
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(167, 42, 42);
+  font-family: var(--metadata-input-font, "??", "??", "??", "CMU Typewriter Text");
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -2288,8 +2410,17 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(70, 12, 12);
+  border-left-color: rgb(70, 12, 12);
+  border-right-color: rgb(70, 12, 12);
+  border-top-color: rgb(70, 12, 12);
   color: var(--text-normal, rgb(70, 12, 12));
   font-family: "??", "??", "??", "CMU Typewriter Text";
+  font-size: 14px;
+  line-height: 18.2px;
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="dark"] body abbr {
@@ -2398,6 +2529,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-important: var(--color-cyan-rgb, 0, 158, 155);
   --callout-info: var(--color-blue-rgb, 2, 95, 200);
   --callout-question: var(--color-orange-rgb, 193, 109, 24);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-success: var(--color-green-rgb, 1, 144, 59);
   --callout-summary: var(--color-cyan-rgb, 0, 158, 155);
   --callout-tip: var(--color-cyan-rgb, 0, 158, 155);
@@ -2651,7 +2783,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-profile-color: var(--text-normal, #5f4f49);
   --vault-profile-color-hover: var(--vault-profile-color, #5f4f49);
   --vault-profile-font-size: var(--font-ui-small, 14px);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -2717,6 +2851,15 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  color: var(--color-italic, rgb(174, 97, 43));
+  font-family: "??", "??", "CMU Typewriter Text";
+  outline: rgb(174, 97, 43) none 0px;
+  text-decoration-color: rgb(174, 97, 43);
+  transition: background-color 0.1s ease-in-out;
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   color: var(--color-italic, rgb(174, 97, 43));
   font-family: "??", "??", "CMU Typewriter Text";
@@ -2797,7 +2940,12 @@ html[saved-theme="light"] body a.internal-link.broken {
   outline: rgb(128, 0, 0) none 0px;
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(95, 79, 73);
+  border-left-color: rgb(95, 79, 73);
+  border-right-color: rgb(95, 79, 73);
+  border-top-color: rgb(95, 79, 73);
   color: rgb(95, 79, 73);
+  font-family: "??", "??", "CMU Typewriter Text";
   margin-left: calc(var(--ribbon-width)*-1 + 10px);
   margin-top: calc(var(--header-height)*-1 + 10px);
 }
@@ -2808,17 +2956,26 @@ html[saved-theme="light"] body dl {
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(95, 79, 73);
+  border-left-color: rgb(95, 79, 73);
+  border-right-color: rgb(95, 79, 73);
+  border-top-color: rgb(95, 79, 73);
   color: rgb(95, 79, 73);
+  font-family: "??", "??", "CMU Typewriter Text";
   margin-left: calc(var(--ribbon-width)*-1 + 10px);
   margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(95, 79, 73);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(95, 79, 73);
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -2833,6 +2990,7 @@ html[saved-theme="light"] body ul.overflow {
 
 html[saved-theme="light"] body blockquote {
   background-color: var(--background-secondary, rgb(218, 187, 154));
+  color: var(--blockquote-color, rgb(95, 79, 73));
   font-family: "??", "??", "CMU Typewriter Text";
 }`,
     tables: `html[saved-theme="light"] body .spacer {
@@ -2854,7 +3012,6 @@ html[saved-theme="light"] body table {
   margin-left: calc(var(--ribbon-width)*-1 + 10px);
   margin-right: 334.719px;
   margin-top: calc(var(--header-height)*-1 + 10px);
-  width: 194.578px;
 }
 
 html[saved-theme="light"] body tbody {
@@ -2955,6 +3112,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(91, 79, 74);
   border-right-color: rgb(91, 79, 74);
   border-top-color: rgb(91, 79, 74);
+  color: var(--text-muted, rgb(91, 79, 74));
   margin-left: calc(var(--ribbon-width)*-1 + 10px);
   margin-top: calc(var(--header-height)*-1 + 10px);
 }
@@ -2972,6 +3130,7 @@ html[saved-theme="light"] body .transclude {
   border-left-width: 0px;
   border-right-color: rgb(95, 79, 73);
   border-top-color: rgb(95, 79, 73);
+  color: rgb(95, 79, 73);
   margin-left: calc(var(--ribbon-width)*-1 + 10px);
   margin-top: calc(var(--header-height)*-1 + 10px);
 }
@@ -2982,6 +3141,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(95, 79, 73);
   border-right-color: rgb(95, 79, 73);
   border-top-color: rgb(95, 79, 73);
+  color: rgb(95, 79, 73);
   margin-left: calc(var(--ribbon-width)*-1 + 10px);
   margin-top: calc(var(--header-height)*-1 + 10px);
 }`,
@@ -4282,6 +4442,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-bottom-right-radius: 4px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  color: var(--pill-color, rgb(128, 0, 0));
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }
 
@@ -4290,8 +4451,15 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(95, 79, 73);
+  border-left-color: rgb(95, 79, 73);
+  border-right-color: rgb(95, 79, 73);
+  border-top-color: rgb(95, 79, 73);
   color: var(--h1-color, rgb(95, 79, 73));
   font-family: var(--h1-font, "??", "??", "CMU Typewriter Text");
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -4299,33 +4467,75 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(95, 79, 73);
+  border-left-color: rgb(95, 79, 73);
+  border-right-color: rgb(95, 79, 73);
+  border-top-color: rgb(95, 79, 73);
   color: var(--h2-color, rgb(95, 79, 73));
   font-family: var(--h2-font, "??", "??", "CMU Typewriter Text");
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(95, 79, 73);
+  border-left-color: rgb(95, 79, 73);
+  border-right-color: rgb(95, 79, 73);
+  border-top-color: rgb(95, 79, 73);
   color: var(--inline-title-color, rgb(95, 79, 73));
   font-family: var(--inline-title-font, "??", "??", "CMU Typewriter Text");
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body h3 {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(95, 79, 73);
+  border-left-color: rgb(95, 79, 73);
+  border-right-color: rgb(95, 79, 73);
+  border-top-color: rgb(95, 79, 73);
   color: var(--h3-color, rgb(95, 79, 73));
   font-family: var(--h3-font, "??", "??", "CMU Typewriter Text");
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body h4 {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(95, 79, 73);
+  border-left-color: rgb(95, 79, 73);
+  border-right-color: rgb(95, 79, 73);
+  border-top-color: rgb(95, 79, 73);
   color: var(--h4-color, rgb(95, 79, 73));
   font-family: var(--h4-font, "??", "??", "CMU Typewriter Text");
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body h5 {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(95, 79, 73);
+  border-left-color: rgb(95, 79, 73);
+  border-right-color: rgb(95, 79, 73);
+  border-top-color: rgb(95, 79, 73);
   color: var(--h5-color, rgb(95, 79, 73));
   font-family: var(--h5-font, "??", "??", "CMU Typewriter Text");
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body h6 {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(95, 79, 73);
+  border-left-color: rgb(95, 79, 73);
+  border-right-color: rgb(95, 79, 73);
+  border-top-color: rgb(95, 79, 73);
   color: var(--h6-color, rgb(95, 79, 73));
   font-family: var(--h6-font, "??", "??", "CMU Typewriter Text");
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body hr {
@@ -4363,6 +4573,22 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(91, 79, 74));
   font-family: "??", "??", "??", "CMU Typewriter Text";
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(95, 79, 73);
@@ -4391,10 +4617,15 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-right-radius: 4px;
   color: var(--status-bar-text-color, rgb(91, 79, 74));
   font-family: "??", "??", "??", "CMU Typewriter Text";
+  font-size: var(--status-bar-font-size, 13px);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body footer ul li a {
   color: rgb(91, 79, 74);
+  font-size: 13px;
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(95, 79, 73);
@@ -4516,6 +4747,18 @@ html[saved-theme="light"] body .canvas-sidebar {
   padding-top: 0px;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(91, 79, 74);
+  border-left-color: rgb(91, 79, 74);
+  border-right-color: rgb(91, 79, 74);
+  border-top-color: rgb(91, 79, 74);
+  color: rgb(91, 79, 74);
+  font-family: "??", "??", "CMU Typewriter Text";
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
+}
+
 html[saved-theme="light"] body .metadata-properties {
   background-color: var(--background-secondary, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(91, 79, 74);
@@ -4526,6 +4769,16 @@ html[saved-theme="light"] body .metadata-properties {
   font-family: "??", "??", "CMU Typewriter Text";
   margin-left: calc(var(--ribbon-width)*-1 + 10px);
   margin-top: calc(var(--header-height)*-1 + 10px);
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(91, 79, 74);
+  font-family: var(--metadata-label-font, "??", "??", "??", "CMU Typewriter Text");
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(91, 79, 74);
+  font-family: var(--metadata-input-font, "??", "??", "??", "CMU Typewriter Text");
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -4598,8 +4851,17 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(95, 79, 73);
+  border-left-color: rgb(95, 79, 73);
+  border-right-color: rgb(95, 79, 73);
+  border-top-color: rgb(95, 79, 73);
   color: var(--text-normal, rgb(95, 79, 73));
   font-family: "??", "??", "??", "CMU Typewriter Text";
+  font-size: 14px;
+  line-height: 18.2px;
+  margin-left: calc(var(--ribbon-width)*-1 + 10px);
+  margin-top: calc(var(--header-height)*-1 + 10px);
 }
 
 html[saved-theme="light"] body abbr {

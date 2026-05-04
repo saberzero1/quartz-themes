@@ -50,6 +50,19 @@ export const theme: ThemeData = {
   --border-color: #2b2727;
   --calendar-days: var(--off-white-dark, #cccccc);
   --calendar-days-hover: var(--off-white, #f2f2f2);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #2e3440);
   --canvas-card-label-color: var(--text-faint, #759e93);
   --caret-color: var(--text-normal, #f8f8f2);
@@ -238,7 +251,9 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, #f8f8f2);
   --vault-profile-color-hover: var(--vault-profile-color, #f8f8f2);
   --vim-cursor: #ff5555;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -317,6 +332,13 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   text-decoration-color: rgb(117, 158, 147);
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--forest-green-light, rgb(117, 158, 147));
+  font-family: Avenir, "Avenir Next", sans-serif;
+  outline: rgb(117, 158, 147) none 0px;
+  text-decoration-color: rgb(117, 158, 147);
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: var(--berry-red-strong, rgb(199, 46, 110));
   font-family: Avenir, "Avenir Next", sans-serif;
@@ -376,19 +398,31 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(242, 189, 119));
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(248, 248, 242);
+  border-left-color: rgb(248, 248, 242);
+  border-right-color: rgb(248, 248, 242);
+  border-top-color: rgb(248, 248, 242);
   color: rgb(248, 248, 242);
+  font-family: Avenir, "Avenir Next", sans-serif;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(248, 248, 242);
+  border-left-color: rgb(248, 248, 242);
+  border-right-color: rgb(248, 248, 242);
+  border-top-color: rgb(248, 248, 242);
   color: rgb(248, 248, 242);
+  font-family: Avenir, "Avenir Next", sans-serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(248, 248, 242);
+  margin-left: 26.6953px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(248, 248, 242);
+  margin-left: 26.6953px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -403,6 +437,7 @@ html[saved-theme="dark"] body ul.overflow {
 
 html[saved-theme="dark"] body blockquote {
   background-color: var(--background-primary, rgb(46, 52, 64));
+  color: var(--blockquote-color, rgb(248, 248, 242));
   font-family: Avenir, "Avenir Next", sans-serif;
   font-style: var(--blockquote-font-style, italic);
 }`,
@@ -420,7 +455,6 @@ html[saved-theme="dark"] body .table-container {
 html[saved-theme="dark"] body table {
   color: rgb(248, 248, 242);
   font-family: Avenir, "Avenir Next", sans-serif;
-  width: 195.062px;
 }
 
 html[saved-theme="dark"] body td {
@@ -492,6 +526,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(248, 248, 242);
   border-right-color: rgb(248, 248, 242);
   border-top-color: rgb(248, 248, 242);
+  color: var(--text-muted, rgb(248, 248, 242));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -504,6 +539,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(84, 138, 123);
   border-right-color: rgb(248, 248, 242);
   border-top-color: rgb(248, 248, 242);
+  color: rgb(248, 248, 242);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -511,6 +547,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(248, 248, 242);
   border-right-color: rgb(248, 248, 242);
   border-top-color: rgb(248, 248, 242);
+  color: rgb(248, 248, 242);
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(117, 158, 147);
@@ -1530,6 +1567,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   --pill-color-hover: var(--tag-color-hover, #f2bd77);
   --pill-color-remove: var(--tag-color, #f2bd77);
   --pill-color-remove-hover: var(--tag-color-hover, #f2bd77);
+  color: var(--pill-color, rgb(242, 189, 119));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -1537,6 +1575,10 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(199, 46, 110);
+  border-left-color: rgb(199, 46, 110);
+  border-right-color: rgb(199, 46, 110);
+  border-top-color: rgb(199, 46, 110);
   color: var(--text-title-h1, rgb(199, 46, 110));
   font-family: var(--font-family-preview, Avenir, "Avenir Next", sans-serif);
 }
@@ -1546,33 +1588,62 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--text-title-h2, rgb(255, 255, 255));
   font-family: var(--font-family-preview, Avenir, "Avenir Next", sans-serif);
+  font-weight: var(--font-weight, 800);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(248, 248, 242);
+  border-left-color: rgb(248, 248, 242);
+  border-right-color: rgb(248, 248, 242);
+  border-top-color: rgb(248, 248, 242);
   color: var(--inline-title-color, rgb(248, 248, 242));
   font-family: var(--inline-title-font, Avenir, "Avenir Next", sans-serif);
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(149, 186, 176);
+  border-left-color: rgb(149, 186, 176);
+  border-right-color: rgb(149, 186, 176);
+  border-top-color: rgb(149, 186, 176);
   color: var(--text-title-h3, rgb(149, 186, 176));
   font-family: var(--font-family-preview, Avenir, "Avenir Next", sans-serif);
+  font-weight: var(--font-weight, 500);
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(117, 158, 147);
+  border-left-color: rgb(117, 158, 147);
+  border-right-color: rgb(117, 158, 147);
+  border-top-color: rgb(117, 158, 147);
   color: var(--text-title-h4, rgb(117, 158, 147));
   font-family: var(--font-family-preview, Avenir, "Avenir Next", sans-serif);
+  font-weight: var(--font-weight, 500);
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(84, 138, 123);
+  border-left-color: rgb(84, 138, 123);
+  border-right-color: rgb(84, 138, 123);
+  border-top-color: rgb(84, 138, 123);
   color: var(--text-title-h5, rgb(84, 138, 123));
   font-family: var(--font-family-preview, Avenir, "Avenir Next", sans-serif);
+  font-weight: var(--font-weight, 500);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(55, 115, 98);
+  border-left-color: rgb(55, 115, 98);
+  border-right-color: rgb(55, 115, 98);
+  border-top-color: rgb(55, 115, 98);
   color: var(--text-title-h6, rgb(55, 115, 98));
   font-family: var(--font-family-preview, Avenir, "Avenir Next", sans-serif);
+  font-weight: var(--font-weight, 500);
 }
 
 html[saved-theme="dark"] body hr {
@@ -1592,6 +1663,22 @@ html[saved-theme="dark"] body hr {
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--text-nav, rgb(195, 213, 208));
   font-family: Avenir, "Avenir Next", sans-serif;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(248, 248, 242);
@@ -1612,10 +1699,12 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-width: 0px;
   color: var(--text-status-bar, rgb(204, 204, 204));
   font-family: Avenir, "Avenir Next", sans-serif;
+  font-size: var(--font-size-status-bar, 15px);
 }
 
 html[saved-theme="dark"] body footer ul li a {
   color: rgb(204, 204, 204);
+  font-size: 15px;
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(248, 248, 242);
@@ -1716,6 +1805,15 @@ html[saved-theme="dark"] body .canvas-sidebar {
   font-family: Avenir, "Avenir Next", sans-serif;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(248, 248, 242);
+  border-left-color: rgb(248, 248, 242);
+  border-right-color: rgb(248, 248, 242);
+  border-top-color: rgb(248, 248, 242);
+  color: rgb(248, 248, 242);
+  font-family: Avenir, "Avenir Next", sans-serif;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(248, 248, 242);
   border-left-color: rgb(248, 248, 242);
@@ -1723,6 +1821,14 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(248, 248, 242);
   color: rgb(248, 248, 242);
   font-family: Avenir, "Avenir Next", sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(248, 248, 242);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(248, 248, 242);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -1785,7 +1891,13 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(248, 248, 242);
+  border-left-color: rgb(248, 248, 242);
+  border-right-color: rgb(248, 248, 242);
+  border-top-color: rgb(248, 248, 242);
   color: var(--text-normal, rgb(248, 248, 242));
+  font-size: 14px;
+  line-height: 18.2px;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -1886,6 +1998,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --border-color: var(--forest-green-dark, #4a6860);
   --calendar-days: var(--forest-green-dark, #4a6860);
   --calendar-days-hover: var(--text-normal, #15181e);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #f2f2f2);
   --canvas-card-label-color: var(--text-faint, #759e93);
   --caret-color: var(--text-normal, #15181e);
@@ -2075,7 +2200,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-profile-color: var(--text-normal, #15181e);
   --vault-profile-color-hover: var(--vault-profile-color, #15181e);
   --vim-cursor: var(--forest-green-dark, #4a6860);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -2154,6 +2281,13 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   text-decoration-color: rgb(117, 158, 147);
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--forest-green-light, rgb(117, 158, 147));
+  font-family: Avenir, "Avenir Next", sans-serif;
+  outline: rgb(117, 158, 147) none 0px;
+  text-decoration-color: rgb(117, 158, 147);
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--berry-red-strong, rgb(199, 46, 110));
   font-family: Avenir, "Avenir Next", sans-serif;
@@ -2213,19 +2347,31 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(238, 164, 68));
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(21, 24, 30);
+  border-left-color: rgb(21, 24, 30);
+  border-right-color: rgb(21, 24, 30);
+  border-top-color: rgb(21, 24, 30);
   color: rgb(21, 24, 30);
+  font-family: Avenir, "Avenir Next", sans-serif;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(21, 24, 30);
+  border-left-color: rgb(21, 24, 30);
+  border-right-color: rgb(21, 24, 30);
+  border-top-color: rgb(21, 24, 30);
   color: rgb(21, 24, 30);
+  font-family: Avenir, "Avenir Next", sans-serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(21, 24, 30);
+  margin-left: 26.6953px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(21, 24, 30);
+  margin-left: 26.6953px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -2240,6 +2386,7 @@ html[saved-theme="light"] body ul.overflow {
 
 html[saved-theme="light"] body blockquote {
   background-color: var(--background-primary, rgb(242, 242, 242));
+  color: var(--blockquote-color, rgb(21, 24, 30));
   font-family: Avenir, "Avenir Next", sans-serif;
   font-style: var(--blockquote-font-style, italic);
 }`,
@@ -2257,7 +2404,6 @@ html[saved-theme="light"] body .table-container {
 html[saved-theme="light"] body table {
   color: rgb(21, 24, 30);
   font-family: Avenir, "Avenir Next", sans-serif;
-  width: 195.062px;
 }
 
 html[saved-theme="light"] body td {
@@ -2329,6 +2475,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(140, 140, 140);
   border-right-color: rgb(140, 140, 140);
   border-top-color: rgb(140, 140, 140);
+  color: var(--text-muted, rgb(140, 140, 140));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2341,6 +2488,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(117, 158, 147);
   border-right-color: rgb(21, 24, 30);
   border-top-color: rgb(21, 24, 30);
+  color: rgb(21, 24, 30);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2348,6 +2496,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(21, 24, 30);
   border-right-color: rgb(21, 24, 30);
   border-top-color: rgb(21, 24, 30);
+  color: rgb(21, 24, 30);
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(117, 158, 147);
@@ -3367,6 +3516,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-hover: var(--tag-color-hover, #eea444);
   --pill-color-remove: var(--tag-color, #eea444);
   --pill-color-remove-hover: var(--tag-color-hover, #eea444);
+  color: var(--pill-color, rgb(238, 164, 68));
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -3374,6 +3524,10 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(199, 46, 110);
+  border-left-color: rgb(199, 46, 110);
+  border-right-color: rgb(199, 46, 110);
+  border-top-color: rgb(199, 46, 110);
   color: var(--text-title-h1, rgb(199, 46, 110));
   font-family: var(--font-family-preview, Avenir, "Avenir Next", sans-serif);
 }
@@ -3383,33 +3537,62 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(84, 138, 123);
+  border-left-color: rgb(84, 138, 123);
+  border-right-color: rgb(84, 138, 123);
+  border-top-color: rgb(84, 138, 123);
   color: var(--text-title-h2, rgb(84, 138, 123));
   font-family: var(--font-family-preview, Avenir, "Avenir Next", sans-serif);
+  font-weight: var(--font-weight, 800);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(21, 24, 30);
+  border-left-color: rgb(21, 24, 30);
+  border-right-color: rgb(21, 24, 30);
+  border-top-color: rgb(21, 24, 30);
   color: var(--inline-title-color, rgb(21, 24, 30));
   font-family: var(--inline-title-font, Avenir, "Avenir Next", sans-serif);
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(149, 186, 176);
+  border-left-color: rgb(149, 186, 176);
+  border-right-color: rgb(149, 186, 176);
+  border-top-color: rgb(149, 186, 176);
   color: var(--text-title-h3, rgb(149, 186, 176));
   font-family: var(--font-family-preview, Avenir, "Avenir Next", sans-serif);
+  font-weight: var(--font-weight, 500);
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(117, 158, 147);
+  border-left-color: rgb(117, 158, 147);
+  border-right-color: rgb(117, 158, 147);
+  border-top-color: rgb(117, 158, 147);
   color: var(--text-title-h4, rgb(117, 158, 147));
   font-family: var(--font-family-preview, Avenir, "Avenir Next", sans-serif);
+  font-weight: var(--font-weight, 500);
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(84, 138, 123);
+  border-left-color: rgb(84, 138, 123);
+  border-right-color: rgb(84, 138, 123);
+  border-top-color: rgb(84, 138, 123);
   color: var(--text-title-h5, rgb(84, 138, 123));
   font-family: var(--font-family-preview, Avenir, "Avenir Next", sans-serif);
+  font-weight: var(--font-weight, 500);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(55, 115, 98);
+  border-left-color: rgb(55, 115, 98);
+  border-right-color: rgb(55, 115, 98);
+  border-top-color: rgb(55, 115, 98);
   color: var(--text-title-h6, rgb(55, 115, 98));
   font-family: var(--font-family-preview, Avenir, "Avenir Next", sans-serif);
+  font-weight: var(--font-weight, 500);
 }
 
 html[saved-theme="light"] body hr {
@@ -3429,6 +3612,22 @@ html[saved-theme="light"] body hr {
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--text-nav, rgb(117, 158, 147));
   font-family: Avenir, "Avenir Next", sans-serif;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(21, 24, 30);
@@ -3449,10 +3648,12 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-width: 0px;
   color: var(--text-status-bar, rgb(74, 104, 96));
   font-family: Avenir, "Avenir Next", sans-serif;
+  font-size: var(--font-size-status-bar, 15px);
 }
 
 html[saved-theme="light"] body footer ul li a {
   color: rgb(74, 104, 96);
+  font-size: 15px;
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(21, 24, 30);
@@ -3553,6 +3754,15 @@ html[saved-theme="light"] body .canvas-sidebar {
   font-family: Avenir, "Avenir Next", sans-serif;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(140, 140, 140);
+  border-left-color: rgb(140, 140, 140);
+  border-right-color: rgb(140, 140, 140);
+  border-top-color: rgb(140, 140, 140);
+  color: rgb(140, 140, 140);
+  font-family: Avenir, "Avenir Next", sans-serif;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(140, 140, 140);
   border-left-color: rgb(140, 140, 140);
@@ -3560,6 +3770,14 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(140, 140, 140);
   color: rgb(140, 140, 140);
   font-family: Avenir, "Avenir Next", sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(140, 140, 140);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(140, 140, 140);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -3622,7 +3840,13 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(21, 24, 30);
+  border-left-color: rgb(21, 24, 30);
+  border-right-color: rgb(21, 24, 30);
+  border-top-color: rgb(21, 24, 30);
   color: var(--text-normal, rgb(21, 24, 30));
+  font-size: 14px;
+  line-height: 18.2px;
 }
 
 html[saved-theme="light"] body abbr {

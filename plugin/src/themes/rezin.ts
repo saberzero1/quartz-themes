@@ -11,6 +11,19 @@ export const theme: ThemeData = {
   --bases-table-cell-background-active: var(--background-primary, #181824);
   --bases-table-header-background: var(--background-primary, #181824);
   --bases-table-summary-background: var(--background-primary, #181824);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #181824);
   --caret-color: var(--text-normal, #4baaa8);
   --checkbox-marker-color: var(--background-primary, #181824);
@@ -113,6 +126,12 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(179, 124, 235);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--text-italic, rgb(179, 124, 235));
+  outline: rgb(179, 124, 235) none 0px;
+  text-decoration-color: rgb(179, 124, 235);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--text-strong, rgb(175, 57, 67));
   outline: rgb(175, 57, 67) none 0px;
@@ -159,10 +178,18 @@ html body a.internal-link.broken {
   outline: rgb(190, 166, 58) none 0px;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(75, 170, 168);
+  border-left-color: rgb(75, 170, 168);
+  border-right-color: rgb(75, 170, 168);
+  border-top-color: rgb(75, 170, 168);
   color: rgb(75, 170, 168);
 }
 
 html body dt {
+  border-bottom-color: rgb(75, 170, 168);
+  border-left-color: rgb(75, 170, 168);
+  border-right-color: rgb(75, 170, 168);
+  border-top-color: rgb(75, 170, 168);
   color: rgb(75, 170, 168);
 }
 
@@ -182,6 +209,10 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--text-a, rgb(190, 166, 58));
+}
+
+html body blockquote {
+  color: var(--blockquote-color, rgb(75, 170, 168));
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(75, 170, 168);
@@ -256,6 +287,7 @@ html body .transclude {
   border-bottom-color: rgb(75, 170, 168);
   border-right-color: rgb(75, 170, 168);
   border-top-color: rgb(75, 170, 168);
+  color: rgb(75, 170, 168);
 }
 
 html body .transclude-inner {
@@ -263,6 +295,7 @@ html body .transclude-inner {
   border-left-color: rgb(75, 170, 168);
   border-right-color: rgb(75, 170, 168);
   border-top-color: rgb(75, 170, 168);
+  color: rgb(75, 170, 168);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(196, 37, 50);
@@ -1104,8 +1137,15 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body h1 {
+  border-bottom-color: rgb(175, 57, 67);
+  border-left-color: rgb(175, 57, 67);
+  border-right-color: rgb(175, 57, 67);
+  border-top-color: rgb(175, 57, 67);
   color: var(--text-title-h1, rgb(175, 57, 67));
   font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
+  font-size: var(--h1-size, 26px);
+  letter-spacing: var(--h1-letter-spacing, -0.39px);
+  line-height: var(--h1-line-height, 36px);
 }
 
 html body h1.article-title {
@@ -1113,32 +1153,63 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(252, 246, 1);
+  border-left-color: rgb(252, 246, 1);
+  border-right-color: rgb(252, 246, 1);
+  border-top-color: rgb(252, 246, 1);
   color: var(--text-title-h2, rgb(252, 246, 1));
   font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
+  font-size: var(--h2-size, 23px);
+  letter-spacing: var(--h2-letter-spacing, -0.253px);
+  line-height: var(--h2-line-height, 34px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(175, 57, 67);
+  border-left-color: rgb(175, 57, 67);
+  border-right-color: rgb(175, 57, 67);
+  border-top-color: rgb(175, 57, 67);
   color: var(--text-title-h1, rgb(175, 57, 67));
 }
 
 html body h3 {
+  border-bottom-color: rgb(13, 150, 104);
+  border-left-color: rgb(13, 150, 104);
+  border-right-color: rgb(13, 150, 104);
+  border-top-color: rgb(13, 150, 104);
   color: var(--text-title-h3, rgb(13, 150, 104));
   font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
+  line-height: var(--h3-line-height, 32px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(127, 92, 192);
+  border-left-color: rgb(127, 92, 192);
+  border-right-color: rgb(127, 92, 192);
+  border-top-color: rgb(127, 92, 192);
   color: var(--text-title-h4, rgb(127, 92, 192));
   font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
+  line-height: var(--h4-line-height, 28px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(180, 36, 120);
+  border-left-color: rgb(180, 36, 120);
+  border-right-color: rgb(180, 36, 120);
+  border-top-color: rgb(180, 36, 120);
   color: var(--text-title-h5, rgb(180, 36, 120));
   font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
+  line-height: var(--h5-line-height, 27px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(97, 113, 255);
+  border-left-color: rgb(97, 113, 255);
+  border-right-color: rgb(97, 113, 255);
+  border-top-color: rgb(97, 113, 255);
   color: var(--text-title-h6, rgb(97, 113, 255));
   font-family: var(--font-family-editor, Avenir, "Avenir Next", sans-serif);
+  line-height: var(--h6-line-height, 23px);
 }
 
 html body hr {
@@ -1146,6 +1217,13 @@ html body hr {
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
+}`,
+    explorer: `html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(75, 170, 168);
@@ -1237,6 +1315,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(75, 170, 168);
+  border-left-color: rgb(75, 170, 168);
+  border-right-color: rgb(75, 170, 168);
+  border-top-color: rgb(75, 170, 168);
   color: var(--text-normal, rgb(75, 170, 168));
 }
 

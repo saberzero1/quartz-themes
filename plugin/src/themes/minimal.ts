@@ -80,6 +80,7 @@ export const theme: ThemeData = {
   --callout-important: var(--color-cyan-rgb, 115,187,178);
   --callout-info: var(--color-blue-rgb, 108,153,187);
   --callout-question: var(--color-orange-rgb, 213,118,63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-success: var(--color-green-rgb, 168,195,115);
   --callout-summary: var(--color-cyan-rgb, 115,187,178);
   --callout-tip: var(--color-cyan-rgb, 115,187,178);
@@ -489,7 +490,9 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--tx1, hsl( 0, -10%, 82% ));
   --vault-profile-color-hover: var(--tx1, hsl( 0, -10%, 82% ));
   --workspace-background-translucent: hsla(var(--base-h),var(--base-s), var(--base-l), 0.7);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -539,6 +542,12 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, rgb(209, 209, 209));
+  outline: rgb(209, 209, 209) none 0px;
+  text-decoration-color: rgb(209, 209, 209);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--italic-color, rgb(209, 209, 209));
   outline: rgb(209, 209, 209) none 0px;
   text-decoration-color: rgb(209, 209, 209);
@@ -597,10 +606,18 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(136, 158, 170, 0.3));
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(209, 209, 209);
+  border-left-color: rgb(209, 209, 209);
+  border-right-color: rgb(209, 209, 209);
+  border-top-color: rgb(209, 209, 209);
   color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(209, 209, 209);
+  border-left-color: rgb(209, 209, 209);
+  border-right-color: rgb(209, 209, 209);
+  border-top-color: rgb(209, 209, 209);
   color: rgb(209, 209, 209);
 }
 
@@ -620,6 +637,10 @@ html[saved-theme="dark"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: var(--text-faint, rgb(89, 89, 89));
+}
+
+html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(153, 153, 153));
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(209, 209, 209);
@@ -635,7 +656,6 @@ html[saved-theme="dark"] body table {
   border-top-color: rgb(209, 209, 209);
   color: rgb(209, 209, 209);
   margin-top: var(--heading-spacing, 8px);
-  width: var(--table-width, 187.438px);
 }
 
 html[saved-theme="dark"] body td {
@@ -730,6 +750,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(153, 153, 153);
   border-right-color: rgb(153, 153, 153);
   border-top-color: rgb(153, 153, 153);
+  color: var(--text-muted, rgb(153, 153, 153));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -742,6 +763,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(121, 146, 160);
   border-right-color: rgb(209, 209, 209);
   border-top-color: rgb(209, 209, 209);
+  color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -749,6 +771,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(209, 209, 209);
   border-right-color: rgb(209, 209, 209);
   border-top-color: rgb(209, 209, 209);
+  color: rgb(209, 209, 209);
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(89, 89, 89);
@@ -1961,6 +1984,9 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-top-left-radius: 27.82px;
   border-top-right-radius: 27.82px;
   border-top-width: 1px;
+  color: var(--pill-color, rgb(153, 153, 153));
+  font-size: 13.91px;
+  line-height: var(--line-height-tight, 13.91px);
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -1969,7 +1995,14 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   --font-weight: var(--h1-weight, 600);
+  border-bottom-color: rgb(209, 209, 209);
+  border-left-color: rgb(209, 209, 209);
+  border-right-color: rgb(209, 209, 209);
+  border-top-color: rgb(209, 209, 209);
   color: var(--h1-color, rgb(209, 209, 209));
+  font-size: var(--h1-size, 18px);
+  font-weight: var(--font-weight, 600);
+  margin-bottom: 28px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1980,31 +2013,80 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 600);
+  border-bottom-color: rgb(209, 209, 209);
+  border-left-color: rgb(209, 209, 209);
+  border-right-color: rgb(209, 209, 209);
+  border-top-color: rgb(209, 209, 209);
   color: var(--h2-color, rgb(209, 209, 209));
+  font-size: var(--h2-size, 16.8px);
+  font-weight: var(--font-weight, 600);
+  margin-bottom: 28px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(209, 209, 209);
+  border-left-color: rgb(209, 209, 209);
+  border-right-color: rgb(209, 209, 209);
+  border-top-color: rgb(209, 209, 209);
   color: var(--inline-title-color, rgb(209, 209, 209));
+  font-size: var(--inline-title-size, 18px);
+  font-weight: var(--inline-title-weight, 600);
+  letter-spacing: -0.27px;
+  line-height: var(--inline-title-line-height, 21.6px);
+  margin-bottom: 16px;
+  padding-top: 16px;
 }
 
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, 500);
+  border-bottom-color: rgb(209, 209, 209);
+  border-left-color: rgb(209, 209, 209);
+  border-right-color: rgb(209, 209, 209);
+  border-top-color: rgb(209, 209, 209);
   color: var(--h3-color, rgb(209, 209, 209));
+  font-size: var(--h3-size, 16px);
+  font-weight: var(--font-weight, 500);
+  margin-bottom: 28px;
+  margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="dark"] body h4 {
   --font-weight: var(--h4-weight, 500);
+  border-bottom-color: rgb(209, 209, 209);
+  border-left-color: rgb(209, 209, 209);
+  border-right-color: rgb(209, 209, 209);
+  border-top-color: rgb(209, 209, 209);
   color: var(--h4-color, rgb(209, 209, 209));
+  font-size: var(--h4-size, 14.4px);
+  font-weight: var(--font-weight, 500);
+  margin-bottom: 28px;
+  margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="dark"] body h5 {
   --font-weight: var(--h5-weight, 500);
+  border-bottom-color: rgb(209, 209, 209);
+  border-left-color: rgb(209, 209, 209);
+  border-right-color: rgb(209, 209, 209);
+  border-top-color: rgb(209, 209, 209);
   color: var(--h5-color, rgb(209, 209, 209));
+  font-size: var(--h5-size, 13.6px);
+  font-weight: var(--font-weight, 500);
+  margin-bottom: 28px;
+  margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="dark"] body h6 {
   --font-weight: var(--h6-weight, 400);
+  border-bottom-color: rgb(209, 209, 209);
+  border-left-color: rgb(209, 209, 209);
+  border-right-color: rgb(209, 209, 209);
+  border-top-color: rgb(209, 209, 209);
   color: var(--h6-color, rgb(209, 209, 209));
+  font-size: var(--h6-size, 13.6px);
+  font-weight: var(--font-weight, 400);
+  margin-bottom: 28px;
+  margin-top: 28px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 108,153,187);
@@ -2023,6 +2105,30 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(153, 153, 153));
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(209, 209, 209);
@@ -2039,10 +2145,12 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-left-width: 0px;
   border-top-width: 0px;
   color: var(--text-faint, rgb(89, 89, 89));
+  font-size: var(--font-adaptive-smallest, 11px);
 }
 
 html[saved-theme="dark"] body footer ul li a {
   color: rgb(89, 89, 89);
+  font-size: 11px;
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(209, 209, 209);
@@ -2139,11 +2247,27 @@ html[saved-theme="dark"] body .bases-table thead th {
   color: var(--text-muted, rgb(153, 153, 153));
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(153, 153, 153);
+  border-left-color: rgb(153, 153, 153);
+  border-right-color: rgb(153, 153, 153);
+  border-top-color: rgb(153, 153, 153);
+  color: rgb(153, 153, 153);
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(153, 153, 153);
   border-left-color: rgb(153, 153, 153);
   border-right-color: rgb(153, 153, 153);
   border-top-color: rgb(153, 153, 153);
+  color: rgb(153, 153, 153);
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(153, 153, 153);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
   color: rgb(153, 153, 153);
 }
 
@@ -2213,6 +2337,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(209, 209, 209);
+  border-left-color: rgb(209, 209, 209);
+  border-right-color: rgb(209, 209, 209);
+  border-top-color: rgb(209, 209, 209);
   color: var(--text-normal, rgb(209, 209, 209));
 }
 
@@ -2349,6 +2477,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-important: var(--color-cyan-rgb, 115,187,178);
   --callout-info: var(--color-blue-rgb, 108,153,187);
   --callout-question: var(--color-orange-rgb, 213,118,63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-success: var(--color-green-rgb, 168,195,115);
   --callout-summary: var(--color-cyan-rgb, 115,187,178);
   --callout-tip: var(--color-cyan-rgb, 115,187,178);
@@ -2758,7 +2887,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-profile-color: var(--tx1, hsl( 0, 0%, 6% ));
   --vault-profile-color-hover: var(--tx1, hsl( 0, 0%, 6% ));
   --workspace-background-translucent: hsla(var(--base-h),var(--base-s), var(--base-l), 0.7);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -2817,6 +2948,12 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   text-decoration-color: rgb(15, 15, 15);
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(15, 15, 15));
+  outline: rgb(15, 15, 15) none 0px;
+  text-decoration-color: rgb(15, 15, 15);
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--bold-color, rgb(15, 15, 15));
   outline: rgb(15, 15, 15) none 0px;
@@ -2870,10 +3007,18 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(106, 134, 149, 0.3));
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(15, 15, 15);
+  border-left-color: rgb(15, 15, 15);
+  border-right-color: rgb(15, 15, 15);
+  border-top-color: rgb(15, 15, 15);
   color: rgb(15, 15, 15);
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(15, 15, 15);
+  border-left-color: rgb(15, 15, 15);
+  border-right-color: rgb(15, 15, 15);
+  border-top-color: rgb(15, 15, 15);
   color: rgb(15, 15, 15);
 }
 
@@ -2893,6 +3038,10 @@ html[saved-theme="light"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: var(--text-faint, rgb(181, 181, 181));
+}
+
+html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(117, 117, 117));
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(15, 15, 15);
@@ -2908,7 +3057,6 @@ html[saved-theme="light"] body table {
   border-top-color: rgb(15, 15, 15);
   color: rgb(15, 15, 15);
   margin-top: var(--heading-spacing, 8px);
-  width: var(--table-width, 187.438px);
 }
 
 html[saved-theme="light"] body td {
@@ -3015,6 +3163,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(117, 117, 117);
   border-right-color: rgb(117, 117, 117);
   border-top-color: rgb(117, 117, 117);
+  color: var(--text-muted, rgb(117, 117, 117));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -3027,6 +3176,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(124, 149, 162);
   border-right-color: rgb(15, 15, 15);
   border-top-color: rgb(15, 15, 15);
+  color: rgb(15, 15, 15);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -3034,6 +3184,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(15, 15, 15);
   border-right-color: rgb(15, 15, 15);
   border-top-color: rgb(15, 15, 15);
+  color: rgb(15, 15, 15);
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(181, 181, 181);
@@ -4248,6 +4399,9 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-top-left-radius: 27.82px;
   border-top-right-radius: 27.82px;
   border-top-width: 1px;
+  color: var(--pill-color, rgb(117, 117, 117));
+  font-size: 13.91px;
+  line-height: var(--line-height-tight, 13.91px);
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -4256,7 +4410,14 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   --font-weight: var(--h1-weight, 600);
+  border-bottom-color: rgb(15, 15, 15);
+  border-left-color: rgb(15, 15, 15);
+  border-right-color: rgb(15, 15, 15);
+  border-top-color: rgb(15, 15, 15);
   color: var(--h1-color, rgb(15, 15, 15));
+  font-size: var(--h1-size, 18px);
+  font-weight: var(--font-weight, 600);
+  margin-bottom: 28px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -4267,31 +4428,80 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 600);
+  border-bottom-color: rgb(15, 15, 15);
+  border-left-color: rgb(15, 15, 15);
+  border-right-color: rgb(15, 15, 15);
+  border-top-color: rgb(15, 15, 15);
   color: var(--h2-color, rgb(15, 15, 15));
+  font-size: var(--h2-size, 16.8px);
+  font-weight: var(--font-weight, 600);
+  margin-bottom: 28px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(15, 15, 15);
+  border-left-color: rgb(15, 15, 15);
+  border-right-color: rgb(15, 15, 15);
+  border-top-color: rgb(15, 15, 15);
   color: var(--inline-title-color, rgb(15, 15, 15));
+  font-size: var(--inline-title-size, 18px);
+  font-weight: var(--inline-title-weight, 600);
+  letter-spacing: -0.27px;
+  line-height: var(--inline-title-line-height, 21.6px);
+  margin-bottom: 16px;
+  padding-top: 16px;
 }
 
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, 500);
+  border-bottom-color: rgb(15, 15, 15);
+  border-left-color: rgb(15, 15, 15);
+  border-right-color: rgb(15, 15, 15);
+  border-top-color: rgb(15, 15, 15);
   color: var(--h3-color, rgb(15, 15, 15));
+  font-size: var(--h3-size, 16px);
+  font-weight: var(--font-weight, 500);
+  margin-bottom: 28px;
+  margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="light"] body h4 {
   --font-weight: var(--h4-weight, 500);
+  border-bottom-color: rgb(15, 15, 15);
+  border-left-color: rgb(15, 15, 15);
+  border-right-color: rgb(15, 15, 15);
+  border-top-color: rgb(15, 15, 15);
   color: var(--h4-color, rgb(15, 15, 15));
+  font-size: var(--h4-size, 14.4px);
+  font-weight: var(--font-weight, 500);
+  margin-bottom: 28px;
+  margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="light"] body h5 {
   --font-weight: var(--h5-weight, 500);
+  border-bottom-color: rgb(15, 15, 15);
+  border-left-color: rgb(15, 15, 15);
+  border-right-color: rgb(15, 15, 15);
+  border-top-color: rgb(15, 15, 15);
   color: var(--h5-color, rgb(15, 15, 15));
+  font-size: var(--h5-size, 13.6px);
+  font-weight: var(--font-weight, 500);
+  margin-bottom: 28px;
+  margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="light"] body h6 {
   --font-weight: var(--h6-weight, 400);
+  border-bottom-color: rgb(15, 15, 15);
+  border-left-color: rgb(15, 15, 15);
+  border-right-color: rgb(15, 15, 15);
+  border-top-color: rgb(15, 15, 15);
   color: var(--h6-color, rgb(15, 15, 15));
+  font-size: var(--h6-size, 13.6px);
+  font-weight: var(--font-weight, 400);
+  margin-bottom: 28px;
+  margin-top: 28px;
 }
 
 html[saved-theme="light"] body hr {
@@ -4316,6 +4526,30 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(117, 117, 117));
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(15, 15, 15);
@@ -4336,10 +4570,12 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-color: rgb(230, 230, 230);
   border-top-width: 0px;
   color: var(--text-faint, rgb(181, 181, 181));
+  font-size: var(--font-adaptive-smallest, 11px);
 }
 
 html[saved-theme="light"] body footer ul li a {
   color: rgb(181, 181, 181);
+  font-size: 11px;
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(15, 15, 15);
@@ -4440,11 +4676,27 @@ html[saved-theme="light"] body .bases-table thead th {
   color: var(--text-muted, rgb(117, 117, 117));
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(117, 117, 117);
+  border-left-color: rgb(117, 117, 117);
+  border-right-color: rgb(117, 117, 117);
+  border-top-color: rgb(117, 117, 117);
+  color: rgb(117, 117, 117);
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(117, 117, 117);
   border-left-color: rgb(117, 117, 117);
   border-right-color: rgb(117, 117, 117);
   border-top-color: rgb(117, 117, 117);
+  color: rgb(117, 117, 117);
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(117, 117, 117);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
   color: rgb(117, 117, 117);
 }
 
@@ -4514,6 +4766,10 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(15, 15, 15);
+  border-left-color: rgb(15, 15, 15);
+  border-right-color: rgb(15, 15, 15);
+  border-top-color: rgb(15, 15, 15);
   color: var(--text-normal, rgb(15, 15, 15));
 }
 

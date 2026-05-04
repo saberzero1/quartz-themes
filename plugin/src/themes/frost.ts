@@ -9,6 +9,19 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --color-bg-primary: #1a202c;
   --color-bg-secondary: #2d3748;
   --color-border: #4a5568;
@@ -99,7 +112,6 @@ html[saved-theme="dark"] body table {
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  width: 662px;
 }
 
 html[saved-theme="dark"] body th {
@@ -145,6 +157,7 @@ html[saved-theme="dark"] body video {
   border-bottom-color: rgb(237, 242, 247);
   border-right-color: rgb(237, 242, 247);
   border-top-color: rgb(237, 242, 247);
+  color: rgb(237, 242, 247);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -152,6 +165,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(237, 242, 247);
   border-right-color: rgb(237, 242, 247);
   border-top-color: rgb(237, 242, 247);
+  color: rgb(237, 242, 247);
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   margin-right: var(--spacing-sm, 8px);
@@ -577,6 +591,36 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html[saved-theme="dark"] body h1 {
+  margin-bottom: var(--spacing-md, 16px);
+  margin-top: var(--spacing-lg, 0px);
+}
+
+html[saved-theme="dark"] body h2 {
+  margin-bottom: var(--spacing-md, 16px);
+  margin-top: var(--spacing-lg, 0px);
+}
+
+html[saved-theme="dark"] body h3 {
+  margin-bottom: var(--spacing-md, 16px);
+  margin-top: var(--spacing-lg, 24px);
+}
+
+html[saved-theme="dark"] body h4 {
+  margin-bottom: var(--spacing-md, 16px);
+  margin-top: var(--spacing-lg, 24px);
+}
+
+html[saved-theme="dark"] body h5 {
+  margin-bottom: var(--spacing-md, 16px);
+  margin-top: var(--spacing-lg, 24px);
+}
+
+html[saved-theme="dark"] body h6 {
+  margin-bottom: var(--spacing-md, 16px);
+  margin-top: var(--spacing-lg, 24px);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -684,6 +728,10 @@ html[saved-theme="dark"] body .stacked-page.active {
   color: rgb(237, 242, 247);
 }
 
+html[saved-theme="dark"] body .page-header h2.page-title {
+  line-height: 20.8px;
+}
+
 html[saved-theme="dark"] body progress {
   border-bottom-color: rgb(237, 242, 247);
   border-left-color: rgb(237, 242, 247);
@@ -693,6 +741,19 @@ html[saved-theme="dark"] body progress {
   },
   light: {
     base: `:root:root {
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --color-bg-primary: #ffffff;
   --color-bg-secondary: #f8f9fa;
   --color-border: #e2e8f0;
@@ -783,7 +844,6 @@ html[saved-theme="light"] body table {
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  width: 660px;
 }
 
 html[saved-theme="light"] body th {
@@ -829,6 +889,7 @@ html[saved-theme="light"] body video {
   border-bottom-color: rgb(26, 32, 44);
   border-right-color: rgb(26, 32, 44);
   border-top-color: rgb(26, 32, 44);
+  color: rgb(26, 32, 44);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -836,6 +897,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(26, 32, 44);
   border-right-color: rgb(26, 32, 44);
   border-top-color: rgb(26, 32, 44);
+  color: rgb(26, 32, 44);
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   margin-right: var(--spacing-sm, 8px);
@@ -1261,6 +1323,36 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html[saved-theme="light"] body h1 {
+  margin-bottom: var(--spacing-md, 16px);
+  margin-top: var(--spacing-lg, 0px);
+}
+
+html[saved-theme="light"] body h2 {
+  margin-bottom: var(--spacing-md, 16px);
+  margin-top: var(--spacing-lg, 0px);
+}
+
+html[saved-theme="light"] body h3 {
+  margin-bottom: var(--spacing-md, 16px);
+  margin-top: var(--spacing-lg, 24px);
+}
+
+html[saved-theme="light"] body h4 {
+  margin-bottom: var(--spacing-md, 16px);
+  margin-top: var(--spacing-lg, 24px);
+}
+
+html[saved-theme="light"] body h5 {
+  margin-bottom: var(--spacing-md, 16px);
+  margin-top: var(--spacing-lg, 24px);
+}
+
+html[saved-theme="light"] body h6 {
+  margin-bottom: var(--spacing-md, 16px);
+  margin-top: var(--spacing-lg, 24px);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
@@ -1366,6 +1458,10 @@ html[saved-theme="light"] body .stacked-page.active {
   border-right-color: rgb(26, 32, 44);
   border-top-color: rgb(26, 32, 44);
   color: rgb(26, 32, 44);
+}
+
+html[saved-theme="light"] body .page-header h2.page-title {
+  line-height: 20.8px;
 }
 
 html[saved-theme="light"] body progress {

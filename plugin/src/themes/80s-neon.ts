@@ -34,6 +34,19 @@ export const theme: ThemeData = {
   --bases-table-header-color: var(--text-muted, #ff79c6);
   --bases-table-summary-background: var(--background-primary, #2b213a);
   --blockquote-border-color: var(--interactive-accent, #00FFFF);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #2b213a);
   --canvas-card-label-color: var(--text-faint, #bd93f9);
   --caret-color: var(--text-normal, #FF00FF);
@@ -180,7 +193,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, #FF00FF);
   --vault-profile-color: var(--text-normal, #FF00FF);
   --vault-profile-color-hover: var(--vault-profile-color, #FF00FF);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -227,6 +242,12 @@ html body .markdown-rendered p > em, html em {
 }
 
 html body .markdown-rendered p > i, html i {
+  color: var(--italic-color, rgba(255, 220, 255, 0.8));
+  outline: rgba(255, 220, 255, 0.8) none 0px;
+  text-decoration-color: rgba(255, 220, 255, 0.8);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
   color: var(--italic-color, rgba(255, 220, 255, 0.8));
   outline: rgba(255, 220, 255, 0.8) none 0px;
   text-decoration-color: rgba(255, 220, 255, 0.8);
@@ -282,10 +303,18 @@ html body a.internal-link.broken {
   outline: rgb(255, 22, 144) none 0px;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgba(255, 220, 255, 0.8);
+  border-left-color: rgba(255, 220, 255, 0.8);
+  border-right-color: rgba(255, 220, 255, 0.8);
+  border-top-color: rgba(255, 220, 255, 0.8);
   color: rgba(255, 220, 255, 0.8);
 }
 
 html body dt {
+  border-bottom-color: rgba(255, 220, 255, 0.8);
+  border-left-color: rgba(255, 220, 255, 0.8);
+  border-right-color: rgba(255, 220, 255, 0.8);
+  border-top-color: rgba(255, 220, 255, 0.8);
   color: rgba(255, 220, 255, 0.8);
 }
 
@@ -305,6 +334,10 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--text-faint, rgba(255, 220, 255, 0.25));
+}
+
+html body blockquote {
+  color: var(--blockquote-color, rgba(255, 220, 255, 0.8));
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgba(255, 220, 255, 0.8);
@@ -322,6 +355,8 @@ html body td {
   border-left-color: rgb(0, 255, 255);
   border-right-color: rgb(0, 255, 255);
   border-top-color: rgb(0, 255, 255);
+  box-shadow: 0 0 0.25em var(--accent-2),
+    inset 0 0 0.25em var(--accent-2);
   color: var(--table-text-color, rgba(255, 220, 255, 0.8));
 }
 
@@ -330,6 +365,8 @@ html body th {
   border-left-color: rgb(0, 255, 255);
   border-right-color: rgb(0, 255, 255);
   border-top-color: rgb(0, 255, 255);
+  box-shadow: 0 0 0.25em var(--accent-2),
+    inset 0 0 0.25em var(--accent-2);
   color: var(--table-header-color, rgb(255, 0, 255));
 }`,
     code: `html body code {
@@ -386,6 +423,7 @@ html body video {
   border-left-color: rgb(255, 121, 198);
   border-right-color: rgb(255, 121, 198);
   border-top-color: rgb(255, 121, 198);
+  color: var(--text-muted, rgb(255, 121, 198));
 }
 
 html body .footnotes {
@@ -398,6 +436,7 @@ html body .transclude {
   border-left-color: rgb(0, 255, 255);
   border-right-color: rgba(255, 220, 255, 0.8);
   border-top-color: rgba(255, 220, 255, 0.8);
+  color: rgba(255, 220, 255, 0.8);
 }
 
 html body .transclude-inner {
@@ -405,6 +444,7 @@ html body .transclude-inner {
   border-left-color: rgb(255, 0, 255);
   border-right-color: rgb(255, 0, 255);
   border-top-color: rgb(255, 0, 255);
+  color: rgb(255, 0, 255);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(0, 255, 255);
@@ -1255,6 +1295,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color-hover: var(--tag-color-hover, #FF1690);
   --pill-color-remove: var(--tag-color, #FF1690);
   --pill-color-remove-hover: var(--tag-color-hover, #FF1690);
+  color: var(--pill-color, rgb(255, 22, 144));
 }
 
 html body a.internal-link.tag-link::before {
@@ -1262,6 +1303,10 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgba(255, 220, 255, 0.8);
+  border-left-color: rgba(255, 220, 255, 0.8);
+  border-right-color: rgba(255, 220, 255, 0.8);
+  border-top-color: rgba(255, 220, 255, 0.8);
   color: var(--h1-color, rgba(255, 220, 255, 0.8));
   text-shadow: 0 0 0.5em var(--accent-1);
 }
@@ -1271,30 +1316,54 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgba(255, 220, 255, 0.8);
+  border-left-color: rgba(255, 220, 255, 0.8);
+  border-right-color: rgba(255, 220, 255, 0.8);
+  border-top-color: rgba(255, 220, 255, 0.8);
   color: var(--h2-color, rgba(255, 220, 255, 0.8));
   text-shadow: 0 0 0.5em var(--accent-2);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgba(255, 220, 255, 0.8);
+  border-left-color: rgba(255, 220, 255, 0.8);
+  border-right-color: rgba(255, 220, 255, 0.8);
+  border-top-color: rgba(255, 220, 255, 0.8);
   color: var(--inline-title-color, rgba(255, 220, 255, 0.8));
 }
 
 html body h3 {
+  border-bottom-color: rgba(255, 220, 255, 0.8);
+  border-left-color: rgba(255, 220, 255, 0.8);
+  border-right-color: rgba(255, 220, 255, 0.8);
+  border-top-color: rgba(255, 220, 255, 0.8);
   color: var(--h3-color, rgba(255, 220, 255, 0.8));
   text-shadow: 0 0 0.5em var(--accent-3);
 }
 
 html body h4 {
+  border-bottom-color: rgba(255, 220, 255, 0.8);
+  border-left-color: rgba(255, 220, 255, 0.8);
+  border-right-color: rgba(255, 220, 255, 0.8);
+  border-top-color: rgba(255, 220, 255, 0.8);
   color: var(--h4-color, rgba(255, 220, 255, 0.8));
   text-shadow: 0 0 0.5em var(--accent-4);
 }
 
 html body h5 {
+  border-bottom-color: rgba(255, 220, 255, 0.8);
+  border-left-color: rgba(255, 220, 255, 0.8);
+  border-right-color: rgba(255, 220, 255, 0.8);
+  border-top-color: rgba(255, 220, 255, 0.8);
   color: var(--h5-color, rgba(255, 220, 255, 0.8));
   text-shadow: 0 0 0.5em var(--accent-5);
 }
 
 html body h6 {
+  border-bottom-color: rgba(255, 220, 255, 0.8);
+  border-left-color: rgba(255, 220, 255, 0.8);
+  border-right-color: rgba(255, 220, 255, 0.8);
+  border-top-color: rgba(255, 220, 255, 0.8);
   color: var(--h6-color, rgba(255, 220, 255, 0.8));
   text-shadow: 0 0 0.5em var(--accent-6);
 }
@@ -1313,6 +1382,22 @@ html body hr {
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(255, 121, 198));
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgba(255, 220, 255, 0.8);
@@ -1432,11 +1517,27 @@ html body .canvas-sidebar {
   color: var(--text-muted, rgb(255, 121, 198));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(255, 121, 198);
+  border-left-color: rgb(255, 121, 198);
+  border-right-color: rgb(255, 121, 198);
+  border-top-color: rgb(255, 121, 198);
+  color: rgb(255, 121, 198);
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(255, 121, 198);
   border-left-color: rgb(255, 121, 198);
   border-right-color: rgb(255, 121, 198);
   border-top-color: rgb(255, 121, 198);
+  color: rgb(255, 121, 198);
+}
+
+html body .metadata-property-key {
+  color: rgb(255, 121, 198);
+}
+
+html body .metadata-property-value {
   color: rgb(255, 121, 198);
 }
 
@@ -1500,6 +1601,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(255, 0, 255);
+  border-left-color: rgb(255, 0, 255);
+  border-right-color: rgb(255, 0, 255);
+  border-top-color: rgb(255, 0, 255);
   color: var(--text-normal, rgb(255, 0, 255));
 }
 

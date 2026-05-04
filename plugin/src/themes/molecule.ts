@@ -4,6 +4,19 @@ export const theme: ThemeData = {
   meta: { name: "molecule", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --default-font: 'JetBrains Mono';
   --file-header-font: var(--font-interface, JetBrains Mono, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   --metadata-input-font: var(--font-interface, JetBrains Mono, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
@@ -51,6 +64,7 @@ html body blockquote {
     tables: `html body table {
   margin-left: 318.391px;
   margin-right: 318.391px;
+  text-align: justify;
 }`,
     code: `html body code {
   font-family: var(--font-monospace, "Space Mono", "Source Code Pro", monospace);
@@ -500,8 +514,16 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
     breadcrumbs: `html body .breadcrumb-element p {
   font-family: "??", "??", "JetBrains Mono", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
+    properties: `html body .metadata-property-key {
+  font-family: var(--metadata-label-font, "??", "??", "JetBrains Mono", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}
+
+html body .metadata-property-value {
+  font-family: var(--metadata-input-font, "??", "??", "JetBrains Mono", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}`,
     misc: `html body .page-header h2.page-title {
   font-family: "??", "??", "JetBrains Mono", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 600;
 }
 
 html body input[type=text] {

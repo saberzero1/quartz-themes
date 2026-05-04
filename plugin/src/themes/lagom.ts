@@ -31,8 +31,21 @@ export const theme: ThemeData = {
   --active-line-indicator: "+ ";
   --bases-embed-border-radius: var(--radius-s, 11.5px);
   --bases-table-container-border-radius: var(--radius-s, 11.5px);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
   --callout-font-size-title: 16px;
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 11.5px);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --callouts-align-text: justify;
   --canvas-controls-radius: var(--radius-s, 11.5px);
   --checkbox-radius: var(--radius-s, 11.5px);
@@ -168,7 +181,20 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
     links: `html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(166, 138, 249));
 }`,
+    lists: `html[saved-theme="dark"] body ol > li {
+  margin-left: 45px;
+  padding-bottom: var(--list-spacing, 2px);
+  padding-top: var(--list-spacing, 2px);
+}
+
+html[saved-theme="dark"] body ul > li {
+  margin-left: 45px;
+  padding-bottom: var(--list-spacing, 2px);
+  padding-top: var(--list-spacing, 2px);
+}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
+  letter-spacing: 0.1px;
+  line-height: 21px;
   padding-bottom: 10px;
   padding-top: 10px;
 }`,
@@ -182,7 +208,7 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-top-left-radius: 11.5px;
   border-top-right-radius: 11.5px;
   margin-top: var(--heading-spacing, 8px);
-  width: 621px;
+  text-align: justify;
 }
 
 html[saved-theme="dark"] body tbody tr:nth-child(even) {
@@ -200,6 +226,7 @@ html[saved-theme="dark"] body td {
 html[saved-theme="dark"] body th {
   border-top-left-radius: var(--table-border-radius, 11.5px);
   font-weight: var(--table-header-weight, 400);
+  letter-spacing: 0.1px;
   text-align: center;
 }
 
@@ -272,6 +299,7 @@ html[saved-theme="dark"] body img {
   border-bottom-width: 1px;
   border-left-color: rgb(54, 54, 54);
   border-left-width: 1px;
+  border-radius: 11.5px;
   border-right-color: rgb(54, 54, 54);
   border-right-style: solid;
   border-right-width: 1px;
@@ -289,6 +317,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-bottom-left-radius: 11.5px;
   border-bottom-right-radius: 11.5px;
   border-bottom-style: solid;
+  border-radius: 11.5px;
   border-right-style: solid;
   border-top-left-radius: 11.5px;
   border-top-right-radius: 11.5px;
@@ -2038,6 +2067,16 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  font-size: var(--metadata-label-font-size, 15px);
+  line-height: var(--line-height-tight, 15px);
+}
+
+html[saved-theme="dark"] body h1 {
+  font-size: var(--h1-size, 20px);
+  letter-spacing: var(--h1-letter-spacing, -0.3px);
+  line-height: var(--headers-space-simetry, 26px);
+  margin-bottom: 18px;
+  margin-top: 18px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -2045,8 +2084,59 @@ html[saved-theme="dark"] body h1.article-title {
   font-weight: var(--inline-title-weight, 400);
 }
 
+html[saved-theme="dark"] body h2 {
+  font-size: var(--h2-size, 18px);
+  letter-spacing: var(--h2-letter-spacing, -0.198px);
+  line-height: var(--headers-space-simetry, 23.4px);
+  margin-bottom: 18px;
+  margin-top: var(--heading-spacing, 18px);
+}
+
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  background: rgba(0, 0, 0, 0) none no-repeat scroll 50% 50% / cover padding-box border-box;
   font-family: var(--magazine-title-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--inline-title-size, 32px);
+  font-weight: var(--inline-title-weight, 400);
+  letter-spacing: var(--letter-spacing-note, 0.1px);
+  line-height: var(--inline-title-line-height, 35.2px);
+  margin-bottom: 20px;
+  margin-left: -35px;
+  margin-right: -35px;
+  margin-top: -35px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 32px;
+}
+
+html[saved-theme="dark"] body h3 {
+  font-size: var(--h3-size, 17px);
+  letter-spacing: var(--h3-letter-spacing, -0.136px);
+  line-height: var(--headers-space-simetry, 22.1px);
+  margin-bottom: 18px;
+  margin-top: var(--heading-spacing, 18px);
+}
+
+html[saved-theme="dark"] body h4 {
+  font-size: var(--h4-size, 14px);
+  letter-spacing: var(--h4-letter-spacing, -0.07px);
+  line-height: var(--headers-space-simetry, 18.2px);
+  margin-bottom: 18px;
+  margin-top: var(--heading-spacing, 18px);
+}
+
+html[saved-theme="dark"] body h5 {
+  font-size: var(--h5-size, 12px);
+  letter-spacing: var(--h5-letter-spacing, -0.024px);
+  line-height: var(--headers-space-simetry, 15.6px);
+  margin-bottom: 18px;
+  margin-top: var(--heading-spacing, 18px);
+}
+
+html[saved-theme="dark"] body h6 {
+  line-height: var(--headers-space-simetry, 20.8px);
+  margin-bottom: 18px;
+  margin-top: 18px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -2151,6 +2241,22 @@ html[saved-theme="dark"] body .bases-table thead th {
   padding-top: 5px;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-left-radius: 11.5px;
+  border-bottom-right-radius: 11.5px;
+  border-top-left-radius: 11.5px;
+  border-top-right-radius: 11.5px;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  font-size: var(--metadata-label-font-size, 15px);
+  text-transform: capitalize;
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  font-size: var(--metadata-label-font-size, 15px);
+}
+
 html[saved-theme="dark"] body .note-properties-tags {
   --pill-radius: var(--tag-radius, 2em);
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
@@ -2187,8 +2293,21 @@ html[saved-theme="dark"] body ul.tags > li {
   --active-line-indicator: "+ ";
   --bases-embed-border-radius: var(--radius-s, 11.5px);
   --bases-table-container-border-radius: var(--radius-s, 11.5px);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
   --callout-font-size-title: 16px;
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 11.5px);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --callouts-align-text: justify;
   --canvas-controls-radius: var(--radius-s, 11.5px);
   --checkbox-radius: var(--radius-s, 11.5px);
@@ -2324,7 +2443,20 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
     links: `html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(138, 92, 245));
 }`,
+    lists: `html[saved-theme="light"] body ol > li {
+  margin-left: 45px;
+  padding-bottom: var(--list-spacing, 2px);
+  padding-top: var(--list-spacing, 2px);
+}
+
+html[saved-theme="light"] body ul > li {
+  margin-left: 45px;
+  padding-bottom: var(--list-spacing, 2px);
+  padding-top: var(--list-spacing, 2px);
+}`,
     blockquotes: `html[saved-theme="light"] body blockquote {
+  letter-spacing: 0.1px;
+  line-height: 21px;
   padding-bottom: 10px;
   padding-top: 10px;
 }`,
@@ -2338,7 +2470,7 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
   border-top-left-radius: 11.5px;
   border-top-right-radius: 11.5px;
   margin-top: var(--heading-spacing, 8px);
-  width: 621px;
+  text-align: justify;
 }
 
 html[saved-theme="light"] body tbody tr:nth-child(even) {
@@ -2356,6 +2488,7 @@ html[saved-theme="light"] body td {
 html[saved-theme="light"] body th {
   border-top-left-radius: var(--table-border-radius, 11.5px);
   font-weight: var(--table-header-weight, 400);
+  letter-spacing: 0.1px;
   text-align: center;
 }
 
@@ -2428,6 +2561,7 @@ html[saved-theme="light"] body img {
   border-bottom-width: 1px;
   border-left-color: rgb(224, 224, 224);
   border-left-width: 1px;
+  border-radius: 11.5px;
   border-right-color: rgb(224, 224, 224);
   border-right-style: solid;
   border-right-width: 1px;
@@ -2445,6 +2579,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-bottom-left-radius: 11.5px;
   border-bottom-right-radius: 11.5px;
   border-bottom-style: solid;
+  border-radius: 11.5px;
   border-right-style: solid;
   border-top-left-radius: 11.5px;
   border-top-right-radius: 11.5px;
@@ -4186,6 +4321,16 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  font-size: var(--metadata-label-font-size, 15px);
+  line-height: var(--line-height-tight, 15px);
+}
+
+html[saved-theme="light"] body h1 {
+  font-size: var(--h1-size, 20px);
+  letter-spacing: var(--h1-letter-spacing, -0.3px);
+  line-height: var(--headers-space-simetry, 26px);
+  margin-bottom: 18px;
+  margin-top: 18px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -4193,8 +4338,59 @@ html[saved-theme="light"] body h1.article-title {
   font-weight: var(--inline-title-weight, 400);
 }
 
+html[saved-theme="light"] body h2 {
+  font-size: var(--h2-size, 18px);
+  letter-spacing: var(--h2-letter-spacing, -0.198px);
+  line-height: var(--headers-space-simetry, 23.4px);
+  margin-bottom: 18px;
+  margin-top: var(--heading-spacing, 18px);
+}
+
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  background: rgba(0, 0, 0, 0) none no-repeat scroll 50% 50% / cover padding-box border-box;
   font-family: var(--magazine-title-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--inline-title-size, 32px);
+  font-weight: var(--inline-title-weight, 400);
+  letter-spacing: var(--letter-spacing-note, 0.1px);
+  line-height: var(--inline-title-line-height, 35.2px);
+  margin-bottom: 20px;
+  margin-left: -35px;
+  margin-right: -35px;
+  margin-top: -35px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 32px;
+}
+
+html[saved-theme="light"] body h3 {
+  font-size: var(--h3-size, 17px);
+  letter-spacing: var(--h3-letter-spacing, -0.136px);
+  line-height: var(--headers-space-simetry, 22.1px);
+  margin-bottom: 18px;
+  margin-top: var(--heading-spacing, 18px);
+}
+
+html[saved-theme="light"] body h4 {
+  font-size: var(--h4-size, 14px);
+  letter-spacing: var(--h4-letter-spacing, -0.07px);
+  line-height: var(--headers-space-simetry, 18.2px);
+  margin-bottom: 18px;
+  margin-top: var(--heading-spacing, 18px);
+}
+
+html[saved-theme="light"] body h5 {
+  font-size: var(--h5-size, 12px);
+  letter-spacing: var(--h5-letter-spacing, -0.024px);
+  line-height: var(--headers-space-simetry, 15.6px);
+  margin-bottom: 18px;
+  margin-top: var(--heading-spacing, 18px);
+}
+
+html[saved-theme="light"] body h6 {
+  line-height: var(--headers-space-simetry, 20.8px);
+  margin-bottom: 18px;
+  margin-top: 18px;
 }
 
 html[saved-theme="light"] body hr {
@@ -4297,6 +4493,22 @@ html[saved-theme="light"] body .bases-table thead th {
   margin-top: 10px;
   padding-bottom: 5px;
   padding-top: 5px;
+}
+
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-left-radius: 11.5px;
+  border-bottom-right-radius: 11.5px;
+  border-top-left-radius: 11.5px;
+  border-top-right-radius: 11.5px;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  font-size: var(--metadata-label-font-size, 15px);
+  text-transform: capitalize;
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  font-size: var(--metadata-label-font-size, 15px);
 }
 
 html[saved-theme="light"] body .note-properties-tags {

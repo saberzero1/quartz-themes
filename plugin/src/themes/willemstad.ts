@@ -225,10 +225,23 @@ export const theme: ThemeData = {
   --callout-border-left-extra: 5px;
   --callout-border-left-width: calc(var(--callout-border-other-width) + var(--callout-border-left-extra));
   --callout-border-other-width: var(--callout-border-base-width, 0px);
+  --callout-bug: var(--callout-bug, 164, 103, 80);
   --callout-columns-margin-top: var(--margin-callout, 0.75em);
+  --callout-default: var(--callout-default, 0, 191, 111);
+  --callout-error: var(--callout-error, 241, 0, 34);
+  --callout-example: var(--callout-example, 125, 84, 178);
+  --callout-fail: var(--callout-fail, 161, 40, 100);
   --callout-gap: 0.5em;
+  --callout-info: var(--callout-info, 0, 170, 199);
+  --callout-question: var(--callout-question, 160, 199, 92);
+  --callout-quote: var(--callout-quote, 161, 169, 173);
   --callout-radius: var(--radius-s, 3px);
+  --callout-success: var(--callout-success, 0, 158, 76);
+  --callout-summary: var(--callout-summary, 91, 197, 219);
+  --callout-tip: var(--callout-tip, 34, 148, 1);
   --callout-title-gap: 0.75em;
+  --callout-todo: var(--callout-todo, 0, 170, 199);
+  --callout-warning: var(--callout-warning, 255, 182, 26);
   --canvas-background: var(--background-primary, oklch(0.13 0 0));
   --canvas-card-label-color: var(--text-faint, oklch(0.48 0 0));
   --canvas-controls-radius: var(--radius-s, 3px);
@@ -906,7 +919,9 @@ export const theme: ThemeData = {
   --vault-profile-color-hover: var(--vault-profile-color, oklch(0.98 0 0));
   --width-norm-sd: var(--ribbon-width, 36px);
   --width-vll: 700px;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -1061,6 +1076,13 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, oklch(0.98 0 0));
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  outline: oklch(0.98 0 0) none 0px;
+  text-decoration-color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--italic-color, oklch(0.98 0 0));
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.98 0 0) none 0px;
@@ -1229,19 +1251,31 @@ html[saved-theme="dark"] body a.internal-link.broken {
   outline: oklch(0.707 0.1737 155.3) none 0px;
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: oklch(0.98 0 0);
+  border-left-color: oklch(0.98 0 0);
+  border-right-color: oklch(0.98 0 0);
+  border-top-color: oklch(0.98 0 0);
   color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: oklch(0.98 0 0);
+  border-left-color: oklch(0.98 0 0);
+  border-right-color: oklch(0.98 0 0);
+  border-top-color: oklch(0.98 0 0);
   color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: oklch(0.98 0 0);
+  margin-left: 30.1875px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: oklch(0.98 0 0);
+  margin-left: 30.1875px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -1256,6 +1290,7 @@ html[saved-theme="dark"] body ul.overflow {
 
 html[saved-theme="dark"] body blockquote {
   background-color: var(--blockquote-background-color, oklch(0.17 0 0));
+  color: var(--blockquote-color, oklch(0.98 0 0));
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   padding-bottom: 4px;
   padding-top: 4px;
@@ -1271,7 +1306,6 @@ html[saved-theme="dark"] body table {
   color: oklch(0.98 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   margin-top: var(--heading-spacing, 12px);
-  width: 194.844px;
 }
 
 html[saved-theme="dark"] body tbody tr:nth-child(even) {
@@ -1374,10 +1408,12 @@ html[saved-theme="dark"] body video {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   border-left-color: oklch(0.68 0 0);
+  border-radius: 6px;
   border-right-color: oklch(0.68 0 0);
   border-top-color: oklch(0.68 0 0);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  color: var(--text-muted, oklch(0.68 0 0));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -1391,6 +1427,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-width: 0px;
   border-right-color: oklch(0.98 0 0);
   border-top-color: oklch(0.98 0 0);
+  color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -1398,6 +1435,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: oklch(0.98 0 0);
   border-right-color: oklch(0.98 0 0);
   border-top-color: oklch(0.98 0 0);
+  color: oklch(0.98 0 0);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
@@ -13879,7 +13917,9 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-bottom-right-radius: 3px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  color: var(--pill-color, oklch(0.707 0.1737 155.3));
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: var(--line-height-tight, 18.2px);
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -13889,8 +13929,23 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 html[saved-theme="dark"] body h1 {
   --font-weight: var(--h1-weight, 600);
   --h1-color: var(--col-h1, oklch(from oklch(40.14% 0.0638 202.51deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h));
+  background: oklch(0.4014 0.0638 202.51) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--col-h1-bg, oklch(0.4014 0.0638 202.51));
+  border-bottom-color: oklch(0.975 0.03 202.51);
+  border-left-color: oklch(0.975 0.03 202.51);
+  border-right-color: oklch(0.975 0.03 202.51);
+  border-top-color: oklch(0.975 0.03 202.51);
   color: var(--h1-color, oklch(0.975 0.03 202.51));
   font-family: var(--font-heading, Manrope, "Inter 4.1", "DM Sans");
+  font-size: var(--h1-size, 28.8px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h1-letter-spacing, -0.432px);
+  line-height: var(--h1-line-height, 34.56px);
+  margin-bottom: 0px;
+  padding-bottom: 4.32px;
+  padding-left: 7.2px;
+  padding-right: 7.2px;
+  padding-top: 4.32px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -13902,41 +13957,133 @@ html[saved-theme="dark"] body h1.article-title {
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 600);
   --h2-color: var(--col-h2, oklch(from oklch(70.7% 0.1737 155.3deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h));
+  background: oklch(0.707 0.1737 155.3) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--col-h2-bg, oklch(0.707 0.1737 155.3));
+  border-bottom-color: oklch(0.3 0.03 155.3);
+  border-left-color: oklch(0.3 0.03 155.3);
+  border-right-color: oklch(0.3 0.03 155.3);
+  border-top-color: oklch(0.3 0.03 155.3);
   color: var(--h2-color, oklch(0.3 0.03 155.3));
   font-family: var(--h2-font, Manrope, "Inter 4.1", "DM Sans");
+  font-size: var(--h2-size, 25.6px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.2816px);
+  line-height: var(--h2-line-height, 30.72px);
+  margin-bottom: 0px;
+  margin-left: var(--cssc-cornell-gap, 0px);
+  padding-bottom: 3.84px;
+  padding-left: 6.4px;
+  padding-right: 6.4px;
+  padding-top: 3.84px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: oklch(0.98 0 0);
+  border-left-color: oklch(0.98 0 0);
+  border-right-color: oklch(0.98 0 0);
+  border-top-color: oklch(0.98 0 0);
   color: var(--inline-title-color, oklch(0.98 0 0));
   font-family: var(--inline-title-font, "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope);
+  font-size: var(--inline-title-size, 28.8px);
+  font-weight: var(--inline-title-weight, 600);
+  letter-spacing: -0.432px;
+  line-height: var(--inline-title-line-height, 34.56px);
+  margin-bottom: 14.4px;
 }
 
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, 600);
   --h3-color: var(--col-h3, oklch(from oklch(82.77% 0.1667 79.6deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h));
+  background: oklch(0.8277 0.1667 79.6) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--col-h3-bg, oklch(0.8277 0.1667 79.6));
+  border-bottom-color: oklch(0.3 0.03 79.6);
+  border-left-color: oklch(0.3 0.03 79.6);
+  border-right-color: oklch(0.3 0.03 79.6);
+  border-top-color: oklch(0.3 0.03 79.6);
   color: var(--h3-color, oklch(0.3 0.03 79.6));
   font-family: var(--h3-font, Manrope, "Inter 4.1", "DM Sans");
+  font-size: var(--h3-size, 23.2px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h3-letter-spacing, -0.1856px);
+  line-height: var(--h3-line-height, 30.16px);
+  margin-bottom: 0px;
+  margin-left: var(--cssc-cornell-gap, 0px);
+  margin-top: var(--heading-spacing, 17.4px);
+  padding-bottom: 3.48px;
+  padding-left: 5.8px;
+  padding-right: 5.8px;
+  padding-top: 3.48px;
 }
 
 html[saved-theme="dark"] body h4 {
   --font-weight: var(--h4-weight, 500);
   --h4-color: var(--col-h4, oklch(from oklch(40.14% 0.0638 202.51deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h));
+  background: oklch(0.4014 0.0638 202.51) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--col-h4-bg, oklch(0.4014 0.0638 202.51));
+  border-bottom-color: oklch(0.975 0.03 202.51);
+  border-left-color: oklch(0.975 0.03 202.51);
+  border-right-color: oklch(0.975 0.03 202.51);
+  border-top-color: oklch(0.975 0.03 202.51);
   color: var(--h4-color, oklch(0.975 0.03 202.51));
   font-family: var(--h4-font, Manrope, "Inter 4.1", "DM Sans");
+  font-size: var(--h4-size, 20.8px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h4-letter-spacing, -0.104px);
+  line-height: var(--h4-line-height, 29.12px);
+  margin-bottom: 0px;
+  margin-left: var(--cssc-cornell-gap, 0px);
+  margin-top: var(--heading-spacing, 15.6px);
+  padding-bottom: 3.12px;
+  padding-left: 5.2px;
+  padding-right: 5.2px;
+  padding-top: 3.12px;
 }
 
 html[saved-theme="dark"] body h5 {
   --font-weight: var(--h5-weight, 500);
   --h5-color: var(--col-h5, oklch(from oklch(70.7% 0.1737 155.3deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h));
+  background: oklch(0.707 0.1737 155.3) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--col-h5-bg, oklch(0.707 0.1737 155.3));
+  border-bottom-color: oklch(0.3 0.03 155.3);
+  border-left-color: oklch(0.3 0.03 155.3);
+  border-right-color: oklch(0.3 0.03 155.3);
+  border-top-color: oklch(0.3 0.03 155.3);
   color: var(--h5-color, oklch(0.3 0.03 155.3));
   font-family: var(--h5-font, Manrope, "Inter 4.1", "DM Sans");
+  font-size: var(--h5-size, 18.4px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h5-letter-spacing, -0.0368px);
+  line-height: var(--h5-line-height, 27.6px);
+  margin-bottom: 0px;
+  margin-left: var(--cssc-cornell-gap, 0px);
+  margin-top: var(--heading-spacing, 13.8px);
+  padding-bottom: 2.76px;
+  padding-left: 4.6px;
+  padding-right: 4.6px;
+  padding-top: 2.76px;
 }
 
 html[saved-theme="dark"] body h6 {
   --font-weight: var(--h6-weight, 500);
   --h6-color: var(--col-h6, oklch(from oklch(82.77% 0.1667 79.6deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h));
+  background: oklch(0.8277 0.1667 79.6) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--col-h6-bg, oklch(0.8277 0.1667 79.6));
+  border-bottom-color: oklch(0.3 0.03 79.6);
+  border-left-color: oklch(0.3 0.03 79.6);
+  border-right-color: oklch(0.3 0.03 79.6);
+  border-top-color: oklch(0.3 0.03 79.6);
   color: var(--h6-color, oklch(0.3 0.03 79.6));
   font-family: var(--h6-font, Manrope, "Inter 4.1", "DM Sans");
+  font-size: var(--h6-size, 16.8px);
+  font-weight: var(--font-weight, 500);
+  line-height: var(--h6-line-height, 25.2px);
+  margin-bottom: 0px;
+  margin-left: var(--cssc-cornell-gap, 0px);
+  margin-top: 12.6px;
+  padding-bottom: 2.52px;
+  padding-left: 4.2px;
+  padding-right: 4.2px;
+  padding-top: 2.52px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -13968,6 +14115,22 @@ html[saved-theme="dark"] body hr {
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, oklch(0.68 0 0));
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: oklch(0.98 0 0);
@@ -14097,6 +14260,7 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-right-radius: 6px;
   color: var(--opp-text-normal, oklch(0.68 0 0));
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  padding-right: var(--size-4-2, 4px);
 }
 
 html[saved-theme="dark"] body footer ul li a {
@@ -14224,6 +14388,20 @@ html[saved-theme="dark"] body .bases-table thead th {
   padding-top: 4px;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: oklch(0.68 0 0);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-left-color: oklch(0.68 0 0);
+  border-right-color: oklch(0.68 0 0);
+  border-top-color: oklch(0.68 0 0);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: oklch(0.68 0 0);
+  display: grid;
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: oklch(0.68 0 0);
   border-left-color: oklch(0.68 0 0);
@@ -14231,6 +14409,16 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: oklch(0.68 0 0);
   color: oklch(0.68 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: oklch(0.68 0 0);
+  font-family: var(--metadata-label-font, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: oklch(0.68 0 0);
+  font-family: var(--metadata-input-font, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -14398,6 +14586,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: oklch(0.98 0 0);
+  border-left-color: oklch(0.98 0 0);
+  border-right-color: oklch(0.98 0 0);
+  border-top-color: oklch(0.98 0 0);
   color: var(--text-normal, oklch(0.98 0 0));
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
 }
@@ -14533,10 +14725,23 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-border-left-extra: 5px;
   --callout-border-left-width: calc(var(--callout-border-other-width) + var(--callout-border-left-extra));
   --callout-border-other-width: var(--callout-border-base-width, 0px);
+  --callout-bug: var(--callout-bug, 164, 103, 80);
   --callout-columns-margin-top: var(--margin-callout, 0.75em);
+  --callout-default: var(--callout-default, 0, 191, 111);
+  --callout-error: var(--callout-error, 241, 0, 34);
+  --callout-example: var(--callout-example, 125, 84, 178);
+  --callout-fail: var(--callout-fail, 161, 40, 100);
   --callout-gap: 0.5em;
+  --callout-info: var(--callout-info, 0, 170, 199);
+  --callout-question: var(--callout-question, 160, 199, 92);
+  --callout-quote: var(--callout-quote, 161, 169, 173);
   --callout-radius: var(--radius-s, 3px);
+  --callout-success: var(--callout-success, 0, 158, 76);
+  --callout-summary: var(--callout-summary, 91, 197, 219);
+  --callout-tip: var(--callout-tip, 34, 148, 1);
   --callout-title-gap: 0.75em;
+  --callout-todo: var(--callout-todo, 0, 170, 199);
+  --callout-warning: var(--callout-warning, 255, 182, 26);
   --canvas-background: var(--background-primary, oklch(1 0 0));
   --canvas-card-label-color: var(--text-faint, oklch(0.6 0 0));
   --canvas-controls-radius: var(--radius-s, 3px);
@@ -15221,7 +15426,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-profile-color-hover: var(--vault-profile-color, oklch(0 0 0));
   --width-norm-sd: var(--ribbon-width, 36px);
   --width-vll: 700px;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -15372,6 +15579,13 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--italic-color, oklch(0 0 0));
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  outline: oklch(0 0 0) none 0px;
+  text-decoration-color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--italic-color, oklch(0 0 0));
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0 0 0) none 0px;
@@ -15541,19 +15755,31 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, oklch(0.707 0.1737 155.3 / 0.3));
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: oklch(0 0 0);
+  border-left-color: oklch(0 0 0);
+  border-right-color: oklch(0 0 0);
+  border-top-color: oklch(0 0 0);
   color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: oklch(0 0 0);
+  border-left-color: oklch(0 0 0);
+  border-right-color: oklch(0 0 0);
+  border-top-color: oklch(0 0 0);
   color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
 }
 
 html[saved-theme="light"] body ol > li {
   color: oklch(0 0 0);
+  margin-left: 30.1875px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: oklch(0 0 0);
+  margin-left: 30.1875px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -15568,6 +15794,7 @@ html[saved-theme="light"] body ul.overflow {
 
 html[saved-theme="light"] body blockquote {
   background-color: var(--blockquote-background-color, oklch(0.98 0 0));
+  color: var(--blockquote-color, oklch(0 0 0));
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   padding-bottom: 4px;
   padding-top: 4px;
@@ -15583,7 +15810,6 @@ html[saved-theme="light"] body table {
   color: oklch(0 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   margin-top: var(--heading-spacing, 12px);
-  width: 194.844px;
 }
 
 html[saved-theme="light"] body tbody tr:nth-child(even) {
@@ -15686,10 +15912,12 @@ html[saved-theme="light"] body video {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   border-left-color: oklch(0.3 0 0);
+  border-radius: 6px;
   border-right-color: oklch(0.3 0 0);
   border-top-color: oklch(0.3 0 0);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  color: var(--text-muted, oklch(0.3 0 0));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -15703,6 +15931,7 @@ html[saved-theme="light"] body .transclude {
   border-left-width: 0px;
   border-right-color: oklch(0 0 0);
   border-top-color: oklch(0 0 0);
+  color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -15710,6 +15939,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: oklch(0 0 0);
   border-right-color: oklch(0 0 0);
   border-top-color: oklch(0 0 0);
+  color: oklch(0 0 0);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
@@ -28161,7 +28391,9 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-top-color: oklch(0.707 0.1737 155.3 / 0.15);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  color: var(--pill-color, oklch(0.4014 0.0638 202.51));
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: var(--line-height-tight, 18.2px);
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -28171,8 +28403,23 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 html[saved-theme="light"] body h1 {
   --font-weight: var(--h1-weight, 600);
   --h1-color: var(--col-h1, oklch(from oklch(40.14% 0.0638 202.51deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h));
+  background: oklch(0.4014 0.0638 202.51) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--col-h1-bg, oklch(0.4014 0.0638 202.51));
+  border-bottom-color: oklch(0.975 0.03 202.51);
+  border-left-color: oklch(0.975 0.03 202.51);
+  border-right-color: oklch(0.975 0.03 202.51);
+  border-top-color: oklch(0.975 0.03 202.51);
   color: var(--h1-color, oklch(0.975 0.03 202.51));
   font-family: var(--font-heading, Manrope, "Inter 4.1", "DM Sans");
+  font-size: var(--h1-size, 28.8px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h1-letter-spacing, -0.432px);
+  line-height: var(--h1-line-height, 34.56px);
+  margin-bottom: 0px;
+  padding-bottom: 4.32px;
+  padding-left: 7.2px;
+  padding-right: 7.2px;
+  padding-top: 4.32px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -28184,41 +28431,133 @@ html[saved-theme="light"] body h1.article-title {
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 600);
   --h2-color: var(--col-h2, oklch(from oklch(70.7% 0.1737 155.3deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h));
+  background: oklch(0.707 0.1737 155.3) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--col-h2-bg, oklch(0.707 0.1737 155.3));
+  border-bottom-color: oklch(0.3 0.03 155.3);
+  border-left-color: oklch(0.3 0.03 155.3);
+  border-right-color: oklch(0.3 0.03 155.3);
+  border-top-color: oklch(0.3 0.03 155.3);
   color: var(--h2-color, oklch(0.3 0.03 155.3));
   font-family: var(--h2-font, Manrope, "Inter 4.1", "DM Sans");
+  font-size: var(--h2-size, 25.6px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.2816px);
+  line-height: var(--h2-line-height, 30.72px);
+  margin-bottom: 0px;
+  margin-left: var(--cssc-cornell-gap, 0px);
+  padding-bottom: 3.84px;
+  padding-left: 6.4px;
+  padding-right: 6.4px;
+  padding-top: 3.84px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: oklch(0 0 0);
+  border-left-color: oklch(0 0 0);
+  border-right-color: oklch(0 0 0);
+  border-top-color: oklch(0 0 0);
   color: var(--inline-title-color, oklch(0 0 0));
   font-family: var(--inline-title-font, "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope);
+  font-size: var(--inline-title-size, 28.8px);
+  font-weight: var(--inline-title-weight, 600);
+  letter-spacing: -0.432px;
+  line-height: var(--inline-title-line-height, 34.56px);
+  margin-bottom: 14.4px;
 }
 
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, 600);
   --h3-color: var(--col-h3, oklch(from oklch(82.77% 0.1667 79.6deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h));
+  background: oklch(0.8277 0.1667 79.6) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--col-h3-bg, oklch(0.8277 0.1667 79.6));
+  border-bottom-color: oklch(0.3 0.03 79.6);
+  border-left-color: oklch(0.3 0.03 79.6);
+  border-right-color: oklch(0.3 0.03 79.6);
+  border-top-color: oklch(0.3 0.03 79.6);
   color: var(--h3-color, oklch(0.3 0.03 79.6));
   font-family: var(--h3-font, Manrope, "Inter 4.1", "DM Sans");
+  font-size: var(--h3-size, 23.2px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h3-letter-spacing, -0.1856px);
+  line-height: var(--h3-line-height, 30.16px);
+  margin-bottom: 0px;
+  margin-left: var(--cssc-cornell-gap, 0px);
+  margin-top: var(--heading-spacing, 17.4px);
+  padding-bottom: 3.48px;
+  padding-left: 5.8px;
+  padding-right: 5.8px;
+  padding-top: 3.48px;
 }
 
 html[saved-theme="light"] body h4 {
   --font-weight: var(--h4-weight, 500);
   --h4-color: var(--col-h4, oklch(from oklch(40.14% 0.0638 202.51deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h));
+  background: oklch(0.4014 0.0638 202.51) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--col-h4-bg, oklch(0.4014 0.0638 202.51));
+  border-bottom-color: oklch(0.975 0.03 202.51);
+  border-left-color: oklch(0.975 0.03 202.51);
+  border-right-color: oklch(0.975 0.03 202.51);
+  border-top-color: oklch(0.975 0.03 202.51);
   color: var(--h4-color, oklch(0.975 0.03 202.51));
   font-family: var(--h4-font, Manrope, "Inter 4.1", "DM Sans");
+  font-size: var(--h4-size, 20.8px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h4-letter-spacing, -0.104px);
+  line-height: var(--h4-line-height, 29.12px);
+  margin-bottom: 0px;
+  margin-left: var(--cssc-cornell-gap, 0px);
+  margin-top: var(--heading-spacing, 15.6px);
+  padding-bottom: 3.12px;
+  padding-left: 5.2px;
+  padding-right: 5.2px;
+  padding-top: 3.12px;
 }
 
 html[saved-theme="light"] body h5 {
   --font-weight: var(--h5-weight, 500);
   --h5-color: var(--col-h5, oklch(from oklch(70.7% 0.1737 155.3deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h));
+  background: oklch(0.707 0.1737 155.3) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--col-h5-bg, oklch(0.707 0.1737 155.3));
+  border-bottom-color: oklch(0.3 0.03 155.3);
+  border-left-color: oklch(0.3 0.03 155.3);
+  border-right-color: oklch(0.3 0.03 155.3);
+  border-top-color: oklch(0.3 0.03 155.3);
   color: var(--h5-color, oklch(0.3 0.03 155.3));
   font-family: var(--h5-font, Manrope, "Inter 4.1", "DM Sans");
+  font-size: var(--h5-size, 18.4px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h5-letter-spacing, -0.0368px);
+  line-height: var(--h5-line-height, 27.6px);
+  margin-bottom: 0px;
+  margin-left: var(--cssc-cornell-gap, 0px);
+  margin-top: var(--heading-spacing, 13.8px);
+  padding-bottom: 2.76px;
+  padding-left: 4.6px;
+  padding-right: 4.6px;
+  padding-top: 2.76px;
 }
 
 html[saved-theme="light"] body h6 {
   --font-weight: var(--h6-weight, 500);
   --h6-color: var(--col-h6, oklch(from oklch(82.77% 0.1667 79.6deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h));
+  background: oklch(0.8277 0.1667 79.6) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--col-h6-bg, oklch(0.8277 0.1667 79.6));
+  border-bottom-color: oklch(0.3 0.03 79.6);
+  border-left-color: oklch(0.3 0.03 79.6);
+  border-right-color: oklch(0.3 0.03 79.6);
+  border-top-color: oklch(0.3 0.03 79.6);
   color: var(--h6-color, oklch(0.3 0.03 79.6));
   font-family: var(--h6-font, Manrope, "Inter 4.1", "DM Sans");
+  font-size: var(--h6-size, 16.8px);
+  font-weight: var(--font-weight, 500);
+  line-height: var(--h6-line-height, 25.2px);
+  margin-bottom: 0px;
+  margin-left: var(--cssc-cornell-gap, 0px);
+  margin-top: 12.6px;
+  padding-bottom: 2.52px;
+  padding-left: 4.2px;
+  padding-right: 4.2px;
+  padding-top: 2.52px;
 }
 
 html[saved-theme="light"] body hr {
@@ -28250,6 +28589,22 @@ html[saved-theme="light"] body hr {
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, oklch(0.3 0 0));
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: oklch(0 0 0);
@@ -28378,6 +28733,7 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-right-radius: 6px;
   color: var(--opp-text-normal, oklch(0.3 0 0));
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  padding-right: var(--size-4-2, 4px);
 }
 
 html[saved-theme="light"] body footer ul li a {
@@ -28505,6 +28861,20 @@ html[saved-theme="light"] body .bases-table thead th {
   padding-top: 4px;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: oklch(0.3 0 0);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-left-color: oklch(0.3 0 0);
+  border-right-color: oklch(0.3 0 0);
+  border-top-color: oklch(0.3 0 0);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: oklch(0.3 0 0);
+  display: grid;
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: oklch(0.3 0 0);
   border-left-color: oklch(0.3 0 0);
@@ -28512,6 +28882,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: oklch(0.3 0 0);
   color: oklch(0.3 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: oklch(0.3 0 0);
+  font-family: var(--metadata-label-font, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: oklch(0.3 0 0);
+  font-family: var(--metadata-input-font, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -28682,6 +29062,10 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: oklch(0 0 0);
+  border-left-color: oklch(0 0 0);
+  border-right-color: oklch(0 0 0);
+  border-top-color: oklch(0 0 0);
   color: var(--text-normal, oklch(0 0 0));
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
 }

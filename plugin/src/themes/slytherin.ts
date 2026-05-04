@@ -60,6 +60,19 @@ export const theme: ThemeData = {
   --bases-table-summary-background: var(--background-primary, #090C0D);
   --blockquote-border-color: var(--interactive-accent, #090c0d);
   --border-width-alt: 1px;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #090C0D);
   --canvas-card-label-color: var(--text-faint, (#909090 20%));
   --caret-color: var(--text-normal, #909090);
@@ -238,7 +251,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, #909090);
   --vault-profile-color: var(--text-normal, #909090);
   --vault-profile-color-hover: var(--vault-profile-color, #909090);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -335,6 +350,12 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(144, 144, 144);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(144, 144, 144));
+  outline: rgb(144, 144, 144) none 0px;
+  text-decoration-color: rgb(144, 144, 144);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--bold-color, rgb(144, 144, 144));
   font-weight: var(--bold-weight, 600);
@@ -393,10 +414,18 @@ html body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(144, 144, 144);
+  border-left-color: rgb(144, 144, 144);
+  border-right-color: rgb(144, 144, 144);
+  border-top-color: rgb(144, 144, 144);
   color: rgb(144, 144, 144);
 }
 
 html body dt {
+  border-bottom-color: rgb(144, 144, 144);
+  border-left-color: rgb(144, 144, 144);
+  border-right-color: rgb(144, 144, 144);
+  border-top-color: rgb(144, 144, 144);
   color: rgb(144, 144, 144);
 }
 
@@ -416,6 +445,10 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--text-faint, rgb(144, 144, 144));
+}
+
+html body blockquote {
+  color: var(--text-muted, rgb(144, 144, 144));
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(144, 144, 144);
@@ -427,7 +460,6 @@ html body ul.overflow {
 html body table {
   border-top-left-radius: var(--radius-l, 12px);
   color: rgb(144, 144, 144);
-  width: 568.422px;
 }
 
 html body tbody tr:nth-child(even) {
@@ -528,6 +560,7 @@ html body video {
   border-left-color: rgb(144, 144, 144);
   border-right-color: rgb(144, 144, 144);
   border-top-color: rgb(144, 144, 144);
+  color: var(--text-muted, rgb(144, 144, 144));
 }
 
 html body .footnotes {
@@ -540,6 +573,7 @@ html body .transclude {
   border-left-color: rgb(9, 12, 13);
   border-right-color: rgb(144, 144, 144);
   border-top-color: rgb(144, 144, 144);
+  color: rgb(144, 144, 144);
 }
 
 html body .transclude-inner {
@@ -547,6 +581,7 @@ html body .transclude-inner {
   border-left-color: rgb(144, 144, 144);
   border-right-color: rgb(144, 144, 144);
   border-top-color: rgb(144, 144, 144);
+  color: rgb(144, 144, 144);
 }`,
     checkboxes: `html body .katex-display > .katex {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -1504,6 +1539,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color-hover: var(--tag-color-hover, #00503B);
   --pill-color-remove: var(--tag-color, #00503B);
   --pill-color-remove-hover: var(--tag-color-hover, #00503B);
+  color: var(--pill-color, rgb(0, 80, 59));
 }
 
 html body a.internal-link.tag-link::before {
@@ -1512,7 +1548,15 @@ html body a.internal-link.tag-link::before {
 
 html body h1 {
   --font-weight: var(--h1-weight, 600);
+  border-bottom-color: rgb(87, 80, 66);
+  border-left-color: rgb(87, 80, 66);
+  border-right-color: rgb(87, 80, 66);
+  border-top-color: rgb(87, 80, 66);
   color: var(--h1-color, rgb(87, 80, 66));
+  font-size: var(--h1, 24px);
+  font-weight: var(--h1-weight, 600);
+  letter-spacing: var(--h1-letter-spacing, -0.48px);
+  line-height: var(--h1-line-height, 31.2px);
 }
 
 html body h1.article-title {
@@ -1522,31 +1566,75 @@ html body h1.article-title {
 
 html body h2 {
   --font-weight: var(--h2-weight, 600);
+  border-bottom-color: rgb(87, 80, 66);
+  border-left-color: rgb(87, 80, 66);
+  border-right-color: rgb(87, 80, 66);
+  border-top-color: rgb(87, 80, 66);
   color: var(--h2-color, rgb(87, 80, 66));
+  font-size: var(--h2, 24px);
+  font-weight: var(--h2-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.48px);
+  line-height: var(--h2-line-height, 31.2px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(144, 144, 144);
+  border-left-color: rgb(144, 144, 144);
+  border-right-color: rgb(144, 144, 144);
+  border-top-color: rgb(144, 144, 144);
   color: var(--inline-title-color, rgb(144, 144, 144));
+  font-weight: var(--inline-title-weight, 600);
 }
 
 html body h3 {
   --font-weight: var(--h3-weight, 500);
+  border-bottom-color: rgb(87, 80, 66);
+  border-left-color: rgb(87, 80, 66);
+  border-right-color: rgb(87, 80, 66);
+  border-top-color: rgb(87, 80, 66);
   color: var(--h3-color, rgb(87, 80, 66));
+  font-size: var(--h3, 20.8px);
+  font-weight: var(--h3-weight, 500);
+  line-height: var(--h3-line-height, 29.12px);
 }
 
 html body h4 {
   --font-weight: var(--h4-weight, 500);
+  border-bottom-color: rgb(87, 80, 66);
+  border-left-color: rgb(87, 80, 66);
+  border-right-color: rgb(87, 80, 66);
+  border-top-color: rgb(87, 80, 66);
   color: var(--h4-color, rgb(87, 80, 66));
+  font-size: var(--h4, 18px);
+  font-weight: var(--h4-weight, 500);
+  letter-spacing: var(--h4-letter-spacing, 0.36px);
+  line-height: var(--h4-line-height, 25.2px);
 }
 
 html body h5 {
   --font-weight: var(--h5-weight, 500);
+  border-bottom-color: rgb(87, 80, 66);
+  border-left-color: rgb(87, 80, 66);
+  border-right-color: rgb(87, 80, 66);
+  border-top-color: rgb(87, 80, 66);
   color: var(--h5-color, rgb(87, 80, 66));
+  font-size: var(--h5, 18px);
+  font-weight: var(--h5-weight, 500);
+  letter-spacing: var(--h5-letter-spacing, 0.36px);
+  line-height: var(--h5-line-height, 27px);
 }
 
 html body h6 {
   --font-weight: var(--h6-weight, 400);
+  border-bottom-color: rgb(87, 80, 66);
+  border-left-color: rgb(87, 80, 66);
+  border-right-color: rgb(87, 80, 66);
+  border-top-color: rgb(87, 80, 66);
   color: var(--h6-color, rgb(87, 80, 66));
+  font-size: var(--h6, 18px);
+  font-weight: var(--h6-weight, 400);
+  letter-spacing: var(--h6-letter-spacing, 0.36px);
+  line-height: var(--h6-line-height, 27px);
 }
 
 html body hr {
@@ -1565,6 +1653,22 @@ html body hr {
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--text-muted, rgb(144, 144, 144));
   font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(144, 144, 144);
@@ -1586,10 +1690,15 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-top-color: rgb(16, 21, 23);
   color: var(--text-muted, rgb(144, 144, 144));
   font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: var(--font-adaptive-smaller, 14px);
+  padding-bottom: 0px;
+  padding-left: 5px;
+  padding-top: 0px;
 }
 
 html body footer ul li a {
   color: rgb(144, 144, 144);
+  font-size: 14px;
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgb(144, 144, 144);
@@ -1701,11 +1810,27 @@ html body .canvas-sidebar {
   color: var(--text-muted, rgb(144, 144, 144));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(144, 144, 144);
+  border-left-color: rgb(144, 144, 144);
+  border-right-color: rgb(144, 144, 144);
+  border-top-color: rgb(144, 144, 144);
+  color: rgb(144, 144, 144);
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(144, 144, 144);
   border-left-color: rgb(144, 144, 144);
   border-right-color: rgb(144, 144, 144);
   border-top-color: rgb(144, 144, 144);
+  color: rgb(144, 144, 144);
+}
+
+html body .metadata-property-key {
+  color: rgb(144, 144, 144);
+}
+
+html body .metadata-property-value {
   color: rgb(144, 144, 144);
 }
 
@@ -1769,7 +1894,16 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(144, 144, 144);
+  border-left-color: rgb(144, 144, 144);
+  border-right-color: rgb(144, 144, 144);
+  border-top-color: rgb(144, 144, 144);
   color: var(--text-normal, rgb(144, 144, 144));
+  font-size: 14.625px;
+  font-weight: var(--bold-weight, 600);
+  letter-spacing: -0.2925px;
+  line-height: 21.9375px;
+  padding-right: 60px;
 }
 
 html body abbr {

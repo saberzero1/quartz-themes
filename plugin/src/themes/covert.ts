@@ -44,6 +44,7 @@ export const theme: ThemeData = {
   --callout-important: var(--color-cyan-rgb, 97, 96, 96);
   --callout-info: var(--color-blue-rgb, 94,129,172);
   --callout-question: var(--color-orange-rgb, 208,135,112);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-success: var(--color-green-rgb, 163,190,140);
   --callout-summary: var(--color-cyan-rgb, 97, 96, 96);
   --callout-tip: var(--color-cyan-rgb, 97, 96, 96);
@@ -308,7 +309,9 @@ export const theme: ThemeData = {
   --vault-profile-color-hover: var(--vault-profile-color, rgb(97, 96, 96));
   --yellow: rgb(235, 203, 139);
   --yellow_x: 235,203,139;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -399,6 +402,12 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(84, 84, 84);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(84, 84, 84));
+  outline: rgb(84, 84, 84) none 0px;
+  text-decoration-color: rgb(84, 84, 84);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--bold-color, rgb(84, 84, 84));
   outline: rgb(84, 84, 84) none 0px;
@@ -455,10 +464,18 @@ html body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(190, 96, 105, 0.3));
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(97, 96, 96);
+  border-left-color: rgb(97, 96, 96);
+  border-right-color: rgb(97, 96, 96);
+  border-top-color: rgb(97, 96, 96);
   color: rgb(97, 96, 96);
 }
 
 html body dt {
+  border-bottom-color: rgb(97, 96, 96);
+  border-left-color: rgb(97, 96, 96);
+  border-right-color: rgb(97, 96, 96);
+  border-top-color: rgb(97, 96, 96);
   color: rgb(97, 96, 96);
 }
 
@@ -478,6 +495,10 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--text-faint, rgb(97, 96, 96));
+}
+
+html body blockquote {
+  color: var(--blockquote-color, rgb(97, 96, 96));
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(97, 96, 96);
@@ -596,6 +617,7 @@ html body video {
   border-left-color: rgb(97, 96, 96);
   border-right-color: rgb(97, 96, 96);
   border-top-color: rgb(97, 96, 96);
+  color: var(--text-muted, rgb(97, 96, 96));
 }
 
 html body .footnotes {
@@ -608,6 +630,7 @@ html body .transclude {
   border-left-color: rgb(190, 96, 105);
   border-right-color: rgb(97, 96, 96);
   border-top-color: rgb(97, 96, 96);
+  color: rgb(97, 96, 96);
 }
 
 html body .transclude-inner {
@@ -615,6 +638,7 @@ html body .transclude-inner {
   border-left-color: rgb(97, 96, 96);
   border-right-color: rgb(97, 96, 96);
   border-top-color: rgb(97, 96, 96);
+  color: rgb(97, 96, 96);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(97, 96, 96);
@@ -1656,6 +1680,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-top-color: rgba(190, 96, 105, 0.15);
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
+  color: var(--pill-color, rgb(76, 86, 106));
 }
 
 html body a.internal-link.tag-link::before {
@@ -1663,6 +1688,10 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(57, 57, 56);
+  border-left-color: rgb(57, 57, 56);
+  border-right-color: rgb(57, 57, 56);
+  border-top-color: rgb(57, 57, 56);
   color: var(--h1-color, rgb(57, 57, 56));
 }
 
@@ -1671,26 +1700,50 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(57, 57, 56);
+  border-left-color: rgb(57, 57, 56);
+  border-right-color: rgb(57, 57, 56);
+  border-top-color: rgb(57, 57, 56);
   color: var(--h2-color, rgb(57, 57, 56));
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(235, 203, 139);
+  border-left-color: rgb(235, 203, 139);
+  border-right-color: rgb(235, 203, 139);
+  border-top-color: rgb(235, 203, 139);
   color: var(--inline-title-color, rgb(235, 203, 139));
 }
 
 html body h3 {
+  border-bottom-color: rgb(57, 57, 56);
+  border-left-color: rgb(57, 57, 56);
+  border-right-color: rgb(57, 57, 56);
+  border-top-color: rgb(57, 57, 56);
   color: var(--h3-color, rgb(57, 57, 56));
 }
 
 html body h4 {
+  border-bottom-color: rgb(57, 57, 56);
+  border-left-color: rgb(57, 57, 56);
+  border-right-color: rgb(57, 57, 56);
+  border-top-color: rgb(57, 57, 56);
   color: var(--h4-color, rgb(57, 57, 56));
 }
 
 html body h5 {
+  border-bottom-color: rgb(57, 57, 56);
+  border-left-color: rgb(57, 57, 56);
+  border-right-color: rgb(57, 57, 56);
+  border-top-color: rgb(57, 57, 56);
   color: var(--h5-color, rgb(57, 57, 56));
 }
 
 html body h6 {
+  border-bottom-color: rgb(57, 57, 56);
+  border-left-color: rgb(57, 57, 56);
+  border-right-color: rgb(57, 57, 56);
+  border-top-color: rgb(57, 57, 56);
   color: var(--h6-color, rgb(57, 57, 56));
 }
 
@@ -1712,6 +1765,22 @@ html body hr {
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(97, 96, 96));
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(97, 96, 96);
@@ -1838,11 +1907,27 @@ html body .bases-table thead th {
   color: var(--text-muted, rgb(97, 96, 96));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(97, 96, 96);
+  border-left-color: rgb(97, 96, 96);
+  border-right-color: rgb(97, 96, 96);
+  border-top-color: rgb(97, 96, 96);
+  color: rgb(97, 96, 96);
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(97, 96, 96);
   border-left-color: rgb(97, 96, 96);
   border-right-color: rgb(97, 96, 96);
   border-top-color: rgb(97, 96, 96);
+  color: rgb(97, 96, 96);
+}
+
+html body .metadata-property-key {
+  color: rgb(97, 96, 96);
+}
+
+html body .metadata-property-value {
   color: rgb(97, 96, 96);
 }
 
@@ -1916,6 +2001,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(97, 96, 96);
+  border-left-color: rgb(97, 96, 96);
+  border-right-color: rgb(97, 96, 96);
+  border-top-color: rgb(97, 96, 96);
   color: var(--text-normal, rgb(97, 96, 96));
 }
 

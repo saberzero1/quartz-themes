@@ -47,6 +47,19 @@ export const theme: ThemeData = {
   --blue-purple: #c0bed1;
   --bodyFont: var(--font-text-theme, "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
     sans-serif);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #3f3f3f);
   --canvas-card-label-color: var(--text-faint, #f8f5ed);
   --caret-color: var(--text-normal, #f8f5ed);
@@ -282,7 +295,9 @@ export const theme: ThemeData = {
   --yellow-bright: #efef8f;
   --yellow-brighter: #f8f893;
   --yellow-dim: #ffcc66;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -381,6 +396,13 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(248, 245, 237);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(248, 245, 237));
+  font-family: "??", "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  outline: rgb(248, 245, 237) none 0px;
+  text-decoration-color: rgb(248, 245, 237);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--bold-color, rgb(248, 245, 237));
   font-family: "??", "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -437,19 +459,31 @@ html body a.internal-link.broken {
   outline: rgb(188, 163, 163) none 0px;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(248, 245, 237);
+  border-left-color: rgb(248, 245, 237);
+  border-right-color: rgb(248, 245, 237);
+  border-top-color: rgb(248, 245, 237);
   color: rgb(248, 245, 237);
+  font-family: "??", "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body dt {
+  border-bottom-color: rgb(248, 245, 237);
+  border-left-color: rgb(248, 245, 237);
+  border-right-color: rgb(248, 245, 237);
+  border-top-color: rgb(248, 245, 237);
   color: rgb(248, 245, 237);
+  font-family: "??", "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body ol > li {
   color: rgb(248, 245, 237);
+  margin-left: 26.6953px;
 }
 
 html body ul > li {
   color: rgb(248, 245, 237);
+  margin-left: 26.6953px;
 }
 
 html body ul.overflow {
@@ -464,6 +498,7 @@ html body ul.overflow {
 
 html body blockquote {
   background-color: var(--blockquote-background-color, rgb(72, 72, 72));
+  color: var(--blockquote-color, rgb(248, 245, 237));
   font-family: "??", "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     tables: `html body .table-container {
@@ -488,7 +523,6 @@ html body table {
   border-top-width: 1px;
   color: rgb(248, 245, 237);
   font-family: "??", "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  width: 194.062px;
 }
 
 html body tbody tr:nth-child(even) {
@@ -602,6 +636,7 @@ html body video {
   border-left-color: rgb(232, 215, 185);
   border-right-color: rgb(232, 215, 185);
   border-top-color: rgb(232, 215, 185);
+  color: var(--text-muted, rgb(232, 215, 185));
 }
 
 html body .footnotes {
@@ -614,6 +649,7 @@ html body .transclude {
   border-left-color: rgb(232, 215, 185);
   border-right-color: rgb(248, 245, 237);
   border-top-color: rgb(248, 245, 237);
+  color: rgb(248, 245, 237);
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -623,6 +659,7 @@ html body .transclude-inner {
   border-left-color: rgb(248, 245, 237);
   border-right-color: rgb(248, 245, 237);
   border-top-color: rgb(248, 245, 237);
+  color: rgb(248, 245, 237);
   margin-left: 10px;
   margin-right: 10px;
   padding-left: 10px;
@@ -1499,6 +1536,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-bottom-right-radius: 7.7px;
   border-top-left-radius: 7.7px;
   border-top-right-radius: 7.7px;
+  color: var(--pill-color, rgb(241, 140, 150));
 }
 
 html body a.internal-link.tag-link::before {
@@ -1506,8 +1544,15 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(220, 190, 205);
+  border-left-color: rgb(220, 190, 205);
+  border-right-color: rgb(220, 190, 205);
+  border-top-color: rgb(220, 190, 205);
   color: var(--h1-color, rgb(220, 190, 205));
   font-family: var(--h1-font, "??", "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h1-size, 32px);
+  letter-spacing: var(--h1-letter-spacing, -0.48px);
+  line-height: var(--h1-line-height, 38.4px);
 }
 
 html body h1.article-title {
@@ -1517,37 +1562,85 @@ html body h1.article-title {
 
 html body h2 {
   --font-weight: var(--h2-weight, 700);
+  border-bottom-color: rgb(239, 220, 188);
+  border-left-color: rgb(239, 220, 188);
+  border-right-color: rgb(239, 220, 188);
+  border-top-color: rgb(239, 220, 188);
   color: var(--h2-color, rgb(239, 220, 188));
   font-family: var(--h2-font, "??", "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h2-size, 25.6px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h2-letter-spacing, -0.2816px);
+  line-height: var(--h2-line-height, 30.72px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(220, 190, 205);
+  border-left-color: rgb(220, 190, 205);
+  border-right-color: rgb(220, 190, 205);
+  border-top-color: rgb(220, 190, 205);
   color: var(--inline-title-color, rgb(220, 190, 205));
   font-family: var(--inline-title-font, "??", "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--inline-title-size, 32px);
+  letter-spacing: -0.48px;
+  line-height: var(--inline-title-line-height, 38.4px);
+  margin-bottom: 16px;
 }
 
 html body h3 {
   --font-weight: var(--h3-weight, 700);
+  border-bottom-color: rgb(239, 220, 188);
+  border-left-color: rgb(239, 220, 188);
+  border-right-color: rgb(239, 220, 188);
+  border-top-color: rgb(239, 220, 188);
   color: var(--h3-color, rgb(239, 220, 188));
   font-family: var(--h3-font, "??", "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h3-size, 21.92px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h3-letter-spacing, -0.17536px);
+  line-height: var(--h3-line-height, 28.496px);
 }
 
 html body h4 {
   --font-weight: var(--h4-weight, 400);
+  border-bottom-color: rgb(220, 190, 205);
+  border-left-color: rgb(220, 190, 205);
+  border-right-color: rgb(220, 190, 205);
+  border-top-color: rgb(220, 190, 205);
   color: var(--h4-color, rgb(220, 190, 205));
   font-family: var(--h4-font, "??", "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h4-size, 20px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h4-letter-spacing, -0.36px);
+  line-height: var(--h4-line-height, 28px);
 }
 
 html body h5 {
   --font-weight: var(--h5-weight, 400);
+  border-bottom-color: rgb(248, 245, 237);
+  border-left-color: rgb(248, 245, 237);
+  border-right-color: rgb(248, 245, 237);
+  border-top-color: rgb(248, 245, 237);
   color: var(--h5-color, rgb(248, 245, 237));
   font-family: var(--h5-font, "??", "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h5-size, 17.92px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h5-letter-spacing, -0.32256px);
+  line-height: var(--h5-line-height, 26.88px);
 }
 
 html body h6 {
   --font-weight: var(--h6-weight, 400);
+  border-bottom-color: rgb(248, 245, 237);
+  border-left-color: rgb(248, 245, 237);
+  border-right-color: rgb(248, 245, 237);
+  border-top-color: rgb(248, 245, 237);
   color: var(--h6-color, rgb(248, 245, 237));
   font-family: var(--h6-font, "??", "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h6-size, 17.92px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h6-letter-spacing, -0.32256px);
+  line-height: var(--h6-line-height, 26.88px);
 }
 
 html body hr {
@@ -1564,6 +1657,22 @@ html body hr {
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(232, 215, 185));
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(248, 245, 237);
@@ -1689,6 +1798,15 @@ html body .bases-table thead th {
   font-family: "??", "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(232, 215, 185);
+  border-left-color: rgb(232, 215, 185);
+  border-right-color: rgb(232, 215, 185);
+  border-top-color: rgb(232, 215, 185);
+  color: rgb(232, 215, 185);
+  font-family: "??", "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(232, 215, 185);
   border-left-color: rgb(232, 215, 185);
@@ -1696,6 +1814,14 @@ html body .metadata-properties {
   border-top-color: rgb(232, 215, 185);
   color: rgb(232, 215, 185);
   font-family: "??", "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html body .metadata-property-key {
+  color: rgb(232, 215, 185);
+}
+
+html body .metadata-property-value {
+  color: rgb(232, 215, 185);
 }
 
 html body .note-properties {
@@ -1766,6 +1892,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(248, 245, 237);
+  border-left-color: rgb(248, 245, 237);
+  border-right-color: rgb(248, 245, 237);
+  border-top-color: rgb(248, 245, 237);
   color: var(--text-normal, rgb(248, 245, 237));
 }
 

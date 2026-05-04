@@ -31,13 +31,23 @@ export const theme: ThemeData = {
   --blockquote-background-color: var(--color-secondary-dark, #0f1116);
   --bold-color: var(--color-thistle, #d8bfd8);
   --bold-weight: var(--font-semibold, 600);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
   --callout-default: var(--color-purple-rgb, 168, 130, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
   --callout-info: var(--color-blue-rgb, 41, 98, 208);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
     var(--size-4-6, 12px 12px 12px
     24px);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-m, 8px);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
   --callout-todo: var(--color-blue-rgb, 41, 98, 208);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #040812);
   --canvas-dot-pattern: var(--color-base-30, #282828);
   --checkbox-border-color-hover: var(--text-muted, #666666);
@@ -374,7 +384,7 @@ export const theme: ThemeData = {
   --vault-name-color: var(--text-normal, #dadada);
   --vault-name-font-size: var(--font-ui-small, 13px);
   --vault-name-font-weight: var(--font-medium, 500);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
 }
 
 html body {
@@ -435,6 +445,12 @@ html body .markdown-rendered p > em, html em {
 }
 
 html body .markdown-rendered p > i, html i {
+  color: var(--italic-color, rgb(216, 191, 216));
+  outline: rgb(216, 191, 216) none 0px;
+  text-decoration-color: rgb(216, 191, 216);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
   color: var(--italic-color, rgb(216, 191, 216));
   outline: rgb(216, 191, 216) none 0px;
   text-decoration-color: rgb(216, 191, 216);
@@ -514,6 +530,7 @@ html body pre:has(> code) {
   border-left-color: rgb(102, 102, 102);
   border-right-color: rgb(102, 102, 102);
   border-top-color: rgb(102, 102, 102);
+  color: var(--text-muted, rgb(102, 102, 102));
 }
 
 html body .transclude {
@@ -1169,24 +1186,64 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-top-right-radius: 7px;
 }
 
+html body h1 {
+  font-size: var(--h1-size, 32.032px);
+  letter-spacing: var(--h1-letter-spacing, 0.256256px);
+  line-height: var(--h1-line-height, 38.4384px);
+}
+
 html body h1.article-title {
   font-size: var(--inline-title-size, 40px);
 }
 
 html body h2 {
   --font-weight: var(--h2-weight, 600);
+  font-size: var(--h2-size, 28.832px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, 0.230656px);
+  line-height: var(--h2-line-height, 34.5984px);
+  padding-bottom: 16px;
+}
+
+html body h2.page-title, html h2.page-title a {
+  font-size: var(--inline-title-size, 40px);
+  letter-spacing: -0.6px;
+  line-height: var(--inline-title-line-height, 48px);
+  margin-bottom: 20px;
 }
 
 html body h3 {
   --font-weight: var(--h3-weight, 600);
+  font-size: var(--h3-size, 25.984px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h3-letter-spacing, 0.207872px);
+  line-height: var(--h3-line-height, 33.7792px);
+  padding-bottom: 16px;
 }
 
 html body h4 {
   --font-weight: var(--h4-weight, 600);
+  font-size: var(--h4-size, 23.456px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h4-letter-spacing, 0.187648px);
+  line-height: var(--h4-line-height, 32.8384px);
+  padding-bottom: 16px;
 }
 
 html body h5 {
   --font-weight: var(--h5-weight, 600);
+  font-size: var(--h5-size, 21.2px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h5-letter-spacing, 0.1696px);
+  line-height: var(--h5-line-height, 31.8px);
+  padding-bottom: 16px;
+}
+
+html body h6 {
+  font-size: var(--h6-size, 18.48px);
+  letter-spacing: var(--h6-letter-spacing, 0.14784px);
+  line-height: var(--h6-line-height, 27.72px);
+  padding-bottom: 16px;
 }
 
 html body hr {
@@ -1211,6 +1268,22 @@ html body hr {
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(102, 102, 102));
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(102, 102, 102);
@@ -1282,11 +1355,27 @@ html body .bases-table thead th {
   color: var(--text-muted, rgb(102, 102, 102));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(102, 102, 102);
+  border-left-color: rgb(102, 102, 102);
+  border-right-color: rgb(102, 102, 102);
+  border-top-color: rgb(102, 102, 102);
+  color: rgb(102, 102, 102);
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(102, 102, 102);
   border-left-color: rgb(102, 102, 102);
   border-right-color: rgb(102, 102, 102);
   border-top-color: rgb(102, 102, 102);
+  color: rgb(102, 102, 102);
+}
+
+html body .metadata-property-key {
+  color: rgb(102, 102, 102);
+}
+
+html body .metadata-property-value {
   color: rgb(102, 102, 102);
 }
 
@@ -1346,6 +1435,10 @@ html body .stacked-page-header {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(102, 102, 102);
+  border-left-color: rgb(102, 102, 102);
+  border-right-color: rgb(102, 102, 102);
+  border-top-color: rgb(102, 102, 102);
   color: var(--text-normal, rgb(102, 102, 102));
 }
 

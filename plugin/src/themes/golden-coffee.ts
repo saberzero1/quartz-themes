@@ -121,6 +121,19 @@ export const theme: ThemeData = {
   --c-table-th-border-right: #ffa600;
   --c-transparent-actions: var(--grey-coffee, #5c381e);
   --c-transparent-header-icon: var(--grey-coffee, #5c381e);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #331000);
   --canvas-card-label-color: var(--text-faint, #a37554);
   --caret-color: var(--text-normal, #e7ba9a);
@@ -298,7 +311,9 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, #e7ba9a);
   --vault-profile-color-hover: var(--vault-profile-color, #e7ba9a);
   --warm-coffee: #a37554;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -378,6 +393,12 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(240, 154, 57);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--c-italic, rgb(240, 154, 57));
+  outline: rgb(240, 154, 57) none 0px;
+  text-decoration-color: rgb(240, 154, 57);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--c-bold, rgb(243, 171, 120));
   outline: rgb(243, 171, 120) none 0px;
@@ -434,10 +455,18 @@ html body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(231, 186, 154);
+  border-left-color: rgb(231, 186, 154);
+  border-right-color: rgb(231, 186, 154);
+  border-top-color: rgb(231, 186, 154);
   color: rgb(231, 186, 154);
 }
 
 html body dt {
+  border-bottom-color: rgb(231, 186, 154);
+  border-left-color: rgb(231, 186, 154);
+  border-right-color: rgb(231, 186, 154);
+  border-top-color: rgb(231, 186, 154);
   color: rgb(231, 186, 154);
 }
 
@@ -461,6 +490,7 @@ html body ul.overflow {
 
 html body blockquote {
   background-color: var(--c-blockquote-background, rgba(105, 63, 32, 0.56));
+  color: var(--blockquote-color, rgb(231, 186, 154));
   padding-bottom: 10px;
   padding-top: 10px;
 }`,
@@ -487,7 +517,6 @@ html body table {
   color: rgb(231, 186, 154);
   margin-left: 234.391px;
   margin-right: 234.391px;
-  width: 231.219px;
 }
 
 html body td {
@@ -584,6 +613,7 @@ html body video {
   border-left-color: rgb(194, 141, 103);
   border-right-color: rgb(194, 141, 103);
   border-top-color: rgb(194, 141, 103);
+  color: var(--text-muted, rgb(194, 141, 103));
 }
 
 html body .footnotes {
@@ -596,6 +626,7 @@ html body .transclude {
   border-left-color: rgb(136, 89, 56);
   border-right-color: rgb(231, 186, 154);
   border-top-color: rgb(231, 186, 154);
+  color: rgb(231, 186, 154);
 }
 
 html body .transclude-inner {
@@ -603,6 +634,7 @@ html body .transclude-inner {
   border-left-color: rgb(231, 186, 154);
   border-right-color: rgb(231, 186, 154);
   border-top-color: rgb(231, 186, 154);
+  color: rgb(231, 186, 154);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(163, 117, 84);
@@ -1453,6 +1485,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color-hover: var(--tag-color-hover, #e7ba9a);
   --pill-color-remove: var(--tag-color, #e7ba9a);
   --pill-color-remove-hover: var(--tag-color-hover, #e7ba9a);
+  color: var(--pill-color, rgb(231, 186, 154));
   font-family: "??", "??", "MADE Kenfolg v2", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -1461,6 +1494,10 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(231, 186, 154);
+  border-left-color: rgb(231, 186, 154);
+  border-right-color: rgb(231, 186, 154);
+  border-top-color: rgb(231, 186, 154);
   color: var(--h1-color, rgb(231, 186, 154));
 }
 
@@ -1469,26 +1506,50 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(231, 186, 154);
+  border-left-color: rgb(231, 186, 154);
+  border-right-color: rgb(231, 186, 154);
+  border-top-color: rgb(231, 186, 154);
   color: var(--h2-color, rgb(231, 186, 154));
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(231, 186, 154);
+  border-left-color: rgb(231, 186, 154);
+  border-right-color: rgb(231, 186, 154);
+  border-top-color: rgb(231, 186, 154);
   color: var(--inline-title-color, rgb(231, 186, 154));
 }
 
 html body h3 {
+  border-bottom-color: rgb(231, 186, 154);
+  border-left-color: rgb(231, 186, 154);
+  border-right-color: rgb(231, 186, 154);
+  border-top-color: rgb(231, 186, 154);
   color: var(--h3-color, rgb(231, 186, 154));
 }
 
 html body h4 {
+  border-bottom-color: rgb(231, 186, 154);
+  border-left-color: rgb(231, 186, 154);
+  border-right-color: rgb(231, 186, 154);
+  border-top-color: rgb(231, 186, 154);
   color: var(--h4-color, rgb(231, 186, 154));
 }
 
 html body h5 {
+  border-bottom-color: rgb(231, 186, 154);
+  border-left-color: rgb(231, 186, 154);
+  border-right-color: rgb(231, 186, 154);
+  border-top-color: rgb(231, 186, 154);
   color: var(--h5-color, rgb(231, 186, 154));
 }
 
 html body h6 {
+  border-bottom-color: rgb(225, 166, 0);
+  border-left-color: rgb(225, 166, 0);
+  border-right-color: rgb(225, 166, 0);
+  border-top-color: rgb(225, 166, 0);
   color: var(--heading-6, rgb(225, 166, 0));
 }
 
@@ -1508,6 +1569,22 @@ html body hr {
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(194, 141, 103));
   font-family: "??", "??", "MADE Kenfolg v2", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(231, 186, 154);
@@ -1649,12 +1726,30 @@ html body .bases-table thead th {
   color: var(--text-muted, rgb(194, 141, 103));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(194, 141, 103);
+  border-left-color: rgb(194, 141, 103);
+  border-right-color: rgb(194, 141, 103);
+  border-top-color: rgb(194, 141, 103);
+  color: rgb(194, 141, 103);
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(194, 141, 103);
   border-left-color: rgb(194, 141, 103);
   border-right-color: rgb(194, 141, 103);
   border-top-color: rgb(194, 141, 103);
   color: rgb(194, 141, 103);
+}
+
+html body .metadata-property-key {
+  color: rgb(194, 141, 103);
+  font-family: var(--metadata-label-font, "??", "??", "MADE Kenfolg v2", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}
+
+html body .metadata-property-value {
+  color: rgb(194, 141, 103);
+  font-family: var(--metadata-input-font, "??", "??", "MADE Kenfolg v2", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html body .note-properties {
@@ -1717,8 +1812,16 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(231, 186, 154);
+  border-left-color: rgb(231, 186, 154);
+  border-right-color: rgb(231, 186, 154);
+  border-top-color: rgb(231, 186, 154);
   color: var(--text-normal, rgb(231, 186, 154));
   font-family: "??", "??", "MADE Kenfolg v2", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  margin-bottom: 10.4844px;
+  margin-left: 819.031px;
+  margin-right: 819.031px;
+  margin-top: 10.4844px;
 }
 
 html body abbr {

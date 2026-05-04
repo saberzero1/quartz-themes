@@ -185,6 +185,19 @@ export const theme: ThemeData = {
   --bases-table-header-color: var(--text-muted, hsl(0,0%,47%));
   --bases-table-summary-background: var(--background-primary, hsl(0,0%,2%));
   --blockquote-border-color: var(--interactive-accent, hsl(258,88%,36%));
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, hsl(0,0%,2%));
   --canvas-card-label-color: var(--text-faint, hsl(0,0%,32%));
   --caret-color: var(--text-normal, hsl(0,0%,72%));
@@ -357,7 +370,9 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, hsl(0,0%,72%));
   --vault-profile-color-hover: var(--vault-profile-color, hsl(0,0%,72%));
   --writing-focus-opacity: 0.6;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -457,6 +472,13 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   text-decoration-color: rgb(184, 184, 184);
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(184, 184, 184));
+  font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  outline: rgb(184, 184, 184) none 0px;
+  text-decoration-color: rgb(184, 184, 184);
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: var(--bold-color, rgb(184, 184, 184));
   font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -516,7 +538,12 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(138, 92, 245));
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(184, 184, 184);
+  border-left-color: rgb(184, 184, 184);
+  border-right-color: rgb(184, 184, 184);
+  border-top-color: rgb(184, 184, 184);
   color: rgb(184, 184, 184);
+  font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 html[saved-theme="dark"] body dl {
@@ -525,15 +552,22 @@ html[saved-theme="dark"] body dl {
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(184, 184, 184);
+  border-left-color: rgb(184, 184, 184);
+  border-right-color: rgb(184, 184, 184);
+  border-top-color: rgb(184, 184, 184);
   color: rgb(184, 184, 184);
+  font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: var(--text-accent, rgb(184, 184, 184));
+  margin-left: 28.8001px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: var(--text-accent, rgb(184, 184, 184));
+  margin-left: 28.8001px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -547,8 +581,10 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
+  color: var(--text-normal, rgb(184, 184, 184));
   font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-style: var(--blockquote-font-style, italic);
+  line-height: 33.44px;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(184, 184, 184);
@@ -562,7 +598,6 @@ html[saved-theme="dark"] body table {
   font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin-left: var(--p-offset, 35.2px);
   margin-top: var(--heading-spacing, 6.4px);
-  width: calc(100% - var(--p-offset));
 }
 
 html[saved-theme="dark"] body td {
@@ -660,6 +695,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(120, 120, 120);
   border-right-color: rgb(120, 120, 120);
   border-top-color: rgb(120, 120, 120);
+  color: var(--text-muted, rgb(120, 120, 120));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -673,6 +709,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(59, 11, 173);
   border-right-color: rgb(184, 184, 184);
   border-top-color: rgb(184, 184, 184);
+  color: rgb(184, 184, 184);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -680,6 +717,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(184, 184, 184);
   border-right-color: rgb(184, 184, 184);
   border-top-color: rgb(184, 184, 184);
+  color: rgb(184, 184, 184);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: mulish, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -1637,6 +1675,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   --pill-color-hover: var(--tag-color-hover, hsl(258,88%,66%));
   --pill-color-remove: var(--tag-color, hsl(258,88%,66%));
   --pill-color-remove-hover: var(--tag-color-hover, hsl(258,88%,66%));
+  color: var(--pill-color, rgb(138, 92, 245));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -1645,8 +1684,16 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   --font-weight: var(--h1-weight, 400);
+  border-bottom-color: rgb(184, 184, 184);
+  border-left-color: rgb(184, 184, 184);
+  border-right-color: rgb(184, 184, 184);
+  border-top-color: rgb(184, 184, 184);
   color: var(--h1-color, rgb(184, 184, 184));
   font-family: var(--text-title, mulish);
+  font-size: var(--h1, 32px);
+  font-weight: var(--h1-weight, 400);
+  line-height: var(--h1-line-height, 38.4px);
+  padding-bottom: 12.8px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1656,34 +1703,86 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 400);
+  border-bottom-color: rgb(184, 184, 184);
+  border-left-color: rgb(184, 184, 184);
+  border-right-color: rgb(184, 184, 184);
+  border-top-color: rgb(184, 184, 184);
   color: var(--h2-color, rgb(184, 184, 184));
   font-family: var(--text-title, mulish);
+  font-size: var(--h2, 25.6px);
+  font-weight: var(--h2-weight, 400);
+  line-height: var(--h2-line-height, 30.72px);
+  padding-bottom: 9.6px;
+  padding-top: 19.2px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(184, 184, 184);
+  border-left-color: rgb(184, 184, 184);
+  border-right-color: rgb(184, 184, 184);
+  border-top-color: rgb(184, 184, 184);
   color: var(--inline-title-color, rgb(184, 184, 184));
   font-family: var(--inline-title-font, mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
+  font-weight: var(--inline-title-weight, 400);
+  margin-bottom: 10.3552px;
+  margin-top: 10.3552px;
 }
 
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, 400);
+  border-bottom-color: rgb(184, 184, 184);
+  border-left-color: rgb(184, 184, 184);
+  border-right-color: rgb(184, 184, 184);
+  border-top-color: rgb(184, 184, 184);
   color: var(--h3-color, rgb(184, 184, 184));
   font-family: var(--text-title, mulish);
+  font-size: var(--h3, 19.2px);
+  font-weight: var(--h3-weight, 400);
+  line-height: var(--h3-line-height, 23.04px);
+  padding-bottom: 8px;
+  padding-top: 16px;
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(184, 184, 184);
+  border-left-color: rgb(184, 184, 184);
+  border-right-color: rgb(184, 184, 184);
+  border-top-color: rgb(184, 184, 184);
   color: var(--h4-color, rgb(184, 184, 184));
   font-family: var(--text-title, mulish);
+  font-size: var(--h4, 16px);
+  font-weight: var(--h4-weight, 640);
+  line-height: var(--h4-line-height, 19.2px);
+  padding-bottom: 8px;
+  padding-top: 16px;
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(184, 184, 184);
+  border-left-color: rgb(184, 184, 184);
+  border-right-color: rgb(184, 184, 184);
+  border-top-color: rgb(184, 184, 184);
   color: var(--h5-color, rgb(184, 184, 184));
   font-family: var(--text-title, mulish);
+  font-size: var(--h5, 16px);
+  font-weight: var(--h5-weight, 620);
+  line-height: var(--h5-line-height, 19.2px);
+  padding-bottom: 8px;
+  padding-top: 16px;
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(184, 184, 184);
+  border-left-color: rgb(184, 184, 184);
+  border-right-color: rgb(184, 184, 184);
+  border-top-color: rgb(184, 184, 184);
   color: var(--h6-color, rgb(184, 184, 184));
   font-family: var(--text-title, mulish);
+  font-size: var(--h6, 16px);
+  font-weight: var(--h6-weight, 600);
+  line-height: var(--h6-line-height, 19.2px);
+  padding-bottom: 8px;
+  padding-top: 16px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -1697,6 +1796,22 @@ html[saved-theme="dark"] body hr {
     explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: var(--text-normal, rgb(184, 184, 184));
   font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(184, 184, 184);
@@ -1716,10 +1831,15 @@ html[saved-theme="dark"] body hr {
   border-top-color: rgba(0, 0, 0, 0);
   color: var(--text-accent, rgb(138, 92, 245));
   font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: calc(var(--font-smaller)*var(--font-small)*var(--font-normal));
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body footer ul li a {
   color: rgb(138, 92, 245);
+  font-size: 16px;
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(184, 184, 184);
@@ -1813,6 +1933,15 @@ html[saved-theme="dark"] body .canvas-sidebar {
   margin-top: 6.4px;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(120, 120, 120);
+  border-left-color: rgb(120, 120, 120);
+  border-right-color: rgb(120, 120, 120);
+  border-top-color: rgb(120, 120, 120);
+  color: rgb(120, 120, 120);
+  font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(120, 120, 120);
   border-left-color: rgb(120, 120, 120);
@@ -1820,6 +1949,14 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(120, 120, 120);
   color: rgb(120, 120, 120);
   font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(120, 120, 120);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(120, 120, 120);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -1882,7 +2019,13 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(184, 184, 184);
+  border-left-color: rgb(184, 184, 184);
+  border-right-color: rgb(184, 184, 184);
+  border-top-color: rgb(184, 184, 184);
   color: var(--text-normal, rgb(184, 184, 184));
+  font-size: calc(var(--font-small)*var(--font-normal));
+  line-height: 6307.08px;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -1970,6 +2113,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --bases-table-header-color: var(--text-muted, hsl(0,0%,54%));
   --bases-table-summary-background: var(--background-primary, hsl(0,0%,99%));
   --blockquote-border-color: var(--interactive-accent, hsl(258,88%,66%));
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, hsl(0,0%,99%));
   --canvas-card-label-color: var(--text-faint, hsl(0,0%,69%));
   --caret-color: var(--text-normal, hsl(0,0%,19%));
@@ -2141,7 +2297,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-profile-color: var(--text-normal, hsl(0,0%,19%));
   --vault-profile-color-hover: var(--vault-profile-color, hsl(0,0%,19%));
   --writing-focus-opacity: 0.6;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -2241,6 +2399,13 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   text-decoration-color: rgb(48, 48, 48);
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(48, 48, 48));
+  font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  outline: rgb(48, 48, 48) none 0px;
+  text-decoration-color: rgb(48, 48, 48);
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--bold-color, rgb(48, 48, 48));
   font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -2297,7 +2462,12 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(138, 92, 245));
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(48, 48, 48);
+  border-left-color: rgb(48, 48, 48);
+  border-right-color: rgb(48, 48, 48);
+  border-top-color: rgb(48, 48, 48);
   color: rgb(48, 48, 48);
+  font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 html[saved-theme="light"] body dl {
@@ -2306,15 +2476,22 @@ html[saved-theme="light"] body dl {
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(48, 48, 48);
+  border-left-color: rgb(48, 48, 48);
+  border-right-color: rgb(48, 48, 48);
+  border-top-color: rgb(48, 48, 48);
   color: rgb(48, 48, 48);
+  font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: var(--text-accent, rgb(48, 48, 48));
+  margin-left: 28.8001px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: var(--text-accent, rgb(48, 48, 48));
+  margin-left: 28.8001px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -2328,8 +2505,10 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
+  color: var(--text-normal, rgb(48, 48, 48));
   font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-style: var(--blockquote-font-style, italic);
+  line-height: 33.44px;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(48, 48, 48);
@@ -2343,7 +2522,6 @@ html[saved-theme="light"] body table {
   font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin-left: var(--p-offset, 35.2px);
   margin-top: var(--heading-spacing, 6.4px);
-  width: calc(100% - var(--p-offset));
 }
 
 html[saved-theme="light"] body td {
@@ -2441,6 +2619,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(138, 138, 138);
   border-right-color: rgb(138, 138, 138);
   border-top-color: rgb(138, 138, 138);
+  color: var(--text-muted, rgb(138, 138, 138));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2454,6 +2633,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(138, 92, 245);
   border-right-color: rgb(48, 48, 48);
   border-top-color: rgb(48, 48, 48);
+  color: rgb(48, 48, 48);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2461,6 +2641,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(48, 48, 48);
   border-right-color: rgb(48, 48, 48);
   border-top-color: rgb(48, 48, 48);
+  color: rgb(48, 48, 48);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: mulish, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -3422,8 +3603,16 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
 
 html[saved-theme="light"] body h1 {
   --font-weight: var(--h1-weight, 400);
+  border-bottom-color: rgb(48, 48, 48);
+  border-left-color: rgb(48, 48, 48);
+  border-right-color: rgb(48, 48, 48);
+  border-top-color: rgb(48, 48, 48);
   color: var(--h1-color, rgb(48, 48, 48));
   font-family: var(--text-title, mulish);
+  font-size: var(--h1, 32px);
+  font-weight: var(--h1-weight, 400);
+  line-height: var(--h1-line-height, 38.4px);
+  padding-bottom: 12.8px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -3433,34 +3622,86 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 400);
+  border-bottom-color: rgb(48, 48, 48);
+  border-left-color: rgb(48, 48, 48);
+  border-right-color: rgb(48, 48, 48);
+  border-top-color: rgb(48, 48, 48);
   color: var(--h2-color, rgb(48, 48, 48));
   font-family: var(--text-title, mulish);
+  font-size: var(--h2, 25.6px);
+  font-weight: var(--h2-weight, 400);
+  line-height: var(--h2-line-height, 30.72px);
+  padding-bottom: 9.6px;
+  padding-top: 19.2px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(48, 48, 48);
+  border-left-color: rgb(48, 48, 48);
+  border-right-color: rgb(48, 48, 48);
+  border-top-color: rgb(48, 48, 48);
   color: var(--inline-title-color, rgb(48, 48, 48));
   font-family: var(--inline-title-font, mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
+  font-weight: var(--inline-title-weight, 400);
+  margin-bottom: 10.3552px;
+  margin-top: 10.3552px;
 }
 
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, 400);
+  border-bottom-color: rgb(48, 48, 48);
+  border-left-color: rgb(48, 48, 48);
+  border-right-color: rgb(48, 48, 48);
+  border-top-color: rgb(48, 48, 48);
   color: var(--h3-color, rgb(48, 48, 48));
   font-family: var(--text-title, mulish);
+  font-size: var(--h3, 19.2px);
+  font-weight: var(--h3-weight, 400);
+  line-height: var(--h3-line-height, 23.04px);
+  padding-bottom: 8px;
+  padding-top: 16px;
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(48, 48, 48);
+  border-left-color: rgb(48, 48, 48);
+  border-right-color: rgb(48, 48, 48);
+  border-top-color: rgb(48, 48, 48);
   color: var(--h4-color, rgb(48, 48, 48));
   font-family: var(--text-title, mulish);
+  font-size: var(--h4, 16px);
+  font-weight: var(--h4-weight, 640);
+  line-height: var(--h4-line-height, 19.2px);
+  padding-bottom: 8px;
+  padding-top: 16px;
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(48, 48, 48);
+  border-left-color: rgb(48, 48, 48);
+  border-right-color: rgb(48, 48, 48);
+  border-top-color: rgb(48, 48, 48);
   color: var(--h5-color, rgb(48, 48, 48));
   font-family: var(--text-title, mulish);
+  font-size: var(--h5, 16px);
+  font-weight: var(--h5-weight, 620);
+  line-height: var(--h5-line-height, 19.2px);
+  padding-bottom: 8px;
+  padding-top: 16px;
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(48, 48, 48);
+  border-left-color: rgb(48, 48, 48);
+  border-right-color: rgb(48, 48, 48);
+  border-top-color: rgb(48, 48, 48);
   color: var(--h6-color, rgb(48, 48, 48));
   font-family: var(--text-title, mulish);
+  font-size: var(--h6, 16px);
+  font-weight: var(--h6-weight, 600);
+  line-height: var(--h6-line-height, 19.2px);
+  padding-bottom: 8px;
+  padding-top: 16px;
 }
 
 html[saved-theme="light"] body hr {
@@ -3474,6 +3715,22 @@ html[saved-theme="light"] body hr {
     explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: var(--text-normal, rgb(48, 48, 48));
   font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(48, 48, 48);
@@ -3493,10 +3750,15 @@ html[saved-theme="light"] body hr {
   border-top-color: rgba(0, 0, 0, 0);
   color: var(--text-accent, rgb(138, 92, 245));
   font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: calc(var(--font-smaller)*var(--font-small)*var(--font-normal));
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body footer ul li a {
   color: rgb(138, 92, 245);
+  font-size: 16px;
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(48, 48, 48);
@@ -3591,6 +3853,15 @@ html[saved-theme="light"] body .canvas-sidebar {
   margin-top: 6.4px;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(138, 138, 138);
+  border-left-color: rgb(138, 138, 138);
+  border-right-color: rgb(138, 138, 138);
+  border-top-color: rgb(138, 138, 138);
+  color: rgb(138, 138, 138);
+  font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(138, 138, 138);
   border-left-color: rgb(138, 138, 138);
@@ -3598,6 +3869,14 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(138, 138, 138);
   color: rgb(138, 138, 138);
   font-family: mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(138, 138, 138);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(138, 138, 138);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -3659,7 +3938,13 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(48, 48, 48);
+  border-left-color: rgb(48, 48, 48);
+  border-right-color: rgb(48, 48, 48);
+  border-top-color: rgb(48, 48, 48);
   color: var(--text-normal, rgb(48, 48, 48));
+  font-size: calc(var(--font-small)*var(--font-normal));
+  line-height: 6307.08px;
 }
 
 html[saved-theme="light"] body abbr {

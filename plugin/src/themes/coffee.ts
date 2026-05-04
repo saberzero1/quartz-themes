@@ -43,7 +43,20 @@ export const theme: ThemeData = {
   --blockquote-color: var(--crema, #DDAA00);
   --burnt-roast: #0F0B00;
   --cafe-au-lait: #CCAA55;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 0px);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #0F0A00);
   --canvas-card-label-color: var(--text-faint, #B0A050);
   --canvas-controls-radius: var(--radius-s, 0px);
@@ -289,7 +302,9 @@ export const theme: ThemeData = {
   --white-luwak: #F3F3C3;
   --win-maximize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m4.5 3c-.82843 0-1.5.67157-1.5 1.5v7c0 .8284.67157 1.5 1.5 1.5h7c.8284 0 1.5-.6716 1.5-1.5v-7c0-.82843-.6716-1.5-1.5-1.5zm0 1h7c.2761 0 .5.22386.5.5v7c0 .2761-.2239.5-.5.5h-7c-.27614 0-.5-.2239-.5-.5v-7c0-.27614.22386-.5.5-.5z' fill='%23212121'/%3E%3C/svg%3E");
   --win-minimize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23212121'%3E%3Cpath d='m5.08496 4c.20592-.5826.76154-1 1.41465-1h3.5c1.65689 0 2.99999 1.34315 2.99999 3v3.5c0 .6531-.4174 1.2087-1 1.4146v-4.9146c0-1.10457-.8954-2-1.99999-2z'/%3E%3Cpath d='m4.5 5h5c.8284 0 1.5.67157 1.5 1.5v5c0 .8284-.6716 1.5-1.5 1.5h-5c-.82843 0-1.5-.6716-1.5-1.5v-5c0-.82843.67157-1.5 1.5-1.5zm0 1c-.27614 0-.5.22386-.5.5v5c0 .2761.22386.5.5.5h5c.27614 0 .5-.2239.5-.5v-5c0-.27614-.22386-.5-.5-.5z'/%3E%3C/g%3E%3C/svg%3E");
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -366,6 +381,13 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   text-decoration-color: rgb(236, 223, 170);
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(236, 223, 170));
+  font-family: "Times New Roman", Times, serif;
+  outline: rgb(236, 223, 170) none 0px;
+  text-decoration-color: rgb(236, 223, 170);
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: var(--bold-color, rgb(236, 223, 170));
   font-family: "Times New Roman", Times, serif;
@@ -426,20 +448,32 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(96, 69, 32, 0.3));
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(236, 223, 170);
+  border-left-color: rgb(236, 223, 170);
+  border-right-color: rgb(236, 223, 170);
+  border-top-color: rgb(236, 223, 170);
   color: rgb(236, 223, 170);
+  font-family: "Times New Roman", Times, serif;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(236, 223, 170);
+  border-left-color: rgb(236, 223, 170);
+  border-right-color: rgb(236, 223, 170);
+  border-top-color: rgb(236, 223, 170);
   color: rgb(236, 223, 170);
+  font-family: "Times New Roman", Times, serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(236, 223, 170);
+  margin-left: 24px;
   text-align: justify;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(236, 223, 170);
+  margin-left: 24px;
   text-align: justify;
 }
 
@@ -454,6 +488,7 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(221, 170, 0));
   font-family: "Times New Roman", Times, serif;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
@@ -466,7 +501,7 @@ html[saved-theme="dark"] body blockquote {
 html[saved-theme="dark"] body table {
   color: rgb(236, 223, 170);
   font-family: "Times New Roman", Times, serif;
-  width: 180.766px;
+  text-align: justify;
 }
 
 html[saved-theme="dark"] body tbody tr:nth-child(odd) {
@@ -561,10 +596,12 @@ html[saved-theme="dark"] body video {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-left-color: rgb(224, 208, 128);
+  border-radius: 0px;
   border-right-color: rgb(224, 208, 128);
   border-top-color: rgb(224, 208, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  color: var(--text-muted, rgb(224, 208, 128));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -577,6 +614,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(170, 117, 0);
   border-right-color: rgb(236, 223, 170);
   border-top-color: rgb(236, 223, 170);
+  color: rgb(236, 223, 170);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -584,6 +622,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(236, 223, 170);
   border-right-color: rgb(236, 223, 170);
   border-top-color: rgb(236, 223, 170);
+  color: rgb(236, 223, 170);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "Times New Roman", Times, serif;
@@ -1866,6 +1905,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-left-color: rgb(15, 10, 0);
   border-right-color: rgb(15, 10, 0);
   border-top-color: rgb(15, 10, 0);
+  color: var(--pill-color, rgb(176, 160, 80));
   font-family: "??", "??", "??", "Times New Roman";
 }
 
@@ -1874,6 +1914,10 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(176, 160, 80);
+  border-left-color: rgb(176, 160, 80);
+  border-right-color: rgb(176, 160, 80);
+  border-top-color: rgb(176, 160, 80);
   color: var(--h1-color, rgb(176, 160, 80));
   font-family: var(--h1-font, "Times New Roman", Times, serif);
 }
@@ -1883,31 +1927,59 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(221, 170, 0);
+  border-left-color: rgb(221, 170, 0);
+  border-right-color: rgb(221, 170, 0);
+  border-top-color: rgb(221, 170, 0);
   color: var(--h2-color, rgb(221, 170, 0));
   font-family: var(--h2-font, "Times New Roman", Times, serif);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(176, 160, 80);
+  border-left-color: rgb(176, 160, 80);
+  border-right-color: rgb(176, 160, 80);
+  border-top-color: rgb(176, 160, 80);
   color: var(--inline-title-color, rgb(176, 160, 80));
   font-family: var(--inline-title-font, "Times New Roman", Times, serif);
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(170, 117, 0);
+  border-left-color: rgb(170, 117, 0);
+  border-right-color: rgb(170, 117, 0);
+  border-top-color: rgb(170, 117, 0);
   color: var(--h3-color, rgb(170, 117, 0));
   font-family: var(--h3-font, "Times New Roman", Times, serif);
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(170, 117, 0);
+  border-left-color: rgb(170, 117, 0);
+  border-right-color: rgb(170, 117, 0);
+  border-top-color: rgb(170, 117, 0);
   color: var(--h4-color, rgb(170, 117, 0));
   font-family: var(--h4-font, "Times New Roman", Times, serif);
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(170, 117, 0);
+  border-left-color: rgb(170, 117, 0);
+  border-right-color: rgb(170, 117, 0);
+  border-top-color: rgb(170, 117, 0);
   color: var(--h5-color, rgb(170, 117, 0));
   font-family: var(--h5-font, "Times New Roman", Times, serif);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(170, 117, 0);
+  border-left-color: rgb(170, 117, 0);
+  border-right-color: rgb(170, 117, 0);
+  border-top-color: rgb(170, 117, 0);
   color: var(--h6-color, rgb(170, 117, 0));
   font-family: var(--h6-font, "Times New Roman", Times, serif);
 }
@@ -1946,6 +2018,26 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   color: var(--text-accent, rgb(176, 160, 80));
   font-family: "Arial Black", sans-serif;
   font-weight: var(--nav-item-weight, 700);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(236, 223, 170);
@@ -2094,6 +2186,15 @@ html[saved-theme="dark"] body .bases-table thead th {
   font-family: "Times New Roman", Times, serif;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(224, 208, 128);
+  border-left-color: rgb(224, 208, 128);
+  border-right-color: rgb(224, 208, 128);
+  border-top-color: rgb(224, 208, 128);
+  color: rgb(224, 208, 128);
+  font-family: "Times New Roman", Times, serif;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(224, 208, 128);
   border-left-color: rgb(224, 208, 128);
@@ -2101,6 +2202,16 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(224, 208, 128);
   color: rgb(224, 208, 128);
   font-family: "Times New Roman", Times, serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(224, 208, 128);
+  font-family: var(--metadata-label-font, "??", "??", "??", "Times New Roman");
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(224, 208, 128);
+  font-family: var(--metadata-input-font, "??", "??", "??", "Times New Roman");
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -2168,6 +2279,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(236, 223, 170);
+  border-left-color: rgb(236, 223, 170);
+  border-right-color: rgb(236, 223, 170);
+  border-top-color: rgb(236, 223, 170);
   color: var(--text-normal, rgb(236, 223, 170));
   font-family: "??", "??", "??", "Times New Roman";
 }
@@ -2274,7 +2389,20 @@ html[saved-theme="dark"] body ul.tags > li {
   --blockquote-border-color: var(--interactive-accent, #AA7500);
   --burnt-roast: #0F0B00;
   --cafe-au-lait: #CCAA55;
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 0px);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #F3F3C3);
   --canvas-card-label-color: var(--text-faint, #553F00);
   --canvas-controls-radius: var(--radius-s, 0px);
@@ -2510,7 +2638,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --white-luwak: #F3F3C3;
   --win-maximize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m4.5 3c-.82843 0-1.5.67157-1.5 1.5v7c0 .8284.67157 1.5 1.5 1.5h7c.8284 0 1.5-.6716 1.5-1.5v-7c0-.82843-.6716-1.5-1.5-1.5zm0 1h7c.2761 0 .5.22386.5.5v7c0 .2761-.2239.5-.5.5h-7c-.27614 0-.5-.2239-.5-.5v-7c0-.27614.22386-.5.5-.5z' fill='%23212121'/%3E%3C/svg%3E");
   --win-minimize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23212121'%3E%3Cpath d='m5.08496 4c.20592-.5826.76154-1 1.41465-1h3.5c1.65689 0 2.99999 1.34315 2.99999 3v3.5c0 .6531-.4174 1.2087-1 1.4146v-4.9146c0-1.10457-.8954-2-1.99999-2z'/%3E%3Cpath d='m4.5 5h5c.8284 0 1.5.67157 1.5 1.5v5c0 .8284-.6716 1.5-1.5 1.5h-5c-.82843 0-1.5-.6716-1.5-1.5v-5c0-.82843.67157-1.5 1.5-1.5zm0 1c-.27614 0-.5.22386-.5.5v5c0 .2761.22386.5.5.5h5c.27614 0 .5-.2239.5-.5v-5c0-.27614-.22386-.5-.5-.5z'/%3E%3C/g%3E%3C/svg%3E");
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -2587,6 +2717,13 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   text-decoration-color: rgb(15, 10, 0);
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(15, 10, 0));
+  font-family: "Times New Roman", Times, serif;
+  outline: rgb(15, 10, 0) none 0px;
+  text-decoration-color: rgb(15, 10, 0);
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--bold-color, rgb(15, 10, 0));
   font-family: "Times New Roman", Times, serif;
@@ -2647,20 +2784,32 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(96, 69, 32, 0.3));
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(15, 10, 0);
+  border-left-color: rgb(15, 10, 0);
+  border-right-color: rgb(15, 10, 0);
+  border-top-color: rgb(15, 10, 0);
   color: rgb(15, 10, 0);
+  font-family: "Times New Roman", Times, serif;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(15, 10, 0);
+  border-left-color: rgb(15, 10, 0);
+  border-right-color: rgb(15, 10, 0);
+  border-top-color: rgb(15, 10, 0);
   color: rgb(15, 10, 0);
+  font-family: "Times New Roman", Times, serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(15, 10, 0);
+  margin-left: 24px;
   text-align: justify;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(15, 10, 0);
+  margin-left: 24px;
   text-align: justify;
 }
 
@@ -2675,6 +2824,7 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(15, 10, 0));
   font-family: "Times New Roman", Times, serif;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
@@ -2687,7 +2837,7 @@ html[saved-theme="light"] body blockquote {
 html[saved-theme="light"] body table {
   color: rgb(15, 10, 0);
   font-family: "Times New Roman", Times, serif;
-  width: 180.766px;
+  text-align: justify;
 }
 
 html[saved-theme="light"] body tbody tr:nth-child(odd) {
@@ -2782,10 +2932,12 @@ html[saved-theme="light"] body video {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-left-color: rgb(85, 63, 0);
+  border-radius: 0px;
   border-right-color: rgb(85, 63, 0);
   border-top-color: rgb(85, 63, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  color: var(--text-muted, rgb(85, 63, 0));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2798,6 +2950,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(170, 117, 0);
   border-right-color: rgb(15, 10, 0);
   border-top-color: rgb(15, 10, 0);
+  color: rgb(15, 10, 0);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2805,6 +2958,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(15, 10, 0);
   border-right-color: rgb(15, 10, 0);
   border-top-color: rgb(15, 10, 0);
+  color: rgb(15, 10, 0);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "Times New Roman", Times, serif;
@@ -4081,6 +4235,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-left-color: rgb(15, 10, 0);
   border-right-color: rgb(15, 10, 0);
   border-top-color: rgb(15, 10, 0);
+  color: var(--pill-color, rgb(85, 63, 0));
   font-family: "??", "??", "??", "Times New Roman";
 }
 
@@ -4089,6 +4244,10 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(85, 63, 0);
+  border-left-color: rgb(85, 63, 0);
+  border-right-color: rgb(85, 63, 0);
+  border-top-color: rgb(85, 63, 0);
   color: var(--h1-color, rgb(85, 63, 0));
   font-family: var(--h1-font, "Times New Roman", Times, serif);
 }
@@ -4098,31 +4257,59 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(170, 117, 0);
+  border-left-color: rgb(170, 117, 0);
+  border-right-color: rgb(170, 117, 0);
+  border-top-color: rgb(170, 117, 0);
   color: var(--h2-color, rgb(170, 117, 0));
   font-family: var(--h2-font, "Times New Roman", Times, serif);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(85, 63, 0);
+  border-left-color: rgb(85, 63, 0);
+  border-right-color: rgb(85, 63, 0);
+  border-top-color: rgb(85, 63, 0);
   color: var(--inline-title-color, rgb(85, 63, 0));
   font-family: var(--inline-title-font, "Times New Roman", Times, serif);
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(221, 170, 0);
+  border-left-color: rgb(221, 170, 0);
+  border-right-color: rgb(221, 170, 0);
+  border-top-color: rgb(221, 170, 0);
   color: var(--h3-color, rgb(221, 170, 0));
   font-family: var(--h3-font, "Times New Roman", Times, serif);
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(221, 170, 0);
+  border-left-color: rgb(221, 170, 0);
+  border-right-color: rgb(221, 170, 0);
+  border-top-color: rgb(221, 170, 0);
   color: var(--h4-color, rgb(221, 170, 0));
   font-family: var(--h4-font, "Times New Roman", Times, serif);
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(221, 170, 0);
+  border-left-color: rgb(221, 170, 0);
+  border-right-color: rgb(221, 170, 0);
+  border-top-color: rgb(221, 170, 0);
   color: var(--h5-color, rgb(221, 170, 0));
   font-family: var(--h5-font, "Times New Roman", Times, serif);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(221, 170, 0);
+  border-left-color: rgb(221, 170, 0);
+  border-right-color: rgb(221, 170, 0);
+  border-top-color: rgb(221, 170, 0);
   color: var(--h6-color, rgb(221, 170, 0));
   font-family: var(--h6-font, "Times New Roman", Times, serif);
 }
@@ -4161,6 +4348,26 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   color: var(--text-accent, rgb(136, 85, 0));
   font-family: "Arial Black", sans-serif;
   font-weight: var(--nav-item-weight, 700);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(15, 10, 0);
@@ -4309,6 +4516,15 @@ html[saved-theme="light"] body .bases-table thead th {
   font-family: "Times New Roman", Times, serif;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(85, 63, 0);
+  border-left-color: rgb(85, 63, 0);
+  border-right-color: rgb(85, 63, 0);
+  border-top-color: rgb(85, 63, 0);
+  color: rgb(85, 63, 0);
+  font-family: "Times New Roman", Times, serif;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(85, 63, 0);
   border-left-color: rgb(85, 63, 0);
@@ -4316,6 +4532,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(85, 63, 0);
   color: rgb(85, 63, 0);
   font-family: "Times New Roman", Times, serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(85, 63, 0);
+  font-family: var(--metadata-label-font, "??", "??", "??", "Times New Roman");
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(85, 63, 0);
+  font-family: var(--metadata-input-font, "??", "??", "??", "Times New Roman");
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -4383,6 +4609,10 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(15, 10, 0);
+  border-left-color: rgb(15, 10, 0);
+  border-right-color: rgb(15, 10, 0);
+  border-top-color: rgb(15, 10, 0);
   color: var(--text-normal, rgb(15, 10, 0));
   font-family: "??", "??", "??", "Times New Roman";
 }

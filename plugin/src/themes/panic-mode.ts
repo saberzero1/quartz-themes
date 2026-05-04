@@ -40,6 +40,19 @@ export const theme: ThemeData = {
   --blockquote-border-color: var(--interactive-accent, rgba(0, 0, 0, 0.1));
   --border-color: #090b0d;
   --bracket-color: var(--header-before-color, #a77e32);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, rgb(21, 30, 45));
   --canvas-card-label-color: var(--text-faint, #a1a1a1);
   --caret-color: var(--text-normal, rgb(224, 226, 213));
@@ -256,7 +269,9 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, rgb(224, 226, 213));
   --vault-profile-color-hover: var(--vault-profile-color, rgb(224, 226, 213));
   --vim-cursor: #474949;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -289,319 +304,25 @@ html body .page > div#quartz-body div.sidebar.right {
   background-color: var(--tab-container-background, rgb(21, 30, 45));
   border-left-color: rgb(161, 161, 161);
   color: rgb(224, 226, 213);
-}`,
-    typography: `html body .markdown-rendered > h1 {
-  --active-title-border: rgba(0, 0, 0, 0.1);
-  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-  --background-modifier-border: #a1a1a1;
-  --background-modifier-border-focus: #555555;
-  --background-modifier-border-hover: #3f3f3f;
-  --background-modifier-error: #3d0000;
-  --background-modifier-error-hover: #470000;
-  --background-modifier-error-rgb: 61, 0, 0;
-  --background-modifier-form-field: rgb(21, 30, 45);
-  --background-modifier-form-field-highlighted: #5c34ae;
-  --background-modifier-form-field-hover: rgb(21, 30, 45);
-  --background-modifier-hover: rgba(255, 255, 255, 0.067);
-  --background-modifier-success: rgba(160, 232, 92, 0.08);
-  --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: rgb(21, 30, 45);
-  --background-primary-alt: rgb(14, 20, 30);
-  --background-secondary: rgb(21, 30, 45);
-  --background-secondary-alt: rgb(21, 30, 45);
-  --blockquote-bg: rgb(21, 30, 45);
-  --blockquote-border: #46b4d3;
-  --blockquote-border-color: rgba(0, 0, 0, 0.1);
-  --blur-background: color-mix(in srgb, rgb(21, 30, 45) 65%, transparent) linear-gradient(rgb(21, 30, 45), color-mix(in srgb, rgb(21, 30, 45) 65%, transparent));
-  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
-  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
-  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
-  --bold-weight: 600;
-  --bracket-color: #a77e32;
-  --button-corner-shape: round;
-  --button-radius: 5px;
-  --callout-blend-mode: lighten;
-  --callout-bug: 251, 70, 76;
-  --callout-default: 2, 122, 255;
-  --callout-error: 251, 70, 76;
-  --callout-example: 168, 130, 255;
-  --callout-fail: 251, 70, 76;
-  --callout-important: 83, 223, 221;
-  --callout-info: 2, 122, 255;
-  --callout-padding: 12px 12px 12px 24px;
-  --callout-question: 233, 151, 63;
-  --callout-radius: 4px;
-  --callout-success: 68, 207, 110;
-  --callout-summary: 83, 223, 221;
-  --callout-tip: 83, 223, 221;
-  --callout-title-weight: 600;
-  --callout-todo: 2, 122, 255;
-  --callout-warning: 233, 151, 63;
-  --canvas-background: rgb(21, 30, 45);
-  --canvas-controls-icon-size: 16px;
-  --canvas-controls-icon-stroke: 2px;
-  --canvas-controls-radius: 4px;
-  --canvas-dot-pattern: #363636;
-  --caret-color: rgb(224, 226, 213);
-  --checkbox-border-color: #a1a1a1;
-  --checkbox-border-color-hover: #a1a1a1;
-  --checkbox-color: rgb(21, 30, 45);
-  --checkbox-color-hover: rgba(80, 102, 130, 0.5);
-  --checkbox-enabled: #5c34ae;
-  --checkbox-marker-color: rgb(21, 30, 45);
-  --checkbox-radius: 4px;
-  --checkbox-size: 16px;
-  --checklist-done-color: #a1a1a1;
-  --clickable-icon-radius: 4px;
-  --code-background: rgb(14, 20, 30);
-  --code-block: #a1a1a1;
-  --code-border-color: #a1a1a1;
-  --code-bracket-background: rgba(255, 255, 255, 0.067);
-  --code-comment: #a1a1a1;
-  --code-function: #e0de71;
-  --code-important: #e9973f;
-  --code-keyword: #fa99cd;
-  --code-normal: rgb(224, 226, 213);
-  --code-operator: #fb464c;
-  --code-property: #53dfdd;
-  --code-punctuation: #a1a1a1;
-  --code-radius: 4px;
-  --code-size: 0.875em;
-  --code-string: #44cf6e;
-  --code-tag: #fb464c;
-  --code-value: #a882ff;
-  --collapse-icon-color: #a1a1a1;
-  --collapse-icon-color-collapsed: #46b4d3;
-  --color-accent: hsl(258, 88%, 66%);
-  --color-accent-1: hsl(255, 89.76%, 75.9%);
-  --color-accent-2: hsl(253, 92.4%, 85.14%);
-  --color-accent-hsl: 258, 88%, 66%;
-  --divider-color: #a1a1a1;
-  --divider-color-hover: rgba(0, 0, 0, 0.1);
-  --divider-vertical-height: 100%;
-  --dropdown-background: rgb(21, 30, 45);
-  --dropdown-background-hover: rgba(0, 0, 0, 0.05);
-  --dropdown-background-position: right 0.5em top 50%, 0 0;
-  --dropdown-background-size: 1em auto, 100%;
-  --dropdown-padding: 0 1.9em 0 0.8em;
-  --flair-background: rgb(21, 30, 45);
-  --flair-color: rgb(224, 226, 213);
-  --font-interface: '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-medium: 500;
-  --font-mermaid: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  --font-print: '??', '??', '??', 'Arial';
-  --font-small: 0.933em;
-  --font-text: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-weight: var(--h1-weight, 700);
-  --graph-line: #3f3f3f;
-  --graph-line-on-hover: #a77e32;
-  --graph-node: #a1a1a1;
-  --graph-node-attachment: #e0de71;
-  --graph-node-color: #a77e32;
-  --graph-node-focused: #46b4d3;
-  --graph-node-tag: #44cf6e;
-  --graph-node-unresolved: #a1a1a1;
-  --graph-note-name: rgb(224, 226, 213);
-  --graph-text: rgb(224, 226, 213);
-  --h5-line-height: 1.5;
-  --h6-line-height: 1.5;
-  --hashtag-color: rgb(224, 226, 213);
-  --heading-formatting: #a1a1a1;
-  --heading-spacing: 2.5rem;
-  --hr-color: hsl(0, 0%, 39%);
-  --inline-code: #a1a1a1;
-  --interactive-accent: rgba(0, 0, 0, 0.1);
-  --interactive-accent-hover: rgba(80, 102, 130, 0.5);
-  --interactive-accent-hsl: 258, 88%, 66%;
-  --interactive-hover: rgba(0, 0, 0, 0.05);
-  --interactive-normal: rgb(21, 30, 45);
-  --interfa-color-icon: rgba(250, 250, 250, 0.045);
-  --interface-color-action: rgb(224, 226, 213);
-  --interface-color-background-alt: rgb(21, 30, 45);
-  --interface-color-foreground-alt: #46b4d3;
-  --interface-color-pin: rgb(224, 226, 213);
-  --link-color: #46b4d3;
-  --link-color-hover: #a1a1a1;
-  --link-external-color: #46b4d3;
-  --link-external-color-hover: #a1a1a1;
-  --link-text: #46b4d3;
-  --link-text-hover: #46b4d3;
-  --link-unresolved-color: #46b4d3;
-  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
-  --link-weight: 400;
-  --list-indent: 2.25em;
-  --menu-background: rgb(21, 30, 45);
-  --menu-border-color: #3f3f3f;
-  --menu-border-width: 1px;
-  --menu-corner-shape: round;
-  --menu-padding: 6px;
-  --menu-radius: 8px;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
-  --pdf-background: rgb(21, 30, 45);
-  --pdf-page-background: rgb(21, 30, 45);
-  --pdf-shadow: 0 0 0 1px #a1a1a1;
-  --pdf-sidebar-background: rgb(21, 30, 45);
-  --pdf-thumbnail-shadow: 0 0 0 1px #a1a1a1;
-  --popover-font-size: 16px;
-  --quick-switcher: rgba(80, 102, 130, 0.5);
-  --raised-background: color-mix(in srgb, rgb(21, 30, 45) 65%, transparent) linear-gradient(rgb(21, 30, 45), color-mix(in srgb, rgb(21, 30, 45) 65%, transparent));
-  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
-  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.1);
-  --scrollbar-bg: rgba(0, 0, 0, 0);
-  --scrollbar-radius: 12px;
-  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.08);
-  --search-clear-button-color: #a1a1a1;
-  --search-icon-color: #a1a1a1;
-  --search-result-background: rgb(21, 30, 45);
-  --setting-group-heading-color: rgb(224, 226, 213);
-  --setting-group-heading-size: 15px;
-  --setting-group-heading-weight: 600;
-  --setting-items-background: rgb(14, 20, 30);
-  --setting-items-border-color: #a1a1a1;
-  --setting-items-padding: 20px;
-  --setting-items-radius: 12px;
-  --shiki-active-tab-border-color: #a1a1a1;
-  --shiki-code-background: rgb(14, 20, 30);
-  --shiki-code-block-border-radius: 4px;
-  --shiki-code-block-spacing: 1rem;
-  --shiki-code-comment: #a1a1a1;
-  --shiki-code-function: #44cf6e;
-  --shiki-code-important: #e9973f;
-  --shiki-code-keyword: #fa99cd;
-  --shiki-code-normal: #a1a1a1;
-  --shiki-code-property: #53dfdd;
-  --shiki-code-punctuation: #a1a1a1;
-  --shiki-code-string: #e0de71;
-  --shiki-code-value: #a882ff;
-  --shiki-gutter-border-color: #a1a1a1;
-  --shiki-gutter-border-width: 1px;
-  --shiki-gutter-text-color: #a1a1a1;
-  --shiki-gutter-text-color-highlight: #a1a1a1;
-  --shiki-highlight-green: rgba(68, 207, 110, 0.5);
-  --shiki-highlight-green-background: rgba(68, 207, 110, 0.1);
-  --shiki-highlight-neutral: #a1a1a1;
-  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
-  --shiki-highlight-red: rgba(251, 70, 76, 0.5);
-  --shiki-highlight-red-background: rgba(251, 70, 76, 0.1);
-  --shiki-terminal-dots-color: #a1a1a1;
-  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
-  --suggestion-background: rgb(21, 30, 45);
-  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
-  --sync-avatar-color-1: #fb464c;
-  --sync-avatar-color-2: #e9973f;
-  --sync-avatar-color-3: #e0de71;
-  --sync-avatar-color-4: #44cf6e;
-  --sync-avatar-color-5: #53dfdd;
-  --sync-avatar-color-6: #027aff;
-  --sync-avatar-color-7: #a882ff;
-  --sync-avatar-color-8: #fa99cd;
-  --tab-background-active: rgb(21, 30, 45);
-  --tab-divider-color: #3f3f3f;
-  --tab-font-size: 13px;
-  --tab-outline-color: #a1a1a1;
-  --tab-radius: 4px;
-  --tab-stacked-font-size: 13px;
-  --tab-stacked-header-width: 40px;
-  --tab-switcher-background: rgb(21, 30, 45);
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(21, 30, 45), transparent);
-  --tab-switcher-preview-radius: 16px;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
-  --tab-text-color: #a1a1a1;
-  --tab-text-color-active: #a1a1a1;
-  --tab-text-color-focused: #a1a1a1;
-  --tab-text-color-focused-active: #a1a1a1;
-  --tab-text-color-focused-active-current: rgb(224, 226, 213);
-  --tab-text-color-focused-highlighted: #46b4d3;
-  --table-add-button-border-color: #a1a1a1;
-  --table-add-button-border-width: 1px;
-  --table-border-color: #a1a1a1;
-  --table-column-alt-background: transparent;
-  --table-column-first-border-width: 1px;
-  --table-column-last-border-width: 1px;
-  --table-drag-handle-background-active: rgba(0, 0, 0, 0.1);
-  --table-drag-handle-color: #a1a1a1;
-  --table-drag-handle-color-active: rgb(224, 226, 213);
-  --table-header-background: transparent;
-  --table-header-border-color: #a1a1a1;
-  --table-header-border-width: 1px;
-  --table-header-color: rgb(224, 226, 213);
-  --table-header-size: 16px;
-  --table-header-weight: 600;
-  --table-line-height: 1.3;
-  --table-row-alt-background: transparent;
-  --table-row-alt-background-hover: transparent;
-  --table-row-background-hover: transparent;
-  --table-row-last-border-width: 1px;
-  --table-selection: hsla(258, 88%, 66%, 0.1);
-  --table-selection-blend-mode: lighten;
-  --table-selection-border-color: rgba(0, 0, 0, 0.1);
-  --table-text-size: 16px;
-  --tag-background: hsla(258, 88%, 66%, 0.1);
-  --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-  --tag-border-color: hsla(258, 88%, 66%, 0.15);
-  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
-  --tag-color: #46b4d3;
-  --tag-color-hover: #46b4d3;
-  --tag-size: 0.875em;
-  --tag-text-color: rgb(224, 226, 213);
-  --tag-text-hover: rgb(224, 226, 213);
-  --text-accent: #46b4d3;
-  --text-accent-hover: #a1a1a1;
-  --text-error: #800000;
-  --text-faint: #a1a1a1;
-  --text-highlight-bg: rgba(80, 102, 130, 0.5);
-  --text-muted: #a1a1a1;
-  --text-normal: rgb(224, 226, 213);
-  --text-on-accent: rgb(224, 226, 213);
-  --text-selection: rgba(80, 102, 130, 0.5);
-  --text-success: #44cf6e;
-  --text-title-h2: #f6a82a;
-  --text-title-h3: #f6a82a;
-  --text-title-h4: #f6a82a;
-  --text-title-h5: #f6a82a;
-  --text-title-h6: #f6a82a;
-  --text-warning: #e9973f;
-  --touch-radius-l: 52px;
-  --touch-radius-m: 44px;
-  --touch-radius-s: 40px;
-  --touch-radius-xl: 60px;
-  --touch-radius-xs: 30px;
-  --touch-radius-xxs: 24px;
-  --traffic-lights-offset-x: 40px;
-  --traffic-lights-offset-y: 40px;
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(167, 126, 50);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-width: 0px;
-  border-left-color: rgb(167, 126, 50);
-  border-left-width: 0px;
-  border-right-color: rgb(167, 126, 50);
-  border-right-width: 0px;
-  border-top-color: rgb(167, 126, 50);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-width: 0px;
-  color: var(--text-title-h1, rgb(167, 126, 50));
-  content: "H1 ";
-  font-family: var(--font-family-mdpreview, "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman");
-  font-size: var(--font-size-h1, 22.8px);
-  font-weight: var(--text-title-font-weight, 600);
-  letter-spacing: var(--h1-letter-spacing, -0.684px);
-  line-height: var(--line-height-header-preview, 45.6px);
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
 }
 
-html body .markdown-rendered p > b, html b {
+html body html {
+  --font-family-code: Ubuntu Mono derivative Powerline, Menlo, Monaco;
+  --font-family-editor: Skolar PE, iA Writer Quattro S, Menlo, Avenir Next, Times New Roman;
+  --font-family-mdpreview: Skolar PE, Gentium Plus, Alegreya, Source Sans Pro, Avenir Next, Times New Roman;
+  --font-family-preview: Gentium Plus, Alegreya, Source Sans Pro, Palatino, Avenir Next, Times New Roman;
+  --font-medium: 21px;
+  --font-size-blockquote: 22px;
+  --font-size-code: 22px;
+  --font-size-normal: 24px;
+  --font-size-side-dock: 16px;
+  --font-size-side-dock-title: 18px;
+  --font-size-status-bar: 16px;
+  --font-small: 18px;
+  --line-height-header-preview: 1em;
+  --line-height-preview: 1.7em;
+}`,
+    typography: `html body .markdown-rendered p > b, html b {
   color: var(--text-title-h1, rgb(246, 168, 42));
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   outline: rgb(246, 168, 42) none 0px;
@@ -620,6 +341,13 @@ html body .markdown-rendered p > i, html i {
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   outline: rgb(224, 226, 213) none 0px;
   text-decoration-color: rgb(224, 226, 213);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(246, 168, 42));
+  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+  outline: rgb(246, 168, 42) none 0px;
+  text-decoration-color: rgb(246, 168, 42);
 }
 
 html body .markdown-rendered p > strong, html strong {
@@ -654,26 +382,6 @@ html body li.task-list-item input[type="checkbox"]:checked {
   border-color: rgb(161, 161, 161);
 }
 
-html body li.task-list-item[data-task=", html "] {
-  color: rgb(224, 226, 213);
-}
-
-html body li.task-list-item[data-task="."] {
-  color: rgb(224, 226, 213);
-}
-
-html body li.task-list-item[data-task=":"] {
-  color: rgb(224, 226, 213);
-}
-
-html body li.task-list-item[data-task=";"] {
-  color: rgb(224, 226, 213);
-}
-
-html body li.task-list-item[data-task="_"] {
-  color: rgb(224, 226, 213);
-}
-
 html body p {
   color: var(--text-muted, rgb(161, 161, 161));
   font-family: "Gentium Plus", Alegreya, "Source Sans Pro", Palatino, "Avenir Next", "Times New Roman";
@@ -704,7 +412,13 @@ html body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(70, 180, 211));
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(224, 226, 213);
+  border-left-color: rgb(224, 226, 213);
+  border-right-color: rgb(224, 226, 213);
+  border-top-color: rgb(224, 226, 213);
   color: rgb(224, 226, 213);
+  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+  font-size: 24px;
 }
 
 html body dl {
@@ -713,15 +427,27 @@ html body dl {
 }
 
 html body dt {
+  border-bottom-color: rgb(224, 226, 213);
+  border-left-color: rgb(224, 226, 213);
+  border-right-color: rgb(224, 226, 213);
+  border-top-color: rgb(224, 226, 213);
   color: rgb(224, 226, 213);
+  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+  font-size: 24px;
 }
 
 html body ol > li {
   color: rgb(224, 226, 213);
+  margin-left: 36px;
+  padding-bottom: var(--list-spacing, 1.8px);
+  padding-top: var(--list-spacing, 1.8px);
 }
 
 html body ul > li {
   color: rgb(224, 226, 213);
+  margin-left: 36px;
+  padding-bottom: var(--list-spacing, 1.8px);
+  padding-top: var(--list-spacing, 1.8px);
 }
 
 html body ul.overflow {
@@ -736,7 +462,9 @@ html body ul.overflow {
 
 html body blockquote {
   background-color: var(--background-secondary, rgb(21, 30, 45));
+  color: var(--blockquote-color, rgb(224, 226, 213));
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+  line-height: 40.8px;
   padding-bottom: 11px;
   padding-top: 11px;
 }`,
@@ -750,7 +478,6 @@ html body blockquote {
 html body table {
   color: rgb(224, 226, 213);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
-  width: 180.766px;
 }
 
 html body td {
@@ -847,6 +574,7 @@ html body video {
   border-left-color: rgb(161, 161, 161);
   border-right-color: rgb(161, 161, 161);
   border-top-color: rgb(161, 161, 161);
+  color: var(--text-muted, rgb(161, 161, 161));
 }
 
 html body .footnotes {
@@ -859,6 +587,7 @@ html body .transclude {
   border-left-color: rgba(0, 0, 0, 0.1);
   border-right-color: rgb(224, 226, 213);
   border-top-color: rgb(224, 226, 213);
+  color: rgb(224, 226, 213);
 }
 
 html body .transclude-inner {
@@ -866,25 +595,9 @@ html body .transclude-inner {
   border-left-color: rgb(224, 226, 213);
   border-right-color: rgb(224, 226, 213);
   border-top-color: rgb(224, 226, 213);
+  color: rgb(224, 226, 213);
 }`,
-    checkboxes: `html body html {
-  --font-family-code: Ubuntu Mono derivative Powerline, Menlo, Monaco;
-  --font-family-editor: Skolar PE, iA Writer Quattro S, Menlo, Avenir Next, Times New Roman;
-  --font-family-mdpreview: Skolar PE, Gentium Plus, Alegreya, Source Sans Pro, Avenir Next, Times New Roman;
-  --font-family-preview: Gentium Plus, Alegreya, Source Sans Pro, Palatino, Avenir Next, Times New Roman;
-  --font-medium: 21px;
-  --font-size-blockquote: 22px;
-  --font-size-code: 22px;
-  --font-size-normal: 24px;
-  --font-size-side-dock: 16px;
-  --font-size-side-dock-title: 18px;
-  --font-size-status-bar: 16px;
-  --font-small: 18px;
-  --line-height-header-preview: 1em;
-  --line-height-preview: 1.7em;
-}
-
-html body input[type=checkbox] {
+    checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(161, 161, 161);
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -916,6 +629,14 @@ html body li.task-list-item[data-task="'"] {
 }
 
 html body li.task-list-item[data-task="+"] {
+  color: rgb(224, 226, 213);
+}
+
+html body li.task-list-item[data-task=", html "] {
+  color: rgb(224, 226, 213);
+}
+
+html body li.task-list-item[data-task="."] {
   color: rgb(224, 226, 213);
 }
 
@@ -956,6 +677,14 @@ html body li.task-list-item[data-task="8"] {
 }
 
 html body li.task-list-item[data-task="9"] {
+  color: rgb(224, 226, 213);
+}
+
+html body li.task-list-item[data-task=":"] {
+  color: rgb(224, 226, 213);
+}
+
+html body li.task-list-item[data-task=";"] {
   color: rgb(224, 226, 213);
 }
 
@@ -1064,6 +793,10 @@ html body li.task-list-item[data-task="Y"] {
 }
 
 html body li.task-list-item[data-task="Z"] {
+  color: rgb(224, 226, 213);
+}
+
+html body li.task-list-item[data-task="_"] {
   color: rgb(224, 226, 213);
 }
 
@@ -1725,6 +1458,9 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-bottom-right-radius: 42px;
   border-top-left-radius: 42px;
   border-top-right-radius: 42px;
+  color: var(--pill-color, rgb(70, 180, 211));
+  font-size: 21px;
+  line-height: var(--line-height-tight, 21px);
 }
 
 html body a.internal-link.tag-link::before {
@@ -1732,8 +1468,16 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(246, 168, 42);
+  border-left-color: rgb(246, 168, 42);
+  border-right-color: rgb(246, 168, 42);
+  border-top-color: rgb(246, 168, 42);
   color: var(--text-title-h1, rgb(246, 168, 42));
   font-family: var(--font-family-mdpreview, "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman");
+  font-size: var(--font-size-h1, 45.6px);
+  font-weight: var(--text-title-font-weight, 600);
+  letter-spacing: var(--h1-letter-spacing, -0.684px);
+  line-height: var(--line-height-header-preview, 45.6px);
 }
 
 html body h1.article-title {
@@ -1741,34 +1485,225 @@ html body h1.article-title {
   font-size: var(--inline-title-size, 38.832px);
 }
 
+html body h1::before {
+  --font-weight: var(--h1-weight, 700);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(167, 126, 50);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(167, 126, 50);
+  border-left-width: 0px;
+  border-right-color: rgb(167, 126, 50);
+  border-right-width: 0px;
+  border-top-color: rgb(167, 126, 50);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-title-h1, rgb(167, 126, 50));
+  content: "H1 ";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+
 html body h2 {
+  border-bottom-color: rgb(246, 168, 42);
+  border-left-color: rgb(246, 168, 42);
+  border-right-color: rgb(246, 168, 42);
+  border-top-color: rgb(246, 168, 42);
   color: var(--text-title-h2, rgb(246, 168, 42));
   font-family: var(--font-family-mdpreview, "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman");
+  font-size: var(--font-size-h2, 38.4px);
+  font-weight: var(--text-title-font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.4224px);
+  line-height: var(--line-height-header-preview, 38.4px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(224, 226, 213);
+  border-left-color: rgb(224, 226, 213);
+  border-right-color: rgb(224, 226, 213);
+  border-top-color: rgb(224, 226, 213);
   color: var(--inline-title-color, rgb(224, 226, 213));
   font-family: var(--inline-title-font, "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman");
+  font-size: var(--inline-title-size, 38.832px);
+  letter-spacing: -0.58248px;
+  line-height: var(--inline-title-line-height, 46.5984px);
+  margin-bottom: 19.416px;
+}
+
+html body h2::before {
+  --font-weight: var(--h2-weight, 680);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(167, 126, 50);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(167, 126, 50);
+  border-left-width: 0px;
+  border-right-color: rgb(167, 126, 50);
+  border-right-width: 0px;
+  border-top-color: rgb(167, 126, 50);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-title-h2, rgb(167, 126, 50));
+  content: "H2 ";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html body h3 {
+  border-bottom-color: rgb(246, 168, 42);
+  border-left-color: rgb(246, 168, 42);
+  border-right-color: rgb(246, 168, 42);
+  border-top-color: rgb(246, 168, 42);
   color: var(--text-title-h3, rgb(246, 168, 42));
   font-family: var(--font-family-mdpreview, "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman");
+  font-size: var(--font-size-h3, 31.2px);
+  font-weight: var(--text-title-font-weight, 600);
+  letter-spacing: var(--h3-letter-spacing, -0.2496px);
+  line-height: var(--line-height-header-preview, 31.2px);
+}
+
+html body h3::before {
+  --font-weight: var(--h3-weight, 660);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(167, 126, 50);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(167, 126, 50);
+  border-left-width: 0px;
+  border-right-color: rgb(167, 126, 50);
+  border-right-width: 0px;
+  border-top-color: rgb(167, 126, 50);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-title-h3, rgb(167, 126, 50));
+  content: "H3 ";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(246, 168, 42);
+  border-left-color: rgb(246, 168, 42);
+  border-right-color: rgb(246, 168, 42);
+  border-top-color: rgb(246, 168, 42);
   color: var(--text-title-h4, rgb(246, 168, 42));
   font-family: var(--font-family-mdpreview, "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman");
+  font-size: var(--font-size-h4, 28.8px);
+  font-weight: var(--text-title-font-weight, 600);
+  letter-spacing: var(--h4-letter-spacing, -0.144px);
+  line-height: var(--line-height-header-preview, 28.8px);
+}
+
+html body h4::before {
+  --font-weight: var(--h4-weight, 640);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(167, 126, 50);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(167, 126, 50);
+  border-left-width: 0px;
+  border-right-color: rgb(167, 126, 50);
+  border-right-width: 0px;
+  border-top-color: rgb(167, 126, 50);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-title-h4, rgb(167, 126, 50));
+  content: "H4 ";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(246, 168, 42);
+  border-left-color: rgb(246, 168, 42);
+  border-right-color: rgb(246, 168, 42);
+  border-top-color: rgb(246, 168, 42);
   color: var(--text-title-h5, rgb(246, 168, 42));
   font-family: var(--font-family-mdpreview, "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman");
+  font-size: var(--font-size-h5, 26.4px);
+  font-weight: var(--text-title-font-weight, 600);
+  letter-spacing: var(--h5-letter-spacing, -0.0528px);
+  line-height: var(--line-height-header-preview, 26.4px);
+}
+
+html body h5::before {
+  --font-weight: var(--h5-weight, 620);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(167, 126, 50);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(167, 126, 50);
+  border-left-width: 0px;
+  border-right-color: rgb(167, 126, 50);
+  border-right-width: 0px;
+  border-top-color: rgb(167, 126, 50);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-title-h5, rgb(167, 126, 50));
+  content: "H5 ";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(246, 168, 42);
+  border-left-color: rgb(246, 168, 42);
+  border-right-color: rgb(246, 168, 42);
+  border-top-color: rgb(246, 168, 42);
   color: var(--text-title-h6, rgb(246, 168, 42));
   font-family: var(--font-family-mdpreview, "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman");
+  font-size: var(--font-size-h6, 24px);
+  font-weight: var(--text-title-font-weight, 600);
+  line-height: var(--line-height-header-preview, 24px);
+}
+
+html body h6::before {
+  --font-weight: var(--h6-weight, 600);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(167, 126, 50);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(167, 126, 50);
+  border-left-width: 0px;
+  border-right-color: rgb(167, 126, 50);
+  border-right-width: 0px;
+  border-top-color: rgb(167, 126, 50);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-title-h6, rgb(167, 126, 50));
+  content: "H6 ";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body hr {
@@ -1787,6 +1722,22 @@ html body hr {
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--text-muted, rgb(161, 161, 161));
   font-family: "Gentium Plus", Alegreya, "Source Sans Pro", Palatino, "Avenir Next", "Times New Roman";
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(224, 226, 213);
@@ -1807,10 +1758,15 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(161, 161, 161));
   font-family: "Gentium Plus", Alegreya, "Source Sans Pro", Palatino, "Avenir Next", "Times New Roman";
+  font-size: var(--font-size-status-bar, 16px);
+  padding-bottom: 0px;
+  padding-left: 30px;
+  padding-top: 0px;
 }
 
 html body footer ul li a {
   color: rgb(161, 161, 161);
+  font-size: var(--font-small, 14.928px);
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgb(224, 226, 213);
@@ -1914,6 +1870,15 @@ html body .canvas-sidebar {
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(161, 161, 161);
+  border-left-color: rgb(161, 161, 161);
+  border-right-color: rgb(161, 161, 161);
+  border-top-color: rgb(161, 161, 161);
+  color: rgb(161, 161, 161);
+  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(161, 161, 161);
   border-left-color: rgb(161, 161, 161);
@@ -1921,6 +1886,16 @@ html body .metadata-properties {
   border-top-color: rgb(161, 161, 161);
   color: rgb(161, 161, 161);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+}
+
+html body .metadata-property-key {
+  color: rgb(161, 161, 161);
+  font-size: 24px;
+}
+
+html body .metadata-property-value {
+  color: rgb(161, 161, 161);
+  font-size: 24px;
 }
 
 html body .note-properties {
@@ -1984,7 +1959,13 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(70, 180, 211);
+  border-left-color: rgb(70, 180, 211);
+  border-right-color: rgb(70, 180, 211);
+  border-top-color: rgb(70, 180, 211);
   color: var(--file-name-color, rgb(70, 180, 211));
+  font-size: var(--font-size-header-titles, 13px);
+  line-height: 28px;
 }
 
 html body abbr {

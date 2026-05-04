@@ -4,6 +4,19 @@ export const theme: ThemeData = {
   meta: { name: "firefly", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --color-editor-title-h1: #ff6fcd;
   --color-editor-title-h2: #FF6F91;
   --color-editor-title-h3: #ffb86c;
@@ -127,6 +140,14 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(192, 205, 243);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(235, 239, 247));
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  outline: rgb(235, 239, 247) none 0px;
+  text-decoration-color: rgb(235, 239, 247);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--color-text-strong, rgb(235, 239, 247));
   filter: drop-shadow(0 0 3px var(--color-text-paragraph));
@@ -175,10 +196,18 @@ html body a.internal-link.broken {
 }`,
     lists: `html body ol > li {
   color: var(--color-text-paragraph, rgb(192, 205, 243));
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-top: 5px;
+  padding-left: 10px;
 }
 
 html body ul > li {
   color: var(--color-text-paragraph, rgb(192, 205, 243));
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-top: 5px;
+  padding-left: 10px;
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--color-text-link, rgb(111, 161, 255));
@@ -204,7 +233,6 @@ html body table {
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  width: 904px;
 }
 
 html body tbody tr:nth-child(even) {
@@ -324,6 +352,7 @@ html body video {
   border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
   border-top-color: rgb(192, 205, 243);
+  color: rgb(192, 205, 243);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(255, 255, 255);
@@ -1219,33 +1248,79 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
 }
 
 html body h1 {
+  border-bottom-color: rgb(255, 111, 205);
+  border-left-color: rgb(255, 111, 205);
+  border-right-color: rgb(255, 111, 205);
+  border-top-color: rgb(255, 111, 205);
   color: var(--color-title-h1, rgb(255, 111, 205));
   font-family: var(--color-family-primary, Inter, sans-serif);
+  font-size: var(--color-size-4xtra-large, 32px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h1-letter-spacing, -0.48px);
+  line-height: var(--color-lineheight-regular, 56px);
 }
 
 html body h2 {
+  border-bottom-color: rgb(255, 111, 145);
+  border-left-color: rgb(255, 111, 145);
+  border-right-color: rgb(255, 111, 145);
+  border-top-color: rgb(255, 111, 145);
   color: var(--color-title-h2, rgb(255, 111, 145));
   font-family: var(--color-family-primary, Inter, sans-serif);
+  font-size: var(--color-size-3xtra-large, 28px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.308px);
+  line-height: var(--color-lineheight-regular, 49px);
 }
 
 html body h3 {
+  border-bottom-color: rgb(255, 184, 108);
+  border-left-color: rgb(255, 184, 108);
+  border-right-color: rgb(255, 184, 108);
+  border-top-color: rgb(255, 184, 108);
   color: var(--color-title-h3, rgb(255, 184, 108));
   font-family: var(--color-family-primary, Inter, sans-serif);
+  font-size: var(--color-size-2xtra-large, 24px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h3-letter-spacing, -0.192px);
+  line-height: var(--color-lineheight-regular, 42px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(255, 240, 108);
+  border-left-color: rgb(255, 240, 108);
+  border-right-color: rgb(255, 240, 108);
+  border-top-color: rgb(255, 240, 108);
   color: var(--color-title-h4, rgb(255, 240, 108));
   font-family: var(--color-family-primary, Inter, sans-serif);
+  font-size: var(--color-size-xtra-large, 20px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h4-letter-spacing, -0.1px);
+  line-height: var(--color-lineheight-regular, 35px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(197, 228, 120);
+  border-left-color: rgb(197, 228, 120);
+  border-right-color: rgb(197, 228, 120);
+  border-top-color: rgb(197, 228, 120);
   color: var(--color-title-h5, rgb(197, 228, 120));
   font-family: var(--color-family-primary, Inter, sans-serif);
+  font-size: var(--color-size-large, 18.4px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h5-letter-spacing, -0.0368px);
+  line-height: var(--color-lineheight-regular, 32.2px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(192, 205, 243);
+  border-left-color: rgb(192, 205, 243);
+  border-right-color: rgb(192, 205, 243);
+  border-top-color: rgb(192, 205, 243);
   color: var(--color-title-h6, rgb(192, 205, 243));
   font-family: var(--color-family-primary, Inter, sans-serif);
+  font-size: var(--color-size-large, 18.4px);
+  line-height: var(--color-lineheight-regular, 32.2px);
 }
 
 html body hr {
@@ -1355,6 +1430,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(173, 185, 219);
+  border-left-color: rgb(173, 185, 219);
+  border-right-color: rgb(173, 185, 219);
+  border-top-color: rgb(173, 185, 219);
   color: var(--color-element-icon, rgb(173, 185, 219));
 }
 

@@ -52,13 +52,21 @@ export const theme: ThemeData = {
   --bodyFont: var(--font-text-theme, "Consolas", monospace);
   --border-width: 2px;
   --border-width-alt: 2px;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
   --callout-important: var(--color-orange-rgb, 233, 151, 63);
   --callout-info: var(--color-indigo-rgb, 84, 93, 204);
   --callout-question: var(--color-yellow-rgb, 224, 222, 113);
   --callout-quote: var(--color-gray-rgb, 158, 158, 158);
   --callout-radius: var(--radius-s, 2px);
+  --callout-success: var(--callout-success, 68, 207, 110);
   --callout-summary: var(--color-pink-rgb, 250, 153, 205);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
   --callout-todo: var(--color-cyan-rgb, 83, 223, 221);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, rgb(19, 22, 27));
   --canvas-card-label-color: var(--text-faint, rgb(158, 158, 158));
   --canvas-controls-radius: var(--radius-s, 2px);
@@ -360,7 +368,9 @@ export const theme: ThemeData = {
   --webkit-tap-highlight-color: var(--background-secondary-alt, rgb(19, 22, 27));
   --yellow: #FFCE56;
   --yellow-transparent: rgba(255, 206, 86, 0.5);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -409,6 +419,13 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, rgb(238, 238, 238));
+  font-family: Consolas, monospace;
+  outline: rgb(238, 238, 238) none 0px;
+  text-decoration-color: rgb(238, 238, 238);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--italic-color, rgb(238, 238, 238));
   font-family: Consolas, monospace;
   outline: rgb(238, 238, 238) none 0px;
@@ -475,19 +492,31 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(56, 132, 255, 0.3));
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: rgb(238, 238, 238);
+  font-family: Consolas, monospace;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: rgb(238, 238, 238);
+  font-family: Consolas, monospace;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(238, 238, 238);
+  margin-left: 29.7596px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(238, 238, 238);
+  margin-left: 29.7596px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -502,6 +531,7 @@ html[saved-theme="dark"] body ul.overflow {
 
 html[saved-theme="dark"] body blockquote {
   background-color: var(--gray-transparent, rgba(158, 158, 158, 0.1));
+  color: var(--blockquote-color, rgb(238, 238, 238));
   font-family: Consolas, monospace;
   padding-bottom: 12px;
   padding-top: 12px;
@@ -517,7 +547,6 @@ html[saved-theme="dark"] body table {
   color: rgb(238, 238, 238);
   font-family: Consolas, monospace;
   margin-top: var(--heading-spacing, 24px);
-  width: 223.484px;
 }
 
 html[saved-theme="dark"] body td {
@@ -611,10 +640,12 @@ html[saved-theme="dark"] body video {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-left-color: rgb(158, 158, 158);
+  border-radius: 5px;
   border-right-color: rgb(158, 158, 158);
   border-top-color: rgb(158, 158, 158);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  color: var(--text-muted, rgb(158, 158, 158));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -627,6 +658,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(56, 132, 255);
   border-right-color: rgb(238, 238, 238);
   border-top-color: rgb(238, 238, 238);
+  color: rgb(238, 238, 238);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -634,6 +666,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(238, 238, 238);
   border-right-color: rgb(238, 238, 238);
   border-top-color: rgb(238, 238, 238);
+  color: rgb(238, 238, 238);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: Consolas, monospace;
@@ -1624,6 +1657,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-left-color: rgba(56, 132, 255, 0.15);
   border-right-color: rgba(56, 132, 255, 0.15);
   border-top-color: rgba(56, 132, 255, 0.15);
+  color: var(--pill-color, rgb(56, 132, 255));
   font-family: Consolas, monospace;
 }
 
@@ -1633,8 +1667,16 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   --font-weight: var(--h1-weight, bold);
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: var(--h1-color, rgb(238, 238, 238));
   font-family: var(--h1-font, Consolas, monospace);
+  font-size: var(--h1-size, 24px);
+  letter-spacing: var(--h1-letter-spacing, -0.36px);
+  line-height: var(--h1-line-height, 36px);
+  margin-bottom: 24px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1645,37 +1687,92 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, bold);
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: var(--h2-color, rgb(238, 238, 238));
   font-family: var(--h2-font, Consolas, monospace);
+  font-size: var(--h2-size, 22.4px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h2-letter-spacing, -0.2464px);
+  line-height: var(--h2-line-height, 33.6px);
+  margin-bottom: 24px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(56, 132, 255);
+  border-left-color: rgb(56, 132, 255);
+  border-right-color: rgb(56, 132, 255);
+  border-top-color: rgb(56, 132, 255);
   color: var(--inline-title-color, rgb(56, 132, 255));
   font-family: var(--inline-title-font, Consolas, monospace);
+  font-size: var(--inline-title-size, 16px);
+  font-weight: var(--inline-title-weight, 600);
+  letter-spacing: -0.24px;
+  line-height: var(--inline-title-line-height, 24px);
+  margin-bottom: 8px;
 }
 
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, bold);
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: var(--h3-color, rgb(238, 238, 238));
   font-family: var(--h3-font, Consolas, monospace);
+  font-size: var(--h3-size, 20.8px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h3-letter-spacing, -0.1664px);
+  line-height: var(--h3-line-height, 31.2px);
+  margin-bottom: 24px;
+  margin-top: var(--heading-spacing, 24px);
 }
 
 html[saved-theme="dark"] body h4 {
   --font-weight: var(--h4-weight, bold);
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: var(--h4-color, rgb(238, 238, 238));
   font-family: var(--h4-font, Consolas, monospace);
+  font-size: var(--h4-size, 19.2px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h4-letter-spacing, -0.096px);
+  line-height: var(--h4-line-height, 28.8px);
+  margin-bottom: 24px;
+  margin-top: var(--heading-spacing, 24px);
 }
 
 html[saved-theme="dark"] body h5 {
   --font-weight: var(--h5-weight, bold);
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: var(--h5-color, rgb(238, 238, 238));
   font-family: var(--h5-font, Consolas, monospace);
+  font-size: var(--h5-size, 17.6px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h5-letter-spacing, -0.0352px);
+  line-height: var(--h5-line-height, 26.4px);
+  margin-bottom: 24px;
+  margin-top: var(--heading-spacing, 24px);
 }
 
 html[saved-theme="dark"] body h6 {
   --font-weight: var(--h6-weight, bold);
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
   color: var(--h6-color, rgb(238, 238, 238));
   font-family: var(--h6-font, Consolas, monospace);
+  font-weight: var(--font-weight, 700);
+  margin-bottom: 24px;
+  margin-top: 24px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -1704,6 +1801,26 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(158, 158, 158));
   font-family: Consolas, monospace;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(238, 238, 238);
@@ -1857,6 +1974,15 @@ html[saved-theme="dark"] body .canvas-sidebar {
   font-family: Consolas, monospace;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(158, 158, 158);
+  border-left-color: rgb(158, 158, 158);
+  border-right-color: rgb(158, 158, 158);
+  border-top-color: rgb(158, 158, 158);
+  color: rgb(158, 158, 158);
+  font-family: Consolas, monospace;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(158, 158, 158);
   border-left-color: rgb(158, 158, 158);
@@ -1864,6 +1990,16 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(158, 158, 158);
   color: rgb(158, 158, 158);
   font-family: Consolas, monospace;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(158, 158, 158);
+  font-family: var(--metadata-label-font, Consolas, monospace);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(158, 158, 158);
+  font-family: var(--metadata-input-font, Consolas, monospace);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -1931,8 +2067,13 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(56, 132, 255);
+  border-left-color: rgb(56, 132, 255);
+  border-right-color: rgb(56, 132, 255);
+  border-top-color: rgb(56, 132, 255);
   color: var(--color-accent, rgb(56, 132, 255));
   font-family: Consolas, monospace;
+  font-weight: 700;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -2056,13 +2197,21 @@ html[saved-theme="dark"] body ul.tags > li {
   --bodyFont: var(--font-text-theme, "Consolas", monospace);
   --border-width: 2px;
   --border-width-alt: 2px;
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
   --callout-important: var(--color-orange-rgb, 236, 117, 0);
   --callout-info: var(--color-indigo-rgb, 84, 93, 204);
   --callout-question: var(--color-yellow-rgb, 224, 172, 0);
   --callout-quote: var(--color-gray-rgb, 99, 99, 99);
   --callout-radius: var(--radius-s, 2px);
+  --callout-success: var(--callout-success, 8, 185, 78);
   --callout-summary: var(--color-pink-rgb, 213, 57, 132);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
   --callout-todo: var(--color-cyan-rgb, 0, 191, 188);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, rgb(238, 238, 238));
   --canvas-card-label-color: var(--text-faint, rgb(99, 99, 99));
   --canvas-controls-radius: var(--radius-s, 2px);
@@ -2364,7 +2513,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --webkit-tap-highlight-color: var(--background-secondary-alt, rgb(238, 238, 238));
   --yellow: #FFCE56;
   --yellow-transparent: rgba(255, 206, 86, 0.5);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -2413,6 +2564,13 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--italic-color, rgb(38, 38, 38));
+  font-family: Consolas, monospace;
+  outline: rgb(38, 38, 38) none 0px;
+  text-decoration-color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--italic-color, rgb(38, 38, 38));
   font-family: Consolas, monospace;
   outline: rgb(38, 38, 38) none 0px;
@@ -2479,19 +2637,31 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(56, 132, 255, 0.3));
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(38, 38, 38);
+  border-left-color: rgb(38, 38, 38);
+  border-right-color: rgb(38, 38, 38);
+  border-top-color: rgb(38, 38, 38);
   color: rgb(38, 38, 38);
+  font-family: Consolas, monospace;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(38, 38, 38);
+  border-left-color: rgb(38, 38, 38);
+  border-right-color: rgb(38, 38, 38);
+  border-top-color: rgb(38, 38, 38);
   color: rgb(38, 38, 38);
+  font-family: Consolas, monospace;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(38, 38, 38);
+  margin-left: 29.7596px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(38, 38, 38);
+  margin-left: 29.7596px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -2506,6 +2676,7 @@ html[saved-theme="light"] body ul.overflow {
 
 html[saved-theme="light"] body blockquote {
   background-color: var(--gray-transparent, rgba(99, 99, 99, 0.1));
+  color: var(--blockquote-color, rgb(38, 38, 38));
   font-family: Consolas, monospace;
   padding-bottom: 12px;
   padding-top: 12px;
@@ -2521,7 +2692,6 @@ html[saved-theme="light"] body table {
   color: rgb(38, 38, 38);
   font-family: Consolas, monospace;
   margin-top: var(--heading-spacing, 24px);
-  width: 223.484px;
 }
 
 html[saved-theme="light"] body td {
@@ -2615,10 +2785,12 @@ html[saved-theme="light"] body video {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-left-color: rgb(99, 99, 99);
+  border-radius: 5px;
   border-right-color: rgb(99, 99, 99);
   border-top-color: rgb(99, 99, 99);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  color: var(--text-muted, rgb(99, 99, 99));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2631,6 +2803,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(56, 132, 255);
   border-right-color: rgb(38, 38, 38);
   border-top-color: rgb(38, 38, 38);
+  color: rgb(38, 38, 38);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2638,6 +2811,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(38, 38, 38);
   border-right-color: rgb(38, 38, 38);
   border-top-color: rgb(38, 38, 38);
+  color: rgb(38, 38, 38);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: Consolas, monospace;
@@ -3633,6 +3807,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-left-color: rgba(56, 132, 255, 0.15);
   border-right-color: rgba(56, 132, 255, 0.15);
   border-top-color: rgba(56, 132, 255, 0.15);
+  color: var(--pill-color, rgb(56, 132, 255));
   font-family: Consolas, monospace;
 }
 
@@ -3642,8 +3817,16 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   --font-weight: var(--h1-weight, bold);
+  border-bottom-color: rgb(38, 38, 38);
+  border-left-color: rgb(38, 38, 38);
+  border-right-color: rgb(38, 38, 38);
+  border-top-color: rgb(38, 38, 38);
   color: var(--h1-color, rgb(38, 38, 38));
   font-family: var(--h1-font, Consolas, monospace);
+  font-size: var(--h1-size, 24px);
+  letter-spacing: var(--h1-letter-spacing, -0.36px);
+  line-height: var(--h1-line-height, 36px);
+  margin-bottom: 24px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -3654,37 +3837,92 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, bold);
+  border-bottom-color: rgb(38, 38, 38);
+  border-left-color: rgb(38, 38, 38);
+  border-right-color: rgb(38, 38, 38);
+  border-top-color: rgb(38, 38, 38);
   color: var(--h2-color, rgb(38, 38, 38));
   font-family: var(--h2-font, Consolas, monospace);
+  font-size: var(--h2-size, 22.4px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h2-letter-spacing, -0.2464px);
+  line-height: var(--h2-line-height, 33.6px);
+  margin-bottom: 24px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(56, 132, 255);
+  border-left-color: rgb(56, 132, 255);
+  border-right-color: rgb(56, 132, 255);
+  border-top-color: rgb(56, 132, 255);
   color: var(--inline-title-color, rgb(56, 132, 255));
   font-family: var(--inline-title-font, Consolas, monospace);
+  font-size: var(--inline-title-size, 16px);
+  font-weight: var(--inline-title-weight, 600);
+  letter-spacing: -0.24px;
+  line-height: var(--inline-title-line-height, 24px);
+  margin-bottom: 8px;
 }
 
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, bold);
+  border-bottom-color: rgb(38, 38, 38);
+  border-left-color: rgb(38, 38, 38);
+  border-right-color: rgb(38, 38, 38);
+  border-top-color: rgb(38, 38, 38);
   color: var(--h3-color, rgb(38, 38, 38));
   font-family: var(--h3-font, Consolas, monospace);
+  font-size: var(--h3-size, 20.8px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h3-letter-spacing, -0.1664px);
+  line-height: var(--h3-line-height, 31.2px);
+  margin-bottom: 24px;
+  margin-top: var(--heading-spacing, 24px);
 }
 
 html[saved-theme="light"] body h4 {
   --font-weight: var(--h4-weight, bold);
+  border-bottom-color: rgb(38, 38, 38);
+  border-left-color: rgb(38, 38, 38);
+  border-right-color: rgb(38, 38, 38);
+  border-top-color: rgb(38, 38, 38);
   color: var(--h4-color, rgb(38, 38, 38));
   font-family: var(--h4-font, Consolas, monospace);
+  font-size: var(--h4-size, 19.2px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h4-letter-spacing, -0.096px);
+  line-height: var(--h4-line-height, 28.8px);
+  margin-bottom: 24px;
+  margin-top: var(--heading-spacing, 24px);
 }
 
 html[saved-theme="light"] body h5 {
   --font-weight: var(--h5-weight, bold);
+  border-bottom-color: rgb(38, 38, 38);
+  border-left-color: rgb(38, 38, 38);
+  border-right-color: rgb(38, 38, 38);
+  border-top-color: rgb(38, 38, 38);
   color: var(--h5-color, rgb(38, 38, 38));
   font-family: var(--h5-font, Consolas, monospace);
+  font-size: var(--h5-size, 17.6px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h5-letter-spacing, -0.0352px);
+  line-height: var(--h5-line-height, 26.4px);
+  margin-bottom: 24px;
+  margin-top: var(--heading-spacing, 24px);
 }
 
 html[saved-theme="light"] body h6 {
   --font-weight: var(--h6-weight, bold);
+  border-bottom-color: rgb(38, 38, 38);
+  border-left-color: rgb(38, 38, 38);
+  border-right-color: rgb(38, 38, 38);
+  border-top-color: rgb(38, 38, 38);
   color: var(--h6-color, rgb(38, 38, 38));
   font-family: var(--h6-font, Consolas, monospace);
+  font-weight: var(--font-weight, 700);
+  margin-bottom: 24px;
+  margin-top: 24px;
 }
 
 html[saved-theme="light"] body hr {
@@ -3713,6 +3951,26 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(99, 99, 99));
   font-family: Consolas, monospace;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(38, 38, 38);
@@ -3866,6 +4124,15 @@ html[saved-theme="light"] body .canvas-sidebar {
   font-family: Consolas, monospace;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(99, 99, 99);
+  border-left-color: rgb(99, 99, 99);
+  border-right-color: rgb(99, 99, 99);
+  border-top-color: rgb(99, 99, 99);
+  color: rgb(99, 99, 99);
+  font-family: Consolas, monospace;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(99, 99, 99);
   border-left-color: rgb(99, 99, 99);
@@ -3873,6 +4140,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(99, 99, 99);
   color: rgb(99, 99, 99);
   font-family: Consolas, monospace;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(99, 99, 99);
+  font-family: var(--metadata-label-font, Consolas, monospace);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(99, 99, 99);
+  font-family: var(--metadata-input-font, Consolas, monospace);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -3940,8 +4217,13 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(56, 132, 255);
+  border-left-color: rgb(56, 132, 255);
+  border-right-color: rgb(56, 132, 255);
+  border-top-color: rgb(56, 132, 255);
   color: var(--color-accent, rgb(56, 132, 255));
   font-family: Consolas, monospace;
+  font-weight: 700;
 }
 
 html[saved-theme="light"] body abbr {

@@ -25,6 +25,19 @@ export const theme: ThemeData = {
   --bases-table-summary-background: var(--background-primary, #07053500);
   --bgcolor: #07053500;
   --blockquote-border-color: var(--interactive-accent, #b44949);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #07053500);
   --caret-color: var(--text-normal, #ffffffdd);
   --checkbox-border-color-hover: var(--text-muted, #efd1d1);
@@ -113,7 +126,7 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, #ffffffdd);
   --vault-profile-color: var(--text-normal, #ffffffdd);
   --vault-profile-color-hover: var(--vault-profile-color, #ffffffdd);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
 }
 
 html body {
@@ -162,6 +175,13 @@ html body .markdown-rendered p > em, html em {
 }
 
 html body .markdown-rendered p > i, html i {
+  color: var(--italic-color, rgba(255, 255, 255, 0.867));
+  font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
+  outline: rgba(255, 255, 255, 0.867) none 0px;
+  text-decoration-color: rgba(255, 255, 255, 0.867);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
   color: var(--italic-color, rgba(255, 255, 255, 0.867));
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
   outline: rgba(255, 255, 255, 0.867) none 0px;
@@ -223,7 +243,13 @@ html body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(137, 192, 251));
 }`,
     lists: `html body dd {
+  border-bottom-color: rgba(255, 255, 255, 0.867);
+  border-left-color: rgba(255, 255, 255, 0.867);
+  border-right-color: rgba(255, 255, 255, 0.867);
+  border-top-color: rgba(255, 255, 255, 0.867);
   color: rgba(255, 255, 255, 0.867);
+  font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
+  font-size: 20px;
 }
 
 html body dl {
@@ -232,15 +258,27 @@ html body dl {
 }
 
 html body dt {
+  border-bottom-color: rgba(255, 255, 255, 0.867);
+  border-left-color: rgba(255, 255, 255, 0.867);
+  border-right-color: rgba(255, 255, 255, 0.867);
+  border-top-color: rgba(255, 255, 255, 0.867);
   color: rgba(255, 255, 255, 0.867);
+  font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
+  font-size: 20px;
 }
 
 html body ol > li {
   color: var(--text-normal, rgba(255, 255, 255, 0.867));
+  margin-left: 33.3691px;
+  padding-bottom: var(--list-spacing, 1.5px);
+  padding-top: var(--list-spacing, 1.5px);
 }
 
 html body ul > li {
   color: var(--text-normal, rgba(255, 255, 255, 0.867));
+  margin-left: 33.3691px;
+  padding-bottom: var(--list-spacing, 1.5px);
+  padding-top: var(--list-spacing, 1.5px);
 }
 
 html body ul.overflow {
@@ -254,7 +292,9 @@ html body ul.overflow {
 }
 
 html body blockquote {
+  color: var(--text-normal, rgba(255, 255, 255, 0.867));
   font-family: var(--nice-font, Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif);
+  line-height: 36px;
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgba(255, 255, 255, 0.867);
@@ -271,7 +311,6 @@ html body table {
   border-top-right-radius: 20px;
   color: rgba(255, 255, 255, 0.867);
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
-  width: 196.062px;
 }
 
 html body td {
@@ -366,6 +405,7 @@ html body video {
   border-left-color: rgb(239, 209, 209);
   border-right-color: rgb(239, 209, 209);
   border-top-color: rgb(239, 209, 209);
+  color: var(--text-muted, rgb(239, 209, 209));
 }
 
 html body .footnotes {
@@ -378,6 +418,7 @@ html body .transclude {
   border-left-color: rgb(180, 73, 73);
   border-right-color: rgba(255, 255, 255, 0.867);
   border-top-color: rgba(255, 255, 255, 0.867);
+  color: rgba(255, 255, 255, 0.867);
 }
 
 html body .transclude-inner {
@@ -385,6 +426,7 @@ html body .transclude-inner {
   border-left-color: rgba(255, 255, 255, 0.867);
   border-right-color: rgba(255, 255, 255, 0.867);
   border-top-color: rgba(255, 255, 255, 0.867);
+  color: rgba(255, 255, 255, 0.867);
 }`,
     checkboxes: `html body .katex-display > .katex {
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
@@ -1258,11 +1300,20 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-bottom-right-radius: 35px;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
+  font-size: 17.5px;
+  line-height: var(--line-height-tight, 17.5px);
 }
 
 html body h1 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h1-color, rgb(255, 255, 255));
   font-family: var(--h1-font, Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif);
+  font-size: var(--h1-size, 32.36px);
+  letter-spacing: var(--h1-letter-spacing, -0.4854px);
+  line-height: var(--h1-line-height, 38.832px);
 }
 
 html body h1.article-title {
@@ -1271,33 +1322,75 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(255, 223, 223);
+  border-left-color: rgb(255, 223, 223);
+  border-right-color: rgb(255, 223, 223);
+  border-top-color: rgb(255, 223, 223);
   color: var(--h2-color, rgb(255, 223, 223));
   font-family: var(--h2-font, Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif);
+  font-size: var(--h2-size, 29.24px);
+  letter-spacing: var(--h2-letter-spacing, -0.32164px);
+  line-height: var(--h2-line-height, 35.088px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgba(255, 255, 255, 0.867);
+  border-left-color: rgba(255, 255, 255, 0.867);
+  border-right-color: rgba(255, 255, 255, 0.867);
+  border-top-color: rgba(255, 255, 255, 0.867);
   color: var(--inline-title-color, rgba(255, 255, 255, 0.867));
   font-family: var(--inline-title-font, Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif);
+  font-size: var(--inline-title-size, 32.36px);
+  letter-spacing: -0.4854px;
+  line-height: var(--inline-title-line-height, 38.832px);
+  margin-bottom: 16.18px;
 }
 
 html body h3 {
+  border-bottom-color: rgb(255, 207, 207);
+  border-left-color: rgb(255, 207, 207);
+  border-right-color: rgb(255, 207, 207);
+  border-top-color: rgb(255, 207, 207);
   color: var(--h3-color, rgb(255, 207, 207));
   font-family: var(--h3-font, Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif);
+  font-size: var(--h3-size, 26.36px);
+  letter-spacing: var(--h3-letter-spacing, -0.21088px);
+  line-height: var(--h3-line-height, 34.268px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(255, 175, 175);
+  border-left-color: rgb(255, 175, 175);
+  border-right-color: rgb(255, 175, 175);
+  border-top-color: rgb(255, 175, 175);
   color: var(--h4-color, rgb(255, 175, 175));
   font-family: var(--h4-font, Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif);
+  font-size: var(--h4-size, 23.76px);
+  letter-spacing: var(--h4-letter-spacing, -0.1188px);
+  line-height: var(--h4-line-height, 33.264px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(255, 143, 143);
+  border-left-color: rgb(255, 143, 143);
+  border-right-color: rgb(255, 143, 143);
+  border-top-color: rgb(255, 143, 143);
   color: var(--h5-color, rgb(255, 143, 143));
   font-family: var(--h5-font, Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif);
+  font-size: var(--h5-size, 21.52px);
+  letter-spacing: var(--h5-letter-spacing, -0.04304px);
+  line-height: var(--h5-line-height, 32.28px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(255, 111, 111);
+  border-left-color: rgb(255, 111, 111);
+  border-right-color: rgb(255, 111, 111);
+  border-top-color: rgb(255, 111, 111);
   color: var(--h6-color, rgb(255, 111, 111));
   font-family: var(--h6-font, Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif);
+  font-size: var(--h6-size, 20px);
+  line-height: var(--h6-line-height, 30px);
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -1310,6 +1403,18 @@ html body h6 {
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(255, 223, 223));
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgba(255, 255, 255, 0.867);
@@ -1421,6 +1526,15 @@ html body .canvas-sidebar {
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(239, 209, 209);
+  border-left-color: rgb(239, 209, 209);
+  border-right-color: rgb(239, 209, 209);
+  border-top-color: rgb(239, 209, 209);
+  color: rgb(239, 209, 209);
+  font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(239, 209, 209);
   border-left-color: rgb(239, 209, 209);
@@ -1428,6 +1542,16 @@ html body .metadata-properties {
   border-top-color: rgb(239, 209, 209);
   color: rgb(239, 209, 209);
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
+}
+
+html body .metadata-property-key {
+  color: rgb(239, 209, 209);
+  font-size: 20px;
+}
+
+html body .metadata-property-value {
+  color: rgb(239, 209, 209);
+  font-size: 20px;
 }
 
 html body .note-properties-key {
@@ -1482,6 +1606,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgba(255, 255, 255, 0.867);
+  border-left-color: rgba(255, 255, 255, 0.867);
+  border-right-color: rgba(255, 255, 255, 0.867);
+  border-top-color: rgba(255, 255, 255, 0.867);
   color: var(--text-normal, rgba(255, 255, 255, 0.867));
 }
 

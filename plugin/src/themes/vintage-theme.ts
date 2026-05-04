@@ -20,6 +20,19 @@ export const theme: ThemeData = {
   --blockquote-border-color: var(--interactive-accent, #e3dacf);
   --blue: #5E81AC;
   --blue2: #88C0D0;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #333333);
   --canvas-card-label-color: var(--text-faint, #ECEFF4);
   --caret-color: var(--text-normal, #e3dacf);
@@ -149,7 +162,9 @@ export const theme: ThemeData = {
   --vault-profile-color-hover: var(--vault-profile-color, #e3dacf);
   --yellow: #ebc06c;
   --yellow2: #b49c5f;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -243,6 +258,14 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(253, 243, 231);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(253, 243, 231));
+  font-family: Newsreader, Georgia, serif;
+  font-weight: 700;
+  outline: rgb(253, 243, 231) none 0px;
+  text-decoration-color: rgb(253, 243, 231);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--bold-color, rgb(253, 243, 231));
   font-family: Newsreader, Georgia, serif;
@@ -307,7 +330,13 @@ html body a.internal-link.broken {
   text-decoration-thickness: var(--link-decoration-thickness, 1px);
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(253, 243, 231);
+  border-left-color: rgb(253, 243, 231);
+  border-right-color: rgb(253, 243, 231);
+  border-top-color: rgb(253, 243, 231);
   color: rgb(253, 243, 231);
+  font-family: Newsreader, Georgia, serif;
+  font-size: 20px;
 }
 
 html body dl {
@@ -316,15 +345,29 @@ html body dl {
 }
 
 html body dt {
+  border-bottom-color: rgb(253, 243, 231);
+  border-left-color: rgb(253, 243, 231);
+  border-right-color: rgb(253, 243, 231);
+  border-top-color: rgb(253, 243, 231);
   color: rgb(253, 243, 231);
+  font-family: Newsreader, Georgia, serif;
+  font-size: 20px;
 }
 
 html body ol > li {
   color: rgb(253, 243, 231);
+  margin-left: 33.99px;
+  margin-top: 8px;
+  padding-bottom: var(--list-spacing, 1.5px);
+  padding-top: var(--list-spacing, 1.5px);
 }
 
 html body ul > li {
   color: rgb(253, 243, 231);
+  margin-left: 33.99px;
+  margin-top: 8px;
+  padding-bottom: var(--list-spacing, 1.5px);
+  padding-top: var(--list-spacing, 1.5px);
 }
 
 html body ul.overflow {
@@ -338,8 +381,11 @@ html body ul.overflow {
 }
 
 html body blockquote {
+  color: var(--blockquote-color, rgb(253, 243, 231));
   font-family: var(--font-serif, Newsreader, Georgia, serif);
   font-style: var(--blockquote-font-style, italic);
+  font-weight: 200;
+  line-height: 31.632px;
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(227, 218, 207);
@@ -360,7 +406,6 @@ html body table {
   color: rgb(253, 243, 231);
   font-family: Newsreader, Georgia, serif;
   margin-top: var(--heading-spacing, 0px);
-  width: 862px;
 }
 
 html body td {
@@ -479,6 +524,7 @@ html body video {
   border-left-color: rgb(153, 153, 153);
   border-right-color: rgb(153, 153, 153);
   border-top-color: rgb(153, 153, 153);
+  color: var(--text-muted, rgb(153, 153, 153));
 }
 
 html body .footnotes {
@@ -491,6 +537,7 @@ html body .transclude {
   border-left-color: rgb(227, 218, 207);
   border-right-color: rgb(227, 218, 207);
   border-top-color: rgb(227, 218, 207);
+  color: rgb(227, 218, 207);
 }
 
 html body .transclude-inner {
@@ -498,6 +545,7 @@ html body .transclude-inner {
   border-left-color: rgb(227, 218, 207);
   border-right-color: rgb(227, 218, 207);
   border-top-color: rgb(227, 218, 207);
+  color: rgb(227, 218, 207);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(236, 239, 244);
@@ -1426,11 +1474,23 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-bottom-right-radius: 35px;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
+  font-size: 17.5px;
+  line-height: var(--line-height-tight, 17.5px);
 }
 
 html body h1 {
+  border-bottom-color: rgb(253, 243, 231);
+  border-left-color: rgb(253, 243, 231);
+  border-right-color: rgb(253, 243, 231);
+  border-top-color: rgb(253, 243, 231);
   color: var(--h1-color, rgb(253, 243, 231));
   font-family: var(--font-sans-serif, Lato, "Helvetica Neue", Helvetica, sans-serif);
+  font-size: var(--h1-size, 32.36px);
+  letter-spacing: var(--h1-letter-spacing, -0.4854px);
+  line-height: var(--h1-line-height, 30.742px);
+  margin-bottom: 6.472px;
+  padding-bottom: 5px;
+  text-decoration: underline 1px double;
 }
 
 html body h1.article-title {
@@ -1439,33 +1499,93 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(253, 243, 231);
+  border-bottom-style: double;
+  border-bottom-width: 3px;
+  border-left-color: rgb(253, 243, 231);
+  border-right-color: rgb(253, 243, 231);
+  border-top-color: rgb(253, 243, 231);
   color: var(--h2-color, rgb(253, 243, 231));
   font-family: var(--font-sans-serif, Lato, "Helvetica Neue", Helvetica, sans-serif);
+  font-size: var(--h2-size, 29.24px);
+  font-weight: var(--font-weight, 300);
+  letter-spacing: var(--h2-letter-spacing, -0.32164px);
+  line-height: var(--h2-line-height, 27.778px);
+  margin-bottom: 5.848px;
+  margin-top: var(--heading-spacing, 23.392px);
+  padding-bottom: 5px;
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(253, 243, 231);
+  border-left-color: rgb(253, 243, 231);
+  border-right-color: rgb(253, 243, 231);
+  border-top-color: rgb(253, 243, 231);
   color: var(--inline-title-color, rgb(253, 243, 231));
   font-family: var(--inline-title-font, Newsreader, Georgia, serif);
+  font-size: var(--inline-title-size, 32.36px);
+  letter-spacing: -0.4854px;
+  line-height: var(--inline-title-line-height, 38.832px);
+  margin-bottom: 16.18px;
 }
 
 html body h3 {
+  border-bottom-color: rgb(253, 243, 231);
+  border-left-color: rgb(253, 243, 231);
+  border-right-color: rgb(253, 243, 231);
+  border-top-color: rgb(253, 243, 231);
   color: var(--h3-color, rgb(253, 243, 231));
   font-family: var(--font-sans-serif, Lato, "Helvetica Neue", Helvetica, sans-serif);
+  font-size: var(--h3-size, 26.36px);
+  font-weight: var(--font-weight, 300);
+  letter-spacing: var(--h3-letter-spacing, -0.21088px);
+  line-height: var(--h3-line-height, 25.042px);
+  margin-bottom: 5.272px;
+  margin-top: var(--heading-spacing, 21.088px);
+  padding-bottom: 5px;
 }
 
 html body h4 {
+  border-bottom-color: rgb(253, 243, 231);
+  border-left-color: rgb(253, 243, 231);
+  border-right-color: rgb(253, 243, 231);
+  border-top-color: rgb(253, 243, 231);
   color: var(--h4-color, rgb(253, 243, 231));
   font-family: var(--font-sans-serif, Lato, "Helvetica Neue", Helvetica, sans-serif);
+  font-size: var(--h4-size, 23.76px);
+  font-weight: var(--font-weight, 300);
+  letter-spacing: var(--h4-letter-spacing, -0.1188px);
+  line-height: var(--h4-line-height, 22.572px);
+  margin-bottom: 4.752px;
+  margin-top: var(--heading-spacing, 19.008px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(253, 243, 231);
+  border-left-color: rgb(253, 243, 231);
+  border-right-color: rgb(253, 243, 231);
+  border-top-color: rgb(253, 243, 231);
   color: var(--h5-color, rgb(253, 243, 231));
   font-family: var(--font-sans-serif, Lato, "Helvetica Neue", Helvetica, sans-serif);
+  font-size: var(--h5-size, 21.52px);
+  font-weight: var(--font-weight, 300);
+  letter-spacing: var(--h5-letter-spacing, -0.04304px);
+  line-height: var(--h5-line-height, 20.444px);
+  margin-bottom: 4.304px;
+  margin-top: var(--heading-spacing, 17.216px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(253, 243, 231);
+  border-left-color: rgb(253, 243, 231);
+  border-right-color: rgb(253, 243, 231);
+  border-top-color: rgb(253, 243, 231);
   color: var(--text-title-h6, rgb(253, 243, 231));
   font-family: var(--font-serif, Newsreader, Georgia, serif);
+  font-size: var(--h6-size, 20px);
+  font-weight: var(--font-weight, 700);
+  line-height: var(--h6-line-height, 19px);
+  margin-bottom: 4px;
 }
 
 html body hr {
@@ -1480,6 +1600,22 @@ html body hr {
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(236, 239, 244));
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(253, 243, 231);
@@ -1624,6 +1760,15 @@ html body .bases-table thead th {
   font-family: Newsreader, Georgia, serif;
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(153, 153, 153);
+  border-left-color: rgb(153, 153, 153);
+  border-right-color: rgb(153, 153, 153);
+  border-top-color: rgb(153, 153, 153);
+  color: rgb(153, 153, 153);
+  font-family: Newsreader, Georgia, serif;
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(153, 153, 153);
   border-left-color: rgb(153, 153, 153);
@@ -1631,6 +1776,16 @@ html body .metadata-properties {
   border-top-color: rgb(153, 153, 153);
   color: rgb(153, 153, 153);
   font-family: Newsreader, Georgia, serif;
+}
+
+html body .metadata-property-key {
+  color: rgb(153, 153, 153);
+  font-size: 20px;
+}
+
+html body .metadata-property-value {
+  color: rgb(153, 153, 153);
+  font-size: 20px;
 }
 
 html body .note-properties-key {
@@ -1685,8 +1840,14 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(227, 218, 207);
+  border-left-color: rgb(227, 218, 207);
+  border-right-color: rgb(227, 218, 207);
+  border-top-color: rgb(227, 218, 207);
   color: var(--text-normal, rgb(227, 218, 207));
   font-family: var(--font-sans-serif, Lato, "Helvetica Neue", Helvetica, sans-serif);
+  font-size: var(--h6-size, 13px);
+  font-weight: 300;
 }
 
 html body abbr {

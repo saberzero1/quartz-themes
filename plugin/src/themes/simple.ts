@@ -54,6 +54,19 @@ export const theme: ThemeData = {
     base: `:root:root[saved-theme="dark"] {
   --bases-group-heading-property-size: var(--font-ui-smaller, 11px);
   --blockquote-background-color: var(--color-base-10, #242424);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --color-base-23: #323232;
   --default-border-radius: 3px;
   --divider-color: var(--color-base-23, #323232);
@@ -140,6 +153,10 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -166,6 +183,25 @@ html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcr
 html[saved-theme="dark"] body a.internal-link.broken {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
+    lists: `html[saved-theme="dark"] body dd {
+  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="dark"] body dt {
+  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="dark"] body ol > li {
+  margin-left: 29.9997px;
+  padding-bottom: var(--list-spacing, 5px);
+  padding-top: var(--list-spacing, 5px);
+}
+
+html[saved-theme="dark"] body ul > li {
+  margin-left: 29.9997px;
+  padding-bottom: var(--list-spacing, 5px);
+  padding-top: var(--list-spacing, 5px);
+}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   background-color: var(--blockquote-background-color, rgb(36, 36, 36));
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -174,7 +210,6 @@ html[saved-theme="dark"] body a.internal-link.broken {
 }`,
     tables: `html[saved-theme="dark"] body table {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  width: 194.844px;
 }`,
     code: `html[saved-theme="dark"] body code {
   padding-bottom: 1.827px;
@@ -739,16 +774,31 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: var(--line-height-tight, 12px);
 }
 
 html[saved-theme="dark"] body h1 {
   color: var(--heading-text-color, rgb(218, 218, 218));
   font-family: var(--h1-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: var(--size-h1, 26.4px);
+  letter-spacing: var(--h1-letter-spacing, -0.396px);
+  line-height: var(--h1-line-height, 31.68px);
+  margin-bottom: 0px;
+  padding-bottom: 3px;
+  padding-top: 10px;
 }
 
 html[saved-theme="dark"] body h2 {
   color: var(--heading-text-color, rgb(218, 218, 218));
   font-family: var(--h2-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: var(--size-h2, 23.2px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.2552px);
+  line-height: var(--h2-line-height, 27.84px);
+  margin-bottom: 0px;
+  padding-bottom: var(--h2-margin-bottom, 3px);
+  padding-top: var(--h2-margin-top, 10px);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
@@ -758,21 +808,51 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 html[saved-theme="dark"] body h3 {
   color: var(--heading-text-color, rgb(218, 218, 218));
   font-family: var(--h3-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: var(--size-h3, 20.8px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h3-letter-spacing, -0.1664px);
+  line-height: var(--h3-line-height, 24.96px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-bottom: var(--h3-margin-bottom, 3px);
+  padding-top: var(--h3-margin-top, 10px);
 }
 
 html[saved-theme="dark"] body h4 {
   color: var(--heading-text-color, rgb(218, 218, 218));
   font-family: var(--h4-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: var(--size-h4, 18.4px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h4-letter-spacing, -0.092px);
+  line-height: var(--h4-line-height, 22.08px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-bottom: var(--h4-margin-bottom, 3px);
+  padding-top: var(--h4-margin-top, 10px);
 }
 
 html[saved-theme="dark"] body h5 {
   color: var(--heading-text-color, rgb(218, 218, 218));
   font-family: var(--h5-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: var(--size-h5, 16px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h5-letter-spacing, -0.032px);
+  line-height: var(--h5-line-height, 19.2px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-bottom: var(--h5-margin-bottom, 3px);
+  padding-top: var(--h5-margin-top, 10px);
 }
 
 html[saved-theme="dark"] body h6 {
   color: var(--heading-text-color, rgb(218, 218, 218));
   font-family: var(--h6-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: var(--size-h6, 13.92px);
+  line-height: var(--h6-line-height, 16.704px);
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: var(--h6-margin-bottom, 3px);
+  padding-top: var(--h6-margin-top, 10px);
 }
 
 html[saved-theme="dark"] body hr {
@@ -803,6 +883,11 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-right-color: rgb(50, 50, 50);
   border-top-color: rgb(50, 50, 50);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: var(--status-bar-font-size, 11px);
+}
+
+html[saved-theme="dark"] body footer ul li a {
+  font-size: 11px;
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -821,16 +906,36 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-left: -10px;
+  padding-left: 10px;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  font-family: var(--metadata-label-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  font-family: var(--metadata-input-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
   border-radius: 24px;
 }`,
     misc: `html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(153, 153, 153);
+  border-left-color: rgb(153, 153, 153);
+  border-right-color: rgb(153, 153, 153);
+  border-top-color: rgb(153, 153, 153);
   color: var(--color-base-60, rgb(153, 153, 153));
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 15.6px;
 }
 
 html[saved-theme="dark"] body input[type=text] {
@@ -875,6 +980,19 @@ html[saved-theme="dark"] body ul.tags > li {
     base: `:root:root {
   --bases-group-heading-property-size: var(--font-ui-smaller, 11px);
   --blockquote-background-color: var(--color-base-10, #fafafa);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --color-base-23: #eee;
   --default-border-radius: 3px;
   --divider-color: var(--color-base-23, #eee);
@@ -961,6 +1079,10 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -987,6 +1109,25 @@ html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .bread
 html[saved-theme="light"] body a.internal-link.broken {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
+    lists: `html[saved-theme="light"] body dd {
+  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="light"] body dt {
+  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="light"] body ol > li {
+  margin-left: 29.9997px;
+  padding-bottom: var(--list-spacing, 5px);
+  padding-top: var(--list-spacing, 5px);
+}
+
+html[saved-theme="light"] body ul > li {
+  margin-left: 29.9997px;
+  padding-bottom: var(--list-spacing, 5px);
+  padding-top: var(--list-spacing, 5px);
+}`,
     blockquotes: `html[saved-theme="light"] body blockquote {
   background-color: var(--blockquote-background-color, rgb(250, 250, 250));
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -995,7 +1136,6 @@ html[saved-theme="light"] body a.internal-link.broken {
 }`,
     tables: `html[saved-theme="light"] body table {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  width: 194.844px;
 }`,
     code: `html[saved-theme="light"] body code {
   padding-bottom: 1.827px;
@@ -1553,16 +1693,31 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: var(--line-height-tight, 12px);
 }
 
 html[saved-theme="light"] body h1 {
   color: var(--heading-text-color, rgb(34, 34, 34));
   font-family: var(--h1-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: var(--size-h1, 26.4px);
+  letter-spacing: var(--h1-letter-spacing, -0.396px);
+  line-height: var(--h1-line-height, 31.68px);
+  margin-bottom: 0px;
+  padding-bottom: 3px;
+  padding-top: 10px;
 }
 
 html[saved-theme="light"] body h2 {
   color: var(--heading-text-color, rgb(34, 34, 34));
   font-family: var(--h2-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: var(--size-h2, 23.2px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.2552px);
+  line-height: var(--h2-line-height, 27.84px);
+  margin-bottom: 0px;
+  padding-bottom: var(--h2-margin-bottom, 3px);
+  padding-top: var(--h2-margin-top, 10px);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
@@ -1572,21 +1727,51 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 html[saved-theme="light"] body h3 {
   color: var(--heading-text-color, rgb(34, 34, 34));
   font-family: var(--h3-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: var(--size-h3, 20.8px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h3-letter-spacing, -0.1664px);
+  line-height: var(--h3-line-height, 24.96px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-bottom: var(--h3-margin-bottom, 3px);
+  padding-top: var(--h3-margin-top, 10px);
 }
 
 html[saved-theme="light"] body h4 {
   color: var(--heading-text-color, rgb(34, 34, 34));
   font-family: var(--h4-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: var(--size-h4, 18.4px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h4-letter-spacing, -0.092px);
+  line-height: var(--h4-line-height, 22.08px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-bottom: var(--h4-margin-bottom, 3px);
+  padding-top: var(--h4-margin-top, 10px);
 }
 
 html[saved-theme="light"] body h5 {
   color: var(--heading-text-color, rgb(34, 34, 34));
   font-family: var(--h5-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: var(--size-h5, 16px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h5-letter-spacing, -0.032px);
+  line-height: var(--h5-line-height, 19.2px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
+  padding-bottom: var(--h5-margin-bottom, 3px);
+  padding-top: var(--h5-margin-top, 10px);
 }
 
 html[saved-theme="light"] body h6 {
   color: var(--heading-text-color, rgb(34, 34, 34));
   font-family: var(--h6-font, "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: var(--size-h6, 13.92px);
+  line-height: var(--h6-line-height, 16.704px);
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: var(--h6-margin-bottom, 3px);
+  padding-top: var(--h6-margin-top, 10px);
 }
 
 html[saved-theme="light"] body hr {
@@ -1617,6 +1802,11 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-right-color: rgb(238, 238, 238);
   border-top-color: rgb(238, 238, 238);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: var(--status-bar-font-size, 11px);
+}
+
+html[saved-theme="light"] body footer ul li a {
+  font-size: 11px;
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1635,16 +1825,36 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-left: -10px;
+  padding-left: 10px;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  font-family: var(--metadata-label-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  font-family: var(--metadata-input-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body .note-properties-tags {
   border-radius: 24px;
 }`,
     misc: `html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(112, 112, 112);
+  border-left-color: rgb(112, 112, 112);
+  border-right-color: rgb(112, 112, 112);
+  border-top-color: rgb(112, 112, 112);
   color: var(--color-base-60, rgb(112, 112, 112));
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 15.6px;
 }
 
 html[saved-theme="light"] body input[type=text] {

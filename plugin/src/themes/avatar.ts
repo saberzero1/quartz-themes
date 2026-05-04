@@ -47,6 +47,19 @@ export const theme: ThemeData = {
   --blockquote-color: #E1DCF2;
   --blockquote-font-style: italic;
   --bodyFont: var(--font-text, var(--font-text-theme, 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif));
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #1a2332);
   --canvas-card-label-color: var(--text-faint, #718096);
   --caret-color: var(--text-normal, #e2e8f0);
@@ -232,7 +245,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-unfocused: #a0aec0;
   --vault-profile-color: var(--text-normal, #e2e8f0);
   --vault-profile-color-hover: var(--vault-profile-color, #e2e8f0);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -289,6 +304,14 @@ html body .markdown-rendered p > em, html em {
 html body .markdown-rendered p > i, html i {
   color: var(--italic-color, rgb(129, 140, 248));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  outline: rgb(129, 140, 248) none 0px;
+  text-decoration-color: rgb(129, 140, 248);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(129, 140, 248));
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
   outline: rgb(129, 140, 248) none 0px;
   text-decoration-color: rgb(129, 140, 248);
 }
@@ -351,19 +374,31 @@ html body a.internal-link.broken {
   outline: rgb(108, 245, 142) none 0px;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(226, 232, 240);
+  border-left-color: rgb(226, 232, 240);
+  border-right-color: rgb(226, 232, 240);
+  border-top-color: rgb(226, 232, 240);
   color: rgb(226, 232, 240);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 html body dt {
+  border-bottom-color: rgb(226, 232, 240);
+  border-left-color: rgb(226, 232, 240);
+  border-right-color: rgb(226, 232, 240);
+  border-top-color: rgb(226, 232, 240);
   color: rgb(226, 232, 240);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 html body ol > li {
   color: rgb(226, 232, 240);
+  margin-left: 30.1875px;
 }
 
 html body ul > li {
   color: rgb(226, 232, 240);
+  margin-left: 30.1875px;
 }
 
 html body ul.overflow {
@@ -377,6 +412,7 @@ html body ul.overflow {
 }
 
 html body blockquote {
+  color: var(--blockquote-color, rgb(225, 220, 242));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-style: var(--blockquote-font-style, italic);
 }`,
@@ -406,7 +442,6 @@ html body table {
   border-top-width: 1px;
   color: rgb(226, 232, 240);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  width: 226.844px;
 }
 
 html body tbody tr:nth-child(even) {
@@ -510,6 +545,7 @@ html body video {
   border-left-color: rgb(160, 174, 192);
   border-right-color: rgb(160, 174, 192);
   border-top-color: rgb(160, 174, 192);
+  color: var(--text-muted, rgb(160, 174, 192));
 }
 
 html body .footnotes {
@@ -522,6 +558,7 @@ html body .transclude {
   border-left-color: rgb(125, 211, 192);
   border-right-color: rgb(226, 232, 240);
   border-top-color: rgb(226, 232, 240);
+  color: rgb(226, 232, 240);
 }
 
 html body .transclude-inner {
@@ -529,6 +566,7 @@ html body .transclude-inner {
   border-left-color: rgb(226, 232, 240);
   border-right-color: rgb(226, 232, 240);
   border-top-color: rgb(226, 232, 240);
+  color: rgb(226, 232, 240);
 }`,
     checkboxes: `html body .katex-display > .katex {
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -1667,6 +1705,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color-remove: var(--tag-color, #fbbf24);
   --pill-color-remove-hover: var(--tag-color-hover, #7dd3c0);
   background-color: var(--pill-background, rgba(251, 191, 36, 0.2));
+  color: var(--pill-color, rgb(251, 191, 36));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -1675,8 +1714,18 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(125, 211, 192);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(239, 68, 192);
+  border-right-color: rgb(239, 68, 192);
+  border-top-color: rgb(239, 68, 192);
   color: var(--h1-color, rgb(239, 68, 192));
   font-family: var(--h1-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  font-size: var(--h1-size, 40px);
+  letter-spacing: var(--h1-letter-spacing, -0.6px);
+  line-height: var(--h1-line-height, 48px);
+  padding-bottom: 8px;
 }
 
 html body h1.article-title {
@@ -1686,37 +1735,88 @@ html body h1.article-title {
 
 html body h2 {
   --font-weight: var(--h2-weight, 600);
+  border-bottom-color: rgba(125, 211, 192, 0.4);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(167, 139, 250);
+  border-right-color: rgb(167, 139, 250);
+  border-top-color: rgb(167, 139, 250);
   color: var(--h2-color, rgb(167, 139, 250));
   font-family: var(--h2-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  font-size: var(--h2-size, 32px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.352px);
+  line-height: var(--h2-line-height, 38.4px);
+  padding-bottom: 6px;
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(239, 68, 192);
+  border-left-color: rgb(239, 68, 192);
+  border-right-color: rgb(239, 68, 192);
+  border-top-color: rgb(239, 68, 192);
   color: var(--inline-title-color, rgb(239, 68, 192));
   font-family: var(--inline-title-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  font-size: var(--inline-title-size, 40px);
+  letter-spacing: -0.6px;
+  line-height: var(--inline-title-line-height, 48px);
+  margin-bottom: 20px;
 }
 
 html body h3 {
   --font-weight: var(--h3-weight, 600);
+  border-bottom-color: rgba(251, 191, 36, 0.3);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(251, 191, 36);
+  border-right-color: rgb(251, 191, 36);
+  border-top-color: rgb(251, 191, 36);
   color: var(--h3-color, rgb(251, 191, 36));
   font-family: var(--h3-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  font-size: var(--h3-size, 25.6px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h3-letter-spacing, -0.2048px);
+  line-height: var(--h3-line-height, 33.28px);
+  padding-bottom: 4px;
 }
 
 html body h4 {
   --font-weight: var(--h4-weight, 500);
+  border-bottom-color: rgb(94, 234, 212);
+  border-left-color: rgb(94, 234, 212);
+  border-right-color: rgb(94, 234, 212);
+  border-top-color: rgb(94, 234, 212);
   color: var(--h4-color, rgb(94, 234, 212));
   font-family: var(--h4-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  font-size: var(--h4-size, 20.8px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h4-letter-spacing, -0.104px);
+  line-height: var(--h4-line-height, 29.12px);
 }
 
 html body h5 {
   --font-weight: var(--h5-weight, 500);
+  border-bottom-color: rgb(125, 211, 192);
+  border-left-color: rgb(125, 211, 192);
+  border-right-color: rgb(125, 211, 192);
+  border-top-color: rgb(125, 211, 192);
   color: var(--h5-color, rgb(125, 211, 192));
   font-family: var(--h5-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  font-size: var(--h5-size, 17.6px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h5-letter-spacing, -0.0352px);
+  line-height: var(--h5-line-height, 26.4px);
 }
 
 html body h6 {
   --font-weight: var(--h6-weight, 500);
+  border-bottom-color: rgb(99, 102, 241);
+  border-left-color: rgb(99, 102, 241);
+  border-right-color: rgb(99, 102, 241);
+  border-top-color: rgb(99, 102, 241);
   color: var(--h6-color, rgb(99, 102, 241));
   font-family: var(--h6-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  font-weight: var(--font-weight, 500);
 }
 
 html body hr {
@@ -1756,6 +1856,26 @@ html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(160, 174, 192));
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(226, 232, 240);
@@ -1896,6 +2016,15 @@ html body .bases-table thead th {
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(160, 174, 192);
+  border-left-color: rgb(160, 174, 192);
+  border-right-color: rgb(160, 174, 192);
+  border-top-color: rgb(160, 174, 192);
+  color: rgb(160, 174, 192);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(160, 174, 192);
   border-left-color: rgb(160, 174, 192);
@@ -1903,6 +2032,16 @@ html body .metadata-properties {
   border-top-color: rgb(160, 174, 192);
   color: rgb(160, 174, 192);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+html body .metadata-property-key {
+  color: rgb(160, 174, 192);
+  font-family: var(--metadata-label-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+}
+
+html body .metadata-property-value {
+  color: rgb(160, 174, 192);
+  font-family: var(--metadata-input-font, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
 }
 
 html body .note-properties {
@@ -1964,8 +2103,13 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(226, 232, 240);
+  border-left-color: rgb(226, 232, 240);
+  border-right-color: rgb(226, 232, 240);
+  border-top-color: rgb(226, 232, 240);
   color: var(--avatar-gold, rgb(226, 232, 240));
   font-family: Kalam, cursive;
+  font-weight: 600;
 }
 
 html body abbr {

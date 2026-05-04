@@ -18,6 +18,19 @@ export const theme: ThemeData = {
   --bases-table-header-background-hover: var(--background-modifier-hover, rgba(255, 255, 255, 0.09));
   --bases-table-summary-background: var(--background-primary, #161a1d);
   --bases-table-summary-background-hover: var(--background-modifier-hover, rgba(255, 255, 255, 0.09));
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #161a1d);
   --checkbox-marker-color: var(--background-primary, #161a1d);
   --code-background: var(--background-secondary, #0b0d0f);
@@ -483,6 +496,14 @@ html[saved-theme="dark"] body h1.article-title {
   font-weight: var(--inline-title-weight, 400);
 }
 
+html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  font-size: var(--inline-title-size, 48px);
+  font-weight: var(--inline-title-weight, 400);
+  letter-spacing: -0.72px;
+  line-height: var(--inline-title-line-height, 57.6px);
+  margin-bottom: 24px;
+}
+
 html[saved-theme="dark"] body hr {
   border-bottom-color: rgb(48, 54, 61);
   border-left-color: rgb(48, 54, 61);
@@ -493,6 +514,18 @@ html[saved-theme="dark"] body hr {
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(22, 26, 31);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     footer: `html[saved-theme="dark"] body footer {
   background-color: var(--status-bar-background, rgb(11, 13, 15));
@@ -524,6 +557,19 @@ html[saved-theme="dark"] body kbd {
   },
   light: {
     base: `:root:root {
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --nav-item-background-active: var(--interactive-accent, hsl(257, 88.88%, 70.95%));
   --nav-item-color-active: var(--text-on-accent, white);
   --quartz-icon-color: currentColor;
@@ -888,6 +934,9 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
+}`,
+    explorer: `html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
   },
 };

@@ -48,6 +48,19 @@ export const theme: ThemeData = {
   --bg_yellow: #4a4940;
   --bg_yellow_light: #faedcd;
   --blockquote-border-color: var(--interactive-accent, #569d79);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #2f383e);
   --canvas-card-label-color: var(--text-faint, #859289);
   --caret-color: var(--text-normal, #d3c6aa);
@@ -218,6 +231,8 @@ export const theme: ThemeData = {
   --vault-profile-color-hover: var(--vault-profile-color, #d3c6aa);
   --vim-cursor: var(--faded-blue, #7fbbb3);
   --quartz-icon-color: currentColor;
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -334,6 +349,12 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   text-decoration-color: rgb(211, 198, 170);
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(211, 198, 170));
+  outline: rgb(211, 198, 170) none 0px;
+  text-decoration-color: rgb(211, 198, 170);
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: var(--bold-color, rgb(211, 198, 170));
   outline: rgb(211, 198, 170) none 0px;
@@ -378,10 +399,18 @@ html[saved-theme="dark"] body a.internal-link.broken {
   outline: rgb(90, 147, 162) none 0px;
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(211, 198, 170);
+  border-left-color: rgb(211, 198, 170);
+  border-right-color: rgb(211, 198, 170);
+  border-top-color: rgb(211, 198, 170);
   color: rgb(211, 198, 170);
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(211, 198, 170);
+  border-left-color: rgb(211, 198, 170);
+  border-right-color: rgb(211, 198, 170);
+  border-top-color: rgb(211, 198, 170);
   color: rgb(211, 198, 170);
 }
 
@@ -401,6 +430,10 @@ html[saved-theme="dark"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: var(--text-faint, rgb(133, 146, 137));
+}
+
+html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(211, 198, 170));
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(211, 198, 170);
@@ -505,6 +538,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(86, 157, 121);
   border-right-color: rgb(211, 198, 170);
   border-top-color: rgb(211, 198, 170);
+  color: rgb(211, 198, 170);
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -514,6 +548,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(211, 198, 170);
   border-right-color: rgb(211, 198, 170);
   border-top-color: rgb(211, 198, 170);
+  color: rgb(211, 198, 170);
   margin-left: 10px;
   margin-right: 10px;
 }`,
@@ -1359,6 +1394,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   --pill-color-hover: var(--tag-color-hover, #5a93a2);
   --pill-color-remove: var(--tag-color, #5a93a2);
   --pill-color-remove-hover: var(--tag-color-hover, #5a93a2);
+  color: var(--pill-color, rgb(90, 147, 162));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -1366,7 +1402,15 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(218, 99, 98);
+  border-left-color: rgb(218, 99, 98);
+  border-right-color: rgb(218, 99, 98);
+  border-top-color: rgb(218, 99, 98);
   color: var(--text-title-h1, rgb(218, 99, 98));
+  font-size: var(--h1-size, 34px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h1-letter-spacing, -0.51px);
+  line-height: var(--h1-line-height, 40.8px);
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1374,27 +1418,70 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(215, 127, 72);
+  border-left-color: rgb(215, 127, 72);
+  border-right-color: rgb(215, 127, 72);
+  border-top-color: rgb(215, 127, 72);
   color: var(--text-title-h2, rgb(215, 127, 72));
+  font-size: var(--h2-size, 26px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h2-letter-spacing, -0.286px);
+  line-height: var(--h2-line-height, 31.2px);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(218, 99, 98);
+  border-left-color: rgb(218, 99, 98);
+  border-right-color: rgb(218, 99, 98);
+  border-top-color: rgb(218, 99, 98);
   color: var(--inline-title-color, rgb(218, 99, 98));
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(191, 152, 61);
+  border-left-color: rgb(191, 152, 61);
+  border-right-color: rgb(191, 152, 61);
+  border-top-color: rgb(191, 152, 61);
   color: var(--text-title-h3, rgb(191, 152, 61));
+  font-size: var(--h3-size, 22px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h3-letter-spacing, -0.176px);
+  line-height: var(--h3-line-height, 28.6px);
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(137, 156, 64);
+  border-left-color: rgb(137, 156, 64);
+  border-right-color: rgb(137, 156, 64);
+  border-top-color: rgb(137, 156, 64);
   color: var(--text-title-h4, rgb(137, 156, 64));
+  font-size: var(--h4-size, 20px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h4-letter-spacing, -0.1px);
+  line-height: var(--h4-line-height, 28px);
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(86, 157, 121);
+  border-left-color: rgb(86, 157, 121);
+  border-right-color: rgb(86, 157, 121);
+  border-top-color: rgb(86, 157, 121);
   color: var(--text-title-h5, rgb(86, 157, 121));
+  font-size: var(--h5-size, 18px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h5-letter-spacing, -0.036px);
+  line-height: var(--h5-line-height, 27px);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(184, 123, 157);
+  border-left-color: rgb(184, 123, 157);
+  border-right-color: rgb(184, 123, 157);
+  border-top-color: rgb(184, 123, 157);
   color: var(--text-title-h6, rgb(184, 123, 157));
+  font-size: var(--h6-size, 18px);
+  font-weight: var(--font-weight, 500);
+  line-height: var(--h6-line-height, 27px);
 }
 
 html[saved-theme="dark"] body hr {
@@ -1404,6 +1491,17 @@ html[saved-theme="dark"] body hr {
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
+}`,
+    explorer: `html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(211, 198, 170);
@@ -1521,7 +1619,12 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(211, 198, 170);
+  border-left-color: rgb(211, 198, 170);
+  border-right-color: rgb(211, 198, 170);
+  border-top-color: rgb(211, 198, 170);
   color: var(--text-normal, rgb(211, 198, 170));
+  font-weight: 700;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -1609,6 +1712,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --bg_yellow: #4a4940;
   --bg_yellow_light: #faedcd;
   --blockquote-border-color: var(--interactive-accent, #dfdbc8);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #fdf6e3);
   --canvas-card-label-color: var(--text-faint, #939f91);
   --caret-color: var(--text-normal, #5c6a72);
@@ -1779,6 +1895,8 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-profile-color-hover: var(--vault-profile-color, #5c6a72);
   --vim-cursor: var(--light-blue, #5a93a2);
   --quartz-icon-color: currentColor;
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -1895,6 +2013,12 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   text-decoration-color: rgb(92, 106, 114);
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(92, 106, 114));
+  outline: rgb(92, 106, 114) none 0px;
+  text-decoration-color: rgb(92, 106, 114);
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--bold-color, rgb(92, 106, 114));
   outline: rgb(92, 106, 114) none 0px;
@@ -1939,10 +2063,18 @@ html[saved-theme="light"] body a.internal-link.broken {
   outline: rgb(164, 187, 74) none 0px;
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(92, 106, 114);
+  border-left-color: rgb(92, 106, 114);
+  border-right-color: rgb(92, 106, 114);
+  border-top-color: rgb(92, 106, 114);
   color: rgb(92, 106, 114);
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(92, 106, 114);
+  border-left-color: rgb(92, 106, 114);
+  border-right-color: rgb(92, 106, 114);
+  border-top-color: rgb(92, 106, 114);
   color: rgb(92, 106, 114);
 }
 
@@ -1962,6 +2094,10 @@ html[saved-theme="light"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: var(--text-faint, rgb(147, 159, 145));
+}
+
+html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(92, 106, 114));
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(92, 106, 114);
@@ -2066,6 +2202,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(223, 219, 200);
   border-right-color: rgb(92, 106, 114);
   border-top-color: rgb(92, 106, 114);
+  color: rgb(92, 106, 114);
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -2075,6 +2212,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(92, 106, 114);
   border-right-color: rgb(92, 106, 114);
   border-top-color: rgb(92, 106, 114);
+  color: rgb(92, 106, 114);
   margin-left: 10px;
   margin-right: 10px;
 }`,
@@ -2920,6 +3058,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-hover: var(--tag-color-hover, #a4bb4a);
   --pill-color-remove: var(--tag-color, #a4bb4a);
   --pill-color-remove-hover: var(--tag-color-hover, #a4bb4a);
+  color: var(--pill-color, rgb(164, 187, 74));
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -2927,7 +3066,15 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(248, 85, 82);
+  border-left-color: rgb(248, 85, 82);
+  border-right-color: rgb(248, 85, 82);
+  border-top-color: rgb(248, 85, 82);
   color: var(--text-title-h1, rgb(248, 85, 82));
+  font-size: var(--h1-size, 34px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h1-letter-spacing, -0.51px);
+  line-height: var(--h1-line-height, 40.8px);
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -2935,27 +3082,70 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(245, 125, 38);
+  border-left-color: rgb(245, 125, 38);
+  border-right-color: rgb(245, 125, 38);
+  border-top-color: rgb(245, 125, 38);
   color: var(--text-title-h2, rgb(245, 125, 38));
+  font-size: var(--h2-size, 26px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h2-letter-spacing, -0.286px);
+  line-height: var(--h2-line-height, 31.2px);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(248, 85, 82);
+  border-left-color: rgb(248, 85, 82);
+  border-right-color: rgb(248, 85, 82);
+  border-top-color: rgb(248, 85, 82);
   color: var(--inline-title-color, rgb(248, 85, 82));
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(191, 152, 61);
+  border-left-color: rgb(191, 152, 61);
+  border-right-color: rgb(191, 152, 61);
+  border-top-color: rgb(191, 152, 61);
   color: var(--text-title-h3, rgb(191, 152, 61));
+  font-size: var(--h3-size, 22px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h3-letter-spacing, -0.176px);
+  line-height: var(--h3-line-height, 28.6px);
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(137, 156, 64);
+  border-left-color: rgb(137, 156, 64);
+  border-right-color: rgb(137, 156, 64);
+  border-top-color: rgb(137, 156, 64);
   color: var(--text-title-h4, rgb(137, 156, 64));
+  font-size: var(--h4-size, 20px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h4-letter-spacing, -0.1px);
+  line-height: var(--h4-line-height, 28px);
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(86, 157, 121);
+  border-left-color: rgb(86, 157, 121);
+  border-right-color: rgb(86, 157, 121);
+  border-top-color: rgb(86, 157, 121);
   color: var(--text-title-h5, rgb(86, 157, 121));
+  font-size: var(--h5-size, 18px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h5-letter-spacing, -0.036px);
+  line-height: var(--h5-line-height, 27px);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(184, 123, 157);
+  border-left-color: rgb(184, 123, 157);
+  border-right-color: rgb(184, 123, 157);
+  border-top-color: rgb(184, 123, 157);
   color: var(--text-title-h6, rgb(184, 123, 157));
+  font-size: var(--h6-size, 18px);
+  font-weight: var(--font-weight, 500);
+  line-height: var(--h6-line-height, 27px);
 }
 
 html[saved-theme="light"] body hr {
@@ -2965,6 +3155,17 @@ html[saved-theme="light"] body hr {
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
+}`,
+    explorer: `html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(92, 106, 114);
@@ -3082,7 +3283,12 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(92, 106, 114);
+  border-left-color: rgb(92, 106, 114);
+  border-right-color: rgb(92, 106, 114);
+  border-top-color: rgb(92, 106, 114);
   color: var(--text-normal, rgb(92, 106, 114));
+  font-weight: 700;
 }
 
 html[saved-theme="light"] body abbr {

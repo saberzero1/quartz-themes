@@ -50,6 +50,7 @@ export const theme: ThemeData = {
   --callout-important: var(--color-cyan-rgb, 0, 168, 224);
   --callout-info: var(--color-blue-rgb, 136, 192, 208);
   --callout-question: var(--color-orange-rgb, 255, 214, 112);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-success: var(--color-green-rgb, 132, 220, 198);
   --callout-summary: var(--color-cyan-rgb, 0, 168, 224);
   --callout-tip: var(--color-cyan-rgb, 0, 168, 224);
@@ -356,7 +357,9 @@ export const theme: ThemeData = {
   --top-left-padding-y: 0px;
   --vault-profile-color: var(--flatcap-6, #bfc2ca);
   --vault-profile-color-hover: var(--flatcap-7, #cbced5);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -403,6 +406,12 @@ html body .markdown-rendered p > em, html em {
 }
 
 html body .markdown-rendered p > i, html i {
+  color: var(--italic-color, rgb(203, 206, 213));
+  outline: rgb(203, 206, 213) none 0px;
+  text-decoration-color: rgb(203, 206, 213);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
   color: var(--italic-color, rgb(203, 206, 213));
   outline: rgb(203, 206, 213) none 0px;
   text-decoration-color: rgb(203, 206, 213);
@@ -458,10 +467,18 @@ html body a.internal-link.broken {
   outline: rgb(136, 192, 208) none 0px;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(203, 206, 213);
+  border-left-color: rgb(203, 206, 213);
+  border-right-color: rgb(203, 206, 213);
+  border-top-color: rgb(203, 206, 213);
   color: rgb(203, 206, 213);
 }
 
 html body dt {
+  border-bottom-color: rgb(203, 206, 213);
+  border-left-color: rgb(203, 206, 213);
+  border-right-color: rgb(203, 206, 213);
+  border-top-color: rgb(203, 206, 213);
   color: rgb(203, 206, 213);
 }
 
@@ -481,6 +498,10 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--text-faint, rgb(178, 182, 191));
+}
+
+html body blockquote {
+  color: var(--blockquote-color, rgb(191, 194, 202));
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(203, 206, 213);
@@ -492,7 +513,6 @@ html body ul.overflow {
 html body table {
   color: rgb(203, 206, 213);
   margin-top: var(--heading-spacing, 28px);
-  width: 201.438px;
 }
 
 html body td {
@@ -568,6 +588,7 @@ html body video {
   border-left-color: rgb(191, 194, 202);
   border-right-color: rgb(191, 194, 202);
   border-top-color: rgb(191, 194, 202);
+  color: var(--text-muted, rgb(191, 194, 202));
 }
 
 html body .footnotes {
@@ -580,6 +601,7 @@ html body .transclude {
   border-left-color: rgb(129, 161, 193);
   border-right-color: rgb(203, 206, 213);
   border-top-color: rgb(203, 206, 213);
+  color: rgb(203, 206, 213);
 }
 
 html body .transclude-inner {
@@ -587,6 +609,7 @@ html body .transclude-inner {
   border-left-color: rgb(203, 206, 213);
   border-right-color: rgb(203, 206, 213);
   border-top-color: rgb(203, 206, 213);
+  color: rgb(203, 206, 213);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(178, 182, 191);
@@ -1627,6 +1650,9 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-bottom-right-radius: 27.82px;
   border-top-left-radius: 27.82px;
   border-top-right-radius: 27.82px;
+  color: var(--pill-color, rgb(136, 192, 208));
+  font-size: 13.91px;
+  line-height: var(--line-height-tight, 13.91px);
 }
 
 html body a.internal-link.tag-link::before {
@@ -1635,7 +1661,16 @@ html body a.internal-link.tag-link::before {
 
 html body h1 {
   --font-weight: var(--h1-weight, 600);
+  border-bottom-color: rgb(203, 206, 213);
+  border-left-color: rgb(203, 206, 213);
+  border-right-color: rgb(203, 206, 213);
+  border-top-color: rgb(203, 206, 213);
   color: var(--h1-color, rgb(203, 206, 213));
+  font-size: var(--h1-size, 18px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h1-letter-spacing, -0.27px);
+  line-height: var(--h1-line-height, 21.6px);
+  margin-bottom: 28px;
 }
 
 html body h1.article-title {
@@ -1646,31 +1681,88 @@ html body h1.article-title {
 
 html body h2 {
   --font-weight: var(--h2-weight, 600);
+  border-bottom-color: rgb(203, 206, 213);
+  border-left-color: rgb(203, 206, 213);
+  border-right-color: rgb(203, 206, 213);
+  border-top-color: rgb(203, 206, 213);
   color: var(--h2-color, rgb(203, 206, 213));
+  font-size: var(--h2-size, 16.8px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.1848px);
+  line-height: var(--h2-line-height, 20.16px);
+  margin-bottom: 28px;
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(203, 206, 213);
+  border-left-color: rgb(203, 206, 213);
+  border-right-color: rgb(203, 206, 213);
+  border-top-color: rgb(203, 206, 213);
   color: var(--inline-title-color, rgb(203, 206, 213));
+  font-size: var(--inline-title-size, 18px);
+  font-weight: var(--inline-title-weight, 600);
+  letter-spacing: -0.27px;
+  line-height: var(--inline-title-line-height, 21.6px);
+  margin-bottom: 16px;
 }
 
 html body h3 {
   --font-weight: var(--h3-weight, 500);
+  border-bottom-color: rgb(203, 206, 213);
+  border-left-color: rgb(203, 206, 213);
+  border-right-color: rgb(203, 206, 213);
+  border-top-color: rgb(203, 206, 213);
   color: var(--h3-color, rgb(203, 206, 213));
+  font-size: var(--h3-size, 16px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h3-letter-spacing, -0.128px);
+  line-height: var(--h3-line-height, 20.8px);
+  margin-bottom: 28px;
+  margin-top: var(--heading-spacing, 28px);
 }
 
 html body h4 {
   --font-weight: var(--h4-weight, 500);
+  border-bottom-color: rgb(203, 206, 213);
+  border-left-color: rgb(203, 206, 213);
+  border-right-color: rgb(203, 206, 213);
+  border-top-color: rgb(203, 206, 213);
   color: var(--h4-color, rgb(203, 206, 213));
+  font-size: var(--h4-size, 14.4px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h4-letter-spacing, -0.072px);
+  line-height: var(--h4-line-height, 20.16px);
+  margin-bottom: 28px;
+  margin-top: var(--heading-spacing, 28px);
 }
 
 html body h5 {
   --font-weight: var(--h5-weight, 500);
+  border-bottom-color: rgb(203, 206, 213);
+  border-left-color: rgb(203, 206, 213);
+  border-right-color: rgb(203, 206, 213);
+  border-top-color: rgb(203, 206, 213);
   color: var(--h5-color, rgb(203, 206, 213));
+  font-size: var(--h5-size, 13.6px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h5-letter-spacing, -0.0272px);
+  line-height: var(--h5-line-height, 20.4px);
+  margin-bottom: 28px;
+  margin-top: var(--heading-spacing, 28px);
 }
 
 html body h6 {
   --font-weight: var(--h6-weight, 400);
+  border-bottom-color: rgb(203, 206, 213);
+  border-left-color: rgb(203, 206, 213);
+  border-right-color: rgb(203, 206, 213);
+  border-top-color: rgb(203, 206, 213);
   color: var(--h6-color, rgb(203, 206, 213));
+  font-size: var(--h6-size, 13.6px);
+  font-weight: var(--font-weight, 400);
+  line-height: var(--h6-line-height, 20.4px);
+  margin-bottom: 28px;
+  margin-top: 28px;
 }
 
 html body hr {
@@ -1695,6 +1787,30 @@ html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title 
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(178, 182, 191));
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(203, 206, 213);
@@ -1713,10 +1829,12 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-right-color: rgb(48, 53, 64);
   border-top-color: rgb(48, 53, 64);
   color: var(--status-bar-text-color, rgb(191, 194, 202));
+  font-size: var(--status-bar-font-size, 11px);
 }
 
 html body footer ul li a {
   color: rgb(191, 194, 202);
+  font-size: 11px;
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgb(203, 206, 213);
@@ -1813,11 +1931,27 @@ html body .canvas-sidebar {
   color: var(--text-muted, rgb(191, 194, 202));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(191, 194, 202);
+  border-left-color: rgb(191, 194, 202);
+  border-right-color: rgb(191, 194, 202);
+  border-top-color: rgb(191, 194, 202);
+  color: rgb(191, 194, 202);
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(191, 194, 202);
   border-left-color: rgb(191, 194, 202);
   border-right-color: rgb(191, 194, 202);
   border-top-color: rgb(191, 194, 202);
+  color: rgb(191, 194, 202);
+}
+
+html body .metadata-property-key {
+  color: rgb(191, 194, 202);
+}
+
+html body .metadata-property-value {
   color: rgb(191, 194, 202);
 }
 
@@ -1882,6 +2016,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(203, 206, 213);
+  border-left-color: rgb(203, 206, 213);
+  border-right-color: rgb(203, 206, 213);
+  border-top-color: rgb(203, 206, 213);
   color: var(--text-normal, rgb(203, 206, 213));
 }
 

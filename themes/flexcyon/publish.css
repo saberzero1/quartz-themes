@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Avenir";
   font-style: normal;
@@ -5479,6 +5480,110 @@ body body.theme-light i {
   animation-fill-mode: none;
   animation-play-state: running;
 }
+body body.theme-light u {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(34, 34, 34);
+  cursor: auto;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: underline rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  transform: none;
+  user-select: none;
+  animation-name: none;
+  animation-duration: auto;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-light s {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(34, 34, 34);
+  cursor: auto;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: line-through rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  transform: none;
+  user-select: none;
+  animation-name: none;
+  animation-duration: auto;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-light strong > em {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--italic-color, rgb(87, 112, 185));
+  cursor: grab;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 600;
+  outline: rgb(87, 112, 185) none 0px;
+  text-decoration-color: rgb(87, 112, 185);
+  text-decoration-style: solid;
+  transition: all;
+  user-select: text;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+}
 body body.theme-light .markdown-rendered mark {
   background-color: var(
     --text-highlight-bg,
@@ -5611,6 +5716,7 @@ body body.theme-light div.multi-select-pill {
     --pill-background,
     oklch(63.6083% 0.0886418 200.983deg / 0.25)
   );
+  color: var(--pill-color, rgb(59, 155, 161));
   display: flex;
   font-family:
     ui-sans-serif,
@@ -5626,7 +5732,10 @@ body body.theme-light div.multi-select-pill {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
+  font-size: 14px;
   font-weight: var(--pill-weight, 400);
+  line-height: var(--line-height-tight, 14px);
+  text-decoration: rgb(34, 34, 34);
   margin-inline-start: 0px;
   border: 0px solid rgba(86, 111, 184, 0.15);
   border-top-left-radius: 28px;
@@ -5644,6 +5753,22 @@ body body.theme-light div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-light .markdown-rendered ul > li {
   color: rgb(8, 8, 8);
   text-align: start;
+  list-style-type: "​";
+  list-style-position: outside;
+  list-style-image: none;
+  padding-top: var(--list-spacing, 1.2px);
+  padding-bottom: var(--list-spacing, 1.2px);
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 0px 0px 0px 30.5391px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
 }
 body body.theme-light .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
@@ -5663,6 +5788,22 @@ body body.theme-light .markdown-rendered ul > li::marker {
 body body.theme-light .markdown-rendered ol > li {
   color: rgb(8, 8, 8);
   text-align: start;
+  list-style-type: "​";
+  list-style-position: outside;
+  list-style-image: none;
+  padding-top: var(--list-spacing, 1.2px);
+  padding-bottom: var(--list-spacing, 1.2px);
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 0px 0px 0px 30.5391px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
 }
 body body.theme-light .markdown-rendered ol > li::marker {
   background-color: rgba(0, 0, 0, 0);
@@ -5706,6 +5847,10 @@ body body.theme-light .markdown-rendered code {
     monospace
   );
   padding: 2.1px 4.2px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-light .markdown-rendered pre > code {
   background-color: rgba(0, 0, 0, 0);
@@ -5720,6 +5865,10 @@ body body.theme-light .markdown-rendered pre > code {
   border-end-end-radius: 0px;
   overflow-x: visible;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
@@ -5737,6 +5886,10 @@ body body.theme-light pre[class*="language-"] {
   border-end-end-radius: 0px;
   overflow-x: visible;
   padding: 12px 16px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
@@ -5756,6 +5909,10 @@ body
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 2px;
+  padding-inline-start: 2px;
   margin: 0px 8px 0px -24px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -5785,6 +5942,7 @@ body
 }
 body body.theme-light .markdown-rendered blockquote {
   background-color: var(--blockquote-background-color, rgba(0, 0, 0, 0));
+  color: var(--blockquote-color, rgb(8, 8, 8));
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -5799,12 +5957,16 @@ body body.theme-light .markdown-rendered blockquote {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
+  font-weight: 400;
   font-style: normal;
+  line-height: 22.4px;
   padding-bottom: 0px;
   padding-top: 0px;
   padding-inline-start: 0px;
   margin-inline-start: 40px;
   margin-inline-end: 40px;
+  text-decoration: rgb(34, 34, 34);
+  letter-spacing: normal;
 }
 body body.theme-light .footnote-backref {
   color: var(--text-faint, rgba(111, 118, 133, 0.6));
@@ -5945,7 +6107,24 @@ body body.theme-light .published-container .markdown-rendered h1 {
     "Segoe UI Symbol",
     sans-serif
   );
+  font-size: var(--h1-size, 29.088px);
+  font-weight: var(--font-weight, 700);
+  line-height: var(--h1-line-height, 46.8317px);
   text-shadow: none;
+  text-decoration: rgb(34, 34, 34);
+  letter-spacing: var(--h1-letter-spacing, -0.43632px);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -5955,15 +6134,8 @@ body body.theme-light .published-container .markdown-rendered h1 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body body.theme-light .published-container .markdown-rendered h2 {
@@ -5984,7 +6156,24 @@ body body.theme-light .published-container .markdown-rendered h2 {
     "Segoe UI Symbol",
     sans-serif
   );
+  font-size: var(--h2-size, 25.888px);
+  font-weight: var(--font-weight, 675);
+  line-height: var(--h2-line-height, 39.0909px);
   text-shadow: none;
+  text-decoration: rgb(34, 34, 34);
+  letter-spacing: var(--h2-letter-spacing, -0.284768px);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -5994,15 +6183,8 @@ body body.theme-light .published-container .markdown-rendered h2 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body body.theme-light .published-container .markdown-rendered h3 {
@@ -6023,7 +6205,24 @@ body body.theme-light .published-container .markdown-rendered h3 {
     "Segoe UI Symbol",
     sans-serif
   );
+  font-size: var(--h3-size, 22.688px);
+  font-weight: var(--font-weight, 650);
+  line-height: var(--h3-line-height, 31.9901px);
   text-shadow: none;
+  text-decoration: rgb(34, 34, 34);
+  letter-spacing: var(--h3-letter-spacing, -0.181504px);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6033,15 +6232,8 @@ body body.theme-light .published-container .markdown-rendered h3 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body body.theme-light .published-container .markdown-rendered h4 {
@@ -6062,7 +6254,24 @@ body body.theme-light .published-container .markdown-rendered h4 {
     "Segoe UI Symbol",
     sans-serif
   );
+  font-size: var(--h4-size, 19.488px);
+  font-weight: var(--font-weight, 625);
+  line-height: var(--h4-line-height, 25.5293px);
   text-shadow: none;
+  text-decoration: rgb(34, 34, 34);
+  letter-spacing: var(--h4-letter-spacing, -0.09744px);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6072,15 +6281,8 @@ body body.theme-light .published-container .markdown-rendered h4 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body body.theme-light .published-container .markdown-rendered h5 {
@@ -6101,7 +6303,24 @@ body body.theme-light .published-container .markdown-rendered h5 {
     "Segoe UI Symbol",
     sans-serif
   );
+  font-size: var(--h5-size, 17.888px);
+  font-weight: var(--font-weight, 600);
+  line-height: var(--h5-line-height, 21.6445px);
   text-shadow: none;
+  text-decoration: rgb(34, 34, 34);
+  letter-spacing: var(--h5-letter-spacing, -0.035776px);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6111,15 +6330,8 @@ body body.theme-light .published-container .markdown-rendered h5 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body body.theme-light .published-container .markdown-rendered h6 {
@@ -6140,7 +6352,24 @@ body body.theme-light .published-container .markdown-rendered h6 {
     "Segoe UI Symbol",
     sans-serif
   );
+  font-size: var(--h6-size, 16.288px);
+  font-weight: var(--font-weight, 575);
+  line-height: var(--h6-line-height, 19.7085px);
   text-shadow: none;
+  text-decoration: rgb(34, 34, 34);
+  letter-spacing: normal;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6150,15 +6379,8 @@ body body.theme-light .published-container .markdown-rendered h6 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body
@@ -6231,6 +6453,10 @@ body body.theme-light .callout[data-callout="note"] {
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 12px 24px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(92, 159, 228, 0.1) none repeat scroll 0% 0% / auto
@@ -6251,6 +6477,10 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -6267,6 +6497,10 @@ body body.theme-light .callout > .callout-content {
     border-box;
   color: rgb(8, 8, 8);
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-light .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary, 59, 155, 161);
@@ -6300,6 +6534,10 @@ body body.theme-light .callout[data-callout="abstract"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -6337,6 +6575,10 @@ body body.theme-light .callout[data-callout="info"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -6374,6 +6616,10 @@ body body.theme-light .callout[data-callout="todo"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -6411,6 +6657,10 @@ body body.theme-light .callout[data-callout="tip"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -6448,6 +6698,10 @@ body body.theme-light .callout[data-callout="success"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -6485,6 +6739,10 @@ body body.theme-light .callout[data-callout="question"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -6522,6 +6780,10 @@ body body.theme-light .callout[data-callout="warning"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -6559,6 +6821,10 @@ body body.theme-light .callout[data-callout="danger"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -6596,6 +6862,10 @@ body body.theme-light .callout[data-callout="failure"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -6633,6 +6903,10 @@ body body.theme-light .callout[data-callout="bug"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -6670,6 +6944,10 @@ body body.theme-light .callout[data-callout="example"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -6707,6 +6985,10 @@ body body.theme-light .callout[data-callout="quote"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -6731,7 +7013,7 @@ body body.theme-light .markdown-rendered table {
     "Segoe UI Symbol",
     sans-serif;
   table-layout: auto;
-  width: 766px;
+  text-align: start;
   border: 0px rgba(111, 118, 133, 0.4);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6749,6 +7031,11 @@ body body.theme-light .markdown-rendered table {
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-light .markdown-rendered thead {
   background-color: rgba(0, 0, 0, 0);
@@ -6771,6 +7058,9 @@ body body.theme-light .markdown-rendered th {
   font-weight: var(--table-header-weight, 600);
   text-align: var(--flexcyon-td-table-alignment, left);
   vertical-align: var(--table-cell-vertical-alignment, top);
+  box-shadow: none;
+  text-decoration: rgb(34, 34, 34);
+  letter-spacing: normal;
   border-left: var(--table-column-first-border-width, 1px) solid
     rgba(111, 118, 133, 0.4);
   border-right: 1px solid rgba(111, 118, 133, 0.4);
@@ -6786,6 +7076,10 @@ body body.theme-light .markdown-rendered th {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 5px 10px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 1px;
+  padding-inline-start: 1px;
 }
 body body.theme-light .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
@@ -6793,6 +7087,8 @@ body body.theme-light .markdown-rendered td {
   font-weight: 400;
   text-align: var(--flexcyon-td-table-alignment, left);
   vertical-align: var(--table-cell-vertical-alignment, top);
+  box-shadow: none;
+  text-decoration: rgb(34, 34, 34);
   border: 1px solid rgba(111, 118, 133, 0.4);
   border-left: var(--table-column-first-border-width, 1px) solid
     rgba(111, 118, 133, 0.4);
@@ -6805,6 +7101,10 @@ body body.theme-light .markdown-rendered td {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 5px 10px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 1px;
+  padding-inline-start: 1px;
 }
 body body.theme-light .markdown-rendered tr {
   background-color: var(
@@ -6866,6 +7166,10 @@ body body.theme-light .markdown-rendered figure {
   margin-inline-end: 40px;
   margin-inline-start: 40px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-light .markdown-rendered figcaption {
   color: rgb(8, 8, 8);
@@ -6892,6 +7196,10 @@ body body.theme-light .markdown-rendered figcaption {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-light .markdown-rendered video {
   border-radius: 0px;
@@ -6926,9 +7234,15 @@ body body.theme-light .markdown-rendered audio {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-light .internal-embed {
   background-color: var(--embed-background, rgba(0, 0, 0, 0));
+  color: rgb(8, 8, 8);
+  border-radius: 0px;
   border-color: rgb(8, 8, 8);
   border-left: 2px solid oklch(55.9434% 0.117277 268.207deg / 0.8);
   border-right-width: 0px;
@@ -6943,6 +7257,8 @@ body body.theme-light .internal-embed {
 }
 body body.theme-light .markdown-embed {
   background-color: var(--embed-background, rgba(0, 0, 0, 0));
+  color: rgb(8, 8, 8);
+  border-radius: 0px;
   border-left: solid;
   border-width: 0px;
   border-color: rgb(8, 8, 8);
@@ -6955,6 +7271,8 @@ body body.theme-light .markdown-embed {
 }
 body body.theme-light .file-embed {
   background-color: var(--background-primary-alt, rgb(237, 235, 229));
+  color: var(--text-muted, oklch(29.593% 0.00924516 265.685deg / 0.8));
+  border-radius: 4px;
   border-color: oklch(29.593% 0.00924516 265.685deg / 0.8);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -7015,6 +7333,74 @@ body body.theme-light .metadata-properties {
   margin: 0px;
   padding: 0px;
 }
+body body.theme-light .metadata-container .metadata-property {
+  background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+  color: oklch(29.593% 0.00924516 265.685deg / 0.8);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border-color: oklch(29.593% 0.00924516 265.685deg / 0.8);
+  border-width: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+body body.theme-light .metadata-property-key {
+  color: oklch(29.593% 0.00924516 265.685deg / 0.8);
+  font-family: var(
+    --metadata-label-font,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  );
+  font-size: 16px;
+  font-weight: 400;
+}
+body body.theme-light .metadata-property-value {
+  color: oklch(29.593% 0.00924516 265.685deg / 0.8);
+  font-family: var(
+    --metadata-input-font,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  );
+  font-size: 16px;
+}
 body body.theme-light progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
@@ -7069,6 +7455,10 @@ body body.theme-light input[type="text"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 4px 8px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 2px;
+  padding-inline-start: 2px;
 }
 body body.theme-light details {
   background-color: rgba(0, 0, 0, 0);
@@ -7087,6 +7477,10 @@ body body.theme-light details {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-light summary {
   background-color: rgba(0, 0, 0, 0);
@@ -7094,6 +7488,10 @@ body body.theme-light summary {
   cursor: auto;
   font-weight: 400;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-light details[open] {
   background-color: rgba(0, 0, 0, 0);
@@ -7112,6 +7510,10 @@ body body.theme-light details[open] {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-light kbd {
   background-color: var(--code-background, oklch(96.5356% 0.0102416 none));
@@ -7142,6 +7544,10 @@ body body.theme-light kbd {
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
   padding: 1.4px 3.5px;
+  padding-block-end: 1.3125px;
+  padding-block-start: 1.3125px;
+  padding-inline-end: 3.28125px;
+  padding-inline-start: 3.28125px;
 }
 body body.theme-light dl {
   margin: 16px 0px;
@@ -7149,6 +7555,11 @@ body body.theme-light dl {
   margin-block-start: 15px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-light dt {
   color: rgb(8, 8, 8);
@@ -7158,15 +7569,72 @@ body body.theme-light dt {
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
+  font-size: 16px;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  border: 0px rgb(8, 8, 8);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body body.theme-light dd {
   color: rgb(8, 8, 8);
+  font-size: 16px;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   margin: 0px 0px 0px 40px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 40px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  border: 0px rgb(8, 8, 8);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body body.theme-light sub {
   color: rgb(8, 8, 8);
@@ -7437,14 +7905,22 @@ body body.theme-light .site-footer {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
+  font-size: var(--status-bar-font-size, 16.1803px);
+  text-align: start;
   border: 0px solid oklch(29.593% 0.00924516 265.685deg / 0.8);
   border-top-left-radius: 4px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: var(--size-4-2, 25.38px);
 }
 body body.theme-light .site-footer a {
   color: oklch(29.593% 0.00924516 265.685deg / 0.8);
+  font-size: 16.1803px;
+  font-weight: 400;
 }
 body body.theme-light .nav-header {
   color: rgb(8, 8, 8);
@@ -7561,6 +8037,20 @@ body body.theme-light .page-header .page-title {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
+  font-size: 14.5622px;
+  font-weight: 400;
+  line-height: 18.2027px;
+  background-color: var(--color-base-05, oklch(96.5356% 0.0102416 none));
+  background: oklch(96.5356% 0.0102416 none) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  padding: 4px 12px;
+  margin: 0px 0px 0px -1.5px;
+  border-color: rgb(8, 8, 8);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 16px;
 }
 body body.theme-light .math-block {
   background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
@@ -7997,6 +8487,110 @@ body body.theme-dark i {
   animation-fill-mode: none;
   animation-play-state: running;
 }
+body body.theme-dark u {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(218, 218, 218);
+  cursor: auto;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: underline rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  transform: none;
+  user-select: none;
+  animation-name: none;
+  animation-duration: auto;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark s {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(218, 218, 218);
+  cursor: auto;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: line-through rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  transform: none;
+  user-select: none;
+  animation-name: none;
+  animation-duration: auto;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark strong > em {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--italic-color, rgb(146, 168, 113));
+  cursor: grab;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 600;
+  outline: rgb(146, 168, 113) none 0px;
+  text-decoration-color: rgb(146, 168, 113);
+  text-decoration-style: solid;
+  transition: all;
+  user-select: text;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+}
 body body.theme-dark .markdown-rendered mark {
   background-color: var(
     --text-highlight-bg,
@@ -8135,6 +8729,7 @@ body body.theme-dark div.multi-select-pill {
     --pill-background,
     oklch(72.2355% 0.107178 202.06deg / 0.25)
   );
+  color: var(--pill-color, rgb(60, 185, 194));
   display: flex;
   font-family:
     ui-sans-serif,
@@ -8150,7 +8745,10 @@ body body.theme-dark div.multi-select-pill {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
+  font-size: 14px;
   font-weight: var(--pill-weight, 400);
+  line-height: var(--line-height-tight, 14px);
+  text-decoration: rgb(218, 218, 218);
   margin-inline-start: 0px;
   border: 0px solid rgba(110, 232, 72, 0.15);
   border-top-left-radius: 28px;
@@ -8168,6 +8766,22 @@ body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-dark .markdown-rendered ul > li {
   color: rgb(211, 213, 211);
   text-align: start;
+  list-style-type: "​";
+  list-style-position: outside;
+  list-style-image: none;
+  padding-top: var(--list-spacing, 1.2px);
+  padding-bottom: var(--list-spacing, 1.2px);
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 0px 0px 0px 30.5391px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
 }
 body body.theme-dark .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
@@ -8187,6 +8801,22 @@ body body.theme-dark .markdown-rendered ul > li::marker {
 body body.theme-dark .markdown-rendered ol > li {
   color: rgb(211, 213, 211);
   text-align: start;
+  list-style-type: "​";
+  list-style-position: outside;
+  list-style-image: none;
+  padding-top: var(--list-spacing, 1.2px);
+  padding-bottom: var(--list-spacing, 1.2px);
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 0px 0px 0px 30.5391px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
 }
 body body.theme-dark .markdown-rendered ol > li::marker {
   background-color: rgba(0, 0, 0, 0);
@@ -8230,6 +8860,10 @@ body body.theme-dark .markdown-rendered code {
     monospace
   );
   padding: 2.1px 4.2px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark .markdown-rendered pre > code {
   background-color: rgba(0, 0, 0, 0);
@@ -8244,6 +8878,10 @@ body body.theme-dark .markdown-rendered pre > code {
   border-end-end-radius: 0px;
   overflow-x: visible;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
@@ -8261,6 +8899,10 @@ body body.theme-dark pre[class*="language-"] {
   border-end-end-radius: 0px;
   overflow-x: visible;
   padding: 12px 16px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
@@ -8280,6 +8922,10 @@ body
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 2px;
+  padding-inline-start: 2px;
   margin: 0px 8px 0px -24px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -8309,6 +8955,7 @@ body
 }
 body body.theme-dark .markdown-rendered blockquote {
   background-color: var(--blockquote-background-color, rgba(0, 0, 0, 0));
+  color: var(--blockquote-color, rgb(211, 213, 211));
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -8323,12 +8970,16 @@ body body.theme-dark .markdown-rendered blockquote {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
+  font-weight: 400;
   font-style: normal;
+  line-height: 22.4px;
   padding-bottom: 0px;
   padding-top: 0px;
   padding-inline-start: 0px;
   margin-inline-start: 40px;
   margin-inline-end: 40px;
+  text-decoration: rgb(218, 218, 218);
+  letter-spacing: normal;
 }
 body body.theme-dark .footnote-backref {
   color: var(--text-faint, rgba(111, 118, 133, 0.6));
@@ -8472,7 +9123,24 @@ body body.theme-dark .published-container .markdown-rendered h1 {
     "Segoe UI Symbol",
     sans-serif
   );
+  font-size: var(--h1-size, 29.088px);
+  font-weight: var(--font-weight, 700);
+  line-height: var(--h1-line-height, 46.8317px);
   text-shadow: none;
+  text-decoration: rgb(218, 218, 218);
+  letter-spacing: var(--h1-letter-spacing, -0.43632px);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -8482,15 +9150,8 @@ body body.theme-dark .published-container .markdown-rendered h1 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
@@ -8511,7 +9172,24 @@ body body.theme-dark .published-container .markdown-rendered h2 {
     "Segoe UI Symbol",
     sans-serif
   );
+  font-size: var(--h2-size, 25.888px);
+  font-weight: var(--font-weight, 675);
+  line-height: var(--h2-line-height, 39.0909px);
   text-shadow: none;
+  text-decoration: rgb(218, 218, 218);
+  letter-spacing: var(--h2-letter-spacing, -0.284768px);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -8521,15 +9199,8 @@ body body.theme-dark .published-container .markdown-rendered h2 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
@@ -8550,7 +9221,24 @@ body body.theme-dark .published-container .markdown-rendered h3 {
     "Segoe UI Symbol",
     sans-serif
   );
+  font-size: var(--h3-size, 22.688px);
+  font-weight: var(--font-weight, 650);
+  line-height: var(--h3-line-height, 31.9901px);
   text-shadow: none;
+  text-decoration: rgb(218, 218, 218);
+  letter-spacing: var(--h3-letter-spacing, -0.181504px);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -8560,15 +9248,8 @@ body body.theme-dark .published-container .markdown-rendered h3 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
@@ -8589,7 +9270,24 @@ body body.theme-dark .published-container .markdown-rendered h4 {
     "Segoe UI Symbol",
     sans-serif
   );
+  font-size: var(--h4-size, 19.488px);
+  font-weight: var(--font-weight, 625);
+  line-height: var(--h4-line-height, 25.5293px);
   text-shadow: none;
+  text-decoration: rgb(218, 218, 218);
+  letter-spacing: var(--h4-letter-spacing, -0.09744px);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -8599,15 +9297,8 @@ body body.theme-dark .published-container .markdown-rendered h4 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
@@ -8628,7 +9319,24 @@ body body.theme-dark .published-container .markdown-rendered h5 {
     "Segoe UI Symbol",
     sans-serif
   );
+  font-size: var(--h5-size, 17.888px);
+  font-weight: var(--font-weight, 600);
+  line-height: var(--h5-line-height, 21.6445px);
   text-shadow: none;
+  text-decoration: rgb(218, 218, 218);
+  letter-spacing: var(--h5-letter-spacing, -0.035776px);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -8638,15 +9346,8 @@ body body.theme-dark .published-container .markdown-rendered h5 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
@@ -8667,7 +9368,24 @@ body body.theme-dark .published-container .markdown-rendered h6 {
     "Segoe UI Symbol",
     sans-serif
   );
+  font-size: var(--h6-size, 16.288px);
+  font-weight: var(--font-weight, 575);
+  line-height: var(--h6-line-height, 19.7085px);
   text-shadow: none;
+  text-decoration: rgb(218, 218, 218);
+  letter-spacing: normal;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -8677,15 +9395,8 @@ body body.theme-dark .published-container .markdown-rendered h6 {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
   width: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
   content: normal;
 }
 body
@@ -8758,6 +9469,10 @@ body body.theme-dark .callout[data-callout="note"] {
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 12px 24px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(90, 143, 205, 0.1) none repeat scroll 0% 0% / auto
@@ -8778,6 +9493,10 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -8794,6 +9513,10 @@ body body.theme-dark .callout > .callout-content {
     border-box;
   color: rgb(211, 213, 211);
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary, 60, 185, 194);
@@ -8827,6 +9550,10 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -8864,6 +9591,10 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -8901,6 +9632,10 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -8938,6 +9673,10 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -8975,6 +9714,10 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -9012,6 +9755,10 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -9049,6 +9796,10 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -9086,6 +9837,10 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -9123,6 +9878,10 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -9160,6 +9919,10 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -9197,6 +9960,10 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -9234,6 +10001,10 @@ body body.theme-dark .callout[data-callout="quote"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -9258,7 +10029,7 @@ body body.theme-dark .markdown-rendered table {
     "Segoe UI Symbol",
     sans-serif;
   table-layout: auto;
-  width: 766px;
+  text-align: start;
   border: 0px rgba(111, 118, 133, 0.4);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -9276,6 +10047,11 @@ body body.theme-dark .markdown-rendered table {
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark .markdown-rendered thead {
   background-color: rgba(0, 0, 0, 0);
@@ -9298,6 +10074,9 @@ body body.theme-dark .markdown-rendered th {
   font-weight: var(--table-header-weight, 600);
   text-align: var(--flexcyon-td-table-alignment, left);
   vertical-align: var(--table-cell-vertical-alignment, top);
+  box-shadow: none;
+  text-decoration: rgb(218, 218, 218);
+  letter-spacing: normal;
   border-left: var(--table-column-first-border-width, 1px) solid
     rgba(111, 118, 133, 0.4);
   border-right: 1px solid rgba(111, 118, 133, 0.4);
@@ -9313,6 +10092,10 @@ body body.theme-dark .markdown-rendered th {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 5px 10px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 1px;
+  padding-inline-start: 1px;
 }
 body body.theme-dark .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
@@ -9320,6 +10103,8 @@ body body.theme-dark .markdown-rendered td {
   font-weight: 400;
   text-align: var(--flexcyon-td-table-alignment, left);
   vertical-align: var(--table-cell-vertical-alignment, top);
+  box-shadow: none;
+  text-decoration: rgb(218, 218, 218);
   border: 1px solid rgba(111, 118, 133, 0.4);
   border-left: var(--table-column-first-border-width, 1px) solid
     rgba(111, 118, 133, 0.4);
@@ -9332,6 +10117,10 @@ body body.theme-dark .markdown-rendered td {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 5px 10px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 1px;
+  padding-inline-start: 1px;
 }
 body body.theme-dark .markdown-rendered tr {
   background-color: var(
@@ -9393,6 +10182,10 @@ body body.theme-dark .markdown-rendered figure {
   margin-inline-end: 40px;
   margin-inline-start: 40px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark .markdown-rendered figcaption {
   color: rgb(211, 213, 211);
@@ -9419,6 +10212,10 @@ body body.theme-dark .markdown-rendered figcaption {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark .markdown-rendered video {
   border-radius: 0px;
@@ -9453,9 +10250,15 @@ body body.theme-dark .markdown-rendered audio {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark .internal-embed {
   background-color: var(--embed-background, rgba(0, 0, 0, 0));
+  color: rgb(211, 213, 211);
+  border-radius: 0px;
   border-color: rgb(211, 213, 211);
   border-left: 2px solid oklch(86.535% 0.184813 137.419deg / 0.8);
   border-right-width: 0px;
@@ -9470,6 +10273,8 @@ body body.theme-dark .internal-embed {
 }
 body body.theme-dark .markdown-embed {
   background-color: var(--embed-background, rgba(0, 0, 0, 0));
+  color: rgb(211, 213, 211);
+  border-radius: 0px;
   border-left: solid;
   border-width: 0px;
   border-color: rgb(211, 213, 211);
@@ -9482,6 +10287,8 @@ body body.theme-dark .markdown-embed {
 }
 body body.theme-dark .file-embed {
   background-color: var(--background-primary-alt, rgb(36, 38, 44));
+  color: var(--text-muted, oklch(75.6226% 0.0113969 265.685deg / 0.8));
+  border-radius: 4px;
   border-color: oklch(75.6226% 0.0113969 265.685deg / 0.8);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -9542,6 +10349,74 @@ body body.theme-dark .metadata-properties {
   margin: 0px;
   padding: 0px;
 }
+body body.theme-dark .metadata-container .metadata-property {
+  background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+  color: oklch(75.6226% 0.0113969 265.685deg / 0.8);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border-color: oklch(75.6226% 0.0113969 265.685deg / 0.8);
+  border-width: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+body body.theme-dark .metadata-property-key {
+  color: oklch(75.6226% 0.0113969 265.685deg / 0.8);
+  font-family: var(
+    --metadata-label-font,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  );
+  font-size: 16px;
+  font-weight: 400;
+}
+body body.theme-dark .metadata-property-value {
+  color: oklch(75.6226% 0.0113969 265.685deg / 0.8);
+  font-family: var(
+    --metadata-input-font,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif
+  );
+  font-size: 16px;
+}
 body body.theme-dark progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
@@ -9596,6 +10471,10 @@ body body.theme-dark input[type="text"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 4px 8px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 2px;
+  padding-inline-start: 2px;
 }
 body body.theme-dark details {
   background-color: rgba(0, 0, 0, 0);
@@ -9614,6 +10493,10 @@ body body.theme-dark details {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark summary {
   background-color: rgba(0, 0, 0, 0);
@@ -9621,6 +10504,10 @@ body body.theme-dark summary {
   cursor: auto;
   font-weight: 400;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark details[open] {
   background-color: rgba(0, 0, 0, 0);
@@ -9639,6 +10526,10 @@ body body.theme-dark details[open] {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark kbd {
   background-color: var(--code-background, rgb(20, 22, 28));
@@ -9669,6 +10560,10 @@ body body.theme-dark kbd {
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
   padding: 1.4px 3.5px;
+  padding-block-end: 1.3125px;
+  padding-block-start: 1.3125px;
+  padding-inline-end: 3.28125px;
+  padding-inline-start: 3.28125px;
 }
 body body.theme-dark dl {
   margin: 16px 0px;
@@ -9676,6 +10571,11 @@ body body.theme-dark dl {
   margin-block-start: 15px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 body body.theme-dark dt {
   color: rgb(211, 213, 211);
@@ -9685,15 +10585,72 @@ body body.theme-dark dt {
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
+  font-size: 16px;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  border: 0px rgb(211, 213, 211);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body body.theme-dark dd {
   color: rgb(211, 213, 211);
+  font-size: 16px;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   margin: 0px 0px 0px 40px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 40px;
   padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  border: 0px rgb(211, 213, 211);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body body.theme-dark sub {
   color: rgb(211, 213, 211);
@@ -9964,14 +10921,22 @@ body body.theme-dark .site-footer {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
+  font-size: var(--status-bar-font-size, 16.1803px);
+  text-align: start;
   border: 0px solid oklch(75.6226% 0.0113969 265.685deg / 0.8);
   border-top-left-radius: 4px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: var(--size-4-2, 25.38px);
 }
 body body.theme-dark .site-footer a {
   color: oklch(75.6226% 0.0113969 265.685deg / 0.8);
+  font-size: 16.1803px;
+  font-weight: 400;
 }
 body body.theme-dark .nav-header {
   color: rgb(211, 213, 211);
@@ -10088,6 +11053,20 @@ body body.theme-dark .page-header .page-title {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
+  font-size: 14.5622px;
+  font-weight: 400;
+  line-height: 18.2027px;
+  background-color: var(--color-base-05, oklch(21.6334% 0.0172956 269.118deg));
+  background: oklch(21.6334% 0.0172956 269.118deg) none repeat scroll 0% 0% /
+    auto padding-box border-box;
+  padding: 4px 12px;
+  margin: 0px 0px 0px -1.5px;
+  border-color: rgb(211, 213, 211);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 16px;
 }
 body body.theme-dark .math-block {
   background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));

@@ -40,6 +40,19 @@ export const theme: ThemeData = {
   --brass-dark: #3F3624;
   --brass-deep: #392D15;
   --brass-light: #8B806C;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #090C0D);
   --canvas-card-label-color: var(--text-faint, #666);
   --caret-color: var(--text-normal, #BBBBBB);
@@ -187,6 +200,8 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, #BBBBBB);
   --vault-profile-color-hover: var(--vault-profile-color, #BBBBBB);
   --quartz-icon-color: currentColor;
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -238,6 +253,12 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(34, 126, 103);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--green-bright, rgb(34, 126, 103));
+  outline: rgb(34, 126, 103) none 0px;
+  text-decoration-color: rgb(34, 126, 103);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--purple-bright, rgb(102, 0, 139));
   outline: rgb(102, 0, 139) none 0px;
@@ -278,10 +299,18 @@ html body a.internal-link.broken {
   outline: rgb(139, 128, 108) none 0px;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(187, 187, 187);
+  border-left-color: rgb(187, 187, 187);
+  border-right-color: rgb(187, 187, 187);
+  border-top-color: rgb(187, 187, 187);
   color: rgb(187, 187, 187);
 }
 
 html body dt {
+  border-bottom-color: rgb(187, 187, 187);
+  border-left-color: rgb(187, 187, 187);
+  border-right-color: rgb(187, 187, 187);
+  border-top-color: rgb(187, 187, 187);
   color: rgb(187, 187, 187);
 }
 
@@ -300,6 +329,8 @@ html body ul.overflow {
   border-top-color: rgb(187, 187, 187);
 }`,
     blockquotes: `html body blockquote {
+  color: var(--blockquote-color, rgb(187, 187, 187));
+  line-height: 22.4px;
   padding-bottom: 16px;
   padding-top: 16px;
 }`,
@@ -395,6 +426,7 @@ html body .transclude {
   border-left-color: rgb(0, 55, 42);
   border-right-color: rgb(187, 187, 187);
   border-top-color: rgb(187, 187, 187);
+  color: rgb(187, 187, 187);
 }
 
 html body .transclude-inner {
@@ -402,6 +434,7 @@ html body .transclude-inner {
   border-left-color: rgb(187, 187, 187);
   border-right-color: rgb(187, 187, 187);
   border-top-color: rgb(187, 187, 187);
+  color: rgb(187, 187, 187);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(179, 179, 179);
@@ -1254,6 +1287,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color-hover: var(--tag-color-hover, #8B806C);
   --pill-color-remove: var(--tag-color, #8B806C);
   --pill-color-remove-hover: var(--tag-color-hover, #8B806C);
+  color: var(--pill-color, rgb(139, 128, 108));
 }
 
 html body a.internal-link.tag-link::before {
@@ -1261,8 +1295,16 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(57, 45, 21);
+  border-left-color: rgb(57, 45, 21);
+  border-right-color: rgb(57, 45, 21);
+  border-top-color: rgb(57, 45, 21);
   color: var(--text-title-h1, rgb(57, 45, 21));
   font-family: var(--font-family-preview, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h1-size, 32px);
+  letter-spacing: var(--h1-letter-spacing, -0.48px);
+  line-height: var(--h1-line-height, 36px);
+  margin-bottom: 15px;
 }
 
 html body h1.article-title {
@@ -1270,30 +1312,70 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(63, 54, 36);
+  border-left-color: rgb(63, 54, 36);
+  border-right-color: rgb(63, 54, 36);
+  border-top-color: rgb(63, 54, 36);
   color: var(--text-title-h2, rgb(63, 54, 36));
   font-family: var(--font-family-preview, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h2-size, 24px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h2-letter-spacing, -0.264px);
+  line-height: var(--h2-line-height, 34px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(187, 187, 187);
+  border-left-color: rgb(187, 187, 187);
+  border-right-color: rgb(187, 187, 187);
+  border-top-color: rgb(187, 187, 187);
   color: var(--inline-title-color, rgb(187, 187, 187));
 }
 
 html body h3 {
+  border-bottom-color: rgb(87, 80, 66);
+  border-left-color: rgb(87, 80, 66);
+  border-right-color: rgb(87, 80, 66);
+  border-top-color: rgb(87, 80, 66);
   color: var(--text-title-h3, rgb(87, 80, 66));
   font-family: var(--font-family-preview, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h3-size, 20.8px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h3-letter-spacing, -0.1664px);
+  line-height: var(--h3-line-height, 32px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(139, 128, 108);
+  border-left-color: rgb(139, 128, 108);
+  border-right-color: rgb(139, 128, 108);
+  border-top-color: rgb(139, 128, 108);
   color: var(--text-title-h4, rgb(139, 128, 108));
   font-family: var(--font-family-preview, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h4-size, 16px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h4-letter-spacing, -0.08px);
+  line-height: var(--h4-line-height, 28px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(183, 173, 151);
+  border-left-color: rgb(183, 173, 151);
+  border-right-color: rgb(183, 173, 151);
+  border-top-color: rgb(183, 173, 151);
   color: var(--text-title-h5, rgb(183, 173, 151));
   font-family: var(--font-family-preview, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h5-size, 12.8px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h5-letter-spacing, -0.0256px);
+  line-height: var(--h5-line-height, 27px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(187, 187, 187);
+  border-left-color: rgb(187, 187, 187);
+  border-right-color: rgb(187, 187, 187);
+  border-top-color: rgb(187, 187, 187);
   color: var(--h6-color, rgb(187, 187, 187));
 }
 
@@ -1304,6 +1386,17 @@ html body hr {
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
+}`,
+    explorer: `html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(187, 187, 187);
@@ -1418,6 +1511,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(187, 187, 187);
+  border-left-color: rgb(187, 187, 187);
+  border-right-color: rgb(187, 187, 187);
+  border-top-color: rgb(187, 187, 187);
   color: var(--text-normal, rgb(187, 187, 187));
 }
 

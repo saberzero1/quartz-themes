@@ -2105,6 +2105,20 @@ body:not(.is-mobile).layout-card .workspace-tab-header-container {
     padding: 8px 5px 1px 5px;
     display: flex;
     align-items: center;
+    /* Container query context: tabs adapt to THIS pane's width, not the window's */
+    container-type: inline-size;
+    container-name: tabbar;
+}
+
+/* When the pane is narrow, drop tab titles so pills don't get squished into ellipsis soup */
+@container tabbar (max-width: 280px) {
+    .workspace-tab-header-inner-title {
+        display: none;
+    }
+    .workspace-tab-header {
+        padding-inline: var(--s2) !important;
+        min-width: 0 !important;
+    }
 }
 
 body:not(.is-mobile).layout-card .workspace-tab-header-container-inner {
@@ -2118,7 +2132,7 @@ body:not(.is-mobile).layout-card .workspace-tab-header-container-inner {
 
 body:not(.is-mobile).layout-card .workspace-tab-header {
     background-color: rgba(var(--background-secondary-rgb), .3);
-    border-radius: var(--r3) !important;
+    border-radius: var(--r3);
     height: var(--height-input);
     display: flex;
     transition: background-color var(--transition-ui), transform var(--transition-ui), box-shadow var(--transition-ui), border-radius var(--transition-ui);
@@ -2132,7 +2146,7 @@ body:not(.is-mobile):not(.depth-shadows).layout-card .workspace-tab-header {
 body:not(.is-mobile):not(.depth-shadows).layout-card .workspace-tab-header.is-active {
     background-color: var(--background-primary) !important;
     border: none !important;
-    box-shadow: 0 0 20px rgba(var(--primary-color-rgb), 0.15) !important;
+    box-shadow: 0 0 20px rgba(var(--primary-color-rgb), 0.15);
 }
 
 body:not(.is-mobile):not(.depth-shadows).layout-card .workspace-tab-header:not(.is-active):hover {
@@ -2148,7 +2162,7 @@ body:not(.is-mobile).depth-shadows.layout-card .workspace-tab-header.is-active {
     background-color: var(--background-primary) !important;
     border: none !important;
     transform: translateY(-2px) !important;
-    box-shadow: var(--depth-2) !important;
+    box-shadow: var(--depth-2);
 }
 
 body:not(.is-mobile).depth-shadows.layout-card .workspace-tab-header:not(.is-active):hover {
@@ -2182,7 +2196,7 @@ body.mod-macos.is-hidden-frameless.layout-card .workspace-tab-header-container-i
 .mod-windows .titlebar-button,
 .mod-linux .titlebar-button {
     background-color: transparent !important;
-    transition: background-color var(--transition-ui) !important;
+    transition: background-color var(--transition-ui);
 }
 
 .mod-windows .titlebar-button:hover,
@@ -2205,7 +2219,7 @@ body.is-focused .workspace-tabs.mod-top {
 
 .workspace-leaf-content,
 .nav-files-container {
-    contain: layout style paint;
+    contain: layout style;
 }
 
 .vertical-tab-container {
@@ -2408,6 +2422,10 @@ body.is-focused .workspace-tabs.mod-top {
     background-blend-mode: overlay;
     transition: transform var(--transition-ui), box-shadow var(--transition-ui);
     margin: 0;
+}
+
+body:not(.is-mobile) :is(.markdown-preview-view, .markdown-reading-view) :is(h1, h2, h3, h4, h5, h6),
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"] {
     transform: translateZ(0);
 }
 
@@ -2486,7 +2504,7 @@ body.is-focused .workspace-tabs.mod-top {
     inset-block-start: 50% !important;
     transform: translateY(-50%) !important;
     opacity: 0 !important;
-    transition: opacity var(--transition-ui) !important;
+    transition: opacity var(--transition-ui);
     z-index: 10;
 }
 
@@ -2557,7 +2575,7 @@ body.h6-uppercase :is(h6, .cm-header-6) {
 .heading-style-underline .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"] {
     background: transparent !important;
     background-image: none !important;
-    box-shadow: none !important;
+    box-shadow: none;
     padding-block: .2em;
     padding-inline: 0;
     border-block-end: var(--border-heavy) solid;
@@ -2616,7 +2634,7 @@ body.h6-uppercase :is(h6, .cm-header-6) {
 .heading-style-border .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"] {
     background: transparent !important;
     background-image: none !important;
-    box-shadow: none !important;
+    box-shadow: none;
     padding-block: .2em;
     padding-inline-start: .8em;
     padding-inline-end: .5em;
@@ -2675,7 +2693,7 @@ body.h6-uppercase :is(h6, .cm-header-6) {
 .heading-style-minimal .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"] {
     background: transparent !important;
     background-image: none !important;
-    box-shadow: none !important;
+    box-shadow: none;
     padding-block: .2em;
     padding-inline: 0;
     border-radius: 0;
@@ -2736,7 +2754,7 @@ body.h6-uppercase :is(h6, .cm-header-6) {
 .heading-style-badge .markdown-preview-view h5,
 .heading-style-badge .markdown-preview-view h6,
 .heading-style-badge .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"] {
-    border-radius: 999px !important;
+    border-radius: 999px;
     padding: .3em .8em;
     background-image: none !important;
     -electron-corner-smoothing: 0% !important;
@@ -2757,7 +2775,7 @@ body.h6-uppercase :is(h6, .cm-header-6) {
     background: transparent !important;
     background-image: none !important;
     border: var(--border-thick) solid;
-    box-shadow: none !important;
+    box-shadow: none;
 }
 
 .heading-style-outline .markdown-preview-view h1,
@@ -3385,11 +3403,11 @@ body.link-style-wavy :is(.markdown-rendered a, .markdown-rendered .internal-link
 .multi-select-pill {
     display: inline-flex !important;
     align-items: center !important;
-    border-radius: var(--radius-m) !important;
+    border-radius: var(--radius-m);
     background-color: rgba(var(--primary-color-rgb), .15) !important;
     padding: 2px 4px 2px 10px !important;
     gap: 4px !important;
-    box-shadow: var(--shadow-1) !important;
+    box-shadow: var(--shadow-1);
 }
 
 .theme-dark .multi-select-pill {
@@ -3397,20 +3415,20 @@ body.link-style-wavy :is(.markdown-rendered a, .markdown-rendered .internal-link
 }
 
 :is(.multi-select-pill-content span, .multi-select-pill-content) {
-    border-radius: 0 !important;
+    border-radius: 0;
     background-color: transparent !important;
     color: var(--text-normal);
     padding: 0 !important;
     font-size: .85em;
     font-weight: var(--weight-medium);
     letter-spacing: -.01em;
-    box-shadow: none !important;
+    box-shadow: none;
     transition: color var(--transition-ui);
 }
 
 .multi-select-pill-remove {
     opacity: 0.6 !important;
-    transition: opacity var(--transition-ui) !important;
+    transition: opacity var(--transition-ui);
 }
 
 .multi-select-pill-remove:hover {
@@ -3467,7 +3485,7 @@ body.link-style-wavy :is(.markdown-rendered a, .markdown-rendered .internal-link
 /* Fix: Normal collapse icon animation */
 .collapse-icon svg,
 .nav-folder-collapse-indicator svg {
-    transition: transform 0.3s ease-out !important;
+    transition: transform 0.3s ease-out;
 }
 
 .nav-folder-title {
@@ -3970,7 +3988,7 @@ body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-u
 :is(.callout, .cm-callout) .callout-content :is(h1, h2, h3, h4, h5, h6, .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
     color: var(--callout-color) !important;
     background-color: transparent !important;
-    box-shadow: none !important;
+    box-shadow: none;
     background-image: none !important;
     padding-block: .1em;
     padding-inline: .3em;
@@ -4042,7 +4060,7 @@ body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-u
             rgba(var(--background-secondary-rgb), 0.9) 100%) !important;
     border: var(--border-thick) solid rgba(var(--callout-color-rgb), 0.25) !important;
     border-inline-start: 5px solid var(--callout-color) !important;
-    border-radius: 4px 12px 12px 4px !important;
+    border-radius: 4px 12px 12px 4px;
     box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, var(--opacity-light-overlay)),
         inset 0 -1px 0 rgba(0, 0, 0, var(--opacity-subtle)),
@@ -4122,7 +4140,7 @@ body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-u
     background: linear-gradient(135deg,
             rgba(255, 255, 255, 0.12) 0%,
             transparent 55%);
-    border-radius: var(--r4);
+    border-radius: var(--r4) !important;
     pointer-events: none;
 }
 
@@ -4157,7 +4175,7 @@ body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-u
         linear-gradient(135deg, rgba(var(--callout-color-rgb), 0.18) 0%, rgba(var(--background-secondary-rgb), 0.9) 100%) !important;
     border: var(--border-heavy) solid var(--callout-color) !important;
     border-inline-start: 6px solid var(--callout-color) !important;
-    border-radius: var(--r4) !important;
+    border-radius: var(--r4);
     box-shadow:
         0 0 0 2px rgba(var(--callout-color-rgb), 0.15),
         0 6px 20px rgba(0, 0, 0, var(--opacity-divider)),
@@ -4211,7 +4229,7 @@ body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-u
             hsl(from var(--callout-color) h 55% 32%) 100%) !important;
     border: var(--border-thin) solid rgba(var(--callout-color-rgb), 0.4) !important;
     border-inline-start: 5px solid hsl(from var(--callout-color) h 90% 60%) !important;
-    border-radius: var(--r3) !important;
+    border-radius: var(--r3);
     box-shadow:
         0 8px 24px -8px rgba(0, 0, 0, 0.4),
         0 4px 12px -4px rgba(var(--callout-color-rgb), 0.5),
@@ -4909,6 +4927,74 @@ body:not(.disable-ui-animations) .tooltip {
     animation: menuPop 0.38s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
 
+/* ============================================================
+   iOS-FLAVOR ANIMATIONS (Cupertino-inspired, opt-out via "Disable UI Animations")
+============================================================ */
+
+/* iOS bottom-sheet slide-up: phone menus emerge from the screen edge */
+@keyframes iosSheetUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body.is-phone:not(.disable-ui-animations) .menu {
+    animation: iosSheetUp 0.42s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+    transform-origin: bottom center;
+}
+
+/* iOS-style modal "zoom-in" with a touch of overshoot */
+@keyframes iosModalZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.94);
+    }
+    60% {
+        transform: scale(1.005);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+body:not(.disable-ui-animations):not(.animation-style-whimsy) .modal {
+    animation: iosModalZoom 0.34s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+}
+
+/* iOS-style backdrop blur fade-in for modal background */
+@keyframes iosBackdropFade {
+    0% {
+        opacity: 0;
+        backdrop-filter: blur(0px);
+    }
+    100% {
+        opacity: 1;
+        backdrop-filter: blur(8px);
+    }
+}
+
+body:not(.disable-ui-animations):not(.disable-modal-frost) .modal-bg {
+    animation: iosBackdropFade 0.28s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+}
+
+/* iOS-style press feedback: quick scale-down on tap/click — feels tactile */
+body:not(.disable-ui-animations) :is(
+    .menu-item,
+    .suggestion-item,
+    .clickable-icon,
+    .nav-file-title,
+    .nav-folder-title
+):active {
+    transform: scale(0.97);
+    transition: transform 80ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+
 /* ================================================= ==================================================
    WHIMSY ANIMATIONS (From Blobob)
 ================================================ ================================================== */
@@ -5230,7 +5316,7 @@ body.animation-style-whimsy .clickable-icon:active {
 
 /* --- Bouncy & Rotaty Buttons --- */
 body.animation-style-whimsy .workspace-tab-header-inner-close-button {
-    transition: transform var(--transition-bounce), opacity var(--transition-ui), width var(--transition-ui) !important;
+    transition: transform var(--transition-bounce), opacity var(--transition-ui), width var(--transition-ui);
 }
 
 body.animation-style-whimsy .workspace-tab-header-inner-close-button:hover {
@@ -5242,7 +5328,7 @@ body.animation-style-whimsy .workspace-tab-header-inner-close-button:hover {
 /* Sidebar Toggle Buttons - Smart rotation based on side */
 body.animation-style-whimsy .sidebar-toggle-button.mod-left,
 body.animation-style-whimsy .sidebar-toggle-button.mod-right {
-    transition: transform 0.5s var(--ease-bounce-md) !important;
+    transition: transform 0.5s var(--ease-bounce-md);
 }
 
 /* Left sidebar rotates counter-clockwise (opening to the left) */
@@ -5262,7 +5348,7 @@ body.animation-style-whimsy .workspace-ribbon-collapse-btn:hover {
 }
 
 body.animation-style-whimsy .collapse-icon {
-    transition: transform var(--transition-bounce) !important;
+    transition: transform var(--transition-bounce);
 }
 
 body.animation-style-whimsy .collapse-icon:hover {
@@ -5270,7 +5356,7 @@ body.animation-style-whimsy .collapse-icon:hover {
 }
 
 body.animation-style-whimsy .status-bar-item {
-    transition: transform var(--transition-bounce) !important;
+    transition: transform var(--transition-bounce);
 }
 
 body.animation-style-whimsy .status-bar-item:hover {
@@ -5279,7 +5365,7 @@ body.animation-style-whimsy .status-bar-item:hover {
 
 body.animation-style-whimsy .tag,
 body.animation-style-whimsy .multi-select-pill {
-    transition: transform var(--transition-bounce) !important;
+    transition: transform var(--transition-bounce);
     display: inline-block;
 }
 
@@ -5289,7 +5375,7 @@ body.animation-style-whimsy .multi-select-pill:hover {
 }
 
 body.animation-style-whimsy .canvas-control-item {
-    transition: transform var(--transition-bounce) !important;
+    transition: transform var(--transition-bounce);
 }
 
 body.animation-style-whimsy .canvas-control-item:hover {
@@ -5297,7 +5383,7 @@ body.animation-style-whimsy .canvas-control-item:hover {
 }
 
 body.animation-style-whimsy .search-input-container input {
-    transition: transform var(--transition-bounce), box-shadow var(--transition-ui) !important;
+    transition: transform var(--transition-bounce), box-shadow var(--transition-ui);
 }
 
 body.animation-style-whimsy .search-input-container input:focus {
@@ -5309,12 +5395,12 @@ body.animation-style-whimsy .search-input-container input:focus {
 /* Tabs */
 body.animation-style-whimsy .workspace-tab-header,
 body.animation-style-whimsy .workspace-tab-header-inner {
-    transition: transform 0.4s var(--ease-bounce-sm), background-color var(--transition-ui) !important;
+    transition: transform 0.4s var(--ease-bounce-sm), background-color var(--transition-ui);
 }
 
 /* View Headers */
 body.animation-style-whimsy .view-header {
-    transition: box-shadow var(--slow), transform 0.4s var(--ease-bounce-sm), background-color var(--transition-ui) !important;
+    transition: box-shadow var(--slow), transform 0.4s var(--ease-bounce-sm), background-color var(--transition-ui);
 }
 
 /* Sidebar & Ribbon Icons */
@@ -5322,19 +5408,19 @@ body.animation-style-whimsy .side-dock-ribbon-action,
 body.animation-style-whimsy .workspace-ribbon-collapse-btn,
 body.animation-style-whimsy .view-header-icon,
 body.animation-style-whimsy .modal-close-button {
-    transition: color var(--transition-ui), transform 0.4s var(--ease-bounce-md) !important;
+    transition: color var(--transition-ui), transform 0.4s var(--ease-bounce-md);
 }
 
 /* Metadata Container */
 body.animation-style-whimsy .metadata-container {
-    transition: box-shadow var(--slow), transform 0.4s var(--ease-bounce-sm) !important;
+    transition: box-shadow var(--slow), transform 0.4s var(--ease-bounce-sm);
 }
 
 /* File Explorer Items & Outline */
 body.animation-style-whimsy .nav-file-title,
 body.animation-style-whimsy .nav-folder-title,
 body.animation-style-whimsy .tree-item-self {
-    transition: background-color var(--transition-ui), transform 0.3s var(--ease-bounce-sm) !important;
+    transition: background-color var(--transition-ui), transform 0.3s var(--ease-bounce-sm);
 }
 
 body.animation-style-whimsy .nav-file-title:hover,
@@ -5345,16 +5431,16 @@ body.animation-style-whimsy .tree-item-self:hover {
 
 /* Toggles */
 body.animation-style-whimsy .checkbox-container {
-    transition: background-color var(--transition-ui) !important;
+    transition: background-color var(--transition-ui);
 }
 
 body.animation-style-whimsy .checkbox-container:after {
-    transition: transform 0.4s var(--ease-overshoot) !important;
+    transition: transform 0.4s var(--ease-overshoot);
 }
 
 /* Sliders */
 body.animation-style-whimsy input[type=range]::-webkit-slider-thumb {
-    transition: transform 0.2s var(--ease-bounce-md) !important;
+    transition: transform 0.2s var(--ease-bounce-md);
 }
 
 body.animation-style-whimsy input[type=range]::-webkit-slider-thumb:active {
@@ -5364,7 +5450,7 @@ body.animation-style-whimsy input[type=range]::-webkit-slider-thumb:active {
 /* Links */
 body.animation-style-whimsy a.internal-link,
 body.animation-style-whimsy a.external-link {
-    transition: transform var(--transition-bounce), color var(--transition-ui), text-shadow var(--transition-ui) !important;
+    transition: transform var(--transition-bounce), color var(--transition-ui), text-shadow var(--transition-ui);
     display: inline-block;
     /* Required for transform */
 }
@@ -5376,7 +5462,7 @@ body.animation-style-whimsy a.external-link:hover {
 
 /* Settings Left Panel (Vertical Nav) */
 body.animation-style-whimsy .vertical-tab-nav-item {
-    transition: background-color var(--transition-ui), transform 0.3s var(--ease-bounce-md) !important;
+    transition: background-color var(--transition-ui), transform 0.3s var(--ease-bounce-md);
 }
 
 body.animation-style-whimsy .vertical-tab-nav-item:hover {
@@ -5385,7 +5471,7 @@ body.animation-style-whimsy .vertical-tab-nav-item:hover {
 
 /* Callouts (Obvious Hover) */
 body.animation-style-whimsy .callout {
-    transition: transform 0.3s var(--ease-bounce-md), box-shadow var(--slow) !important;
+    transition: transform 0.3s var(--ease-bounce-md), box-shadow var(--slow);
 }
 
 body.animation-style-whimsy .callout:hover {
@@ -5396,7 +5482,7 @@ body.animation-style-whimsy .callout:hover {
 
 /* Blockquotes (Obvious Hover) */
 body.animation-style-whimsy .markdown-rendered blockquote {
-    transition: transform 0.3s var(--ease-bounce-md), border-left-width var(--transition-ui) !important;
+    transition: transform 0.3s var(--ease-bounce-md), border-left-width var(--transition-ui);
 }
 
 body.animation-style-whimsy .markdown-rendered blockquote:hover {
@@ -5406,7 +5492,7 @@ body.animation-style-whimsy .markdown-rendered blockquote:hover {
 
 /* Images (Obvious Hover) */
 body.animation-style-whimsy img {
-    transition: transform 0.4s var(--ease-bounce-md) !important;
+    transition: transform 0.4s var(--ease-bounce-md);
 }
 
 body.animation-style-whimsy img:hover {
@@ -5415,7 +5501,7 @@ body.animation-style-whimsy img:hover {
 
 /* Tables (Obvious Hover) */
 body.animation-style-whimsy table {
-    transition: transform var(--slow) !important;
+    transition: transform var(--slow);
 }
 
 body.animation-style-whimsy table:hover {
@@ -5435,7 +5521,7 @@ body.animation-style-whimsy .markdown-reading-view h3,
 body.animation-style-whimsy .markdown-reading-view h4,
 body.animation-style-whimsy .markdown-reading-view h5,
 body.animation-style-whimsy .markdown-reading-view h6 {
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.4), letter-spacing var(--slow), box-shadow var(--transition-ui) !important;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.4), letter-spacing var(--slow), box-shadow var(--transition-ui);
 }
 
 body.animation-style-whimsy .markdown-preview-view h1:hover,
@@ -5495,7 +5581,7 @@ body.animation-style-whimsy:not(.disable-ui-animations) .metadata-property:nth-c
 
 /* Code Blocks - Hover Lift */
 body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered pre {
-    transition: transform 0.3s var(--ease-bounce-md), box-shadow var(--slow) !important;
+    transition: transform 0.3s var(--ease-bounce-md), box-shadow var(--slow);
 }
 
 body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered pre:hover {
@@ -5505,7 +5591,7 @@ body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered pre:h
 
 /* Tab New Button - Jiggle on hover */
 body.animation-style-whimsy:not(.disable-ui-animations) .workspace-tab-header-new-tab {
-    transition: transform var(--transition-bounce) !important;
+    transition: transform var(--transition-bounce);
 }
 
 body.animation-style-whimsy:not(.disable-ui-animations) .workspace-tab-header-new-tab:hover {
@@ -5596,7 +5682,7 @@ body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered .call
 
 /* Table Rows - Hover Slide */
 body.animation-style-whimsy:not(.disable-ui-animations) table tr {
-    transition: transform 0.2s var(--ease-bounce-md), background-color var(--transition-ui) !important;
+    transition: transform 0.2s var(--ease-bounce-md), background-color var(--transition-ui);
 }
 
 body.animation-style-whimsy:not(.disable-ui-animations) table tr:hover {
@@ -5642,7 +5728,7 @@ body.animation-style-whimsy:not(.disable-ui-animations) .checkbox-container:acti
 
 /* Scrollbar Thumb - Squish on Hover */
 body.animation-style-whimsy:not(.disable-ui-animations) ::-webkit-scrollbar-thumb {
-    transition: transform 0.2s var(--ease-bounce-md), background-color var(--transition-ui) !important;
+    transition: transform 0.2s var(--ease-bounce-md), background-color var(--transition-ui);
 }
 
 body.animation-style-whimsy:not(.disable-ui-animations) ::-webkit-scrollbar-thumb:hover {
@@ -5655,7 +5741,7 @@ body.animation-style-whimsy:not(.disable-ui-animations) ::-webkit-scrollbar-thum
 
 /* Breadcrumbs - Float on Hover */
 body.animation-style-whimsy:not(.disable-ui-animations) .view-header-breadcrumb {
-    transition: transform var(--transition-bounce) !important;
+    transition: transform var(--transition-bounce);
     display: inline-block;
 }
 
@@ -5739,7 +5825,7 @@ body.animation-style-whimsy:not(.disable-ui-animations) .modal-close-button:hove
 
 /* Color Picker Swatches - Pop on Hover */
 body.animation-style-whimsy:not(.disable-ui-animations) .color-swatch {
-    transition: transform 0.2s var(--ease-bounce-md) !important;
+    transition: transform 0.2s var(--ease-bounce-md);
 }
 
 body.animation-style-whimsy:not(.disable-ui-animations) .color-swatch:hover {
@@ -5798,7 +5884,7 @@ body.animation-style-whimsy:not(.disable-ui-animations) .mermaid {
 
 /* Calendar Dates - Hover Pop */
 body.animation-style-whimsy:not(.disable-ui-animations) .day {
-    transition: transform 0.2s var(--ease-bounce-md) !important;
+    transition: transform 0.2s var(--ease-bounce-md);
 }
 
 body.animation-style-whimsy:not(.disable-ui-animations) .day:hover {
@@ -5917,7 +6003,7 @@ body:not(.disable-modal-frost) .modal-bg {
 }
 
 .workspace-tab-header {
-    border-radius: var(--r3) var(--r3) 0 0 !important;
+    border-radius: var(--r3) var(--r3) 0 0;
     overflow: visible;
     -electron-corner-smoothing: var(--squircle-main);
     margin-inline-end: 0;
@@ -6090,7 +6176,7 @@ body:not(.disable-modal-frost) .modal-bg {
 }
 
 /* Status Bar Styling - Only apply when toggle is OFF */
-body:not(.disable-status-bar) .status-bar {
+body:not(.is-mobile):not(.disable-status-bar) .status-bar {
     position: fixed;
     inset-inline-start: 50%;
     inset-block-end: 5px;
@@ -6117,7 +6203,16 @@ body:not(.disable-status-bar) .status-bar {
     justify-content: center;
     flex-wrap: wrap;
     cursor: default;
-    transition: opacity var(--transition-ui);
+    transform-origin: bottom center;
+    transition:
+        opacity var(--transition-ui),
+        transform 220ms cubic-bezier(.2, .8, .2, 1),
+        max-width 220ms cubic-bezier(.2, .8, .2, 1),
+        height 220ms cubic-bezier(.2, .8, .2, 1),
+        padding 220ms cubic-bezier(.2, .8, .2, 1),
+        background-color var(--transition-ui),
+        border-color var(--transition-ui),
+        box-shadow var(--transition-ui);
 }
 
 body:not(.disable-status-bar) .status-bar:not(:hover) {
@@ -6130,6 +6225,11 @@ body:not(.disable-status-bar) .status-bar:not(:hover) {
     border: none;
     box-shadow: none;
     color: transparent;
+}
+
+/* Desktop only: subtle scale shrink for that iOS Dynamic Island "tucking away" feel */
+body:not(.is-mobile):not(.disable-status-bar) .status-bar:not(:hover) {
+    transform: translateX(-50%) scale(0.9);
 }
 
 body:not(.disable-status-bar) .status-bar>.status-bar-item {
@@ -6636,7 +6736,7 @@ input[type='search'],
 input[type='email'],
 input[type='password'],
 input[type='number'] {
-    border-radius: var(--r4) !important;
+    border-radius: var(--r4);
     -electron-corner-smoothing: var(--squircle-btn);
 }
 
@@ -6649,7 +6749,7 @@ input[type='number'] {
 /* Dropdown options/menu */
 .dropdown-menu,
 .menu {
-    border-radius: var(--r3) !important;
+    border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
     overflow: hidden;
 }
@@ -6830,9 +6930,9 @@ body:not(.is-mobile).layout-card .workspace-split,
 body:not(.is-mobile).layout-card .workspace-split.mod-vertical,
 body:not(.is-mobile).layout-card .workspace-split.mod-horizontal {
     background-color: var(--background-secondary) !important;
-    border-radius: 0 !important;
+    border-radius: 0;
     border: none !important;
-    box-shadow: none !important;
+    box-shadow: none;
     transform: none !important;
     z-index: auto !important;
 
@@ -6848,9 +6948,9 @@ body:not(.is-mobile).layout-card .workspace-split.mod-horizontal:hover,
 body:not(.is-mobile).layout-card .workspace-split.mod-horizontal:focus,
 body:not(.is-mobile).layout-card .workspace-split.mod-horizontal:focus-within {
     background-color: var(--background-secondary) !important;
-    border-radius: 0 !important;
+    border-radius: 0;
     border: none !important;
-    box-shadow: none !important;
+    box-shadow: none;
     transform: none !important;
     z-index: auto !important;
 }
@@ -6859,8 +6959,8 @@ body:not(.is-mobile).layout-card .workspace-split.mod-horizontal:focus-within {
 body:not(.is-mobile).layout-card .view-header {
     border: none !important;
     border-block-end: none !important;
-    box-shadow: none !important;
-    transition: none !important;
+    box-shadow: none;
+    transition: none;
     transform: none !important;
 }
 
@@ -6873,12 +6973,12 @@ body:not(.is-mobile).layout-card .workspace-leaf-content {
 body:not(.is-mobile).layout-card .workspace-split.mod-left-split .workspace-tab-header-inner:hover,
 body:not(.is-mobile).layout-card .workspace-split.mod-right-split .workspace-tab-header-inner:hover {
     transform: scale(1.05) !important;
-    transition: transform var(--transition-ui) !important;
+    transition: transform var(--transition-ui);
 }
 
 body:not(.is-mobile).layout-card .workspace-split.mod-left-split .workspace-tab-header-inner,
 body:not(.is-mobile).layout-card .workspace-split.mod-right-split .workspace-tab-header-inner {
-    transition: transform var(--transition-ui) !important;
+    transition: transform var(--transition-ui);
 }
 
 /* Sidebar Pill Styles for Card Layout (Refined) */
@@ -6893,7 +6993,7 @@ body:not(.is-mobile).layout-card .workspace-split:is(.mod-left-split, .mod-right
 
 body:not(.is-mobile).layout-card .workspace-split:is(.mod-left-split, .mod-right-split) .workspace-tab-header-container .workspace-tab-header-container-inner {
     background-color: rgba(var(--primary-color-rgb), 0.08) !important;
-    border-radius: var(--radius-pill) !important;
+    border-radius: var(--radius-pill);
     padding: 1px 4px 1px !important;
     margin: 0 auto !important;
     gap: 3px !important;
@@ -6907,21 +7007,21 @@ body:not(.is-mobile).layout-card .workspace-split:is(.mod-left-split, .mod-right
 }
 
 body:not(.is-mobile).layout-card .workspace-split:is(.mod-left-split, .mod-right-split) .workspace-tab-header {
-    border-radius: var(--r2) !important;
+    border-radius: var(--r2);
     height: var(--height-button) !important;
     margin: 0 !important;
     padding: 0 12px !important;
     background-color: transparent !important;
-    transition: background-color var(--transition-ui), transform var(--transition-ui), box-shadow var(--transition-ui), border-radius var(--transition-ui) !important;
+    transition: background-color var(--transition-ui), transform var(--transition-ui), box-shadow var(--transition-ui), border-radius var(--transition-ui);
     border: none !important;
-    box-shadow: none !important;
+    box-shadow: none;
 }
 
 body:not(.is-mobile).layout-card .workspace-split:is(.mod-left-split, .mod-right-split) .workspace-tab-header.is-active {
     background-color: var(--background-primary) !important;
-    border-radius: var(--r4) !important;
+    border-radius: var(--r4);
     border: none !important;
-    box-shadow: none !important;
+    box-shadow: none;
     color: var(--text-normal) !important;
     transform: none !important;
 }
@@ -6946,11 +7046,11 @@ body:not(.is-mobile).layout-card .workspace-split.mod-right-split .workspace-tab
 /* Vault Profile Selection Styling (Pill Aesthetic) */
 body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
     background-color: rgba(var(--primary-color-rgb), 0.05) !important;
-    border-radius: var(--radius-pill) !important;
+    border-radius: var(--radius-pill);
     margin: 4px 12px 10px !important;
     padding: 2px 12px !important;
     border: none !important;
-    transition: background-color var(--transition-ui), transform var(--transition-ui), box-shadow var(--transition-ui), color var(--transition-ui) !important;
+    transition: background-color var(--transition-ui), transform var(--transition-ui), box-shadow var(--transition-ui), color var(--transition-ui);
     cursor: pointer;
     display: flex !important;
     align-items: center !important;
@@ -6964,7 +7064,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile:hover {
     background-color: rgba(var(--primary-color-rgb), 0.1) !important;
     transform: translateY(-1px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06) !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
 body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-name {
@@ -7003,7 +7103,7 @@ body:not(.is-mobile).enable-floating-nav .nav-buttons-container {
     gap: 0;
     z-index: 10;
     border: none !important;
-    box-shadow: none !important;
+    box-shadow: none;
     opacity: 0.6;
 }
 
@@ -7011,7 +7111,7 @@ body:not(.is-mobile).enable-floating-nav .nav-buttons-container:hover {
     width: fit-content;
     height: var(--height-input);
     background-color: var(--background-secondary-alt);
-    box-shadow: var(--shadow-2) !important;
+    box-shadow: var(--shadow-2);
     overflow: visible;
     opacity: 1;
     gap: 4px;
@@ -7039,7 +7139,7 @@ body:not(.is-mobile).enable-floating-nav .nav-buttons-container>.clickable-icon:
 /* View Header Pill Styles (Card Layout) - Nav & Actions */
 body:not(.is-mobile).layout-card .view-header :is(.view-actions, .view-header-nav-buttons) {
     background-color: rgba(var(--primary-color-rgb), 0.08) !important;
-    border-radius: var(--radius-pill) !important;
+    border-radius: var(--radius-pill);
     padding: 2px 4px !important;
     margin: 6px 12px !important;
     gap: 2px !important;
@@ -7052,21 +7152,21 @@ body:not(.is-mobile).layout-card .view-header :is(.view-actions, .view-header-na
 }
 
 body.layout-card .view-header :is(.view-actions, .view-header-nav-buttons) .clickable-icon {
-    border-radius: var(--r2) !important;
+    border-radius: var(--r2);
     height: 26px !important;
     width: 26px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     background-color: transparent !important;
-    transition: background-color var(--transition-ui), box-shadow var(--transition-ui), color var(--transition-ui), transform var(--transition-ui) !important;
+    transition: background-color var(--transition-ui), box-shadow var(--transition-ui), color var(--transition-ui), transform var(--transition-ui);
     padding: 0 !important;
     color: var(--text-muted) !important;
 }
 
 body.layout-card .view-header :is(.view-actions, .view-header-nav-buttons) .clickable-icon:hover {
     background-color: var(--background-primary) !important;
-    border-radius: var(--r3) !important;
+    border-radius: var(--r3);
     box-shadow:
         0 4px 10px rgba(0, 0, 0, var(--opacity-hover)),
         0 1px 3px rgba(0, 0, 0, 0.04) !important;
@@ -7088,7 +7188,7 @@ body.layout-card .view-header :is(.view-actions, .view-header-nav-buttons) .clic
     cursor: pointer;
     margin-block-end: 4px !important;
     border: none !important;
-    box-shadow: none !important;
+    box-shadow: none;
 }
 
 .search-result-file-title:hover {
@@ -7099,7 +7199,7 @@ body.layout-card .view-header :is(.view-actions, .view-header-nav-buttons) .clic
 .search-result-file-match {
     padding: 6px 12px !important;
     margin: 2px 0 !important;
-    border-radius: var(--radius-pill) !important;
+    border-radius: var(--radius-pill);
     font-size: 0.85em;
     color: var(--text-muted);
     transition: background-color var(--transition-ui), color var(--transition-ui);
@@ -7112,10 +7212,10 @@ body.layout-card .view-header :is(.view-actions, .view-header-nav-buttons) .clic
 .outgoing-link-pane .search-result-file-matches {
     background-color: var(--background-primary) !important;
     border: none !important;
-    border-radius: var(--r4) !important;
+    border-radius: var(--r4);
     padding: 10px !important;
     margin-block-start: 8px !important;
-    box-shadow: none !important;
+    box-shadow: none;
 }
 
 /* Card Layout Specific - High Contrast Tray */
@@ -7125,15 +7225,15 @@ body.layout-card .search-result {
     margin-block-end: var(--s4);
     padding: var(--s3) !important;
     border: none;
-    box-shadow: none !important;
+    box-shadow: none;
 }
 
 body.layout-card .search-result-file-match {
     background-color: transparent !important;
     border: none !important;
-    box-shadow: none !important;
+    box-shadow: none;
     padding: 6px 10px !important;
-    border-radius: var(--r1) !important;
+    border-radius: var(--r1);
     margin: 2px 0 !important;
     color: var(--text-normal) !important;
 }
@@ -7168,14 +7268,14 @@ body.layout-card .tag-container {
 .tag-container .tree-item-self.tag-pane-tag {
     background-color: var(--background-primary) !important;
     border: none;
-    border-radius: var(--r4) !important;
+    border-radius: var(--r4);
     margin-block-end: 6px !important;
     padding: 6px 12px 6px 16px !important;
-    transition: background-color var(--transition-ui), color var(--transition-ui), box-shadow var(--transition-ui), transform var(--transition-ui) !important;
+    transition: background-color var(--transition-ui), color var(--transition-ui), box-shadow var(--transition-ui), transform var(--transition-ui);
     color: var(--text-normal) !important;
     display: flex !important;
     align-items: center !important;
-    box-shadow: none !important;
+    box-shadow: none;
 }
 
 .tag-container .tree-item-self.tag-pane-tag:hover {
@@ -7189,7 +7289,7 @@ body.layout-card .tag-container {
     background-color: rgba(var(--primary-color-rgb), 0.1) !important;
     color: var(--text-muted) !important;
     padding: 2px 10px !important;
-    border-radius: var(--radius-pill) !important;
+    border-radius: var(--radius-pill);
     font-size: 0.75em !important;
     font-weight: var(--weight-bold) !important;
     border: none !important;
@@ -7206,7 +7306,7 @@ body.layout-card .tag-container {
 body.show-header-on-hover .view-header {
     background-color: transparent !important;
     border-block-end: none !important;
-    transition: background-color var(--transition-ui) !important;
+    transition: background-color var(--transition-ui);
 }
 
 /* Target all containers and immediate children to ensure nav arrows hide too */
@@ -7215,7 +7315,7 @@ body:not(.is-mobile).show-header-on-hover .view-header>button,
 body:not(.is-mobile).show-header-on-hover .view-header>.clickable-icon {
     opacity: 0;
     pointer-events: none;
-    transition: opacity var(--transition-ui), transform var(--transition-ui) !important;
+    transition: opacity var(--transition-ui), transform var(--transition-ui);
     transform: translateY(-8px);
 }
 
@@ -7245,7 +7345,7 @@ body.show-header-on-hover.layout-card .view-header:hover {
     border: var(--border-thin) solid rgba(255, 255, 255, 0.2) !important;
     border-inline-start: var(--border-heavy) solid var(--blockquote-border-color) !important;
     border-block-end: none !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, var(--opacity-subtle)) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, var(--opacity-subtle));
 }
 
 .theme-dark .blockquote-style-glass :is(.markdown-preview-view blockquote, .markdown-rendered blockquote, div:not(.CodeMirror-activeline)>.HyperMD-quote, .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote) {
@@ -7257,7 +7357,7 @@ body.show-header-on-hover.layout-card .view-header:hover {
 }
 
 .blockquote-style-glass :is(.markdown-preview-view blockquote, .markdown-rendered blockquote, div:not(.CodeMirror-activeline)>.HyperMD-quote, .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote):hover {
-    box-shadow: 0 6px 16px rgba(0, 0, 0, var(--opacity-divider)) !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, var(--opacity-divider));
     border: var(--border-thin) solid rgba(255, 255, 255, var(--opacity-light-overlay)) !important;
     border-inline-start: var(--border-heavy) solid var(--blockquote-border-color) !important;
 }
@@ -7274,7 +7374,7 @@ body.show-header-on-hover.layout-card .view-header:hover {
         linear-gradient(135deg, rgba(var(--primary-color-rgb), 0.14) 0%, rgba(var(--background-secondary-rgb), 0.85) 100%) !important;
     border: var(--border-heavy) solid var(--blockquote-border-color) !important;
     border-inline-start: 6px solid var(--blockquote-border-color) !important;
-    border-radius: var(--r4) !important;
+    border-radius: var(--r4);
     -electron-corner-smoothing: var(--squircle-main) !important;
     box-shadow:
         0 0 0 2px rgba(var(--primary-color-rgb), 0.12),
@@ -7293,7 +7393,7 @@ body.show-header-on-hover.layout-card .view-header:hover {
     inset-inline-end: -3px !important;
     inset-block-end: -3px !important;
     border: var(--border-thin) solid rgba(var(--primary-color-rgb), 0.18) !important;
-    border-radius: var(--r4) !important;
+    border-radius: var(--r4);
     pointer-events: none !important;
     z-index: -1 !important;
 }
@@ -7301,7 +7401,7 @@ body.show-header-on-hover.layout-card .view-header:hover {
 /* Bold Dramatic - Source view bar */
 .blockquote-style-bold .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote::before {
     inline-size: 6px !important;
-    border-radius: var(--r4) 0 0 var(--r4) !important;
+    border-radius: var(--r4) 0 0 var(--r4);
 }
 
 /* Bold Dramatic - Dark Mode */
@@ -7347,38 +7447,51 @@ body.show-header-on-hover.layout-card .view-header:hover {
 /*     MOBILE & iPAD FIXES        */
 /* ============================== */
 
-/* FIX iOS SCROLLING - Prevent jittery/bounce back behavior */
-body.is-mobile .workspace-leaf-content,
-body.is-mobile .markdown-preview-view,
-body.is-mobile .markdown-source-view,
-body.is-mobile .cm-scroller {
-    overflow-y: auto !important;
-    overscroll-behavior-y: contain !important;
-}
+/* MOBILE SCROLLING: let Obsidian handle it natively.
+   Do NOT add overflow, overscroll-behavior, height, or -webkit-overflow-scrolling
+   overrides here — they fight iOS WebKit and cause oscillating scroll. */
 
-body.is-mobile .cm-scroller {
-    height: 100% !important;
-}
-
-/* DISABLE CARD LAYOUT ON MOBILE - Just don't apply the card layout class effects */
-/* Mobile will automatically use default Obsidian styling since we're blocking card layout with :not(.is-mobile) */
-
-/* Reset contain/will-change on mobile WebKit to prevent rendering bugs */
+/* Strip all theme `contain` / `will-change` hints on mobile — they break iOS scroll containment */
 body.is-mobile :is(
     .workspace-leaf-content,
     .view-content,
     .markdown-preview-view,
     .markdown-reading-view,
     .markdown-source-view,
-    .inline-title
+    .inline-title,
+    .nav-files-container,
+    .metadata-container,
+    .workspace-split,
+    .workspace-split.mod-left-split,
+    .workspace-split.mod-right-split,
+    .heading-style-glass :is(h1, h2, h3, h4, h5, h6)
 ) {
     contain: none !important;
     will-change: auto !important;
 }
 
 body.is-mobile .metadata-container {
-    contain: none !important;
     transform: none !important;
+}
+
+/* Status bar: let Obsidian's default layout handle it on mobile */
+body.is-mobile .status-bar {
+    position: relative;
+    inset: unset;
+    transform: none;
+}
+
+/* iOS safe-area awareness — keep bottom-anchored popovers clear of the home indicator */
+body.is-mobile .menu,
+body.is-mobile .suggestion-container,
+body.is-mobile .prompt {
+    padding-block-end: max(var(--size-2-3, 8px), var(--safe-area-inset-bottom, 0px));
+}
+
+/* Phone bottom-sheet styling — round only the top corners so menus feel like native iOS sheets */
+.is-phone .menu {
+    border-radius: var(--r4) var(--r4) 0 0;
+    overflow: hidden;
 }
 
 /* Fix heading backgrounds wrapping poorly on narrow screens */
@@ -7390,6 +7503,11 @@ body.is-mobile .heading-style-badge .cm-line:is(.HyperMD-header-1, .HyperMD-head
 
 /* Remove hover effects on touch devices - they cause stuck states */
 @media (hover: none) and (pointer: coarse) {
+    /* Catch-all: kill any hover-driven transform on touch (iOS fires phantom hovers during scroll) */
+    *:hover {
+        transform: none !important;
+    }
+
     /* Remove all translateY hover effects */
     .metadata-container:hover,
     .view-header:hover,
@@ -7402,7 +7520,7 @@ body.is-mobile .heading-style-badge .cm-line:is(.HyperMD-header-1, .HyperMD-head
 
     /* Remove hover backgrounds on cards */
     body.layout-card .workspace-leaf:hover {
-        box-shadow: none !important;
+        box-shadow: none;
     }
 
     /* Simplify link hovers on touch */
@@ -7437,15 +7555,10 @@ body.is-mobile.layout-card .metadata-container {
     background: var(--background-secondary) !important;
     background-color: var(--background-secondary) !important;
     border: 1px solid var(--background-modifier-border) !important;
-    border-radius: var(--radius-m) !important;
+    border-radius: var(--radius-m);
     overflow: visible !important;
-    box-shadow: var(--shadow-s) !important;
+    box-shadow: var(--shadow-s);
     padding: 16px !important;
-}
-
-/* Simplify animations on mobile for better performance */
-body.is-mobile * {
-    transition-duration: 0.15s !important;
 }
 
 /* Fix tab scrolling on mobile */
@@ -7546,152 +7659,152 @@ body.depth-shadows.theme-dark {
 
 /* Callouts, Metadata, Canvas cards - depth 2 base */
 body.depth-shadows :is(.callout, .metadata-container, .canvas-card) {
-    box-shadow: var(--depth-2) !important;
-    transition: box-shadow 0.3s var(--ease-bounce-sm), transform 0.3s var(--ease-bounce-sm) !important;
+    box-shadow: var(--depth-2);
+    transition: box-shadow 0.3s var(--ease-bounce-sm), transform 0.3s var(--ease-bounce-sm);
 }
 
 body.depth-shadows .callout:hover {
-    box-shadow: var(--depth-3) !important;
+    box-shadow: var(--depth-3);
     transform: translateY(-2px) !important;
 }
 
 body.depth-shadows .metadata-container:hover {
-    box-shadow: var(--depth-3) !important;
+    box-shadow: var(--depth-3);
     transform: translateY(-1px) !important;
 }
 
 /* Canvas cards - depth 4 on hover */
 body.depth-shadows .canvas-card:hover {
-    box-shadow: var(--depth-4) !important;
+    box-shadow: var(--depth-4);
     transform: translateY(-3px) scale(1.01) !important;
 }
 
 /* Card layout leaves - depth 2 */
 body.depth-shadows:not(.is-mobile).layout-card .workspace-leaf-content {
-    box-shadow: var(--depth-2) !important;
-    transition: box-shadow 0.3s var(--ease-bounce-sm) !important;
+    box-shadow: var(--depth-2);
+    transition: box-shadow 0.3s var(--ease-bounce-sm);
     overflow: hidden !important;
 }
 
 body.depth-shadows:not(.is-mobile).layout-card .workspace-leaf:hover .workspace-leaf-content {
-    box-shadow: var(--depth-3) !important;
+    box-shadow: var(--depth-3);
 }
 
 /* Modals - depth 4 for prominence */
 body.depth-shadows .modal-container .modal {
-    box-shadow: var(--depth-4) !important;
+    box-shadow: var(--depth-4);
 }
 
 /* Popovers - depth 3 */
 body.depth-shadows .popover {
-    box-shadow: var(--depth-3) !important;
+    box-shadow: var(--depth-3);
 }
 
 /* Suggestions dropdown - depth 3 */
 body.depth-shadows .suggestion-container {
-    box-shadow: var(--depth-3) !important;
+    box-shadow: var(--depth-3);
 }
 
 /* Menu - depth 3 */
 body.depth-shadows .menu {
-    box-shadow: var(--depth-3) !important;
+    box-shadow: var(--depth-3);
 }
 
 /* Code blocks - subtle depth 1 */
 body.depth-shadows :is(.markdown-rendered pre, .markdown-preview-view pre, .markdown-source-view.mod-cm6 .HyperMD-codeblock) {
-    box-shadow: var(--depth-1) !important;
-    transition: box-shadow var(--slow) !important;
+    box-shadow: var(--depth-1);
+    transition: box-shadow var(--slow);
 }
 
 body.depth-shadows :is(.markdown-rendered pre:hover, .markdown-preview-view pre:hover) {
-    box-shadow: var(--depth-2) !important;
+    box-shadow: var(--depth-2);
 }
 
 /* Buttons - depth 1 with depth 2 on hover */
 body.depth-shadows .button, 
 body.depth-shadows button:not(.clickable-icon) {
-    box-shadow: var(--depth-1) !important;
-    transition: var(--transition-depth) !important;
+    box-shadow: var(--depth-1);
+    transition: var(--transition-depth);
 }
 
 body.depth-shadows .button:hover, 
 body.depth-shadows button:not(.clickable-icon):hover {
-    box-shadow: var(--depth-2) !important;
+    box-shadow: var(--depth-2);
     transform: translateY(-1px) !important;
 }
 
 /* Tags in properties - subtle depth */
 body.depth-shadows .multi-select-pill {
-    box-shadow: var(--depth-1) !important;
-    transition: box-shadow 0.2s ease, transform 0.2s ease !important;
+    box-shadow: var(--depth-1);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 body.depth-shadows .multi-select-pill:hover {
-    box-shadow: var(--depth-2) !important;
+    box-shadow: var(--depth-2);
     transform: translateY(-1px) !important;
 }
 
 /* File tabs - depth 1 with depth 2 on active/hover */
 body.depth-shadows .workspace-tab-header {
-    box-shadow: var(--depth-1) !important;
-    transition: var(--transition-depth) !important;
+    box-shadow: var(--depth-1);
+    transition: var(--transition-depth);
 }
 
 body.depth-shadows .workspace-tab-header:hover {
-    box-shadow: var(--depth-2) !important;
+    box-shadow: var(--depth-2);
 }
 
 body.depth-shadows .workspace-tab-header.is-active {
-    box-shadow: var(--depth-2) !important;
+    box-shadow: var(--depth-2);
 }
 
 /* Sidebar tabs - NO individual shadows, only on the pill container */
 
 /* Icons - subtle depth on hover (ONLY when standalone, not in pills) */
 body.depth-shadows .clickable-icon:not(.workspace-tab-header-container *):not(.nav-buttons-container *) {
-    transition: box-shadow 0.2s ease, transform 0.2s ease !important;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 body.depth-shadows .clickable-icon:not(.workspace-tab-header-container *):not(.nav-buttons-container *):hover {
-    box-shadow: var(--depth-1) !important;
+    box-shadow: var(--depth-1);
     transform: translateY(-1px) !important;
 }
 
 /* Sidebar nav items - depth on hover */
 body.depth-shadows .nav-file-title:hover,
 body.depth-shadows .nav-folder-title:hover {
-    box-shadow: var(--depth-1) !important;
+    box-shadow: var(--depth-1);
 }
 
 /* Tab header pill container in sidebars */
 body.depth-shadows:not(.is-mobile).layout-card .workspace-split:is(.mod-left-split, .mod-right-split) .workspace-tab-header-container-inner {
-    box-shadow: var(--depth-1) !important;
-    transition: var(--transition-depth) !important;
+    box-shadow: var(--depth-1);
+    transition: var(--transition-depth);
 }
 
 body.depth-shadows:not(.is-mobile).layout-card .workspace-split:is(.mod-left-split, .mod-right-split) .workspace-tab-header-container-inner:hover {
-    box-shadow: var(--depth-2) !important;
+    box-shadow: var(--depth-2);
     transform: translateY(-1px) !important;
 }
 
 /* Nav buttons pill container */
 body.depth-shadows .nav-buttons-container {
-    box-shadow: var(--depth-1) !important;
-    transition: var(--transition-depth) !important;
+    box-shadow: var(--depth-1);
+    transition: var(--transition-depth);
 }
 
 body.depth-shadows .nav-buttons-container:hover {
-    box-shadow: var(--depth-2) !important;
+    box-shadow: var(--depth-2);
     transform: translateY(-1px) !important;
 }
 
 /* Vault selector - depth 1 */
 body.depth-shadows .workspace-sidedock-vault-profile {
-    box-shadow: var(--depth-1) !important;
+    box-shadow: var(--depth-1);
 }
 
 body.depth-shadows .workspace-sidedock-vault-profile:hover {
-    box-shadow: var(--depth-2) !important;
+    box-shadow: var(--depth-2);
 }
 
 /* ============================== */
@@ -7707,11 +7820,11 @@ body.inline-code-accent :not(pre) > code {
     ) !important;
     border-left: 3px solid var(--primary-color) !important;
     padding: 2px 6px 2px 8px !important;
-    border-radius: var(--radius-s) !important;
+    border-radius: var(--radius-s);
     font-weight: var(--weight-medium) !important;
     animation: code-pulse 3s ease infinite !important;
-    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
-    box-shadow: 0 1px 3px rgba(var(--primary-color-rgb), 0.1) !important;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 1px 3px rgba(var(--primary-color-rgb), 0.1);
 }
 
 body.inline-code-accent.theme-dark :not(pre) > code {
@@ -7720,7 +7833,7 @@ body.inline-code-accent.theme-dark :not(pre) > code {
         rgba(var(--primary-color-rgb), 0.15),
         rgba(var(--primary-color-rgb), 0.2)
     ) !important;
-    box-shadow: 0 1px 3px rgba(var(--primary-color-rgb), 0.15) !important;
+    box-shadow: 0 1px 3px rgba(var(--primary-color-rgb), 0.15);
 }
 
 body.inline-code-accent :not(pre) > code:hover {
@@ -7730,7 +7843,7 @@ body.inline-code-accent :not(pre) > code:hover {
         rgba(var(--primary-color-rgb), 0.25)
     ) !important;
     transform: translateY(-1px) !important;
-    box-shadow: 0 2px 6px rgba(var(--primary-color-rgb), 0.2) !important;
+    box-shadow: 0 2px 6px rgba(var(--primary-color-rgb), 0.2);
     animation: none !important;
 }
 
@@ -7817,9 +7930,9 @@ body.depth-shadows .side-dock-ribbon-action.is-active .clickable-icon {
 /* Card layout specific - Pill container (applies whether sidebar is open or collapsed) */
 body.layout-card .workspace-ribbon.side-dock-ribbon.mod-left {
     background-color: rgba(var(--primary-color-rgb), 0.08) !important;
-    border-radius: var(--radius-pill) !important;
+    border-radius: var(--radius-pill);
     border: none !important;
-    box-shadow: none !important;
+    box-shadow: none;
     padding: 8px 6px !important;
     margin: 12px 4px !important;
     margin-top: 80px !important;
@@ -7849,9 +7962,9 @@ body.mod-macos.is-hidden-frameless.layout-card .workspace-ribbon.side-dock-ribbo
 /* When left sidebar is closed, ensure ribbon still looks the same */
 body.layout-card:not(.is-left-sidedock-open) .workspace-ribbon.side-dock-ribbon.mod-left:not(.is-collapsed) {
     background-color: rgba(var(--primary-color-rgb), 0.08) !important;
-    border-radius: var(--radius-pill) !important;
+    border-radius: var(--radius-pill);
     border: none !important;
-    box-shadow: none !important;
+    box-shadow: none;
 }
 
 /* Hide/fix :before pseudo-element in card layout */
@@ -7865,7 +7978,7 @@ body.layout-card .side-dock-ribbon-action {
 
 body.layout-card .side-dock-ribbon-action .clickable-icon {
     background-color: transparent !important;
-    border-radius: var(--r3) !important;
+    border-radius: var(--r3);
 }
 
 body.layout-card .side-dock-ribbon-action .clickable-icon:hover {
@@ -7874,7 +7987,7 @@ body.layout-card .side-dock-ribbon-action .clickable-icon:hover {
 
 body.layout-card .side-dock-ribbon-action.is-active .clickable-icon {
     background-color: var(--background-primary) !important;
-    border-radius: var(--r3) !important;
+    border-radius: var(--r3);
 }
 
 /* Collapse button in card layout */
@@ -7884,7 +7997,7 @@ body.layout-card .workspace-ribbon-collapse-btn {
 
 /* Depth shadows for ribbon pill - DISABLED for seamless look */
 body.depth-shadows.layout-card .workspace-ribbon.side-dock-ribbon.mod-left:not(.is-collapsed) {
-    box-shadow: none !important;
+    box-shadow: none;
 }
 
 /* Ribbon autohide functionality when ribbon is disabled in Obsidian settings */

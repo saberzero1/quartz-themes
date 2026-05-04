@@ -44,7 +44,20 @@ export const theme: ThemeData = {
   --blockquote-border-color: var(--interactive-accent, rgba(245, 245, 245, 0.2));
   --blockquote-border-thickness: 0.5px;
   --button-radius: var(--input-radius, 14px);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
   --callout-content-padding: 4px;
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, rgb(28, 28, 28));
   --checkbox-marker-color: var(--background-primary, rgb(28, 28, 28));
   --code-background: var(--background-primary-alt, rgba(245, 245, 245, 0.15));
@@ -89,12 +102,20 @@ export const theme: ThemeData = {
   --lightgray: var(--background-secondary, var(--color-base-20, rgb(42, 42, 42)));
   --list-bullet-end-padding: 1.4rem;
   --list-marker-color: var(--text-faint, rgba(245, 245, 245, 0.25));
+  --mac-sidebar-active-bg: rgba(255, 255, 255, 0.08);
+  --mac-sidebar-border: rgba(255, 255, 255, 0.08);
+  --mac-sidebar-divider: rgba(255, 255, 255, 0.06);
+  --mac-sidebar-inner-bg: rgba(255, 255, 255, 0.04);
+  --mac-sidebar-panel-bg: linear-gradient(180deg, rgba(72, 56, 39, 0.82), rgba(50, 39, 29, 0.92));
+  --mac-sidebar-radius: 11px;
+  --mac-sidebar-tree-shadow: 0 14px 28px rgba(0, 0, 0, 0.22), 0 3px 10px rgba(0, 0, 0, 0.16);
   --mac-window-opacity: 0;
   --menu-background: var(--background-secondary, rgb(42, 42, 42));
   --metadata-border-color: var(--background-modifier-border, rgba(245, 245, 245, 0.15));
   --metadata-divider-color: var(--background-modifier-border, rgba(245, 245, 245, 0.15));
   --metadata-input-background-active: var(--background-modifier-hover, rgba(245, 245, 245, 0.1));
   --metadata-label-background-active: var(--background-modifier-hover, rgba(245, 245, 245, 0.1));
+  --metadata-label-width: 6em;
   --metadata-property-background-active: var(--background-modifier-hover, rgba(245, 245, 245, 0.1));
   --modal-background: var(--background-primary, rgb(28, 28, 28));
   --model-bg-color: rgba(28, 28, 28, 0.1);
@@ -162,24 +183,7 @@ html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme=
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
-html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: var(--background-primary, rgba(0, 0, 0, 0));
-}
-
-html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
-  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
-}
-
-html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
-  border-right-color: rgba(255, 255, 255, 0.01);
-}
-
-html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  --bases-table-header-background: var(--background-secondary, rgb(42, 42, 42));
-  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
-  border-left-color: rgba(255, 255, 255, 0.01);
-}`,
-    typography: `html[saved-theme="dark"] body .markdown-rendered > h1 {
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.nav-files-container), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .nav-files-container {
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
   --background-modifier-border: rgba(245, 245, 245, 0.15);
   --background-modifier-border-focus: #555555;
@@ -196,6 +200,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   --background-primary-alt: #242424;
   --background-secondary: rgb(42, 42, 42);
   --background-secondary-alt: rgba(18, 18, 18, 0.1);
+  --bases-table-header-background: var(--background-secondary, rgb(42, 42, 42));
   --blockquote-border-color: rgba(245, 245, 245, 0.2);
   --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -273,7 +278,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-print: '??', '??', '??', 'Arial';
   --font-text: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-weight: var(--h1-weight, 700);
+  --font-weight: 400;
   --graph-line: #3f3f3f;
   --graph-node: #b3b3b3;
   --graph-node-attachment: #e0de71;
@@ -431,29 +436,28 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   --touch-radius-xxs: 24px;
   --traffic-lights-offset-x: 40px;
   --traffic-lights-offset-y: 40px;
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(231, 77, 71);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 20px;
   border-bottom-width: 0px;
-  border-left-color: rgb(231, 77, 71);
+  border-left-color: rgb(218, 218, 218);
   border-left-width: 0px;
-  border-right-color: rgb(231, 77, 71);
+  border-right-color: rgb(218, 218, 218);
   border-right-width: 0px;
-  border-top-color: rgb(231, 77, 71);
+  border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-right-radius: 20px;
   border-top-width: 0px;
-  color: var(--h1-color, rgb(231, 77, 71));
-  content: "H1";
-  font-family: var(--h1-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  font-size: var(--h1-size, 10px);
-  font-weight: var(--font-weight, 700);
-  letter-spacing: var(--h1-letter-spacing, -0.312px);
-  line-height: var(--h1-line-height, 12px);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 18px 40px 0px;
+  color: rgb(218, 218, 218);
+  content: "";
+  font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 15px;
+  line-height: 19.5px;
   margin-bottom: 0px;
-  margin-left: -13px;
-  margin-right: 1px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
@@ -461,7 +465,24 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   padding-top: 0px;
 }
 
-html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
+html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
+  background-color: var(--background-primary, rgba(0, 0, 0, 0));
+}
+
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+}
+
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
+  border-right-color: rgba(255, 255, 255, 0.01);
+}
+
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, rgb(42, 42, 42));
+  background-color: rgb(from var(--glass-bg-color) r g b / 0.5);
+  border-left-color: rgba(255, 255, 255, 0.01);
+}`,
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: var(--text-accent, rgb(166, 138, 249));
   outline: rgb(166, 138, 249) none 0px;
   text-decoration-color: rgb(166, 138, 249);
@@ -474,6 +495,12 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, rgb(166, 138, 249));
+  outline: rgb(166, 138, 249) none 0px;
+  text-decoration-color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--italic-color, rgb(166, 138, 249));
   outline: rgb(166, 138, 249) none 0px;
   text-decoration-color: rgb(166, 138, 249);
@@ -493,41 +520,33 @@ html[saved-theme="dark"] body del {
   color: rgb(240, 240, 240);
   outline: rgb(240, 240, 240) none 0px;
   text-decoration-color: rgb(240, 240, 240);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
-  color: rgb(240, 240, 240);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="."] {
-  color: rgb(240, 240, 240);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
-  color: rgb(240, 240, 240);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
-  color: rgb(240, 240, 240);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
-  color: rgb(240, 240, 240);
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(240, 240, 240);
+  border-left-color: rgb(240, 240, 240);
+  border-right-color: rgb(240, 240, 240);
+  border-top-color: rgb(240, 240, 240);
   color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(240, 240, 240);
+  border-left-color: rgb(240, 240, 240);
+  border-right-color: rgb(240, 240, 240);
+  border-top-color: rgb(240, 240, 240);
   color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(240, 240, 240);
+  padding-bottom: var(--list-spacing, 2.4px);
+  padding-top: var(--list-spacing, 2.4px);
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(240, 240, 240);
+  padding-bottom: var(--list-spacing, 2.4px);
+  padding-top: var(--list-spacing, 2.4px);
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -535,6 +554,9 @@ html[saved-theme="dark"] body ul.overflow {
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
+}`,
+    blockquotes: `html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(240, 240, 240));
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(240, 240, 240);
@@ -545,7 +567,6 @@ html[saved-theme="dark"] body ul.overflow {
 
 html[saved-theme="dark"] body table {
   color: rgb(240, 240, 240);
-  width: 1794px;
 }
 
 html[saved-theme="dark"] body td {
@@ -585,14 +606,10 @@ html[saved-theme="dark"] body tr {
 
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: var(--code-background, rgba(245, 245, 245, 0.15));
-  border-bottom-color: rgba(0, 0, 0, 0);
-  border-left-color: rgba(0, 0, 0, 0);
-  border-right-color: rgba(0, 0, 0, 0);
-  border-top-color: rgba(0, 0, 0, 0);
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
+  border-bottom-color: rgba(245, 245, 245, 0.15);
+  border-left-color: rgba(245, 245, 245, 0.15);
+  border-right-color: rgba(245, 245, 245, 0.15);
+  border-top-color: rgba(245, 245, 245, 0.15);
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(240, 240, 240);
@@ -644,6 +661,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-width: 1px;
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
+  color: rgb(240, 240, 240);
   margin-left: 3px;
 }
 
@@ -652,6 +670,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
+  color: rgb(240, 240, 240);
 }`,
     checkboxes: `html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
   color: rgb(240, 240, 240);
@@ -674,6 +693,14 @@ html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: rgb(240, 240, 240);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: rgb(240, 240, 240);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
   color: rgb(240, 240, 240);
 }
 
@@ -714,6 +741,14 @@ html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: rgb(240, 240, 240);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: rgb(240, 240, 240);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
   color: rgb(240, 240, 240);
 }
 
@@ -818,6 +853,10 @@ html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: rgb(240, 240, 240);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
   color: rgb(240, 240, 240);
 }
 
@@ -1579,38 +1618,269 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-bottom-right-radius: 27.6px;
   border-top-left-radius: 27.6px;
   border-top-right-radius: 27.6px;
+  font-size: calc(var(--window-font-size)*0.92px);
+  line-height: var(--line-height-tight, 13.8px);
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(231, 77, 71);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-left-color: rgb(231, 77, 71);
+  border-right-color: rgb(231, 77, 71);
+  border-top-color: rgb(231, 77, 71);
   color: var(--h1-color, rgb(231, 77, 71));
+  font-size: var(--h1-size, 20.8px);
+  letter-spacing: var(--h1-letter-spacing, -0.312px);
+  line-height: var(--h1-line-height, 24.96px);
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
   color: var(--text-color, rgb(240, 240, 240));
 }
 
+html[saved-theme="dark"] body h1::before {
+  --font-weight: var(--h1-weight, 700);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(231, 77, 71);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(231, 77, 71);
+  border-left-width: 0px;
+  border-right-color: rgb(231, 77, 71);
+  border-right-width: 0px;
+  border-top-color: rgb(231, 77, 71);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h1-color, rgb(231, 77, 71));
+  content: "H1";
+  margin-bottom: 0px;
+  margin-left: -13px;
+  margin-right: 1px;
+  margin-top: 0px;
+}
+
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(215, 148, 64);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-left-color: rgb(215, 148, 64);
+  border-right-color: rgb(215, 148, 64);
+  border-top-color: rgb(215, 148, 64);
   color: var(--h2-color, rgb(215, 148, 64));
+  font-size: var(--h2-size, 20px);
+  letter-spacing: var(--h2-letter-spacing, -0.22px);
+  line-height: var(--h2-line-height, 24px);
+  margin-bottom: 5px;
+  margin-top: var(--heading-spacing, 5px);
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(240, 240, 240);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-left-color: rgb(240, 240, 240);
+  border-right-color: rgb(240, 240, 240);
+  border-top-color: rgb(240, 240, 240);
   color: var(--text-color, rgb(240, 240, 240));
+  margin-bottom: var(--inline-title-margin-bottom, 12.944px);
+  padding-bottom: 5px;
+}
+
+html[saved-theme="dark"] body h2::before {
+  --font-weight: var(--h2-weight, 680);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(215, 148, 64);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(215, 148, 64);
+  border-left-width: 0px;
+  border-right-color: rgb(215, 148, 64);
+  border-right-width: 0px;
+  border-top-color: rgb(215, 148, 64);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h2-color, rgb(215, 148, 64));
+  content: "H2";
+  margin-bottom: 0px;
+  margin-left: -13px;
+  margin-right: 1px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(7, 170, 246);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-left-color: rgb(7, 170, 246);
+  border-right-color: rgb(7, 170, 246);
+  border-top-color: rgb(7, 170, 246);
   color: var(--h3-color, rgb(7, 170, 246));
+  font-size: var(--h3-size, 19.2px);
+  letter-spacing: var(--h3-letter-spacing, -0.1536px);
+  line-height: var(--h3-line-height, 24.96px);
+  margin-bottom: 5px;
+  margin-top: var(--heading-spacing, 5px);
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+html[saved-theme="dark"] body h3::before {
+  --font-weight: var(--h3-weight, 660);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(7, 170, 246);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(7, 170, 246);
+  border-left-width: 0px;
+  border-right-color: rgb(7, 170, 246);
+  border-right-width: 0px;
+  border-top-color: rgb(7, 170, 246);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h3-color, rgb(7, 170, 246));
+  content: "H3";
+  margin-bottom: 0px;
+  margin-left: -13px;
+  margin-right: 1px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(163, 110, 251);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-left-color: rgb(163, 110, 251);
+  border-right-color: rgb(163, 110, 251);
+  border-top-color: rgb(163, 110, 251);
   color: var(--h4-color, rgb(163, 110, 251));
+  font-size: var(--h4-size, 18.4px);
+  letter-spacing: var(--h4-letter-spacing, -0.092px);
+  line-height: var(--h4-line-height, 25.76px);
+  margin-bottom: 5px;
+  margin-top: var(--heading-spacing, 5px);
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+html[saved-theme="dark"] body h4::before {
+  --font-weight: var(--h4-weight, 640);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(163, 110, 251);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(163, 110, 251);
+  border-left-width: 0px;
+  border-right-color: rgb(163, 110, 251);
+  border-right-width: 0px;
+  border-top-color: rgb(163, 110, 251);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h4-color, rgb(163, 110, 251));
+  content: "H4";
+  margin-bottom: 0px;
+  margin-left: -13px;
+  margin-right: 1px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(109, 215, 215);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-left-color: rgb(109, 215, 215);
+  border-right-color: rgb(109, 215, 215);
+  border-top-color: rgb(109, 215, 215);
   color: var(--h5-color, rgb(109, 215, 215));
+  font-size: var(--h5-size, 17.6px);
+  letter-spacing: var(--h5-letter-spacing, -0.0352px);
+  line-height: var(--h5-line-height, 26.4px);
+  margin-bottom: 5px;
+  margin-top: var(--heading-spacing, 5px);
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+html[saved-theme="dark"] body h5::before {
+  --font-weight: var(--h5-weight, 620);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(109, 215, 215);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(109, 215, 215);
+  border-left-width: 0px;
+  border-right-color: rgb(109, 215, 215);
+  border-right-width: 0px;
+  border-top-color: rgb(109, 215, 215);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h5-color, rgb(109, 215, 215));
+  content: "H5";
+  margin-bottom: 0px;
+  margin-left: -13px;
+  margin-right: 1px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(175, 191, 5);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-left-color: rgb(175, 191, 5);
+  border-right-color: rgb(175, 191, 5);
+  border-top-color: rgb(175, 191, 5);
   color: var(--h6-color, rgb(175, 191, 5));
+  font-size: var(--h6-size, 16.8px);
+  line-height: var(--h6-line-height, 25.2px);
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+html[saved-theme="dark"] body h6::before {
+  --font-weight: var(--h6-weight, 600);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(175, 191, 5);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(175, 191, 5);
+  border-left-width: 0px;
+  border-right-color: rgb(175, 191, 5);
+  border-right-width: 0px;
+  border-top-color: rgb(175, 191, 5);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h6-color, rgb(175, 191, 5));
+  content: "H6";
+  margin-bottom: 0px;
+  margin-left: -13px;
+  margin-right: 1px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -1632,6 +1902,18 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--tree-item-color, rgba(210, 210, 210, 0.8));
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(240, 240, 240);
@@ -1649,6 +1931,9 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   color: var(--text-color, rgb(240, 240, 240));
+  padding-bottom: 5px;
+  padding-left: 8px;
+  padding-top: 5px;
 }
 
 html[saved-theme="dark"] body footer ul li a {
@@ -1794,7 +2079,20 @@ html[saved-theme="dark"] body sup {
   --blockquote-border-color: var(--interactive-accent, rgba(28, 28, 28, 0.2));
   --blockquote-border-thickness: 0.5px;
   --button-radius: var(--input-radius, 14px);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
   --callout-content-padding: 4px;
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, rgb(248, 248, 248));
   --checkbox-marker-color: var(--background-primary, rgb(248, 248, 248));
   --code-background: var(--background-primary-alt, rgba(28, 28, 28, 0.1));
@@ -1838,12 +2136,20 @@ html[saved-theme="dark"] body sup {
   --light: var(--background-primary, var(--color-base-00, rgb(248, 248, 248)));
   --lightgray: var(--background-secondary, var(--color-base-20, rgb(249, 249, 249)));
   --list-bullet-end-padding: 1.4rem;
+  --mac-sidebar-active-bg: rgba(0, 0, 0, 0.06);
+  --mac-sidebar-border: rgba(74, 52, 34, 0.08);
+  --mac-sidebar-divider: rgba(74, 52, 34, 0.08);
+  --mac-sidebar-inner-bg: rgba(255, 255, 255, 0.55);
+  --mac-sidebar-panel-bg: linear-gradient(180deg, rgba(247, 243, 238, 0.9), rgba(239, 233, 226, 0.94));
+  --mac-sidebar-radius: 11px;
+  --mac-sidebar-tree-shadow: 0 14px 30px rgba(74, 52, 34, 0.14), 0 2px 8px rgba(74, 52, 34, 0.08);
   --mac-window-opacity: 0;
   --menu-background: var(--background-secondary, rgb(249, 249, 249));
   --metadata-border-color: var(--background-modifier-border, rgba(28, 28, 28, 0.09));
   --metadata-divider-color: var(--background-modifier-border, rgba(28, 28, 28, 0.09));
   --metadata-input-background-active: var(--background-modifier-hover, rgba(28, 28, 28, 0.1));
   --metadata-label-background-active: var(--background-modifier-hover, rgba(28, 28, 28, 0.1));
+  --metadata-label-width: 6em;
   --metadata-property-background-active: var(--background-modifier-hover, rgba(28, 28, 28, 0.1));
   --modal-background: var(--background-primary, rgb(248, 248, 248));
   --model-bg-color: rgba(248, 248, 248, 0.1);
@@ -1912,24 +2218,7 @@ html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
 }
 
-html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
-  background-color: var(--background-primary, rgba(0, 0, 0, 0));
-}
-
-html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
-}
-
-html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
-  border-right-color: rgba(0, 0, 0, 0.01);
-}
-
-html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  --bases-table-header-background: var(--background-secondary, rgb(249, 249, 249));
-  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
-  border-left-color: rgba(0, 0, 0, 0.01);
-}`,
-    typography: `html[saved-theme="light"] body .markdown-rendered > h1 {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.nav-files-container), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .nav-files-container {
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
   --background-modifier-border: rgba(28, 28, 28, 0.09);
   --background-modifier-border-focus: #bdbdbd;
@@ -1946,6 +2235,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   --background-primary-alt: #fafafa;
   --background-secondary: rgb(249, 249, 249);
   --background-secondary-alt: rgba(240, 240, 240, 0.1);
+  --bases-table-header-background: var(--background-secondary, rgb(249, 249, 249));
   --blockquote-border-color: rgba(28, 28, 28, 0.2);
   --blur-background: color-mix(in srgb, rgb(248, 248, 248) 65%, transparent) linear-gradient(rgb(248, 248, 248), color-mix(in srgb, rgb(248, 248, 248) 65%, transparent));
   --blur-l: blur(16px) saturate(1.5) brightness(1.15);
@@ -2023,7 +2313,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-print: '??', '??', '??', 'Arial';
   --font-text: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-weight: var(--h1-weight, 700);
+  --font-weight: 400;
   --graph-line: #d4d4d4;
   --graph-node: #5c5c5c;
   --graph-node-attachment: #e0ac00;
@@ -2179,29 +2469,28 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   --touch-radius-xxs: 24px;
   --traffic-lights-offset-x: 40px;
   --traffic-lights-offset-y: 40px;
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(231, 77, 71);
+  background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 20px;
   border-bottom-width: 0px;
-  border-left-color: rgb(231, 77, 71);
+  border-left-color: rgb(34, 34, 34);
   border-left-width: 0px;
-  border-right-color: rgb(231, 77, 71);
+  border-right-color: rgb(34, 34, 34);
   border-right-width: 0px;
-  border-top-color: rgb(231, 77, 71);
+  border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-right-radius: 20px;
   border-top-width: 0px;
-  color: var(--h1-color, rgb(231, 77, 71));
-  content: "H1";
-  font-family: var(--h1-font, "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-  font-size: var(--h1-size, 10px);
-  font-weight: var(--font-weight, 700);
-  letter-spacing: var(--h1-letter-spacing, -0.312px);
-  line-height: var(--h1-line-height, 12px);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 18px 40px 0px;
+  color: rgb(34, 34, 34);
+  content: "";
+  font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 15px;
+  line-height: 19.5px;
   margin-bottom: 0px;
-  margin-left: -13px;
-  margin-right: 1px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
@@ -2209,7 +2498,24 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   padding-top: 0px;
 }
 
-html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
+html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
+  background-color: var(--background-primary, rgba(0, 0, 0, 0));
+}
+
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
+  background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+}
+
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
+  border-right-color: rgba(0, 0, 0, 0.01);
+}
+
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
+  --bases-table-header-background: var(--background-secondary, rgb(249, 249, 249));
+  background-color: rgb(from var(--glass-bg-color) r g b / 0.5);
+  border-left-color: rgba(0, 0, 0, 0.01);
+}`,
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: var(--text-accent, rgb(138, 92, 245));
   outline: rgb(138, 92, 245) none 0px;
   text-decoration-color: rgb(138, 92, 245);
@@ -2222,6 +2528,12 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--italic-color, rgb(138, 92, 245));
+  outline: rgb(138, 92, 245) none 0px;
+  text-decoration-color: rgb(138, 92, 245);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--italic-color, rgb(138, 92, 245));
   outline: rgb(138, 92, 245) none 0px;
   text-decoration-color: rgb(138, 92, 245);
@@ -2241,41 +2553,33 @@ html[saved-theme="light"] body del {
   color: rgb(8, 8, 8);
   outline: rgb(8, 8, 8) none 0px;
   text-decoration-color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
-  color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="."] {
-  color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=":"] {
-  color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=";"] {
-  color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="_"] {
-  color: rgb(8, 8, 8);
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(8, 8, 8);
+  border-left-color: rgb(8, 8, 8);
+  border-right-color: rgb(8, 8, 8);
+  border-top-color: rgb(8, 8, 8);
   color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(8, 8, 8);
+  border-left-color: rgb(8, 8, 8);
+  border-right-color: rgb(8, 8, 8);
+  border-top-color: rgb(8, 8, 8);
   color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(8, 8, 8);
+  padding-bottom: var(--list-spacing, 2.4px);
+  padding-top: var(--list-spacing, 2.4px);
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(8, 8, 8);
+  padding-bottom: var(--list-spacing, 2.4px);
+  padding-top: var(--list-spacing, 2.4px);
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -2283,6 +2587,9 @@ html[saved-theme="light"] body ul.overflow {
   border-left-color: rgb(8, 8, 8);
   border-right-color: rgb(8, 8, 8);
   border-top-color: rgb(8, 8, 8);
+}`,
+    blockquotes: `html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(8, 8, 8));
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(8, 8, 8);
@@ -2293,7 +2600,6 @@ html[saved-theme="light"] body ul.overflow {
 
 html[saved-theme="light"] body table {
   color: rgb(8, 8, 8);
-  width: 1794px;
 }
 
 html[saved-theme="light"] body td {
@@ -2333,14 +2639,10 @@ html[saved-theme="light"] body tr {
 
 html[saved-theme="light"] body pre:has(> code) {
   background-color: var(--code-background, rgba(28, 28, 28, 0.1));
-  border-bottom-color: rgba(0, 0, 0, 0);
-  border-left-color: rgba(0, 0, 0, 0);
-  border-right-color: rgba(0, 0, 0, 0);
-  border-top-color: rgba(0, 0, 0, 0);
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
+  border-bottom-color: rgba(28, 28, 28, 0.09);
+  border-left-color: rgba(28, 28, 28, 0.09);
+  border-right-color: rgba(28, 28, 28, 0.09);
+  border-top-color: rgba(28, 28, 28, 0.09);
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(8, 8, 8);
@@ -2392,6 +2694,7 @@ html[saved-theme="light"] body .transclude {
   border-left-width: 1px;
   border-right-color: rgb(8, 8, 8);
   border-top-color: rgb(8, 8, 8);
+  color: rgb(8, 8, 8);
   margin-left: 3px;
 }
 
@@ -2400,6 +2703,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(8, 8, 8);
   border-right-color: rgb(8, 8, 8);
   border-top-color: rgb(8, 8, 8);
+  color: rgb(8, 8, 8);
 }`,
     checkboxes: `html[saved-theme="light"] body li.task-list-item[data-task="#"] {
   color: rgb(8, 8, 8);
@@ -2422,6 +2726,14 @@ html[saved-theme="light"] body li.task-list-item[data-task="'"] {
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="+"] {
+  color: rgb(8, 8, 8);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: rgb(8, 8, 8);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
   color: rgb(8, 8, 8);
 }
 
@@ -2462,6 +2774,14 @@ html[saved-theme="light"] body li.task-list-item[data-task="8"] {
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: rgb(8, 8, 8);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: rgb(8, 8, 8);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
   color: rgb(8, 8, 8);
 }
 
@@ -2566,6 +2886,10 @@ html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: rgb(8, 8, 8);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
   color: rgb(8, 8, 8);
 }
 
@@ -3327,38 +3651,269 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-bottom-right-radius: 27.6px;
   border-top-left-radius: 27.6px;
   border-top-right-radius: 27.6px;
+  font-size: calc(var(--window-font-size)*0.92px);
+  line-height: var(--line-height-tight, 13.8px);
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(231, 77, 71);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-left-color: rgb(231, 77, 71);
+  border-right-color: rgb(231, 77, 71);
+  border-top-color: rgb(231, 77, 71);
   color: var(--h1-color, rgb(231, 77, 71));
+  font-size: var(--h1-size, 20.8px);
+  letter-spacing: var(--h1-letter-spacing, -0.312px);
+  line-height: var(--h1-line-height, 24.96px);
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 html[saved-theme="light"] body h1.article-title {
   color: var(--text-color, rgb(8, 8, 8));
 }
 
+html[saved-theme="light"] body h1::before {
+  --font-weight: var(--h1-weight, 700);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(231, 77, 71);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(231, 77, 71);
+  border-left-width: 0px;
+  border-right-color: rgb(231, 77, 71);
+  border-right-width: 0px;
+  border-top-color: rgb(231, 77, 71);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h1-color, rgb(231, 77, 71));
+  content: "H1";
+  margin-bottom: 0px;
+  margin-left: -13px;
+  margin-right: 1px;
+  margin-top: 0px;
+}
+
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(215, 148, 64);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-left-color: rgb(215, 148, 64);
+  border-right-color: rgb(215, 148, 64);
+  border-top-color: rgb(215, 148, 64);
   color: var(--h2-color, rgb(215, 148, 64));
+  font-size: var(--h2-size, 20px);
+  letter-spacing: var(--h2-letter-spacing, -0.22px);
+  line-height: var(--h2-line-height, 24px);
+  margin-bottom: 5px;
+  margin-top: var(--heading-spacing, 5px);
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(8, 8, 8);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-left-color: rgb(8, 8, 8);
+  border-right-color: rgb(8, 8, 8);
+  border-top-color: rgb(8, 8, 8);
   color: var(--text-color, rgb(8, 8, 8));
+  margin-bottom: var(--inline-title-margin-bottom, 12.944px);
+  padding-bottom: 5px;
+}
+
+html[saved-theme="light"] body h2::before {
+  --font-weight: var(--h2-weight, 680);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(215, 148, 64);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(215, 148, 64);
+  border-left-width: 0px;
+  border-right-color: rgb(215, 148, 64);
+  border-right-width: 0px;
+  border-top-color: rgb(215, 148, 64);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h2-color, rgb(215, 148, 64));
+  content: "H2";
+  margin-bottom: 0px;
+  margin-left: -13px;
+  margin-right: 1px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(7, 170, 246);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-left-color: rgb(7, 170, 246);
+  border-right-color: rgb(7, 170, 246);
+  border-top-color: rgb(7, 170, 246);
   color: var(--h3-color, rgb(7, 170, 246));
+  font-size: var(--h3-size, 19.2px);
+  letter-spacing: var(--h3-letter-spacing, -0.1536px);
+  line-height: var(--h3-line-height, 24.96px);
+  margin-bottom: 5px;
+  margin-top: var(--heading-spacing, 5px);
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+html[saved-theme="light"] body h3::before {
+  --font-weight: var(--h3-weight, 660);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(7, 170, 246);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(7, 170, 246);
+  border-left-width: 0px;
+  border-right-color: rgb(7, 170, 246);
+  border-right-width: 0px;
+  border-top-color: rgb(7, 170, 246);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h3-color, rgb(7, 170, 246));
+  content: "H3";
+  margin-bottom: 0px;
+  margin-left: -13px;
+  margin-right: 1px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(163, 110, 251);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-left-color: rgb(163, 110, 251);
+  border-right-color: rgb(163, 110, 251);
+  border-top-color: rgb(163, 110, 251);
   color: var(--h4-color, rgb(163, 110, 251));
+  font-size: var(--h4-size, 18.4px);
+  letter-spacing: var(--h4-letter-spacing, -0.092px);
+  line-height: var(--h4-line-height, 25.76px);
+  margin-bottom: 5px;
+  margin-top: var(--heading-spacing, 5px);
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+html[saved-theme="light"] body h4::before {
+  --font-weight: var(--h4-weight, 640);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(163, 110, 251);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(163, 110, 251);
+  border-left-width: 0px;
+  border-right-color: rgb(163, 110, 251);
+  border-right-width: 0px;
+  border-top-color: rgb(163, 110, 251);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h4-color, rgb(163, 110, 251));
+  content: "H4";
+  margin-bottom: 0px;
+  margin-left: -13px;
+  margin-right: 1px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(109, 215, 215);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-left-color: rgb(109, 215, 215);
+  border-right-color: rgb(109, 215, 215);
+  border-top-color: rgb(109, 215, 215);
   color: var(--h5-color, rgb(109, 215, 215));
+  font-size: var(--h5-size, 17.6px);
+  letter-spacing: var(--h5-letter-spacing, -0.0352px);
+  line-height: var(--h5-line-height, 26.4px);
+  margin-bottom: 5px;
+  margin-top: var(--heading-spacing, 5px);
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+html[saved-theme="light"] body h5::before {
+  --font-weight: var(--h5-weight, 620);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(109, 215, 215);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(109, 215, 215);
+  border-left-width: 0px;
+  border-right-color: rgb(109, 215, 215);
+  border-right-width: 0px;
+  border-top-color: rgb(109, 215, 215);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h5-color, rgb(109, 215, 215));
+  content: "H5";
+  margin-bottom: 0px;
+  margin-left: -13px;
+  margin-right: 1px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(175, 191, 5);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-left-color: rgb(175, 191, 5);
+  border-right-color: rgb(175, 191, 5);
+  border-top-color: rgb(175, 191, 5);
   color: var(--h6-color, rgb(175, 191, 5));
+  font-size: var(--h6-size, 16.8px);
+  line-height: var(--h6-line-height, 25.2px);
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+html[saved-theme="light"] body h6::before {
+  --font-weight: var(--h6-weight, 600);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(175, 191, 5);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(175, 191, 5);
+  border-left-width: 0px;
+  border-right-color: rgb(175, 191, 5);
+  border-right-width: 0px;
+  border-top-color: rgb(175, 191, 5);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h6-color, rgb(175, 191, 5));
+  content: "H6";
+  margin-bottom: 0px;
+  margin-left: -13px;
+  margin-right: 1px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body hr {
@@ -3380,6 +3935,18 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--tree-item-color, rgba(20, 20, 20, 0.8));
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(8, 8, 8);
@@ -3397,6 +3964,9 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   color: var(--text-color, rgb(8, 8, 8));
+  padding-bottom: 5px;
+  padding-left: 8px;
+  padding-top: 5px;
 }
 
 html[saved-theme="light"] body footer ul li a {

@@ -72,6 +72,19 @@ export const theme: ThemeData = {
   --bases-table-header-color: var(--text-muted, #15d00d);
   --bases-table-summary-background: var(--background-primary, #000000);
   --blockquote-border-color: var(--interactive-accent, #000000);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #000000);
   --canvas-card-label-color: var(--text-faint, #15d00d);
   --caret-color: var(--text-normal, #15d00d);
@@ -253,7 +266,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, #15d00d);
   --vault-profile-color: var(--text-normal, #15d00d);
   --vault-profile-color-hover: var(--vault-profile-color, #15d00d);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -342,6 +357,13 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(21, 208, 13);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(21, 208, 13));
+  font-family: "Fira Code";
+  outline: rgb(21, 208, 13) none 0px;
+  text-decoration-color: rgb(21, 208, 13);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--bold-color, rgb(21, 208, 13));
   font-family: "Fira Code";
@@ -400,7 +422,12 @@ html body a.internal-link.broken {
   outline: rgb(21, 208, 13) none 0px;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(21, 208, 13);
+  border-left-color: rgb(21, 208, 13);
+  border-right-color: rgb(21, 208, 13);
+  border-top-color: rgb(21, 208, 13);
   color: rgb(21, 208, 13);
+  font-size: 14px;
 }
 
 html body dl {
@@ -409,15 +436,26 @@ html body dl {
 }
 
 html body dt {
+  border-bottom-color: rgb(21, 208, 13);
+  border-left-color: rgb(21, 208, 13);
+  border-right-color: rgb(21, 208, 13);
+  border-top-color: rgb(21, 208, 13);
   color: rgb(21, 208, 13);
+  font-size: 14px;
 }
 
 html body ol > li {
   color: rgb(21, 208, 13);
+  margin-left: 25.8462px;
+  padding-bottom: var(--list-spacing, 1.05px);
+  padding-top: var(--list-spacing, 1.05px);
 }
 
 html body ul > li {
   color: rgb(21, 208, 13);
+  margin-left: 25.8462px;
+  padding-bottom: var(--list-spacing, 1.05px);
+  padding-top: var(--list-spacing, 1.05px);
 }
 
 html body ul.overflow {
@@ -433,7 +471,9 @@ html body ul.overflow {
 }
 
 html body blockquote {
+  color: var(--blockquote-color, rgb(21, 208, 13));
   font-family: "Fira Code";
+  line-height: 18.2px;
   padding-bottom: 18.2px;
   padding-top: 18.2px;
 }`,
@@ -448,7 +488,6 @@ html body table {
   color: rgb(21, 208, 13);
   font-family: "Fira Code";
   margin-top: var(--heading-spacing, 0px);
-  width: 225.094px;
 }
 
 html body td {
@@ -537,6 +576,7 @@ html body video {
   border-left-color: rgb(21, 208, 13);
   border-right-color: rgb(21, 208, 13);
   border-top-color: rgb(21, 208, 13);
+  color: var(--text-muted, rgb(21, 208, 13));
 }
 
 html body .footnotes {
@@ -549,6 +589,7 @@ html body .transclude {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(21, 208, 13);
   border-top-color: rgb(21, 208, 13);
+  color: rgb(21, 208, 13);
 }
 
 html body .transclude-inner {
@@ -556,6 +597,7 @@ html body .transclude-inner {
   border-left-color: rgb(21, 208, 13);
   border-right-color: rgb(21, 208, 13);
   border-top-color: rgb(21, 208, 13);
+  color: rgb(21, 208, 13);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(21, 208, 13);
@@ -1434,7 +1476,10 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-bottom-right-radius: 24.5px;
   border-top-left-radius: 24.5px;
   border-top-right-radius: 24.5px;
+  color: var(--pill-color, rgb(21, 208, 13));
   font-family: "??", "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 12.25px;
+  line-height: var(--line-height-tight, 12.25px);
 }
 
 html body a.internal-link.tag-link::before {
@@ -1442,7 +1487,15 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(21, 208, 13);
+  border-left-color: rgb(21, 208, 13);
+  border-right-color: rgb(21, 208, 13);
+  border-top-color: rgb(21, 208, 13);
   color: var(--h1-color, rgb(21, 208, 13));
+  font-size: var(--the-font-size, 14px);
+  letter-spacing: var(--h1-letter-spacing, -0.21px);
+  line-height: var(--h1-line-height, 16.8px);
+  margin-bottom: 0px;
 }
 
 html body h1.article-title {
@@ -1451,32 +1504,83 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(21, 208, 13);
+  border-left-color: rgb(21, 208, 13);
+  border-right-color: rgb(21, 208, 13);
+  border-top-color: rgb(21, 208, 13);
   color: var(--h2-color, rgb(21, 208, 13));
   font-family: var(--h2-font, "Fira Code");
+  font-size: var(--the-font-size, 14px);
+  letter-spacing: var(--h2-letter-spacing, -0.154px);
+  line-height: var(--h2-line-height, 16.8px);
+  margin-bottom: 0px;
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(21, 208, 13);
+  border-left-color: rgb(21, 208, 13);
+  border-right-color: rgb(21, 208, 13);
+  border-top-color: rgb(21, 208, 13);
   color: var(--inline-title-color, rgb(21, 208, 13));
+  font-size: var(--inline-title-size, 22.652px);
+  letter-spacing: -0.33978px;
+  line-height: var(--inline-title-line-height, 27.1824px);
+  margin-bottom: 11.326px;
 }
 
 html body h3 {
+  border-bottom-color: rgb(21, 208, 13);
+  border-left-color: rgb(21, 208, 13);
+  border-right-color: rgb(21, 208, 13);
+  border-top-color: rgb(21, 208, 13);
   color: var(--h3-color, rgb(21, 208, 13));
   font-family: var(--h3-font, "Fira Code");
+  font-size: var(--the-font-size, 14px);
+  letter-spacing: var(--h3-letter-spacing, -0.112px);
+  line-height: var(--h3-line-height, 18.2px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(21, 208, 13);
+  border-left-color: rgb(21, 208, 13);
+  border-right-color: rgb(21, 208, 13);
+  border-top-color: rgb(21, 208, 13);
   color: var(--h4-color, rgb(21, 208, 13));
   font-family: var(--h4-font, "Fira Code");
+  font-size: var(--the-font-size, 14px);
+  letter-spacing: var(--h4-letter-spacing, -0.07px);
+  line-height: var(--h4-line-height, 19.6px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(21, 208, 13);
+  border-left-color: rgb(21, 208, 13);
+  border-right-color: rgb(21, 208, 13);
+  border-top-color: rgb(21, 208, 13);
   color: var(--h5-color, rgb(21, 208, 13));
   font-family: var(--h5-font, "Fira Code");
+  font-size: var(--the-font-size, 14px);
+  letter-spacing: var(--h5-letter-spacing, -0.028px);
+  line-height: var(--h5-line-height, 21px);
+  margin-bottom: 0px;
+  margin-top: var(--heading-spacing, 0px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(21, 208, 13);
+  border-left-color: rgb(21, 208, 13);
+  border-right-color: rgb(21, 208, 13);
+  border-top-color: rgb(21, 208, 13);
   color: var(--h6-color, rgb(21, 208, 13));
   font-family: var(--h6-font, "Fira Code");
+  font-size: var(--the-font-size, 14px);
+  line-height: var(--h6-line-height, 21px);
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 html body hr {
@@ -1495,6 +1599,22 @@ html body hr {
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(21, 208, 13));
   font-family: "??", "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(21, 208, 13);
@@ -1516,6 +1636,9 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-top-left-radius: 0px;
   color: var(--status-bar-text-color, rgb(21, 208, 13));
   font-family: "??", "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
 }
 
 html body footer ul li a {
@@ -1622,12 +1745,32 @@ html body .canvas-sidebar {
   color: var(--text-muted, rgb(21, 208, 13));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(21, 208, 13);
+  border-left-color: rgb(21, 208, 13);
+  border-right-color: rgb(21, 208, 13);
+  border-top-color: rgb(21, 208, 13);
+  color: rgb(21, 208, 13);
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(21, 208, 13);
   border-left-color: rgb(21, 208, 13);
   border-right-color: rgb(21, 208, 13);
   border-top-color: rgb(21, 208, 13);
   color: rgb(21, 208, 13);
+}
+
+html body .metadata-property-key {
+  color: rgb(21, 208, 13);
+  font-family: var(--metadata-label-font, "??", "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: 14px;
+}
+
+html body .metadata-property-value {
+  color: rgb(21, 208, 13);
+  font-family: var(--metadata-input-font, "??", "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: 14px;
 }
 
 html body .note-properties {
@@ -1693,8 +1836,14 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(21, 208, 13);
+  border-left-color: rgb(21, 208, 13);
+  border-right-color: rgb(21, 208, 13);
+  border-top-color: rgb(21, 208, 13);
   color: var(--text-normal, rgb(21, 208, 13));
   font-family: "??", "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: var(--the-font-size, 14px);
+  line-height: 18.2px;
 }
 
 html body abbr {

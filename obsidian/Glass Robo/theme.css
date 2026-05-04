@@ -4063,6 +4063,15 @@ ul.has-list-bullet li ul.has-list-bullet li ul.has-list-bullet li ul.has-list-bu
   box-sizing: border-box;
 }
 
+.theme-dark div[role=dialog] {
+  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+}
+
+div[role=presentation],
+div[role=dialog] {
+  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+}
+
 .popover.hover-popover > .markdown-embed {
   background-color: var(--s-bg-primary-color);
 }

@@ -42,6 +42,19 @@ export const theme: ThemeData = {
   --bases-table-header-background: var(--background-primary, rgb(36, 36, 36));
   --bases-table-summary-background: var(--background-primary, rgb(36, 36, 36));
   --blockquote-border-color: var(--interactive-accent, rgb(255, 190, 0));
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, rgb(36, 36, 36));
   --caret-color: var(--text-normal, rgb(201, 201, 201));
   --chart-color-1: rgb(245, 112, 76);
@@ -323,6 +336,14 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   text-decoration-color: rgb(237, 228, 130);
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--accent-3, rgb(237, 228, 130));
+  font-family: "JetBrains Mono";
+  font-weight: 900;
+  outline: rgb(237, 228, 130) none 0px;
+  text-decoration-color: rgb(237, 228, 130);
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: var(--accent-1, rgb(245, 112, 76));
   font-family: "JetBrains Mono";
@@ -374,19 +395,33 @@ html[saved-theme="dark"] body a.internal-link.broken {
   outline: rgb(255, 190, 0) none 0px;
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(201, 201, 201);
+  border-left-color: rgb(201, 201, 201);
+  border-right-color: rgb(201, 201, 201);
+  border-top-color: rgb(201, 201, 201);
   color: rgb(201, 201, 201);
+  font-family: "JetBrains Mono";
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(201, 201, 201);
+  border-left-color: rgb(201, 201, 201);
+  border-right-color: rgb(201, 201, 201);
+  border-top-color: rgb(201, 201, 201);
   color: rgb(201, 201, 201);
+  font-family: "JetBrains Mono";
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(201, 201, 201);
+  margin-bottom: var(--size-2-5, 10px);
+  margin-left: 28.8001px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(201, 201, 201);
+  margin-bottom: var(--size-2-5, 10px);
+  margin-left: 28.8001px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -400,6 +435,7 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(201, 201, 201));
   font-family: "JetBrains Mono";
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
@@ -412,7 +448,6 @@ html[saved-theme="dark"] body blockquote {
 html[saved-theme="dark"] body table {
   color: rgb(201, 201, 201);
   font-family: "JetBrains Mono";
-  width: 750px;
 }
 
 html[saved-theme="dark"] body tbody tr:nth-child(even) {
@@ -482,6 +517,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(0, 0, 0);
   border-left-style: solid;
   border-left-width: 1px;
+  border-radius: 8.75px;
   border-right-color: rgb(0, 0, 0);
   border-right-style: solid;
   border-right-width: 1px;
@@ -505,6 +541,7 @@ html[saved-theme="dark"] body .transclude {
   border-bottom-width: 1px;
   border-left-color: rgb(0, 0, 0);
   border-left-width: 1px;
+  border-radius: 10px;
   border-right-color: rgb(0, 0, 0);
   border-right-style: solid;
   border-right-width: 1px;
@@ -513,6 +550,7 @@ html[saved-theme="dark"] body .transclude {
   border-top-right-radius: 10px;
   border-top-style: solid;
   border-top-width: 1px;
+  color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -523,6 +561,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-right-style: solid;
   border-top-color: rgb(201, 201, 201);
   border-top-style: solid;
+  color: rgb(201, 201, 201);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "JetBrains Mono";
@@ -1384,6 +1423,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   --pill-color-hover: var(--tag-color-hover, rgb(255, 190, 0));
   --pill-color-remove: var(--tag-color, rgb(255, 190, 0));
   --pill-color-remove-hover: var(--tag-color-hover, rgb(255, 190, 0));
+  color: var(--pill-color, rgb(255, 190, 0));
   font-family: "JetBrains Mono";
 }
 
@@ -1392,6 +1432,10 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(245, 112, 76);
+  border-left-color: rgb(245, 112, 76);
+  border-right-color: rgb(245, 112, 76);
+  border-top-color: rgb(245, 112, 76);
   color: var(--accent-1, rgb(245, 112, 76));
   font-family: var(--h1-font, "JetBrains Mono");
 }
@@ -1401,31 +1445,55 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(245, 161, 76);
+  border-left-color: rgb(245, 161, 76);
+  border-right-color: rgb(245, 161, 76);
+  border-top-color: rgb(245, 161, 76);
   color: var(--accent-2, rgb(245, 161, 76));
   font-family: var(--h2-font, "JetBrains Mono");
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(201, 201, 201);
+  border-left-color: rgb(201, 201, 201);
+  border-right-color: rgb(201, 201, 201);
+  border-top-color: rgb(201, 201, 201);
   color: var(--inline-title-color, rgb(201, 201, 201));
   font-family: var(--inline-title-font, "JetBrains Mono");
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(237, 228, 130);
+  border-left-color: rgb(237, 228, 130);
+  border-right-color: rgb(237, 228, 130);
+  border-top-color: rgb(237, 228, 130);
   color: var(--accent-3, rgb(237, 228, 130));
   font-family: var(--h3-font, "JetBrains Mono");
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(170, 222, 98);
+  border-left-color: rgb(170, 222, 98);
+  border-right-color: rgb(170, 222, 98);
+  border-top-color: rgb(170, 222, 98);
   color: var(--accent-4, rgb(170, 222, 98));
   font-family: var(--h4-font, "JetBrains Mono");
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(98, 222, 172);
+  border-left-color: rgb(98, 222, 172);
+  border-right-color: rgb(98, 222, 172);
+  border-top-color: rgb(98, 222, 172);
   color: var(--accent-5, rgb(98, 222, 172));
   font-family: var(--h5-font, "JetBrains Mono");
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(98, 183, 222);
+  border-left-color: rgb(98, 183, 222);
+  border-right-color: rgb(98, 183, 222);
+  border-top-color: rgb(98, 183, 222);
   color: var(--accent-6, rgb(98, 183, 222));
   font-family: var(--h6-font, "JetBrains Mono");
 }`,
@@ -1438,6 +1506,14 @@ html[saved-theme="dark"] body h6 {
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "JetBrains Mono";
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(201, 201, 201);
@@ -1509,8 +1585,20 @@ html[saved-theme="dark"] body .canvas-sidebar {
   font-family: "JetBrains Mono";
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  font-family: "JetBrains Mono";
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   font-family: "JetBrains Mono";
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  font-family: var(--metadata-label-font, "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  font-family: var(--metadata-input-font, "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body .note-properties-tags {
@@ -1557,8 +1645,13 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(201, 201, 201);
+  border-left-color: rgb(201, 201, 201);
+  border-right-color: rgb(201, 201, 201);
+  border-top-color: rgb(201, 201, 201);
   color: var(--text-normal, rgb(201, 201, 201));
   font-family: "JetBrains Mono";
+  line-height: 27.2px;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -1643,6 +1736,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --bases-table-header-background: var(--background-primary, #f5f5f5);
   --bases-table-summary-background: var(--background-primary, #f5f5f5);
   --blockquote-border-color: var(--interactive-accent, #dea500);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #f5f5f5);
   --chart-color-1: rgb(245, 112, 76);
   --chart-color-2: rgb(245, 161, 76);
@@ -1894,6 +2000,14 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   text-decoration-color: rgb(183, 173, 58);
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--accent-3, rgb(183, 173, 58));
+  font-family: "JetBrains Mono";
+  font-weight: 900;
+  outline: rgb(183, 173, 58) none 0px;
+  text-decoration-color: rgb(183, 173, 58);
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--accent-1, rgb(245, 112, 76));
   font-family: "JetBrains Mono";
@@ -1941,6 +2055,23 @@ html[saved-theme="light"] body a.internal-link.broken {
   font-family: "JetBrains Mono";
   outline: rgb(222, 165, 0) none 0px;
 }`,
+    lists: `html[saved-theme="light"] body dd {
+  font-family: "JetBrains Mono";
+}
+
+html[saved-theme="light"] body dt {
+  font-family: "JetBrains Mono";
+}
+
+html[saved-theme="light"] body ol > li {
+  margin-bottom: var(--size-2-5, 10px);
+  margin-left: 28.8001px;
+}
+
+html[saved-theme="light"] body ul > li {
+  margin-bottom: var(--size-2-5, 10px);
+  margin-left: 28.8001px;
+}`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: var(--main-node, rgb(222, 165, 0));
 }
@@ -1950,7 +2081,6 @@ html[saved-theme="light"] body blockquote {
 }`,
     tables: `html[saved-theme="light"] body table {
   font-family: "JetBrains Mono";
-  width: 750px;
 }
 
 html[saved-theme="light"] body tbody tr:nth-child(even) {
@@ -1983,6 +2113,7 @@ html[saved-theme="light"] body pre:has(> code) {
   border-left-color: rgb(0, 0, 0);
   border-left-style: solid;
   border-left-width: 1px;
+  border-radius: 8.75px;
   border-right-color: rgb(0, 0, 0);
   border-right-style: solid;
   border-right-width: 1px;
@@ -2001,6 +2132,7 @@ html[saved-theme="light"] body .transclude {
   border-bottom-width: 1px;
   border-left-color: rgb(0, 0, 0);
   border-left-width: 1px;
+  border-radius: 10px;
   border-right-color: rgb(0, 0, 0);
   border-right-style: solid;
   border-right-width: 1px;
@@ -2419,6 +2551,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-hover: var(--tag-color-hover, #dea500);
   --pill-color-remove: var(--tag-color, #dea500);
   --pill-color-remove-hover: var(--tag-color-hover, #dea500);
+  color: var(--pill-color, rgb(222, 165, 0));
   font-family: "JetBrains Mono";
 }
 
@@ -2427,11 +2560,19 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(245, 112, 76);
+  border-left-color: rgb(245, 112, 76);
+  border-right-color: rgb(245, 112, 76);
+  border-top-color: rgb(245, 112, 76);
   color: var(--accent-1, rgb(245, 112, 76));
   font-family: var(--h1-font, "JetBrains Mono");
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(245, 161, 76);
+  border-left-color: rgb(245, 161, 76);
+  border-right-color: rgb(245, 161, 76);
+  border-top-color: rgb(245, 161, 76);
   color: var(--accent-2, rgb(245, 161, 76));
   font-family: var(--h2-font, "JetBrains Mono");
 }
@@ -2441,21 +2582,37 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(183, 173, 58);
+  border-left-color: rgb(183, 173, 58);
+  border-right-color: rgb(183, 173, 58);
+  border-top-color: rgb(183, 173, 58);
   color: var(--accent-3, rgb(183, 173, 58));
   font-family: var(--h3-font, "JetBrains Mono");
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(138, 197, 54);
+  border-left-color: rgb(138, 197, 54);
+  border-right-color: rgb(138, 197, 54);
+  border-top-color: rgb(138, 197, 54);
   color: var(--accent-4, rgb(138, 197, 54));
   font-family: var(--h4-font, "JetBrains Mono");
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(60, 173, 127);
+  border-left-color: rgb(60, 173, 127);
+  border-right-color: rgb(60, 173, 127);
+  border-top-color: rgb(60, 173, 127);
   color: var(--accent-5, rgb(60, 173, 127));
   font-family: var(--h5-font, "JetBrains Mono");
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(98, 183, 222);
+  border-left-color: rgb(98, 183, 222);
+  border-right-color: rgb(98, 183, 222);
+  border-top-color: rgb(98, 183, 222);
   color: var(--accent-6, rgb(98, 183, 222));
   font-family: var(--h6-font, "JetBrains Mono");
 }`,
@@ -2493,8 +2650,20 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
   font-family: "JetBrains Mono";
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  font-family: "JetBrains Mono";
+}
+
 html[saved-theme="light"] body .metadata-properties {
   font-family: "JetBrains Mono";
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  font-family: var(--metadata-label-font, "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  font-family: var(--metadata-input-font, "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body .note-properties-tags {
@@ -2521,6 +2690,7 @@ html[saved-theme="light"] body .stacked-page-header {
 
 html[saved-theme="light"] body .page-header h2.page-title {
   font-family: "JetBrains Mono";
+  line-height: 27.2px;
 }
 
 html[saved-theme="light"] body input[type=text] {

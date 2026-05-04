@@ -4,6 +4,19 @@ export const theme: ThemeData = {
   meta: { name: "warmth", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --quartz-icon-color: currentColor;
 }
 
@@ -49,7 +62,6 @@ html body blockquote {
   margin-left: 33.0469px;
   margin-right: 33.0625px;
   margin-top: var(--heading-spacing, 0px);
-  width: 594.891px;
 }
 
 html body td {

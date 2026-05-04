@@ -34,6 +34,19 @@ export const theme: ThemeData = {
   --bases-table-header-color: var(--text-muted, #757575);
   --bases-table-summary-background: var(--background-primary, #191919);
   --blockquote-border-color: var(--interactive-accent, #3b5260);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #191919);
   --canvas-card-label-color: var(--text-faint, #444746);
   --caret-color: var(--text-normal, #A8C7FA);
@@ -209,7 +222,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, #afafaf);
   --vault-profile-color: var(--text-normal, #afafaf);
   --vault-profile-color-hover: var(--vault-profile-color, #afafaf);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -262,6 +277,13 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   font-family: Roboto, Inter, sans-serif;
   outline: rgb(175, 175, 175) none 0px;
   text-decoration-color: rgb(175, 175, 175);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(227, 227, 227));
+  font-family: Roboto, Inter, sans-serif;
+  outline: rgb(227, 227, 227) none 0px;
+  text-decoration-color: rgb(227, 227, 227);
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
@@ -321,19 +343,33 @@ html[saved-theme="dark"] body a.internal-link.broken {
   outline: rgb(168, 199, 250) none 0px;
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(175, 175, 175);
+  border-left-color: rgb(175, 175, 175);
+  border-right-color: rgb(175, 175, 175);
+  border-top-color: rgb(175, 175, 175);
   color: rgb(175, 175, 175);
+  font-family: Roboto, Inter, sans-serif;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(175, 175, 175);
+  border-left-color: rgb(175, 175, 175);
+  border-right-color: rgb(175, 175, 175);
+  border-top-color: rgb(175, 175, 175);
   color: rgb(175, 175, 175);
+  font-family: Roboto, Inter, sans-serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: var(--text-normal, rgb(175, 175, 175));
+  margin-bottom: 11.2px;
+  margin-left: 30.1875px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: var(--text-normal, rgb(175, 175, 175));
+  margin-bottom: 11.2px;
+  margin-left: 30.1875px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -347,7 +383,9 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(175, 175, 175));
   font-family: Roboto, Inter, sans-serif;
+  line-height: 27.2px;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(175, 175, 175);
@@ -359,7 +397,6 @@ html[saved-theme="dark"] body blockquote {
 html[saved-theme="dark"] body table {
   color: rgb(175, 175, 175);
   font-family: Roboto, Inter, sans-serif;
-  width: 194.844px;
 }
 
 html[saved-theme="dark"] body td {
@@ -444,10 +481,12 @@ html[saved-theme="dark"] body video {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-left-color: rgb(117, 117, 117);
+  border-radius: 12px;
   border-right-color: rgb(117, 117, 117);
   border-top-color: rgb(117, 117, 117);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  color: var(--text-muted, rgb(117, 117, 117));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -460,6 +499,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(59, 82, 96);
   border-right-color: rgb(175, 175, 175);
   border-top-color: rgb(175, 175, 175);
+  color: rgb(175, 175, 175);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -467,6 +507,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(175, 175, 175);
   border-right-color: rgb(175, 175, 175);
   border-top-color: rgb(175, 175, 175);
+  color: rgb(175, 175, 175);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: Roboto, Inter, sans-serif;
@@ -1341,6 +1382,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   --pill-color-hover: var(--tag-color-hover, #A8C7FA);
   --pill-color-remove: var(--tag-color, #A8C7FA);
   --pill-color-remove-hover: var(--tag-color-hover, #A8C7FA);
+  color: var(--pill-color, rgb(168, 199, 250));
   font-family: Roboto, Inter, sans-serif;
 }
 
@@ -1350,8 +1392,16 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   --font-weight: var(--h1-weight, 400);
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h1-color, rgb(255, 255, 255));
   font-family: var(--h1-font, Roboto, Inter, sans-serif);
+  font-size: var(--h1-size, 35.2px);
+  font-weight: var(--font-weight, 300);
+  letter-spacing: var(--h1-letter-spacing, -0.528px);
+  line-height: var(--h1-line-height, 42.24px);
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1362,34 +1412,74 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 400);
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h1-color, rgb(255, 255, 255));
   font-family: var(--h2-font, Roboto, Inter, sans-serif);
+  font-size: var(--h2-size, 25.6px);
+  font-weight: var(--font-weight, 300);
+  letter-spacing: var(--h2-letter-spacing, -0.2816px);
+  line-height: var(--h2-line-height, 30.72px);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--inline-title-color, rgb(255, 255, 255));
   font-family: var(--inline-title-font, Roboto, Inter, sans-serif);
+  font-size: var(--inline-title-size, 35.2px);
+  font-weight: var(--inline-title-weight, 400);
+  letter-spacing: -0.528px;
+  line-height: var(--inline-title-line-height, 42.24px);
+  margin-bottom: 17.6px;
 }
 
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, 500);
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h1-color, rgb(255, 255, 255));
   font-family: var(--h3-font, Roboto, Inter, sans-serif);
+  font-size: var(--h3-size, 19.2px);
+  font-weight: var(--font-weight, 300);
+  letter-spacing: var(--h3-letter-spacing, -0.1536px);
+  line-height: var(--h3-line-height, 24.96px);
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h1-color, rgb(255, 255, 255));
   font-family: var(--h4-font, Roboto, Inter, sans-serif);
+  font-weight: var(--font-weight, 300);
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h1-color, rgb(255, 255, 255));
   font-family: var(--h5-font, Roboto, Inter, sans-serif);
+  font-weight: var(--font-weight, 300);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h1-color, rgb(255, 255, 255));
   font-family: var(--h6-font, Roboto, Inter, sans-serif);
+  font-weight: var(--font-weight, 300);
 }
 
 html[saved-theme="dark"] body hr {
@@ -1413,6 +1503,26 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--text-navbar, rgb(175, 175, 175));
   font-family: Roboto, Inter, sans-serif;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(175, 175, 175);
@@ -1538,6 +1648,15 @@ html[saved-theme="dark"] body .canvas-sidebar {
   font-family: Roboto, Inter, sans-serif;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(117, 117, 117);
+  border-left-color: rgb(117, 117, 117);
+  border-right-color: rgb(117, 117, 117);
+  border-top-color: rgb(117, 117, 117);
+  color: rgb(117, 117, 117);
+  font-family: Roboto, Inter, sans-serif;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(117, 117, 117);
   border-left-color: rgb(117, 117, 117);
@@ -1545,6 +1664,16 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(117, 117, 117);
   color: rgb(117, 117, 117);
   font-family: Roboto, Inter, sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(117, 117, 117);
+  font-family: var(--metadata-label-font, Roboto, Inter, sans-serif);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(117, 117, 117);
+  font-family: var(--metadata-input-font, Roboto, Inter, sans-serif);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -1607,6 +1736,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(175, 175, 175);
+  border-left-color: rgb(175, 175, 175);
+  border-right-color: rgb(175, 175, 175);
+  border-top-color: rgb(175, 175, 175);
   color: var(--text-normal, rgb(175, 175, 175));
   font-family: Roboto, Inter, sans-serif;
 }
@@ -1685,6 +1818,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --bases-table-header-color: var(--text-muted, #5f6368);
   --bases-table-summary-background: var(--background-primary, #f3f4f6);
   --blockquote-border-color: var(--interactive-accent, #e8f0fe);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #f3f4f6);
   --canvas-card-label-color: var(--text-faint, #9aa0a6);
   --caret-color: var(--text-normal, #1a73e8);
@@ -1861,7 +2007,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --titlebar-text-color-focused: var(--text-normal, #2d2d2d);
   --vault-profile-color: var(--text-normal, #2d2d2d);
   --vault-profile-color-hover: var(--vault-profile-color, #2d2d2d);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -1914,6 +2062,13 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   font-family: Roboto, Inter, sans-serif;
   outline: rgb(45, 45, 45) none 0px;
   text-decoration-color: rgb(45, 45, 45);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(32, 33, 36));
+  font-family: Roboto, Inter, sans-serif;
+  outline: rgb(32, 33, 36) none 0px;
+  text-decoration-color: rgb(32, 33, 36);
 }
 
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
@@ -1973,19 +2128,33 @@ html[saved-theme="light"] body a.internal-link.broken {
   outline: rgb(26, 115, 232) none 0px;
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(45, 45, 45);
+  border-left-color: rgb(45, 45, 45);
+  border-right-color: rgb(45, 45, 45);
+  border-top-color: rgb(45, 45, 45);
   color: rgb(45, 45, 45);
+  font-family: Roboto, Inter, sans-serif;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(45, 45, 45);
+  border-left-color: rgb(45, 45, 45);
+  border-right-color: rgb(45, 45, 45);
+  border-top-color: rgb(45, 45, 45);
   color: rgb(45, 45, 45);
+  font-family: Roboto, Inter, sans-serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: var(--text-normal, rgb(45, 45, 45));
+  margin-bottom: 11.2px;
+  margin-left: 30.1875px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: var(--text-normal, rgb(45, 45, 45));
+  margin-bottom: 11.2px;
+  margin-left: 30.1875px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -1999,7 +2168,9 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(45, 45, 45));
   font-family: Roboto, Inter, sans-serif;
+  line-height: 27.2px;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(45, 45, 45);
@@ -2011,7 +2182,6 @@ html[saved-theme="light"] body blockquote {
 html[saved-theme="light"] body table {
   color: rgb(45, 45, 45);
   font-family: Roboto, Inter, sans-serif;
-  width: 194.844px;
 }
 
 html[saved-theme="light"] body td {
@@ -2096,10 +2266,12 @@ html[saved-theme="light"] body video {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-left-color: rgb(95, 99, 104);
+  border-radius: 12px;
   border-right-color: rgb(95, 99, 104);
   border-top-color: rgb(95, 99, 104);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  color: var(--text-muted, rgb(95, 99, 104));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2112,6 +2284,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(232, 240, 254);
   border-right-color: rgb(45, 45, 45);
   border-top-color: rgb(45, 45, 45);
+  color: rgb(45, 45, 45);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2119,6 +2292,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(45, 45, 45);
   border-right-color: rgb(45, 45, 45);
   border-top-color: rgb(45, 45, 45);
+  color: rgb(45, 45, 45);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: Roboto, Inter, sans-serif;
@@ -2993,6 +3167,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-hover: var(--tag-color-hover, #1a73e8);
   --pill-color-remove: var(--tag-color, #1a73e8);
   --pill-color-remove-hover: var(--tag-color-hover, #1a73e8);
+  color: var(--pill-color, rgb(26, 115, 232));
   font-family: Roboto, Inter, sans-serif;
 }
 
@@ -3002,8 +3177,16 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   --font-weight: var(--h1-weight, 400);
+  border-bottom-color: rgb(32, 33, 36);
+  border-left-color: rgb(32, 33, 36);
+  border-right-color: rgb(32, 33, 36);
+  border-top-color: rgb(32, 33, 36);
   color: var(--h1-color, rgb(32, 33, 36));
   font-family: var(--h1-font, Roboto, Inter, sans-serif);
+  font-size: var(--h1-size, 35.2px);
+  font-weight: var(--font-weight, 300);
+  letter-spacing: var(--h1-letter-spacing, -0.528px);
+  line-height: var(--h1-line-height, 42.24px);
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -3014,34 +3197,74 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 400);
+  border-bottom-color: rgb(32, 33, 36);
+  border-left-color: rgb(32, 33, 36);
+  border-right-color: rgb(32, 33, 36);
+  border-top-color: rgb(32, 33, 36);
   color: var(--h1-color, rgb(32, 33, 36));
   font-family: var(--h2-font, Roboto, Inter, sans-serif);
+  font-size: var(--h2-size, 25.6px);
+  font-weight: var(--font-weight, 300);
+  letter-spacing: var(--h2-letter-spacing, -0.2816px);
+  line-height: var(--h2-line-height, 30.72px);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(32, 33, 36);
+  border-left-color: rgb(32, 33, 36);
+  border-right-color: rgb(32, 33, 36);
+  border-top-color: rgb(32, 33, 36);
   color: var(--inline-title-color, rgb(32, 33, 36));
   font-family: var(--inline-title-font, Roboto, Inter, sans-serif);
+  font-size: var(--inline-title-size, 35.2px);
+  font-weight: var(--inline-title-weight, 400);
+  letter-spacing: -0.528px;
+  line-height: var(--inline-title-line-height, 42.24px);
+  margin-bottom: 17.6px;
 }
 
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, 500);
+  border-bottom-color: rgb(32, 33, 36);
+  border-left-color: rgb(32, 33, 36);
+  border-right-color: rgb(32, 33, 36);
+  border-top-color: rgb(32, 33, 36);
   color: var(--h1-color, rgb(32, 33, 36));
   font-family: var(--h3-font, Roboto, Inter, sans-serif);
+  font-size: var(--h3-size, 19.2px);
+  font-weight: var(--font-weight, 300);
+  letter-spacing: var(--h3-letter-spacing, -0.1536px);
+  line-height: var(--h3-line-height, 24.96px);
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(32, 33, 36);
+  border-left-color: rgb(32, 33, 36);
+  border-right-color: rgb(32, 33, 36);
+  border-top-color: rgb(32, 33, 36);
   color: var(--h1-color, rgb(32, 33, 36));
   font-family: var(--h4-font, Roboto, Inter, sans-serif);
+  font-weight: var(--font-weight, 300);
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(32, 33, 36);
+  border-left-color: rgb(32, 33, 36);
+  border-right-color: rgb(32, 33, 36);
+  border-top-color: rgb(32, 33, 36);
   color: var(--h1-color, rgb(32, 33, 36));
   font-family: var(--h5-font, Roboto, Inter, sans-serif);
+  font-weight: var(--font-weight, 300);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(32, 33, 36);
+  border-left-color: rgb(32, 33, 36);
+  border-right-color: rgb(32, 33, 36);
+  border-top-color: rgb(32, 33, 36);
   color: var(--h1-color, rgb(32, 33, 36));
   font-family: var(--h6-font, Roboto, Inter, sans-serif);
+  font-weight: var(--font-weight, 300);
 }
 
 html[saved-theme="light"] body hr {
@@ -3065,6 +3288,26 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--text-navbar, rgb(95, 99, 104));
   font-family: Roboto, Inter, sans-serif;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(45, 45, 45);
@@ -3190,6 +3433,15 @@ html[saved-theme="light"] body .canvas-sidebar {
   font-family: Roboto, Inter, sans-serif;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(95, 99, 104);
+  border-left-color: rgb(95, 99, 104);
+  border-right-color: rgb(95, 99, 104);
+  border-top-color: rgb(95, 99, 104);
+  color: rgb(95, 99, 104);
+  font-family: Roboto, Inter, sans-serif;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(95, 99, 104);
   border-left-color: rgb(95, 99, 104);
@@ -3197,6 +3449,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(95, 99, 104);
   color: rgb(95, 99, 104);
   font-family: Roboto, Inter, sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(95, 99, 104);
+  font-family: var(--metadata-label-font, Roboto, Inter, sans-serif);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(95, 99, 104);
+  font-family: var(--metadata-input-font, Roboto, Inter, sans-serif);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -3259,6 +3521,10 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(45, 45, 45);
+  border-left-color: rgb(45, 45, 45);
+  border-right-color: rgb(45, 45, 45);
+  border-top-color: rgb(45, 45, 45);
   color: var(--text-normal, rgb(45, 45, 45));
   font-family: Roboto, Inter, sans-serif;
 }

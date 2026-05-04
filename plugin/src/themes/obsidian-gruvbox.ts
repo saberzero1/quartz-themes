@@ -361,7 +361,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--bright-red, rgb(251, 73, 52));
   --vault-profile-color: var(--text-normal, rgb(251, 241, 199));
   --vault-profile-color-hover: var(--vault-profile-color, rgb(251, 241, 199));
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -488,6 +490,12 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   text-decoration-color: rgb(215, 153, 33);
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(215, 153, 33));
+  outline: rgb(215, 153, 33) none 0px;
+  text-decoration-color: rgb(215, 153, 33);
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: var(--bold-color, rgb(215, 153, 33));
   outline: rgb(215, 153, 33) none 0px;
@@ -541,10 +549,18 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(163, 33, 0, 0.3));
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(251, 241, 199);
+  border-left-color: rgb(251, 241, 199);
+  border-right-color: rgb(251, 241, 199);
+  border-top-color: rgb(251, 241, 199);
   color: rgb(251, 241, 199);
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(251, 241, 199);
+  border-left-color: rgb(251, 241, 199);
+  border-right-color: rgb(251, 241, 199);
+  border-top-color: rgb(251, 241, 199);
   color: rgb(251, 241, 199);
 }
 
@@ -564,6 +580,10 @@ html[saved-theme="dark"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: var(--text-faint, rgb(235, 219, 178));
+}
+
+html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(251, 241, 199));
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(251, 241, 199);
@@ -682,6 +702,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(213, 196, 161);
   border-right-color: rgb(213, 196, 161);
   border-top-color: rgb(213, 196, 161);
+  color: var(--text-muted, rgb(213, 196, 161));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -694,6 +715,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(163, 33, 0);
   border-right-color: rgb(251, 241, 199);
   border-top-color: rgb(251, 241, 199);
+  color: rgb(251, 241, 199);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -701,6 +723,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(251, 241, 199);
   border-right-color: rgb(251, 241, 199);
   border-top-color: rgb(251, 241, 199);
+  color: rgb(251, 241, 199);
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(168, 153, 132);
@@ -1812,6 +1835,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-top-color: rgba(163, 33, 0, 0.15);
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
+  color: var(--pill-color, rgb(142, 192, 124));
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link::before {
@@ -1819,6 +1843,10 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(204, 36, 29);
+  border-left-color: rgb(204, 36, 29);
+  border-right-color: rgb(204, 36, 29);
+  border-top-color: rgb(204, 36, 29);
   color: var(--h1-color, rgb(204, 36, 29));
 }
 
@@ -1827,26 +1855,50 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(215, 153, 33);
+  border-left-color: rgb(215, 153, 33);
+  border-right-color: rgb(215, 153, 33);
+  border-top-color: rgb(215, 153, 33);
   color: var(--h2-color, rgb(215, 153, 33));
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(250, 189, 47);
+  border-left-color: rgb(250, 189, 47);
+  border-right-color: rgb(250, 189, 47);
+  border-top-color: rgb(250, 189, 47);
   color: var(--inline-title-color, rgb(250, 189, 47));
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(152, 151, 26);
+  border-left-color: rgb(152, 151, 26);
+  border-right-color: rgb(152, 151, 26);
+  border-top-color: rgb(152, 151, 26);
   color: var(--h3-color, rgb(152, 151, 26));
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(104, 157, 106);
+  border-left-color: rgb(104, 157, 106);
+  border-right-color: rgb(104, 157, 106);
+  border-top-color: rgb(104, 157, 106);
   color: var(--h4-color, rgb(104, 157, 106));
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(69, 133, 136);
+  border-left-color: rgb(69, 133, 136);
+  border-right-color: rgb(69, 133, 136);
+  border-top-color: rgb(69, 133, 136);
   color: var(--h5-color, rgb(69, 133, 136));
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(177, 98, 134);
+  border-left-color: rgb(177, 98, 134);
+  border-right-color: rgb(177, 98, 134);
+  border-top-color: rgb(177, 98, 134);
   color: var(--h6-color, rgb(177, 98, 134));
 }
 
@@ -1872,6 +1924,22 @@ html[saved-theme="dark"] body hr {
 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(213, 196, 161));
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(251, 241, 199);
@@ -1998,11 +2066,27 @@ html[saved-theme="dark"] body .bases-table thead th {
   color: var(--text-muted, rgb(213, 196, 161));
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(213, 196, 161);
+  border-left-color: rgb(213, 196, 161);
+  border-right-color: rgb(213, 196, 161);
+  border-top-color: rgb(213, 196, 161);
+  color: rgb(213, 196, 161);
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(213, 196, 161);
   border-left-color: rgb(213, 196, 161);
   border-right-color: rgb(213, 196, 161);
   border-top-color: rgb(213, 196, 161);
+  color: rgb(213, 196, 161);
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(213, 196, 161);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
   color: rgb(213, 196, 161);
 }
 
@@ -2076,6 +2160,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(251, 241, 199);
+  border-left-color: rgb(251, 241, 199);
+  border-right-color: rgb(251, 241, 199);
+  border-top-color: rgb(251, 241, 199);
   color: var(--text-normal, rgb(251, 241, 199));
 }
 
@@ -2494,7 +2582,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --titlebar-text-color-focused: var(--bright-red, rgb(251, 73, 52));
   --vault-profile-color: var(--text-normal, rgb(40, 40, 40));
   --vault-profile-color-hover: var(--vault-profile-color, rgb(40, 40, 40));
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -2621,6 +2711,12 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   text-decoration-color: rgb(215, 153, 33);
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(215, 153, 33));
+  outline: rgb(215, 153, 33) none 0px;
+  text-decoration-color: rgb(215, 153, 33);
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--bold-color, rgb(215, 153, 33));
   outline: rgb(215, 153, 33) none 0px;
@@ -2674,10 +2770,18 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(163, 33, 0, 0.3));
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(40, 40, 40);
+  border-left-color: rgb(40, 40, 40);
+  border-right-color: rgb(40, 40, 40);
+  border-top-color: rgb(40, 40, 40);
   color: rgb(40, 40, 40);
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(40, 40, 40);
+  border-left-color: rgb(40, 40, 40);
+  border-right-color: rgb(40, 40, 40);
+  border-top-color: rgb(40, 40, 40);
   color: rgb(40, 40, 40);
 }
 
@@ -2697,6 +2801,10 @@ html[saved-theme="light"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: var(--text-faint, rgb(102, 92, 84));
+}
+
+html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(40, 40, 40));
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(40, 40, 40);
@@ -2815,6 +2923,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(80, 73, 69);
   border-right-color: rgb(80, 73, 69);
   border-top-color: rgb(80, 73, 69);
+  color: var(--text-muted, rgb(80, 73, 69));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2827,6 +2936,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(175, 32, 0);
   border-right-color: rgb(40, 40, 40);
   border-top-color: rgb(40, 40, 40);
+  color: rgb(40, 40, 40);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2834,6 +2944,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(40, 40, 40);
   border-right-color: rgb(40, 40, 40);
   border-top-color: rgb(40, 40, 40);
+  color: rgb(40, 40, 40);
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(168, 153, 132);
@@ -3945,6 +4056,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-top-color: rgba(163, 33, 0, 0.15);
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
+  color: var(--pill-color, rgb(104, 157, 106));
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
@@ -3952,6 +4064,10 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(204, 36, 29);
+  border-left-color: rgb(204, 36, 29);
+  border-right-color: rgb(204, 36, 29);
+  border-top-color: rgb(204, 36, 29);
   color: var(--h1-color, rgb(204, 36, 29));
 }
 
@@ -3960,26 +4076,50 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(215, 153, 33);
+  border-left-color: rgb(215, 153, 33);
+  border-right-color: rgb(215, 153, 33);
+  border-top-color: rgb(215, 153, 33);
   color: var(--h2-color, rgb(215, 153, 33));
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(250, 189, 47);
+  border-left-color: rgb(250, 189, 47);
+  border-right-color: rgb(250, 189, 47);
+  border-top-color: rgb(250, 189, 47);
   color: var(--inline-title-color, rgb(250, 189, 47));
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(152, 151, 26);
+  border-left-color: rgb(152, 151, 26);
+  border-right-color: rgb(152, 151, 26);
+  border-top-color: rgb(152, 151, 26);
   color: var(--h3-color, rgb(152, 151, 26));
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(104, 157, 106);
+  border-left-color: rgb(104, 157, 106);
+  border-right-color: rgb(104, 157, 106);
+  border-top-color: rgb(104, 157, 106);
   color: var(--h4-color, rgb(104, 157, 106));
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(69, 133, 136);
+  border-left-color: rgb(69, 133, 136);
+  border-right-color: rgb(69, 133, 136);
+  border-top-color: rgb(69, 133, 136);
   color: var(--h5-color, rgb(69, 133, 136));
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(177, 98, 134);
+  border-left-color: rgb(177, 98, 134);
+  border-right-color: rgb(177, 98, 134);
+  border-top-color: rgb(177, 98, 134);
   color: var(--h6-color, rgb(177, 98, 134));
 }
 
@@ -4005,6 +4145,22 @@ html[saved-theme="light"] body hr {
 
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(80, 73, 69));
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(40, 40, 40);
@@ -4131,11 +4287,27 @@ html[saved-theme="light"] body .bases-table thead th {
   color: var(--text-muted, rgb(80, 73, 69));
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(80, 73, 69);
+  border-left-color: rgb(80, 73, 69);
+  border-right-color: rgb(80, 73, 69);
+  border-top-color: rgb(80, 73, 69);
+  color: rgb(80, 73, 69);
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(80, 73, 69);
   border-left-color: rgb(80, 73, 69);
   border-right-color: rgb(80, 73, 69);
   border-top-color: rgb(80, 73, 69);
+  color: rgb(80, 73, 69);
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(80, 73, 69);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
   color: rgb(80, 73, 69);
 }
 
@@ -4209,6 +4381,10 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(40, 40, 40);
+  border-left-color: rgb(40, 40, 40);
+  border-right-color: rgb(40, 40, 40);
+  border-top-color: rgb(40, 40, 40);
   color: var(--text-normal, rgb(40, 40, 40));
 }
 

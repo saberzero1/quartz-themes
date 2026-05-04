@@ -545,7 +545,7 @@ p {
 }
 
 /* Removes empty space from links in live-preview mode */
-/* Closes issue https://github.com/sq1000000/NeuBorder/issues/3 */
+/* Closes issue https://github.com/sata1000000/NeuBorder/issues/3 */
 .show-properties.is-live-preview .external-link {
   margin-right: 0px;
   padding-left: 0px;
@@ -2732,7 +2732,7 @@ body:not(.is-maximized) .titlebar-button-container.mod-right .titlebar-button.mo
 
 /* ================================================================= */
 /* 17. Custom checkbox icons                                         */
-/* (Closes issue https://github.com/sq1000000/NeuBorder/issues/1)    */
+/* (Closes issue https://github.com/sata1000000/NeuBorder/issues/1)    */
 /* ================================================================= */
 
 input[data-task="<"]:checked,

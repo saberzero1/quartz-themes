@@ -47,8 +47,21 @@ export const theme: ThemeData = {
   --button-alt-h: var(--accent-h, 258);
   --button-h: var(--accent-h, 258);
   --callout-background-hsla: var(--callout-h), var(--accent-s), var(--accent-l), 20%;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
   --callout-h: var(--accent-h, 258);
+  --callout-info: var(--callout-info, 2, 122, 255);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3, 12px 12px 12px 24px) 24px;
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, hsl(0, 0%, 10.0%));
   --canvas-card-label-color: var(--text-faint, hsl(0, 0%, 44.1%));
   --canvas-dot-pattern: var(--color-base-30, hsl(0, 0%, 26.7%));
@@ -230,7 +243,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, hsl(0, 0%, 100%));
   --vault-profile-color: var(--text-normal, hsl(0, 0%, 100%));
   --vault-profile-color-hover: var(--vault-profile-color, hsl(0, 0%, 100%));
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -282,6 +297,12 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   text-decoration-color: rgb(172, 139, 248);
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(172, 139, 248));
+  outline: rgb(172, 139, 248) none 0px;
+  text-decoration-color: rgb(172, 139, 248);
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: var(--bold-color, rgb(215, 248, 139));
   outline: rgb(215, 248, 139) none 0px;
@@ -316,10 +337,18 @@ html[saved-theme="dark"] body p {
   text-decoration-color: rgb(165, 165, 165);
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
 }
 
@@ -343,6 +372,7 @@ html[saved-theme="dark"] body ul.overflow {
 
 html[saved-theme="dark"] body blockquote {
   background-color: var(--background-semitransp-alt, rgba(35, 35, 35, 0.85));
+  color: var(--blockquote-color, rgb(255, 255, 255));
   padding-bottom: 8px;
   padding-top: 8px;
 }`,
@@ -432,6 +462,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(165, 165, 165);
   border-right-color: rgb(165, 165, 165);
   border-top-color: rgb(165, 165, 165);
+  color: var(--text-muted, rgb(165, 165, 165));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -447,10 +478,13 @@ html[saved-theme="dark"] body .transclude {
   border-bottom-right-radius: 4px;
   border-left-color: rgb(255, 255, 255);
   border-left-width: 0px;
+  border-radius: 4px;
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  box-shadow: var(--input-shadow, rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
+  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -460,10 +494,13 @@ html[saved-theme="dark"] body .transclude-inner {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-left-color: rgb(255, 255, 255);
+  border-radius: 4px;
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  box-shadow: var(--input-shadow, rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
+  color: rgb(255, 255, 255);
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(112, 112, 112);
@@ -1518,6 +1555,10 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h1-color, rgb(255, 255, 255));
 }
 
@@ -1526,26 +1567,50 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h2-color, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--inline-title-color, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h3-color, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h4-color, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h5-color, rgb(255, 255, 255));
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h6-color, rgb(255, 255, 255));
 }
 
@@ -1577,6 +1642,26 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   color: var(--nav-item-color, rgb(165, 165, 165));
   cursor: var(--cursor, pointer);
   font-weight: var(--nav-item-weight, 600);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(255, 255, 255);
@@ -1700,11 +1785,27 @@ html[saved-theme="dark"] body .canvas-sidebar {
   color: var(--text-muted, rgb(165, 165, 165));
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(165, 165, 165);
+  border-left-color: rgb(165, 165, 165);
+  border-right-color: rgb(165, 165, 165);
+  border-top-color: rgb(165, 165, 165);
+  color: rgb(165, 165, 165);
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(165, 165, 165);
   border-left-color: rgb(165, 165, 165);
   border-right-color: rgb(165, 165, 165);
   border-top-color: rgb(165, 165, 165);
+  color: rgb(165, 165, 165);
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(165, 165, 165);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
   color: rgb(165, 165, 165);
 }
 
@@ -1760,7 +1861,12 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--text-normal, rgb(255, 255, 255));
+  font-weight: 600;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -1849,8 +1955,21 @@ html[saved-theme="dark"] body sup {
   --button-alt-h: var(--accent-h, 258);
   --button-h: var(--accent-h, 258);
   --callout-background-hsla: var(--callout-h), var(--accent-s), var(--accent-l), 20%;
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
   --callout-h: var(--accent-h, 258);
+  --callout-info: var(--callout-info, 8, 109, 221);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3, 12px 12px 12px 24px) 24px;
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, hsl(0, 0%, 100%));
   --canvas-card-label-color: var(--text-faint, hsl(0, 0%, 63.4%));
   --canvas-dot-pattern: var(--color-base-30, hsl(0, 0%, 81.2%));
@@ -2032,7 +2151,9 @@ html[saved-theme="dark"] body sup {
   --titlebar-text-color-focused: var(--text-normal, hsl(0, 0%, 10%));
   --vault-profile-color: var(--text-normal, hsl(0, 0%, 10%));
   --vault-profile-color-hover: var(--vault-profile-color, hsl(0, 0%, 10%));
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -2083,6 +2204,12 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   text-decoration-color: rgb(54, 10, 157);
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(54, 10, 157));
+  outline: rgb(54, 10, 157) none 0px;
+  text-decoration-color: rgb(54, 10, 157);
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--bold-color, rgb(113, 157, 10));
   outline: rgb(113, 157, 10) none 0px;
@@ -2117,10 +2244,18 @@ html[saved-theme="light"] body p {
   text-decoration-color: rgb(111, 111, 111);
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(26, 26, 26);
+  border-left-color: rgb(26, 26, 26);
+  border-right-color: rgb(26, 26, 26);
+  border-top-color: rgb(26, 26, 26);
   color: rgb(26, 26, 26);
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(26, 26, 26);
+  border-left-color: rgb(26, 26, 26);
+  border-right-color: rgb(26, 26, 26);
+  border-top-color: rgb(26, 26, 26);
   color: rgb(26, 26, 26);
 }
 
@@ -2144,6 +2279,7 @@ html[saved-theme="light"] body ul.overflow {
 
 html[saved-theme="light"] body blockquote {
   background-color: var(--background-semitransp-alt, rgba(244, 244, 244, 0.85));
+  color: var(--blockquote-color, rgb(26, 26, 26));
   padding-bottom: 8px;
   padding-top: 8px;
 }`,
@@ -2233,6 +2369,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(111, 111, 111);
   border-right-color: rgb(111, 111, 111);
   border-top-color: rgb(111, 111, 111);
+  color: var(--text-muted, rgb(111, 111, 111));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2248,10 +2385,13 @@ html[saved-theme="light"] body .transclude {
   border-bottom-right-radius: 4px;
   border-left-color: rgb(26, 26, 26);
   border-left-width: 0px;
+  border-radius: 4px;
   border-right-color: rgb(26, 26, 26);
   border-top-color: rgb(26, 26, 26);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  box-shadow: var(--input-shadow, rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 2px 3px 0px, rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
+  color: rgb(26, 26, 26);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2261,10 +2401,13 @@ html[saved-theme="light"] body .transclude-inner {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-left-color: rgb(26, 26, 26);
+  border-radius: 4px;
   border-right-color: rgb(26, 26, 26);
   border-top-color: rgb(26, 26, 26);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  box-shadow: var(--input-shadow, rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 2px 3px 0px, rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
+  color: rgb(26, 26, 26);
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(162, 162, 162);
@@ -3318,6 +3461,10 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(26, 26, 26);
+  border-left-color: rgb(26, 26, 26);
+  border-right-color: rgb(26, 26, 26);
+  border-top-color: rgb(26, 26, 26);
   color: var(--h1-color, rgb(26, 26, 26));
 }
 
@@ -3326,26 +3473,50 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(26, 26, 26);
+  border-left-color: rgb(26, 26, 26);
+  border-right-color: rgb(26, 26, 26);
+  border-top-color: rgb(26, 26, 26);
   color: var(--h2-color, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(26, 26, 26);
+  border-left-color: rgb(26, 26, 26);
+  border-right-color: rgb(26, 26, 26);
+  border-top-color: rgb(26, 26, 26);
   color: var(--inline-title-color, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(26, 26, 26);
+  border-left-color: rgb(26, 26, 26);
+  border-right-color: rgb(26, 26, 26);
+  border-top-color: rgb(26, 26, 26);
   color: var(--h3-color, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(26, 26, 26);
+  border-left-color: rgb(26, 26, 26);
+  border-right-color: rgb(26, 26, 26);
+  border-top-color: rgb(26, 26, 26);
   color: var(--h4-color, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(26, 26, 26);
+  border-left-color: rgb(26, 26, 26);
+  border-right-color: rgb(26, 26, 26);
+  border-top-color: rgb(26, 26, 26);
   color: var(--h5-color, rgb(26, 26, 26));
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(26, 26, 26);
+  border-left-color: rgb(26, 26, 26);
+  border-right-color: rgb(26, 26, 26);
+  border-top-color: rgb(26, 26, 26);
   color: var(--h6-color, rgb(26, 26, 26));
 }
 
@@ -3377,6 +3548,26 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   color: var(--nav-item-color, rgb(111, 111, 111));
   cursor: var(--cursor, pointer);
   font-weight: var(--nav-item-weight, 600);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(26, 26, 26);
@@ -3499,11 +3690,27 @@ html[saved-theme="light"] body .canvas-sidebar {
   color: var(--text-muted, rgb(111, 111, 111));
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(111, 111, 111);
+  border-left-color: rgb(111, 111, 111);
+  border-right-color: rgb(111, 111, 111);
+  border-top-color: rgb(111, 111, 111);
+  color: rgb(111, 111, 111);
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(111, 111, 111);
   border-left-color: rgb(111, 111, 111);
   border-right-color: rgb(111, 111, 111);
   border-top-color: rgb(111, 111, 111);
+  color: rgb(111, 111, 111);
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(111, 111, 111);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
   color: rgb(111, 111, 111);
 }
 
@@ -3558,7 +3765,12 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(26, 26, 26);
+  border-left-color: rgb(26, 26, 26);
+  border-right-color: rgb(26, 26, 26);
+  border-top-color: rgb(26, 26, 26);
   color: var(--text-normal, rgb(26, 26, 26));
+  font-weight: 600;
 }
 
 html[saved-theme="light"] body abbr {

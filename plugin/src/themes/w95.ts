@@ -44,6 +44,19 @@ export const theme: ThemeData = {
   --bold-color: #000000;
   --border-highlight: var(--accent-1, #FFFFFF);
   --border-shadow: var(--color-base-55, #808080);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #bdbebd);
   --canvas-card-label-color: var(--text-faint, #4f5057);
   --checkbox-border-color: var(--text-faint, #4f5057);
@@ -203,6 +216,8 @@ export const theme: ThemeData = {
   --titlebar-border-color: var(--background-modifier-border, #707070);
   --vault-profile-font-size: var(--font-ui-small, 12px);
   --quartz-icon-color: currentColor;
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -245,6 +260,12 @@ html body .markdown-rendered p > em, html em {
 }
 
 html body .markdown-rendered p > i, html i {
+  color: var(--italic-color, rgb(52, 59, 88));
+  outline: rgb(52, 59, 88) none 0px;
+  text-decoration-color: rgb(52, 59, 88);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
   color: var(--italic-color, rgb(52, 59, 88));
   outline: rgb(52, 59, 88) none 0px;
   text-decoration-color: rgb(52, 59, 88);
@@ -733,6 +754,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-left-color: rgba(0, 0, 122, 0.15);
   border-right-color: rgba(0, 0, 122, 0.15);
   border-top-color: rgba(0, 0, 122, 0.15);
+  color: var(--pill-color, rgb(0, 0, 122));
 }
 
 html body a.internal-link.tag-link::before {
@@ -740,7 +762,14 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(52, 84, 138);
+  border-left-color: rgb(52, 84, 138);
+  border-right-color: rgb(52, 84, 138);
+  border-top-color: rgb(52, 84, 138);
   color: var(--h1-color, rgb(52, 84, 138));
+  font-size: var(--h1-size, 22.4px);
+  letter-spacing: var(--h1-letter-spacing, -0.336px);
+  line-height: var(--h1-line-height, 26.88px);
 }
 
 html body h1.article-title {
@@ -749,27 +778,71 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(52, 84, 138);
+  border-left-color: rgb(52, 84, 138);
+  border-right-color: rgb(52, 84, 138);
+  border-top-color: rgb(52, 84, 138);
   color: var(--h2-color, rgb(52, 84, 138));
+  font-size: var(--h2-size, 20.8px);
+  letter-spacing: var(--h2-letter-spacing, -0.2288px);
+  line-height: var(--h2-line-height, 24.96px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box text;
+  background-color: rgb(0, 0, 0);
+  border-bottom-color: rgb(52, 84, 138);
+  border-left-color: rgb(52, 84, 138);
+  border-right-color: rgb(52, 84, 138);
+  border-top-color: rgb(52, 84, 138);
   color: var(--inline-title-color, rgb(52, 84, 138));
+  font-size: var(--inline-title-size, 22.4px);
+  letter-spacing: -0.336px;
+  line-height: var(--inline-title-line-height, 26.88px);
+  margin-bottom: 11.2px;
 }
 
 html body h3 {
+  border-bottom-color: rgb(52, 84, 138);
+  border-left-color: rgb(52, 84, 138);
+  border-right-color: rgb(52, 84, 138);
+  border-top-color: rgb(52, 84, 138);
   color: var(--h3-color, rgb(52, 84, 138));
+  font-size: var(--h3-size, 19.2px);
+  letter-spacing: var(--h3-letter-spacing, -0.1536px);
+  line-height: var(--h3-line-height, 24.96px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(52, 84, 138);
+  border-left-color: rgb(52, 84, 138);
+  border-right-color: rgb(52, 84, 138);
+  border-top-color: rgb(52, 84, 138);
   color: var(--h4-color, rgb(52, 84, 138));
+  font-size: var(--h4-size, 17.6px);
+  letter-spacing: var(--h4-letter-spacing, -0.088px);
+  line-height: var(--h4-line-height, 24.64px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(52, 84, 138);
+  border-left-color: rgb(52, 84, 138);
+  border-right-color: rgb(52, 84, 138);
+  border-top-color: rgb(52, 84, 138);
   color: var(--h5-color, rgb(52, 84, 138));
+  font-size: var(--h5-size, 16px);
+  letter-spacing: var(--h5-letter-spacing, -0.032px);
+  line-height: var(--h5-line-height, 24px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(52, 84, 138);
+  border-left-color: rgb(52, 84, 138);
+  border-right-color: rgb(52, 84, 138);
+  border-top-color: rgb(52, 84, 138);
   color: var(--h6-color, rgb(52, 84, 138));
+  font-size: var(--h6-size, 14.4px);
+  line-height: var(--h6-line-height, 21.6px);
 }
 
 html body hr {
@@ -786,6 +859,18 @@ html body hr {
 
 html body .nav-files-container .tree-item-children {
   border-left-color: rgba(0, 0, 0, 0.4);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(128, 128, 128);
@@ -814,6 +899,11 @@ html body .nav-files-container .tree-item-children {
   border-top-color: rgb(112, 112, 112);
   border-top-left-radius: 0px;
   border-top-width: 0px;
+  font-size: var(--status-bar-font-size, 11px);
+}
+
+html body footer ul li a {
+  font-size: 11px;
 }`,
     listPage: `html body ul.section-ul {
   background-color: var(--nav-files-background, rgb(255, 255, 255));
@@ -905,6 +995,11 @@ html body .stacked-page-header {
 }`,
     misc: `html body .navigation-progress {
   background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
+}
+
+html body .page-header h2.page-title {
+  font-size: 12px;
+  line-height: 15.6px;
 }
 
 html body kbd {

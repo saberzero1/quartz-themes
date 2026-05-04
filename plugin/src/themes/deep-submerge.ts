@@ -29,7 +29,20 @@ export const theme: ThemeData = {
   --bases-table-summary-background: var(--background-primary, #000000);
   --button-radius: var(--input-radius, 0px);
   --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 0px);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #000000);
   --canvas-card-label-color: var(--text-faint, #4C5E75);
   --canvas-controls-radius: var(--radius-s, 0px);
@@ -222,7 +235,9 @@ export const theme: ThemeData = {
   --toggle-thumb-radius: 0px;
   --vault-profile-color: var(--text-normal, #49504E);
   --vault-profile-color-hover: var(--vault-profile-color, #49504E);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -271,6 +286,13 @@ html body .markdown-rendered p > em, html em {
 }
 
 html body .markdown-rendered p > i, html i {
+  color: var(--italic-color, rgb(73, 80, 78));
+  font-family: "segoe ui", sans-serif;
+  outline: rgb(73, 80, 78) none 0px;
+  text-decoration-color: rgb(73, 80, 78);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
   color: var(--italic-color, rgb(73, 80, 78));
   font-family: "segoe ui", sans-serif;
   outline: rgb(73, 80, 78) none 0px;
@@ -336,7 +358,13 @@ html body a.internal-link.broken {
   outline: rgb(76, 94, 117) none 0px;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(73, 80, 78);
+  border-left-color: rgb(73, 80, 78);
+  border-right-color: rgb(73, 80, 78);
+  border-top-color: rgb(73, 80, 78);
   color: rgb(73, 80, 78);
+  font-family: "segoe ui", sans-serif;
+  font-size: 14px;
 }
 
 html body dl {
@@ -345,15 +373,27 @@ html body dl {
 }
 
 html body dt {
+  border-bottom-color: rgb(73, 80, 78);
+  border-left-color: rgb(73, 80, 78);
+  border-right-color: rgb(73, 80, 78);
+  border-top-color: rgb(73, 80, 78);
   color: rgb(73, 80, 78);
+  font-family: "segoe ui", sans-serif;
+  font-size: 14px;
 }
 
 html body ol > li {
   color: rgb(73, 80, 78);
+  margin-left: 23.3584px;
+  padding-bottom: var(--list-spacing, 1.05px);
+  padding-top: var(--list-spacing, 1.05px);
 }
 
 html body ul > li {
   color: rgb(73, 80, 78);
+  margin-left: 23.3584px;
+  padding-bottom: var(--list-spacing, 1.05px);
+  padding-top: var(--list-spacing, 1.05px);
 }
 
 html body ul.overflow {
@@ -368,7 +408,10 @@ html body ul.overflow {
 
 html body blockquote {
   background-color: var(--blockquote-background-color, rgb(7, 7, 7));
+  color: var(--blockquote-color, rgb(73, 80, 78));
   font-family: "segoe ui", sans-serif;
+  letter-spacing: 0.1px;
+  line-height: 15.4px;
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(73, 80, 78);
@@ -380,7 +423,6 @@ html body blockquote {
 html body table {
   color: rgb(73, 80, 78);
   font-family: "segoe ui", sans-serif;
-  width: 176.969px;
 }
 
 html body td {
@@ -397,6 +439,7 @@ html body th {
   border-right-color: rgb(7, 7, 7);
   border-top-color: rgb(7, 7, 7);
   color: var(--table-header-color, rgb(73, 80, 78));
+  letter-spacing: 0.1px;
 }`,
     code: `html body code {
   background-color: var(--code-background, rgb(7, 7, 7));
@@ -469,10 +512,12 @@ html body video {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-left-color: rgb(73, 80, 78);
+  border-radius: 0px;
   border-right-color: rgb(73, 80, 78);
   border-top-color: rgb(73, 80, 78);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  color: var(--text-muted, rgb(73, 80, 78));
 }
 
 html body .footnotes {
@@ -484,6 +529,7 @@ html body .transclude {
   border-bottom-color: rgb(73, 80, 78);
   border-right-color: rgb(73, 80, 78);
   border-top-color: rgb(73, 80, 78);
+  color: rgb(73, 80, 78);
 }
 
 html body .transclude-inner {
@@ -491,6 +537,7 @@ html body .transclude-inner {
   border-left-color: rgb(73, 80, 78);
   border-right-color: rgb(73, 80, 78);
   border-top-color: rgb(73, 80, 78);
+  color: rgb(73, 80, 78);
 }`,
     checkboxes: `html body .katex-display > .katex {
   font-family: "segoe ui", sans-serif;
@@ -1756,6 +1803,9 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-bottom-right-radius: 24.5px;
   border-top-left-radius: 24.5px;
   border-top-right-radius: 24.5px;
+  color: var(--pill-color, rgb(76, 94, 117));
+  font-size: 12.25px;
+  line-height: var(--line-height-tight, 12.25px);
 }
 
 html body a.internal-link.tag-link::before {
@@ -1763,8 +1813,16 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(76, 94, 117);
+  border-left-color: rgb(76, 94, 117);
+  border-right-color: rgb(76, 94, 117);
+  border-top-color: rgb(76, 94, 117);
   color: var(--h1-color, rgb(76, 94, 117));
   font-family: var(--h1-font, georgia, serif);
+  font-size: var(--h1-size, 22.652px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h1-letter-spacing, -0.33978px);
+  line-height: var(--h1-line-height, 27.1824px);
 }
 
 html body h1.article-title {
@@ -1774,33 +1832,85 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(76, 94, 117);
+  border-left-color: rgb(76, 94, 117);
+  border-right-color: rgb(76, 94, 117);
+  border-top-color: rgb(76, 94, 117);
   color: var(--h2-color, rgb(76, 94, 117));
   font-family: var(--h2-font, georgia, serif);
+  font-size: var(--h2-size, 20.468px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h2-letter-spacing, -0.225148px);
+  line-height: var(--h2-line-height, 24.5616px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(76, 94, 117);
+  border-left-color: rgb(76, 94, 117);
+  border-right-color: rgb(76, 94, 117);
+  border-top-color: rgb(76, 94, 117);
   color: var(--inline-title-color, rgb(76, 94, 117));
   font-family: var(--inline-title-font, georgia, serif);
+  font-size: var(--inline-title-size, 28px);
+  font-weight: var(--inline-title-weight, 200);
+  letter-spacing: -0.42px;
+  line-height: var(--inline-title-line-height, 33.6px);
+  margin-bottom: 14px;
 }
 
 html body h3 {
+  border-bottom-color: rgb(76, 94, 117);
+  border-left-color: rgb(76, 94, 117);
+  border-right-color: rgb(76, 94, 117);
+  border-top-color: rgb(76, 94, 117);
   color: var(--h3-color, rgb(76, 94, 117));
   font-family: var(--h3-font, georgia, serif);
+  font-size: var(--h3-size, 18.452px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h3-letter-spacing, -0.147616px);
+  line-height: var(--h3-line-height, 23.9876px);
+  margin-top: var(--heading-spacing, 40px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(76, 94, 117);
+  border-left-color: rgb(76, 94, 117);
+  border-right-color: rgb(76, 94, 117);
+  border-top-color: rgb(76, 94, 117);
   color: var(--h4-color, rgb(76, 94, 117));
   font-family: var(--h4-font, georgia, serif);
+  font-size: var(--h4-size, 16.632px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h4-letter-spacing, -0.08316px);
+  line-height: var(--h4-line-height, 23.2848px);
+  margin-top: var(--heading-spacing, 40px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(76, 94, 117);
+  border-left-color: rgb(76, 94, 117);
+  border-right-color: rgb(76, 94, 117);
+  border-top-color: rgb(76, 94, 117);
   color: var(--h5-color, rgb(76, 94, 117));
   font-family: var(--h5-font, georgia, serif);
+  font-size: var(--h5-size, 15.064px);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--h5-letter-spacing, -0.030128px);
+  line-height: var(--h5-line-height, 22.596px);
+  margin-top: var(--heading-spacing, 40px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(76, 94, 117);
+  border-left-color: rgb(76, 94, 117);
+  border-right-color: rgb(76, 94, 117);
+  border-top-color: rgb(76, 94, 117);
   color: var(--h6-color, rgb(76, 94, 117));
   font-family: var(--h6-font, georgia, serif);
+  font-size: var(--h6-size, 14px);
+  font-weight: var(--font-weight, 400);
+  line-height: var(--h6-line-height, 21px);
+  margin-top: 40px;
 }
 
 html body hr {
@@ -1839,6 +1949,26 @@ html body hr {
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(73, 80, 78));
   font-family: "segoe ui", sans-serif;
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(73, 80, 78);
@@ -1974,6 +2104,15 @@ html body .canvas-sidebar {
   font-family: "segoe ui", sans-serif;
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(73, 80, 78);
+  border-left-color: rgb(73, 80, 78);
+  border-right-color: rgb(73, 80, 78);
+  border-top-color: rgb(73, 80, 78);
+  color: rgb(73, 80, 78);
+  font-family: "segoe ui", sans-serif;
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(73, 80, 78);
   border-left-color: rgb(73, 80, 78);
@@ -1981,6 +2120,16 @@ html body .metadata-properties {
   border-top-color: rgb(73, 80, 78);
   color: rgb(73, 80, 78);
   font-family: "segoe ui", sans-serif;
+}
+
+html body .metadata-property-key {
+  color: rgb(73, 80, 78);
+  font-size: 14px;
+}
+
+html body .metadata-property-value {
+  color: rgb(73, 80, 78);
+  font-size: 14px;
 }
 
 html body .note-properties {
@@ -2046,8 +2195,13 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(73, 80, 78);
+  border-left-color: rgb(73, 80, 78);
+  border-right-color: rgb(73, 80, 78);
+  border-top-color: rgb(73, 80, 78);
   color: var(--text-normal, rgb(73, 80, 78));
   font-family: georgia, serif;
+  letter-spacing: 1px;
 }
 
 html body abbr {

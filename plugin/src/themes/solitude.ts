@@ -138,10 +138,23 @@ export const theme: ThemeData = {
   --blockquote-border-color: var(--interactive-accent, hsl(254, 80%, 68%));
   --bodyFont: var(--font-text-theme, "Fira Code");
   --bold-weight: var(--font-semibold, 600);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
   --callout-content-padding: 0px;
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
   	var(--size-4-6, 12px 12px 12px
   	24px);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, hsl(
   	196,
   	11%,
@@ -1044,7 +1057,9 @@ export const theme: ThemeData = {
   	11%,
   	80%
   ));
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -1123,6 +1138,13 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(198, 207, 210);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(198, 207, 210));
+  font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  outline: rgb(198, 207, 210) none 0px;
+  text-decoration-color: rgb(198, 207, 210);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--bold-color, rgb(198, 207, 210));
   font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -1185,19 +1207,31 @@ html body a.internal-link.broken {
   transition: opacity 0.12s ease-in-out;
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(198, 207, 210);
+  border-left-color: rgb(198, 207, 210);
+  border-right-color: rgb(198, 207, 210);
+  border-top-color: rgb(198, 207, 210);
   color: rgb(198, 207, 210);
+  font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body dt {
+  border-bottom-color: rgb(198, 207, 210);
+  border-left-color: rgb(198, 207, 210);
+  border-right-color: rgb(198, 207, 210);
+  border-top-color: rgb(198, 207, 210);
   color: rgb(198, 207, 210);
+  font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body ol > li {
   color: rgb(198, 207, 210);
+  margin-left: 29.5386px;
 }
 
 html body ul > li {
   color: rgb(198, 207, 210);
+  margin-left: 29.5386px;
 }
 
 html body ul.overflow {
@@ -1211,6 +1245,7 @@ html body ul.overflow {
 }
 
 html body blockquote {
+  color: var(--blockquote-color, rgb(198, 207, 210));
   font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     tables: `html body .table-container {
@@ -1223,7 +1258,6 @@ html body blockquote {
 html body table {
   color: rgb(198, 207, 210);
   font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  width: 198.703px;
 }
 
 html body td {
@@ -1306,6 +1340,7 @@ html body video {
   border-left-color: rgb(164, 178, 182);
   border-right-color: rgb(164, 178, 182);
   border-top-color: rgb(164, 178, 182);
+  color: var(--text-muted, rgb(164, 178, 182));
 }
 
 html body .footnotes {
@@ -1318,6 +1353,7 @@ html body .transclude {
   border-left-color: rgb(139, 108, 239);
   border-right-color: rgb(198, 207, 210);
   border-top-color: rgb(198, 207, 210);
+  color: rgb(198, 207, 210);
 }
 
 html body .transclude-inner {
@@ -1325,6 +1361,7 @@ html body .transclude-inner {
   border-left-color: rgb(198, 207, 210);
   border-right-color: rgb(198, 207, 210);
   border-top-color: rgb(198, 207, 210);
+  color: rgb(198, 207, 210);
 }`,
     checkboxes: `html body .katex-display > .katex {
   font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2238,6 +2275,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-left-color: rgba(139, 108, 239, 0.15);
   border-right-color: rgba(139, 108, 239, 0.15);
   border-top-color: rgba(139, 108, 239, 0.15);
+  color: var(--pill-color, rgb(84, 39, 231));
   font-family: "??", "Fira Code", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -2246,8 +2284,15 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(198, 207, 210);
+  border-left-color: rgb(198, 207, 210);
+  border-right-color: rgb(198, 207, 210);
+  border-top-color: rgb(198, 207, 210);
   color: var(--h1-color, rgb(198, 207, 210));
   font-family: var(--h1-font, "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h1-size, 32px);
+  letter-spacing: var(--h1-letter-spacing, -0.48px);
+  line-height: var(--h1-line-height, 38.4px);
 }
 
 html body h1.article-title {
@@ -2257,36 +2302,82 @@ html body h1.article-title {
 
 html body h2 {
   --font-weight: var(--h2-weight, 600);
+  border-bottom-color: rgb(198, 207, 210);
+  border-left-color: rgb(198, 207, 210);
+  border-right-color: rgb(198, 207, 210);
+  border-top-color: rgb(198, 207, 210);
   color: var(--h2-color, rgb(198, 207, 210));
   font-family: var(--h2-font, "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h2-size, 25.6px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.2816px);
+  line-height: var(--h2-line-height, 30.72px);
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(198, 207, 210);
+  border-left-color: rgb(198, 207, 210);
+  border-right-color: rgb(198, 207, 210);
+  border-top-color: rgb(198, 207, 210);
   color: var(--inline-title-color, rgb(198, 207, 210));
   font-family: var(--inline-title-font, "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--inline-title-size, 32px);
+  letter-spacing: -0.48px;
+  line-height: var(--inline-title-line-height, 38.4px);
+  margin-bottom: 16px;
 }
 
 html body h3 {
   --font-weight: var(--h3-weight, 600);
+  border-bottom-color: rgb(198, 207, 210);
+  border-left-color: rgb(198, 207, 210);
+  border-right-color: rgb(198, 207, 210);
+  border-top-color: rgb(198, 207, 210);
   color: var(--h3-color, rgb(198, 207, 210));
   font-family: var(--h3-font, "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h3-size, 21.92px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h3-letter-spacing, -0.17536px);
+  line-height: var(--h3-line-height, 28.496px);
 }
 
 html body h4 {
   --font-weight: var(--h4-weight, 600);
+  border-bottom-color: rgb(198, 207, 210);
+  border-left-color: rgb(198, 207, 210);
+  border-right-color: rgb(198, 207, 210);
+  border-top-color: rgb(198, 207, 210);
   color: var(--h4-color, rgb(198, 207, 210));
   font-family: var(--h4-font, "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h4-size, 20px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h4-letter-spacing, -0.1px);
+  line-height: var(--h4-line-height, 28px);
 }
 
 html body h5 {
   --font-weight: var(--h5-weight, 600);
+  border-bottom-color: rgb(198, 207, 210);
+  border-left-color: rgb(198, 207, 210);
+  border-right-color: rgb(198, 207, 210);
+  border-top-color: rgb(198, 207, 210);
   color: var(--h5-color, rgb(198, 207, 210));
   font-family: var(--h5-font, "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h5-size, 17.92px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h5-letter-spacing, -0.03584px);
+  line-height: var(--h5-line-height, 26.88px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(198, 207, 210);
+  border-left-color: rgb(198, 207, 210);
+  border-right-color: rgb(198, 207, 210);
+  border-top-color: rgb(198, 207, 210);
   color: var(--h6-color, rgb(198, 207, 210));
   font-family: var(--h6-font, "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+  font-size: var(--h6-size, 17.44px);
+  line-height: var(--h6-line-height, 22.672px);
 }
 
 html body hr {
@@ -2311,6 +2402,26 @@ html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(164, 178, 182));
   font-family: "??", "Fira Code", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(198, 207, 210);
@@ -2437,6 +2548,15 @@ html body .canvas-sidebar {
   font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(164, 178, 182);
+  border-left-color: rgb(164, 178, 182);
+  border-right-color: rgb(164, 178, 182);
+  border-top-color: rgb(164, 178, 182);
+  color: rgb(164, 178, 182);
+  font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(164, 178, 182);
   border-left-color: rgb(164, 178, 182);
@@ -2444,6 +2564,16 @@ html body .metadata-properties {
   border-top-color: rgb(164, 178, 182);
   color: rgb(164, 178, 182);
   font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html body .metadata-property-key {
+  color: rgb(164, 178, 182);
+  font-family: var(--metadata-label-font, "??", "Fira Code", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}
+
+html body .metadata-property-value {
+  color: rgb(164, 178, 182);
+  font-family: var(--metadata-input-font, "??", "Fira Code", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html body .note-properties {
@@ -2527,6 +2657,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(198, 207, 210);
+  border-left-color: rgb(198, 207, 210);
+  border-right-color: rgb(198, 207, 210);
+  border-top-color: rgb(198, 207, 210);
   color: var(--text-normal, rgb(198, 207, 210));
   font-family: "??", "Fira Code", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }

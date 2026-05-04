@@ -1278,6 +1278,7 @@ export const theme: ThemeData = {
   --callout-important: var(--color-cyan-rgb, 0, 206, 203);
   --callout-info: var(--color-blue-rgb, 0, 155, 227);
   --callout-question: var(--color-yellow-rgb, 232, 201, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 7px);
   --callout-success: var(--color-green-rgb, 125, 207, 43);
   --callout-summary: var(--color-green-rgb, 125, 207, 43);
@@ -1747,7 +1748,9 @@ export const theme: ThemeData = {
   --vault-name-font-weight: var(--h2-weight, 700);
   --vault-profile-color: var(--text-normal, #c8d4e6);
   --vault-profile-color-hover: var(--vault-profile-color, #c8d4e6);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -1797,6 +1800,13 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, rgb(200, 212, 230));
+  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  outline: rgb(200, 212, 230) none 0px;
+  text-decoration-color: rgb(200, 212, 230);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--italic-color, rgb(200, 212, 230));
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   outline: rgb(200, 212, 230) none 0px;
@@ -1884,19 +1894,31 @@ html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
   color: rgb(200, 212, 230);
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(200, 212, 230);
+  border-left-color: rgb(200, 212, 230);
+  border-right-color: rgb(200, 212, 230);
+  border-top-color: rgb(200, 212, 230);
   color: rgb(200, 212, 230);
+  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(200, 212, 230);
+  border-left-color: rgb(200, 212, 230);
+  border-right-color: rgb(200, 212, 230);
+  border-top-color: rgb(200, 212, 230);
   color: rgb(200, 212, 230);
+  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(200, 212, 230);
+  margin-left: 28.8001px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(200, 212, 230);
+  margin-left: 28.8001px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -1910,6 +1932,7 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(200, 212, 230));
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-style: var(--blockquote-font-style, italic);
   padding-bottom: 16px;
@@ -1927,7 +1950,6 @@ html[saved-theme="dark"] body table {
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   margin-left: 218.5px;
   margin-right: 218.5px;
-  width: 437px;
 }
 
 html[saved-theme="dark"] body tbody tr:nth-child(even) {
@@ -2046,10 +2068,12 @@ html[saved-theme="dark"] body video {
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
   border-left-color: rgb(154, 163, 183);
+  border-radius: 14px;
   border-right-color: rgb(154, 163, 183);
   border-top-color: rgb(154, 163, 183);
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
+  color: var(--text-muted, rgb(154, 163, 183));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -2062,6 +2086,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(0, 176, 179);
   border-right-color: rgb(200, 212, 230);
   border-top-color: rgb(200, 212, 230);
+  color: rgb(200, 212, 230);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -2069,6 +2094,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(200, 212, 230);
   border-right-color: rgb(200, 212, 230);
   border-top-color: rgb(200, 212, 230);
+  color: rgb(200, 212, 230);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -3373,6 +3399,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-left-color: rgba(0, 176, 179, 0.15);
   border-right-color: rgba(0, 176, 179, 0.15);
   border-top-color: rgba(0, 176, 179, 0.15);
+  color: var(--pill-color, rgb(0, 168, 160));
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
@@ -3381,8 +3408,16 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(200, 212, 230);
+  border-left-color: rgb(200, 212, 230);
+  border-right-color: rgb(200, 212, 230);
+  border-top-color: rgb(200, 212, 230);
   color: var(--h1-color, rgb(200, 212, 230));
   font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  font-size: var(--h1-size, 35.2px);
+  letter-spacing: var(--h1-letter-spacing, -0.528px);
+  line-height: var(--h1-line-height, 42.24px);
+  margin-bottom: 28.16px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -3392,37 +3427,93 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 700);
+  border-bottom-color: rgb(200, 212, 230);
+  border-left-color: rgb(200, 212, 230);
+  border-right-color: rgb(200, 212, 230);
+  border-top-color: rgb(200, 212, 230);
   color: var(--h2-color, rgb(200, 212, 230));
   font-family: var(--h2-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  font-size: var(--h2-size, 29.92px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h2-letter-spacing, -0.32912px);
+  line-height: var(--h2-line-height, 35.904px);
+  margin-bottom: 23.936px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(200, 212, 230);
+  border-left-color: rgb(200, 212, 230);
+  border-right-color: rgb(200, 212, 230);
+  border-top-color: rgb(200, 212, 230);
   color: var(--inline-title-color, rgb(200, 212, 230));
   font-family: var(--inline-title-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  font-size: var(--inline-title-size, 40px);
+  letter-spacing: -0.6px;
+  line-height: var(--inline-title-line-height, 48px);
+  margin-bottom: 20px;
 }
 
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, 700);
+  border-bottom-color: rgb(200, 212, 230);
+  border-left-color: rgb(200, 212, 230);
+  border-right-color: rgb(200, 212, 230);
+  border-top-color: rgb(200, 212, 230);
   color: var(--h3-color, rgb(200, 212, 230));
   font-family: var(--h3-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  font-size: var(--h3-size, 25.12px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h3-letter-spacing, -0.20096px);
+  line-height: var(--h3-line-height, 32.656px);
+  margin-bottom: 20.096px;
+  margin-top: var(--heading-spacing, 50.24px);
 }
 
 html[saved-theme="dark"] body h4 {
   --font-weight: var(--h4-weight, 700);
+  border-bottom-color: rgb(200, 212, 230);
+  border-left-color: rgb(200, 212, 230);
+  border-right-color: rgb(200, 212, 230);
+  border-top-color: rgb(200, 212, 230);
   color: var(--h4-color, rgb(200, 212, 230));
   font-family: var(--h4-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  font-size: var(--h4-size, 21.6px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h4-letter-spacing, -0.108px);
+  line-height: var(--h4-line-height, 30.24px);
+  margin-bottom: 17.28px;
+  margin-top: var(--heading-spacing, 43.2px);
 }
 
 html[saved-theme="dark"] body h5 {
   --font-weight: var(--h5-weight, 700);
+  border-bottom-color: rgb(200, 212, 230);
+  border-left-color: rgb(200, 212, 230);
+  border-right-color: rgb(200, 212, 230);
+  border-top-color: rgb(200, 212, 230);
   color: var(--h5-color, rgb(200, 212, 230));
   font-family: var(--h5-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  font-size: var(--h5-size, 20.8px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h5-letter-spacing, -0.0416px);
+  line-height: var(--h5-line-height, 31.2px);
+  margin-bottom: 16.64px;
+  margin-top: var(--heading-spacing, 41.6px);
 }
 
 html[saved-theme="dark"] body h6 {
   --font-weight: var(--h6-weight, 700);
+  border-bottom-color: rgb(200, 212, 230);
+  border-left-color: rgb(200, 212, 230);
+  border-right-color: rgb(200, 212, 230);
+  border-top-color: rgb(200, 212, 230);
   color: var(--h6-color, rgb(200, 212, 230));
   font-family: var(--h6-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  font-size: var(--h6-size, 17.6px);
+  font-weight: var(--font-weight, 700);
+  line-height: var(--h6-line-height, 26.4px);
+  margin-bottom: 14.08px;
+  margin-top: 35.2px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -3463,6 +3554,26 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(154, 163, 183));
   font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(200, 212, 230);
@@ -3619,6 +3730,32 @@ html[saved-theme="dark"] body .bases-table thead th {
   padding-top: 10px;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  background-color: var(--panel-child, rgb(30, 34, 42));
+  border-bottom-color: rgb(41, 49, 61);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(41, 49, 61);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(41, 49, 61);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(41, 49, 61);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: rgb(154, 163, 183);
+  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(154, 163, 183);
   border-left-color: rgb(154, 163, 183);
@@ -3626,6 +3763,16 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(154, 163, 183);
   color: rgb(154, 163, 183);
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(154, 163, 183);
+  font-family: var(--metadata-label-font, "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(154, 163, 183);
+  font-family: var(--metadata-input-font, "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -3711,8 +3858,14 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(200, 212, 230);
+  border-left-color: rgb(200, 212, 230);
+  border-right-color: rgb(200, 212, 230);
+  border-top-color: rgb(200, 212, 230);
   color: var(--text-normal, rgb(200, 212, 230));
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-size: var(--h6-size, 14.3px);
+  line-height: 18.59px;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -3838,6 +3991,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-important: var(--color-cyan-rgb, 0, 206, 203);
   --callout-info: var(--color-blue-rgb, 0, 155, 227);
   --callout-question: var(--color-yellow-rgb, 232, 201, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 7px);
   --callout-success: var(--color-green-rgb, 125, 207, 43);
   --callout-summary: var(--color-green-rgb, 125, 207, 43);
@@ -4260,7 +4414,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-name-font-weight: var(--h2-weight, 700);
   --vault-profile-color: var(--text-normal, #252525);
   --vault-profile-color-hover: var(--vault-profile-color, #252525);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -4309,6 +4465,13 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--italic-color, rgb(37, 37, 37));
+  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  outline: rgb(37, 37, 37) none 0px;
+  text-decoration-color: rgb(37, 37, 37);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--italic-color, rgb(37, 37, 37));
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   outline: rgb(37, 37, 37) none 0px;
@@ -4396,19 +4559,31 @@ html[saved-theme="light"] body li.task-list-item[data-task="_"] {
   color: rgb(37, 37, 37);
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(37, 37, 37);
+  border-left-color: rgb(37, 37, 37);
+  border-right-color: rgb(37, 37, 37);
+  border-top-color: rgb(37, 37, 37);
   color: rgb(37, 37, 37);
+  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(37, 37, 37);
+  border-left-color: rgb(37, 37, 37);
+  border-right-color: rgb(37, 37, 37);
+  border-top-color: rgb(37, 37, 37);
   color: rgb(37, 37, 37);
+  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(37, 37, 37);
+  margin-left: 28.8001px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(37, 37, 37);
+  margin-left: 28.8001px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -4422,6 +4597,7 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(37, 37, 37));
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-style: var(--blockquote-font-style, italic);
   padding-bottom: 16px;
@@ -4439,7 +4615,6 @@ html[saved-theme="light"] body table {
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   margin-left: 218.5px;
   margin-right: 218.5px;
-  width: 437px;
 }
 
 html[saved-theme="light"] body tbody tr:nth-child(even) {
@@ -4558,10 +4733,12 @@ html[saved-theme="light"] body video {
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
   border-left-color: rgb(127, 127, 127);
+  border-radius: 14px;
   border-right-color: rgb(127, 127, 127);
   border-top-color: rgb(127, 127, 127);
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
+  color: var(--text-muted, rgb(127, 127, 127));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -4574,6 +4751,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(0, 168, 160);
   border-right-color: rgb(37, 37, 37);
   border-top-color: rgb(37, 37, 37);
+  color: rgb(37, 37, 37);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -4581,6 +4759,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(37, 37, 37);
   border-right-color: rgb(37, 37, 37);
   border-top-color: rgb(37, 37, 37);
+  color: rgb(37, 37, 37);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -5867,6 +6046,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-left-color: rgba(0, 176, 179, 0.15);
   border-right-color: rgba(0, 176, 179, 0.15);
   border-top-color: rgba(0, 176, 179, 0.15);
+  color: var(--pill-color, rgb(0, 176, 179));
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
@@ -5875,8 +6055,16 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(37, 37, 37);
+  border-left-color: rgb(37, 37, 37);
+  border-right-color: rgb(37, 37, 37);
+  border-top-color: rgb(37, 37, 37);
   color: var(--h1-color, rgb(37, 37, 37));
   font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  font-size: var(--h1-size, 35.2px);
+  letter-spacing: var(--h1-letter-spacing, -0.528px);
+  line-height: var(--h1-line-height, 42.24px);
+  margin-bottom: 28.16px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -5886,37 +6074,93 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 700);
+  border-bottom-color: rgb(37, 37, 37);
+  border-left-color: rgb(37, 37, 37);
+  border-right-color: rgb(37, 37, 37);
+  border-top-color: rgb(37, 37, 37);
   color: var(--h2-color, rgb(37, 37, 37));
   font-family: var(--h2-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  font-size: var(--h2-size, 29.92px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h2-letter-spacing, -0.32912px);
+  line-height: var(--h2-line-height, 35.904px);
+  margin-bottom: 23.936px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(37, 37, 37);
+  border-left-color: rgb(37, 37, 37);
+  border-right-color: rgb(37, 37, 37);
+  border-top-color: rgb(37, 37, 37);
   color: var(--inline-title-color, rgb(37, 37, 37));
   font-family: var(--inline-title-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  font-size: var(--inline-title-size, 40px);
+  letter-spacing: -0.6px;
+  line-height: var(--inline-title-line-height, 48px);
+  margin-bottom: 20px;
 }
 
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, 700);
+  border-bottom-color: rgb(37, 37, 37);
+  border-left-color: rgb(37, 37, 37);
+  border-right-color: rgb(37, 37, 37);
+  border-top-color: rgb(37, 37, 37);
   color: var(--h3-color, rgb(37, 37, 37));
   font-family: var(--h3-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  font-size: var(--h3-size, 25.12px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h3-letter-spacing, -0.20096px);
+  line-height: var(--h3-line-height, 32.656px);
+  margin-bottom: 20.096px;
+  margin-top: var(--heading-spacing, 50.24px);
 }
 
 html[saved-theme="light"] body h4 {
   --font-weight: var(--h4-weight, 700);
+  border-bottom-color: rgb(37, 37, 37);
+  border-left-color: rgb(37, 37, 37);
+  border-right-color: rgb(37, 37, 37);
+  border-top-color: rgb(37, 37, 37);
   color: var(--h4-color, rgb(37, 37, 37));
   font-family: var(--h4-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  font-size: var(--h4-size, 21.6px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h4-letter-spacing, -0.108px);
+  line-height: var(--h4-line-height, 30.24px);
+  margin-bottom: 17.28px;
+  margin-top: var(--heading-spacing, 43.2px);
 }
 
 html[saved-theme="light"] body h5 {
   --font-weight: var(--h5-weight, 700);
+  border-bottom-color: rgb(37, 37, 37);
+  border-left-color: rgb(37, 37, 37);
+  border-right-color: rgb(37, 37, 37);
+  border-top-color: rgb(37, 37, 37);
   color: var(--h5-color, rgb(37, 37, 37));
   font-family: var(--h5-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  font-size: var(--h5-size, 20.8px);
+  font-weight: var(--font-weight, 700);
+  letter-spacing: var(--h5-letter-spacing, -0.0416px);
+  line-height: var(--h5-line-height, 31.2px);
+  margin-bottom: 16.64px;
+  margin-top: var(--heading-spacing, 41.6px);
 }
 
 html[saved-theme="light"] body h6 {
   --font-weight: var(--h6-weight, 700);
+  border-bottom-color: rgb(37, 37, 37);
+  border-left-color: rgb(37, 37, 37);
+  border-right-color: rgb(37, 37, 37);
+  border-top-color: rgb(37, 37, 37);
   color: var(--h6-color, rgb(37, 37, 37));
   font-family: var(--h6-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+  font-size: var(--h6-size, 17.6px);
+  font-weight: var(--font-weight, 700);
+  line-height: var(--h6-line-height, 26.4px);
+  margin-bottom: 14.08px;
+  margin-top: 35.2px;
 }
 
 html[saved-theme="light"] body hr {
@@ -5957,6 +6201,26 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(127, 127, 127));
   font-family: var(--h1-font, "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(37, 37, 37);
@@ -6112,6 +6376,32 @@ html[saved-theme="light"] body .bases-table thead th {
   padding-top: 10px;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  background-color: var(--panel-child, rgb(253, 253, 253));
+  border-bottom-color: rgba(159, 159, 159, 0.4);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(159, 159, 159, 0.4);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(159, 159, 159, 0.4);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(159, 159, 159, 0.4);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: rgb(127, 127, 127);
+  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(127, 127, 127);
   border-left-color: rgb(127, 127, 127);
@@ -6119,6 +6409,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(127, 127, 127);
   color: rgb(127, 127, 127);
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(127, 127, 127);
+  font-family: var(--metadata-label-font, "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(127, 127, 127);
+  font-family: var(--metadata-input-font, "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -6187,8 +6487,14 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(37, 37, 37);
+  border-left-color: rgb(37, 37, 37);
+  border-right-color: rgb(37, 37, 37);
+  border-top-color: rgb(37, 37, 37);
   color: var(--text-normal, rgb(37, 37, 37));
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-size: var(--h6-size, 14.3px);
+  line-height: 18.59px;
 }
 
 html[saved-theme="light"] body abbr {

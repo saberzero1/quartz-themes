@@ -50,6 +50,19 @@ export const theme: ThemeData = {
   --bases-table-summary-background: var(--background-primary, #161b22);
   --blockquote-border-color: var(--interactive-accent, #4c78cc);
   --blue: #61afef;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #161b22);
   --caret-color: var(--text-normal, #dedede);
   --checkbox-border-color-hover: var(--text-muted, #bbb);
@@ -220,7 +233,7 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, #dedede);
   --vault-profile-color-hover: var(--vault-profile-color, #dedede);
   --yellow: #fccd11;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
 }
 
 html[saved-theme="dark"] body {
@@ -304,6 +317,14 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   text-decoration-color: rgb(222, 222, 222);
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(255, 255, 255));
+  font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
+  font-weight: 800;
+  outline: rgb(255, 255, 255) none 0px;
+  text-decoration-color: rgb(255, 255, 255);
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: var(--bold-color, rgb(255, 255, 255));
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
@@ -362,19 +383,31 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(222, 222, 222);
+  border-left-color: rgb(222, 222, 222);
+  border-right-color: rgb(222, 222, 222);
+  border-top-color: rgb(222, 222, 222);
   color: rgb(222, 222, 222);
+  font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(222, 222, 222);
+  border-left-color: rgb(222, 222, 222);
+  border-right-color: rgb(222, 222, 222);
+  border-top-color: rgb(222, 222, 222);
   color: rgb(222, 222, 222);
+  font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(222, 222, 222);
+  margin-left: 24px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(222, 222, 222);
+  margin-left: 24px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -384,6 +417,7 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-color: rgb(222, 222, 222);
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
+  color: var(--quote-color, rgb(61, 154, 216));
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
@@ -396,7 +430,6 @@ html[saved-theme="dark"] body ul.overflow {
 html[saved-theme="dark"] body table {
   color: rgb(222, 222, 222);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
-  width: 194.5px;
 }
 
 html[saved-theme="dark"] body td {
@@ -477,6 +510,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(187, 187, 187);
   border-right-color: rgb(187, 187, 187);
   border-top-color: rgb(187, 187, 187);
+  color: var(--text-muted, rgb(187, 187, 187));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -489,6 +523,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(76, 120, 204);
   border-right-color: rgb(222, 222, 222);
   border-top-color: rgb(222, 222, 222);
+  color: rgb(222, 222, 222);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -496,6 +531,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
   border-top-color: rgb(222, 222, 222);
+  color: rgb(222, 222, 222);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
@@ -1642,6 +1678,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   --pill-color-hover: var(--tag-color-hover, #449bff);
   --pill-color-remove: var(--tag-color, #58a6ff);
   --pill-color-remove-hover: var(--tag-color-hover, #449bff);
+  color: var(--pill-color, rgb(88, 166, 255));
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
@@ -1650,8 +1687,14 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(121, 107, 245);
+  border-left-color: rgb(121, 107, 245);
+  border-right-color: rgb(121, 107, 245);
+  border-top-color: rgb(121, 107, 245);
   color: var(--text-title-h1, rgb(121, 107, 245));
   font-family: var(--font-family-preview, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
+  font-weight: var(--font-weight-title, 600);
+  line-height: var(--line-height-headers, 25.888px);
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1659,31 +1702,55 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(131, 121, 236);
+  border-left-color: rgb(131, 121, 236);
+  border-right-color: rgb(131, 121, 236);
+  border-top-color: rgb(131, 121, 236);
   color: var(--text-title-h2, rgb(131, 121, 236));
   font-family: var(--h2-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(222, 222, 222);
+  border-left-color: rgb(222, 222, 222);
+  border-right-color: rgb(222, 222, 222);
+  border-top-color: rgb(222, 222, 222);
   color: var(--inline-title-color, rgb(222, 222, 222));
   font-family: var(--inline-title-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(162, 162, 210);
+  border-left-color: rgb(162, 162, 210);
+  border-right-color: rgb(162, 162, 210);
+  border-top-color: rgb(162, 162, 210);
   color: var(--text-title-h3, rgb(162, 162, 210));
   font-family: var(--h3-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(251, 214, 203);
+  border-left-color: rgb(251, 214, 203);
+  border-right-color: rgb(251, 214, 203);
+  border-top-color: rgb(251, 214, 203);
   color: var(--text-title-h4, rgb(251, 214, 203));
   font-family: var(--h4-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(213, 149, 124);
+  border-left-color: rgb(213, 149, 124);
+  border-right-color: rgb(213, 149, 124);
+  border-top-color: rgb(213, 149, 124);
   color: var(--text-title-h5, rgb(213, 149, 124));
   font-family: var(--h5-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(207, 94, 68);
+  border-left-color: rgb(207, 94, 68);
+  border-right-color: rgb(207, 94, 68);
+  border-top-color: rgb(207, 94, 68);
   color: var(--text-title-h6, rgb(207, 94, 68));
   font-family: var(--h6-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
@@ -1704,6 +1771,18 @@ html[saved-theme="dark"] body hr {
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(117, 126, 138));
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(222, 222, 222);
@@ -1726,6 +1805,9 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   border-top-color: rgb(24, 25, 30);
   color: var(--status-bar-text-color, rgb(187, 187, 187));
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body footer ul li a {
@@ -1830,6 +1912,15 @@ html[saved-theme="dark"] body .canvas-sidebar {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(187, 187, 187);
+  border-left-color: rgb(187, 187, 187);
+  border-right-color: rgb(187, 187, 187);
+  border-top-color: rgb(187, 187, 187);
+  color: rgb(187, 187, 187);
+  font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(187, 187, 187);
   border-left-color: rgb(187, 187, 187);
@@ -1837,6 +1928,14 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(187, 187, 187);
   color: rgb(187, 187, 187);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(187, 187, 187);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(187, 187, 187);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -1900,6 +1999,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(222, 222, 222);
+  border-left-color: rgb(222, 222, 222);
+  border-right-color: rgb(222, 222, 222);
+  border-top-color: rgb(222, 222, 222);
   color: var(--text-normal, rgb(222, 222, 222));
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
@@ -1962,6 +2065,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --aqua: #078480;
   --aquadark: #0b4c5e;
   --blue: #61afef;
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --code-function: var(--color-yellow, #000000);
   --code-keyword: var(--color-pink, #0033b3);
   --code-normal: var(--text-normal, #080808);
@@ -2074,6 +2190,13 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(0, 0, 0));
+  font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
+  outline: rgb(0, 0, 0) none 0px;
+  text-decoration-color: rgb(0, 0, 0);
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--bold-color, rgb(0, 0, 0));
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
@@ -2117,12 +2240,27 @@ html[saved-theme="light"] body a.internal-link.broken {
   outline: rgb(81, 179, 133) none 0px;
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
+    lists: `html[saved-theme="light"] body dd {
+  font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
+}
+
+html[saved-theme="light"] body dt {
+  font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
+}
+
+html[saved-theme="light"] body ol > li {
+  margin-left: 24px;
+}
+
+html[saved-theme="light"] body ul > li {
+  margin-left: 24px;
+}`,
     blockquotes: `html[saved-theme="light"] body blockquote {
+  color: var(--quote-color, rgb(61, 154, 216));
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }`,
     tables: `html[saved-theme="light"] body table {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
-  width: 194.5px;
 }`,
     code: `html[saved-theme="light"] body code {
   color: var(--cyan, rgb(15, 179, 255));
@@ -2804,6 +2942,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-hover: var(--tag-color-hover, #449bff);
   --pill-color-remove: var(--tag-color, #58a6ff);
   --pill-color-remove-hover: var(--tag-color-hover, #449bff);
+  color: var(--pill-color, rgb(88, 166, 255));
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
@@ -2812,11 +2951,21 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(121, 107, 245);
+  border-left-color: rgb(121, 107, 245);
+  border-right-color: rgb(121, 107, 245);
+  border-top-color: rgb(121, 107, 245);
   color: var(--text-title-h1, rgb(121, 107, 245));
   font-family: var(--font-family-preview, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
+  font-weight: var(--font-weight-title, 600);
+  line-height: var(--line-height-headers, 25.888px);
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(144, 135, 248);
+  border-left-color: rgb(144, 135, 248);
+  border-right-color: rgb(144, 135, 248);
+  border-top-color: rgb(144, 135, 248);
   color: var(--text-title-h2, rgb(144, 135, 248));
   font-family: var(--h2-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
@@ -2826,21 +2975,37 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(174, 174, 255);
+  border-left-color: rgb(174, 174, 255);
+  border-right-color: rgb(174, 174, 255);
+  border-top-color: rgb(174, 174, 255);
   color: var(--text-title-h3, rgb(174, 174, 255));
   font-family: var(--h3-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(255, 189, 169);
+  border-left-color: rgb(255, 189, 169);
+  border-right-color: rgb(255, 189, 169);
+  border-top-color: rgb(255, 189, 169);
   color: var(--text-title-h4, rgb(255, 189, 169));
   font-family: var(--h4-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(250, 173, 143);
+  border-left-color: rgb(250, 173, 143);
+  border-right-color: rgb(250, 173, 143);
+  border-top-color: rgb(250, 173, 143);
   color: var(--text-title-h5, rgb(250, 173, 143));
   font-family: var(--h5-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(245, 107, 77);
+  border-left-color: rgb(245, 107, 77);
+  border-right-color: rgb(245, 107, 77);
+  border-top-color: rgb(245, 107, 77);
   color: var(--text-title-h6, rgb(245, 107, 77));
   font-family: var(--h6-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }`,
@@ -2865,6 +3030,9 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-right-width: 1px;
   border-top-color: rgb(92, 92, 92);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-top: 0px;
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
@@ -2890,6 +3058,10 @@ html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }`,
     properties: `html[saved-theme="light"] body .metadata {
+  font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-container .metadata-property {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 

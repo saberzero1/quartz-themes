@@ -9,13 +9,21 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
   --callout-example: var(--color-purple-rgb, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
   --callout-important: var(--color-cyan-rgb, 0, 191, 188);
+  --callout-info: var(--callout-info, 2, 122, 255);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-5, 12px 12px 12px 20px);
   --callout-question: var(--color-orange-rgb, 255, 144, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 8px);
+  --callout-success: var(--callout-success, 68, 207, 110);
   --callout-summary: var(--color-cyan-rgb, 0, 191, 188);
   --callout-tip: var(--color-cyan-rgb, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
   --callout-warning: var(--color-orange-rgb, 255, 144, 0);
   --canvas-color-2: var(--color-orange-rgb, 255, 144, 0);
   --canvas-color-3: var(--color-yellow-rgb, 260, 200, 44);
@@ -707,8 +715,21 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   },
   light: {
     base: `:root:root {
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-5, 12px 12px 12px 20px);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 8px);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --checklist-done-color: var(--color-base-40, #bdbdbd);
   --code-border-color: var(--color-base-25, #e3e3e3);
   --code-keyword: var(--color-pink, #e8426d);

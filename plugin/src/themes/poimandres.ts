@@ -340,7 +340,9 @@ export const theme: ThemeData = {
   --vault-profile-color: var(--text-normal, #e4e7ea);
   --vault-profile-color-hover: var(--vault-profile-color, #e4e7ea);
   --yellow: #dcb583;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -387,6 +389,12 @@ html body .markdown-rendered p > em, html em {
 }
 
 html body .markdown-rendered p > i, html i {
+  color: var(--italic-color, rgb(132, 191, 207));
+  outline: rgb(132, 191, 207) none 0px;
+  text-decoration-color: rgb(132, 191, 207);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
   color: var(--italic-color, rgb(132, 191, 207));
   outline: rgb(132, 191, 207) none 0px;
   text-decoration-color: rgb(132, 191, 207);
@@ -444,10 +452,18 @@ html body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(77, 128, 179, 0.3));
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(228, 231, 234);
+  border-left-color: rgb(228, 231, 234);
+  border-right-color: rgb(228, 231, 234);
+  border-top-color: rgb(228, 231, 234);
   color: rgb(228, 231, 234);
 }
 
 html body dt {
+  border-bottom-color: rgb(228, 231, 234);
+  border-left-color: rgb(228, 231, 234);
+  border-right-color: rgb(228, 231, 234);
+  border-top-color: rgb(228, 231, 234);
   color: rgb(228, 231, 234);
 }
 
@@ -471,6 +487,7 @@ html body ul.overflow {
 
 html body blockquote {
   background-color: var(--blockquote-background-color, rgb(20, 22, 26));
+  color: var(--blockquote-color, rgb(228, 231, 234));
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(228, 231, 234);
@@ -560,10 +577,12 @@ html body video {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-left-color: rgb(184, 191, 201);
+  border-radius: 4px;
   border-right-color: rgb(184, 191, 201);
   border-top-color: rgb(184, 191, 201);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  color: var(--text-muted, rgb(184, 191, 201));
 }
 
 html body .footnotes {
@@ -577,6 +596,7 @@ html body .transclude {
   border-left-color: rgb(77, 128, 179);
   border-right-color: rgb(228, 231, 234);
   border-top-color: rgb(228, 231, 234);
+  color: rgb(228, 231, 234);
 }
 
 html body .transclude-inner {
@@ -585,6 +605,7 @@ html body .transclude-inner {
   border-left-color: rgb(228, 231, 234);
   border-right-color: rgb(228, 231, 234);
   border-top-color: rgb(228, 231, 234);
+  color: rgb(228, 231, 234);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(125, 160, 179);
@@ -1659,6 +1680,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-left-color: rgba(77, 128, 179, 0.15);
   border-right-color: rgba(77, 128, 179, 0.15);
   border-top-color: rgba(77, 128, 179, 0.15);
+  color: var(--pill-color, rgb(210, 165, 196));
 }
 
 html body a.internal-link.tag-link::before {
@@ -1666,6 +1688,10 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(132, 191, 207);
+  border-left-color: rgb(132, 191, 207);
+  border-right-color: rgb(132, 191, 207);
+  border-top-color: rgb(132, 191, 207);
   color: var(--h1-color, rgb(132, 191, 207));
 }
 
@@ -1674,26 +1700,50 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(111, 159, 173);
+  border-left-color: rgb(111, 159, 173);
+  border-right-color: rgb(111, 159, 173);
+  border-top-color: rgb(111, 159, 173);
   color: var(--h2-color, rgb(111, 159, 173));
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(132, 191, 207);
+  border-left-color: rgb(132, 191, 207);
+  border-right-color: rgb(132, 191, 207);
+  border-top-color: rgb(132, 191, 207);
   color: var(--inline-title-color, rgb(132, 191, 207));
 }
 
 html body h3 {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
   color: var(--h3-color, rgb(255, 255, 255));
 }
 
 html body h4 {
+  border-bottom-color: rgb(210, 165, 196);
+  border-left-color: rgb(210, 165, 196);
+  border-right-color: rgb(210, 165, 196);
+  border-top-color: rgb(210, 165, 196);
   color: var(--h4-color, rgb(210, 165, 196));
 }
 
 html body h5 {
+  border-bottom-color: rgb(197, 208, 230);
+  border-left-color: rgb(197, 208, 230);
+  border-right-color: rgb(197, 208, 230);
+  border-top-color: rgb(197, 208, 230);
   color: var(--h5-color, rgb(197, 208, 230));
 }
 
 html body h6 {
+  border-bottom-color: rgb(220, 181, 131);
+  border-left-color: rgb(220, 181, 131);
+  border-right-color: rgb(220, 181, 131);
+  border-top-color: rgb(220, 181, 131);
   color: var(--h6-color, rgb(220, 181, 131));
 }
 
@@ -1720,6 +1770,30 @@ html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title 
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(184, 191, 201));
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(228, 231, 234);
@@ -1845,11 +1919,27 @@ html body .bases-table thead th {
   color: var(--text-muted, rgb(184, 191, 201));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(184, 191, 201);
+  border-left-color: rgb(184, 191, 201);
+  border-right-color: rgb(184, 191, 201);
+  border-top-color: rgb(184, 191, 201);
+  color: rgb(184, 191, 201);
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(184, 191, 201);
   border-left-color: rgb(184, 191, 201);
   border-right-color: rgb(184, 191, 201);
   border-top-color: rgb(184, 191, 201);
+  color: rgb(184, 191, 201);
+}
+
+html body .metadata-property-key {
+  color: rgb(184, 191, 201);
+}
+
+html body .metadata-property-value {
   color: rgb(184, 191, 201);
 }
 
@@ -1918,6 +2008,10 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
+  border-bottom-color: rgb(228, 231, 234);
+  border-left-color: rgb(228, 231, 234);
+  border-right-color: rgb(228, 231, 234);
+  border-top-color: rgb(228, 231, 234);
   color: var(--text-normal, rgb(228, 231, 234));
 }
 

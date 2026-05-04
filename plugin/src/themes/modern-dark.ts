@@ -39,6 +39,19 @@ export const theme: ThemeData = {
   --bases-table-cell-background-disabled: var(--background-primary-alt, #1e1e1e);
   --bases-table-group-background: var(--background-primary-alt, #1e1e1e);
   --blockquote-border-color: var(--interactive-accent, #4c78cc);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-card-label-color: var(--text-faint, rgb(81, 86, 99));
   --checkbox-border-color: var(--text-faint, rgb(81, 86, 99));
   --checkbox-color: var(--interactive-accent, #4c78cc);
@@ -180,6 +193,8 @@ export const theme: ThemeData = {
   --titlebar-border-color: var(--background-modifier-border, #6a6a6a);
   --window-manager-titlebar: #3f3f3f;
   --quartz-icon-color: currentColor;
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -274,6 +289,13 @@ html body .markdown-rendered p > i, html i {
   text-decoration-color: rgb(220, 220, 170);
 }
 
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--content-text-italic, rgb(220, 220, 170));
+  font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
+  outline: rgb(220, 220, 170) none 0px;
+  text-decoration-color: rgb(220, 220, 170);
+}
+
 html body .markdown-rendered p > strong, html strong {
   color: var(--content-text-bold, rgb(78, 201, 176));
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
@@ -329,9 +351,31 @@ html body a.internal-link.broken {
   outline: rgb(86, 156, 214) none 0px;
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
-    lists: `html body dl {
+    lists: `html body dd {
+  font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
+  font-size: 18px;
+}
+
+html body dl {
   margin-bottom: 18px;
   margin-top: 18px;
+}
+
+html body dt {
+  font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
+  font-size: 18px;
+}
+
+html body ol > li {
+  margin-left: 30.0322px;
+  padding-bottom: var(--list-spacing, 1.35px);
+  padding-top: var(--list-spacing, 1.35px);
+}
+
+html body ul > li {
+  margin-left: 30.0322px;
+  padding-bottom: var(--list-spacing, 1.35px);
+  padding-top: var(--list-spacing, 1.35px);
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--text-faint, rgb(81, 86, 99));
@@ -339,13 +383,14 @@ html body a.internal-link.broken {
 
 html body blockquote {
   background-color: var(--background-secondary, rgb(37, 37, 38));
+  color: var(--content-code-line, rgb(0, 176, 255));
   font-family: var(--content-font-family-code, Consolas, monaco, monospace);
+  line-height: 27px;
   padding-bottom: 4px;
   padding-top: 4px;
 }`,
     tables: `html body table {
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
-  width: 195.062px;
 }
 
 html body td {
@@ -778,6 +823,9 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-bottom-right-radius: 31.5px;
   border-top-left-radius: 31.5px;
   border-top-right-radius: 31.5px;
+  color: var(--pill-color, rgb(86, 156, 214));
+  font-size: 15.75px;
+  line-height: var(--line-height-tight, 15.75px);
 }
 
 html body a.internal-link.tag-link::before {
@@ -785,8 +833,17 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(86, 156, 214);
+  border-left-color: rgb(86, 156, 214);
+  border-right-color: rgb(86, 156, 214);
+  border-top-color: rgb(86, 156, 214);
   color: var(--content-title-h1, rgb(86, 156, 214));
   font-family: var(--h1-font, "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif);
+  font-size: var(--h1-size, 29.124px);
+  font-weight: var(--font-weight-title, 600);
+  letter-spacing: var(--h1-letter-spacing, -0.43686px);
+  line-height: var(--line-height-headers, 29.124px);
+  margin-bottom: 27px;
 }
 
 html body h1.article-title {
@@ -794,32 +851,79 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(220, 220, 170);
+  border-left-color: rgb(220, 220, 170);
+  border-right-color: rgb(220, 220, 170);
+  border-top-color: rgb(220, 220, 170);
   color: var(--content-title-h2, rgb(220, 220, 170));
   font-family: var(--h2-font, "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif);
+  font-size: var(--h2-size, 26.316px);
+  letter-spacing: var(--h2-letter-spacing, -0.289476px);
+  line-height: var(--h2-line-height, 31.5792px);
+  margin-bottom: 27px;
 }
 
 html body h2.page-title, html h2.page-title a {
   font-family: var(--inline-title-font, "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif);
+  font-size: var(--inline-title-size, 29.124px);
+  letter-spacing: -0.43686px;
+  line-height: var(--inline-title-line-height, 34.9488px);
+  margin-bottom: 14.562px;
 }
 
 html body h3 {
+  border-bottom-color: rgb(156, 220, 254);
+  border-left-color: rgb(156, 220, 254);
+  border-right-color: rgb(156, 220, 254);
+  border-top-color: rgb(156, 220, 254);
   color: var(--content-title-h3, rgb(156, 220, 254));
   font-family: var(--h3-font, "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif);
+  font-size: var(--h3-size, 23.724px);
+  letter-spacing: var(--h3-letter-spacing, -0.189792px);
+  line-height: var(--h3-line-height, 30.8412px);
+  margin-bottom: 27px;
+  margin-top: var(--heading-spacing, 27px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(197, 134, 192);
+  border-left-color: rgb(197, 134, 192);
+  border-right-color: rgb(197, 134, 192);
+  border-top-color: rgb(197, 134, 192);
   color: var(--content-title-h4, rgb(197, 134, 192));
   font-family: var(--h4-font, "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif);
+  font-size: var(--h4-size, 21.384px);
+  letter-spacing: var(--h4-letter-spacing, -0.10692px);
+  line-height: var(--h4-line-height, 29.9376px);
+  margin-bottom: 27px;
+  margin-top: var(--heading-spacing, 27px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(206, 145, 120);
+  border-left-color: rgb(206, 145, 120);
+  border-right-color: rgb(206, 145, 120);
+  border-top-color: rgb(206, 145, 120);
   color: var(--content-title-h5, rgb(206, 145, 120));
   font-family: var(--h5-font, "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif);
+  font-size: var(--h5-size, 19.368px);
+  letter-spacing: var(--h5-letter-spacing, -0.038736px);
+  line-height: var(--h5-line-height, 29.052px);
+  margin-bottom: 27px;
+  margin-top: var(--heading-spacing, 27px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(78, 201, 176);
+  border-left-color: rgb(78, 201, 176);
+  border-right-color: rgb(78, 201, 176);
+  border-top-color: rgb(78, 201, 176);
   color: var(--content-title-h6, rgb(78, 201, 176));
   font-family: var(--h6-font, "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif);
+  font-size: var(--h6-size, 18px);
+  line-height: var(--h6-line-height, 27px);
+  margin-bottom: 27px;
+  margin-top: 27px;
 }
 
 html body hr {
@@ -836,6 +940,10 @@ html body hr {
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     footer: `html body footer {
   --bar-height: calc(22px + var(--bar-vertical-padding)*2);
@@ -847,6 +955,9 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-right-width: 1px;
   border-top-color: rgb(24, 25, 30);
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-top: 0px;
 }`,
     recentNotes: `html body .recent-notes > h3 {
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
@@ -887,8 +998,20 @@ html body li.section-li > .section .meta {
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
 }
 
+html body .metadata-container .metadata-property {
+  font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
+}
+
 html body .metadata-properties {
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
+}
+
+html body .metadata-property-key {
+  font-size: 18px;
+}
+
+html body .metadata-property-value {
+  font-size: 18px;
 }
 
 html body .note-properties {

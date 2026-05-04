@@ -11,7 +11,20 @@ export const theme: ThemeData = {
   --bases-table-border-color: var(--table-border-color, #404040);
   --bases-table-container-border-radius: var(--radius-s, 0);
   --button-radius: var(--input-radius, 0);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 0);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-controls-radius: var(--radius-s, 0);
   --checkbox-radius: var(--radius-s, 0);
   --clickable-icon-radius: var(--radius-s, 0);
@@ -140,8 +153,12 @@ html body li.task-list-item input[type="checkbox"] {
 html body li.task-list-item input[type="checkbox"]:checked {
   --background-modifier-form-field: var(--strict-color-1, #101010);
 }`,
+    blockquotes: `html body blockquote {
+  line-height: 20.8px;
+}`,
     tables: `html body table {
   margin-top: var(--heading-spacing, 0px);
+  text-align: justify;
 }
 
 html body td {
@@ -207,6 +224,7 @@ html body img {
     embeds: `html body .file-embed {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }`,
@@ -681,7 +699,25 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
 
 html body h1 {
   --font-weight: var(--h1-weight, 600);
+  border-bottom-color: rgb(64, 64, 64);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(64, 64, 64);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(64, 64, 64);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(64, 64, 64);
+  border-top-style: solid;
+  border-top-width: 1px;
   color: var(--h1-color, rgb(0, 187, 0));
+  font-size: var(--h1-size, 16px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h1-letter-spacing, -0.24px);
+  line-height: var(--h1-line-height, 24px);
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 html body h1.article-title {
@@ -691,26 +727,134 @@ html body h1.article-title {
 
 html body h2 {
   --font-weight: var(--h2-weight, 600);
+  border-bottom-color: rgb(64, 64, 64);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(64, 64, 64);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(64, 64, 64);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(64, 64, 64);
+  border-top-style: solid;
+  border-top-width: 1px;
   color: var(--h2-color, rgb(0, 187, 0));
+  font-size: var(--h2-size, 16px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.176px);
+  line-height: var(--h2-line-height, 24px);
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+html body h2.page-title, html h2.page-title a {
+  background: rgb(16, 16, 16) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--strict-color-1, rgb(16, 16, 16));
+  border-bottom-color: rgb(64, 64, 64);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  font-size: var(--inline-title-size, 16px);
+  font-weight: var(--inline-title-weight, 600);
+  letter-spacing: -0.24px;
+  line-height: var(--inline-title-line-height, 24px);
+  margin-bottom: var(--file-folding-offset, 24px);
+  margin-left: calc(var(--file-folding-offset)*-1);
+  margin-right: calc(var(--file-folding-offset)*-1);
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-top: 4px;
 }
 
 html body h3 {
   --font-weight: var(--h3-weight, 600);
+  border-bottom-color: rgb(64, 64, 64);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(64, 64, 64);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(64, 64, 64);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(64, 64, 64);
+  border-top-style: solid;
+  border-top-width: 1px;
   color: var(--h3-color, rgb(0, 187, 0));
+  font-size: var(--h3-size, 16px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h3-letter-spacing, -0.128px);
+  line-height: var(--h3-line-height, 24px);
+  margin-top: var(--heading-spacing, 0px);
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 html body h4 {
   --font-weight: var(--h4-weight, 600);
+  border-bottom-color: rgb(64, 64, 64);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(64, 64, 64);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(64, 64, 64);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(64, 64, 64);
+  border-top-style: solid;
+  border-top-width: 1px;
   color: var(--h4-color, rgb(0, 187, 0));
+  font-size: var(--h4-size, 16px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h4-letter-spacing, -0.08px);
+  line-height: var(--h4-line-height, 24px);
+  margin-top: var(--heading-spacing, 0px);
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 html body h5 {
   --font-weight: var(--h5-weight, 600);
+  border-bottom-color: rgb(64, 64, 64);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(64, 64, 64);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(64, 64, 64);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(64, 64, 64);
+  border-top-style: solid;
+  border-top-width: 1px;
   color: var(--h5-color, rgb(0, 187, 0));
+  font-size: var(--h5-size, 16px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h5-letter-spacing, -0.032px);
+  line-height: var(--h5-line-height, 24px);
+  margin-top: var(--heading-spacing, 0px);
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 html body h6 {
+  border-bottom-color: rgb(64, 64, 64);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(64, 64, 64);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(64, 64, 64);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(64, 64, 64);
+  border-top-style: solid;
+  border-top-width: 1px;
   color: var(--h6-color, rgb(0, 187, 0));
+  margin-top: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 html body hr {
@@ -747,6 +891,9 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-right-width: 1px;
   border-top-color: rgb(64, 64, 64);
   border-top-left-radius: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
 }`,
     darkmode: `html body .darkmode {
   border-bottom-left-radius: 0px;
@@ -776,6 +923,13 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   margin-bottom: var(--file-folding-offset, 24px);
   padding-bottom: 0px;
   padding-top: 0px;
+}
+
+html body .metadata-container .metadata-property {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 html body .note-properties {

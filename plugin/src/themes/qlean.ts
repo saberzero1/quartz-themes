@@ -49,6 +49,7 @@ export const theme: ThemeData = {
   --border-color: #404040;
   --callout-attention-bg-color: rgb(47, 36, 25);
   --callout-attention-text-color: #f97316;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
   --callout-bug-bg-color: rgb(50, 26, 26);
   --callout-bug-text-color: #ef4444;
   --callout-caution-bg-color: rgb(47, 36, 25);
@@ -59,13 +60,17 @@ export const theme: ThemeData = {
   --callout-cite-text-color: #f5f5f5;
   --callout-danger-bg-color: rgb(50, 26, 26);
   --callout-danger-text-color: #ef4444;
+  --callout-default: var(--callout-default, 2, 122, 255);
   --callout-dogs-ear-size: 2em;
   --callout-done-bg-color: rgb(26, 43, 30);
   --callout-done-text-color: #22c55e;
+  --callout-error: var(--callout-error, 251, 70, 76);
   --callout-error-bg-color: rgb(50, 26, 26);
   --callout-error-text-color: #ef4444;
+  --callout-example: var(--callout-example, 168, 130, 255);
   --callout-example-bg-color: rgb(38, 32, 48);
   --callout-example-text-color: #8b5cf6;
+  --callout-fail: var(--callout-fail, 251, 70, 76);
   --callout-fail-bg-color: rgb(50, 26, 26);
   --callout-fail-text-color: #ef4444;
   --callout-failure-bg-color: rgb(50, 26, 26);
@@ -78,23 +83,31 @@ export const theme: ThemeData = {
   --callout-hint-text-color: #0ea5e9;
   --callout-important-bg-color: rgb(30, 44, 44);
   --callout-important-text-color: #0ea5e9;
+  --callout-info: var(--callout-info, 2, 122, 255);
   --callout-info-bg-color: rgb(20, 32, 49);
   --callout-info-text-color: #f5f5f5;
   --callout-missing-bg-color: rgb(50, 26, 26);
   --callout-missing-text-color: #ef4444;
   --callout-note--text-color: #f5f5f5;
   --callout-note-bg-color: rgb(20, 32, 49);
+  --callout-question: var(--callout-question, 233, 151, 63);
   --callout-question-bg-color: rgb(47, 36, 25);
   --callout-question-text-color: #eab308;
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-quote-bg-color: rgb(36, 36, 36);
   --callout-quote-text-color: #f5f5f5;
   --callout-radius: var(--radius-s, 0.125em);
+  --callout-success: var(--callout-success, 68, 207, 110);
   --callout-success-bg-color: rgb(26, 43, 30);
   --callout-success-text-color: #22c55e;
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
   --callout-tip-bg-color: rgb(30, 44, 44);
   --callout-tip-text-color: #0ea5e9;
+  --callout-todo: var(--callout-todo, 2, 122, 255);
   --callout-todo-bg-color: rgb(20, 32, 49);
   --callout-todo-text-color: #0ea5e9;
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --callout-warning-bg-color: rgb(47, 36, 25);
   --callout-warning-text-color: #f97316;
   --canvas-background: var(--background-primary, #0a0a0a);
@@ -413,7 +426,7 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, #d4d4d4);
   --vault-profile-color: var(--text-normal, #d4d4d4);
   --vault-profile-color-hover: var(--vault-profile-color, #d4d4d4);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
 }
 
 html[saved-theme="dark"] body {
@@ -447,291 +460,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(64, 64, 64);
   color: rgb(212, 212, 212);
 }`,
-    typography: `html[saved-theme="dark"] body .markdown-rendered > h1 {
-  --background-modifier-active-hover: #404040;
-  --background-modifier-border: #363636;
-  --background-modifier-border-focus: #404040;
-  --background-modifier-border-hover: #3f3f3f;
-  --background-modifier-error: #fb464c;
-  --background-modifier-error-hover: #fb464c;
-  --background-modifier-error-rgb: #ef4444;
-  --background-modifier-form-field: #2a2a2a;
-  --background-modifier-form-field-hover: #2a2a2a;
-  --background-modifier-hover: rgba(255, 255, 255, 0.067);
-  --background-modifier-success: #44cf6e;
-  --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: #0a0a0a;
-  --background-primary-alt: #262626;
-  --background-secondary: #171717;
-  --background-secondary-alt: #404040;
-  --blockquote-border-color: hsl(0, 0%, 80%);
-  --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
-  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
-  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
-  --bold-weight: 600;
-  --button-corner-shape: round;
-  --button-radius: 5px;
-  --callout-blend-mode: lighten;
-  --callout-bug: 251, 70, 76;
-  --callout-default: 2, 122, 255;
-  --callout-error: 251, 70, 76;
-  --callout-example: 168, 130, 255;
-  --callout-fail: 251, 70, 76;
-  --callout-important: 83, 223, 221;
-  --callout-info: 2, 122, 255;
-  --callout-padding: 12px 12px 12px 24px;
-  --callout-question: 233, 151, 63;
-  --callout-radius: 0.125em;
-  --callout-success: 68, 207, 110;
-  --callout-summary: 83, 223, 221;
-  --callout-tip: 83, 223, 221;
-  --callout-title-weight: 600;
-  --callout-todo: 2, 122, 255;
-  --callout-warning: 233, 151, 63;
-  --canvas-background: #0a0a0a;
-  --canvas-controls-icon-size: 16px;
-  --canvas-controls-icon-stroke: 2px;
-  --canvas-controls-radius: 0.125em;
-  --canvas-dot-pattern: #363636;
-  --caret-color: #d4d4d4;
-  --checkbox-border-color: #b3b3b3;
-  --checkbox-border-color-hover: #737373;
-  --checkbox-color: #22c55e;
-  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
-  --checkbox-marker-color: #0a0a0a;
-  --checkbox-radius: 0.125em;
-  --checkbox-size: 16px;
-  --checklist-done-color: #737373;
-  --clickable-icon-radius: 0.125em;
-  --code-background: #262626;
-  --code-border-color: #363636;
-  --code-bracket-background: rgba(255, 255, 255, 0.067);
-  --code-comment: #666666;
-  --code-function: #e0de71;
-  --code-important: #e9973f;
-  --code-keyword: #fa99cd;
-  --code-normal: #d4d4d4;
-  --code-operator: #fb464c;
-  --code-property: #53dfdd;
-  --code-punctuation: #737373;
-  --code-radius: 0.125em;
-  --code-size: 0.875em;
-  --code-string: #44cf6e;
-  --code-tag: #fb464c;
-  --code-value: #a882ff;
-  --collapse-icon-color: #666666;
-  --collapse-icon-color-collapsed: hsl(0, 0%, 90%);
-  --color-accent: hsl(0, 0%, 90%);
-  --color-accent-1: hsl(0, 0%, 90%);
-  --color-accent-2: hsl(-5, 0%, 116.1%);
-  --color-accent-hsl: 0, 0%, 90%;
-  --divider-color: #404040;
-  --divider-color-hover: hsl(0, 0%, 80%);
-  --divider-vertical-height: 100%;
-  --dropdown-background: #363636;
-  --dropdown-background-hover: rgb(163 163 163 / 0.2);
-  --dropdown-background-position: right 0.5em top 50%, 0 0;
-  --dropdown-background-size: 1em auto, 100%;
-  --dropdown-padding: 0 1.9em 0 0.8em;
-  --flair-background: #363636;
-  --flair-color: #d4d4d4;
-  --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
-  --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
-  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
-  --font-print: '??', '??', '??', 'Arial';
-  --font-text: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
-  --font-weight: var(--h1-weight, 700);
-  --graph-line: #3f3f3f;
-  --graph-node: #737373;
-  --graph-node-attachment: #e0de71;
-  --graph-node-focused: hsl(0, 0%, 90%);
-  --graph-node-tag: #44cf6e;
-  --graph-node-unresolved: #666666;
-  --graph-text: #d4d4d4;
-  --h5-line-height: 1.5;
-  --h6-line-height: 1.5;
-  --heading-formatting: #666666;
-  --heading-spacing: 2.5rem;
-  --hr-color: #363636;
-  --interactive-accent: hsl(0, 0%, 80%);
-  --interactive-accent-hover: hsl(0, 0%, 85%);
-  --interactive-accent-hsl: 0, 0%, 90%;
-  --interactive-hover: rgb(163 163 163 / 0.2);
-  --interactive-normal: #363636;
-  --link-color: hsl(0, 0%, 85%);
-  --link-color-hover: hsl(0, 0%, 85%);
-  --link-external-color: hsl(0, 0%, 85%);
-  --link-external-color-hover: hsl(0, 0%, 85%);
-  --link-unresolved-color: hsla(0, 0%, 90%, 0.9);
-  --link-unresolved-decoration-color: hsla(hsla(0, 0%, 90%, 0.9), 0.3);
-  --link-weight: 400;
-  --list-indent: 2.25em;
-  --menu-background: #171717;
-  --menu-border-color: #3f3f3f;
-  --menu-border-width: 1px;
-  --menu-corner-shape: round;
-  --menu-padding: 6px;
-  --menu-radius: 8px;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
-  --pdf-background: #0a0a0a;
-  --pdf-page-background: #0a0a0a;
-  --pdf-shadow: 0 0 0 1px #363636;
-  --pdf-sidebar-background: #0a0a0a;
-  --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-  --popover-font-size: 16px;
-  --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-  --scrollbar-bg: rgba(255, 255, 255, 0.05);
-  --scrollbar-radius: 12px;
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
-  --search-clear-button-color: #737373;
-  --search-icon-color: #737373;
-  --search-result-background: #0a0a0a;
-  --setting-group-heading-color: #d4d4d4;
-  --setting-group-heading-size: 15px;
-  --setting-group-heading-weight: 600;
-  --setting-items-background: #262626;
-  --setting-items-border-color: #363636;
-  --setting-items-padding: 20px;
-  --setting-items-radius: 12px;
-  --shiki-active-tab-border-color: #737373;
-  --shiki-code-background: #262626;
-  --shiki-code-block-border-radius: 0.125em;
-  --shiki-code-block-spacing: 1rem;
-  --shiki-code-comment: #666666;
-  --shiki-code-function: #44cf6e;
-  --shiki-code-important: #e9973f;
-  --shiki-code-keyword: #fa99cd;
-  --shiki-code-normal: #737373;
-  --shiki-code-property: #53dfdd;
-  --shiki-code-punctuation: #737373;
-  --shiki-code-string: #e0de71;
-  --shiki-code-value: #a882ff;
-  --shiki-gutter-border-color: #363636;
-  --shiki-gutter-border-width: 1px;
-  --shiki-gutter-text-color: #666666;
-  --shiki-gutter-text-color-highlight: #737373;
-  --shiki-highlight-green: rgba(68, 207, 110, 0.5);
-  --shiki-highlight-green-background: rgba(68, 207, 110, 0.1);
-  --shiki-highlight-neutral: #737373;
-  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05);
-  --shiki-highlight-red: rgba(251, 70, 76, 0.5);
-  --shiki-highlight-red-background: rgba(251, 70, 76, 0.1);
-  --shiki-terminal-dots-color: #666666;
-  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
-  --suggestion-background: #0a0a0a;
-  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
-  --sync-avatar-color-1: #fb464c;
-  --sync-avatar-color-2: #e9973f;
-  --sync-avatar-color-3: #e0de71;
-  --sync-avatar-color-4: #44cf6e;
-  --sync-avatar-color-5: #53dfdd;
-  --sync-avatar-color-6: #027aff;
-  --sync-avatar-color-7: #a882ff;
-  --sync-avatar-color-8: #fa99cd;
-  --tab-background-active: #0a0a0a;
-  --tab-divider-color: #3f3f3f;
-  --tab-font-size: 13px;
-  --tab-outline-color: #404040;
-  --tab-radius: 0.125em;
-  --tab-stacked-font-size: 13px;
-  --tab-stacked-header-width: 40px;
-  --tab-switcher-background: #171717;
-  --tab-switcher-menubar-background: linear-gradient(to top, #171717, transparent);
-  --tab-switcher-preview-radius: 16px;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 90%);
-  --tab-text-color: #666666;
-  --tab-text-color-active: #737373;
-  --tab-text-color-focused: #737373;
-  --tab-text-color-focused-active: #737373;
-  --tab-text-color-focused-active-current: #d4d4d4;
-  --tab-text-color-focused-highlighted: hsl(0, 0%, 90%);
-  --table-add-button-border-color: #363636;
-  --table-add-button-border-width: 1px;
-  --table-border-color: #363636;
-  --table-column-alt-background: transparent;
-  --table-column-first-border-width: 1px;
-  --table-column-last-border-width: 1px;
-  --table-drag-handle-background-active: hsl(0, 0%, 80%);
-  --table-drag-handle-color: #666666;
-  --table-drag-handle-color-active: white;
-  --table-header-background: transparent;
-  --table-header-border-color: #363636;
-  --table-header-border-width: 1px;
-  --table-header-color: #d4d4d4;
-  --table-header-size: 16px;
-  --table-header-weight: 600;
-  --table-line-height: 1.3;
-  --table-row-alt-background: transparent;
-  --table-row-alt-background-hover: transparent;
-  --table-row-background-hover: transparent;
-  --table-row-last-border-width: 1px;
-  --table-selection: hsla(0, 0%, 90%, 0.1);
-  --table-selection-blend-mode: lighten;
-  --table-selection-border-color: hsl(0, 0%, 80%);
-  --table-text-size: 16px;
-  --tag-background: hsla(0, 0%, 90%, 0.1);
-  --tag-background-hover: hsla(0, 0%, 90%, 0.2);
-  --tag-border-color: hsla(0, 0%, 90%, 0.15);
-  --tag-border-color-hover: hsla(0, 0%, 90%, 0.15);
-  --tag-color: hsl(0, 0%, 90%);
-  --tag-color-hover: hsl(0, 0%, 90%);
-  --tag-size: 0.875em;
-  --text-accent: hsl(0, 0%, 90%);
-  --text-accent-hover: #f5f5f5;
-  --text-error: #fb464c;
-  --text-faint: #666666;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-muted: #737373;
-  --text-normal: #d4d4d4;
-  --text-selection: rgb(163 163 163 / 0.2);
-  --text-success: #44cf6e;
-  --text-warning: #e9973f;
-  --touch-radius-l: 52px;
-  --touch-radius-m: 44px;
-  --touch-radius-s: 40px;
-  --touch-radius-xl: 60px;
-  --touch-radius-xs: 30px;
-  --touch-radius-xxs: 24px;
-  --traffic-lights-offset-x: 40px;
-  --traffic-lights-offset-y: 40px;
-  background-color: var(--text-normal, rgba(0, 0, 0, 0));
-  border-bottom-color: rgb(115, 115, 115);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-width: 0px;
-  border-left-color: rgb(115, 115, 115);
-  border-left-width: 0px;
-  border-right-color: rgb(115, 115, 115);
-  border-right-width: 0px;
-  border-top-color: rgb(115, 115, 115);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-width: 0px;
-  color: var(--text-strong, rgb(115, 115, 115));
-  content: "#1";
-  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
-  font-size: var(--font-h1-size, 25.2px);
-  font-weight: var(--font-h1-weight, 100);
-  letter-spacing: var(--h1-letter-spacing, -0.54px);
-  line-height: var(--h1-line-height, 37.8px);
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 6.3px;
-  margin-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-}
-
-html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: var(--font-strong-color, rgb(245, 245, 245));
   font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-weight: var(--font-strong-weight, 900);
@@ -752,6 +481,16 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--font-em-color, rgb(212, 212, 212));
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-em-weight, 400);
+  outline: rgb(212, 212, 212) none 0px;
+  text-decoration: 1px rgb(212, 212, 212);
+  text-decoration-color: rgb(212, 212, 212);
+  text-decoration-thickness: 1px;
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--font-em-color, rgb(212, 212, 212));
   font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-weight: var(--font-em-weight, 400);
@@ -803,26 +542,6 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
   border-color: rgba(0, 0, 0, 0);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
-  color: rgb(212, 212, 212);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="."] {
-  color: rgb(212, 212, 212);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
-  color: rgb(212, 212, 212);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
-  color: rgb(212, 212, 212);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
-  color: rgb(212, 212, 212);
-}
-
 html[saved-theme="dark"] body p {
   color: var(--text-muted, rgb(115, 115, 115));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
@@ -860,19 +579,31 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-thickness: var(--link-decoration-thickness, 1px);
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: rgb(212, 212, 212);
+  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: rgb(212, 212, 212);
+  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(212, 212, 212);
+  margin-left: 26.6953px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(212, 212, 212);
+  margin-left: 26.6953px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -888,6 +619,7 @@ html[saved-theme="dark"] body ul.overflow {
 
 html[saved-theme="dark"] body blockquote {
   background-color: var(--quote-bg-color, rgba(250, 250, 250, 0.05));
+  color: var(--text-muted, rgb(115, 115, 115));
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -904,7 +636,6 @@ html[saved-theme="dark"] body table {
   border-top-color: rgba(0, 0, 0, 0);
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  width: 662px;
 }
 
 html[saved-theme="dark"] body td {
@@ -1025,6 +756,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(115, 115, 115);
   border-right-color: rgb(115, 115, 115);
   border-top-color: rgb(115, 115, 115);
+  color: var(--text-muted, rgb(115, 115, 115));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -1037,6 +769,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(204, 204, 204);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
+  color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -1044,6 +777,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
+  color: rgb(212, 212, 212);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
@@ -1089,6 +823,14 @@ html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
   color: rgb(212, 212, 212);
 }
 
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: rgb(212, 212, 212);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: rgb(212, 212, 212);
+}
+
 html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
   color: rgb(212, 212, 212);
 }
@@ -1126,6 +868,14 @@ html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: rgb(212, 212, 212);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: rgb(212, 212, 212);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
   color: rgb(212, 212, 212);
 }
 
@@ -1235,6 +985,10 @@ html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: rgb(212, 212, 212);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
   color: rgb(212, 212, 212);
 }
 
@@ -2864,7 +2618,9 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: var(--text-strong, rgb(245, 245, 245));
   font-family: var(--font-monospace, iawriter-mono, Nitti, Menlo, Courier, monospace);
+  font-size: var(--font-tag-size, 14px);
   font-weight: var(--font-tag-weight, 400);
 }
 
@@ -2873,8 +2629,18 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: var(--text-strong, rgb(212, 212, 212));
   font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h1-size, 36px);
+  font-weight: var(--font-h1-weight, 400);
+  letter-spacing: var(--h1-letter-spacing, -0.54px);
+  line-height: var(--h1-line-height, 54px);
+  margin-bottom: 40px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -2908,14 +2674,58 @@ html[saved-theme="dark"] body h1::after {
   width: 0px;
 }
 
+html[saved-theme="dark"] body h1::before {
+  --font-weight: var(--h1-weight, 700);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(115, 115, 115);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
+  border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
+  border-top-color: rgb(115, 115, 115);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-strong, rgb(115, 115, 115));
+  content: "#1";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 6.3px;
+  margin-top: 0px;
+  width: 31.5px;
+}
+
 html[saved-theme="dark"] body h2 {
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: var(--h2-color, rgb(212, 212, 212));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h2-size, 30px);
+  font-weight: var(--font-h2-weight, 400);
+  letter-spacing: var(--h2-letter-spacing, -0.33px);
+  line-height: var(--h2-line-height, 45px);
+  margin-bottom: 40px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(245, 245, 245);
+  border-left-color: rgb(245, 245, 245);
+  border-right-color: rgb(245, 245, 245);
+  border-top-color: rgb(245, 245, 245);
   color: var(--text-strong, rgb(245, 245, 245));
   font-family: var(--inline-title-font, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--inline-title-size, 32px);
+  font-weight: var(--inline-title-weight, 900);
+  letter-spacing: -0.48px;
+  line-height: var(--inline-title-line-height, 38.4px);
+  margin-bottom: 16px;
 }
 
 html[saved-theme="dark"] body h2::after {
@@ -2943,9 +2753,45 @@ html[saved-theme="dark"] body h2::after {
   width: 0px;
 }
 
+html[saved-theme="dark"] body h2::before {
+  --font-weight: var(--h2-weight, 680);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(115, 115, 115);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
+  border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
+  border-top-color: rgb(115, 115, 115);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h2-color, rgb(115, 115, 115));
+  content: "#2";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 5.25px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 26.25px;
+}
+
 html[saved-theme="dark"] body h3 {
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: var(--h3-color, rgb(212, 212, 212));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h3-size, 24px);
+  font-weight: var(--font-h3-weight, 400);
+  letter-spacing: var(--h3-letter-spacing, -0.192px);
+  line-height: var(--h3-line-height, 36px);
+  margin-bottom: 40px;
+  margin-top: var(--heading-spacing, 40px);
 }
 
 html[saved-theme="dark"] body h3::after {
@@ -2973,9 +2819,45 @@ html[saved-theme="dark"] body h3::after {
   width: 0px;
 }
 
+html[saved-theme="dark"] body h3::before {
+  --font-weight: var(--h3-weight, 660);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(115, 115, 115);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
+  border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
+  border-top-color: rgb(115, 115, 115);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h3-color, rgb(115, 115, 115));
+  content: "#3";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 4.2px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 21px;
+}
+
 html[saved-theme="dark"] body h4 {
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: var(--h4-color, rgb(212, 212, 212));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h4-size, 20px);
+  font-weight: var(--font-h4-weight, 400);
+  letter-spacing: var(--h4-letter-spacing, -0.1px);
+  line-height: var(--h4-line-height, 30px);
+  margin-bottom: 40px;
+  margin-top: var(--heading-spacing, 40px);
 }
 
 html[saved-theme="dark"] body h4::after {
@@ -3003,9 +2885,45 @@ html[saved-theme="dark"] body h4::after {
   width: 0px;
 }
 
+html[saved-theme="dark"] body h4::before {
+  --font-weight: var(--h4-weight, 640);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(115, 115, 115);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
+  border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
+  border-top-color: rgb(115, 115, 115);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h4-color, rgb(115, 115, 115));
+  content: "#4";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 3.5px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 17.5px;
+}
+
 html[saved-theme="dark"] body h5 {
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: var(--h5-color, rgb(212, 212, 212));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h5-size, 18px);
+  font-weight: var(--font-h5-weight, 400);
+  letter-spacing: var(--h5-letter-spacing, -0.036px);
+  line-height: var(--h5-line-height, 27px);
+  margin-bottom: 40px;
+  margin-top: var(--heading-spacing, 40px);
 }
 
 html[saved-theme="dark"] body h5::after {
@@ -3033,9 +2951,42 @@ html[saved-theme="dark"] body h5::after {
   width: 0px;
 }
 
+html[saved-theme="dark"] body h5::before {
+  --font-weight: var(--h5-weight, 620);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(115, 115, 115);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
+  border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
+  border-top-color: rgb(115, 115, 115);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h5-color, rgb(115, 115, 115));
+  content: "#5";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 3.15px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 15.75px;
+}
+
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
   color: var(--h6-color, rgb(212, 212, 212));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h6-size, 16px);
+  font-weight: var(--font-h6-weight, 400);
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 html[saved-theme="dark"] body h6::after {
@@ -3061,6 +3012,31 @@ html[saved-theme="dark"] body h6::after {
   margin-right: 0px;
   margin-top: 0px;
   width: 0px;
+}
+
+html[saved-theme="dark"] body h6::before {
+  --font-weight: var(--h6-weight, 600);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(115, 115, 115);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
+  border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
+  border-top-color: rgb(115, 115, 115);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h6-color, rgb(115, 115, 115));
+  content: "#6";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 2.8px;
+  margin-top: 0px;
+  width: 14px;
 }
 
 html[saved-theme="dark"] body hr {
@@ -3093,6 +3069,18 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
   color: var(--text-normal, rgb(212, 212, 212));
   font-family: var(--font-file-tree, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-weight: var(--font-file-tree-weight, 400);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(212, 212, 212);
@@ -3239,6 +3227,19 @@ html[saved-theme="dark"] body .bases-table thead th {
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(115, 115, 115);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-left-color: rgb(115, 115, 115);
+  border-right-color: rgb(115, 115, 115);
+  border-top-color: rgb(115, 115, 115);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  color: rgb(115, 115, 115);
+  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgb(115, 115, 115);
@@ -3246,6 +3247,16 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(115, 115, 115);
   color: rgb(115, 115, 115);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(115, 115, 115);
+  font-family: var(--metadata-label-font, "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(115, 115, 115);
+  font-family: var(--metadata-input-font, "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="dark"] body .note-properties-key {
@@ -3311,8 +3322,13 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(245, 245, 245);
+  border-left-color: rgb(245, 245, 245);
+  border-right-color: rgb(245, 245, 245);
+  border-top-color: rgb(245, 245, 245);
   color: var(--text-strong, rgb(245, 245, 245));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  text-decoration: underline;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -3421,6 +3437,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --border-color: #d4d4d4;
   --callout-attention-bg-color: rgb(255, 240, 229);
   --callout-attention-text-color: #f97316;
+  --callout-bug: var(--callout-bug, 233, 49, 71);
   --callout-bug-bg-color: rgb(255, 232, 234);
   --callout-bug-text-color: #ef4444;
   --callout-caution-bg-color: rgb(255, 240, 229);
@@ -3431,13 +3448,17 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-cite-text-color: var(--text-strong, #171717);
   --callout-danger-bg-color: rgb(255, 232, 234);
   --callout-danger-text-color: #ef4444;
+  --callout-default: var(--callout-default, 8, 109, 221);
   --callout-dogs-ear-size: 2em;
   --callout-done-bg-color: rgb(232, 248, 234);
   --callout-done-text-color: #22c55e;
+  --callout-error: var(--callout-error, 233, 49, 71);
   --callout-error-bg-color: rgb(255, 232, 234);
   --callout-error-text-color: #ef4444;
+  --callout-example: var(--callout-example, 120, 82, 238);
   --callout-example-bg-color: rgb(239, 235, 254);
   --callout-example-text-color: #8b5cf6;
+  --callout-fail: var(--callout-fail, 233, 49, 71);
   --callout-fail-bg-color: rgb(255, 232, 234);
   --callout-fail-text-color: #ef4444;
   --callout-failure-bg-color: rgb(255, 232, 234);
@@ -3450,23 +3471,31 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-hint-text-color: #0ea5e9;
   --callout-important-bg-color: rgb(232, 248, 248);
   --callout-important-text-color: #0ea5e9;
+  --callout-info: var(--callout-info, 8, 109, 221);
   --callout-info-bg-color: rgb(228, 238, 253);
   --callout-info-text-color: var(--text-strong, #171717);
   --callout-missing-bg-color: rgb(255, 232, 234);
   --callout-missing-text-color: #ef4444;
   --callout-note--text-color: var(--text-strong, #171717);
   --callout-note-bg-color: rgb(228, 238, 253);
+  --callout-question: var(--callout-question, 236, 117, 0);
   --callout-question-bg-color: rgb(255, 240, 229);
   --callout-question-text-color: #eab308;
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-quote-bg-color: rgb(244, 244, 244);
   --callout-quote-text-color: var(--text-strong, #171717);
   --callout-radius: var(--radius-s, 0.125em);
+  --callout-success: var(--callout-success, 8, 185, 78);
   --callout-success-bg-color: rgb(232, 248, 234);
   --callout-success-text-color: #22c55e;
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
   --callout-tip-bg-color: rgb(232, 248, 248);
   --callout-tip-text-color: #0ea5e9;
+  --callout-todo: var(--callout-todo, 8, 109, 221);
   --callout-todo-bg-color: rgb(228, 238, 253);
   --callout-todo-text-color: #0ea5e9;
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --callout-warning-bg-color: rgb(255, 240, 229);
   --callout-warning-text-color: #f97316;
   --canvas-background: var(--background-primary, #fafafa);
@@ -3797,7 +3826,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --titlebar-text-color-focused: var(--text-normal, #404040);
   --vault-profile-color: var(--text-normal, #404040);
   --vault-profile-color-hover: var(--vault-profile-color, #404040);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
 }
 
 html[saved-theme="light"] body {
@@ -3831,289 +3860,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(212, 212, 212);
   color: rgb(64, 64, 64);
 }`,
-    typography: `html[saved-theme="light"] body .markdown-rendered > h1 {
-  --background-modifier-active-hover: #d4d4d4;
-  --background-modifier-border: #e0e0e0;
-  --background-modifier-border-focus: #d4d4d4;
-  --background-modifier-border-hover: #d4d4d4;
-  --background-modifier-error: #e93147;
-  --background-modifier-error-hover: #e93147;
-  --background-modifier-error-rgb: #ef4444;
-  --background-modifier-form-field: #ffffff;
-  --background-modifier-form-field-hover: #ffffff;
-  --background-modifier-hover: rgba(0, 0, 0, 0.067);
-  --background-modifier-success: #08b94e;
-  --background-modifier-success-rgb: 8, 185, 78;
-  --background-primary: #fafafa;
-  --background-primary-alt: #e5e5e5;
-  --background-secondary: #f5f5f5;
-  --background-secondary-alt: #d4d4d4;
-  --blockquote-border-color: hsl(0, 0%, 0%);
-  --blur-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
-  --blur-l: blur(16px) saturate(1.5) brightness(1.15);
-  --blur-m: blur(10px) saturate(1.5) brightness(1.15);
-  --blur-s: blur(6px) saturate(1.5) brightness(1.15);
-  --bold-weight: 600;
-  --button-corner-shape: round;
-  --button-radius: 5px;
-  --callout-blend-mode: darken;
-  --callout-bug: 233, 49, 71;
-  --callout-default: 8, 109, 221;
-  --callout-error: 233, 49, 71;
-  --callout-example: 120, 82, 238;
-  --callout-fail: 233, 49, 71;
-  --callout-important: 0, 191, 188;
-  --callout-info: 8, 109, 221;
-  --callout-padding: 12px 12px 12px 24px;
-  --callout-question: 236, 117, 0;
-  --callout-radius: 0.125em;
-  --callout-success: 8, 185, 78;
-  --callout-summary: 0, 191, 188;
-  --callout-tip: 0, 191, 188;
-  --callout-title-weight: 600;
-  --callout-todo: 8, 109, 221;
-  --callout-warning: 236, 117, 0;
-  --canvas-background: #fafafa;
-  --canvas-controls-icon-size: 16px;
-  --canvas-controls-icon-stroke: 2px;
-  --canvas-controls-radius: 0.125em;
-  --canvas-dot-pattern: #e0e0e0;
-  --caret-color: #404040;
-  --checkbox-border-color: #5c5c5c;
-  --checkbox-border-color-hover: #737373;
-  --checkbox-color: #22c55e;
-  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
-  --checkbox-marker-color: #fafafa;
-  --checkbox-radius: 0.125em;
-  --checkbox-size: 16px;
-  --checklist-done-color: #737373;
-  --clickable-icon-radius: 0.125em;
-  --code-background: #e5e5e5;
-  --code-border-color: #e0e0e0;
-  --code-bracket-background: rgba(0, 0, 0, 0.067);
-  --code-comment: #ababab;
-  --code-function: #e0ac00;
-  --code-important: #ec7500;
-  --code-keyword: #d53984;
-  --code-normal: #404040;
-  --code-operator: #e93147;
-  --code-property: #00bfbc;
-  --code-punctuation: #737373;
-  --code-radius: 0.125em;
-  --code-size: 0.875em;
-  --code-string: #08b94e;
-  --code-tag: #e93147;
-  --code-value: #7852ee;
-  --collapse-icon-color: #ababab;
-  --collapse-icon-color-collapsed: hsl(0, 0%, 10%);
-  --color-accent: hsl(0, 0%, 10%);
-  --color-accent-1: hsl(0, 0%, 10%);
-  --color-accent-2: hsl(-3, 0%, 11.5%);
-  --color-accent-hsl: 0, 0%, 10%;
-  --divider-color: #d4d4d4;
-  --divider-color-hover: hsl(0, 0%, 0%);
-  --divider-vertical-height: 100%;
-  --dropdown-background: #ffffff;
-  --dropdown-background-hover: rgb(163 163 163 / 0.2);
-  --dropdown-background-position: right 0.5em top 50%, 0 0;
-  --dropdown-background-size: 1em auto, 100%;
-  --dropdown-padding: 0 1.9em 0 0.8em;
-  --flair-background: #ffffff;
-  --flair-color: #404040;
-  --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
-  --font-mermaid: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
-  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
-  --font-print: '??', '??', '??', 'Arial';
-  --font-text: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-    sans-serif;
-  --font-weight: var(--h1-weight, 700);
-  --graph-line: #d4d4d4;
-  --graph-node: #737373;
-  --graph-node-attachment: #e0ac00;
-  --graph-node-focused: hsl(0, 0%, 10%);
-  --graph-node-tag: #08b94e;
-  --graph-node-unresolved: #ababab;
-  --graph-text: #404040;
-  --h5-line-height: 1.5;
-  --h6-line-height: 1.5;
-  --heading-formatting: #ababab;
-  --heading-spacing: 2.5rem;
-  --hr-color: #e0e0e0;
-  --interactive-accent: hsl(0, 0%, 0%);
-  --interactive-accent-hover: hsl(0, 0%, 5%);
-  --interactive-accent-hsl: 0, 0%, 10%;
-  --interactive-hover: rgb(163 163 163 / 0.2);
-  --interactive-normal: #ffffff;
-  --link-color: hsl(0, 0%, 5%);
-  --link-color-hover: hsl(0, 0%, 5%);
-  --link-external-color: hsl(0, 0%, 5%);
-  --link-external-color-hover: hsl(0, 0%, 5%);
-  --link-unresolved-color: hsla(0, 0%, 10%, 0.9);
-  --link-unresolved-decoration-color: hsla(hsla(0, 0%, 10%, 0.9), 0.3);
-  --link-weight: 400;
-  --list-indent: 2.25em;
-  --menu-background: #f5f5f5;
-  --menu-border-color: #d4d4d4;
-  --menu-border-width: 1px;
-  --menu-corner-shape: round;
-  --menu-padding: 6px;
-  --menu-radius: 8px;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
-  --pdf-background: #fafafa;
-  --pdf-page-background: #fafafa;
-  --pdf-sidebar-background: #fafafa;
-  --popover-font-size: 16px;
-  --raised-background: color-mix(in srgb, #fafafa 65%, transparent) linear-gradient(#fafafa, color-mix(in srgb, #fafafa 65%, transparent));
-  --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
-  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
-  --scrollbar-bg: rgba(0, 0, 0, 0.05);
-  --scrollbar-radius: 12px;
-  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
-  --search-clear-button-color: #737373;
-  --search-icon-color: #737373;
-  --search-result-background: #fafafa;
-  --setting-group-heading-color: #404040;
-  --setting-group-heading-size: 15px;
-  --setting-group-heading-weight: 600;
-  --setting-items-background: #e5e5e5;
-  --setting-items-border-color: #e0e0e0;
-  --setting-items-padding: 20px;
-  --setting-items-radius: 12px;
-  --shiki-active-tab-border-color: #737373;
-  --shiki-code-background: #e5e5e5;
-  --shiki-code-block-border-radius: 0.125em;
-  --shiki-code-block-spacing: 1rem;
-  --shiki-code-comment: #ababab;
-  --shiki-code-function: #08b94e;
-  --shiki-code-important: #ec7500;
-  --shiki-code-keyword: #d53984;
-  --shiki-code-normal: #737373;
-  --shiki-code-property: #00bfbc;
-  --shiki-code-punctuation: #737373;
-  --shiki-code-string: #e0ac00;
-  --shiki-code-value: #7852ee;
-  --shiki-gutter-border-color: #e0e0e0;
-  --shiki-gutter-border-width: 1px;
-  --shiki-gutter-text-color: #ababab;
-  --shiki-gutter-text-color-highlight: #737373;
-  --shiki-highlight-green: rgba(8, 185, 78, 0.5);
-  --shiki-highlight-green-background: rgba(8, 185, 78, 0.1);
-  --shiki-highlight-neutral: #737373;
-  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05);
-  --shiki-highlight-red: rgba(233, 49, 71, 0.5);
-  --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
-  --shiki-terminal-dots-color: #ababab;
-  --shiki-tooltip-background: rgba(0, 0, 0, 0.9);
-  --suggestion-background: #fafafa;
-  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
-  --sync-avatar-color-1: #e93147;
-  --sync-avatar-color-2: #ec7500;
-  --sync-avatar-color-3: #e0ac00;
-  --sync-avatar-color-4: #08b94e;
-  --sync-avatar-color-5: #00bfbc;
-  --sync-avatar-color-6: #086ddd;
-  --sync-avatar-color-7: #7852ee;
-  --sync-avatar-color-8: #d53984;
-  --tab-background-active: #fafafa;
-  --tab-divider-color: #d4d4d4;
-  --tab-font-size: 13px;
-  --tab-outline-color: #d4d4d4;
-  --tab-radius: 0.125em;
-  --tab-stacked-font-size: 13px;
-  --tab-stacked-header-width: 40px;
-  --tab-switcher-background: #f5f5f5;
-  --tab-switcher-menubar-background: linear-gradient(to top, #f5f5f5, transparent);
-  --tab-switcher-preview-radius: 16px;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 10%);
-  --tab-text-color: #ababab;
-  --tab-text-color-active: #737373;
-  --tab-text-color-focused: #737373;
-  --tab-text-color-focused-active: #737373;
-  --tab-text-color-focused-active-current: #404040;
-  --tab-text-color-focused-highlighted: hsl(0, 0%, 10%);
-  --table-add-button-border-color: #e0e0e0;
-  --table-add-button-border-width: 1px;
-  --table-border-color: #e0e0e0;
-  --table-column-alt-background: transparent;
-  --table-column-first-border-width: 1px;
-  --table-column-last-border-width: 1px;
-  --table-drag-handle-background-active: hsl(0, 0%, 0%);
-  --table-drag-handle-color: #ababab;
-  --table-drag-handle-color-active: white;
-  --table-header-background: transparent;
-  --table-header-border-color: #e0e0e0;
-  --table-header-border-width: 1px;
-  --table-header-color: #404040;
-  --table-header-size: 16px;
-  --table-header-weight: 600;
-  --table-line-height: 1.3;
-  --table-row-alt-background: transparent;
-  --table-row-alt-background-hover: transparent;
-  --table-row-background-hover: transparent;
-  --table-row-last-border-width: 1px;
-  --table-selection: hsla(0, 0%, 10%, 0.1);
-  --table-selection-blend-mode: darken;
-  --table-selection-border-color: hsl(0, 0%, 0%);
-  --table-text-size: 16px;
-  --tag-background: hsla(0, 0%, 10%, 0.1);
-  --tag-background-hover: hsla(0, 0%, 10%, 0.2);
-  --tag-border-color: hsla(0, 0%, 10%, 0.15);
-  --tag-border-color-hover: hsla(0, 0%, 10%, 0.15);
-  --tag-color: hsl(0, 0%, 10%);
-  --tag-color-hover: hsl(0, 0%, 10%);
-  --tag-size: 0.875em;
-  --text-accent: hsl(0, 0%, 10%);
-  --text-accent-hover: #171717;
-  --text-error: #e93147;
-  --text-faint: #ababab;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-muted: #737373;
-  --text-normal: #404040;
-  --text-selection: rgb(163 163 163 / 0.2);
-  --text-success: #08b94e;
-  --text-warning: #ec7500;
-  --touch-radius-l: 52px;
-  --touch-radius-m: 44px;
-  --touch-radius-s: 40px;
-  --touch-radius-xl: 60px;
-  --touch-radius-xs: 30px;
-  --touch-radius-xxs: 24px;
-  --traffic-lights-offset-x: 40px;
-  --traffic-lights-offset-y: 40px;
-  background-color: var(--text-normal, rgba(0, 0, 0, 0));
-  border-bottom-color: rgb(115, 115, 115);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-width: 0px;
-  border-left-color: rgb(115, 115, 115);
-  border-left-width: 0px;
-  border-right-color: rgb(115, 115, 115);
-  border-right-width: 0px;
-  border-top-color: rgb(115, 115, 115);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-width: 0px;
-  color: var(--text-strong, rgb(115, 115, 115));
-  content: "#1";
-  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
-  font-size: var(--font-h1-size, 25.2px);
-  font-weight: var(--font-h1-weight, 100);
-  letter-spacing: var(--h1-letter-spacing, -0.54px);
-  line-height: var(--h1-line-height, 37.8px);
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 6.3px;
-  margin-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-}
-
-html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: var(--font-strong-color, rgb(23, 23, 23));
   font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-weight: var(--font-strong-weight, 900);
@@ -4134,6 +3881,16 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--font-em-color, rgb(64, 64, 64));
+  font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-weight: var(--font-em-weight, 400);
+  outline: rgb(64, 64, 64) none 0px;
+  text-decoration: 1px rgb(64, 64, 64);
+  text-decoration-color: rgb(64, 64, 64);
+  text-decoration-thickness: 1px;
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--font-em-color, rgb(64, 64, 64));
   font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-weight: var(--font-em-weight, 400);
@@ -4185,26 +3942,6 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked 
   border-color: rgba(0, 0, 0, 0);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
-  color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="."] {
-  color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=":"] {
-  color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=";"] {
-  color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="_"] {
-  color: rgb(64, 64, 64);
-}
-
 html[saved-theme="light"] body p {
   color: var(--text-muted, rgb(115, 115, 115));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
@@ -4242,19 +3979,31 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-thickness: var(--link-decoration-thickness, 1px);
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: rgb(64, 64, 64);
+  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: rgb(64, 64, 64);
+  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(64, 64, 64);
+  margin-left: 26.6953px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(64, 64, 64);
+  margin-left: 26.6953px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -4270,6 +4019,7 @@ html[saved-theme="light"] body ul.overflow {
 
 html[saved-theme="light"] body blockquote {
   background-color: var(--quote-bg-color, rgba(10, 10, 10, 0.05));
+  color: var(--text-muted, rgb(115, 115, 115));
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -4286,7 +4036,6 @@ html[saved-theme="light"] body table {
   border-top-color: rgba(0, 0, 0, 0);
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  width: 662px;
 }
 
 html[saved-theme="light"] body td {
@@ -4407,6 +4156,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(115, 115, 115);
   border-right-color: rgb(115, 115, 115);
   border-top-color: rgb(115, 115, 115);
+  color: var(--text-muted, rgb(115, 115, 115));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -4419,6 +4169,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
+  color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -4426,6 +4177,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
+  color: rgb(64, 64, 64);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
@@ -4471,6 +4223,14 @@ html[saved-theme="light"] body li.task-list-item[data-task="+"] {
   color: rgb(64, 64, 64);
 }
 
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
+  color: rgb(64, 64, 64);
+}
+
 html[saved-theme="light"] body li.task-list-item[data-task="0"] {
   color: rgb(64, 64, 64);
 }
@@ -4508,6 +4268,14 @@ html[saved-theme="light"] body li.task-list-item[data-task="8"] {
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
   color: rgb(64, 64, 64);
 }
 
@@ -4617,6 +4385,10 @@ html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
   color: rgb(64, 64, 64);
 }
 
@@ -6246,7 +6018,9 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: var(--text-strong, rgb(23, 23, 23));
   font-family: var(--font-monospace, iawriter-mono, Nitti, Menlo, Courier, monospace);
+  font-size: var(--font-tag-size, 14px);
   font-weight: var(--font-tag-weight, 400);
 }
 
@@ -6255,8 +6029,18 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: var(--text-strong, rgb(64, 64, 64));
   font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h1-size, 36px);
+  font-weight: var(--font-h1-weight, 400);
+  letter-spacing: var(--h1-letter-spacing, -0.54px);
+  line-height: var(--h1-line-height, 54px);
+  margin-bottom: 40px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -6290,14 +6074,58 @@ html[saved-theme="light"] body h1::after {
   width: 0px;
 }
 
+html[saved-theme="light"] body h1::before {
+  --font-weight: var(--h1-weight, 700);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(115, 115, 115);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
+  border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
+  border-top-color: rgb(115, 115, 115);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--text-strong, rgb(115, 115, 115));
+  content: "#1";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 6.3px;
+  margin-top: 0px;
+  width: 31.5px;
+}
+
 html[saved-theme="light"] body h2 {
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: var(--h2-color, rgb(64, 64, 64));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h2-size, 30px);
+  font-weight: var(--font-h2-weight, 400);
+  letter-spacing: var(--h2-letter-spacing, -0.33px);
+  line-height: var(--h2-line-height, 45px);
+  margin-bottom: 40px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(23, 23, 23);
+  border-left-color: rgb(23, 23, 23);
+  border-right-color: rgb(23, 23, 23);
+  border-top-color: rgb(23, 23, 23);
   color: var(--text-strong, rgb(23, 23, 23));
   font-family: var(--inline-title-font, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--inline-title-size, 32px);
+  font-weight: var(--inline-title-weight, 900);
+  letter-spacing: -0.48px;
+  line-height: var(--inline-title-line-height, 38.4px);
+  margin-bottom: 16px;
 }
 
 html[saved-theme="light"] body h2::after {
@@ -6325,9 +6153,45 @@ html[saved-theme="light"] body h2::after {
   width: 0px;
 }
 
+html[saved-theme="light"] body h2::before {
+  --font-weight: var(--h2-weight, 680);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(115, 115, 115);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
+  border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
+  border-top-color: rgb(115, 115, 115);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h2-color, rgb(115, 115, 115));
+  content: "#2";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 5.25px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 26.25px;
+}
+
 html[saved-theme="light"] body h3 {
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: var(--h3-color, rgb(64, 64, 64));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h3-size, 24px);
+  font-weight: var(--font-h3-weight, 400);
+  letter-spacing: var(--h3-letter-spacing, -0.192px);
+  line-height: var(--h3-line-height, 36px);
+  margin-bottom: 40px;
+  margin-top: var(--heading-spacing, 40px);
 }
 
 html[saved-theme="light"] body h3::after {
@@ -6355,9 +6219,45 @@ html[saved-theme="light"] body h3::after {
   width: 0px;
 }
 
+html[saved-theme="light"] body h3::before {
+  --font-weight: var(--h3-weight, 660);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(115, 115, 115);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
+  border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
+  border-top-color: rgb(115, 115, 115);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h3-color, rgb(115, 115, 115));
+  content: "#3";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 4.2px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 21px;
+}
+
 html[saved-theme="light"] body h4 {
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: var(--h4-color, rgb(64, 64, 64));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h4-size, 20px);
+  font-weight: var(--font-h4-weight, 400);
+  letter-spacing: var(--h4-letter-spacing, -0.1px);
+  line-height: var(--h4-line-height, 30px);
+  margin-bottom: 40px;
+  margin-top: var(--heading-spacing, 40px);
 }
 
 html[saved-theme="light"] body h4::after {
@@ -6385,9 +6285,45 @@ html[saved-theme="light"] body h4::after {
   width: 0px;
 }
 
+html[saved-theme="light"] body h4::before {
+  --font-weight: var(--h4-weight, 640);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(115, 115, 115);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
+  border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
+  border-top-color: rgb(115, 115, 115);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h4-color, rgb(115, 115, 115));
+  content: "#4";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 3.5px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 17.5px;
+}
+
 html[saved-theme="light"] body h5 {
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: var(--h5-color, rgb(64, 64, 64));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h5-size, 18px);
+  font-weight: var(--font-h5-weight, 400);
+  letter-spacing: var(--h5-letter-spacing, -0.036px);
+  line-height: var(--h5-line-height, 27px);
+  margin-bottom: 40px;
+  margin-top: var(--heading-spacing, 40px);
 }
 
 html[saved-theme="light"] body h5::after {
@@ -6415,9 +6351,42 @@ html[saved-theme="light"] body h5::after {
   width: 0px;
 }
 
+html[saved-theme="light"] body h5::before {
+  --font-weight: var(--h5-weight, 620);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: var(--text-normal, rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(115, 115, 115);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
+  border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
+  border-top-color: rgb(115, 115, 115);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h5-color, rgb(115, 115, 115));
+  content: "#5";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 3.15px;
+  margin-top: var(--heading-spacing, 0px);
+  width: 15.75px;
+}
+
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   color: var(--h6-color, rgb(64, 64, 64));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+  font-size: var(--font-h6-size, 16px);
+  font-weight: var(--font-h6-weight, 400);
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 html[saved-theme="light"] body h6::after {
@@ -6443,6 +6412,31 @@ html[saved-theme="light"] body h6::after {
   margin-right: 0px;
   margin-top: 0px;
   width: 0px;
+}
+
+html[saved-theme="light"] body h6::before {
+  --font-weight: var(--h6-weight, 600);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(115, 115, 115);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
+  border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
+  border-top-color: rgb(115, 115, 115);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: var(--h6-color, rgb(115, 115, 115));
+  content: "#6";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 2.8px;
+  margin-top: 0px;
+  width: 14px;
 }
 
 html[saved-theme="light"] body hr {
@@ -6475,6 +6469,18 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   color: var(--text-normal, rgb(64, 64, 64));
   font-family: var(--font-file-tree, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-weight: var(--font-file-tree-weight, 400);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(64, 64, 64);
@@ -6621,6 +6627,19 @@ html[saved-theme="light"] body .bases-table thead th {
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(115, 115, 115);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-left-color: rgb(115, 115, 115);
+  border-right-color: rgb(115, 115, 115);
+  border-top-color: rgb(115, 115, 115);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  color: rgb(115, 115, 115);
+  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgb(115, 115, 115);
@@ -6628,6 +6647,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(115, 115, 115);
   color: rgb(115, 115, 115);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(115, 115, 115);
+  font-family: var(--metadata-label-font, "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(115, 115, 115);
+  font-family: var(--metadata-input-font, "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
 }
 
 html[saved-theme="light"] body .note-properties-key {
@@ -6693,8 +6722,13 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(23, 23, 23);
+  border-left-color: rgb(23, 23, 23);
+  border-right-color: rgb(23, 23, 23);
+  border-top-color: rgb(23, 23, 23);
   color: var(--text-strong, rgb(23, 23, 23));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  text-decoration: underline;
 }
 
 html[saved-theme="light"] body abbr {

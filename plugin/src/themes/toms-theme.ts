@@ -34,6 +34,19 @@ export const theme: ThemeData = {
   --bases-table-header-color: var(--text-muted, #44cf6e);
   --bases-table-summary-background: var(--background-primary, black);
   --blockquote-border-color: var(--interactive-accent, #44cf6e);
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, black);
   --canvas-card-label-color: var(--text-faint, #306850);
   --caret-color: var(--text-normal, #44cf6e);
@@ -200,7 +213,9 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: var(--text-normal, #44cf6e);
   --vault-profile-color: var(--text-normal, #44cf6e);
   --vault-profile-color-hover: var(--vault-profile-color, #44cf6e);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -249,6 +264,13 @@ html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"
 }
 
 html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: var(--italic-color, rgb(68, 207, 110));
+  font-family: "??", "??", Courier, monospace;
+  outline: rgb(68, 207, 110) none 0px;
+  text-decoration-color: rgb(68, 207, 110);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
   color: var(--italic-color, rgb(68, 207, 110));
   font-family: "??", "??", Courier, monospace;
   outline: rgb(68, 207, 110) none 0px;
@@ -312,19 +334,31 @@ html[saved-theme="dark"] body a.internal-link.broken {
   outline: rgb(68, 207, 110) none 0px;
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(68, 207, 110);
+  border-left-color: rgb(68, 207, 110);
+  border-right-color: rgb(68, 207, 110);
+  border-top-color: rgb(68, 207, 110);
   color: rgb(68, 207, 110);
+  font-family: "??", "??", Courier, monospace;
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(68, 207, 110);
+  border-left-color: rgb(68, 207, 110);
+  border-right-color: rgb(68, 207, 110);
+  border-top-color: rgb(68, 207, 110);
   color: rgb(68, 207, 110);
+  font-family: "??", "??", Courier, monospace;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(68, 207, 110);
+  margin-left: 28.8047px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(68, 207, 110);
+  margin-left: 28.8047px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -338,6 +372,7 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(68, 207, 110));
   font-family: "??", "??", Courier, monospace;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
@@ -350,7 +385,6 @@ html[saved-theme="dark"] body blockquote {
 html[saved-theme="dark"] body table {
   color: rgb(68, 207, 110);
   font-family: "??", "??", Courier, monospace;
-  width: 217.438px;
 }
 
 html[saved-theme="dark"] body td {
@@ -428,6 +462,7 @@ html[saved-theme="dark"] body video {
   border-left-color: rgb(68, 207, 110);
   border-right-color: rgb(68, 207, 110);
   border-top-color: rgb(68, 207, 110);
+  color: var(--text-muted, rgb(68, 207, 110));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -440,6 +475,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(68, 207, 110);
   border-right-color: rgb(68, 207, 110);
   border-top-color: rgb(68, 207, 110);
+  color: rgb(68, 207, 110);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -447,6 +483,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(68, 207, 110);
   border-right-color: rgb(68, 207, 110);
   border-top-color: rgb(68, 207, 110);
+  color: rgb(68, 207, 110);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "??", "??", Courier, monospace;
@@ -1306,6 +1343,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   --pill-color-hover: var(--tag-color-hover, #44cf6e);
   --pill-color-remove: var(--tag-color, #44cf6e);
   --pill-color-remove-hover: var(--tag-color-hover, #44cf6e);
+  color: var(--pill-color, rgb(68, 207, 110));
   font-family: "??", "??", "??", Courier, monospace;
 }
 
@@ -1314,6 +1352,10 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="dark"] body h1 {
+  border-bottom-color: rgb(68, 207, 110);
+  border-left-color: rgb(68, 207, 110);
+  border-right-color: rgb(68, 207, 110);
+  border-top-color: rgb(68, 207, 110);
   color: var(--h1-color, rgb(68, 207, 110));
   font-family: var(--h1-font, "??", "??", Courier, monospace);
 }
@@ -1323,31 +1365,55 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body h2 {
+  border-bottom-color: rgb(68, 207, 110);
+  border-left-color: rgb(68, 207, 110);
+  border-right-color: rgb(68, 207, 110);
+  border-top-color: rgb(68, 207, 110);
   color: var(--h2-color, rgb(68, 207, 110));
   font-family: var(--h2-font, "??", "??", Courier, monospace);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(68, 207, 110);
+  border-left-color: rgb(68, 207, 110);
+  border-right-color: rgb(68, 207, 110);
+  border-top-color: rgb(68, 207, 110);
   color: var(--inline-title-color, rgb(68, 207, 110));
   font-family: var(--inline-title-font, "??", "??", Courier, monospace);
 }
 
 html[saved-theme="dark"] body h3 {
+  border-bottom-color: rgb(68, 207, 110);
+  border-left-color: rgb(68, 207, 110);
+  border-right-color: rgb(68, 207, 110);
+  border-top-color: rgb(68, 207, 110);
   color: var(--h3-color, rgb(68, 207, 110));
   font-family: var(--h3-font, "??", "??", Courier, monospace);
 }
 
 html[saved-theme="dark"] body h4 {
+  border-bottom-color: rgb(68, 207, 110);
+  border-left-color: rgb(68, 207, 110);
+  border-right-color: rgb(68, 207, 110);
+  border-top-color: rgb(68, 207, 110);
   color: var(--h4-color, rgb(68, 207, 110));
   font-family: var(--h4-font, "??", "??", Courier, monospace);
 }
 
 html[saved-theme="dark"] body h5 {
+  border-bottom-color: rgb(68, 207, 110);
+  border-left-color: rgb(68, 207, 110);
+  border-right-color: rgb(68, 207, 110);
+  border-top-color: rgb(68, 207, 110);
   color: var(--h5-color, rgb(68, 207, 110));
   font-family: var(--h5-font, "??", "??", Courier, monospace);
 }
 
 html[saved-theme="dark"] body h6 {
+  border-bottom-color: rgb(68, 207, 110);
+  border-left-color: rgb(68, 207, 110);
+  border-right-color: rgb(68, 207, 110);
+  border-top-color: rgb(68, 207, 110);
   color: var(--h6-color, rgb(68, 207, 110));
   font-family: var(--h6-font, "??", "??", Courier, monospace);
 }
@@ -1368,6 +1434,22 @@ html[saved-theme="dark"] body hr {
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(68, 207, 110));
   font-family: "??", "??", "??", Courier, monospace;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(68, 207, 110);
@@ -1492,6 +1574,15 @@ html[saved-theme="dark"] body .canvas-sidebar {
   font-family: "??", "??", Courier, monospace;
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(68, 207, 110);
+  border-left-color: rgb(68, 207, 110);
+  border-right-color: rgb(68, 207, 110);
+  border-top-color: rgb(68, 207, 110);
+  color: rgb(68, 207, 110);
+  font-family: "??", "??", Courier, monospace;
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(68, 207, 110);
   border-left-color: rgb(68, 207, 110);
@@ -1499,6 +1590,16 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(68, 207, 110);
   color: rgb(68, 207, 110);
   font-family: "??", "??", Courier, monospace;
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(68, 207, 110);
+  font-family: var(--metadata-label-font, "??", "??", "??", Courier, monospace);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(68, 207, 110);
+  font-family: var(--metadata-input-font, "??", "??", "??", Courier, monospace);
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -1561,6 +1662,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(68, 207, 110);
+  border-left-color: rgb(68, 207, 110);
+  border-right-color: rgb(68, 207, 110);
+  border-top-color: rgb(68, 207, 110);
   color: var(--text-normal, rgb(68, 207, 110));
   font-family: "??", "??", "??", Courier, monospace;
 }
@@ -1645,6 +1750,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --bases-table-header-color: var(--text-muted, #08b94e);
   --bases-table-summary-background: var(--background-primary, #e0f8cf);
   --blockquote-border-color: var(--interactive-accent, #08b94e);
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #e0f8cf);
   --canvas-card-label-color: var(--text-faint, #306850);
   --caret-color: var(--text-normal, #071821);
@@ -1811,7 +1929,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --titlebar-text-color-focused: var(--text-normal, #071821);
   --vault-profile-color: var(--text-normal, #071821);
   --vault-profile-color-hover: var(--vault-profile-color, #071821);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -1860,6 +1980,13 @@ html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="ligh
 }
 
 html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: var(--italic-color, rgb(7, 24, 33));
+  font-family: "??", "??", Courier, monospace;
+  outline: rgb(7, 24, 33) none 0px;
+  text-decoration-color: rgb(7, 24, 33);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
   color: var(--italic-color, rgb(7, 24, 33));
   font-family: "??", "??", Courier, monospace;
   outline: rgb(7, 24, 33) none 0px;
@@ -1923,19 +2050,31 @@ html[saved-theme="light"] body a.internal-link.broken {
   outline: rgb(8, 185, 78) none 0px;
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(7, 24, 33);
+  border-left-color: rgb(7, 24, 33);
+  border-right-color: rgb(7, 24, 33);
+  border-top-color: rgb(7, 24, 33);
   color: rgb(7, 24, 33);
+  font-family: "??", "??", Courier, monospace;
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(7, 24, 33);
+  border-left-color: rgb(7, 24, 33);
+  border-right-color: rgb(7, 24, 33);
+  border-top-color: rgb(7, 24, 33);
   color: rgb(7, 24, 33);
+  font-family: "??", "??", Courier, monospace;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(7, 24, 33);
+  margin-left: 28.8047px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(7, 24, 33);
+  margin-left: 28.8047px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -1949,6 +2088,7 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(7, 24, 33));
   font-family: "??", "??", Courier, monospace;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
@@ -1961,7 +2101,6 @@ html[saved-theme="light"] body blockquote {
 html[saved-theme="light"] body table {
   color: rgb(7, 24, 33);
   font-family: "??", "??", Courier, monospace;
-  width: 217.438px;
 }
 
 html[saved-theme="light"] body td {
@@ -2039,6 +2178,7 @@ html[saved-theme="light"] body video {
   border-left-color: rgb(8, 185, 78);
   border-right-color: rgb(8, 185, 78);
   border-top-color: rgb(8, 185, 78);
+  color: var(--text-muted, rgb(8, 185, 78));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2051,6 +2191,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(8, 185, 78);
   border-right-color: rgb(7, 24, 33);
   border-top-color: rgb(7, 24, 33);
+  color: rgb(7, 24, 33);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2058,6 +2199,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(7, 24, 33);
   border-right-color: rgb(7, 24, 33);
   border-top-color: rgb(7, 24, 33);
+  color: rgb(7, 24, 33);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", "??", Courier, monospace;
@@ -2917,6 +3059,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-hover: var(--tag-color-hover, #08b94e);
   --pill-color-remove: var(--tag-color, #08b94e);
   --pill-color-remove-hover: var(--tag-color-hover, #08b94e);
+  color: var(--pill-color, rgb(8, 185, 78));
   font-family: "??", "??", "??", Courier, monospace;
 }
 
@@ -2925,6 +3068,10 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 }
 
 html[saved-theme="light"] body h1 {
+  border-bottom-color: rgb(7, 24, 33);
+  border-left-color: rgb(7, 24, 33);
+  border-right-color: rgb(7, 24, 33);
+  border-top-color: rgb(7, 24, 33);
   color: var(--h1-color, rgb(7, 24, 33));
   font-family: var(--h1-font, "??", "??", Courier, monospace);
 }
@@ -2934,31 +3081,55 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body h2 {
+  border-bottom-color: rgb(7, 24, 33);
+  border-left-color: rgb(7, 24, 33);
+  border-right-color: rgb(7, 24, 33);
+  border-top-color: rgb(7, 24, 33);
   color: var(--h2-color, rgb(7, 24, 33));
   font-family: var(--h2-font, "??", "??", Courier, monospace);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(7, 24, 33);
+  border-left-color: rgb(7, 24, 33);
+  border-right-color: rgb(7, 24, 33);
+  border-top-color: rgb(7, 24, 33);
   color: var(--inline-title-color, rgb(7, 24, 33));
   font-family: var(--inline-title-font, "??", "??", Courier, monospace);
 }
 
 html[saved-theme="light"] body h3 {
+  border-bottom-color: rgb(7, 24, 33);
+  border-left-color: rgb(7, 24, 33);
+  border-right-color: rgb(7, 24, 33);
+  border-top-color: rgb(7, 24, 33);
   color: var(--h3-color, rgb(7, 24, 33));
   font-family: var(--h3-font, "??", "??", Courier, monospace);
 }
 
 html[saved-theme="light"] body h4 {
+  border-bottom-color: rgb(7, 24, 33);
+  border-left-color: rgb(7, 24, 33);
+  border-right-color: rgb(7, 24, 33);
+  border-top-color: rgb(7, 24, 33);
   color: var(--h4-color, rgb(7, 24, 33));
   font-family: var(--h4-font, "??", "??", Courier, monospace);
 }
 
 html[saved-theme="light"] body h5 {
+  border-bottom-color: rgb(7, 24, 33);
+  border-left-color: rgb(7, 24, 33);
+  border-right-color: rgb(7, 24, 33);
+  border-top-color: rgb(7, 24, 33);
   color: var(--h5-color, rgb(7, 24, 33));
   font-family: var(--h5-font, "??", "??", Courier, monospace);
 }
 
 html[saved-theme="light"] body h6 {
+  border-bottom-color: rgb(7, 24, 33);
+  border-left-color: rgb(7, 24, 33);
+  border-right-color: rgb(7, 24, 33);
+  border-top-color: rgb(7, 24, 33);
   color: var(--h6-color, rgb(7, 24, 33));
   font-family: var(--h6-font, "??", "??", Courier, monospace);
 }
@@ -2979,6 +3150,22 @@ html[saved-theme="light"] body hr {
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(8, 185, 78));
   font-family: "??", "??", "??", Courier, monospace;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(7, 24, 33);
@@ -3103,6 +3290,15 @@ html[saved-theme="light"] body .canvas-sidebar {
   font-family: "??", "??", Courier, monospace;
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(8, 185, 78);
+  border-left-color: rgb(8, 185, 78);
+  border-right-color: rgb(8, 185, 78);
+  border-top-color: rgb(8, 185, 78);
+  color: rgb(8, 185, 78);
+  font-family: "??", "??", Courier, monospace;
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(8, 185, 78);
   border-left-color: rgb(8, 185, 78);
@@ -3110,6 +3306,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(8, 185, 78);
   color: rgb(8, 185, 78);
   font-family: "??", "??", Courier, monospace;
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(8, 185, 78);
+  font-family: var(--metadata-label-font, "??", "??", "??", Courier, monospace);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(8, 185, 78);
+  font-family: var(--metadata-input-font, "??", "??", "??", Courier, monospace);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -3172,6 +3378,10 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(7, 24, 33);
+  border-left-color: rgb(7, 24, 33);
+  border-right-color: rgb(7, 24, 33);
+  border-top-color: rgb(7, 24, 33);
   color: var(--text-normal, rgb(7, 24, 33));
   font-family: "??", "??", "??", Courier, monospace;
 }

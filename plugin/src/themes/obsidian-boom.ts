@@ -6,6 +6,19 @@ export const theme: ThemeData = {
   light: {
     base: `:root:root {
   --brackets-color: #a7b6c2;
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --code-font-family: 'Hack';
   --link-color: var(--text-accent, #106ba3);
   --side-dock-active: #202b33;
@@ -35,6 +48,12 @@ html body .markdown-rendered p > em, html em {
 html body .markdown-rendered p > i, html i {
   color: var(--italic-color, rgb(32, 43, 51));
   font-weight: 500;
+  outline: rgb(32, 43, 51) none 0px;
+  text-decoration-color: rgb(32, 43, 51);
+}
+
+html body .markdown-rendered p > strong > em, html strong > em {
+  color: var(--italic-color, rgb(32, 43, 51));
   outline: rgb(32, 43, 51) none 0px;
   text-decoration-color: rgb(32, 43, 51);
 }
@@ -94,23 +113,38 @@ html body li.task-list-item[data-task="_"] {
   color: rgb(32, 43, 51);
 }`,
     lists: `html body dd {
+  border-bottom-color: rgb(32, 43, 51);
+  border-left-color: rgb(32, 43, 51);
+  border-right-color: rgb(32, 43, 51);
+  border-top-color: rgb(32, 43, 51);
   color: rgb(32, 43, 51);
 }
 
 html body dt {
+  border-bottom-color: rgb(32, 43, 51);
+  border-left-color: rgb(32, 43, 51);
+  border-right-color: rgb(32, 43, 51);
+  border-top-color: rgb(32, 43, 51);
   color: rgb(32, 43, 51);
   font-weight: 500;
 }
 
 html body ol > li {
   color: rgb(32, 43, 51);
+  margin-bottom: 5px;
 }
 
 html body ul > li {
   color: rgb(32, 43, 51);
+  margin-bottom: 5px;
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--link-color, rgb(16, 107, 163));
+}
+
+html body blockquote {
+  color: var(--blockquote-color, rgb(32, 43, 51));
+  font-weight: 500;
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(32, 43, 51);
@@ -175,6 +209,7 @@ html body .transclude {
   border-bottom-color: rgb(32, 43, 51);
   border-right-color: rgb(32, 43, 51);
   border-top-color: rgb(32, 43, 51);
+  color: rgb(32, 43, 51);
 }`,
     checkboxes: `html body html {
   font-size: 14px;
@@ -978,7 +1013,12 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
 }
 
 html body h1 {
+  border-bottom-color: rgb(32, 43, 51);
+  border-left-color: rgb(32, 43, 51);
+  border-right-color: rgb(32, 43, 51);
+  border-top-color: rgb(32, 43, 51);
   color: var(--h1-color, rgb(32, 43, 51));
+  margin-bottom: 14px;
 }
 
 html body h1.article-title {
@@ -986,27 +1026,67 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(32, 43, 51);
+  border-left-color: rgb(32, 43, 51);
+  border-right-color: rgb(32, 43, 51);
+  border-top-color: rgb(32, 43, 51);
   color: var(--h2-color, rgb(32, 43, 51));
+  margin-bottom: 14px;
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(32, 43, 51);
+  border-left-color: rgb(32, 43, 51);
+  border-right-color: rgb(32, 43, 51);
+  border-top-color: rgb(32, 43, 51);
   color: var(--inline-title-color, rgb(32, 43, 51));
 }
 
 html body h3 {
+  border-bottom-color: rgb(32, 43, 51);
+  border-left-color: rgb(32, 43, 51);
+  border-right-color: rgb(32, 43, 51);
+  border-top-color: rgb(32, 43, 51);
   color: var(--h3-color, rgb(32, 43, 51));
+  margin-bottom: 14px;
+  margin-top: var(--heading-spacing, 14px);
 }
 
 html body h4 {
+  border-bottom-color: rgb(32, 43, 51);
+  border-left-color: rgb(32, 43, 51);
+  border-right-color: rgb(32, 43, 51);
+  border-top-color: rgb(32, 43, 51);
   color: var(--h4-color, rgb(32, 43, 51));
+  margin-bottom: 14px;
+  margin-top: var(--heading-spacing, 14px);
 }
 
 html body h5 {
+  border-bottom-color: rgb(32, 43, 51);
+  border-left-color: rgb(32, 43, 51);
+  border-right-color: rgb(32, 43, 51);
+  border-top-color: rgb(32, 43, 51);
   color: var(--h5-color, rgb(32, 43, 51));
+  font-size: var(--h5-size, 14px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h5-letter-spacing, -0.028px);
+  line-height: var(--h5-line-height, 21px);
+  margin-bottom: 14px;
+  margin-top: var(--heading-spacing, 14px);
 }
 
 html body h6 {
+  border-bottom-color: rgb(32, 43, 51);
+  border-left-color: rgb(32, 43, 51);
+  border-right-color: rgb(32, 43, 51);
+  border-top-color: rgb(32, 43, 51);
   color: var(--h6-color, rgb(32, 43, 51));
+  font-size: var(--h6-size, 14px);
+  font-weight: var(--font-weight, 500);
+  line-height: var(--h6-line-height, 21px);
+  margin-bottom: 14px;
+  margin-top: 14px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
@@ -1026,6 +1106,9 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
 
 html body li.depth-0 {
   font-weight: var(--nav-item-weight, 700);
+}`,
+    footer: `html body footer ul li a {
+  font-weight: 500;
 }`,
     recentNotes: `html body .recent-notes > h3 {
   font-weight: 500;
@@ -1052,6 +1135,10 @@ html body li.section-li > .section > .desc > h3 > a {
   margin-bottom: 28px;
 }
 
+html body .metadata-property-key {
+  font-weight: 500;
+}
+
 html body .note-properties-key {
   font-weight: 500;
 }`,
@@ -1061,6 +1148,12 @@ html body .note-properties-key {
   border-right-color: rgb(32, 43, 51);
   border-top-color: rgb(32, 43, 51);
   color: rgb(32, 43, 51);
+}
+
+html body .page-header h2.page-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 21px;
 }
 
 html body abbr {

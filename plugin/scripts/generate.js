@@ -647,6 +647,36 @@ function buildCalloutIconCSS(data, warnings, baseSelector, htmlSelector) {
   return lines.join("\n\n");
 }
 
+function buildCalloutBridgeVars(data) {
+  const mapping = {
+    note: "--callout-default",
+    abstract: "--callout-summary",
+    info: "--callout-info",
+    todo: "--callout-todo",
+    tip: "--callout-tip",
+    success: "--callout-success",
+    question: "--callout-question",
+    warning: "--callout-warning",
+    failure: "--callout-fail",
+    danger: "--callout-error",
+    bug: "--callout-bug",
+    example: "--callout-example",
+    quote: "--callout-quote",
+  };
+  const bridgeVars = {};
+  for (const [selector, props] of Object.entries(data)) {
+    if (!selector.includes("[data-callout=")) continue;
+    const typeMatch = selector.match(/data-callout="([^"]+)"/);
+    if (!typeMatch) continue;
+    const targetVar = mapping[typeMatch[1]];
+    if (!targetVar) continue;
+    const value = props?.["--callout-color"];
+    if (!value || value === "inherit") continue;
+    bridgeVars[targetVar] = normalizeSvgDataUriValue(value);
+  }
+  return bridgeVars;
+}
+
 function buildCheckboxIconCSS(data, baseSelector, htmlSelector) {
   const escapeAttrValue = (value) =>
     value.replace(/\\/g, "\\\\").replace(/"/g, '\\"');
@@ -793,6 +823,13 @@ function buildModeCSS(
       baseVars[key] = sanitizeFontValue(baseVars[key]);
       // Remove the entry entirely if sanitization left it empty
       if (!baseVars[key]) delete baseVars[key];
+    }
+  }
+
+  const calloutBridgeVars = buildCalloutBridgeVars(data);
+  for (const [key, value] of Object.entries(calloutBridgeVars)) {
+    if (!baseVars[key]) {
+      baseVars[key] = value;
     }
   }
 
@@ -977,7 +1014,23 @@ function buildModeCSS(
     if (aspect === "base") {
       const varKeys = Object.keys(baseVars).sort();
       const varLines = varKeys.map((key) => `  ${key}: ${baseVars[key]};`);
-      varLines.push("  --quartz-icon-color: currentColor;");
+      if (baseVars["--icon-color"]) {
+        varLines.push(
+          "  --quartz-icon-color: var(--icon-color, currentColor);",
+        );
+      } else {
+        varLines.push("  --quartz-icon-color: currentColor;");
+      }
+      if (baseVars["--nav-collapse-icon-color"]) {
+        varLines.push(
+          "  --collapse-icon-color: var(--nav-collapse-icon-color);",
+        );
+      }
+      if (baseVars["--nav-collapse-icon-color-collapsed"]) {
+        varLines.push(
+          "  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);",
+        );
+      }
       cssParts.push(`${rootSelector} {\n${varLines.join("\n")}\n}`);
       cssParts.push(
         `${htmlSelector} body {\n  background-color: var(--background-primary);\n  color: var(--text-normal);\n}`,
@@ -1014,6 +1067,55 @@ function buildModeCSS(
     const css = cssParts.join("\n\n").trim();
     if (css.length > 0) {
       aspectCSS[aspect] = css;
+    }
+  }
+
+  const explorerVarMappings = [
+    {
+      varName: "--nav-item-color",
+      selector: ".explorer .nav-files-container a",
+      property: "color",
+    },
+    {
+      varName: "--nav-item-color-hover",
+      selector: ".explorer .nav-files-container a:hover",
+      property: "color",
+    },
+    {
+      varName: "--nav-item-color-active",
+      selector: ".explorer .nav-files-container .is-active",
+      property: "color",
+    },
+    {
+      varName: "--nav-item-background-hover",
+      selector: ".explorer .nav-files-container a:hover",
+      property: "background-color",
+    },
+    {
+      varName: "--nav-collapse-icon-color",
+      selector: ".explorer .nav-files-container .collapse-icon svg",
+      property: "color",
+    },
+    {
+      varName: "--nav-indentation-guide-color",
+      selector: ".explorer .nav-files-container .folder-outer > ul",
+      property: "border-left-color",
+    },
+  ];
+  const explorerBlocks = [];
+  for (const entry of explorerVarMappings) {
+    if (!baseVars[entry.varName]) continue;
+    const scopedSelector = `${htmlSelector} ${baseSelector} ${entry.selector}`;
+    explorerBlocks.push(
+      `${scopedSelector} {\n  ${entry.property}: var(${entry.varName});\n}`,
+    );
+  }
+  if (explorerBlocks.length > 0) {
+    const explorerCSS = explorerBlocks.join("\n\n");
+    if (aspectCSS.explorer) {
+      aspectCSS.explorer = `${aspectCSS.explorer}\n\n${explorerCSS}`;
+    } else {
+      aspectCSS.explorer = explorerCSS;
     }
   }
 

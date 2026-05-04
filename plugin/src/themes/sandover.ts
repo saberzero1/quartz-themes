@@ -67,7 +67,11 @@ export const theme: ThemeData = {
   --button-radius: var(--input-radius, 0px);
   --callout-border-opacity: 0.4;
   --callout-border-width: 1px;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
   --callout-example: var(--color-purple-rgb, 197, 133, 204);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
   --callout-important: var(--color-cyan-rgb, 197, 133, 204);
   --callout-info: var(--color-blue-rgb, 224, 222, 113);
   --callout-note: 2, 122, 255;
@@ -75,8 +79,10 @@ export const theme: ThemeData = {
   --callout-quote: 68, 207, 110;
   --callout-radius: var(--radius-s, 0px);
   --callout-success: var(--color-green-rgb, 251, 70, 76);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
   --callout-tip: var(--color-cyan-rgb, 255, 169, 154);
   --callout-todo: var(--color-blue-rgb, 68, 207, 110);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #282828);
   --canvas-card-label-color: var(--text-faint, rgba(#fffcf4, 0.5));
   --canvas-color-1: var(--sandover-purple-rgb, 197, 133, 204);
@@ -299,7 +305,9 @@ export const theme: ThemeData = {
   --vault-name-font-weight: 700;
   --vault-profile-color: var(--text-normal, #fffcf4);
   --vault-profile-color-hover: var(--vault-profile-color, #fffcf4);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="dark"] body {
@@ -379,6 +387,13 @@ html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"]
   text-decoration-color: rgb(255, 252, 244);
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(255, 252, 244));
+  font-family: "TT2020 Base", "??";
+  outline: rgb(255, 252, 244) none 0px;
+  text-decoration-color: rgb(255, 252, 244);
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: var(--bold-color, rgb(255, 252, 244));
   font-family: "TT2020 Base", "??";
@@ -440,19 +455,31 @@ html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(245, 114, 91, 0.3));
 }`,
     lists: `html[saved-theme="dark"] body dd {
+  border-bottom-color: rgb(255, 252, 244);
+  border-left-color: rgb(255, 252, 244);
+  border-right-color: rgb(255, 252, 244);
+  border-top-color: rgb(255, 252, 244);
   color: rgb(255, 252, 244);
+  font-family: "TT2020 Base", "??";
 }
 
 html[saved-theme="dark"] body dt {
+  border-bottom-color: rgb(255, 252, 244);
+  border-left-color: rgb(255, 252, 244);
+  border-right-color: rgb(255, 252, 244);
+  border-top-color: rgb(255, 252, 244);
   color: rgb(255, 252, 244);
+  font-family: "TT2020 Base", "??";
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(255, 252, 244);
+  margin-left: 26.256px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(255, 252, 244);
+  margin-left: 26.256px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
@@ -466,6 +493,7 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
+  color: var(--blockquote-color, rgb(83, 223, 221));
   font-family: "TT2020 Base", "??";
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
@@ -478,7 +506,6 @@ html[saved-theme="dark"] body blockquote {
 html[saved-theme="dark"] body table {
   color: rgb(255, 252, 244);
   font-family: "TT2020 Base", "??";
-  width: 201.312px;
 }
 
 html[saved-theme="dark"] body td {
@@ -553,10 +580,12 @@ html[saved-theme="dark"] body video {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-left-color: rgb(255, 252, 244);
+  border-radius: 0px;
   border-right-color: rgb(255, 252, 244);
   border-top-color: rgb(255, 252, 244);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  color: var(--text-muted, rgb(255, 252, 244));
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -569,6 +598,7 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(245, 114, 91);
   border-right-color: rgb(255, 252, 244);
   border-top-color: rgb(255, 252, 244);
+  color: rgb(255, 252, 244);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
@@ -576,6 +606,7 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(255, 252, 244);
   border-right-color: rgb(255, 252, 244);
   border-top-color: rgb(255, 252, 244);
+  color: rgb(255, 252, 244);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -1643,6 +1674,7 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   border-top-color: rgba(245, 114, 91, 0.15);
   border-top-left-radius: 4.2px;
   border-top-right-radius: 4.2px;
+  color: var(--pill-color, rgb(255, 134, 113));
   font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -1652,8 +1684,16 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   --font-weight: var(--h1-weight, 600);
+  border-bottom-color: rgb(197, 133, 204);
+  border-left-color: rgb(197, 133, 204);
+  border-right-color: rgb(197, 133, 204);
+  border-top-color: rgb(197, 133, 204);
   color: var(--h1-color, rgb(197, 133, 204));
   font-family: var(--h1-font, "TT2020 Base", "??");
+  font-size: var(--h1-size, 24px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h1-letter-spacing, -0.36px);
+  line-height: var(--h1-line-height, 28.8px);
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1664,37 +1704,85 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 600);
+  border-bottom-color: rgb(255, 252, 244);
+  border-left-color: rgb(255, 252, 244);
+  border-right-color: rgb(255, 252, 244);
+  border-top-color: rgb(255, 252, 244);
   color: var(--h2-color, rgb(255, 252, 244));
   font-family: var(--h2-font, "TT2020 Base", "??");
+  font-size: var(--h2-size, 22.4px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.2464px);
+  line-height: var(--h2-line-height, 26.88px);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
+  border-bottom-color: rgb(197, 133, 204);
+  border-left-color: rgb(197, 133, 204);
+  border-right-color: rgb(197, 133, 204);
+  border-top-color: rgb(197, 133, 204);
   color: var(--inline-title-color, rgb(197, 133, 204));
   font-family: var(--inline-title-font, "TT2020 Base", "??");
+  font-size: var(--inline-title-size, 24px);
+  font-weight: var(--inline-title-weight, 600);
+  letter-spacing: -0.36px;
+  line-height: var(--inline-title-line-height, 28.8px);
+  margin-bottom: 12px;
 }
 
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, 500);
+  border-bottom-color: rgb(255, 252, 244);
+  border-left-color: rgb(255, 252, 244);
+  border-right-color: rgb(255, 252, 244);
+  border-top-color: rgb(255, 252, 244);
   color: var(--h3-color, rgb(255, 252, 244));
   font-family: var(--h3-font, "TT2020 Base", "??");
+  font-size: var(--h3-size, 20.8px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h3-letter-spacing, -0.1664px);
+  line-height: var(--h3-line-height, 27.04px);
 }
 
 html[saved-theme="dark"] body h4 {
   --font-weight: var(--h4-weight, 500);
+  border-bottom-color: rgb(255, 252, 244);
+  border-left-color: rgb(255, 252, 244);
+  border-right-color: rgb(255, 252, 244);
+  border-top-color: rgb(255, 252, 244);
   color: var(--h4-color, rgb(255, 252, 244));
   font-family: var(--h4-font, "TT2020 Base", "??");
+  font-size: var(--h4-size, 17.6px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h4-letter-spacing, -0.088px);
+  line-height: var(--h4-line-height, 24.64px);
 }
 
 html[saved-theme="dark"] body h5 {
   --font-weight: var(--h5-weight, 500);
+  border-bottom-color: rgb(255, 252, 244);
+  border-left-color: rgb(255, 252, 244);
+  border-right-color: rgb(255, 252, 244);
+  border-top-color: rgb(255, 252, 244);
   color: var(--h5-color, rgb(255, 252, 244));
   font-family: var(--h5-font, "TT2020 Base", "??");
+  font-size: var(--h5-size, 16px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h5-letter-spacing, -0.032px);
+  line-height: var(--h5-line-height, 24px);
 }
 
 html[saved-theme="dark"] body h6 {
   --font-weight: var(--h6-weight, 400);
+  border-bottom-color: rgb(255, 252, 244);
+  border-left-color: rgb(255, 252, 244);
+  border-right-color: rgb(255, 252, 244);
+  border-top-color: rgb(255, 252, 244);
   color: var(--h6-color, rgb(255, 252, 244));
   font-family: var(--h6-font, "TT2020 Base", "??");
+  font-size: var(--h6-size, 13.6px);
+  font-weight: var(--font-weight, 400);
+  line-height: var(--h6-line-height, 20.4px);
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -1723,6 +1811,26 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) 
 html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(255, 252, 244));
   font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="dark"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(255, 252, 244);
@@ -1856,6 +1964,15 @@ html[saved-theme="dark"] body .canvas-sidebar {
   font-family: "TT2020 Base", "??";
 }
 
+html[saved-theme="dark"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(255, 252, 244);
+  border-left-color: rgb(255, 252, 244);
+  border-right-color: rgb(255, 252, 244);
+  border-top-color: rgb(255, 252, 244);
+  color: rgb(255, 252, 244);
+  font-family: "TT2020 Base", "??";
+}
+
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(255, 252, 244);
   border-left-color: rgb(255, 252, 244);
@@ -1863,6 +1980,16 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(255, 252, 244);
   color: rgb(255, 252, 244);
   font-family: "TT2020 Base", "??";
+}
+
+html[saved-theme="dark"] body .metadata-property-key {
+  color: rgb(255, 252, 244);
+  font-family: var(--metadata-label-font, "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}
+
+html[saved-theme="dark"] body .metadata-property-value {
+  color: rgb(255, 252, 244);
+  font-family: var(--metadata-input-font, "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="dark"] body .note-properties-key {
@@ -1931,6 +2058,10 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
+  border-bottom-color: rgb(255, 252, 244);
+  border-left-color: rgb(255, 252, 244);
+  border-right-color: rgb(255, 252, 244);
+  border-top-color: rgb(255, 252, 244);
   color: var(--text-normal, rgb(255, 252, 244));
   font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -2030,7 +2161,11 @@ html[saved-theme="dark"] body ul.tags > li {
   --button-radius: var(--input-radius, 0px);
   --callout-border-opacity: 0.4;
   --callout-border-width: 1px;
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
   --callout-example: var(--color-purple-rgb, 197, 133, 204);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
   --callout-important: var(--color-cyan-rgb, 197, 133, 204);
   --callout-info: var(--color-blue-rgb, 224, 172, 0);
   --callout-note: 8, 109, 221;
@@ -2038,8 +2173,10 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-quote: 8, 185, 78;
   --callout-radius: var(--radius-s, 0px);
   --callout-success: var(--color-green-rgb, 233, 49, 71);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
   --callout-tip: var(--color-cyan-rgb, 255, 169, 154);
   --callout-todo: var(--color-blue-rgb, 8, 185, 78);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #fffcf4);
   --canvas-card-label-color: var(--text-faint, #000000);
   --canvas-color-1: var(--sandover-purple-rgb, 197, 133, 204);
@@ -2273,7 +2410,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-name-font-weight: 700;
   --vault-profile-color: var(--text-normal, #000000);
   --vault-profile-color-hover: var(--vault-profile-color, #000000);
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html[saved-theme="light"] body {
@@ -2353,6 +2492,13 @@ html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light
   text-decoration-color: rgb(0, 0, 0);
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(0, 0, 0));
+  font-family: "TT2020 Base", "??";
+  outline: rgb(0, 0, 0) none 0px;
+  text-decoration-color: rgb(0, 0, 0);
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--bold-color, rgb(0, 0, 0));
   font-family: "TT2020 Base", "??";
@@ -2413,19 +2559,31 @@ html[saved-theme="light"] body a.internal-link.broken {
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(245, 114, 91, 0.3));
 }`,
     lists: `html[saved-theme="light"] body dd {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
+  font-family: "TT2020 Base", "??";
 }
 
 html[saved-theme="light"] body dt {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
+  font-family: "TT2020 Base", "??";
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(0, 0, 0);
+  margin-left: 26.256px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(0, 0, 0);
+  margin-left: 26.256px;
 }
 
 html[saved-theme="light"] body ul.overflow {
@@ -2439,6 +2597,7 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
+  color: var(--blockquote-color, rgb(8, 109, 221));
   font-family: "TT2020 Base", "??";
 }`,
     tables: `html[saved-theme="light"] body .table-container {
@@ -2451,7 +2610,6 @@ html[saved-theme="light"] body blockquote {
 html[saved-theme="light"] body table {
   color: rgb(0, 0, 0);
   font-family: "TT2020 Base", "??";
-  width: 201.312px;
 }
 
 html[saved-theme="light"] body td {
@@ -2530,10 +2688,12 @@ html[saved-theme="light"] body video {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-left-color: rgb(0, 0, 0);
+  border-radius: 0px;
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  color: var(--text-muted, rgb(0, 0, 0));
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -2546,6 +2706,7 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(245, 114, 91);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .transclude-inner {
@@ -2553,6 +2714,7 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3620,6 +3782,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   border-top-color: rgba(245, 114, 91, 0.15);
   border-top-left-radius: 4.2px;
   border-top-right-radius: 4.2px;
+  color: var(--pill-color, rgb(255, 134, 113));
   font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -3629,8 +3792,16 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   --font-weight: var(--h1-weight, 600);
+  border-bottom-color: rgb(197, 133, 204);
+  border-left-color: rgb(197, 133, 204);
+  border-right-color: rgb(197, 133, 204);
+  border-top-color: rgb(197, 133, 204);
   color: var(--h1-color, rgb(197, 133, 204));
   font-family: var(--h1-font, "TT2020 Base", "??");
+  font-size: var(--h1-size, 24px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h1-letter-spacing, -0.36px);
+  line-height: var(--h1-line-height, 28.8px);
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -3641,37 +3812,85 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 600);
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--h2-color, rgb(0, 0, 0));
   font-family: var(--h2-font, "TT2020 Base", "??");
+  font-size: var(--h2-size, 22.4px);
+  font-weight: var(--font-weight, 600);
+  letter-spacing: var(--h2-letter-spacing, -0.2464px);
+  line-height: var(--h2-line-height, 26.88px);
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
+  border-bottom-color: rgb(197, 133, 204);
+  border-left-color: rgb(197, 133, 204);
+  border-right-color: rgb(197, 133, 204);
+  border-top-color: rgb(197, 133, 204);
   color: var(--inline-title-color, rgb(197, 133, 204));
   font-family: var(--inline-title-font, "TT2020 Base", "??");
+  font-size: var(--inline-title-size, 24px);
+  font-weight: var(--inline-title-weight, 600);
+  letter-spacing: -0.36px;
+  line-height: var(--inline-title-line-height, 28.8px);
+  margin-bottom: 12px;
 }
 
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, 500);
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--h3-color, rgb(0, 0, 0));
   font-family: var(--h3-font, "TT2020 Base", "??");
+  font-size: var(--h3-size, 20.8px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h3-letter-spacing, -0.1664px);
+  line-height: var(--h3-line-height, 27.04px);
 }
 
 html[saved-theme="light"] body h4 {
   --font-weight: var(--h4-weight, 500);
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--h4-color, rgb(0, 0, 0));
   font-family: var(--h4-font, "TT2020 Base", "??");
+  font-size: var(--h4-size, 17.6px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h4-letter-spacing, -0.088px);
+  line-height: var(--h4-line-height, 24.64px);
 }
 
 html[saved-theme="light"] body h5 {
   --font-weight: var(--h5-weight, 500);
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--h5-color, rgb(0, 0, 0));
   font-family: var(--h5-font, "TT2020 Base", "??");
+  font-size: var(--h5-size, 16px);
+  font-weight: var(--font-weight, 500);
+  letter-spacing: var(--h5-letter-spacing, -0.032px);
+  line-height: var(--h5-line-height, 24px);
 }
 
 html[saved-theme="light"] body h6 {
   --font-weight: var(--h6-weight, 400);
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--h6-color, rgb(0, 0, 0));
   font-family: var(--h6-font, "TT2020 Base", "??");
+  font-size: var(--h6-size, 13.6px);
+  font-weight: var(--font-weight, 400);
+  line-height: var(--h6-line-height, 20.4px);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
@@ -3700,6 +3919,26 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open)
 html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(0, 0, 0));
   font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html[saved-theme="light"] body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(0, 0, 0);
@@ -3833,6 +4072,15 @@ html[saved-theme="light"] body .canvas-sidebar {
   font-family: "TT2020 Base", "??";
 }
 
+html[saved-theme="light"] body .metadata-container .metadata-property {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  font-family: "TT2020 Base", "??";
+}
+
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
@@ -3840,6 +4088,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   font-family: "TT2020 Base", "??";
+}
+
+html[saved-theme="light"] body .metadata-property-key {
+  color: rgb(0, 0, 0);
+  font-family: var(--metadata-label-font, "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+}
+
+html[saved-theme="light"] body .metadata-property-value {
+  color: rgb(0, 0, 0);
+  font-family: var(--metadata-input-font, "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html[saved-theme="light"] body .note-properties-key {
@@ -3908,6 +4166,10 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: var(--text-normal, rgb(0, 0, 0));
   font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }

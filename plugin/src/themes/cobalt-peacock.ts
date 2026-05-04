@@ -48,6 +48,7 @@ export const theme: ThemeData = {
   --callout-important: var(--color-cyan-rgb, 158, 255, 255);
   --callout-info: var(--color-blue-rgb, 0, 136, 255);
   --callout-question: var(--color-orange-rgb, 255, 157, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 0px);
   --callout-success: var(--color-green-rgb, 158, 255, 128);
   --callout-summary: var(--color-cyan-rgb, 158, 255, 255);
@@ -291,7 +292,9 @@ export const theme: ThemeData = {
   --titlebar-text-color: var(--text-muted, #EEEEEE);
   --toggle-radius: 0px;
   --toggle-thumb-radius: 0px;
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: var(--icon-color, currentColor);
+  --collapse-icon-color: var(--nav-collapse-icon-color);
+  --collapse-icon-color-collapsed: var(--nav-collapse-icon-color-collapsed);
 }
 
 html body {
@@ -359,6 +362,9 @@ html body a.internal-link.broken {
   text-decoration: underline rgba(0, 136, 255, 0.3);
   text-decoration-color: var(--link-unresolved-decoration-color, rgba(0, 136, 255, 0.3));
 }`,
+    blockquotes: `html body blockquote {
+  color: var(--blockquote-color, rgb(0, 136, 255));
+}`,
     tables: `html body tbody tr:nth-child(odd) {
   background-color: var(--table-row-alt-background, rgba(0, 136, 255, 0.05));
 }
@@ -419,10 +425,12 @@ html body img {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-left-color: rgb(238, 238, 238);
+  border-radius: 0px;
   border-right-color: rgb(238, 238, 238);
   border-top-color: rgb(238, 238, 238);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  color: var(--text-muted, rgb(238, 238, 238));
 }
 
 html body .transclude {
@@ -1098,6 +1106,7 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   border-left-color: rgb(1, 22, 39);
   border-right-color: rgb(1, 22, 39);
   border-top-color: rgb(1, 22, 39);
+  color: var(--pill-color, rgb(158, 255, 255));
 }
 
 html body a.internal-link.tag-link::before {
@@ -1105,6 +1114,10 @@ html body a.internal-link.tag-link::before {
 }
 
 html body h1 {
+  border-bottom-color: rgb(255, 157, 0);
+  border-left-color: rgb(255, 157, 0);
+  border-right-color: rgb(255, 157, 0);
+  border-top-color: rgb(255, 157, 0);
   color: var(--h1-color, rgb(255, 157, 0));
 }
 
@@ -1113,26 +1126,50 @@ html body h1.article-title {
 }
 
 html body h2 {
+  border-bottom-color: rgb(255, 238, 128);
+  border-left-color: rgb(255, 238, 128);
+  border-right-color: rgb(255, 238, 128);
+  border-top-color: rgb(255, 238, 128);
   color: var(--h2-color, rgb(255, 238, 128));
 }
 
 html body h2.page-title, html h2.page-title a {
+  border-bottom-color: rgb(255, 157, 0);
+  border-left-color: rgb(255, 157, 0);
+  border-right-color: rgb(255, 157, 0);
+  border-top-color: rgb(255, 157, 0);
   color: var(--inline-title-color, rgb(255, 157, 0));
 }
 
 html body h3 {
+  border-bottom-color: rgb(0, 136, 255);
+  border-left-color: rgb(0, 136, 255);
+  border-right-color: rgb(0, 136, 255);
+  border-top-color: rgb(0, 136, 255);
   color: var(--h3-color, rgb(0, 136, 255));
 }
 
 html body h4 {
+  border-bottom-color: rgb(237, 146, 153);
+  border-left-color: rgb(237, 146, 153);
+  border-right-color: rgb(237, 146, 153);
+  border-top-color: rgb(237, 146, 153);
   color: var(--h4-color, rgb(237, 146, 153));
 }
 
 html body h5 {
+  border-bottom-color: rgb(158, 255, 128);
+  border-left-color: rgb(158, 255, 128);
+  border-right-color: rgb(158, 255, 128);
+  border-top-color: rgb(158, 255, 128);
   color: var(--h5-color, rgb(158, 255, 128));
 }
 
 html body h6 {
+  border-bottom-color: rgb(190, 214, 255);
+  border-left-color: rgb(190, 214, 255);
+  border-right-color: rgb(190, 214, 255);
+  border-top-color: rgb(190, 214, 255);
   color: var(--h6-color, rgb(190, 214, 255));
 }
 
@@ -1162,6 +1199,30 @@ html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title 
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: var(--nav-item-color, rgb(238, 238, 238));
+}
+
+html body .explorer .nav-files-container a {
+  color: var(--nav-item-color);
+}
+
+html body .explorer .nav-files-container a:hover {
+  color: var(--nav-item-color-hover);
+}
+
+html body .explorer .nav-files-container .is-active {
+  color: var(--nav-item-color-active);
+}
+
+html body .explorer .nav-files-container a:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
+html body .explorer .nav-files-container .collapse-icon svg {
+  color: var(--nav-collapse-icon-color);
+}
+
+html body .explorer .nav-files-container .folder-outer > ul {
+  border-left-color: var(--nav-indentation-guide-color);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(255, 255, 255);
@@ -1244,11 +1305,27 @@ html body .bases-table thead th {
   color: var(--text-muted, rgb(238, 238, 238));
 }
 
+html body .metadata-container .metadata-property {
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-top-color: rgb(238, 238, 238);
+  color: rgb(238, 238, 238);
+}
+
 html body .metadata-properties {
   border-bottom-color: rgb(238, 238, 238);
   border-left-color: rgb(238, 238, 238);
   border-right-color: rgb(238, 238, 238);
   border-top-color: rgb(238, 238, 238);
+  color: rgb(238, 238, 238);
+}
+
+html body .metadata-property-key {
+  color: rgb(238, 238, 238);
+}
+
+html body .metadata-property-value {
   color: rgb(238, 238, 238);
 }
 

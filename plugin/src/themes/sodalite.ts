@@ -4,8 +4,21 @@ export const theme: ThemeData = {
   meta: { name: "sodalite", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 18px);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
   --callout-radius: var(--radius-s, 0);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --file-header-justify: left;
   --file-line-width: 100%;
   --sdlt-accent: #8BA4CC;
@@ -551,6 +564,8 @@ html body .stacked-page-header {
 
 html body .page-header h2.page-title {
   font-family: "Futura Md BT", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 38px;
+  line-height: var(--sdlt-markdown-header-height, 56px);
 }`,
   },
   light: {},

@@ -31,6 +31,19 @@ export const theme: ThemeData = {
   --blockquote-border-thickness: 5px;
   --bold-color: var(--dark-link, #13C4A3);
   --bright-green: #5AFF15;
+  --callout-bug: var(--callout-bug, 251, 70, 76);
+  --callout-default: var(--callout-default, 2, 122, 255);
+  --callout-error: var(--callout-error, 251, 70, 76);
+  --callout-example: var(--callout-example, 168, 130, 255);
+  --callout-fail: var(--callout-fail, 251, 70, 76);
+  --callout-info: var(--callout-info, 2, 122, 255);
+  --callout-question: var(--callout-question, 233, 151, 63);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 68, 207, 110);
+  --callout-summary: var(--callout-summary, 83, 223, 221);
+  --callout-tip: var(--callout-tip, 83, 223, 221);
+  --callout-todo: var(--callout-todo, 2, 122, 255);
+  --callout-warning: var(--callout-warning, 233, 151, 63);
   --canvas-background: var(--background-primary, #1a1c25);
   --checkbox-border-color-hover: var(--dark-accent, #5AFF15);
   --checkbox-color: var(--dark-link, #13C4A3);
@@ -215,6 +228,12 @@ html[saved-theme="dark"] body html {
   text-decoration-color: rgb(19, 196, 163);
 }
 
+html[saved-theme="dark"] body .markdown-rendered p > strong > em, html[saved-theme="dark"] strong > em {
+  color: var(--italic-color, rgb(19, 196, 163));
+  outline: rgb(19, 196, 163) none 0px;
+  text-decoration-color: rgb(19, 196, 163);
+}
+
 html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: var(--bold-color, rgb(19, 196, 163));
   outline: rgb(19, 196, 163) none 0px;
@@ -245,6 +264,7 @@ html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcr
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   background-color: var(--quote-background, rgba(0, 0, 0, 0));
+  line-height: 21.6px;
   padding-bottom: 5.76px;
   padding-top: 4.32px;
 }`,
@@ -721,6 +741,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --blockquote-border-thickness: 5px;
   --bold-color: var(--light-code, #2f9b56);
   --bright-green: #5AFF15;
+  --callout-bug: var(--callout-bug, 233, 49, 71);
+  --callout-default: var(--callout-default, 8, 109, 221);
+  --callout-error: var(--callout-error, 233, 49, 71);
+  --callout-example: var(--callout-example, 120, 82, 238);
+  --callout-fail: var(--callout-fail, 233, 49, 71);
+  --callout-info: var(--callout-info, 8, 109, 221);
+  --callout-question: var(--callout-question, 236, 117, 0);
+  --callout-quote: var(--callout-quote, 158, 158, 158);
+  --callout-success: var(--callout-success, 8, 185, 78);
+  --callout-summary: var(--callout-summary, 0, 191, 188);
+  --callout-tip: var(--callout-tip, 0, 191, 188);
+  --callout-todo: var(--callout-todo, 8, 109, 221);
+  --callout-warning: var(--callout-warning, 236, 117, 0);
   --canvas-background: var(--background-primary, #f6f6fc);
   --checkbox-border-color-hover: var(--light-accent, #3fc570);
   --checkbox-color: var(--light-link, #3fc570);
@@ -926,6 +959,12 @@ html[saved-theme="light"] body html {
   text-decoration-color: rgb(47, 155, 86);
 }
 
+html[saved-theme="light"] body .markdown-rendered p > strong > em, html[saved-theme="light"] strong > em {
+  color: var(--italic-color, rgb(47, 155, 86));
+  outline: rgb(47, 155, 86) none 0px;
+  text-decoration-color: rgb(47, 155, 86);
+}
+
 html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: var(--bold-color, rgb(47, 155, 86));
   outline: rgb(47, 155, 86) none 0px;
@@ -961,6 +1000,7 @@ html[saved-theme="light"] body a.internal-link.broken {
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
   background-color: var(--quote-background, rgba(0, 0, 0, 0));
+  line-height: 21.6px;
   padding-bottom: 5.76px;
   padding-top: 4.32px;
 }`,
@@ -1377,6 +1417,7 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-hover: var(--tag-color-hover, #3fc570);
   --pill-color-remove: var(--tag-color, #3fc570);
   --pill-color-remove-hover: var(--tag-color-hover, #3fc570);
+  color: var(--pill-color, rgb(63, 197, 112));
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link::before {
