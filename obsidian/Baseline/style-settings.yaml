@@ -1,0 +1,1803 @@
+- name: Baseline
+  id: baseline-style
+  settings:
+    - id: info
+      title: Get started
+      type: heading
+      level: 1
+      collapsed: false
+    - id: migrate
+      title: Migrate configuration
+      type: info-text
+      level: 1
+      markdown: true
+      description: Migrate **existing Style Settings** from supported themes. ↗[](https://aaaaalexis.github.io/obsidian-baseline/migration/)
+    - id: marketplace
+      title: Community presets
+      type: info-text
+      level: 1
+      markdown: true
+      description: Discover Style Settings presets in **Baseline Marketplace**. ↗[](https://aaaaalexis.github.io/obsidian-baseline/marketplace/)
+    - id: missing-font
+      title: Extended heading font
+      type: info-text
+      level: 1
+      markdown: true
+      description: Heading font missing glyphs? Get **extended font CSS snippet**. ↗[](https://github.com/aaaaalexis/obsidian-baseline/blob/main/snippets/baseline-extension-font.css)
+    - id: hide-baseline-info
+      title: Do not show again
+      type: class-toggle
+    - id: colors
+      title: Colors
+      type: heading
+      level: 1
+      collapsed: true
+    - id: accented-interface
+      title: Interface accent
+      description: Apply accent color throughout the app.
+      type: class-toggle
+    - id: color-scheme-accent
+      title: Color scheme accent
+      description: Use color scheme preset accent color.
+      type: class-toggle
+    - id: color-scheme-light
+      title: Light color scheme
+      type: class-select
+      allowEmpty: false
+      default: default-light
+    - id: background-contrast-light
+      title: Light contrast
+      type: class-select
+      allowEmpty: false
+      default: contrast-light
+    - id: color-scheme-dark
+      title: Dark color scheme
+      type: class-select
+      allowEmpty: false
+      default: default-dark
+    - id: background-contrast-dark
+      title: Dark contrast
+      type: class-select
+      allowEmpty: false
+      default: contrast-dark
+    - id: interface-palette
+      title: Interface colors
+      type: heading
+      level: 2
+      collapsed: true
+    - id: background-primary
+      title: Primary background
+      description: Used in main editor area.
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-primary-alt
+      title: On primary background
+      description: Used in blockquotes and tables.
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-secondary
+      title: Secondary background
+      description: Used in sidebars and menus.
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-secondary-alt
+      title: On secondary background
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: divider-color
+      title: Divider color
+      description: Used in separating tabs and sidebars.
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-modifier-hover
+      title: Hover background
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: border-palette
+      title: Borders
+      type: heading
+      level: 3
+      collapsed: true
+    - id: background-modifier-border
+      title: Border color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-modifier-border-hover
+      title: Border color (Hover)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-modifier-border-focus
+      title: Border color (Active)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: input-palette
+      title: Elements
+      type: heading
+      level: 3
+      collapsed: true
+    - id: interactive-normal
+      title: Interaction background
+      description: Used in buttons, dropdowns, and text inputs.
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: interactive-hover
+      title: Interaction background (Hover)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: dialog-palette
+      title: Dialog
+      type: heading
+      level: 3
+      collapsed: true
+    - id: prompt-background
+      title: Command palette background
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: menu-background
+      title: Menu background
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: modal-background
+      title: Modal background
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: extended-palette
+      title: Extended colors
+      type: heading
+      level: 2
+      collapsed: true
+    - id: color-red-rgb
+      title: Red
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#'
+      default-dark: '#'
+    - id: color-orange-rgb
+      title: Orange
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#'
+      default-dark: '#'
+    - id: color-yellow-rgb
+      title: Yellow
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#'
+      default-dark: '#'
+    - id: color-green-rgb
+      title: Green
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#'
+      default-dark: '#'
+    - id: color-cyan-rgb
+      title: Cyan
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#'
+      default-dark: '#'
+    - id: color-blue-rgb
+      title: Blue
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#'
+      default-dark: '#'
+    - id: color-purple-rgb
+      title: Purple
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#'
+      default-dark: '#'
+    - id: color-pink-rgb
+      title: Pink
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#'
+      default-dark: '#'
+    - id: icon-palette
+      title: Icon colors
+      type: heading
+      level: 2
+      collapsed: true
+    - id: icon-color
+      title: Icon color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: icon-color-hover
+      title: Icon color (Hover)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: icon-color-active
+      title: Icon color (Active)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: icon-color-focused
+      title: Icon color (Focused)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-palette
+      title: Text colors
+      type: heading
+      level: 2
+      collapsed: true
+    - id: text-normal
+      title: Primary text color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-normal-editor
+      title: Editor text color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-muted
+      title: Secondary text color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-faint
+      title: Tertiary text color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: italic-color
+      title: Italic text color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: bold-color
+      title: Bold text color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-highlight
+      title: Highlighted text color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-highlight-bg
+      title: Highlighted text background
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-selection
+      title: Selected text background
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-palette
+      title: Code colors
+      type: heading
+      level: 2
+      collapsed: true
+    - id: code-normal
+      title: Code default
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-comment
+      title: Code comments
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-function
+      title: Code functions
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-keyword
+      title: Code keywords
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-important
+      title: Code important
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-operator
+      title: Code operators
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-property
+      title: Code properties
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-punctuation
+      title: Code punctuation
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-string
+      title: Code strings
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-tag
+      title: Code tags
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-value
+      title: Code values
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: graph-palette
+      title: Graph colors
+      type: heading
+      level: 2
+      collapsed: true
+    - id: graph-info
+      description: Requires reloading to apply changes.
+      type: info-text
+    - id: graph-line
+      title: Line color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: graph-node
+      title: Node color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: graph-node-focused
+      title: Active node color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: graph-node-tag
+      title: Tag node color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: graph-node-attachment
+      title: Attachment node color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: graph-node-unresolved
+      title: Unresolved node color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: interface
+      title: Interface
+      type: heading
+      level: 1
+      collapsed: true
+    - id: font-interface-override
+      title: Interface font
+      type: variable-text
+      default: Inter
+    - id: density-modifier
+      title: Density
+      type: variable-number-slider
+      default: 1
+      min: 0.75
+      max: 1.25
+      step: 0.25
+    - id: radius-modifier
+      title: Roundness
+      type: variable-number-slider
+      default: 1
+      min: 0.5
+      max: 1.5
+      step: 0.25
+    - id: icon-stroke-modifier
+      title: Icon thickness
+      type: variable-number-slider
+      default: 1
+      min: 0.5
+      max: 1.5
+      step: 0.25
+    - id: layout-style
+      title: Workspace
+      type: class-select
+      allowEmpty: false
+      default: layout-baseline
+    - id: element-style
+      title: Personality
+      type: class-select
+      allowEmpty: false
+      default: input-baseline
+    - id: status-bar-style
+      title: Status bar
+      type: class-select
+      allowEmpty: false
+      default: status-bar-baseline
+    - id: accessibility
+      title: Accessibility
+      type: heading
+      level: 2
+      collapsed: true
+    - id: reduce-contrast-change
+      title: Reduce contrast change
+      description: Minimize contrast shifts when window loses focus.
+      type: class-toggle
+    - id: reduce-motion
+      title: Reduce motion
+      description: Minimize animation effects.
+      type: class-toggle
+    - id: dynamic-type-off
+      title: Standard font size
+      description: Disable operating system-based dynamic font sizes.
+      type: class-toggle
+    - id: font-ui-modifier
+      title: Interface font size
+      description: Fine-tune interface text size.
+      type: variable-number-slider
+      default: 0
+      min: -8
+      max: 8
+      step: 1
+      format: px
+    - id: icon-size-modifier
+      title: Icon size
+      description: Fine-tune icon size.
+      type: variable-number-slider
+      default: 0
+      min: -4
+      max: 4
+      step: 1
+      format: px
+    - id: animation
+      title: Animation
+      type: heading
+      level: 2
+      collapsed: true
+    - id: anim-motion-baseline
+      title: Animation personality
+      type: variable-select
+      default: cubic-bezier(0.1, 0, 0.1, 1.25)
+    - id: anim-speed-modifier
+      title: Animation speed
+      type: variable-number-slider
+      default: 1
+      min: 0
+      max: 2
+      step: 0.5
+    - id: tabs
+      title: Tabs
+      type: heading
+      level: 2
+      collapsed: true
+    - id: header-height
+      title: Tab bar height
+      type: variable-text
+      default: 48px
+    - id: tab-style
+      title: Editor tab style
+      type: class-select
+      allowEmpty: false
+      default: tab-default
+    - id: tab-text-align
+      title: Editor tab label alignment
+      type: variable-select
+      default: left
+    - id: tab-divider
+      title: Editor tab divider
+      type: class-toggle
+    - id: tab-full-width
+      title: Full width tabs
+      type: class-toggle
+    - id: tab-stacks
+      title: Tab stacks
+      type: heading
+      level: 2
+      collapsed: true
+    - id: tab-stacked-pane-width
+      title: Stacked tab width
+      type: variable-text
+      default: 700px
+    - id: tab-stacked-header-width
+      title: Spine width
+      type: variable-text
+      default: 40px
+    - id: tab-stacked-spine-orientation
+      title: Spine text orientation
+      type: class-select
+      default: tab-stack-top
+    - id: tab-stacked-spine-order
+      title: Spine element order
+      type: variable-select
+      default: row
+    - id: tab-title-bar
+      title: Tab title bar
+      type: heading
+      level: 2
+      collapsed: true
+    - id: tab-title-bar-info
+      description: Requires **Show tab title bar** in **Appearance** settings.
+      type: info-text
+      markdown: true
+    - id: file-header-visibility
+      title: Tab title visibility
+      type: class-select
+      default: view-header-title-hover
+    - id: file-header-font-size
+      title: Tab title font size
+      type: variable-text
+      default: var(--font-ui-small)
+    - id: file-header-font-weight
+      title: Tab title font weight
+      type: variable-number-slider
+      default: 400
+      min: 100
+      max: 900
+      step: 50
+    - id: file-header-justify
+      title: Tab title alignment
+      type: variable-select
+      default: center
+    - id: sidebars
+      title: Sidebars
+      type: heading
+      level: 2
+      collapsed: true
+    - id: tab-top-left-style
+      title: Tab style (Left top)
+      type: class-select
+      allowEmpty: false
+      default: tab-top-left-stacked
+    - id: tab-left-style
+      title: Tab style (Left)
+      type: class-select
+      allowEmpty: false
+      default: tab-left-compact
+    - id: tab-top-right-style
+      title: Tab style (Right top)
+      type: class-select
+      allowEmpty: false
+      default: tab-top-right-icon
+    - id: tab-right-style
+      title: Tab style (Right)
+      type: class-select
+      allowEmpty: false
+      default: tab-right-compact
+    - id: nav-action
+      title: Panel actions
+      type: class-select
+      allowEmpty: false
+      default: nav-action-dot
+    - id: hide-vault-switcher-off
+      title: Always show vault switcher
+      type: class-toggle
+    - id: hover-sidebars
+      title: Hover reveal
+      type: heading
+      level: 2
+      collapsed: true
+    - id: hover-ribbon
+      title: Hover ribbon
+      description: Reveal ribbon by hovering over left window edge.
+      type: class-toggle
+    - id: hover-sidedock
+      title: Hover sidebars
+      description: Reveal collapsed sidebars by hovering over window edges.
+      type: class-toggle
+    - id: hover-sidedock-trigger-area
+      title: Hover trigger area
+      type: variable-select
+      default: 4px
+    - id: hover-sidedock-width
+      title: Hover sidebars width
+      type: variable-text
+      default: 320px
+    - id: hover-sidedock-delay
+      title: Hover sidebars delay
+      type: variable-text
+      default: 160ms
+    - id: hover-sidedock-active-off
+      title: Discard interactions
+      description: Always collapse hover sidebars after cursor leaving.
+      type: class-toggle
+    - id: file-explorer
+      title: File explorer
+      type: heading
+      level: 2
+      collapsed: true
+    - id: nav-item-active-style
+      title: Active file style
+      type: class-select
+      allowEmpty: false
+      default: nav-item-baseline
+    - id: colorful-folders
+      title: Colorful folders
+      type: class-select
+      allowEmpty: false
+      default: colorful-folders-off
+    - id: nav-item-size
+      title: Item name size
+      type: variable-text
+      default: 13px
+    - id: full-item-name
+      title: Full item name
+      type: class-toggle
+    - id: bold-folders
+      title: Bold folders name
+      type: class-toggle
+    - id: large-new-note
+      title: Large new note button
+      type: class-toggle
+    - id: nav-indentation-guide-width
+      title: Indentation guides thickness
+      type: variable-number-slider
+      format: px
+      default: 0
+      min: 0
+      max: 3
+      step: 1
+    - id: nav-indentation-guide-color
+      title: Indentation guides color
+      type: variable-select
+      allowEmpty: false
+      default: rgba(var(--mono-rgb-100), 0.12)
+    - id: mobile
+      title: Mobile
+      type: heading
+      level: 2
+      collapsed: true
+    - id: auto-full-screen-title
+      title: Informative full screen
+      description: Display current page title when interface elements are hidden.
+      type: class-toggle
+    - id: horizontal-tab-options
+      title: Horizontal tab list
+      type: class-toggle
+    - id: mobile-sidebar-width-override
+      title: Sidebar width
+      type: variable-text
+      default: 100%
+    - id: mobile-left-sidebar-width
+      title: Tablet sidebar width (Left)
+      type: variable-text
+      default: 360px
+    - id: mobile-right-sidebar-width
+      title: Tablet sidebar width (Right)
+      type: variable-text
+      default: 360px
+    - id: mobile-left-sidebar-width-pinned
+      title: Tablet pinned sidebar width (Left)
+      type: variable-text
+      default: 300px
+    - id: mobile-right-sidebar-width-pinned
+      title: Tablet pinned sidebar width (Right)
+      type: variable-text
+      default: 300px
+    - id: settings
+      title: Settings
+      type: heading
+      level: 2
+      collapsed: true
+    - id: plugins-grid-off
+      title: Plugins list view
+      description: Disable plugins grid layout.
+      type: class-toggle
+    - id: titlebar
+      title: Frame title
+      type: heading
+      level: 2
+      collapsed: true
+    - id: titlebar-info
+      description: Requires **Obsidian frame** in **Appearance** settings.
+      type: info-text
+      markdown: true
+    - id: titlebar-text-off
+      title: Hide frame title
+      type: class-toggle
+    - id: titlebar-text-weight
+      title: Frame title font weight
+      type: variable-number-slider
+      default: 600
+      min: 100
+      max: 900
+      step: 50
+    - id: colorful-frame
+      title: Tinted frame
+      type: heading
+      level: 2
+      collapsed: true
+    - id: colorful-frame
+      title: Tinted frame
+      type: class-toggle
+    - id: colorful-frame-background
+      title: Tinted frame background
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: colorful-frame-icon-color
+      title: Tinted frame icon color
+      type: variable-themed-color
+      format: hex
+      default-light: '#FFFFFF'
+      default-dark: '#FFFFFF'
+    - id: translucent-window
+      title: Translucency
+      type: heading
+      level: 2
+      collapsed: true
+    - id: translucent-window-info
+      description: Requires **Translucent window** in **Appearance** settings.
+      type: info-text
+      markdown: true
+    - id: translucent-light-opacity
+      title: Light translucent window opacity
+      type: variable-number-slider
+      default: 50
+      min: 0
+      max: 100
+      step: 10
+      format: '%'
+    - id: translucent-dark-opacity
+      title: Dark translucent window opacity
+      type: variable-number-slider
+      default: 50
+      min: 0
+      max: 100
+      step: 10
+      format: '%'
+    - id: editor
+      title: Editor
+      type: heading
+      level: 1
+      collapsed: true
+    - id: font-text-override
+      title: Editor font
+      type: variable-text
+      default: Inter
+    - id: font-monospace-override
+      title: Monospace font
+      type: variable-text
+      default: ui-monospace
+    - id: p-spacing
+      title: Paragraph spacing
+      type: variable-text
+      default: 1.75rem
+    - id: focus-view
+      title: Focus view
+      type: class-toggle
+      description: Hide tabs and table title bar when both sidebars are collapsed.
+    - id: mode-switcher-off
+      title: Disable quick mode switcher
+      type: class-toggle
+      description: Display editor mode toggle at the top of the editor.
+    - id: active-line
+      title: Active line
+      type: heading
+      level: 2
+      collapsed: true
+    - id: active-line-style
+      title: Active line highlight style
+      type: class-select
+      default: active-line-off
+    - id: active-line-color
+      title: Active line highlight color
+      type: class-select
+      default: active-line-color-default
+    - id: blockwidth
+      title: Block width
+      type: heading
+      level: 2
+      collapsed: true
+    - id: block-width-info
+      description: Requires **Readable line length** in **Editor** settings. [Usage guide](https://github.com/aaaaalexis/obsidian-baseline#block-width)
+      type: info-text
+      markdown: true
+    - id: block-width-off
+      title: Disable block width
+      type: class-toggle
+    - id: line-width
+      title: Default line width
+      type: variable-text
+      default: 700px
+    - id: line-width-wide
+      title: Wide line width
+      type: variable-text
+      default: 50rem
+    - id: table-block-width
+      title: Table block width
+      type: class-select
+      allowEmpty: false
+      default: table-normal
+    - id: bases-block-width
+      title: Bases block width
+      type: class-select
+      allowEmpty: false
+      default: bases-normal
+    - id: image-block-width
+      title: Image block width
+      type: class-select
+      allowEmpty: false
+      default: img-normal
+    - id: inline-title
+      title: Inline title
+      type: heading
+      level: 2
+      collapsed: true
+    - id: inline-title-info
+      description: Requires **Show inline title** in **Appearance** settings.
+      type: info-text
+      markdown: true
+    - id: inline-title-font
+      title: Inline title font
+      type: variable-text
+      default: Instrument Serif
+    - id: inline-title-size
+      title: Inline title font size
+      type: variable-text
+      default: 1.618em
+    - id: inline-title-align
+      title: Inline title alignment
+      type: variable-select
+      allowEmpty: false
+      default: start
+    - id: inline-title-weight
+      title: Inline title font weight
+      type: variable-number-slider
+      default: 400
+      min: 100
+      max: 900
+      step: 50
+    - id: inline-title-color
+      title: Inline title text color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: properties
+      title: Properties
+      type: heading
+      level: 2
+      collapsed: true
+    - id: metadata-style
+      title: Property style
+      type: class-select
+      allowEmpty: false
+      default: metadata-default
+    - id: metadata-add-property
+      title: Add property button visibility
+      type: class-select
+      allowEmpty: false
+      default: metadata-add-property-always
+    - id: metadata-label-width-modifier
+      title: Property name width
+      type: variable-number-slider
+      default: 1
+      min: 0.5
+      max: 1.5
+      step: 0.1
+    - id: metadata-compact
+      title: Compact properties
+      type: class-toggle
+    - id: metadata-list-tags
+      title: Show list as tags
+      type: class-toggle
+    - id: metadata-longtext
+      title: Show longer text
+      type: class-toggle
+    - id: metadata-heading-off
+      title: Hide property heading
+      type: class-toggle
+    - id: metadata-icons-off
+      title: Hide property icons
+      type: class-toggle
+    - id: headings
+      title: Headings
+      type: heading
+      level: 2
+      collapsed: true
+    - id: heading-spacing
+      title: Heading spacing
+      description: Adjust space between headings and paragraphs.
+      type: variable-text
+      default: 2em
+    - id: readable-spacing
+      title: Readable spacing
+      description: Use tighter spacing in editor.
+      type: class-toggle
+    - id: readable-spacing-modifier
+      title: Readable spacing modifier
+      description: Relative to paragraph spacing value.
+      type: variable-number-slider
+      default: 0.25
+      min: 0
+      max: 1
+      step: 0.25
+    - id: colorful-headings
+      title: Colorful headings
+      type: heading
+      level: 3
+      collapsed: true
+    - id: colorful-headings-text
+      title: Colored heading text
+      type: class-toggle
+    - id: colorful-headings
+      title: Heading indicator
+      type: class-select
+      allowEmpty: false
+      default: colorful-headings-off
+    - id: colorful-headings-background
+      title: Heading background
+      type: class-toggle
+    - id: colorful-headings-full-width
+      title: Full width background
+      type: class-toggle
+    - id: colorful-headings-info
+      description: Colorful headings color follow individual heading settings below.
+      type: info-text
+      markdown: true
+    - id: level-1-headings
+      title: Level 1 Headings
+      type: heading
+      level: 3
+      collapsed: true
+    - id: h1-color
+      title: H1 color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: h1-font
+      title: H1 font
+      type: variable-text
+      default: Instrument Serif
+    - id: h1-size
+      title: H1 font size
+      type: variable-text
+      default: 1.618em
+    - id: h1-weight
+      title: H1 font weight
+      type: variable-number-slider
+      default: 700
+      min: 100
+      max: 900
+      step: 50
+    - id: h1-variant
+      title: H1 font variant
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: h1-style
+      title: H1 font style
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: h1-transform
+      title: H1 text case
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: h1-align
+      title: H1 alignment
+      type: variable-select
+      allowEmpty: false
+      default: start
+    - id: h1-l
+      title: H1 divider
+      type: class-toggle
+    - id: level-2-headings
+      title: Level 2 Headings
+      type: heading
+      level: 3
+      collapsed: true
+    - id: h2-color
+      title: H2 color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: h2-font
+      title: H2 font
+      type: variable-text
+      default: Instrument Serif
+    - id: h2-size
+      title: H2 font size
+      type: variable-text
+      default: 1.462em
+    - id: h2-weight
+      title: H2 font weight
+      type: variable-number-slider
+      default: 680
+      min: 100
+      max: 900
+      step: 50
+    - id: h2-variant
+      title: H2 font variant
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: h2-style
+      title: H2 font style
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: h2-transform
+      title: H2 text case
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: h2-align
+      title: H2 alignment
+      type: variable-select
+      allowEmpty: false
+      default: start
+    - id: h2-l
+      title: H2 divider
+      type: class-toggle
+    - id: level-3-headings
+      title: Level 3 Headings
+      type: heading
+      level: 3
+      collapsed: true
+    - id: h3-color
+      title: H3 color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: h3-font
+      title: H3 font
+      type: variable-text
+      default: Instrument Serif
+    - id: h3-size
+      title: H3 font size
+      type: variable-text
+      default: 1.318em
+    - id: h3-weight
+      title: H3 font weight
+      type: variable-number-slider
+      default: 660
+      min: 100
+      max: 900
+      step: 50
+    - id: h3-variant
+      title: H3 font variant
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: h3-style
+      title: H3 font style
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: h3-transform
+      title: H3 text case
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: h3-align
+      title: H3 alignment
+      type: variable-select
+      allowEmpty: false
+      default: start
+    - id: h3-l
+      title: H3 divider
+      type: class-toggle
+    - id: level-4-headings
+      title: Level 4 Headings
+      type: heading
+      level: 3
+      collapsed: true
+    - id: h4-color
+      title: H4 color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: h4-font
+      title: H4 font
+      type: variable-text
+      default: Instrument Serif
+    - id: h4-size
+      title: H4 font size
+      type: variable-text
+      default: 1.188em
+    - id: h4-weight
+      title: H4 font weight
+      type: variable-number-slider
+      default: 640
+      min: 100
+      max: 900
+      step: 50
+    - id: h4-variant
+      title: H4 font variant
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: h4-style
+      title: H4 font style
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: h4-transform
+      title: H4 text case
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: h4-align
+      title: H4 alignment
+      type: variable-select
+      allowEmpty: false
+      default: start
+    - id: h4-l
+      title: H4 divider
+      type: class-toggle
+      default: 'false'
+    - id: level-5-headings
+      title: Level 5 Headings
+      type: heading
+      level: 3
+      collapsed: true
+    - id: h5-color
+      title: H5 color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: h5-font
+      title: H5 font
+      type: variable-text
+      default: Instrument Serif
+    - id: h5-size
+      title: H5 font size
+      type: variable-text
+      default: 1.076em
+    - id: h5-weight
+      title: H5 font weight
+      type: variable-number-slider
+      default: 620
+      min: 100
+      max: 900
+      step: 50
+    - id: h5-variant
+      title: H5 font variant
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: h5-style
+      title: H5 font style
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: h5-transform
+      title: H5 text case
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: h5-align
+      title: H5 alignment
+      type: variable-select
+      allowEmpty: false
+      default: start
+    - id: h5-l
+      title: H5 divider
+      type: class-toggle
+    - id: level-6-headings
+      title: Level 6 Headings
+      type: heading
+      level: 3
+      collapsed: true
+    - id: h6-color
+      title: H6 color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: h6-font
+      title: H6 font
+      type: variable-text
+      default: Instrument Serif
+    - id: h6-size
+      title: H6 font size
+      type: variable-text
+      default: 1em
+    - id: h6-weight
+      title: H6 font weight
+      type: variable-number-slider
+      default: 600
+      min: 100
+      max: 900
+      step: 50
+    - id: h6-variant
+      title: H6 font variant
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: h6-style
+      title: H6 font style
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: h6-transform
+      title: H6 text case
+      type: variable-select
+      allowEmpty: false
+      default: uppercase
+    - id: h6-align
+      title: H6 alignment
+      type: variable-select
+      allowEmpty: false
+      default: start
+    - id: h6-l
+      title: H6 divider
+      type: class-toggle
+    - id: horizontal-rule
+      title: Horizontal rule
+      type: heading
+      level: 2
+      collapsed: true
+    - id: hr-color
+      title: Horizontal rule color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: hr-width
+      title: Horizontal rule width
+      type: variable-text
+      default: 100%
+    - id: hr-thickness
+      title: Horizontal rule thickness
+      type: variable-number-slider
+      format: px
+      default: 2
+      min: 0
+      max: 8
+      step: 0.5
+    - id: hr-align
+      title: Horizontal rule alignment
+      type: variable-select
+      default: center
+    - id: hr-dashed
+      title: Dashed horizontal rule
+      type: class-toggle
+    - id: hr-dashed-size
+      title: Dashed line size
+      type: variable-text
+      allowEmpty: false
+      default: 1em
+    - id: hr-dashed-spacing
+      title: Dashed line spacing
+      type: variable-text
+      allowEmpty: false
+      default: 0.5em
+    - id: banner
+      title: Banner
+      type: heading
+      level: 2
+      collapsed: true
+    - id: banner-off
+      title: Disable banner
+      type: class-toggle
+    - id: banner-icon-size
+      title: Banner icon size
+      type: variable-text
+      allowEmpty: false
+      default: 3rem
+    - id: banner-image-height
+      title: Banner image height
+      type: variable-text
+      allowEmpty: false
+      default: 320px
+    - id: banner-image-height-s
+      title: Banner image height (Mobile)
+      type: variable-text
+      allowEmpty: false
+      default: 240px
+    - id: banner-image-inset
+      title: Banner image side spacing
+      type: variable-text
+      allowEmpty: false
+      default: 8px
+    - id: banner-image-radius
+      title: Banner image radius
+      type: variable-number-slider
+      default: 8
+      min: 0
+      max: 24
+      step: 1
+      format: px
+    - id: banner-image-object-fit
+      title: Banner image fit
+      type: variable-select
+      default: cover
+    - id: bases
+      title: Bases
+      type: heading
+      level: 2
+      collapsed: true
+    - id: bases-toolbar-label-display
+      title: Toolbar text label
+      type: variable-select
+      allowEmpty: false
+      default: flex
+    - id: bases-table-header-icon-display
+      title: Table header icons
+      type: variable-select
+      allowEmpty: false
+      default: flex
+    - id: bases-table-align-items
+      title: Table vertical alignment
+      type: variable-select
+      allowEmpty: false
+      default: start
+    - id: bases-row-alt
+      title: Alternating row background
+      type: class-toggle
+    - id: bases-col-alt
+      title: Alternating column background
+      type: class-toggle
+    - id: blockquotes
+      title: Blockquotes
+      type: heading
+      level: 2
+      collapsed: true
+    - id: blockquote-style
+      title: Blockquote style
+      type: class-select
+      allowEmpty: false
+      default: blockquote-baseline
+    - id: blockquote-border-thickness
+      title: Blockquote border thickness
+      type: variable-number-slider
+      format: px
+      default: 2
+      min: 0
+      max: 5
+      step: 1
+    - id: blockquote-size
+      title: Blockquote font size
+      type: variable-text
+      default: 1em
+    - id: blockquote-font-style
+      title: Blockquote font style
+      type: variable-select
+      allowEmpty: false
+      default: normal
+    - id: blockquote-color
+      title: Blockquote text color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: blockquote-background-color
+      title: Blockquote background
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: blockquote-border-color
+      title: Blockquote border color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: cards
+      title: Cards
+      type: heading
+      level: 2
+      collapsed: true
+    - id: cards-min-width
+      title: Card minimum width
+      type: variable-text
+      default: 160px
+    - id: cards-max-width
+      title: Card maximum width
+      type: variable-text
+      default: 1fr
+    - id: cards-mobile-width
+      title: Card minimum width (Mobile)
+      type: variable-text
+      default: 120px
+    - id: cards-padding
+      title: Card padding
+      type: variable-text
+      default: 4px
+    - id: cards-image-height
+      title: Card maximum image height
+      type: variable-text
+      default: 400px
+    - id: cards-background
+      title: Card background
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: cards-background-hover
+      title: Card background (Hover)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: callouts
+      title: Callouts
+      type: heading
+      level: 2
+      collapsed: true
+    - id: callouts-style
+      title: Callout style
+      type: class-select
+      allowEmpty: false
+      default: callouts-default
+    - id: callout-size
+      title: Callout font size
+      type: variable-text
+      default: 1em
+    - id: callout-lucide
+      title: Disable custom icons
+      description: Use default Lucide icons in callouts.
+      type: class-toggle
+    - id: canvas
+      title: Canvas
+      type: heading
+      level: 2
+      collapsed: true
+    - id: canvas-background
+      title: Canvas background
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: canvas-dot-pattern
+      title: Canvas dot pattern
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-blocks
+      title: Code
+      type: heading
+      level: 2
+      collapsed: true
+    - id: code-style
+      title: Code style
+      type: class-select
+      allowEmpty: false
+      default: code-default
+    - id: code-size
+      title: Code font size
+      type: variable-text
+      default: var(--font-ui-smaller)
+    - id: code-background
+      title: Code background
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-line-numbers
+      title: Code line numbers
+      type: class-toggle
+    - id: code-scroll
+      title: Disable line wrap
+      type: class-toggle
+    - id: embeds
+      title: Embeds
+      type: heading
+      level: 2
+      collapsed: true
+    - id: embed-max-height
+      title: Embed maximum height
+      type: variable-text
+      default: ''
+    - id: embed-style
+      title: Embed style
+      type: class-select
+      allowEmpty: false
+      default: embed-side
+    - id: embed-background
+      title: Embed background
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: embed-border-color
+      title: Embed border color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: embed-border-thickness
+      title: Embed border thickness
+      type: variable-number-slider
+      format: px
+      default: 2
+      min: 0
+      max: 5
+      step: 1
+    - id: embed-hide-title
+      title: Hide embed titles
+      type: class-toggle
+    - id: links
+      title: Links
+      type: heading
+      level: 2
+      collapsed: true
+    - id: link-color
+      title: Internal link color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: link-color-hover
+      title: Internal link color (Hover)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: link-decoration
+      title: Internal link underline
+      type: variable-select
+      allowEmpty: false
+      default: none
+    - id: link-external-color
+      title: External link color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: link-external-color-hover
+      title: External link color (Hover)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: link-external-decoration
+      title: External link underline
+      type: variable-select
+      allowEmpty: false
+      default: none
+    - id: lists
+      title: Lists & Tasks
+      type: heading
+      level: 2
+      collapsed: true
+    - id: indentation-guide-width
+      title: Indentation guides thickness
+      type: variable-number-slider
+      format: px
+      default: 0
+      min: 0
+      max: 3
+      step: 1
+    - id: indentation-guide-color
+      title: Indentation guides color
+      type: variable-select
+      allowEmpty: false
+      default: rgba(var(--mono-rgb-100), 0.12)
+    - id: list-spacing
+      title: List spacing
+      type: variable-text
+      default: 0.175em
+    - id: list-numbered-style
+      title: List order style
+      type: variable-select
+      default: decimal
+    - id: list-marker-color
+      title: List bullet color
+      type: variable-themed-color
+      default-light: '#'
+      default-dark: '#'
+      format: hex
+    - id: checkbox-color
+      title: Checkbox color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: checkbox-radius
+      title: Checkbox shape
+      type: variable-select
+      allowEmpty: false
+      default: 4px
+    - id: strike-lists-off
+      title: Disable checkbox strikethrough
+      type: class-toggle
+    - id: media
+      title: Media
+      type: heading
+      level: 2
+      collapsed: true
+    - id: media-muted
+      title: Dim media in dark mode
+      type: class-toggle
+    - id: full-width-media-off
+      title: Disable maximized media
+      type: class-toggle
+    - id: zoom-off
+      title: Disable image zoom
+      type: class-toggle
+    - id: img-radius-off
+      title: Disable rounded media
+      type: class-toggle
+    - id: img-grid-gap
+      title: Image grids spacing
+      type: variable-number-slider
+      default: 4
+      min: 0
+      max: 16
+      step: 1
+      format: px
+    - id: pdf
+      title: PDF
+      type: heading
+      level: 2
+      collapsed: true
+    - id: pdf-page-style
+      title: PDF page style
+      type: class-select
+      allowEmpty: false
+      default: pdf-shadow
+    - id: pdf-invert-dark
+      title: Invert PDF color in dark mode
+      type: class-toggle
+    - id: pdf-muted
+      title: Dim PDF pages in dark mode
+      type: class-toggle
+    - id: pdf-radius-off
+      title: Disable rounded PDF pages
+      type: class-toggle
+    - id: tables
+      title: Tables
+      type: heading
+      level: 2
+      collapsed: true
+    - id: table-text-size
+      title: Table font size
+      type: variable-text
+      default: 0.933em
+    - id: table-width
+      title: Table width
+      type: class-select
+      default: table-width-full
+    - id: table-text-align-header
+      title: Table header text alignment
+      type: variable-select
+      allowEmpty: false
+      default: start
+    - id: table-text-align-body
+      title: Table body text alignment
+      type: variable-select
+      allowEmpty: false
+      default: start
+    - id: row-hover
+      title: Highlight hovered row
+      type: class-toggle
+    - id: row-alt
+      title: Alternating row background
+      type: class-toggle
+    - id: col-alt
+      title: Alternating columns background
+      type: class-toggle
+    - id: row-lines
+      title: Always show row border
+      type: class-toggle
+    - id: col-lines
+      title: Always show column border
+      type: class-toggle
+    - id: table-numbers
+      title: Row line numbers
+      type: class-toggle
+    - id: table-tabular
+      title: Fixed-width tabular figures
+      type: class-toggle
+    - id: table-nowrap
+      title: Disable line wrap
+      type: class-toggle
+    - id: tags
+      title: Tags
+      type: heading
+      level: 2
+      collapsed: true
+    - id: unstyled-tags
+      title: Plain tags
+      description: Display tags as normal text.
+      type: class-toggle
+    - id: tag-radius
+      title: Tag shape
+      type: variable-select
+      default: 8px
+    - id: tag-border-width
+      title: Tag border thickness
+      type: variable-number-slider
+      default: 0
+      min: 0
+      max: 2
+      step: 1
+      format: px
+    - id: tag-color
+      title: Tag text color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: tag-background
+      title: Tag background
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: tag-background-hover
+      title: Tag background (Hover)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'

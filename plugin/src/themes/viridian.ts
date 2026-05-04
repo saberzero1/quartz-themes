@@ -472,7 +472,7 @@ export const theme: ThemeData = {
         unicodeRange: null,
       },
     ],
-    styleSettingsId: "vr-core",
+    styleSettingsId: ["vr-core", "viridian-editor"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

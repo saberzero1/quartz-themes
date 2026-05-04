@@ -6,6 +6,2365 @@
       description.zh: 🎨 外观预设：[在此获取预设](https://github.com/Akifyss/obsidian-border/blob/main/presets.md)，点击右上角“Import”导入预设，重启obsidian来生效. <br> <br> 📭 如果遇到问题，可以在Github上 [提交issues](https://github.com/Akifyss/obsidian-border/issues) 或[讨论](https://github.com/Akifyss/obsidian-border/discussions)<br> <br> 🔼 查看最近更新：[Github Commit History](https://github.com/Akifyss/obsidian-border/commits/main)
       type: info-text
       markdown: true
+- name: Components
+  id: Components
+  settings:
+    - id: autohide
+      title: Auto hide
+      type: heading
+      collapsed: false
+      level: 3
+    - id: tab-autohide
+      title: Auto hide tab bar
+      description: Mac users can adjust the position of the traffic light using the 'Electron Window Tweaker' plugin
+      type: class-toggle
+    - id: status-bar-autohide
+      title: Auto hide bottom status bar
+      type: class-toggle
+    - id: Ribbon-autohide
+      title: Auto hide left ribbon menu
+      type: class-toggle
+    - id: nav-header-autohide
+      title: Auto hide header icons in sidepane
+      type: class-toggle
+    - id: tab-title-bar-autohide
+      title: Auto hide tab title bar
+      type: class-toggle
+    - id: vault-profile-autohide
+      title: Auto hide vault profile
+      type: class-toggle
+    - id: file-explorer
+      title: File explorer
+      type: heading
+      collapsed: true
+      level: 3
+    - id: CTA-BTN-enable
+      title: Enable bigger "New note" button
+      type: class-toggle
+    - id: file-names-untrim
+      title: Untrim file names
+      type: class-toggle
+    - id: folder-font-bold
+      title: Bold folder font
+      type: class-toggle
+    - id: file-explorer-icon
+      title: icon
+      type: heading
+      collapsed: false
+      level: 4
+    - id: file-icon-remove
+      title: Remove custom icon
+      type: class-toggle
+    - id: colorful-folder
+      title: Enable colorful folder icon
+      type: class-toggle
+    - id: outline-panel
+      title: Outline Panel
+      type: heading
+      collapsed: true
+      level: 3
+    - id: outline-enhanced
+      title: Enable enhanced outline style
+      description: from https://github.com/subframe7536/obsidian-theme-maple, author:@subframe7536
+      type: class-toggle
+    - id: New-tab
+      title: New tab
+      type: heading
+      collapsed: true
+      level: 3
+    - id: new-tab-btn-select
+      title: New tab buttons
+      type: class-select
+      allowEmpty: false
+      default: new-tab-btn-default
+      options:
+        - value: new-tab-btn-default
+    - id: new-tab-image-select
+      title: New tab image
+      type: class-select
+      allowEmpty: false
+      default: new-tab-image-default
+      options:
+        - value: new-tab-image-customize
+    - id: new-tab-image
+      title: customize new tab image
+      type: variable-text
+      description: Enter the url of the image into quotes
+      default: url(" ")
+    - id: Graph-view
+      title: Graph view
+      type: heading
+      collapsed: true
+      level: 3
+    - id: graph-text
+      title: graph-text color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: graph-line
+      title: graph-line color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: graph-node
+      title: graph-node color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: graph-node-unresolved
+      title: graph-node-unresolved color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: graph-node-focused
+      title: graph-node-focused color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: graph-node-tag
+      title: graph-node-tag color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: graph-node-attachment
+      title: graph-node-attachment color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: Canvas
+      title: Canvas
+      type: heading
+      collapsed: true
+      level: 3
+    - id: immersive-canvas
+      title: immersive canvas
+      type: class-toggle
+    - id: media-embed-card-border-off
+      title: Remove border effect of media card.
+      type: class-toggle
+    - id: canvas-background
+      title: Customize canvas background color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: canvas-card-border-width
+      title: canvas card border width
+      type: variable-text
+      description: Input any CSS border-width value
+      default: 2px
+    - id: canvas-card-border-style
+      title: canvas card border style
+      type: variable-text
+      description: Input any CSS border-style value
+      default: solid
+    - id: canvas-card-menu
+      title: canvas card menu position
+      type: class-select
+      allowEmpty: false
+      default: canvas-card-menu-center
+      options:
+        - value: canvas-card-menu-right
+    - id: animation
+      title: Animation
+      type: heading
+      collapsed: true
+      level: 3
+    - id: extra-anim-remove
+      title: Remove additional added animation
+      type: class-toggle
+    - id: anim-speed
+      title: Animation speed
+      type: variable-number-slider
+      default: 1
+      min: 0.5
+      max: 2
+      step: 0.05
+    - id: Miscellaneous
+      title: Miscellaneous
+      type: heading
+      collapsed: true
+      level: 3
+    - id: setting-item-title-icon-remove
+      title: Remove setting item title icon
+      type: class-toggle
+    - id: scrollbar-hide
+      title: Hide scrollbar
+      type: class-toggle
+    - id: restored-scrollbars
+      title: Restore scrollbar style
+      type: class-toggle
+- name: Appearance (light mode)
+  id: Appearance-light
+  settings:
+    - id: Presets-info-light
+      description: '[Presets (light)](https://github.com/Akifyss/obsidian-border/blob/main/presets.md#light-mode) | Before importing, it is recommended to reset this entry to default / Remove preset↗️'
+      type: info-text
+      markdown: true
+    - id: card-layout-open-light
+      title: Enable card layout(light mode)
+      type: class-toggle
+    - id: theme-light-style-select
+      title: Base style (light mode)
+      type: class-select
+      allowEmpty: false
+      default: theme-light-background-default
+      options:
+        - value: theme-light-background-adapt
+    - id: Color-light
+      title: Color
+      type: heading
+      collapsed: true
+      level: 3
+    - id: Accent-color-light
+      title: Accent color
+      type: heading
+      collapsed: true
+      level: 4
+    - id: accent-light
+      title: Accent color(light mode)
+      description: Set accent color for the light and dark modes separately
+      type: variable-color
+      format: hsl-split
+      opacity: false
+      default: '#4b63fb'
+    - id: accent-color-override-light
+      title: Override accent color setting in "Settings-Appearance" menu(light mode)
+      type: class-toggle
+    - id: accent-advanced-light
+      title: Advanced
+      type: heading
+      collapsed: true
+      level: 5
+    - id: color-accent-hsl-light
+      title: color-accent-hsl
+      type: variable-color
+      format: hsl-values
+      opacity: false
+      default: '#'
+    - id: color-accent-light
+      title: color-accent
+      type: variable-color
+      format: hsl
+      opacity: false
+      default: '#'
+    - id: color-accent-1-light
+      title: color-accent-1
+      type: variable-color
+      format: hsl
+      opacity: false
+      default: '#'
+    - id: color-accent-2-light
+      title: color-accent-2
+      type: variable-color
+      format: hsl
+      opacity: false
+      default: '#'
+    - id: color-accent-3-light
+      title: color-accent-3
+      type: variable-color
+      format: hsl
+      opacity: false
+      default: '#'
+    - id: Extended-colors-light
+      title: Extended colors
+      type: heading
+      collapsed: true
+      level: 4
+    - id: color-red-rgb
+      title: Red
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#dd2c38'
+      default-dark: '#ff7881'
+    - id: color-orange-rgb
+      title: Orange
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#de7417'
+      default-dark: '#fbbb83'
+    - id: color-yellow-rgb
+      title: Yellow
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#c09c0c'
+      default-dark: '#ffe88b'
+    - id: color-green-rgb
+      title: Green
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#1da51d'
+      default-dark: '#7cd37c'
+    - id: color-cyan-rgb
+      title: Cyan
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#16a6ab'
+      default-dark: '#86dfe2'
+    - id: color-blue-rgb
+      title: Blue
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#1775d9'
+      default-dark: '#89bdf4'
+    - id: color-purple-rgb
+      title: Purple
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#8f47e1'
+      default-dark: '#cb9eff'
+    - id: color-pink-rgb
+      title: Pink
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#dd1399'
+      default-dark: '#f2b6de'
+    - id: Background-light
+      title: Background
+      type: heading
+      collapsed: true
+      level: 3
+    - id: mod-left-split-background-header-light
+      title: Left sidepane background
+      type: heading
+      collapsed: false
+      level: 4
+    - id: mod-left-split-background-select-light
+      title: Left sidepane background(light mode)
+      type: class-select
+      allowEmpty: false
+      default: mod-left-split-background-primary-light
+      options:
+        - value: mod-left-split-background-CSS-light
+    - id: background-mod-left-split-light
+      title: Customize left sidepane background color (light mode)
+      type: variable-color
+      opacity: false
+      format: hex
+    - id: background-mod-left-CSS-light
+      title: Left sidepane background (light mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: background-mod-left-CSS-blend-mode-light
+      title: Left sidepane background-blend-mode (light mode)
+      description: Input any CSS background-blend-mode value
+      type: variable-text
+      default: normal
+    - id: background-mod-left-CSS-backdrop-filter-light
+      title: Left sidepane backdrop-filter (light mode)
+      description: Input any CSS backdrop-filter value
+      type: variable-text
+      default: blur(32px)
+    - id: mod-right-split-background-header-light
+      title: Right sidepane background
+      type: heading
+      collapsed: false
+      level: 4
+    - id: mod-right-split-background-select-light
+      title: Right sidepane background (light mode)
+      type: class-select
+      allowEmpty: false
+      default: mod-right-split-background-primary-light
+      options:
+        - value: mod-right-split-background-CSS-light
+    - id: background-mod-right-split-light
+      title: Customize right sidepane background color(light mode)
+      type: variable-color
+      opacity: false
+      format: hex
+    - id: background-mod-right-CSS-light
+      title: Right sidepane background (light mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: background-mod-right-CSS-blend-mode-light
+      title: Right sidepane background-blend-mode (light mode)
+      description: Input any CSS background-blend-mode value
+      type: variable-text
+      default: normal
+    - id: background-mod-right-CSS-backdrop-filter-light
+      title: Right sidepane backdrop-filter (light mode)
+      description: Input any CSS backdrop-filter value
+      type: variable-text
+      default: blur(32px)
+    - id: mod-root-split-background-header-light
+      title: Middle pane background
+      type: heading
+      collapsed: false
+      level: 4
+    - id: mod-root-split-background-select-light
+      title: Middle pane background (light mode)
+      type: class-select
+      allowEmpty: false
+      default: mod-root-split-background-primary-light
+      options:
+        - value: mod-root-split-background-CSS-light
+    - id: background-mod-root-split-light
+      title: Customize Middle pane background color(light mode)
+      type: variable-color
+      opacity: false
+      format: hex
+    - id: background-mod-root-CSS-light
+      title: Middle pane background (light mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: background-mod-root-CSS-blend-mode-light
+      title: Middle pane background-blend-mode (light mode)
+      description: Input any CSS background-blend-mode value
+      type: variable-text
+      default: normal
+    - id: background-mod-root-CSS-backdrop-filter-light
+      title: Middle pane backdrop-filter (light mode)
+      description: Input any CSS backdrop-filter value
+      type: variable-text
+      default: blur(32px)
+    - id: underlying-background-header-light
+      title: Underlying background
+      type: heading
+      collapsed: false
+      level: 4
+    - id: background-underlying-select-light
+      title: underlying background(light mode)
+      type: class-select
+      allowEmpty: false
+      default: background-underlying-default-light
+      options:
+        - value: background-underlying-CSS-light
+    - id: background-underlying-light
+      title: Customize underlying background color(light mode)
+      type: variable-color
+      opacity: false
+      format: hex
+    - id: background-underlying-CSS-light
+      title: underlying background (light mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: background-underlying-CSS-blend-mode-light
+      title: underlying background-blend-mode (light mode)
+      description: Input any CSS background-blend-mode value
+      type: variable-text
+      default: overlay, color-burn
+    - id: underlying-foreground-header-light
+      title: Underlying foreground
+      description: Adjust foreground to fit the background
+      type: heading
+      collapsed: false
+      level: 5
+    - id: on-border-light
+      title: underlying foreground color(light mode)
+      description: Color of elements (text&icon) displayed on underlying background, including top tab bar, ribbon menu, and status bar
+      type: variable-color
+      opacity: false
+      format: hex
+    - id: mix-blend-mode-on-border-light
+      title: mix blend mode of underlying foreground(light mode)
+      description: Input any CSS mix-blend-mode value
+      type: variable-text
+      default: normal
+    - id: Global-background-header-light
+      title: Global background
+      type: heading
+      collapsed: false
+      level: 4
+    - id: background-primary
+      title: background-primary(light mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-primary-alt
+      title: background-primary-alt(light mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-secondary
+      title: background-secondary(light mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-secondary-alt
+      title: background-secondary-alt(light mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-tertiary
+      title: background-tertiary(light mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: workspace-background-translucent
+      title: workspace-background-translucent(light mode)
+      type: variable-themed-color
+      opacity: true
+      format: hsl
+      default-light: '#'
+      default-dark: '#'
+    - id: background-modifier-hover
+      title: background-modifier-hover(light mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-modifier-active-hover
+      title: background-modifier-active-hover(light mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-modifier-border
+      title: background-modifier-border(light mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-modifier-border-hover
+      title: background-modifier-border-hover(light mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-modifier-border-focus
+      title: background-modifier-border-focus(light mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: Foreground-header-light
+      title: Foreground
+      type: heading
+      collapsed: false
+      level: 3
+    - id: text-color-light
+      title: Text & icon color
+      type: heading
+      collapsed: false
+      level: 4
+    - id: text-normal
+      title: text-normal(light mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-muted
+      title: text-muted(light mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-faint
+      title: text-faint(light mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-accent
+      title: text-accent(light mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-accent-hover
+      title: text-accent-hover(light mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-on-accent
+      title: text-on-accent(light mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-on-accent-inverted
+      title: text-on-accent-inverted(light mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: interactive-color-light
+      title: Interactive color
+      type: heading
+      collapsed: false
+      level: 4
+    - id: interactive-normal
+      title: interactive-normal(light mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: interactive-hover
+      title: interactive-hover(light mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: interactive-accent
+      title: interactive-accent(light mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: interactive-accent-hsl
+      title: interactive-accent-hsl(light mode)
+      type: variable-themed-color
+      format: hsl-values
+      default-light: '#'
+      default-dark: '#'
+    - id: interactive-accent-hover
+      title: interactive-accent-hover(light mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: Card-light
+      title: Card
+      type: heading
+      collapsed: true
+      level: 3
+    - id: card-border-radius-light
+      title: Custom card border radius (light mode)
+      description: Input your border-radius value here
+      type: variable-text
+      default: 8px
+    - id: card-shadow-light
+      title: Custom card shadow (light mode)
+      description: Input your box-shadow value here
+      type: variable-text
+      default: ''
+    - id: Active-states-light
+      title: Active states
+      type: heading
+      collapsed: true
+      level: 3
+    - id: Active-states-Tabs-light
+      title: Active states(Tabs)
+      type: heading
+      collapsed: true
+      level: 4
+    - id: color-activated-tab-header-light
+      title: activated Tab header color(light mode)
+      type: variable-color
+      opacity: false
+      format: hex
+    - id: color-to-tab-icon-light
+      title: Apply custom color to the "close" icon(light mode)
+      type: class-toggle
+    - id: border-radius-activated-tab-header-light
+      title: activated Tab header border radius(light mode)
+      description: Input any CSS border-radius value
+      type: variable-text
+      default: 6px
+    - id: background-activated-tab-header-light
+      title: activated Tab header background(light mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: shadow-activated-tab-header-light
+      title: activated Tab header shadow(light mode)
+      description: Input any CSS box-shadow value
+      type: variable-text
+      default: ''
+    - id: color-activated-tab-header-underline-light
+      title: activated Tab header underline color(light mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: Active-states-file-explorer-light
+      title: Active states(file explorer)
+      type: heading
+      collapsed: true
+      level: 4
+    - id: Active-states-file-explorer-select-light
+      title: Activated file style(light mode)
+      type: class-select
+      allowEmpty: false
+      default: activated-file-default-light
+      options:
+        - value: activated-file-customize-light
+    - id: color-activated-file-light
+      title: Activated file color(light mode)
+      type: variable-color
+      opacity: false
+      format: hex
+    - id: border-radius-activated-file-light
+      title: Activated file border radius(light mode)
+      description: Input any CSS border-radius value
+      type: variable-text
+      default: 4px
+    - id: background-activated-file-light
+      title: Activated file background(light mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: shadow-activated-file-light
+      title: Activated file shadow(light mode)
+      description: Input any CSS box-shadow value
+      type: variable-text
+      default: ''
+    - id: UI-Controls-light
+      title: UI Controls
+      type: heading
+      collapsed: false
+      level: 3
+    - id: input-radius-light
+      title: input-radius(light mode)
+      description: border radius of buttons, input, etc.
+      type: variable-number
+      default: 5
+      format: px
+    - id: input-shadow-light
+      title: input-shadow(light mode)
+      description: shadow of button,dropdown, etc. Accepts any CSS box-shadow value
+      type: variable-text
+      default: ''
+    - id: input-shadow-hover-light
+      title: input-shadow-hover(light mode)
+      description: shadow of button,dropdown, etc.(hovered) Accepts any CSS box-shadow value
+      type: variable-text
+      default: ''
+    - id: toggle-light
+      title: toggle switch
+      type: heading
+      collapsed: false
+      level: 4
+    - id: toggle-thumb-color-light
+      title: toggle-thumb-color(light mode)
+      description: background color of toggle thumb Accepts any CSS background-color value
+      type: variable-text
+      default: ''
+    - id: toggle-thumb-enabled-color-light
+      title: toggle-thumb-enabled-color(light mode)
+      description: background color of toggle thumb(enabled) Accepts any CSS background-color value
+      type: variable-text
+      default: ''
+    - id: toggle-thumb-shadow-light
+      title: toggle-thumb-shadow(light mode)
+      description: shadow of toggle thumb Accepts any CSS box-shadow value
+      type: variable-text
+      default: ''
+    - id: toggle-thumb-enabled-shadow-light
+      title: toggle-thumb-enabled-shadow(light mode)
+      description: shadow of toggle thumb(enabled) Accepts any CSS box-shadow value
+      type: variable-text
+      default: ''
+    - id: toggle-track-color-light
+      title: toggle-track-color(light mode)
+      description: background color of toggle track Accepts any CSS background-color value
+      type: variable-text
+      default: ''
+    - id: toggle-track-enabled-color-light
+      title: toggle-track-enabled-color(light mode)
+      description: background color of toggle track(enabled) Accepts any CSS background-color value
+      type: variable-text
+      default: ''
+    - id: toggle-track-shadow-light
+      title: toggle-track-shadow(light mode)
+      description: shadow of toggle track Accepts any CSS box-shadow value
+      type: variable-text
+      default: ''
+    - id: toggle-track-hovered-shadow-light
+      title: toggle-track-hovered-shadow(light mode)
+      description: shadow of toggle track(hovered) Accepts any CSS box-shadow value
+      type: variable-text
+      default: ''
+    - id: Miscellaneous-light
+      title: Miscellaneous
+      type: heading
+      collapsed: true
+      level: 3
+    - id: card-highlight-light
+      title: Highlight active card
+      description: Only applicable for card layout
+      type: class-toggle
+    - id: workspace-divider-transparent-light
+      title: Visually remove divider effect in workspace
+      description: For default layout
+      type: class-toggle
+    - id: link-external-color
+      title: External link color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: link-external-color-hover
+      title: External link color (hover)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+- name: Appearance (dark mode)
+  id: Appearance-dark
+  settings:
+    - id: Presets-info-dark
+      description: '[Presets (dark)](https://github.com/Akifyss/obsidian-border/blob/main/presets.md#dark-mode) | Before importing, it is recommended to reset this entry to default / Remove preset↗️'
+      type: info-text
+      markdown: true
+    - id: card-layout-open-dark
+      title: Enable card layout(dark mode)
+      type: class-toggle
+    - id: theme-dark-style-select
+      title: Base style (dark mode)
+      type: class-select
+      allowEmpty: false
+      default: theme-dark-background-default
+      options:
+        - value: theme-dark-background-black
+    - id: Color-dark
+      title: Color
+      type: heading
+      collapsed: true
+      level: 3
+    - id: Accent-color-dark
+      title: Accent color
+      type: heading
+      collapsed: true
+      level: 4
+    - id: accent-dark
+      title: Accent color(dark mode)
+      description: Set accent color for the light and dark modes separately
+      type: variable-color
+      format: hsl-split
+      opacity: false
+      default: '#707bc2'
+    - id: accent-color-override-dark
+      title: Override accent color setting in "Settings-Appearance" menu(dark mode)
+      type: class-toggle
+    - id: accent-advanced-dark
+      title: Advanced
+      type: heading
+      collapsed: true
+      level: 5
+    - id: color-accent-hsl-dark
+      title: color-accent-hsl
+      type: variable-color
+      format: hsl-values
+      opacity: false
+      default: '#'
+    - id: color-accent-dark
+      title: color-accent
+      type: variable-color
+      format: hsl
+      opacity: false
+      default: '#'
+    - id: color-accent-1-dark
+      title: color-accent-1
+      type: variable-color
+      format: hsl
+      opacity: false
+      default: '#'
+    - id: color-accent-2-dark
+      title: color-accent-2
+      type: variable-color
+      format: hsl
+      opacity: false
+      default: '#'
+    - id: color-accent-3-dark
+      title: color-accent-3
+      type: variable-color
+      format: hsl
+      opacity: false
+      default: '#'
+    - id: Extended-colors-dark
+      title: Extended colors
+      type: heading
+      collapsed: true
+      level: 4
+    - id: color-red-rgb
+      title: Red
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#dd2c38'
+      default-dark: '#ff7881'
+    - id: color-orange-rgb
+      title: Orange
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#de7417'
+      default-dark: '#fbbb83'
+    - id: color-yellow-rgb
+      title: Yellow
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#c09c0c'
+      default-dark: '#ffe88b'
+    - id: color-green-rgb
+      title: Green
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#1da51d'
+      default-dark: '#7cd37c'
+    - id: color-cyan-rgb
+      title: Cyan
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#16a6ab'
+      default-dark: '#86dfe2'
+    - id: color-blue-rgb
+      title: Blue
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#1775d9'
+      default-dark: '#89bdf4'
+    - id: color-purple-rgb
+      title: Purple
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#8f47e1'
+      default-dark: '#cb9eff'
+    - id: color-pink-rgb
+      title: Pink
+      type: variable-themed-color
+      format: rgb-values
+      default-light: '#dd1399'
+      default-dark: '#f2b6de'
+    - id: Background-dark
+      title: Background
+      type: heading
+      collapsed: true
+      level: 3
+    - id: mod-left-split-background-header-dark
+      title: Left sidepane background
+      type: heading
+      collapsed: false
+      level: 4
+    - id: mod-left-split-background-select-dark
+      title: Left sidepane background(dark mode)
+      type: class-select
+      allowEmpty: false
+      default: mod-left-split-background-primary-dark
+      options:
+        - value: mod-left-split-background-CSS-dark
+    - id: background-mod-left-split-dark
+      title: Customize left sidepane background color (dark mode)
+      type: variable-color
+      opacity: false
+      format: hex
+    - id: background-mod-left-CSS-dark
+      title: Left sidepane background (dark mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: background-mod-left-CSS-blend-mode-dark
+      title: Left sidepane background-blend-mode (dark mode)
+      description: Input any CSS background-blend-mode value
+      type: variable-text
+      default: normal
+    - id: background-mod-left-CSS-backdrop-filter-dark
+      title: Left sidepane backdrop-filter (dark mode)
+      description: Input any CSS backdrop-filter value
+      type: variable-text
+      default: blur(32px)
+    - id: mod-right-split-background-header-dark
+      title: Right sidepane background
+      type: heading
+      collapsed: false
+      level: 4
+    - id: mod-right-split-background-select-dark
+      title: Right sidepane background(dark mode)
+      type: class-select
+      allowEmpty: false
+      default: mod-right-split-background-primary-dark
+      options:
+        - value: mod-right-split-background-CSS-dark
+    - id: background-mod-right-split-dark
+      title: Customize right sidepane background color(dark mode)
+      type: variable-color
+      opacity: false
+      format: hex
+    - id: background-mod-right-CSS-dark
+      title: Right sidepane background (dark mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: background-mod-right-CSS-blend-mode-dark
+      title: Right sidepane background-blend-mode (dark mode)
+      description: Input any CSS background-blend-mode value
+      type: variable-text
+      default: normal
+    - id: background-mod-right-CSS-backdrop-filter-dark
+      title: Right sidepane backdrop-filter (dark mode)
+      description: Input any CSS backdrop-filter value
+      type: variable-text
+      default: blur(32px)
+    - id: mod-root-split-background-header-dark
+      title: Middle pane background
+      type: heading
+      collapsed: false
+      level: 4
+    - id: mod-root-split-background-select-dark
+      title: Middle pane background (dark mode)
+      type: class-select
+      allowEmpty: false
+      default: mod-root-split-background-primary-dark
+      options:
+        - value: mod-root-split-background-CSS-dark
+    - id: background-mod-root-split-dark
+      title: Customize Middle pane background color (dark mode)
+      type: variable-color
+      opacity: false
+      format: hex
+    - id: background-mod-root-CSS-dark
+      title: Middle pane background (dark mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: background-mod-root-CSS-blend-mode-dark
+      title: Middle pane background-blend-mode (dark mode)
+      description: Input any CSS background-blend-mode value
+      type: variable-text
+      default: normal
+    - id: background-mod-root-CSS-backdrop-filter-dark
+      title: Middle pane backdrop-filter (dark mode)
+      description: Input any CSS backdrop-filter value
+      type: variable-text
+      default: blur(32px)
+    - id: underlying-background-header-dark
+      title: Underlying background
+      type: heading
+      collapsed: false
+      level: 4
+    - id: background-underlying-select-dark
+      title: underlying background(dark mode)
+      type: class-select
+      allowEmpty: false
+      default: background-underlying-default-dark
+      options:
+        - value: background-underlying-CSS-dark
+    - id: background-underlying-dark
+      title: Customize underlying background color(dark mode)
+      type: variable-color
+      opacity: false
+      format: hex
+    - id: background-underlying-CSS-dark
+      title: underlying background (dark mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: background-underlying-CSS-blend-mode-dark
+      title: underlying background-blend-mode (dark mode)
+      description: Input any CSS background-blend-mode value
+      type: variable-text
+      default: soft-light, luminosity, hue, luminosity, hard-light
+    - id: underlying-foreground-header-dark
+      title: Underlying foreground
+      description: Adjust foreground to fit the background
+      type: heading
+      collapsed: false
+      level: 5
+    - id: on-border-dark
+      title: underlying foreground color(dark mode)
+      description: Color of elements (text&icon) displayed on underlying background, including top tab bar, ribbon menu, and status bar
+      type: variable-color
+      opacity: false
+      format: hex
+    - id: mix-blend-mode-on-border-dark
+      title: mix blend mode of underlying foreground(dark mode)
+      description: Input any CSS mix-blend-mode value
+      type: variable-text
+      default: screen
+    - id: Global-background-header-dark
+      title: Global background
+      type: heading
+      collapsed: false
+      level: 4
+    - id: background-primary
+      title: background-primary(dark mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-primary-alt
+      title: background-primary-alt(dark mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-secondary
+      title: background-secondary(dark mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-secondary-alt
+      title: background-secondary-alt(dark mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-tertiary
+      title: background-tertiary(dark mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: workspace-background-translucent
+      title: workspace-background-translucent(dark mode)
+      type: variable-themed-color
+      opacity: true
+      format: hsl
+      default-light: '#'
+      default-dark: '#'
+    - id: background-modifier-hover
+      title: background-modifier-hover(dark mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-modifier-active-hover
+      title: background-modifier-active-hover(dark mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-modifier-border
+      title: background-modifier-border(dark mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-modifier-border-hover
+      title: background-modifier-border-hover(dark mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: background-modifier-border-focus
+      title: background-modifier-border-focus(dark mode)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: Foreground-header-dark
+      title: Foreground
+      type: heading
+      collapsed: false
+      level: 3
+    - id: text-color-dark
+      title: Text & icon color
+      type: heading
+      collapsed: false
+      level: 4
+    - id: text-normal
+      title: text-normal(dark mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-muted
+      title: text-muted(dark mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-faint
+      title: text-faint(dark mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-accent
+      title: text-accent(dark mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-accent-hover
+      title: text-accent-hover(dark mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-on-accent
+      title: text-on-accent(dark mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-on-accent-inverted
+      title: text-on-accent-inverted(dark mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: interactive-color-dark
+      title: Interactive color
+      type: heading
+      collapsed: false
+      level: 4
+    - id: interactive-normal
+      title: interactive-normal(dark mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: interactive-hover
+      title: interactive-hover(dark mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: interactive-accent
+      title: interactive-accent(dark mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: interactive-accent-hsl
+      title: interactive-accent-hsl(dark mode)
+      type: variable-themed-color
+      format: hsl-values
+      default-light: '#'
+      default-dark: '#'
+    - id: interactive-accent-hover
+      title: interactive-accent-hover(dark mode)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: Card-dark
+      title: Card
+      type: heading
+      collapsed: true
+      level: 3
+    - id: card-border-radius-dark
+      title: Custom card border radius (dark mode)
+      description: Input your border-radius value here
+      type: variable-text
+      default: 8px
+    - id: card-shadow-dark
+      title: Custom card shadow (dark mode)
+      description: Input your box-shadow value here
+      type: variable-text
+      default: ''
+    - id: Active-states-dark
+      title: Active states
+      type: heading
+      collapsed: true
+      level: 3
+    - id: Active-states-Tabs-dark
+      title: Active states(Tabs)
+      type: heading
+      collapsed: true
+      level: 4
+    - id: color-activated-tab-header-dark
+      title: activated Tab header color(dark mode)
+      type: variable-color
+      opacity: false
+      format: hex
+    - id: color-to-tab-icon-dark
+      title: Apply custom color to the "close" icon(dark mode)
+      type: class-toggle
+    - id: border-radius-activated-tab-header-dark
+      title: activated Tab header border radius(dark mode)
+      description: Input any CSS border-radius value
+      type: variable-text
+      default: 6px
+    - id: background-activated-tab-header-dark
+      title: activated Tab header background(dark mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: shadow-activated-tab-header-dark
+      title: activated Tab header shadow(dark mode)
+      description: Input any CSS box-shadow value
+      type: variable-text
+      default: ''
+    - id: color-activated-tab-header-underline-dark
+      title: activated Tab header underline color(dark mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: Active-states-file-explorer-dark
+      title: Active states(file explorer)
+      type: heading
+      collapsed: true
+      level: 4
+    - id: Active-states-file-explorer-select-dark
+      title: Activated file style(dark mode)
+      type: class-select
+      allowEmpty: false
+      default: activated-file-default-dark
+      options:
+        - value: activated-file-customize-dark
+    - id: color-activated-file-dark
+      title: Activated file color(dark mode)
+      type: variable-color
+      opacity: false
+      format: hex
+    - id: border-radius-activated-file-dark
+      title: Activated file border radius(dark mode)
+      description: Input any CSS border-radius value
+      type: variable-text
+      default: 4px
+    - id: background-activated-file-dark
+      title: Activated file background(dark mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: shadow-activated-file-dark
+      title: Activated file shadow(dark mode)
+      description: Input any CSS box-shadow value
+      type: variable-text
+      default: ''
+    - id: UI-Controls-dark
+      title: UI Controls
+      type: heading
+      collapsed: false
+      level: 3
+    - id: input-radius-dark
+      title: input-radius(dark mode)
+      description: border radius of button, input, etc.
+      type: variable-number
+      default: 5
+      format: px
+    - id: input-shadow-dark
+      title: input-shadow(dark mode)
+      description: shadow of button,dropdown, etc. Accepts any CSS box-shadow value
+      type: variable-text
+      default: ''
+    - id: input-shadow-hover-dark
+      title: input-shadow-hover(dark mode)
+      description: shadow of button,dropdown, etc.(hovered) Accepts any CSS box-shadow value
+      type: variable-text
+      default: ''
+    - id: toggle-dark
+      title: toggle switch
+      type: heading
+      collapsed: false
+      level: 4
+    - id: toggle-thumb-color-dark
+      title: toggle-thumb-color(dark mode)
+      description: background color of toggle thumb Accepts any CSS background-color value
+      type: variable-text
+      default: ''
+    - id: toggle-thumb-enabled-color-dark
+      title: toggle-thumb-enabled-color(dark mode)
+      description: background color of toggle thumb(enabled) Accepts any CSS background-color value
+      type: variable-text
+      default: ''
+    - id: toggle-thumb-shadow-dark
+      title: toggle-thumb-shadow(dark mode)
+      description: shadow of toggle thumb Accepts any CSS box-shadow value
+      type: variable-text
+      default: ''
+    - id: toggle-thumb-enabled-shadow-dark
+      title: toggle-thumb-enabled-shadow(dark mode)
+      description: shadow of toggle thumb(enabled) Accepts any CSS box-shadow value
+      type: variable-text
+      default: ''
+    - id: toggle-track-color-dark
+      title: toggle-track-color(dark mode)
+      description: background color of toggle track Accepts any CSS background-color value
+      type: variable-text
+      default: ''
+    - id: toggle-track-enabled-color-dark
+      title: toggle-track-enabled-color(dark mode)
+      description: background color of toggle track(enabled) Accepts any CSS background-color value
+      type: variable-text
+      default: ''
+    - id: toggle-track-shadow-dark
+      title: toggle-track-shadow(dark mode)
+      description: shadow of toggle track Accepts any CSS box-shadow value
+      type: variable-text
+      default: ''
+    - id: toggle-track-hovered-shadow-dark
+      title: toggle-track-hovered-shadow(dark mode)
+      description: shadow of toggle track(hovered) Accepts any CSS box-shadow value
+      type: variable-text
+      default: ''
+    - id: Miscellaneous-dark
+      title: Miscellaneous
+      type: heading
+      collapsed: true
+      level: 3
+    - id: card-highlight-dark
+      title: Highlight active card
+      description: Only applicable for card layout
+      type: class-toggle
+    - id: workspace-divider-transparent-dark
+      title: Visually remove divider effect in workspace
+      description: For default layout
+      type: class-toggle
+    - id: link-external-color
+      title: External link color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: link-external-color-hover
+      title: External link color (hover)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+- name: Editor
+  id: Editor
+  settings:
+    - id: line-emphasis
+      title: Focus indicator
+      type: heading
+      collapsed: false
+      level: 3
+    - id: line-hover-indicator-info
+      description: Display a vertical line indicator before focus line
+      type: info-text
+      markdown: true
+    - id: line-hover-indicator
+      title: Enable Focus indicator
+      type: class-toggle
+    - id: focus-indicator-list-level
+      title: indicate list level
+      type: class-toggle
+    - id: focus-indicator-codeblock-line-number
+      title: indicate codeblock line number
+      type: class-toggle
+    - id: hover-indicator-color
+      title: Customize indicator color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: border-focus-mode-heading
+      title: Focus mode
+      type: heading
+      collapsed: false
+      level: 3
+    - id: border-focus-mode-info
+      description: Highlight active line
+      type: info-text
+      markdown: true
+    - id: border-focus-mode
+      title: Enable focus mode
+      type: class-toggle
+    - id: line-active-bg
+      title: Active line background color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: line-normal-opacity
+      title: Normal line opacity
+      type: variable-number-slider
+      default: 0.5
+      min: 0.05
+      max: 1
+      step: 0.05
+    - id: Editor-background-pattern
+      title: Editor background pattern
+      type: heading
+      collapsed: true
+      level: 3
+    - id: editor-grid-background-pattren
+      title: Enable grid background pattern
+      type: class-toggle
+    - id: grid-background-pattern-color
+      title: Customize grid background pattern color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: grid-background-pattern-size
+      title: Custom grid background pattern size
+      description: Accepts any CSS background-size value
+      type: variable-text
+      default: 36px
+    - id: Headings
+      title: Headings
+      type: heading
+      collapsed: true
+      level: 3
+    - id: collapse-icon-restore
+      title: Restore the collapse icon before headings
+      type: class-toggle
+    - id: heading-indicator-off
+      title: Remove headings indicator
+      type: class-toggle
+      default: 'false'
+    - id: Inline-title
+      title: Inline Title
+      type: heading
+      level: 4
+      collapsed: true
+    - id: inline-title-divider-remove
+      title: Remove inline title divider
+      type: class-toggle
+    - id: inline-title-font
+      title: inline title font
+      type: variable-text
+      default: ''
+    - id: inline-title-size
+      title: inline title size
+      description: Accepts any CSS font-size value
+      type: variable-text
+      default: 1.5em
+    - id: inline-title-weight
+      title: inline title weight
+      description: Accepts a value from 100 to 900
+      type: variable-number
+      default: 700
+    - id: inline-title-text-transform
+      title: inline title text-transform
+      description: Accepts any CSS text-transform value
+      type: variable-text
+      default: ''
+    - id: inline-title-color-select
+      title: inline title text color
+      type: class-select
+      allowEmpty: false
+      default: inline-title-color-default
+      options:
+        - value: inline-title-color-customized
+    - id: inline-title-color
+      title: Customize inline title text color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: level-1-headings
+      title: Level 1 Headings
+      type: heading
+      level: 4
+      collapsed: true
+    - id: h1-divider-on
+      title: Enable H1 divider
+      type: class-toggle
+      default: 'false'
+    - id: h1-font
+      title: H1 font
+      type: variable-text
+      default: ''
+    - id: h1-size
+      title: H1 font size
+      description: Accepts any CSS font-size value
+      type: variable-text
+      default: 1.5em
+    - id: h1-weight
+      title: H1 font weight
+      description: Accepts a value from 100 to 900
+      type: variable-number
+      default: 700
+    - id: h1-text-transform
+      title: H1 text-transform
+      description: Accepts any CSS text-transform value
+      type: variable-text
+      default: ''
+    - id: h1-accent-color
+      title: Customize H1 accent color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: h1-color-select
+      title: H1 text color
+      type: class-select
+      allowEmpty: false
+      default: h1-color-default
+      options:
+        - value: h1-color-designated
+    - id: level-2-headings
+      title: Level 2 Headings
+      type: heading
+      level: 4
+      collapsed: true
+    - id: h2-divider-on
+      title: Enable H2 divider
+      type: class-toggle
+      default: 'false'
+    - id: h2-font
+      title: H2 font
+      type: variable-text
+      default: ''
+    - id: h2-size
+      title: H2 font size
+      description: Accepts any CSS font-size value
+      type: variable-text
+      default: 1.425em
+    - id: h2-weight
+      title: H2 font weight
+      description: Accepts a value from 100 to 900
+      type: variable-number
+      default: 675
+    - id: h2-text-transform
+      title: H2 text-transform
+      description: Accepts any CSS text-transform value
+      type: variable-text
+      default: ''
+    - id: h2-accent-color
+      title: Customize H2 accent color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: h2-color-select
+      title: H2 text color
+      type: class-select
+      allowEmpty: false
+      default: h2-color-default
+      options:
+        - value: h2-color-designated
+    - id: level-3-headings
+      title: Level 3 Headings
+      type: heading
+      level: 4
+      collapsed: true
+    - id: h3-divider-on
+      title: Enable H3 divider
+      type: class-toggle
+      default: 'false'
+    - id: h3-font
+      title: H3 font
+      type: variable-text
+      default: ''
+    - id: h3-size
+      title: H3 font size
+      description: Accepts any CSS font-size value
+      type: variable-text
+      default: 1.35em
+    - id: h3-weight
+      title: H3 font weight
+      description: Accepts a value from 100 to 900
+      type: variable-number
+      default: 650
+    - id: h3-text-transform
+      title: H3 text-transform
+      description: Accepts any CSS text-transform value
+      type: variable-text
+      default: ''
+    - id: h3-accent-color
+      title: Customize H3 accent color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: h3-color-select
+      title: H3 text color
+      type: class-select
+      allowEmpty: false
+      default: h3-color-default
+      options:
+        - value: h3-color-designated
+    - id: level-4-headings
+      title: Level 4 Headings
+      type: heading
+      level: 4
+      collapsed: true
+    - id: h4-divider-on
+      title: Enable H4 divider
+      type: class-toggle
+      default: 'false'
+    - id: h4-font
+      title: H4 font
+      type: variable-text
+      default: ''
+    - id: h4-size
+      title: H4 font size
+      description: Accepts any CSS font-size value
+      type: variable-text
+      default: 1.275em
+    - id: h4-weight
+      title: H4 font weight
+      description: Accepts a value from 100 to 900
+      type: variable-number
+      default: 625
+    - id: h4-text-transform
+      title: H4 text-transform
+      description: Accepts any CSS text-transform value
+      type: variable-text
+      default: ''
+    - id: h4-accent-color
+      title: Customize H4 accent color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: h4-color-select
+      title: H4 text color
+      type: class-select
+      allowEmpty: false
+      default: h4-color-default
+      options:
+        - value: h4-color-designated
+    - id: level-5-headings
+      title: Level 5 Headings
+      type: heading
+      level: 4
+      collapsed: true
+    - id: h5-divider-on
+      title: Enable H5 divider
+      type: class-toggle
+      default: 'false'
+    - id: h5-font
+      title: H5 font
+      type: variable-text
+      default: ''
+    - id: h5-size
+      title: H5 font size
+      description: Accepts any CSS font-size value
+      type: variable-text
+      default: 1.2em
+    - id: h5-weight
+      title: H5 font weight
+      description: Accepts a value from 100 to 900
+      type: variable-number
+      default: 600
+    - id: h5-text-transform
+      title: H5 text-transform
+      description: Accepts any CSS text-transform value
+      type: variable-text
+      default: ''
+    - id: h5-accent-color
+      title: Customize H5 accent color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: h5-color-select
+      title: H5 text color
+      type: class-select
+      allowEmpty: false
+      default: h5-color-default
+      options:
+        - value: h5-color-designated
+    - id: level-6-headings
+      title: Level 6 Headings
+      type: heading
+      level: 4
+      collapsed: true
+    - id: h6-divider-on
+      title: Enable H6 divider
+      type: class-toggle
+      default: 'false'
+    - id: h6-font
+      title: H6 font
+      type: variable-text
+      default: ''
+    - id: h6-size
+      title: H6 font size
+      description: Accepts any CSS font-size value
+      type: variable-text
+      default: 1.125em
+    - id: h6-weight
+      title: H6 font weight
+      description: Accepts a value from 100 to 900
+      type: variable-number
+      default: 575
+    - id: h6-text-transform
+      title: H6 text-transform
+      description: Accepts any CSS text-transform value
+      type: variable-text
+      default: ''
+    - id: h6-accent-color
+      title: Customize H6 accent color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: h6-color-select
+      title: H6 text color
+      type: class-select
+      allowEmpty: false
+      default: h6-color-default
+      options:
+        - value: h6-color-designated
+    - id: Paragraph
+      title: Paragraph
+      type: heading
+      collapsed: true
+      level: 3
+    - id: text-align-justify
+      title: Justify paragraph text
+      type: class-toggle
+      default: 'false'
+    - id: line-height-customize
+      title: Paragraph line height
+      type: variable-number
+      default: 1.5
+    - id: file-line-width
+      title: Paragraph line width （Need to turn on “Readable line length”）
+      type: variable-text
+      default: 700px
+    - id: p-spacing
+      title: Paragraph spacing (Reading mode)
+      type: variable-text
+      default: 1em
+    - id: p-spacing-br
+      title: Paragraph spacing also takes effect after a line break (Reading mode)
+      type: class-toggle
+      default: 'false'
+    - id: Text
+      title: Text
+      type: heading
+      collapsed: true
+      level: 3
+    - id: bold-color
+      title: Bold text color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: italic-color
+      title: Italic text color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: text-highlight-bg
+      title: text highlight bg color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: inline-code-normal
+      title: inline code text color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: inline-code-background-light
+      title: Customize inline code background (light mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: inline-code-background-dark
+      title: Customize inline code background (dark mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: Links
+      title: Links
+      type: heading
+      collapsed: true
+      level: 3
+    - id: link-color
+      title: Link color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: link-color-hover
+      title: Link color (hover)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: link-decoration
+      title: Link decoration
+      description: Accepts any CSS text-decoration-line value
+      type: variable-text
+      default: underline
+    - id: link-decoration-hover
+      title: Link decoration (hover)
+      description: Accepts any CSS text-decoration-line value
+      type: variable-text
+      default: underline
+    - id: link-decoration-thickness
+      title: Link decoration thickness
+      description: Accepts any CSS text-decoration-thickness value
+      type: variable-text
+      default: auto
+    - id: link-unresolved
+      title: Unresolved link
+      type: heading
+      level: 4
+      collapsed: true
+    - id: link-unresolved-color
+      title: Unresolved link color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: link-unresolved-opacity
+      title: Unresolved link opacity
+      type: variable-number-slider
+      default: 0.7
+      min: 0.25
+      max: 1
+      step: 0.05
+    - id: link-unresolved-filter
+      title: Unresolved link filter
+      description: Accepts any CSS filter value
+      type: variable-text
+      default: none
+    - id: link-unresolved-decoration-style
+      title: Unresolved link decoration style
+      description: Accepts any CSS text-decoration-style value
+      type: variable-text
+      default: solid
+    - id: link-unresolved-decoration-color
+      title: Unresolved link decoration color
+      type: variable-themed-color
+      format: hex
+      opacity: true
+      default-light: '#'
+      default-dark: '#'
+    - id: links-external
+      title: External links
+      type: heading
+      level: 4
+      collapsed: true
+    - id: link-external-color
+      title: External link color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: link-external-color-hover
+      title: External link color (hover)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: link-external-decoration
+      title: External link decoration
+      description: Accepts any CSS text-decoration-line value
+      type: variable-text
+      default: underline
+    - id: link-external-decoration-hover
+      title: External link decoration (hover)
+      description: Accepts any CSS text-decoration-line value
+      type: variable-text
+      default: underline
+    - id: link-external-filter
+      title: External link filter
+      description: Accepts any CSS filter value
+      type: variable-text
+      default: none
+    - id: Lists
+      title: Lists
+      type: heading
+      collapsed: true
+      level: 3
+    - id: list-indent
+      title: list indent
+      type: variable-text
+      default: 2.25em
+    - id: list-spacing
+      title: list spacing
+      type: variable-text
+      default: 0.075em
+    - id: list-bullet-size
+      title: list marker size
+      type: variable-text
+      default: 0.3em
+    - id: list-marker-color
+      title: list marker color
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: list-marker-color-hover
+      title: list marker color (hover)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: list-marker-color-collapsed
+      title: list marker color (collapsed)
+      type: variable-themed-color
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: ul-marker-restore
+      title: Restore default style of unordered list
+      type: class-toggle
+      default: 'false'
+    - id: Tags
+      title: Tags
+      type: heading
+      collapsed: true
+      level: 3
+    - id: tag-color
+      title: Tag text color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: tag-background
+      title: Tag background color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: tag-background-hover
+      title: Tag background color (hover)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: Table
+      title: Table
+      type: heading
+      collapsed: true
+      level: 3
+    - id: table-header-color
+      title: Customize table header color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: table-header-background-light
+      title: Customize table header background (light mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: table-header-background-dark
+      title: Customize table header background (dark mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: table-width-select
+      title: Table width
+      type: class-select
+      allowEmpty: false
+      default: table-width-default
+      options:
+        - value: table-width-customized
+    - id: table-width
+      title: customize table width
+      description: () percent of the editor panel width
+      type: variable-number-slider
+      default: 88
+      min: 10
+      max: 100
+      step: 1
+      format: cqw
+    - id: Image
+      title: Image
+      type: heading
+      collapsed: true
+      level: 3
+    - id: img-center-align
+      title: center-align the image
+      type: class-toggle
+    - id: img-darken
+      title: darken image in dark mode
+      description: Hover to restore image
+      type: class-toggle
+    - id: Code-heading
+      title: Codeblock
+      type: heading
+      collapsed: true
+      level: 3
+    - id: codeblock-style-select
+      title: Codeblock theme
+      type: class-select
+      allowEmpty: false
+      default: codeblock-style-customize
+      options:
+        - value: codeblock-style-one-dark
+    - id: code-background-light
+      title: Customize codeblock background (light mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: code-border-light
+      title: Customize codeblock border (light mode)
+      description: Input any CSS border value
+      type: variable-text
+      default: ''
+    - id: code-background-dark
+      title: Customize codeblock background (dark mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: code-border-dark
+      title: Customize codeblock border (dark mode)
+      description: Input any CSS border value
+      type: variable-text
+      default: ''
+    - id: code-normal
+      title: code-normal
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-comment
+      title: code-comment
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-function
+      title: code-function
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-important
+      title: code-important
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-keyword
+      title: code-keyword
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-operator
+      title: code-operator
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-property
+      title: code-property
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-punctuation
+      title: code-punctuation
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-string
+      title: code-string
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-tag
+      title: code-tag
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: code-value
+      title: code-value
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: Blockquote-heading
+      title: Blockquote
+      type: heading
+      collapsed: true
+      level: 3
+    - id: blockquote-background-light
+      title: Customize blockquote background (light mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: blockquote-background-dark
+      title: Customize blockquote background (dark mode)
+      description: Input any CSS background value
+      type: variable-text
+      default: ''
+    - id: Callouts
+      title: Callouts
+      type: heading
+      collapsed: true
+      level: 3
+    - id: callout-style-select
+      title: callout style
+      type: class-select
+      allowEmpty: false
+      default: callout-style-customize
+      options:
+        - value: callout-style-4
+    - id: callout-border-width
+      title: callout border width
+      type: variable-text
+      description: Input any CSS border-width value
+      default: 0px
+    - id: callout-border-opacity
+      title: callout border opacity
+      type: variable-number-slider
+      default: 0.25
+      min: 0
+      max: 1
+      step: 0.05
+    - id: callout-padding
+      title: callout padding
+      description: Accepts any CSS padding value
+      type: variable-text
+      default: ''
+    - id: callout-radius
+      title: callout radius
+      description: Input your border-radius value here
+      type: variable-text
+      default: ''
+    - id: callout-title-color
+      title: callout title color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: callout-title-padding
+      title: callout title padding
+      description: Accepts any CSS padding value
+      type: variable-text
+      default: ''
+    - id: callout-title-size
+      title: callout title size
+      description: Accepts any CSS font-size value
+      type: variable-text
+      default: ''
+    - id: callout-content-padding
+      title: callout content padding
+      description: Accepts any CSS padding value
+      type: variable-text
+      default: ''
+    - id: callout-content-background
+      title: callout content background
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: callout-content-radius
+      title: callout content radius
+      description: Input your border-radius value here
+      type: variable-text
+      default: ''
+    - id: Embeds
+      title: Embeds
+      type: heading
+      collapsed: true
+      level: 3
+    - id: seamless-embeds
+      title: seamless embeds
+      type: class-toggle
+    - id: embed-background
+      title: embed background
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: embed-padding
+      title: embed padding
+      description: Input any CSS padding value
+      type: variable-text
+      default: ''
+    - id: embed-border-radius
+      title: embed border radius
+      description: Input any CSS border-radius value
+      type: variable-text
+      default: ''
+    - id: embed-font-style
+      title: embed font style
+      description: Input any CSS font-style value
+      type: variable-text
+      default: ''
+    - id: embed-max-height
+      title: embed max height
+      description: Input any CSS height value
+      type: variable-text
+      default: ''
+    - id: Checkbox
+      title: Checkbox
+      type: heading
+      collapsed: true
+      level: 3
+    - id: disable-alternative-checkboxes
+      title: Disable Alternative Checkboxes
+      description: Disable this if you are using your own implementation via a CSS Snippet.
+      type: class-toggle
+    - id: checkbox-radius
+      title: checkbox radius
+      description: Input any CSS border-radius value
+      type: variable-text
+      default: 6px
+    - id: checkbox-marker-color
+      title: checkbox marker color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: checkbox-color
+      title: checkbox color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: checkbox-color-hover
+      title: checkbox color (hover)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: checkbox-border-color
+      title: checkbox border color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+    - id: checkbox-border-color-hover
+      title: checkbox border color (hover)
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
 - name: Mobile
   id: Mobile
   settings:

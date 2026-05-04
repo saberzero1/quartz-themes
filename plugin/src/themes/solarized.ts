@@ -6,6 +6,7 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
+    styleSettingsId: "solarized-theme-settings",
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

@@ -218,7 +218,6 @@
   --hr-icon-symbol: "⚡";
   --hr-icon-font: its;
   --hr-icon-padding-x: 4px;
-  --canvas-color-opacity: 0.07;
   --metadata-label-font-size: 0.9em;
   --metadata-input-font-size: 0.9em;
   --metadata-label-width: 9em;
@@ -255,7 +254,7 @@
   --hr: #d6deea;
   --hr-icon-color: #c14343;
   --progress: #912e2e;
-  --progress: #e1e9f6;
+  --progress-bg: #e1e9f6;
   --th: #c14343;
   --th-text: #e5ebee;
   --table-header-text-color: #a35158;
@@ -298,6 +297,7 @@
   --graph-focused: #fd737366;
   --graph-img: #4c78cc;
   --graph-tag: #000000;
+  --canvas-color-opacity: 0.07;
   --font-interface-override: "??";
   --font-text-override: "??";
   --font-monospace-override: "??";
@@ -517,7 +517,6 @@
   --hr-icon-symbol: "⚡";
   --hr-icon-font: its;
   --hr-icon-padding-x: 4px;
-  --canvas-color-opacity: 0.07;
   --metadata-label-font-size: 0.9em;
   --metadata-input-font-size: 0.9em;
   --metadata-label-width: 9em;
@@ -554,7 +553,7 @@
   --hr: #3c5274;
   --hr-icon-color: #883737;
   --progress: #863737;
-  --progress: #252c36;
+  --progress-bg: #252c36;
   --th: #652121;
   --th-text: #e5ebee;
   --table-header-text-color: #e06c75;
@@ -597,6 +596,7 @@
   --graph-focused: #fd737366;
   --graph-img: #4c78cc;
   --graph-tag: #c14343;
+  --canvas-color-opacity: 0.07;
   --font-interface-override: "??";
   --font-text-override: "??";
   --font-monospace-override: "??";

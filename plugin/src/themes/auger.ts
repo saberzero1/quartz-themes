@@ -1,7 +1,13 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "auger", modes: ["dark", "light"], variations: [], fonts: [] },
+  meta: {
+    name: "auger",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+    styleSettingsId: "auger",
+  },
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --accent-h: 175;
@@ -5516,5 +5522,35 @@ html[saved-theme="light"] body ul.tags > li {
   border-top-right-radius: 20px;
   color: var(--text-muted, rgb(138, 135, 133));
 }`,
+  },
+  classSettings: {
+    "is-light-canvas": {
+      dark: `body.is-light-canvas:not(.is-mobile).theme-dark .workspace-tabs:not(.mod-stacked) .view-content:not(.vignette-radial, .vignette-linear, .animate, .ptm-fullscreen-writing-focus-element) {
+background-color: var(--auger-light-background-primary);
+border-top-left-radius: var(--card-border-radius-dark, 8px);
+border-top-right-radius: var(--card-border-radius-dark, 8px);
+}
+
+body.is-light-canvas:not(.is-mobile).theme-dark .workspace-tabs:not(.mod-stacked) .view-content:not(.vignette-radial, .vignette-linear, .animate, .ptm-fullscreen-writing-focus-element) .cm-content {
+color: var(--auger-light-text-normal);
+}
+
+body.theme-dark .view-content .inline-title {
+color: var(--auger-light-text-normal);
+}
+
+body.theme-dark .view-content .markdown-source-view.mod-cm6 .cm-content {
+caret-color: var(--color-base-25);
+}`,
+    },
+    "inactive-blur": {
+      general: `body.inactive-blur:not(.is-focused) .app-container {
+transition-property: all;
+transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+transition-duration: var(--tw-duration, var(--default-transition-duration));
+filter: blur(5px);
+opacity: 0.8;
+}`,
+    },
   },
 };

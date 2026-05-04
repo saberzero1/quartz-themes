@@ -3834,5 +3834,127 @@ background-color: var(--highlight-text-color--active) !important;
   };
 }`,
     },
+    "heading-underline-color": {
+      general: `body.h1-underline h1, body.h1-underline .HyperMD-header.HyperMD-header-1.cm-line {
+border-bottom-color: var(--h1-color);
+}
+
+body.heading-underline-color:not(.h2-no-underline) .markdown-preview-view h2, body.heading-underline-color:not(.h2-no-underline) .markdown-rendered h2, body.heading-underline-color:not(.h2-no-underline) .HyperMD-header.HyperMD-header-2.cm-line {
+border-bottom-color: var(--h2-color);
+}
+
+body.h3-underline h3, body.h3-underline .HyperMD-header.HyperMD-header-3.cm-line {
+border-bottom-color: var(--h3-color);
+}
+
+body.h4-underline h4, body.h4-underline .HyperMD-header.HyperMD-header-4.cm-line {
+border-bottom-color: var(--h4-color);
+}
+
+body.h5-underline h5, body.h5-underline .HyperMD-header.HyperMD-header-5.cm-line {
+border-bottom-color: var(--h5-color);
+}
+
+body.h6-underline h6, body.h6-underline .HyperMD-header.HyperMD-header-6.cm-line {
+border-bottom-color: var(--h6-color);
+}`,
+    },
+    "h1-small-caps": {
+      general: `body.h1-small-caps h1, body.h1-small-caps .HyperMD-header.HyperMD-header-1.cm-line {
+font-variant-caps: small-caps;
+}`,
+    },
+    "h1-underline": {
+      general: `body.h1-underline h1, body.h1-underline .HyperMD-header.HyperMD-header-1.cm-line {
+border-bottom: 2px solid var(--background-modifier-border);
+width: 100%;
+padding-bottom: 2px;
+margin-bottom: 8px !important;
+}
+
+body.heading-underline-color.h1-underline h1, body.heading-underline-color.h1-underline .HyperMD-header.HyperMD-header-1.cm-line {
+border-bottom-color: var(--h1-color);
+}`,
+    },
+    "h2-no-underline": {
+      general: `body.h2-no-underline .markdown-preview-view h2, body.h2-no-underline .markdown-rendered h2, body.h2-no-underline .HyperMD-header.HyperMD-header-2.cm-line {
+border-bottom: none;
+padding-bottom: 0;
+margin-bottom: revert;
+}`,
+    },
+    "h2-small-caps": {
+      general: `body.h2-small-caps h2, body.h2-small-caps .HyperMD-header.HyperMD-header-2.cm-line {
+font-variant-caps: small-caps;
+}`,
+    },
+    "h3-small-caps": {
+      general: `body.h3-small-caps h3, body.h3-small-caps .HyperMD-header.HyperMD-header-3.cm-line {
+font-variant-caps: small-caps;
+}`,
+    },
+    "h3-underline": {
+      general: `body.h3-underline h3, body.h3-underline .HyperMD-header.HyperMD-header-3.cm-line {
+border-bottom: 2px solid var(--background-modifier-border);
+width: 100%;
+padding-bottom: 2px;
+margin-bottom: 8px !important;
+}
+
+body.heading-underline-color.h3-underline h3, body.heading-underline-color.h3-underline .HyperMD-header.HyperMD-header-3.cm-line {
+border-bottom-color: var(--h3-color);
+}`,
+    },
+    "h4-small-caps": {
+      general: `body.h4-small-caps h4, body.h4-small-caps .HyperMD-header.HyperMD-header-4.cm-line {
+font-variant-caps: small-caps;
+}`,
+    },
+    "h4-underline": {
+      general: `body.h4-underline h4, body.h4-underline .HyperMD-header.HyperMD-header-4.cm-line {
+border-bottom: 2px solid var(--background-modifier-border);
+width: 100%;
+padding-bottom: 2px;
+margin-bottom: 8px !important;
+}
+
+body.heading-underline-color.h4-underline h4, body.heading-underline-color.h4-underline .HyperMD-header.HyperMD-header-4.cm-line {
+border-bottom-color: var(--h4-color);
+}`,
+    },
+    "h5-small-caps": {
+      general: `body.h5-small-caps h5, body.h5-small-caps .HyperMD-header.HyperMD-header-5.cm-line {
+font-variant-caps: small-caps;
+}`,
+    },
+    "h5-underline": {
+      general: `body.h5-underline h5, body.h5-underline .HyperMD-header.HyperMD-header-5.cm-line {
+border-bottom: 2px solid var(--background-modifier-border);
+width: 100%;
+padding-bottom: 2px;
+margin-bottom: 8px !important;
+}
+
+body.heading-underline-color.h5-underline h5, body.heading-underline-color.h5-underline .HyperMD-header.HyperMD-header-5.cm-line {
+border-bottom-color: var(--h5-color);
+}`,
+    },
+    "h6-small-caps": {
+      general: `body.h6-small-caps h6, body.h6-small-caps .HyperMD-header.HyperMD-header-6.cm-line {
+font-variant-caps: small-caps;
+}`,
+    },
+    "h6-underline": {
+      general: `body.h6-underline h6, body.h6-underline .HyperMD-header.HyperMD-header-6.cm-line {
+border-bottom: 2px solid var(--background-modifier-border);
+width: 100%;
+padding-bottom: 2px;
+margin-bottom: 8px !important;
+}
+
+body.heading-underline-color.h6-underline h6, body.heading-underline-color.h6-underline .HyperMD-header.HyperMD-header-6.cm-line {
+border-bottom-color: var(--h6-color);
+}`,
+    },
   },
 };

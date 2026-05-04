@@ -7312,116 +7312,6 @@ html[saved-theme="light"] body ul.tags > li {
 }`,
   },
   classSettings: {
-    "color-scheme-base": {
-      dark: `.theme-dark {
-/* Base Color - #262626
-    		   - #3D373A - analogous
-    		   - #332E33 - analogous
-    		   |-- #433d43 - ligher shade
-    		   - #1a1a1a - darker shade
-    		   - #333333 - lighter shade
-    		   - #735050 - monochromatic
-    		   - #595350 - compound
-    		   Base Color 2 - #304050 - special purple
-    		   Base Color 3 - #4682B4 (SteelBlue) & lighter #5a91bf
-    		*/
-/* Base Color 1 - for main workspace */
---background-primary: hsl(0, 0%, 20%);
-/* for main workspace / #333 */
---background-primary-alt: #1a1a1a;
-/* and pre (code) background */
-/* Using Analogous of #262626 - for sidebar and modal dialog */
---background-secondary: hsl(300, 5%, 25%);
-/* #433d43 */
---background-secondary-alt: hsl(300, 5%, 19%);
-/* 6% darker than secondary */
-/* auxilary, mixed of shade of gray & blue-purple */
---background-accent: hsl(300, 15%, 27%);
-/* for blockquote & journal shading / before this #304050 or #394d60 */
---background-accent-alt: hsl(0, 0%, 16%);
-/* 4% darker shade of background-primary, active line and backlinks */
---background-modifier-border: hsl(20, 5%, 33%);
-/* #595350; 	/* for horizontal line & border */
---background-modifier-cover: #262626;
-/* for title bar / #332E33 */
---background-modifier-cover: hsl(0, 0%, 16%);
-/* for title bar / #332E33 */
-/*  --interactive-accent: #4682B4;                    /* for interactive buttons */
-/*	--interactive-accent-hover: #5a91bf; 	/* for interactive buttons */
-/* my custom variables */
---background-modifier-border-active: hsl(20, 5%, 53%);
-/* for border active, lighter for dark mode */
---background-modifier-backlinks: hsl(0, 0%, 18%);
-/* for backlinks, 2% darker than primary */
-/* plugins variables */
-/* color variables for Hover Editor plugin, #735050 is monochromatic of #262626 */
---he-title-bar-active-pinned-bg: #735050;
---he-title-bar-inactive-pinned-bg: #735050;
---he-title-bar-active-bg: #3D373A;
---he-title-bar-inactive-bg: #3D373A;
-}`,
-    },
-    "color-scheme-discord": {
-      dark: `.theme-dark {
-/*
-    			hsl(220, 8%, 23%) -- main pane/chat window
-    			hsl(223, 7%, 20%) -- sidebar for channels (dark)
-    			hsl(218, 8%, 27%) -- input for chats (lighter)
-    			hsl(216, 7%, 14%) -- sidebar for servers (darker)
-    			hsl(225, 8%, 10%) -- popup (almost black)
-    			hsl(217, 8%, 34%) -- buttons (lightest)
-    		*/
---background-primary: hsl(220, 8%, 23%);
---background-modifier-cover: hsl(223, 7%, 20%);
---background-secondary: hsl(218, 8%, 27%);
---background-secondary-alt: hsl(218, 8%, 21%);
-/* 6% darker than secondary */
---background-accent: hsl(223, 7%, 30%);
-/* 10% lighter than modifier-cover */
---background-accent-alt: hsl(220, 8%, 19%);
-/* 4% darker shade of background-primary, active line and backlinks */
-/* my custom variables */
---background-modifier-backlinks: hsl(220, 8%, 21%);
-/* for backlinks, 2% darker than primary */
-}`,
-      light: `.theme-light {
-/*
-    			hsl(0, 0%, 100%) -- main pane/chat window
-    			hsl(220, 13%, 95%) -- sidebar for channels (dark)
-    			hsl(210, 11%, 93%) -- input for chats (lighter)
-    			hsl(216, 10%, 90%) -- sidebar for servers (darker)
-    			hsl(0, 0%, 100%) -- popup (white)
-    			hsl(213, 9%, 46%) -- buttons (bit darker)
-    		*/
---background-primary: hsl(220, 16%, 92%);
---background-modifier-cover: hsl(223, 14%, 85%);
---background-secondary: hsl(218, 16%, 85%);
---background-secondary-alt: hsl(218, 16%, 81%);
-/* 6% darker than secondary */
---background-accent: hsl(223, 14%, 90%);
---background-accent-alt: hsl(220, 16%, 88%);
-/* 4% darker shade of background-primary, active line and backlinks */
-/* my custom variables */
---background-modifier-backlinks: hsl(220, 16%, 90%);
-/* for backlinks, 2% darker than primary */
-}`,
-    },
-    "oled-black": {
-      dark: `.theme-dark {
---background-primary: black;
---background-primary-alt: hsl(0, 0%, 8%);
---background-modifier-cover: #1a1a1a;
---background-secondary: hsl(0, 0%, 16%);
---background-secondary-alt: hsl(0, 0%, 12%);
---background-accent: hsl(300, 20%, 15%);
---background-accent-alt: hsl(0, 0%, 20%);
---color-base-100: hsl(0, 0%, 78%);
-/* original dark-theme base-100 is hsl(0, 0%, 85%), for font color */
-/* my custom variables */
---background-modifier-backlinks: hsl(0, 0%, 12%);
-/* for backlinks, 12% lighter than primary, special for oled black */
-}`,
-    },
     "is-force-oled-black-mobile": {
       dark: `.is-mobile.theme-dark {
 --background-primary: black;
@@ -7443,30 +7333,6 @@ html[saved-theme="light"] body ul.tags > li {
 display: none;
 }`,
     },
-    "lst-fab-b2-1": {
-      general: `body.is-mobile.lst-fab-b2-1 div.view-actions > .view-action:nth-child(1 of .cmdr-page-header) {
-position: absolute;
-top: calc(88vh - var(--lst-fab-b2-y));
-right: calc(0vw + var(--lst-fab-view-x));
-width: var(--lst-fab-button-size);
-aspect-ratio: 1;
-border-radius: var(--lst-fab-button-radius);
-background-color: var(--background-secondary);
-box-shadow: 0px 0px var(--size-4-2) rgba(255,255,255,0.3);
-}`,
-    },
-    "lst-fab-b2-2": {
-      general: `body.is-mobile.lst-fab-b2-2 div.view-actions > .view-action:nth-child(2 of .cmdr-page-header) {
-position: absolute;
-top: calc(88vh - var(--lst-fab-b2-y));
-right: calc(0vw + var(--lst-fab-view-x));
-width: var(--lst-fab-button-size);
-aspect-ratio: 1;
-border-radius: var(--lst-fab-button-radius);
-background-color: var(--background-secondary);
-box-shadow: 0px 0px var(--size-4-2) rgba(255,255,255,0.3);
-}`,
-    },
     "is-css-guide": {
       general: `.is-css-guide .markdown-rendered:not(.show-indentation-guide) :is(ul ul, ol ul, ul ol, ol ol)::before {
 content:'';
@@ -7483,78 +7349,6 @@ left: calc(-16px + 2px + var(--list-guide-adj-mobile));
 
 .is-css-guide .snw-ref-area :is(ul ul, ol ul, ul ol, ol ol)::before {
 left: calc(-12px + var(--list-guide-adj));
-}`,
-    },
-    "list-d-c-d": {
-      general: `.list-d-c-d .HyperMD-list-line-1 .cm-formatting-list-ul .list-bullet::after {
-
-}
-
-.list-d-c-d :is(.HyperMD-list-line-2, .HyperMD-list-line-4, .HyperMD-list-line-6, .HyperMD-list-line-8) .cm-formatting-list-ul .list-bullet::after {
-width: calc(0.3rem - 1px);
-height: calc(0.3rem - 1px);
-outline: 1px solid;
-background-color: transparent;
-}
-
-.list-d-c-d .markdown-rendered ul.has-list-bullet, .list-d-c-d .markdown-rendered ul ul ul.has-list-bullet, .list-d-c-d .markdown-rendered ul ul ul ul ul.has-list-bullet, .list-d-c-d .markdown-rendered ul ul ul ul ul ul ul.has-list-bullet {
-list-style-type: disc;
-}
-
-.list-d-c-d .markdown-rendered ul ul.has-list-bullet, .list-d-c-d .markdown-rendered ul ul ul ul.has-list-bullet, .list-d-c-d .markdown-rendered ul ul ul ul ul ul.has-list-bullet, .list-d-c-d .markdown-rendered ul ul ul ul ul ul ul ul.has-list-bullet {
-list-style-type: circle;
-}`,
-    },
-    "list-d-c-s": {
-      general: `.list-d-c-s .cm-list-1 .list-bullet::after {
-
-}
-
-.list-d-c-s .cm-list-2 .list-bullet::after {
-width: calc(0.3rem - 1px);
-height: calc(0.3rem - 1px);
-outline: 1px solid;
-background-color: transparent;
-}
-
-.list-d-c-s .cm-list-3 .list-bullet::after {
-border-radius: 0%;
-}
-
-.list-d-c-s .markdown-rendered ul .list-bullet::after, .list-d-c-s .markdown-rendered ul ul ul ul .list-bullet::after, .list-d-c-s .markdown-rendered ul ul ul ul ul ul ul .list-bullet::after {
-width: var(--list-bullet-size);
-height: var(--list-bullet-size);
-outline: none;
-background-color: var(--list-marker-color);
-border-radius: var(--list-bullet-radius);
-}
-
-.list-d-c-s .markdown-rendered ul ul .list-bullet::after, .list-d-c-s .markdown-rendered ul ul ul ul ul .list-bullet::after, .list-d-c-s .markdown-rendered ul ul ul ul ul ul ul ul .list-bullet::after {
-width: calc(0.3rem - 1px);
-height: calc(0.3rem - 1px);
-outline: 1px solid;
-background-color: transparent;
-border-radius: var(--list-bullet-radius);
-}
-
-.list-d-c-s .markdown-rendered ul ul ul .list-bullet::after, .list-d-c-s .markdown-rendered ul ul ul ul ul ul .list-bullet::after, .list-d-c-s .markdown-rendered ul ul ul ul ul ul ul ul ul .list-bullet::after {
-width: var(--list-bullet-size);
-height: var(--list-bullet-size);
-outline: none;
-background-color: var(--list-marker-color);
-border-radius: 0%;
-}
-
-.list-d-c-s .markdown-rendered ul.has-list-bullet, .list-d-c-s .markdown-rendered ul ul ul ul.has-list-bullet, .list-d-c-s .markdown-rendered ul ul ul ul ul ul ul.has-list-bullet {
-list-style-type: disc;
-}
-
-.list-d-c-s .markdown-rendered ul ul.has-list-bullet, .list-d-c-s .markdown-rendered ul ul ul ul ul.has-list-bullet, .list-d-c-s .markdown-rendered ul ul ul ul ul ul ul ul.has-list-bullet {
-list-style-type: circle;
-}
-
-.list-d-c-s .markdown-rendered ul ul ul.has-list-bullet, .list-d-c-s .markdown-rendered ul ul ul ul ul ul.has-list-bullet, .list-d-c-s .markdown-rendered ul ul ul ul ul ul ul ul ul.has-list-bullet {
-list-style-type: square;
 }`,
     },
     "list-embed-global": {
@@ -7669,39 +7463,6 @@ display: none;
 			};
 }`,
     },
-    "lst-fm-std": {
-      general: `body.lst-fm-std .frontmatter-container {
-display: block;
-font-size: 0.8rem;
-background-color: var(--background-modifier-backlinks);
-border-radius: var(--size-4-1);
-padding: var(--size-4-1) var(--size-4-2);
-}
-
-body.lst-fm-std .frontmatter-container .frontmatter-container-header {
-position: relative;
-border-bottom-width: 1px;
-color: var(--text-faint);
-margin: 0;
-padding: 0;
-}
-
-body.lst-fm-std .frontmatter-container .frontmatter-section, body.lst-fm-std .frontmatter-container .frontmatter-section:last-child {
-margin-bottom: 0;
-margin-right: 12px;
-}
-
-body.lst-fm-std .frontmatter-container .frontmatter-section-label {
-font-family: var(--font-monospace);
-font-size: 0.8rem;
-flex: 0 1 4em;
-color: var(--text-faint);
-}
-
-body.lst-fm-std .frontmatter-container.is-collapsed .frontmatter-container-header {
-border-bottom-width: 0px;
-}`,
-    },
     "lst-fm-lp-hide": {
       general: `body.lst-fm-lp-hide .markdown-source-view.is-live-preview .cm-line:has(.cm-hmd-frontmatter:not(.cm-def)):not(.cm-active), body.lst-fm-lp-hide .markdown-source-view.is-live-preview .cm-line:has(.cm-def) ~ .cm-line:has(.cm-def) {
 display: none;
@@ -7722,12 +7483,6 @@ body.lst-fm-lp-hide .markdown-source-view.is-live-preview :has(.cm-line:hover .c
 content: "";
 }`,
     },
-    "lst-prop-super-compact": {
-      general: `body.lst-prop-super-compact .metadata-properties {
-flex-direction: row;
-flex-wrap: wrap;
-}`,
-    },
     "lst-prop-rv-noedit": {
       general: `.lst-prop-rv-noedit .markdown-reading-view {
 & .metadata-container .metadata-add-button { display: none; };
@@ -7738,17 +7493,6 @@ flex-wrap: wrap;
 & .metadata-property[data-property-key="tags"] .multi-select-pill-content { margin-right: var(--pill-padding-x); };
 /* adding "padding to the right after 1.5.1 update "*/
 & .markdown-reading-view .metadata-property[data-property-key="tags"] .multi-select-pill-content { margin-right: var(--pill-padding-x); };
-}`,
-    },
-    "lst-folder-tabs": {
-      general: `body.lst-folder-tabs .workspace .mod-root .workspace-tab-header {
---tab-radius-active: 6px;
-margin-bottom: 0;
-padding-bottom: 0;
-}
-
-body.lst-folder-tabs .workspace .mod-root .workspace-tab-header::before, body.lst-folder-tabs .workspace .mod-root .workspace-tab-header::after {
-display: block;
 }`,
     },
   },

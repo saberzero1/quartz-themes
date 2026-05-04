@@ -107,3 +107,120 @@
       min: 300
       max: 1920
       step: 20
+- name: Modular CSS Layout - Multi Column
+  id: modular-css-layout-mc
+  settings:
+    - id: multi-column-title
+      title: Callout Column Settings
+      type: heading
+      level: 2
+      collapsed: true
+    - id: callout-min-width
+      title: Minimum Sub-Callout Width
+      description: for sub-callout in [!multi-column]. in px units
+      type: variable-number-slider
+      default: 200
+      min: 100
+      max: 500
+      step: 50
+      format: px
+    - id: callout-gap
+      title: Sub-Callout Gap (any unit)
+      description: NO spacing between figure and unit
+      type: variable-text
+      default: 0.5rem
+    - id: callout-margin
+      title: Sub-Callout Margin (any unit)
+      description: to allow some spacing for box-shadow
+      type: variable-text
+      default: 5px
+    - id: float-small-width
+      title: Floating Callout Width - Small (in px)
+      type: variable-number-slider
+      default: 300
+      min: 200
+      max: 450
+      step: 50
+      format: px
+    - id: float-medium-width
+      title: Floating Callout Width - Medium (in px)
+      type: variable-number-slider
+      default: 400
+      min: 300
+      max: 550
+      step: 50
+      format: px
+    - id: float-large-width
+      title: Floating Callout Width - Large (in px)
+      type: variable-number-slider
+      default: 600
+      min: 500
+      max: 750
+      step: 50
+      format: px
+    - id: mc-list-column-title
+      title: List Column Settings
+      description: using `{.xxx-column-list-xxx}` and `#mcl/list-column`
+      type: heading
+      level: 2
+      collapsed: true
+    - id: list-min-width
+      title: Minimum Column Width (in px)
+      type: variable-number-slider
+      default: 200
+      min: 100
+      max: 500
+      step: 50
+      format: px
+    - id: col-rule-color
+      title: Column Ruler Color
+      type: variable-themed-color
+      format: hsl
+      opacity: true
+      default-light: '#'
+      default-dark: '#'
+    - id: col-rule-width
+      title: Column Ruler Width (in px)
+      type: variable-number-slider
+      default: 1
+      min: 0
+      max: 4
+      step: 1
+      format: px
+    - id: mc-list-grid-title
+      title: List Grid and List Card
+      description: using `#mcl/list-grid` and `#mcl/list-card`
+      type: heading
+      level: 2
+      collapsed: true
+    - id: list-grid-min-width
+      title: Minimum Grid/Card Width (in px/em or similar)
+      type: variable-text
+      default: 250px
+    - id: mcl-card-bg-color
+      title: List Card Background Color
+      type: variable-themed-color
+      format: hsl
+      opacity: true
+      default-light: '#'
+      default-dark: '#'
+    - id: mcl-card-header-border-width
+      title: Bottom Border for List Card Header (in px/em or similar)
+      description: set to 0 to disable the border
+      type: variable-text
+      default: 1px
+    - id: mcl-card-gap
+      title: List Card Border Width (in px/em or similar)
+      type: variable-text
+      default: 0.2em
+    - id: mcl-card-border-width
+      title: List Card Border Width (in px/em or similar)
+      type: variable-text
+      default: 1px
+    - id: mcl-card-border-color
+      title: List Card Border Color
+      type: variable-themed-color
+      format: hsl
+      opacity: true
+      default-light: '#'
+      default-dark: '#'

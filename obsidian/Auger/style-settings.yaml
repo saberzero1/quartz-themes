@@ -1,0 +1,66 @@
+- name: Auger
+  id: auger
+  settings:
+    - id: interface-heading
+      title: Interface
+      type: heading
+      level: 3
+    - id: is-light-canvas
+      title: Light canvas
+      description: In dark mode, keeps the note canvas light.
+      type: class-toggle
+      default: 'false'
+    - id: inactive-blur
+      title: Inactive window blur
+      description: When the window is not focused, blur the content.
+      type: class-toggle
+      default: 'false'
+    - id: colors-heading
+      title: Colors
+      type: heading
+      level: 3
+    - id: bold-color
+      title: Bold text color
+      type: variable-themed-color
+      format: hex
+      default-light: '#FF3B30'
+      default-dark: '#FF453A'
+    - id: italic-color
+      title: Italic text color
+      type: variable-themed-color
+      format: hex
+      default-light: '#FF9500'
+      default-dark: '#FF9F0A'
+    - id: fonts-heading
+      title: Fonts
+      type: heading
+      level: 3
+    - id: font-smoothing-off
+      title: Turn off font smoothing
+      description: Disables anti-aliasing. Text may appear sharper but more jagged.
+      type: class-toggle
+      default: 'false'
+    - id: inline-title-font
+      title: Inline title font
+      description: The font family name; "inherit" uses the Appearance > Text Font setting.
+      type: variable-text
+      default: inherit
+    - id: inline-title-weight
+      title: Inline title weight
+      type: variable-select
+      default: 400
+    - id: inline-title-size
+      title: Inline title size
+      type: variable-number-slider
+      default: 3
+      min: 0.75
+      max: 8
+      step: 0.25
+      format: rem
+    - id: inline-title-line-height
+      title: Inline title line height
+      type: variable-number-slider
+      default: 1.2
+      min: 0
+      max: 4
+      step: 0.1

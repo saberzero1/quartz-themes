@@ -90,6 +90,10 @@
   --title-weight: 650;
   --heading-weight: 600;
   --line-height-headings: 1.2;
+  --font-default: Spectral;
+  --body-weight: 400;
+  --bold-weight: 600;
+  --line-height-body: 1.45;
   --ss-background-color: #000000;
   --font-interface-override: "??";
   --font-text-override: var(--font-default, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
@@ -181,6 +185,10 @@
   --title-weight: 650;
   --heading-weight: 600;
   --line-height-headings: 1.2;
+  --font-default: Spectral;
+  --body-weight: 400;
+  --bold-weight: 600;
+  --line-height-body: 1.45;
   --ss-background-color: #000000;
   --font-interface-override: "??";
   --font-text-override: var(--font-default, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);

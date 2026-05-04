@@ -1,3 +1,88 @@
+- name: Velocity - Quick Settings
+  id: obsidian-velocity
+  settings:
+    - id: ss-section-title
+      description: Theme colors
+      type: info-text
+      markdown: true
+    - id: ss-section-hidden-paint
+      title: BLANK
+      type: heading
+      level: 1
+    - id: paint-preview
+      type: info-text
+    - id: theme-paint-light
+      title: Select paint job
+      type: class-select
+      default: velocity
+      options:
+        - value: jetblue
+    - id: theme-paint-dark
+      title: Select paint job
+      type: class-select
+      default: velocity-gray
+      options:
+        - value: midnight
+    - id: ss-section-hidden
+      title: BLANK
+      type: heading
+      level: 1
+    - id: color-highlight-rgb
+      title: Select highlight color
+      type: variable-select
+      default: var(--highlight-yellow-rgb)
+    - id: enable-special-text
+      title: Colored bold and italics
+      description: Bold and italics are given unique colors.
+      type: class-toggle
+    - id: enable-special-code
+      title: Unique code text color
+      description: Inline code is given a unique color to make it easier to distinguish from regular text.
+      type: class-toggle
+    - id: ss-section-title
+      description: Theme layout
+      type: info-text
+      markdown: true
+    - id: line-height-normal
+      title: Select editor line height
+      type: variable-select
+      default: 1.6
+      allowEmpty: false
+    - id: vl-layout-padding
+      title: Select interface item spacing
+      type: variable-select
+      default: 8px
+      allowEmpty: false
+    - id: file-line-width
+      title: Customize readable line width
+      description: Set the readable width of text in the editor, using relative units (rem).
+      type: variable-number-slider
+      default: 43.75
+      min: 40
+      max: 47.5
+      step: 0.25
+      format: rem
+    - id: safe-area-adjust
+      title: (Phone) Adjust top interface item margins
+      description: Manually adjust the safe-area-inset variable to move the UI away from/closer to your phone's status bar.
+      type: variable-number-slider
+      default: 40
+      min: 0
+      max: 80
+      step: 4
+      format: px
+    - id: ss-section-title
+      description: Other
+      type: info-text
+      markdown: true
+    - id: override-default-font
+      title: Override dedicated theme typeface
+      description: Velocity is best experienced with the font it is bundled with - Raveo. Enable this setting to allow custom font overrides via the Appearance settings.
+      type: class-toggle
+    - id: switch-edit-icons
+      title: Inverted editing mode toggle display
+      description: Displays the icon of the current editing mode instead of the next mode.
+      type: class-toggle
 - name: Velocity - Configurator
   id: obsidian-velocity-config
   settings:

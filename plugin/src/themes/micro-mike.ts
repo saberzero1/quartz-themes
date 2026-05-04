@@ -3904,50 +3904,6 @@ font-weight: 700;
 background-color: var(--levelLayer);
 }`,
     },
-    modalNAlign: {
-      general: `:not(.is-mobile).modalNAlign .modal-container .prompt {
-top: 0%;
-}`,
-    },
-    modalNEAlign: {
-      general: `:not(.is-mobile).modalNEAlign .modal-container .prompt {
-top: 0%;
-right: 0%;
-}`,
-    },
-    modalEAlign: {
-      general: `:not(.is-mobile).modalEAlign .modal-container .prompt {
-right: 0%;
-}`,
-    },
-    modalSEAlign: {
-      general: `:not(.is-mobile).modalSEAlign .modal-container .prompt {
-bottom: 0%;
-right: 0%;
-}`,
-    },
-    modalSAlign: {
-      general: `:not(.is-mobile).modalSAlign .modal-container .prompt {
-bottom: 0%;
-}`,
-    },
-    modalSWAlign: {
-      general: `:not(.is-mobile).modalSWAlign .modal-container .prompt {
-bottom: 0%;
-left: 0%;
-}`,
-    },
-    modalWAlign: {
-      general: `:not(.is-mobile).modalWAlign .modal-container .prompt {
-left: 0%;
-}`,
-    },
-    modalNWAlign: {
-      general: `:not(.is-mobile).modalNWAlign .modal-container .prompt {
-top: 0%;
-left: 0%;
-}`,
-    },
     largeSettingsButtons: {
       general: `body:not(.is-mobile).largeSettingsButtons {
 --toggle-thumb-radius: 4px;
@@ -3961,50 +3917,6 @@ body:not(.is-mobile).largeSettingsButtons .modal.mod-settings .clickable-icon {
 background-color: var(--level1_a);
 min-height: 40px;
 width: 40px;
-}`,
-    },
-    settingsNAlign: {
-      general: `:not(.is-mobile).settingsNAlign .modal.mod-settings {
-top: 0%;
-}`,
-    },
-    settingsNEAlign: {
-      general: `:not(.is-mobile).settingsNEAlign .modal.mod-settings {
-top: 0%;
-right: 0%;
-}`,
-    },
-    settingsEAlign: {
-      general: `:not(.is-mobile).settingsEAlign .modal.mod-settings {
-right: 0%;
-}`,
-    },
-    settingsSEAlign: {
-      general: `:not(.is-mobile).settingsSEAlign .modal.mod-settings {
-bottom: 0%;
-right: 0%;
-}`,
-    },
-    settingsSAlign: {
-      general: `:not(.is-mobile).settingsSAlign .modal.mod-settings {
-bottom: 0%;
-}`,
-    },
-    settingsSWAlign: {
-      general: `:not(.is-mobile).settingsSWAlign .modal.mod-settings {
-bottom: 0%;
-left: 0%;
-}`,
-    },
-    settingsWAlign: {
-      general: `:not(.is-mobile).settingsWAlign .modal.mod-settings {
-left: 0%;
-}`,
-    },
-    settingsNWAlign: {
-      general: `:not(.is-mobile).settingsNWAlign .modal.mod-settings {
-top: 0%;
-left: 0%;
 }`,
     },
   },

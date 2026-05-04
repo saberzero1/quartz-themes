@@ -1,0 +1,123 @@
+- name: Solarized Theme Settings
+  id: solarized-theme-settings
+  settings:
+    - id: disable-active-line-highlight
+      title: Disable active line highlight
+      description: By default Solarized highlights the active line. This setting lets you disable that behavior.
+      type: class-toggle
+      default: false
+    - id: tones
+      title: Base Tones
+      type: heading
+      level: 2
+      collapsed: true
+    - id: base03
+      title: base03
+      type: variable-color
+      format: rgb
+      default: rgb(0 43 54)
+    - id: base02
+      title: base02
+      type: variable-color
+      format: rgb
+      default: rgb(7 54 66)
+    - id: base01
+      title: base01
+      type: variable-color
+      format: rgb
+      default: rgb(88 110 117)
+    - id: base00
+      title: base00
+      type: variable-color
+      format: rgb
+      default: rgb(101 123 131)
+    - id: base0
+      title: base0
+      type: variable-color
+      format: rgb
+      default: rgb(131 148 150)
+    - id: base1
+      title: base1
+      type: variable-color
+      format: rgb
+      default: rgb(147 161 161)
+    - id: base2
+      title: base2
+      type: variable-color
+      format: rgb
+      default: rgb(238 232 213)
+    - id: base3
+      title: base3
+      type: variable-color
+      format: rgb
+      default: rgb(253 246 227)
+    - id: accents
+      description: NB This does not override Obsidian's built-in accent color (see Appearance > Accent color)
+      title: Accent Colors
+      type: heading
+      level: 2
+      collapsed: true
+    - id: color-yellow
+      title: yellow
+      type: variable-color
+      format: rgb
+      default: rgb(181 137 0)
+      alt-format:
+        - id: color-yellow-rgb
+          format: rgb-values
+    - id: color-orange
+      title: orange
+      type: variable-color
+      format: rgb
+      default: rgb(203 75 22)
+      alt-format:
+        - id: color-orange-rgb
+          format: rgb-values
+    - id: color-red
+      title: red
+      type: variable-color
+      format: rgb
+      default: rgb(220 50 47)
+      alt-format:
+        - id: color-red-rgb
+          format: rgb-values
+    - id: color-pink
+      title: pink
+      type: variable-color
+      format: rgb
+      default: rgb(211 54 130)
+      alt-format:
+        - id: color-pink-rgb
+          format: rgb-values
+    - id: color-purple
+      title: purple
+      type: variable-color
+      format: rgb
+      default: rgb(108 113 196)
+      alt-format:
+        - id: color-purple-rgb
+          format: rgb-values
+    - id: color-blue
+      title: blue
+      type: variable-color
+      format: rgb
+      default: rgb(38 139 210)
+      alt-format:
+        - id: color-blue-rgb
+          format: rgb-values
+    - id: color-cyan
+      title: cyan
+      type: variable-color
+      format: rgb
+      default: rgb(42 161 152)
+      alt-format:
+        - id: color-cyan-rgb
+          format: rgb-values
+    - id: color-green
+      title: green
+      type: variable-color
+      format: rgb
+      default: rgb(133 153 0)
+      alt-format:
+        - id: color-green-rgb
+          format: rgb-values

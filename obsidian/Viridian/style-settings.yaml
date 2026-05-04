@@ -19,3 +19,11 @@
           value: vr-colour-dark-none
         - label: 👽 Zenburn 🥗
           value: vr-zenburn
+- name: Editor
+  id: viridian-editor
+  settings:
+    - id: vr-fonts
+      title: Typefaces
+      type: heading
+      level: 1
+      collapsed: true

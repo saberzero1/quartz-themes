@@ -1,7 +1,13 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "halcyon", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "halcyon",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+    styleSettingsId: "halcyon-style-settings",
+  },
   dark: {
     base: `:root:root {
   --accent-h: var(--halcyon-accent-h, 40);

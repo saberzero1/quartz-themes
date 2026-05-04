@@ -64,7 +64,11 @@ export const theme: ThemeData = {
         unicodeRange: null,
       },
     ],
-    styleSettingsId: ["test", "Faded-Theme-Sliding-Panes-Options"],
+    styleSettingsId: [
+      "test",
+      "Faded-Theme-Sliding-Panes-Options",
+      "modular-css-layout-mc",
+    ],
   },
   dark: {
     base: `:root:root {

@@ -1,0 +1,162 @@
+- name: Halcyon Theme
+  id: halcyon-style-settings
+  settings:
+    - id: halcyon-accent
+      title: Accent Color
+      type: variable-color
+      format: hex
+      default: '#ffcc66'
+    - id: halcyon-colors-base
+      title: Base
+      type: heading
+      level: 5
+    - id: halcyon-base-blue-01
+      title: '--halcyon-base-blue-01'
+      description: Workbench background color.
+      type: variable-color
+      format: hex
+      default: '#171c28'
+    - id: halcyon-base-blue-02
+      title: '--halcyon-base-blue-02'
+      description: Editor background color.
+      type: variable-color
+      format: hex
+      default: '#1d2433'
+    - id: halcyon-base-blue-03
+      title: '--halcyon-base-blue-03'
+      description: Highlights, widgets, and panels.
+      type: variable-color
+      format: hex
+      default: '#2f3b54'
+    - id: halcyon-base-blue-04
+      title: '--halcyon-base-blue-04'
+      description: Dividers, and subtle UI elements.
+      type: variable-color
+      format: hex
+      default: '#6679a4'
+    - id: halcyon-base-blue-05
+      title: '--halcyon-base-blue-05'
+      description: Status bar text, buttons, and more.
+      type: variable-color
+      format: hex
+      default: '#8695b7'
+    - id: halcyon-base-grey-dark
+      title: '--halcyon-base-grey-dark'
+      description: Variables, property names, and tabs.
+      type: variable-color
+      format: hex
+      default: '#a2aabc'
+    - id: halcyon-base-grey-light
+      title: '--halcyon-base-grey-light'
+      description: Active text. Anything that should be white.
+      type: variable-color
+      format: hex
+      default: '#d7dce2'
+    - id: halcyon-base-grey-tab
+      title: '--halcyon-base-grey-tab'
+      type: variable-color
+      format: hex
+      default: '#71777f'
+    - id: halcyon-base-grey-token
+      title: '--halcyon-base-grey-token'
+      type: variable-color
+      format: hex
+      default: '#586582'
+    - id: halcyon-base-grey-scroll
+      title: '--halcyon-base-grey-scroll'
+      type: variable-color
+      format: hex
+      default: '#3f495e'
+    - id: halcyon-base-grey-scroll-hover
+      title: '--halcyon-base-grey-scroll-hover'
+      type: variable-color
+      format: hex
+      default: '#5c6782'
+    - id: halcyon-color-palette
+      title: Palette
+      type: heading
+      level: 5
+    - id: halcyon-palette-cyan
+      title: '--halcyon-palette-cyan'
+      description: Modified highlights.
+      type: variable-color
+      format: hex
+      default: '#5ccfe6'
+    - id: halcyon-palette-lime
+      title: '--halcyon-palette-lime'
+      description: Addition highlights.
+      type: variable-color
+      format: hex
+      default: '#bae67e'
+    - id: halcyon-palette-orange
+      title: '--halcyon-palette-orange'
+      description: Constants, operators.
+      type: variable-color
+      format: hex
+      default: '#ffae57'
+    - id: halcyon-palette-yellow
+      title: '--halcyon-palette-yellow'
+      description: Functions, classes, object literal keys.
+      type: variable-color
+      format: hex
+      default: '#ffd580'
+    - id: halcyon-palette-lilac
+      title: '--halcyon-palette-lilac'
+      description: Keywords, constants, template literals.
+      type: variable-color
+      format: hex
+      default: '#c3a6ff'
+    - id: halcyon-palette-salmon
+      title: '--halcyon-palette-salmon'
+      description: Deletion highlights, errors, warnings.
+      type: variable-color
+      format: hex
+      default: '#ef6b73'
+    - id: halcyon-palette-blue
+      title: '--halcyon-palette-blue'
+      description: Added by dbarenholz.
+      type: variable-color
+      format: hex
+      default: '#7099db'
+    - id: halcyon-palette-pink
+      title: '--halcyon-palette-pink'
+      description: Added by dbarenholz.
+      type: variable-color
+      format: hex
+      default: '#f9cff2'
+    - id: halcyon-extra
+      title: Extra
+      type: heading
+      level: 2
+    - id: dont-make-blockquotes-small-caps
+      title: Do not make blockquotes as small-caps
+      type: class-toggle
+      default: 'false'
+    - id: dont-make-file-explorer-hover-yellow
+      title: Do not make the hover of file explorer items yellow
+      type: class-toggle
+      default: 'false'
+    - id: dont-make-prompt-suggestions-emphasized
+      title: Do not emphasize prompt suggestions
+      type: class-toggle
+      default: 'false'
+    - id: dont-make-search-results-readable
+      title: Do not make search results readable (you don't want this, really)
+      type: class-toggle
+      default: 'false'
+    - id: dont-make-tables-take-full-width
+      title: Do not make tables take full width
+      type: class-toggle
+      default: 'false'
+    - id: dont-make-tabs-square
+      title: Do not make tabs square
+      type: class-toggle
+      default: 'false'
+    - id: dont-make-task-brackets-purple
+      title: Do not make task brackets purple
+      type: class-toggle
+      default: 'false'
+    - id: dont-make-tree-icons-hover-yellow
+      title: Do not make the hover of icons in the file tree yellow
+      type: class-toggle
+      default: 'false'
