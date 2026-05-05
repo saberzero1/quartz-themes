@@ -1514,6 +1514,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1537,6 +1538,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1560,6 +1562,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1583,6 +1586,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1606,6 +1610,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1629,6 +1634,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1653,6 +1659,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1677,6 +1684,7 @@ body {
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "H1";
+    display: inline;
     color: var(--h1-color, rgb(231, 77, 71));
   }
 
@@ -1704,6 +1712,7 @@ body {
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "H2";
+    display: inline;
     color: var(--h2-color, rgb(215, 148, 64));
   }
 
@@ -1731,6 +1740,7 @@ body {
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "H3";
+    display: inline;
     color: var(--h3-color, rgb(7, 170, 246));
   }
 
@@ -1758,6 +1768,7 @@ body {
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "H4";
+    display: inline;
     color: var(--h4-color, rgb(163, 110, 251));
   }
 
@@ -1785,6 +1796,7 @@ body {
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "H5";
+    display: inline;
     color: var(--h5-color, rgb(109, 215, 215));
   }
 
@@ -1809,6 +1821,7 @@ body {
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "H6";
+    display: inline;
     color: var(--h6-color, rgb(175, 191, 5));
   }
 
@@ -1833,6 +1846,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -8768,6 +8782,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -8791,6 +8806,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -8814,6 +8830,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -8837,6 +8854,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -8860,6 +8878,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -8883,6 +8902,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -8907,6 +8927,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -8931,6 +8952,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "H1";
+      display: inline;
       color: var(--h1-color, rgb(231, 77, 71));
     }
 
@@ -8958,6 +8980,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "H2";
+      display: inline;
       color: var(--h2-color, rgb(215, 148, 64));
     }
 
@@ -8985,6 +9008,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "H3";
+      display: inline;
       color: var(--h3-color, rgb(7, 170, 246));
     }
 
@@ -9012,6 +9036,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "H4";
+      display: inline;
       color: var(--h4-color, rgb(163, 110, 251));
     }
 
@@ -9039,6 +9064,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "H5";
+      display: inline;
       color: var(--h5-color, rgb(109, 215, 215));
     }
 
@@ -9063,6 +9089,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "H6";
+      display: inline;
       color: var(--h6-color, rgb(175, 191, 5));
     }
 
@@ -9087,6 +9114,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 

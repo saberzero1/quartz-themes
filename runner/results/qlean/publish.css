@@ -6310,6 +6310,7 @@ body body.theme-light .published-container .markdown-rendered h1 {
   width: 31.5px;
   height: auto;
   content: "#1";
+  display: inline;
 }
 body body.theme-light .published-container .markdown-rendered h2 {
   color: var(--h2-color, rgb(115, 115, 115));
@@ -6359,6 +6360,7 @@ body body.theme-light .published-container .markdown-rendered h2 {
   width: 26.25px;
   height: auto;
   content: "#2";
+  display: inline;
 }
 body body.theme-light .published-container .markdown-rendered h3 {
   color: var(--h3-color, rgb(115, 115, 115));
@@ -6408,6 +6410,7 @@ body body.theme-light .published-container .markdown-rendered h3 {
   width: 21px;
   height: auto;
   content: "#3";
+  display: inline;
 }
 body body.theme-light .published-container .markdown-rendered h4 {
   color: var(--h4-color, rgb(115, 115, 115));
@@ -6457,6 +6460,7 @@ body body.theme-light .published-container .markdown-rendered h4 {
   width: 17.5px;
   height: auto;
   content: "#4";
+  display: inline;
 }
 body body.theme-light .published-container .markdown-rendered h5 {
   color: var(--h5-color, rgb(115, 115, 115));
@@ -6506,6 +6510,7 @@ body body.theme-light .published-container .markdown-rendered h5 {
   width: 15.75px;
   height: auto;
   content: "#5";
+  display: inline;
 }
 body body.theme-light .published-container .markdown-rendered h6 {
   color: var(--h6-color, rgb(115, 115, 115));
@@ -6552,6 +6557,7 @@ body body.theme-light .published-container .markdown-rendered h6 {
   width: 14px;
   height: auto;
   content: "#6";
+  display: inline;
 }
 body
   body.theme-light
@@ -9084,6 +9090,7 @@ body body.theme-dark .published-container .markdown-rendered h1 {
   width: 31.5px;
   height: auto;
   content: "#1";
+  display: inline;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
   color: var(--h2-color, rgb(115, 115, 115));
@@ -9133,6 +9140,7 @@ body body.theme-dark .published-container .markdown-rendered h2 {
   width: 26.25px;
   height: auto;
   content: "#2";
+  display: inline;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
   color: var(--h3-color, rgb(115, 115, 115));
@@ -9182,6 +9190,7 @@ body body.theme-dark .published-container .markdown-rendered h3 {
   width: 21px;
   height: auto;
   content: "#3";
+  display: inline;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
   color: var(--h4-color, rgb(115, 115, 115));
@@ -9231,6 +9240,7 @@ body body.theme-dark .published-container .markdown-rendered h4 {
   width: 17.5px;
   height: auto;
   content: "#4";
+  display: inline;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
   color: var(--h5-color, rgb(115, 115, 115));
@@ -9280,6 +9290,7 @@ body body.theme-dark .published-container .markdown-rendered h5 {
   width: 15.75px;
   height: auto;
   content: "#5";
+  display: inline;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
   color: var(--h6-color, rgb(115, 115, 115));
@@ -9326,6 +9337,7 @@ body body.theme-dark .published-container .markdown-rendered h6 {
   width: 14px;
   height: auto;
   content: "#6";
+  display: inline;
 }
 body
   body.theme-dark

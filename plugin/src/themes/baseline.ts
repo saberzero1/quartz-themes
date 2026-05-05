@@ -2943,6 +2943,7 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
   border-top-width: 1px;
   color: var(--inline-title-color, rgb(218, 218, 218));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -6072,6 +6073,7 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
   border-top-width: 1px;
   color: var(--inline-title-color, rgb(34, 34, 34));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;

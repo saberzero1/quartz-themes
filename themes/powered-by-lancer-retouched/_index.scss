@@ -1288,6 +1288,7 @@ body {
     background-image: none;
     background: rgb(231, 231, 231) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--text-title-h1, rgb(231, 231, 231));
   }
 
@@ -1315,6 +1316,7 @@ body {
     background-image: none;
     background: rgb(231, 231, 231) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--text-title-h2, rgb(231, 231, 231));
   }
 
@@ -1342,6 +1344,7 @@ body {
     background-image: none;
     background: rgb(231, 231, 231) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--text-title-h3, rgb(231, 231, 231));
   }
 
@@ -1369,6 +1372,7 @@ body {
     background-image: none;
     background: rgb(231, 231, 231) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--text-title-h4, rgb(231, 231, 231));
   }
 
@@ -1396,6 +1400,7 @@ body {
     background-image: none;
     background: rgb(231, 231, 231) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--text-title-h5, rgb(231, 231, 231));
   }
 
@@ -1419,6 +1424,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1443,6 +1449,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1467,6 +1474,7 @@ body {
     background-image: none;
     background: rgb(194, 31, 37) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--text-title-h1, rgb(231, 231, 231));
   }
 
@@ -1494,6 +1502,7 @@ body {
     background-image: none;
     background: rgb(233, 53, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--text-title-h2, rgb(231, 231, 231));
   }
 
@@ -1521,6 +1530,7 @@ body {
     background-image: none;
     background: rgb(56, 10, 116) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--text-title-h3, rgb(231, 231, 231));
   }
 
@@ -1548,6 +1558,7 @@ body {
     background-image: none;
     background: rgb(135, 0, 127) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--text-title-h4, rgb(231, 231, 231));
   }
 
@@ -1575,6 +1586,7 @@ body {
     background-image: none;
     background: rgb(103, 188, 69) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--text-title-h5, rgb(231, 231, 231));
   }
 
@@ -1598,6 +1610,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1622,6 +1635,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -10128,6 +10142,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(24, 24, 24) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--text-title-h1, rgb(255, 255, 255));
     }
 
@@ -10155,6 +10170,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(24, 24, 24) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--text-title-h2, rgb(255, 255, 255));
     }
 
@@ -10182,6 +10198,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(24, 24, 24) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--text-title-h3, rgb(255, 255, 255));
     }
 
@@ -10209,6 +10226,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(24, 24, 24) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--text-title-h4, rgb(255, 255, 255));
     }
 
@@ -10236,6 +10254,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(24, 24, 24) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--text-title-h5, rgb(255, 255, 255));
     }
 
@@ -10259,6 +10278,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -10283,6 +10303,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -10307,6 +10328,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(153, 30, 42) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--text-title-h1, rgb(255, 255, 255));
     }
 
@@ -10334,6 +10356,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(119, 22, 117) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--text-title-h2, rgb(255, 255, 255));
     }
 
@@ -10361,6 +10384,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(25, 82, 162) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--text-title-h3, rgb(255, 255, 255));
     }
 
@@ -10388,6 +10412,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(20, 100, 100) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--text-title-h4, rgb(255, 255, 255));
     }
 
@@ -10415,6 +10440,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(18, 97, 39) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--text-title-h5, rgb(255, 255, 255));
     }
 
@@ -10438,6 +10464,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -10462,6 +10489,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 

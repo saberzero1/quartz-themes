@@ -1503,6 +1503,7 @@ html body h1::before {
   border-top-width: 0px;
   color: var(--text-title-h1, rgb(76, 83, 90));
   content: "H1 ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -1553,6 +1554,7 @@ html body h2::before {
   border-top-width: 0px;
   color: var(--text-title-h2, rgb(76, 83, 90));
   content: "H2 ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -1590,6 +1592,7 @@ html body h3::before {
   border-top-width: 0px;
   color: var(--text-title-h3, rgb(76, 83, 90));
   content: "H3 ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -1627,6 +1630,7 @@ html body h4::before {
   border-top-width: 0px;
   color: var(--text-title-h4, rgb(76, 83, 90));
   content: "H4 ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -1664,6 +1668,7 @@ html body h5::before {
   border-top-width: 0px;
   color: var(--text-title-h5, rgb(76, 83, 90));
   content: "H5 ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -1700,6 +1705,7 @@ html body h6::before {
   border-top-width: 0px;
   color: var(--text-title-h6, rgb(76, 83, 90));
   content: "H6 ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;

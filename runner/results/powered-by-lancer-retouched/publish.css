@@ -3079,6 +3079,7 @@ body body.theme-light .published-container .markdown-rendered h1 {
   width: 519.078px;
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-light .published-container .markdown-rendered h2 {
   color: var(--text-title-h2, rgb(231, 231, 231));
@@ -3118,6 +3119,7 @@ body body.theme-light .published-container .markdown-rendered h2 {
   width: 310px;
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-light .published-container .markdown-rendered h3 {
   color: var(--text-title-h3, rgb(231, 231, 231));
@@ -3157,6 +3159,7 @@ body body.theme-light .published-container .markdown-rendered h3 {
   width: 233.859px;
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-light .published-container .markdown-rendered h4 {
   color: var(--text-title-h4, rgb(231, 231, 231));
@@ -3196,6 +3199,7 @@ body body.theme-light .published-container .markdown-rendered h4 {
   width: 196.047px;
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-light .published-container .markdown-rendered h5 {
   color: var(--text-title-h5, rgb(231, 231, 231));
@@ -3235,6 +3239,7 @@ body body.theme-light .published-container .markdown-rendered h5 {
   width: 177.438px;
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-light .published-container .markdown-rendered h6 {
   color: rgb(34, 34, 34);
@@ -3269,6 +3274,7 @@ body body.theme-light .published-container .markdown-rendered h6 {
   width: auto;
   height: auto;
   content: normal;
+  display: block;
 }
 body
   body.theme-light
@@ -5540,6 +5546,7 @@ body body.theme-dark .published-container .markdown-rendered h1 {
   width: 519.078px;
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
   color: var(--text-title-h2, rgb(255, 255, 255));
@@ -5579,6 +5586,7 @@ body body.theme-dark .published-container .markdown-rendered h2 {
   width: 310px;
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
   color: var(--text-title-h3, rgb(255, 255, 255));
@@ -5618,6 +5626,7 @@ body body.theme-dark .published-container .markdown-rendered h3 {
   width: 233.859px;
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
   color: var(--text-title-h4, rgb(255, 255, 255));
@@ -5657,6 +5666,7 @@ body body.theme-dark .published-container .markdown-rendered h4 {
   width: 196.047px;
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
   color: var(--text-title-h5, rgb(255, 255, 255));
@@ -5696,6 +5706,7 @@ body body.theme-dark .published-container .markdown-rendered h5 {
   width: 177.438px;
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
   color: rgb(218, 218, 218);
@@ -5730,6 +5741,7 @@ body body.theme-dark .published-container .markdown-rendered h6 {
   width: auto;
   height: auto;
   content: normal;
+  display: block;
 }
 body
   body.theme-dark

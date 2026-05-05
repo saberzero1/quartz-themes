@@ -4691,6 +4691,7 @@ body body.theme-light .published-container .markdown-rendered h1 {
   width: var(--header-arrow-icon-size, 100%);
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-light .published-container .markdown-rendered h2 {
   color: var(--h2-color, rgb(193, 67, 67));
@@ -4738,6 +4739,7 @@ body body.theme-light .published-container .markdown-rendered h2 {
   width: var(--header-arrow-icon-size, 85%);
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-light .published-container .markdown-rendered h3 {
   color: var(--h3-color, rgb(193, 67, 67));
@@ -4785,6 +4787,7 @@ body body.theme-light .published-container .markdown-rendered h3 {
   width: var(--header-arrow-icon-size, 65%);
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-light .published-container .markdown-rendered h4 {
   color: var(--h4-color, rgb(193, 67, 67));
@@ -4832,6 +4835,7 @@ body body.theme-light .published-container .markdown-rendered h4 {
   width: var(--header-arrow-icon-size, 44%);
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-light .published-container .markdown-rendered h5 {
   color: var(--h5-color, rgb(193, 67, 67));
@@ -4879,6 +4883,7 @@ body body.theme-light .published-container .markdown-rendered h5 {
   width: var(--header-arrow-icon-size, 25%);
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-light .published-container .markdown-rendered h6 {
   color: var(--h6-color, rgb(193, 67, 67));
@@ -4926,6 +4931,7 @@ body body.theme-light .published-container .markdown-rendered h6 {
   width: 0px;
   height: auto;
   content: "";
+  display: block;
 }
 body
   body.theme-light
@@ -7669,6 +7675,7 @@ body body.theme-dark .published-container .markdown-rendered h1 {
   width: var(--header-arrow-icon-size, 100%);
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
   color: var(--h2-color, rgb(193, 67, 67));
@@ -7716,6 +7723,7 @@ body body.theme-dark .published-container .markdown-rendered h2 {
   width: var(--header-arrow-icon-size, 85%);
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
   color: var(--h3-color, rgb(193, 67, 67));
@@ -7763,6 +7771,7 @@ body body.theme-dark .published-container .markdown-rendered h3 {
   width: var(--header-arrow-icon-size, 65%);
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
   color: var(--h4-color, rgb(193, 67, 67));
@@ -7810,6 +7819,7 @@ body body.theme-dark .published-container .markdown-rendered h4 {
   width: var(--header-arrow-icon-size, 44%);
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
   color: var(--h5-color, rgb(193, 67, 67));
@@ -7857,6 +7867,7 @@ body body.theme-dark .published-container .markdown-rendered h5 {
   width: var(--header-arrow-icon-size, 25%);
   height: auto;
   content: "";
+  display: block;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
   color: var(--h6-color, rgb(193, 67, 67));
@@ -7904,6 +7915,7 @@ body body.theme-dark .published-container .markdown-rendered h6 {
   width: 0px;
   height: auto;
   content: "";
+  display: block;
 }
 body
   body.theme-dark

@@ -4130,6 +4130,7 @@ body body.theme-light .published-container .markdown-rendered h1 {
   width: auto;
   height: auto;
   content: normal;
+  display: block;
 }
 body body.theme-light .published-container .markdown-rendered h2 {
   color: rgb(34, 34, 34);
@@ -4164,6 +4165,7 @@ body body.theme-light .published-container .markdown-rendered h2 {
   width: auto;
   height: auto;
   content: normal;
+  display: block;
 }
 body body.theme-light .published-container .markdown-rendered h3 {
   color: rgb(34, 34, 34);
@@ -4198,6 +4200,7 @@ body body.theme-light .published-container .markdown-rendered h3 {
   width: auto;
   height: auto;
   content: normal;
+  display: block;
 }
 body body.theme-light .published-container .markdown-rendered h4 {
   color: rgb(34, 34, 34);
@@ -4232,6 +4235,7 @@ body body.theme-light .published-container .markdown-rendered h4 {
   width: auto;
   height: auto;
   content: normal;
+  display: block;
 }
 body body.theme-light .published-container .markdown-rendered h5 {
   color: rgb(34, 34, 34);
@@ -4266,6 +4270,7 @@ body body.theme-light .published-container .markdown-rendered h5 {
   width: auto;
   height: auto;
   content: normal;
+  display: block;
 }
 body body.theme-light .published-container .markdown-rendered h6 {
   color: rgb(34, 34, 34);
@@ -4300,6 +4305,7 @@ body body.theme-light .published-container .markdown-rendered h6 {
   width: auto;
   height: auto;
   content: normal;
+  display: block;
 }
 body
   body.theme-light
@@ -7043,6 +7049,7 @@ body body.theme-dark .published-container .markdown-rendered h1 {
   width: auto;
   height: auto;
   content: normal;
+  display: block;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
   color: rgb(218, 218, 218);
@@ -7077,6 +7084,7 @@ body body.theme-dark .published-container .markdown-rendered h2 {
   width: auto;
   height: auto;
   content: normal;
+  display: block;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
   color: rgb(218, 218, 218);
@@ -7111,6 +7119,7 @@ body body.theme-dark .published-container .markdown-rendered h3 {
   width: auto;
   height: auto;
   content: normal;
+  display: block;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
   color: rgb(218, 218, 218);
@@ -7145,6 +7154,7 @@ body body.theme-dark .published-container .markdown-rendered h4 {
   width: auto;
   height: auto;
   content: normal;
+  display: block;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
   color: rgb(218, 218, 218);
@@ -7179,6 +7189,7 @@ body body.theme-dark .published-container .markdown-rendered h5 {
   width: auto;
   height: auto;
   content: normal;
+  display: block;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
   color: rgb(218, 218, 218);
@@ -7213,6 +7224,7 @@ body body.theme-dark .published-container .markdown-rendered h6 {
   width: auto;
   height: auto;
   content: normal;
+  display: block;
 }
 body
   body.theme-dark

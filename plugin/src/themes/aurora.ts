@@ -6587,6 +6587,7 @@ html body h1::after {
   border-top-width: 0px;
   color: var(--text-title-h1, rgb(137, 60, 245));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -6633,6 +6634,7 @@ html body h2::after {
   border-top-width: 0px;
   color: var(--text-title-h2, rgb(204, 204, 204));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -6671,6 +6673,7 @@ html body h3::after {
   border-top-width: 0px;
   color: var(--text-title-h2, rgb(204, 204, 204));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -6709,6 +6712,7 @@ html body h4::after {
   border-top-width: 0px;
   color: var(--text-title-h4, rgb(204, 204, 204));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -6747,6 +6751,7 @@ html body h5::after {
   border-top-width: 0px;
   color: var(--text-title-h5, rgb(204, 204, 204));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -6784,6 +6789,7 @@ html body h6::after {
   border-top-width: 0px;
   color: var(--text-title-h5, rgb(204, 204, 204));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;

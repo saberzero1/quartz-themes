@@ -1839,6 +1839,7 @@ html body h1::after {
   border-top-width: 0px;
   color: var(--h1-color, rgb(0, 0, 0));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -1881,6 +1882,7 @@ html body h2::after {
   border-top-width: 0px;
   color: var(--h2-color, rgb(0, 0, 0));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;

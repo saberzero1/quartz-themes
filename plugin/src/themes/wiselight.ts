@@ -1469,6 +1469,7 @@ html body h2::before {
   border-top-width: 0px;
   color: var(--h2-color, rgb(165, 42, 42));
   content: "H2 ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -1510,6 +1511,7 @@ html body h3::before {
   border-top-width: 0px;
   color: var(--h3-color, rgb(0, 0, 0));
   content: "H3 ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;

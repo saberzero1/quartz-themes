@@ -1426,6 +1426,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1449,6 +1450,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1472,6 +1474,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1495,6 +1498,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1518,6 +1522,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1541,6 +1546,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1565,6 +1571,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1589,6 +1596,7 @@ body {
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "#   ";
+    display: inline;
     color: var(--interactive-accent-b, rgb(96, 96, 96));
   }
 
@@ -1616,6 +1624,7 @@ body {
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "##  ";
+    display: inline;
     color: var(--interactive-accent-b, rgb(96, 96, 96));
   }
 
@@ -1643,6 +1652,7 @@ body {
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "### ";
+    display: inline;
     color: var(--interactive-accent-b, rgb(96, 96, 96));
   }
 
@@ -1670,6 +1680,7 @@ body {
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "#### ";
+    display: inline;
     color: var(--interactive-accent-b, rgb(96, 96, 96));
   }
 
@@ -1697,6 +1708,7 @@ body {
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "##### ";
+    display: inline;
     color: var(--interactive-accent-b, rgb(96, 96, 96));
   }
 
@@ -1720,6 +1732,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1744,6 +1757,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -12361,6 +12375,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -12384,6 +12399,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -12407,6 +12423,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -12430,6 +12447,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -12453,6 +12471,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -12476,6 +12495,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -12500,6 +12520,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -12524,6 +12545,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "#   ";
+      display: inline;
       color: var(--h1-color, rgb(0, 95, 115));
     }
 
@@ -12551,6 +12573,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "##  ";
+      display: inline;
       color: var(--h2-color, rgb(0, 95, 115));
     }
 
@@ -12578,6 +12601,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "### ";
+      display: inline;
       color: var(--h3-color, rgb(0, 95, 115));
     }
 
@@ -12605,6 +12629,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "#### ";
+      display: inline;
       color: var(--h4-color, rgb(0, 95, 115));
     }
 
@@ -12632,6 +12657,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "##### ";
+      display: inline;
       color: var(--h5-color, rgb(0, 95, 115));
     }
 
@@ -12655,6 +12681,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -12679,6 +12706,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 

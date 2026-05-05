@@ -511,6 +511,7 @@ html[saved-theme="dark"] body h1::after {
   border-top-width: 0px;
   color: var(--text-normal, rgb(218, 218, 218));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -545,6 +546,7 @@ html[saved-theme="dark"] body h2::after {
   border-top-width: 0px;
   color: var(--text-normal, rgb(218, 218, 218));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -579,6 +581,7 @@ html[saved-theme="dark"] body h3::after {
   border-top-width: 0px;
   color: var(--text-normal, rgb(218, 218, 218));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -613,6 +616,7 @@ html[saved-theme="dark"] body h4::after {
   border-top-width: 0px;
   color: var(--text-normal, rgb(218, 218, 218));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -647,6 +651,7 @@ html[saved-theme="dark"] body h5::after {
   border-top-width: 0px;
   color: var(--text-normal, rgb(218, 218, 218));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -1131,6 +1136,7 @@ html[saved-theme="light"] body h1::after {
   border-top-width: 0px;
   color: var(--text-normal, rgb(34, 34, 34));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -1165,6 +1171,7 @@ html[saved-theme="light"] body h2::after {
   border-top-width: 0px;
   color: var(--text-normal, rgb(34, 34, 34));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -1199,6 +1206,7 @@ html[saved-theme="light"] body h3::after {
   border-top-width: 0px;
   color: var(--text-normal, rgb(34, 34, 34));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -1233,6 +1241,7 @@ html[saved-theme="light"] body h4::after {
   border-top-width: 0px;
   color: var(--text-normal, rgb(34, 34, 34));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -1267,6 +1276,7 @@ html[saved-theme="light"] body h5::after {
   border-top-width: 0px;
   color: var(--text-normal, rgb(34, 34, 34));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;

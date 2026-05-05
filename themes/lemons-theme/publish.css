@@ -2297,6 +2297,7 @@ body body.theme-dark .published-container .markdown-rendered h1 {
   width: auto;
   height: auto;
   content: "# ";
+  display: inline;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
   color: var(--h2-color, rgb(112, 112, 112));
@@ -2344,6 +2345,7 @@ body body.theme-dark .published-container .markdown-rendered h2 {
   width: auto;
   height: auto;
   content: "# ";
+  display: inline;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
   color: var(--h3-color, rgb(112, 112, 112));
@@ -2391,6 +2393,7 @@ body body.theme-dark .published-container .markdown-rendered h3 {
   width: auto;
   height: auto;
   content: "# ";
+  display: inline;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
   color: var(--h4-color, rgb(112, 112, 112));
@@ -2438,6 +2441,7 @@ body body.theme-dark .published-container .markdown-rendered h4 {
   width: auto;
   height: auto;
   content: "# ";
+  display: inline;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
   color: var(--h5-color, rgb(112, 112, 112));
@@ -2485,6 +2489,7 @@ body body.theme-dark .published-container .markdown-rendered h5 {
   width: auto;
   height: auto;
   content: "# ";
+  display: inline;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
   color: var(--h6-color, rgb(112, 112, 112));
@@ -2529,6 +2534,7 @@ body body.theme-dark .published-container .markdown-rendered h6 {
   width: auto;
   height: auto;
   content: "# ";
+  display: inline;
 }
 body
   body.theme-dark

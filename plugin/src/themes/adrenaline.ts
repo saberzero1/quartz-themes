@@ -2269,6 +2269,7 @@ html[saved-theme="dark"] body h1::before {
   border-top-width: 0px;
   color: var(--custom-h1-color, var(--general-heading-color, unset));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: -24px;
   margin-right: 0px;
@@ -2314,6 +2315,7 @@ html[saved-theme="dark"] body h2::before {
   border-top-width: 0px;
   color: var(--custom-h2-color, var(--general-heading-color, unset));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: -24px;
   margin-right: 0px;
@@ -2351,6 +2353,7 @@ html[saved-theme="dark"] body h3::before {
   border-top-width: 0px;
   color: var(--custom-h3-color, var(--general-heading-color, unset));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: -24px;
   margin-right: 0px;
@@ -4862,6 +4865,7 @@ html[saved-theme="light"] body h1::before {
   border-top-width: 0px;
   color: var(--custom-h1-color, var(--general-heading-color, unset));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: -24px;
   margin-right: 0px;
@@ -4907,6 +4911,7 @@ html[saved-theme="light"] body h2::before {
   border-top-width: 0px;
   color: var(--custom-h2-color, var(--general-heading-color, unset));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: -24px;
   margin-right: 0px;
@@ -4944,6 +4949,7 @@ html[saved-theme="light"] body h3::before {
   border-top-width: 0px;
   color: var(--custom-h3-color, var(--general-heading-color, unset));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: -24px;
   margin-right: 0px;

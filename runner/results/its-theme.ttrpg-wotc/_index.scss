@@ -1729,6 +1729,7 @@ body {
     background-image: linear-gradient(to right, rgb(201, 60, 60), rgba(0, 0, 0, 0));
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(201, 60, 60), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--header-arrow-icon-color, rgb(193, 67, 67));
   }
 
@@ -1756,6 +1757,7 @@ body {
     background-image: linear-gradient(to right, rgb(244, 164, 96), rgba(0, 0, 0, 0));
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 164, 96), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h2-color, rgb(244, 164, 96));
   }
 
@@ -1783,6 +1785,7 @@ body {
     background-image: linear-gradient(to right, rgb(161, 17, 17), rgba(0, 0, 0, 0));
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(161, 17, 17), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h3-color, rgb(161, 17, 17));
   }
 
@@ -1810,6 +1813,7 @@ body {
     background-image: linear-gradient(to right, rgba(251, 180, 87, 0.494), rgba(0, 0, 0, 0));
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(251, 180, 87, 0.494), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h4-color, rgb(193, 67, 67));
   }
 
@@ -1837,6 +1841,7 @@ body {
     background-image: linear-gradient(to right, rgba(251, 180, 87, 0.494), rgba(0, 0, 0, 0));
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(251, 180, 87, 0.494), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h5-color, rgb(193, 67, 67));
   }
 
@@ -1864,6 +1869,7 @@ body {
     background-image: linear-gradient(to right, rgba(251, 180, 87, 0.494), rgba(0, 0, 0, 0));
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(251, 180, 87, 0.494), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h6-color, rgb(193, 67, 67));
   }
 
@@ -1888,6 +1894,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1915,6 +1922,7 @@ body {
     background-image: linear-gradient(to left, rgb(201, 60, 60), rgba(0, 0, 0, 0));
     background: rgba(0, 0, 0, 0) linear-gradient(to left, rgb(201, 60, 60), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--header-arrow-icon-color, rgb(193, 67, 67));
   }
 
@@ -1942,6 +1950,7 @@ body {
     background-image: linear-gradient(to left, rgb(244, 164, 96), rgba(0, 0, 0, 0));
     background: rgba(0, 0, 0, 0) linear-gradient(to left, rgb(244, 164, 96), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h2-color, rgb(244, 164, 96));
   }
 
@@ -1969,6 +1978,7 @@ body {
     background-image: linear-gradient(to left, rgb(161, 17, 17), rgba(0, 0, 0, 0));
     background: rgba(0, 0, 0, 0) linear-gradient(to left, rgb(161, 17, 17), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h3-color, rgb(161, 17, 17));
   }
 
@@ -1996,6 +2006,7 @@ body {
     background-image: linear-gradient(to left, rgba(251, 180, 87, 0.494), rgba(0, 0, 0, 0));
     background: rgba(0, 0, 0, 0) linear-gradient(to left, rgba(251, 180, 87, 0.494), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h4-color, rgb(193, 67, 67));
   }
 
@@ -2023,6 +2034,7 @@ body {
     background-image: linear-gradient(to left, rgba(251, 180, 87, 0.494), rgba(0, 0, 0, 0));
     background: rgba(0, 0, 0, 0) linear-gradient(to left, rgba(251, 180, 87, 0.494), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h5-color, rgb(193, 67, 67));
   }
 
@@ -2050,6 +2062,7 @@ body {
     background-image: linear-gradient(to left, rgba(251, 180, 87, 0.494), rgba(0, 0, 0, 0));
     background: rgba(0, 0, 0, 0) linear-gradient(to left, rgba(251, 180, 87, 0.494), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h6-color, rgb(193, 67, 67));
   }
 
@@ -2074,6 +2087,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -28100,6 +28114,7 @@ html[saved-theme="dark"] {
       background-image: linear-gradient(to right, rgb(201, 60, 60), rgba(0, 0, 0, 0));
       background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(201, 60, 60), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--header-arrow-icon-color, rgb(193, 67, 67));
     }
 
@@ -28127,6 +28142,7 @@ html[saved-theme="dark"] {
       background-image: linear-gradient(to right, rgb(244, 164, 96), rgba(0, 0, 0, 0));
       background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 164, 96), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h2-color, rgb(244, 164, 96));
     }
 
@@ -28154,6 +28170,7 @@ html[saved-theme="dark"] {
       background-image: linear-gradient(to right, rgb(161, 17, 17), rgba(0, 0, 0, 0));
       background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(161, 17, 17), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h3-color, rgb(161, 17, 17));
     }
 
@@ -28181,6 +28198,7 @@ html[saved-theme="dark"] {
       background-image: linear-gradient(to right, rgb(40, 51, 69), rgba(0, 0, 0, 0));
       background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(40, 51, 69), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h4-color, rgb(193, 67, 67));
     }
 
@@ -28208,6 +28226,7 @@ html[saved-theme="dark"] {
       background-image: linear-gradient(to right, rgb(40, 51, 69), rgba(0, 0, 0, 0));
       background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(40, 51, 69), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h5-color, rgb(193, 67, 67));
     }
 
@@ -28235,6 +28254,7 @@ html[saved-theme="dark"] {
       background-image: linear-gradient(to right, rgb(40, 51, 69), rgba(0, 0, 0, 0));
       background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(40, 51, 69), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h6-color, rgb(193, 67, 67));
     }
 
@@ -28259,6 +28279,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -28286,6 +28307,7 @@ html[saved-theme="dark"] {
       background-image: linear-gradient(to left, rgb(201, 60, 60), rgba(0, 0, 0, 0));
       background: rgba(0, 0, 0, 0) linear-gradient(to left, rgb(201, 60, 60), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--header-arrow-icon-color, rgb(193, 67, 67));
     }
 
@@ -28313,6 +28335,7 @@ html[saved-theme="dark"] {
       background-image: linear-gradient(to left, rgb(244, 164, 96), rgba(0, 0, 0, 0));
       background: rgba(0, 0, 0, 0) linear-gradient(to left, rgb(244, 164, 96), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h2-color, rgb(244, 164, 96));
     }
 
@@ -28340,6 +28363,7 @@ html[saved-theme="dark"] {
       background-image: linear-gradient(to left, rgb(161, 17, 17), rgba(0, 0, 0, 0));
       background: rgba(0, 0, 0, 0) linear-gradient(to left, rgb(161, 17, 17), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h3-color, rgb(161, 17, 17));
     }
 
@@ -28367,6 +28391,7 @@ html[saved-theme="dark"] {
       background-image: linear-gradient(to left, rgb(40, 51, 69), rgba(0, 0, 0, 0));
       background: rgba(0, 0, 0, 0) linear-gradient(to left, rgb(40, 51, 69), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h4-color, rgb(193, 67, 67));
     }
 
@@ -28394,6 +28419,7 @@ html[saved-theme="dark"] {
       background-image: linear-gradient(to left, rgb(40, 51, 69), rgba(0, 0, 0, 0));
       background: rgba(0, 0, 0, 0) linear-gradient(to left, rgb(40, 51, 69), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h5-color, rgb(193, 67, 67));
     }
 
@@ -28421,6 +28447,7 @@ html[saved-theme="dark"] {
       background-image: linear-gradient(to left, rgb(40, 51, 69), rgba(0, 0, 0, 0));
       background: rgba(0, 0, 0, 0) linear-gradient(to left, rgb(40, 51, 69), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h6-color, rgb(193, 67, 67));
     }
 
@@ -28445,6 +28472,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 

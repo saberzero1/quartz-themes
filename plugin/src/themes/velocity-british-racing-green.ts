@@ -2398,6 +2398,7 @@ html[saved-theme="dark"] body h1::after {
   border-top-width: 0px;
   color: var(--h1-color, oklch(0.895 0.0005 190));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2452,6 +2453,7 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
   border-top-width: 0px;
   color: var(--inline-title-color, oklch(0.895 0.0005 190));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -5312,6 +5314,7 @@ html[saved-theme="light"] body h1::after {
   border-top-width: 0px;
   color: var(--h1-color, oklch(0.24 0.0005 281));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -5366,6 +5369,7 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
   border-top-width: 0px;
   color: var(--inline-title-color, oklch(0.24 0.0005 281));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;

@@ -3299,6 +3299,7 @@ html body h2::after {
   border-top-width: 0px;
   color: var(--ulu-h2-text-color, var(--h2-color, var(--color-accent)));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;

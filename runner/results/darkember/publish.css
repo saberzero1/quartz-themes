@@ -3753,6 +3753,7 @@ body body.theme-light .published-container .markdown-rendered h1 {
   width: auto;
   height: auto;
   content: normal;
+  display: block;
 }
 body body.theme-light .published-container .markdown-rendered h2 {
   color: var(--accent-2, rgb(207, 31, 8));
@@ -3807,6 +3808,7 @@ body body.theme-light .published-container .markdown-rendered h2 {
   width: 15.3594px;
   height: auto;
   content: "";
+  display: inline-block;
 }
 body body.theme-light .published-container .markdown-rendered h3 {
   color: var(--accent-3, rgb(214, 69, 69));
@@ -3861,6 +3863,7 @@ body body.theme-light .published-container .markdown-rendered h3 {
   width: 17.5938px;
   height: auto;
   content: "";
+  display: inline-block;
 }
 body body.theme-light .published-container .markdown-rendered h4 {
   color: var(--accent-4, rgb(8, 80, 13));
@@ -3915,6 +3918,7 @@ body body.theme-light .published-container .markdown-rendered h4 {
   width: 11.1875px;
   height: auto;
   content: "";
+  display: inline-block;
 }
 body body.theme-light .published-container .markdown-rendered h5 {
   color: var(--accent-5, rgb(32, 18, 160));
@@ -3969,6 +3973,7 @@ body body.theme-light .published-container .markdown-rendered h5 {
   width: 8px;
   height: auto;
   content: "";
+  display: inline-block;
 }
 body body.theme-light .published-container .markdown-rendered h6 {
   color: var(--accent-6, rgb(240, 80, 6));
@@ -4020,6 +4025,7 @@ body body.theme-light .published-container .markdown-rendered h6 {
   width: auto;
   height: auto;
   content: "-";
+  display: inline;
 }
 body
   body.theme-light
@@ -6357,6 +6363,7 @@ body body.theme-dark .published-container .markdown-rendered h1 {
   width: auto;
   height: auto;
   content: normal;
+  display: block;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
   color: var(--accent-2, rgb(235, 146, 57));
@@ -6411,6 +6418,7 @@ body body.theme-dark .published-container .markdown-rendered h2 {
   width: 15.3594px;
   height: auto;
   content: "";
+  display: inline-block;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
   color: var(--accent-3, rgb(241, 177, 37));
@@ -6465,6 +6473,7 @@ body body.theme-dark .published-container .markdown-rendered h3 {
   width: 17.5938px;
   height: auto;
   content: "";
+  display: inline-block;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
   color: var(--accent-4, rgb(160, 231, 60));
@@ -6519,6 +6528,7 @@ body body.theme-dark .published-container .markdown-rendered h4 {
   width: 11.1875px;
   height: auto;
   content: "";
+  display: inline-block;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
   color: var(--accent-5, rgb(98, 222, 172));
@@ -6573,6 +6583,7 @@ body body.theme-dark .published-container .markdown-rendered h5 {
   width: 8px;
   height: auto;
   content: "";
+  display: inline-block;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
   color: var(--accent-6, rgb(255, 106, 106));
@@ -6624,6 +6635,7 @@ body body.theme-dark .published-container .markdown-rendered h6 {
   width: auto;
   height: auto;
   content: "-";
+  display: inline;
 }
 body
   body.theme-dark

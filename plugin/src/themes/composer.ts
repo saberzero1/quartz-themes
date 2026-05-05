@@ -2025,6 +2025,7 @@ html[saved-theme="dark"] body h1::before {
   border-top-width: 0px;
   color: var(--h1-color, rgb(226, 230, 235));
   content: " ";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6px;
@@ -2074,6 +2075,7 @@ html[saved-theme="dark"] body h2::before {
   border-top-width: 0px;
   color: var(--h2-color, rgb(197, 202, 212));
   content: " ";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6px;
@@ -2110,6 +2112,7 @@ html[saved-theme="dark"] body h3::before {
   border-top-width: 0px;
   color: var(--h3-color, rgb(168, 174, 185));
   content: " ";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6px;
@@ -2146,6 +2149,7 @@ html[saved-theme="dark"] body h4::before {
   border-top-width: 0px;
   color: var(--h4-color, rgb(143, 150, 161));
   content: " ";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6px;
@@ -2182,6 +2186,7 @@ html[saved-theme="dark"] body h5::before {
   border-top-width: 0px;
   color: var(--h5-color, rgb(120, 127, 138));
   content: " ";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6px;
@@ -2216,6 +2221,7 @@ html[saved-theme="dark"] body h6::before {
   border-top-width: 0px;
   color: var(--h6-color, rgb(102, 109, 120));
   content: " ";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6px;
@@ -4596,6 +4602,7 @@ html[saved-theme="light"] body h1::before {
   border-top-width: 0px;
   color: var(--h1-color, rgb(45, 55, 72));
   content: " ";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6px;
@@ -4645,6 +4652,7 @@ html[saved-theme="light"] body h2::before {
   border-top-width: 0px;
   color: var(--h2-color, rgb(74, 85, 107));
   content: " ";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6px;
@@ -4681,6 +4689,7 @@ html[saved-theme="light"] body h3::before {
   border-top-width: 0px;
   color: var(--h3-color, rgb(102, 120, 141));
   content: " ";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6px;
@@ -4717,6 +4726,7 @@ html[saved-theme="light"] body h4::before {
   border-top-width: 0px;
   color: var(--h4-color, rgb(127, 138, 155));
   content: " ";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6px;
@@ -4753,6 +4763,7 @@ html[saved-theme="light"] body h5::before {
   border-top-width: 0px;
   color: var(--h5-color, rgb(154, 165, 181));
   content: " ";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6px;
@@ -4787,6 +4798,7 @@ html[saved-theme="light"] body h6::before {
   border-top-width: 0px;
   color: var(--h6-color, rgb(128, 128, 128));
   content: " ";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6px;

@@ -1487,6 +1487,7 @@ html[saved-theme="dark"] body h2::before {
   border-top-width: 0px;
   color: var(--accent-2, rgb(235, 146, 57));
   content: "";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 9px;
@@ -1527,6 +1528,7 @@ html[saved-theme="dark"] body h3::before {
   border-top-width: 0px;
   color: var(--accent-3, rgb(241, 177, 37));
   content: "";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: -4px;
@@ -1566,6 +1568,7 @@ html[saved-theme="dark"] body h4::before {
   border-top-width: 0px;
   color: var(--accent-4, rgb(160, 231, 60));
   content: "";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 6px;
   margin-right: 6px;
@@ -1606,6 +1609,7 @@ html[saved-theme="dark"] body h5::before {
   border-top-width: 0px;
   color: var(--accent-5, rgb(98, 222, 172));
   content: "";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 12px;
   margin-right: 6px;
@@ -1643,6 +1647,7 @@ html[saved-theme="dark"] body h6::before {
   border-top-width: 0px;
   color: var(--accent-6, rgb(255, 106, 106));
   content: "-";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 12px;
   margin-right: 6px;
@@ -3324,6 +3329,7 @@ html[saved-theme="light"] body h2::before {
   border-top-width: 0px;
   color: var(--accent-2, rgb(207, 31, 8));
   content: "";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 9px;
@@ -3364,6 +3370,7 @@ html[saved-theme="light"] body h3::before {
   border-top-width: 0px;
   color: var(--accent-3, rgb(214, 69, 69));
   content: "";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: -4px;
@@ -3403,6 +3410,7 @@ html[saved-theme="light"] body h4::before {
   border-top-width: 0px;
   color: var(--accent-4, rgb(8, 80, 13));
   content: "";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 6px;
   margin-right: 6px;
@@ -3443,6 +3451,7 @@ html[saved-theme="light"] body h5::before {
   border-top-width: 0px;
   color: var(--accent-5, rgb(32, 18, 160));
   content: "";
+  display: inline-block;
   margin-bottom: 0px;
   margin-left: 12px;
   margin-right: 6px;
@@ -3480,6 +3489,7 @@ html[saved-theme="light"] body h6::before {
   border-top-width: 0px;
   color: var(--accent-6, rgb(240, 80, 6));
   content: "-";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 12px;
   margin-right: 6px;

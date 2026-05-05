@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theme-bases/bases-cards.md",
+                "file": "theme-code/syntax-samples.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "bases-cards"
+              "title": "syntax-samples"
             }
           }
         ]
@@ -148,13 +148,27 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "theme-bases/bases-cards.md",
+                "file": "theme-code/syntax-samples.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of bases-cards"
+              "title": "Outline of syntax-samples"
+            }
+          },
+          {
+            "id": "9f7bd4012412f175",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           }
         ],
@@ -194,6 +208,7 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
+    "theme-bases/bases-cards.md",
     "theme-bases/bases-list.md",
     "theme-bases/bases-table.md",
     "theme-canvas/test-canvas.canvas",
@@ -213,13 +228,12 @@
     "callouts.md",
     "headings.md",
     "general.md",
-    "theme-bases/bases-cards.md",
-    "theme-callouts/willemstad.md",
-    "theme-callouts/vortex.md",
     "theme-callouts/viridian.md",
     "theme-callouts/velocity.md",
-    "theme-callouts/vauxhall.md",
-    "theme-callouts/universitario.md",
+    "theme-callouts/sanctum-reborn.md",
+    "theme-callouts/sanctum.md",
+    "theme-callouts/mado-miniflow.md",
+    "theme-callouts/mado-11.md",
     "theme-properties",
     "theme-code",
     "theme-canvas",

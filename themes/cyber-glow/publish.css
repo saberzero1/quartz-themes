@@ -3607,6 +3607,7 @@ body body.theme-light .published-container .markdown-rendered h1 {
   width: auto;
   height: auto;
   content: "H1";
+  display: inline;
 }
 body body.theme-light .published-container .markdown-rendered h2 {
   color: var(--text-normal, rgb(12, 208, 208));
@@ -3650,6 +3651,7 @@ body body.theme-light .published-container .markdown-rendered h2 {
   width: auto;
   height: auto;
   content: "H2";
+  display: inline;
 }
 body body.theme-light .published-container .markdown-rendered h3 {
   color: var(--text-normal, rgb(0, 210, 0));
@@ -3693,6 +3695,7 @@ body body.theme-light .published-container .markdown-rendered h3 {
   width: auto;
   height: auto;
   content: "H3";
+  display: inline;
 }
 body body.theme-light .published-container .markdown-rendered h4 {
   color: var(--text-normal, rgb(255, 172, 28));
@@ -3736,6 +3739,7 @@ body body.theme-light .published-container .markdown-rendered h4 {
   width: auto;
   height: auto;
   content: "H4";
+  display: inline;
 }
 body body.theme-light .published-container .markdown-rendered h5 {
   color: var(--text-normal, rgb(255, 0, 0));
@@ -3779,6 +3783,7 @@ body body.theme-light .published-container .markdown-rendered h5 {
   width: auto;
   height: auto;
   content: "H5";
+  display: inline;
 }
 body body.theme-light .published-container .markdown-rendered h6 {
   color: var(--text-normal, rgb(255, 0, 255));
@@ -3819,6 +3824,7 @@ body body.theme-light .published-container .markdown-rendered h6 {
   width: auto;
   height: auto;
   content: "H6";
+  display: inline;
 }
 body
   body.theme-light
@@ -6185,6 +6191,7 @@ body body.theme-dark .published-container .markdown-rendered h1 {
   width: auto;
   height: auto;
   content: "H1";
+  display: inline;
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
   color: var(--text-normal, rgb(12, 208, 208));
@@ -6228,6 +6235,7 @@ body body.theme-dark .published-container .markdown-rendered h2 {
   width: auto;
   height: auto;
   content: "H2";
+  display: inline;
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
   color: var(--text-normal, rgb(0, 210, 0));
@@ -6271,6 +6279,7 @@ body body.theme-dark .published-container .markdown-rendered h3 {
   width: auto;
   height: auto;
   content: "H3";
+  display: inline;
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
   color: var(--text-normal, rgb(255, 172, 28));
@@ -6314,6 +6323,7 @@ body body.theme-dark .published-container .markdown-rendered h4 {
   width: auto;
   height: auto;
   content: "H4";
+  display: inline;
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
   color: var(--text-normal, rgb(255, 0, 0));
@@ -6357,6 +6367,7 @@ body body.theme-dark .published-container .markdown-rendered h5 {
   width: auto;
   height: auto;
   content: "H5";
+  display: inline;
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
   color: var(--text-normal, rgb(255, 0, 255));
@@ -6397,6 +6408,7 @@ body body.theme-dark .published-container .markdown-rendered h6 {
   width: auto;
   height: auto;
   content: "H6";
+  display: inline;
 }
 body
   body.theme-dark

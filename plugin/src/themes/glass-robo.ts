@@ -2409,6 +2409,7 @@ html body h1::after {
   border-top-width: 0px;
   color: var(--h1-color, rgb(191, 96, 107));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2434,6 +2435,7 @@ html body h1::before {
   border-top-width: 0px;
   color: var(--h1-color, rgb(191, 96, 107));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2480,6 +2482,7 @@ html body h2::after {
   border-top-width: 0px;
   color: var(--h2-color, rgb(207, 134, 110));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2505,6 +2508,7 @@ html body h2::before {
   border-top-width: 0px;
   color: var(--h2-color, rgb(207, 134, 110));
   content: " ";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2540,6 +2544,7 @@ html body h3::after {
   border-top-width: 0px;
   color: var(--h3-color, rgb(235, 203, 140));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2565,6 +2570,7 @@ html body h3::before {
   border-top-width: 0px;
   color: var(--h3-color, rgb(235, 203, 140));
   content: " ";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2600,6 +2606,7 @@ html body h4::after {
   border-top-width: 0px;
   color: var(--h4-color, rgb(153, 190, 141));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2625,6 +2632,7 @@ html body h4::before {
   border-top-width: 0px;
   color: var(--h4-color, rgb(153, 190, 141));
   content: " ";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2660,6 +2668,7 @@ html body h5::after {
   border-top-width: 0px;
   color: var(--h5-color, rgb(179, 138, 163));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2685,6 +2694,7 @@ html body h5::before {
   border-top-width: 0px;
   color: var(--h5-color, rgb(179, 138, 163));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2720,6 +2730,7 @@ html body h6::after {
   border-top-width: 0px;
   color: var(--h6-color, rgb(155, 180, 196));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2745,6 +2756,7 @@ html body h6::before {
   border-top-width: 0px;
   color: var(--h6-color, rgb(155, 180, 196));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;

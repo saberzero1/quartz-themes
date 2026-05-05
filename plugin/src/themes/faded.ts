@@ -8863,6 +8863,7 @@ html body h1::after {
   border-top-width: 0px;
   color: var(--h1-color, rgb(218, 218, 218));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -8888,6 +8889,7 @@ html body h1::before {
   border-top-width: 0px;
   color: var(--h1-color, rgb(218, 218, 218));
   content: "\\f2c7 ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -8938,6 +8940,7 @@ html body h2.page-title, html h2.page-title a::after {
   border-top-width: 0px;
   color: var(--inline-title-color, rgb(218, 218, 218));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -8963,6 +8966,7 @@ html body h2::after {
   border-top-width: 0px;
   color: var(--h2-color, rgb(218, 218, 218));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -8988,6 +8992,7 @@ html body h2::before {
   border-top-width: 0px;
   color: var(--h2-color, rgb(218, 218, 218));
   content: "\\f2c8 ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -9026,6 +9031,7 @@ html body h3::after {
   border-top-width: 0px;
   color: var(--h3-color, rgb(218, 218, 218));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -9051,6 +9057,7 @@ html body h3::before {
   border-top-width: 0px;
   color: var(--h3-color, rgb(218, 218, 218));
   content: "\\f2c9 ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -9089,6 +9096,7 @@ html body h4::after {
   border-top-width: 0px;
   color: var(--h4-color, rgb(218, 218, 218));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -9114,6 +9122,7 @@ html body h4::before {
   border-top-width: 0px;
   color: var(--h4-color, rgb(218, 218, 218));
   content: "\\f2ca ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -9152,6 +9161,7 @@ html body h5::after {
   border-top-width: 0px;
   color: var(--h5-color, rgb(218, 218, 218));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -9177,6 +9187,7 @@ html body h5::before {
   border-top-width: 0px;
   color: var(--h5-color, rgb(218, 218, 218));
   content: "\\f2ca ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -9214,6 +9225,7 @@ html body h6::after {
   border-top-width: 0px;
   color: var(--h6-color, rgb(218, 218, 218));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -9239,6 +9251,7 @@ html body h6::before {
   border-top-width: 0px;
   color: var(--h6-color, rgb(218, 218, 218));
   content: "\\f2cb ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;

@@ -1885,6 +1885,7 @@ body {
     background-image: none;
     background: rgb(201, 206, 217) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--header-arrow-icon-color, rgb(67, 130, 193));
   }
 
@@ -1912,6 +1913,7 @@ body {
     background-image: none;
     background: rgb(201, 206, 217) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h2-color, rgb(67, 130, 193));
   }
 
@@ -1939,6 +1941,7 @@ body {
     background-image: none;
     background: rgb(201, 206, 217) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h3-color, rgb(67, 130, 193));
   }
 
@@ -1966,6 +1969,7 @@ body {
     background-image: none;
     background: rgb(201, 206, 217) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h4-color, rgb(67, 130, 193));
   }
 
@@ -1993,6 +1997,7 @@ body {
     background-image: none;
     background: rgb(201, 206, 217) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h5-color, rgb(67, 130, 193));
   }
 
@@ -2020,6 +2025,7 @@ body {
     background-image: none;
     background: rgb(201, 206, 217) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h6-color, rgb(67, 130, 193));
   }
 
@@ -2044,6 +2050,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -2071,6 +2078,7 @@ body {
     background-image: none;
     background: rgb(201, 206, 217) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--header-arrow-icon-color, rgb(67, 130, 193));
   }
 
@@ -2098,6 +2106,7 @@ body {
     background-image: none;
     background: rgb(201, 206, 217) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h2-color, rgb(67, 130, 193));
   }
 
@@ -2125,6 +2134,7 @@ body {
     background-image: none;
     background: rgb(201, 206, 217) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h3-color, rgb(67, 130, 193));
   }
 
@@ -2152,6 +2162,7 @@ body {
     background-image: none;
     background: rgb(201, 206, 217) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h4-color, rgb(67, 130, 193));
   }
 
@@ -2179,6 +2190,7 @@ body {
     background-image: none;
     background: rgb(201, 206, 217) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h5-color, rgb(67, 130, 193));
   }
 
@@ -2206,6 +2218,7 @@ body {
     background-image: none;
     background: rgb(201, 206, 217) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: block;
     color: var(--h6-color, rgb(67, 130, 193));
   }
 
@@ -2230,6 +2243,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -28906,6 +28920,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(47, 52, 64) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--header-arrow-icon-color, rgb(67, 120, 193));
     }
 
@@ -28933,6 +28948,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(47, 52, 64) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h2-color, rgb(67, 120, 193));
     }
 
@@ -28960,6 +28976,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(47, 52, 64) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h3-color, rgb(67, 120, 193));
     }
 
@@ -28987,6 +29004,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(47, 52, 64) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h4-color, rgb(67, 120, 193));
     }
 
@@ -29014,6 +29032,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(47, 52, 64) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h5-color, rgb(67, 120, 193));
     }
 
@@ -29041,6 +29060,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(47, 52, 64) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h6-color, rgb(67, 120, 193));
     }
 
@@ -29065,6 +29085,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -29092,6 +29113,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(47, 52, 64) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--header-arrow-icon-color, rgb(67, 120, 193));
     }
 
@@ -29119,6 +29141,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(47, 52, 64) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h2-color, rgb(67, 120, 193));
     }
 
@@ -29146,6 +29169,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(47, 52, 64) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h3-color, rgb(67, 120, 193));
     }
 
@@ -29173,6 +29197,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(47, 52, 64) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h4-color, rgb(67, 120, 193));
     }
 
@@ -29200,6 +29225,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(47, 52, 64) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h5-color, rgb(67, 120, 193));
     }
 
@@ -29227,6 +29253,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(47, 52, 64) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: block;
       color: var(--h6-color, rgb(67, 120, 193));
     }
 
@@ -29251,6 +29278,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 

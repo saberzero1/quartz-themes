@@ -1531,6 +1531,7 @@ html[saved-theme="dark"] body h1::before {
   border-top-width: 0px;
   color: var(--h1-color, rgb(0, 95, 115));
   content: "#   ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -1573,6 +1574,7 @@ html[saved-theme="dark"] body h2::before {
   border-top-width: 0px;
   color: var(--h2-color, rgb(0, 95, 115));
   content: "##  ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -1607,6 +1609,7 @@ html[saved-theme="dark"] body h3::before {
   border-top-width: 0px;
   color: var(--h3-color, rgb(0, 95, 115));
   content: "### ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -1641,6 +1644,7 @@ html[saved-theme="dark"] body h4::before {
   border-top-width: 0px;
   color: var(--h4-color, rgb(0, 95, 115));
   content: "#### ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -1675,6 +1679,7 @@ html[saved-theme="dark"] body h5::before {
   border-top-width: 0px;
   color: var(--h5-color, rgb(0, 95, 115));
   content: "##### ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -3473,6 +3478,7 @@ html[saved-theme="light"] body h1::before {
   border-top-width: 0px;
   color: var(--interactive-accent-b, rgb(96, 96, 96));
   content: "#   ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -3515,6 +3521,7 @@ html[saved-theme="light"] body h2::before {
   border-top-width: 0px;
   color: var(--interactive-accent-b, rgb(96, 96, 96));
   content: "##  ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -3549,6 +3556,7 @@ html[saved-theme="light"] body h3::before {
   border-top-width: 0px;
   color: var(--interactive-accent-b, rgb(96, 96, 96));
   content: "### ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -3583,6 +3591,7 @@ html[saved-theme="light"] body h4::before {
   border-top-width: 0px;
   color: var(--interactive-accent-b, rgb(96, 96, 96));
   content: "#### ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -3617,6 +3626,7 @@ html[saved-theme="light"] body h5::before {
   border-top-width: 0px;
   color: var(--interactive-accent-b, rgb(96, 96, 96));
   content: "##### ";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;

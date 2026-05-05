@@ -1555,6 +1555,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1578,6 +1579,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1601,6 +1603,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1624,6 +1627,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1647,6 +1651,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1670,6 +1675,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1694,6 +1700,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1717,6 +1724,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -1744,6 +1752,7 @@ body {
     background-image: none;
     background: rgb(224, 109, 15) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: inline-block;
     color: var(--accent-2, rgb(207, 31, 8));
   }
 
@@ -1771,6 +1780,7 @@ body {
     background-image: none;
     background: rgb(240, 80, 6) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: inline-block;
     color: var(--accent-3, rgb(214, 69, 69));
   }
 
@@ -1798,6 +1808,7 @@ body {
     background-image: none;
     background: rgb(240, 80, 6) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: inline-block;
     color: var(--accent-4, rgb(8, 80, 13));
   }
 
@@ -1825,6 +1836,7 @@ body {
     background-image: none;
     background: rgb(240, 80, 6) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
+    display: inline-block;
     color: var(--accent-5, rgb(32, 18, 160));
   }
 
@@ -1849,6 +1861,7 @@ body {
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "-";
+    display: inline;
     color: var(--accent-6, rgb(240, 80, 6));
   }
 
@@ -1873,6 +1886,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     content: normal;
+    display: block;
     color: rgb(34, 34, 34);
   }
 
@@ -8787,6 +8801,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -8810,6 +8825,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -8833,6 +8849,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -8856,6 +8873,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -8879,6 +8897,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -8902,6 +8921,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -8926,6 +8946,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -8949,6 +8970,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 
@@ -8976,6 +8998,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(218, 98, 18) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: inline-block;
       color: var(--accent-2, rgb(235, 146, 57));
     }
 
@@ -9003,6 +9026,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(255, 106, 106) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: inline-block;
       color: var(--accent-3, rgb(241, 177, 37));
     }
 
@@ -9030,6 +9054,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(255, 106, 106) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: inline-block;
       color: var(--accent-4, rgb(160, 231, 60));
     }
 
@@ -9057,6 +9082,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgb(255, 106, 106) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
+      display: inline-block;
       color: var(--accent-5, rgb(98, 222, 172));
     }
 
@@ -9081,6 +9107,7 @@ html[saved-theme="dark"] {
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "-";
+      display: inline;
       color: var(--accent-6, rgb(255, 106, 106));
     }
 
@@ -9105,6 +9132,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       content: normal;
+      display: block;
       color: rgb(218, 218, 218);
     }
 

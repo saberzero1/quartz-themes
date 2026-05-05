@@ -8939,6 +8939,7 @@ html body h1::after {
   border-top-width: 0px;
   color: var(--yellow, rgb(232, 216, 163));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -8963,6 +8964,7 @@ html body h1::before {
   border-top-width: 0px;
   color: var(--yellow, rgba(232, 216, 163, 0.6));
   content: "▓▒░";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 8px;
@@ -9016,6 +9018,7 @@ html body h2::after {
   border-top-width: 0px;
   color: var(--yellow, rgb(232, 216, 163));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -9040,6 +9043,7 @@ html body h2::before {
   border-top-width: 0px;
   color: var(--yellow, rgba(232, 216, 163, 0.5));
   content: "▒░";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6.4px;
@@ -9081,6 +9085,7 @@ html body h3::before {
   border-top-width: 0px;
   color: var(--yellow, rgba(232, 216, 163, 0.4));
   content: "░";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 4.8px;
@@ -9122,6 +9127,7 @@ html body h4::before {
   border-top-width: 0px;
   color: var(--yellow, rgba(232, 216, 163, 0.5));
   content: "▸";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 4.8px;
@@ -9163,6 +9169,7 @@ html body h5::before {
   border-top-width: 0px;
   color: var(--yellow, rgba(232, 216, 163, 0.4));
   content: "◦";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 4.8px;
@@ -9203,6 +9210,7 @@ html body h6::before {
   border-top-width: 0px;
   color: var(--yellow, rgba(232, 216, 163, 0.3));
   content: "·";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 4.8px;

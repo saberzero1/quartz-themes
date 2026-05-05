@@ -2667,6 +2667,7 @@ html[saved-theme="dark"] body h1::after {
   border-top-width: 0px;
   color: var(--text-strong, rgb(212, 212, 212));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2692,6 +2693,7 @@ html[saved-theme="dark"] body h1::before {
   border-top-width: 0px;
   color: var(--text-strong, rgb(115, 115, 115));
   content: "#1";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6.3px;
@@ -2746,6 +2748,7 @@ html[saved-theme="dark"] body h2::after {
   border-top-width: 0px;
   color: var(--h2-color, rgb(212, 212, 212));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2771,6 +2774,7 @@ html[saved-theme="dark"] body h2::before {
   border-top-width: 0px;
   color: var(--h2-color, rgb(115, 115, 115));
   content: "#2";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 5.25px;
@@ -2812,6 +2816,7 @@ html[saved-theme="dark"] body h3::after {
   border-top-width: 0px;
   color: var(--h3-color, rgb(212, 212, 212));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2837,6 +2842,7 @@ html[saved-theme="dark"] body h3::before {
   border-top-width: 0px;
   color: var(--h3-color, rgb(115, 115, 115));
   content: "#3";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 4.2px;
@@ -2878,6 +2884,7 @@ html[saved-theme="dark"] body h4::after {
   border-top-width: 0px;
   color: var(--h4-color, rgb(212, 212, 212));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2903,6 +2910,7 @@ html[saved-theme="dark"] body h4::before {
   border-top-width: 0px;
   color: var(--h4-color, rgb(115, 115, 115));
   content: "#4";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 3.5px;
@@ -2944,6 +2952,7 @@ html[saved-theme="dark"] body h5::after {
   border-top-width: 0px;
   color: var(--h5-color, rgb(212, 212, 212));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -2969,6 +2978,7 @@ html[saved-theme="dark"] body h5::before {
   border-top-width: 0px;
   color: var(--h5-color, rgb(115, 115, 115));
   content: "#5";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 3.15px;
@@ -3007,6 +3017,7 @@ html[saved-theme="dark"] body h6::after {
   border-top-width: 0px;
   color: var(--h6-color, rgb(212, 212, 212));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -3032,6 +3043,7 @@ html[saved-theme="dark"] body h6::before {
   border-top-width: 0px;
   color: var(--h6-color, rgb(115, 115, 115));
   content: "#6";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 2.8px;
@@ -6067,6 +6079,7 @@ html[saved-theme="light"] body h1::after {
   border-top-width: 0px;
   color: var(--text-strong, rgb(64, 64, 64));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -6092,6 +6105,7 @@ html[saved-theme="light"] body h1::before {
   border-top-width: 0px;
   color: var(--text-strong, rgb(115, 115, 115));
   content: "#1";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6.3px;
@@ -6146,6 +6160,7 @@ html[saved-theme="light"] body h2::after {
   border-top-width: 0px;
   color: var(--h2-color, rgb(64, 64, 64));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -6171,6 +6186,7 @@ html[saved-theme="light"] body h2::before {
   border-top-width: 0px;
   color: var(--h2-color, rgb(115, 115, 115));
   content: "#2";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 5.25px;
@@ -6212,6 +6228,7 @@ html[saved-theme="light"] body h3::after {
   border-top-width: 0px;
   color: var(--h3-color, rgb(64, 64, 64));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -6237,6 +6254,7 @@ html[saved-theme="light"] body h3::before {
   border-top-width: 0px;
   color: var(--h3-color, rgb(115, 115, 115));
   content: "#3";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 4.2px;
@@ -6278,6 +6296,7 @@ html[saved-theme="light"] body h4::after {
   border-top-width: 0px;
   color: var(--h4-color, rgb(64, 64, 64));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -6303,6 +6322,7 @@ html[saved-theme="light"] body h4::before {
   border-top-width: 0px;
   color: var(--h4-color, rgb(115, 115, 115));
   content: "#4";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 3.5px;
@@ -6344,6 +6364,7 @@ html[saved-theme="light"] body h5::after {
   border-top-width: 0px;
   color: var(--h5-color, rgb(64, 64, 64));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -6369,6 +6390,7 @@ html[saved-theme="light"] body h5::before {
   border-top-width: 0px;
   color: var(--h5-color, rgb(115, 115, 115));
   content: "#5";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 3.15px;
@@ -6407,6 +6429,7 @@ html[saved-theme="light"] body h6::after {
   border-top-width: 0px;
   color: var(--h6-color, rgb(64, 64, 64));
   content: "";
+  display: block;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -6432,6 +6455,7 @@ html[saved-theme="light"] body h6::before {
   border-top-width: 0px;
   color: var(--h6-color, rgb(115, 115, 115));
   content: "#6";
+  display: inline;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 2.8px;

@@ -3173,6 +3173,7 @@ html[saved-theme="dark"] body h1::before {
   border-top-width: 0px;
   color: var(--text-normal, rgb(60, 166, 211));
   content: "H1";
+  display: inline;
   margin-bottom: 0px;
   margin-left: -45px;
   margin-right: 25px;
@@ -3218,6 +3219,7 @@ html[saved-theme="dark"] body h2::before {
   border-top-width: 0px;
   color: var(--text-normal, rgb(12, 208, 208));
   content: "H2";
+  display: inline;
   margin-bottom: 0px;
   margin-left: -45px;
   margin-right: 25px;
@@ -3254,6 +3256,7 @@ html[saved-theme="dark"] body h3::before {
   border-top-width: 0px;
   color: var(--text-normal, rgb(0, 210, 0));
   content: "H3";
+  display: inline;
   margin-bottom: 0px;
   margin-left: -45px;
   margin-right: 25px;
@@ -3290,6 +3293,7 @@ html[saved-theme="dark"] body h4::before {
   border-top-width: 0px;
   color: var(--text-normal, rgb(255, 172, 28));
   content: "H4";
+  display: inline;
   margin-bottom: 0px;
   margin-left: -45px;
   margin-right: 25px;
@@ -3326,6 +3330,7 @@ html[saved-theme="dark"] body h5::before {
   border-top-width: 0px;
   color: var(--text-normal, rgb(255, 0, 0));
   content: "H5";
+  display: inline;
   margin-bottom: 0px;
   margin-left: -45px;
   margin-right: 25px;
@@ -3362,6 +3367,7 @@ html[saved-theme="dark"] body h6::before {
   border-top-width: 0px;
   color: var(--text-normal, rgb(255, 0, 255));
   content: "H6";
+  display: inline;
   margin-bottom: 0px;
   margin-left: -45px;
   margin-right: 25px;
@@ -6737,6 +6743,7 @@ html[saved-theme="light"] body h1::before {
   border-top-width: 0px;
   color: var(--text-normal, rgb(70, 165, 206));
   content: "H1";
+  display: inline;
   margin-bottom: 0px;
   margin-left: -45px;
   margin-right: 25px;
@@ -6782,6 +6789,7 @@ html[saved-theme="light"] body h2::before {
   border-top-width: 0px;
   color: var(--text-normal, rgb(12, 208, 208));
   content: "H2";
+  display: inline;
   margin-bottom: 0px;
   margin-left: -45px;
   margin-right: 25px;
@@ -6818,6 +6826,7 @@ html[saved-theme="light"] body h3::before {
   border-top-width: 0px;
   color: var(--text-normal, rgb(0, 210, 0));
   content: "H3";
+  display: inline;
   margin-bottom: 0px;
   margin-left: -45px;
   margin-right: 25px;
@@ -6854,6 +6863,7 @@ html[saved-theme="light"] body h4::before {
   border-top-width: 0px;
   color: var(--text-normal, rgb(255, 172, 28));
   content: "H4";
+  display: inline;
   margin-bottom: 0px;
   margin-left: -45px;
   margin-right: 25px;
@@ -6890,6 +6900,7 @@ html[saved-theme="light"] body h5::before {
   border-top-width: 0px;
   color: var(--text-normal, rgb(255, 0, 0));
   content: "H5";
+  display: inline;
   margin-bottom: 0px;
   margin-left: -45px;
   margin-right: 25px;
@@ -6926,6 +6937,7 @@ html[saved-theme="light"] body h6::before {
   border-top-width: 0px;
   color: var(--text-normal, rgb(255, 0, 255));
   content: "H6";
+  display: inline;
   margin-bottom: 0px;
   margin-left: -45px;
   margin-right: 25px;
