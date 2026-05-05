@@ -73,6 +73,24 @@ const ROLE_REGISTRY = {
     quartzSelector: ".callout .callout-content",
     matchBy: "singleton",
   },
+  "callout:title-per-type": {
+    obsidian: (sel) =>
+      sel.includes("callout-title") &&
+      sel.includes("data-callout=") &&
+      !sel.includes("callout-title-inner"),
+    quartzTemplate: (attrVal) =>
+      `.callout[data-callout="${attrVal}"] .callout-title`,
+    matchBy: "data-attr",
+    dataAttr: "data-callout",
+  },
+  "callout:content-per-type": {
+    obsidian: (sel) =>
+      sel.includes("callout-content") && sel.includes("data-callout="),
+    quartzTemplate: (attrVal) =>
+      `.callout[data-callout="${attrVal}"] > .callout-content`,
+    matchBy: "data-attr",
+    dataAttr: "data-callout",
+  },
 
   // ── Headings ──────────────────────────────────────────────────────────
   "heading:h1": {

@@ -40,13 +40,13 @@ describe("processStyleSettings", () => {
   });
 
   test("class-toggle true injects pre-extracted CSS", () => {
-    const classMap = { "my-toggle": ".foo { color: red; }" };
+    const classMap = { "my-toggle": { general: ".my-toggle { color: red; }" } };
     const result = processStyleSettings(
       { "my-theme@@my-toggle": true },
       "my-theme",
       classMap,
     );
-    assert.ok(result.css.includes(".foo { color: red; }"));
+    assert.ok(result.css.includes("color: red;"));
   });
 
   test("class-toggle true without classSettings map is a no-op", () => {
@@ -58,7 +58,7 @@ describe("processStyleSettings", () => {
   });
 
   test("class-toggle false is a no-op", () => {
-    const classMap = { "my-toggle": ".foo { color: red; }" };
+    const classMap = { "my-toggle": { general: ".my-toggle { color: red; }" } };
     const result = processStyleSettings(
       { "my-theme@@my-toggle": false },
       "my-theme",
@@ -69,8 +69,8 @@ describe("processStyleSettings", () => {
 
   test("class-select value injects pre-extracted CSS for selected option", () => {
     const classMap = {
-      "dark-default": ":root { --bg: #000; }",
-      "dark-midnight": ":root { --bg: #0a0a2e; }",
+      "dark-default": { general: ":root { --bg: #000; }" },
+      "dark-midnight": { general: ":root { --bg: #0a0a2e; }" },
     };
     const result = processStyleSettings(
       { "my-theme@@theme-variant": "dark-midnight" },

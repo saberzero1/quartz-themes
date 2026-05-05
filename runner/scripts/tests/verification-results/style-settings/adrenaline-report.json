@@ -1,0 +1,74 @@
+{
+  "theme": "adrenaline",
+  "timestamp": "2026-05-04T20:17:36.038Z",
+  "stages": {
+    "stage1": {
+      "pass": true,
+      "settingCount": 35,
+      "typeDistribution": {
+        "info-text": 1,
+        "unknown": 1,
+        "class-select": 1,
+        "heading": 8,
+        "variable-number-slider": 7,
+        "variable-color": 9,
+        "class-toggle": 8
+      },
+      "blockCount": 1,
+      "blockIds": ["Adrenaline"],
+      "expectedHasSettings": true,
+      "yamlComparison": {
+        "yamlPath": "/home/saberzero1/Repos/quartz-themes/obsidian/Adrenaline/style-settings.yaml",
+        "storedCount": 35,
+        "extractedCount": 35,
+        "missingFromYaml": 0,
+        "missingFromCss": 0
+      },
+      "failures": []
+    },
+    "stage2": {
+      "pass": true,
+      "storedCount": 35,
+      "extractedCount": 35,
+      "missingInStored": [],
+      "missingInExtracted": [],
+      "idMatch": true,
+      "failures": []
+    },
+    "stage3": {
+      "pass": true,
+      "tested": 34,
+      "emitted": 32,
+      "skipped": 18,
+      "failures": []
+    },
+    "stage4": {
+      "pass": true,
+      "classIds": [
+        "default",
+        "tv1",
+        "custom-accent-bold",
+        "custom-accent-italic",
+        "heading-highlighting",
+        "status-bar-hover",
+        "enhanced-buttons-disable",
+        "disable-line-indicator",
+        "enhanced-cursor",
+        "blend-images"
+      ],
+      "extractedCount": 8,
+      "inGeneratedFile": true,
+      "missingFromGenerated": [],
+      "emptyExtractions": ["default", "disable-line-indicator"],
+      "note": "2 class IDs produced no CSS (may use snippets or @media)",
+      "failures": []
+    },
+    "stage5": {
+      "pass": true,
+      "tested": 11,
+      "passed": 11,
+      "failed": 0,
+      "failures": []
+    }
+  }
+}

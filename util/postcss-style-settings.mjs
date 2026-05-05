@@ -7,25 +7,198 @@ String.prototype.endsWithAnyOf = endsWithAnyOf
 
 
 
-const SETTINGS_BLOCK_RE = /\/\*\s*@settings[\s\S]*?\*\//g
+const SETTINGS_BLOCK_RE = /\/\*!?\s*@settings[\s\S]*?\*\//g
 
 function extractSettingsBlocks(cssString) {
   const matches = cssString.match(SETTINGS_BLOCK_RE)
   if (!matches) return []
   return matches.map((block) => {
-    // Strip the /* @settings prefix and trailing */
-    let inner = block.replace(/^\/\*\s*@settings\s*/, "").replace(/\s*\*\/$/, "")
+    // Strip the /*[!] @settings prefix and trailing */
+    let inner = block.replace(/^\/\*!?\s*@settings\s*/, "").replace(/\s*\*\/$/, "")
     return inner.trim()
   })
 }
 
 function parseSettingsYaml(yamlString) {
+  // Tabs are invalid YAML indentation but common in Obsidian theme CSS
+  const normalized = yamlString.replace(/\t/g, "  ")
   try {
-    // Tabs are invalid YAML indentation but common in Obsidian theme CSS
-    const normalized = yamlString.replace(/\t/g, "  ")
     return yaml.load(normalized)
   } catch {
-    return null
+    // First parse failed — try fixing common indentation errors in
+    // Obsidian theme @settings blocks.
+    //
+    // Common pattern: bare `-` list markers appear at the WRONG indentation
+    // level (usually matching their content's parent keys instead of the
+    // list's own level). We find the FIRST bare `-` (which is correctly
+    // placed) and realign all subsequent bare `-` markers at the same indent.
+    // Second attempt: realign bare `-` markers to the canonical level.
+    try {
+      const lines = normalized.split("\n")
+      let canonicalDashIndent = -1
+      for (const line of lines) {
+        const m = line.match(/^(\s*)-\s*$/)
+        if (m) { canonicalDashIndent = m[1].length; break }
+      }
+      if (canonicalDashIndent >= 0) {
+        const fixed = lines.map((line) => {
+          const bareMatch = line.match(/^(\s*)-\s*$/)
+          if (bareMatch && bareMatch[1].length !== canonicalDashIndent) {
+            return " ".repeat(canonicalDashIndent) + "-"
+          }
+          return line
+        })
+        const result = yaml.load(fixed.join("\n"))
+        if (result) return result
+      }
+    } catch {}
+
+    // Third attempt: line-by-line recovery parser.
+    // When YAML indentation is too broken for js-yaml, we parse the flat
+    // key-value structure ourselves. Style Settings entries are simple
+    // objects with known keys (id, type, title, default, format, options, etc.)
+    // nested under a top-level `settings:` array.
+    try {
+      return parseSettingsLineByLine(normalized)
+    } catch {
+      return null
+    }
+  }
+}
+
+/**
+ * Line-by-line fallback parser for @settings blocks with broken YAML indentation.
+ *
+ * Style Settings entries follow a predictable structure:
+ *   name: Theme Name
+ *   id: theme-id
+ *   settings:
+ *     -
+ *       id: setting-id
+ *       type: variable-number
+ *       title: My Setting
+ *       default: 42
+ *
+ * We parse this by scanning for top-level keys (name, id, settings) and then
+ * treating each `id:` + `type:` pair as the start of a new settings entry.
+ */
+function parseSettingsLineByLine(text) {
+  const lines = text.split("\n")
+
+  let rootName = ""
+  let rootId = ""
+  const settings = []
+  let current = null
+  let inOptions = false
+  let currentOption = null
+  let seenSettingsKey = false
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim()
+    if (!line || line === "-") {
+      // Bare dash or empty line: flush current entry if it has an id+type
+      if (current && current.id && current.type) {
+        if (currentOption && currentOption.value) {
+          if (!current.options) current.options = []
+          current.options.push(currentOption)
+          currentOption = null
+        }
+        settings.push(current)
+      }
+      current = null
+      inOptions = false
+      currentOption = null
+      continue
+    }
+
+    // Top-level keys (before settings array)
+    const kvMatch = line.match(/^([\w-]+)\s*:\s*(.*)$/)
+    if (!kvMatch) continue
+    const [, key, rawVal] = kvMatch
+    const val = rawVal.replace(/^['"]|['"]$/g, "").trim()
+
+    // Root-level metadata (only before the `settings:` key)
+    if (!seenSettingsKey && !current && key === "name") { rootName = val; continue }
+    if (!seenSettingsKey && !current && key === "id") { rootId = val; continue }
+    if (key === "settings") { seenSettingsKey = true; continue }
+
+    // Start a new entry if we see `id:` without a current entry
+    if (key === "id" && !current) {
+      current = { id: val }
+      inOptions = false
+      continue
+    }
+    // If we see `id:` while we already have a current entry, flush and start new
+    if (key === "id" && current) {
+      if (current.id && current.type) {
+        if (currentOption && currentOption.value) {
+          if (!current.options) current.options = []
+          current.options.push(currentOption)
+          currentOption = null
+        }
+        settings.push(current)
+      }
+      current = { id: val }
+      inOptions = false
+      continue
+    }
+
+    if (!current) continue
+
+    // Options sub-array for class-select
+    if (key === "options") { inOptions = true; continue }
+    if (inOptions && key === "label") {
+      if (currentOption && currentOption.value) {
+        if (!current.options) current.options = []
+        current.options.push(currentOption)
+      }
+      currentOption = { label: val }
+      continue
+    }
+    if (inOptions && key === "value") {
+      if (currentOption) currentOption.value = val
+      else currentOption = { value: val }
+      continue
+    }
+
+    // Regular setting keys
+    if (key === "type") { current.type = val; inOptions = false; continue }
+    if (key === "title") { current.title = val; continue }
+    if (key === "description") { current.description = val; continue }
+    if (key === "default") {
+      // Try to preserve numeric values
+      const num = Number(val)
+      current.default = val !== "" && !isNaN(num) ? num : val
+      continue
+    }
+    if (key === "default-light") { current["default-light"] = val; continue }
+    if (key === "default-dark") { current["default-dark"] = val; continue }
+    if (key === "format") { current.format = val; continue }
+    if (key === "min") { current.min = Number(val) || 0; continue }
+    if (key === "max") { current.max = Number(val) || 100; continue }
+    if (key === "step") { current.step = Number(val) || 1; continue }
+    if (key === "level") { current.level = Number(val) || 1; continue }
+    if (key === "collapsed") { current.collapsed = val === "true"; continue }
+    if (key === "allowEmpty") { current.allowEmpty = val === "true"; continue }
+    if (key === "markdown") { current.markdown = val === "true"; continue }
+    if (key === "opacity") { current.opacity = val === "true"; continue }
+  }
+
+  // Flush last entry
+  if (current && current.id && current.type) {
+    if (currentOption && currentOption.value) {
+      if (!current.options) current.options = []
+      current.options.push(currentOption)
+    }
+    settings.push(current)
+  }
+
+  if (settings.length === 0) return null
+
+  return {
+    name: rootName,
+    id: rootId,
+    settings,
   }
 }
 

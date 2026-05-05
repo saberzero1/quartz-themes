@@ -1,0 +1,92 @@
+{
+  "theme": "hidden-grotto",
+  "timestamp": "2026-05-04T20:17:36.382Z",
+  "stages": {
+    "stage1": {
+      "pass": true,
+      "settingCount": 8,
+      "typeDistribution": {
+        "class-select": 1,
+        "class-toggle": 4,
+        "variable-number-slider": 3
+      },
+      "blockCount": 6,
+      "blockIds": [
+        "hidden-grotto-style",
+        "hidden-grotto-tag",
+        "hidden-grotto-text",
+        "hidden-grotto-calendar",
+        "hidden-grotto-ui",
+        "hidden-grotto-privacy"
+      ],
+      "expectedHasSettings": true,
+      "yamlComparison": {
+        "yamlPath": "/home/saberzero1/Repos/quartz-themes/obsidian/Hidden Grotto/style-settings.yaml",
+        "storedCount": 8,
+        "extractedCount": 8,
+        "missingFromYaml": 0,
+        "missingFromCss": 0
+      },
+      "failures": []
+    },
+    "stage2": {
+      "pass": true,
+      "storedCount": 8,
+      "extractedCount": 8,
+      "missingInStored": [],
+      "missingInExtracted": [],
+      "idMatch": true,
+      "failures": []
+    },
+    "stage3": {
+      "pass": true,
+      "tested": 8,
+      "emitted": 6,
+      "skipped": 5,
+      "failures": []
+    },
+    "stage4": {
+      "pass": true,
+      "classIds": [
+        "preset-absol",
+        "preset-aegislash",
+        "preset-aggron",
+        "preset-arcanine",
+        "preset-aromatisse",
+        "preset-calyrex",
+        "preset-clobbopus",
+        "preset-cryogonal",
+        "preset-darkrai",
+        "preset-diancie",
+        "preset-hisuian-typhlosion",
+        "preset-manectric",
+        "preset-mareep",
+        "preset-mega-lucario",
+        "preset-meloetta",
+        "preset-necrozma",
+        "preset-pirouette-meloetta",
+        "preset-poltchageist",
+        "preset-scolipede",
+        "preset-swampert",
+        "preset-ursaluna",
+        "grotto-tag-rounded",
+        "grotto-tag-accented",
+        "grotto-rounded-ui",
+        "grotto-blur"
+      ],
+      "extractedCount": 24,
+      "inGeneratedFile": true,
+      "missingFromGenerated": [],
+      "emptyExtractions": ["preset-arcanine"],
+      "note": "1 class IDs produced no CSS (may use snippets or @media)",
+      "failures": []
+    },
+    "stage5": {
+      "pass": true,
+      "tested": 11,
+      "passed": 11,
+      "failed": 0,
+      "failures": []
+    }
+  }
+}
