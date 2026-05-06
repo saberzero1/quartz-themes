@@ -30,7 +30,7 @@
   --checkbox-color-hover: var(--medium-light-grey-2, #d7d7d7) !important;
   --checkbox-marker-color: var(--green-04, #596d3a) !important;
   --checkbox-radius: var(--radius-s, 50%) !important;
-  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-secondary, #e1e1e1) !important;
   --code-border-color: var(--background-modifier-border, #404040) !important;
   --code-bracket-background: var(--background-modifier-hover, rgba(0, 0, 0, 0.075)) !important;
@@ -117,7 +117,7 @@
   --checkbox-color-hover: var(--dark-grey-2, #1f1f1f) !important;
   --checkbox-marker-color: var(--green-11, #778e55) !important;
   --checkbox-radius: var(--radius-s, 50%) !important;
-  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-secondary, #1d1d1d) !important;
   --code-border-color: var(--background-modifier-border, #9d9d9d) !important;
   --code-bracket-background: var(--background-modifier-hover, rgba(255, 255, 255, 0.075)) !important;
@@ -447,16 +447,16 @@ body {
   footer a {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-external-color, rgb(106, 106, 106));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: "Noto Sans", sans-serif, "Noto Sans", sans-serif;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(106, 106, 106) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(106, 106, 106);
-    text-decoration-line: var(--link-external-decoration, underline);
+    text-decoration-line: var(--link-external-decoration);
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
     transform: none;
@@ -475,16 +475,16 @@ body {
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-color, rgb(89, 109, 58));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: "Noto Sans", sans-serif, "Noto Sans", sans-serif;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(89, 109, 58) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(89, 109, 58);
-    text-decoration-line: var(--link-decoration, underline);
+    text-decoration-line: var(--link-decoration);
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
     transform: none;
@@ -502,17 +502,17 @@ body {
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-unresolved-color, rgb(62, 76, 40));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: "Noto Sans", sans-serif, "Noto Sans", sans-serif;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(62, 76, 40) none 0px;
     text-decoration: underline rgba(138, 92, 245, 0.3);
     text-decoration-color: var(--link-unresolved-decoration-color, rgb(62, 76, 40));
-    text-decoration-line: var(--link-decoration, underline);
-    text-decoration-style: var(--link-unresolved-decoration-style, solid);
+    text-decoration-line: var(--link-decoration);
+    text-decoration-style: var(--link-unresolved-decoration-style);
     transition: opacity 0.14s ease-in-out;
     transform: none;
     user-select: text;
@@ -890,7 +890,7 @@ body {
     display: flex;
     font-family: "Noto Sans", sans-serif;
     font-size: 12px;
-    font-weight: var(--pill-weight, 400);
+    font-weight: var(--pill-weight);
     line-height: var(--line-height-tight, 12px);
     text-decoration: rgb(34, 34, 34);
     margin-inline-start: 0px;
@@ -915,8 +915,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.2px);
-    padding-bottom: var(--list-spacing, 1.2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -952,8 +952,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.2px);
-    padding-bottom: var(--list-spacing, 1.2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1067,7 +1067,7 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    width: var(--checkbox-size, 16px);
+    width: var(--checkbox-size);
     transition: box-shadow 0.15s ease-in-out;
     position: relative;
     top: auto;
@@ -1089,7 +1089,7 @@ body {
   }
 
   blockquote {
-    background-color: var(--blockquote-background-color, rgba(0, 0, 0, 0));
+    background-color: var(--blockquote-background-color);
     color: var(--blockquote-color, rgb(85, 85, 85));
     font-family: "Noto Sans", sans-serif, "Noto Sans", sans-serif;
     font-weight: 400;
@@ -1135,7 +1135,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.1) 0px 15px 30px 0px);
+    box-shadow: var(--shadow-l);
   }
 
   .search > .search-container > .search-space > input {
@@ -1264,7 +1264,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 0px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 16px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1300,7 +1300,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 16px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 16px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1336,7 +1336,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 16px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 16px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1372,7 +1372,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 16px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 16px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1394,9 +1394,9 @@ body {
   h6 {
     color: var(--h6-color, rgb(32, 32, 32));
     font-family: var(--h6-font, "Noto Sans", sans-serif);
-    font-size: var(--h6-size, 16px);
+    font-size: var(--h6-size);
     font-weight: var(--font-weight, 650);
-    line-height: var(--h6-line-height, 24px);
+    line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: normal;
@@ -1797,7 +1797,7 @@ body {
   }
 
   li.depth-0 {
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
   }
 
   ::-webkit-scrollbar {
@@ -1891,11 +1891,11 @@ body {
 
   .callout .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color, rgb(89, 109, 58));
-    font-weight: var(--font-weight, 600);
+    font-weight: var(--font-weight);
   }
 
   .callout > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(64, 64, 64);
@@ -1949,11 +1949,11 @@ body {
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color, rgb(89, 109, 58));
-    font-weight: var(--font-weight, 600);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="note"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(64, 64, 64);
@@ -2007,11 +2007,11 @@ body {
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color, rgb(89, 109, 58));
-    font-weight: var(--font-weight, 600);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="abstract"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(64, 64, 64);
@@ -2065,11 +2065,11 @@ body {
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color, rgb(89, 109, 58));
-    font-weight: var(--font-weight, 600);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="info"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(64, 64, 64);
@@ -2123,11 +2123,11 @@ body {
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color, rgb(89, 109, 58));
-    font-weight: var(--font-weight, 600);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="todo"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(64, 64, 64);
@@ -2181,11 +2181,11 @@ body {
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color, rgb(89, 109, 58));
-    font-weight: var(--font-weight, 600);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="tip"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(64, 64, 64);
@@ -2239,11 +2239,11 @@ body {
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color, rgb(89, 109, 58));
-    font-weight: var(--font-weight, 600);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="success"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(64, 64, 64);
@@ -2297,11 +2297,11 @@ body {
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color, rgb(89, 109, 58));
-    font-weight: var(--font-weight, 600);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="question"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(64, 64, 64);
@@ -2355,11 +2355,11 @@ body {
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color, rgb(89, 109, 58));
-    font-weight: var(--font-weight, 600);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(64, 64, 64);
@@ -2413,11 +2413,11 @@ body {
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color, rgb(89, 109, 58));
-    font-weight: var(--font-weight, 600);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="danger"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(64, 64, 64);
@@ -2471,11 +2471,11 @@ body {
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color, rgb(89, 109, 58));
-    font-weight: var(--font-weight, 600);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="failure"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(64, 64, 64);
@@ -2529,11 +2529,11 @@ body {
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color, rgb(89, 109, 58));
-    font-weight: var(--font-weight, 600);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="bug"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(64, 64, 64);
@@ -2587,11 +2587,11 @@ body {
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color, rgb(89, 109, 58));
-    font-weight: var(--font-weight, 600);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="example"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(64, 64, 64);
@@ -2645,11 +2645,11 @@ body {
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color, rgb(89, 109, 58));
-    font-weight: var(--font-weight, 600);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="quote"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(64, 64, 64);
@@ -2676,7 +2676,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 16px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -2713,13 +2713,13 @@ body {
     color: var(--table-header-color, rgb(89, 109, 58));
     font-weight: var(--table-header-weight, 650);
     text-align: start;
-    vertical-align: var(--table-cell-vertical-alignment, top);
+    vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: normal;
-    border-left: var(--table-column-first-border-width, 1px) solid rgb(64, 64, 64);
+    border-left: var(--table-column-first-border-width) solid rgb(64, 64, 64);
     border-right: 1px solid rgb(64, 64, 64);
-    border-top: var(--table-header-border-width, 1px) solid rgb(64, 64, 64);
+    border-top: var(--table-header-border-width) solid rgb(64, 64, 64);
     border-bottom: 1px solid rgb(64, 64, 64);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2741,11 +2741,11 @@ body {
     color: var(--table-text-color, rgb(64, 64, 64));
     font-weight: 400;
     text-align: start;
-    vertical-align: var(--table-cell-vertical-alignment, top);
+    vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     border: 1px solid rgb(64, 64, 64);
-    border-left: var(--table-column-first-border-width, 1px) solid rgb(64, 64, 64);
+    border-left: var(--table-column-first-border-width) solid rgb(64, 64, 64);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2779,7 +2779,7 @@ body {
   }
 
   tbody tr:nth-child(odd) {
-    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-row-alt-background);
   }
 
   img {
@@ -2887,7 +2887,7 @@ body {
   }
 
   .transclude {
-    background-color: var(--embed-background, rgba(0, 0, 0, 0));
+    background-color: var(--embed-background);
     color: rgb(64, 64, 64);
     border-radius: 0px;
     border-right-color: rgb(64, 64, 64);
@@ -2904,7 +2904,7 @@ body {
   }
 
   .transclude-inner {
-    background-color: var(--embed-background, rgba(0, 0, 0, 0));
+    background-color: var(--embed-background);
     color: rgb(64, 64, 64);
     border-radius: 0px;
     border-right-color: rgb(64, 64, 64);
@@ -2962,7 +2962,7 @@ body {
   }
 
   .metadata-container .metadata-property {
-    background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-property-background);
     color: rgb(85, 85, 85);
     font-family: "Noto Sans", sans-serif, "Noto Sans", sans-serif;
     border-color: rgb(85, 85, 85);
@@ -3368,17 +3368,17 @@ body {
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
     color: var(--nav-item-color, rgb(64, 64, 64));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     font-family: "Noto Sans", sans-serif;
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
     color: var(--nav-item-color, rgb(64, 64, 64));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     font-family: "Noto Sans", sans-serif;
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
 
@@ -3402,7 +3402,7 @@ body {
   }
 
   .bases-table tbody tr:nth-child(even) {
-    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-row-alt-background);
   }
 
   .canvas-node {
@@ -3424,7 +3424,7 @@ body {
   .canvas-sidebar {
     background-color: var(--background-primary, rgb(236, 236, 236));
     border-color: rgb(64, 64, 64);
-    box-shadow: var(--input-shadow, rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 2px 3px 0px, rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
+    box-shadow: var(--input-shadow);
   }
 
   .canvas-node-group {
@@ -3465,7 +3465,7 @@ body {
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
     color: var(--icon-color, rgb(89, 109, 58));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     border-color: rgb(89, 109, 58);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -3478,7 +3478,7 @@ body {
     background-color: var(--status-bar-background, rgb(225, 225, 225));
     color: var(--status-bar-text-color, rgb(64, 64, 64));
     font-family: "Noto Sans", sans-serif;
-    font-size: var(--status-bar-font-size, 12px);
+    font-size: var(--status-bar-font-size);
     text-align: start;
     border-color: rgb(64, 64, 64);
     border-style: solid;
@@ -3490,7 +3490,7 @@ body {
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 4px;
-    padding-right: var(--size-4-2, 8px);
+    padding-right: var(--size-4-2);
     opacity: 1;
   }
 
@@ -3558,7 +3558,7 @@ body {
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
     color: var(--icon-color, rgb(89, 109, 58));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     border-color: rgb(89, 109, 58);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -3611,7 +3611,7 @@ body {
   }
 
   .katex-display {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+    background-color: var(--background-modifier-hover);
     color: rgb(64, 64, 64);
     border-color: rgb(64, 64, 64);
     border-width: 0px;
@@ -3820,7 +3820,6 @@ body {
     --color-accent-hsl: #596d3a;
     --divider-color: #404040;
     --divider-color-hover: #596d3a;
-    --divider-vertical-height: 100% - 40px;
     --flair-color: #404040;
     --font-interface: "??", "??", "??", "Noto Sans", sans-serif;
     --font-mermaid: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
@@ -3955,6 +3954,7 @@ body {
     --blockquote-color: #555555;
     --bold-color: #596d3a;
     --color-green: #596d3a;
+    --divider-vertical-height: 100% - 40px;
     --h1-color: #596d3a;
     --h2-color: #404040;
     --h3-color: #4b5c31;
@@ -4089,7 +4089,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4210,6 +4209,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -4272,7 +4272,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4393,6 +4392,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -4455,7 +4455,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4576,6 +4575,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -4638,7 +4638,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4759,6 +4758,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -4821,7 +4821,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4942,6 +4941,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -5004,7 +5004,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5125,6 +5124,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -5187,7 +5187,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5308,6 +5307,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -5370,7 +5370,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5491,6 +5490,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -5553,7 +5553,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5674,6 +5673,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -5736,7 +5736,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5857,6 +5856,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -5919,7 +5919,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6040,6 +6039,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -6102,7 +6102,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6223,6 +6222,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -6285,7 +6285,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6406,6 +6405,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -6468,7 +6468,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6589,6 +6588,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -6651,7 +6651,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6772,6 +6771,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -6834,7 +6834,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6955,6 +6954,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -7017,7 +7017,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7138,6 +7137,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -7200,7 +7200,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7321,6 +7320,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -7383,7 +7383,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7504,6 +7503,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -7566,7 +7566,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7687,6 +7686,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -7749,7 +7749,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7870,6 +7869,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -7932,7 +7932,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8053,6 +8052,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -8115,7 +8115,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8236,6 +8235,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -8298,7 +8298,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8419,6 +8418,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -8481,7 +8481,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8602,6 +8601,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -8664,7 +8664,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8785,6 +8784,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -8847,7 +8847,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8968,6 +8967,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -9030,7 +9030,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9151,6 +9150,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -9213,7 +9213,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9334,6 +9333,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -9396,7 +9396,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9517,6 +9516,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -9579,7 +9579,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9700,6 +9699,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -9762,7 +9762,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9883,6 +9882,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -9945,7 +9945,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10066,6 +10065,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -10128,7 +10128,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10249,6 +10248,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -10311,7 +10311,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10432,6 +10431,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -10494,7 +10494,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10615,6 +10614,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -10677,7 +10677,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10798,6 +10797,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -10860,7 +10860,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10981,6 +10980,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -11043,7 +11043,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -11164,6 +11163,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -11226,7 +11226,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -11347,6 +11346,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -11409,7 +11409,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -11530,6 +11529,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -11592,7 +11592,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -11713,6 +11712,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -11775,7 +11775,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -11896,6 +11895,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -11958,7 +11958,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -12079,6 +12078,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -12141,7 +12141,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -12262,6 +12261,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -12324,7 +12324,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -12445,6 +12444,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -12507,7 +12507,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -12628,6 +12627,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -12690,7 +12690,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -12811,6 +12810,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -12873,7 +12873,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -12994,6 +12993,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -13056,7 +13056,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -13177,6 +13176,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -13239,7 +13239,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -13360,6 +13359,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -13422,7 +13422,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -13543,6 +13542,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -13605,7 +13605,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -13726,6 +13725,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -13788,7 +13788,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -13909,6 +13908,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -13971,7 +13971,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -14092,6 +14091,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -14154,7 +14154,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -14275,6 +14274,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -14337,7 +14337,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -14458,6 +14457,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -14520,7 +14520,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -14641,6 +14640,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -14703,7 +14703,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -14824,6 +14823,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -14886,7 +14886,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -15007,6 +15006,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -15069,7 +15069,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -15190,6 +15189,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -15252,7 +15252,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -15373,6 +15372,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -15435,7 +15435,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -15556,6 +15555,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -15618,7 +15618,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -15739,6 +15738,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -15801,7 +15801,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -15922,6 +15921,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -15984,7 +15984,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -16105,6 +16104,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -16167,7 +16167,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --flair-color: #222222;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -16288,6 +16287,7 @@ body {
     margin-left: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-green: #08b94e;
+    --divider-vertical-height: 100%;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --table-background: transparent;
     --tag-decoration: none;
@@ -17030,16 +17030,16 @@ html[saved-theme="dark"] {
     footer a {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-external-color, rgb(106, 106, 106));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: "Noto Sans", sans-serif, "Noto Sans", sans-serif;
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(106, 106, 106) none 0px;
       text-decoration: underline;
       text-decoration-color: rgb(106, 106, 106);
-      text-decoration-line: var(--link-external-decoration, underline);
+      text-decoration-line: var(--link-external-decoration);
       text-decoration-style: solid;
       transition: opacity 0.14s ease-in-out;
       transform: none;
@@ -17058,16 +17058,16 @@ html[saved-theme="dark"] {
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-color, rgb(119, 142, 85));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: "Noto Sans", sans-serif, "Noto Sans", sans-serif;
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(119, 142, 85) none 0px;
       text-decoration: underline;
       text-decoration-color: rgb(119, 142, 85);
-      text-decoration-line: var(--link-decoration, underline);
+      text-decoration-line: var(--link-decoration);
       text-decoration-style: solid;
       transition: opacity 0.14s ease-in-out;
       transform: none;
@@ -17085,17 +17085,17 @@ html[saved-theme="dark"] {
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-unresolved-color, rgb(228, 201, 103));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: "Noto Sans", sans-serif, "Noto Sans", sans-serif;
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(228, 201, 103) none 0px;
       text-decoration: underline rgba(138, 92, 245, 0.3);
       text-decoration-color: var(--link-unresolved-decoration-color, rgb(228, 201, 103));
-      text-decoration-line: var(--link-decoration, underline);
-      text-decoration-style: var(--link-unresolved-decoration-style, solid);
+      text-decoration-line: var(--link-decoration);
+      text-decoration-style: var(--link-unresolved-decoration-style);
       transition: opacity 0.14s ease-in-out;
       transform: none;
       user-select: text;
@@ -17473,7 +17473,7 @@ html[saved-theme="dark"] {
       display: flex;
       font-family: "Noto Sans", sans-serif;
       font-size: 12px;
-      font-weight: var(--pill-weight, 400);
+      font-weight: var(--pill-weight);
       line-height: var(--line-height-tight, 12px);
       text-decoration: rgb(218, 218, 218);
       margin-inline-start: 0px;
@@ -17498,8 +17498,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 1.2px);
-      padding-bottom: var(--list-spacing, 1.2px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -17535,8 +17535,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 1.2px);
-      padding-bottom: var(--list-spacing, 1.2px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -17650,7 +17650,7 @@ html[saved-theme="dark"] {
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      width: var(--checkbox-size, 16px);
+      width: var(--checkbox-size);
       transition: box-shadow 0.15s ease-in-out;
       position: relative;
       top: auto;
@@ -17672,7 +17672,7 @@ html[saved-theme="dark"] {
     }
 
     blockquote {
-      background-color: var(--blockquote-background-color, rgba(0, 0, 0, 0));
+      background-color: var(--blockquote-background-color);
       color: var(--blockquote-color, rgb(112, 112, 112));
       font-family: "Noto Sans", sans-serif, "Noto Sans", sans-serif;
       font-weight: 400;
@@ -17718,7 +17718,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px);
+      box-shadow: var(--shadow-l);
     }
 
     .search > .search-container > .search-space > input {
@@ -17847,7 +17847,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 0px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 16px;
       margin-left: 0px;
       margin-right: 0px;
@@ -17883,7 +17883,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 16px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 16px;
       margin-left: 0px;
       margin-right: 0px;
@@ -17919,7 +17919,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 16px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 16px;
       margin-left: 0px;
       margin-right: 0px;
@@ -17955,7 +17955,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 16px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 16px;
       margin-left: 0px;
       margin-right: 0px;
@@ -17977,9 +17977,9 @@ html[saved-theme="dark"] {
     h6 {
       color: var(--h6-color, rgb(232, 209, 125));
       font-family: var(--h6-font, "Noto Sans", sans-serif);
-      font-size: var(--h6-size, 16px);
+      font-size: var(--h6-size);
       font-weight: var(--font-weight, 650);
-      line-height: var(--h6-line-height, 24px);
+      line-height: var(--h6-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
@@ -18380,7 +18380,7 @@ html[saved-theme="dark"] {
     }
 
     li.depth-0 {
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
     }
 
     ::-webkit-scrollbar {
@@ -18474,11 +18474,11 @@ html[saved-theme="dark"] {
 
     .callout .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color, rgb(145, 168, 110));
-      font-weight: var(--font-weight, 600);
+      font-weight: var(--font-weight);
     }
 
     .callout > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(157, 157, 157);
@@ -18532,11 +18532,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color, rgb(145, 168, 110));
-      font-weight: var(--font-weight, 600);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="note"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(157, 157, 157);
@@ -18590,11 +18590,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color, rgb(145, 168, 110));
-      font-weight: var(--font-weight, 600);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="abstract"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(157, 157, 157);
@@ -18648,11 +18648,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color, rgb(145, 168, 110));
-      font-weight: var(--font-weight, 600);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="info"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(157, 157, 157);
@@ -18706,11 +18706,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color, rgb(145, 168, 110));
-      font-weight: var(--font-weight, 600);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="todo"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(157, 157, 157);
@@ -18764,11 +18764,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color, rgb(145, 168, 110));
-      font-weight: var(--font-weight, 600);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="tip"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(157, 157, 157);
@@ -18822,11 +18822,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color, rgb(145, 168, 110));
-      font-weight: var(--font-weight, 600);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="success"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(157, 157, 157);
@@ -18880,11 +18880,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color, rgb(145, 168, 110));
-      font-weight: var(--font-weight, 600);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="question"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(157, 157, 157);
@@ -18938,11 +18938,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color, rgb(145, 168, 110));
-      font-weight: var(--font-weight, 600);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="warning"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(157, 157, 157);
@@ -18996,11 +18996,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color, rgb(145, 168, 110));
-      font-weight: var(--font-weight, 600);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="danger"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(157, 157, 157);
@@ -19054,11 +19054,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color, rgb(145, 168, 110));
-      font-weight: var(--font-weight, 600);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="failure"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(157, 157, 157);
@@ -19112,11 +19112,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color, rgb(145, 168, 110));
-      font-weight: var(--font-weight, 600);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="bug"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(157, 157, 157);
@@ -19170,11 +19170,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color, rgb(145, 168, 110));
-      font-weight: var(--font-weight, 600);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="example"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(157, 157, 157);
@@ -19228,11 +19228,11 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color, rgb(145, 168, 110));
-      font-weight: var(--font-weight, 600);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="quote"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(157, 157, 157);
@@ -19259,7 +19259,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin-top: var(--heading-spacing, 16px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 0px;
       margin-left: 0px;
       margin-right: 0px;
@@ -19296,13 +19296,13 @@ html[saved-theme="dark"] {
       color: var(--table-header-color, rgb(119, 142, 85));
       font-weight: var(--table-header-weight, 650);
       text-align: start;
-      vertical-align: var(--table-cell-vertical-alignment, top);
+      vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
-      border-left: var(--table-column-first-border-width, 1px) solid rgb(157, 157, 157);
+      border-left: var(--table-column-first-border-width) solid rgb(157, 157, 157);
       border-right: 1px solid rgb(157, 157, 157);
-      border-top: var(--table-header-border-width, 1px) solid rgb(157, 157, 157);
+      border-top: var(--table-header-border-width) solid rgb(157, 157, 157);
       border-bottom: 1px solid rgb(157, 157, 157);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -19324,11 +19324,11 @@ html[saved-theme="dark"] {
       color: var(--table-text-color, rgb(157, 157, 157));
       font-weight: 400;
       text-align: start;
-      vertical-align: var(--table-cell-vertical-alignment, top);
+      vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       border: 1px solid rgb(157, 157, 157);
-      border-left: var(--table-column-first-border-width, 1px) solid rgb(157, 157, 157);
+      border-left: var(--table-column-first-border-width) solid rgb(157, 157, 157);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -19362,7 +19362,7 @@ html[saved-theme="dark"] {
     }
 
     tbody tr:nth-child(odd) {
-      background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-row-alt-background);
     }
 
     img {
@@ -19470,7 +19470,7 @@ html[saved-theme="dark"] {
     }
 
     .transclude {
-      background-color: var(--embed-background, rgba(0, 0, 0, 0));
+      background-color: var(--embed-background);
       color: rgb(157, 157, 157);
       border-radius: 0px;
       border-right-color: rgb(157, 157, 157);
@@ -19487,7 +19487,7 @@ html[saved-theme="dark"] {
     }
 
     .transclude-inner {
-      background-color: var(--embed-background, rgba(0, 0, 0, 0));
+      background-color: var(--embed-background);
       color: rgb(157, 157, 157);
       border-radius: 0px;
       border-right-color: rgb(157, 157, 157);
@@ -19545,7 +19545,7 @@ html[saved-theme="dark"] {
     }
 
     .metadata-container .metadata-property {
-      background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-property-background);
       color: rgb(112, 112, 112);
       font-family: "Noto Sans", sans-serif, "Noto Sans", sans-serif;
       border-color: rgb(112, 112, 112);
@@ -19951,17 +19951,17 @@ html[saved-theme="dark"] {
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
       color: var(--nav-item-color, rgb(157, 157, 157));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       font-family: "Noto Sans", sans-serif;
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
       color: var(--nav-item-color, rgb(157, 157, 157));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       font-family: "Noto Sans", sans-serif;
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
     }
 
@@ -19985,7 +19985,7 @@ html[saved-theme="dark"] {
     }
 
     .bases-table tbody tr:nth-child(even) {
-      background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-row-alt-background);
     }
 
     .canvas-node {
@@ -20007,7 +20007,7 @@ html[saved-theme="dark"] {
     .canvas-sidebar {
       background-color: var(--background-secondary, rgb(29, 29, 29));
       border-color: rgb(157, 157, 157);
-      box-shadow: var(--input-shadow, rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
+      box-shadow: var(--input-shadow);
     }
 
     .canvas-node-group {
@@ -20048,7 +20048,7 @@ html[saved-theme="dark"] {
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color, rgb(119, 142, 85));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       border-color: rgb(119, 142, 85);
       border-width: 0px;
       border-top-left-radius: 0px;
@@ -20061,7 +20061,7 @@ html[saved-theme="dark"] {
       background-color: var(--status-bar-background, rgb(29, 29, 29));
       color: var(--status-bar-text-color, rgb(157, 157, 157));
       font-family: "Noto Sans", sans-serif;
-      font-size: var(--status-bar-font-size, 12px);
+      font-size: var(--status-bar-font-size);
       text-align: start;
       border-color: rgb(157, 157, 157);
       border-style: solid;
@@ -20073,7 +20073,7 @@ html[saved-theme="dark"] {
       padding-top: 4px;
       padding-bottom: 4px;
       padding-left: 4px;
-      padding-right: var(--size-4-2, 8px);
+      padding-right: var(--size-4-2);
       opacity: 1;
     }
 
@@ -20141,7 +20141,7 @@ html[saved-theme="dark"] {
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color, rgb(119, 142, 85));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       border-color: rgb(119, 142, 85);
       border-width: 0px;
       border-top-left-radius: 0px;
@@ -20194,7 +20194,7 @@ html[saved-theme="dark"] {
     }
 
     .katex-display {
-      background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+      background-color: var(--background-modifier-hover);
       color: rgb(157, 157, 157);
       border-color: rgb(157, 157, 157);
       border-width: 0px;
@@ -20403,7 +20403,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: #778e55;
       --divider-color: #9d9d9d;
       --divider-color-hover: #778e55;
-      --divider-vertical-height: 100% - 40px;
       --flair-color: #9d9d9d;
       --font-interface: "??", "??", "??", "Noto Sans", sans-serif;
       --font-mermaid: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
@@ -20538,6 +20537,7 @@ html[saved-theme="dark"] {
       --blockquote-color: #707070;
       --bold-color: #778e55;
       --color-green: #91a86e;
+      --divider-vertical-height: 100% - 40px;
       --h1-color: #778e55;
       --h2-color: #e0c252;
       --h3-color: #849e5f;
@@ -20672,7 +20672,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -20793,6 +20792,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -20855,7 +20855,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -20976,6 +20975,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -21038,7 +21038,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -21159,6 +21158,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -21221,7 +21221,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -21342,6 +21341,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -21404,7 +21404,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -21525,6 +21524,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -21587,7 +21587,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -21708,6 +21707,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -21770,7 +21770,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -21891,6 +21890,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -21953,7 +21953,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -22074,6 +22073,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -22136,7 +22136,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -22257,6 +22256,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -22319,7 +22319,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -22440,6 +22439,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -22502,7 +22502,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -22623,6 +22622,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -22685,7 +22685,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -22806,6 +22805,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -22868,7 +22868,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -22989,6 +22988,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -23051,7 +23051,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -23172,6 +23171,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -23234,7 +23234,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -23355,6 +23354,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -23417,7 +23417,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -23538,6 +23537,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -23600,7 +23600,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -23721,6 +23720,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -23783,7 +23783,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -23904,6 +23903,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -23966,7 +23966,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -24087,6 +24086,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -24149,7 +24149,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -24270,6 +24269,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -24332,7 +24332,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -24453,6 +24452,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -24515,7 +24515,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -24636,6 +24635,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -24698,7 +24698,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -24819,6 +24818,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -24881,7 +24881,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -25002,6 +25001,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -25064,7 +25064,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -25185,6 +25184,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -25247,7 +25247,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -25368,6 +25367,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -25430,7 +25430,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -25551,6 +25550,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -25613,7 +25613,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -25734,6 +25733,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -25796,7 +25796,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -25917,6 +25916,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -25979,7 +25979,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -26100,6 +26099,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -26162,7 +26162,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -26283,6 +26282,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -26345,7 +26345,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -26466,6 +26465,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -26528,7 +26528,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -26649,6 +26648,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -26711,7 +26711,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -26832,6 +26831,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -26894,7 +26894,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -27015,6 +27014,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -27077,7 +27077,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -27198,6 +27197,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -27260,7 +27260,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -27381,6 +27380,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -27443,7 +27443,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -27564,6 +27563,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -27626,7 +27626,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -27747,6 +27746,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -27809,7 +27809,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -27930,6 +27929,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -27992,7 +27992,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -28113,6 +28112,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -28175,7 +28175,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -28296,6 +28295,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -28358,7 +28358,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -28479,6 +28478,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -28541,7 +28541,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -28662,6 +28661,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -28724,7 +28724,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -28845,6 +28844,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -28907,7 +28907,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -29028,6 +29027,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -29090,7 +29090,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -29211,6 +29210,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -29273,7 +29273,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -29394,6 +29393,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -29456,7 +29456,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -29577,6 +29576,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -29639,7 +29639,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -29760,6 +29759,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -29822,7 +29822,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -29943,6 +29942,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -30005,7 +30005,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -30126,6 +30125,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -30188,7 +30188,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -30309,6 +30308,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -30371,7 +30371,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -30492,6 +30491,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -30554,7 +30554,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -30675,6 +30674,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -30737,7 +30737,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -30858,6 +30857,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -30920,7 +30920,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -31041,6 +31040,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -31103,7 +31103,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -31224,6 +31223,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -31286,7 +31286,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -31407,6 +31406,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -31469,7 +31469,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -31590,6 +31589,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -31652,7 +31652,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -31773,6 +31772,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -31835,7 +31835,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -31956,6 +31955,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -32018,7 +32018,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -32139,6 +32138,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -32201,7 +32201,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -32322,6 +32321,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -32384,7 +32384,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -32505,6 +32504,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -32567,7 +32567,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -32688,6 +32687,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;
@@ -32750,7 +32750,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --flair-color: #dadada;
       --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -32871,6 +32870,7 @@ html[saved-theme="dark"] {
       margin-left: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --color-green: #44cf6e;
+      --divider-vertical-height: 100%;
       --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
       --table-background: transparent;
       --tag-decoration: none;

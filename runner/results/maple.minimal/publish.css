@@ -42,10 +42,9 @@ body.theme-light {
     81.2175,
     81.2175
   ) !important;
-  --background-modifier-form-field: var(--color-base-00, #ffffff) !important;
+  --background-modifier-form-field: var(--color-base-00) !important;
   --background-modifier-form-field-hover: var(
-    --background-modifier-form-field,
-    #ffffff
+    --background-modifier-form-field
   ) !important;
   --background-modifier-hover: hsl(
     var(--base-accent-h),
@@ -66,19 +65,19 @@ body.theme-light {
   --background-primary: hsl(var(--background-primary-hsl)) !important;
   --background-primary-alt: hsl(var(--background-primary-alt-hsl)) !important;
   --background-secondary: hsl(var(--background-secondary-hsl)) !important;
-  --background-secondary-alt: var(--color-base-05, #fcfcfc) !important;
+  --background-secondary-alt: var(--color-base-05) !important;
   --bases-cards-background: var(
     --background-primary,
     hsl(0, 0%, 93%)
   ) !important;
-  --bases-cards-border-width: var(--border-width, 1px) !important;
-  --bases-cards-corner-shape: var(--corner-shape, round) !important;
+  --bases-cards-border-width: var(--border-width) !important;
+  --bases-cards-corner-shape: var(--corner-shape) !important;
   --bases-cards-cover-background: var(
     --background-primary-alt,
     hsl(35, 18%, 93.5%)
   ) !important;
-  --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
-  --bases-cards-radius: var(--radius-m, 8px) !important;
+  --bases-cards-font-size: var(--font-smaller) !important;
+  --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
   --bases-embed-border-color: var(
@@ -86,11 +85,11 @@ body.theme-light {
     hsla(35, 10%, 78%, 75%)
   ) !important;
   --bases-embed-border-radius: var(--embed-radius, 8px) !important;
-  --bases-group-heading-property-color: var(--text-muted, #5c5c5c) !important;
+  --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller, 13px) !important;
-  --bases-group-heading-property-weight: var(--font-normal, 400) !important;
-  --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
-  --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
+  --bases-group-heading-property-weight: var(--font-normal) !important;
+  --bases-group-heading-value-size: var(--font-smaller) !important;
+  --bases-group-heading-value-weight: var(--font-semibold) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
   --bases-table-border-color: var(
     --table-border-color,
@@ -111,10 +110,10 @@ body.theme-light {
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
-  --bases-table-column-border-width: var(--border-width, 1px) !important;
-  --bases-table-container-border-radius: var(--radius-s, 4px) !important;
-  --bases-table-container-border-width: var(--border-width, 1px) !important;
-  --bases-table-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-table-column-border-width: var(--border-width) !important;
+  --bases-table-container-border-radius: var(--radius-s) !important;
+  --bases-table-container-border-width: var(--border-width) !important;
+  --bases-table-font-size: var(--font-smaller) !important;
   --bases-table-group-background: var(
     --background-primary-alt,
     hsl(35, 18%, 93.5%)
@@ -127,18 +126,17 @@ body.theme-light {
     --background-modifier-hover,
     hsl(35, 20%, max(70%, 66% * 0.8), 25%)
   ) !important;
-  --bases-table-header-color: var(--text-muted, #5c5c5c) !important;
+  --bases-table-header-color: var(--text-muted) !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent var(--size-4-6),
     black var(--size-4-6)
   ) !important;
-  --bases-table-header-weight: var(--font-weight, 400) !important;
+  --bases-table-header-weight: var(--font-weight) !important;
   --bases-table-row-background-hover: var(
-    --table-row-background-hover,
-    transparent
+    --table-row-background-hover
   ) !important;
-  --bases-table-row-border-width: var(--border-width, 1px) !important;
+  --bases-table-row-border-width: var(--border-width) !important;
   --bases-table-summary-background: var(
     --background-primary,
     hsl(0, 0%, 93%)
@@ -168,9 +166,9 @@ body.theme-light {
   --blur-s: blur(var(--blur-radius-s)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
-  --button-corner-shape: var(--corner-shape, round) !important;
+  --button-corner-shape: var(--corner-shape) !important;
   --button-radius: var(--input-radius, 6px) !important;
-  --callout-blend-mode: var(--highlight-mix-blend-mode, darken);
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-bug: var(--color-red-rgb, 189.0825, 81.2175, 81.2175);
   --callout-default: var(--color-blue-rgb, 5.202, 132.8822, 168.198);
   --callout-error: var(--color-red-rgb, 189.0825, 81.2175, 81.2175);
@@ -179,7 +177,7 @@ body.theme-light {
   --callout-important: var(--color-cyan-rgb, 17.85, 124.95, 82.11);
   --callout-info: var(--color-blue-rgb, 5.202, 132.8822, 168.198);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
-    var(--size-4-6, 12px 12px 12px 24px);
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb, 199.41, 122.774, 35.19);
   --callout-radius: var(--radius-m, 8px);
   --callout-success: var(--color-green-rgb, 71.4, 142.8, 20.4);
@@ -189,18 +187,18 @@ body.theme-light {
   --callout-todo: var(--color-blue-rgb, 5.202, 132.8822, 168.198);
   --callout-warning: var(--color-orange-rgb, 199.41, 122.774, 35.19);
   --canvas-background: var(--background-primary, hsl(0, 0%, 93%)) !important;
-  --canvas-card-label-color: var(--text-faint, #ababab) !important;
+  --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color-1: var(--color-red-rgb, 189.0825, 81.2175, 81.2175) !important;
   --canvas-color-2: var(--color-orange-rgb, 199.41, 122.774, 35.19) !important;
   --canvas-color-3: var(--color-yellow-rgb, 177.48, 139.74, 26.52) !important;
   --canvas-color-4: var(--color-green-rgb, 71.4, 142.8, 20.4) !important;
   --canvas-color-5: var(--color-cyan-rgb, 17.85, 124.95, 82.11) !important;
   --canvas-color-6: var(--color-purple-rgb, 114.24, 97.92, 146.88) !important;
-  --canvas-controls-icon-size: var(--icon-s, 16px) !important;
-  --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
-  --canvas-controls-radius: var(--radius-s, 4px) !important;
-  --canvas-dot-pattern: var(--color-base-30, #e0e0e0) !important;
-  --caret-color: var(--text-normal, #222222) !important;
+  --canvas-controls-icon-size: var(--icon-s) !important;
+  --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
+  --canvas-controls-radius: var(--radius-s) !important;
+  --canvas-dot-pattern: var(--color-base-30) !important;
+  --caret-color: var(--text-normal) !important;
   --checkbox-border-color: var(--text-faint, hsl(35, 20%, 78%)) !important;
   --checkbox-border-color-hover: var(
     --text-muted,
@@ -212,10 +210,10 @@ body.theme-light {
     hsl(32, 22.44%, 64.4%)
   ) !important;
   --checkbox-marker-color: var(--background-primary, #fafafa) !important;
-  --checkbox-radius: var(--radius-s, 4px) !important;
-  --checkbox-size: var(--font-text-size, 16px) !important;
-  --checklist-done-color: var(--text-muted, #5c5c5c) !important;
-  --clickable-icon-radius: var(--radius-s, 4px) !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
+  --checklist-done-color: var(--text-muted) !important;
+  --clickable-icon-radius: var(--radius-s) !important;
   --code-background: var(
     --setting-code-bg,
     var(--background-primary-alt)
@@ -228,7 +226,7 @@ body.theme-light {
     --background-modifier-hover,
     hsl(35, 20%, max(70%, 66% * 0.8), 25%)
   ) !important;
-  --code-comment: var(--text-faint, #ababab) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(
     --color-blue,
     rgba(5.202, 132.8822, 168.198, 1)
@@ -249,11 +247,11 @@ body.theme-light {
   ) !important;
   --code-punctuation: var(--color-base-60, #707070) !important;
   --code-radius: var(--radius-m, 8px) !important;
-  --code-size: var(--font-smaller, 0.875em) !important;
+  --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green, rgba(71.4, 142.8, 20.4, 1)) !important;
   --code-tag: var(--color-red, rgba(189.0825, 81.2175, 81.2175, 1)) !important;
   --code-value: var(--color-cyan, rgba(17.85, 124.95, 82.11, 1)) !important;
-  --collapse-icon-color: var(--text-faint, #ababab) !important;
+  --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(
     --text-accent,
     hsl(35, 22%, 56%)
@@ -280,9 +278,8 @@ body.theme-light {
     --interactive-accent,
     hsl(34, 22.22%, 60.2%)
   ) !important;
-  --divider-vertical-height: calc(100% - var(--header-height)) !important;
-  --dropdown-background: var(--interactive-normal, #ffffff) !important;
-  --dropdown-background-hover: var(--interactive-hover, #fafafa) !important;
+  --dropdown-background: var(--interactive-normal) !important;
+  --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
@@ -301,56 +298,20 @@ body.theme-light {
     --background-primary,
     hsl(0, 0%, 93%)
   ) !important;
-  --file-header-border: var(--border-width, 1px solid transparent) solid
-    transparent !important;
-  --file-header-font: var(
-    --font-interface,
-    "??",
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
+  --file-header-border: var(--border-width) solid transparent !important;
+  --file-header-font: var(--font-interface) !important;
   --file-header-font-size: var(--font-ui-small, 14px) !important;
-  --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
-  --file-margins-x: var(--size-4-8, 32px) !important;
-  --file-margins-y: var(--size-4-8, 32px) !important;
-  --flair-background: var(--interactive-normal, #ffffff) !important;
-  --flair-color: var(--text-normal, #222222) !important;
+  --file-margins: var(--file-margins-y) var(--file-margins-x) !important;
+  --file-margins-x: var(--size-4-8) !important;
+  --file-margins-y: var(--size-4-8) !important;
+  --flair-background: var(--interactive-normal) !important;
+  --flair-color: var(--text-normal) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default) !important;
-  --font-mermaid: var(
-    --font-text,
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
+  --font-mermaid: var(--font-text) !important;
   --font-monospace:
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default) !important;
@@ -359,32 +320,28 @@ body.theme-light {
     var(--font-text-theme), "Arial" !important;
   --font-text:
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
-  --font-weight: var(--font-normal, 400) !important;
+  --font-weight: var(--font-normal) !important;
   --footnote-divider-color: var(
     --metadata-divider-color,
     hsla(35, 10%, 78%, 75%)
   ) !important;
   --footnote-divider-color-active: var(
-    --metadata-divider-color-focus,
-    transparent
+    --metadata-divider-color-focus
   ) !important;
-  --footnote-divider-width: var(--border-width, 1px) !important;
-  --footnote-gap: var(--size-4-1, 4px) !important;
-  --footnote-id-color: var(--text-muted, #5c5c5c) !important;
-  --footnote-id-color-no-occurrences: var(--text-faint, #ababab) !important;
-  --footnote-input-background: var(
-    --metadata-input-background,
-    transparent
-  ) !important;
+  --footnote-divider-width: var(--border-width) !important;
+  --footnote-gap: var(--size-4-1) !important;
+  --footnote-id-color: var(--text-muted) !important;
+  --footnote-id-color-no-occurrences: var(--text-faint) !important;
+  --footnote-input-background: var(--metadata-input-background) !important;
   --footnote-input-background-active: var(
     --metadata-input-background-active,
     hsl(35, 20%, max(70%, 66% * 0.8), 25%)
   ) !important;
   --footnote-line-height: var(--line-height-normal, 1.8) !important;
-  --footnote-padding-block: var(--size-2-3, 6px) !important;
-  --footnote-padding-inline: var(--size-2-3, 6px) !important;
-  --footnote-radius: var(--radius-s, 4px) !important;
-  --footnote-size: var(--font-smaller, 0.875em) !important;
+  --footnote-padding-block: var(--size-2-3) !important;
+  --footnote-padding-inline: var(--size-2-3) !important;
+  --footnote-radius: var(--radius-s) !important;
+  --footnote-size: var(--font-smaller) !important;
   --graph-line: var(
     --color-base-35,
     var(--background-modifier-border-focus)
@@ -403,37 +360,37 @@ body.theme-light {
     --setting-graph-node-unresolved,
     var(--text-faint)
   ) !important;
-  --graph-text: var(--text-normal, #222222) !important;
+  --graph-text: var(--text-normal) !important;
   --h5-line-height: calc(var(--line-height-normal) * var(--h5-size)) !important;
   --h6-line-height: calc(var(--line-height-normal) * var(--h6-size)) !important;
-  --heading-formatting: var(--text-faint, #ababab) !important;
+  --heading-formatting: var(--text-faint) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --hr-color: var(
     --background-modifier-border,
     hsla(35, 10%, 78%, 75%)
   ) !important;
-  --icon-color: var(--text-muted, #5c5c5c) !important;
+  --icon-color: var(--text-muted) !important;
   --icon-color-active: var(--text-accent, hsl(35, 22%, 56%)) !important;
-  --icon-color-focused: var(--text-normal, #222222) !important;
-  --icon-color-hover: var(--text-muted, #5c5c5c) !important;
-  --icon-size: var(--icon-m, 18px) !important;
-  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: var(--text-muted) !important;
+  --icon-size: var(--icon-m) !important;
+  --icon-stroke: var(--icon-m-stroke-width) !important;
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12) !important;
   --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3) !important;
-  --indentation-guide-width: var(--border-width, 1px) !important;
-  --indentation-guide-width-active: var(--border-width, 1px) !important;
+  --indentation-guide-width: var(--border-width) !important;
+  --indentation-guide-width-active: var(--border-width) !important;
   --inline-title-line-height: var(--h1-line-height, 46.08px) !important;
   --inline-title-size: var(--h1-size, 25.6px) !important;
-  --inline-title-style: var(--h1-style, normal) !important;
-  --inline-title-variant: var(--h1-variant, normal) !important;
+  --inline-title-style: var(--h1-style) !important;
+  --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: var(--h1-weight, 750) !important;
-  --input-border-width: var(--border-width, 1px) !important;
-  --input-corner-shape: var(--corner-shape, round) !important;
-  --input-date-separator: var(--text-faint, #ababab) !important;
-  --input-font-weight: var(--font-normal, 400) !important;
-  --input-icon-inset: var(--size-4-1, 4px) !important;
-  --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
-  --input-placeholder-color: var(--text-faint, #ababab) !important;
+  --input-border-width: var(--border-width) !important;
+  --input-corner-shape: var(--corner-shape) !important;
+  --input-date-separator: var(--text-faint) !important;
+  --input-font-weight: var(--font-normal) !important;
+  --input-icon-inset: var(--size-4-1) !important;
+  --input-padding: var(--size-4-1) var(--size-4-2) !important;
+  --input-placeholder-color: var(--text-faint) !important;
   --interactive-accent: var(
     --color-accent-1,
     hsl(34, 22.22%, 60.2%)
@@ -443,8 +400,8 @@ body.theme-light {
     hsl(32, 22.44%, 64.4%)
   ) !important;
   --interactive-accent-hsl: var(--color-accent-hsl, 35, 22%, 56%) !important;
-  --interactive-hover: var(--color-base-10, #fafafa) !important;
-  --interactive-normal: var(--color-base-00, #ffffff) !important;
+  --interactive-hover: var(--color-base-10) !important;
+  --interactive-normal: var(--color-base-00) !important;
   --link-color: rgba(var(--link-color-rgb), var(--color-opacity)) !important;
   --link-color-hover: var(
     --link-color,
@@ -466,29 +423,24 @@ body.theme-light {
     --link-unresolved-color,
     rgba(17.85, 124.95, 82.11, 0.85)
   ) !important;
-  --link-weight: var(--font-weight, 400) !important;
+  --link-weight: var(--font-weight) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-marker-color: var(--text-faint, hsl(35, 22%, 56%)) !important;
   --list-marker-color-collapsed: var(
     --text-accent,
     hsl(35, 22%, 56%)
   ) !important;
-  --list-marker-color-hover: var(--text-muted, #5c5c5c) !important;
+  --list-marker-color-hover: var(--text-muted) !important;
   --menu-background: var(--background-secondary, hsl(0, 0%, 93%)) !important;
   --menu-border-color: var(
     --background-modifier-border,
     hsla(35, 10%, 78%, 75%)
   ) !important;
-  --menu-border-width: var(--border-width, 1px) !important;
-  --menu-corner-shape: var(--corner-shape, round) !important;
+  --menu-border-width: var(--border-width) !important;
+  --menu-corner-shape: var(--corner-shape) !important;
   --menu-padding: var(--size-2-3, 4px) !important;
-  --menu-radius: var(--radius-m, 8px) !important;
-  --menu-shadow: var(
-    --shadow-s,
-    0px 1px 2px rgba(0, 0, 0, 0.028),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07)
-  ) !important;
+  --menu-radius: var(--radius-m) !important;
+  --menu-shadow: var(--shadow-s) !important;
   --metadata-border-color: var(
     --background-modifier-border,
     hsla(35, 10%, 78%, 75%)
@@ -501,56 +453,20 @@ body.theme-light {
     --background-modifier-hover,
     hsl(35, 20%, max(70%, 66% * 0.8), 25%)
   ) !important;
-  --metadata-input-font: var(
-    --font-interface,
-    "??",
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
-  --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-input-font: var(--font-interface) !important;
+  --metadata-input-font-size: var(--font-smaller) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
-  --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
-  --metadata-input-text-color: var(--text-normal, #222222) !important;
+  --metadata-input-padding: var(--size-4-1) var(--size-4-2) !important;
+  --metadata-input-text-color: var(--text-normal) !important;
   --metadata-label-background-active: var(
     --background-modifier-hover,
     hsl(35, 20%, max(70%, 66% * 0.8), 25%)
   ) !important;
-  --metadata-label-font: var(
-    --font-interface,
-    "??",
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
-  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
-  --metadata-label-text-color: var(--text-muted, #5c5c5c) !important;
-  --metadata-label-text-color-hover: var(--text-muted, #5c5c5c) !important;
-  --metadata-padding: var(--size-4-2, 8px 0) 0 !important;
+  --metadata-label-font: var(--font-interface) !important;
+  --metadata-label-font-size: var(--font-smaller) !important;
+  --metadata-label-text-color: var(--text-muted) !important;
+  --metadata-label-text-color-hover: var(--text-muted) !important;
+  --metadata-padding: var(--size-4-2) 0 !important;
   --metadata-property-background-active: var(
     --background-modifier-hover,
     hsl(35, 20%, max(70%, 66% * 0.8), 25%)
@@ -559,9 +475,9 @@ body.theme-light {
     var(--background-modifier-border-focus) !important;
   --metadata-property-box-shadow-hover: 0 0 0 var(--border-width)
     var(--background-modifier-border-hover) !important;
-  --metadata-property-corner-shape: var(--corner-shape, round) !important;
-  --metadata-property-corner-shape-focus: var(--corner-shape, round) !important;
-  --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape: var(--corner-shape) !important;
+  --metadata-property-corner-shape-focus: var(--corner-shape) !important;
+  --metadata-property-corner-shape-hover: var(--corner-shape) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small, 14px) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small, 14px) !important;
   --modal-background: var(--background-primary, hsl(0, 0%, 93%)) !important;
@@ -569,16 +485,16 @@ body.theme-light {
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
-  --modal-border-width: var(--border-width, 1px) !important;
-  --modal-radius: var(--radius-l, 12px) !important;
-  --nav-collapse-icon-color: var(--collapse-icon-color, #ababab) !important;
-  --nav-collapse-icon-color-collapsed: var(--text-faint, #ababab) !important;
-  --nav-heading-color: var(--text-normal, #222222) !important;
-  --nav-heading-color-collapsed: var(--text-faint, #ababab) !important;
-  --nav-heading-color-collapsed-hover: var(--text-muted, #5c5c5c) !important;
-  --nav-heading-color-hover: var(--text-normal, #222222) !important;
-  --nav-heading-weight: var(--font-medium, 500) !important;
-  --nav-heading-weight-hover: var(--font-medium, 500) !important;
+  --modal-border-width: var(--border-width) !important;
+  --modal-radius: var(--radius-l) !important;
+  --nav-collapse-icon-color: var(--collapse-icon-color) !important;
+  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color: var(--text-normal) !important;
+  --nav-heading-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
+  --nav-heading-color-hover: var(--text-normal) !important;
+  --nav-heading-weight: var(--font-medium) !important;
+  --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: var(--color-base-30, #e0e0e0) !important;
   --nav-indentation-guide-width: var(
     --indentation-guide-width,
@@ -596,30 +512,27 @@ body.theme-light {
     --background-modifier-hover,
     hsl(35, 20%, max(70%, 66% * 0.8), 25%)
   ) !important;
-  --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
-  --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
-  --nav-item-color: var(--text-muted, #5c5c5c) !important;
-  --nav-item-color-active: var(--text-normal, #222222) !important;
+  --nav-item-children-margin-start: var(--size-4-3) !important;
+  --nav-item-children-padding-start: var(--size-2-2) !important;
+  --nav-item-color: var(--text-muted) !important;
+  --nav-item-color-active: var(--text-normal) !important;
   --nav-item-color-highlighted: var(
     --text-accent,
     hsl(35, 22%, 56%)
   ) !important;
-  --nav-item-color-hover: var(--text-normal, #222222) !important;
-  --nav-item-color-selected: var(--text-normal, #222222) !important;
-  --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
+  --nav-item-color-hover: var(--text-normal) !important;
+  --nav-item-color-selected: var(--text-normal) !important;
+  --nav-item-margin-bottom: var(--size-2-1) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
-    var(--size-4-6, 4px 8px 4px 24px) !important;
-  --nav-item-parent-padding: var(
-    --nav-item-padding,
-    4px 8px 4px 24px
-  ) !important;
-  --nav-item-radius: var(--radius-s, 4px) !important;
+    var(--size-4-6) !important;
+  --nav-item-parent-padding: var(--nav-item-padding) !important;
+  --nav-item-radius: var(--radius-s) !important;
   --nav-item-size: calc(var(--size-4-4) * 0.9) !important;
-  --nav-tag-color: var(--text-faint, #ababab) !important;
-  --nav-tag-color-active: var(--text-muted, #5c5c5c) !important;
-  --nav-tag-color-hover: var(--text-muted, #5c5c5c) !important;
-  --nav-tag-radius: var(--radius-s, 4px) !important;
-  --nav-tag-weight: var(--font-semibold, 600) !important;
+  --nav-tag-color: var(--text-faint) !important;
+  --nav-tag-color-active: var(--text-muted) !important;
+  --nav-tag-color-hover: var(--text-muted) !important;
+  --nav-tag-radius: var(--radius-s) !important;
+  --nav-tag-weight: var(--font-semibold) !important;
   --pdf-background: var(--background-primary, transparent) !important;
   --pdf-page-background: var(--background-primary, hsl(0, 0%, 93%)) !important;
   --pdf-shadow:
@@ -638,18 +551,19 @@ body.theme-light {
     --background-modifier-border-hover,
     hsla(35, 15.4%, 56%, 60%)
   ) !important;
-  --pill-border-width: var(--border-width, 1px) !important;
-  --pill-color: var(--text-muted, #5c5c5c) !important;
-  --pill-color-hover: var(--text-normal, #222222) !important;
-  --pill-color-remove: var(--text-faint, #ababab) !important;
+  --pill-border-width: var(--border-width) !important;
+  --pill-color: var(--text-muted) !important;
+  --pill-color-hover: var(--text-normal) !important;
+  --pill-color-remove: var(--text-faint) !important;
   --pill-color-remove-hover: var(--text-accent, hsl(35, 22%, 56%)) !important;
-  --popover-font-size: var(--font-text-size, 16px) !important;
+  --popover-font-size: var(--font-text-size) !important;
+  --preferred-text-scale: 1 !important;
   --prompt-background: var(--background-primary, hsl(0, 0%, 93%)) !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
-  --prompt-border-width: var(--border-width, 1px) !important;
+  --prompt-border-width: var(--border-width) !important;
   --raised-background: var(
     --blur-background,
     color-mix(in srgb, hsl(0, 0%, 93%) 65%, transparent)
@@ -658,30 +572,30 @@ body.theme-light {
         color-mix(in srgb, hsl(0, 0%, 93%) 65%, transparent)
       )
   ) !important;
-  --raised-blur: var(
-    --blur-s,
-    blur(6px) saturate(1.5) brightness(1.15)
-  ) !important;
+  --raised-blur: var(--blur-s) !important;
   --ribbon-background: var(--background-secondary, hsl(0, 0%, 93%)) !important;
   --ribbon-background-collapsed: var(
     --background-primary,
     hsl(0, 0%, 93%)
   ) !important;
-  --ribbon-padding: var(--size-4-2) var(--size-4-1)
-    var(--size-4-3, 8px 4px 12px) !important;
+  --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
+  --safe-area-inset-bottom: 0px !important;
+  --safe-area-inset-left: 0px !important;
+  --safe-area-inset-right: 0px !important;
+  --safe-area-inset-top: 0px !important;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
-  --scrollbar-radius: var(--radius-l, 12px) !important;
+  --scrollbar-radius: var(--radius-l) !important;
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
-  --search-clear-button-color: var(--text-muted, #5c5c5c) !important;
-  --search-icon-color: var(--text-muted, #5c5c5c) !important;
+  --search-clear-button-color: var(--text-muted) !important;
+  --search-icon-color: var(--text-muted) !important;
   --search-result-background: var(
     --background-primary,
     hsl(0, 0%, 93%)
   ) !important;
-  --setting-group-heading-color: var(--text-normal, #222222) !important;
+  --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium, 16px) !important;
-  --setting-group-heading-weight: var(--font-semibold, 600) !important;
+  --setting-group-heading-weight: var(--font-semibold) !important;
   --setting-items-background: var(
     --background-primary-alt,
     hsl(35, 18%, 93.5%)
@@ -690,19 +604,16 @@ body.theme-light {
     --background-modifier-border,
     hsla(35, 10%, 78%, 75%)
   ) !important;
-  --setting-items-padding: var(--size-4-5, 20px) !important;
-  --setting-items-radius: var(--radius-l, 12px) !important;
-  --shiki-active-tab-border-color: var(
-    --shiki-highlight-neutral,
-    #5c5c5c
-  ) !important;
+  --setting-items-padding: var(--size-4-5) !important;
+  --setting-items-radius: var(--radius-l) !important;
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
   --shiki-code-background: var(
     --code-background,
     hsl(35, 18%, 93.5%)
   ) !important;
   --shiki-code-block-border-radius: var(--code-radius, 8px) !important;
   --shiki-code-block-spacing: var(--p-spacing, 8px) !important;
-  --shiki-code-comment: var(--text-faint, #ababab) !important;
+  --shiki-code-comment: var(--text-faint) !important;
   --shiki-code-function: var(
     --color-green,
     rgba(71.4, 142.8, 20.4, 1)
@@ -711,13 +622,13 @@ body.theme-light {
     --color-orange,
     rgba(199.41, 122.774, 35.19, 1)
   ) !important;
-  --shiki-code-keyword: var(--color-pink, #d53984) !important;
-  --shiki-code-normal: var(--text-muted, #5c5c5c) !important;
+  --shiki-code-keyword: var(--color-pink) !important;
+  --shiki-code-normal: var(--text-muted) !important;
   --shiki-code-property: var(
     --color-cyan,
     rgba(17.85, 124.95, 82.11, 1)
   ) !important;
-  --shiki-code-punctuation: var(--text-muted, #5c5c5c) !important;
+  --shiki-code-punctuation: var(--text-muted) !important;
   --shiki-code-string: var(
     --color-yellow,
     rgba(177.48, 139.74, 26.52, 1)
@@ -730,25 +641,22 @@ body.theme-light {
     --background-modifier-border,
     hsla(35, 10%, 78%, 75%)
   ) !important;
-  --shiki-gutter-border-width: var(--border-width, 1px) !important;
-  --shiki-gutter-text-color: var(--text-faint, #ababab) !important;
-  --shiki-gutter-text-color-highlight: var(
-    --shiki-code-normal,
-    #5c5c5c
-  ) !important;
+  --shiki-gutter-border-width: var(--border-width) !important;
+  --shiki-gutter-text-color: var(--text-faint) !important;
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
   --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
   --shiki-highlight-green-background: rgba(
     var(--color-green-rgb),
     0.1
   ) !important;
-  --shiki-highlight-neutral: var(--shiki-code-normal, #5c5c5c) !important;
+  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
   --shiki-highlight-neutral-background: rgba(
     var(--mono-rgb-100),
     0.05
   ) !important;
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
-  --shiki-terminal-dots-color: var(--text-faint, #ababab) !important;
+  --shiki-terminal-dots-color: var(--text-faint) !important;
   --shiki-tooltip-background: var(
     --background-modifier-message,
     hsla(35, 22%, 56%, 1)
@@ -758,8 +666,8 @@ body.theme-light {
     --background-modifier-border-hover,
     hsla(35, 15.4%, 56%, 60%)
   ) !important;
-  --slider-thumb-border-width: var(--border-width, 1px) !important;
-  --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
+  --slider-thumb-border-width: var(--border-width) !important;
+  --slider-thumb-radius: var(--slider-thumb-height) !important;
   --slider-track-background: var(
     --accent-inactive,
     hsl(35, 20%, 78%)
@@ -775,7 +683,7 @@ body.theme-light {
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width, 1px) !important;
   --status-bar-font-size: var(--font-ui-smaller, 13px) !important;
   --status-bar-radius: var(--size-2-3, 6px) !important;
-  --status-bar-text-color: var(--text-muted, #5c5c5c) !important;
+  --status-bar-text-color: var(--text-muted) !important;
   --suggestion-background: var(
     --background-primary,
     hsl(0, 0%, 93%)
@@ -809,7 +717,7 @@ body.theme-light {
     --color-purple,
     rgba(114.24, 97.92, 146.88, 1)
   ) !important;
-  --sync-avatar-color-8: var(--color-pink, #d53984) !important;
+  --sync-avatar-color-8: var(--color-pink) !important;
   --tab-background-active: var(
     --background-primary,
     hsl(0, 0%, 93%)
@@ -833,17 +741,14 @@ body.theme-light {
     var(--background-secondary),
     transparent
   ) !important;
-  --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
+  --tab-switcher-preview-radius: var(--radius-xl) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
-  --tab-text-color: var(--text-faint, #ababab) !important;
-  --tab-text-color-active: var(--text-muted, #5c5c5c) !important;
-  --tab-text-color-focused: var(--text-muted, #5c5c5c) !important;
-  --tab-text-color-focused-active: var(--text-muted, #5c5c5c) !important;
-  --tab-text-color-focused-active-current: var(
-    --text-normal,
-    #222222
-  ) !important;
+  --tab-text-color: var(--text-faint) !important;
+  --tab-text-color-active: var(--text-muted) !important;
+  --tab-text-color-focused: var(--text-muted) !important;
+  --tab-text-color-focused-active: var(--text-muted) !important;
+  --tab-text-color-focused-active-current: var(--text-normal) !important;
   --tab-text-color-focused-highlighted: var(
     --text-accent,
     hsl(35, 22%, 56%)
@@ -857,17 +762,14 @@ body.theme-light {
     --background-modifier-border,
     hsla(35, 10%, 78%, 75%)
   ) !important;
-  --table-column-alt-background: var(
-    --table-background,
-    transparent
-  ) !important;
-  --table-column-first-border-width: var(--table-border-width, 1px) !important;
-  --table-column-last-border-width: var(--table-border-width, 1px) !important;
+  --table-column-alt-background: var(--table-background) !important;
+  --table-column-first-border-width: var(--table-border-width) !important;
+  --table-column-last-border-width: var(--table-border-width) !important;
   --table-drag-handle-background-active: var(
     --table-selection-border-color,
     hsl(35, 20%, 78%)
   ) !important;
-  --table-drag-handle-color: var(--text-faint, #ababab) !important;
+  --table-drag-handle-color: var(--text-faint) !important;
   --table-drag-handle-color-active: var(--text-on-accent, #fafafa) !important;
   --table-header-background: var(
     --background-primary-alt,
@@ -877,30 +779,24 @@ body.theme-light {
     --table-border-color,
     hsla(35, 10%, 78%, 75%)
   ) !important;
-  --table-header-border-width: var(--table-border-width, 1px) !important;
-  --table-header-color: var(--text-normal, #222222) !important;
-  --table-header-size: var(--table-text-size, 16px) !important;
+  --table-header-border-width: var(--table-border-width) !important;
+  --table-header-color: var(--text-normal) !important;
+  --table-header-size: var(--table-text-size) !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
   ) !important;
   --table-line-height: var(--line-height-tight, 1.5) !important;
-  --table-row-alt-background: var(--table-background, transparent) !important;
-  --table-row-alt-background-hover: var(
-    --table-background,
-    transparent
-  ) !important;
-  --table-row-background-hover: var(--table-background, transparent) !important;
-  --table-row-last-border-width: var(--table-border-width, 1px) !important;
+  --table-row-alt-background: var(--table-background) !important;
+  --table-row-alt-background-hover: var(--table-background) !important;
+  --table-row-background-hover: var(--table-background) !important;
+  --table-row-last-border-width: var(--table-border-width) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
-  --table-selection-blend-mode: var(
-    --highlight-mix-blend-mode,
-    darken
-  ) !important;
+  --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
   --table-selection-border-color: var(
     --accent-inactive,
     hsl(35, 20%, 78%)
   ) !important;
-  --table-text-size: var(--font-text-size, 16px) !important;
+  --table-text-size: var(--font-text-size) !important;
   --tag-background: hsla(var(--interactive-accent-hsl), 0.1) !important;
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2) !important;
   --tag-border-color: var(--setting-tag-outline, var(--text-accent)) !important;
@@ -910,20 +806,20 @@ body.theme-light {
   ) !important;
   --tag-color: var(--setting-tag-color, var(--text-accent)) !important;
   --tag-color-hover: var(--text-accent, hsl(35, 22%, 56%)) !important;
-  --tag-size: var(--font-smaller, 0.875em) !important;
+  --tag-size: var(--font-smaller) !important;
   --text-accent: var(--color-accent, hsl(35, 22%, 56%)) !important;
   --text-accent-hover: var(--color-accent-2, hsl(32, 22.44%, 64.4%)) !important;
   --text-error: var(
     --color-red,
     rgba(189.0825, 81.2175, 81.2175, 1)
   ) !important;
-  --text-faint: var(--color-base-50, #ababab) !important;
+  --text-faint: var(--color-base-50) !important;
   --text-highlight-bg: var(
     --setting-text-highlight-bg,
     rgba(var(--color-yellow-rgb), 0.3)
   ) !important;
-  --text-muted: var(--color-base-70, #5c5c5c) !important;
-  --text-normal: var(--color-base-100, #222222) !important;
+  --text-muted: var(--color-base-70) !important;
+  --text-normal: var(--color-base-100) !important;
   --text-selection: hsla(var(--color-accent-hsl), 0.25) !important;
   --text-success: var(--color-green, rgba(71.4, 142.8, 20.4, 1)) !important;
   --text-warning: var(
@@ -936,21 +832,21 @@ body.theme-light {
     --background-modifier-border,
     hsla(35, 10%, 78%, 75%)
   ) !important;
-  --titlebar-text-color: var(--text-muted, #5c5c5c) !important;
-  --titlebar-text-color-focused: var(--text-normal, #222222) !important;
-  --titlebar-text-weight: var(--font-bold, 700) !important;
-  --touch-radius-l: var(--touch-size-l, 52px) !important;
-  --touch-radius-m: var(--touch-size-m, 44px) !important;
-  --touch-radius-s: var(--touch-size-s, 40px) !important;
-  --touch-radius-xl: var(--touch-size-xl, 60px) !important;
-  --touch-radius-xs: var(--touch-size-xs, 30px) !important;
-  --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
-  --traffic-lights-offset-x: var(--header-height, 40px) !important;
-  --traffic-lights-offset-y: var(--header-height, 40px) !important;
-  --vault-profile-color: var(--text-normal, #222222) !important;
-  --vault-profile-color-hover: var(--vault-profile-color, #222222) !important;
+  --titlebar-text-color: var(--text-muted) !important;
+  --titlebar-text-color-focused: var(--text-normal) !important;
+  --titlebar-text-weight: var(--font-bold) !important;
+  --touch-radius-l: var(--touch-size-l) !important;
+  --touch-radius-m: var(--touch-size-m) !important;
+  --touch-radius-s: var(--touch-size-s) !important;
+  --touch-radius-xl: var(--touch-size-xl) !important;
+  --touch-radius-xs: var(--touch-size-xs) !important;
+  --touch-radius-xxs: var(--touch-size-xxs) !important;
+  --traffic-lights-offset-x: var(--header-height) !important;
+  --traffic-lights-offset-y: var(--header-height) !important;
+  --vault-profile-color: var(--text-normal) !important;
+  --vault-profile-color-hover: var(--vault-profile-color) !important;
   --vault-profile-font-size: var(--font-ui-small, 14px) !important;
-  --vault-profile-font-weight: var(--font-medium, 500) !important;
+  --vault-profile-font-weight: var(--font-medium) !important;
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
   --input-height: 30px !important;
   --input-border-width-focus: 2px !important;
@@ -1068,6 +964,7 @@ body.theme-light {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
+  --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: var(--size-4-1, 4px) !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
@@ -1300,7 +1197,6 @@ body.theme-light {
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
-  --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
@@ -1324,10 +1220,6 @@ body.theme-light {
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
   --ribbon-width: 44px !important;
-  --safe-area-inset-bottom: 0px !important;
-  --safe-area-inset-left: 0px !important;
-  --safe-area-inset-right: 0px !important;
-  --safe-area-inset-top: 0px !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-width: 12px !important;
@@ -1442,12 +1334,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --raised-shadow: var(
-    --shadow-xs,
-    0 1px 6px rgba(0, 0, 0, 0.015),
-    0 4px 24px rgba(0, 0, 0, 0.065),
-    0 0 transparent
-  ) !important;
+  --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
@@ -1678,10 +1565,9 @@ body.theme-dark {
     137.496,
     137.496
   ) !important;
-  --background-modifier-form-field: var(--color-base-25, #2a2a2a) !important;
+  --background-modifier-form-field: var(--color-base-25) !important;
   --background-modifier-form-field-hover: var(
-    --background-modifier-form-field,
-    #2a2a2a
+    --background-modifier-form-field
   ) !important;
   --background-modifier-hover: hsl(
     var(--base-accent-h),
@@ -1702,19 +1588,19 @@ body.theme-dark {
   --background-primary: hsl(var(--background-primary-hsl)) !important;
   --background-primary-alt: hsl(var(--background-primary-alt-hsl)) !important;
   --background-secondary: hsl(var(--background-secondary-hsl)) !important;
-  --background-secondary-alt: var(--color-base-30, #363636) !important;
+  --background-secondary-alt: var(--color-base-30) !important;
   --bases-cards-background: var(
     --background-primary,
     hsl(0, 0%, 7%)
   ) !important;
-  --bases-cards-border-width: var(--border-width, 1px) !important;
-  --bases-cards-corner-shape: var(--corner-shape, round) !important;
+  --bases-cards-border-width: var(--border-width) !important;
+  --bases-cards-corner-shape: var(--corner-shape) !important;
   --bases-cards-cover-background: var(
     --background-primary-alt,
     hsl(207, 8%, 13.5%)
   ) !important;
-  --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
-  --bases-cards-radius: var(--radius-m, 8px) !important;
+  --bases-cards-font-size: var(--font-smaller) !important;
+  --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
   --bases-embed-border-color: var(
@@ -1722,11 +1608,11 @@ body.theme-dark {
     hsla(207, 6%, 32%, 75%)
   ) !important;
   --bases-embed-border-radius: var(--embed-radius, 8px) !important;
-  --bases-group-heading-property-color: var(--text-muted, #b3b3b3) !important;
+  --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller, 13px) !important;
-  --bases-group-heading-property-weight: var(--font-normal, 400) !important;
-  --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
-  --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
+  --bases-group-heading-property-weight: var(--font-normal) !important;
+  --bases-group-heading-value-size: var(--font-smaller) !important;
+  --bases-group-heading-value-weight: var(--font-semibold) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
   --bases-table-border-color: var(
     --table-border-color,
@@ -1747,10 +1633,10 @@ body.theme-dark {
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
-  --bases-table-column-border-width: var(--border-width, 1px) !important;
-  --bases-table-container-border-radius: var(--radius-s, 4px) !important;
-  --bases-table-container-border-width: var(--border-width, 1px) !important;
-  --bases-table-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-table-column-border-width: var(--border-width) !important;
+  --bases-table-container-border-radius: var(--radius-s) !important;
+  --bases-table-container-border-width: var(--border-width) !important;
+  --bases-table-font-size: var(--font-smaller) !important;
   --bases-table-group-background: var(
     --background-primary-alt,
     hsl(207, 8%, 13.5%)
@@ -1763,18 +1649,17 @@ body.theme-dark {
     --background-modifier-hover,
     hsl(207, 24%, max(50%, 66% * 0.6), 20%)
   ) !important;
-  --bases-table-header-color: var(--text-muted, #b3b3b3) !important;
+  --bases-table-header-color: var(--text-muted) !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent var(--size-4-6),
     black var(--size-4-6)
   ) !important;
-  --bases-table-header-weight: var(--font-weight, 400) !important;
+  --bases-table-header-weight: var(--font-weight) !important;
   --bases-table-row-background-hover: var(
-    --table-row-background-hover,
-    transparent
+    --table-row-background-hover
   ) !important;
-  --bases-table-row-border-width: var(--border-width, 1px) !important;
+  --bases-table-row-border-width: var(--border-width) !important;
   --bases-table-summary-background: var(
     --background-primary,
     hsl(0, 0%, 7%)
@@ -1807,9 +1692,9 @@ body.theme-dark {
   --blur-s: blur(var(--blur-radius-s)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
-  --button-corner-shape: var(--corner-shape, round) !important;
+  --button-corner-shape: var(--corner-shape) !important;
   --button-radius: var(--input-radius, 6px) !important;
-  --callout-blend-mode: var(--highlight-mix-blend-mode, lighten);
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-bug: var(--color-red-rgb, 209.304, 137.496, 137.496);
   --callout-default: var(--color-blue-rgb, 126.48, 183.6, 240.72);
   --callout-error: var(--color-red-rgb, 209.304, 137.496, 137.496);
@@ -1818,7 +1703,7 @@ body.theme-dark {
   --callout-important: var(--color-cyan-rgb, 126.48, 199.92, 197.472);
   --callout-info: var(--color-blue-rgb, 126.48, 183.6, 240.72);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
-    var(--size-4-6, 12px 12px 12px 24px);
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb, 206.04, 162.52, 140.76);
   --callout-radius: var(--radius-m, 8px);
   --callout-success: var(--color-green-rgb, 147.288, 199.512, 155.992);
@@ -1828,7 +1713,7 @@ body.theme-dark {
   --callout-todo: var(--color-blue-rgb, 126.48, 183.6, 240.72);
   --callout-warning: var(--color-orange-rgb, 206.04, 162.52, 140.76);
   --canvas-background: var(--background-primary, hsl(0, 0%, 7%)) !important;
-  --canvas-card-label-color: var(--text-faint, #666666) !important;
+  --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color-1: var(--color-red-rgb, 209.304, 137.496, 137.496) !important;
   --canvas-color-2: var(--color-orange-rgb, 206.04, 162.52, 140.76) !important;
   --canvas-color-3: var(--color-yellow-rgb, 214.2, 181.56, 132.6) !important;
@@ -1845,10 +1730,10 @@ body.theme-dark {
     179.265,
     238.935
   ) !important;
-  --canvas-controls-icon-size: var(--icon-s, 16px) !important;
-  --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
-  --canvas-controls-radius: var(--radius-s, 4px) !important;
-  --canvas-dot-pattern: var(--color-base-30, #363636) !important;
+  --canvas-controls-icon-size: var(--icon-s) !important;
+  --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
+  --canvas-controls-radius: var(--radius-s) !important;
+  --canvas-dot-pattern: var(--color-base-30) !important;
   --caret-color: var(--text-normal, hsla(207, 50%, 94%, 75%)) !important;
   --checkbox-border-color: var(--text-faint, hsl(207, 12%, 32%)) !important;
   --checkbox-border-color-hover: var(
@@ -1861,10 +1746,10 @@ body.theme-dark {
     hsl(204, 24.48%, 50.83%)
   ) !important;
   --checkbox-marker-color: var(--background-primary, #eaeaea) !important;
-  --checkbox-radius: var(--radius-s, 4px) !important;
-  --checkbox-size: var(--font-text-size, 16px) !important;
-  --checklist-done-color: var(--text-muted, #b3b3b3) !important;
-  --clickable-icon-radius: var(--radius-s, 4px) !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
+  --checklist-done-color: var(--text-muted) !important;
+  --clickable-icon-radius: var(--radius-s) !important;
   --code-background: var(
     --setting-code-bg,
     var(--background-primary-alt)
@@ -1877,7 +1762,7 @@ body.theme-dark {
     --background-modifier-hover,
     hsl(207, 24%, max(50%, 66% * 0.6), 20%)
   ) !important;
-  --code-comment: var(--text-faint, #666666) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(
     --color-blue,
     rgba(126.48, 183.6, 240.72, 0.85)
@@ -1898,7 +1783,7 @@ body.theme-dark {
   ) !important;
   --code-punctuation: var(--color-base-60, #999999) !important;
   --code-radius: var(--radius-m, 8px) !important;
-  --code-size: var(--font-smaller, 0.875em) !important;
+  --code-size: var(--font-smaller) !important;
   --code-string: var(
     --color-green,
     rgba(147.288, 199.512, 155.992, 0.85)
@@ -1911,7 +1796,7 @@ body.theme-dark {
     --color-cyan,
     rgba(126.48, 199.92, 197.472, 0.85)
   ) !important;
-  --collapse-icon-color: var(--text-faint, #666666) !important;
+  --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(
     --text-accent,
     hsl(204, 24.48%, 50.83%)
@@ -1938,9 +1823,8 @@ body.theme-dark {
     --interactive-accent,
     hsl(207, 24%, 44.2%)
   ) !important;
-  --divider-vertical-height: calc(100% - var(--header-height)) !important;
-  --dropdown-background: var(--interactive-normal, #363636) !important;
-  --dropdown-background-hover: var(--interactive-hover, #3f3f3f) !important;
+  --dropdown-background: var(--interactive-normal) !important;
+  --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
@@ -1959,56 +1843,20 @@ body.theme-dark {
     --background-primary,
     hsl(0, 0%, 7%)
   ) !important;
-  --file-header-border: var(--border-width, 1px solid transparent) solid
-    transparent !important;
-  --file-header-font: var(
-    --font-interface,
-    "??",
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
+  --file-header-border: var(--border-width) solid transparent !important;
+  --file-header-font: var(--font-interface) !important;
   --file-header-font-size: var(--font-ui-small, 14px) !important;
-  --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
-  --file-margins-x: var(--size-4-8, 32px) !important;
-  --file-margins-y: var(--size-4-8, 32px) !important;
-  --flair-background: var(--interactive-normal, #363636) !important;
+  --file-margins: var(--file-margins-y) var(--file-margins-x) !important;
+  --file-margins-x: var(--size-4-8) !important;
+  --file-margins-y: var(--size-4-8) !important;
+  --flair-background: var(--interactive-normal) !important;
   --flair-color: var(--text-normal, hsla(207, 50%, 94%, 75%)) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default) !important;
-  --font-mermaid: var(
-    --font-text,
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
+  --font-mermaid: var(--font-text) !important;
   --font-monospace:
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default) !important;
@@ -2017,32 +1865,28 @@ body.theme-dark {
     var(--font-text-theme), "Arial" !important;
   --font-text:
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
-  --font-weight: var(--font-normal, 400) !important;
+  --font-weight: var(--font-normal) !important;
   --footnote-divider-color: var(
     --metadata-divider-color,
     hsla(207, 6%, 32%, 75%)
   ) !important;
   --footnote-divider-color-active: var(
-    --metadata-divider-color-focus,
-    transparent
+    --metadata-divider-color-focus
   ) !important;
-  --footnote-divider-width: var(--border-width, 1px) !important;
-  --footnote-gap: var(--size-4-1, 4px) !important;
-  --footnote-id-color: var(--text-muted, #b3b3b3) !important;
-  --footnote-id-color-no-occurrences: var(--text-faint, #666666) !important;
-  --footnote-input-background: var(
-    --metadata-input-background,
-    transparent
-  ) !important;
+  --footnote-divider-width: var(--border-width) !important;
+  --footnote-gap: var(--size-4-1) !important;
+  --footnote-id-color: var(--text-muted) !important;
+  --footnote-id-color-no-occurrences: var(--text-faint) !important;
+  --footnote-input-background: var(--metadata-input-background) !important;
   --footnote-input-background-active: var(
     --metadata-input-background-active,
     hsl(207, 24%, max(50%, 66% * 0.6), 20%)
   ) !important;
   --footnote-line-height: var(--line-height-normal, 1.8) !important;
-  --footnote-padding-block: var(--size-2-3, 6px) !important;
-  --footnote-padding-inline: var(--size-2-3, 6px) !important;
-  --footnote-radius: var(--radius-s, 4px) !important;
-  --footnote-size: var(--font-smaller, 0.875em) !important;
+  --footnote-padding-block: var(--size-2-3) !important;
+  --footnote-padding-inline: var(--size-2-3) !important;
+  --footnote-radius: var(--radius-s) !important;
+  --footnote-size: var(--font-smaller) !important;
   --graph-line: var(
     --color-base-35,
     var(--background-modifier-border-focus)
@@ -2067,42 +1911,42 @@ body.theme-dark {
   --graph-text: var(--text-normal, hsla(207, 50%, 94%, 75%)) !important;
   --h5-line-height: calc(var(--line-height-normal) * var(--h5-size)) !important;
   --h6-line-height: calc(var(--line-height-normal) * var(--h6-size)) !important;
-  --heading-formatting: var(--text-faint, #666666) !important;
+  --heading-formatting: var(--text-faint) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --hr-color: var(
     --background-modifier-border,
     hsla(207, 6%, 32%, 75%)
   ) !important;
-  --icon-color: var(--text-muted, #b3b3b3) !important;
+  --icon-color: var(--text-muted) !important;
   --icon-color-active: var(--text-accent, hsl(204, 24.48%, 50.83%)) !important;
   --icon-color-focused: var(--text-normal, hsla(207, 50%, 94%, 75%)) !important;
-  --icon-color-hover: var(--text-muted, #b3b3b3) !important;
-  --icon-size: var(--icon-m, 18px) !important;
-  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --icon-color-hover: var(--text-muted) !important;
+  --icon-size: var(--icon-m) !important;
+  --icon-stroke: var(--icon-m-stroke-width) !important;
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12) !important;
   --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3) !important;
-  --indentation-guide-width: var(--border-width, 1px) !important;
-  --indentation-guide-width-active: var(--border-width, 1px) !important;
+  --indentation-guide-width: var(--border-width) !important;
+  --indentation-guide-width-active: var(--border-width) !important;
   --inline-title-line-height: var(--h1-line-height, 46.08px) !important;
   --inline-title-size: var(--h1-size, 25.6px) !important;
-  --inline-title-style: var(--h1-style, normal) !important;
-  --inline-title-variant: var(--h1-variant, normal) !important;
+  --inline-title-style: var(--h1-style) !important;
+  --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: var(--h1-weight, 750) !important;
-  --input-border-width: var(--border-width, 1px) !important;
-  --input-corner-shape: var(--corner-shape, round) !important;
-  --input-date-separator: var(--text-faint, #666666) !important;
-  --input-font-weight: var(--font-normal, 400) !important;
-  --input-icon-inset: var(--size-4-1, 4px) !important;
-  --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
-  --input-placeholder-color: var(--text-faint, #666666) !important;
+  --input-border-width: var(--border-width) !important;
+  --input-corner-shape: var(--corner-shape) !important;
+  --input-date-separator: var(--text-faint) !important;
+  --input-font-weight: var(--font-normal) !important;
+  --input-icon-inset: var(--size-4-1) !important;
+  --input-padding: var(--size-4-1) var(--size-4-2) !important;
+  --input-placeholder-color: var(--text-faint) !important;
   --interactive-accent: var(--color-accent, hsl(207, 24%, 44.2%)) !important;
   --interactive-accent-hover: var(
     --color-accent-1,
     hsl(204, 24.48%, 50.83%)
   ) !important;
   --interactive-accent-hsl: var(--color-accent-hsl, 207, 24%, 44.2%) !important;
-  --interactive-hover: var(--color-base-35, #3f3f3f) !important;
-  --interactive-normal: var(--color-base-30, #363636) !important;
+  --interactive-hover: var(--color-base-35) !important;
+  --interactive-normal: var(--color-base-30) !important;
   --link-color: rgba(var(--link-color-rgb), var(--color-opacity)) !important;
   --link-color-hover: var(
     --link-color,
@@ -2124,29 +1968,24 @@ body.theme-dark {
     --link-unresolved-color,
     rgba(126.48, 199.92, 197.472, 0.7225)
   ) !important;
-  --link-weight: var(--font-weight, 400) !important;
+  --link-weight: var(--font-weight) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-marker-color: var(--text-faint, hsl(207, 24%, 52%)) !important;
   --list-marker-color-collapsed: var(
     --text-accent,
     hsl(204, 24.48%, 50.83%)
   ) !important;
-  --list-marker-color-hover: var(--text-muted, #b3b3b3) !important;
+  --list-marker-color-hover: var(--text-muted) !important;
   --menu-background: var(--background-secondary, hsl(0, 0%, 7%)) !important;
   --menu-border-color: var(
     --background-modifier-border,
     hsla(207, 6%, 32%, 75%)
   ) !important;
-  --menu-border-width: var(--border-width, 1px) !important;
-  --menu-corner-shape: var(--corner-shape, round) !important;
+  --menu-border-width: var(--border-width) !important;
+  --menu-corner-shape: var(--corner-shape) !important;
   --menu-padding: var(--size-2-3, 4px) !important;
-  --menu-radius: var(--radius-m, 8px) !important;
-  --menu-shadow: var(
-    --shadow-s,
-    0px 1px 2px rgba(0, 0, 0, 0.121),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3)
-  ) !important;
+  --menu-radius: var(--radius-m) !important;
+  --menu-shadow: var(--shadow-s) !important;
   --metadata-border-color: var(
     --background-modifier-border,
     hsla(207, 6%, 32%, 75%)
@@ -2159,28 +1998,10 @@ body.theme-dark {
     --background-modifier-hover,
     hsl(207, 24%, max(50%, 66% * 0.6), 20%)
   ) !important;
-  --metadata-input-font: var(
-    --font-interface,
-    "??",
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
-  --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-input-font: var(--font-interface) !important;
+  --metadata-input-font-size: var(--font-smaller) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
-  --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --metadata-input-padding: var(--size-4-1) var(--size-4-2) !important;
   --metadata-input-text-color: var(
     --text-normal,
     hsla(207, 50%, 94%, 75%)
@@ -2189,29 +2010,11 @@ body.theme-dark {
     --background-modifier-hover,
     hsl(207, 24%, max(50%, 66% * 0.6), 20%)
   ) !important;
-  --metadata-label-font: var(
-    --font-interface,
-    "??",
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
-  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
-  --metadata-label-text-color: var(--text-muted, #b3b3b3) !important;
-  --metadata-label-text-color-hover: var(--text-muted, #b3b3b3) !important;
-  --metadata-padding: var(--size-4-2, 8px 0) 0 !important;
+  --metadata-label-font: var(--font-interface) !important;
+  --metadata-label-font-size: var(--font-smaller) !important;
+  --metadata-label-text-color: var(--text-muted) !important;
+  --metadata-label-text-color-hover: var(--text-muted) !important;
+  --metadata-padding: var(--size-4-2) 0 !important;
   --metadata-property-background-active: var(
     --background-modifier-hover,
     hsl(207, 24%, max(50%, 66% * 0.6), 20%)
@@ -2220,9 +2023,9 @@ body.theme-dark {
     var(--background-modifier-border-focus) !important;
   --metadata-property-box-shadow-hover: 0 0 0 var(--border-width)
     var(--background-modifier-border-hover) !important;
-  --metadata-property-corner-shape: var(--corner-shape, round) !important;
-  --metadata-property-corner-shape-focus: var(--corner-shape, round) !important;
-  --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape: var(--corner-shape) !important;
+  --metadata-property-corner-shape-focus: var(--corner-shape) !important;
+  --metadata-property-corner-shape-hover: var(--corner-shape) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small, 14px) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small, 14px) !important;
   --modal-background: var(--background-primary, hsl(0, 0%, 7%)) !important;
@@ -2230,19 +2033,19 @@ body.theme-dark {
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
-  --modal-border-width: var(--border-width, 1px) !important;
-  --modal-radius: var(--radius-l, 12px) !important;
-  --nav-collapse-icon-color: var(--collapse-icon-color, #666666) !important;
-  --nav-collapse-icon-color-collapsed: var(--text-faint, #666666) !important;
+  --modal-border-width: var(--border-width) !important;
+  --modal-radius: var(--radius-l) !important;
+  --nav-collapse-icon-color: var(--collapse-icon-color) !important;
+  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
   --nav-heading-color: var(--text-normal, hsla(207, 50%, 94%, 75%)) !important;
-  --nav-heading-color-collapsed: var(--text-faint, #666666) !important;
-  --nav-heading-color-collapsed-hover: var(--text-muted, #b3b3b3) !important;
+  --nav-heading-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
   --nav-heading-color-hover: var(
     --text-normal,
     hsla(207, 50%, 94%, 75%)
   ) !important;
-  --nav-heading-weight: var(--font-medium, 500) !important;
-  --nav-heading-weight-hover: var(--font-medium, 500) !important;
+  --nav-heading-weight: var(--font-medium) !important;
+  --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: var(--color-base-30, #363636) !important;
   --nav-indentation-guide-width: var(
     --indentation-guide-width,
@@ -2260,9 +2063,9 @@ body.theme-dark {
     --background-modifier-hover,
     hsl(207, 24%, max(50%, 66% * 0.6), 20%)
   ) !important;
-  --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
-  --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
-  --nav-item-color: var(--text-muted, #b3b3b3) !important;
+  --nav-item-children-margin-start: var(--size-4-3) !important;
+  --nav-item-children-padding-start: var(--size-2-2) !important;
+  --nav-item-color: var(--text-muted) !important;
   --nav-item-color-active: var(
     --text-normal,
     hsla(207, 50%, 94%, 75%)
@@ -2279,20 +2082,17 @@ body.theme-dark {
     --text-normal,
     hsla(207, 50%, 94%, 75%)
   ) !important;
-  --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
+  --nav-item-margin-bottom: var(--size-2-1) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
-    var(--size-4-6, 4px 8px 4px 24px) !important;
-  --nav-item-parent-padding: var(
-    --nav-item-padding,
-    4px 8px 4px 24px
-  ) !important;
-  --nav-item-radius: var(--radius-s, 4px) !important;
+    var(--size-4-6) !important;
+  --nav-item-parent-padding: var(--nav-item-padding) !important;
+  --nav-item-radius: var(--radius-s) !important;
   --nav-item-size: calc(var(--size-4-4) * 0.9) !important;
-  --nav-tag-color: var(--text-faint, #666666) !important;
-  --nav-tag-color-active: var(--text-muted, #b3b3b3) !important;
-  --nav-tag-color-hover: var(--text-muted, #b3b3b3) !important;
-  --nav-tag-radius: var(--radius-s, 4px) !important;
-  --nav-tag-weight: var(--font-semibold, 600) !important;
+  --nav-tag-color: var(--text-faint) !important;
+  --nav-tag-color-active: var(--text-muted) !important;
+  --nav-tag-color-hover: var(--text-muted) !important;
+  --nav-tag-radius: var(--radius-s) !important;
+  --nav-tag-weight: var(--font-semibold) !important;
   --pdf-background: var(--background-primary, transparent) !important;
   --pdf-page-background: var(--background-primary, hsl(0, 0%, 7%)) !important;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
@@ -2309,43 +2109,40 @@ body.theme-dark {
     --background-modifier-border-hover,
     hsla(207, 16.8%, 52%, 60%)
   ) !important;
-  --pill-border-width: var(--border-width, 1px) !important;
-  --pill-color: var(--text-muted, #b3b3b3) !important;
+  --pill-border-width: var(--border-width) !important;
+  --pill-color: var(--text-muted) !important;
   --pill-color-hover: var(--text-normal, hsla(207, 50%, 94%, 75%)) !important;
-  --pill-color-remove: var(--text-faint, #666666) !important;
+  --pill-color-remove: var(--text-faint) !important;
   --pill-color-remove-hover: var(
     --text-accent,
     hsl(204, 24.48%, 50.83%)
   ) !important;
-  --popover-font-size: var(--font-text-size, 16px) !important;
+  --popover-font-size: var(--font-text-size) !important;
+  --preferred-text-scale: 1 !important;
   --prompt-background: var(--background-primary, hsl(0, 0%, 7%)) !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
-  --prompt-border-width: var(--border-width, 1px) !important;
-  --raised-background: var(
-    --blur-background,
-    color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent))
-  ) !important;
-  --raised-blur: var(
-    --blur-s,
-    blur(6px) saturate(1.5) brightness(1.15)
-  ) !important;
+  --prompt-border-width: var(--border-width) !important;
+  --raised-background: var(--blur-background) !important;
+  --raised-blur: var(--blur-s) !important;
   --ribbon-background: var(--background-secondary, hsl(0, 0%, 7%)) !important;
   --ribbon-background-collapsed: var(
     --background-primary,
     hsl(0, 0%, 7%)
   ) !important;
-  --ribbon-padding: var(--size-4-2) var(--size-4-1)
-    var(--size-4-3, 8px 4px 12px) !important;
+  --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
+  --safe-area-inset-bottom: 0px !important;
+  --safe-area-inset-left: 0px !important;
+  --safe-area-inset-right: 0px !important;
+  --safe-area-inset-top: 0px !important;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
-  --scrollbar-radius: var(--radius-l, 12px) !important;
+  --scrollbar-radius: var(--radius-l) !important;
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
-  --search-clear-button-color: var(--text-muted, #b3b3b3) !important;
-  --search-icon-color: var(--text-muted, #b3b3b3) !important;
+  --search-clear-button-color: var(--text-muted) !important;
+  --search-icon-color: var(--text-muted) !important;
   --search-result-background: var(
     --background-primary,
     hsl(0, 0%, 7%)
@@ -2355,7 +2152,7 @@ body.theme-dark {
     hsla(207, 50%, 94%, 75%)
   ) !important;
   --setting-group-heading-size: var(--font-ui-medium, 16px) !important;
-  --setting-group-heading-weight: var(--font-semibold, 600) !important;
+  --setting-group-heading-weight: var(--font-semibold) !important;
   --setting-items-background: var(
     --background-primary-alt,
     hsl(207, 8%, 13.5%)
@@ -2364,19 +2161,16 @@ body.theme-dark {
     --background-modifier-border,
     hsla(207, 6%, 32%, 75%)
   ) !important;
-  --setting-items-padding: var(--size-4-5, 20px) !important;
-  --setting-items-radius: var(--radius-l, 12px) !important;
-  --shiki-active-tab-border-color: var(
-    --shiki-highlight-neutral,
-    #b3b3b3
-  ) !important;
+  --setting-items-padding: var(--size-4-5) !important;
+  --setting-items-radius: var(--radius-l) !important;
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
   --shiki-code-background: var(
     --code-background,
     hsl(207, 8%, 13.5%)
   ) !important;
   --shiki-code-block-border-radius: var(--code-radius, 8px) !important;
   --shiki-code-block-spacing: var(--p-spacing, 8px) !important;
-  --shiki-code-comment: var(--text-faint, #666666) !important;
+  --shiki-code-comment: var(--text-faint) !important;
   --shiki-code-function: var(
     --color-green,
     rgba(147.288, 199.512, 155.992, 0.85)
@@ -2385,13 +2179,13 @@ body.theme-dark {
     --color-orange,
     rgba(206.04, 162.52, 140.76, 0.85)
   ) !important;
-  --shiki-code-keyword: var(--color-pink, #fa99cd) !important;
-  --shiki-code-normal: var(--text-muted, #b3b3b3) !important;
+  --shiki-code-keyword: var(--color-pink) !important;
+  --shiki-code-normal: var(--text-muted) !important;
   --shiki-code-property: var(
     --color-cyan,
     rgba(126.48, 199.92, 197.472, 0.85)
   ) !important;
-  --shiki-code-punctuation: var(--text-muted, #b3b3b3) !important;
+  --shiki-code-punctuation: var(--text-muted) !important;
   --shiki-code-string: var(
     --color-yellow,
     rgba(214.2, 181.56, 132.6, 0.85)
@@ -2404,25 +2198,22 @@ body.theme-dark {
     --background-modifier-border,
     hsla(207, 6%, 32%, 75%)
   ) !important;
-  --shiki-gutter-border-width: var(--border-width, 1px) !important;
-  --shiki-gutter-text-color: var(--text-faint, #666666) !important;
-  --shiki-gutter-text-color-highlight: var(
-    --shiki-code-normal,
-    #b3b3b3
-  ) !important;
+  --shiki-gutter-border-width: var(--border-width) !important;
+  --shiki-gutter-text-color: var(--text-faint) !important;
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
   --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
   --shiki-highlight-green-background: rgba(
     var(--color-green-rgb),
     0.1
   ) !important;
-  --shiki-highlight-neutral: var(--shiki-code-normal, #b3b3b3) !important;
+  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
   --shiki-highlight-neutral-background: rgba(
     var(--mono-rgb-100),
     0.05
   ) !important;
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
-  --shiki-terminal-dots-color: var(--text-faint, #666666) !important;
+  --shiki-terminal-dots-color: var(--text-faint) !important;
   --shiki-tooltip-background: var(
     --background-modifier-message,
     hsla(207, 24%, 52%, 0.85)
@@ -2432,8 +2223,8 @@ body.theme-dark {
     --background-modifier-border-hover,
     hsla(207, 16.8%, 52%, 60%)
   ) !important;
-  --slider-thumb-border-width: var(--border-width, 1px) !important;
-  --slider-thumb-radius: var(--slider-thumb-height, 18px) !important;
+  --slider-thumb-border-width: var(--border-width) !important;
+  --slider-thumb-radius: var(--slider-thumb-height) !important;
   --slider-track-background: var(
     --accent-inactive,
     hsl(207, 12%, 32%)
@@ -2449,7 +2240,7 @@ body.theme-dark {
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width, 1px) !important;
   --status-bar-font-size: var(--font-ui-smaller, 13px) !important;
   --status-bar-radius: var(--size-2-3, 6px) !important;
-  --status-bar-text-color: var(--text-muted, #b3b3b3) !important;
+  --status-bar-text-color: var(--text-muted) !important;
   --suggestion-background: var(--background-primary, hsl(0, 0%, 7%)) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(
@@ -2480,7 +2271,7 @@ body.theme-dark {
     --color-purple,
     rgba(186.2265, 179.265, 238.935, 0.85)
   ) !important;
-  --sync-avatar-color-8: var(--color-pink, #fa99cd) !important;
+  --sync-avatar-color-8: var(--color-pink) !important;
   --tab-background-active: var(--background-primary, hsl(0, 0%, 7%)) !important;
   --tab-container-background: var(--frame-bg, hsl(0, 0%, 7%)) !important;
   --tab-divider-color: var(--color-base-35, #3f3f3f) !important;
@@ -2501,13 +2292,13 @@ body.theme-dark {
     var(--background-secondary),
     transparent
   ) !important;
-  --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
+  --tab-switcher-preview-radius: var(--radius-xl) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
-  --tab-text-color: var(--text-faint, #666666) !important;
-  --tab-text-color-active: var(--text-muted, #b3b3b3) !important;
-  --tab-text-color-focused: var(--text-muted, #b3b3b3) !important;
-  --tab-text-color-focused-active: var(--text-muted, #b3b3b3) !important;
+  --tab-text-color: var(--text-faint) !important;
+  --tab-text-color-active: var(--text-muted) !important;
+  --tab-text-color-focused: var(--text-muted) !important;
+  --tab-text-color-focused-active: var(--text-muted) !important;
   --tab-text-color-focused-active-current: var(
     --text-normal,
     hsla(207, 50%, 94%, 75%)
@@ -2525,17 +2316,14 @@ body.theme-dark {
     --background-modifier-border,
     hsla(207, 6%, 32%, 75%)
   ) !important;
-  --table-column-alt-background: var(
-    --table-background,
-    transparent
-  ) !important;
-  --table-column-first-border-width: var(--table-border-width, 1px) !important;
-  --table-column-last-border-width: var(--table-border-width, 1px) !important;
+  --table-column-alt-background: var(--table-background) !important;
+  --table-column-first-border-width: var(--table-border-width) !important;
+  --table-column-last-border-width: var(--table-border-width) !important;
   --table-drag-handle-background-active: var(
     --table-selection-border-color,
     hsl(207, 12%, 32%)
   ) !important;
-  --table-drag-handle-color: var(--text-faint, #666666) !important;
+  --table-drag-handle-color: var(--text-faint) !important;
   --table-drag-handle-color-active: var(--text-on-accent, #eaeaea) !important;
   --table-header-background: var(
     --background-primary-alt,
@@ -2545,30 +2333,24 @@ body.theme-dark {
     --table-border-color,
     hsla(207, 6%, 32%, 75%)
   ) !important;
-  --table-header-border-width: var(--table-border-width, 1px) !important;
+  --table-header-border-width: var(--table-border-width) !important;
   --table-header-color: var(--text-normal, hsla(207, 50%, 94%, 75%)) !important;
-  --table-header-size: var(--table-text-size, 16px) !important;
+  --table-header-size: var(--table-text-size) !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
   ) !important;
   --table-line-height: var(--line-height-tight, 1.5) !important;
-  --table-row-alt-background: var(--table-background, transparent) !important;
-  --table-row-alt-background-hover: var(
-    --table-background,
-    transparent
-  ) !important;
-  --table-row-background-hover: var(--table-background, transparent) !important;
-  --table-row-last-border-width: var(--table-border-width, 1px) !important;
+  --table-row-alt-background: var(--table-background) !important;
+  --table-row-alt-background-hover: var(--table-background) !important;
+  --table-row-background-hover: var(--table-background) !important;
+  --table-row-last-border-width: var(--table-border-width) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
-  --table-selection-blend-mode: var(
-    --highlight-mix-blend-mode,
-    lighten
-  ) !important;
+  --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
   --table-selection-border-color: var(
     --accent-inactive,
     hsl(207, 12%, 32%)
   ) !important;
-  --table-text-size: var(--font-text-size, 16px) !important;
+  --table-text-size: var(--font-text-size) !important;
   --tag-background: hsla(var(--interactive-accent-hsl), 0.1) !important;
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2) !important;
   --tag-border-color: var(--setting-tag-outline, var(--text-accent)) !important;
@@ -2578,7 +2360,7 @@ body.theme-dark {
   ) !important;
   --tag-color: var(--setting-tag-color, var(--text-accent)) !important;
   --tag-color-hover: var(--text-accent, hsl(204, 24.48%, 50.83%)) !important;
-  --tag-size: var(--font-smaller, 0.875em) !important;
+  --tag-size: var(--font-smaller) !important;
   --text-accent: var(--color-accent-1, hsl(204, 24.48%, 50.83%)) !important;
   --text-accent-hover: var(
     --color-accent-2,
@@ -2588,12 +2370,12 @@ body.theme-dark {
     --color-red,
     rgba(209.304, 137.496, 137.496, 0.85)
   ) !important;
-  --text-faint: var(--color-base-50, #666666) !important;
+  --text-faint: var(--color-base-50) !important;
   --text-highlight-bg: var(
     --setting-text-highlight-bg,
     rgba(var(--color-yellow-rgb), 0.3)
   ) !important;
-  --text-muted: var(--color-base-70, #b3b3b3) !important;
+  --text-muted: var(--color-base-70) !important;
   --text-normal: hsla(var(--base-accent-h), 50%, 94%, 75%) !important;
   --text-selection: hsla(var(--color-accent-hsl), 0.25) !important;
   --text-success: var(
@@ -2610,20 +2392,20 @@ body.theme-dark {
     --background-modifier-border,
     hsla(207, 6%, 32%, 75%)
   ) !important;
-  --titlebar-text-color: var(--text-muted, #b3b3b3) !important;
+  --titlebar-text-color: var(--text-muted) !important;
   --titlebar-text-color-focused: var(
     --text-normal,
     hsla(207, 50%, 94%, 75%)
   ) !important;
-  --titlebar-text-weight: var(--font-bold, 700) !important;
-  --touch-radius-l: var(--touch-size-l, 52px) !important;
-  --touch-radius-m: var(--touch-size-m, 44px) !important;
-  --touch-radius-s: var(--touch-size-s, 40px) !important;
-  --touch-radius-xl: var(--touch-size-xl, 60px) !important;
-  --touch-radius-xs: var(--touch-size-xs, 30px) !important;
-  --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
-  --traffic-lights-offset-x: var(--header-height, 40px) !important;
-  --traffic-lights-offset-y: var(--header-height, 40px) !important;
+  --titlebar-text-weight: var(--font-bold) !important;
+  --touch-radius-l: var(--touch-size-l) !important;
+  --touch-radius-m: var(--touch-size-m) !important;
+  --touch-radius-s: var(--touch-size-s) !important;
+  --touch-radius-xl: var(--touch-size-xl) !important;
+  --touch-radius-xs: var(--touch-size-xs) !important;
+  --touch-radius-xxs: var(--touch-size-xxs) !important;
+  --traffic-lights-offset-x: var(--header-height) !important;
+  --traffic-lights-offset-y: var(--header-height) !important;
   --vault-profile-color: var(
     --text-normal,
     hsla(207, 50%, 94%, 75%)
@@ -2633,7 +2415,7 @@ body.theme-dark {
     hsla(207, 50%, 94%, 75%)
   ) !important;
   --vault-profile-font-size: var(--font-ui-small, 14px) !important;
-  --vault-profile-font-weight: var(--font-medium, 500) !important;
+  --vault-profile-font-weight: var(--font-medium) !important;
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
   --input-height: 30px !important;
   --input-border-width-focus: 2px !important;
@@ -2751,6 +2533,7 @@ body.theme-dark {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
+  --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: var(--size-4-1, 4px) !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
@@ -2983,7 +2766,6 @@ body.theme-dark {
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
-  --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
@@ -3001,10 +2783,6 @@ body.theme-dark {
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
   --ribbon-width: 44px !important;
-  --safe-area-inset-bottom: 0px !important;
-  --safe-area-inset-left: 0px !important;
-  --safe-area-inset-right: 0px !important;
-  --safe-area-inset-top: 0px !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-width: 12px !important;
@@ -3342,7 +3120,7 @@ body {
 body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(var(--link-external-color-rgb), 0.35);
   color: rgba(var(--link-external-color-rgb), var(--color-opacity));
-  cursor: var(--cursor-link, pointer);
+  cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -3360,14 +3138,14 @@ body body.theme-light .markdown-rendered a.external-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 400);
+  font-weight: var(--link-weight);
   outline: rgb(177, 140, 27) none 0px;
   text-decoration: underline rgb(177, 140, 27);
   text-decoration-color: var(
     --link-external-color-underline,
     rgb(177, 140, 27)
   );
-  text-decoration-line: var(--link-external-decoration, underline);
+  text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
   transition: background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
   transform: none;
@@ -3384,7 +3162,7 @@ body body.theme-light .markdown-rendered a.external-link {
 body body.theme-light .markdown-rendered a.internal-link {
   background-color: rgba(var(--link-color-rgb), 0.35);
   color: rgba(var(--link-color-rgb), var(--color-opacity));
-  cursor: var(--cursor-link, pointer);
+  cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -3402,11 +3180,11 @@ body body.theme-light .markdown-rendered a.internal-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 400);
+  font-weight: var(--link-weight);
   outline: rgb(18, 125, 82) none 0px;
   text-decoration: underline rgb(18, 125, 82);
   text-decoration-color: var(--link-color-underline, rgb(18, 125, 82));
-  text-decoration-line: var(--link-decoration, underline);
+  text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
   transition: background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
   transform: none;
@@ -3423,7 +3201,7 @@ body body.theme-light .markdown-rendered a.internal-link {
 body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-unresolved-color, rgba(18, 125, 82, 0.85));
-  cursor: var(--cursor-link, pointer);
+  cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -3441,15 +3219,15 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 400);
+  font-weight: var(--link-weight);
   outline: rgba(18, 125, 82, 0.85) none 0px;
   text-decoration: underline rgba(18, 125, 82, 0.85);
   text-decoration-color: var(
     --link-unresolved-decoration-color,
     rgba(18, 125, 82, 0.85)
   );
-  text-decoration-line: var(--link-decoration, underline);
-  text-decoration-style: var(--link-unresolved-decoration-style, solid);
+  text-decoration-line: var(--link-decoration);
+  text-decoration-style: var(--link-unresolved-decoration-style);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -3477,7 +3255,7 @@ body body.theme-light .markdown-rendered a.internal-link:hover {
 }
 body body.theme-light .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--text-muted, rgb(92, 92, 92));
+  color: var(--text-muted);
   cursor: auto;
   filter: none;
   backdrop-filter: none;
@@ -3516,7 +3294,7 @@ body body.theme-light .markdown-rendered p {
 }
 body body.theme-light strong {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--bold-color, rgb(34, 34, 34));
+  color: var(--bold-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3542,7 +3320,7 @@ body body.theme-light strong {
 }
 body body.theme-light b {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--bold-color, rgb(34, 34, 34));
+  color: var(--bold-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3568,7 +3346,7 @@ body body.theme-light b {
 }
 body body.theme-light em {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--italic-color, rgb(34, 34, 34));
+  color: var(--italic-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3594,7 +3372,7 @@ body body.theme-light em {
 }
 body body.theme-light i {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--italic-color, rgb(34, 34, 34));
+  color: var(--italic-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3694,7 +3472,7 @@ body body.theme-light s {
 }
 body body.theme-light strong > em {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--italic-color, rgb(34, 34, 34));
+  color: var(--italic-color);
   cursor: grab;
   font-family: var(--setting-text-italic-font, inherit);
   font-weight: 600;
@@ -3712,7 +3490,7 @@ body body.theme-light strong > em {
   animation-play-state: running;
 }
 body body.theme-light .markdown-rendered mark {
-  background-color: var(--text-highlight-bg, rgba(255, 208, 0, 0.4));
+  background-color: var(--text-highlight-bg);
   color: var(--setting-text-highlight-color, rgb(34, 34, 34));
   cursor: grab;
   filter: none;
@@ -3853,8 +3631,8 @@ body body.theme-light div.multi-select-pill {
     "Segoe UI Symbol",
     sans-serif;
   font-size: 14px;
-  font-weight: var(--pill-weight, 400);
-  line-height: var(--line-height-tight, 14px);
+  font-weight: var(--pill-weight);
+  line-height: var(--line-height-tight);
   text-decoration: rgb(34, 34, 34);
   margin-inline-start: 0px;
   border: 1px solid rgb(167, 147, 118);
@@ -3876,8 +3654,8 @@ body body.theme-light .markdown-rendered ul > li {
   list-style-type: "​";
   list-style-position: outside;
   list-style-image: none;
-  padding-top: var(--list-spacing, 1.2px);
-  padding-bottom: var(--list-spacing, 1.2px);
+  padding-top: var(--list-spacing);
+  padding-bottom: var(--list-spacing);
   padding-left: 0px;
   padding-right: 0px;
   padding-block-end: 0px;
@@ -3911,8 +3689,8 @@ body body.theme-light .markdown-rendered ol > li {
   list-style-type: "​";
   list-style-position: outside;
   list-style-image: none;
-  padding-top: var(--list-spacing, 1.2px);
-  padding-bottom: var(--list-spacing, 1.2px);
+  padding-top: var(--list-spacing);
+  padding-bottom: var(--list-spacing);
   padding-left: 0px;
   padding-right: 0px;
   padding-block-end: 0px;
@@ -4039,7 +3817,7 @@ body
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  width: var(--checkbox-size, 16px);
+  width: var(--checkbox-size);
   transition: 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
   position: relative;
   top: auto;
@@ -4063,7 +3841,7 @@ body
 }
 body body.theme-light .markdown-rendered blockquote {
   background-color: var(--blockquote-background-color, rgb(241, 239, 235));
-  color: var(--blockquote-color, rgb(34, 34, 34));
+  color: var(--blockquote-color);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -4090,7 +3868,7 @@ body body.theme-light .markdown-rendered blockquote {
   letter-spacing: normal;
 }
 body body.theme-light .footnote-backref {
-  color: var(--text-faint, rgb(171, 171, 171));
+  color: var(--text-faint);
   text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
@@ -4104,7 +3882,7 @@ body body.theme-light .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: var(--text-normal, rgb(34, 34, 34));
+  color: var(--text-normal);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -4131,12 +3909,7 @@ body body.theme-light .search-results {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  box-shadow: var(
-    --shadow-l,
-    rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
-    rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
-    rgba(0, 0, 0, 0.1) 0px 15px 30px 0px
-  );
+  box-shadow: var(--shadow-l);
 }
 body body.theme-light .search-results > * {
   background-color: rgba(0, 0, 0, 0);
@@ -4212,22 +3985,7 @@ body body.theme-light div.search-results .suggestion-item.is-selected {
 }
 body body.theme-light .published-container .markdown-rendered h1 {
   color: var(--h-indicator-color, inherit);
-  font-family: var(
-    --h1-font,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
+  font-family: var(--h1-font);
   font-size: calc(var(--font-text-size) * 0.7);
   font-weight: var(--font-weight, 750);
   line-height: var(--h1-line-height, 46.08px);
@@ -4480,7 +4238,7 @@ body
   .outline-view
   .tree-item
   > .tree-item-self {
-  font-weight: var(--nav-item-weight, 400);
+  font-weight: var(--nav-item-weight);
 }
 body
   body.theme-light
@@ -4579,10 +4337,10 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
 }
 body body.theme-light .callout > .callout-title > .callout-title-inner {
   color: var(--callout-title-color, rgb(5, 133, 168));
-  font-weight: var(--font-weight, 600);
+  font-weight: var(--font-weight);
 }
 body body.theme-light .callout > .callout-content {
-  background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+  background-color: var(--callout-content-background);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5145,18 +4903,17 @@ body body.theme-light .markdown-rendered tbody {
 }
 body body.theme-light .markdown-rendered th {
   background-color: rgb(241, 239, 235);
-  color: var(--table-header-color, rgb(34, 34, 34));
-  font-weight: var(--table-header-weight, 600);
+  color: var(--table-header-color);
+  font-weight: var(--table-header-weight);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, middle);
   box-shadow: none;
   text-decoration: rgb(34, 34, 34);
   letter-spacing: normal;
-  border-left: var(--table-column-first-border-width, 1px) solid
+  border-left: var(--table-column-first-border-width) solid
     rgba(205, 200, 193, 0.75);
   border-right: 1px solid rgba(205, 200, 193, 0.75);
-  border-top: var(--table-header-border-width, 1px) solid
-    rgba(205, 200, 193, 0.75);
+  border-top: var(--table-header-border-width) solid rgba(205, 200, 193, 0.75);
   border-bottom: 1px solid rgba(205, 200, 193, 0.75);
   border-top-left-radius: 8px;
   border-top-right-radius: 0px;
@@ -5174,13 +4931,13 @@ body body.theme-light .markdown-rendered th {
 }
 body body.theme-light .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--table-text-color, rgb(34, 34, 34));
+  color: var(--table-text-color);
   font-weight: 400;
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, middle);
   box-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  border-left: var(--table-column-first-border-width, 1px) solid
+  border-left: var(--table-column-first-border-width) solid
     rgba(205, 200, 193, 0.75);
   border-right: 1px solid rgba(205, 200, 193, 0.75);
   border-top: 0px solid rgb(34, 34, 34);
@@ -5200,7 +4957,7 @@ body body.theme-light .markdown-rendered td {
   padding-inline-start: 1px;
 }
 body body.theme-light .markdown-rendered tr {
-  background-color: var(--table-header-background, rgba(0, 0, 0, 0));
+  background-color: var(--table-header-background);
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -5212,10 +4969,10 @@ body body.theme-light .markdown-rendered tr {
   border-end-end-radius: 0px;
 }
 body body.theme-light .markdown-rendered tbody tr:nth-child(even) {
-  background-color: var(--table-background, rgba(0, 0, 0, 0));
+  background-color: var(--table-background);
 }
 body body.theme-light .markdown-rendered tbody tr:nth-child(odd) {
-  background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+  background-color: var(--table-row-alt-background);
 }
 body body.theme-light .markdown-rendered img {
   border-radius: 8px;
@@ -5355,7 +5112,7 @@ body body.theme-light .markdown-embed {
 }
 body body.theme-light .file-embed {
   background-color: var(--background-primary-alt, rgb(241, 239, 235));
-  color: var(--text-muted, rgb(92, 92, 92));
+  color: var(--text-muted);
   border-radius: 8px;
   border: 2px dotted rgb(171, 171, 171);
   border-top-left-radius: 8px;
@@ -5366,8 +5123,8 @@ body body.theme-light .file-embed {
   padding: 8px;
 }
 body body.theme-light .metadata-container {
-  background-color: var(--metadata-background, rgba(0, 0, 0, 0));
-  color: var(--text-muted, rgb(92, 92, 92));
+  background-color: var(--metadata-background);
+  color: var(--text-muted);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -5417,7 +5174,7 @@ body body.theme-light .metadata-properties {
   padding: 0px;
 }
 body body.theme-light .metadata-container .metadata-property {
-  background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+  background-color: var(--metadata-property-background);
   color: rgb(92, 92, 92);
   font-family:
     ui-sans-serif,
@@ -5445,43 +5202,13 @@ body body.theme-light .metadata-container .metadata-property {
 }
 body body.theme-light .metadata-property-key {
   color: rgb(92, 92, 92);
-  font-family: var(
-    --metadata-label-font,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
+  font-family: var(--metadata-label-font);
   font-size: 16px;
   font-weight: 400;
 }
 body body.theme-light .metadata-property-value {
   color: rgb(92, 92, 92);
-  font-family: var(
-    --metadata-input-font,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
+  font-family: var(--metadata-input-font);
   font-size: 16px;
 }
 body body.theme-light progress {
@@ -5513,7 +5240,7 @@ body body.theme-light input[type="range"] {
 }
 body body.theme-light input[type="text"] {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--text-normal, rgb(92, 92, 92));
+  color: var(--text-normal);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -5603,7 +5330,7 @@ body body.theme-light kbd {
   box-shadow: 0 1px 1px var(--color-base-35);
   color: var(--code-normal, rgb(92, 92, 92));
   font-family: system, BlinkMacSystemFont, var(--font-monospace);
-  font-size: var(--code-size, 14px);
+  font-size: var(--code-size);
   border: 1px solid rgb(212, 212, 212);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -5898,7 +5625,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: var(--nav-item-color, rgb(92, 92, 92));
+  color: var(--nav-item-color);
   cursor: var(--cursor, pointer);
   font-family:
     ui-sans-serif,
@@ -5914,7 +5641,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 400);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(34, 34, 34);
 }
 body
@@ -5925,7 +5652,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: var(--nav-item-color, rgb(92, 92, 92));
+  color: var(--nav-item-color);
   cursor: var(--cursor, pointer);
   font-family:
     ui-sans-serif,
@@ -5941,13 +5668,13 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 400);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--icon-color, rgb(92, 92, 92));
-  cursor: var(--cursor, default);
+  color: var(--icon-color);
+  cursor: var(--cursor);
   border-color: rgb(92, 92, 92);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -5957,7 +5684,7 @@ body body.theme-light .clickable-icon {
 }
 body body.theme-light .site-footer {
   background-color: var(--status-bar-background, rgb(237, 237, 237));
-  color: var(--status-bar-text-color, rgb(92, 92, 92));
+  color: var(--status-bar-text-color);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -6048,8 +5775,8 @@ body body.theme-light .nav-files-container {
 }
 body body.theme-light .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--icon-color, rgb(92, 92, 92));
-  cursor: var(--cursor, default);
+  color: var(--icon-color);
+  cursor: var(--cursor);
   border-color: rgb(92, 92, 92);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -6072,7 +5799,7 @@ body body.theme-light .view-header-breadcrumb {
   border-bottom-right-radius: 4px;
 }
 body body.theme-light .view-header-breadcrumb-separator {
-  color: var(--text-faint, rgb(171, 171, 171));
+  color: var(--text-faint);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -6089,7 +5816,7 @@ body body.theme-light .view-header-breadcrumb-separator {
     sans-serif;
 }
 body body.theme-light .page-header .page-title {
-  color: var(--text-normal, rgb(34, 34, 34));
+  color: var(--text-normal);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -6120,7 +5847,7 @@ body body.theme-light .page-header .page-title {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light .math-block {
-  background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+  background-color: var(--background-modifier-hover);
   color: rgb(34, 34, 34);
   border-color: rgb(34, 34, 34);
   border-width: 0px;
@@ -6226,7 +5953,7 @@ body body.theme-light .search-highlight {
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(var(--link-external-color-rgb), 0.35);
   color: rgba(var(--link-external-color-rgb), var(--color-opacity));
-  cursor: var(--cursor-link, pointer);
+  cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -6244,14 +5971,14 @@ body body.theme-dark .markdown-rendered a.external-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 400);
+  font-weight: var(--link-weight);
   outline: rgba(214, 182, 133, 0.85) none 0px;
   text-decoration: underline rgba(214, 182, 133, 0.85);
   text-decoration-color: var(
     --link-external-color-underline,
     rgba(214, 182, 133, 0.85)
   );
-  text-decoration-line: var(--link-external-decoration, underline);
+  text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
   transition: background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
   transform: none;
@@ -6268,7 +5995,7 @@ body body.theme-dark .markdown-rendered a.external-link {
 body body.theme-dark .markdown-rendered a.internal-link {
   background-color: rgba(var(--link-color-rgb), 0.35);
   color: rgba(var(--link-color-rgb), var(--color-opacity));
-  cursor: var(--cursor-link, pointer);
+  cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -6286,11 +6013,11 @@ body body.theme-dark .markdown-rendered a.internal-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 400);
+  font-weight: var(--link-weight);
   outline: rgba(126, 200, 197, 0.85) none 0px;
   text-decoration: underline rgba(126, 200, 197, 0.85);
   text-decoration-color: var(--link-color-underline, rgba(126, 200, 197, 0.85));
-  text-decoration-line: var(--link-decoration, underline);
+  text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
   transition: background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
   transform: none;
@@ -6307,7 +6034,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
 body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-unresolved-color, rgba(126, 200, 197, 0.72));
-  cursor: var(--cursor-link, pointer);
+  cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -6325,15 +6052,15 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 400);
+  font-weight: var(--link-weight);
   outline: rgba(126, 200, 197, 0.72) none 0px;
   text-decoration: underline rgba(126, 200, 197, 0.72);
   text-decoration-color: var(
     --link-unresolved-decoration-color,
     rgba(126, 200, 197, 0.72)
   );
-  text-decoration-line: var(--link-decoration, underline);
-  text-decoration-style: var(--link-unresolved-decoration-style, solid);
+  text-decoration-line: var(--link-decoration);
+  text-decoration-style: var(--link-unresolved-decoration-style);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -6361,7 +6088,7 @@ body body.theme-dark .markdown-rendered a.internal-link:hover {
 }
 body body.theme-dark .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--text-muted, rgb(179, 179, 179));
+  color: var(--text-muted);
   cursor: auto;
   filter: none;
   backdrop-filter: none;
@@ -6596,7 +6323,7 @@ body body.theme-dark strong > em {
   animation-play-state: running;
 }
 body body.theme-dark .markdown-rendered mark {
-  background-color: var(--text-highlight-bg, rgba(255, 208, 0, 0.4));
+  background-color: var(--text-highlight-bg);
   color: var(--setting-text-highlight-color, rgba(232, 240, 247, 0.75));
   cursor: grab;
   filter: none;
@@ -6737,8 +6464,8 @@ body body.theme-dark div.multi-select-pill {
     "Segoe UI Symbol",
     sans-serif;
   font-size: 14px;
-  font-weight: var(--pill-weight, 400);
-  line-height: var(--line-height-tight, 14px);
+  font-weight: var(--pill-weight);
+  line-height: var(--line-height-tight);
   text-decoration: rgb(218, 218, 218);
   margin-inline-start: 0px;
   border: 1px solid rgb(99, 136, 160);
@@ -6760,8 +6487,8 @@ body body.theme-dark .markdown-rendered ul > li {
   list-style-type: "​";
   list-style-position: outside;
   list-style-image: none;
-  padding-top: var(--list-spacing, 1.2px);
-  padding-bottom: var(--list-spacing, 1.2px);
+  padding-top: var(--list-spacing);
+  padding-bottom: var(--list-spacing);
   padding-left: 0px;
   padding-right: 0px;
   padding-block-end: 0px;
@@ -6795,8 +6522,8 @@ body body.theme-dark .markdown-rendered ol > li {
   list-style-type: "​";
   list-style-position: outside;
   list-style-image: none;
-  padding-top: var(--list-spacing, 1.2px);
-  padding-bottom: var(--list-spacing, 1.2px);
+  padding-top: var(--list-spacing);
+  padding-bottom: var(--list-spacing);
   padding-left: 0px;
   padding-right: 0px;
   padding-block-end: 0px;
@@ -6923,7 +6650,7 @@ body
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  width: var(--checkbox-size, 16px);
+  width: var(--checkbox-size);
   transition: 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
   position: relative;
   top: auto;
@@ -6974,7 +6701,7 @@ body body.theme-dark .markdown-rendered blockquote {
   letter-spacing: normal;
 }
 body body.theme-dark .footnote-backref {
-  color: var(--text-faint, rgb(102, 102, 102));
+  color: var(--text-faint);
   text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
@@ -7015,12 +6742,7 @@ body body.theme-dark .search-results {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  box-shadow: var(
-    --shadow-l,
-    rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
-    rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
-    rgba(0, 0, 0, 0.2) 0px 30px 90px 0px
-  );
+  box-shadow: var(--shadow-l);
 }
 body body.theme-dark .search-results > * {
   background-color: rgba(0, 0, 0, 0);
@@ -7096,22 +6818,7 @@ body body.theme-dark div.search-results .suggestion-item.is-selected {
 }
 body body.theme-dark .published-container .markdown-rendered h1 {
   color: var(--h-indicator-color, inherit);
-  font-family: var(
-    --h1-font,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
+  font-family: var(--h1-font);
   font-size: calc(var(--font-text-size) * 0.7);
   font-weight: var(--font-weight, 750);
   line-height: var(--h1-line-height, 46.08px);
@@ -7364,7 +7071,7 @@ body
   .outline-view
   .tree-item
   > .tree-item-self {
-  font-weight: var(--nav-item-weight, 400);
+  font-weight: var(--nav-item-weight);
 }
 body
   body.theme-dark
@@ -7463,10 +7170,10 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
   color: var(--callout-title-color, rgb(126, 184, 241));
-  font-weight: var(--font-weight, 600);
+  font-weight: var(--font-weight);
 }
 body body.theme-dark .callout > .callout-content {
-  background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+  background-color: var(--callout-content-background);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -8030,16 +7737,16 @@ body body.theme-dark .markdown-rendered tbody {
 body body.theme-dark .markdown-rendered th {
   background-color: rgb(32, 35, 37);
   color: var(--table-header-color, rgba(232, 240, 247, 0.75));
-  font-weight: var(--table-header-weight, 600);
+  font-weight: var(--table-header-weight);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment, middle);
   box-shadow: none;
   text-decoration: rgb(218, 218, 218);
   letter-spacing: normal;
-  border-left: var(--table-column-first-border-width, 1px) solid
+  border-left: var(--table-column-first-border-width) solid
     rgba(77, 82, 86, 0.75);
   border-right: 1px solid rgba(77, 82, 86, 0.75);
-  border-top: var(--table-header-border-width, 1px) solid rgba(77, 82, 86, 0.75);
+  border-top: var(--table-header-border-width) solid rgba(77, 82, 86, 0.75);
   border-bottom: 1px solid rgba(77, 82, 86, 0.75);
   border-top-left-radius: 8px;
   border-top-right-radius: 0px;
@@ -8063,7 +7770,7 @@ body body.theme-dark .markdown-rendered td {
   vertical-align: var(--table-cell-vertical-alignment, middle);
   box-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  border-left: var(--table-column-first-border-width, 1px) solid
+  border-left: var(--table-column-first-border-width) solid
     rgba(77, 82, 86, 0.75);
   border-right: 1px solid rgba(77, 82, 86, 0.75);
   border-top: 0px solid rgba(232, 240, 247, 0.75);
@@ -8083,7 +7790,7 @@ body body.theme-dark .markdown-rendered td {
   padding-inline-start: 1px;
 }
 body body.theme-dark .markdown-rendered tr {
-  background-color: var(--table-header-background, rgba(0, 0, 0, 0));
+  background-color: var(--table-header-background);
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -8095,10 +7802,10 @@ body body.theme-dark .markdown-rendered tr {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(even) {
-  background-color: var(--table-background, rgba(0, 0, 0, 0));
+  background-color: var(--table-background);
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(odd) {
-  background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+  background-color: var(--table-row-alt-background);
 }
 body body.theme-dark .markdown-rendered img {
   border-radius: 8px;
@@ -8238,7 +7945,7 @@ body body.theme-dark .markdown-embed {
 }
 body body.theme-dark .file-embed {
   background-color: var(--background-primary-alt, rgb(32, 35, 37));
-  color: var(--text-muted, rgb(179, 179, 179));
+  color: var(--text-muted);
   border-radius: 8px;
   border: 2px dotted rgb(102, 102, 102);
   border-top-left-radius: 8px;
@@ -8249,8 +7956,8 @@ body body.theme-dark .file-embed {
   padding: 8px;
 }
 body body.theme-dark .metadata-container {
-  background-color: var(--metadata-background, rgba(0, 0, 0, 0));
-  color: var(--text-muted, rgb(179, 179, 179));
+  background-color: var(--metadata-background);
+  color: var(--text-muted);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -8300,7 +8007,7 @@ body body.theme-dark .metadata-properties {
   padding: 0px;
 }
 body body.theme-dark .metadata-container .metadata-property {
-  background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+  background-color: var(--metadata-property-background);
   color: rgb(179, 179, 179);
   font-family:
     ui-sans-serif,
@@ -8328,43 +8035,13 @@ body body.theme-dark .metadata-container .metadata-property {
 }
 body body.theme-dark .metadata-property-key {
   color: rgb(179, 179, 179);
-  font-family: var(
-    --metadata-label-font,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
+  font-family: var(--metadata-label-font);
   font-size: 16px;
   font-weight: 400;
 }
 body body.theme-dark .metadata-property-value {
   color: rgb(179, 179, 179);
-  font-family: var(
-    --metadata-input-font,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
+  font-family: var(--metadata-input-font);
   font-size: 16px;
 }
 body body.theme-dark progress {
@@ -8396,7 +8073,7 @@ body body.theme-dark input[type="range"] {
 }
 body body.theme-dark input[type="text"] {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--text-normal, rgb(179, 179, 179));
+  color: var(--text-normal);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -8486,7 +8163,7 @@ body body.theme-dark kbd {
   box-shadow: 0 1px 1px var(--color-base-35);
   color: var(--code-normal, rgb(179, 179, 179));
   font-family: system, BlinkMacSystemFont, var(--font-monospace);
-  font-size: var(--code-size, 14px);
+  font-size: var(--code-size);
   border: 1px solid rgb(63, 63, 63);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -8781,7 +8458,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: var(--nav-item-color, rgb(179, 179, 179));
+  color: var(--nav-item-color);
   cursor: var(--cursor, pointer);
   font-family:
     ui-sans-serif,
@@ -8797,7 +8474,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 400);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(218, 218, 218);
 }
 body
@@ -8808,7 +8485,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: var(--nav-item-color, rgb(179, 179, 179));
+  color: var(--nav-item-color);
   cursor: var(--cursor, pointer);
   font-family:
     ui-sans-serif,
@@ -8824,13 +8501,13 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 400);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--icon-color, rgb(179, 179, 179));
-  cursor: var(--cursor, default);
+  color: var(--icon-color);
+  cursor: var(--cursor);
   border-color: rgb(179, 179, 179);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -8840,7 +8517,7 @@ body body.theme-dark .clickable-icon {
 }
 body body.theme-dark .site-footer {
   background-color: var(--status-bar-background, rgb(18, 18, 18));
-  color: var(--status-bar-text-color, rgb(179, 179, 179));
+  color: var(--status-bar-text-color);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -8931,8 +8608,8 @@ body body.theme-dark .nav-files-container {
 }
 body body.theme-dark .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--icon-color, rgb(179, 179, 179));
-  cursor: var(--cursor, default);
+  color: var(--icon-color);
+  cursor: var(--cursor);
   border-color: rgb(179, 179, 179);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -8955,7 +8632,7 @@ body body.theme-dark .view-header-breadcrumb {
   border-bottom-right-radius: 4px;
 }
 body body.theme-dark .view-header-breadcrumb-separator {
-  color: var(--text-faint, rgb(102, 102, 102));
+  color: var(--text-faint);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -9003,7 +8680,7 @@ body body.theme-dark .page-header .page-title {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .math-block {
-  background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+  background-color: var(--background-modifier-hover);
   color: rgba(232, 240, 247, 0.75);
   border-color: rgba(232, 240, 247, 0.75);
   border-width: 0px;

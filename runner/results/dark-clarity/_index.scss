@@ -7,61 +7,61 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode, darken);
-  --callout-bug: var(--color-red-rgb, 233, 49, 71);
-  --callout-default: var(--color-blue-rgb, 8, 109, 221);
-  --callout-error: var(--color-red-rgb, 233, 49, 71);
-  --callout-example: var(--color-purple-rgb, 120, 82, 238);
-  --callout-fail: var(--color-red-rgb, 233, 49, 71);
-  --callout-important: var(--color-cyan-rgb, 0, 191, 188);
-  --callout-info: var(--color-blue-rgb, 8, 109, 221);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 12px 12px 12px 24px);
-  --callout-question: var(--color-orange-rgb, 236, 117, 0);
-  --callout-radius: var(--radius-s, 4px);
-  --callout-success: var(--color-green-rgb, 8, 185, 78);
-  --callout-summary: var(--color-cyan-rgb, 0, 191, 188);
-  --callout-tip: var(--color-cyan-rgb, 0, 191, 188);
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
+  --callout-bug: var(--color-red-rgb);
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb, 8, 109, 221);
-  --callout-warning: var(--color-orange-rgb, 236, 117, 0);
-  --checkbox-border-color: var(--text-faint, #ababab) !important;
-  --checkbox-border-color-hover: var(--text-muted, #5c5c5c) !important;
-  --checkbox-color: var(--interactive-accent, hsl(257, 88.88%, 70.95%)) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, hsl(255, 89.76%, 75.9%)) !important;
-  --checkbox-marker-color: var(--background-primary, #ffffff) !important;
-  --checkbox-radius: var(--radius-s, 4px) !important;
-  --checkbox-size: var(--font-text-size, 16px) !important;
-  --code-background: var(--background-primary-alt, #fafafa) !important;
-  --code-border-color: var(--background-modifier-border, #e0e0e0) !important;
-  --code-bracket-background: var(--background-modifier-hover, rgba(0, 0, 0, 0.067)) !important;
-  --code-comment: var(--text-faint, #ababab) !important;
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
+  --code-background: var(--background-primary-alt) !important;
+  --code-border-color: var(--background-modifier-border) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow, #000000) !important;
-  --code-important: var(--color-orange, #ec7500) !important;
+  --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink, #0033b3) !important;
   --code-normal: var(--text-normal, #080808) !important;
-  --code-operator: var(--color-red, #e93147) !important;
+  --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan, #871094) !important;
-  --code-punctuation: var(--text-muted, #5c5c5c) !important;
-  --code-radius: var(--radius-s, 4px) !important;
-  --code-size: var(--font-smaller, 0.875em) !important;
+  --code-punctuation: var(--text-muted) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green, #067d17) !important;
   --code-tag: var(--color-red, #0033b3) !important;
   --code-value: var(--color-purple, #1750eb) !important;
-  --collapse-icon-color: var(--text-faint, #ababab) !important;
+  --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent, #51b385) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, #5c5c5c) !important;
-  --graph-node-attachment: var(--color-yellow, #e0ac00) !important;
+  --graph-node: var(--text-muted) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent, #51b385) !important;
-  --graph-node-tag: var(--color-green, #08b94e) !important;
-  --graph-node-unresolved: var(--text-faint, #ababab) !important;
-  --graph-text: var(--text-normal, #222222) !important;
-  --icon-color: var(--text-muted, #5c5c5c) !important;
+  --graph-node-tag: var(--color-green) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
   --icon-color-active: var(--text-accent, #51b385) !important;
-  --icon-color-focused: var(--text-normal, #222222) !important;
-  --icon-color-hover: var(--text-muted, #5c5c5c) !important;
-  --icon-size: var(--icon-m, 18px) !important;
-  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: var(--text-muted) !important;
+  --icon-size: var(--icon-m) !important;
+  --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-content-background: transparent;
@@ -95,61 +95,61 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --callout-blend-mode: var(--highlight-mix-blend-mode, lighten);
-  --callout-bug: var(--color-red-rgb, 251, 70, 76);
-  --callout-default: var(--color-blue-rgb, 2, 122, 255);
-  --callout-error: var(--color-red-rgb, 251, 70, 76);
-  --callout-example: var(--color-purple-rgb, 168, 130, 255);
-  --callout-fail: var(--color-red-rgb, 251, 70, 76);
-  --callout-important: var(--color-cyan-rgb, 83, 223, 221);
-  --callout-info: var(--color-blue-rgb, 2, 122, 255);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 12px 12px 12px 24px);
-  --callout-question: var(--color-orange-rgb, 233, 151, 63);
-  --callout-radius: var(--radius-s, 4px);
-  --callout-success: var(--color-green-rgb, 68, 207, 110);
-  --callout-summary: var(--color-cyan-rgb, 83, 223, 221);
-  --callout-tip: var(--color-cyan-rgb, 83, 223, 221);
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
+  --callout-bug: var(--color-red-rgb);
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb, 2, 122, 255);
-  --callout-warning: var(--color-orange-rgb, 233, 151, 63);
-  --checkbox-border-color: var(--text-faint, #666666) !important;
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
+  --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted, #bbb) !important;
   --checkbox-color: var(--interactive-accent, #4c78cc) !important;
   --checkbox-color-hover: var(--interactive-accent-hover, #5082df) !important;
   --checkbox-marker-color: var(--background-primary, #161b22) !important;
-  --checkbox-radius: var(--radius-s, 4px) !important;
-  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt, #13161b) !important;
   --code-border-color: var(--background-modifier-border, #424958) !important;
-  --code-bracket-background: var(--background-modifier-hover, rgba(255, 255, 255, 0.067)) !important;
-  --code-comment: var(--text-faint, #666666) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow, #bcbec4) !important;
-  --code-important: var(--color-orange, #e9973f) !important;
+  --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink, #cf8e6d) !important;
   --code-normal: var(--text-normal, #dedede) !important;
-  --code-operator: var(--color-red, #fb464c) !important;
+  --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan, #bcbec4) !important;
   --code-punctuation: var(--text-muted, #bbb) !important;
-  --code-radius: var(--radius-s, 4px) !important;
-  --code-size: var(--font-smaller, 0.875em) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green, #72b67b) !important;
   --code-tag: var(--color-red, #c5bf6a) !important;
   --code-value: var(--color-purple, #4a88cf) !important;
-  --collapse-icon-color: var(--text-faint, #666666) !important;
+  --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent, #51b385) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted, #bbb) !important;
-  --graph-node-attachment: var(--color-yellow, #e0de71) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent, #51b385) !important;
-  --graph-node-tag: var(--color-green, #44cf6e) !important;
-  --graph-node-unresolved: var(--text-faint, #666666) !important;
+  --graph-node-tag: var(--color-green) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal, #dedede) !important;
   --icon-color: var(--text-muted, #bbb) !important;
   --icon-color-active: var(--text-accent, #51b385) !important;
   --icon-color-focused: var(--text-normal, #dedede) !important;
   --icon-color-hover: var(--text-muted, #bbb) !important;
-  --icon-size: var(--icon-m, 18px) !important;
-  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --icon-size: var(--icon-m) !important;
+  --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-content-background: transparent;
@@ -220,20 +220,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(255, 255, 255));
-    color: var(--text-normal, rgb(34, 34, 34));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(255, 255, 255));
+    background-color: var(--background-primary);
     color: rgb(34, 34, 34);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(246, 246, 246));
+    background-color: var(--background-secondary);
     color: rgb(34, 34, 34);
   }
 
@@ -241,12 +241,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(246, 246, 246));
+    background-color: var(--tab-container-background);
     color: rgb(34, 34, 34);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(246, 246, 246));
+    background-color: var(--tab-container-background);
     color: rgb(34, 34, 34);
     border-left: 0px rgb(224, 224, 224);
   }
@@ -259,16 +259,16 @@ body {
   footer a {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-external-color, rgb(81, 179, 133));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(81, 179, 133) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(81, 179, 133);
-    text-decoration-line: var(--link-external-decoration, underline);
+    text-decoration-line: var(--link-external-decoration);
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
     transform: none;
@@ -287,16 +287,16 @@ body {
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-color, rgb(81, 179, 133));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(81, 179, 133) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(81, 179, 133);
-    text-decoration-line: var(--link-decoration, underline);
+    text-decoration-line: var(--link-decoration);
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
     transform: none;
@@ -314,17 +314,17 @@ body {
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-unresolved-color, rgb(81, 179, 133));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(81, 179, 133) none 0px;
     text-decoration: rgba(138, 92, 245, 0.3);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgba(138, 92, 245, 0.3));
-    text-decoration-line: var(--link-decoration, underline);
-    text-decoration-style: var(--link-unresolved-decoration-style, solid);
+    text-decoration-color: var(--link-unresolved-decoration-color);
+    text-decoration-line: var(--link-decoration);
+    text-decoration-style: var(--link-unresolved-decoration-style);
     transition: opacity 0.14s ease-in-out;
     transform: none;
     user-select: text;
@@ -357,7 +357,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-muted, rgb(92, 92, 92));
+    color: var(--text-muted);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -441,7 +441,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(34, 34, 34));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -469,7 +469,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(34, 34, 34));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -593,7 +593,7 @@ body {
 
   .text-highlight {
     background-color: var(--text-highlight-bg, rgba(152, 143, 255, 0.52));
-    color: var(--text-normal, rgb(34, 34, 34));
+    color: var(--text-normal);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -648,7 +648,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+    background-color: var(--background-modifier-hover);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -661,7 +661,7 @@ body {
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+    background-color: var(--background-modifier-hover);
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -697,13 +697,13 @@ body {
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background, rgba(138, 92, 245, 0.1));
+    background-color: var(--pill-background);
     color: var(--pill-color, rgb(88, 166, 255));
     display: flex;
     font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-size: 14px;
-    font-weight: var(--pill-weight, 400);
-    line-height: var(--line-height-tight, 14px);
+    font-weight: var(--pill-weight);
+    line-height: var(--line-height-tight);
     text-decoration: rgb(34, 34, 34);
     margin-inline-start: 0px;
     border: 0px solid rgba(138, 92, 245, 0.15);
@@ -727,8 +727,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.2px);
-    padding-bottom: var(--list-spacing, 1.2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -764,8 +764,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.2px);
-    padding-bottom: var(--list-spacing, 1.2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -796,7 +796,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgb(250, 250, 250));
+    background-color: var(--code-background);
     border: 0px solid rgb(224, 224, 224);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -838,7 +838,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgb(250, 250, 250));
+    background-color: var(--code-background);
     border: 0px solid rgb(224, 224, 224);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -879,7 +879,7 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    width: var(--checkbox-size, 16px);
+    width: var(--checkbox-size);
     transition: box-shadow 0.15s ease-in-out;
     position: relative;
     top: auto;
@@ -901,7 +901,7 @@ body {
   }
 
   blockquote {
-    background-color: var(--blockquote-background-color, rgba(0, 0, 0, 0));
+    background-color: var(--blockquote-background-color);
     color: var(--quote-color, rgb(61, 154, 216));
     font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: 400;
@@ -917,7 +917,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgb(171, 171, 171));
+    color: var(--text-faint);
     text-decoration: underline rgb(138, 92, 245);
   }
 
@@ -932,12 +932,12 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(34, 34, 34));
+    color: var(--text-normal);
     font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(255, 255, 255));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(189, 189, 189);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -947,7 +947,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.1) 0px 15px 30px 0px);
+    box-shadow: var(--shadow-l);
   }
 
   .search > .search-container > .search-space > input {
@@ -1014,7 +1014,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(34, 34, 34);
     font-weight: 400;
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+    background-color: var(--background-modifier-hover);
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -1029,12 +1029,12 @@ body {
   h1 {
     color: var(--text-title-h1, rgb(121, 107, 245));
     font-family: var(--font-family-preview, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
-    font-size: var(--h1-size, 25.888px);
+    font-size: var(--h1-size);
     font-weight: var(--font-weight-title, 600);
     line-height: var(--line-height-headers, 25.888px);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h1-letter-spacing, -0.38832px);
+    letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1062,12 +1062,12 @@ body {
   h2 {
     color: var(--text-title-h2, rgb(144, 135, 248));
     font-family: var(--h2-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
-    font-size: var(--h2-size, 23.392px);
-    font-weight: var(--font-weight, 680);
-    line-height: var(--h2-line-height, 28.0704px);
+    font-size: var(--h2-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h2-letter-spacing, -0.257312px);
+    letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1076,7 +1076,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 0px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 16px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1098,12 +1098,12 @@ body {
   h3 {
     color: var(--text-title-h3, rgb(174, 174, 255));
     font-family: var(--h3-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
-    font-size: var(--h3-size, 21.088px);
-    font-weight: var(--font-weight, 660);
-    line-height: var(--h3-line-height, 27.4144px);
+    font-size: var(--h3-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h3-letter-spacing, -0.168704px);
+    letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1112,7 +1112,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 16px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 16px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1134,12 +1134,12 @@ body {
   h4 {
     color: var(--text-title-h4, rgb(255, 189, 169));
     font-family: var(--h4-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
-    font-size: var(--h4-size, 19.008px);
-    font-weight: var(--font-weight, 640);
-    line-height: var(--h4-line-height, 26.6112px);
+    font-size: var(--h4-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h4-letter-spacing, -0.09504px);
+    letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1148,7 +1148,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 16px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 16px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1170,12 +1170,12 @@ body {
   h5 {
     color: var(--text-title-h5, rgb(250, 173, 143));
     font-family: var(--h5-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
-    font-size: var(--h5-size, 17.216px);
-    font-weight: var(--font-weight, 620);
-    line-height: var(--h5-line-height, 25.824px);
+    font-size: var(--h5-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h5-letter-spacing, -0.034432px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1184,7 +1184,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 16px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 16px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1206,9 +1206,9 @@ body {
   h6 {
     color: var(--text-title-h6, rgb(245, 107, 77));
     font-family: var(--h6-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
-    font-size: var(--h6-size, 16px);
-    font-weight: var(--font-weight, 600);
-    line-height: var(--h6-line-height, 24px);
+    font-size: var(--h6-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: normal;
@@ -1238,11 +1238,11 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(34, 34, 34));
+    color: var(--inline-title-color);
     font-family: var(--inline-title-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
-    font-size: var(--inline-title-size, 25.888px);
-    font-weight: var(--inline-title-weight, 700);
-    line-height: var(--inline-title-line-height, 31.0656px);
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
+    line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: -0.38832px;
@@ -1609,7 +1609,7 @@ body {
   }
 
   li.depth-0 {
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
   }
 
   ::-webkit-scrollbar {
@@ -1702,12 +1702,12 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -1760,12 +1760,12 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="note"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -1818,12 +1818,12 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="abstract"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -1876,12 +1876,12 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="info"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -1934,12 +1934,12 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="todo"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -1992,12 +1992,12 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="tip"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2050,12 +2050,12 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="success"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2108,12 +2108,12 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="question"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2166,12 +2166,12 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2224,12 +2224,12 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="danger"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2282,12 +2282,12 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="failure"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2340,12 +2340,12 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="bug"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2398,12 +2398,12 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="example"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2456,12 +2456,12 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="quote"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2488,7 +2488,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 16px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -2522,16 +2522,16 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(34, 34, 34));
-    font-weight: var(--table-header-weight, 600);
+    color: var(--table-header-color);
+    font-weight: var(--table-header-weight);
     text-align: start;
-    vertical-align: var(--table-cell-vertical-alignment, top);
+    vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: normal;
-    border-left: var(--table-column-first-border-width, 1px) solid rgb(224, 224, 224);
+    border-left: var(--table-column-first-border-width) solid rgb(224, 224, 224);
     border-right: 1px solid rgb(224, 224, 224);
-    border-top: var(--table-header-border-width, 1px) solid rgb(224, 224, 224);
+    border-top: var(--table-header-border-width) solid rgb(224, 224, 224);
     border-bottom: 1px solid rgb(224, 224, 224);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2550,14 +2550,14 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(34, 34, 34));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
-    vertical-align: var(--table-cell-vertical-alignment, top);
+    vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     border: 1px solid rgb(224, 224, 224);
-    border-left: var(--table-column-first-border-width, 1px) solid rgb(224, 224, 224);
+    border-left: var(--table-column-first-border-width) solid rgb(224, 224, 224);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2574,7 +2574,7 @@ body {
   }
 
   tr {
-    background-color: var(--table-header-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-header-background);
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2587,11 +2587,11 @@ body {
   }
 
   tbody tr:nth-child(even) {
-    background-color: var(--table-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-background);
   }
 
   tbody tr:nth-child(odd) {
-    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-row-alt-background);
   }
 
   img {
@@ -2712,7 +2712,7 @@ body {
   }
 
   .transclude {
-    background-color: var(--embed-background, rgba(0, 0, 0, 0));
+    background-color: var(--embed-background);
     color: rgb(34, 34, 34);
     border-radius: 0px;
     border-color: rgb(34, 34, 34);
@@ -2729,7 +2729,7 @@ body {
   }
 
   .transclude-inner {
-    background-color: var(--embed-background, rgba(0, 0, 0, 0));
+    background-color: var(--embed-background);
     color: rgb(34, 34, 34);
     border-radius: 0px;
     border-left: solid;
@@ -2744,8 +2744,8 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(250, 250, 250));
-    color: var(--text-muted, rgb(92, 92, 92));
+    background-color: var(--background-primary-alt);
+    color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(92, 92, 92);
     border-width: 0px;
@@ -2758,8 +2758,8 @@ body {
   }
 
   .metadata {
-    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
-    color: var(--text-muted, rgb(92, 92, 92));
+    background-color: var(--metadata-background);
+    color: var(--text-muted);
     font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     border: 0px solid rgb(224, 224, 224);
     border-top-left-radius: 0px;
@@ -2785,7 +2785,7 @@ body {
   }
 
   .metadata-container .metadata-property {
-    background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-property-background);
     color: rgb(92, 92, 92);
     font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     border-color: rgb(92, 92, 92);
@@ -2801,14 +2801,14 @@ body {
 
   .metadata-property-key {
     color: rgb(92, 92, 92);
-    font-family: var(--metadata-label-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    font-family: var(--metadata-label-font);
     font-size: 16px;
     font-weight: 400;
   }
 
   .metadata-property-value {
     color: rgb(92, 92, 92);
-    font-family: var(--metadata-input-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    font-family: var(--metadata-input-font);
     font-size: 16px;
   }
 
@@ -2843,7 +2843,7 @@ body {
 
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal, rgb(92, 92, 92));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2933,11 +2933,11 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(250, 250, 250));
+    background-color: var(--code-background);
     box-shadow: none;
     color: var(--code-normal, rgb(8, 8, 8));
     font-family: var(--font-monospace, "JetBrains Mono NL", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", monospace);
-    font-size: var(--code-size, 14px);
+    font-size: var(--code-size);
     border: 0px rgb(8, 8, 8);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3204,17 +3204,17 @@ body {
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
     color: var(--nav-item-color, rgb(117, 126, 138));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
     color: var(--nav-item-color, rgb(117, 126, 138));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
 
@@ -3232,13 +3232,13 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(34, 34, 34));
-    font-weight: var(--table-header-weight, 600);
+    color: var(--table-header-color);
+    font-weight: var(--table-header-weight);
     border-color: rgb(224, 224, 224);
   }
 
   .bases-table tbody tr:nth-child(even) {
-    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-row-alt-background);
   }
 
   .canvas-node {
@@ -3253,14 +3253,14 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(34, 34, 34));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-primary, rgb(255, 255, 255));
+    background-color: var(--background-primary);
     border-color: rgb(34, 34, 34);
-    box-shadow: var(--input-shadow, rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 2px 3px 0px, rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
+    box-shadow: var(--input-shadow);
   }
 
   .canvas-node-group {
@@ -3270,7 +3270,7 @@ body {
   }
 
   .note-properties {
-    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-background);
     border-color: rgb(224, 224, 224);
     border-radius: 0px;
   }
@@ -3285,7 +3285,7 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background, rgba(138, 92, 245, 0.1));
+    background-color: var(--pill-background);
     color: var(--pill-color, rgb(88, 166, 255));
     border-radius: 28px;
   }
@@ -3300,8 +3300,8 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(92, 92, 92));
-    cursor: var(--cursor, default);
+    color: var(--icon-color);
+    cursor: var(--cursor);
     border-color: rgb(92, 92, 92);
     border-width: 0px;
     border-top-left-radius: 4px;
@@ -3311,10 +3311,10 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(246, 246, 246));
-    color: var(--status-bar-text-color, rgb(92, 92, 92));
+    background-color: var(--status-bar-background);
+    color: var(--status-bar-text-color);
     font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
-    font-size: var(--status-bar-font-size, 12px);
+    font-size: var(--status-bar-font-size);
     text-align: start;
     border: 1px solid rgb(92, 92, 92);
     border-top-left-radius: 8px;
@@ -3324,7 +3324,7 @@ body {
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 20px;
-    padding-right: var(--size-4-2, 8px);
+    padding-right: var(--size-4-2);
     opacity: 1;
   }
 
@@ -3391,8 +3391,8 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(92, 92, 92));
-    cursor: var(--cursor, default);
+    color: var(--icon-color);
+    cursor: var(--cursor);
     border-color: rgb(92, 92, 92);
     border-width: 0px;
     border-top-left-radius: 4px;
@@ -3418,16 +3418,16 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgb(171, 171, 171));
+    color: var(--text-faint);
     font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(246, 246, 246));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(34, 34, 34));
+    color: var(--text-normal);
     font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -3445,7 +3445,7 @@ body {
   }
 
   .katex-display {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+    background-color: var(--background-modifier-hover);
     color: rgb(34, 34, 34);
     border-color: rgb(34, 34, 34);
     border-width: 0px;
@@ -3546,7 +3546,7 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--tag-background, rgba(138, 92, 245, 0.1));
+    background-color: var(--tag-background);
     color: var(--tag-color, rgb(88, 166, 255));
     border: 0px solid rgba(138, 92, 245, 0.15);
     border-top-left-radius: 24.5px;
@@ -3577,17 +3577,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgb(152, 115, 247));
+    background-color: var(--checkbox-color);
     border-color: rgb(152, 115, 247);
   }
 
   .stacked-page {
     border-color: rgb(34, 34, 34);
-    background-color: var(--background-secondary, rgb(246, 246, 246));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(252, 252, 252));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -3595,9 +3595,9 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(34, 34, 34));
-    font-size: var(--inline-title-size, 25.888px);
-    font-weight: var(--inline-title-weight, 700);
+    color: var(--inline-title-color);
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
   }
 
   .callout[data-callout="folder"] {
@@ -3615,6 +3615,7 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --callout-color: var(--callout-default, 8, 109, 221);
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color-hover: #5c5c5c;
@@ -3706,7 +3707,6 @@ body {
     --button-radius: 5px;
     --callout-blend-mode: darken;
     --callout-bug: 233, 49, 71;
-    --callout-color: var(--callout-default, 8, 109, 221);
     --callout-default: 8, 109, 221;
     --callout-error: 233, 49, 71;
     --callout-example: 120, 82, 238;
@@ -10268,16 +10268,16 @@ html[saved-theme="dark"] {
     footer a {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-external-color, rgb(81, 179, 133));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(81, 179, 133) none 0px;
       text-decoration: underline;
       text-decoration-color: rgb(81, 179, 133);
-      text-decoration-line: var(--link-external-decoration, underline);
+      text-decoration-line: var(--link-external-decoration);
       text-decoration-style: solid;
       transition: opacity 0.14s ease-in-out;
       transform: none;
@@ -10296,16 +10296,16 @@ html[saved-theme="dark"] {
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-color, rgb(81, 179, 133));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(81, 179, 133) none 0px;
       text-decoration: underline;
       text-decoration-color: rgb(81, 179, 133);
-      text-decoration-line: var(--link-decoration, underline);
+      text-decoration-line: var(--link-decoration);
       text-decoration-style: solid;
       transition: opacity 0.14s ease-in-out;
       transform: none;
@@ -10323,17 +10323,17 @@ html[saved-theme="dark"] {
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-unresolved-color, rgb(81, 179, 133));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(81, 179, 133) none 0px;
       text-decoration: rgba(138, 92, 245, 0.3);
-      text-decoration-color: var(--link-unresolved-decoration-color, rgba(138, 92, 245, 0.3));
-      text-decoration-line: var(--link-decoration, underline);
-      text-decoration-style: var(--link-unresolved-decoration-style, solid);
+      text-decoration-color: var(--link-unresolved-decoration-color);
+      text-decoration-line: var(--link-decoration);
+      text-decoration-style: var(--link-unresolved-decoration-style);
       transition: opacity 0.14s ease-in-out;
       transform: none;
       user-select: text;
@@ -10657,7 +10657,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+      background-color: var(--background-modifier-hover);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -10670,7 +10670,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+      background-color: var(--background-modifier-hover);
       border: 0px rgb(222, 222, 222);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -10706,13 +10706,13 @@ html[saved-theme="dark"] {
     a.internal-link.tag-link,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
-      background-color: var(--pill-background, rgba(138, 92, 245, 0.1));
+      background-color: var(--pill-background);
       color: var(--pill-color, rgb(88, 166, 255));
       display: flex;
       font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-size: 14px;
-      font-weight: var(--pill-weight, 400);
-      line-height: var(--line-height-tight, 14px);
+      font-weight: var(--pill-weight);
+      line-height: var(--line-height-tight);
       text-decoration: rgb(218, 218, 218);
       margin-inline-start: 0px;
       border: 0px solid rgba(138, 92, 245, 0.15);
@@ -10736,8 +10736,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 1.2px);
-      padding-bottom: var(--list-spacing, 1.2px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -10773,8 +10773,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 1.2px);
-      padding-bottom: var(--list-spacing, 1.2px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -10888,7 +10888,7 @@ html[saved-theme="dark"] {
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      width: var(--checkbox-size, 16px);
+      width: var(--checkbox-size);
       transition: box-shadow 0.15s ease-in-out;
       position: relative;
       top: auto;
@@ -10910,7 +10910,7 @@ html[saved-theme="dark"] {
     }
 
     blockquote {
-      background-color: var(--blockquote-background-color, rgba(0, 0, 0, 0));
+      background-color: var(--blockquote-background-color);
       color: var(--quote-color, rgb(61, 154, 216));
       font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: 400;
@@ -10926,7 +10926,7 @@ html[saved-theme="dark"] {
     }
 
     .data-footnote-backref {
-      color: var(--text-faint, rgb(102, 102, 102));
+      color: var(--text-faint);
       text-decoration: underline rgb(166, 138, 249);
     }
 
@@ -10956,7 +10956,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px);
+      box-shadow: var(--shadow-l);
     }
 
     .search > .search-container > .search-space > input {
@@ -11023,7 +11023,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: rgb(222, 222, 222);
       font-weight: 400;
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+      background-color: var(--background-modifier-hover);
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -11038,12 +11038,12 @@ html[saved-theme="dark"] {
     h1 {
       color: var(--text-title-h1, rgb(121, 107, 245));
       font-family: var(--font-family-preview, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
-      font-size: var(--h1-size, 25.888px);
+      font-size: var(--h1-size);
       font-weight: var(--font-weight-title, 600);
       line-height: var(--line-height-headers, 25.888px);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h1-letter-spacing, -0.38832px);
+      letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11071,12 +11071,12 @@ html[saved-theme="dark"] {
     h2 {
       color: var(--text-title-h2, rgb(131, 121, 236));
       font-family: var(--h2-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
-      font-size: var(--h2-size, 23.392px);
-      font-weight: var(--font-weight, 680);
-      line-height: var(--h2-line-height, 28.0704px);
+      font-size: var(--h2-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h2-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h2-letter-spacing, -0.257312px);
+      letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11085,7 +11085,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 0px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 16px;
       margin-left: 0px;
       margin-right: 0px;
@@ -11107,12 +11107,12 @@ html[saved-theme="dark"] {
     h3 {
       color: var(--text-title-h3, rgb(162, 162, 210));
       font-family: var(--h3-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
-      font-size: var(--h3-size, 21.088px);
-      font-weight: var(--font-weight, 660);
-      line-height: var(--h3-line-height, 27.4144px);
+      font-size: var(--h3-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h3-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h3-letter-spacing, -0.168704px);
+      letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11121,7 +11121,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 16px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 16px;
       margin-left: 0px;
       margin-right: 0px;
@@ -11143,12 +11143,12 @@ html[saved-theme="dark"] {
     h4 {
       color: var(--text-title-h4, rgb(251, 214, 203));
       font-family: var(--h4-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
-      font-size: var(--h4-size, 19.008px);
-      font-weight: var(--font-weight, 640);
-      line-height: var(--h4-line-height, 26.6112px);
+      font-size: var(--h4-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h4-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h4-letter-spacing, -0.09504px);
+      letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11157,7 +11157,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 16px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 16px;
       margin-left: 0px;
       margin-right: 0px;
@@ -11179,12 +11179,12 @@ html[saved-theme="dark"] {
     h5 {
       color: var(--text-title-h5, rgb(213, 149, 124));
       font-family: var(--h5-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
-      font-size: var(--h5-size, 17.216px);
-      font-weight: var(--font-weight, 620);
-      line-height: var(--h5-line-height, 25.824px);
+      font-size: var(--h5-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h5-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h5-letter-spacing, -0.034432px);
+      letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11193,7 +11193,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 16px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 16px;
       margin-left: 0px;
       margin-right: 0px;
@@ -11215,9 +11215,9 @@ html[saved-theme="dark"] {
     h6 {
       color: var(--text-title-h6, rgb(207, 94, 68));
       font-family: var(--h6-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
-      font-size: var(--h6-size, 16px);
-      font-weight: var(--font-weight, 600);
-      line-height: var(--h6-line-height, 24px);
+      font-size: var(--h6-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h6-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
@@ -11249,9 +11249,9 @@ html[saved-theme="dark"] {
     h2.page-title a {
       color: var(--inline-title-color, rgb(222, 222, 222));
       font-family: var(--inline-title-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
-      font-size: var(--inline-title-size, 25.888px);
-      font-weight: var(--inline-title-weight, 700);
-      line-height: var(--inline-title-line-height, 31.0656px);
+      font-size: var(--inline-title-size);
+      font-weight: var(--inline-title-weight);
+      line-height: var(--inline-title-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: -0.38832px;
@@ -11618,7 +11618,7 @@ html[saved-theme="dark"] {
     }
 
     li.depth-0 {
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
     }
 
     ::-webkit-scrollbar {
@@ -11711,12 +11711,12 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
@@ -11769,12 +11769,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="note"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
@@ -11827,12 +11827,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="abstract"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
@@ -11885,12 +11885,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="info"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
@@ -11943,12 +11943,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="todo"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
@@ -12001,12 +12001,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="tip"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
@@ -12059,12 +12059,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="success"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
@@ -12117,12 +12117,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="question"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
@@ -12175,12 +12175,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="warning"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
@@ -12233,12 +12233,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="danger"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
@@ -12291,12 +12291,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="failure"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
@@ -12349,12 +12349,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="bug"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
@@ -12407,12 +12407,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="example"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
@@ -12465,12 +12465,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="quote"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
@@ -12497,7 +12497,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin-top: var(--heading-spacing, 16px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 0px;
       margin-left: 0px;
       margin-right: 0px;
@@ -12532,15 +12532,15 @@ html[saved-theme="dark"] {
     th {
       background-color: rgba(0, 0, 0, 0);
       color: var(--table-header-color, rgb(222, 222, 222));
-      font-weight: var(--table-header-weight, 600);
+      font-weight: var(--table-header-weight);
       text-align: start;
-      vertical-align: var(--table-cell-vertical-alignment, top);
+      vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
-      border-left: var(--table-column-first-border-width, 1px) solid rgb(66, 73, 88);
+      border-left: var(--table-column-first-border-width) solid rgb(66, 73, 88);
       border-right: 1px solid rgb(66, 73, 88);
-      border-top: var(--table-header-border-width, 1px) solid rgb(66, 73, 88);
+      border-top: var(--table-header-border-width) solid rgb(66, 73, 88);
       border-bottom: 1px solid rgb(66, 73, 88);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -12562,11 +12562,11 @@ html[saved-theme="dark"] {
       color: var(--table-text-color, rgb(222, 222, 222));
       font-weight: 400;
       text-align: start;
-      vertical-align: var(--table-cell-vertical-alignment, top);
+      vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       border: 1px solid rgb(66, 73, 88);
-      border-left: var(--table-column-first-border-width, 1px) solid rgb(66, 73, 88);
+      border-left: var(--table-column-first-border-width) solid rgb(66, 73, 88);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -12583,7 +12583,7 @@ html[saved-theme="dark"] {
     }
 
     tr {
-      background-color: var(--table-header-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-header-background);
       border: 0px rgb(128, 128, 128);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -12596,11 +12596,11 @@ html[saved-theme="dark"] {
     }
 
     tbody tr:nth-child(even) {
-      background-color: var(--table-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-background);
     }
 
     tbody tr:nth-child(odd) {
-      background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-row-alt-background);
     }
 
     img {
@@ -12721,7 +12721,7 @@ html[saved-theme="dark"] {
     }
 
     .transclude {
-      background-color: var(--embed-background, rgba(0, 0, 0, 0));
+      background-color: var(--embed-background);
       color: rgb(222, 222, 222);
       border-radius: 0px;
       border-color: rgb(222, 222, 222);
@@ -12738,7 +12738,7 @@ html[saved-theme="dark"] {
     }
 
     .transclude-inner {
-      background-color: var(--embed-background, rgba(0, 0, 0, 0));
+      background-color: var(--embed-background);
       color: rgb(222, 222, 222);
       border-radius: 0px;
       border-left: solid;
@@ -12767,7 +12767,7 @@ html[saved-theme="dark"] {
     }
 
     .metadata {
-      background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-background);
       color: var(--text-muted, rgb(187, 187, 187));
       font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       border: 0px solid rgb(66, 73, 88);
@@ -12794,7 +12794,7 @@ html[saved-theme="dark"] {
     }
 
     .metadata-container .metadata-property {
-      background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-property-background);
       color: rgb(187, 187, 187);
       font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       border-color: rgb(187, 187, 187);
@@ -12810,14 +12810,14 @@ html[saved-theme="dark"] {
 
     .metadata-property-key {
       color: rgb(187, 187, 187);
-      font-family: var(--metadata-label-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      font-family: var(--metadata-label-font);
       font-size: 16px;
       font-weight: 400;
     }
 
     .metadata-property-value {
       color: rgb(187, 187, 187);
-      font-family: var(--metadata-input-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      font-family: var(--metadata-input-font);
       font-size: 16px;
     }
 
@@ -12946,7 +12946,7 @@ html[saved-theme="dark"] {
       box-shadow: none;
       color: var(--code-normal, rgb(222, 222, 222));
       font-family: var(--font-monospace, "JetBrains Mono NL", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", monospace);
-      font-size: var(--code-size, 14px);
+      font-size: var(--code-size);
       border: 0px rgb(222, 222, 222);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -13213,17 +13213,17 @@ html[saved-theme="dark"] {
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
       color: var(--nav-item-color, rgb(117, 126, 138));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
       color: var(--nav-item-color, rgb(117, 126, 138));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
     }
 
@@ -13242,12 +13242,12 @@ html[saved-theme="dark"] {
     .bases-table thead th {
       background-color: rgba(0, 0, 0, 0);
       color: var(--table-header-color, rgb(222, 222, 222));
-      font-weight: var(--table-header-weight, 600);
+      font-weight: var(--table-header-weight);
       border-color: rgb(66, 73, 88);
     }
 
     .bases-table tbody tr:nth-child(even) {
-      background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-row-alt-background);
     }
 
     .canvas-node {
@@ -13269,7 +13269,7 @@ html[saved-theme="dark"] {
     .canvas-sidebar {
       background-color: var(--background-secondary, rgb(17, 22, 29));
       border-color: rgb(222, 222, 222);
-      box-shadow: var(--input-shadow, rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
+      box-shadow: var(--input-shadow);
     }
 
     .canvas-node-group {
@@ -13279,7 +13279,7 @@ html[saved-theme="dark"] {
     }
 
     .note-properties {
-      background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-background);
       border-color: rgb(66, 73, 88);
       border-radius: 0px;
     }
@@ -13294,7 +13294,7 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-tags {
-      background-color: var(--pill-background, rgba(138, 92, 245, 0.1));
+      background-color: var(--pill-background);
       color: var(--pill-color, rgb(88, 166, 255));
       border-radius: 28px;
     }
@@ -13310,7 +13310,7 @@ html[saved-theme="dark"] {
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color, rgb(187, 187, 187));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       border-color: rgb(187, 187, 187);
       border-width: 0px;
       border-top-left-radius: 4px;
@@ -13323,7 +13323,7 @@ html[saved-theme="dark"] {
       background-color: var(--status-bar-background, rgb(17, 22, 29));
       color: var(--status-bar-text-color, rgb(187, 187, 187));
       font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
-      font-size: var(--status-bar-font-size, 12px);
+      font-size: var(--status-bar-font-size);
       text-align: start;
       border: 1px solid rgb(24, 25, 30);
       border-top-left-radius: 8px;
@@ -13333,7 +13333,7 @@ html[saved-theme="dark"] {
       padding-top: 0px;
       padding-bottom: 0px;
       padding-left: 20px;
-      padding-right: var(--size-4-2, 8px);
+      padding-right: var(--size-4-2);
       opacity: 1;
     }
 
@@ -13401,7 +13401,7 @@ html[saved-theme="dark"] {
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color, rgb(187, 187, 187));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       border-color: rgb(187, 187, 187);
       border-width: 0px;
       border-top-left-radius: 4px;
@@ -13427,7 +13427,7 @@ html[saved-theme="dark"] {
     }
 
     .breadcrumb-element p {
-      color: var(--text-faint, rgb(102, 102, 102));
+      color: var(--text-faint);
       font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     }
 
@@ -13454,7 +13454,7 @@ html[saved-theme="dark"] {
     }
 
     .katex-display {
-      background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+      background-color: var(--background-modifier-hover);
       color: rgb(222, 222, 222);
       border-color: rgb(222, 222, 222);
       border-width: 0px;
@@ -13555,7 +13555,7 @@ html[saved-theme="dark"] {
     }
 
     ul.tags > li {
-      background-color: var(--tag-background, rgba(138, 92, 245, 0.1));
+      background-color: var(--tag-background);
       color: var(--tag-color, rgb(88, 166, 255));
       border: 0px solid rgba(138, 92, 245, 0.15);
       border-top-left-radius: 24.5px;
@@ -13605,8 +13605,8 @@ html[saved-theme="dark"] {
 
     h1.article-title {
       color: var(--inline-title-color, rgb(222, 222, 222));
-      font-size: var(--inline-title-size, 25.888px);
-      font-weight: var(--inline-title-weight, 700);
+      font-size: var(--inline-title-size);
+      font-weight: var(--inline-title-weight);
     }
 
     .callout[data-callout="folder"] {
@@ -13624,6 +13624,7 @@ html[saved-theme="dark"] {
       --background-secondary-alt: #0d1117;
       --blockquote-border-color: #4c78cc;
       --blur-background: color-mix(in srgb, #20242b 65%, transparent) linear-gradient(#20242b, color-mix(in srgb, #20242b 65%, transparent));
+      --callout-color: var(--callout-default, 2, 122, 255);
       --canvas-background: #161b22;
       --caret-color: #dedede;
       --checkbox-border-color-hover: #bbb;
@@ -13715,7 +13716,6 @@ html[saved-theme="dark"] {
       --button-radius: 5px;
       --callout-blend-mode: lighten;
       --callout-bug: 251, 70, 76;
-      --callout-color: var(--callout-default, 2, 122, 255);
       --callout-default: 2, 122, 255;
       --callout-error: 251, 70, 76;
       --callout-example: 168, 130, 255;

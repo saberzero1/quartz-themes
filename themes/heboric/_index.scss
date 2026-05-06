@@ -7,33 +7,33 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode, darken);
-  --callout-bug: var(--color-red-rgb, 233, 49, 71);
-  --callout-default: var(--color-blue-rgb, 8, 109, 221);
-  --callout-error: var(--color-red-rgb, 233, 49, 71);
-  --callout-example: var(--color-purple-rgb, 120, 82, 238);
-  --callout-fail: var(--color-red-rgb, 233, 49, 71);
-  --callout-important: var(--color-cyan-rgb, 0, 191, 188);
-  --callout-info: var(--color-blue-rgb, 8, 109, 221);
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
+  --callout-bug: var(--color-red-rgb);
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 1rem);
-  --callout-question: var(--color-orange-rgb, 236, 117, 0);
+  --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s, 3px);
-  --callout-success: var(--color-green-rgb, 8, 185, 78);
-  --callout-summary: var(--color-cyan-rgb, 0, 191, 188);
-  --callout-tip: var(--color-cyan-rgb, 0, 191, 188);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb, 8, 109, 221);
-  --callout-warning: var(--color-orange-rgb, 236, 117, 0);
-  --checkbox-border-color: var(--text-faint, #ababab) !important;
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
+  --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted, #555555) !important;
   --checkbox-color: var(--interactive-accent, rgb(200, 100, 100)) !important;
   --checkbox-color-hover: var(--interactive-accent-hover, rgb(220, 120, 120)) !important;
   --checkbox-marker-color: var(--background-primary, #fefefe) !important;
   --checkbox-radius: var(--radius-s, 3px) !important;
-  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--color-base-20, #f6f6f6) !important;
-  --code-border-color: var(--background-modifier-border, #e0e0e0) !important;
-  --code-bracket-background: var(--background-modifier-hover, rgba(0, 0, 0, 0.067)) !important;
+  --code-border-color: var(--background-modifier-border) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--color-base-40, #bdbdbd) !important;
   --code-function: var(--color-yellow, hsl(0, 50%, 55%)) !important;
   --code-important: var(--color-orange, hsl(0, 50%, 55%)) !important;
@@ -47,11 +47,11 @@
   --code-string: var(--color-green, hsl(93, 30%, 65%)) !important;
   --code-tag: var(--color-red, hsl(0, 50%, 60%)) !important;
   --code-value: var(--color-purple, hsl(29, 50%, 55%)) !important;
-  --collapse-icon-color: var(--text-faint, #ababab) !important;
+  --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--color-accent, rgb(200, 100, 100)) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted, #555555) !important;
-  --graph-node-attachment: var(--color-yellow, #e0ac00) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent, rgb(200, 100, 100)) !important;
   --graph-node-tag: var(--color-accent, rgb(200, 100, 100)) !important;
   --graph-node-unresolved: var(--color-accent-2, rgb(220, 120, 120)) !important;
@@ -60,8 +60,8 @@
   --icon-color-active: var(--text-accent, rgb(200, 100, 100)) !important;
   --icon-color-focused: var(--text-normal, #555555) !important;
   --icon-color-hover: var(--text-muted, #555555) !important;
-  --icon-size: var(--icon-m, 18px) !important;
-  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --icon-size: var(--icon-m) !important;
+  --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
   --callout-border-width: var(--border-width, 1px);
   --callout-content-background: transparent;
@@ -93,33 +93,33 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --callout-blend-mode: var(--highlight-mix-blend-mode, lighten);
-  --callout-bug: var(--color-red-rgb, 251, 70, 76);
-  --callout-default: var(--color-blue-rgb, 2, 122, 255);
-  --callout-error: var(--color-red-rgb, 251, 70, 76);
-  --callout-example: var(--color-purple-rgb, 168, 130, 255);
-  --callout-fail: var(--color-red-rgb, 251, 70, 76);
-  --callout-important: var(--color-cyan-rgb, 83, 223, 221);
-  --callout-info: var(--color-blue-rgb, 2, 122, 255);
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
+  --callout-bug: var(--color-red-rgb);
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 1rem);
-  --callout-question: var(--color-orange-rgb, 233, 151, 63);
+  --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s, 3px);
-  --callout-success: var(--color-green-rgb, 68, 207, 110);
-  --callout-summary: var(--color-cyan-rgb, 83, 223, 221);
-  --callout-tip: var(--color-cyan-rgb, 83, 223, 221);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb, 2, 122, 255);
-  --callout-warning: var(--color-orange-rgb, 233, 151, 63);
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint, hsl(221, 8%, 45%)) !important;
   --checkbox-border-color-hover: var(--text-muted, hsl(221, 8%, 75%)) !important;
   --checkbox-color: var(--interactive-accent, rgb(200, 100, 100)) !important;
   --checkbox-color-hover: var(--interactive-accent-hover, rgb(200, 100, 100)) !important;
   --checkbox-marker-color: var(--background-primary, hsl(221, 8%, 17%)) !important;
   --checkbox-radius: var(--radius-s, 3px) !important;
-  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--color-base-10, hsl(221, 8%, 19%)) !important;
   --code-border-color: var(--background-modifier-border, hsl(221, 8%, 35%)) !important;
-  --code-bracket-background: var(--background-modifier-hover, rgba(255, 255, 255, 0.067)) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--color-base-30, hsl(221, 8%, 35%)) !important;
   --code-function: var(--color-yellow, hsl(0, 50%, 60%)) !important;
   --code-important: var(--color-orange, hsl(0, 50%, 60%)) !important;
@@ -137,7 +137,7 @@
   --collapse-icon-color-collapsed: var(--color-accent, rgb(200, 100, 100)) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted, hsl(221, 8%, 75%)) !important;
-  --graph-node-attachment: var(--color-yellow, #e0de71) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent, rgb(200, 100, 100)) !important;
   --graph-node-tag: var(--color-accent, rgb(200, 100, 100)) !important;
   --graph-node-unresolved: var(--color-accent-2, rgb(220, 120, 120)) !important;
@@ -146,8 +146,8 @@
   --icon-color-active: var(--color-base-100, hsl(221, 8%, 95%)) !important;
   --icon-color-focused: var(--text-normal, hsl(221, 8%, 75%)) !important;
   --icon-color-hover: var(--text-muted, hsl(221, 8%, 75%)) !important;
-  --icon-size: var(--icon-m, 18px) !important;
-  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --icon-size: var(--icon-m) !important;
+  --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
   --callout-border-width: var(--border-width, 1px);
   --callout-content-background: transparent;
@@ -516,16 +516,16 @@ body {
   footer a {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-external-color, rgb(200, 100, 100));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: "New York", Georgia, ui-serif, serif;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(200, 100, 100) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(200, 100, 100);
-    text-decoration-line: var(--link-external-decoration, underline);
+    text-decoration-line: var(--link-external-decoration);
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
     transform: none;
@@ -544,16 +544,16 @@ body {
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-color, rgb(200, 100, 100));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: "New York", Georgia, ui-serif, serif;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(200, 100, 100) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(200, 100, 100);
-    text-decoration-line: var(--link-decoration, underline);
+    text-decoration-line: var(--link-decoration);
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
     transform: none;
@@ -571,17 +571,17 @@ body {
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-unresolved-color, rgb(220, 120, 120));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: "New York", Georgia, ui-serif, serif;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(220, 120, 120) none 0px;
     text-decoration: rgba(138, 92, 245, 0.3);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgba(138, 92, 245, 0.3));
-    text-decoration-line: var(--link-decoration, underline);
-    text-decoration-style: var(--link-unresolved-decoration-style, solid);
+    text-decoration-color: var(--link-unresolved-decoration-color);
+    text-decoration-line: var(--link-decoration);
+    text-decoration-style: var(--link-unresolved-decoration-style);
     transition: opacity 0.14s ease-in-out;
     transform: none;
     user-select: text;
@@ -849,7 +849,7 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgba(255, 208, 0, 0.4));
+    background-color: var(--text-highlight-bg);
     color: var(--text-normal, rgb(85, 85, 85));
     cursor: grab;
     filter: none;
@@ -905,7 +905,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+    background-color: var(--background-modifier-hover);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     border-bottom-left-radius: 3px;
@@ -918,7 +918,7 @@ body {
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+    background-color: var(--background-modifier-hover);
     border: 0px rgb(85, 85, 85);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -959,8 +959,8 @@ body {
     display: flex;
     font-family: "SF Pro", ui-sans-serif, sans-serif;
     font-size: 14px;
-    font-weight: var(--pill-weight, 400);
-    line-height: var(--line-height-tight, 14px);
+    font-weight: var(--pill-weight);
+    line-height: var(--line-height-tight);
     text-decoration: rgb(34, 34, 34);
     margin-inline-start: 0px;
     border: 0px solid rgba(138, 92, 245, 0.15);
@@ -984,8 +984,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.2px);
-    padding-bottom: var(--list-spacing, 1.2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1021,8 +1021,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.2px);
-    padding-bottom: var(--list-spacing, 1.2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1136,7 +1136,7 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    width: var(--checkbox-size, 16px);
+    width: var(--checkbox-size);
     transition: box-shadow 0.15s ease-in-out;
     position: relative;
     top: auto;
@@ -1174,7 +1174,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgb(171, 171, 171));
+    color: var(--text-faint);
     text-decoration: underline rgb(138, 92, 245);
   }
 
@@ -1204,7 +1204,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.1) 0px 15px 30px 0px);
+    box-shadow: var(--shadow-l);
   }
 
   .search > .search-container > .search-space > input {
@@ -1271,7 +1271,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(85, 85, 85);
     font-weight: 400;
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+    background-color: var(--background-modifier-hover);
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -1287,7 +1287,7 @@ body {
     color: var(--h1-color, rgb(0, 0, 0));
     font-family: var(--h1-font, "SF Pro", ui-sans-serif, sans-serif);
     font-size: var(--h1-size, 32px);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
     line-height: var(--h1-line-height, 38.4px);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -1321,7 +1321,7 @@ body {
     color: var(--h2-color, rgb(0, 0, 0));
     font-family: var(--h2-font, "SF Pro", ui-sans-serif, sans-serif);
     font-size: var(--h2-size, 26.4px);
-    font-weight: var(--font-weight, 680);
+    font-weight: var(--font-weight);
     line-height: var(--h2-line-height, 31.68px);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -1334,7 +1334,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 0px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 16px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1358,7 +1358,7 @@ body {
     color: var(--h3-color, rgb(68, 68, 68));
     font-family: var(--h3-font, "SF Pro", ui-sans-serif, sans-serif);
     font-size: var(--h3-size, 24px);
-    font-weight: var(--font-weight, 660);
+    font-weight: var(--font-weight);
     line-height: var(--h3-line-height, 31.2px);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -1371,7 +1371,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 16px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 16px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1394,7 +1394,7 @@ body {
     color: var(--h4-color, rgb(68, 68, 68));
     font-family: var(--h4-font, "SF Pro", ui-sans-serif, sans-serif);
     font-size: var(--h4-size, 20px);
-    font-weight: var(--font-weight, 640);
+    font-weight: var(--font-weight);
     line-height: var(--h4-line-height, 28px);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -1407,7 +1407,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 16px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 16px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1430,7 +1430,7 @@ body {
     color: var(--h5-color, rgb(68, 68, 68));
     font-family: var(--h5-font, "SF Pro", ui-sans-serif, sans-serif);
     font-size: var(--h5-size, 18px);
-    font-weight: var(--font-weight, 620);
+    font-weight: var(--font-weight);
     line-height: var(--h5-line-height, 27px);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -1443,7 +1443,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 16px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 16px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1465,9 +1465,9 @@ body {
   h6 {
     color: var(--h6-color, rgb(68, 68, 68));
     font-family: var(--h6-font, "SF Pro", ui-sans-serif, sans-serif);
-    font-size: var(--h6-size, 16px);
-    font-weight: var(--font-weight, 600);
-    line-height: var(--h6-line-height, 24px);
+    font-size: var(--h6-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: normal;
@@ -1500,7 +1500,7 @@ body {
     color: var(--inline-title-color, rgb(0, 0, 0));
     font-family: var(--inline-title-font, "SF Pro", ui-sans-serif, sans-serif);
     font-size: var(--inline-title-size, 40px);
-    font-weight: var(--inline-title-weight, 700);
+    font-weight: var(--inline-title-weight);
     line-height: var(--inline-title-line-height, 48px);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -1868,7 +1868,7 @@ body {
   }
 
   li.depth-0 {
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
   }
 
   ::-webkit-scrollbar {
@@ -1961,12 +1961,12 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--color-base-80, rgb(68, 68, 68));
@@ -2019,12 +2019,12 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="note"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--color-base-80, rgb(68, 68, 68));
@@ -2077,12 +2077,12 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="abstract"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--color-base-80, rgb(68, 68, 68));
@@ -2135,12 +2135,12 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="info"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--color-base-80, rgb(68, 68, 68));
@@ -2193,12 +2193,12 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="todo"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--color-base-80, rgb(68, 68, 68));
@@ -2251,12 +2251,12 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="tip"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--color-base-80, rgb(68, 68, 68));
@@ -2309,12 +2309,12 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="success"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--color-base-80, rgb(68, 68, 68));
@@ -2367,12 +2367,12 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="question"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--color-base-80, rgb(68, 68, 68));
@@ -2425,12 +2425,12 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--color-base-80, rgb(68, 68, 68));
@@ -2483,12 +2483,12 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="danger"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--color-base-80, rgb(68, 68, 68));
@@ -2541,12 +2541,12 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="failure"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--color-base-80, rgb(68, 68, 68));
@@ -2599,12 +2599,12 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="bug"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--color-base-80, rgb(68, 68, 68));
@@ -2657,12 +2657,12 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="example"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--color-base-80, rgb(68, 68, 68));
@@ -2715,12 +2715,12 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="quote"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--color-base-80, rgb(68, 68, 68));
@@ -2747,7 +2747,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 16px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -2782,15 +2782,15 @@ body {
   th {
     background-color: rgba(0, 0, 0, 0);
     color: var(--table-header-color, rgb(85, 85, 85));
-    font-weight: var(--table-header-weight, 600);
+    font-weight: var(--table-header-weight);
     text-align: start;
-    vertical-align: var(--table-cell-vertical-alignment, top);
+    vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: normal;
-    border-left: var(--table-column-first-border-width, 1px) solid rgb(224, 224, 224);
+    border-left: var(--table-column-first-border-width) solid rgb(224, 224, 224);
     border-right: 1px solid rgb(224, 224, 224);
-    border-top: var(--table-header-border-width, 1px) solid rgb(224, 224, 224);
+    border-top: var(--table-header-border-width) solid rgb(224, 224, 224);
     border-bottom: 1px solid rgb(224, 224, 224);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2812,11 +2812,11 @@ body {
     color: var(--table-text-color, rgb(85, 85, 85));
     font-weight: 400;
     text-align: start;
-    vertical-align: var(--table-cell-vertical-alignment, top);
+    vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     border: 1px solid rgb(224, 224, 224);
-    border-left: var(--table-column-first-border-width, 1px) solid rgb(224, 224, 224);
+    border-left: var(--table-column-first-border-width) solid rgb(224, 224, 224);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2846,11 +2846,11 @@ body {
   }
 
   tbody tr:nth-child(even) {
-    background-color: var(--table-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-background);
   }
 
   tbody tr:nth-child(odd) {
-    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-row-alt-background);
   }
 
   img {
@@ -2958,7 +2958,7 @@ body {
   }
 
   .transclude {
-    background-color: var(--embed-background, rgba(0, 0, 0, 0));
+    background-color: var(--embed-background);
     color: rgb(85, 85, 85);
     border-radius: 0px;
     border-color: rgb(85, 85, 85);
@@ -2975,7 +2975,7 @@ body {
   }
 
   .transclude-inner {
-    background-color: var(--embed-background, rgba(0, 0, 0, 0));
+    background-color: var(--embed-background);
     color: rgb(85, 85, 85);
     border-radius: 0px;
     border-left: solid;
@@ -2990,7 +2990,7 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(250, 250, 250));
+    background-color: var(--background-primary-alt);
     color: var(--text-muted, rgb(85, 85, 85));
     border-radius: 8px;
     border-color: rgb(85, 85, 85);
@@ -3004,7 +3004,7 @@ body {
   }
 
   .metadata {
-    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-background);
     color: var(--text-muted, rgb(85, 85, 85));
     font-family: var(--sans-serif, "SF Pro", ui-sans-serif, sans-serif);
     border: 0px solid rgb(224, 224, 224);
@@ -3031,7 +3031,7 @@ body {
   }
 
   .metadata-container .metadata-property {
-    background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-property-background);
     color: rgb(85, 85, 85);
     font-family: "SF Pro", ui-sans-serif, sans-serif;
     border-color: rgb(85, 85, 85);
@@ -3437,17 +3437,17 @@ body {
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
     color: var(--nav-item-color, rgb(85, 85, 85));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     font-family: "SF Pro", ui-sans-serif, sans-serif;
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
     color: var(--nav-item-color, rgb(85, 85, 85));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     font-family: "SF Pro", ui-sans-serif, sans-serif;
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
 
@@ -3466,12 +3466,12 @@ body {
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
     color: var(--table-header-color, rgb(85, 85, 85));
-    font-weight: var(--table-header-weight, 600);
+    font-weight: var(--table-header-weight);
     border-color: rgb(224, 224, 224);
   }
 
   .bases-table tbody tr:nth-child(even) {
-    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-row-alt-background);
   }
 
   .canvas-node {
@@ -3493,7 +3493,7 @@ body {
   .canvas-sidebar {
     background-color: var(--background-primary, rgb(254, 254, 254));
     border-color: rgb(85, 85, 85);
-    box-shadow: var(--input-shadow, rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 2px 3px 0px, rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
+    box-shadow: var(--input-shadow);
   }
 
   .canvas-node-group {
@@ -3503,7 +3503,7 @@ body {
   }
 
   .note-properties {
-    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-background);
     border-color: rgb(224, 224, 224);
     border-radius: 0px;
   }
@@ -3534,7 +3534,7 @@ body {
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
     color: var(--icon-color, rgb(85, 85, 85));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     border-color: rgb(85, 85, 85);
     border-width: 0px;
     border-top-left-radius: 3px;
@@ -3547,7 +3547,7 @@ body {
     background-color: var(--status-bar-background, rgb(253, 249, 247));
     color: var(--status-bar-text-color, rgb(85, 85, 85));
     font-family: "SF Pro", ui-sans-serif, sans-serif;
-    font-size: var(--status-bar-font-size, 12px);
+    font-size: var(--status-bar-font-size);
     text-align: start;
     border-color: rgb(224, 224, 224);
     border-style: solid;
@@ -3559,7 +3559,7 @@ body {
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 4px;
-    padding-right: var(--size-4-2, 8px);
+    padding-right: var(--size-4-2);
     opacity: 1;
   }
 
@@ -3627,7 +3627,7 @@ body {
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
     color: var(--icon-color, rgb(85, 85, 85));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     border-color: rgb(85, 85, 85);
     border-width: 0px;
     border-top-left-radius: 3px;
@@ -3653,7 +3653,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgb(171, 171, 171));
+    color: var(--text-faint);
     font-family: "SF Pro", ui-sans-serif, sans-serif;
   }
 
@@ -3680,7 +3680,7 @@ body {
   }
 
   .katex-display {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+    background-color: var(--background-modifier-hover);
     color: var(--color-base-80, rgb(68, 68, 68));
     border-color: rgb(68, 68, 68);
     border-width: 0px;
@@ -3832,7 +3832,7 @@ body {
   h1.article-title {
     color: var(--inline-title-color, rgb(0, 0, 0));
     font-size: var(--inline-title-size, 40px);
-    font-weight: var(--inline-title-weight, 700);
+    font-weight: var(--inline-title-weight);
   }
 
   li.task-list-item[data-task="_"] {
@@ -13098,16 +13098,16 @@ html[saved-theme="dark"] {
     footer a {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-external-color, rgb(200, 100, 100));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: "New York", Georgia, ui-serif, serif;
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(200, 100, 100) none 0px;
       text-decoration: underline;
       text-decoration-color: rgb(200, 100, 100);
-      text-decoration-line: var(--link-external-decoration, underline);
+      text-decoration-line: var(--link-external-decoration);
       text-decoration-style: solid;
       transition: opacity 0.14s ease-in-out;
       transform: none;
@@ -13126,16 +13126,16 @@ html[saved-theme="dark"] {
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-color, rgb(200, 100, 100));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: "New York", Georgia, ui-serif, serif;
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(200, 100, 100) none 0px;
       text-decoration: underline;
       text-decoration-color: rgb(200, 100, 100);
-      text-decoration-line: var(--link-decoration, underline);
+      text-decoration-line: var(--link-decoration);
       text-decoration-style: solid;
       transition: opacity 0.14s ease-in-out;
       transform: none;
@@ -13153,17 +13153,17 @@ html[saved-theme="dark"] {
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-unresolved-color, rgb(220, 120, 120));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: "New York", Georgia, ui-serif, serif;
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(220, 120, 120) none 0px;
       text-decoration: rgba(138, 92, 245, 0.3);
-      text-decoration-color: var(--link-unresolved-decoration-color, rgba(138, 92, 245, 0.3));
-      text-decoration-line: var(--link-decoration, underline);
-      text-decoration-style: var(--link-unresolved-decoration-style, solid);
+      text-decoration-color: var(--link-unresolved-decoration-color);
+      text-decoration-line: var(--link-decoration);
+      text-decoration-style: var(--link-unresolved-decoration-style);
       transition: opacity 0.14s ease-in-out;
       transform: none;
       user-select: text;
@@ -13431,7 +13431,7 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: var(--text-highlight-bg, rgba(255, 208, 0, 0.4));
+      background-color: var(--text-highlight-bg);
       color: var(--color-base-100, rgb(241, 242, 243));
       cursor: grab;
       filter: none;
@@ -13487,7 +13487,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+      background-color: var(--background-modifier-hover);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       border-bottom-left-radius: 3px;
@@ -13500,7 +13500,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+      background-color: var(--background-modifier-hover);
       border: 0px rgb(186, 189, 196);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -13541,8 +13541,8 @@ html[saved-theme="dark"] {
       display: flex;
       font-family: "SF Pro", ui-sans-serif, sans-serif;
       font-size: 14px;
-      font-weight: var(--pill-weight, 400);
-      line-height: var(--line-height-tight, 14px);
+      font-weight: var(--pill-weight);
+      line-height: var(--line-height-tight);
       text-decoration: rgb(218, 218, 218);
       margin-inline-start: 0px;
       border: 0px solid rgba(138, 92, 245, 0.15);
@@ -13566,8 +13566,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 1.2px);
-      padding-bottom: var(--list-spacing, 1.2px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -13603,8 +13603,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 1.2px);
-      padding-bottom: var(--list-spacing, 1.2px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -13718,7 +13718,7 @@ html[saved-theme="dark"] {
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      width: var(--checkbox-size, 16px);
+      width: var(--checkbox-size);
       transition: box-shadow 0.15s ease-in-out;
       position: relative;
       top: auto;
@@ -13786,7 +13786,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px);
+      box-shadow: var(--shadow-l);
     }
 
     .search > .search-container > .search-space > input {
@@ -13853,7 +13853,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: rgb(186, 189, 196);
       font-weight: 400;
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+      background-color: var(--background-modifier-hover);
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -13869,7 +13869,7 @@ html[saved-theme="dark"] {
       color: var(--h1-color, rgb(241, 242, 243));
       font-family: var(--h1-font, "SF Pro", ui-sans-serif, sans-serif);
       font-size: var(--h1-size, 32px);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
       line-height: var(--h1-line-height, 38.4px);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
@@ -13903,7 +13903,7 @@ html[saved-theme="dark"] {
       color: var(--h2-color, rgb(241, 242, 243));
       font-family: var(--h2-font, "SF Pro", ui-sans-serif, sans-serif);
       font-size: var(--h2-size, 26.4px);
-      font-weight: var(--font-weight, 680);
+      font-weight: var(--font-weight);
       line-height: var(--h2-line-height, 31.68px);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
@@ -13916,7 +13916,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 0px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 16px;
       margin-left: 0px;
       margin-right: 0px;
@@ -13940,7 +13940,7 @@ html[saved-theme="dark"] {
       color: var(--h3-color, rgb(214, 216, 220));
       font-family: var(--h3-font, "SF Pro", ui-sans-serif, sans-serif);
       font-size: var(--h3-size, 24px);
-      font-weight: var(--font-weight, 660);
+      font-weight: var(--font-weight);
       line-height: var(--h3-line-height, 31.2px);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
@@ -13953,7 +13953,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 16px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 16px;
       margin-left: 0px;
       margin-right: 0px;
@@ -13976,7 +13976,7 @@ html[saved-theme="dark"] {
       color: var(--h4-color, rgb(214, 216, 220));
       font-family: var(--h4-font, "SF Pro", ui-sans-serif, sans-serif);
       font-size: var(--h4-size, 20px);
-      font-weight: var(--font-weight, 640);
+      font-weight: var(--font-weight);
       line-height: var(--h4-line-height, 28px);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
@@ -13989,7 +13989,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 16px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 16px;
       margin-left: 0px;
       margin-right: 0px;
@@ -14012,7 +14012,7 @@ html[saved-theme="dark"] {
       color: var(--h5-color, rgb(214, 216, 220));
       font-family: var(--h5-font, "SF Pro", ui-sans-serif, sans-serif);
       font-size: var(--h5-size, 18px);
-      font-weight: var(--font-weight, 620);
+      font-weight: var(--font-weight);
       line-height: var(--h5-line-height, 27px);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
@@ -14025,7 +14025,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 16px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 16px;
       margin-left: 0px;
       margin-right: 0px;
@@ -14047,9 +14047,9 @@ html[saved-theme="dark"] {
     h6 {
       color: var(--h6-color, rgb(214, 216, 220));
       font-family: var(--h6-font, "SF Pro", ui-sans-serif, sans-serif);
-      font-size: var(--h6-size, 16px);
-      font-weight: var(--font-weight, 600);
-      line-height: var(--h6-line-height, 24px);
+      font-size: var(--h6-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h6-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
@@ -14082,7 +14082,7 @@ html[saved-theme="dark"] {
       color: var(--inline-title-color, rgb(241, 242, 243));
       font-family: var(--inline-title-font, "SF Pro", ui-sans-serif, sans-serif);
       font-size: var(--inline-title-size, 40px);
-      font-weight: var(--inline-title-weight, 700);
+      font-weight: var(--inline-title-weight);
       line-height: var(--inline-title-line-height, 48px);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
@@ -14450,7 +14450,7 @@ html[saved-theme="dark"] {
     }
 
     li.depth-0 {
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
     }
 
     ::-webkit-scrollbar {
@@ -14543,12 +14543,12 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--color-base-80, rgb(214, 216, 220));
@@ -14601,12 +14601,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="note"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--color-base-80, rgb(214, 216, 220));
@@ -14659,12 +14659,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="abstract"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--color-base-80, rgb(214, 216, 220));
@@ -14717,12 +14717,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="info"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--color-base-80, rgb(214, 216, 220));
@@ -14775,12 +14775,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="todo"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--color-base-80, rgb(214, 216, 220));
@@ -14833,12 +14833,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="tip"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--color-base-80, rgb(214, 216, 220));
@@ -14891,12 +14891,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="success"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--color-base-80, rgb(214, 216, 220));
@@ -14949,12 +14949,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="question"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--color-base-80, rgb(214, 216, 220));
@@ -15007,12 +15007,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="warning"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--color-base-80, rgb(214, 216, 220));
@@ -15065,12 +15065,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="danger"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--color-base-80, rgb(214, 216, 220));
@@ -15123,12 +15123,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="failure"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--color-base-80, rgb(214, 216, 220));
@@ -15181,12 +15181,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="bug"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--color-base-80, rgb(214, 216, 220));
@@ -15239,12 +15239,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="example"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--color-base-80, rgb(214, 216, 220));
@@ -15297,12 +15297,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="quote"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--color-base-80, rgb(214, 216, 220));
@@ -15329,7 +15329,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin-top: var(--heading-spacing, 16px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 0px;
       margin-left: 0px;
       margin-right: 0px;
@@ -15364,15 +15364,15 @@ html[saved-theme="dark"] {
     th {
       background-color: rgba(0, 0, 0, 0);
       color: var(--table-header-color, rgb(186, 189, 196));
-      font-weight: var(--table-header-weight, 600);
+      font-weight: var(--table-header-weight);
       text-align: start;
-      vertical-align: var(--table-cell-vertical-alignment, top);
+      vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
-      border-left: var(--table-column-first-border-width, 1px) solid rgb(82, 87, 96);
+      border-left: var(--table-column-first-border-width) solid rgb(82, 87, 96);
       border-right: 1px solid rgb(82, 87, 96);
-      border-top: var(--table-header-border-width, 1px) solid rgb(82, 87, 96);
+      border-top: var(--table-header-border-width) solid rgb(82, 87, 96);
       border-bottom: 1px solid rgb(82, 87, 96);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -15394,11 +15394,11 @@ html[saved-theme="dark"] {
       color: var(--table-text-color, rgb(186, 189, 196));
       font-weight: 400;
       text-align: start;
-      vertical-align: var(--table-cell-vertical-alignment, top);
+      vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       border: 1px solid rgb(82, 87, 96);
-      border-left: var(--table-column-first-border-width, 1px) solid rgb(82, 87, 96);
+      border-left: var(--table-column-first-border-width) solid rgb(82, 87, 96);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -15428,11 +15428,11 @@ html[saved-theme="dark"] {
     }
 
     tbody tr:nth-child(even) {
-      background-color: var(--table-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-background);
     }
 
     tbody tr:nth-child(odd) {
-      background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-row-alt-background);
     }
 
     img {
@@ -15540,7 +15540,7 @@ html[saved-theme="dark"] {
     }
 
     .transclude {
-      background-color: var(--embed-background, rgba(0, 0, 0, 0));
+      background-color: var(--embed-background);
       color: rgb(186, 189, 196);
       border-radius: 0px;
       border-color: rgb(186, 189, 196);
@@ -15557,7 +15557,7 @@ html[saved-theme="dark"] {
     }
 
     .transclude-inner {
-      background-color: var(--embed-background, rgba(0, 0, 0, 0));
+      background-color: var(--embed-background);
       color: rgb(186, 189, 196);
       border-radius: 0px;
       border-left: solid;
@@ -15586,7 +15586,7 @@ html[saved-theme="dark"] {
     }
 
     .metadata {
-      background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-background);
       color: var(--text-muted, rgb(186, 189, 196));
       font-family: var(--sans-serif, "SF Pro", ui-sans-serif, sans-serif);
       border: 0px solid rgb(82, 87, 96);
@@ -15613,7 +15613,7 @@ html[saved-theme="dark"] {
     }
 
     .metadata-container .metadata-property {
-      background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-property-background);
       color: rgb(186, 189, 196);
       font-family: "SF Pro", ui-sans-serif, sans-serif;
       border-color: rgb(186, 189, 196);
@@ -16019,17 +16019,17 @@ html[saved-theme="dark"] {
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
       color: var(--nav-item-color, rgb(186, 189, 196));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       font-family: "SF Pro", ui-sans-serif, sans-serif;
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
       color: var(--nav-item-color, rgb(186, 189, 196));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       font-family: "SF Pro", ui-sans-serif, sans-serif;
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
     }
 
@@ -16048,12 +16048,12 @@ html[saved-theme="dark"] {
     .bases-table thead th {
       background-color: rgba(0, 0, 0, 0);
       color: var(--table-header-color, rgb(186, 189, 196));
-      font-weight: var(--table-header-weight, 600);
+      font-weight: var(--table-header-weight);
       border-color: rgb(82, 87, 96);
     }
 
     .bases-table tbody tr:nth-child(even) {
-      background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-row-alt-background);
     }
 
     .canvas-node {
@@ -16075,7 +16075,7 @@ html[saved-theme="dark"] {
     .canvas-sidebar {
       background-color: var(--background-secondary, rgb(33, 35, 39));
       border-color: rgb(186, 189, 196);
-      box-shadow: var(--input-shadow, rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
+      box-shadow: var(--input-shadow);
     }
 
     .canvas-node-group {
@@ -16085,7 +16085,7 @@ html[saved-theme="dark"] {
     }
 
     .note-properties {
-      background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-background);
       border-color: rgb(82, 87, 96);
       border-radius: 0px;
     }
@@ -16116,7 +16116,7 @@ html[saved-theme="dark"] {
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color, rgb(186, 189, 196));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       border-color: rgb(186, 189, 196);
       border-width: 0px;
       border-top-left-radius: 3px;
@@ -16129,7 +16129,7 @@ html[saved-theme="dark"] {
       background-color: var(--status-bar-background, rgb(33, 35, 39));
       color: var(--status-bar-text-color, rgb(186, 189, 196));
       font-family: "SF Pro", ui-sans-serif, sans-serif;
-      font-size: var(--status-bar-font-size, 12px);
+      font-size: var(--status-bar-font-size);
       text-align: start;
       border-color: rgb(54, 57, 63);
       border-style: solid;
@@ -16141,7 +16141,7 @@ html[saved-theme="dark"] {
       padding-top: 4px;
       padding-bottom: 4px;
       padding-left: 4px;
-      padding-right: var(--size-4-2, 8px);
+      padding-right: var(--size-4-2);
       opacity: 1;
     }
 
@@ -16209,7 +16209,7 @@ html[saved-theme="dark"] {
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color, rgb(186, 189, 196));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       border-color: rgb(186, 189, 196);
       border-width: 0px;
       border-top-left-radius: 3px;
@@ -16262,7 +16262,7 @@ html[saved-theme="dark"] {
     }
 
     .katex-display {
-      background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+      background-color: var(--background-modifier-hover);
       color: var(--color-base-80, rgb(214, 216, 220));
       border-color: rgb(214, 216, 220);
       border-width: 0px;
@@ -16414,7 +16414,7 @@ html[saved-theme="dark"] {
     h1.article-title {
       color: var(--inline-title-color, rgb(241, 242, 243));
       font-size: var(--inline-title-size, 40px);
-      font-weight: var(--inline-title-weight, 700);
+      font-weight: var(--inline-title-weight);
     }
 
     li.task-list-item[data-task="_"] {

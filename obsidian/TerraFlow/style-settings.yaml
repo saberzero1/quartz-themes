@@ -29,6 +29,8 @@
           value: twilight-theme
         - label: 📄 Paper
           value: paper-theme
+        - label: 🍃 Calm Focus
+          value: calm-focus-theme
     - id: visual-appearance-heading
       title: 🎨 Visual & Appearance
       type: heading
@@ -55,6 +57,28 @@
       description: Add realistic multi-layer shadows for visual depth and hierarchy
       type: class-toggle
       default: true
+    - id: depth-warm
+      title: Tinted Ambient Shadows
+      description: Tint shadows with the accent colour for a warm, Apple-style ambient elevation (requires Depth & Shadows)
+      type: class-toggle
+      default: false
+    - id: terraflow-quiet
+      title: Quiet Mode (Rams Reduction)
+      description: Soften hover lifts, mute accent backgrounds, remove link glow — a calmer, less expressive interface
+      type: class-toggle
+      default: false
+    - id: use-custom-accent
+      title: Custom Accent Colour
+      description: Enable to override the seasonal accent with the colour below
+      type: class-toggle
+      default: false
+    - id: custom-accent
+      title: Accent Colour (when override is on)
+      description: The accent colour used when Custom Accent Override is enabled
+      type: variable-color
+      default: '#5E7D6E'
+      opacity: false
+      format: hex
     - id: enable-monochrome
       title: Monochrome Mode
       description: Desaturate the interface to grayscale
@@ -187,6 +211,21 @@
       description: Highlight inline code with gradient backgrounds and accent colors
       type: class-toggle
       default: false
+    - id: heading-tight-tracking
+      title: Tight Heading Tracking
+      description: Apply negative letter-spacing to H1/H2 for Apple-style optical display tightening
+      type: class-toggle
+      default: false
+    - id: tabular-numerics
+      title: Tabular Numerics
+      description: Use tabular (fixed-width) numerals in metadata, tables, and status bar for precise alignment
+      type: class-toggle
+      default: false
+    - id: caret-accent
+      title: Accent Caret & Selection
+      description: Colour the cursor caret and text-selection with the accent colour (visionOS-style)
+      type: class-toggle
+      default: false
     - id: text-appearance-heading
       title: ✍️ Heading Uppercase
       description: Customize the typography case for individual heading levels
@@ -227,6 +266,11 @@
       description: Toggle unique custom bullet shapes
       type: class-toggle
       default: false
+    - id: tag-chips
+      title: Braun Tag Chips
+      description: Restyle inline tags as minimal uppercase chips — no background, hairline border, tight tracking
+      type: class-toggle
+      default: false
     - id: enable-floating-nav
       title: Floating Nav Buttons
       description: Transform sidebar navigation buttons into a floating pill that expands on hover.
@@ -252,6 +296,11 @@
       description: Line height for editor text (e.g. 1.4, 1.6, 1.8)
       type: variable-text
       default: '1.6'
+    - id: focus-grid
+      title: Focus Dot Grid
+      description: Faint Bauhaus-style 24px dot grid behind the editor — tactile, barely perceptible
+      type: class-toggle
+      default: false
     - id: performance-heading
       title: ⚡ Performance & Accessibility
       type: heading

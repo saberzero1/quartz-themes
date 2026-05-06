@@ -43,7 +43,7 @@
   --code-property: var(--color-cyan, rgb(9, 186, 221)) !important;
   --code-punctuation: var(--text-muted, oklch(46.5% 0.0105 281)) !important;
   --code-radius: var(--radius-xs, 6px) !important;
-  --code-size: var(--font-smaller, 0.875em) !important;
+  --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green, rgb(0, 187, 93)) !important;
   --code-tag: var(--color-red, rgb(233, 49, 58)) !important;
   --code-value: var(--color-purple, rgb(124, 80, 237)) !important;
@@ -60,7 +60,7 @@
   --icon-color-active: var(--text-accent, hsl(212, 100%, 52%)) !important;
   --icon-color-focused: var(--icon-color-hover, oklch(30% 0.0005 281)) !important;
   --icon-color-hover: var(--text-normal, oklch(30% 0.0005 281)) !important;
-  --icon-size: var(--icon-m, 18px) !important;
+  --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width, 1.875px) !important;
   --callout-border-opacity: 0.2375;
   --callout-border-width: 0px;
@@ -105,7 +105,7 @@
   --callout-bug: var(--color-pink-rgb, 250, 153, 205);
   --callout-default: var(--color-blue-rgb, 71, 154, 255);
   --callout-error: var(--color-red-rgb, 255, 76, 82);
-  --callout-example: var(--color-purple-rgb, 168, 130, 255);
+  --callout-example: var(--color-purple-rgb);
   --callout-fail: var(--color-red-rgb, 255, 76, 82);
   --callout-important: var(--color-cyan-rgb, 85, 211, 244);
   --callout-info: var(--color-blue-rgb, 71, 154, 255);
@@ -131,16 +131,16 @@
   --code-comment: var(--text-faint, oklch(52.5% 0.0075 281)) !important;
   --code-function: var(--color-yellow, rgb(248, 201, 111)) !important;
   --code-important: var(--color-orange, rgb(241, 144, 80)) !important;
-  --code-keyword: var(--color-pink, #fa99cd) !important;
+  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal, oklch(85% 0.00375 281)) !important;
   --code-operator: var(--color-red, rgb(255, 76, 82)) !important;
   --code-property: var(--color-cyan, rgb(85, 211, 244)) !important;
   --code-punctuation: var(--text-muted, oklch(71.25% 0.00375 281)) !important;
   --code-radius: var(--radius-xs, 6px) !important;
-  --code-size: var(--font-smaller, 0.875em) !important;
+  --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green, rgb(24, 209, 125)) !important;
   --code-tag: var(--color-red, rgb(255, 76, 82)) !important;
-  --code-value: var(--color-purple, #a882ff) !important;
+  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint, oklch(52.5% 0.0075 281)) !important;
   --collapse-icon-color-collapsed: var(--text-accent, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%)) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
@@ -154,7 +154,7 @@
   --icon-color-active: var(--text-accent, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%)) !important;
   --icon-color-focused: var(--icon-color-hover, oklch(85% 0.00375 281)) !important;
   --icon-color-hover: var(--text-normal, oklch(85% 0.00375 281)) !important;
-  --icon-size: var(--icon-m, 18px) !important;
+  --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width, 1.875px) !important;
   --callout-border-opacity: 0.2375;
   --callout-border-width: 0px;
@@ -271,7 +271,7 @@ body {
   footer a {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-external-color, rgb(10, 124, 255));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -305,7 +305,7 @@ body {
     outline: rgb(10, 124, 255) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(10, 124, 255);
-    text-decoration-line: var(--link-external-decoration, underline);
+    text-decoration-line: var(--link-external-decoration);
     text-decoration-style: solid;
     transition: opacity 0.15s ease-in-out;
     transform: none;
@@ -324,7 +324,7 @@ body {
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-color, rgb(10, 124, 255));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -358,7 +358,7 @@ body {
     outline: rgb(10, 124, 255) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(10, 124, 255);
-    text-decoration-line: var(--link-decoration, underline);
+    text-decoration-line: var(--link-decoration);
     text-decoration-style: solid;
     transition: opacity 0.15s ease-in-out;
     transform: none;
@@ -376,7 +376,7 @@ body {
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-unresolved-color, oklch(0.637864 0.198104 257.288 / 0.7));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -410,8 +410,8 @@ body {
     outline: oklch(0.637864 0.198104 257.288 / 0.7) none 0px;
     text-decoration: rgba(10, 124, 255, 0.3);
     text-decoration-color: var(--link-unresolved-decoration-color, rgba(10, 124, 255, 0.3));
-    text-decoration-line: var(--link-decoration, underline);
-    text-decoration-style: var(--link-unresolved-decoration-style, solid);
+    text-decoration-line: var(--link-decoration);
+    text-decoration-style: var(--link-unresolved-decoration-style);
     transition: opacity 0.15s ease-in-out;
     transform: none;
     user-select: text;
@@ -1015,7 +1015,7 @@ body {
       sans-serif;
     font-size: 14px;
     font-weight: var(--pill-weight, 490);
-    line-height: var(--line-height-tight, 14px);
+    line-height: var(--line-height-tight);
     text-decoration: rgb(34, 34, 34);
     margin-inline-start: 0px;
     border: 0px solid rgba(10, 124, 255, 0.15);
@@ -1119,7 +1119,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: var(--code-normal, oklch(0.3 0.0005 281));
-    font-family: var(--font-monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
+    font-family: var(--font-monospace);
     padding: 2.1px 6px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1213,7 +1213,7 @@ body {
   }
 
   blockquote {
-    background-color: var(--blockquote-background-color, rgba(0, 0, 0, 0));
+    background-color: var(--blockquote-background-color);
     color: var(--blockquote-color, oklch(0.465 0.0105 281));
     font-family:
       Raveo,
@@ -1463,7 +1463,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 0px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 18px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1558,11 +1558,11 @@ body {
     color: var(--h5-color, oklch(0.4 0.0025 281));
     font-family: var(--h5-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
     font-size: var(--h5-size, 18px);
-    font-weight: var(--font-weight, 620);
+    font-weight: var(--font-weight);
     line-height: var(--h5-line-height, 28.8px);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h5-letter-spacing, -0.034432px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1593,7 +1593,7 @@ body {
   h6 {
     color: var(--h6-color, oklch(0.465 0.0105 281));
     font-family: var(--h6-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h6-size, 16px);
+    font-size: var(--h6-size);
     font-weight: var(--font-weight, 670);
     line-height: var(--h6-line-height, 25.6px);
     text-shadow: none;
@@ -2096,7 +2096,7 @@ body {
   }
 
   .callout > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.24 0.0005 281);
@@ -2154,7 +2154,7 @@ body {
   }
 
   .callout[data-callout="note"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.24 0.0005 281);
@@ -2212,7 +2212,7 @@ body {
   }
 
   .callout[data-callout="abstract"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.24 0.0005 281);
@@ -2270,7 +2270,7 @@ body {
   }
 
   .callout[data-callout="info"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.24 0.0005 281);
@@ -2328,7 +2328,7 @@ body {
   }
 
   .callout[data-callout="todo"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.24 0.0005 281);
@@ -2386,7 +2386,7 @@ body {
   }
 
   .callout[data-callout="tip"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.24 0.0005 281);
@@ -2444,7 +2444,7 @@ body {
   }
 
   .callout[data-callout="success"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.24 0.0005 281);
@@ -2502,7 +2502,7 @@ body {
   }
 
   .callout[data-callout="question"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.24 0.0005 281);
@@ -2560,7 +2560,7 @@ body {
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.24 0.0005 281);
@@ -2618,7 +2618,7 @@ body {
   }
 
   .callout[data-callout="danger"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.24 0.0005 281);
@@ -2676,7 +2676,7 @@ body {
   }
 
   .callout[data-callout="failure"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.24 0.0005 281);
@@ -2734,7 +2734,7 @@ body {
   }
 
   .callout[data-callout="bug"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.24 0.0005 281);
@@ -2792,7 +2792,7 @@ body {
   }
 
   .callout[data-callout="example"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.24 0.0005 281);
@@ -2850,7 +2850,7 @@ body {
   }
 
   .callout[data-callout="quote"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.24 0.0005 281);
@@ -2939,7 +2939,7 @@ body {
     color: var(--table-header-color, oklch(0.5575 0.0105 281));
     font-weight: var(--table-header-weight, 520);
     text-align: start;
-    vertical-align: var(--table-cell-vertical-alignment, top);
+    vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: normal;
@@ -2967,7 +2967,7 @@ body {
     color: var(--table-text-color, oklch(0.3 0.0005 281));
     font-weight: var(--font-normal, 420);
     text-align: start;
-    vertical-align: var(--table-cell-vertical-alignment, top);
+    vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     border: 0px solid oklch(0.3 0.0005 281);
@@ -2988,7 +2988,7 @@ body {
   }
 
   tr {
-    background-color: var(--table-header-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-header-background);
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3001,7 +3001,7 @@ body {
   }
 
   tbody tr:nth-child(even) {
-    background-color: var(--table-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-background);
   }
 
   tbody tr:nth-child(odd) {
@@ -3138,7 +3138,7 @@ body {
   }
 
   .transclude {
-    background-color: var(--embed-background, rgba(0, 0, 0, 0));
+    background-color: var(--embed-background);
     color: oklch(0.3 0.0005 281);
     border-radius: 0px;
     border-left: solid;
@@ -3153,7 +3153,7 @@ body {
   }
 
   .transclude-inner {
-    background-color: var(--embed-background, rgba(0, 0, 0, 0));
+    background-color: var(--embed-background);
     color: oklch(0.3 0.0005 281);
     border-radius: 0px;
     border-left: solid;
@@ -3182,7 +3182,7 @@ body {
   }
 
   .metadata {
-    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-background);
     color: var(--text-muted, oklch(0.465 0.0105 281));
     font-family:
       Raveo,
@@ -3259,7 +3259,7 @@ body {
   }
 
   .metadata-container .metadata-property {
-    background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-property-background);
     color: oklch(0.465 0.0105 281);
     font-family:
       Raveo,
@@ -3447,8 +3447,8 @@ body {
     background-color: var(--code-background, oklch(0 0 0 / 0.0625));
     box-shadow: none;
     color: var(--code-normal, oklch(0.3 0.0005 281));
-    font-family: var(--font-monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
-    font-size: var(--code-size, 14px);
+    font-family: var(--font-monospace);
+    font-size: var(--code-size);
     border: 0px oklch(0.3 0.0005 281);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -3815,7 +3815,7 @@ body {
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
     color: var(--nav-item-color, rgb(10, 124, 255));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     font-family:
       Raveo,
       Raveo,
@@ -3848,7 +3848,7 @@ body {
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
     color: var(--nav-item-color, rgb(10, 124, 255));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     font-family:
       Raveo,
       Raveo,
@@ -3921,7 +3921,7 @@ body {
   .canvas-sidebar {
     background-color: var(--trans-strong-20, oklch(1 0 0 / 0.625));
     border-color: oklch(0.3 0.0005 281);
-    box-shadow: var(--input-shadow, rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 2px 3px 0px, rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
+    box-shadow: var(--input-shadow);
   }
 
   .canvas-node-group {
@@ -3931,7 +3931,7 @@ body {
   }
 
   .note-properties {
-    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-background);
     border-color: oklch(0 0 0 / 0.0625);
     border-radius: 12px;
   }
@@ -3962,7 +3962,7 @@ body {
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
     color: var(--icon-color, oklch(0.5575 0.0105 281));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     border-color: oklch(0.5575 0.0105 281);
     border-width: 0px;
     border-top-left-radius: 8px;
@@ -4000,7 +4000,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: var(--status-bar-font-size, 12px);
+    font-size: var(--status-bar-font-size);
     text-align: start;
     border: 0px solid oklch(0 0 0 / 0.0625);
     border-top-left-radius: 18px;
@@ -4010,7 +4010,7 @@ body {
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 4px;
-    padding-right: var(--size-4-2, 8px);
+    padding-right: var(--size-4-2);
     opacity: 1;
   }
 
@@ -4153,7 +4153,7 @@ body {
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
     color: var(--icon-color, oklch(0.4 0.0025 281));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     border-color: oklch(0.4 0.0025 281);
     border-width: 0px;
     border-top-left-radius: 22px;
@@ -4256,7 +4256,7 @@ body {
   }
 
   .katex-display {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+    background-color: var(--background-modifier-hover);
     color: oklch(0.3 0.0005 281);
     border-color: oklch(0.3 0.0005 281);
     border-width: 0px;
@@ -4437,6 +4437,7 @@ body {
     --button-radius: 8px;
     --callout-blend-mode: normal;
     --callout-bug: 214, 50, 202;
+    --callout-color: var(--color-cyan-rgb, 9, 186, 221);
     --callout-default: 31, 132, 255;
     --callout-error: 233, 49, 58;
     --callout-fail: 233, 49, 58;
@@ -4742,7 +4743,6 @@ body {
     --trans-white-00: oklch(100% 0 0 / 0.75);
     --trans-white-10: oklch(100% 0 0 / 0.625);
     box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.375);
-    --callout-color: var(--color-cyan-rgb, 9, 186, 221);
     background-image: none;
     color: var(--color-base-100, oklch(0.24 0.0005 281));
     --button-corner-shape: round;
@@ -4816,6 +4816,7 @@ body {
     --button-radius: 8px;
     --callout-blend-mode: normal;
     --callout-bug: 214, 50, 202;
+    --callout-color: var(--color-blue-rgb, 100, 100, 100);
     --callout-default: 31, 132, 255;
     --callout-error: 233, 49, 58;
     --callout-fail: 233, 49, 58;
@@ -5121,7 +5122,6 @@ body {
     --trans-white-00: oklch(100% 0 0 / 0.75);
     --trans-white-10: oklch(100% 0 0 / 0.625);
     box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.5);
-    --callout-color: var(--color-blue-rgb, 100, 100, 100);
     background-image: none;
     color: var(--color-base-100, oklch(0.24 0.0005 281));
     --button-corner-shape: round;
@@ -5195,6 +5195,7 @@ body {
     --button-radius: 8px;
     --callout-blend-mode: normal;
     --callout-bug: 214, 50, 202;
+    --callout-color: var(--color-green-rgb, 0, 187, 93);
     --callout-default: 31, 132, 255;
     --callout-error: 233, 49, 58;
     --callout-fail: 233, 49, 58;
@@ -5500,7 +5501,6 @@ body {
     --trans-white-00: oklch(100% 0 0 / 0.75);
     --trans-white-10: oklch(100% 0 0 / 0.625);
     box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.375);
-    --callout-color: var(--color-green-rgb, 0, 187, 93);
     background-image: none;
     color: var(--color-base-100, oklch(0.24 0.0005 281));
     --button-corner-shape: round;
@@ -5574,6 +5574,7 @@ body {
     --button-radius: 8px;
     --callout-blend-mode: normal;
     --callout-bug: 214, 50, 202;
+    --callout-color: var(--color-blue-rgb, 100, 100, 100);
     --callout-default: 31, 132, 255;
     --callout-error: 233, 49, 58;
     --callout-fail: 233, 49, 58;
@@ -5879,7 +5880,6 @@ body {
     --trans-white-00: oklch(100% 0 0 / 0.75);
     --trans-white-10: oklch(100% 0 0 / 0.625);
     box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.375);
-    --callout-color: var(--color-blue-rgb, 100, 100, 100);
     background-image: none;
     color: var(--color-base-100, oklch(0.24 0.0005 281));
     --button-corner-shape: round;
@@ -5953,6 +5953,7 @@ body {
     --button-radius: 8px;
     --callout-blend-mode: normal;
     --callout-bug: 214, 50, 202;
+    --callout-color: var(--color-orange-rgb, 241, 110, 53);
     --callout-default: 31, 132, 255;
     --callout-error: 233, 49, 58;
     --callout-fail: 233, 49, 58;
@@ -6258,7 +6259,6 @@ body {
     --trans-white-00: oklch(100% 0 0 / 0.75);
     --trans-white-10: oklch(100% 0 0 / 0.625);
     box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.375);
-    --callout-color: var(--color-orange-rgb, 241, 110, 53);
     background-image: none;
     color: var(--color-base-100, oklch(0.24 0.0005 281));
     --button-corner-shape: round;
@@ -6332,6 +6332,7 @@ body {
     --button-radius: 8px;
     --callout-blend-mode: normal;
     --callout-bug: 214, 50, 202;
+    --callout-color: var(--color-pink-rgb, 214, 50, 202);
     --callout-default: 31, 132, 255;
     --callout-error: 233, 49, 58;
     --callout-fail: 233, 49, 58;
@@ -6637,7 +6638,6 @@ body {
     --trans-white-00: oklch(100% 0 0 / 0.75);
     --trans-white-10: oklch(100% 0 0 / 0.625);
     box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.375);
-    --callout-color: var(--color-pink-rgb, 214, 50, 202);
     background-image: none;
     color: var(--color-base-100, oklch(0.24 0.0005 281));
     --button-corner-shape: round;
@@ -6711,6 +6711,7 @@ body {
     --button-radius: 8px;
     --callout-blend-mode: normal;
     --callout-bug: 214, 50, 202;
+    --callout-color: var(--color-purple-rgb, 124, 80, 237);
     --callout-default: 31, 132, 255;
     --callout-error: 233, 49, 58;
     --callout-fail: 233, 49, 58;
@@ -7016,7 +7017,6 @@ body {
     --trans-white-00: oklch(100% 0 0 / 0.75);
     --trans-white-10: oklch(100% 0 0 / 0.625);
     box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.375);
-    --callout-color: var(--color-purple-rgb, 124, 80, 237);
     background-image: none;
     color: var(--color-base-100, oklch(0.24 0.0005 281));
     --button-corner-shape: round;
@@ -7090,6 +7090,7 @@ body {
     --button-radius: 8px;
     --callout-blend-mode: normal;
     --callout-bug: 214, 50, 202;
+    --callout-color: var(--color-red-rgb, 233, 49, 58);
     --callout-default: 31, 132, 255;
     --callout-error: 233, 49, 58;
     --callout-fail: 233, 49, 58;
@@ -7395,7 +7396,6 @@ body {
     --trans-white-00: oklch(100% 0 0 / 0.75);
     --trans-white-10: oklch(100% 0 0 / 0.625);
     box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.375);
-    --callout-color: var(--color-red-rgb, 233, 49, 58);
     background-image: none;
     color: var(--color-base-100, oklch(0.24 0.0005 281));
     --button-corner-shape: round;
@@ -7469,6 +7469,7 @@ body {
     --button-radius: 8px;
     --callout-blend-mode: normal;
     --callout-bug: 214, 50, 202;
+    --callout-color: var(--color-yellow-rgb, 229, 169, 37);
     --callout-default: 31, 132, 255;
     --callout-error: 233, 49, 58;
     --callout-fail: 233, 49, 58;
@@ -7774,7 +7775,6 @@ body {
     --trans-white-00: oklch(100% 0 0 / 0.75);
     --trans-white-10: oklch(100% 0 0 / 0.625);
     box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.375);
-    --callout-color: var(--color-yellow-rgb, 229, 169, 37);
     background-image: none;
     color: var(--color-base-100, oklch(0.24 0.0005 281));
     --button-corner-shape: round;
@@ -22941,7 +22941,7 @@ html[saved-theme="dark"] {
     footer a {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-external-color, oklab(0.744327 -0.0296497 -0.117664));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -22975,7 +22975,7 @@ html[saved-theme="dark"] {
       outline: oklab(0.744327 -0.0296497 -0.117664) none 0px;
       text-decoration: underline;
       text-decoration-color: oklab(0.744327 -0.0296497 -0.117664);
-      text-decoration-line: var(--link-external-decoration, underline);
+      text-decoration-line: var(--link-external-decoration);
       text-decoration-style: solid;
       transition: opacity 0.15s ease-in-out;
       transform: none;
@@ -22994,7 +22994,7 @@ html[saved-theme="dark"] {
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-color, oklab(0.744327 -0.0296497 -0.117664));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -23028,7 +23028,7 @@ html[saved-theme="dark"] {
       outline: oklab(0.744327 -0.0296497 -0.117664) none 0px;
       text-decoration: underline;
       text-decoration-color: oklab(0.744327 -0.0296497 -0.117664);
-      text-decoration-line: var(--link-decoration, underline);
+      text-decoration-line: var(--link-decoration);
       text-decoration-style: solid;
       transition: opacity 0.15s ease-in-out;
       transform: none;
@@ -23046,7 +23046,7 @@ html[saved-theme="dark"] {
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-unresolved-color, oklch(0.744327 0.121342 255.857 / 0.75));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -23080,8 +23080,8 @@ html[saved-theme="dark"] {
       outline: oklch(0.744327 0.121342 255.857 / 0.75) none 0px;
       text-decoration: rgba(27, 126, 238, 0.3);
       text-decoration-color: var(--link-unresolved-decoration-color, rgba(27, 126, 238, 0.3));
-      text-decoration-line: var(--link-decoration, underline);
-      text-decoration-style: var(--link-unresolved-decoration-style, solid);
+      text-decoration-line: var(--link-decoration);
+      text-decoration-style: var(--link-unresolved-decoration-style);
       transition: opacity 0.15s ease-in-out;
       transform: none;
       user-select: text;
@@ -23685,7 +23685,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-size: 14px;
       font-weight: var(--pill-weight, 490);
-      line-height: var(--line-height-tight, 14px);
+      line-height: var(--line-height-tight);
       text-decoration: rgb(218, 218, 218);
       margin-inline-start: 0px;
       border: 0px solid oklch(0.600515 0.189615 255.85 / 0.025);
@@ -23789,7 +23789,7 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       color: var(--code-normal, oklch(0.85 0.00375 281));
-      font-family: var(--font-monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
+      font-family: var(--font-monospace);
       padding: 2.1px 6px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -23883,7 +23883,7 @@ html[saved-theme="dark"] {
     }
 
     blockquote {
-      background-color: var(--blockquote-background-color, rgba(0, 0, 0, 0));
+      background-color: var(--blockquote-background-color);
       color: var(--blockquote-color, oklch(0.7125 0.00375 281));
       font-family:
         Raveo,
@@ -24133,7 +24133,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 0px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 18px;
       margin-left: 0px;
       margin-right: 0px;
@@ -24228,11 +24228,11 @@ html[saved-theme="dark"] {
       color: var(--h5-color, oklch(0.85 0.00375 281));
       font-family: var(--h5-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
       font-size: var(--h5-size, 18px);
-      font-weight: var(--font-weight, 620);
+      font-weight: var(--font-weight);
       line-height: var(--h5-line-height, 28.8px);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h5-letter-spacing, -0.034432px);
+      letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -24263,7 +24263,7 @@ html[saved-theme="dark"] {
     h6 {
       color: var(--h6-color, oklch(0.775 0.00375 281));
       font-family: var(--h6-font, Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-      font-size: var(--h6-size, 16px);
+      font-size: var(--h6-size);
       font-weight: var(--font-weight, 670);
       line-height: var(--h6-line-height, 25.6px);
       text-shadow: none;
@@ -24766,7 +24766,7 @@ html[saved-theme="dark"] {
     }
 
     .callout > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9325 0 281);
@@ -24824,7 +24824,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9325 0 281);
@@ -24882,7 +24882,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9325 0 281);
@@ -24940,7 +24940,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9325 0 281);
@@ -24998,7 +24998,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9325 0 281);
@@ -25056,7 +25056,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9325 0 281);
@@ -25114,7 +25114,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9325 0 281);
@@ -25172,7 +25172,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9325 0 281);
@@ -25230,7 +25230,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9325 0 281);
@@ -25288,7 +25288,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9325 0 281);
@@ -25346,7 +25346,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9325 0 281);
@@ -25404,7 +25404,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9325 0 281);
@@ -25462,7 +25462,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9325 0 281);
@@ -25520,7 +25520,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9325 0 281);
@@ -25609,7 +25609,7 @@ html[saved-theme="dark"] {
       color: var(--table-header-color, oklch(0.6375 0.0075 281));
       font-weight: var(--table-header-weight, 520);
       text-align: start;
-      vertical-align: var(--table-cell-vertical-alignment, top);
+      vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
@@ -25637,7 +25637,7 @@ html[saved-theme="dark"] {
       color: var(--table-text-color, oklch(0.85 0.00375 281));
       font-weight: var(--font-normal, 420);
       text-align: start;
-      vertical-align: var(--table-cell-vertical-alignment, top);
+      vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       border: 0px solid oklch(0.85 0.00375 281);
@@ -25658,7 +25658,7 @@ html[saved-theme="dark"] {
     }
 
     tr {
-      background-color: var(--table-header-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-header-background);
       border: 0px rgb(128, 128, 128);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -25671,7 +25671,7 @@ html[saved-theme="dark"] {
     }
 
     tbody tr:nth-child(even) {
-      background-color: var(--table-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-background);
     }
 
     tbody tr:nth-child(odd) {
@@ -25808,7 +25808,7 @@ html[saved-theme="dark"] {
     }
 
     .transclude {
-      background-color: var(--embed-background, rgba(0, 0, 0, 0));
+      background-color: var(--embed-background);
       color: oklch(0.85 0.00375 281);
       border-radius: 0px;
       border-left: solid;
@@ -25823,7 +25823,7 @@ html[saved-theme="dark"] {
     }
 
     .transclude-inner {
-      background-color: var(--embed-background, rgba(0, 0, 0, 0));
+      background-color: var(--embed-background);
       color: oklch(0.85 0.00375 281);
       border-radius: 0px;
       border-left: solid;
@@ -25852,7 +25852,7 @@ html[saved-theme="dark"] {
     }
 
     .metadata {
-      background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-background);
       color: var(--text-muted, oklch(0.7125 0.00375 281));
       font-family:
         Raveo,
@@ -25929,7 +25929,7 @@ html[saved-theme="dark"] {
     }
 
     .metadata-container .metadata-property {
-      background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-property-background);
       color: oklch(0.7125 0.00375 281);
       font-family:
         Raveo,
@@ -26117,8 +26117,8 @@ html[saved-theme="dark"] {
       background-color: var(--code-background, oklch(1 0.05 281 / 0.05));
       box-shadow: none;
       color: var(--code-normal, oklch(0.85 0.00375 281));
-      font-family: var(--font-monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
-      font-size: var(--code-size, 14px);
+      font-family: var(--font-monospace);
+      font-size: var(--code-size);
       border: 0px oklch(0.85 0.00375 281);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -26485,7 +26485,7 @@ html[saved-theme="dark"] {
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
       color: var(--nav-item-color, oklab(0.744327 -0.0296497 -0.117664));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       font-family:
         Raveo,
         Raveo,
@@ -26518,7 +26518,7 @@ html[saved-theme="dark"] {
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
       color: var(--nav-item-color, oklab(0.744327 -0.0296497 -0.117664));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       font-family:
         Raveo,
         Raveo,
@@ -26591,7 +26591,7 @@ html[saved-theme="dark"] {
     .canvas-sidebar {
       background-color: var(--trans-strong-20, oklch(0.275 0.00375 281 / 0.5));
       border-color: oklch(0.85 0.00375 281);
-      box-shadow: var(--input-shadow, rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
+      box-shadow: var(--input-shadow);
     }
 
     .canvas-node-group {
@@ -26601,7 +26601,7 @@ html[saved-theme="dark"] {
     }
 
     .note-properties {
-      background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-background);
       border-color: oklch(1 0.05 281 / 0.0625);
       border-radius: 12px;
     }
@@ -26632,7 +26632,7 @@ html[saved-theme="dark"] {
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color, oklch(0.6375 0.0075 281));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       border-color: oklch(0.6375 0.0075 281);
       border-width: 0px;
       border-top-left-radius: 8px;
@@ -26670,7 +26670,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-size: var(--status-bar-font-size, 12px);
+      font-size: var(--status-bar-font-size);
       text-align: start;
       border: 0px solid oklch(1 0.05 281 / 0.0625);
       border-top-left-radius: 18px;
@@ -26680,7 +26680,7 @@ html[saved-theme="dark"] {
       padding-top: 4px;
       padding-bottom: 4px;
       padding-left: 4px;
-      padding-right: var(--size-4-2, 8px);
+      padding-right: var(--size-4-2);
       opacity: 1;
     }
 
@@ -26823,7 +26823,7 @@ html[saved-theme="dark"] {
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color, oklch(0.775 0.00375 281));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       border-color: oklch(0.775 0.00375 281);
       border-width: 0px;
       border-top-left-radius: 22px;
@@ -26926,7 +26926,7 @@ html[saved-theme="dark"] {
     }
 
     .katex-display {
-      background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+      background-color: var(--background-modifier-hover);
       color: oklch(0.85 0.00375 281);
       border-color: oklch(0.85 0.00375 281);
       border-width: 0px;
@@ -27107,6 +27107,7 @@ html[saved-theme="dark"] {
       --button-radius: 8px;
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-cyan-rgb, 85, 211, 244);
       --callout-default: 71, 154, 255;
       --callout-error: 255, 76, 82;
       --callout-fail: 255, 76, 82;
@@ -27430,7 +27431,6 @@ html[saved-theme="dark"] {
       --trans-white-10: oklch(93.25% 0 0 / 0.625);
       --warning-gradient: linear-gradient(to top, rgb(255, 76, 82) -30%, oklch(from oklch(27.5% 0.00375 281) l 0.00375 h / 0.5) 180%);
       box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.375);
-      --callout-color: var(--color-cyan-rgb, 85, 211, 244);
       background-image: none;
       color: var(--color-base-100, oklch(0.9325 0 281));
       --button-corner-shape: round;
@@ -27504,6 +27504,7 @@ html[saved-theme="dark"] {
       --button-radius: 8px;
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-blue-rgb, 100, 100, 100);
       --callout-default: 71, 154, 255;
       --callout-error: 255, 76, 82;
       --callout-fail: 255, 76, 82;
@@ -27827,7 +27828,6 @@ html[saved-theme="dark"] {
       --trans-white-10: oklch(93.25% 0 0 / 0.625);
       --warning-gradient: linear-gradient(to top, rgb(255, 76, 82) -30%, oklch(from oklch(27.5% 0.00375 281) l 0.00375 h / 0.5) 180%);
       box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.5);
-      --callout-color: var(--color-blue-rgb, 100, 100, 100);
       background-image: none;
       color: var(--color-base-100, oklch(0.9325 0 281));
       --button-corner-shape: round;
@@ -27901,6 +27901,7 @@ html[saved-theme="dark"] {
       --button-radius: 8px;
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-green-rgb, 24, 209, 125);
       --callout-default: 71, 154, 255;
       --callout-error: 255, 76, 82;
       --callout-fail: 255, 76, 82;
@@ -28224,7 +28225,6 @@ html[saved-theme="dark"] {
       --trans-white-10: oklch(93.25% 0 0 / 0.625);
       --warning-gradient: linear-gradient(to top, rgb(255, 76, 82) -30%, oklch(from oklch(27.5% 0.00375 281) l 0.00375 h / 0.5) 180%);
       box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.375);
-      --callout-color: var(--color-green-rgb, 24, 209, 125);
       background-image: none;
       color: var(--color-base-100, oklch(0.9325 0 281));
       --button-corner-shape: round;
@@ -28298,6 +28298,7 @@ html[saved-theme="dark"] {
       --button-radius: 8px;
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-blue-rgb, 100, 100, 100);
       --callout-default: 71, 154, 255;
       --callout-error: 255, 76, 82;
       --callout-fail: 255, 76, 82;
@@ -28621,7 +28622,6 @@ html[saved-theme="dark"] {
       --trans-white-10: oklch(93.25% 0 0 / 0.625);
       --warning-gradient: linear-gradient(to top, rgb(255, 76, 82) -30%, oklch(from oklch(27.5% 0.00375 281) l 0.00375 h / 0.5) 180%);
       box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.375);
-      --callout-color: var(--color-blue-rgb, 100, 100, 100);
       background-image: none;
       color: var(--color-base-100, oklch(0.9325 0 281));
       --button-corner-shape: round;
@@ -28695,6 +28695,7 @@ html[saved-theme="dark"] {
       --button-radius: 8px;
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-orange-rgb, 241, 144, 80);
       --callout-default: 71, 154, 255;
       --callout-error: 255, 76, 82;
       --callout-fail: 255, 76, 82;
@@ -29018,7 +29019,6 @@ html[saved-theme="dark"] {
       --trans-white-10: oklch(93.25% 0 0 / 0.625);
       --warning-gradient: linear-gradient(to top, rgb(255, 76, 82) -30%, oklch(from oklch(27.5% 0.00375 281) l 0.00375 h / 0.5) 180%);
       box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.375);
-      --callout-color: var(--color-orange-rgb, 241, 144, 80);
       background-image: none;
       color: var(--color-base-100, oklch(0.9325 0 281));
       --button-corner-shape: round;
@@ -29092,6 +29092,7 @@ html[saved-theme="dark"] {
       --button-radius: 8px;
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-pink-rgb, 250, 153, 205);
       --callout-default: 71, 154, 255;
       --callout-error: 255, 76, 82;
       --callout-fail: 255, 76, 82;
@@ -29415,7 +29416,6 @@ html[saved-theme="dark"] {
       --trans-white-10: oklch(93.25% 0 0 / 0.625);
       --warning-gradient: linear-gradient(to top, rgb(255, 76, 82) -30%, oklch(from oklch(27.5% 0.00375 281) l 0.00375 h / 0.5) 180%);
       box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.375);
-      --callout-color: var(--color-pink-rgb, 250, 153, 205);
       background-image: none;
       color: var(--color-base-100, oklch(0.9325 0 281));
       --button-corner-shape: round;
@@ -29489,6 +29489,7 @@ html[saved-theme="dark"] {
       --button-radius: 8px;
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-purple-rgb, 168, 130, 255);
       --callout-default: 71, 154, 255;
       --callout-error: 255, 76, 82;
       --callout-fail: 255, 76, 82;
@@ -29812,7 +29813,6 @@ html[saved-theme="dark"] {
       --trans-white-10: oklch(93.25% 0 0 / 0.625);
       --warning-gradient: linear-gradient(to top, rgb(255, 76, 82) -30%, oklch(from oklch(27.5% 0.00375 281) l 0.00375 h / 0.5) 180%);
       box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.375);
-      --callout-color: var(--color-purple-rgb, 168, 130, 255);
       background-image: none;
       color: var(--color-base-100, oklch(0.9325 0 281));
       --button-corner-shape: round;
@@ -29886,6 +29886,7 @@ html[saved-theme="dark"] {
       --button-radius: 8px;
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-red-rgb, 255, 76, 82);
       --callout-default: 71, 154, 255;
       --callout-error: 255, 76, 82;
       --callout-fail: 255, 76, 82;
@@ -30209,7 +30210,6 @@ html[saved-theme="dark"] {
       --trans-white-10: oklch(93.25% 0 0 / 0.625);
       --warning-gradient: linear-gradient(to top, rgb(255, 76, 82) -30%, oklch(from oklch(27.5% 0.00375 281) l 0.00375 h / 0.5) 180%);
       box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.375);
-      --callout-color: var(--color-red-rgb, 255, 76, 82);
       background-image: none;
       color: var(--color-base-100, oklch(0.9325 0 281));
       --button-corner-shape: round;
@@ -30283,6 +30283,7 @@ html[saved-theme="dark"] {
       --button-radius: 8px;
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-yellow-rgb, 248, 201, 111);
       --callout-default: 71, 154, 255;
       --callout-error: 255, 76, 82;
       --callout-fail: 255, 76, 82;
@@ -30606,7 +30607,6 @@ html[saved-theme="dark"] {
       --trans-white-10: oklch(93.25% 0 0 / 0.625);
       --warning-gradient: linear-gradient(to top, rgb(255, 76, 82) -30%, oklch(from oklch(27.5% 0.00375 281) l 0.00375 h / 0.5) 180%);
       box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.375);
-      --callout-color: var(--color-yellow-rgb, 248, 201, 111);
       background-image: none;
       color: var(--color-base-100, oklch(0.9325 0 281));
       --button-corner-shape: round;

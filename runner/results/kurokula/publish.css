@@ -462,62 +462,49 @@ body.theme-dark {
     var(--interactive-accent-hsl),
     0.1
   ) !important;
-  --background-modifier-border: var(--color-base-30, #363636) !important;
-  --background-modifier-border-focus: var(--color-base-40, #555555) !important;
-  --background-modifier-border-hover: var(--color-base-35, #3f3f3f) !important;
-  --background-modifier-error: var(--color-red, #fb464c) !important;
-  --background-modifier-error-hover: var(--color-red, #fb464c) !important;
-  --background-modifier-error-rgb: var(--color-red-rgb, 251, 70, 76) !important;
+  --background-modifier-border: var(--color-base-30) !important;
+  --background-modifier-border-focus: var(--color-base-40) !important;
+  --background-modifier-border-hover: var(--color-base-35) !important;
+  --background-modifier-error: var(--color-red) !important;
+  --background-modifier-error-hover: var(--color-red) !important;
+  --background-modifier-error-rgb: var(--color-red-rgb) !important;
   --background-modifier-form-field: var(--color-base-00, #2a2a2a) !important;
   --background-modifier-form-field-hover: var(
-    --background-modifier-form-field,
-    #2a2a2a
+    --background-modifier-form-field
   ) !important;
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067) !important;
-  --background-modifier-success: var(--color-green, #44cf6e) !important;
-  --background-modifier-success-rgb: var(
-    --color-green-rgb,
-    68,
-    207,
-    110
-  ) !important;
+  --background-modifier-success: var(--color-green) !important;
+  --background-modifier-success-rgb: var(--color-green-rgb) !important;
   --background-primary: var(--kuro-black-dark, #141515) !important;
-  --background-primary-alt: var(--color-base-10, #242424) !important;
+  --background-primary-alt: var(--color-base-10) !important;
   --background-secondary: var(--color-base-20, #212121) !important;
-  --background-secondary-alt: var(--color-base-30, #363636) !important;
+  --background-secondary-alt: var(--color-base-30) !important;
   --bases-cards-background: var(--background-primary, #141515) !important;
   --bases-cards-border-width: var(--border-width, 2px) !important;
-  --bases-cards-corner-shape: var(--corner-shape, round) !important;
-  --bases-cards-cover-background: var(
-    --background-primary-alt,
-    #242424
-  ) !important;
-  --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
-  --bases-cards-radius: var(--radius-m, 8px) !important;
+  --bases-cards-corner-shape: var(--corner-shape) !important;
+  --bases-cards-cover-background: var(--background-primary-alt) !important;
+  --bases-cards-font-size: var(--font-smaller) !important;
+  --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
-  --bases-embed-border-color: var(
-    --background-modifier-border,
-    #363636
-  ) !important;
-  --bases-embed-border-radius: var(--radius-s, 4px) !important;
+  --bases-embed-border-color: var(--background-modifier-border) !important;
+  --bases-embed-border-radius: var(--radius-s) !important;
   --bases-group-heading-property-color: var(
     --text-muted,
     rgba(255, 255, 255, 0.8)
   ) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller, 14px) !important;
-  --bases-group-heading-property-weight: var(--font-normal, 400) !important;
-  --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
-  --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
+  --bases-group-heading-property-weight: var(--font-normal) !important;
+  --bases-group-heading-value-size: var(--font-smaller) !important;
+  --bases-group-heading-value-weight: var(--font-semibold) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: var(--table-border-color, #363636) !important;
+  --bases-table-border-color: var(--table-border-color) !important;
   --bases-table-cell-background-active: var(
     --background-primary,
     #141515
   ) !important;
   --bases-table-cell-background-disabled: var(
-    --background-primary-alt,
-    #242424
+    --background-primary-alt
   ) !important;
   --bases-table-cell-background-selected: var(
     --table-selection,
@@ -527,20 +514,16 @@ body.theme-dark {
     var(--background-modifier-border-focus) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width, 2px) !important;
-  --bases-table-container-border-radius: var(--radius-s, 4px) !important;
+  --bases-table-container-border-radius: var(--radius-s) !important;
   --bases-table-container-border-width: var(--border-width, 2px) !important;
-  --bases-table-font-size: var(--font-smaller, 0.875em) !important;
-  --bases-table-group-background: var(
-    --background-primary-alt,
-    #242424
-  ) !important;
+  --bases-table-font-size: var(--font-smaller) !important;
+  --bases-table-group-background: var(--background-primary-alt) !important;
   --bases-table-header-background: var(
     --background-primary,
     #141515
   ) !important;
   --bases-table-header-background-hover: var(
-    --background-modifier-hover,
-    rgba(255, 255, 255, 0.067)
+    --background-modifier-hover
   ) !important;
   --bases-table-header-color: var(
     --text-muted,
@@ -551,10 +534,9 @@ body.theme-dark {
     transparent var(--size-4-6),
     black var(--size-4-6)
   ) !important;
-  --bases-table-header-weight: var(--font-weight, 400) !important;
+  --bases-table-header-weight: var(--font-weight) !important;
   --bases-table-row-background-hover: var(
-    --table-row-background-hover,
-    transparent
+    --table-row-background-hover
   ) !important;
   --bases-table-row-border-width: var(--border-width, 2px) !important;
   --bases-table-summary-background: var(
@@ -562,8 +544,7 @@ body.theme-dark {
     #141515
   ) !important;
   --bases-table-summary-background-hover: var(
-    --background-modifier-hover,
-    rgba(255, 255, 255, 0.067)
+    --background-modifier-hover
   ) !important;
   --blockquote-border-color: var(--kuro-black-light, #515151) !important;
   --blur-background: color-mix(
@@ -586,9 +567,9 @@ body.theme-dark {
   --blur-s: blur(var(--blur-radius-s)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
   --bold-weight: var(--font-extrabold, 800) !important;
-  --button-corner-shape: var(--corner-shape, round) !important;
+  --button-corner-shape: var(--corner-shape) !important;
   --button-radius: var(--input-radius, 8px) !important;
-  --callout-blend-mode: var(--highlight-mix-blend-mode, lighten);
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-bug: var(--kuro-purple-normal-rgb, 158, 96, 236);
   --callout-default: var(--kuro-blue-dark-rgb, 104, 144, 215);
   --callout-error: var(--kuro-red-normal-rgb, 210, 62, 8);
@@ -611,32 +592,29 @@ body.theme-dark {
     --text-faint,
     rgba(255, 255, 255, 0.6)
   ) !important;
-  --canvas-color-1: var(--color-red-rgb, 251, 70, 76) !important;
-  --canvas-color-2: var(--color-orange-rgb, 233, 151, 63) !important;
-  --canvas-color-3: var(--color-yellow-rgb, 224, 222, 113) !important;
-  --canvas-color-4: var(--color-green-rgb, 68, 207, 110) !important;
-  --canvas-color-5: var(--color-cyan-rgb, 83, 223, 221) !important;
-  --canvas-color-6: var(--color-purple-rgb, 168, 130, 255) !important;
-  --canvas-controls-icon-size: var(--icon-s, 16px) !important;
-  --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
-  --canvas-controls-radius: var(--radius-s, 4px) !important;
-  --canvas-dot-pattern: var(--color-base-30, #363636) !important;
+  --canvas-color-1: var(--color-red-rgb) !important;
+  --canvas-color-2: var(--color-orange-rgb) !important;
+  --canvas-color-3: var(--color-yellow-rgb) !important;
+  --canvas-color-4: var(--color-green-rgb) !important;
+  --canvas-color-5: var(--color-cyan-rgb) !important;
+  --canvas-color-6: var(--color-purple-rgb) !important;
+  --canvas-controls-icon-size: var(--icon-s) !important;
+  --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
+  --canvas-controls-radius: var(--radius-s) !important;
+  --canvas-dot-pattern: var(--color-base-30) !important;
   --caret-color: var(--text-normal, rgb(255, 255, 255)) !important;
   --checkbox-border-color: var(--kuro-white-dark, #94959b) !important;
   --checkbox-border-color-hover: var(--kuro-white-light, #ffffff) !important;
   --checkbox-color: var(--kuro-black-light, #515151) !important;
   --checkbox-color-hover: var(--kuro-green-dark, #85b1a9) !important;
   --checkbox-marker-color: var(--kuro-white-dark, #94959b) !important;
-  --checkbox-radius: var(--radius-s, 4px) !important;
+  --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size, 24px) !important;
   --checklist-done-color: var(--kuro-white-dark, #94959b) !important;
-  --clickable-icon-radius: var(--radius-s, 4px) !important;
+  --clickable-icon-radius: var(--radius-s) !important;
   --code-background: var(--kuro-code-bg, #141515) !important;
-  --code-border-color: var(--background-modifier-border, #363636) !important;
-  --code-bracket-background: var(
-    --background-modifier-hover,
-    rgba(255, 255, 255, 0.067)
-  ) !important;
+  --code-border-color: var(--background-modifier-border) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--kuro-code-comment, #fcffb8) !important;
   --code-function: var(--kuro-code-function, #dbbb43) !important;
   --code-important: var(--kuro-cyan-normal, #1ef9f5) !important;
@@ -646,7 +624,7 @@ body.theme-dark {
   --code-property: var(--kuro-code-variable, #cc83bd) !important;
   --code-punctuation: var(--kuro-code-punctuation, #94959b) !important;
   --code-radius: var(--radius-s, 12px) !important;
-  --code-size: var(--font-smaller, 0.875em) !important;
+  --code-size: var(--font-smaller) !important;
   --code-string: var(--kuro-code-string, #85b1a9) !important;
   --code-tag: var(--kuro-code-constant, #2ab9ff) !important;
   --code-value: var(--kuro-code-variable-other, #9d5918) !important;
@@ -671,9 +649,8 @@ body.theme-dark {
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
   --divider-color: var(--kuro-black-light, #515151) !important;
   --divider-color-hover: var(--kuro-white-light, #ffffff) !important;
-  --divider-vertical-height: calc(100% - var(--header-height)) !important;
-  --dropdown-background: var(--interactive-normal, #363636) !important;
-  --dropdown-background-hover: var(--interactive-hover, #3f3f3f) !important;
+  --dropdown-background: var(--interactive-normal) !important;
+  --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
@@ -691,30 +668,12 @@ body.theme-dark {
   ) !important;
   --file-header-border: var(--border-width, 2px solid transparent) solid
     transparent !important;
-  --file-header-font: var(
-    --font-interface,
-    "??",
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
+  --file-header-font: var(--font-interface) !important;
   --file-header-font-size: var(--font-ui-small, 12px) !important;
-  --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
-  --file-margins-x: var(--size-4-8, 32px) !important;
-  --file-margins-y: var(--size-4-8, 32px) !important;
-  --flair-background: var(--interactive-normal, #363636) !important;
+  --file-margins: var(--file-margins-y) var(--file-margins-x) !important;
+  --file-margins-x: var(--size-4-8) !important;
+  --file-margins-y: var(--size-4-8) !important;
+  --flair-background: var(--interactive-normal) !important;
   --flair-color: var(--text-normal, rgb(255, 255, 255)) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
@@ -748,50 +707,45 @@ body.theme-dark {
     var(--font-text-theme), "Arial" !important;
   --font-text:
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
-  --font-weight: var(--font-normal, 400) !important;
-  --footnote-divider-color: var(--metadata-divider-color, #363636) !important;
+  --font-weight: var(--font-normal) !important;
+  --footnote-divider-color: var(--metadata-divider-color) !important;
   --footnote-divider-color-active: var(
-    --metadata-divider-color-focus,
-    transparent
+    --metadata-divider-color-focus
   ) !important;
   --footnote-divider-width: var(--border-width, 2px) !important;
-  --footnote-gap: var(--size-4-1, 4px) !important;
+  --footnote-gap: var(--size-4-1) !important;
   --footnote-id-color: var(--text-muted, rgba(255, 255, 255, 0.8)) !important;
   --footnote-id-color-no-occurrences: var(
     --text-faint,
     rgba(255, 255, 255, 0.6)
   ) !important;
-  --footnote-input-background: var(
-    --metadata-input-background,
-    transparent
-  ) !important;
+  --footnote-input-background: var(--metadata-input-background) !important;
   --footnote-input-background-active: var(
-    --metadata-input-background-active,
-    rgba(255, 255, 255, 0.067)
+    --metadata-input-background-active
   ) !important;
-  --footnote-line-height: var(--line-height-normal, 1.5) !important;
-  --footnote-padding-block: var(--size-2-3, 6px) !important;
-  --footnote-padding-inline: var(--size-2-3, 6px) !important;
-  --footnote-radius: var(--radius-s, 4px) !important;
-  --footnote-size: var(--font-smaller, 0.875em) !important;
+  --footnote-line-height: var(--line-height-normal) !important;
+  --footnote-padding-block: var(--size-2-3) !important;
+  --footnote-padding-inline: var(--size-2-3) !important;
+  --footnote-radius: var(--radius-s) !important;
+  --footnote-size: var(--font-smaller) !important;
   --graph-line: var(
     --color-base-35,
     var(--background-modifier-border-focus)
   ) !important;
   --graph-node: var(--text-muted, rgba(255, 255, 255, 0.8)) !important;
-  --graph-node-attachment: var(--color-yellow, #e0de71) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(
     --text-accent,
     hsl(257.488, 18.58664%, 64.26476%)
   ) !important;
-  --graph-node-tag: var(--color-green, #44cf6e) !important;
+  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(
     --text-faint,
     rgba(255, 255, 255, 0.6)
   ) !important;
   --graph-text: var(--text-normal, rgb(255, 255, 255)) !important;
-  --h5-line-height: var(--line-height-normal, 1.5) !important;
-  --h6-line-height: var(--line-height-normal, 1.5) !important;
+  --h5-line-height: var(--line-height-normal) !important;
+  --h6-line-height: var(--line-height-normal) !important;
   --heading-formatting: var(--kuro-white-light, #ffffff) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --hr-color: rgba(var(--kuro-white-dark-rgb), 0.3) !important;
@@ -799,26 +753,26 @@ body.theme-dark {
   --icon-color-active: var(--kuro-purple-light, #a994ff) !important;
   --icon-color-focused: var(--kuro-purple-normal, #9e60ec) !important;
   --icon-color-hover: var(--kuro-yellow-dark, #dbbb43) !important;
-  --icon-size: var(--icon-m, 18px) !important;
-  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --icon-size: var(--icon-m) !important;
+  --icon-stroke: var(--icon-m-stroke-width) !important;
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12) !important;
   --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3) !important;
   --indentation-guide-width: var(--border-width, 2px) !important;
   --indentation-guide-width-active: var(--border-width, 2px) !important;
-  --inline-title-line-height: var(--h1-line-height, 1.2) !important;
+  --inline-title-line-height: var(--h1-line-height) !important;
   --inline-title-size: var(--h1-size, 28px) !important;
   --inline-title-style: var(--h1-style, oblique 10deg) !important;
   --inline-title-variant: var(--h1-variant, proportional-nums) !important;
   --inline-title-weight: var(--h1-weight, 600) !important;
-  --input-border-width: var(--border-width, 1px) !important;
-  --input-corner-shape: var(--corner-shape, round) !important;
+  --input-border-width: var(--border-width) !important;
+  --input-corner-shape: var(--corner-shape) !important;
   --input-date-separator: var(
     --text-faint,
     rgba(255, 255, 255, 0.6)
   ) !important;
-  --input-font-weight: var(--font-normal, 400) !important;
-  --input-icon-inset: var(--size-4-1, 4px) !important;
-  --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --input-font-weight: var(--font-normal) !important;
+  --input-icon-inset: var(--size-4-1) !important;
+  --input-padding: var(--size-4-1) var(--size-4-2) !important;
   --input-placeholder-color: var(
     --text-faint,
     rgba(255, 255, 255, 0.6)
@@ -837,8 +791,8 @@ body.theme-dark {
     18.2222%,
     55.8824%
   ) !important;
-  --interactive-hover: var(--color-base-35, #3f3f3f) !important;
-  --interactive-normal: var(--color-base-30, #363636) !important;
+  --interactive-hover: var(--color-base-35) !important;
+  --interactive-normal: var(--color-base-30) !important;
   --link-color: var(--kuro-blue-normal, #2ab9ff) !important;
   --link-color-hover: var(--kuro-blue-light, #a1d9ff) !important;
   --link-external-color: var(--kuro-green-normal, #54ca74) !important;
@@ -851,7 +805,7 @@ body.theme-dark {
     var(--interactive-accent-hsl),
     0.3
   ) !important;
-  --link-weight: var(--font-weight, 400) !important;
+  --link-weight: var(--font-weight) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-marker-color: var(--kuro-white-dark, #94959b) !important;
   --list-marker-color-collapsed: var(
@@ -863,82 +817,30 @@ body.theme-dark {
     rgba(255, 255, 255, 0.8)
   ) !important;
   --menu-background: var(--background-secondary, #212121) !important;
-  --menu-border-color: var(
-    --background-modifier-border-hover,
-    #3f3f3f
-  ) !important;
+  --menu-border-color: var(--background-modifier-border-hover) !important;
   --menu-border-width: var(--border-width, 2px) !important;
-  --menu-corner-shape: var(--corner-shape, round) !important;
-  --menu-padding: var(--size-2-3, 6px) !important;
-  --menu-radius: var(--radius-m, 8px) !important;
-  --menu-shadow: var(
-    --shadow-s,
-    0px 1px 2px rgba(0, 0, 0, 0.121),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3)
-  ) !important;
-  --metadata-border-color: var(
-    --background-modifier-border,
-    #363636
-  ) !important;
-  --metadata-divider-color: var(
-    --background-modifier-border,
-    #363636
-  ) !important;
+  --menu-corner-shape: var(--corner-shape) !important;
+  --menu-padding: var(--size-2-3) !important;
+  --menu-radius: var(--radius-m) !important;
+  --menu-shadow: var(--shadow-s) !important;
+  --metadata-border-color: var(--background-modifier-border) !important;
+  --metadata-divider-color: var(--background-modifier-border) !important;
   --metadata-input-background-active: var(
-    --background-modifier-hover,
-    rgba(255, 255, 255, 0.067)
+    --background-modifier-hover
   ) !important;
-  --metadata-input-font: var(
-    --font-interface,
-    "??",
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
-  --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-input-font: var(--font-interface) !important;
+  --metadata-input-font-size: var(--font-smaller) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
-  --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --metadata-input-padding: var(--size-4-1) var(--size-4-2) !important;
   --metadata-input-text-color: var(
     --text-normal,
     rgb(255, 255, 255)
   ) !important;
   --metadata-label-background-active: var(
-    --background-modifier-hover,
-    rgba(255, 255, 255, 0.067)
+    --background-modifier-hover
   ) !important;
-  --metadata-label-font: var(
-    --font-interface,
-    "??",
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
-  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-label-font: var(--font-interface) !important;
+  --metadata-label-font-size: var(--font-smaller) !important;
   --metadata-label-text-color: var(
     --text-muted,
     rgba(255, 255, 255, 0.8)
@@ -947,18 +849,17 @@ body.theme-dark {
     --text-muted,
     rgba(255, 255, 255, 0.8)
   ) !important;
-  --metadata-padding: var(--size-4-2, 8px 0) 0 !important;
+  --metadata-padding: var(--size-4-2) 0 !important;
   --metadata-property-background-active: var(
-    --background-modifier-hover,
-    rgba(255, 255, 255, 0.067)
+    --background-modifier-hover
   ) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
   --metadata-property-box-shadow-hover: 0 0 0 var(--border-width)
     var(--background-modifier-border-hover) !important;
-  --metadata-property-corner-shape: var(--corner-shape, round) !important;
-  --metadata-property-corner-shape-focus: var(--corner-shape, round) !important;
-  --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
+  --metadata-property-corner-shape: var(--corner-shape) !important;
+  --metadata-property-corner-shape-focus: var(--corner-shape) !important;
+  --metadata-property-corner-shape-hover: var(--corner-shape) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small, 16px) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small, 16px) !important;
   --modal-background: var(--background-primary, #141515) !important;
@@ -983,27 +884,18 @@ body.theme-dark {
     rgba(255, 255, 255, 0.8)
   ) !important;
   --nav-heading-color-hover: var(--text-normal, rgb(255, 255, 255)) !important;
-  --nav-heading-weight: var(--font-medium, 500) !important;
-  --nav-heading-weight-hover: var(--font-medium, 500) !important;
-  --nav-indentation-guide-color: var(
-    --indentation-guide-color,
-    rgba(255, 255, 255, 0.12)
-  ) !important;
+  --nav-heading-weight: var(--font-medium) !important;
+  --nav-heading-weight-hover: var(--font-medium) !important;
+  --nav-indentation-guide-color: var(--indentation-guide-color) !important;
   --nav-indentation-guide-width: var(--indentation-guide-width, 2px) !important;
-  --nav-item-background-active: var(
-    --background-modifier-hover,
-    rgba(255, 255, 255, 0.067)
-  ) !important;
-  --nav-item-background-hover: var(
-    --background-modifier-hover,
-    rgba(255, 255, 255, 0.067)
-  ) !important;
+  --nav-item-background-active: var(--background-modifier-hover) !important;
+  --nav-item-background-hover: var(--background-modifier-hover) !important;
   --nav-item-background-selected: hsla(
     var(--color-accent-hsl),
     0.15
   ) !important;
-  --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
-  --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
+  --nav-item-children-margin-start: var(--size-4-3) !important;
+  --nav-item-children-padding-start: var(--size-2-2) !important;
   --nav-item-color: var(--text-muted, rgba(255, 255, 255, 0.8)) !important;
   --nav-item-color-active: var(--text-normal, rgb(255, 255, 255)) !important;
   --nav-item-color-highlighted: var(
@@ -1012,14 +904,11 @@ body.theme-dark {
   ) !important;
   --nav-item-color-hover: var(--text-normal, rgb(255, 255, 255)) !important;
   --nav-item-color-selected: var(--text-normal, rgb(255, 255, 255)) !important;
-  --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
+  --nav-item-margin-bottom: var(--size-2-1) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
-    var(--size-4-6, 4px 8px 4px 24px) !important;
-  --nav-item-parent-padding: var(
-    --nav-item-padding,
-    4px 8px 4px 24px
-  ) !important;
-  --nav-item-radius: var(--radius-s, 4px) !important;
+    var(--size-4-6) !important;
+  --nav-item-parent-padding: var(--nav-item-padding) !important;
+  --nav-item-radius: var(--radius-s) !important;
   --nav-item-size: var(--font-ui-small, 16px) !important;
   --nav-tag-color: var(--text-faint, rgba(255, 255, 255, 0.6)) !important;
   --nav-tag-color-active: var(
@@ -1027,18 +916,15 @@ body.theme-dark {
     rgba(255, 255, 255, 0.8)
   ) !important;
   --nav-tag-color-hover: var(--text-muted, rgba(255, 255, 255, 0.8)) !important;
-  --nav-tag-radius: var(--radius-s, 4px) !important;
-  --nav-tag-weight: var(--font-semibold, 600) !important;
+  --nav-tag-radius: var(--radius-s) !important;
+  --nav-tag-weight: var(--font-semibold) !important;
   --pdf-background: var(--background-primary, #141515) !important;
   --pdf-page-background: var(--background-primary, #141515) !important;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --pdf-sidebar-background: var(--background-primary, #141515) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pill-border-color: var(--background-modifier-border, #363636) !important;
-  --pill-border-color-hover: var(
-    --background-modifier-border-hover,
-    #3f3f3f
-  ) !important;
+  --pill-border-color: var(--background-modifier-border) !important;
+  --pill-border-color-hover: var(--background-modifier-border-hover) !important;
   --pill-border-width: var(--border-width, 2px) !important;
   --pill-color: var(--text-muted, rgba(255, 255, 255, 0.8)) !important;
   --pill-color-hover: var(--text-normal, rgb(255, 255, 255)) !important;
@@ -1047,23 +933,20 @@ body.theme-dark {
     --text-accent,
     hsl(257.488, 18.58664%, 64.26476%)
   ) !important;
-  --popover-font-size: var(--font-text-size, 16px) !important;
+  --popover-font-size: var(--font-text-size) !important;
+  --preferred-text-scale: 1 !important;
   --prompt-background: var(--background-primary, #141515) !important;
   --prompt-border-color: var(--kuro-purple-dark, #887aa3) !important;
   --prompt-border-width: var(--border-width, 2px) !important;
-  --raised-background: var(
-    --blur-background,
-    color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent))
-  ) !important;
-  --raised-blur: var(
-    --blur-s,
-    blur(6px) saturate(1.5) brightness(1.15)
-  ) !important;
+  --raised-background: var(--blur-background) !important;
+  --raised-blur: var(--blur-s) !important;
   --ribbon-background: var(--background-secondary, #212121) !important;
   --ribbon-background-collapsed: var(--background-primary, #141515) !important;
-  --ribbon-padding: var(--size-4-2) var(--size-4-1)
-    var(--size-4-3, 8px 4px 12px) !important;
+  --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
+  --safe-area-inset-bottom: 0px !important;
+  --safe-area-inset-left: 0px !important;
+  --safe-area-inset-right: 0px !important;
+  --safe-area-inset-top: 0px !important;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
   --scrollbar-radius: var(--radius-l, 16px) !important;
@@ -1076,13 +959,10 @@ body.theme-dark {
     rgb(255, 255, 255)
   ) !important;
   --setting-group-heading-size: var(--font-ui-medium, 18px) !important;
-  --setting-group-heading-weight: var(--font-semibold, 600) !important;
-  --setting-items-background: var(--background-primary-alt, #242424) !important;
-  --setting-items-border-color: var(
-    --background-modifier-border,
-    #363636
-  ) !important;
-  --setting-items-padding: var(--size-4-5, 20px) !important;
+  --setting-group-heading-weight: var(--font-semibold) !important;
+  --setting-items-background: var(--background-primary-alt) !important;
+  --setting-items-border-color: var(--background-modifier-border) !important;
+  --setting-items-padding: var(--size-4-5) !important;
   --setting-items-radius: var(--radius-l, 16px) !important;
   --shiki-active-tab-border-color: var(
     --shiki-highlight-neutral,
@@ -1090,23 +970,20 @@ body.theme-dark {
   ) !important;
   --shiki-code-background: var(--code-background, #141515) !important;
   --shiki-code-block-border-radius: var(--code-radius, 12px) !important;
-  --shiki-code-block-spacing: var(--p-spacing, 1rem) !important;
+  --shiki-code-block-spacing: var(--p-spacing) !important;
   --shiki-code-comment: var(--text-faint, rgba(255, 255, 255, 0.6)) !important;
-  --shiki-code-function: var(--color-green, #44cf6e) !important;
-  --shiki-code-important: var(--color-orange, #e9973f) !important;
-  --shiki-code-keyword: var(--color-pink, #fa99cd) !important;
+  --shiki-code-function: var(--color-green) !important;
+  --shiki-code-important: var(--color-orange) !important;
+  --shiki-code-keyword: var(--color-pink) !important;
   --shiki-code-normal: var(--text-muted, rgba(255, 255, 255, 0.8)) !important;
-  --shiki-code-property: var(--color-cyan, #53dfdd) !important;
+  --shiki-code-property: var(--color-cyan) !important;
   --shiki-code-punctuation: var(
     --text-muted,
     rgba(255, 255, 255, 0.8)
   ) !important;
-  --shiki-code-string: var(--color-yellow, #e0de71) !important;
-  --shiki-code-value: var(--color-purple, #a882ff) !important;
-  --shiki-gutter-border-color: var(
-    --background-modifier-border,
-    #363636
-  ) !important;
+  --shiki-code-string: var(--color-yellow) !important;
+  --shiki-code-value: var(--color-purple) !important;
+  --shiki-gutter-border-color: var(--background-modifier-border) !important;
   --shiki-gutter-border-width: var(--border-width, 2px) !important;
   --shiki-gutter-text-color: var(
     --text-faint,
@@ -1135,14 +1012,10 @@ body.theme-dark {
     --text-faint,
     rgba(255, 255, 255, 0.6)
   ) !important;
-  --shiki-tooltip-background: var(
-    --background-modifier-message,
-    rgba(0, 0, 0, 0.9)
-  ) !important;
+  --shiki-tooltip-background: var(--background-modifier-message) !important;
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9) !important;
   --slider-thumb-border-color: var(
-    --background-modifier-border-hover,
-    #3f3f3f
+    --background-modifier-border-hover
   ) !important;
   --slider-thumb-border-width: var(--border-width, 2px) !important;
   --slider-thumb-radius: var(--slider-thumb-height, 50%) !important;
@@ -1152,36 +1025,33 @@ body.theme-dark {
   --status-bar-border-width: var(--border-width) 0 0
     var(--border-width, 2px 0 0 2px) !important;
   --status-bar-font-size: var(--font-ui-smaller, 14px) !important;
-  --status-bar-radius: var(--radius-m, 8px 0 0 0) 0 0 0 !important;
+  --status-bar-radius: var(--radius-m) 0 0 0 !important;
   --status-bar-text-color: var(--kuro-purple-dark, #887aa3) !important;
   --suggestion-background: var(--background-primary, #141515) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
-  --sync-avatar-color-1: var(--color-red, #fb464c) !important;
-  --sync-avatar-color-2: var(--color-orange, #e9973f) !important;
-  --sync-avatar-color-3: var(--color-yellow, #e0de71) !important;
-  --sync-avatar-color-4: var(--color-green, #44cf6e) !important;
-  --sync-avatar-color-5: var(--color-cyan, #53dfdd) !important;
-  --sync-avatar-color-6: var(--color-blue, #027aff) !important;
-  --sync-avatar-color-7: var(--color-purple, #a882ff) !important;
-  --sync-avatar-color-8: var(--color-pink, #fa99cd) !important;
+  --sync-avatar-color-1: var(--color-red) !important;
+  --sync-avatar-color-2: var(--color-orange) !important;
+  --sync-avatar-color-3: var(--color-yellow) !important;
+  --sync-avatar-color-4: var(--color-green) !important;
+  --sync-avatar-color-5: var(--color-cyan) !important;
+  --sync-avatar-color-6: var(--color-blue) !important;
+  --sync-avatar-color-7: var(--color-purple) !important;
+  --sync-avatar-color-8: var(--color-pink) !important;
   --tab-background-active: var(--background-primary, #141515) !important;
   --tab-container-background: var(--background-secondary, #212121) !important;
-  --tab-divider-color: var(
-    --background-modifier-border-hover,
-    #3f3f3f
-  ) !important;
+  --tab-divider-color: var(--background-modifier-border-hover) !important;
   --tab-font-size: var(--font-ui-small, 12px) !important;
   --tab-outline-color: var(--divider-color, #515151) !important;
-  --tab-radius: var(--radius-s, 4px) !important;
+  --tab-radius: var(--radius-s) !important;
   --tab-stacked-font-size: var(--font-ui-small, 16px) !important;
-  --tab-stacked-header-width: var(--header-height, 40px) !important;
+  --tab-stacked-header-width: var(--header-height) !important;
   --tab-switcher-background: var(--background-secondary, #212121) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
     var(--background-secondary),
     transparent
   ) !important;
-  --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
+  --tab-switcher-preview-radius: var(--radius-xl) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
   --tab-text-color: var(--text-faint, rgba(255, 255, 255, 0.6)) !important;
@@ -1205,18 +1075,12 @@ body.theme-dark {
     --text-accent,
     hsl(257.488, 18.58664%, 64.26476%)
   ) !important;
-  --table-add-button-border-color: var(
-    --background-modifier-border,
-    #363636
-  ) !important;
-  --table-add-button-border-width: var(--table-border-width, 1px) !important;
-  --table-border-color: var(--background-modifier-border, #363636) !important;
-  --table-column-alt-background: var(
-    --table-background,
-    transparent
-  ) !important;
-  --table-column-first-border-width: var(--table-border-width, 1px) !important;
-  --table-column-last-border-width: var(--table-border-width, 1px) !important;
+  --table-add-button-border-color: var(--background-modifier-border) !important;
+  --table-add-button-border-width: var(--table-border-width) !important;
+  --table-border-color: var(--background-modifier-border) !important;
+  --table-column-alt-background: var(--table-background) !important;
+  --table-column-first-border-width: var(--table-border-width) !important;
+  --table-column-last-border-width: var(--table-border-width) !important;
   --table-drag-handle-background-active: var(
     --table-selection-border-color,
     hsl(260.488, 18.2222%, 55.8824%)
@@ -1229,30 +1093,24 @@ body.theme-dark {
     --text-on-accent,
     rgb(255, 255, 255)
   ) !important;
-  --table-header-background: var(--table-background, transparent) !important;
-  --table-header-border-color: var(--table-border-color, #363636) !important;
-  --table-header-border-width: var(--table-border-width, 1px) !important;
+  --table-header-background: var(--table-background) !important;
+  --table-header-border-color: var(--table-border-color) !important;
+  --table-header-border-width: var(--table-border-width) !important;
   --table-header-color: var(--text-normal, rgb(255, 255, 255)) !important;
-  --table-header-size: var(--table-text-size, 16px) !important;
+  --table-header-size: var(--table-text-size) !important;
   --table-header-weight: var(--bold-weight, 800) !important;
-  --table-line-height: var(--line-height-tight, 1.3) !important;
-  --table-row-alt-background: var(--table-background, transparent) !important;
-  --table-row-alt-background-hover: var(
-    --table-background,
-    transparent
-  ) !important;
-  --table-row-background-hover: var(--table-background, transparent) !important;
-  --table-row-last-border-width: var(--table-border-width, 1px) !important;
+  --table-line-height: var(--line-height-tight) !important;
+  --table-row-alt-background: var(--table-background) !important;
+  --table-row-alt-background-hover: var(--table-background) !important;
+  --table-row-background-hover: var(--table-background) !important;
+  --table-row-last-border-width: var(--table-border-width) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
-  --table-selection-blend-mode: var(
-    --highlight-mix-blend-mode,
-    lighten
-  ) !important;
+  --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
   --table-selection-border-color: var(
     --interactive-accent,
     hsl(260.488, 18.2222%, 55.8824%)
   ) !important;
-  --table-text-size: var(--font-text-size, 16px) !important;
+  --table-text-size: var(--font-text-size) !important;
   --tag-background: rgba(var(--kuro-purple-dark-rgb), 0.5) !important;
   --tag-background-hover: rgba(var(--kuro-purple-dark-rgb), 0.8) !important;
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15) !important;
@@ -1262,7 +1120,7 @@ body.theme-dark {
   ) !important;
   --tag-color: var(--kuro-white-normal, #ddd0c4) !important;
   --tag-color-hover: var(--kuro-white-light, #ffffff) !important;
-  --tag-size: var(--font-smaller, 0.875em) !important;
+  --tag-size: var(--font-smaller) !important;
   --text-accent: var(
     --color-accent-1,
     hsl(257.488, 18.58664%, 64.26476%)
@@ -1280,35 +1138,29 @@ body.theme-dark {
   --text-success: var(--kuro-green-normal, #54ca74) !important;
   --text-warning: var(--kuro-orange-normal, #e59605) !important;
   --titlebar-background: var(--background-secondary, #212121) !important;
-  --titlebar-background-focused: var(
-    --background-secondary-alt,
-    #363636
-  ) !important;
-  --titlebar-border-color: var(
-    --background-modifier-border,
-    #363636
-  ) !important;
+  --titlebar-background-focused: var(--background-secondary-alt) !important;
+  --titlebar-border-color: var(--background-modifier-border) !important;
   --titlebar-text-color: var(--text-muted, rgba(255, 255, 255, 0.8)) !important;
   --titlebar-text-color-focused: var(
     --text-normal,
     rgb(255, 255, 255)
   ) !important;
-  --titlebar-text-weight: var(--font-bold, 700) !important;
-  --touch-radius-l: var(--touch-size-l, 52px) !important;
-  --touch-radius-m: var(--touch-size-m, 44px) !important;
-  --touch-radius-s: var(--touch-size-s, 40px) !important;
-  --touch-radius-xl: var(--touch-size-xl, 60px) !important;
-  --touch-radius-xs: var(--touch-size-xs, 30px) !important;
-  --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
-  --traffic-lights-offset-x: var(--header-height, 40px) !important;
-  --traffic-lights-offset-y: var(--header-height, 40px) !important;
+  --titlebar-text-weight: var(--font-bold) !important;
+  --touch-radius-l: var(--touch-size-l) !important;
+  --touch-radius-m: var(--touch-size-m) !important;
+  --touch-radius-s: var(--touch-size-s) !important;
+  --touch-radius-xl: var(--touch-size-xl) !important;
+  --touch-radius-xs: var(--touch-size-xs) !important;
+  --touch-radius-xxs: var(--touch-size-xxs) !important;
+  --traffic-lights-offset-x: var(--header-height) !important;
+  --traffic-lights-offset-y: var(--header-height) !important;
   --vault-profile-color: var(--text-normal, rgb(255, 255, 255)) !important;
   --vault-profile-color-hover: var(
     --vault-profile-color,
     rgb(255, 255, 255)
   ) !important;
   --vault-profile-font-size: var(--font-ui-small, 16px) !important;
-  --vault-profile-font-weight: var(--font-medium, 500) !important;
+  --vault-profile-font-weight: var(--font-medium) !important;
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
   --input-height: 30px !important;
   --input-border-width-focus: 2px !important;
@@ -1408,6 +1260,7 @@ body.theme-dark {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
+  --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 2px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
@@ -1616,7 +1469,6 @@ body.theme-dark {
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
-  --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
   --prompt-input-height: 48px !important;
   --prompt-max-height: 70vh !important;
@@ -1634,10 +1486,6 @@ body.theme-dark {
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
   --ribbon-width: 44px !important;
-  --safe-area-inset-bottom: 0px !important;
-  --safe-area-inset-left: 0px !important;
-  --safe-area-inset-right: 0px !important;
-  --safe-area-inset-top: 0px !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-width: 12px !important;
@@ -1889,7 +1737,7 @@ body {
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-external-color, rgb(84, 202, 116));
-  cursor: var(--cursor-link, pointer);
+  cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1909,11 +1757,11 @@ body body.theme-dark .markdown-rendered a.external-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 400);
+  font-weight: var(--link-weight);
   outline: rgb(84, 202, 116) none 0px;
   text-decoration: underline;
   text-decoration-color: rgb(84, 202, 116);
-  text-decoration-line: var(--link-external-decoration, underline);
+  text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
   transform: none;
@@ -1930,7 +1778,7 @@ body body.theme-dark .markdown-rendered a.external-link {
 body body.theme-dark .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-color, rgb(42, 185, 255));
-  cursor: var(--cursor-link, pointer);
+  cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1950,11 +1798,11 @@ body body.theme-dark .markdown-rendered a.internal-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 400);
+  font-weight: var(--link-weight);
   outline: rgb(42, 185, 255) none 0px;
   text-decoration: underline;
   text-decoration-color: rgb(42, 185, 255);
-  text-decoration-line: var(--link-decoration, underline);
+  text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
   transform: none;
@@ -1971,7 +1819,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
 body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-unresolved-color, rgb(157, 147, 181));
-  cursor: var(--cursor-link, pointer);
+  cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1991,15 +1839,15 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 400);
+  font-weight: var(--link-weight);
   outline: rgb(157, 147, 181) none 0px;
   text-decoration: underline rgba(136, 122, 163, 0.3);
   text-decoration-color: var(
     --link-unresolved-decoration-color,
     rgba(136, 122, 163, 0.3)
   );
-  text-decoration-line: var(--link-decoration, underline);
-  text-decoration-style: var(--link-unresolved-decoration-style, solid);
+  text-decoration-line: var(--link-decoration);
+  text-decoration-style: var(--link-unresolved-decoration-style);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -2417,10 +2265,7 @@ body body.theme-dark del {
   animation-play-state: running;
 }
 body body.theme-dark .suggestion-item.is-selected {
-  background-color: var(
-    --background-modifier-hover,
-    rgba(255, 255, 255, 0.067)
-  );
+  background-color: var(--background-modifier-hover);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2432,10 +2277,7 @@ body body.theme-dark .suggestion-item.is-selected {
   color: rgb(255, 255, 255);
 }
 body body.theme-dark div.suggestion-item {
-  background-color: var(
-    --background-modifier-hover,
-    rgba(255, 255, 255, 0.067)
-  );
+  background-color: var(--background-modifier-hover);
   border: 0px rgb(255, 255, 255);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2487,7 +2329,7 @@ body body.theme-dark div.multi-select-pill {
     sans-serif;
   font-size: 14px;
   font-weight: var(--pill-weight, 100);
-  line-height: var(--line-height-tight, 14px);
+  line-height: var(--line-height-tight);
   text-decoration: rgb(218, 218, 218);
   margin-inline-start: 0px;
   border: 0px solid rgba(136, 122, 163, 0.15);
@@ -2695,7 +2537,7 @@ body
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-dark .markdown-rendered blockquote {
-  background-color: var(--blockquote-background-color, rgba(0, 0, 0, 0));
+  background-color: var(--blockquote-background-color);
   color: var(--blockquote-color, rgb(255, 198, 99));
   font-family:
     "Atkinson Hyperlegible",
@@ -2766,12 +2608,7 @@ body body.theme-dark .search-results {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  box-shadow: var(
-    --shadow-l,
-    rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
-    rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
-    rgba(0, 0, 0, 0.2) 0px 30px 90px 0px
-  );
+  box-shadow: var(--shadow-l);
 }
 body body.theme-dark .search-results > * {
   background-color: rgba(0, 0, 0, 0);
@@ -2842,10 +2679,7 @@ body body.theme-dark div.search-results .suggestion-item {
 body body.theme-dark .search-results .suggestion-item.is-selected {
   color: rgb(255, 255, 255);
   font-weight: 400;
-  background-color: var(
-    --background-modifier-hover,
-    rgba(255, 255, 255, 0.067)
-  );
+  background-color: var(--background-modifier-hover);
 }
 body body.theme-dark div.search-results .suggestion-item.is-selected {
   color: rgb(255, 255, 255);
@@ -2870,12 +2704,12 @@ body body.theme-dark .published-container .markdown-rendered h1 {
     "Segoe UI Symbol",
     sans-serif
   );
-  font-size: var(--h1-size, 25.888px);
+  font-size: var(--h1-size);
   font-weight: var(--font-weight, 900);
-  line-height: var(--h1-line-height, 31.0656px);
+  line-height: var(--h1-line-height);
   text-shadow: none;
   text-decoration: underline;
-  letter-spacing: var(--h1-letter-spacing, -0.38832px);
+  letter-spacing: var(--h1-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -2922,12 +2756,12 @@ body body.theme-dark .published-container .markdown-rendered h2 {
     "Segoe UI Symbol",
     sans-serif
   );
-  font-size: var(--h2-size, 23.392px);
+  font-size: var(--h2-size);
   font-weight: var(--font-weight, 900);
-  line-height: var(--h2-line-height, 28.0704px);
+  line-height: var(--h2-line-height);
   text-shadow: none;
   text-decoration: underline;
-  letter-spacing: var(--h2-letter-spacing, -0.257312px);
+  letter-spacing: var(--h2-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -2974,12 +2808,12 @@ body body.theme-dark .published-container .markdown-rendered h3 {
     "Segoe UI Symbol",
     sans-serif
   );
-  font-size: var(--h3-size, 21.088px);
+  font-size: var(--h3-size);
   font-weight: var(--font-weight, 900);
-  line-height: var(--h3-line-height, 27.4144px);
+  line-height: var(--h3-line-height);
   text-shadow: none;
   text-decoration: underline;
-  letter-spacing: var(--h3-letter-spacing, -0.168704px);
+  letter-spacing: var(--h3-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -3026,12 +2860,12 @@ body body.theme-dark .published-container .markdown-rendered h4 {
     "Segoe UI Symbol",
     sans-serif
   );
-  font-size: var(--h4-size, 19.008px);
+  font-size: var(--h4-size);
   font-weight: var(--font-weight, 900);
-  line-height: var(--h4-line-height, 26.6112px);
+  line-height: var(--h4-line-height);
   text-shadow: none;
   text-decoration: underline;
-  letter-spacing: var(--h4-letter-spacing, -0.09504px);
+  letter-spacing: var(--h4-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -3078,12 +2912,12 @@ body body.theme-dark .published-container .markdown-rendered h5 {
     "Segoe UI Symbol",
     sans-serif
   );
-  font-size: var(--h5-size, 17.216px);
+  font-size: var(--h5-size);
   font-weight: var(--font-weight, 900);
-  line-height: var(--h5-line-height, 25.824px);
+  line-height: var(--h5-line-height);
   text-shadow: none;
   text-decoration: underline;
-  letter-spacing: var(--h5-letter-spacing, -0.034432px);
+  letter-spacing: var(--h5-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -3130,9 +2964,9 @@ body body.theme-dark .published-container .markdown-rendered h6 {
     "Segoe UI Symbol",
     sans-serif
   );
-  font-size: var(--h6-size, 16px);
+  font-size: var(--h6-size);
   font-weight: var(--font-weight, 900);
-  line-height: var(--h6-line-height, 24px);
+  line-height: var(--h6-line-height);
   text-shadow: none;
   text-decoration: underline;
   letter-spacing: normal;
@@ -3168,7 +3002,7 @@ body
   .outline-view
   .tree-item
   > .tree-item-self {
-  font-weight: var(--nav-item-weight, 400);
+  font-weight: var(--nav-item-weight);
 }
 body
   body.theme-dark
@@ -3267,10 +3101,10 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
   color: var(--callout-title-color, rgb(104, 144, 215));
-  font-weight: var(--font-weight, 600);
+  font-weight: var(--font-weight);
 }
 body body.theme-dark .callout > .callout-content {
-  background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+  background-color: var(--callout-content-background);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -3804,7 +3638,7 @@ body body.theme-dark .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin-top: var(--heading-spacing, 16px);
+  margin-top: var(--heading-spacing);
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -3838,13 +3672,13 @@ body body.theme-dark .markdown-rendered th {
   color: var(--table-header-color, rgb(255, 255, 255));
   font-weight: var(--table-header-weight, 800);
   text-align: start;
-  vertical-align: var(--table-cell-vertical-alignment, top);
+  vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(218, 218, 218);
   letter-spacing: normal;
-  border-left: var(--table-column-first-border-width, 1px) solid rgb(54, 54, 54);
+  border-left: var(--table-column-first-border-width) solid rgb(54, 54, 54);
   border-right: 1px solid rgb(54, 54, 54);
-  border-top: var(--table-header-border-width, 1px) solid rgb(54, 54, 54);
+  border-top: var(--table-header-border-width) solid rgb(54, 54, 54);
   border-bottom: 1px solid rgb(54, 54, 54);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3865,11 +3699,11 @@ body body.theme-dark .markdown-rendered td {
   color: var(--table-text-color, rgb(255, 255, 255));
   font-weight: 400;
   text-align: start;
-  vertical-align: var(--table-cell-vertical-alignment, top);
+  vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(218, 218, 218);
   border: 1px solid rgb(54, 54, 54);
-  border-left: var(--table-column-first-border-width, 1px) solid rgb(54, 54, 54);
+  border-left: var(--table-column-first-border-width) solid rgb(54, 54, 54);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3885,7 +3719,7 @@ body body.theme-dark .markdown-rendered td {
   padding-inline-start: 1px;
 }
 body body.theme-dark .markdown-rendered tr {
-  background-color: var(--table-header-background, rgba(0, 0, 0, 0));
+  background-color: var(--table-header-background);
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3897,10 +3731,10 @@ body body.theme-dark .markdown-rendered tr {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(even) {
-  background-color: var(--table-background, rgba(0, 0, 0, 0));
+  background-color: var(--table-background);
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(odd) {
-  background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+  background-color: var(--table-row-alt-background);
 }
 body body.theme-dark .markdown-rendered img {
   border-radius: 0px;
@@ -4015,7 +3849,7 @@ body body.theme-dark .markdown-rendered audio {
   padding-inline-start: 0px;
 }
 body body.theme-dark .internal-embed {
-  background-color: var(--embed-background, rgba(0, 0, 0, 0));
+  background-color: var(--embed-background);
   color: rgb(255, 255, 255);
   border-radius: 0px;
   border-color: rgb(255, 255, 255);
@@ -4031,7 +3865,7 @@ body body.theme-dark .internal-embed {
   padding: 0px;
 }
 body body.theme-dark .markdown-embed {
-  background-color: var(--embed-background, rgba(0, 0, 0, 0));
+  background-color: var(--embed-background);
   color: rgb(255, 255, 255);
   border-radius: 0px;
   border-left: solid;
@@ -4045,7 +3879,7 @@ body body.theme-dark .markdown-embed {
   padding: 0px;
 }
 body body.theme-dark .file-embed {
-  background-color: var(--background-primary-alt, rgb(36, 36, 36));
+  background-color: var(--background-primary-alt);
   color: var(--text-muted, rgba(255, 255, 255, 0.8));
   border-radius: 8px;
   border-color: rgba(255, 255, 255, 0.8);
@@ -4058,7 +3892,7 @@ body body.theme-dark .file-embed {
   padding: 8px;
 }
 body body.theme-dark .metadata-container {
-  background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+  background-color: var(--metadata-background);
   color: var(--text-muted, rgba(255, 255, 255, 0.8));
   font-family:
     "Atkinson Hyperlegible",
@@ -4113,7 +3947,7 @@ body body.theme-dark .metadata-properties {
   padding: 0px;
 }
 body body.theme-dark .metadata-container .metadata-property {
-  background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+  background-color: var(--metadata-property-background);
   color: rgba(255, 255, 255, 0.8);
   font-family:
     "Atkinson Hyperlegible",
@@ -4143,43 +3977,13 @@ body body.theme-dark .metadata-container .metadata-property {
 }
 body body.theme-dark .metadata-property-key {
   color: rgba(255, 255, 255, 0.8);
-  font-family: var(
-    --metadata-label-font,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
+  font-family: var(--metadata-label-font);
   font-size: 16px;
   font-weight: 400;
 }
 body body.theme-dark .metadata-property-value {
   color: rgba(255, 255, 255, 0.8);
-  font-family: var(
-    --metadata-input-font,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
+  font-family: var(--metadata-input-font);
   font-size: 16px;
 }
 body body.theme-dark progress {
@@ -4300,21 +4104,8 @@ body body.theme-dark kbd {
   background-color: var(--code-background, rgb(20, 21, 21));
   box-shadow: none;
   color: var(--code-normal, rgb(255, 255, 255));
-  font-family: var(
-    --font-monospace,
-    ui-monospace,
-    SFMono-Regular,
-    "Cascadia Mono",
-    "Roboto Mono",
-    "DejaVu Sans Mono",
-    "Liberation Mono",
-    Menlo,
-    Monaco,
-    Consolas,
-    "Source Code Pro",
-    monospace
-  );
-  font-size: var(--code-size, 14px);
+  font-family: var(--font-monospace);
+  font-size: var(--code-size);
   border: 0px rgb(255, 255, 255);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -4618,7 +4409,7 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--nav-item-color, rgba(255, 255, 255, 0.8));
-  cursor: var(--cursor, default);
+  cursor: var(--cursor);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -4633,7 +4424,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 400);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(218, 218, 218);
 }
 body
@@ -4645,7 +4436,7 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--nav-item-color, rgba(255, 255, 255, 0.8));
-  cursor: var(--cursor, default);
+  cursor: var(--cursor);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -4660,13 +4451,13 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 400);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
   color: var(--icon-color, rgb(221, 208, 196));
-  cursor: var(--cursor, default);
+  cursor: var(--cursor);
   border-color: rgb(221, 208, 196);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -4703,7 +4494,7 @@ body body.theme-dark .site-footer {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;
-  padding-right: var(--size-4-2, 8px);
+  padding-right: var(--size-4-2);
 }
 body body.theme-dark .site-footer a {
   color: rgb(136, 122, 163);
@@ -4770,7 +4561,7 @@ body body.theme-dark .nav-files-container {
 body body.theme-dark .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
   color: var(--icon-color, rgb(221, 208, 196));
-  cursor: var(--cursor, default);
+  cursor: var(--cursor);
   border-color: rgb(221, 208, 196);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -4841,7 +4632,7 @@ body body.theme-dark .page-header .page-title {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .math-block {
-  background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+  background-color: var(--background-modifier-hover);
   color: rgb(255, 255, 255);
   border-color: rgb(255, 255, 255);
   border-width: 0px;

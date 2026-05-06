@@ -41,6 +41,9 @@ settings:
             -
                 label: 📄 Paper
                 value: paper-theme
+            -
+                label: 🍃 Calm Focus
+                value: calm-focus-theme
 
     -
         id: visual-appearance-heading
@@ -74,6 +77,32 @@ settings:
         description: Add realistic multi-layer shadows for visual depth and hierarchy
         type: class-toggle
         default: true
+    -
+        id: depth-warm
+        title: Tinted Ambient Shadows
+        description: Tint shadows with the accent colour for a warm, Apple-style ambient elevation (requires Depth & Shadows)
+        type: class-toggle
+        default: false
+    -
+        id: terraflow-quiet
+        title: Quiet Mode (Rams Reduction)
+        description: Soften hover lifts, mute accent backgrounds, remove link glow — a calmer, less expressive interface
+        type: class-toggle
+        default: false
+    -
+        id: use-custom-accent
+        title: Custom Accent Colour
+        description: Enable to override the seasonal accent with the colour below
+        type: class-toggle
+        default: false
+    -
+        id: custom-accent
+        title: Accent Colour (when override is on)
+        description: The accent colour used when Custom Accent Override is enabled
+        type: variable-color
+        default: "#5E7D6E"
+        opacity: false
+        format: hex
     -
         id: enable-monochrome
         title: Monochrome Mode
@@ -248,6 +277,24 @@ settings:
         type: class-toggle
         default: false
     -
+        id: heading-tight-tracking
+        title: Tight Heading Tracking
+        description: Apply negative letter-spacing to H1/H2 for Apple-style optical display tightening
+        type: class-toggle
+        default: false
+    -
+        id: tabular-numerics
+        title: Tabular Numerics
+        description: Use tabular (fixed-width) numerals in metadata, tables, and status bar for precise alignment
+        type: class-toggle
+        default: false
+    -
+        id: caret-accent
+        title: Accent Caret & Selection
+        description: Colour the cursor caret and text-selection with the accent colour (visionOS-style)
+        type: class-toggle
+        default: false
+    -
         id: text-appearance-heading
         title: ✍️ Heading Uppercase
         description: Customize the typography case for individual heading levels
@@ -297,6 +344,12 @@ settings:
         type: class-toggle
         default: false
     -
+        id: tag-chips
+        title: Braun Tag Chips
+        description: Restyle inline tags as minimal uppercase chips — no background, hairline border, tight tracking
+        type: class-toggle
+        default: false
+    -
         id: enable-floating-nav
         title: Floating Nav Buttons
         description: Transform sidebar navigation buttons into a floating pill that expands on hover.
@@ -326,6 +379,12 @@ settings:
         description: Line height for editor text (e.g. 1.4, 1.6, 1.8)
         type: variable-text
         default: "1.6"
+    -
+        id: focus-grid
+        title: Focus Dot Grid
+        description: Faint Bauhaus-style 24px dot grid behind the editor — tactile, barely perceptible
+        type: class-toggle
+        default: false
 
     -
         id: performance-heading
@@ -381,7 +440,9 @@ settings:
     --s2: 8px;
     --s3: 12px;
     --s4: 16px;
+    --s5: 20px;
     --s6: 24px;
+    --s7: 28px;
     --s8: 32px;
     --r1: 6px;
     --r2: 10px;
@@ -419,6 +480,11 @@ settings:
     --heading-pad-y: 0.2em;
     --heading-pad-x: 0.5em;
     --heading-font: inherit;
+
+    /* Typography refinement tokens */
+    --tracking-tight: -0.02em;
+    --tracking-snug: -0.01em;
+    --tracking-normal: 0em;
 
     /* Heading scale multipliers for calc() operations */
     --heading-scale-1: 1.25;
@@ -1786,6 +1852,204 @@ settings:
 
     --tab-bg-inactive: transparent;
     --tab-bg-inactive-hover: rgba(255, 255, 255, 0.05);
+}
+
+/* --- Calm Focus Theme --- */
+/* Low-chroma, Braun/Muji-quiet palette. Single sage-clay accent, warm-neutral surfaces. */
+.calm-focus-theme {
+    --accent-h: 150;
+    --accent-s: 14%;
+    --accent-l: 44%;
+}
+
+.theme-light.calm-focus-theme {
+    --background-primary: #F5F2EE;
+    --background-primary-rgb: 245, 242, 238;
+    --background-secondary: #EDE9E3;
+    --background-secondary-rgb: 237, 233, 227;
+    --background-secondary-alt: #E3DED6;
+
+    --text-normal: #2E2C29;
+    --text-normal-rgb: 46, 44, 41;
+    --text-muted: #7A7671;
+    --text-faint: #B5B0A9;
+
+    --bold-color: #3D5C4F;
+    --italic-color: #4A6A5B;
+
+    --emphasis-color: #4A6A5B;
+    --emphasis-color-light: #5A7E6D;
+
+    --primary-color: #5E7D6E;
+    --primary-color-rgb: 94, 125, 110;
+    --primary-color-dark: #3D5C4F;
+    --interactive-accent: #5E7D6E;
+    --interactive-accent-hover: #3D5C4F;
+
+    --link-color: #5E7D6E;
+    --link-color-hover: #3D5C4F;
+    --link-unresolved-color: #8AA397;
+
+    --blockquote-border-color: #7A9D8C;
+    --checkbox-color: #5E7D6E;
+    --text-accent: #5E7D6E;
+    --divider-color: rgba(0, 0, 0, var(--opacity-hover));
+    --text-selection: rgba(94, 125, 110, 0.15);
+
+    --scrollbar-thumb: rgba(0, 0, 0, var(--opacity-divider));
+    --scrollbar-track: rgba(0, 0, 0, 0.03);
+
+    --code-background: #E8E4DE;
+    --code-normal: #2E2C29;
+    --code-comment: #A09C96;
+    --code-function: #4A6A5B;
+    --code-important: #5E7D6E;
+    --code-keyword: #2E2C29;
+    --code-property: #4A6A5B;
+    --code-punctuation: #A09C96;
+    --code-string: #5E7D6E;
+    --code-tag: #7A9D8C;
+    --code-value: #2E2C29;
+
+    --heading-primary: #3D5C4F;
+    --heading-secondary: #4A6A5B;
+    --heading-tertiary: #5E7D6E;
+    --heading-quaternary: #4A4843;
+    --heading-quinary: #5A5753;
+    --heading-senary: #6B6762;
+
+    --heading-primary-rgb: 61, 92, 79;
+    --heading-secondary-rgb: 74, 106, 91;
+    --heading-tertiary-rgb: 94, 125, 110;
+    --heading-quaternary-rgb: 74, 72, 67;
+    --heading-quinary-rgb: 90, 87, 83;
+    --heading-senary-rgb: 107, 103, 98;
+
+    --callout-note: #5E7D6E;
+    --callout-note-rgb: 94, 125, 110;
+    --callout-info: #5E7D6E;
+    --callout-info-rgb: 94, 125, 110;
+    --callout-warning: #8C7B52;
+    --callout-warning-rgb: 140, 123, 82;
+    --callout-faq: #5E7D6E;
+    --callout-faq-rgb: 94, 125, 110;
+    --callout-question: #5E7D6E;
+    --callout-question-rgb: 94, 125, 110;
+    --callout-success: #4A7A5C;
+    --callout-success-rgb: 74, 122, 92;
+    --callout-danger: #8C5252;
+    --callout-danger-rgb: 140, 82, 82;
+    --callout-example: #5E7D6E;
+    --callout-example-rgb: 94, 125, 110;
+    --callout-cite: #7A7671;
+    --callout-cite-rgb: 122, 118, 113;
+    --callout-video: #5E7D6E;
+    --callout-video-rgb: 94, 125, 110;
+    --callout-quote: #7A9D8C;
+    --callout-quote-rgb: 122, 157, 140;
+
+    --highlight-bg: rgba(94, 125, 110, 0.18);
+    --highlight-bg-rgb: 94, 125, 110;
+    --highlight-bg-dark: rgba(94, 125, 110, 0.28);
+
+    --tab-bg-inactive: transparent;
+    --tab-bg-inactive-hover: rgba(0, 0, 0, 0.04);
+}
+
+.theme-dark.calm-focus-theme {
+    --background-primary: #1E1E1C;
+    --background-primary-rgb: 30, 30, 28;
+    --background-secondary: #282825;
+    --background-secondary-rgb: 40, 40, 37;
+    --background-secondary-alt: #323230;
+
+    --text-normal: #D5D0C9;
+    --text-normal-rgb: 213, 208, 201;
+    --text-muted: #8A8680;
+    --text-faint: #524F4A;
+
+    --bold-color: #E2DDD6;
+    --italic-color: #88AE99;
+
+    --emphasis-color: #88AE99;
+    --emphasis-color-light: #9DC0AE;
+
+    --primary-color: #7FA98F;
+    --primary-color-rgb: 127, 169, 143;
+    --primary-color-dark: #5E8A75;
+    --interactive-accent: #7FA98F;
+    --interactive-accent-hover: #9DC0AE;
+
+    --link-color: #7FA98F;
+    --link-color-hover: #9DC0AE;
+    --link-unresolved-color: #5E7D6E;
+
+    --blockquote-border-color: #7FA98F;
+    --checkbox-color: #7FA98F;
+    --text-accent: #7FA98F;
+    --divider-color: rgba(255, 255, 255, 0.07);
+    --text-selection: rgba(127, 169, 143, 0.18);
+
+    --scrollbar-thumb: rgba(255, 255, 255, 0.12);
+    --scrollbar-track: rgba(255, 255, 255, 0.02);
+
+    --code-background: #242422;
+    --code-normal: #C8C3BC;
+    --code-comment: #6B6762;
+    --code-function: #88AE99;
+    --code-important: #7FA98F;
+    --code-keyword: #D5D0C9;
+    --code-property: #9DC0AE;
+    --code-punctuation: #6B6762;
+    --code-string: #7FA98F;
+    --code-tag: #88AE99;
+    --code-value: #C8C3BC;
+
+    --heading-primary: #9DC0AE;
+    --heading-secondary: #88AE99;
+    --heading-tertiary: #7FA98F;
+    --heading-quaternary: #B5B0A9;
+    --heading-quinary: #9E9990;
+    --heading-senary: #8A8680;
+
+    --heading-primary-rgb: 157, 192, 174;
+    --heading-secondary-rgb: 136, 174, 153;
+    --heading-tertiary-rgb: 127, 169, 143;
+    --heading-quaternary-rgb: 181, 176, 169;
+    --heading-quinary-rgb: 158, 153, 144;
+    --heading-senary-rgb: 138, 134, 128;
+
+    --callout-note: #7FA98F;
+    --callout-note-rgb: 127, 169, 143;
+    --callout-info: #7FA98F;
+    --callout-info-rgb: 127, 169, 143;
+    --callout-warning: #C4A96A;
+    --callout-warning-rgb: 196, 169, 106;
+    --callout-faq: #7FA98F;
+    --callout-faq-rgb: 127, 169, 143;
+    --callout-question: #7FA98F;
+    --callout-question-rgb: 127, 169, 143;
+    --callout-success: #72A882;
+    --callout-success-rgb: 114, 168, 130;
+    --callout-danger: #C47272;
+    --callout-danger-rgb: 196, 114, 114;
+    --callout-example: #7FA98F;
+    --callout-example-rgb: 127, 169, 143;
+    --callout-cite: #8A8680;
+    --callout-cite-rgb: 138, 134, 128;
+    --callout-video: #7FA98F;
+    --callout-video-rgb: 127, 169, 143;
+    --callout-quote: #88AE99;
+    --callout-quote-rgb: 136, 174, 153;
+
+    --highlight-bg: rgba(127, 169, 143, 0.18);
+    --highlight-bg-rgb: 127, 169, 143;
+    --highlight-bg-dark: rgba(127, 169, 143, 0.28);
+    --highlight-bg-dark-color: rgba(127, 169, 143, 0.45);
+    --highlight-bg-light-color: var(--text-normal);
+
+    --tab-bg-inactive: transparent;
+    --tab-bg-inactive-hover: rgba(255, 255, 255, 0.04);
 }
 
 /* Paper Theme Specific Table Overrides for Readability */
@@ -7808,6 +8072,40 @@ body.depth-shadows .workspace-sidedock-vault-profile:hover {
 }
 
 /* ============================== */
+/*   TINTED AMBIENT SHADOWS       */
+/* ============================== */
+
+/* Redefine depth-2/3/4 with a hint of accent colour when depth-warm is active.
+   Requires depth-shadows to be enabled. Light-mode: warm amber tint. Dark: pure accent. */
+body.depth-shadows.depth-warm {
+    --depth-2: 0 2px 4px rgba(var(--primary-color-rgb), 0.06),
+               0 4px 8px rgba(var(--primary-color-rgb), 0.04),
+               0 8px 16px rgba(0, 0, 0, 0.02);
+
+    --depth-3: 0 4px 8px rgba(var(--primary-color-rgb), 0.08),
+               0 8px 16px rgba(var(--primary-color-rgb), 0.06),
+               0 16px 32px rgba(0, 0, 0, 0.03);
+
+    --depth-4: 0 8px 16px rgba(var(--primary-color-rgb), 0.1),
+               0 16px 32px rgba(var(--primary-color-rgb), 0.07),
+               0 32px 64px rgba(0, 0, 0, 0.04);
+}
+
+body.depth-shadows.depth-warm.theme-dark {
+    --depth-2: 0 2px 4px rgba(var(--primary-color-rgb), 0.15),
+               0 4px 8px rgba(var(--primary-color-rgb), 0.1),
+               0 8px 16px rgba(0, 0, 0, 0.12);
+
+    --depth-3: 0 4px 8px rgba(var(--primary-color-rgb), 0.2),
+               0 8px 16px rgba(var(--primary-color-rgb), 0.14),
+               0 16px 32px rgba(0, 0, 0, 0.16);
+
+    --depth-4: 0 8px 16px rgba(var(--primary-color-rgb), 0.24),
+               0 16px 32px rgba(var(--primary-color-rgb), 0.18),
+               0 32px 64px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================== */
 /*   INLINE CODE HIGHLIGHTS       */
 /* ============================== */
 
@@ -8032,4 +8330,208 @@ body.layout-card .workspace {
     border-radius: var(--r1);
     margin: 2px 6px;
     padding: 2px 0;
+}
+
+/* ============================== */
+/*   QUIET MODE (RAMS REDUCTION)  */
+/* ============================== */
+
+/* Halve hover lifts for callouts, cards, pills, buttons */
+body.terraflow-quiet.depth-shadows .callout:hover,
+body.terraflow-quiet.depth-shadows .metadata-container:hover,
+body.terraflow-quiet.depth-shadows .canvas-card:hover {
+    transform: translateY(-1px) !important;
+}
+
+body.terraflow-quiet.depth-shadows .button:hover,
+body.terraflow-quiet.depth-shadows button:not(.clickable-icon):hover,
+body.terraflow-quiet.depth-shadows .multi-select-pill:hover,
+body.terraflow-quiet.depth-shadows .nav-buttons-container:hover {
+    transform: translateY(-1px) !important;
+}
+
+/* Soften callout left-border */
+body.terraflow-quiet .callout {
+    border-left-width: 2px !important;
+}
+
+/* Desaturate accent backgrounds on highlights and pills */
+body.terraflow-quiet .markdown-rendered mark,
+body.terraflow-quiet .markdown-preview-view mark,
+body.terraflow-quiet .multi-select-pill {
+    filter: saturate(0.85);
+}
+
+/* Replace link hover glow with underline thickening instead */
+body.terraflow-quiet :is(
+    .markdown-rendered a,
+    .markdown-preview-view a,
+    .cm-hmd-internal-link,
+    .cm-url
+):hover {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    text-decoration: underline !important;
+    text-decoration-thickness: 2px !important;
+    text-underline-offset: 2px !important;
+}
+
+/* ============================== */
+/*   TIGHT HEADING TRACKING       */
+/* ============================== */
+
+body.heading-tight-tracking :is(
+    .markdown-rendered h1, .markdown-preview-view h1,
+    .cm-header-1, .inline-title
+) {
+    letter-spacing: var(--tracking-tight);
+}
+
+body.heading-tight-tracking :is(
+    .markdown-rendered h2, .markdown-preview-view h2,
+    .cm-header-2
+) {
+    letter-spacing: var(--tracking-tight);
+}
+
+body.heading-tight-tracking :is(
+    .markdown-rendered h3, .markdown-preview-view h3,
+    .cm-header-3
+) {
+    letter-spacing: var(--tracking-snug);
+}
+
+/* ============================== */
+/*   TABULAR NUMERICS             */
+/* ============================== */
+
+body.tabular-numerics .metadata-container,
+body.tabular-numerics .metadata-property-value {
+    font-variant-numeric: tabular-nums;
+}
+
+body.tabular-numerics .markdown-rendered table,
+body.tabular-numerics .markdown-preview-view table {
+    font-variant-numeric: tabular-nums;
+}
+
+body.tabular-numerics .status-bar {
+    font-variant-numeric: tabular-nums;
+}
+
+body.tabular-numerics .nav-file-title,
+body.tabular-numerics .nav-folder-title {
+    font-variant-numeric: tabular-nums;
+}
+
+/* ============================== */
+/*   ACCENT CARET & SELECTION     */
+/* ============================== */
+
+/* Accent caret */
+body.caret-accent .cm-editor .cm-cursor,
+body.caret-accent .cm-editor .cm-cursor-primary {
+    border-left-color: var(--interactive-accent) !important;
+    border-left-width: 2px !important;
+    filter: drop-shadow(0 0 3px rgba(var(--primary-color-rgb), 0.6));
+}
+
+/* Accent selection — live preview */
+body.caret-accent .cm-editor .cm-selectionBackground,
+body.caret-accent .cm-editor.cm-focused .cm-selectionBackground {
+    background: rgba(var(--primary-color-rgb), 0.18) !important;
+}
+
+/* Accent selection — reading view */
+body.caret-accent .markdown-preview-view ::selection,
+body.caret-accent .markdown-rendered ::selection {
+    background: rgba(var(--primary-color-rgb), 0.2) !important;
+}
+
+/* ============================== */
+/*   FOCUS DOT GRID               */
+/* ============================== */
+
+/* Faint Bauhaus 24px dot grid behind the editor. Only in live-preview/source, not reading view. */
+body.focus-grid .cm-editor {
+    background-image: radial-gradient(
+        circle,
+        rgba(var(--text-normal-rgb, 0, 0, 0), 0.06) 1px,
+        transparent 1px
+    );
+    background-size: 24px 24px;
+}
+
+body.focus-grid.theme-dark .cm-editor {
+    background-image: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.07) 1px,
+        transparent 1px
+    );
+    background-size: 24px 24px;
+}
+
+/* Suppress in reduced-motion / print */
+@media print {
+    body.focus-grid .cm-editor {
+        background-image: none;
+    }
+}
+
+/* ============================== */
+/*   CUSTOM ACCENT OVERRIDE       */
+/* ============================== */
+
+/* When Use Custom Accent is toggled on, remap accent variables to --custom-accent
+   (injected by Style Settings from the variable-color entry above). */
+body.use-custom-accent {
+    --interactive-accent: var(--custom-accent) !important;
+    --interactive-accent-hover: var(--custom-accent) !important;
+    --text-accent: var(--custom-accent) !important;
+    --link-color: var(--custom-accent) !important;
+    --link-color-hover: var(--custom-accent) !important;
+    --checkbox-color: var(--custom-accent) !important;
+    --blockquote-border-color: var(--custom-accent) !important;
+}
+
+/* ============================== */
+/*   BRAUN TAG CHIPS              */
+/* ============================== */
+
+/* Override Obsidian's tag CSS variables for a minimal, typographic chip style.
+   No filled background; hairline border; tight uppercase small-cap tracking. */
+body.tag-chips {
+    --tag-background: transparent;
+    --tag-background-hover: rgba(var(--primary-color-rgb), 0.07);
+    --tag-border-color: rgba(var(--primary-color-rgb), 0.3);
+    --tag-border-color-hover: rgba(var(--primary-color-rgb), 0.55);
+    --tag-border-width: 1px;
+    --tag-color: var(--text-muted);
+    --tag-color-hover: var(--text-accent);
+    --tag-padding-x: 6px;
+    --tag-padding-y: 1px;
+    --tag-radius: 3px;
+    --tag-size: 0.73em;
+    --tag-weight: var(--weight-medium);
+}
+
+body.tag-chips a.tag {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Live-preview hashtag spans — style the text portion to match */
+body.tag-chips .cm-line .cm-hashtag-end {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.76em;
+    font-weight: var(--weight-medium);
+    color: var(--text-muted);
+    opacity: 0.85;
+}
+
+body.tag-chips .cm-line .cm-hashtag-begin {
+    opacity: 0.5;
+    font-size: 0.76em;
 }

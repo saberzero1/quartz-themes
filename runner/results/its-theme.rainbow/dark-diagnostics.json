@@ -1,0 +1,29 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--sidebar-tab-padding",
+      "references": "--size-4-4",
+      "selector": "&[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content",
+      "aspect": "base"
+    },
+    {
+      "property": "--sidebar-tab-padding",
+      "references": "--size-4-4",
+      "selector": ".page > div#quartz-body div.sidebar.right",
+      "aspect": "base"
+    },
+    {
+      "property": "--callout-content-background",
+      "references": "--callout-background",
+      "selector": ".callout[data-callout=\"timeline\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--timeline-border",
+      "references": "--callout-title",
+      "selector": ".callout[data-callout=\"timeline\"]",
+      "aspect": "callouts"
+    }
+  ]
+}

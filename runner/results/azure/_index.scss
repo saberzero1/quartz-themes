@@ -7,61 +7,61 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode, darken);
-  --callout-bug: var(--color-red-rgb, 233, 49, 71);
-  --callout-default: var(--color-blue-rgb, 8, 109, 221);
-  --callout-error: var(--color-red-rgb, 233, 49, 71);
-  --callout-example: var(--color-purple-rgb, 120, 82, 238);
-  --callout-fail: var(--color-red-rgb, 233, 49, 71);
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
+  --callout-bug: var(--color-red-rgb);
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-orange-rgb, 236, 117, 0);
   --callout-info: var(--color-indigo-rgb, 84, 93, 204);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 12px 12px 12px 24px);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-yellow-rgb, 224, 172, 0);
   --callout-radius: var(--radius-s, 2px);
-  --callout-success: var(--color-green-rgb, 8, 185, 78);
+  --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-pink-rgb, 213, 57, 132);
-  --callout-tip: var(--color-cyan-rgb, 0, 191, 188);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-cyan-rgb, 0, 191, 188);
-  --callout-warning: var(--color-orange-rgb, 236, 117, 0);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-muted, rgb(99, 99, 99)) !important;
   --checkbox-border-color-hover: var(--color-accent, hsl(217, 100%, 61%)) !important;
   --checkbox-color: var(--interactive-accent, hsl(217, 100%, 61%)) !important;
   --checkbox-color-hover: var(--interactive-accent-hover, hsl(217, 100%, 61%)) !important;
   --checkbox-marker-color: var(--background-primary, rgb(238, 238, 238)) !important;
   --checkbox-radius: var(--radius-s, 2px) !important;
-  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-secondary, rgb(245, 247, 249)) !important;
   --code-border-color: var(--background-modifier-border, rgb(238, 238, 238)) !important;
-  --code-bracket-background: var(--background-modifier-hover, rgba(0, 0, 0, 0.067)) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--purple, #8963ea) !important;
-  --code-function: var(--color-yellow, #e0ac00) !important;
-  --code-important: var(--color-orange, #ec7500) !important;
-  --code-keyword: var(--color-pink, #d53984) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--font-text-theme, "Consolas", monospace) !important;
-  --code-operator: var(--color-red, #e93147) !important;
-  --code-property: var(--color-cyan, #00bfbc) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted, rgb(99, 99, 99)) !important;
   --code-radius: var(--radius-s, 2px) !important;
   --code-size: var(--font-text-size, 16px) !important;
   --code-string: var(--text-normal, rgb(38, 38, 38)) !important;
-  --code-tag: var(--color-red, #e93147) !important;
-  --code-value: var(--color-purple, #7852ee) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint, rgb(99, 99, 99)) !important;
   --collapse-icon-color-collapsed: var(--text-accent, hsl(217, 100%, 61%)) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted, rgb(99, 99, 99)) !important;
-  --graph-node-attachment: var(--color-yellow, #e0ac00) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent, hsl(217, 100%, 61%)) !important;
-  --graph-node-tag: var(--color-green, #08b94e) !important;
+  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint, rgb(99, 99, 99)) !important;
   --graph-text: var(--text-normal, rgb(38, 38, 38)) !important;
   --icon-color: var(--text-muted, rgb(99, 99, 99)) !important;
   --icon-color-active: var(--text-accent, hsl(217, 100%, 61%)) !important;
   --icon-color-focused: var(--color-accent, hsl(217, 100%, 61%)) !important;
   --icon-color-hover: var(--text-accent-hover, hsl(217, 100%, 61%)) !important;
-  --icon-size: var(--icon-m, 18px) !important;
-  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --icon-size: var(--icon-m) !important;
+  --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-content-background: transparent;
@@ -95,61 +95,61 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --callout-blend-mode: var(--highlight-mix-blend-mode, lighten);
-  --callout-bug: var(--color-red-rgb, 251, 70, 76);
-  --callout-default: var(--color-blue-rgb, 2, 122, 255);
-  --callout-error: var(--color-red-rgb, 251, 70, 76);
-  --callout-example: var(--color-purple-rgb, 168, 130, 255);
-  --callout-fail: var(--color-red-rgb, 251, 70, 76);
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
+  --callout-bug: var(--color-red-rgb);
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-orange-rgb, 233, 151, 63);
   --callout-info: var(--color-indigo-rgb, 84, 93, 204);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 12px 12px 12px 24px);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-yellow-rgb, 224, 222, 113);
   --callout-radius: var(--radius-s, 2px);
-  --callout-success: var(--color-green-rgb, 68, 207, 110);
+  --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-pink-rgb, 250, 153, 205);
-  --callout-tip: var(--color-cyan-rgb, 83, 223, 221);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-cyan-rgb, 83, 223, 221);
-  --callout-warning: var(--color-orange-rgb, 233, 151, 63);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-muted, rgb(158, 158, 158)) !important;
   --checkbox-border-color-hover: var(--color-accent, hsl(217, 100%, 61%)) !important;
   --checkbox-color: var(--interactive-accent, hsl(217, 100%, 61%)) !important;
   --checkbox-color-hover: var(--interactive-accent-hover, hsl(214, 102%, 70.15%)) !important;
   --checkbox-marker-color: var(--background-primary, rgb(19, 22, 27)) !important;
   --checkbox-radius: var(--radius-s, 2px) !important;
-  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-secondary, rgb(28, 32, 39)) !important;
   --code-border-color: var(--background-modifier-border, rgb(19, 22, 27)) !important;
-  --code-bracket-background: var(--background-modifier-hover, rgba(255, 255, 255, 0.067)) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--purple, #8963ea) !important;
-  --code-function: var(--color-yellow, #e0de71) !important;
-  --code-important: var(--color-orange, #e9973f) !important;
-  --code-keyword: var(--color-pink, #fa99cd) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--font-text-theme, "Consolas", monospace) !important;
-  --code-operator: var(--color-red, #fb464c) !important;
-  --code-property: var(--color-cyan, #53dfdd) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted, rgb(158, 158, 158)) !important;
   --code-radius: var(--radius-s, 2px) !important;
   --code-size: var(--font-text-size, 16px) !important;
   --code-string: var(--text-normal, rgb(238, 238, 238)) !important;
-  --code-tag: var(--color-red, #fb464c) !important;
-  --code-value: var(--color-purple, #a882ff) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint, rgb(158, 158, 158)) !important;
   --collapse-icon-color-collapsed: var(--text-accent, hsl(214, 102%, 70.15%)) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted, rgb(158, 158, 158)) !important;
-  --graph-node-attachment: var(--color-yellow, #e0de71) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent, hsl(214, 102%, 70.15%)) !important;
-  --graph-node-tag: var(--color-green, #44cf6e) !important;
+  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint, rgb(158, 158, 158)) !important;
   --graph-text: var(--text-normal, rgb(238, 238, 238)) !important;
   --icon-color: var(--text-muted, rgb(158, 158, 158)) !important;
   --icon-color-active: var(--text-accent, hsl(214, 102%, 70.15%)) !important;
   --icon-color-focused: var(--color-accent, hsl(217, 100%, 61%)) !important;
   --icon-color-hover: var(--text-accent-hover, hsl(217, 100%, 61%)) !important;
-  --icon-size: var(--icon-m, 18px) !important;
-  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --icon-size: var(--icon-m) !important;
+  --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-content-background: transparent;
@@ -520,16 +520,16 @@ body {
   footer a {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-external-color, rgb(56, 132, 255));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: Consolas, monospace;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(56, 132, 255) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(56, 132, 255);
-    text-decoration-line: var(--link-external-decoration, underline);
+    text-decoration-line: var(--link-external-decoration);
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
     transform: none;
@@ -548,16 +548,16 @@ body {
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-color, rgb(38, 38, 38));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: Consolas, monospace;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(38, 38, 38) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(38, 38, 38);
-    text-decoration-line: var(--link-decoration, underline);
+    text-decoration-line: var(--link-decoration);
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
     transform: none;
@@ -575,17 +575,17 @@ body {
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-unresolved-color, rgb(56, 132, 255));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: Consolas, monospace;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(56, 132, 255) none 0px;
     text-decoration: underline rgba(56, 132, 255, 0.3);
     text-decoration-color: var(--link-unresolved-decoration-color, rgba(56, 132, 255, 0.3));
-    text-decoration-line: var(--link-decoration, underline);
-    text-decoration-style: var(--link-unresolved-decoration-style, solid);
+    text-decoration-line: var(--link-decoration);
+    text-decoration-style: var(--link-unresolved-decoration-style);
     transition: opacity 0.14s ease-in-out;
     transform: none;
     user-select: text;
@@ -909,7 +909,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+    background-color: var(--background-modifier-hover);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -922,7 +922,7 @@ body {
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+    background-color: var(--background-modifier-hover);
     border: 0px rgb(38, 38, 38);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -963,8 +963,8 @@ body {
     display: flex;
     font-family: Consolas, monospace;
     font-size: 14px;
-    font-weight: var(--pill-weight, 400);
-    line-height: var(--line-height-tight, 14px);
+    font-weight: var(--pill-weight);
+    line-height: var(--line-height-tight);
     text-decoration: rgb(34, 34, 34);
     margin-inline-start: 0px;
     border: 0px solid rgba(56, 132, 255, 0.15);
@@ -988,8 +988,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.2px);
-    padding-bottom: var(--list-spacing, 1.2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1025,8 +1025,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.2px);
-    padding-bottom: var(--list-spacing, 1.2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1140,7 +1140,7 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    width: var(--checkbox-size, 16px);
+    width: var(--checkbox-size);
     transition: box-shadow 0.15s ease-in-out;
     position: relative;
     top: auto;
@@ -1208,7 +1208,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.1) 0px 15px 30px 0px);
+    box-shadow: var(--shadow-l);
   }
 
   .search > .search-container > .search-space > input {
@@ -1275,7 +1275,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(38, 38, 38);
     font-weight: 400;
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+    background-color: var(--background-modifier-hover);
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -1291,7 +1291,7 @@ body {
     color: var(--h1-color, rgb(38, 38, 38));
     font-family: var(--h1-font, Consolas, monospace);
     font-size: var(--h1-size, 24px);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
     line-height: var(--h1-line-height, 36px);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -1337,7 +1337,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 0px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 24px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1467,9 +1467,9 @@ body {
   h6 {
     color: var(--h6-color, rgb(38, 38, 38));
     font-family: var(--h6-font, Consolas, monospace);
-    font-size: var(--h6-size, 16px);
+    font-size: var(--h6-size);
     font-weight: var(--font-weight, 700);
-    line-height: var(--h6-line-height, 24px);
+    line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: normal;
@@ -1870,7 +1870,7 @@ body {
   }
 
   li.depth-0 {
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
   }
 
   ::-webkit-scrollbar {
@@ -1963,12 +1963,12 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(38, 38, 38);
@@ -2021,12 +2021,12 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="note"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(38, 38, 38);
@@ -2079,12 +2079,12 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="abstract"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(38, 38, 38);
@@ -2137,12 +2137,12 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="info"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(38, 38, 38);
@@ -2195,12 +2195,12 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="todo"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(38, 38, 38);
@@ -2253,12 +2253,12 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="tip"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(38, 38, 38);
@@ -2311,12 +2311,12 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="success"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(38, 38, 38);
@@ -2369,12 +2369,12 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="question"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(38, 38, 38);
@@ -2427,12 +2427,12 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(38, 38, 38);
@@ -2485,12 +2485,12 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="danger"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(38, 38, 38);
@@ -2543,12 +2543,12 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="failure"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(38, 38, 38);
@@ -2601,12 +2601,12 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="bug"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(38, 38, 38);
@@ -2659,12 +2659,12 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="example"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(38, 38, 38);
@@ -2717,12 +2717,12 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(8, 109, 221));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="quote"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(38, 38, 38);
@@ -2784,15 +2784,15 @@ body {
   th {
     background-color: rgba(0, 0, 0, 0);
     color: var(--table-header-color, rgb(38, 38, 38));
-    font-weight: var(--table-header-weight, 600);
+    font-weight: var(--table-header-weight);
     text-align: start;
-    vertical-align: var(--table-cell-vertical-alignment, top);
+    vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: normal;
-    border-left: var(--table-column-first-border-width, 1px) solid rgb(238, 238, 238);
+    border-left: var(--table-column-first-border-width) solid rgb(238, 238, 238);
     border-right: 1px solid rgb(238, 238, 238);
-    border-top: var(--table-header-border-width, 1px) solid rgb(238, 238, 238);
+    border-top: var(--table-header-border-width) solid rgb(238, 238, 238);
     border-bottom: 1px solid rgb(238, 238, 238);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2814,11 +2814,11 @@ body {
     color: var(--table-text-color, rgb(38, 38, 38));
     font-weight: 400;
     text-align: start;
-    vertical-align: var(--table-cell-vertical-alignment, top);
+    vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     border: 1px solid rgb(238, 238, 238);
-    border-left: var(--table-column-first-border-width, 1px) solid rgb(238, 238, 238);
+    border-left: var(--table-column-first-border-width) solid rgb(238, 238, 238);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2835,7 +2835,7 @@ body {
   }
 
   tr {
-    background-color: var(--table-header-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-header-background);
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2848,11 +2848,11 @@ body {
   }
 
   tbody tr:nth-child(even) {
-    background-color: var(--table-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-background);
   }
 
   tbody tr:nth-child(odd) {
-    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-row-alt-background);
   }
 
   img {
@@ -2960,7 +2960,7 @@ body {
   }
 
   .transclude {
-    background-color: var(--embed-background, rgba(0, 0, 0, 0));
+    background-color: var(--embed-background);
     color: rgb(38, 38, 38);
     border-radius: 0px;
     border-color: rgb(38, 38, 38);
@@ -2977,7 +2977,7 @@ body {
   }
 
   .transclude-inner {
-    background-color: var(--embed-background, rgba(0, 0, 0, 0));
+    background-color: var(--embed-background);
     color: rgb(38, 38, 38);
     border-radius: 0px;
     border-left: solid;
@@ -3006,7 +3006,7 @@ body {
   }
 
   .metadata {
-    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-background);
     color: var(--text-muted, rgb(99, 99, 99));
     font-family: Consolas, monospace;
     border: 0px solid rgb(238, 238, 238);
@@ -3033,7 +3033,7 @@ body {
   }
 
   .metadata-container .metadata-property {
-    background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-property-background);
     color: rgb(99, 99, 99);
     font-family: Consolas, monospace;
     border-color: rgb(99, 99, 99);
@@ -3439,17 +3439,17 @@ body {
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
     color: var(--nav-item-color, rgb(99, 99, 99));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     font-family: Consolas, monospace;
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
     color: var(--nav-item-color, rgb(99, 99, 99));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     font-family: Consolas, monospace;
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
 
@@ -3468,12 +3468,12 @@ body {
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
     color: var(--table-header-color, rgb(38, 38, 38));
-    font-weight: var(--table-header-weight, 600);
+    font-weight: var(--table-header-weight);
     border-color: rgb(238, 238, 238);
   }
 
   .bases-table tbody tr:nth-child(even) {
-    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-row-alt-background);
   }
 
   .canvas-node {
@@ -3495,7 +3495,7 @@ body {
   .canvas-sidebar {
     background-color: var(--background-primary, rgb(238, 238, 238));
     border-color: rgb(38, 38, 38);
-    box-shadow: var(--input-shadow, rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 2px 3px 0px, rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
+    box-shadow: var(--input-shadow);
   }
 
   .canvas-node-group {
@@ -3505,7 +3505,7 @@ body {
   }
 
   .note-properties {
-    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-background);
     border-color: rgb(238, 238, 238);
     border-radius: 0px;
   }
@@ -3536,7 +3536,7 @@ body {
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
     color: var(--icon-color, rgb(99, 99, 99));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     border-color: rgb(99, 99, 99);
     border-width: 0px;
     border-top-left-radius: 2px;
@@ -3549,7 +3549,7 @@ body {
     background-color: var(--status-bar-background, rgb(245, 247, 249));
     color: var(--status-bar-text-color, rgb(99, 99, 99));
     font-family: Consolas, monospace;
-    font-size: var(--status-bar-font-size, 12px);
+    font-size: var(--status-bar-font-size);
     text-align: start;
     border-color: rgba(0, 0, 0, 0);
     border-style: solid;
@@ -3561,7 +3561,7 @@ body {
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 4px;
-    padding-right: var(--size-4-2, 8px);
+    padding-right: var(--size-4-2);
     opacity: 1;
   }
 
@@ -3629,7 +3629,7 @@ body {
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
     color: var(--icon-color, rgb(99, 99, 99));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     border-color: rgb(99, 99, 99);
     border-width: 0px;
     border-top-left-radius: 2px;
@@ -3682,7 +3682,7 @@ body {
   }
 
   .katex-display {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+    background-color: var(--background-modifier-hover);
     color: rgb(38, 38, 38);
     border-color: rgb(38, 38, 38);
     border-width: 0px;
@@ -16048,16 +16048,16 @@ html[saved-theme="dark"] {
     footer a {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-external-color, rgb(103, 169, 255));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: Consolas, monospace;
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(103, 169, 255) none 0px;
       text-decoration: underline;
       text-decoration-color: rgb(103, 169, 255);
-      text-decoration-line: var(--link-external-decoration, underline);
+      text-decoration-line: var(--link-external-decoration);
       text-decoration-style: solid;
       transition: opacity 0.14s ease-in-out;
       transform: none;
@@ -16076,16 +16076,16 @@ html[saved-theme="dark"] {
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-color, rgb(238, 238, 238));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: Consolas, monospace;
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(238, 238, 238) none 0px;
       text-decoration: underline;
       text-decoration-color: rgb(238, 238, 238);
-      text-decoration-line: var(--link-decoration, underline);
+      text-decoration-line: var(--link-decoration);
       text-decoration-style: solid;
       transition: opacity 0.14s ease-in-out;
       transform: none;
@@ -16103,17 +16103,17 @@ html[saved-theme="dark"] {
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-unresolved-color, rgb(103, 169, 255));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: Consolas, monospace;
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(103, 169, 255) none 0px;
       text-decoration: underline rgba(56, 132, 255, 0.3);
       text-decoration-color: var(--link-unresolved-decoration-color, rgba(56, 132, 255, 0.3));
-      text-decoration-line: var(--link-decoration, underline);
-      text-decoration-style: var(--link-unresolved-decoration-style, solid);
+      text-decoration-line: var(--link-decoration);
+      text-decoration-style: var(--link-unresolved-decoration-style);
       transition: opacity 0.14s ease-in-out;
       transform: none;
       user-select: text;
@@ -16437,7 +16437,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+      background-color: var(--background-modifier-hover);
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
       border-bottom-left-radius: 2px;
@@ -16450,7 +16450,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+      background-color: var(--background-modifier-hover);
       border: 0px rgb(238, 238, 238);
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
@@ -16491,8 +16491,8 @@ html[saved-theme="dark"] {
       display: flex;
       font-family: Consolas, monospace;
       font-size: 14px;
-      font-weight: var(--pill-weight, 400);
-      line-height: var(--line-height-tight, 14px);
+      font-weight: var(--pill-weight);
+      line-height: var(--line-height-tight);
       text-decoration: rgb(218, 218, 218);
       margin-inline-start: 0px;
       border: 0px solid rgba(56, 132, 255, 0.15);
@@ -16516,8 +16516,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 1.2px);
-      padding-bottom: var(--list-spacing, 1.2px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -16553,8 +16553,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 1.2px);
-      padding-bottom: var(--list-spacing, 1.2px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -16668,7 +16668,7 @@ html[saved-theme="dark"] {
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      width: var(--checkbox-size, 16px);
+      width: var(--checkbox-size);
       transition: box-shadow 0.15s ease-in-out;
       position: relative;
       top: auto;
@@ -16736,7 +16736,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px);
+      box-shadow: var(--shadow-l);
     }
 
     .search > .search-container > .search-space > input {
@@ -16803,7 +16803,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: rgb(238, 238, 238);
       font-weight: 400;
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+      background-color: var(--background-modifier-hover);
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -16819,7 +16819,7 @@ html[saved-theme="dark"] {
       color: var(--h1-color, rgb(238, 238, 238));
       font-family: var(--h1-font, Consolas, monospace);
       font-size: var(--h1-size, 24px);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
       line-height: var(--h1-line-height, 36px);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
@@ -16865,7 +16865,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 0px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 24px;
       margin-left: 0px;
       margin-right: 0px;
@@ -16995,9 +16995,9 @@ html[saved-theme="dark"] {
     h6 {
       color: var(--h6-color, rgb(238, 238, 238));
       font-family: var(--h6-font, Consolas, monospace);
-      font-size: var(--h6-size, 16px);
+      font-size: var(--h6-size);
       font-weight: var(--font-weight, 700);
-      line-height: var(--h6-line-height, 24px);
+      line-height: var(--h6-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
@@ -17398,7 +17398,7 @@ html[saved-theme="dark"] {
     }
 
     li.depth-0 {
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
     }
 
     ::-webkit-scrollbar {
@@ -17491,12 +17491,12 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(238, 238, 238);
@@ -17549,12 +17549,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="note"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(238, 238, 238);
@@ -17607,12 +17607,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="abstract"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(238, 238, 238);
@@ -17665,12 +17665,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="info"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(238, 238, 238);
@@ -17723,12 +17723,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="todo"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(238, 238, 238);
@@ -17781,12 +17781,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="tip"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(238, 238, 238);
@@ -17839,12 +17839,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="success"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(238, 238, 238);
@@ -17897,12 +17897,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="question"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(238, 238, 238);
@@ -17955,12 +17955,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="warning"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(238, 238, 238);
@@ -18013,12 +18013,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="danger"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(238, 238, 238);
@@ -18071,12 +18071,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="failure"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(238, 238, 238);
@@ -18129,12 +18129,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="bug"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(238, 238, 238);
@@ -18187,12 +18187,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="example"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(238, 238, 238);
@@ -18245,12 +18245,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(2, 122, 255));
-      font-weight: var(--font-weight, 600);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="quote"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(238, 238, 238);
@@ -18312,15 +18312,15 @@ html[saved-theme="dark"] {
     th {
       background-color: rgba(0, 0, 0, 0);
       color: var(--table-header-color, rgb(238, 238, 238));
-      font-weight: var(--table-header-weight, 600);
+      font-weight: var(--table-header-weight);
       text-align: start;
-      vertical-align: var(--table-cell-vertical-alignment, top);
+      vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
-      border-left: var(--table-column-first-border-width, 1px) solid rgb(19, 22, 27);
+      border-left: var(--table-column-first-border-width) solid rgb(19, 22, 27);
       border-right: 1px solid rgb(19, 22, 27);
-      border-top: var(--table-header-border-width, 1px) solid rgb(19, 22, 27);
+      border-top: var(--table-header-border-width) solid rgb(19, 22, 27);
       border-bottom: 1px solid rgb(19, 22, 27);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -18342,11 +18342,11 @@ html[saved-theme="dark"] {
       color: var(--table-text-color, rgb(238, 238, 238));
       font-weight: 400;
       text-align: start;
-      vertical-align: var(--table-cell-vertical-alignment, top);
+      vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       border: 1px solid rgb(19, 22, 27);
-      border-left: var(--table-column-first-border-width, 1px) solid rgb(19, 22, 27);
+      border-left: var(--table-column-first-border-width) solid rgb(19, 22, 27);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -18363,7 +18363,7 @@ html[saved-theme="dark"] {
     }
 
     tr {
-      background-color: var(--table-header-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-header-background);
       border: 0px rgb(128, 128, 128);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -18376,11 +18376,11 @@ html[saved-theme="dark"] {
     }
 
     tbody tr:nth-child(even) {
-      background-color: var(--table-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-background);
     }
 
     tbody tr:nth-child(odd) {
-      background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-row-alt-background);
     }
 
     img {
@@ -18488,7 +18488,7 @@ html[saved-theme="dark"] {
     }
 
     .transclude {
-      background-color: var(--embed-background, rgba(0, 0, 0, 0));
+      background-color: var(--embed-background);
       color: rgb(238, 238, 238);
       border-radius: 0px;
       border-color: rgb(238, 238, 238);
@@ -18505,7 +18505,7 @@ html[saved-theme="dark"] {
     }
 
     .transclude-inner {
-      background-color: var(--embed-background, rgba(0, 0, 0, 0));
+      background-color: var(--embed-background);
       color: rgb(238, 238, 238);
       border-radius: 0px;
       border-left: solid;
@@ -18534,7 +18534,7 @@ html[saved-theme="dark"] {
     }
 
     .metadata {
-      background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-background);
       color: var(--text-muted, rgb(158, 158, 158));
       font-family: Consolas, monospace;
       border: 0px solid rgb(19, 22, 27);
@@ -18561,7 +18561,7 @@ html[saved-theme="dark"] {
     }
 
     .metadata-container .metadata-property {
-      background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-property-background);
       color: rgb(158, 158, 158);
       font-family: Consolas, monospace;
       border-color: rgb(158, 158, 158);
@@ -18967,17 +18967,17 @@ html[saved-theme="dark"] {
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
       color: var(--nav-item-color, rgb(158, 158, 158));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       font-family: Consolas, monospace;
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
       color: var(--nav-item-color, rgb(158, 158, 158));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       font-family: Consolas, monospace;
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
     }
 
@@ -18996,12 +18996,12 @@ html[saved-theme="dark"] {
     .bases-table thead th {
       background-color: rgba(0, 0, 0, 0);
       color: var(--table-header-color, rgb(238, 238, 238));
-      font-weight: var(--table-header-weight, 600);
+      font-weight: var(--table-header-weight);
       border-color: rgb(19, 22, 27);
     }
 
     .bases-table tbody tr:nth-child(even) {
-      background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-row-alt-background);
     }
 
     .canvas-node {
@@ -19023,7 +19023,7 @@ html[saved-theme="dark"] {
     .canvas-sidebar {
       background-color: var(--background-secondary, rgb(28, 32, 39));
       border-color: rgb(238, 238, 238);
-      box-shadow: var(--input-shadow, rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
+      box-shadow: var(--input-shadow);
     }
 
     .canvas-node-group {
@@ -19033,7 +19033,7 @@ html[saved-theme="dark"] {
     }
 
     .note-properties {
-      background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-background);
       border-color: rgb(19, 22, 27);
       border-radius: 0px;
     }
@@ -19064,7 +19064,7 @@ html[saved-theme="dark"] {
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color, rgb(158, 158, 158));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       border-color: rgb(158, 158, 158);
       border-width: 0px;
       border-top-left-radius: 2px;
@@ -19077,7 +19077,7 @@ html[saved-theme="dark"] {
       background-color: var(--status-bar-background, rgb(28, 32, 39));
       color: var(--status-bar-text-color, rgb(158, 158, 158));
       font-family: Consolas, monospace;
-      font-size: var(--status-bar-font-size, 12px);
+      font-size: var(--status-bar-font-size);
       text-align: start;
       border-color: rgba(0, 0, 0, 0);
       border-style: solid;
@@ -19089,7 +19089,7 @@ html[saved-theme="dark"] {
       padding-top: 4px;
       padding-bottom: 4px;
       padding-left: 4px;
-      padding-right: var(--size-4-2, 8px);
+      padding-right: var(--size-4-2);
       opacity: 1;
     }
 
@@ -19157,7 +19157,7 @@ html[saved-theme="dark"] {
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color, rgb(158, 158, 158));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       border-color: rgb(158, 158, 158);
       border-width: 0px;
       border-top-left-radius: 2px;
@@ -19210,7 +19210,7 @@ html[saved-theme="dark"] {
     }
 
     .katex-display {
-      background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+      background-color: var(--background-modifier-hover);
       color: rgb(238, 238, 238);
       border-color: rgb(238, 238, 238);
       border-width: 0px;

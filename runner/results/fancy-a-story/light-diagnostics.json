@@ -1,0 +1,89 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--nav-item-background-hover",
+      "references": "--folder-color",
+      "selector": "li.depth-0",
+      "aspect": "toc"
+    },
+    {
+      "property": "--nav-item-color",
+      "references": "--folder-color",
+      "selector": "li.depth-0",
+      "aspect": "toc"
+    },
+    {
+      "property": "--callout-color",
+      "references": "--mono-rgb-0",
+      "selector": ".callout[data-callout=\"autopsy\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--callout-title-color",
+      "references": "--mono-rgb-100",
+      "selector": ".callout[data-callout=\"autopsy\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--art-deco-color",
+      "references": "--callout-color",
+      "selector": ".callout[data-callout=\"comic-panel\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--callout-content-padding",
+      "references": "--size-4-4",
+      "selector": ".callout[data-callout=\"comic\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--callout-content-padding",
+      "references": "--size-4-3",
+      "selector": ".callout[data-callout=\"conversation-outline\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--callout-content-padding",
+      "references": "--size-4-3",
+      "selector": ".callout[data-callout=\"conversation\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--callout-email-color",
+      "references": "--mono-rgb-100",
+      "selector": ".callout[data-callout=\"email\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--nav-item-background-hover",
+      "references": "--folder-color",
+      "selector": ".nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--nav-item-color",
+      "references": "--folder-color",
+      "selector": ".nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--nav-item-background-hover",
+      "references": "--folder-color",
+      "selector": ".nav-files-container li:has(> .folder-outer.open) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--nav-item-color",
+      "references": "--folder-color",
+      "selector": ".nav-files-container li:has(> .folder-outer.open) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--background-modifier-hover",
+      "references": "--mono-rgb-0",
+      "selector": ".stacked-page-header",
+      "aspect": "stacked"
+    }
+  ]
+}

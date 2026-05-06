@@ -7,61 +7,61 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode, lighten);
-  --callout-bug: var(--color-red-rgb, 251, 70, 76);
-  --callout-default: var(--color-blue-rgb, 2, 122, 255);
-  --callout-error: var(--color-red-rgb, 251, 70, 76);
-  --callout-example: var(--color-purple-rgb, 168, 130, 255);
-  --callout-fail: var(--color-red-rgb, 251, 70, 76);
-  --callout-important: var(--color-cyan-rgb, 83, 223, 221);
-  --callout-info: var(--color-blue-rgb, 2, 122, 255);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 12px 12px 12px 24px);
-  --callout-question: var(--color-orange-rgb, 233, 151, 63);
-  --callout-radius: var(--radius-s, 4px);
-  --callout-success: var(--color-green-rgb, 68, 207, 110);
-  --callout-summary: var(--color-cyan-rgb, 83, 223, 221);
-  --callout-tip: var(--color-cyan-rgb, 83, 223, 221);
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
+  --callout-bug: var(--color-red-rgb);
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb, 2, 122, 255);
-  --callout-warning: var(--color-orange-rgb, 233, 151, 63);
-  --checkbox-border-color: var(--text-faint, #bd93f9) !important;
-  --checkbox-border-color-hover: var(--text-muted, #ff79c6) !important;
-  --checkbox-color: var(--interactive-accent, #00ffff) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, #8be9fd) !important;
-  --checkbox-marker-color: var(--background-primary, #2b213a) !important;
-  --checkbox-radius: var(--radius-s, 4px) !important;
-  --checkbox-size: var(--font-text-size, 16px) !important;
-  --code-background: var(--background-primary-alt, #171520) !important;
-  --code-border-color: var(--background-modifier-border, #00ffff) !important;
-  --code-bracket-background: var(--background-modifier-hover, rgba(255, 255, 255, 0.067)) !important;
-  --code-comment: var(--text-faint, #bd93f9) !important;
-  --code-function: var(--color-yellow, #e0de71) !important;
-  --code-important: var(--color-orange, #e9973f) !important;
-  --code-keyword: var(--color-pink, #fa99cd) !important;
-  --code-normal: var(--text-normal, #ff00ff) !important;
-  --code-operator: var(--color-red, #fb464c) !important;
-  --code-property: var(--color-cyan, #53dfdd) !important;
-  --code-punctuation: var(--text-muted, #ff79c6) !important;
-  --code-radius: var(--radius-s, 4px) !important;
-  --code-size: var(--font-smaller, 0.875em) !important;
-  --code-string: var(--color-green, #44cf6e) !important;
-  --code-tag: var(--color-red, #fb464c) !important;
-  --code-value: var(--color-purple, #a882ff) !important;
-  --collapse-icon-color: var(--text-faint, #bd93f9) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, #ff1690) !important;
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
+  --code-background: var(--background-primary-alt) !important;
+  --code-border-color: var(--background-modifier-border) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: var(--text-faint) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-normal: var(--text-normal) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-punctuation: var(--text-muted) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, #ff79c6) !important;
-  --graph-node-attachment: var(--color-yellow, #e0de71) !important;
-  --graph-node-focused: var(--text-accent, #ff1690) !important;
-  --graph-node-tag: var(--color-green, #44cf6e) !important;
-  --graph-node-unresolved: var(--text-faint, #bd93f9) !important;
-  --graph-text: var(--text-normal, #ff00ff) !important;
-  --icon-color: var(--text-muted, #ff79c6) !important;
-  --icon-color-active: var(--text-accent, #ff1690) !important;
-  --icon-color-focused: var(--text-normal, #ff00ff) !important;
-  --icon-color-hover: var(--text-muted, #ff79c6) !important;
-  --icon-size: var(--icon-m, 18px) !important;
-  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --graph-node: var(--text-muted) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-focused: var(--text-accent) !important;
+  --graph-node-tag: var(--color-green) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: var(--text-muted) !important;
+  --icon-size: var(--icon-m) !important;
+  --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-content-background: transparent;
@@ -381,20 +381,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(43, 33, 58));
-    color: var(--text-normal, rgb(255, 0, 255));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(43, 33, 58));
+    background-color: var(--background-primary);
     color: rgb(255, 0, 255);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(26, 24, 54));
+    background-color: var(--background-secondary);
     color: rgb(255, 0, 255);
   }
 
@@ -402,12 +402,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(26, 24, 54));
+    background-color: var(--tab-container-background);
     color: rgb(255, 0, 255);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(26, 24, 54));
+    background-color: var(--tab-container-background);
     color: rgb(255, 0, 255);
     border-left: 0px rgb(0, 255, 255);
   }
@@ -419,8 +419,8 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(255, 22, 144));
-    cursor: var(--cursor-link, pointer);
+    color: var(--link-external-color);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -438,11 +438,11 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(255, 22, 144) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(255, 22, 144);
-    text-decoration-line: var(--link-external-decoration, underline);
+    text-decoration-line: var(--link-external-decoration);
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
     transform: none;
@@ -460,8 +460,8 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(255, 22, 144));
-    cursor: var(--cursor-link, pointer);
+    color: var(--link-color);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -479,11 +479,11 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(255, 22, 144) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(255, 22, 144);
-    text-decoration-line: var(--link-decoration, underline);
+    text-decoration-line: var(--link-decoration);
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
     transform: none;
@@ -500,8 +500,8 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(255, 22, 144));
-    cursor: var(--cursor-link, pointer);
+    color: var(--link-unresolved-color);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -519,12 +519,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(255, 22, 144) none 0px;
     text-decoration: underline rgba(138, 92, 245, 0.3);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgba(138, 92, 245, 0.3));
-    text-decoration-line: var(--link-decoration, underline);
-    text-decoration-style: var(--link-unresolved-decoration-style, solid);
+    text-decoration-color: var(--link-unresolved-decoration-color);
+    text-decoration-line: var(--link-decoration);
+    text-decoration-style: var(--link-unresolved-decoration-style);
     transition: opacity 0.14s ease-in-out;
     transform: none;
     user-select: text;
@@ -557,7 +557,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-muted, rgb(255, 121, 198));
+    color: var(--text-muted);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -598,7 +598,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgba(255, 220, 255, 0.8));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -639,7 +639,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgba(255, 220, 255, 0.8));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -680,7 +680,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgba(255, 220, 255, 0.8));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -721,7 +721,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgba(255, 220, 255, 0.8));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -840,7 +840,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgba(255, 220, 255, 0.8));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       ui-sans-serif,
@@ -870,8 +870,8 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgb(255, 211, 25));
-    color: var(--background-secondary, rgb(26, 24, 54));
+    background-color: var(--text-highlight-bg);
+    color: var(--background-secondary);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -952,7 +952,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+    background-color: var(--background-modifier-hover);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -965,7 +965,7 @@ body {
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-    background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+    background-color: var(--background-modifier-hover);
     border: 0px rgba(255, 220, 255, 0.8);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1001,8 +1001,8 @@ body {
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background, rgba(138, 92, 245, 0.1));
-    color: var(--pill-color, rgb(255, 22, 144));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     display: flex;
     font-family:
       ui-sans-serif,
@@ -1019,8 +1019,8 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-size: 14px;
-    font-weight: var(--pill-weight, 400);
-    line-height: var(--line-height-tight, 14px);
+    font-weight: var(--pill-weight);
+    line-height: var(--line-height-tight);
     text-decoration: rgb(218, 218, 218);
     margin-inline-start: 0px;
     border: 0px solid rgba(138, 92, 245, 0.15);
@@ -1044,8 +1044,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.2px);
-    padding-bottom: var(--list-spacing, 1.2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1081,8 +1081,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.2px);
-    padding-bottom: var(--list-spacing, 1.2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1113,7 +1113,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgb(23, 21, 32));
+    background-color: var(--code-background);
     border: 0px solid rgb(0, 255, 255);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1123,8 +1123,8 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--accent-1, rgb(255, 0, 255));
-    font-family: var(--font-monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
+    color: var(--accent-1);
+    font-family: var(--font-monospace);
     padding: 2.1px 4.2px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1155,7 +1155,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgb(23, 21, 32));
+    background-color: var(--code-background);
     border: 0px solid rgb(0, 255, 255);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1196,7 +1196,7 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    width: var(--checkbox-size, 16.6562px);
+    width: var(--checkbox-size);
     transition: box-shadow 0.15s ease-in-out;
     position: relative;
     top: auto;
@@ -1218,8 +1218,8 @@ body {
   }
 
   blockquote {
-    background-color: var(--blockquote-background-color, rgba(0, 0, 0, 0));
-    color: var(--blockquote-color, rgba(255, 220, 255, 0.8));
+    background-color: var(--blockquote-background-color);
+    color: var(--blockquote-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1247,7 +1247,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgba(255, 220, 255, 0.25));
+    color: var(--text-faint);
     text-decoration: underline rgb(166, 138, 249);
   }
 
@@ -1262,7 +1262,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(255, 0, 255));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1280,7 +1280,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(43, 33, 58));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(85, 85, 85);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1290,7 +1290,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px);
+    box-shadow: var(--shadow-l);
   }
 
   .search > .search-container > .search-space > input {
@@ -1370,7 +1370,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgba(255, 220, 255, 0.8);
     font-weight: 400;
-    background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+    background-color: var(--background-modifier-hover);
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -1383,14 +1383,14 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgba(255, 220, 255, 0.8));
-    font-family: var(--h1-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h1-size, 25.888px);
-    font-weight: var(--font-weight, 700);
-    line-height: var(--h1-line-height, 31.0656px);
+    color: var(--h1-color);
+    font-family: var(--h1-font);
+    font-size: var(--h1-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h1-line-height);
     text-shadow: 0 0 0.5em var(--accent-1);
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h1-letter-spacing, -0.38832px);
+    letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1416,14 +1416,14 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgba(255, 220, 255, 0.8));
-    font-family: var(--h2-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h2-size, 23.392px);
-    font-weight: var(--font-weight, 680);
-    line-height: var(--h2-line-height, 28.0704px);
+    color: var(--h2-color);
+    font-family: var(--h2-font);
+    font-size: var(--h2-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h2-line-height);
     text-shadow: 0 0 0.5em var(--accent-2);
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h2-letter-spacing, -0.257312px);
+    letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1432,7 +1432,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 0px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 16px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1452,14 +1452,14 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgba(255, 220, 255, 0.8));
-    font-family: var(--h3-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h3-size, 21.088px);
-    font-weight: var(--font-weight, 660);
-    line-height: var(--h3-line-height, 27.4144px);
+    color: var(--h3-color);
+    font-family: var(--h3-font);
+    font-size: var(--h3-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h3-line-height);
     text-shadow: 0 0 0.5em var(--accent-3);
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h3-letter-spacing, -0.168704px);
+    letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1468,7 +1468,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 16px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 16px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1488,14 +1488,14 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgba(255, 220, 255, 0.8));
-    font-family: var(--h4-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h4-size, 19.008px);
-    font-weight: var(--font-weight, 640);
-    line-height: var(--h4-line-height, 26.6112px);
+    color: var(--h4-color);
+    font-family: var(--h4-font);
+    font-size: var(--h4-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h4-line-height);
     text-shadow: 0 0 0.5em var(--accent-4);
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h4-letter-spacing, -0.09504px);
+    letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1504,7 +1504,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 16px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 16px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1524,14 +1524,14 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgba(255, 220, 255, 0.8));
-    font-family: var(--h5-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h5-size, 17.216px);
-    font-weight: var(--font-weight, 620);
-    line-height: var(--h5-line-height, 25.824px);
+    color: var(--h5-color);
+    font-family: var(--h5-font);
+    font-size: var(--h5-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h5-line-height);
     text-shadow: 0 0 0.5em var(--accent-5);
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h5-letter-spacing, -0.034432px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1540,7 +1540,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 16px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 16px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1560,11 +1560,11 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgba(255, 220, 255, 0.8));
-    font-family: var(--h6-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h6-size, 16px);
-    font-weight: var(--font-weight, 600);
-    line-height: var(--h6-line-height, 24px);
+    color: var(--h6-color);
+    font-family: var(--h6-font);
+    font-size: var(--h6-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h6-line-height);
     text-shadow: 0 0 0.5em var(--accent-6);
     text-decoration: rgb(218, 218, 218);
     letter-spacing: normal;
@@ -1594,11 +1594,11 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgba(255, 220, 255, 0.8));
-    font-family: var(--inline-title-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--inline-title-size, 25.888px);
-    font-weight: var(--inline-title-weight, 700);
-    line-height: var(--inline-title-line-height, 31.0656px);
+    color: var(--inline-title-color);
+    font-family: var(--inline-title-font);
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
+    line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
     letter-spacing: -0.38832px;
@@ -1965,7 +1965,7 @@ body {
   }
 
   li.depth-0 {
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
   }
 
   ::-webkit-scrollbar {
@@ -2016,7 +2016,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 2, 122, 255);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2058,12 +2058,12 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(2, 122, 255));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgba(255, 220, 255, 0.8);
@@ -2075,7 +2075,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 2, 122, 255);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2116,12 +2116,12 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(2, 122, 255));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="note"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgba(255, 220, 255, 0.8);
@@ -2133,7 +2133,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 83, 223, 221);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2174,12 +2174,12 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(2, 122, 255));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="abstract"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgba(255, 220, 255, 0.8);
@@ -2191,7 +2191,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 2, 122, 255);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2232,12 +2232,12 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(2, 122, 255));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="info"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgba(255, 220, 255, 0.8);
@@ -2249,7 +2249,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 2, 122, 255);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2290,12 +2290,12 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(2, 122, 255));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="todo"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgba(255, 220, 255, 0.8);
@@ -2307,7 +2307,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 83, 223, 221);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2348,12 +2348,12 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(2, 122, 255));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="tip"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgba(255, 220, 255, 0.8);
@@ -2365,7 +2365,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 68, 207, 110);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2406,12 +2406,12 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(2, 122, 255));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="success"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgba(255, 220, 255, 0.8);
@@ -2423,7 +2423,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 233, 151, 63);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2464,12 +2464,12 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(2, 122, 255));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="question"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgba(255, 220, 255, 0.8);
@@ -2481,7 +2481,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 233, 151, 63);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2522,12 +2522,12 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(2, 122, 255));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgba(255, 220, 255, 0.8);
@@ -2539,7 +2539,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 251, 70, 76);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2580,12 +2580,12 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(2, 122, 255));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="danger"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgba(255, 220, 255, 0.8);
@@ -2597,7 +2597,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 251, 70, 76);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2638,12 +2638,12 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(2, 122, 255));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="failure"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgba(255, 220, 255, 0.8);
@@ -2655,7 +2655,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 251, 70, 76);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2696,12 +2696,12 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(2, 122, 255));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="bug"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgba(255, 220, 255, 0.8);
@@ -2713,7 +2713,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 168, 130, 255);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2754,12 +2754,12 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(2, 122, 255));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="example"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgba(255, 220, 255, 0.8);
@@ -2771,7 +2771,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2812,12 +2812,12 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(2, 122, 255));
-    font-weight: var(--font-weight, 600);
+    color: var(--callout-title-color);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="quote"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgba(255, 220, 255, 0.8);
@@ -2857,7 +2857,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 16px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -2891,18 +2891,18 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(255, 0, 255));
-    font-weight: var(--table-header-weight, 600);
+    color: var(--table-header-color);
+    font-weight: var(--table-header-weight);
     text-align: start;
-    vertical-align: var(--table-cell-vertical-alignment, top);
+    vertical-align: var(--table-cell-vertical-alignment);
     box-shadow:
       0 0 0.25em var(--accent-2),
       inset 0 0 0.25em var(--accent-2);
     text-decoration: rgb(218, 218, 218);
     letter-spacing: normal;
-    border-left: var(--table-column-first-border-width, 1px) solid rgb(0, 255, 255);
+    border-left: var(--table-column-first-border-width) solid rgb(0, 255, 255);
     border-right: 1px solid rgb(0, 255, 255);
-    border-top: var(--table-header-border-width, 1px) solid rgb(0, 255, 255);
+    border-top: var(--table-header-border-width) solid rgb(0, 255, 255);
     border-bottom: 1px solid rgb(0, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2921,16 +2921,16 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgba(255, 220, 255, 0.8));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
-    vertical-align: var(--table-cell-vertical-alignment, top);
+    vertical-align: var(--table-cell-vertical-alignment);
     box-shadow:
       0 0 0.25em var(--accent-2),
       inset 0 0 0.25em var(--accent-2);
     text-decoration: rgb(218, 218, 218);
     border: 1px solid rgb(0, 255, 255);
-    border-left: var(--table-column-first-border-width, 1px) solid rgb(0, 255, 255);
+    border-left: var(--table-column-first-border-width) solid rgb(0, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2947,7 +2947,7 @@ body {
   }
 
   tr {
-    background-color: var(--table-header-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-header-background);
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2960,11 +2960,11 @@ body {
   }
 
   tbody tr:nth-child(even) {
-    background-color: var(--table-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-background);
   }
 
   tbody tr:nth-child(odd) {
-    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-row-alt-background);
   }
 
   img {
@@ -3085,7 +3085,7 @@ body {
   }
 
   .transclude {
-    background-color: var(--embed-background, rgba(0, 0, 0, 0));
+    background-color: var(--embed-background);
     color: rgba(255, 220, 255, 0.8);
     border-radius: 0px;
     border-color: rgba(255, 220, 255, 0.8);
@@ -3102,7 +3102,7 @@ body {
   }
 
   .transclude-inner {
-    background-color: var(--embed-background, rgba(0, 0, 0, 0));
+    background-color: var(--embed-background);
     color: rgb(255, 0, 255);
     border-radius: 0px;
     border-left: solid;
@@ -3117,8 +3117,8 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(23, 21, 32));
-    color: var(--text-muted, rgb(255, 121, 198));
+    background-color: var(--background-primary-alt);
+    color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(255, 121, 198);
     border-width: 0px;
@@ -3131,8 +3131,8 @@ body {
   }
 
   .metadata {
-    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
-    color: var(--text-muted, rgb(255, 121, 198));
+    background-color: var(--metadata-background);
+    color: var(--text-muted);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3184,7 +3184,7 @@ body {
   }
 
   .metadata-container .metadata-property {
-    background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-property-background);
     color: rgb(255, 121, 198);
     font-family:
       ui-sans-serif,
@@ -3213,14 +3213,14 @@ body {
 
   .metadata-property-key {
     color: rgb(255, 121, 198);
-    font-family: var(--metadata-label-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    font-family: var(--metadata-label-font);
     font-size: 16px;
     font-weight: 400;
   }
 
   .metadata-property-value {
     color: rgb(255, 121, 198);
-    font-family: var(--metadata-input-font, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    font-family: var(--metadata-input-font);
     font-size: 16px;
   }
 
@@ -3255,7 +3255,7 @@ body {
 
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal, rgb(255, 121, 198));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3345,11 +3345,11 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(23, 21, 32));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(255, 0, 255));
-    font-family: var(--font-monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
-    font-size: var(--code-size, 14px);
+    color: var(--code-normal);
+    font-family: var(--font-monospace);
+    font-size: var(--code-size);
     border: 0px rgb(255, 0, 255);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3667,8 +3667,8 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(255, 121, 198));
-    cursor: var(--cursor, default);
+    color: var(--nav-item-color);
+    cursor: var(--cursor);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3683,13 +3683,13 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(218, 218, 218);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(255, 121, 198));
-    cursor: var(--cursor, default);
+    color: var(--nav-item-color);
+    cursor: var(--cursor);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3704,7 +3704,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(218, 218, 218);
   }
 
@@ -3722,13 +3722,13 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(255, 0, 255));
-    font-weight: var(--table-header-weight, 600);
+    color: var(--table-header-color);
+    font-weight: var(--table-header-weight);
     border-color: rgb(0, 255, 255);
   }
 
   .bases-table tbody tr:nth-child(even) {
-    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-row-alt-background);
   }
 
   .canvas-node {
@@ -3743,14 +3743,14 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgba(255, 220, 255, 0.8));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-secondary, rgb(26, 24, 54));
+    background-color: var(--background-secondary);
     border-color: rgb(255, 0, 255);
-    box-shadow: var(--input-shadow, rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px);
+    box-shadow: var(--input-shadow);
   }
 
   .canvas-node-group {
@@ -3760,7 +3760,7 @@ body {
   }
 
   .note-properties {
-    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-background);
     border-color: rgb(0, 255, 255);
     border-radius: 0px;
   }
@@ -3775,8 +3775,8 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background, rgba(138, 92, 245, 0.1));
-    color: var(--pill-color, rgb(255, 22, 144));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     border-radius: 28px;
   }
 
@@ -3790,8 +3790,8 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(255, 121, 198));
-    cursor: var(--cursor, default);
+    color: var(--icon-color);
+    cursor: var(--cursor);
     border-color: rgb(255, 121, 198);
     border-width: 0px;
     border-top-left-radius: 4px;
@@ -3801,8 +3801,8 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(26, 24, 54));
-    color: var(--status-bar-text-color, rgb(255, 121, 198));
+    background-color: var(--status-bar-background);
+    color: var(--status-bar-text-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3817,7 +3817,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: var(--status-bar-font-size, 12px);
+    font-size: var(--status-bar-font-size);
     text-align: start;
     border-color: rgb(0, 255, 255);
     border-style: solid;
@@ -3829,7 +3829,7 @@ body {
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 4px;
-    padding-right: var(--size-4-2, 8px);
+    padding-right: var(--size-4-2);
     opacity: 1;
   }
 
@@ -3870,7 +3870,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(255, 121, 198));
+    color: var(--nav-item-color);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3912,7 +3912,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(255, 121, 198));
+    color: var(--nav-item-color);
   }
 
   li.section-li > .section .meta {
@@ -3935,8 +3935,8 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(255, 121, 198));
-    cursor: var(--cursor, default);
+    color: var(--icon-color);
+    cursor: var(--cursor);
     border-color: rgb(255, 121, 198);
     border-width: 0px;
     border-top-left-radius: 4px;
@@ -3962,7 +3962,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgb(189, 147, 249));
+    color: var(--text-faint);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3980,11 +3980,11 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(26, 24, 54));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(255, 0, 255));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4015,7 +4015,7 @@ body {
   }
 
   .katex-display {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+    background-color: var(--background-modifier-hover);
     color: rgba(255, 220, 255, 0.8);
     border-color: rgba(255, 220, 255, 0.8);
     border-width: 0px;
@@ -4116,8 +4116,8 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--tag-background, rgba(138, 92, 245, 0.1));
-    color: var(--accent-1, rgb(255, 0, 255));
+    background-color: var(--tag-background);
+    color: var(--accent-1);
     border: 0px solid rgba(138, 92, 245, 0.15);
     border-top-left-radius: 24.5px;
     border-top-right-radius: 24.5px;
@@ -4147,17 +4147,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgb(0, 255, 255));
+    background-color: var(--checkbox-color);
     border-color: rgb(0, 255, 255);
   }
 
   .stacked-page {
     border-color: rgb(255, 0, 255);
-    background-color: var(--background-secondary, rgb(26, 24, 54));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(36, 32, 67));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -4165,18 +4165,14 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgba(255, 220, 255, 0.8));
-    font-size: var(--inline-title-size, 25.888px);
-    font-weight: var(--inline-title-weight, 700);
+    color: var(--inline-title-color);
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
   }
 
   li.task-list-item[data-task="_"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -4245,21 +4241,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task=","] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -4328,21 +4317,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task=";"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -4411,21 +4393,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task=":"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -4494,21 +4469,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="."] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -4577,21 +4545,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="'"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -4660,21 +4621,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="@"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -4743,21 +4697,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="&"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -4826,21 +4773,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="#"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -4909,21 +4849,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="%"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -4992,21 +4925,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="`"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -5075,21 +5001,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="+"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -5158,21 +5077,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="<"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -5241,21 +5153,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="="] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -5324,21 +5229,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="|"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -5407,21 +5305,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="~"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -5490,21 +5381,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="$"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -5573,21 +5457,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="0"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -5656,21 +5533,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="1"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -5739,21 +5609,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="2"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -5822,21 +5685,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="3"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -5905,21 +5761,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="4"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -5988,21 +5837,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="5"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -6071,21 +5913,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="6"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -6154,21 +5989,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="7"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -6237,21 +6065,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="8"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -6320,21 +6141,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="9"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -6403,21 +6217,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="a"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -6486,21 +6293,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="A"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -6569,21 +6369,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="B"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -6652,21 +6445,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="C"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -6735,21 +6521,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="D"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -6818,21 +6597,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="e"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -6901,21 +6673,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="E"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -6984,21 +6749,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="F"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -7067,21 +6825,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="g"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -7150,21 +6901,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="G"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -7233,21 +6977,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="h"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -7316,21 +7053,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="H"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -7399,21 +7129,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="j"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -7482,21 +7205,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="J"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -7565,21 +7281,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="K"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -7648,21 +7357,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="L"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -7731,21 +7433,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="m"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -7814,21 +7509,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="M"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -7897,21 +7585,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="n"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -7980,21 +7661,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="N"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -8063,21 +7737,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="o"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -8146,21 +7813,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="O"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -8229,21 +7889,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="P"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -8312,21 +7965,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="q"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -8395,21 +8041,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="Q"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -8478,21 +8117,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="r"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -8561,21 +8193,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="R"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -8644,21 +8269,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="s"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -8727,21 +8345,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="t"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -8810,21 +8421,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="T"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -8893,21 +8497,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="U"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -8976,21 +8573,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="v"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -9059,21 +8649,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="V"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -9142,21 +8725,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="W"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -9225,21 +8801,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="x"] {
     color: rgb(255, 121, 198);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -9308,21 +8877,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="X"] {
     color: rgb(255, 121, 198);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -9391,21 +8953,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="y"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -9474,21 +9029,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="Y"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -9557,21 +9105,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="z"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -9640,21 +9181,14 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="Z"] {
     color: rgba(255, 220, 255, 0.8);
     --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
@@ -9723,12 +9257,9 @@ body {
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
     --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -9744,6 +9275,8 @@ li.task-list-item[data-task="_"] input[type="checkbox"]::after {
 li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   background-color: rgb(43, 33, 58);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
 }
@@ -9772,6 +9305,8 @@ li.task-list-item[data-task=":"] input[type="checkbox"]::after {
 li.task-list-item[data-task="!"] input[type="checkbox"]::after {
   background-color: rgb(43, 33, 58);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M96 64c0-17.7-14.3-32-32-32S32 46.3 32 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM64 480c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40s17.9 40 40 40z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M96 64c0-17.7-14.3-32-32-32S32 46.3 32 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM64 480c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40s17.9 40 40 40z'/%3E%3C/svg%3E");
 }
@@ -9779,6 +9314,8 @@ li.task-list-item[data-task="!"] input[type="checkbox"]::after {
 li.task-list-item[data-task="?"] input[type="checkbox"]::after {
   background-color: rgb(233, 151, 63);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM288 352c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM288 352c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z'/%3E%3C/svg%3E");
 }
@@ -9800,6 +9337,8 @@ li.task-list-item[data-task="'"] input[type="checkbox"]::after {
 li.task-list-item[data-task=""] input[type="checkbox"]::after {
   background-color: rgb(102, 102, 102);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z'/%3E%3C/svg%3E");
 }
@@ -9814,6 +9353,8 @@ li.task-list-item[data-task="@"] input[type="checkbox"]::after {
 li.task-list-item[data-task="*"] input[type="checkbox"]::after {
   background-color: rgb(224, 222, 113);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z'/%3E%3C/svg%3E");
 }
@@ -9863,6 +9404,8 @@ li.task-list-item[data-task="+"] input[type="checkbox"]::after {
 li.task-list-item[data-task="<"] input[type="checkbox"]::after {
   background-color: rgb(83, 223, 221);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192z'/%3E%3C/svg%3E");
 }
@@ -9877,6 +9420,8 @@ li.task-list-item[data-task="="] input[type="checkbox"]::after {
 li.task-list-item[data-task=">"] input[type="checkbox"]::after {
   background-color: rgb(2, 122, 255);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E");
 }
@@ -9989,6 +9534,8 @@ li.task-list-item[data-task="A"] input[type="checkbox"]::after {
 li.task-list-item[data-task="b"] input[type="checkbox"]::after {
   background-color: rgb(251, 70, 76);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z'/%3E%3C/svg%3E");
 }
@@ -10003,6 +9550,8 @@ li.task-list-item[data-task="B"] input[type="checkbox"]::after {
 li.task-list-item[data-task="c"] input[type="checkbox"]::after {
   background-color: rgb(251, 70, 76);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z'/%3E%3C/svg%3E");
 }
@@ -10017,6 +9566,8 @@ li.task-list-item[data-task="C"] input[type="checkbox"]::after {
 li.task-list-item[data-task="d"] input[type="checkbox"]::after {
   background-color: rgb(251, 70, 76);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }
@@ -10045,6 +9596,8 @@ li.task-list-item[data-task="E"] input[type="checkbox"]::after {
 li.task-list-item[data-task="f"] input[type="checkbox"]::after {
   background-color: rgb(251, 70, 76);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }
@@ -10087,6 +9640,8 @@ li.task-list-item[data-task="H"] input[type="checkbox"]::after {
 li.task-list-item[data-task="i"] input[type="checkbox"]::after {
   background-color: rgb(2, 122, 255);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z'/%3E%3C/svg%3E");
 }
@@ -10094,6 +9649,8 @@ li.task-list-item[data-task="i"] input[type="checkbox"]::after {
 li.task-list-item[data-task="I"] input[type="checkbox"]::after {
   background-color: rgb(224, 222, 113);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z'/%3E%3C/svg%3E");
 }
@@ -10115,6 +9672,8 @@ li.task-list-item[data-task="J"] input[type="checkbox"]::after {
 li.task-list-item[data-task="k"] input[type="checkbox"]::after {
   background-color: rgb(224, 222, 113);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }
@@ -10129,6 +9688,8 @@ li.task-list-item[data-task="K"] input[type="checkbox"]::after {
 li.task-list-item[data-task="l"] input[type="checkbox"]::after {
   background-color: rgb(168, 130, 255);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z'/%3E%3C/svg%3E");
 }
@@ -10157,6 +9718,8 @@ li.task-list-item[data-task="M"] input[type="checkbox"]::after {
 li.task-list-item[data-task="n"] input[type="checkbox"]::after {
   background-color: rgb(251, 70, 76);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z'/%3E%3C/svg%3E");
 }
@@ -10185,6 +9748,8 @@ li.task-list-item[data-task="O"] input[type="checkbox"]::after {
 li.task-list-item[data-task="p"] input[type="checkbox"]::after {
   background-color: rgb(68, 207, 110);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z'/%3E%3C/svg%3E");
 }
@@ -10234,6 +9799,8 @@ li.task-list-item[data-task="s"] input[type="checkbox"]::after {
 li.task-list-item[data-task="S"] input[type="checkbox"]::after {
   background-color: rgb(68, 207, 110);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M320 96H192L144.6 24.9C137.5 14.2 145.1 0 157.9 0H354.1c12.8 0 20.4 14.2 13.3 24.9L320 96zM192 128H320c3.8 2.5 8.1 5.3 13 8.4C389.7 172.7 512 250.9 512 416c0 53-43 96-96 96H96c-53 0-96-43-96-96C0 250.9 122.3 172.7 179 136.4l0 0 0 0c4.8-3.1 9.2-5.9 13-8.4zm84.1 96c0-11.1-9-20.1-20.1-20.1s-20.1 9-20.1 20.1v6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.8 4.1c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9l0 0 0 0 0 0 0 0c-2.2-.8-4.3-1.5-6.3-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1V416c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1v-5.5c5.4-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4V224z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M320 96H192L144.6 24.9C137.5 14.2 145.1 0 157.9 0H354.1c12.8 0 20.4 14.2 13.3 24.9L320 96zM192 128H320c3.8 2.5 8.1 5.3 13 8.4C389.7 172.7 512 250.9 512 416c0 53-43 96-96 96H96c-53 0-96-43-96-96C0 250.9 122.3 172.7 179 136.4l0 0 0 0c4.8-3.1 9.2-5.9 13-8.4zm84.1 96c0-11.1-9-20.1-20.1-20.1s-20.1 9-20.1 20.1v6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.8 4.1c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9l0 0 0 0 0 0 0 0c-2.2-.8-4.3-1.5-6.3-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1V416c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1v-5.5c5.4-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4V224z'/%3E%3C/svg%3E");
 }
@@ -10255,6 +9822,8 @@ li.task-list-item[data-task="T"] input[type="checkbox"]::after {
 li.task-list-item[data-task="u"] input[type="checkbox"]::after {
   background-color: rgb(68, 207, 110);
   color: rgb(255, 255, 255);
+  mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }

@@ -9,59 +9,59 @@
 :root:root {
   --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
   --callout-bug: var(--color-pink-rgb, 213, 57, 132);
-  --callout-default: var(--color-blue-rgb, 8, 109, 221);
+  --callout-default: var(--color-blue-rgb);
   --callout-error: var(--color-red-rgb, 244, 87, 87);
-  --callout-example: var(--color-purple-rgb, 120, 82, 238);
+  --callout-example: var(--color-purple-rgb);
   --callout-fail: var(--color-red-rgb, 244, 87, 87);
-  --callout-important: var(--color-cyan-rgb, 0, 191, 188);
-  --callout-info: var(--color-blue-rgb, 8, 109, 221);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 0px);
-  --callout-question: var(--color-orange-rgb, 236, 117, 0);
+  --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s, 5px);
-  --callout-success: var(--color-green-rgb, 8, 185, 78);
-  --callout-summary: var(--color-cyan-rgb, 0, 191, 188);
-  --callout-tip: var(--color-cyan-rgb, 0, 191, 188);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb, 8, 109, 221);
-  --callout-warning: var(--color-orange-rgb, 236, 117, 0);
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint, hsl(0, 0%, 35%)) !important;
   --checkbox-border-color-hover: var(--text-muted, hsl(0, 0%, 27%)) !important;
   --checkbox-color: var(--interactive-accent, hsl(227, 70.7%, 70.95%)) !important;
   --checkbox-color-hover: var(--interactive-accent-hover, hsl(224, 74%, 73%)) !important;
   --checkbox-marker-color: var(--background-primary, hsl(0, 0%, 103.2%)) !important;
   --checkbox-radius: var(--radius-s, 10px) !important;
-  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt, hsl(0, 0%, 97.2%)) !important;
   --code-border-color: var(--background-modifier-border, hsl(0, 5%, 85%)) !important;
   --code-bracket-background: var(--background-modifier-hover, rgba(0, 0, 0, 0.05)) !important;
   --code-comment: var(--text-faint, hsl(0, 0%, 35%)) !important;
-  --code-function: var(--color-yellow, #e0ac00) !important;
-  --code-important: var(--color-orange, #ec7500) !important;
-  --code-keyword: var(--color-pink, #d53984) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal, hsl(0, 0%, 20%)) !important;
   --code-operator: var(--color-red, #f45757) !important;
-  --code-property: var(--color-cyan, #00bfbc) !important;
+  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted, hsl(0, 0%, 27%)) !important;
   --code-radius: var(--radius-s, 5px) !important;
-  --code-size: var(--font-smaller, 0.875em) !important;
-  --code-string: var(--color-green, #08b94e) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
   --code-tag: var(--color-red, #f45757) !important;
-  --code-value: var(--color-purple, #7852ee) !important;
+  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint, hsl(0, 0%, 35%)) !important;
   --collapse-icon-color-collapsed: var(--text-accent, hsl(228, 70%, 66%)) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) + 10%), calc(var(--accent-l) + 10%)) !important;
-  --graph-node-attachment: var(--color-yellow, #e0ac00) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: hsl(calc(var(--accent-h)), calc(var(--accent-s) + 15%), calc(var(--accent-l) + 15%)) !important;
-  --graph-node-tag: var(--color-green, #08b94e) !important;
+  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) + 10%), calc(var(--accent-l) + 5%)) !important;
   --graph-text: var(--text-normal, hsl(0, 0%, 20%)) !important;
   --icon-color: var(--text-muted, hsl(0, 0%, 27%)) !important;
   --icon-color-active: var(--text-accent, hsl(228, 70%, 66%)) !important;
   --icon-color-focused: var(--text-normal, hsl(0, 0%, 20%)) !important;
   --icon-color-hover: var(--text-muted, hsl(0, 0%, 27%)) !important;
-  --icon-size: var(--icon-m, 18px) !important;
-  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --icon-size: var(--icon-m) !important;
+  --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-content-background: var(--background-primary-alt, hsl(0, 0%, 97.2%));
@@ -199,59 +199,59 @@
 :root:root[saved-theme="dark"] {
   --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
   --callout-bug: var(--color-pink-rgb, 250, 153, 205);
-  --callout-default: var(--color-blue-rgb, 2, 122, 255);
-  --callout-error: var(--color-red-rgb, 251, 70, 76);
-  --callout-example: var(--color-purple-rgb, 168, 130, 255);
-  --callout-fail: var(--color-red-rgb, 251, 70, 76);
-  --callout-important: var(--color-cyan-rgb, 83, 223, 221);
-  --callout-info: var(--color-blue-rgb, 2, 122, 255);
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 0px);
-  --callout-question: var(--color-orange-rgb, 233, 151, 63);
+  --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s, 5px);
-  --callout-success: var(--color-green-rgb, 68, 207, 110);
-  --callout-summary: var(--color-cyan-rgb, 83, 223, 221);
-  --callout-tip: var(--color-cyan-rgb, 83, 223, 221);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb, 2, 122, 255);
-  --callout-warning: var(--color-orange-rgb, 233, 151, 63);
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint, hsl(0, 0%, 65%)) !important;
   --checkbox-border-color-hover: var(--text-muted, hsl(0, 0%, 65%)) !important;
   --checkbox-color: var(--interactive-accent, hsl(238, 100%, 70%)) !important;
   --checkbox-color-hover: var(--interactive-accent-hover, hsl(242, 104%, 76%)) !important;
   --checkbox-marker-color: var(--background-primary, hsl(0, 0%, 5%)) !important;
   --checkbox-radius: var(--radius-s, 10px) !important;
-  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt, hsl(0, 0%, 10%)) !important;
   --code-border-color: var(--background-modifier-border, hsl(0, 0%, 24%)) !important;
-  --code-bracket-background: var(--background-modifier-hover, rgba(255, 255, 255, 0.067)) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint, hsl(0, 0%, 65%)) !important;
-  --code-function: var(--color-yellow, #e0de71) !important;
-  --code-important: var(--color-orange, #e9973f) !important;
-  --code-keyword: var(--color-pink, #fa99cd) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal, hsl(0, 0%, 73%)) !important;
-  --code-operator: var(--color-red, #fb464c) !important;
-  --code-property: var(--color-cyan, #53dfdd) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted, hsl(0, 0%, 65%)) !important;
   --code-radius: var(--radius-s, 5px) !important;
-  --code-size: var(--font-smaller, 0.875em) !important;
-  --code-string: var(--color-green, #44cf6e) !important;
-  --code-tag: var(--color-red, #fb464c) !important;
-  --code-value: var(--color-purple, #a882ff) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint, hsl(0, 0%, 65%)) !important;
   --collapse-icon-color-collapsed: var(--text-accent, hsl(242, 104%, 76%)) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 10%), calc(var(--accent-l) + 5%)) !important;
-  --graph-node-attachment: var(--color-yellow, #e0de71) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: hsl(calc(var(--accent-h)), calc(var(--accent-s) - 15%), calc(var(--accent-l) - 2%)) !important;
-  --graph-node-tag: var(--color-green, #44cf6e) !important;
+  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 10%), calc(var(--accent-l) + 3%)) !important;
   --graph-text: var(--text-normal, hsl(0, 0%, 73%)) !important;
   --icon-color: var(--text-muted, hsl(0, 0%, 65%)) !important;
   --icon-color-active: var(--text-accent, hsl(242, 104%, 76%)) !important;
   --icon-color-focused: var(--text-normal, hsl(0, 0%, 73%)) !important;
   --icon-color-hover: var(--text-muted, hsl(0, 0%, 65%)) !important;
-  --icon-size: var(--icon-m, 18px) !important;
-  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --icon-size: var(--icon-m) !important;
+  --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-content-background: var(--background-primary-alt, hsl(0, 0%, 10%));
@@ -490,7 +490,7 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(255, 255, 255));
+    background-color: var(--background-primary);
     color: var(--text-normal, rgb(51, 51, 51));
   }
 
@@ -498,7 +498,7 @@ body {
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(255, 255, 255));
+    background-color: var(--background-primary);
     color: rgb(51, 51, 51);
   }
 
@@ -529,16 +529,16 @@ body {
   footer a {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-external-color, rgb(108, 132, 229));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: var(--link-font, "iA Writer Duo S");
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(108, 132, 229) none 0px;
     text-decoration: underline 0.96px rgb(129, 151, 233);
     text-decoration-color: var(--link-decoration-color, rgb(129, 151, 233));
-    text-decoration-line: var(--link-external-decoration, underline);
+    text-decoration-line: var(--link-external-decoration);
     text-decoration-style: solid;
     text-decoration-thickness: var(--link-decoration-thickness, 0.96px);
     transition: opacity 0.14s ease-in-out;
@@ -558,16 +558,16 @@ body {
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-color, rgb(129, 151, 233));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: var(--link-font, "iA Writer Duo S");
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(129, 151, 233) none 0px;
     text-decoration: underline 0.96px rgb(129, 151, 233);
     text-decoration-color: var(--link-decoration-color, rgb(129, 151, 233));
-    text-decoration-line: var(--link-decoration, underline);
+    text-decoration-line: var(--link-decoration);
     text-decoration-style: solid;
     text-decoration-thickness: var(--link-decoration-thickness, 0.96px);
     transition: opacity 0.14s ease-in-out;
@@ -586,17 +586,17 @@ body {
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-unresolved-color, rgb(108, 132, 229));
-    cursor: var(--cursor-link, pointer);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: var(--link-font, "iA Writer Duo S");
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(108, 132, 229) none 0px;
     text-decoration: underline 0.96px rgba(108, 132, 229, 0.3);
     text-decoration-color: var(--link-unresolved-decoration-color, rgba(108, 132, 229, 0.3));
-    text-decoration-line: var(--link-decoration, underline);
-    text-decoration-style: var(--link-unresolved-decoration-style, solid);
+    text-decoration-line: var(--link-decoration);
+    text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness, 0.96px);
     transition: opacity 0.14s ease-in-out;
     transform: none;
@@ -1129,8 +1129,8 @@ body {
     display: flex;
     font-family: var(--font-interface, "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
     font-size: 14px;
-    font-weight: var(--pill-weight, 400);
-    line-height: var(--line-height-tight, 14px);
+    font-weight: var(--pill-weight);
+    line-height: var(--line-height-tight);
     text-decoration: rgb(34, 34, 34);
     margin-inline-start: 0px;
     border: 0px solid rgb(31, 49, 122);
@@ -1154,8 +1154,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.2px);
-    padding-bottom: var(--list-spacing, 1.2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1191,8 +1191,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.2px);
-    padding-bottom: var(--list-spacing, 1.2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1306,7 +1306,7 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    width: var(--checkbox-size, 16px);
+    width: var(--checkbox-size);
     transition: box-shadow 0.15s ease-in-out;
     position: relative;
     top: auto;
@@ -1328,7 +1328,7 @@ body {
   }
 
   blockquote {
-    background-color: var(--blockquote-background-color, rgba(0, 0, 0, 0));
+    background-color: var(--blockquote-background-color);
     color: var(--blockquote-color, rgb(51, 51, 51));
     font-family:
       "iA Writer Quattro S",
@@ -1408,7 +1408,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(255, 255, 255));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(230, 230, 230);
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
@@ -1418,7 +1418,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.1) 0px 15px 30px 0px);
+    box-shadow: var(--shadow-l);
   }
 
   .search > .search-container > .search-space > input {
@@ -1570,7 +1570,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 0px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 4.832px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1700,8 +1700,8 @@ body {
   h6 {
     color: var(--h6-color, rgb(51, 51, 51));
     font-family: var(--h6-font, "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h6-size, 16px);
-    font-weight: var(--font-weight, 600);
+    font-size: var(--h6-size);
+    font-weight: var(--font-weight);
     line-height: var(--h6-line-height, 28px);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -2103,7 +2103,7 @@ body {
   }
 
   li.depth-0 {
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
   }
 
   ::-webkit-scrollbar {
@@ -3004,7 +3004,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 16px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 0px;
     margin-left: 222.359px;
     margin-right: 222.359px;
@@ -3039,15 +3039,15 @@ body {
   th {
     background-color: var(--table-header-background, rgb(250, 250, 250));
     color: var(--table-header-color, rgb(51, 51, 51));
-    font-weight: var(--table-header-weight, 600);
+    font-weight: var(--table-header-weight);
     text-align: center;
-    vertical-align: var(--table-cell-vertical-alignment, top);
+    vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: normal;
-    border-left: var(--table-column-first-border-width, 1px) solid rgb(219, 215, 215);
+    border-left: var(--table-column-first-border-width) solid rgb(219, 215, 215);
     border-right: 1px solid rgb(219, 215, 215);
-    border-top: var(--table-header-border-width, 1px) solid rgb(219, 215, 215);
+    border-top: var(--table-header-border-width) solid rgb(219, 215, 215);
     border-bottom: 1px solid rgb(219, 215, 215);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3069,11 +3069,11 @@ body {
     color: var(--table-text-color, rgb(51, 51, 51));
     font-weight: 400;
     text-align: start;
-    vertical-align: var(--table-cell-vertical-alignment, top);
+    vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     border: 1px solid rgb(219, 215, 215);
-    border-left: var(--table-column-first-border-width, 1px) solid rgb(219, 215, 215);
+    border-left: var(--table-column-first-border-width) solid rgb(219, 215, 215);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3103,11 +3103,11 @@ body {
   }
 
   tbody tr:nth-child(even) {
-    background-color: var(--table-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-background);
   }
 
   tbody tr:nth-child(odd) {
-    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-row-alt-background);
   }
 
   img {
@@ -3237,7 +3237,7 @@ body {
   }
 
   .transclude {
-    background-color: var(--embed-background, rgba(0, 0, 0, 0));
+    background-color: var(--embed-background);
     color: rgb(51, 51, 51);
     border-radius: 0px;
     border-left: solid;
@@ -3252,7 +3252,7 @@ body {
   }
 
   .transclude-inner {
-    background-color: var(--embed-background, rgba(0, 0, 0, 0));
+    background-color: var(--embed-background);
     color: rgb(51, 51, 51);
     border-radius: 0px;
     border-left: solid;
@@ -3281,7 +3281,7 @@ body {
   }
 
   .metadata {
-    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-background);
     color: var(--text-muted, rgb(69, 69, 69));
     font-family:
       "iA Writer Quattro S",
@@ -3330,7 +3330,7 @@ body {
   }
 
   .metadata-container .metadata-property {
-    background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-property-background);
     color: rgb(69, 69, 69);
     font-family: var(--font-interface, "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
     border-color: rgb(69, 69, 69);
@@ -3469,7 +3469,7 @@ body {
     box-shadow: none;
     color: var(--code-normal, rgb(51, 51, 51));
     font-family: var(--font-monospace, "iA Writer Mono S");
-    font-size: var(--code-size, 14px);
+    font-size: var(--code-size);
     border: 0px rgb(51, 51, 51);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -3824,7 +3824,7 @@ body {
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
     color: var(--nav-item-color, rgb(69, 69, 69));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     font-family:
       "iA Writer Quattro S",
       "Nanum Gothic Coding",
@@ -3848,13 +3848,13 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
     color: var(--nav-item-color, rgb(69, 69, 69));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     font-family:
       "iA Writer Quattro S",
       "Nanum Gothic Coding",
@@ -3878,7 +3878,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
 
@@ -3897,12 +3897,12 @@ body {
   .bases-table thead th {
     background-color: var(--table-header-background, rgb(250, 250, 250));
     color: var(--table-header-color, rgb(51, 51, 51));
-    font-weight: var(--table-header-weight, 600);
+    font-weight: var(--table-header-weight);
     border-color: rgb(219, 215, 215);
   }
 
   .bases-table tbody tr:nth-child(even) {
-    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-row-alt-background);
   }
 
   .canvas-node {
@@ -3922,7 +3922,7 @@ body {
   }
 
   .canvas-sidebar {
-    background-color: var(--background-primary, rgb(255, 255, 255));
+    background-color: var(--background-primary);
     border-color: rgb(51, 51, 51);
     box-shadow: var(--input-shadow, rgb(219, 215, 215) 0px 0px 0px 0.8px);
   }
@@ -3934,7 +3934,7 @@ body {
   }
 
   .note-properties {
-    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-background);
     border-color: rgba(0, 0, 0, 0);
     border-radius: 12px;
   }
@@ -3965,7 +3965,7 @@ body {
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
     color: var(--icon-color, rgb(69, 69, 69));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     border-color: rgb(69, 69, 69);
     border-width: 0px;
     border-top-left-radius: 5px;
@@ -4000,7 +4000,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: var(--status-bar-font-size, 12px);
+    font-size: var(--status-bar-font-size);
     text-align: start;
     border-color: rgb(219, 215, 215);
     border-style: solid;
@@ -4012,7 +4012,7 @@ body {
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 4px;
-    padding-right: var(--size-4-2, 8px);
+    padding-right: var(--size-4-2);
     opacity: 0;
   }
 
@@ -4102,7 +4102,7 @@ body {
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
     color: var(--icon-color, rgb(69, 69, 69));
-    cursor: var(--cursor, default);
+    cursor: var(--cursor);
     border-color: rgb(69, 69, 69);
     border-width: 0px;
     border-top-left-radius: 5px;
@@ -4199,7 +4199,7 @@ body {
   }
 
   .katex-display {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+    background-color: var(--background-modifier-hover);
     color: rgb(51, 51, 51);
     border-color: rgb(51, 51, 51);
     border-width: 0px;
@@ -4369,6 +4369,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-muted-rgb, 121, 117, 147);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -4566,7 +4567,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-muted-rgb, 121, 117, 147);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -4690,6 +4690,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-purple-rgb, 120, 82, 238);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -4887,7 +4888,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-purple-rgb, 120, 82, 238);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -5011,6 +5011,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-green-rgb, 8, 185, 78);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -5208,7 +5209,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-green-rgb, 8, 185, 78);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -5332,6 +5332,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-green-rgb, 8, 185, 78);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -5529,7 +5530,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-green-rgb, 8, 185, 78);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -5653,6 +5653,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-orange-rgb, 236, 117, 0);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -5850,7 +5851,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-orange-rgb, 236, 117, 0);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -5974,6 +5974,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-cyan-rgb, 0, 191, 188);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -6171,7 +6172,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-cyan-rgb, 0, 191, 188);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -6295,6 +6295,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-orange-rgb, 236, 117, 0);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -6492,7 +6493,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-orange-rgb, 236, 117, 0);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -6616,6 +6616,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-orange-rgb, 236, 117, 0);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -6813,7 +6814,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-orange-rgb, 236, 117, 0);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -6937,6 +6937,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-purple-rgb, 120, 82, 238);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -7134,7 +7135,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-purple-rgb, 120, 82, 238);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -7258,6 +7258,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--callout-quote, 158, 158, 158);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -7455,7 +7456,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--callout-quote, 158, 158, 158);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -7579,6 +7579,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-red-rgb, 244, 87, 87);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -7776,7 +7777,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-red-rgb, 244, 87, 87);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -7900,6 +7900,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-red-rgb, 244, 87, 87);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -8097,7 +8098,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-red-rgb, 244, 87, 87);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -8221,6 +8221,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-red-rgb, 244, 87, 87);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -8418,7 +8419,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-red-rgb, 244, 87, 87);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -8542,6 +8542,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--callout-quote, 158, 158, 158);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -8739,7 +8740,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--callout-quote, 158, 158, 158);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -8863,6 +8863,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-orange-rgb, 236, 117, 0);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -9060,7 +9061,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-orange-rgb, 236, 117, 0);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -9184,6 +9184,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-red-rgb, 244, 87, 87);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -9381,7 +9382,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-red-rgb, 244, 87, 87);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -9505,6 +9505,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-red-rgb, 244, 87, 87);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -9702,7 +9703,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-red-rgb, 244, 87, 87);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -9826,6 +9826,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-cyan-rgb, 0, 191, 188);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -10023,7 +10024,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-cyan-rgb, 0, 191, 188);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -10147,6 +10147,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-purple-rgb, 120, 82, 238);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -10344,7 +10345,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-purple-rgb, 120, 82, 238);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -10468,6 +10468,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-purple-rgb, 120, 82, 238);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -10665,7 +10666,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-purple-rgb, 120, 82, 238);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -10789,6 +10789,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-muted-rgb, 121, 117, 147);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -10986,7 +10987,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-muted-rgb, 121, 117, 147);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -11110,6 +11110,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--callout-quote, 158, 158, 158);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -11307,7 +11308,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--callout-quote, 158, 158, 158);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -11431,6 +11431,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-muted-rgb, 121, 117, 147);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -11628,7 +11629,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-muted-rgb, 121, 117, 147);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -11752,6 +11752,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-muted-rgb, 121, 117, 147);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -11949,7 +11950,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-muted-rgb, 121, 117, 147);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -12073,6 +12073,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-purple-rgb, 120, 82, 238);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -12270,7 +12271,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-purple-rgb, 120, 82, 238);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -12394,6 +12394,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-orange-rgb, 236, 117, 0);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -12591,7 +12592,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-orange-rgb, 236, 117, 0);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -12715,6 +12715,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-red-rgb, 244, 87, 87);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -12912,7 +12913,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-red-rgb, 244, 87, 87);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -13036,6 +13036,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--color-purple-rgb, 120, 82, 238);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -13233,7 +13234,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--color-purple-rgb, 120, 82, 238);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -13357,6 +13357,7 @@ body {
     --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
     --callout-blend-mode: normal;
     --callout-bug: 213, 57, 132;
+    --callout-color: var(--callout-default, 8, 109, 221);
     --callout-padding: 0px;
     --callout-radius: 5px;
     --canvas-background: hsl(0, 0%, 103.2%);
@@ -13554,7 +13555,6 @@ body {
     --speech-color: hsl(0, 0%, 20%);
     --table-header-background-hover: hsl(0, 0%, 98.2%);
     --tag-radius: 5px;
-    --callout-color: var(--callout-default, 8, 109, 221);
     --background-modifier-error: #f45757;
     --background-modifier-error-hover: #f45757;
     --background-modifier-error-rgb: 244, 87, 87;
@@ -25607,16 +25607,16 @@ html[saved-theme="dark"] {
     footer a {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-external-color, rgb(137, 133, 255));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: var(--link-font, "iA Writer Duo S");
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(137, 133, 255) none 0px;
       text-decoration: underline 0.96px rgb(137, 133, 255);
       text-decoration-color: var(--link-decoration-color, rgb(137, 133, 255));
-      text-decoration-line: var(--link-external-decoration, underline);
+      text-decoration-line: var(--link-external-decoration);
       text-decoration-style: solid;
       text-decoration-thickness: var(--link-decoration-thickness, 0.96px);
       transition: opacity 0.14s ease-in-out;
@@ -25636,16 +25636,16 @@ html[saved-theme="dark"] {
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-color, rgb(137, 133, 255));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: var(--link-font, "iA Writer Duo S");
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(137, 133, 255) none 0px;
       text-decoration: underline 0.96px rgb(137, 133, 255);
       text-decoration-color: var(--link-decoration-color, rgb(137, 133, 255));
-      text-decoration-line: var(--link-decoration, underline);
+      text-decoration-line: var(--link-decoration);
       text-decoration-style: solid;
       text-decoration-thickness: var(--link-decoration-thickness, 0.96px);
       transition: opacity 0.14s ease-in-out;
@@ -25664,17 +25664,17 @@ html[saved-theme="dark"] {
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-unresolved-color, rgb(137, 133, 255));
-      cursor: var(--cursor-link, pointer);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: var(--link-font, "iA Writer Duo S");
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(137, 133, 255) none 0px;
       text-decoration: underline 0.96px rgba(102, 107, 255, 0.3);
       text-decoration-color: var(--link-unresolved-decoration-color, rgba(102, 107, 255, 0.3));
-      text-decoration-line: var(--link-decoration, underline);
-      text-decoration-style: var(--link-unresolved-decoration-style, solid);
+      text-decoration-line: var(--link-decoration);
+      text-decoration-style: var(--link-unresolved-decoration-style);
       text-decoration-thickness: var(--link-decoration-thickness, 0.96px);
       transition: opacity 0.14s ease-in-out;
       transform: none;
@@ -26153,7 +26153,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+      background-color: var(--background-modifier-hover);
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       border-bottom-left-radius: 5px;
@@ -26166,7 +26166,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+      background-color: var(--background-modifier-hover);
       border: 0px rgb(186, 186, 186);
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
@@ -26207,8 +26207,8 @@ html[saved-theme="dark"] {
       display: flex;
       font-family: var(--font-interface, "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
       font-size: 14px;
-      font-weight: var(--pill-weight, 400);
-      line-height: var(--line-height-tight, 14px);
+      font-weight: var(--pill-weight);
+      line-height: var(--line-height-tight);
       text-decoration: rgb(218, 218, 218);
       margin-inline-start: 0px;
       border: 0px solid rgb(184, 185, 224);
@@ -26232,8 +26232,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 1.2px);
-      padding-bottom: var(--list-spacing, 1.2px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -26269,8 +26269,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 1.2px);
-      padding-bottom: var(--list-spacing, 1.2px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -26384,7 +26384,7 @@ html[saved-theme="dark"] {
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      width: var(--checkbox-size, 16px);
+      width: var(--checkbox-size);
       transition: box-shadow 0.15s ease-in-out;
       position: relative;
       top: auto;
@@ -26406,7 +26406,7 @@ html[saved-theme="dark"] {
     }
 
     blockquote {
-      background-color: var(--blockquote-background-color, rgba(0, 0, 0, 0));
+      background-color: var(--blockquote-background-color);
       color: var(--blockquote-color, rgb(186, 186, 186));
       font-family:
         "iA Writer Quattro S",
@@ -26496,7 +26496,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px);
+      box-shadow: var(--shadow-l);
     }
 
     .search > .search-container > .search-space > input {
@@ -26585,7 +26585,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: rgb(186, 186, 186);
       font-weight: 400;
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+      background-color: var(--background-modifier-hover);
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -26648,7 +26648,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 0px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 4.832px;
       margin-left: 0px;
       margin-right: 0px;
@@ -26778,8 +26778,8 @@ html[saved-theme="dark"] {
     h6 {
       color: var(--h6-color, rgb(186, 186, 186));
       font-family: var(--h6-font, "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-      font-size: var(--h6-size, 16px);
-      font-weight: var(--font-weight, 600);
+      font-size: var(--h6-size);
+      font-weight: var(--font-weight);
       line-height: var(--h6-line-height, 28px);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
@@ -27181,7 +27181,7 @@ html[saved-theme="dark"] {
     }
 
     li.depth-0 {
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
     }
 
     ::-webkit-scrollbar {
@@ -28082,7 +28082,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin-top: var(--heading-spacing, 16px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 0px;
       margin-left: 222.359px;
       margin-right: 222.359px;
@@ -28117,15 +28117,15 @@ html[saved-theme="dark"] {
     th {
       background-color: var(--table-header-background, rgb(3, 3, 3));
       color: var(--table-header-color, rgb(186, 186, 186));
-      font-weight: var(--table-header-weight, 600);
+      font-weight: var(--table-header-weight);
       text-align: center;
-      vertical-align: var(--table-cell-vertical-alignment, top);
+      vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
-      border-left: var(--table-column-first-border-width, 1px) solid rgb(61, 61, 61);
+      border-left: var(--table-column-first-border-width) solid rgb(61, 61, 61);
       border-right: 1px solid rgb(61, 61, 61);
-      border-top: var(--table-header-border-width, 1px) solid rgb(61, 61, 61);
+      border-top: var(--table-header-border-width) solid rgb(61, 61, 61);
       border-bottom: 1px solid rgb(61, 61, 61);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -28147,11 +28147,11 @@ html[saved-theme="dark"] {
       color: var(--table-text-color, rgb(186, 186, 186));
       font-weight: 400;
       text-align: start;
-      vertical-align: var(--table-cell-vertical-alignment, top);
+      vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       border: 1px solid rgb(61, 61, 61);
-      border-left: var(--table-column-first-border-width, 1px) solid rgb(61, 61, 61);
+      border-left: var(--table-column-first-border-width) solid rgb(61, 61, 61);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -28181,11 +28181,11 @@ html[saved-theme="dark"] {
     }
 
     tbody tr:nth-child(even) {
-      background-color: var(--table-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-background);
     }
 
     tbody tr:nth-child(odd) {
-      background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-row-alt-background);
     }
 
     img {
@@ -28315,7 +28315,7 @@ html[saved-theme="dark"] {
     }
 
     .transclude {
-      background-color: var(--embed-background, rgba(0, 0, 0, 0));
+      background-color: var(--embed-background);
       color: rgb(186, 186, 186);
       border-radius: 0px;
       border-left: solid;
@@ -28330,7 +28330,7 @@ html[saved-theme="dark"] {
     }
 
     .transclude-inner {
-      background-color: var(--embed-background, rgba(0, 0, 0, 0));
+      background-color: var(--embed-background);
       color: rgb(186, 186, 186);
       border-radius: 0px;
       border-left: solid;
@@ -28359,7 +28359,7 @@ html[saved-theme="dark"] {
     }
 
     .metadata {
-      background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-background);
       color: var(--text-muted, rgb(166, 166, 166));
       font-family:
         "iA Writer Quattro S",
@@ -28408,7 +28408,7 @@ html[saved-theme="dark"] {
     }
 
     .metadata-container .metadata-property {
-      background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-property-background);
       color: rgb(166, 166, 166);
       font-family: var(--font-interface, "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
       border-color: rgb(166, 166, 166);
@@ -28547,7 +28547,7 @@ html[saved-theme="dark"] {
       box-shadow: none;
       color: var(--code-normal, rgb(186, 186, 186));
       font-family: var(--font-monospace, "iA Writer Mono S");
-      font-size: var(--code-size, 14px);
+      font-size: var(--code-size);
       border: 0px rgb(186, 186, 186);
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
@@ -28902,7 +28902,7 @@ html[saved-theme="dark"] {
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
       color: var(--nav-item-color, rgb(166, 166, 166));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       font-family:
         "iA Writer Quattro S",
         "Nanum Gothic Coding",
@@ -28926,13 +28926,13 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
       color: var(--nav-item-color, rgb(166, 166, 166));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       font-family:
         "iA Writer Quattro S",
         "Nanum Gothic Coding",
@@ -28956,7 +28956,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
     }
 
@@ -28975,12 +28975,12 @@ html[saved-theme="dark"] {
     .bases-table thead th {
       background-color: var(--table-header-background, rgb(3, 3, 3));
       color: var(--table-header-color, rgb(186, 186, 186));
-      font-weight: var(--table-header-weight, 600);
+      font-weight: var(--table-header-weight);
       border-color: rgb(61, 61, 61);
     }
 
     .bases-table tbody tr:nth-child(even) {
-      background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-row-alt-background);
     }
 
     .canvas-node {
@@ -29012,7 +29012,7 @@ html[saved-theme="dark"] {
     }
 
     .note-properties {
-      background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-background);
       border-color: rgba(0, 0, 0, 0);
       border-radius: 12px;
     }
@@ -29043,7 +29043,7 @@ html[saved-theme="dark"] {
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color, rgb(166, 166, 166));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       border-color: rgb(166, 166, 166);
       border-width: 0px;
       border-top-left-radius: 5px;
@@ -29078,7 +29078,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-size: var(--status-bar-font-size, 12px);
+      font-size: var(--status-bar-font-size);
       text-align: start;
       border-color: rgb(61, 61, 61);
       border-style: solid;
@@ -29090,7 +29090,7 @@ html[saved-theme="dark"] {
       padding-top: 4px;
       padding-bottom: 4px;
       padding-left: 4px;
-      padding-right: var(--size-4-2, 8px);
+      padding-right: var(--size-4-2);
       opacity: 0;
     }
 
@@ -29180,7 +29180,7 @@ html[saved-theme="dark"] {
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color, rgb(166, 166, 166));
-      cursor: var(--cursor, default);
+      cursor: var(--cursor);
       border-color: rgb(166, 166, 166);
       border-width: 0px;
       border-top-left-radius: 5px;
@@ -29277,7 +29277,7 @@ html[saved-theme="dark"] {
     }
 
     .katex-display {
-      background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+      background-color: var(--background-modifier-hover);
       color: rgb(186, 186, 186);
       border-color: rgb(186, 186, 186);
       border-width: 0px;
@@ -29447,6 +29447,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-muted-rgb, 144, 140, 170);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -29645,7 +29646,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-muted-rgb, 144, 140, 170);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -29769,6 +29769,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-purple-rgb, 168, 130, 255);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -29967,7 +29968,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-purple-rgb, 168, 130, 255);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -30091,6 +30091,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-green-rgb, 68, 207, 110);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -30289,7 +30290,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-green-rgb, 68, 207, 110);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -30413,6 +30413,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-green-rgb, 68, 207, 110);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -30611,7 +30612,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-green-rgb, 68, 207, 110);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -30735,6 +30735,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-orange-rgb, 233, 151, 63);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -30933,7 +30934,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-orange-rgb, 233, 151, 63);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -31057,6 +31057,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-cyan-rgb, 83, 223, 221);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -31255,7 +31256,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-cyan-rgb, 83, 223, 221);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -31379,6 +31379,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-orange-rgb, 233, 151, 63);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -31577,7 +31578,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-orange-rgb, 233, 151, 63);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -31701,6 +31701,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-orange-rgb, 233, 151, 63);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -31899,7 +31900,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-orange-rgb, 233, 151, 63);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -32023,6 +32023,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-purple-rgb, 168, 130, 255);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -32221,7 +32222,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-purple-rgb, 168, 130, 255);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -32345,6 +32345,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--callout-quote, 158, 158, 158);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -32543,7 +32544,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--callout-quote, 158, 158, 158);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -32667,6 +32667,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-red-rgb, 251, 70, 76);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -32865,7 +32866,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-red-rgb, 251, 70, 76);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -32989,6 +32989,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-red-rgb, 251, 70, 76);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -33187,7 +33188,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-red-rgb, 251, 70, 76);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -33311,6 +33311,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-red-rgb, 251, 70, 76);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -33509,7 +33510,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-red-rgb, 251, 70, 76);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -33633,6 +33633,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--callout-quote, 158, 158, 158);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -33831,7 +33832,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--callout-quote, 158, 158, 158);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -33955,6 +33955,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-orange-rgb, 233, 151, 63);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -34153,7 +34154,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-orange-rgb, 233, 151, 63);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -34277,6 +34277,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-red-rgb, 251, 70, 76);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -34475,7 +34476,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-red-rgb, 251, 70, 76);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -34599,6 +34599,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-red-rgb, 251, 70, 76);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -34797,7 +34798,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-red-rgb, 251, 70, 76);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -34921,6 +34921,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-cyan-rgb, 83, 223, 221);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -35119,7 +35120,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-cyan-rgb, 83, 223, 221);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -35243,6 +35243,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-purple-rgb, 168, 130, 255);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -35441,7 +35442,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-purple-rgb, 168, 130, 255);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -35565,6 +35565,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-purple-rgb, 168, 130, 255);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -35763,7 +35764,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-purple-rgb, 168, 130, 255);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -35887,6 +35887,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-muted-rgb, 144, 140, 170);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -36085,7 +36086,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-muted-rgb, 144, 140, 170);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -36209,6 +36209,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--callout-quote, 158, 158, 158);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -36407,7 +36408,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--callout-quote, 158, 158, 158);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -36531,6 +36531,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-muted-rgb, 144, 140, 170);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -36729,7 +36730,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-muted-rgb, 144, 140, 170);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -36853,6 +36853,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-muted-rgb, 144, 140, 170);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -37051,7 +37052,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-muted-rgb, 144, 140, 170);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -37175,6 +37175,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-purple-rgb, 168, 130, 255);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -37373,7 +37374,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-purple-rgb, 168, 130, 255);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -37497,6 +37497,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-orange-rgb, 233, 151, 63);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -37695,7 +37696,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-orange-rgb, 233, 151, 63);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -37819,6 +37819,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-red-rgb, 251, 70, 76);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -38017,7 +38018,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-red-rgb, 251, 70, 76);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -38141,6 +38141,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--color-purple-rgb, 168, 130, 255);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -38339,7 +38340,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--color-purple-rgb, 168, 130, 255);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -38463,6 +38463,7 @@ html[saved-theme="dark"] {
       --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent) linear-gradient(hsl(0, 0%, 8%), color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent));
       --callout-blend-mode: normal;
       --callout-bug: 250, 153, 205;
+      --callout-color: var(--callout-default, 2, 122, 255);
       --callout-padding: 0px;
       --callout-radius: 5px;
       --canvas-background: hsl(0, 0%, 5%);
@@ -38661,7 +38662,6 @@ html[saved-theme="dark"] {
       --speech-color: hsl(0, 0%, 73%);
       --table-header-background-hover: hsl(0, 0%, 1%);
       --tag-radius: 5px;
-      --callout-color: var(--callout-default, 2, 122, 255);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;

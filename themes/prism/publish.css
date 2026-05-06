@@ -60,7 +60,7 @@ body.theme-light {
     --color-red,
     hsl(3, 68%, 52%)
   ) !important;
-  --background-modifier-error-rgb: var(--color-red-rgb, 233, 49, 71) !important;
+  --background-modifier-error-rgb: var(--color-red-rgb) !important;
   --background-modifier-form-field: var(
     --background-primary,
     hsl(0, 0%, 100%)
@@ -77,12 +77,7 @@ body.theme-light {
     --color-green,
     hsl(93, 100%, 27%)
   ) !important;
-  --background-modifier-success-rgb: var(
-    --color-green-rgb,
-    8,
-    185,
-    78
-  ) !important;
+  --background-modifier-success-rgb: var(--color-green-rgb) !important;
   --background-primary: hsl(var(--background-primary-hsl)) !important;
   --background-primary-alt: hsl(var(--background-primary-alt-hsl)) !important;
   --background-secondary: hsl(var(--background-secondary-hsl)) !important;
@@ -93,29 +88,29 @@ body.theme-light {
     --background-primary,
     hsl(0, 0%, 100%)
   ) !important;
-  --bases-cards-border-width: var(--border-width, 1px) !important;
-  --bases-cards-corner-shape: var(--corner-shape, round) !important;
+  --bases-cards-border-width: var(--border-width) !important;
+  --bases-cards-corner-shape: var(--corner-shape) !important;
   --bases-cards-cover-background: var(
     --background-primary-alt,
     hsl(0, 0%, 96%)
   ) !important;
-  --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
-  --bases-cards-radius: var(--radius-m, 8px) !important;
+  --bases-cards-font-size: var(--font-smaller) !important;
+  --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
   --bases-embed-border-color: var(
     --background-modifier-border,
     hsl(0, 0%, 69%)
   ) !important;
-  --bases-embed-border-radius: var(--radius-s, 4px) !important;
+  --bases-embed-border-radius: var(--radius-s) !important;
   --bases-group-heading-property-color: var(
     --text-muted,
     hsl(0, 0%, 20%)
   ) !important;
-  --bases-group-heading-property-size: var(--font-ui-smaller, 12px) !important;
-  --bases-group-heading-property-weight: var(--font-normal, 400) !important;
-  --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
-  --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
+  --bases-group-heading-property-size: var(--font-ui-smaller) !important;
+  --bases-group-heading-property-weight: var(--font-normal) !important;
+  --bases-group-heading-value-size: var(--font-smaller) !important;
+  --bases-group-heading-value-weight: var(--font-semibold) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
   --bases-table-border-color: var(
     --table-border-color,
@@ -136,10 +131,10 @@ body.theme-light {
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
-  --bases-table-column-border-width: var(--border-width, 1px) !important;
-  --bases-table-container-border-radius: var(--radius-s, 4px) !important;
-  --bases-table-container-border-width: var(--border-width, 1px) !important;
-  --bases-table-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-table-column-border-width: var(--border-width) !important;
+  --bases-table-container-border-radius: var(--radius-s) !important;
+  --bases-table-container-border-width: var(--border-width) !important;
+  --bases-table-font-size: var(--font-smaller) !important;
   --bases-table-group-background: var(
     --background-primary-alt,
     hsl(0, 0%, 96%)
@@ -158,12 +153,11 @@ body.theme-light {
     transparent var(--size-4-6),
     black var(--size-4-6)
   ) !important;
-  --bases-table-header-weight: var(--font-weight, 400) !important;
+  --bases-table-header-weight: var(--font-weight) !important;
   --bases-table-row-background-hover: var(
-    --table-row-background-hover,
-    transparent
+    --table-row-background-hover
   ) !important;
-  --bases-table-row-border-width: var(--border-width, 1px) !important;
+  --bases-table-row-border-width: var(--border-width) !important;
   --bases-table-summary-background: var(
     --background-primary,
     hsl(0, 0%, 100%)
@@ -196,37 +190,37 @@ body.theme-light {
   --blur-s: blur(var(--blur-radius-s)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
-  --button-corner-shape: var(--corner-shape, round) !important;
+  --button-corner-shape: var(--corner-shape) !important;
   --button-radius: var(--input-radius, 4px) !important;
-  --callout-blend-mode: var(--highlight-mix-blend-mode, darken);
-  --callout-bug: var(--color-red-rgb, 233, 49, 71);
-  --callout-default: var(--color-blue-rgb, 8, 109, 221);
-  --callout-error: var(--color-red-rgb, 233, 49, 71);
-  --callout-example: var(--color-purple-rgb, 120, 82, 238);
-  --callout-fail: var(--color-red-rgb, 233, 49, 71);
-  --callout-important: var(--color-cyan-rgb, 0, 191, 188);
-  --callout-info: var(--color-blue-rgb, 8, 109, 221);
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
+  --callout-bug: var(--color-red-rgb);
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
     var(--size-4-6, 4px);
-  --callout-question: var(--color-orange-rgb, 236, 117, 0);
+  --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-m, 8px);
-  --callout-success: var(--color-green-rgb, 8, 185, 78);
-  --callout-summary: var(--color-cyan-rgb, 0, 191, 188);
-  --callout-tip: var(--color-cyan-rgb, 0, 191, 188);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb, 8, 109, 221);
-  --callout-warning: var(--color-orange-rgb, 236, 117, 0);
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --canvas-background: var(--background-primary, hsl(0, 0%, 100%)) !important;
   --canvas-card-label-color: var(--text-faint, hsl(0, 0%, 35%)) !important;
-  --canvas-color-1: var(--color-red-rgb, 233, 49, 71) !important;
-  --canvas-color-2: var(--color-orange-rgb, 236, 117, 0) !important;
-  --canvas-color-3: var(--color-yellow-rgb, 224, 172, 0) !important;
-  --canvas-color-4: var(--color-green-rgb, 8, 185, 78) !important;
-  --canvas-color-5: var(--color-cyan-rgb, 0, 191, 188) !important;
-  --canvas-color-6: var(--color-purple-rgb, 120, 82, 238) !important;
-  --canvas-controls-icon-size: var(--icon-s, 16px) !important;
-  --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
-  --canvas-controls-radius: var(--radius-s, 4px) !important;
+  --canvas-color-1: var(--color-red-rgb) !important;
+  --canvas-color-2: var(--color-orange-rgb) !important;
+  --canvas-color-3: var(--color-yellow-rgb) !important;
+  --canvas-color-4: var(--color-green-rgb) !important;
+  --canvas-color-5: var(--color-cyan-rgb) !important;
+  --canvas-color-6: var(--color-purple-rgb) !important;
+  --canvas-controls-icon-size: var(--icon-s) !important;
+  --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
+  --canvas-controls-radius: var(--radius-s) !important;
   --canvas-dot-pattern: hsla(
     var(--background-secondary-alt-hsl),
     75%
@@ -249,13 +243,13 @@ body.theme-light {
     --highlight-text-normal,
     hsl(258, 75%, 63%)
   ) !important;
-  --checkbox-radius: var(--radius-s, 4px) !important;
-  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --checklist-done-color: var(
     --interactive-accent-tint,
     hsl(252, 84%, 83%)
   ) !important;
-  --clickable-icon-radius: var(--radius-s, 4px) !important;
+  --clickable-icon-radius: var(--radius-s) !important;
   --code-background: var(--background-primary, hsl(0, 0%, 100%)) !important;
   --code-border-color: var(
     --background-modifier-border,
@@ -273,8 +267,8 @@ body.theme-light {
   --code-operator: var(--color-red, hsl(3, 68%, 52%)) !important;
   --code-property: var(--color-cyan, hsl(184, 100%, 28%)) !important;
   --code-punctuation: var(--text-muted, hsl(0, 0%, 20%)) !important;
-  --code-radius: var(--radius-s, 4px) !important;
-  --code-size: var(--font-smaller, 0.875em) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green, hsl(93, 100%, 27%)) !important;
   --code-tag: var(--color-red, hsl(3, 68%, 52%)) !important;
   --code-value: var(--color-purple, hsl(258, 75%, 63%)) !important;
@@ -306,7 +300,6 @@ body.theme-light {
     --interactive-accent-tint,
     hsl(252, 84%, 83%)
   ) !important;
-  --divider-vertical-height: calc(100% - var(--header-height)) !important;
   --dropdown-background: var(--interactive-normal, hsl(0, 0%, 100%)) !important;
   --dropdown-background-hover: var(
     --interactive-hover,
@@ -330,8 +323,7 @@ body.theme-light {
     --background-primary,
     hsl(0, 0%, 100%)
   ) !important;
-  --file-header-border: var(--border-width, 1px solid transparent) solid
-    transparent !important;
+  --file-header-border: var(--border-width) solid transparent !important;
   --file-header-font: var(
     --font-interface,
     "??",
@@ -352,9 +344,9 @@ body.theme-light {
     sans-serif
   ) !important;
   --file-header-font-size: var(--font-ui-medium, 15px) !important;
-  --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
-  --file-margins-x: var(--size-4-8, 32px) !important;
-  --file-margins-y: var(--size-4-8, 32px) !important;
+  --file-margins: var(--file-margins-y) var(--file-margins-x) !important;
+  --file-margins-x: var(--size-4-8) !important;
+  --file-margins-y: var(--size-4-8) !important;
   --flair-background: var(--interactive-normal, hsl(0, 0%, 100%)) !important;
   --flair-color: var(--text-normal, hsl(0, 0%, 15%)) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
@@ -388,35 +380,31 @@ body.theme-light {
     var(--font-text-theme), "Arial" !important;
   --font-text:
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
-  --font-weight: var(--font-normal, 400) !important;
+  --font-weight: var(--font-normal) !important;
   --footnote-divider-color: var(
     --metadata-divider-color,
     hsl(0, 0%, 69%)
   ) !important;
   --footnote-divider-color-active: var(
-    --metadata-divider-color-focus,
-    transparent
+    --metadata-divider-color-focus
   ) !important;
-  --footnote-divider-width: var(--border-width, 1px) !important;
-  --footnote-gap: var(--size-4-1, 4px) !important;
+  --footnote-divider-width: var(--border-width) !important;
+  --footnote-gap: var(--size-4-1) !important;
   --footnote-id-color: var(--text-muted, hsl(0, 0%, 20%)) !important;
   --footnote-id-color-no-occurrences: var(
     --text-faint,
     hsl(0, 0%, 35%)
   ) !important;
-  --footnote-input-background: var(
-    --metadata-input-background,
-    transparent
-  ) !important;
+  --footnote-input-background: var(--metadata-input-background) !important;
   --footnote-input-background-active: var(
     --metadata-input-background-active,
     hsl(0, 0%, 93%)
   ) !important;
-  --footnote-line-height: var(--line-height-normal, 1.5) !important;
-  --footnote-padding-block: var(--size-2-3, 6px) !important;
-  --footnote-padding-inline: var(--size-2-3, 6px) !important;
-  --footnote-radius: var(--radius-s, 4px) !important;
-  --footnote-size: var(--font-smaller, 0.875em) !important;
+  --footnote-line-height: var(--line-height-normal) !important;
+  --footnote-padding-block: var(--size-2-3) !important;
+  --footnote-padding-inline: var(--size-2-3) !important;
+  --footnote-radius: var(--radius-s) !important;
+  --footnote-size: var(--font-smaller) !important;
   --graph-line: var(--graph-line-color-lt, hsl(0, 0%, 69%)) !important;
   --graph-node: var(--graph-fill-color-lt, hsl(0, 0%, 73%)) !important;
   --graph-node-attachment: var(
@@ -433,8 +421,8 @@ body.theme-light {
     hsl(7, 82%, 78%)
   ) !important;
   --graph-text: var(--text-normal, hsl(0, 0%, 15%)) !important;
-  --h5-line-height: var(--line-height-normal, 1.5) !important;
-  --h6-line-height: var(--line-height-normal, 1.5) !important;
+  --h5-line-height: var(--line-height-normal) !important;
+  --h6-line-height: var(--line-height-normal) !important;
   --heading-formatting: var(--text-faint, hsl(0, 0%, 35%)) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --hr-color: var(--background-modifier-border, hsl(0, 0%, 69%)) !important;
@@ -448,8 +436,8 @@ body.theme-light {
     --highlight-text-normal,
     hsl(258, 75%, 63%)
   ) !important;
-  --icon-size: var(--icon-m, 18px) !important;
-  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --icon-size: var(--icon-m) !important;
+  --icon-stroke: var(--icon-m-stroke-width) !important;
   --indentation-guide-color: hsla(
     var(--background-secondary-alt-hsl),
     75%
@@ -458,19 +446,19 @@ body.theme-light {
     --interactive-accent-tint,
     hsl(252, 84%, 83%)
   ) !important;
-  --indentation-guide-width: var(--border-width, 1px) !important;
-  --indentation-guide-width-active: var(--border-width, 1px) !important;
+  --indentation-guide-width: var(--border-width) !important;
+  --indentation-guide-width-active: var(--border-width) !important;
   --inline-title-line-height: var(--h1-line-height, 1.3) !important;
   --inline-title-size: var(--h1-size, 2.2em) !important;
-  --inline-title-style: var(--h1-style, normal) !important;
-  --inline-title-variant: var(--h1-variant, normal) !important;
+  --inline-title-style: var(--h1-style) !important;
+  --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: var(--h1-weight, 800) !important;
-  --input-border-width: var(--border-width, 1px) !important;
-  --input-corner-shape: var(--corner-shape, round) !important;
+  --input-border-width: var(--border-width) !important;
+  --input-corner-shape: var(--corner-shape) !important;
   --input-date-separator: var(--text-faint, hsl(0, 0%, 35%)) !important;
-  --input-font-weight: var(--font-normal, 400) !important;
-  --input-icon-inset: var(--size-4-1, 4px) !important;
-  --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --input-font-weight: var(--font-normal) !important;
+  --input-icon-inset: var(--size-4-1) !important;
+  --input-padding: var(--size-4-1) var(--size-4-2) !important;
   --input-placeholder-color: var(--text-faint, hsl(0, 0%, 35%)) !important;
   --interactive-accent: var(
     --interactive-accent-tint,
@@ -495,7 +483,7 @@ body.theme-light {
     var(--interactive-accent-hsl),
     0.3
   ) !important;
-  --link-weight: var(--font-weight, 400) !important;
+  --link-weight: var(--font-weight) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-marker-color: var(--text-faint, hsl(0, 0%, 35%)) !important;
   --list-marker-color-collapsed: var(
@@ -508,10 +496,10 @@ body.theme-light {
     --background-modifier-border-hover,
     hsl(252, 84%, 83%)
   ) !important;
-  --menu-border-width: var(--border-width, 1px) !important;
-  --menu-corner-shape: var(--corner-shape, round) !important;
-  --menu-padding: var(--size-2-3, 6px) !important;
-  --menu-radius: var(--radius-m, 8px) !important;
+  --menu-border-width: var(--border-width) !important;
+  --menu-corner-shape: var(--corner-shape) !important;
+  --menu-padding: var(--size-2-3) !important;
+  --menu-radius: var(--radius-m) !important;
   --menu-shadow: var(--shadow-s, hsla(0, 0%, 0%, 10%) 0 1px 2px 0) !important;
   --metadata-border-color: var(
     --background-modifier-border,
@@ -544,9 +532,9 @@ body.theme-light {
     "Segoe UI Symbol",
     sans-serif
   ) !important;
-  --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-input-font-size: var(--font-smaller) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
-  --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --metadata-input-padding: var(--size-4-1) var(--size-4-2) !important;
   --metadata-input-text-color: var(--text-normal, hsl(0, 0%, 15%)) !important;
   --metadata-label-background-active: var(
     --background-secondary,
@@ -571,13 +559,13 @@ body.theme-light {
     "Segoe UI Symbol",
     sans-serif
   ) !important;
-  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-label-font-size: var(--font-smaller) !important;
   --metadata-label-text-color: var(--text-muted, hsl(0, 0%, 20%)) !important;
   --metadata-label-text-color-hover: var(
     --text-muted,
     hsl(0, 0%, 20%)
   ) !important;
-  --metadata-padding: var(--size-4-2, 8px 0) 0 !important;
+  --metadata-padding: var(--size-4-2) 0 !important;
   --metadata-property-background-active: var(
     --background-modifier-hover,
     hsla(251, 87%, 94%, 90%)
@@ -586,15 +574,15 @@ body.theme-light {
     var(--background-modifier-border-focus) !important;
   --metadata-property-box-shadow-hover: 0 0 0 var(--border-width)
     var(--background-modifier-border-hover) !important;
-  --metadata-property-corner-shape: var(--corner-shape, round) !important;
-  --metadata-property-corner-shape-focus: var(--corner-shape, round) !important;
-  --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
-  --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
-  --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
+  --metadata-property-corner-shape: var(--corner-shape) !important;
+  --metadata-property-corner-shape-focus: var(--corner-shape) !important;
+  --metadata-property-corner-shape-hover: var(--corner-shape) !important;
+  --metadata-sidebar-input-font-size: var(--font-ui-small) !important;
+  --metadata-sidebar-label-font-size: var(--font-ui-small) !important;
   --modal-background: var(--background-primary, hsl(0, 0%, 100%)) !important;
   --modal-border-color: var(--window-border-color, hsl(0, 0%, 69%)) !important;
-  --modal-border-width: var(--border-width, 1px) !important;
-  --modal-radius: var(--radius-l, 12px) !important;
+  --modal-border-width: var(--border-width) !important;
+  --modal-radius: var(--radius-l) !important;
   --nav-collapse-icon-color: var(
     --collapse-icon-color,
     hsl(0, 0%, 35%)
@@ -610,13 +598,13 @@ body.theme-light {
     hsl(0, 0%, 20%)
   ) !important;
   --nav-heading-color-hover: var(--text-normal, hsl(0, 0%, 15%)) !important;
-  --nav-heading-weight: var(--font-medium, 500) !important;
-  --nav-heading-weight-hover: var(--font-medium, 500) !important;
+  --nav-heading-weight: var(--font-medium) !important;
+  --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: var(
     --indentation-guide-color,
     hsla(0, 0%, 69%, 75%)
   ) !important;
-  --nav-indentation-guide-width: var(--indentation-guide-width, 1px) !important;
+  --nav-indentation-guide-width: var(--indentation-guide-width) !important;
   --nav-item-background-active: var(
     --background-modifier-hover,
     hsla(251, 87%, 94%, 90%)
@@ -629,8 +617,8 @@ body.theme-light {
     var(--color-accent-hsl),
     0.15
   ) !important;
-  --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
-  --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
+  --nav-item-children-margin-start: var(--size-4-3) !important;
+  --nav-item-children-padding-start: var(--size-2-2) !important;
   --nav-item-color: var(--text-muted, hsl(0, 0%, 20%)) !important;
   --nav-item-color-active: var(--text-normal, hsl(0, 0%, 15%)) !important;
   --nav-item-color-highlighted: var(
@@ -642,20 +630,20 @@ body.theme-light {
     hsl(258, 75%, 63%)
   ) !important;
   --nav-item-color-selected: var(--text-normal, hsl(0, 0%, 15%)) !important;
-  --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
+  --nav-item-margin-bottom: var(--size-2-1) !important;
   --nav-item-padding: var(--size-2-1) var(--size-4-2) var(--size-2-1)
     var(--size-4-6, 2px 8px 2px 24px) !important;
   --nav-item-parent-padding: var(
     --nav-item-padding,
     2px 8px 2px 24px
   ) !important;
-  --nav-item-radius: var(--radius-s, 4px) !important;
-  --nav-item-size: var(--font-ui-small, 13px) !important;
+  --nav-item-radius: var(--radius-s) !important;
+  --nav-item-size: var(--font-ui-small) !important;
   --nav-tag-color: var(--text-faint, hsl(0, 0%, 35%)) !important;
   --nav-tag-color-active: var(--text-muted, hsl(0, 0%, 20%)) !important;
   --nav-tag-color-hover: var(--text-muted, hsl(0, 0%, 20%)) !important;
-  --nav-tag-radius: var(--radius-s, 4px) !important;
-  --nav-tag-weight: var(--font-semibold, 600) !important;
+  --nav-tag-radius: var(--radius-s) !important;
+  --nav-tag-weight: var(--font-semibold) !important;
   --pdf-background: var(--background-primary, hsl(0, 0%, 100%)) !important;
   --pdf-page-background: var(--background-primary, hsl(0, 0%, 100%)) !important;
   --pdf-shadow:
@@ -674,15 +662,16 @@ body.theme-light {
     --background-modifier-border-hover,
     hsl(252, 84%, 83%)
   ) !important;
-  --pill-border-width: var(--border-width, 1px) !important;
+  --pill-border-width: var(--border-width) !important;
   --pill-color: var(--text-muted, hsl(0, 0%, 20%)) !important;
   --pill-color-hover: var(--text-normal, hsl(0, 0%, 15%)) !important;
   --pill-color-remove: var(--text-faint, hsl(0, 0%, 35%)) !important;
   --pill-color-remove-hover: var(--text-accent, hsl(258, 75%, 63%)) !important;
-  --popover-font-size: var(--font-text-size, 16px) !important;
+  --popover-font-size: var(--font-text-size) !important;
+  --preferred-text-scale: 1 !important;
   --prompt-background: var(--background-primary, hsl(0, 0%, 100%)) !important;
   --prompt-border-color: var(--window-border-color, hsl(0, 0%, 69%)) !important;
-  --prompt-border-width: var(--border-width, 1px) !important;
+  --prompt-border-width: var(--border-width) !important;
   --raised-background: var(
     --blur-background,
     color-mix(in srgb, hsl(0, 0%, 100%) 65%, transparent)
@@ -691,23 +680,23 @@ body.theme-light {
         color-mix(in srgb, hsl(0, 0%, 100%) 65%, transparent)
       )
   ) !important;
-  --raised-blur: var(
-    --blur-s,
-    blur(6px) saturate(1.5) brightness(1.15)
-  ) !important;
+  --raised-blur: var(--blur-s) !important;
   --ribbon-background: var(--background-secondary, hsl(0, 0%, 93%)) !important;
   --ribbon-background-collapsed: var(
     --background-secondary,
     hsl(0, 0%, 93%)
   ) !important;
-  --ribbon-padding: var(--size-4-2) var(--size-4-1)
-    var(--size-4-3, 8px 4px 12px) !important;
+  --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
+  --safe-area-inset-bottom: 0px !important;
+  --safe-area-inset-left: 0px !important;
+  --safe-area-inset-right: 0px !important;
+  --safe-area-inset-top: 0px !important;
   --scrollbar-active-thumb-bg: var(
     --interactive-accent-base,
     hsl(251, 87%, 94%)
   ) !important;
   --scrollbar-bg: var(--background-secondary, hsl(0, 0%, 93%)) !important;
-  --scrollbar-radius: var(--radius-l, 12px) !important;
+  --scrollbar-radius: var(--radius-l) !important;
   --scrollbar-thumb-bg: var(
     --background-primary-alt,
     hsl(0, 0%, 96%)
@@ -719,8 +708,8 @@ body.theme-light {
     hsl(0, 0%, 100%)
   ) !important;
   --setting-group-heading-color: var(--text-normal, hsl(0, 0%, 15%)) !important;
-  --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
-  --setting-group-heading-weight: var(--font-semibold, 600) !important;
+  --setting-group-heading-size: var(--font-ui-medium) !important;
+  --setting-group-heading-weight: var(--font-semibold) !important;
   --setting-items-background: var(
     --background-primary,
     hsl(0, 0%, 100%)
@@ -730,13 +719,13 @@ body.theme-light {
     hsl(0, 0%, 69%)
   ) !important;
   --setting-items-padding: var(--size-4-2, 8px) !important;
-  --setting-items-radius: var(--radius-l, 12px) !important;
+  --setting-items-radius: var(--radius-l) !important;
   --shiki-active-tab-border-color: var(
     --shiki-highlight-neutral,
     hsl(0, 0%, 20%)
   ) !important;
   --shiki-code-background: var(--code-background, hsl(0, 0%, 100%)) !important;
-  --shiki-code-block-border-radius: var(--code-radius, 4px) !important;
+  --shiki-code-block-border-radius: var(--code-radius) !important;
   --shiki-code-block-spacing: var(--p-spacing, 0.5em) !important;
   --shiki-code-comment: var(--text-faint, hsl(0, 0%, 35%)) !important;
   --shiki-code-function: var(--color-green, hsl(93, 100%, 27%)) !important;
@@ -751,7 +740,7 @@ body.theme-light {
     --background-modifier-border,
     hsl(0, 0%, 69%)
   ) !important;
-  --shiki-gutter-border-width: var(--border-width, 1px) !important;
+  --shiki-gutter-border-width: var(--border-width) !important;
   --shiki-gutter-text-color: var(--text-faint, hsl(0, 0%, 35%)) !important;
   --shiki-gutter-text-color-highlight: var(
     --shiki-code-normal,
@@ -773,16 +762,13 @@ body.theme-light {
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
   --shiki-terminal-dots-color: var(--text-faint, hsl(0, 0%, 35%)) !important;
-  --shiki-tooltip-background: var(
-    --background-modifier-message,
-    rgba(0, 0, 0, 0.9)
-  ) !important;
+  --shiki-tooltip-background: var(--background-modifier-message) !important;
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9) !important;
   --slider-thumb-border-color: var(
     --background-modifier-border-hover,
     hsl(252, 84%, 83%)
   ) !important;
-  --slider-thumb-border-width: var(--border-width, 1px) !important;
+  --slider-thumb-border-width: var(--border-width) !important;
   --slider-thumb-radius: var(--size-4-1, 4px) !important;
   --slider-track-background: var(
     --background-modifier-border,
@@ -793,10 +779,9 @@ body.theme-light {
     hsl(0, 0%, 93%)
   ) !important;
   --status-bar-border-color: var(--divider-color, hsl(0, 0%, 69%)) !important;
-  --status-bar-border-width: var(--border-width) 0 0
-    var(--border-width, 1px 0 0 1px) !important;
+  --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: var(--font-ui-small, 13px) !important;
-  --status-bar-radius: var(--radius-m, 8px 0 0 0) 0 0 0 !important;
+  --status-bar-radius: var(--radius-m) 0 0 0 !important;
   --status-bar-text-color: var(--text-muted, hsl(0, 0%, 20%)) !important;
   --suggestion-background: var(
     --background-primary,
@@ -823,9 +808,9 @@ body.theme-light {
     --background-modifier-border-hover,
     hsl(252, 84%, 83%)
   ) !important;
-  --tab-font-size: var(--font-ui-small, 13px) !important;
+  --tab-font-size: var(--font-ui-small) !important;
   --tab-outline-color: var(--divider-color, hsl(0, 0%, 69%)) !important;
-  --tab-radius: var(--radius-s, 4px) !important;
+  --tab-radius: var(--radius-s) !important;
   --tab-stacked-font-size: var(--font-ui-medium, 15px) !important;
   --tab-stacked-header-width: var(--header-height, 41px) !important;
   --tab-switcher-background: var(
@@ -837,7 +822,7 @@ body.theme-light {
     var(--background-secondary),
     transparent
   ) !important;
-  --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
+  --tab-switcher-preview-radius: var(--radius-xl) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
   --tab-text-color: var(--text-faint, hsl(0, 0%, 35%)) !important;
@@ -859,17 +844,14 @@ body.theme-light {
     --background-modifier-border,
     hsl(0, 0%, 69%)
   ) !important;
-  --table-add-button-border-width: var(--table-border-width, 1px) !important;
+  --table-add-button-border-width: var(--table-border-width) !important;
   --table-border-color: var(
     --background-modifier-border,
     hsl(0, 0%, 69%)
   ) !important;
-  --table-column-alt-background: var(
-    --table-background,
-    transparent
-  ) !important;
-  --table-column-first-border-width: var(--table-border-width, 1px) !important;
-  --table-column-last-border-width: var(--table-border-width, 1px) !important;
+  --table-column-alt-background: var(--table-background) !important;
+  --table-column-first-border-width: var(--table-border-width) !important;
+  --table-column-last-border-width: var(--table-border-width) !important;
   --table-drag-handle-background-active: var(
     --table-selection-border-color,
     hsl(252, 84%, 83%)
@@ -879,35 +861,29 @@ body.theme-light {
     --text-on-accent,
     hsl(258, 75%, 63%)
   ) !important;
-  --table-header-background: var(--table-background, transparent) !important;
+  --table-header-background: var(--table-background) !important;
   --table-header-border-color: var(
     --table-border-color,
     hsl(0, 0%, 69%)
   ) !important;
-  --table-header-border-width: var(--table-border-width, 1px) !important;
+  --table-header-border-width: var(--table-border-width) !important;
   --table-header-color: var(--text-normal, hsl(0, 0%, 15%)) !important;
-  --table-header-size: var(--table-text-size, 16px) !important;
+  --table-header-size: var(--table-text-size) !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
   ) !important;
-  --table-line-height: var(--line-height-tight, 1.3) !important;
-  --table-row-alt-background: var(--table-background, transparent) !important;
-  --table-row-alt-background-hover: var(
-    --table-background,
-    transparent
-  ) !important;
-  --table-row-background-hover: var(--table-background, transparent) !important;
-  --table-row-last-border-width: var(--table-border-width, 1px) !important;
+  --table-line-height: var(--line-height-tight) !important;
+  --table-row-alt-background: var(--table-background) !important;
+  --table-row-alt-background-hover: var(--table-background) !important;
+  --table-row-background-hover: var(--table-background) !important;
+  --table-row-last-border-width: var(--table-border-width) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
-  --table-selection-blend-mode: var(
-    --highlight-mix-blend-mode,
-    darken
-  ) !important;
+  --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
   --table-selection-border-color: var(
     --interactive-accent,
     hsl(252, 84%, 83%)
   ) !important;
-  --table-text-size: var(--font-text-size, 16px) !important;
+  --table-text-size: var(--font-text-size) !important;
   --tag-background: hsla(var(--interactive-accent-hsl), 0.1) !important;
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2) !important;
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15) !important;
@@ -948,13 +924,13 @@ body.theme-light {
   ) !important;
   --titlebar-text-color: var(--text-muted, hsl(0, 0%, 20%)) !important;
   --titlebar-text-color-focused: var(--text-normal, hsl(0, 0%, 15%)) !important;
-  --titlebar-text-weight: var(--font-bold, 700) !important;
-  --touch-radius-l: var(--touch-size-l, 52px) !important;
-  --touch-radius-m: var(--touch-size-m, 44px) !important;
-  --touch-radius-s: var(--touch-size-s, 40px) !important;
-  --touch-radius-xl: var(--touch-size-xl, 60px) !important;
-  --touch-radius-xs: var(--touch-size-xs, 30px) !important;
-  --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
+  --titlebar-text-weight: var(--font-bold) !important;
+  --touch-radius-l: var(--touch-size-l) !important;
+  --touch-radius-m: var(--touch-size-m) !important;
+  --touch-radius-s: var(--touch-size-s) !important;
+  --touch-radius-xl: var(--touch-size-xl) !important;
+  --touch-radius-xs: var(--touch-size-xs) !important;
+  --touch-radius-xxs: var(--touch-size-xxs) !important;
   --traffic-lights-offset-x: var(--header-height, 41px) !important;
   --traffic-lights-offset-y: var(--header-height, 41px) !important;
   --vault-profile-color: var(--text-normal, hsl(0, 0%, 15%)) !important;
@@ -963,7 +939,7 @@ body.theme-light {
     hsl(0, 0%, 15%)
   ) !important;
   --vault-profile-font-size: var(--font-ui-medium, 15px) !important;
-  --vault-profile-font-weight: var(--font-medium, 500) !important;
+  --vault-profile-font-weight: var(--font-medium) !important;
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
   --input-height: 32px !important;
   --input-border-width-focus: 2px !important;
@@ -1069,6 +1045,7 @@ body.theme-light {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
+  --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
@@ -1277,7 +1254,6 @@ body.theme-light {
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
-  --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
@@ -1301,10 +1277,6 @@ body.theme-light {
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
   --ribbon-width: 44px !important;
-  --safe-area-inset-bottom: 0px !important;
-  --safe-area-inset-left: 0px !important;
-  --safe-area-inset-right: 0px !important;
-  --safe-area-inset-top: 0px !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-width: 12px !important;
@@ -1413,12 +1385,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --raised-shadow: var(
-    --shadow-xs,
-    0 1px 6px rgba(0, 0, 0, 0.015),
-    0 4px 24px rgba(0, 0, 0, 0.065),
-    0 0 transparent
-  ) !important;
+  --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
@@ -1662,7 +1629,7 @@ body.theme-dark {
     --color-red,
     hsl(4, 74%, 74%)
   ) !important;
-  --background-modifier-error-rgb: var(--color-red-rgb, 251, 70, 76) !important;
+  --background-modifier-error-rgb: var(--color-red-rgb) !important;
   --background-modifier-form-field: var(
     --background-secondary-alt,
     hsl(0, 0%, 8%)
@@ -1676,12 +1643,7 @@ body.theme-dark {
     --color-green,
     hsl(124, 48%, 54%)
   ) !important;
-  --background-modifier-success-rgb: var(
-    --color-green-rgb,
-    68,
-    207,
-    110
-  ) !important;
+  --background-modifier-success-rgb: var(--color-green-rgb) !important;
   --background-primary: var(--color-base-00, hsl(0, 0%, 18%)) !important;
   --background-primary-alt: var(--color-base-10, hsl(0, 0%, 30%)) !important;
   --background-secondary: var(--color-base-20, hsl(0, 0%, 12%)) !important;
@@ -1690,29 +1652,29 @@ body.theme-dark {
     --background-primary,
     hsl(0, 0%, 18%)
   ) !important;
-  --bases-cards-border-width: var(--border-width, 1px) !important;
-  --bases-cards-corner-shape: var(--corner-shape, round) !important;
+  --bases-cards-border-width: var(--border-width) !important;
+  --bases-cards-corner-shape: var(--corner-shape) !important;
   --bases-cards-cover-background: var(
     --background-primary-alt,
     hsl(0, 0%, 30%)
   ) !important;
-  --bases-cards-font-size: var(--font-smaller, 0.875em) !important;
-  --bases-cards-radius: var(--radius-m, 8px) !important;
+  --bases-cards-font-size: var(--font-smaller) !important;
+  --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
   --bases-embed-border-color: var(
     --background-modifier-border,
     hsl(0, 0%, 30%)
   ) !important;
-  --bases-embed-border-radius: var(--radius-s, 4px) !important;
+  --bases-embed-border-radius: var(--radius-s) !important;
   --bases-group-heading-property-color: var(
     --text-muted,
     hsl(0, 0%, 86%)
   ) !important;
-  --bases-group-heading-property-size: var(--font-ui-smaller, 12px) !important;
-  --bases-group-heading-property-weight: var(--font-normal, 400) !important;
-  --bases-group-heading-value-size: var(--font-smaller, 0.875em) !important;
-  --bases-group-heading-value-weight: var(--font-semibold, 600) !important;
+  --bases-group-heading-property-size: var(--font-ui-smaller) !important;
+  --bases-group-heading-property-weight: var(--font-normal) !important;
+  --bases-group-heading-value-size: var(--font-smaller) !important;
+  --bases-group-heading-value-weight: var(--font-semibold) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
   --bases-table-border-color: var(
     --table-border-color,
@@ -1733,10 +1695,10 @@ body.theme-dark {
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
-  --bases-table-column-border-width: var(--border-width, 1px) !important;
-  --bases-table-container-border-radius: var(--radius-s, 4px) !important;
-  --bases-table-container-border-width: var(--border-width, 1px) !important;
-  --bases-table-font-size: var(--font-smaller, 0.875em) !important;
+  --bases-table-column-border-width: var(--border-width) !important;
+  --bases-table-container-border-radius: var(--radius-s) !important;
+  --bases-table-container-border-width: var(--border-width) !important;
+  --bases-table-font-size: var(--font-smaller) !important;
   --bases-table-group-background: var(
     --background-primary-alt,
     hsl(0, 0%, 30%)
@@ -1755,12 +1717,11 @@ body.theme-dark {
     transparent var(--size-4-6),
     black var(--size-4-6)
   ) !important;
-  --bases-table-header-weight: var(--font-weight, 400) !important;
+  --bases-table-header-weight: var(--font-weight) !important;
   --bases-table-row-background-hover: var(
-    --table-row-background-hover,
-    transparent
+    --table-row-background-hover
   ) !important;
-  --bases-table-row-border-width: var(--border-width, 1px) !important;
+  --bases-table-row-border-width: var(--border-width) !important;
   --bases-table-summary-background: var(
     --background-primary,
     hsl(0, 0%, 18%)
@@ -1793,37 +1754,37 @@ body.theme-dark {
   --blur-s: blur(var(--blur-radius-s)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
-  --button-corner-shape: var(--corner-shape, round) !important;
+  --button-corner-shape: var(--corner-shape) !important;
   --button-radius: var(--input-radius, 4px) !important;
-  --callout-blend-mode: var(--highlight-mix-blend-mode, lighten);
-  --callout-bug: var(--color-red-rgb, 251, 70, 76);
-  --callout-default: var(--color-blue-rgb, 2, 122, 255);
-  --callout-error: var(--color-red-rgb, 251, 70, 76);
-  --callout-example: var(--color-purple-rgb, 168, 130, 255);
-  --callout-fail: var(--color-red-rgb, 251, 70, 76);
-  --callout-important: var(--color-cyan-rgb, 83, 223, 221);
-  --callout-info: var(--color-blue-rgb, 2, 122, 255);
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
+  --callout-bug: var(--color-red-rgb);
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
     var(--size-4-6, 4px);
-  --callout-question: var(--color-orange-rgb, 233, 151, 63);
+  --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-m, 8px);
-  --callout-success: var(--color-green-rgb, 68, 207, 110);
-  --callout-summary: var(--color-cyan-rgb, 83, 223, 221);
-  --callout-tip: var(--color-cyan-rgb, 83, 223, 221);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb, 2, 122, 255);
-  --callout-warning: var(--color-orange-rgb, 233, 151, 63);
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --canvas-background: var(--background-primary, hsl(0, 0%, 18%)) !important;
   --canvas-card-label-color: var(--text-faint, hsl(0, 0%, 81%)) !important;
-  --canvas-color-1: var(--color-red-rgb, 251, 70, 76) !important;
-  --canvas-color-2: var(--color-orange-rgb, 233, 151, 63) !important;
-  --canvas-color-3: var(--color-yellow-rgb, 224, 222, 113) !important;
-  --canvas-color-4: var(--color-green-rgb, 68, 207, 110) !important;
-  --canvas-color-5: var(--color-cyan-rgb, 83, 223, 221) !important;
-  --canvas-color-6: var(--color-purple-rgb, 168, 130, 255) !important;
-  --canvas-controls-icon-size: var(--icon-s, 16px) !important;
-  --canvas-controls-icon-stroke: var(--icon-s-stroke-width, 2px) !important;
-  --canvas-controls-radius: var(--radius-s, 4px) !important;
+  --canvas-color-1: var(--color-red-rgb) !important;
+  --canvas-color-2: var(--color-orange-rgb) !important;
+  --canvas-color-3: var(--color-yellow-rgb) !important;
+  --canvas-color-4: var(--color-green-rgb) !important;
+  --canvas-color-5: var(--color-cyan-rgb) !important;
+  --canvas-color-6: var(--color-purple-rgb) !important;
+  --canvas-controls-icon-size: var(--icon-s) !important;
+  --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
+  --canvas-controls-radius: var(--radius-s) !important;
   --canvas-dot-pattern: hsla(var(--background-primary-alt-hsl), 80%) !important;
   --caret-color: var(--text-normal, hsl(0, 0%, 91%)) !important;
   --checkbox-border-color: var(
@@ -1843,13 +1804,13 @@ body.theme-dark {
     --highlight-text-normal,
     hsl(267, 52%, 75%)
   ) !important;
-  --checkbox-radius: var(--radius-s, 4px) !important;
-  --checkbox-size: var(--font-text-size, 16px) !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --checklist-done-color: var(
     --interactive-accent-tint,
     hsl(271, 43%, 51%)
   ) !important;
-  --clickable-icon-radius: var(--radius-s, 4px) !important;
+  --clickable-icon-radius: var(--radius-s) !important;
   --code-background: var(--background-secondary-alt, hsl(0, 0%, 8%)) !important;
   --code-border-color: var(
     --background-modifier-border,
@@ -1867,8 +1828,8 @@ body.theme-dark {
   --code-operator: var(--color-red, hsl(4, 74%, 74%)) !important;
   --code-property: var(--color-cyan, hsl(195, 69%, 58%)) !important;
   --code-punctuation: var(--text-muted, hsl(0, 0%, 86%)) !important;
-  --code-radius: var(--radius-s, 4px) !important;
-  --code-size: var(--font-smaller, 0.875em) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green, hsl(124, 48%, 54%)) !important;
   --code-tag: var(--color-red, hsl(4, 74%, 74%)) !important;
   --code-value: var(--color-purple, hsl(267, 52%, 75%)) !important;
@@ -1902,7 +1863,6 @@ body.theme-dark {
     --interactive-accent-tint,
     hsl(271, 43%, 51%)
   ) !important;
-  --divider-vertical-height: calc(100% - var(--header-height)) !important;
   --dropdown-background: var(--interactive-normal, hsl(0, 0%, 12%)) !important;
   --dropdown-background-hover: var(
     --interactive-hover,
@@ -1926,8 +1886,7 @@ body.theme-dark {
     --background-primary,
     hsl(0, 0%, 18%)
   ) !important;
-  --file-header-border: var(--border-width, 1px solid transparent) solid
-    transparent !important;
+  --file-header-border: var(--border-width) solid transparent !important;
   --file-header-font: var(
     --font-interface,
     "??",
@@ -1948,9 +1907,9 @@ body.theme-dark {
     sans-serif
   ) !important;
   --file-header-font-size: var(--font-ui-medium, 15px) !important;
-  --file-margins: var(--file-margins-y) var(--file-margins-x, 32px 32px) !important;
-  --file-margins-x: var(--size-4-8, 32px) !important;
-  --file-margins-y: var(--size-4-8, 32px) !important;
+  --file-margins: var(--file-margins-y) var(--file-margins-x) !important;
+  --file-margins-x: var(--size-4-8) !important;
+  --file-margins-y: var(--size-4-8) !important;
   --flair-background: var(--interactive-normal, hsl(0, 0%, 12%)) !important;
   --flair-color: var(--text-normal, hsl(0, 0%, 91%)) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
@@ -1984,35 +1943,31 @@ body.theme-dark {
     var(--font-text-theme), "Arial" !important;
   --font-text:
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
-  --font-weight: var(--font-normal, 400) !important;
+  --font-weight: var(--font-normal) !important;
   --footnote-divider-color: var(
     --metadata-divider-color,
     hsl(0, 0%, 30%)
   ) !important;
   --footnote-divider-color-active: var(
-    --metadata-divider-color-focus,
-    transparent
+    --metadata-divider-color-focus
   ) !important;
-  --footnote-divider-width: var(--border-width, 1px) !important;
-  --footnote-gap: var(--size-4-1, 4px) !important;
+  --footnote-divider-width: var(--border-width) !important;
+  --footnote-gap: var(--size-4-1) !important;
   --footnote-id-color: var(--text-muted, hsl(0, 0%, 86%)) !important;
   --footnote-id-color-no-occurrences: var(
     --text-faint,
     hsl(0, 0%, 81%)
   ) !important;
-  --footnote-input-background: var(
-    --metadata-input-background,
-    transparent
-  ) !important;
+  --footnote-input-background: var(--metadata-input-background) !important;
   --footnote-input-background-active: var(
     --metadata-input-background-active,
     hsl(0, 0%, 12%)
   ) !important;
-  --footnote-line-height: var(--line-height-normal, 1.5) !important;
-  --footnote-padding-block: var(--size-2-3, 6px) !important;
-  --footnote-padding-inline: var(--size-2-3, 6px) !important;
-  --footnote-radius: var(--radius-s, 4px) !important;
-  --footnote-size: var(--font-smaller, 0.875em) !important;
+  --footnote-line-height: var(--line-height-normal) !important;
+  --footnote-padding-block: var(--size-2-3) !important;
+  --footnote-padding-inline: var(--size-2-3) !important;
+  --footnote-radius: var(--radius-s) !important;
+  --footnote-size: var(--font-smaller) !important;
   --graph-line: var(--graph-line-color-dt, hsl(0, 0%, 30%)) !important;
   --graph-node: var(--graph-fill-color-dt, hsl(0, 0%, 67%)) !important;
   --graph-node-attachment: var(
@@ -2029,8 +1984,8 @@ body.theme-dark {
     hsl(4, 74%, 74%)
   ) !important;
   --graph-text: var(--text-normal, hsl(0, 0%, 91%)) !important;
-  --h5-line-height: var(--line-height-normal, 1.5) !important;
-  --h6-line-height: var(--line-height-normal, 1.5) !important;
+  --h5-line-height: var(--line-height-normal) !important;
+  --h6-line-height: var(--line-height-normal) !important;
   --heading-formatting: var(--text-faint, hsl(0, 0%, 81%)) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --hr-color: var(--background-modifier-border, hsl(0, 0%, 30%)) !important;
@@ -2044,8 +1999,8 @@ body.theme-dark {
     --highlight-text-normal,
     hsl(267, 52%, 75%)
   ) !important;
-  --icon-size: var(--icon-m, 18px) !important;
-  --icon-stroke: var(--icon-m-stroke-width, 1.75px) !important;
+  --icon-size: var(--icon-m) !important;
+  --icon-stroke: var(--icon-m-stroke-width) !important;
   --indentation-guide-color: hsla(
     var(--background-primary-alt-hsl),
     80%
@@ -2054,19 +2009,19 @@ body.theme-dark {
     --interactive-accent-tint,
     hsl(271, 43%, 51%)
   ) !important;
-  --indentation-guide-width: var(--border-width, 1px) !important;
-  --indentation-guide-width-active: var(--border-width, 1px) !important;
+  --indentation-guide-width: var(--border-width) !important;
+  --indentation-guide-width-active: var(--border-width) !important;
   --inline-title-line-height: var(--h1-line-height, 1.3) !important;
   --inline-title-size: var(--h1-size, 2.2em) !important;
-  --inline-title-style: var(--h1-style, normal) !important;
-  --inline-title-variant: var(--h1-variant, normal) !important;
+  --inline-title-style: var(--h1-style) !important;
+  --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: var(--h1-weight, 800) !important;
-  --input-border-width: var(--border-width, 1px) !important;
-  --input-corner-shape: var(--corner-shape, round) !important;
+  --input-border-width: var(--border-width) !important;
+  --input-corner-shape: var(--corner-shape) !important;
   --input-date-separator: var(--text-faint, hsl(0, 0%, 81%)) !important;
-  --input-font-weight: var(--font-normal, 400) !important;
-  --input-icon-inset: var(--size-4-1, 4px) !important;
-  --input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --input-font-weight: var(--font-normal) !important;
+  --input-icon-inset: var(--size-4-1) !important;
+  --input-padding: var(--size-4-1) var(--size-4-2) !important;
   --input-placeholder-color: var(--text-faint, hsl(0, 0%, 81%)) !important;
   --interactive-accent: var(--color-accent, hsl(271, 43%, 51%)) !important;
   --interactive-accent-hover: var(
@@ -2088,7 +2043,7 @@ body.theme-dark {
     var(--interactive-accent-hsl),
     0.3
   ) !important;
-  --link-weight: var(--font-weight, 400) !important;
+  --link-weight: var(--font-weight) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-marker-color: var(--text-faint, hsl(0, 0%, 81%)) !important;
   --list-marker-color-collapsed: var(
@@ -2101,10 +2056,10 @@ body.theme-dark {
     --background-modifier-border-hover,
     hsl(271, 43%, 51%)
   ) !important;
-  --menu-border-width: var(--border-width, 1px) !important;
-  --menu-corner-shape: var(--corner-shape, round) !important;
-  --menu-padding: var(--size-2-3, 6px) !important;
-  --menu-radius: var(--radius-m, 8px) !important;
+  --menu-border-width: var(--border-width) !important;
+  --menu-corner-shape: var(--corner-shape) !important;
+  --menu-padding: var(--size-2-3) !important;
+  --menu-radius: var(--radius-m) !important;
   --menu-shadow: var(--shadow-s, hsla(0, 0%, 0%, 10%) 0 1px 2px 0) !important;
   --metadata-border-color: var(
     --background-modifier-border,
@@ -2137,9 +2092,9 @@ body.theme-dark {
     "Segoe UI Symbol",
     sans-serif
   ) !important;
-  --metadata-input-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-input-font-size: var(--font-smaller) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
-  --metadata-input-padding: var(--size-4-1) var(--size-4-2, 4px 8px) !important;
+  --metadata-input-padding: var(--size-4-1) var(--size-4-2) !important;
   --metadata-input-text-color: var(--text-normal, hsl(0, 0%, 91%)) !important;
   --metadata-label-background-active: var(
     --background-secondary,
@@ -2164,13 +2119,13 @@ body.theme-dark {
     "Segoe UI Symbol",
     sans-serif
   ) !important;
-  --metadata-label-font-size: var(--font-smaller, 0.875em) !important;
+  --metadata-label-font-size: var(--font-smaller) !important;
   --metadata-label-text-color: var(--text-muted, hsl(0, 0%, 86%)) !important;
   --metadata-label-text-color-hover: var(
     --text-muted,
     hsl(0, 0%, 86%)
   ) !important;
-  --metadata-padding: var(--size-4-2, 8px 0) 0 !important;
+  --metadata-padding: var(--size-4-2) 0 !important;
   --metadata-property-background-active: var(
     --background-modifier-hover,
     hsla(271, 48%, 21%, 90%)
@@ -2179,18 +2134,18 @@ body.theme-dark {
     var(--background-modifier-border-focus) !important;
   --metadata-property-box-shadow-hover: 0 0 0 var(--border-width)
     var(--background-modifier-border-hover) !important;
-  --metadata-property-corner-shape: var(--corner-shape, round) !important;
-  --metadata-property-corner-shape-focus: var(--corner-shape, round) !important;
-  --metadata-property-corner-shape-hover: var(--corner-shape, round) !important;
-  --metadata-sidebar-input-font-size: var(--font-ui-small, 13px) !important;
-  --metadata-sidebar-label-font-size: var(--font-ui-small, 13px) !important;
+  --metadata-property-corner-shape: var(--corner-shape) !important;
+  --metadata-property-corner-shape-focus: var(--corner-shape) !important;
+  --metadata-property-corner-shape-hover: var(--corner-shape) !important;
+  --metadata-sidebar-input-font-size: var(--font-ui-small) !important;
+  --metadata-sidebar-label-font-size: var(--font-ui-small) !important;
   --modal-background: var(
     --background-secondary-alt,
     hsl(0, 0%, 8%)
   ) !important;
   --modal-border-color: var(--window-border-color, hsl(0, 0%, 30%)) !important;
-  --modal-border-width: var(--border-width, 1px) !important;
-  --modal-radius: var(--radius-l, 12px) !important;
+  --modal-border-width: var(--border-width) !important;
+  --modal-radius: var(--radius-l) !important;
   --nav-collapse-icon-color: var(
     --collapse-icon-color,
     hsl(0, 0%, 81%)
@@ -2206,13 +2161,13 @@ body.theme-dark {
     hsl(0, 0%, 86%)
   ) !important;
   --nav-heading-color-hover: var(--text-normal, hsl(0, 0%, 91%)) !important;
-  --nav-heading-weight: var(--font-medium, 500) !important;
-  --nav-heading-weight-hover: var(--font-medium, 500) !important;
+  --nav-heading-weight: var(--font-medium) !important;
+  --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: var(
     --indentation-guide-color,
     hsla(0, 0%, 30%, 80%)
   ) !important;
-  --nav-indentation-guide-width: var(--indentation-guide-width, 1px) !important;
+  --nav-indentation-guide-width: var(--indentation-guide-width) !important;
   --nav-item-background-active: var(
     --background-modifier-hover,
     hsla(271, 48%, 21%, 90%)
@@ -2225,8 +2180,8 @@ body.theme-dark {
     var(--color-accent-hsl),
     0.15
   ) !important;
-  --nav-item-children-margin-start: var(--size-4-3, 12px) !important;
-  --nav-item-children-padding-start: var(--size-2-2, 4px) !important;
+  --nav-item-children-margin-start: var(--size-4-3) !important;
+  --nav-item-children-padding-start: var(--size-2-2) !important;
   --nav-item-color: var(--text-muted, hsl(0, 0%, 86%)) !important;
   --nav-item-color-active: var(--text-normal, hsl(0, 0%, 91%)) !important;
   --nav-item-color-highlighted: var(
@@ -2238,20 +2193,20 @@ body.theme-dark {
     hsl(267, 52%, 75%)
   ) !important;
   --nav-item-color-selected: var(--text-normal, hsl(0, 0%, 91%)) !important;
-  --nav-item-margin-bottom: var(--size-2-1, 2px) !important;
+  --nav-item-margin-bottom: var(--size-2-1) !important;
   --nav-item-padding: var(--size-2-1) var(--size-4-2) var(--size-2-1)
     var(--size-4-6, 2px 8px 2px 24px) !important;
   --nav-item-parent-padding: var(
     --nav-item-padding,
     2px 8px 2px 24px
   ) !important;
-  --nav-item-radius: var(--radius-s, 4px) !important;
-  --nav-item-size: var(--font-ui-small, 13px) !important;
+  --nav-item-radius: var(--radius-s) !important;
+  --nav-item-size: var(--font-ui-small) !important;
   --nav-tag-color: var(--text-faint, hsl(0, 0%, 81%)) !important;
   --nav-tag-color-active: var(--text-muted, hsl(0, 0%, 86%)) !important;
   --nav-tag-color-hover: var(--text-muted, hsl(0, 0%, 86%)) !important;
-  --nav-tag-radius: var(--radius-s, 4px) !important;
-  --nav-tag-weight: var(--font-semibold, 600) !important;
+  --nav-tag-radius: var(--radius-s) !important;
+  --nav-tag-weight: var(--font-semibold) !important;
   --pdf-background: var(--background-secondary-alt, hsl(0, 0%, 8%)) !important;
   --pdf-page-background: var(--background-primary, hsl(0, 0%, 18%)) !important;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
@@ -2268,15 +2223,16 @@ body.theme-dark {
     --background-modifier-border-hover,
     hsl(271, 43%, 51%)
   ) !important;
-  --pill-border-width: var(--border-width, 1px) !important;
+  --pill-border-width: var(--border-width) !important;
   --pill-color: var(--text-muted, hsl(0, 0%, 86%)) !important;
   --pill-color-hover: var(--text-normal, hsl(0, 0%, 91%)) !important;
   --pill-color-remove: var(--text-faint, hsl(0, 0%, 81%)) !important;
   --pill-color-remove-hover: var(--text-accent, hsl(271, 43%, 51%)) !important;
-  --popover-font-size: var(--font-text-size, 16px) !important;
+  --popover-font-size: var(--font-text-size) !important;
+  --preferred-text-scale: 1 !important;
   --prompt-background: var(--background-primary, hsl(0, 0%, 18%)) !important;
   --prompt-border-color: var(--window-border-color, hsl(0, 0%, 30%)) !important;
-  --prompt-border-width: var(--border-width, 1px) !important;
+  --prompt-border-width: var(--border-width) !important;
   --raised-background: var(
     --blur-background,
     color-mix(in srgb, hsl(0, 0%, 12%) 65%, transparent)
@@ -2285,23 +2241,23 @@ body.theme-dark {
         color-mix(in srgb, hsl(0, 0%, 12%) 65%, transparent)
       )
   ) !important;
-  --raised-blur: var(
-    --blur-s,
-    blur(6px) saturate(1.5) brightness(1.15)
-  ) !important;
+  --raised-blur: var(--blur-s) !important;
   --ribbon-background: var(--background-secondary, hsl(0, 0%, 12%)) !important;
   --ribbon-background-collapsed: var(
     --background-secondary,
     hsl(0, 0%, 12%)
   ) !important;
-  --ribbon-padding: var(--size-4-2) var(--size-4-1)
-    var(--size-4-3, 8px 4px 12px) !important;
+  --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
+  --safe-area-inset-bottom: 0px !important;
+  --safe-area-inset-left: 0px !important;
+  --safe-area-inset-right: 0px !important;
+  --safe-area-inset-top: 0px !important;
   --scrollbar-active-thumb-bg: var(
     --interactive-accent-base,
     hsl(271, 48%, 21%)
   ) !important;
   --scrollbar-bg: var(--background-secondary, hsl(0, 0%, 12%)) !important;
-  --scrollbar-radius: var(--radius-l, 12px) !important;
+  --scrollbar-radius: var(--radius-l) !important;
   --scrollbar-thumb-bg: var(
     --background-primary-alt,
     hsl(0, 0%, 30%)
@@ -2313,8 +2269,8 @@ body.theme-dark {
     hsl(0, 0%, 18%)
   ) !important;
   --setting-group-heading-color: var(--text-normal, hsl(0, 0%, 91%)) !important;
-  --setting-group-heading-size: var(--font-ui-medium, 15px) !important;
-  --setting-group-heading-weight: var(--font-semibold, 600) !important;
+  --setting-group-heading-size: var(--font-ui-medium) !important;
+  --setting-group-heading-weight: var(--font-semibold) !important;
   --setting-items-background: var(
     --background-secondary-alt,
     hsl(0, 0%, 8%)
@@ -2324,13 +2280,13 @@ body.theme-dark {
     hsl(0, 0%, 30%)
   ) !important;
   --setting-items-padding: var(--size-4-2, 8px) !important;
-  --setting-items-radius: var(--radius-l, 12px) !important;
+  --setting-items-radius: var(--radius-l) !important;
   --shiki-active-tab-border-color: var(
     --shiki-highlight-neutral,
     hsl(0, 0%, 86%)
   ) !important;
   --shiki-code-background: var(--code-background, hsl(0, 0%, 8%)) !important;
-  --shiki-code-block-border-radius: var(--code-radius, 4px) !important;
+  --shiki-code-block-border-radius: var(--code-radius) !important;
   --shiki-code-block-spacing: var(--p-spacing, 0.5em) !important;
   --shiki-code-comment: var(--text-faint, hsl(0, 0%, 81%)) !important;
   --shiki-code-function: var(--color-green, hsl(124, 48%, 54%)) !important;
@@ -2345,7 +2301,7 @@ body.theme-dark {
     --background-modifier-border,
     hsl(0, 0%, 30%)
   ) !important;
-  --shiki-gutter-border-width: var(--border-width, 1px) !important;
+  --shiki-gutter-border-width: var(--border-width) !important;
   --shiki-gutter-text-color: var(--text-faint, hsl(0, 0%, 81%)) !important;
   --shiki-gutter-text-color-highlight: var(
     --shiki-code-normal,
@@ -2367,16 +2323,13 @@ body.theme-dark {
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
   --shiki-terminal-dots-color: var(--text-faint, hsl(0, 0%, 81%)) !important;
-  --shiki-tooltip-background: var(
-    --background-modifier-message,
-    rgba(0, 0, 0, 0.9)
-  ) !important;
+  --shiki-tooltip-background: var(--background-modifier-message) !important;
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9) !important;
   --slider-thumb-border-color: var(
     --background-modifier-border-hover,
     hsl(271, 43%, 51%)
   ) !important;
-  --slider-thumb-border-width: var(--border-width, 1px) !important;
+  --slider-thumb-border-width: var(--border-width) !important;
   --slider-thumb-radius: var(--size-4-1, 4px) !important;
   --slider-track-background: var(
     --background-modifier-border,
@@ -2387,10 +2340,9 @@ body.theme-dark {
     hsl(0, 0%, 12%)
   ) !important;
   --status-bar-border-color: var(--divider-color, hsl(0, 0%, 30%)) !important;
-  --status-bar-border-width: var(--border-width) 0 0
-    var(--border-width, 1px 0 0 1px) !important;
+  --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: var(--font-ui-small, 13px) !important;
-  --status-bar-radius: var(--radius-m, 8px 0 0 0) 0 0 0 !important;
+  --status-bar-radius: var(--radius-m) 0 0 0 !important;
   --status-bar-text-color: var(--text-muted, hsl(0, 0%, 86%)) !important;
   --suggestion-background: var(
     --background-primary,
@@ -2417,9 +2369,9 @@ body.theme-dark {
     --background-modifier-border-hover,
     hsl(271, 43%, 51%)
   ) !important;
-  --tab-font-size: var(--font-ui-small, 13px) !important;
+  --tab-font-size: var(--font-ui-small) !important;
   --tab-outline-color: var(--divider-color, hsl(0, 0%, 30%)) !important;
-  --tab-radius: var(--radius-s, 4px) !important;
+  --tab-radius: var(--radius-s) !important;
   --tab-stacked-font-size: var(--font-ui-medium, 15px) !important;
   --tab-stacked-header-width: var(--header-height, 41px) !important;
   --tab-switcher-background: var(
@@ -2431,7 +2383,7 @@ body.theme-dark {
     var(--background-secondary),
     transparent
   ) !important;
-  --tab-switcher-preview-radius: var(--radius-xl, 16px) !important;
+  --tab-switcher-preview-radius: var(--radius-xl) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
   --tab-text-color: var(--text-faint, hsl(0, 0%, 81%)) !important;
@@ -2453,17 +2405,14 @@ body.theme-dark {
     --background-modifier-border,
     hsl(0, 0%, 30%)
   ) !important;
-  --table-add-button-border-width: var(--table-border-width, 1px) !important;
+  --table-add-button-border-width: var(--table-border-width) !important;
   --table-border-color: var(
     --background-modifier-border,
     hsl(0, 0%, 30%)
   ) !important;
-  --table-column-alt-background: var(
-    --table-background,
-    transparent
-  ) !important;
-  --table-column-first-border-width: var(--table-border-width, 1px) !important;
-  --table-column-last-border-width: var(--table-border-width, 1px) !important;
+  --table-column-alt-background: var(--table-background) !important;
+  --table-column-first-border-width: var(--table-border-width) !important;
+  --table-column-last-border-width: var(--table-border-width) !important;
   --table-drag-handle-background-active: var(
     --table-selection-border-color,
     hsl(271, 43%, 51%)
@@ -2473,35 +2422,29 @@ body.theme-dark {
     --text-on-accent,
     hsl(267, 52%, 75%)
   ) !important;
-  --table-header-background: var(--table-background, transparent) !important;
+  --table-header-background: var(--table-background) !important;
   --table-header-border-color: var(
     --table-border-color,
     hsl(0, 0%, 30%)
   ) !important;
-  --table-header-border-width: var(--table-border-width, 1px) !important;
+  --table-header-border-width: var(--table-border-width) !important;
   --table-header-color: var(--text-normal, hsl(0, 0%, 91%)) !important;
-  --table-header-size: var(--table-text-size, 16px) !important;
+  --table-header-size: var(--table-text-size) !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
   ) !important;
-  --table-line-height: var(--line-height-tight, 1.3) !important;
-  --table-row-alt-background: var(--table-background, transparent) !important;
-  --table-row-alt-background-hover: var(
-    --table-background,
-    transparent
-  ) !important;
-  --table-row-background-hover: var(--table-background, transparent) !important;
-  --table-row-last-border-width: var(--table-border-width, 1px) !important;
+  --table-line-height: var(--line-height-tight) !important;
+  --table-row-alt-background: var(--table-background) !important;
+  --table-row-alt-background-hover: var(--table-background) !important;
+  --table-row-background-hover: var(--table-background) !important;
+  --table-row-last-border-width: var(--table-border-width) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
-  --table-selection-blend-mode: var(
-    --highlight-mix-blend-mode,
-    lighten
-  ) !important;
+  --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
   --table-selection-border-color: var(
     --interactive-accent,
     hsl(271, 43%, 51%)
   ) !important;
-  --table-text-size: var(--font-text-size, 16px) !important;
+  --table-text-size: var(--font-text-size) !important;
   --tag-background: hsla(var(--interactive-accent-hsl), 0.1) !important;
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2) !important;
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15) !important;
@@ -2536,13 +2479,13 @@ body.theme-dark {
   ) !important;
   --titlebar-text-color: var(--text-muted, hsl(0, 0%, 86%)) !important;
   --titlebar-text-color-focused: var(--text-normal, hsl(0, 0%, 91%)) !important;
-  --titlebar-text-weight: var(--font-bold, 700) !important;
-  --touch-radius-l: var(--touch-size-l, 52px) !important;
-  --touch-radius-m: var(--touch-size-m, 44px) !important;
-  --touch-radius-s: var(--touch-size-s, 40px) !important;
-  --touch-radius-xl: var(--touch-size-xl, 60px) !important;
-  --touch-radius-xs: var(--touch-size-xs, 30px) !important;
-  --touch-radius-xxs: var(--touch-size-xxs, 24px) !important;
+  --titlebar-text-weight: var(--font-bold) !important;
+  --touch-radius-l: var(--touch-size-l) !important;
+  --touch-radius-m: var(--touch-size-m) !important;
+  --touch-radius-s: var(--touch-size-s) !important;
+  --touch-radius-xl: var(--touch-size-xl) !important;
+  --touch-radius-xs: var(--touch-size-xs) !important;
+  --touch-radius-xxs: var(--touch-size-xxs) !important;
   --traffic-lights-offset-x: var(--header-height, 41px) !important;
   --traffic-lights-offset-y: var(--header-height, 41px) !important;
   --vault-profile-color: var(--text-normal, hsl(0, 0%, 91%)) !important;
@@ -2551,7 +2494,7 @@ body.theme-dark {
     hsl(0, 0%, 91%)
   ) !important;
   --vault-profile-font-size: var(--font-ui-medium, 15px) !important;
-  --vault-profile-font-weight: var(--font-medium, 500) !important;
+  --vault-profile-font-weight: var(--font-medium) !important;
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
   --input-height: 32px !important;
   --input-border-width-focus: 2px !important;
@@ -2656,6 +2599,7 @@ body.theme-dark {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
+  --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
@@ -2864,7 +2808,6 @@ body.theme-dark {
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
-  --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
@@ -2882,10 +2825,6 @@ body.theme-dark {
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
   --ribbon-width: 44px !important;
-  --safe-area-inset-bottom: 0px !important;
-  --safe-area-inset-left: 0px !important;
-  --safe-area-inset-right: 0px !important;
-  --safe-area-inset-top: 0px !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-width: 12px !important;
@@ -3225,7 +3164,7 @@ body {
 body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-external-color, rgb(132, 90, 231));
-  cursor: var(--cursor-link, pointer);
+  cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -3244,11 +3183,11 @@ body body.theme-light .markdown-rendered a.external-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 400);
+  font-weight: var(--link-weight);
   outline: rgb(132, 90, 231) none 0px;
   text-decoration: underline;
   text-decoration-color: rgb(132, 90, 231);
-  text-decoration-line: var(--link-external-decoration, underline);
+  text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
   transform: none;
@@ -3265,7 +3204,7 @@ body body.theme-light .markdown-rendered a.external-link {
 body body.theme-light .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-color, rgb(132, 90, 231));
-  cursor: var(--cursor-link, pointer);
+  cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -3284,11 +3223,11 @@ body body.theme-light .markdown-rendered a.internal-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 400);
+  font-weight: var(--link-weight);
   outline: rgb(132, 90, 231) none 0px;
   text-decoration: underline;
   text-decoration-color: rgb(132, 90, 231);
-  text-decoration-line: var(--link-decoration, underline);
+  text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
   transform: none;
@@ -3305,7 +3244,7 @@ body body.theme-light .markdown-rendered a.internal-link {
 body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-unresolved-color, rgb(132, 90, 231));
-  cursor: var(--cursor-link, pointer);
+  cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -3324,15 +3263,15 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 400);
+  font-weight: var(--link-weight);
   outline: rgb(132, 90, 231) none 0px;
   text-decoration: underline rgba(132, 90, 231, 0.3);
   text-decoration-color: var(
     --link-unresolved-decoration-color,
     rgba(132, 90, 231, 0.3)
   );
-  text-decoration-line: var(--link-decoration, underline);
-  text-decoration-style: var(--link-unresolved-decoration-style, solid);
+  text-decoration-line: var(--link-decoration);
+  text-decoration-style: var(--link-unresolved-decoration-style);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -3809,8 +3748,8 @@ body body.theme-light div.multi-select-pill {
     "Segoe UI Symbol",
     sans-serif;
   font-size: 14px;
-  font-weight: var(--pill-weight, 400);
-  line-height: var(--line-height-tight, 14px);
+  font-weight: var(--pill-weight);
+  line-height: var(--line-height-tight);
   text-decoration: rgb(34, 34, 34);
   margin-inline-start: 0px;
   border: 2px solid rgba(132, 90, 231, 0.15);
@@ -3832,8 +3771,8 @@ body body.theme-light .markdown-rendered ul > li {
   list-style-type: "​";
   list-style-position: outside;
   list-style-image: none;
-  padding-top: var(--list-spacing, 1.2px);
-  padding-bottom: var(--list-spacing, 1.2px);
+  padding-top: var(--list-spacing);
+  padding-bottom: var(--list-spacing);
   padding-left: 0px;
   padding-right: 0px;
   padding-block-end: 0px;
@@ -3867,8 +3806,8 @@ body body.theme-light .markdown-rendered ol > li {
   list-style-type: "​";
   list-style-position: outside;
   list-style-image: none;
-  padding-top: var(--list-spacing, 1.2px);
-  padding-bottom: var(--list-spacing, 1.2px);
+  padding-top: var(--list-spacing);
+  padding-bottom: var(--list-spacing);
   padding-left: 0px;
   padding-right: 0px;
   padding-block-end: 0px;
@@ -3995,7 +3934,7 @@ body
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  width: var(--checkbox-size, 16px);
+  width: var(--checkbox-size);
   transition: box-shadow 0.15s ease-in-out;
   position: relative;
   top: auto;
@@ -4079,7 +4018,7 @@ body body.theme-light .site-body-left-column input.search-bar {
     sans-serif;
 }
 body body.theme-light .search-results {
-  background-color: var(--prompt-background, rgb(255, 255, 255));
+  background-color: var(--prompt-background);
   border: 1px solid rgb(176, 176, 176);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -4482,7 +4421,7 @@ body
   .outline-view
   .tree-item
   > .tree-item-self {
-  font-weight: var(--nav-item-weight, 400);
+  font-weight: var(--nav-item-weight);
 }
 body
   body.theme-light
@@ -4580,11 +4519,11 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout > .callout-title > .callout-title-inner {
-  color: var(--callout-title-color, rgb(8, 109, 221));
-  font-weight: var(--font-weight, 600);
+  color: var(--callout-title-color);
+  font-weight: var(--font-weight);
 }
 body body.theme-light .callout > .callout-content {
-  background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+  background-color: var(--callout-content-background);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -5178,14 +5117,13 @@ body body.theme-light .markdown-rendered th {
   color: var(--table-header-color, rgb(38, 38, 38));
   font-weight: var(--font-semibold, 600);
   text-align: start;
-  vertical-align: var(--table-cell-vertical-alignment, top);
+  vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(34, 34, 34);
   letter-spacing: normal;
-  border-left: var(--table-column-first-border-width, 1px) solid
-    rgb(176, 176, 176);
+  border-left: var(--table-column-first-border-width) solid rgb(176, 176, 176);
   border-right: 1px solid rgb(176, 176, 176);
-  border-top: var(--table-header-border-width, 1px) solid rgb(176, 176, 176);
+  border-top: var(--table-header-border-width) solid rgb(176, 176, 176);
   border-bottom: 1px solid rgb(176, 176, 176);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -5206,12 +5144,11 @@ body body.theme-light .markdown-rendered td {
   color: var(--table-text-color, rgb(38, 38, 38));
   font-weight: 400;
   text-align: start;
-  vertical-align: var(--table-cell-vertical-alignment, top);
+  vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(34, 34, 34);
   border: 1px solid rgb(176, 176, 176);
-  border-left: var(--table-column-first-border-width, 1px) solid
-    rgb(176, 176, 176);
+  border-left: var(--table-column-first-border-width) solid rgb(176, 176, 176);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5227,7 +5164,7 @@ body body.theme-light .markdown-rendered td {
   padding-inline-start: 1px;
 }
 body body.theme-light .markdown-rendered tr {
-  background-color: var(--table-header-background, rgba(0, 0, 0, 0));
+  background-color: var(--table-header-background);
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -5239,10 +5176,10 @@ body body.theme-light .markdown-rendered tr {
   border-end-end-radius: 0px;
 }
 body body.theme-light .markdown-rendered tbody tr:nth-child(even) {
-  background-color: var(--table-background, rgba(0, 0, 0, 0));
+  background-color: var(--table-background);
 }
 body body.theme-light .markdown-rendered tbody tr:nth-child(odd) {
-  background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+  background-color: var(--table-row-alt-background);
 }
 body body.theme-light .markdown-rendered img {
   border-radius: 0px;
@@ -5358,7 +5295,7 @@ body body.theme-light .markdown-rendered audio {
   padding-inline-start: 0px;
 }
 body body.theme-light .internal-embed {
-  background-color: var(--embed-background, rgba(0, 0, 0, 0));
+  background-color: var(--embed-background);
   color: rgb(38, 38, 38);
   border-radius: 0px;
   border: 1px solid rgb(176, 176, 176);
@@ -5396,7 +5333,7 @@ body body.theme-light .file-embed {
   padding: 8px;
 }
 body body.theme-light .metadata-container {
-  background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+  background-color: var(--metadata-background);
   color: var(--text-muted, rgb(51, 51, 51));
   font-family:
     "Source Sans 3",
@@ -5449,7 +5386,7 @@ body body.theme-light .metadata-properties {
   padding: 0px;
 }
 body body.theme-light .metadata-container .metadata-property {
-  background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+  background-color: var(--metadata-property-background);
   color: rgb(51, 51, 51);
   font-family:
     "Source Sans 3",
@@ -5653,7 +5590,7 @@ body body.theme-light kbd {
     "Source Code Pro",
     monospace
   );
-  font-size: var(--code-size, 14px);
+  font-size: var(--code-size);
   border: 1px solid rgb(176, 176, 176);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -5953,7 +5890,7 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--text-normal, rgb(38, 38, 38));
-  cursor: var(--cursor, default);
+  cursor: var(--cursor);
   font-family:
     "Source Sans 3",
     ui-sans-serif,
@@ -5969,7 +5906,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 400);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(34, 34, 34);
 }
 body
@@ -5981,7 +5918,7 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--text-normal, rgb(38, 38, 38));
-  cursor: var(--cursor, default);
+  cursor: var(--cursor);
   font-family:
     "Source Sans 3",
     ui-sans-serif,
@@ -5997,13 +5934,13 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 400);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
   color: var(--icon-color, rgb(51, 51, 51));
-  cursor: var(--cursor, default);
+  cursor: var(--cursor);
   border-color: rgb(51, 51, 51);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -6039,7 +5976,7 @@ body body.theme-light .site-footer {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;
-  padding-right: var(--size-4-2, 8px);
+  padding-right: var(--size-4-2);
 }
 body body.theme-light .site-footer a {
   color: rgb(51, 51, 51);
@@ -6108,7 +6045,7 @@ body body.theme-light .nav-files-container {
 body body.theme-light .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
   color: var(--icon-color, rgb(51, 51, 51));
-  cursor: var(--cursor, default);
+  cursor: var(--cursor);
   border-color: rgb(51, 51, 51);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -6181,7 +6118,7 @@ body body.theme-light .page-header .page-title {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light .math-block {
-  background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+  background-color: var(--background-modifier-hover);
   color: rgb(38, 38, 38);
   border-color: rgb(38, 38, 38);
   border-width: 0px;
@@ -6287,7 +6224,7 @@ body body.theme-light .search-highlight {
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-external-color, rgb(188, 158, 224));
-  cursor: var(--cursor-link, pointer);
+  cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -6306,11 +6243,11 @@ body body.theme-dark .markdown-rendered a.external-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 400);
+  font-weight: var(--link-weight);
   outline: rgb(188, 158, 224) none 0px;
   text-decoration: underline;
   text-decoration-color: rgb(188, 158, 224);
-  text-decoration-line: var(--link-external-decoration, underline);
+  text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
   transform: none;
@@ -6327,7 +6264,7 @@ body body.theme-dark .markdown-rendered a.external-link {
 body body.theme-dark .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-color, rgb(188, 158, 224));
-  cursor: var(--cursor-link, pointer);
+  cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -6346,11 +6283,11 @@ body body.theme-dark .markdown-rendered a.internal-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 400);
+  font-weight: var(--link-weight);
   outline: rgb(188, 158, 224) none 0px;
   text-decoration: underline;
   text-decoration-color: rgb(188, 158, 224);
-  text-decoration-line: var(--link-decoration, underline);
+  text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
   transform: none;
@@ -6367,7 +6304,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
 body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-unresolved-color, rgb(188, 158, 224));
-  cursor: var(--cursor-link, pointer);
+  cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -6386,15 +6323,15 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 400);
+  font-weight: var(--link-weight);
   outline: rgb(188, 158, 224) none 0px;
   text-decoration: underline rgba(188, 158, 224, 0.3);
   text-decoration-color: var(
     --link-unresolved-decoration-color,
     rgba(188, 158, 224, 0.3)
   );
-  text-decoration-line: var(--link-decoration, underline);
-  text-decoration-style: var(--link-unresolved-decoration-style, solid);
+  text-decoration-line: var(--link-decoration);
+  text-decoration-style: var(--link-unresolved-decoration-style);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -6871,8 +6808,8 @@ body body.theme-dark div.multi-select-pill {
     "Segoe UI Symbol",
     sans-serif;
   font-size: 14px;
-  font-weight: var(--pill-weight, 400);
-  line-height: var(--line-height-tight, 14px);
+  font-weight: var(--pill-weight);
+  line-height: var(--line-height-tight);
   text-decoration: rgb(218, 218, 218);
   margin-inline-start: 0px;
   border: 2px solid rgba(188, 158, 224, 0.15);
@@ -6894,8 +6831,8 @@ body body.theme-dark .markdown-rendered ul > li {
   list-style-type: "​";
   list-style-position: outside;
   list-style-image: none;
-  padding-top: var(--list-spacing, 1.2px);
-  padding-bottom: var(--list-spacing, 1.2px);
+  padding-top: var(--list-spacing);
+  padding-bottom: var(--list-spacing);
   padding-left: 0px;
   padding-right: 0px;
   padding-block-end: 0px;
@@ -6929,8 +6866,8 @@ body body.theme-dark .markdown-rendered ol > li {
   list-style-type: "​";
   list-style-position: outside;
   list-style-image: none;
-  padding-top: var(--list-spacing, 1.2px);
-  padding-bottom: var(--list-spacing, 1.2px);
+  padding-top: var(--list-spacing);
+  padding-bottom: var(--list-spacing);
   padding-left: 0px;
   padding-right: 0px;
   padding-block-end: 0px;
@@ -7057,7 +6994,7 @@ body
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  width: var(--checkbox-size, 16px);
+  width: var(--checkbox-size);
   transition: box-shadow 0.15s ease-in-out;
   position: relative;
   top: auto;
@@ -7544,7 +7481,7 @@ body
   .outline-view
   .tree-item
   > .tree-item-self {
-  font-weight: var(--nav-item-weight, 400);
+  font-weight: var(--nav-item-weight);
 }
 body
   body.theme-dark
@@ -7642,11 +7579,11 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
-  color: var(--callout-title-color, rgb(2, 122, 255));
-  font-weight: var(--font-weight, 600);
+  color: var(--callout-title-color);
+  font-weight: var(--font-weight);
 }
 body body.theme-dark .callout > .callout-content {
-  background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+  background-color: var(--callout-content-background);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -8240,13 +8177,13 @@ body body.theme-dark .markdown-rendered th {
   color: var(--table-header-color, rgb(232, 232, 232));
   font-weight: var(--font-semibold, 600);
   text-align: start;
-  vertical-align: var(--table-cell-vertical-alignment, top);
+  vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(218, 218, 218);
   letter-spacing: normal;
-  border-left: var(--table-column-first-border-width, 1px) solid rgb(77, 77, 77);
+  border-left: var(--table-column-first-border-width) solid rgb(77, 77, 77);
   border-right: 1px solid rgb(77, 77, 77);
-  border-top: var(--table-header-border-width, 1px) solid rgb(77, 77, 77);
+  border-top: var(--table-header-border-width) solid rgb(77, 77, 77);
   border-bottom: 1px solid rgb(77, 77, 77);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -8267,11 +8204,11 @@ body body.theme-dark .markdown-rendered td {
   color: var(--table-text-color, rgb(232, 232, 232));
   font-weight: 400;
   text-align: start;
-  vertical-align: var(--table-cell-vertical-alignment, top);
+  vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(218, 218, 218);
   border: 1px solid rgb(77, 77, 77);
-  border-left: var(--table-column-first-border-width, 1px) solid rgb(77, 77, 77);
+  border-left: var(--table-column-first-border-width) solid rgb(77, 77, 77);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -8287,7 +8224,7 @@ body body.theme-dark .markdown-rendered td {
   padding-inline-start: 1px;
 }
 body body.theme-dark .markdown-rendered tr {
-  background-color: var(--table-header-background, rgba(0, 0, 0, 0));
+  background-color: var(--table-header-background);
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -8299,10 +8236,10 @@ body body.theme-dark .markdown-rendered tr {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(even) {
-  background-color: var(--table-background, rgba(0, 0, 0, 0));
+  background-color: var(--table-background);
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(odd) {
-  background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+  background-color: var(--table-row-alt-background);
 }
 body body.theme-dark .markdown-rendered img {
   border-radius: 0px;
@@ -8418,7 +8355,7 @@ body body.theme-dark .markdown-rendered audio {
   padding-inline-start: 0px;
 }
 body body.theme-dark .internal-embed {
-  background-color: var(--embed-background, rgba(0, 0, 0, 0));
+  background-color: var(--embed-background);
   color: rgb(232, 232, 232);
   border-radius: 0px;
   border: 1px solid rgb(77, 77, 77);
@@ -8456,7 +8393,7 @@ body body.theme-dark .file-embed {
   padding: 8px;
 }
 body body.theme-dark .metadata-container {
-  background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+  background-color: var(--metadata-background);
   color: var(--text-muted, rgb(219, 219, 219));
   font-family:
     "Source Sans 3",
@@ -8509,7 +8446,7 @@ body body.theme-dark .metadata-properties {
   padding: 0px;
 }
 body body.theme-dark .metadata-container .metadata-property {
-  background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+  background-color: var(--metadata-property-background);
   color: rgb(219, 219, 219);
   font-family:
     "Source Sans 3",
@@ -8713,7 +8650,7 @@ body body.theme-dark kbd {
     "Source Code Pro",
     monospace
   );
-  font-size: var(--code-size, 14px);
+  font-size: var(--code-size);
   border: 1px solid rgb(77, 77, 77);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -9013,7 +8950,7 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--text-normal, rgb(232, 232, 232));
-  cursor: var(--cursor, default);
+  cursor: var(--cursor);
   font-family:
     "Source Sans 3",
     ui-sans-serif,
@@ -9029,7 +8966,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 400);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(218, 218, 218);
 }
 body
@@ -9041,7 +8978,7 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--text-normal, rgb(232, 232, 232));
-  cursor: var(--cursor, default);
+  cursor: var(--cursor);
   font-family:
     "Source Sans 3",
     ui-sans-serif,
@@ -9057,13 +8994,13 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 400);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
   color: var(--icon-color, rgb(219, 219, 219));
-  cursor: var(--cursor, default);
+  cursor: var(--cursor);
   border-color: rgb(219, 219, 219);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -9099,7 +9036,7 @@ body body.theme-dark .site-footer {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;
-  padding-right: var(--size-4-2, 8px);
+  padding-right: var(--size-4-2);
 }
 body body.theme-dark .site-footer a {
   color: rgb(219, 219, 219);
@@ -9168,7 +9105,7 @@ body body.theme-dark .nav-files-container {
 body body.theme-dark .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
   color: var(--icon-color, rgb(219, 219, 219));
-  cursor: var(--cursor, default);
+  cursor: var(--cursor);
   border-color: rgb(219, 219, 219);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -9241,7 +9178,7 @@ body body.theme-dark .page-header .page-title {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .math-block {
-  background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+  background-color: var(--background-modifier-hover);
   color: rgb(232, 232, 232);
   border-color: rgb(232, 232, 232);
   border-width: 0px;

@@ -24,16 +24,16 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb, 106, 173, 250);
   --callout-warning: var(--color-orange-rgb, 242, 154, 100);
-  --checkbox-border-color: var(--text-faint, #ababab) !important;
-  --checkbox-border-color-hover: var(--text-muted, #5c5c5c) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent, #222222) !important;
   --checkbox-color-hover: var(--interactive-accent-hover, rgb(from #222222 r g b / 80%)) !important;
-  --checkbox-marker-color: var(--background-primary, #ffffff) !important;
-  --checkbox-radius: var(--radius-s, 4px) !important;
-  --checkbox-size: var(--font-text-size, 16px) !important;
-  --code-background: var(--background-primary-alt, #fafafa) !important;
-  --code-border-color: var(--background-modifier-border, #e0e0e0) !important;
-  --code-bracket-background: var(--background-modifier-hover, rgba(0, 0, 0, 0.067)) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
+  --code-background: var(--background-primary-alt) !important;
+  --code-border-color: var(--background-modifier-border) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint, #b6b9c5) !important;
   --code-function: var(--color-yellow, #b76b02) !important;
   --code-important: var(--color-orange, #b76b02) !important;
@@ -47,19 +47,19 @@
   --code-string: var(--color-green, #0d97b3) !important;
   --code-tag: var(--color-red, #e45749) !important;
   --code-value: var(--color-purple, #a626a4) !important;
-  --collapse-icon-color: var(--text-faint, #ababab) !important;
+  --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-muted, #5c5c5c) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, #5c5c5c) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow, rgb(224, 205, 99)) !important;
-  --graph-node-focused: var(--text-accent, hsl(258, 88%, 66%)) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green, rgb(74, 213, 95)) !important;
-  --graph-node-unresolved: var(--text-faint, #ababab) !important;
-  --graph-text: var(--text-normal, #222222) !important;
-  --icon-color: var(--text-muted, #5c5c5c) !important;
-  --icon-color-active: var(--text-accent, hsl(258, 88%, 66%)) !important;
-  --icon-color-focused: var(--text-normal, #222222) !important;
-  --icon-color-hover: var(--text-muted, #5c5c5c) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m, 16px) !important;
   --icon-stroke: var(--icon-m-stroke-width, 2px) !important;
   --callout-border-opacity: 0.25;
@@ -236,16 +236,16 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb, 86, 148, 218);
   --callout-warning: var(--color-orange-rgb, 219, 134, 80);
-  --checkbox-border-color: var(--text-faint, #666666) !important;
-  --checkbox-border-color-hover: var(--text-muted, #b3b3b3) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent, #dadada) !important;
   --checkbox-color-hover: var(--interactive-accent-hover, rgb(from #dadada r g b / 80%)) !important;
-  --checkbox-marker-color: var(--background-primary, #1e1e1e) !important;
-  --checkbox-radius: var(--radius-s, 4px) !important;
-  --checkbox-size: var(--font-text-size, 16px) !important;
-  --code-background: var(--background-primary-alt, #242424) !important;
-  --code-border-color: var(--background-modifier-border, #363636) !important;
-  --code-bracket-background: var(--background-modifier-hover, rgba(255, 255, 255, 0.067)) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
+  --code-background: var(--background-primary-alt) !important;
+  --code-border-color: var(--background-modifier-border) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint, #5c6370) !important;
   --code-function: var(--color-yellow, #d19a66) !important;
   --code-important: var(--color-orange, #d19a66) !important;
@@ -259,19 +259,19 @@
   --code-string: var(--color-green, #58b6c2) !important;
   --code-tag: var(--color-red, #e16d76) !important;
   --code-value: var(--color-purple, #c678de) !important;
-  --collapse-icon-color: var(--text-faint, #666666) !important;
+  --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-muted, #b3b3b3) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, #b3b3b3) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow, rgb(196, 180, 94)) !important;
-  --graph-node-focused: var(--text-accent, hsl(255, 89.76%, 75.9%)) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green, rgb(72, 196, 90)) !important;
-  --graph-node-unresolved: var(--text-faint, #666666) !important;
-  --graph-text: var(--text-normal, #dadada) !important;
-  --icon-color: var(--text-muted, #b3b3b3) !important;
-  --icon-color-active: var(--text-accent, hsl(255, 89.76%, 75.9%)) !important;
-  --icon-color-focused: var(--text-normal, #dadada) !important;
-  --icon-color-hover: var(--text-muted, #b3b3b3) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m, 16px) !important;
   --icon-stroke: var(--icon-m-stroke-width, 2px) !important;
   --callout-border-opacity: 0.25;
@@ -482,7 +482,7 @@ body {
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(255, 255, 255));
+    background-color: var(--background-primary);
     color: rgb(34, 34, 34);
   }
 
@@ -512,8 +512,8 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(138, 92, 245));
-    cursor: var(--cursor-link, pointer);
+    color: var(--link-external-color);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -532,11 +532,11 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(138, 92, 245) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(138, 92, 245);
-    text-decoration-line: var(--link-external-decoration, underline);
+    text-decoration-line: var(--link-external-decoration);
     text-decoration-style: solid;
     transition: opacity 0.16s ease-in-out;
     transform: none;
@@ -554,8 +554,8 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(138, 92, 245));
-    cursor: var(--cursor-link, pointer);
+    color: var(--link-color);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -574,11 +574,11 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(138, 92, 245) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(138, 92, 245);
-    text-decoration-line: var(--link-decoration, underline);
+    text-decoration-line: var(--link-decoration);
     text-decoration-style: solid;
     transition: opacity 0.16s ease-in-out;
     transform: none;
@@ -595,8 +595,8 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(138, 92, 245));
-    cursor: var(--cursor-link, pointer);
+    color: var(--link-unresolved-color);
+    cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -615,12 +615,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--link-weight, 400);
+    font-weight: var(--link-weight);
     outline: rgb(138, 92, 245) none 0px;
     text-decoration: rgba(138, 92, 245, 0.3);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgba(138, 92, 245, 0.3));
-    text-decoration-line: var(--link-decoration, underline);
-    text-decoration-style: var(--link-unresolved-decoration-style, solid);
+    text-decoration-color: var(--link-unresolved-decoration-color);
+    text-decoration-line: var(--link-decoration);
+    text-decoration-style: var(--link-unresolved-decoration-style);
     transition: opacity 0.16s ease-in-out;
     transform: none;
     user-select: text;
@@ -653,7 +653,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-muted, rgb(92, 92, 92));
+    color: var(--text-muted);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -695,7 +695,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(34, 34, 34));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -737,7 +737,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(34, 34, 34));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -779,7 +779,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(34, 34, 34));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -821,7 +821,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(34, 34, 34));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -941,7 +941,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(34, 34, 34));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       Inter,
@@ -972,7 +972,7 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgba(255, 208, 0, 0.4));
+    background-color: var(--text-highlight-bg);
     color: var(--text-highlight, var(--text-normal));
     cursor: grab;
     filter: none;
@@ -1056,7 +1056,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+    background-color: var(--background-modifier-hover);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -1069,7 +1069,7 @@ body {
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+    background-color: var(--background-modifier-hover);
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -1105,8 +1105,8 @@ body {
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background, rgba(138, 92, 245, 0.1));
-    color: var(--pill-color, rgb(138, 92, 245));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     display: flex;
     font-family:
       Inter,
@@ -1218,7 +1218,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgb(250, 250, 250));
+    background-color: var(--code-background);
     border: 1px solid rgb(224, 224, 224);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -1229,7 +1229,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: var(--code-normal, rgb(56, 58, 66));
-    font-family: var(--font-monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
+    font-family: var(--font-monospace);
     padding: 2px 4px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1260,7 +1260,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgb(250, 250, 250));
+    background-color: var(--code-background);
     border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -1301,7 +1301,7 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    width: var(--checkbox-size, 16px);
+    width: var(--checkbox-size);
     transition: box-shadow 0.15s ease-in-out;
     position: relative;
     top: auto;
@@ -1324,7 +1324,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color, rgb(250, 250, 250));
-    color: var(--blockquote-color, rgb(34, 34, 34));
+    color: var(--blockquote-color);
     font-family:
       Inter,
       ui-sans-serif,
@@ -1353,7 +1353,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgb(171, 171, 171));
+    color: var(--text-faint);
     text-decoration: underline rgb(138, 92, 245);
   }
 
@@ -1368,7 +1368,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(34, 34, 34));
+    color: var(--text-normal);
     font-family:
       Inter,
       ui-sans-serif,
@@ -1478,7 +1478,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(34, 34, 34);
     font-weight: 400;
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0.067));
+    background-color: var(--background-modifier-hover);
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -1491,14 +1491,14 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(34, 34, 34));
+    color: var(--h1-color);
     font-family: var(--h1-font, "Instrument Serif");
-    font-size: var(--h1-size, 25.888px);
-    font-weight: var(--font-weight, 700);
-    line-height: var(--h1-line-height, 31.0656px);
+    font-size: var(--h1-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h1-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h1-letter-spacing, -0.38832px);
+    letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1524,14 +1524,14 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(34, 34, 34));
+    color: var(--h2-color);
     font-family: var(--h2-font, "Instrument Serif");
-    font-size: var(--h2-size, 23.392px);
-    font-weight: var(--font-weight, 680);
-    line-height: var(--h2-line-height, 28.0704px);
+    font-size: var(--h2-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h2-letter-spacing, -0.257312px);
+    letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1540,7 +1540,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 0px);
+    margin-top: var(--heading-spacing);
     margin-bottom: 28px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1560,14 +1560,14 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(34, 34, 34));
+    color: var(--h3-color);
     font-family: var(--h3-font, "Instrument Serif");
-    font-size: var(--h3-size, 21.088px);
-    font-weight: var(--font-weight, 660);
-    line-height: var(--h3-line-height, 27.4144px);
+    font-size: var(--h3-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h3-letter-spacing, -0.168704px);
+    letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1596,14 +1596,14 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(34, 34, 34));
+    color: var(--h4-color);
     font-family: var(--h4-font, "Instrument Serif");
-    font-size: var(--h4-size, 19.008px);
-    font-weight: var(--font-weight, 640);
-    line-height: var(--h4-line-height, 26.6112px);
+    font-size: var(--h4-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h4-letter-spacing, -0.09504px);
+    letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1632,14 +1632,14 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(34, 34, 34));
+    color: var(--h5-color);
     font-family: var(--h5-font, "Instrument Serif");
-    font-size: var(--h5-size, 17.216px);
-    font-weight: var(--font-weight, 620);
+    font-size: var(--h5-size);
+    font-weight: var(--font-weight);
     line-height: var(--h5-line-height, 27.5456px);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h5-letter-spacing, -0.034432px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1668,10 +1668,10 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(34, 34, 34));
+    color: var(--h6-color);
     font-family: var(--h6-font, "Instrument Serif");
-    font-size: var(--h6-size, 16px);
-    font-weight: var(--font-weight, 600);
+    font-size: var(--h6-size);
+    font-weight: var(--font-weight);
     line-height: var(--h6-line-height, 25.6px);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -1702,11 +1702,11 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(34, 34, 34));
+    color: var(--inline-title-color);
     font-family: var(--inline-title-font, "Instrument Serif");
-    font-size: var(--inline-title-size, 25.888px);
-    font-weight: var(--inline-title-weight, 700);
-    line-height: var(--inline-title-line-height, 31.0656px);
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
+    line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: -0.38832px;
@@ -2074,7 +2074,7 @@ body {
   }
 
   li.depth-0 {
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
   }
 
   ::-webkit-scrollbar {
@@ -2172,7 +2172,7 @@ body {
   }
 
   .callout > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2230,7 +2230,7 @@ body {
   }
 
   .callout[data-callout="note"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2288,7 +2288,7 @@ body {
   }
 
   .callout[data-callout="abstract"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2346,7 +2346,7 @@ body {
   }
 
   .callout[data-callout="info"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2404,7 +2404,7 @@ body {
   }
 
   .callout[data-callout="todo"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2462,7 +2462,7 @@ body {
   }
 
   .callout[data-callout="tip"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2520,7 +2520,7 @@ body {
   }
 
   .callout[data-callout="success"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2578,7 +2578,7 @@ body {
   }
 
   .callout[data-callout="question"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2636,7 +2636,7 @@ body {
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2694,7 +2694,7 @@ body {
   }
 
   .callout[data-callout="danger"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2752,7 +2752,7 @@ body {
   }
 
   .callout[data-callout="failure"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2810,7 +2810,7 @@ body {
   }
 
   .callout[data-callout="bug"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2868,7 +2868,7 @@ body {
   }
 
   .callout[data-callout="example"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2926,7 +2926,7 @@ body {
   }
 
   .callout[data-callout="quote"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -3001,16 +3001,16 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(34, 34, 34));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight, 700);
     text-align: var(--table-text-align-header, start);
-    vertical-align: var(--table-cell-vertical-alignment, top);
+    vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: normal;
-    border-left: var(--table-column-first-border-width, 1px) solid rgba(0, 0, 0, 0);
+    border-left: var(--table-column-first-border-width) solid rgba(0, 0, 0, 0);
     border-right: 0px solid rgb(34, 34, 34);
-    border-top: var(--table-header-border-width, 1px) solid rgba(0, 0, 0, 0);
+    border-top: var(--table-header-border-width) solid rgba(0, 0, 0, 0);
     border-bottom: 1px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -3029,13 +3029,13 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(34, 34, 34));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: var(--table-text-align-body, start);
-    vertical-align: var(--table-cell-vertical-alignment, top);
+    vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    border-left: var(--table-column-first-border-width, 1px) solid rgb(224, 224, 224);
+    border-left: var(--table-column-first-border-width) solid rgb(224, 224, 224);
     border-right: 0px solid rgb(34, 34, 34);
     border-top: 1px solid rgb(224, 224, 224);
     border-bottom: 0px solid rgb(34, 34, 34);
@@ -3055,7 +3055,7 @@ body {
   }
 
   tr {
-    background-color: var(--table-header-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-header-background);
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3068,11 +3068,11 @@ body {
   }
 
   tbody tr:nth-child(even) {
-    background-color: var(--table-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-background);
   }
 
   tbody tr:nth-child(odd) {
-    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-row-alt-background);
   }
 
   img {
@@ -3226,8 +3226,8 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(250, 250, 250));
-    color: var(--text-muted, rgb(92, 92, 92));
+    background-color: var(--background-primary-alt);
+    color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(92, 92, 92);
     border-width: 0px;
@@ -3240,8 +3240,8 @@ body {
   }
 
   .metadata {
-    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
-    color: var(--text-muted, rgb(92, 92, 92));
+    background-color: var(--metadata-background);
+    color: var(--text-muted);
     font-family:
       Inter,
       ui-sans-serif,
@@ -3295,7 +3295,7 @@ body {
   }
 
   .metadata-container .metadata-property {
-    background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-property-background);
     color: rgb(92, 92, 92);
     font-family:
       Inter,
@@ -3367,7 +3367,7 @@ body {
 
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal, rgb(92, 92, 92));
+    color: var(--text-normal);
     font-family:
       Inter,
       ui-sans-serif,
@@ -3784,8 +3784,8 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(92, 92, 92));
-    cursor: var(--cursor, default);
+    color: var(--nav-item-color);
+    cursor: var(--cursor);
     font-family:
       Inter,
       ui-sans-serif,
@@ -3801,13 +3801,13 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(92, 92, 92));
-    cursor: var(--cursor, default);
+    color: var(--nav-item-color);
+    cursor: var(--cursor);
     font-family:
       Inter,
       ui-sans-serif,
@@ -3823,7 +3823,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--nav-item-weight, 400);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
 
@@ -3841,13 +3841,13 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(34, 34, 34));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight, 700);
     border-color: rgba(0, 0, 0, 0) rgb(34, 34, 34) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
   }
 
   .bases-table tbody tr:nth-child(even) {
-    background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+    background-color: var(--table-row-alt-background);
   }
 
   .canvas-node {
@@ -3867,7 +3867,7 @@ body {
   }
 
   .canvas-sidebar {
-    background-color: var(--background-primary, rgb(255, 255, 255));
+    background-color: var(--background-primary);
     border-color: rgb(34, 34, 34);
     box-shadow: var(--input-shadow, rgb(224, 224, 224) 0px 0px 0px 1px inset);
   }
@@ -3879,7 +3879,7 @@ body {
   }
 
   .note-properties {
-    background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+    background-color: var(--metadata-background);
     border-color: rgb(224, 224, 224);
     border-radius: 0px;
   }
@@ -3894,8 +3894,8 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background, rgba(138, 92, 245, 0.1));
-    color: var(--pill-color, rgb(138, 92, 245));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     border-radius: 8px;
   }
 
@@ -3909,8 +3909,8 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(92, 92, 92));
-    cursor: var(--cursor, default);
+    color: var(--icon-color);
+    cursor: var(--cursor);
     border-color: rgb(92, 92, 92);
     border-width: 0px;
     border-top-left-radius: 8px;
@@ -3921,7 +3921,7 @@ body {
 
   footer {
     background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
-    color: var(--status-bar-text-color, rgb(92, 92, 92));
+    color: var(--status-bar-text-color);
     font-family:
       Inter,
       ui-sans-serif,
@@ -3937,7 +3937,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: var(--status-bar-font-size, 12px);
+    font-size: var(--status-bar-font-size);
     text-align: start;
     border: 0px solid rgb(92, 92, 92);
     border-top-left-radius: 12px;
@@ -3947,7 +3947,7 @@ body {
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 4px;
-    padding-right: var(--size-4-2, 8px);
+    padding-right: var(--size-4-2);
     opacity: 0.5;
   }
 
@@ -3989,7 +3989,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(92, 92, 92));
+    color: var(--nav-item-color);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -4032,7 +4032,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(92, 92, 92));
+    color: var(--nav-item-color);
   }
 
   li.section-li > .section .meta {
@@ -4056,8 +4056,8 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(92, 92, 92));
-    cursor: var(--cursor, default);
+    color: var(--icon-color);
+    cursor: var(--cursor);
     border-color: rgb(92, 92, 92);
     border-width: 0px;
     border-top-left-radius: 8px;
@@ -4083,7 +4083,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgb(171, 171, 171));
+    color: var(--text-faint);
     font-family:
       Inter,
       ui-sans-serif,
@@ -4106,7 +4106,7 @@ body {
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(34, 34, 34));
+    color: var(--text-normal);
     font-family:
       Inter,
       ui-sans-serif,
@@ -4138,7 +4138,7 @@ body {
   }
 
   .katex-display {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+    background-color: var(--background-modifier-hover);
     color: rgb(34, 34, 34);
     border-color: rgb(34, 34, 34);
     border-width: 0px;
@@ -4239,8 +4239,8 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--tag-background, rgba(138, 92, 245, 0.1));
-    color: var(--tag-color, rgb(138, 92, 245));
+    background-color: var(--tag-background);
+    color: var(--tag-color);
     border: 0px solid rgba(138, 92, 245, 0.15);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -4288,9 +4288,9 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(34, 34, 34));
-    font-size: var(--inline-title-size, 25.888px);
-    font-weight: var(--inline-title-weight, 700);
+    color: var(--inline-title-color);
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
   }
 
   .callout[data-callout="banner-icon"] {
@@ -4307,6 +4307,7 @@ body {
     --button-radius: calc(8px * (1 - clamp(0, (1 - 1) * 10000 + 1, 1)) + 100vh * clamp(0, (1 - 1) * 10000 + 1, 1));
     --callout-blend-mode: normal;
     --callout-bug: 254, 112, 112;
+    --callout-color: var(--callout-default, 106, 173, 250);
     --callout-default: 106, 173, 250;
     --callout-error: 254, 112, 112;
     --callout-example: 187, 158, 245;
@@ -4464,7 +4465,6 @@ body {
     --tag-weight: 500;
     --text-on-accent: #ffffff;
     --text-on-accent-inverted: #ffffff;
-    --callout-color: var(--callout-default, 106, 173, 250);
     font-size: var(--callout-size, 16px);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
@@ -4627,6 +4627,7 @@ body {
     --button-radius: calc(8px * (1 - clamp(0, (1 - 1) * 10000 + 1, 1)) + 100vh * clamp(0, (1 - 1) * 10000 + 1, 1));
     --callout-blend-mode: normal;
     --callout-bug: 254, 112, 112;
+    --callout-color: var(--callout-default, 106, 173, 250);
     --callout-default: 106, 173, 250;
     --callout-error: 254, 112, 112;
     --callout-example: 187, 158, 245;
@@ -4784,7 +4785,6 @@ body {
     --tag-weight: 500;
     --text-on-accent: #ffffff;
     --text-on-accent-inverted: #ffffff;
-    --callout-color: var(--callout-default, 106, 173, 250);
     font-size: 16px;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
@@ -5595,7 +5595,7 @@ html[saved-theme="dark"] {
     &[data-slug] .page > div#quartz-body,
     .page > div#quartz-body div.center,
     .page > div#quartz-body footer {
-      background-color: var(--background-primary, rgb(30, 30, 30));
+      background-color: var(--background-primary);
       color: rgb(218, 218, 218);
     }
 
@@ -5625,8 +5625,8 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-external-color, rgb(166, 138, 249));
-      cursor: var(--cursor-link, pointer);
+      color: var(--link-external-color);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -5645,11 +5645,11 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(166, 138, 249) none 0px;
       text-decoration: underline;
       text-decoration-color: rgb(166, 138, 249);
-      text-decoration-line: var(--link-external-decoration, underline);
+      text-decoration-line: var(--link-external-decoration);
       text-decoration-style: solid;
       transition: opacity 0.16s ease-in-out;
       transform: none;
@@ -5667,8 +5667,8 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-color, rgb(166, 138, 249));
-      cursor: var(--cursor-link, pointer);
+      color: var(--link-color);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -5687,11 +5687,11 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(166, 138, 249) none 0px;
       text-decoration: underline;
       text-decoration-color: rgb(166, 138, 249);
-      text-decoration-line: var(--link-decoration, underline);
+      text-decoration-line: var(--link-decoration);
       text-decoration-style: solid;
       transition: opacity 0.16s ease-in-out;
       transform: none;
@@ -5708,8 +5708,8 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-unresolved-color, rgb(166, 138, 249));
-      cursor: var(--cursor-link, pointer);
+      color: var(--link-unresolved-color);
+      cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -5728,12 +5728,12 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: var(--link-weight, 400);
+      font-weight: var(--link-weight);
       outline: rgb(166, 138, 249) none 0px;
       text-decoration: rgba(138, 92, 245, 0.3);
-      text-decoration-color: var(--link-unresolved-decoration-color, rgba(138, 92, 245, 0.3));
-      text-decoration-line: var(--link-decoration, underline);
-      text-decoration-style: var(--link-unresolved-decoration-style, solid);
+      text-decoration-color: var(--link-unresolved-decoration-color);
+      text-decoration-line: var(--link-decoration);
+      text-decoration-style: var(--link-unresolved-decoration-style);
       transition: opacity 0.16s ease-in-out;
       transform: none;
       user-select: text;
@@ -5766,7 +5766,7 @@ html[saved-theme="dark"] {
 
     p {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-muted, rgb(179, 179, 179));
+      color: var(--text-muted);
       cursor: auto;
       filter: none;
       backdrop-filter: none;
@@ -5808,7 +5808,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(218, 218, 218));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -5850,7 +5850,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(218, 218, 218));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -5892,7 +5892,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > em,
     em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(218, 218, 218));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -5934,7 +5934,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > i,
     i {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(218, 218, 218));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -6054,7 +6054,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(218, 218, 218));
+      color: var(--italic-color);
       cursor: grab;
       font-family:
         Inter,
@@ -6085,7 +6085,7 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: var(--text-highlight-bg, rgba(255, 208, 0, 0.4));
+      background-color: var(--text-highlight-bg);
       color: var(--text-highlight, var(--text-normal));
       cursor: grab;
       filter: none;
@@ -6169,7 +6169,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+      background-color: var(--background-modifier-hover);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
       border-bottom-left-radius: 8px;
@@ -6182,7 +6182,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+      background-color: var(--background-modifier-hover);
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -6218,8 +6218,8 @@ html[saved-theme="dark"] {
     a.internal-link.tag-link,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
-      background-color: var(--pill-background, rgba(138, 92, 245, 0.1));
-      color: var(--pill-color, rgb(166, 138, 249));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       display: flex;
       font-family:
         Inter,
@@ -6331,7 +6331,7 @@ html[saved-theme="dark"] {
     }
 
     code {
-      background-color: var(--code-background, rgb(36, 36, 36));
+      background-color: var(--code-background);
       border: 1px solid rgb(54, 54, 54);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -6342,7 +6342,7 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       color: var(--code-normal, rgb(171, 178, 191));
-      font-family: var(--font-monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
+      font-family: var(--font-monospace);
       padding: 2px 4px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6373,7 +6373,7 @@ html[saved-theme="dark"] {
     }
 
     pre:has(> code) {
-      background-color: var(--code-background, rgb(36, 36, 36));
+      background-color: var(--code-background);
       border: 0px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -6414,7 +6414,7 @@ html[saved-theme="dark"] {
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      width: var(--checkbox-size, 16px);
+      width: var(--checkbox-size);
       transition: box-shadow 0.15s ease-in-out;
       position: relative;
       top: auto;
@@ -6437,7 +6437,7 @@ html[saved-theme="dark"] {
 
     blockquote {
       background-color: var(--blockquote-background-color, rgb(36, 36, 36));
-      color: var(--blockquote-color, rgb(218, 218, 218));
+      color: var(--blockquote-color);
       font-family:
         Inter,
         ui-sans-serif,
@@ -6466,7 +6466,7 @@ html[saved-theme="dark"] {
     }
 
     .data-footnote-backref {
-      color: var(--text-faint, rgb(102, 102, 102));
+      color: var(--text-faint);
       text-decoration: underline rgb(166, 138, 249);
     }
 
@@ -6481,7 +6481,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--text-normal, rgb(218, 218, 218));
+      color: var(--text-normal);
       font-family:
         Inter,
         ui-sans-serif,
@@ -6591,7 +6591,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: rgb(218, 218, 218);
       font-weight: 400;
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.067));
+      background-color: var(--background-modifier-hover);
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -6604,14 +6604,14 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--h1-color, rgb(218, 218, 218));
+      color: var(--h1-color);
       font-family: var(--h1-font, "Instrument Serif");
-      font-size: var(--h1-size, 25.888px);
-      font-weight: var(--font-weight, 700);
-      line-height: var(--h1-line-height, 31.0656px);
+      font-size: var(--h1-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h1-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h1-letter-spacing, -0.38832px);
+      letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6637,14 +6637,14 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--h2-color, rgb(218, 218, 218));
+      color: var(--h2-color);
       font-family: var(--h2-font, "Instrument Serif");
-      font-size: var(--h2-size, 23.392px);
-      font-weight: var(--font-weight, 680);
-      line-height: var(--h2-line-height, 28.0704px);
+      font-size: var(--h2-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h2-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h2-letter-spacing, -0.257312px);
+      letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6653,7 +6653,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 0px);
+      margin-top: var(--heading-spacing);
       margin-bottom: 28px;
       margin-left: 0px;
       margin-right: 0px;
@@ -6673,14 +6673,14 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--h3-color, rgb(218, 218, 218));
+      color: var(--h3-color);
       font-family: var(--h3-font, "Instrument Serif");
-      font-size: var(--h3-size, 21.088px);
-      font-weight: var(--font-weight, 660);
-      line-height: var(--h3-line-height, 27.4144px);
+      font-size: var(--h3-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h3-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h3-letter-spacing, -0.168704px);
+      letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6709,14 +6709,14 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--h4-color, rgb(218, 218, 218));
+      color: var(--h4-color);
       font-family: var(--h4-font, "Instrument Serif");
-      font-size: var(--h4-size, 19.008px);
-      font-weight: var(--font-weight, 640);
-      line-height: var(--h4-line-height, 26.6112px);
+      font-size: var(--h4-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h4-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h4-letter-spacing, -0.09504px);
+      letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6745,14 +6745,14 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--h5-color, rgb(218, 218, 218));
+      color: var(--h5-color);
       font-family: var(--h5-font, "Instrument Serif");
-      font-size: var(--h5-size, 17.216px);
-      font-weight: var(--font-weight, 620);
+      font-size: var(--h5-size);
+      font-weight: var(--font-weight);
       line-height: var(--h5-line-height, 27.5456px);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h5-letter-spacing, -0.034432px);
+      letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6781,10 +6781,10 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--h6-color, rgb(218, 218, 218));
+      color: var(--h6-color);
       font-family: var(--h6-font, "Instrument Serif");
-      font-size: var(--h6-size, 16px);
-      font-weight: var(--font-weight, 600);
+      font-size: var(--h6-size);
+      font-weight: var(--font-weight);
       line-height: var(--h6-line-height, 25.6px);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
@@ -6815,11 +6815,11 @@ html[saved-theme="dark"] {
 
     h2.page-title,
     h2.page-title a {
-      color: var(--inline-title-color, rgb(218, 218, 218));
+      color: var(--inline-title-color);
       font-family: var(--inline-title-font, "Instrument Serif");
-      font-size: var(--inline-title-size, 25.888px);
-      font-weight: var(--inline-title-weight, 700);
-      line-height: var(--inline-title-line-height, 31.0656px);
+      font-size: var(--inline-title-size);
+      font-weight: var(--inline-title-weight);
+      line-height: var(--inline-title-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: -0.38832px;
@@ -7187,7 +7187,7 @@ html[saved-theme="dark"] {
     }
 
     li.depth-0 {
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
     }
 
     ::-webkit-scrollbar {
@@ -7285,7 +7285,7 @@ html[saved-theme="dark"] {
     }
 
     .callout > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -7343,7 +7343,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -7401,7 +7401,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -7459,7 +7459,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -7517,7 +7517,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -7575,7 +7575,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -7633,7 +7633,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -7691,7 +7691,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -7749,7 +7749,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -7807,7 +7807,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -7865,7 +7865,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -7923,7 +7923,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -7981,7 +7981,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -8039,7 +8039,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(0, 0, 0, 0));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -8114,16 +8114,16 @@ html[saved-theme="dark"] {
 
     th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(218, 218, 218));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight, 700);
       text-align: var(--table-text-align-header, start);
-      vertical-align: var(--table-cell-vertical-alignment, top);
+      vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
-      border-left: var(--table-column-first-border-width, 1px) solid rgba(0, 0, 0, 0);
+      border-left: var(--table-column-first-border-width) solid rgba(0, 0, 0, 0);
       border-right: 0px solid rgb(218, 218, 218);
-      border-top: var(--table-header-border-width, 1px) solid rgba(0, 0, 0, 0);
+      border-top: var(--table-header-border-width) solid rgba(0, 0, 0, 0);
       border-bottom: 1px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -8142,13 +8142,13 @@ html[saved-theme="dark"] {
 
     td {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-text-color, rgb(218, 218, 218));
+      color: var(--table-text-color);
       font-weight: 400;
       text-align: var(--table-text-align-body, start);
-      vertical-align: var(--table-cell-vertical-alignment, top);
+      vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      border-left: var(--table-column-first-border-width, 1px) solid rgb(54, 54, 54);
+      border-left: var(--table-column-first-border-width) solid rgb(54, 54, 54);
       border-right: 0px solid rgb(218, 218, 218);
       border-top: 1px solid rgb(54, 54, 54);
       border-bottom: 0px solid rgb(218, 218, 218);
@@ -8168,7 +8168,7 @@ html[saved-theme="dark"] {
     }
 
     tr {
-      background-color: var(--table-header-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-header-background);
       border: 0px rgb(128, 128, 128);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8181,11 +8181,11 @@ html[saved-theme="dark"] {
     }
 
     tbody tr:nth-child(even) {
-      background-color: var(--table-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-background);
     }
 
     tbody tr:nth-child(odd) {
-      background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-row-alt-background);
     }
 
     img {
@@ -8339,8 +8339,8 @@ html[saved-theme="dark"] {
     }
 
     .file-embed {
-      background-color: var(--background-primary-alt, rgb(36, 36, 36));
-      color: var(--text-muted, rgb(179, 179, 179));
+      background-color: var(--background-primary-alt);
+      color: var(--text-muted);
       border-radius: 8px;
       border-color: rgb(179, 179, 179);
       border-width: 0px;
@@ -8353,8 +8353,8 @@ html[saved-theme="dark"] {
     }
 
     .metadata {
-      background-color: var(--metadata-background, rgba(0, 0, 0, 0));
-      color: var(--text-muted, rgb(179, 179, 179));
+      background-color: var(--metadata-background);
+      color: var(--text-muted);
       font-family:
         Inter,
         ui-sans-serif,
@@ -8408,7 +8408,7 @@ html[saved-theme="dark"] {
     }
 
     .metadata-container .metadata-property {
-      background-color: var(--metadata-property-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-property-background);
       color: rgb(179, 179, 179);
       font-family:
         Inter,
@@ -8480,7 +8480,7 @@ html[saved-theme="dark"] {
 
     input[type="text"] {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-normal, rgb(179, 179, 179));
+      color: var(--text-normal);
       font-family:
         Inter,
         ui-sans-serif,
@@ -8897,8 +8897,8 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-      color: var(--nav-item-color, rgb(179, 179, 179));
-      cursor: var(--cursor, default);
+      color: var(--nav-item-color);
+      cursor: var(--cursor);
       font-family:
         Inter,
         ui-sans-serif,
@@ -8914,13 +8914,13 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-      color: var(--nav-item-color, rgb(179, 179, 179));
-      cursor: var(--cursor, default);
+      color: var(--nav-item-color);
+      cursor: var(--cursor);
       font-family:
         Inter,
         ui-sans-serif,
@@ -8936,7 +8936,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: var(--nav-item-weight, 400);
+      font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
     }
 
@@ -8954,13 +8954,13 @@ html[saved-theme="dark"] {
 
     .bases-table thead th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(218, 218, 218));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight, 700);
       border-color: rgba(0, 0, 0, 0) rgb(218, 218, 218) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
     }
 
     .bases-table tbody tr:nth-child(even) {
-      background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0));
+      background-color: var(--table-row-alt-background);
     }
 
     .canvas-node {
@@ -8980,7 +8980,7 @@ html[saved-theme="dark"] {
     }
 
     .canvas-sidebar {
-      background-color: var(--background-secondary, rgb(38, 38, 38));
+      background-color: var(--background-secondary);
       border-color: rgb(218, 218, 218);
       box-shadow: var(--input-shadow, rgb(54, 54, 54) 0px 0px 0px 1px inset);
     }
@@ -8992,7 +8992,7 @@ html[saved-theme="dark"] {
     }
 
     .note-properties {
-      background-color: var(--metadata-background, rgba(0, 0, 0, 0));
+      background-color: var(--metadata-background);
       border-color: rgb(54, 54, 54);
       border-radius: 0px;
     }
@@ -9007,8 +9007,8 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-tags {
-      background-color: var(--pill-background, rgba(138, 92, 245, 0.1));
-      color: var(--pill-color, rgb(166, 138, 249));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       border-radius: 8px;
     }
 
@@ -9022,8 +9022,8 @@ html[saved-theme="dark"] {
 
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(179, 179, 179));
-      cursor: var(--cursor, default);
+      color: var(--icon-color);
+      cursor: var(--cursor);
       border-color: rgb(179, 179, 179);
       border-width: 0px;
       border-top-left-radius: 8px;
@@ -9034,7 +9034,7 @@ html[saved-theme="dark"] {
 
     footer {
       background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
-      color: var(--status-bar-text-color, rgb(179, 179, 179));
+      color: var(--status-bar-text-color);
       font-family:
         Inter,
         ui-sans-serif,
@@ -9050,7 +9050,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-size: var(--status-bar-font-size, 12px);
+      font-size: var(--status-bar-font-size);
       text-align: start;
       border: 0px solid rgb(179, 179, 179);
       border-top-left-radius: 12px;
@@ -9060,7 +9060,7 @@ html[saved-theme="dark"] {
       padding-top: 4px;
       padding-bottom: 4px;
       padding-left: 4px;
-      padding-right: var(--size-4-2, 8px);
+      padding-right: var(--size-4-2);
       opacity: 0.5;
     }
 
@@ -9102,7 +9102,7 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-      color: var(--nav-item-color, rgb(179, 179, 179));
+      color: var(--nav-item-color);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -9145,7 +9145,7 @@ html[saved-theme="dark"] {
     }
 
     li.section-li > .section > .desc > h3 > a {
-      color: var(--nav-item-color, rgb(179, 179, 179));
+      color: var(--nav-item-color);
     }
 
     li.section-li > .section .meta {
@@ -9169,8 +9169,8 @@ html[saved-theme="dark"] {
 
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(179, 179, 179));
-      cursor: var(--cursor, default);
+      color: var(--icon-color);
+      cursor: var(--cursor);
       border-color: rgb(179, 179, 179);
       border-width: 0px;
       border-top-left-radius: 8px;
@@ -9196,7 +9196,7 @@ html[saved-theme="dark"] {
     }
 
     .breadcrumb-element p {
-      color: var(--text-faint, rgb(102, 102, 102));
+      color: var(--text-faint);
       font-family:
         Inter,
         ui-sans-serif,
@@ -9219,7 +9219,7 @@ html[saved-theme="dark"] {
     }
 
     .page-header h2.page-title {
-      color: var(--text-normal, rgb(218, 218, 218));
+      color: var(--text-normal);
       font-family:
         Inter,
         ui-sans-serif,
@@ -9251,7 +9251,7 @@ html[saved-theme="dark"] {
     }
 
     .katex-display {
-      background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0));
+      background-color: var(--background-modifier-hover);
       color: rgb(218, 218, 218);
       border-color: rgb(218, 218, 218);
       border-width: 0px;
@@ -9352,8 +9352,8 @@ html[saved-theme="dark"] {
     }
 
     ul.tags > li {
-      background-color: var(--tag-background, rgba(138, 92, 245, 0.1));
-      color: var(--tag-color, rgb(166, 138, 249));
+      background-color: var(--tag-background);
+      color: var(--tag-color);
       border: 0px solid rgba(138, 92, 245, 0.15);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -9401,9 +9401,9 @@ html[saved-theme="dark"] {
     }
 
     h1.article-title {
-      color: var(--inline-title-color, rgb(218, 218, 218));
-      font-size: var(--inline-title-size, 25.888px);
-      font-weight: var(--inline-title-weight, 700);
+      color: var(--inline-title-color);
+      font-size: var(--inline-title-size);
+      font-weight: var(--inline-title-weight);
     }
 
     .callout[data-callout="banner-icon"] {
@@ -9420,6 +9420,7 @@ html[saved-theme="dark"] {
       --button-radius: calc(8px * (1 - clamp(0, (1 - 1) * 10000 + 1, 1)) + 100vh * clamp(0, (1 - 1) * 10000 + 1, 1));
       --callout-blend-mode: normal;
       --callout-bug: 217, 90, 95;
+      --callout-color: var(--callout-default, 86, 148, 218);
       --callout-default: 86, 148, 218;
       --callout-error: 217, 90, 95;
       --callout-example: 142, 125, 194;
@@ -9577,7 +9578,6 @@ html[saved-theme="dark"] {
       --tag-weight: 500;
       --text-on-accent: #1e1e1e;
       --text-on-accent-inverted: #1e1e1e;
-      --callout-color: var(--callout-default, 86, 148, 218);
       font-size: var(--callout-size, 16px);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
@@ -9740,6 +9740,7 @@ html[saved-theme="dark"] {
       --button-radius: calc(8px * (1 - clamp(0, (1 - 1) * 10000 + 1, 1)) + 100vh * clamp(0, (1 - 1) * 10000 + 1, 1));
       --callout-blend-mode: normal;
       --callout-bug: 217, 90, 95;
+      --callout-color: var(--callout-default, 86, 148, 218);
       --callout-default: 86, 148, 218;
       --callout-error: 217, 90, 95;
       --callout-example: 142, 125, 194;
@@ -9897,7 +9898,6 @@ html[saved-theme="dark"] {
       --tag-weight: 500;
       --text-on-accent: #1e1e1e;
       --text-on-accent-inverted: #1e1e1e;
-      --callout-color: var(--callout-default, 86, 148, 218);
       font-size: 16px;
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;

@@ -1,0 +1,95 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--bold-color",
+      "references": "--ctp-bold",
+      "selector": ".markdown-rendered p > strong, strong",
+      "aspect": "typography"
+    },
+    {
+      "property": "--bold-color",
+      "references": "--ctp-bold",
+      "selector": ".markdown-rendered p > b, b",
+      "aspect": "typography"
+    },
+    {
+      "property": "--italic-color",
+      "references": "--ctp-italic",
+      "selector": ".markdown-rendered p > em, em",
+      "aspect": "typography"
+    },
+    {
+      "property": "--italic-color",
+      "references": "--ctp-italic",
+      "selector": ".markdown-rendered p > i, i",
+      "aspect": "typography"
+    },
+    {
+      "property": "--italic-color",
+      "references": "--ctp-italic",
+      "selector": ".markdown-rendered p > strong > em, strong > em",
+      "aspect": "typography"
+    },
+    {
+      "property": "--h1-color",
+      "references": "--ctp-h1",
+      "selector": "h1",
+      "aspect": "search"
+    },
+    {
+      "property": "--h2-color",
+      "references": "--ctp-h2",
+      "selector": "h2",
+      "aspect": "search"
+    },
+    {
+      "property": "--h3-color",
+      "references": "--ctp-h3",
+      "selector": "h3",
+      "aspect": "search"
+    },
+    {
+      "property": "--h4-color",
+      "references": "--ctp-h4",
+      "selector": "h4",
+      "aspect": "search"
+    },
+    {
+      "property": "--h5-color",
+      "references": "--ctp-h5",
+      "selector": "h5",
+      "aspect": "search"
+    },
+    {
+      "property": "--h6-color",
+      "references": "--ctp-h6",
+      "selector": "h6",
+      "aspect": "search"
+    },
+    {
+      "property": "--inline-title-color",
+      "references": "--ctp-page-title",
+      "selector": "h2.page-title, h2.page-title a",
+      "aspect": "search"
+    },
+    {
+      "property": "--inline-title-color",
+      "references": "--ctp-page-title",
+      "selector": "h1.article-title",
+      "aspect": "search"
+    },
+    {
+      "property": "--blockquote-border-color",
+      "references": "--ctp-blockquote",
+      "selector": "blockquote",
+      "aspect": "blockquotes"
+    },
+    {
+      "property": "--blockquote-color",
+      "references": "--ctp-blockquote",
+      "selector": "blockquote",
+      "aspect": "blockquotes"
+    }
+  ]
+}

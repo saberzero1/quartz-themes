@@ -1,0 +1,65 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--editor-max-width",
+      "references": "--line-width",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--file-line-width",
+      "references": "--line-width",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--line-normal",
+      "references": "--editor-line-height",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--reading-max-width",
+      "references": "--line-width",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--nav-collapse-icon-color",
+      "references": "--folder-text-color",
+      "selector": ".recent-notes > ul.recent-ul > li",
+      "aspect": "recentNotes"
+    },
+    {
+      "property": "--nav-item-color",
+      "references": "--folder-text-color",
+      "selector": ".recent-notes > ul.recent-ul > li",
+      "aspect": "recentNotes"
+    },
+    {
+      "property": "--nav-item-color-hover",
+      "references": "--folder-text-color",
+      "selector": ".recent-notes > ul.recent-ul > li",
+      "aspect": "recentNotes"
+    },
+    {
+      "property": "--nav-collapse-icon-color",
+      "references": "--folder-text-color",
+      "selector": "li.section-li",
+      "aspect": "listPage"
+    },
+    {
+      "property": "--nav-item-color",
+      "references": "--folder-text-color",
+      "selector": "li.section-li",
+      "aspect": "listPage"
+    },
+    {
+      "property": "--nav-item-color-hover",
+      "references": "--folder-text-color",
+      "selector": "li.section-li",
+      "aspect": "listPage"
+    }
+  ]
+}
