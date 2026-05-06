@@ -296,12 +296,14 @@ html body .page > div#quartz-body div.sidebar {
 
 html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(109, 109, 109);
+  border-right-width: 0px;
 }
 
 html body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #1c1e21);
   background-color: var(--tab-container-background, rgb(28, 30, 33));
   border-left-color: rgb(109, 109, 109);
+  border-left-width: 0px;
   color: rgb(149, 149, 149);
 }
 
@@ -412,9 +414,13 @@ html body a.internal-link.broken {
 }`,
     lists: `html body dd {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
   color: rgb(149, 149, 149);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   font-size: 24px;
@@ -422,14 +428,20 @@ html body a.internal-link.broken {
 
 html body dl {
   margin-bottom: 24px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 24px;
 }
 
 html body dt {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
   color: rgb(149, 149, 149);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   font-size: 24px;
@@ -437,23 +449,37 @@ html body dt {
 
 html body ol > li {
   color: rgb(149, 149, 149);
+  margin-bottom: 0px;
   margin-left: 36px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.8px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.8px);
 }
 
 html body ul > li {
   color: rgb(149, 149, 149);
+  margin-bottom: 0px;
   margin-left: 36px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.8px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.8px);
 }
 
 html body ul.overflow {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--link-text, rgb(155, 183, 197));
@@ -465,13 +491,19 @@ html body blockquote {
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   line-height: 40.8px;
   padding-bottom: 11px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 11px;
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
 }
 
 html body table {
@@ -481,18 +513,26 @@ html body table {
 
 html body td {
   border-bottom-color: rgb(109, 109, 109);
+  border-bottom-width: 0px;
   border-left-color: rgb(109, 109, 109);
+  border-left-width: 0px;
   border-right-color: rgb(109, 109, 109);
+  border-right-width: 0px;
   border-top-color: rgb(109, 109, 109);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(149, 149, 149));
 }
 
 html body th {
   background-color: var(--background-secondary, rgb(28, 30, 33));
   border-bottom-color: rgb(109, 109, 109);
+  border-bottom-width: 0px;
   border-left-color: rgb(109, 109, 109);
+  border-left-width: 0px;
   border-right-color: rgb(109, 109, 109);
+  border-right-width: 0px;
   border-top-color: rgb(109, 109, 109);
+  border-top-width: 0px;
   color: var(--table-header-color, rgb(149, 149, 149));
   font-weight: var(--table-header-weight, 800);
 }
@@ -505,17 +545,22 @@ html body thead {
 
 html body tr {
   border-bottom-color: rgb(109, 109, 109);
+  border-bottom-width: 0px;
 }`,
     code: `html body code {
   background-color: var(--pre-code-bg, rgb(34, 38, 42));
   border-bottom-color: rgb(134, 135, 135);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(134, 135, 135);
+  border-left-width: 0px;
   border-right-color: rgb(134, 135, 135);
+  border-right-width: 0px;
   border-top-color: rgb(134, 135, 135);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--code-block, rgb(134, 135, 135));
   font-family: var(--font-family-code, "Ubuntu Mono derivative Powerline", Menlo, Monaco);
   padding-bottom: 22px;
@@ -527,9 +572,13 @@ html body tr {
 html body pre:has(> code) {
   background-color: var(--code-background, rgba(0, 0, 0, 0.08));
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -537,9 +586,13 @@ html body pre:has(> code) {
 }`,
     images: `html body audio {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
 }
 
 html body figcaption {
@@ -549,62 +602,91 @@ html body figcaption {
 html body figure {
   --code-background: var(--ec-frm-edBg, rgba(0, 0, 0, 0.08));
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
 }
 
 html body img {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
 }
 
 html body video {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
 }`,
     embeds: `html body .file-embed {
   background-color: var(--background-primary-alt, rgba(0, 0, 0, 0.08));
   border-bottom-color: rgb(109, 109, 109);
+  border-bottom-width: 0px;
   border-left-color: rgb(109, 109, 109);
+  border-left-width: 0px;
   border-right-color: rgb(109, 109, 109);
+  border-right-width: 0px;
   border-top-color: rgb(109, 109, 109);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(109, 109, 109));
 }
 
 html body .footnotes {
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
   color: rgb(149, 149, 149);
 }
 
 html body .transclude {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.1);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
   color: rgb(149, 149, 149);
 }
 
 html body .transclude-inner {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
   color: rgb(149, 149, 149);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(109, 109, 109);
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
+  border-bottom-width: 0px;
   border-left-color: rgb(109, 109, 109);
+  border-left-width: 0px;
   border-right-color: rgb(109, 109, 109);
+  border-right-width: 0px;
   border-top-color: rgb(109, 109, 109);
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+  border-top-width: 0px;
 }
 
 html body li.task-list-item[data-task="#"] {
@@ -1389,9 +1471,13 @@ html body .callout[data-callout="warning"] {
     search: `html body .search > .search-button {
   background-color: rgb(34, 37, 39);
   border-bottom-color: rgb(109, 109, 109);
+  border-bottom-width: 0px;
   border-left-color: rgb(109, 109, 109);
+  border-left-width: 0px;
   border-right-color: rgb(109, 109, 109);
+  border-right-width: 0px;
   border-top-color: rgb(109, 109, 109);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(149, 149, 149));
   font-family: "Gentium Plus", Alegreya, "Source Sans Pro", Palatino, "Avenir Next", "Times New Roman";
 }
@@ -1413,9 +1499,13 @@ html body .search > .search-container > .search-space > .search-layout > .result
 
 html body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-description {
@@ -1429,17 +1519,25 @@ html body .search > .search-container > .search-space > .search-layout > .result
 
 html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(28, 30, 33);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
   background-color: var(--quick-switcher, rgba(60, 68, 76, 0.5));
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
   color: rgb(149, 149, 149);
 }
 
@@ -1468,9 +1566,13 @@ html body a.internal-link.tag-link::before {
 
 html body h1 {
   border-bottom-color: rgb(156, 156, 157);
+  border-bottom-width: 0px;
   border-left-color: rgb(156, 156, 157);
+  border-left-width: 0px;
   border-right-color: rgb(156, 156, 157);
+  border-right-width: 0px;
   border-top-color: rgb(156, 156, 157);
+  border-top-width: 0px;
   color: var(--text-title-h1, rgb(156, 156, 157));
   font-family: var(--font-family-mdpreview, "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman");
   font-size: var(--font-size-h1, 45.6px);
@@ -1511,9 +1613,13 @@ html body h1::before {
 
 html body h2 {
   border-bottom-color: rgb(156, 156, 157);
+  border-bottom-width: 0px;
   border-left-color: rgb(156, 156, 157);
+  border-left-width: 0px;
   border-right-color: rgb(156, 156, 157);
+  border-right-width: 0px;
   border-top-color: rgb(156, 156, 157);
+  border-top-width: 0px;
   color: var(--text-title-h2, rgb(156, 156, 157));
   font-family: var(--font-family-mdpreview, "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman");
   font-size: var(--font-size-h2, 38.4px);
@@ -1524,15 +1630,22 @@ html body h2 {
 
 html body h2.page-title, html h2.page-title a {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(149, 149, 149));
   font-family: var(--inline-title-font, "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman");
   font-size: var(--inline-title-size, 38.832px);
   letter-spacing: -0.58248px;
   line-height: var(--inline-title-line-height, 46.5984px);
   margin-bottom: 19.416px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body h2::before {
@@ -1562,9 +1675,13 @@ html body h2::before {
 
 html body h3 {
   border-bottom-color: rgb(156, 156, 157);
+  border-bottom-width: 0px;
   border-left-color: rgb(156, 156, 157);
+  border-left-width: 0px;
   border-right-color: rgb(156, 156, 157);
+  border-right-width: 0px;
   border-top-color: rgb(156, 156, 157);
+  border-top-width: 0px;
   color: var(--text-title-h3, rgb(156, 156, 157));
   font-family: var(--font-family-mdpreview, "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman");
   font-size: var(--font-size-h3, 31.2px);
@@ -1600,9 +1717,13 @@ html body h3::before {
 
 html body h4 {
   border-bottom-color: rgb(156, 156, 157);
+  border-bottom-width: 0px;
   border-left-color: rgb(156, 156, 157);
+  border-left-width: 0px;
   border-right-color: rgb(156, 156, 157);
+  border-right-width: 0px;
   border-top-color: rgb(156, 156, 157);
+  border-top-width: 0px;
   color: var(--text-title-h4, rgb(156, 156, 157));
   font-family: var(--font-family-mdpreview, "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman");
   font-size: var(--font-size-h4, 28.8px);
@@ -1638,9 +1759,13 @@ html body h4::before {
 
 html body h5 {
   border-bottom-color: rgb(156, 156, 157);
+  border-bottom-width: 0px;
   border-left-color: rgb(156, 156, 157);
+  border-left-width: 0px;
   border-right-color: rgb(156, 156, 157);
+  border-right-width: 0px;
   border-top-color: rgb(156, 156, 157);
+  border-top-width: 0px;
   color: var(--text-title-h5, rgb(156, 156, 157));
   font-family: var(--font-family-mdpreview, "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman");
   font-size: var(--font-size-h5, 26.4px);
@@ -1676,9 +1801,13 @@ html body h5::before {
 
 html body h6 {
   border-bottom-color: rgb(156, 156, 157);
+  border-bottom-width: 0px;
   border-left-color: rgb(156, 156, 157);
+  border-left-width: 0px;
   border-right-color: rgb(156, 156, 157);
+  border-right-width: 0px;
   border-top-color: rgb(156, 156, 157);
+  border-top-width: 0px;
   color: var(--text-title-h6, rgb(156, 156, 157));
   font-family: var(--font-family-mdpreview, "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman");
   font-size: var(--font-size-h6, 24px);
@@ -1713,8 +1842,11 @@ html body h6::before {
 
 html body hr {
   border-bottom-color: rgb(109, 109, 109);
+  border-bottom-width: 0px;
   border-left-color: rgb(109, 109, 109);
+  border-left-width: 0px;
   border-right-color: rgb(109, 109, 109);
+  border-right-width: 0px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -1749,16 +1881,23 @@ html body .explorer .nav-files-container .collapse-icon svg {
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(109, 109, 109);
+  border-bottom-width: 0px;
   border-left-color: rgb(109, 109, 109);
+  border-left-width: 0px;
   border-right-color: rgb(109, 109, 109);
+  border-right-width: 0px;
   border-top-color: rgb(109, 109, 109);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(109, 109, 109));
 }`,
     footer: `html body footer {
   background-color: var(--background-secondary-alt, rgb(28, 30, 33));
   border-bottom-color: rgb(28, 30, 33);
+  border-bottom-width: 0px;
   border-left-color: rgb(28, 30, 33);
+  border-left-width: 0px;
   border-right-color: rgb(28, 30, 33);
+  border-right-width: 0px;
   border-top-color: rgb(28, 30, 33);
   border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(109, 109, 109));
@@ -1766,6 +1905,7 @@ html body .explorer .nav-files-container .collapse-icon svg {
   font-size: var(--font-size-status-bar, 16px);
   padding-bottom: 0px;
   padding-left: 30px;
+  padding-right: 0px;
   padding-top: 0px;
 }
 
@@ -1780,9 +1920,13 @@ html body footer ul li a {
 
 html body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
   color: rgb(149, 149, 149);
 }
 
@@ -1796,9 +1940,13 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 }`,
     listPage: `html body li.section-li {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
 }
 
 html body li.section-li > .section .meta {
@@ -1812,15 +1960,23 @@ html body li.section-li > .section > .desc > h3 > a {
 
 html body ul.section-ul {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
 }`,
     darkmode: `html body .darkmode {
   border-bottom-color: rgb(109, 109, 109);
+  border-bottom-width: 0px;
   border-left-color: rgb(109, 109, 109);
+  border-left-width: 0px;
   border-right-color: rgb(109, 109, 109);
+  border-right-width: 0px;
   border-top-color: rgb(109, 109, 109);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(109, 109, 109));
 }
 
@@ -1830,9 +1986,13 @@ html body .darkmode svg {
 }`,
     breadcrumbs: `html body .breadcrumb-container {
   border-bottom-color: rgb(109, 109, 109);
+  border-bottom-width: 0px;
   border-left-color: rgb(109, 109, 109);
+  border-left-width: 0px;
   border-right-color: rgb(109, 109, 109);
+  border-right-width: 0px;
   border-top-color: rgb(109, 109, 109);
+  border-top-width: 0px;
   color: rgb(109, 109, 109);
 }
 
@@ -1868,27 +2028,39 @@ html body .canvas-sidebar {
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgb(109, 109, 109);
+  border-bottom-width: 0px;
   border-left-color: rgb(109, 109, 109);
+  border-left-width: 0px;
   border-right-color: rgb(109, 109, 109);
+  border-right-width: 0px;
   border-top-color: rgb(109, 109, 109);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(109, 109, 109));
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
 }
 
 html body .metadata-container .metadata-property {
   border-bottom-color: rgb(109, 109, 109);
+  border-bottom-width: 0px;
   border-left-color: rgb(109, 109, 109);
+  border-left-width: 0px;
   border-right-color: rgb(109, 109, 109);
+  border-right-width: 0px;
   border-top-color: rgb(109, 109, 109);
+  border-top-width: 0px;
   color: rgb(109, 109, 109);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
 }
 
 html body .metadata-properties {
   border-bottom-color: rgb(109, 109, 109);
+  border-bottom-width: 0px;
   border-left-color: rgb(109, 109, 109);
+  border-left-width: 0px;
   border-right-color: rgb(109, 109, 109);
+  border-right-width: 0px;
   border-top-color: rgb(109, 109, 109);
+  border-top-width: 0px;
   color: rgb(109, 109, 109);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
 }
@@ -1935,9 +2107,13 @@ html body div#quartz-root {
 
 html body ol.overflow {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
 }`,
     stacked: `html body .stacked-page {
   background-color: var(--background-secondary, rgb(28, 30, 33));
@@ -1953,9 +2129,13 @@ html body .stacked-page.active {
 }`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
   color: rgb(149, 149, 149);
 }
 
@@ -1965,9 +2145,13 @@ html body .navigation-progress {
 
 html body .page-header h2.page-title {
   border-bottom-color: rgb(155, 183, 197);
+  border-bottom-width: 0px;
   border-left-color: rgb(155, 183, 197);
+  border-left-width: 0px;
   border-right-color: rgb(155, 183, 197);
+  border-right-width: 0px;
   border-top-color: rgb(155, 183, 197);
+  border-top-width: 0px;
   color: var(--file-name-color, rgb(155, 183, 197));
   font-size: var(--font-size-header-titles, 13px);
   line-height: 28px;
@@ -1979,25 +2163,37 @@ html body abbr {
 
 html body details {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
 }
 
 html body input[type=text] {
   border-bottom-color: rgb(109, 109, 109);
+  border-bottom-width: 0px;
   border-left-color: rgb(109, 109, 109);
+  border-left-width: 0px;
   border-right-color: rgb(109, 109, 109);
+  border-right-width: 0px;
   border-top-color: rgb(109, 109, 109);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(109, 109, 109));
 }
 
 html body kbd {
   background-color: var(--code-background, rgba(0, 0, 0, 0.08));
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(149, 149, 149));
   font-size: var(--code-size, 21px);
   padding-bottom: 2.1px;
@@ -2008,9 +2204,13 @@ html body kbd {
 
 html body progress {
   border-bottom-color: rgb(149, 149, 149);
+  border-bottom-width: 0px;
   border-left-color: rgb(149, 149, 149);
+  border-left-width: 0px;
   border-right-color: rgb(149, 149, 149);
+  border-right-width: 0px;
   border-top-color: rgb(149, 149, 149);
+  border-top-width: 0px;
 }
 
 html body sub {

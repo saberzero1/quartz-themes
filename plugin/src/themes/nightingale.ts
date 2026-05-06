@@ -195,12 +195,14 @@ html body .page > div#quartz-body div.sidebar {
 
 html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgba(14, 210, 247, 0.05);
+  border-right-width: 0px;
 }
 
 html body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #15111e);
   background-color: var(--tab-container-background, rgb(21, 17, 30));
   border-left-color: rgba(14, 210, 247, 0.05);
+  border-left-width: 0px;
   color: rgb(183, 183, 183);
 }`,
     typography: `html body .markdown-rendered p > b, html b {
@@ -276,17 +278,25 @@ html body a.internal-link.broken {
 }`,
     lists: `html body dd {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
   color: rgb(183, 183, 183);
 }
 
 html body dt {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
   color: rgb(183, 183, 183);
 }
 
@@ -300,9 +310,13 @@ html body ul > li {
 
 html body ul.overflow {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--text-faint, rgba(122, 162, 247, 0.8));
@@ -314,48 +328,70 @@ html body blockquote {
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
 }
 
 html body table {
   color: rgb(183, 183, 183);
+  margin-bottom: 0px;
   margin-left: 218.391px;
   margin-right: 218.391px;
+  margin-top: 0px;
 }
 
 html body td {
   border-bottom-color: rgba(14, 210, 247, 0.05);
+  border-bottom-width: 0px;
   border-left-color: rgba(14, 210, 247, 0.05);
+  border-left-width: 0px;
   border-right-color: rgba(14, 210, 247, 0.05);
+  border-right-width: 0px;
   border-top-color: rgba(14, 210, 247, 0.05);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(183, 183, 183));
 }
 
 html body th {
   border-bottom-color: rgba(14, 210, 247, 0.05);
+  border-bottom-width: 0px;
   border-left-color: rgba(14, 210, 247, 0.05);
+  border-left-width: 0px;
   border-right-color: rgba(14, 210, 247, 0.05);
+  border-right-width: 0px;
   border-top-color: rgba(14, 210, 247, 0.05);
+  border-top-width: 0px;
   color: var(--nightingale-yellow, rgba(173, 144, 1, 0.8));
   font-weight: var(--h1-weight, 600);
 }`,
     code: `html body code {
   background-color: var(--code-background, rgb(21, 17, 30));
   border-bottom-color: rgba(14, 210, 247, 0.05);
+  border-bottom-width: 0px;
   border-left-color: rgba(14, 210, 247, 0.05);
+  border-left-width: 0px;
   border-right-color: rgba(14, 210, 247, 0.05);
+  border-right-width: 0px;
   border-top-color: rgba(14, 210, 247, 0.05);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(183, 183, 183));
 }
 
 html body pre:has(> code) {
   background-color: var(--code-background, rgb(21, 17, 30));
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -363,9 +399,13 @@ html body pre:has(> code) {
 }`,
     images: `html body audio {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
 }
 
 html body figcaption {
@@ -376,23 +416,35 @@ html body figcaption {
 html body figure {
   --code-background: var(--ec-frm-edBg, #15111e);
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
 }
 
 html body img {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
 }
 
 html body video {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
 }`,
     embeds: `html body .file-embed {
   background-color: var(--background-primary-alt, rgb(30, 33, 39));
@@ -400,29 +452,42 @@ html body video {
 
 html body .footnotes {
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
   color: rgb(183, 183, 183);
 }
 
 html body .transclude {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgba(27, 128, 210, 0.843);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
   color: rgb(183, 183, 183);
 }
 
 html body .transclude-inner {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
   color: rgb(183, 183, 183);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgba(122, 162, 247, 0.8);
+  border-bottom-width: 0px;
   border-left-color: rgba(122, 162, 247, 0.8);
+  border-left-width: 0px;
   border-right-color: rgba(122, 162, 247, 0.8);
+  border-right-width: 0px;
   border-top-color: rgba(122, 162, 247, 0.8);
+  border-top-width: 0px;
 }
 
 html body li.task-list-item[data-task="#"] {
@@ -1510,9 +1575,13 @@ html body .callout[data-callout="warning"] {
 }`,
     search: `html body .search > .search-button {
   border-bottom-color: rgba(14, 210, 247, 0.05);
+  border-bottom-width: 0px;
   border-left-color: rgba(14, 210, 247, 0.05);
+  border-left-width: 0px;
   border-right-color: rgba(14, 210, 247, 0.05);
+  border-right-width: 0px;
   border-top-color: rgba(14, 210, 247, 0.05);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(183, 183, 183));
   font-family: "??", "??", "Avenir LT Std", Helvetica, Arial, "Amazon Ember", Rubik, Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -1529,9 +1598,13 @@ html body .search > .search-container > .search-space > .search-layout > .result
 
 html body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-description {
@@ -1544,16 +1617,24 @@ html body .search > .search-container > .search-space > .search-layout > .result
 
 html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(21, 17, 30);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
   color: rgb(183, 183, 183);
 }
 
@@ -1579,9 +1660,13 @@ html body h1 {
   background: rgba(0, 0, 0, 0) linear-gradient(170deg, rgba(216, 253, 7, 0.8) 0%, rgba(253, 49, 6, 0.8) 100%) repeat scroll 0% 0% / auto padding-box text;
   background-image: linear-gradient(170deg, var(--text-title-1) 0%, var(--text-title-2) 100%);
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(183, 183, 183));
   font-family: var(--title-font, "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif);
   font-size: var(--h1-size, 44px);
@@ -1601,9 +1686,13 @@ html body h2 {
   background: rgba(0, 0, 0, 0) linear-gradient(170deg, rgba(216, 253, 7, 0.8) 0%, rgba(253, 49, 6, 0.8) 100%) repeat scroll 0% 0% / auto padding-box text;
   background-image: linear-gradient(170deg, var(--text-title-1) 0%, var(--text-title-2) 100%);
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(183, 183, 183));
   font-family: var(--title-font, "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif);
   font-size: var(--h2-size, 36px);
@@ -1616,15 +1705,22 @@ html body h2.page-title, html h2.page-title a {
   background: rgba(0, 0, 0, 0) linear-gradient(170deg, rgba(216, 253, 7, 0.8) 0%, rgba(253, 49, 6, 0.8) 100%) repeat scroll 0% 0% / auto padding-box text;
   background-image: linear-gradient(170deg, var(--text-title-1) 0%, var(--text-title-2) 100%);
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(183, 183, 183));
   font-size: var(--inline-title-size, 44px);
   font-weight: var(--inline-title-weight, 600);
   letter-spacing: -0.66px;
   line-height: var(--inline-title-line-height, 52.8px);
   margin-bottom: 22px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body h3 {
@@ -1632,9 +1728,13 @@ html body h3 {
   background: rgba(0, 0, 0, 0) linear-gradient(170deg, rgba(216, 253, 7, 0.8) 0%, rgba(253, 49, 6, 0.8) 100%) repeat scroll 0% 0% / auto padding-box text;
   background-image: linear-gradient(170deg, var(--text-title-1) 0%, var(--text-title-2) 100%);
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(183, 183, 183));
   font-family: var(--title-font, "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif);
   font-size: var(--h3-size, 30px);
@@ -1648,9 +1748,13 @@ html body h4 {
   background: rgba(0, 0, 0, 0) linear-gradient(170deg, rgba(216, 253, 7, 0.8) 0%, rgba(253, 49, 6, 0.8) 100%) repeat scroll 0% 0% / auto padding-box text;
   background-image: linear-gradient(170deg, var(--text-title-1) 0%, var(--text-title-2) 100%);
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(183, 183, 183));
   font-family: var(--title-font, "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif);
   font-size: var(--h4-size, 26px);
@@ -1664,9 +1768,13 @@ html body h5 {
   background: rgba(0, 0, 0, 0) linear-gradient(170deg, rgba(216, 253, 7, 0.8) 0%, rgba(253, 49, 6, 0.8) 100%) repeat scroll 0% 0% / auto padding-box text;
   background-image: linear-gradient(170deg, var(--text-title-1) 0%, var(--text-title-2) 100%);
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(183, 183, 183));
   font-family: var(--title-font, "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif);
   font-size: var(--h5-size, 22px);
@@ -1680,9 +1788,13 @@ html body h6 {
   background: rgba(0, 0, 0, 0) linear-gradient(170deg, rgba(216, 253, 7, 0.8) 0%, rgba(253, 49, 6, 0.8) 100%) repeat scroll 0% 0% / auto padding-box text;
   background-image: linear-gradient(170deg, var(--text-title-1) 0%, var(--text-title-2) 100%);
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(183, 183, 183));
   font-family: var(--title-font, "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif);
   font-size: var(--h6-size, 20px);
@@ -1692,8 +1804,11 @@ html body h6 {
 
 html body hr {
   border-bottom-color: rgba(14, 210, 247, 0.05);
+  border-bottom-width: 0px;
   border-left-color: rgba(14, 210, 247, 0.05);
+  border-left-width: 0px;
   border-right-color: rgba(14, 210, 247, 0.05);
+  border-right-width: 0px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -1723,9 +1838,13 @@ html body .explorer .nav-files-container .collapse-icon svg {
     footer: `html body footer {
   background-color: var(--status-bar-background, rgb(21, 17, 30));
   border-bottom-color: rgba(14, 210, 247, 0.05);
+  border-bottom-width: 0px;
   border-left-color: rgba(14, 210, 247, 0.05);
+  border-left-width: 0px;
   border-right-color: rgba(14, 210, 247, 0.05);
+  border-right-width: 0px;
   border-top-color: rgba(14, 210, 247, 0.05);
+  border-top-width: 0px;
   font-family: "??", "??", "Avenir LT Std", Helvetica, Arial, "Amazon Ember", Rubik, Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     recentNotes: `html body .recent-notes > h3 {
@@ -1735,9 +1854,13 @@ html body .explorer .nav-files-container .collapse-icon svg {
 
 html body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
   color: rgb(183, 183, 183);
 }
 
@@ -1746,9 +1869,13 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 }`,
     listPage: `html body li.section-li {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
 }
 
 html body li.section-li > .section .meta {
@@ -1757,9 +1884,13 @@ html body li.section-li > .section .meta {
 
 html body ul.section-ul {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
 }`,
     breadcrumbs: `html body .breadcrumb-element p {
   color: var(--text-faint, rgba(122, 162, 247, 0.8));
@@ -1792,9 +1923,13 @@ html body .canvas-sidebar {
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgba(14, 210, 247, 0.05);
+  border-bottom-width: 0px;
   border-left-color: rgba(14, 210, 247, 0.05);
+  border-left-width: 0px;
   border-right-color: rgba(14, 210, 247, 0.05);
+  border-right-width: 0px;
   border-top-color: rgba(14, 210, 247, 0.05);
+  border-top-width: 0px;
 }
 
 html body .metadata-property-key {
@@ -1823,9 +1958,13 @@ html body div#quartz-root {
 
 html body ol.overflow {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
 }`,
     stacked: `html body .stacked-page {
   background-color: var(--background-secondary, rgb(21, 17, 30));
@@ -1841,9 +1980,13 @@ html body .stacked-page.active {
 }`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
   color: rgb(183, 183, 183);
 }
 
@@ -1853,9 +1996,13 @@ html body .navigation-progress {
 
 html body .page-header h2.page-title {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(183, 183, 183));
   font-family: var(--title-font, "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif);
   font-size: 16px;
@@ -1869,9 +2016,13 @@ html body abbr {
 
 html body details {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
 }
 
 html body input[type=text] {
@@ -1881,18 +2032,26 @@ html body input[type=text] {
 html body kbd {
   background-color: var(--code-background, rgb(183, 183, 183));
   border-bottom-color: rgb(10, 8, 15);
+  border-bottom-width: 0px;
   border-left-color: rgb(10, 8, 15);
+  border-left-width: 0px;
   border-right-color: rgb(10, 8, 15);
+  border-right-width: 0px;
   border-top-color: rgb(10, 8, 15);
+  border-top-width: 0px;
   color: var(--background-secondary-alt, rgb(10, 8, 15));
   font-family: var(--code-mono-font, Incosolata, Consolas);
 }
 
 html body progress {
   border-bottom-color: rgb(183, 183, 183);
+  border-bottom-width: 0px;
   border-left-color: rgb(183, 183, 183);
+  border-left-width: 0px;
   border-right-color: rgb(183, 183, 183);
+  border-right-width: 0px;
   border-top-color: rgb(183, 183, 183);
+  border-top-width: 0px;
 }
 
 html body sub {

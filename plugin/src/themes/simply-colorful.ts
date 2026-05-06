@@ -323,6 +323,8 @@ html[saved-theme="dark"] body a.internal-link.broken {
   background-color: var(--blockquote-background-color, rgba(138, 92, 245, 0.05));
   color: var(--blockquote-color, rgb(179, 179, 179));
   padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 12px;
 }`,
     tables: `html[saved-theme="dark"] body tbody tr:nth-child(even) {
@@ -357,11 +359,15 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -377,9 +383,13 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body img {
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(34, 34, 34));
@@ -387,6 +397,7 @@ html[saved-theme="dark"] body img {
 
 html[saved-theme="dark"] body .transclude {
   border-left-color: rgba(138, 92, 245, 0.5);
+  border-left-width: 0px;
 }`,
     checkboxes: `html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
@@ -580,9 +591,13 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
@@ -595,20 +610,27 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(42, 206, 201, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -621,20 +643,27 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(224, 48, 53, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -647,20 +676,27 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(224, 48, 53, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -673,20 +709,27 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(131, 48, 224, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -699,20 +742,27 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(224, 48, 53, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -725,20 +775,27 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(36, 113, 212, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -751,20 +808,27 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(36, 113, 212, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -777,20 +841,27 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(224, 131, 48, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -802,19 +873,26 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-width: 2px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -827,20 +905,27 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(47, 206, 42, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -853,20 +938,27 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(42, 206, 201, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -879,20 +971,27 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(36, 113, 212, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -905,20 +1004,27 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(224, 131, 48, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -994,6 +1100,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(30, 30, 30);
+  border-bottom-width: 0px;
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
@@ -1032,11 +1139,15 @@ html[saved-theme="dark"] body h1 {
   border-bottom-color: rgb(36, 113, 212);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: var(--h1-color, rgb(36, 113, 212));
   font-size: var(--h1-size, 28.832px);
   letter-spacing: var(--h1-letter-spacing, -0.43248px);
@@ -1044,6 +1155,7 @@ html[saved-theme="dark"] body h1 {
   margin-bottom: 8px;
   margin-left: -8px;
   margin-right: -8px;
+  margin-top: 0px;
   padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
@@ -1061,11 +1173,15 @@ html[saved-theme="dark"] body h2 {
   border-bottom-color: rgb(145, 73, 228);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(145, 73, 228);
+  border-left-width: 0px;
   border-right-color: rgb(145, 73, 228);
+  border-right-width: 0px;
   border-top-color: rgb(145, 73, 228);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: var(--h2-color, rgb(145, 73, 228));
   font-size: var(--h2-size, 25.632px);
   font-weight: var(--font-weight, 700);
@@ -1074,6 +1190,7 @@ html[saved-theme="dark"] body h2 {
   margin-bottom: 8px;
   margin-left: -8px;
   margin-right: -8px;
+  margin-top: 0px;
   padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
@@ -1085,6 +1202,9 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
   letter-spacing: -0.4608px;
   line-height: var(--inline-title-line-height, 36.864px);
   margin-bottom: 15.36px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body h3 {
@@ -1094,11 +1214,15 @@ html[saved-theme="dark"] body h3 {
   border-bottom-color: rgb(224, 48, 141);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(224, 48, 141);
+  border-left-width: 0px;
   border-right-color: rgb(224, 48, 141);
+  border-right-width: 0px;
   border-top-color: rgb(224, 48, 141);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: var(--h3-color, rgb(224, 48, 141));
   font-size: var(--h3-size, 22.784px);
   font-weight: var(--font-weight, 700);
@@ -1121,11 +1245,15 @@ html[saved-theme="dark"] body h4 {
   border-bottom-color: rgb(224, 48, 53);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(224, 48, 53);
+  border-left-width: 0px;
   border-right-color: rgb(224, 48, 53);
+  border-right-width: 0px;
   border-top-color: rgb(224, 48, 53);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: var(--h4-color, rgb(224, 48, 53));
   font-size: var(--h4-size, 20.256px);
   font-weight: var(--font-weight, 700);
@@ -1148,11 +1276,15 @@ html[saved-theme="dark"] body h5 {
   border-bottom-color: rgb(224, 131, 48);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(224, 131, 48);
+  border-left-width: 0px;
   border-right-color: rgb(224, 131, 48);
+  border-right-width: 0px;
   border-top-color: rgb(224, 131, 48);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: var(--h5-color, rgb(224, 131, 48));
   font-size: var(--h5-size, 18px);
   font-weight: var(--font-weight, 700);
@@ -1175,11 +1307,15 @@ html[saved-theme="dark"] body h6 {
   border-bottom-color: rgb(206, 201, 42);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(206, 201, 42);
+  border-left-width: 0px;
   border-right-color: rgb(206, 201, 42);
+  border-right-width: 0px;
   border-top-color: rgb(206, 201, 42);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: var(--h6-color, rgb(206, 201, 42));
   font-weight: var(--font-weight, 700);
   margin-bottom: 8px;
@@ -1196,12 +1332,15 @@ html[saved-theme="dark"] body h6 {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(36, 113, 212, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-weight: var(--nav-item-weight, 500);
@@ -1634,12 +1773,14 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #f0f0f0);
   background-color: var(--tab-container-background, rgb(240, 240, 240));
   border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: var(--bold-color, rgb(24, 173, 168));
@@ -1709,6 +1850,8 @@ html[saved-theme="light"] body blockquote {
   background-color: var(--blockquote-background-color, rgba(138, 92, 245, 0.05));
   color: var(--blockquote-color, rgb(79, 79, 79));
   padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 12px;
 }`,
     tables: `html[saved-theme="light"] body tbody tr:nth-child(even) {
@@ -1722,17 +1865,25 @@ html[saved-theme="light"] body tbody tr:nth-child(odd) {
 html[saved-theme="light"] body td {
   background-color: var(--dataview-table-odd-bg-color, rgb(240, 240, 240));
   border-bottom-color: rgb(218, 218, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body th {
   background-color: var(--dataview-table-odd-bg-color, rgb(240, 240, 240));
   border-bottom-color: rgb(218, 218, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body tr {
@@ -1743,11 +1894,15 @@ html[saved-theme="light"] body tr {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
@@ -1755,11 +1910,15 @@ html[saved-theme="light"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -1775,27 +1934,40 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body img {
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(231, 231, 231));
   border-bottom-color: rgb(79, 79, 79);
+  border-bottom-width: 0px;
   border-left-color: rgb(79, 79, 79);
+  border-left-width: 0px;
   border-right-color: rgb(79, 79, 79);
+  border-right-width: 0px;
   border-top-color: rgb(79, 79, 79);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(79, 79, 79));
 }
 
 html[saved-theme="light"] body .transclude {
   border-left-color: rgba(138, 92, 245, 0.5);
+  border-left-width: 0px;
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(170, 170, 170);
+  border-bottom-width: 0px;
   border-left-color: rgb(170, 170, 170);
+  border-left-width: 0px;
   border-right-color: rgb(170, 170, 170);
+  border-right-width: 0px;
   border-top-color: rgb(170, 170, 170);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
@@ -1990,9 +2162,13 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
@@ -2005,20 +2181,27 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(42, 206, 201, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -2031,20 +2214,27 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(224, 48, 53, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -2057,20 +2247,27 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(224, 48, 53, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -2083,20 +2280,27 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(131, 48, 224, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -2109,20 +2313,27 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(224, 48, 53, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -2135,20 +2346,27 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(36, 113, 212, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -2161,20 +2379,27 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(36, 113, 212, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -2187,20 +2412,27 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(224, 131, 48, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -2212,19 +2444,26 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-width: 2px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -2237,20 +2476,27 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(47, 206, 42, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -2263,20 +2509,27 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(42, 206, 201, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2289,20 +2542,27 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(36, 113, 212, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -2315,20 +2575,27 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(224, 131, 48, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 36, 113, 212;
   border-bottom-color: rgb(36, 113, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -2393,9 +2660,13 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(240, 240, 240);
   border-bottom-color: rgb(218, 218, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
@@ -2408,6 +2679,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(240, 240, 240);
+  border-bottom-width: 0px;
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
@@ -2446,11 +2718,15 @@ html[saved-theme="light"] body h1 {
   border-bottom-color: rgb(36, 113, 212);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 113, 212);
+  border-left-width: 0px;
   border-right-color: rgb(36, 113, 212);
+  border-right-width: 0px;
   border-top-color: rgb(36, 113, 212);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: var(--h1-color, rgb(36, 113, 212));
   font-size: var(--h1-size, 28.832px);
   letter-spacing: var(--h1-letter-spacing, -0.43248px);
@@ -2458,6 +2734,7 @@ html[saved-theme="light"] body h1 {
   margin-bottom: 8px;
   margin-left: -8px;
   margin-right: -8px;
+  margin-top: 0px;
   padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
@@ -2475,11 +2752,15 @@ html[saved-theme="light"] body h2 {
   border-bottom-color: rgb(131, 48, 224);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(131, 48, 224);
+  border-left-width: 0px;
   border-right-color: rgb(131, 48, 224);
+  border-right-width: 0px;
   border-top-color: rgb(131, 48, 224);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: var(--h2-color, rgb(131, 48, 224));
   font-size: var(--h2-size, 25.632px);
   font-weight: var(--font-weight, 700);
@@ -2488,6 +2769,7 @@ html[saved-theme="light"] body h2 {
   margin-bottom: 8px;
   margin-left: -8px;
   margin-right: -8px;
+  margin-top: 0px;
   padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
@@ -2499,6 +2781,9 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
   letter-spacing: -0.4608px;
   line-height: var(--inline-title-line-height, 36.864px);
   margin-bottom: 15.36px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body h3 {
@@ -2508,11 +2793,15 @@ html[saved-theme="light"] body h3 {
   border-bottom-color: rgb(224, 48, 141);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(224, 48, 141);
+  border-left-width: 0px;
   border-right-color: rgb(224, 48, 141);
+  border-right-width: 0px;
   border-top-color: rgb(224, 48, 141);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: var(--h3-color, rgb(224, 48, 141));
   font-size: var(--h3-size, 22.784px);
   font-weight: var(--font-weight, 700);
@@ -2535,11 +2824,15 @@ html[saved-theme="light"] body h4 {
   border-bottom-color: rgb(224, 48, 53);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(224, 48, 53);
+  border-left-width: 0px;
   border-right-color: rgb(224, 48, 53);
+  border-right-width: 0px;
   border-top-color: rgb(224, 48, 53);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: var(--h4-color, rgb(224, 48, 53));
   font-size: var(--h4-size, 20.256px);
   font-weight: var(--font-weight, 700);
@@ -2562,11 +2855,15 @@ html[saved-theme="light"] body h5 {
   border-bottom-color: rgb(213, 121, 41);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(213, 121, 41);
+  border-left-width: 0px;
   border-right-color: rgb(213, 121, 41);
+  border-right-width: 0px;
   border-top-color: rgb(213, 121, 41);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: var(--h5-color, rgb(213, 121, 41));
   font-size: var(--h5-size, 18px);
   font-weight: var(--font-weight, 700);
@@ -2589,11 +2886,15 @@ html[saved-theme="light"] body h6 {
   border-bottom-color: rgb(182, 177, 28);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(182, 177, 28);
+  border-left-width: 0px;
   border-right-color: rgb(182, 177, 28);
+  border-right-width: 0px;
   border-top-color: rgb(182, 177, 28);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: var(--h6-color, rgb(182, 177, 28));
   font-weight: var(--font-weight, 700);
   margin-bottom: 8px;
@@ -2608,20 +2909,26 @@ html[saved-theme="light"] body h6 {
 
 html[saved-theme="light"] body hr {
   border-bottom-color: rgb(218, 218, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 36, 113, 212);
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(36, 113, 212, 0.25);
   border-left-width: 2px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: var(--nav-item-color, rgb(79, 79, 79));
@@ -2657,17 +2964,25 @@ html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(79, 79, 79);
+  border-bottom-width: 0px;
   border-left-color: rgb(79, 79, 79);
+  border-left-width: 0px;
   border-right-color: rgb(79, 79, 79);
+  border-right-width: 0px;
   border-top-color: rgb(79, 79, 79);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(79, 79, 79));
 }`,
     footer: `html[saved-theme="light"] body footer {
   background-color: var(--status-bar-background, rgb(240, 240, 240));
   border-bottom-color: rgb(218, 218, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
+  border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(79, 79, 79));
 }
 
@@ -2690,9 +3005,13 @@ html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
   border-bottom-color: rgb(79, 79, 79);
+  border-bottom-width: 0px;
   border-left-color: rgb(79, 79, 79);
+  border-left-width: 0px;
   border-right-color: rgb(79, 79, 79);
+  border-right-width: 0px;
   border-top-color: rgb(79, 79, 79);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(79, 79, 79));
 }
 
@@ -2702,9 +3021,13 @@ html[saved-theme="light"] body .darkmode svg {
 }`,
     breadcrumbs: `html[saved-theme="light"] body .breadcrumb-container {
   border-bottom-color: rgb(79, 79, 79);
+  border-bottom-width: 0px;
   border-left-color: rgb(79, 79, 79);
+  border-left-width: 0px;
   border-right-color: rgb(79, 79, 79);
+  border-right-width: 0px;
   border-top-color: rgb(79, 79, 79);
+  border-top-width: 0px;
   color: rgb(79, 79, 79);
 }
 
@@ -2727,11 +3050,15 @@ html[saved-theme="light"] body .bases-table thead th {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: var(--text-muted, rgb(79, 79, 79));
 }
 
@@ -2739,19 +3066,27 @@ html[saved-theme="light"] body .metadata-container .metadata-property {
   border-bottom-color: rgb(79, 79, 79);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(79, 79, 79);
+  border-left-width: 0px;
   border-right-color: rgb(79, 79, 79);
+  border-right-width: 0px;
   border-top-color: rgb(79, 79, 79);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: rgb(79, 79, 79);
 }
 
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(79, 79, 79);
+  border-bottom-width: 0px;
   border-left-color: rgb(79, 79, 79);
+  border-left-width: 0px;
   border-right-color: rgb(79, 79, 79);
+  border-right-width: 0px;
   border-top-color: rgb(79, 79, 79);
+  border-top-width: 0px;
   color: rgb(79, 79, 79);
 }
 
@@ -2816,9 +3151,13 @@ html[saved-theme="light"] body .page-header h2.page-title {
 
 html[saved-theme="light"] body input[type=text] {
   border-bottom-color: rgb(79, 79, 79);
+  border-bottom-width: 0px;
   border-left-color: rgb(79, 79, 79);
+  border-left-width: 0px;
   border-right-color: rgb(79, 79, 79);
+  border-right-width: 0px;
   border-top-color: rgb(79, 79, 79);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(79, 79, 79));
 }
 

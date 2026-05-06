@@ -290,12 +290,14 @@ html body .page > div#quartz-body div.sidebar {
 
 html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(67, 76, 94);
+  border-right-width: 0px;
 }
 
 html body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #3b4252);
   background-color: var(--tab-container-background, rgb(59, 66, 82));
   border-left-color: rgb(67, 76, 94);
+  border-left-width: 0px;
   color: rgb(220, 221, 222);
 }`,
     typography: `html body .markdown-rendered p > b, html b {
@@ -379,17 +381,25 @@ html body a.internal-link.broken {
 }`,
     lists: `html body dd {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
 html body dt {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
@@ -403,9 +413,13 @@ html body ul > li {
 
 html body ul.overflow {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--text-faint, rgb(150, 155, 170));
@@ -416,9 +430,13 @@ html body blockquote {
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html body table {
@@ -431,17 +449,25 @@ html body tbody tr:nth-child(even) {
 
 html body td {
   border-bottom-color: rgb(92, 99, 112);
+  border-bottom-width: 0px;
   border-left-color: rgb(92, 99, 112);
+  border-left-width: 0px;
   border-right-color: rgb(92, 99, 112);
+  border-right-width: 0px;
   border-top-color: rgb(92, 99, 112);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(220, 221, 222));
 }
 
 html body th {
   border-bottom-color: rgb(92, 99, 112);
+  border-bottom-width: 0px;
   border-left-color: rgb(92, 99, 112);
+  border-left-width: 0px;
   border-right-color: rgb(92, 99, 112);
+  border-right-width: 0px;
   border-top-color: rgb(92, 99, 112);
+  border-top-width: 0px;
   color: var(--table-header-color, rgb(220, 221, 222));
 }
 
@@ -473,15 +499,23 @@ html body tr {
 html body pre:has(> code) {
   background-color: var(--code-background, rgb(39, 44, 56));
   border-bottom-color: rgb(67, 76, 94);
+  border-bottom-width: 0px;
   border-left-color: rgb(67, 76, 94);
+  border-left-width: 0px;
   border-right-color: rgb(67, 76, 94);
+  border-right-width: 0px;
   border-top-color: rgb(67, 76, 94);
+  border-top-width: 0px;
 }`,
     images: `html body audio {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html body figcaption {
@@ -491,40 +525,57 @@ html body figcaption {
 html body figure {
   --code-background: var(--ec-frm-edBg, #272c38);
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html body img {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html body video {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }`,
     embeds: `html body .file-embed {
   background-color: var(--background-primary-alt, rgb(39, 44, 56));
   border-bottom-color: rgb(136, 136, 136);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 136, 136);
+  border-left-width: 0px;
   border-radius: 4px;
   border-right-color: rgb(136, 136, 136);
+  border-right-width: 0px;
   border-top-color: rgb(136, 136, 136);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: var(--text-muted, rgb(136, 136, 136));
 }
 
 html body .footnotes {
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
@@ -546,8 +597,10 @@ html body .transclude {
   border-top-style: solid;
   border-top-width: 1px;
   color: rgb(220, 221, 222);
+  margin-bottom: 0px;
   margin-left: 30px;
   margin-right: 30px;
+  margin-top: 0px;
 }
 
 html body .transclude-inner {
@@ -555,29 +608,41 @@ html body .transclude-inner {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-bottom-style: solid;
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-radius: 4px;
   border-right-color: rgb(220, 221, 222);
   border-right-style: solid;
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-top-style: solid;
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
+  margin-bottom: 0px;
   margin-left: 30px;
   margin-right: 30px;
+  margin-top: 0px;
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(136, 136, 136);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 136, 136);
+  border-left-width: 0px;
   border-right-color: rgb(136, 136, 136);
+  border-right-width: 0px;
   border-top-color: rgb(136, 136, 136);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   margin-bottom: 2px;
+  margin-left: 0px;
   margin-right: 4px;
+  margin-top: 0px;
   width: var(--checkbox-size, 17.3281px);
 }
 
@@ -1363,9 +1428,13 @@ html body .callout[data-callout="warning"] {
     search: `html body .search > .search-button {
   background-color: rgba(0, 0, 0, 0.3);
   border-bottom-color: rgb(67, 76, 94);
+  border-bottom-width: 0px;
   border-left-color: rgb(67, 76, 94);
+  border-left-width: 0px;
   border-right-color: rgb(67, 76, 94);
+  border-right-width: 0px;
   border-top-color: rgb(67, 76, 94);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(220, 221, 222));
 }
 
@@ -1385,9 +1454,13 @@ html body .search > .search-container > .search-space > .search-layout > .result
 
 html body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-description {
@@ -1400,16 +1473,24 @@ html body .search > .search-container > .search-space > .search-layout > .result
 
 html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(59, 66, 82);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
@@ -1428,9 +1509,13 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-color-remove-hover: var(--tag-color-hover, hsl(216, 57.12%, 66.7%));
   background-color: var(--pill-background, rgba(88, 130, 208, 0.1));
   border-bottom-color: rgba(88, 130, 208, 0.15);
+  border-bottom-width: 0px;
   border-left-color: rgba(88, 130, 208, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(88, 130, 208, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(88, 130, 208, 0.15);
+  border-top-width: 0px;
   color: var(--pill-color, rgb(122, 160, 219));
 }
 
@@ -1440,9 +1525,13 @@ html body a.internal-link.tag-link::before {
 
 html body h1 {
   border-bottom-color: rgb(255, 119, 204);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 119, 204);
+  border-left-width: 0px;
   border-right-color: rgb(255, 119, 204);
+  border-right-width: 0px;
   border-top-color: rgb(255, 119, 204);
+  border-top-width: 0px;
   color: var(--pink-two, rgb(255, 119, 204));
 }
 
@@ -1452,60 +1541,87 @@ html body h1.article-title {
 
 html body h2 {
   border-bottom-color: rgb(189, 147, 249);
+  border-bottom-width: 0px;
   border-left-color: rgb(189, 147, 249);
+  border-left-width: 0px;
   border-right-color: rgb(189, 147, 249);
+  border-right-width: 0px;
   border-top-color: rgb(189, 147, 249);
+  border-top-width: 0px;
   color: var(--purple-code, rgb(189, 147, 249));
 }
 
 html body h2.page-title, html h2.page-title a {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(220, 221, 222));
 }
 
 html body h3 {
   border-bottom-color: rgb(80, 250, 123);
+  border-bottom-width: 0px;
   border-left-color: rgb(80, 250, 123);
+  border-left-width: 0px;
   border-right-color: rgb(80, 250, 123);
+  border-right-width: 0px;
   border-top-color: rgb(80, 250, 123);
+  border-top-width: 0px;
   color: var(--green, rgb(80, 250, 123));
   line-height: var(--h3-line-height, 25.3056px);
 }
 
 html body h4 {
   border-bottom-color: rgb(241, 250, 140);
+  border-bottom-width: 0px;
   border-left-color: rgb(241, 250, 140);
+  border-left-width: 0px;
   border-right-color: rgb(241, 250, 140);
+  border-right-width: 0px;
   border-top-color: rgb(241, 250, 140);
+  border-top-width: 0px;
   color: var(--yellow-code, rgb(241, 250, 140));
   line-height: var(--h4-line-height, 22.8096px);
 }
 
 html body h5 {
   border-bottom-color: rgb(139, 233, 253);
+  border-bottom-width: 0px;
   border-left-color: rgb(139, 233, 253);
+  border-left-width: 0px;
   border-right-color: rgb(139, 233, 253);
+  border-right-width: 0px;
   border-top-color: rgb(139, 233, 253);
+  border-top-width: 0px;
   color: var(--cyan, rgb(139, 233, 253));
   line-height: var(--h5-line-height, 20.6592px);
 }
 
 html body h6 {
   border-bottom-color: rgb(229, 192, 123);
+  border-bottom-width: 0px;
   border-left-color: rgb(229, 192, 123);
+  border-left-width: 0px;
   border-right-color: rgb(229, 192, 123);
+  border-right-width: 0px;
   border-top-color: rgb(229, 192, 123);
+  border-top-width: 0px;
   color: var(--yellow, rgb(229, 192, 123));
   line-height: var(--h6-line-height, 19.2px);
 }
 
 html body hr {
   border-bottom-color: rgb(67, 76, 94);
+  border-bottom-width: 0px;
   border-left-color: rgb(67, 76, 94);
+  border-left-width: 0px;
   border-right-color: rgb(67, 76, 94);
+  border-right-width: 0px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -1544,9 +1660,13 @@ html body li.depth-0 {
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(136, 136, 136);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 136, 136);
+  border-left-width: 0px;
   border-right-color: rgb(136, 136, 136);
+  border-right-width: 0px;
   border-top-color: rgb(136, 136, 136);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(136, 136, 136));
 }`,
     footer: `html body footer {
@@ -1555,12 +1675,15 @@ html body li.depth-0 {
   border-bottom-color: rgb(24, 25, 30);
   border-bottom-width: 1px;
   border-left-color: rgb(24, 25, 30);
+  border-left-width: 0px;
   border-right-color: rgb(24, 25, 30);
   border-right-width: 1px;
   border-top-color: rgb(24, 25, 30);
+  border-top-width: 0px;
   color: var(--text-faint, rgb(150, 155, 170));
   padding-bottom: 0px;
   padding-left: 20px;
+  padding-right: 0px;
   padding-top: 0px;
 }
 
@@ -1573,9 +1696,13 @@ html body footer ul li a {
 
 html body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
@@ -1588,9 +1715,13 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 }`,
     listPage: `html body li.section-li {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html body li.section-li > .section .meta {
@@ -1603,15 +1734,23 @@ html body li.section-li > .section > .desc > h3 > a {
 
 html body ul.section-ul {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }`,
     darkmode: `html body .darkmode {
   border-bottom-color: rgb(136, 136, 136);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 136, 136);
+  border-left-width: 0px;
   border-right-color: rgb(136, 136, 136);
+  border-right-width: 0px;
   border-top-color: rgb(136, 136, 136);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(136, 136, 136));
 }
 
@@ -1621,9 +1760,13 @@ html body .darkmode svg {
 }`,
     breadcrumbs: `html body .breadcrumb-container {
   border-bottom-color: rgb(136, 136, 136);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 136, 136);
+  border-left-width: 0px;
   border-right-color: rgb(136, 136, 136);
+  border-right-width: 0px;
   border-top-color: rgb(136, 136, 136);
+  border-top-width: 0px;
   color: rgb(136, 136, 136);
 }
 
@@ -1656,25 +1799,37 @@ html body .canvas-sidebar {
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgb(67, 76, 94);
+  border-bottom-width: 0px;
   border-left-color: rgb(67, 76, 94);
+  border-left-width: 0px;
   border-right-color: rgb(67, 76, 94);
+  border-right-width: 0px;
   border-top-color: rgb(67, 76, 94);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(136, 136, 136));
 }
 
 html body .metadata-container .metadata-property {
   border-bottom-color: rgb(136, 136, 136);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 136, 136);
+  border-left-width: 0px;
   border-right-color: rgb(136, 136, 136);
+  border-right-width: 0px;
   border-top-color: rgb(136, 136, 136);
+  border-top-width: 0px;
   color: rgb(136, 136, 136);
 }
 
 html body .metadata-properties {
   border-bottom-color: rgb(136, 136, 136);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 136, 136);
+  border-left-width: 0px;
   border-right-color: rgb(136, 136, 136);
+  border-right-width: 0px;
   border-top-color: rgb(136, 136, 136);
+  border-top-width: 0px;
   color: rgb(136, 136, 136);
 }
 
@@ -1722,9 +1877,13 @@ html body div#quartz-root {
 
 html body ol.overflow {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }`,
     stacked: `html body .stacked-page {
   background-color: var(--background-secondary, rgb(59, 66, 82));
@@ -1740,9 +1899,13 @@ html body .stacked-page.active {
 }`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
@@ -1753,9 +1916,13 @@ html body .navigation-progress {
 
 html body .page-header h2.page-title {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(220, 221, 222));
   font-weight: 600;
 }
@@ -1766,34 +1933,50 @@ html body abbr {
 
 html body details {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html body input[type=text] {
   border-bottom-color: rgb(136, 136, 136);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 136, 136);
+  border-left-width: 0px;
   border-right-color: rgb(136, 136, 136);
+  border-right-width: 0px;
   border-top-color: rgb(136, 136, 136);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(136, 136, 136));
 }
 
 html body kbd {
   background-color: var(--code-background, rgb(39, 44, 56));
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(220, 221, 222));
   font-family: var(--font-monospace, "Fira Code", "Source Code Pro", monospace);
 }
 
 html body progress {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html body sub {
@@ -1813,11 +1996,15 @@ html body ul.tags > li {
   border-bottom-color: rgba(88, 130, 208, 0.15);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgba(88, 130, 208, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(88, 130, 208, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(88, 130, 208, 0.15);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: var(--yellow, rgb(229, 192, 123));
 }`,
   },

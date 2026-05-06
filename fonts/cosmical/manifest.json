@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-05-06T17:37:11.404Z",
+  "sourceTheme": "Cosmical",
+  "fonts": [
+    {
+      "family": "AdwaitaSans",
+      "style": "normal",
+      "weight": "400",
+      "file": "adwaitasans.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "AdwaitaSans",
+      "style": "italic",
+      "weight": "400",
+      "file": "adwaitasans-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

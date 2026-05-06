@@ -266,11 +266,15 @@ html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcr
   background-color: var(--quote-background, rgba(0, 0, 0, 0));
   line-height: 21.6px;
   padding-bottom: 5.76px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 4.32px;
 }`,
     tables: `html[saved-theme="dark"] body table {
+  margin-bottom: 0px;
   margin-left: 293.391px;
   margin-right: 293.391px;
+  margin-top: 0px;
 }`,
     code: `html[saved-theme="dark"] body code {
   background-color: var(--codeblock-background, rgb(41, 44, 58));
@@ -288,9 +292,13 @@ html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcr
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: var(--codeblock-background, rgb(32, 33, 43));
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -305,6 +313,7 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(90, 255, 21);
+  border-left-width: 0px;
 }`,
     checkboxes: `html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
   color: rgb(124, 128, 155);
@@ -674,6 +683,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(32, 33, 43);
+  border-bottom-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -894,12 +904,14 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(219, 225, 240);
+  border-right-width: 0px;
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #eceff5);
   background-color: var(--tab-container-background, rgb(236, 239, 245));
   border-left-color: rgb(219, 225, 240);
+  border-left-width: 0px;
 }
 
 html[saved-theme="light"] body html {
@@ -1002,11 +1014,15 @@ html[saved-theme="light"] body a.internal-link.broken {
   background-color: var(--quote-background, rgba(0, 0, 0, 0));
   line-height: 21.6px;
   padding-bottom: 5.76px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 4.32px;
 }`,
     tables: `html[saved-theme="light"] body table {
+  margin-bottom: 0px;
   margin-left: 293.391px;
   margin-right: 293.391px;
+  margin-top: 0px;
 }`,
     code: `html[saved-theme="light"] body code {
   background-color: var(--codeblock-background, rgb(236, 239, 245));
@@ -1024,9 +1040,13 @@ html[saved-theme="light"] body a.internal-link.broken {
 html[saved-theme="light"] body pre:has(> code) {
   background-color: var(--codeblock-background, rgb(236, 239, 245));
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -1041,6 +1061,7 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body .transclude {
   border-left-color: rgb(63, 197, 112);
+  border-left-width: 0px;
 }`,
     checkboxes: `html[saved-theme="light"] body li.task-list-item[data-task="X"] {
   color: rgb(124, 128, 155);
@@ -1410,6 +1431,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(236, 239, 245);
+  border-bottom-width: 0px;
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
@@ -1426,8 +1448,11 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body hr {
   border-bottom-color: rgb(219, 225, 240);
+  border-bottom-width: 0px;
   border-left-color: rgb(219, 225, 240);
+  border-left-width: 0px;
   border-right-color: rgb(219, 225, 240);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
@@ -1435,9 +1460,13 @@ html[saved-theme="light"] body hr {
     footer: `html[saved-theme="light"] body footer {
   background-color: var(--status-bar-background, rgb(236, 239, 245));
   border-bottom-color: rgb(219, 225, 240);
+  border-bottom-width: 0px;
   border-left-color: rgb(219, 225, 240);
+  border-left-width: 0px;
   border-right-color: rgb(219, 225, 240);
+  border-right-width: 0px;
   border-top-color: rgb(219, 225, 240);
+  border-top-width: 0px;
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
   color: var(--file-title-color, rgb(18, 16, 25));

@@ -294,12 +294,14 @@ html body .page > div#quartz-body div.sidebar {
 
 html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
 }
 
 html body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #000000);
   background-color: var(--tab-container-background, rgb(0, 0, 0));
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   color: rgb(21, 208, 13);
 }
 
@@ -423,45 +425,68 @@ html body a.internal-link.broken {
 }`,
     lists: `html body dd {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: rgb(21, 208, 13);
   font-size: 14px;
 }
 
 html body dl {
   margin-bottom: 14px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 14px;
 }
 
 html body dt {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: rgb(21, 208, 13);
   font-size: 14px;
 }
 
 html body ol > li {
   color: rgb(21, 208, 13);
+  margin-bottom: 0px;
   margin-left: 25.8462px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.05px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.05px);
 }
 
 html body ul > li {
   color: rgb(21, 208, 13);
+  margin-bottom: 0px;
   margin-left: 25.8462px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.05px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.05px);
 }
 
 html body ul.overflow {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
   border-top-style: solid;
   border-top-width: 1px;
@@ -475,26 +500,39 @@ html body blockquote {
   font-family: "Fira Code";
   line-height: 18.2px;
   padding-bottom: 18.2px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 18.2px;
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
 }
 
 html body table {
   color: rgb(21, 208, 13);
   font-family: "Fira Code";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
 }
 
 html body td {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(21, 208, 13));
   padding-bottom: 0px;
   padding-left: 8.75px;
@@ -504,9 +542,13 @@ html body td {
 
 html body th {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: var(--table-header-color, rgb(21, 208, 13));
   padding-bottom: 0px;
   padding-left: 8.75px;
@@ -516,9 +558,13 @@ html body th {
     code: `html body code {
   background-color: var(--code-background, rgb(0, 0, 0));
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: var(--the-color, rgb(21, 208, 13));
   padding-bottom: 0px;
   padding-left: 0px;
@@ -529,9 +575,13 @@ html body th {
 html body pre:has(> code) {
   background-color: var(--code-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: calc(var(--char-width)*2);
   padding-right: 0px;
@@ -539,9 +589,13 @@ html body pre:has(> code) {
 }`,
     images: `html body audio {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
 }
 
 html body figcaption {
@@ -552,59 +606,91 @@ html body figcaption {
 html body figure {
   --code-background: var(--ec-frm-edBg, #000000);
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
 }
 
 html body img {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
 }
 
 html body video {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
 }`,
     embeds: `html body .file-embed {
   background-color: var(--background-primary-alt, rgb(0, 0, 0));
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(21, 208, 13));
 }
 
 html body .footnotes {
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: rgb(21, 208, 13);
 }
 
 html body .transclude {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: rgb(21, 208, 13);
 }
 
 html body .transclude-inner {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: rgb(21, 208, 13);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
   margin-right: 0px;
+  margin-top: 0px;
   width: var(--checkbox-size, 56.875px);
 }
 
@@ -1424,9 +1510,13 @@ html body .search > .search-container > .search-space > .search-layout > .result
 
 html body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-description {
@@ -1451,15 +1541,22 @@ html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: rgb(21, 208, 13);
 }
 
@@ -1488,14 +1585,21 @@ html body a.internal-link.tag-link::before {
 
 html body h1 {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(21, 208, 13));
   font-size: var(--the-font-size, 14px);
   letter-spacing: var(--h1-letter-spacing, -0.21px);
   line-height: var(--h1-line-height, 16.8px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body h1.article-title {
@@ -1505,88 +1609,129 @@ html body h1.article-title {
 
 html body h2 {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(21, 208, 13));
   font-family: var(--h2-font, "Fira Code");
   font-size: var(--the-font-size, 14px);
   letter-spacing: var(--h2-letter-spacing, -0.154px);
   line-height: var(--h2-line-height, 16.8px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body h2.page-title, html h2.page-title a {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(21, 208, 13));
   font-size: var(--inline-title-size, 22.652px);
   letter-spacing: -0.33978px;
   line-height: var(--inline-title-line-height, 27.1824px);
   margin-bottom: 11.326px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body h3 {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(21, 208, 13));
   font-family: var(--h3-font, "Fira Code");
   font-size: var(--the-font-size, 14px);
   letter-spacing: var(--h3-letter-spacing, -0.112px);
   line-height: var(--h3-line-height, 18.2px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
 }
 
 html body h4 {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(21, 208, 13));
   font-family: var(--h4-font, "Fira Code");
   font-size: var(--the-font-size, 14px);
   letter-spacing: var(--h4-letter-spacing, -0.07px);
   line-height: var(--h4-line-height, 19.6px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
 }
 
 html body h5 {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(21, 208, 13));
   font-family: var(--h5-font, "Fira Code");
   font-size: var(--the-font-size, 14px);
   letter-spacing: var(--h5-letter-spacing, -0.028px);
   line-height: var(--h5-line-height, 21px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
 }
 
 html body h6 {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(21, 208, 13));
   font-family: var(--h6-font, "Fira Code");
   font-size: var(--the-font-size, 14px);
   line-height: var(--h6-line-height, 21px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 0px;
 }
 
 html body hr {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -1621,23 +1766,31 @@ html body .explorer .nav-files-container .collapse-icon svg {
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(21, 208, 13));
 }`,
     footer: `html body footer {
   background-color: var(--status-bar-background, rgb(0, 0, 0));
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
   border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
   border-top-left-radius: 0px;
+  border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(21, 208, 13));
   font-family: "??", "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-bottom: 0px;
   padding-left: 0px;
+  padding-right: 0px;
   padding-top: 0px;
 }
 
@@ -1653,9 +1806,13 @@ html body footer ul li a {
 
 html body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: rgb(21, 208, 13);
 }
 
@@ -1669,9 +1826,13 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 }`,
     listPage: `html body li.section-li {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
 }
 
 html body li.section-li > .section .meta {
@@ -1685,15 +1846,23 @@ html body li.section-li > .section > .desc > h3 > a {
 
 html body ul.section-ul {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
 }`,
     darkmode: `html body .darkmode {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(21, 208, 13));
 }
 
@@ -1703,9 +1872,13 @@ html body .darkmode svg {
 }`,
     breadcrumbs: `html body .breadcrumb-container {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: rgb(21, 208, 13);
 }
 
@@ -1739,25 +1912,37 @@ html body .canvas-sidebar {
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(21, 208, 13));
 }
 
 html body .metadata-container .metadata-property {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: rgb(21, 208, 13);
 }
 
 html body .metadata-properties {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: rgb(21, 208, 13);
 }
 
@@ -1805,8 +1990,11 @@ html body div#quartz-root {
 
 html body ol.overflow {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
   border-top-style: solid;
   border-top-width: 1px;
@@ -1825,9 +2013,13 @@ html body .stacked-page.active {
 }`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: rgb(21, 208, 13);
 }
 
@@ -1837,9 +2029,13 @@ html body .navigation-progress {
 
 html body .page-header h2.page-title {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(21, 208, 13));
   font-family: "??", "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: var(--the-font-size, 14px);
@@ -1852,9 +2048,13 @@ html body abbr {
 
 html body details {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
 }
 
 html body input[type=text] {
@@ -1873,18 +2073,26 @@ html body input[type=text] {
 html body kbd {
   background-color: var(--code-background, rgb(0, 0, 0));
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(21, 208, 13));
   font-size: var(--the-font-size, 14px);
 }
 
 html body progress {
   border-bottom-color: rgb(21, 208, 13);
+  border-bottom-width: 0px;
   border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
   border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
   border-top-color: rgb(21, 208, 13);
+  border-top-width: 0px;
 }
 
 html body sub {

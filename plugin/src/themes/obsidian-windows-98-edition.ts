@@ -36,19 +36,19 @@ export const theme: ThemeData = {
   dark: {
     base: `:root:root {
   --border: #404040;
-  --callout-bug: var(--callout-bug, 251, 70, 76);
-  --callout-default: var(--callout-default, 2, 122, 255);
-  --callout-error: var(--callout-error, 251, 70, 76);
-  --callout-example: var(--callout-example, 168, 130, 255);
-  --callout-fail: var(--callout-fail, 251, 70, 76);
-  --callout-info: var(--callout-info, 2, 122, 255);
-  --callout-question: var(--callout-question, 233, 151, 63);
-  --callout-quote: var(--callout-quote, 158, 158, 158);
-  --callout-success: var(--callout-success, 68, 207, 110);
-  --callout-summary: var(--callout-summary, 83, 223, 221);
-  --callout-tip: var(--callout-tip, 83, 223, 221);
-  --callout-todo: var(--callout-todo, 2, 122, 255);
-  --callout-warning: var(--callout-warning, 233, 151, 63);
+  --callout-bug: var(--callout-bug);
+  --callout-default: var(--callout-default);
+  --callout-error: var(--callout-error);
+  --callout-example: var(--callout-example);
+  --callout-fail: var(--callout-fail);
+  --callout-info: var(--callout-info);
+  --callout-question: var(--callout-question);
+  --callout-quote: var(--callout-quote);
+  --callout-success: var(--callout-success);
+  --callout-summary: var(--callout-summary);
+  --callout-tip: var(--callout-tip);
+  --callout-todo: var(--callout-todo);
+  --callout-warning: var(--callout-warning);
   --titlebar_active_1: #0a246a;
   --titlebar_active_2: #a6caf0;
   --titlebar_inactive_1: #808080;
@@ -61,10 +61,6 @@ export const theme: ThemeData = {
 html body {
   background-color: var(--background-primary);
   color: var(--text-normal);
-}
-
-html body .page > div#quartz-body div.sidebar {
-  background-color: var(--background-secondary, rgb(255, 255, 255));
 }
 
 html body html {
@@ -83,7 +79,10 @@ html body html {
   padding-top: 3px;
 }`,
     checkboxes: `html body input[type=checkbox] {
+  margin-bottom: 0px;
+  margin-left: 0px;
   margin-right: 6.6px;
+  margin-top: 0px;
 }
 
 html body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
@@ -278,7 +277,7 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
 }
 
 html body .callout[data-callout="abstract"] {
-  --callout-color: var(--callout-summary, 83, 223, 221);
+  --callout-color: var(--callout-summary);
 }
 
 html body .callout[data-callout="abstract"] .callout-title {
@@ -286,7 +285,7 @@ html body .callout[data-callout="abstract"] .callout-title {
 }
 
 html body .callout[data-callout="bug"] {
-  --callout-color: var(--callout-bug, 251, 70, 76);
+  --callout-color: var(--callout-bug);
 }
 
 html body .callout[data-callout="bug"] .callout-title {
@@ -294,7 +293,7 @@ html body .callout[data-callout="bug"] .callout-title {
 }
 
 html body .callout[data-callout="danger"] {
-  --callout-color: var(--callout-error, 251, 70, 76);
+  --callout-color: var(--callout-error);
 }
 
 html body .callout[data-callout="danger"] .callout-title {
@@ -302,7 +301,7 @@ html body .callout[data-callout="danger"] .callout-title {
 }
 
 html body .callout[data-callout="example"] {
-  --callout-color: var(--callout-example, 168, 130, 255);
+  --callout-color: var(--callout-example);
 }
 
 html body .callout[data-callout="example"] .callout-title {
@@ -310,7 +309,7 @@ html body .callout[data-callout="example"] .callout-title {
 }
 
 html body .callout[data-callout="failure"] {
-  --callout-color: var(--callout-fail, 251, 70, 76);
+  --callout-color: var(--callout-fail);
 }
 
 html body .callout[data-callout="failure"] .callout-title {
@@ -318,7 +317,7 @@ html body .callout[data-callout="failure"] .callout-title {
 }
 
 html body .callout[data-callout="info"] {
-  --callout-color: var(--callout-info, 2, 122, 255);
+  --callout-color: var(--callout-info);
 }
 
 html body .callout[data-callout="info"] .callout-title {
@@ -326,7 +325,7 @@ html body .callout[data-callout="info"] .callout-title {
 }
 
 html body .callout[data-callout="note"] {
-  --callout-color: var(--callout-default, 2, 122, 255);
+  --callout-color: var(--callout-default);
 }
 
 html body .callout[data-callout="note"] .callout-title {
@@ -334,7 +333,7 @@ html body .callout[data-callout="note"] .callout-title {
 }
 
 html body .callout[data-callout="question"] {
-  --callout-color: var(--callout-question, 233, 151, 63);
+  --callout-color: var(--callout-question);
 }
 
 html body .callout[data-callout="question"] .callout-title {
@@ -342,7 +341,7 @@ html body .callout[data-callout="question"] .callout-title {
 }
 
 html body .callout[data-callout="quote"] {
-  --callout-color: var(--callout-quote, 158, 158, 158);
+  --callout-color: var(--callout-quote);
 }
 
 html body .callout[data-callout="quote"] .callout-title {
@@ -350,7 +349,7 @@ html body .callout[data-callout="quote"] .callout-title {
 }
 
 html body .callout[data-callout="success"] {
-  --callout-color: var(--callout-success, 68, 207, 110);
+  --callout-color: var(--callout-success);
 }
 
 html body .callout[data-callout="success"] .callout-title {
@@ -358,7 +357,7 @@ html body .callout[data-callout="success"] .callout-title {
 }
 
 html body .callout[data-callout="tip"] {
-  --callout-color: var(--callout-tip, 83, 223, 221);
+  --callout-color: var(--callout-tip);
 }
 
 html body .callout[data-callout="tip"] .callout-title {
@@ -366,7 +365,7 @@ html body .callout[data-callout="tip"] .callout-title {
 }
 
 html body .callout[data-callout="todo"] {
-  --callout-color: var(--callout-todo, 2, 122, 255);
+  --callout-color: var(--callout-todo);
 }
 
 html body .callout[data-callout="todo"] .callout-title {
@@ -374,7 +373,7 @@ html body .callout[data-callout="todo"] .callout-title {
 }
 
 html body .callout[data-callout="warning"] {
-  --callout-color: var(--callout-warning, 233, 151, 63);
+  --callout-color: var(--callout-warning);
 }
 
 html body .callout[data-callout="warning"] .callout-title {
@@ -441,19 +440,23 @@ html body .callout[data-callout="warning"] {
 }
 
 html body .search > .search-container > .search-space {
-  background-color: var(--background-primary, rgb(30, 30, 30));
+  background-color: var(--background-primary);
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-bottom-style: dotted;
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
   border-left-style: dotted;
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
   border-right-style: dotted;
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-style: dotted;
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container {
@@ -480,7 +483,7 @@ html body .search > .search-container > .search-space > .search-layout > .result
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
-  background-color: var(--titlebar_active_1, rgb(10, 36, 106));
+  background-color: var(--titlebar_active_1);
   color: rgb(255, 255, 255);
 }
 
@@ -489,14 +492,18 @@ html body .search > .search-container > .search-space > .search-layout, html .se
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-bottom-style: dotted;
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
   border-left-style: dotted;
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
   border-right-style: dotted;
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-style: dotted;
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space > input {
@@ -507,7 +514,7 @@ html body .search > .search-container > .search-space > input {
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
-  background-color: var(--titlebar_active_1, rgb(10, 36, 106));
+  background-color: var(--titlebar_active_1);
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-style: dotted;
   border-bottom-width: 1px;
@@ -524,37 +531,34 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
-  background-color: var(--titlebar_active_1, rgb(10, 36, 106));
+  background-color: var(--titlebar_active_1);
   color: rgb(255, 255, 255);
 }`,
     scrollbars: `html body .callout {
-  --callout-color: var(--callout-default, 2, 122, 255);
+  --callout-color: var(--callout-default);
 }`,
     explorer: `html body .nav-files-container {
   background-color: rgb(255, 255, 255);
 }
 
 html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-  color: var(--nav-item-color, rgb(0, 0, 0));
   font-family: "Pixelated MS Sans Serif";
 }
 
 html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-  color: var(--nav-item-color, rgb(0, 0, 0));
   font-family: "Pixelated MS Sans Serif";
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   background-color: rgb(212, 208, 200);
 }`,
     footer: `html body footer {
-  background-color: var(--window, rgb(212, 208, 200));
+  background-color: var(--window);
   border-top-color: rgb(0, 0, 0);
   border-top-width: 0px;
-  color: var(--status-bar-text-color, rgb(0, 0, 0));
   font-family: "Pixelated MS Sans Serif";
-  font-size: var(--status-bar-font-size, 11px);
   padding-bottom: 1px;
   padding-left: 1px;
+  padding-right: 0px;
   padding-top: 3px;
 }
 
@@ -562,21 +566,13 @@ html body footer ul li a {
   color: rgb(0, 0, 0);
   font-size: 11px;
 }`,
-    recentNotes: `html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: var(--nav-item-color, rgb(0, 0, 0));
-}
-
-html body .recent-notes > ul.recent-ul > li .section > .meta {
+    recentNotes: `html body .recent-notes > ul.recent-ul > li .section > .meta {
   color: rgb(0, 0, 0);
   font-family: "Pixelated MS Sans Serif";
 }`,
     listPage: `html body li.section-li > .section .meta {
   color: rgb(0, 0, 0);
   font-family: "Pixelated MS Sans Serif";
-}
-
-html body li.section-li > .section > .desc > h3 > a {
-  color: var(--nav-item-color, rgb(0, 0, 0));
 }
 
 html body ul.section-ul {
@@ -590,15 +586,11 @@ html body .darkmode svg {
   color: rgb(0, 0, 0);
   stroke: rgb(0, 0, 0);
 }`,
-    stacked: `html body .stacked-page {
-  background-color: var(--background-secondary, rgb(255, 255, 255));
-}
-
-html body .stacked-page-header {
-  background-color: var(--window, rgb(212, 208, 200));
+    stacked: `html body .stacked-page-header {
+  background-color: var(--window);
 }`,
     misc: `html body .navigation-progress {
-  background-color: var(--window, rgb(212, 208, 200));
+  background-color: var(--window);
 }
 
 html body .page-header h2.page-title {

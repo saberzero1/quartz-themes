@@ -439,12 +439,14 @@ html body .page > div#quartz-body div.sidebar {
 
 html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(36, 43, 58);
+  border-right-width: 0px;
 }
 
 html body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #181d27);
   background-color: var(--tab-container-background, rgb(24, 29, 39));
   border-left-color: rgb(36, 43, 58);
+  border-left-width: 0px;
   color: rgb(216, 215, 223);
 }
 
@@ -558,37 +560,55 @@ html body a.internal-link.broken {
 }`,
     lists: `html body dd {
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
   color: rgb(216, 215, 223);
   font-family: "Bai Jamjuree";
 }
 
 html body dt {
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
   color: rgb(216, 215, 223);
   font-family: "Bai Jamjuree";
 }
 
 html body ol > li {
   color: rgb(216, 215, 223);
+  margin-bottom: 0px;
   margin-left: 31.008px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body ul > li {
   color: rgb(216, 215, 223);
+  margin-bottom: 0px;
   margin-left: 31.008px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body ul.overflow {
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--text-faint, rgb(178, 178, 184));
@@ -600,9 +620,13 @@ html body blockquote {
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
 }
 
 html body table {
@@ -612,17 +636,25 @@ html body table {
 
 html body td {
   border-bottom-color: rgb(36, 43, 58);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 43, 58);
+  border-left-width: 0px;
   border-right-color: rgb(36, 43, 58);
+  border-right-width: 0px;
   border-top-color: rgb(36, 43, 58);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(216, 215, 223));
 }
 
 html body th {
   border-bottom-color: rgb(36, 43, 58);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 43, 58);
+  border-left-width: 0px;
   border-right-color: rgb(36, 43, 58);
+  border-right-width: 0px;
   border-top-color: rgb(36, 43, 58);
+  border-top-width: 0px;
   color: var(--table-header-color, rgb(216, 215, 223));
 }
 
@@ -634,13 +666,18 @@ html body thead {
 
 html body tr {
   border-bottom-color: rgb(36, 43, 58);
+  border-bottom-width: 0px;
 }`,
     code: `html body code {
   background-color: var(--pre-code, rgb(15, 18, 24));
   border-bottom-color: rgb(36, 43, 58);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 43, 58);
+  border-left-width: 0px;
   border-right-color: rgb(36, 43, 58);
+  border-right-width: 0px;
   border-top-color: rgb(36, 43, 58);
+  border-top-width: 0px;
   color: var(--inline-code, rgb(190, 183, 223));
   font-family: var(--font-monospace, "Bai Jamjuree");
   padding-bottom: 2.16px;
@@ -652,15 +689,23 @@ html body tr {
 html body pre:has(> code) {
   background-color: var(--code-background, rgb(24, 29, 39));
   border-bottom-color: rgb(36, 43, 58);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 43, 58);
+  border-left-width: 0px;
   border-right-color: rgb(36, 43, 58);
+  border-right-width: 0px;
   border-top-color: rgb(36, 43, 58);
+  border-top-width: 0px;
 }`,
     images: `html body audio {
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
 }
 
 html body figcaption {
@@ -670,23 +715,35 @@ html body figcaption {
 html body figure {
   --code-background: var(--ec-frm-edBg, #181d27);
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
 }
 
 html body img {
   border-bottom-color: rgb(190, 183, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(190, 183, 223);
+  border-left-width: 0px;
   border-right-color: rgb(190, 183, 223);
+  border-right-width: 0px;
   border-top-color: rgb(190, 183, 223);
+  border-top-width: 0px;
 }
 
 html body video {
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
 }`,
     embeds: `html body .file-embed {
   background-color: var(--background-primary-alt, rgb(24, 29, 39));
@@ -694,33 +751,50 @@ html body video {
 
 html body .footnotes {
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
   color: rgb(216, 215, 223);
 }
 
 html body .transclude {
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(219, 84, 97);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
   color: rgb(216, 215, 223);
+  padding-bottom: 0px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 0px;
 }
 
 html body .transclude-inner {
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
   color: rgb(216, 215, 223);
+  margin-bottom: 0px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: 0px;
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(107, 154, 182);
+  border-bottom-width: 0px;
   border-left-color: rgb(107, 154, 182);
+  border-left-width: 0px;
   border-right-color: rgb(107, 154, 182);
+  border-right-width: 0px;
   border-top-color: rgb(107, 154, 182);
+  border-top-width: 0px;
 }
 
 html body li.task-list-item[data-task="#"] {
@@ -1496,9 +1570,13 @@ html body .callout[data-callout="warning"] {
 }`,
     search: `html body .search > .search-button {
   border-bottom-color: rgb(36, 43, 58);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 43, 58);
+  border-left-width: 0px;
   border-right-color: rgb(36, 43, 58);
+  border-right-width: 0px;
   border-top-color: rgb(36, 43, 58);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(216, 215, 223));
   font-family: "Bai Jamjuree";
 }
@@ -1520,9 +1598,13 @@ html body .search > .search-container > .search-space > .search-layout > .result
 
 html body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-description {
@@ -1536,17 +1618,25 @@ html body .search > .search-container > .search-space > .search-layout > .result
 
 html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(24, 29, 39);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
   background-color: var(--text-selection, rgb(219, 84, 97));
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
   color: rgb(216, 215, 223);
 }
 
@@ -1569,9 +1659,13 @@ html body a.internal-link.tag-link::before {
 
 html body h1 {
   border-bottom-color: rgb(190, 183, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(190, 183, 223);
+  border-left-width: 0px;
   border-right-color: rgb(190, 183, 223);
+  border-right-width: 0px;
   border-top-color: rgb(190, 183, 223);
+  border-top-width: 0px;
   color: var(--text-title-h1, rgb(190, 183, 223));
   font-family: var(--font-monospace, "Bai Jamjuree");
   font-size: var(--h1-size, 34px);
@@ -1586,9 +1680,13 @@ html body h1.article-title {
 
 html body h2 {
   border-bottom-color: rgb(255, 216, 94);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 216, 94);
+  border-left-width: 0px;
   border-right-color: rgb(255, 216, 94);
+  border-right-width: 0px;
   border-top-color: rgb(255, 216, 94);
+  border-top-width: 0px;
   color: var(--text-title-h2, rgb(255, 216, 94));
   font-family: var(--font-monospace, "Bai Jamjuree");
   font-size: var(--h2-size, 26px);
@@ -1599,18 +1697,26 @@ html body h2 {
 
 html body h2.page-title, html h2.page-title a {
   border-bottom-color: rgb(255, 216, 94);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 216, 94);
+  border-left-width: 0px;
   border-right-color: rgb(255, 216, 94);
+  border-right-width: 0px;
   border-top-color: rgb(255, 216, 94);
+  border-top-width: 0px;
   color: var(--text-title-h2, rgb(255, 216, 94));
   font-family: var(--inline-title-font, "Bai Jamjuree");
 }
 
 html body h3 {
   border-bottom-color: rgb(255, 79, 0);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 79, 0);
+  border-left-width: 0px;
   border-right-color: rgb(255, 79, 0);
+  border-right-width: 0px;
   border-top-color: rgb(255, 79, 0);
+  border-top-width: 0px;
   color: var(--text-title-h3, rgb(255, 79, 0));
   font-family: var(--font-monospace, "Bai Jamjuree");
   font-size: var(--h3-size, 22px);
@@ -1621,9 +1727,13 @@ html body h3 {
 
 html body h4 {
   border-bottom-color: rgb(76, 134, 168);
+  border-bottom-width: 0px;
   border-left-color: rgb(76, 134, 168);
+  border-left-width: 0px;
   border-right-color: rgb(76, 134, 168);
+  border-right-width: 0px;
   border-top-color: rgb(76, 134, 168);
+  border-top-width: 0px;
   color: var(--text-title-h4, rgb(76, 134, 168));
   font-family: var(--font-monospace, "Bai Jamjuree");
   font-size: var(--h4-size, 20px);
@@ -1634,9 +1744,13 @@ html body h4 {
 
 html body h5 {
   border-bottom-color: rgb(128, 100, 67);
+  border-bottom-width: 0px;
   border-left-color: rgb(128, 100, 67);
+  border-left-width: 0px;
   border-right-color: rgb(128, 100, 67);
+  border-right-width: 0px;
   border-top-color: rgb(128, 100, 67);
+  border-top-width: 0px;
   color: var(--text-title-h5, rgb(128, 100, 67));
   font-family: var(--font-monospace, "Bai Jamjuree");
   font-size: var(--h5-size, 18px);
@@ -1647,9 +1761,13 @@ html body h5 {
 
 html body h6 {
   border-bottom-color: rgb(201, 202, 217);
+  border-bottom-width: 0px;
   border-left-color: rgb(201, 202, 217);
+  border-left-width: 0px;
   border-right-color: rgb(201, 202, 217);
+  border-right-width: 0px;
   border-top-color: rgb(201, 202, 217);
+  border-top-width: 0px;
   color: var(--text-title-h6, rgb(201, 202, 217));
   font-family: var(--font-monospace, "Bai Jamjuree");
   font-size: var(--h6-size, 18px);
@@ -1659,8 +1777,11 @@ html body h6 {
 
 html body hr {
   border-bottom-color: rgb(36, 43, 58);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 43, 58);
+  border-left-width: 0px;
   border-right-color: rgb(36, 43, 58);
+  border-right-width: 0px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -1696,9 +1817,13 @@ html body li.depth-0 {
     footer: `html body footer {
   background-color: var(--status-bar-background, rgb(24, 29, 39));
   border-bottom-color: rgb(36, 43, 58);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 43, 58);
+  border-left-width: 0px;
   border-right-color: rgb(36, 43, 58);
+  border-right-width: 0px;
   border-top-color: rgb(36, 43, 58);
+  border-top-width: 0px;
   font-family: "Bai Jamjuree";
 }`,
     recentNotes: `html body .recent-notes > h3 {
@@ -1708,9 +1833,13 @@ html body li.depth-0 {
 
 html body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
   color: rgb(216, 215, 223);
 }
 
@@ -1719,9 +1848,13 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 }`,
     listPage: `html body li.section-li {
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
 }
 
 html body li.section-li > .section .meta {
@@ -1730,9 +1863,13 @@ html body li.section-li > .section .meta {
 
 html body ul.section-ul {
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
 }`,
     breadcrumbs: `html body .breadcrumb-element p {
   color: var(--text-faint, rgb(178, 178, 184));
@@ -1763,9 +1900,13 @@ html body .canvas-sidebar {
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgb(36, 43, 58);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 43, 58);
+  border-left-width: 0px;
   border-right-color: rgb(36, 43, 58);
+  border-right-width: 0px;
   border-top-color: rgb(36, 43, 58);
+  border-top-width: 0px;
   font-family: "Bai Jamjuree";
 }
 
@@ -1796,9 +1937,13 @@ html body div#quartz-root {
 
 html body ol.overflow {
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
 }`,
     stacked: `html body .stacked-page {
   background-color: var(--background-secondary, rgb(24, 29, 39));
@@ -1814,9 +1959,13 @@ html body .stacked-page.active {
 }`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
   color: rgb(216, 215, 223);
 }
 
@@ -1826,9 +1975,13 @@ html body .navigation-progress {
 
 html body .page-header h2.page-title {
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(216, 215, 223));
   font-weight: 700;
 }
@@ -1839,26 +1992,38 @@ html body abbr {
 
 html body details {
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
 }
 
 html body kbd {
   background-color: var(--code-background, rgb(24, 29, 39));
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(216, 215, 223));
   font-family: var(--font-monospace, "Bai Jamjuree");
 }
 
 html body progress {
   border-bottom-color: rgb(216, 215, 223);
+  border-bottom-width: 0px;
   border-left-color: rgb(216, 215, 223);
+  border-left-width: 0px;
   border-right-color: rgb(216, 215, 223);
+  border-right-width: 0px;
   border-top-color: rgb(216, 215, 223);
+  border-top-width: 0px;
 }
 
 html body sub {

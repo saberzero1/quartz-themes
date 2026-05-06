@@ -212,9 +212,13 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body img {
   border-bottom-color: rgb(44, 206, 16);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 206, 16);
+  border-left-width: 0px;
   border-right-color: rgb(44, 206, 16);
+  border-right-width: 0px;
   border-top-color: rgb(44, 206, 16);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(0, 0, 0));
@@ -222,6 +226,7 @@ html[saved-theme="dark"] body img {
 
 html[saved-theme="dark"] body .transclude {
   border-left-color: rgba(82, 157, 82, 0.45);
+  border-left-width: 0px;
 }`,
     checkboxes: `html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
@@ -581,6 +586,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(0, 0, 0);
+  border-bottom-width: 0px;
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
@@ -600,10 +606,16 @@ html[saved-theme="dark"] body h1 {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(44, 206, 16);
+  border-left-width: 0px;
   border-right-color: rgb(44, 206, 16);
+  border-right-width: 0px;
   border-top-color: rgb(44, 206, 16);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(44, 206, 16));
   padding-bottom: 2px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -615,17 +627,27 @@ html[saved-theme="dark"] body h2 {
   border-bottom-style: dashed;
   border-bottom-width: 1px;
   border-left-color: rgb(190, 112, 112);
+  border-left-width: 0px;
   border-right-color: rgb(190, 112, 112);
+  border-right-width: 0px;
   border-top-color: rgb(190, 112, 112);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(190, 112, 112));
   padding-bottom: 2px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   border-bottom-color: rgb(44, 206, 16);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 206, 16);
+  border-left-width: 0px;
   border-right-color: rgb(44, 206, 16);
+  border-right-width: 0px;
   border-top-color: rgb(44, 206, 16);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(44, 206, 16));
 }
 
@@ -634,33 +656,51 @@ html[saved-theme="dark"] body h3 {
   border-bottom-style: dotted;
   border-bottom-width: 1px;
   border-left-color: rgb(61, 118, 118);
+  border-left-width: 0px;
   border-right-color: rgb(61, 118, 118);
+  border-right-width: 0px;
   border-top-color: rgb(61, 118, 118);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(61, 118, 118));
   padding-bottom: 2px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body h4 {
   border-bottom-color: rgb(169, 186, 157);
+  border-bottom-width: 0px;
   border-left-color: rgb(169, 186, 157);
+  border-left-width: 0px;
   border-right-color: rgb(169, 186, 157);
+  border-right-width: 0px;
   border-top-color: rgb(169, 186, 157);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(169, 186, 157));
 }
 
 html[saved-theme="dark"] body h5 {
   border-bottom-color: rgb(157, 193, 131);
+  border-bottom-width: 0px;
   border-left-color: rgb(157, 193, 131);
+  border-left-width: 0px;
   border-right-color: rgb(157, 193, 131);
+  border-right-width: 0px;
   border-top-color: rgb(157, 193, 131);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(157, 193, 131));
 }
 
 html[saved-theme="dark"] body h6 {
   border-bottom-color: rgb(72, 110, 2);
+  border-bottom-width: 0px;
   border-left-color: rgb(72, 110, 2);
+  border-left-width: 0px;
   border-right-color: rgb(72, 110, 2);
+  border-right-width: 0px;
   border-top-color: rgb(72, 110, 2);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(72, 110, 2));
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
@@ -668,6 +708,7 @@ html[saved-theme="dark"] body h6 {
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(82, 157, 82);
+  border-left-width: 0px;
 }
 
 html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
@@ -687,9 +728,13 @@ html[saved-theme="dark"] body .explorer .nav-files-container .folder-outer > ul 
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(82, 157, 82);
+  border-bottom-width: 0px;
   border-left-color: rgb(82, 157, 82);
+  border-left-width: 0px;
   border-right-color: rgb(82, 157, 82);
+  border-right-width: 0px;
   border-top-color: rgb(82, 157, 82);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(82, 157, 82));
 }`,
     footer: `html[saved-theme="dark"] body footer {
@@ -697,9 +742,13 @@ html[saved-theme="dark"] body .explorer .nav-files-container .folder-outer > ul 
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-color: rgb(82, 157, 82);
+  border-bottom-width: 0px;
   border-left-color: rgb(82, 157, 82);
+  border-left-width: 0px;
   border-right-color: rgb(82, 157, 82);
+  border-right-width: 0px;
   border-top-color: rgb(82, 157, 82);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(82, 157, 82));
 }
 
@@ -735,9 +784,13 @@ html[saved-theme="dark"] body .stacked-page-header {
 html[saved-theme="dark"] body kbd {
   background-color: var(--code-background, rgba(63, 84, 41, 0.275));
   border-bottom-color: rgb(168, 192, 144);
+  border-bottom-width: 0px;
   border-left-color: rgb(168, 192, 144);
+  border-left-width: 0px;
   border-right-color: rgb(168, 192, 144);
+  border-right-width: 0px;
   border-top-color: rgb(168, 192, 144);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(168, 192, 144));
 }
 
@@ -898,12 +951,17 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body img {
   border-bottom-color: rgb(18, 138, 18);
+  border-bottom-width: 0px;
   border-left-color: rgb(18, 138, 18);
+  border-left-width: 0px;
   border-right-color: rgb(18, 138, 18);
+  border-right-width: 0px;
   border-top-color: rgb(18, 138, 18);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="light"] body .transclude {
   border-left-color: rgb(82, 157, 82);
+  border-left-width: 0px;
 }`,
     checkboxes: `html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
@@ -1272,10 +1330,16 @@ html[saved-theme="light"] body h1 {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(18, 138, 18);
+  border-left-width: 0px;
   border-right-color: rgb(18, 138, 18);
+  border-right-width: 0px;
   border-top-color: rgb(18, 138, 18);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(18, 138, 18));
   padding-bottom: 2px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -1287,17 +1351,27 @@ html[saved-theme="light"] body h2 {
   border-bottom-style: dashed;
   border-bottom-width: 1px;
   border-left-color: rgb(190, 112, 112);
+  border-left-width: 0px;
   border-right-color: rgb(190, 112, 112);
+  border-right-width: 0px;
   border-top-color: rgb(190, 112, 112);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(190, 112, 112));
   padding-bottom: 2px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   border-bottom-color: rgb(82, 157, 82);
+  border-bottom-width: 0px;
   border-left-color: rgb(82, 157, 82);
+  border-left-width: 0px;
   border-right-color: rgb(82, 157, 82);
+  border-right-width: 0px;
   border-top-color: rgb(82, 157, 82);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(82, 157, 82));
 }
 
@@ -1306,33 +1380,51 @@ html[saved-theme="light"] body h3 {
   border-bottom-style: dotted;
   border-bottom-width: 1px;
   border-left-color: rgb(61, 118, 118);
+  border-left-width: 0px;
   border-right-color: rgb(61, 118, 118);
+  border-right-width: 0px;
   border-top-color: rgb(61, 118, 118);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(61, 118, 118));
   padding-bottom: 2px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body h4 {
   border-bottom-color: rgb(169, 186, 157);
+  border-bottom-width: 0px;
   border-left-color: rgb(169, 186, 157);
+  border-left-width: 0px;
   border-right-color: rgb(169, 186, 157);
+  border-right-width: 0px;
   border-top-color: rgb(169, 186, 157);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(169, 186, 157));
 }
 
 html[saved-theme="light"] body h5 {
   border-bottom-color: rgb(157, 193, 131);
+  border-bottom-width: 0px;
   border-left-color: rgb(157, 193, 131);
+  border-left-width: 0px;
   border-right-color: rgb(157, 193, 131);
+  border-right-width: 0px;
   border-top-color: rgb(157, 193, 131);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(157, 193, 131));
 }
 
 html[saved-theme="light"] body h6 {
   border-bottom-color: rgb(72, 110, 2);
+  border-bottom-width: 0px;
   border-left-color: rgb(72, 110, 2);
+  border-left-width: 0px;
   border-right-color: rgb(72, 110, 2);
+  border-right-width: 0px;
   border-top-color: rgb(72, 110, 2);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(72, 110, 2));
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
@@ -1340,6 +1432,7 @@ html[saved-theme="light"] body h6 {
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(82, 157, 82);
+  border-left-width: 0px;
 }
 
 html[saved-theme="light"] body .explorer .nav-files-container a:hover {
@@ -1359,16 +1452,24 @@ html[saved-theme="light"] body .explorer .nav-files-container .folder-outer > ul
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(39, 75, 39);
+  border-bottom-width: 0px;
   border-left-color: rgb(39, 75, 39);
+  border-left-width: 0px;
   border-right-color: rgb(39, 75, 39);
+  border-right-width: 0px;
   border-top-color: rgb(39, 75, 39);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(39, 75, 39));
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
   border-bottom-color: rgb(39, 75, 39);
+  border-bottom-width: 0px;
   border-left-color: rgb(39, 75, 39);
+  border-left-width: 0px;
   border-right-color: rgb(39, 75, 39);
+  border-right-width: 0px;
   border-top-color: rgb(39, 75, 39);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(39, 75, 39));
 }
 
@@ -1386,9 +1487,13 @@ html[saved-theme="light"] body .darkmode svg {
     misc: `html[saved-theme="light"] body kbd {
   background-color: var(--code-background, rgb(7, 14, 0));
   border-bottom-color: rgb(168, 192, 144);
+  border-bottom-width: 0px;
   border-left-color: rgb(168, 192, 144);
+  border-left-width: 0px;
   border-right-color: rgb(168, 192, 144);
+  border-right-width: 0px;
   border-top-color: rgb(168, 192, 144);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(168, 192, 144));
 }
 

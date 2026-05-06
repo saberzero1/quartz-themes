@@ -167,11 +167,17 @@ html body dt {
 }
 
 html body ol > li {
+  margin-bottom: 0px;
   margin-left: 24px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body ul > li {
+  margin-bottom: 0px;
   margin-left: 24px;
+  margin-right: 0px;
+  margin-top: 0px;
 }`,
     blockquotes: `html body .data-footnote-backref {
   --font-weight: var(--link-weight, 450);
@@ -186,26 +192,39 @@ html body blockquote {
 
 html body td {
   border-bottom-color: rgb(138, 92, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(138, 92, 245);
+  border-left-width: 0px;
   border-right-color: rgb(138, 92, 245);
+  border-right-width: 0px;
   border-top-color: rgb(138, 92, 245);
+  border-top-width: 0px;
+  padding-bottom: 0px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 0px;
 }
 
 html body th {
   border-bottom-color: rgb(255, 204, 0);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 204, 0);
+  border-left-width: 0px;
   border-right-color: rgb(255, 204, 0);
+  border-right-width: 0px;
   border-top-color: rgb(255, 204, 0);
+  border-top-width: 0px;
   font-weight: var(--table-header-weight, 650);
+  padding-bottom: 0px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 0px;
 }
 
 html body thead {
   border-bottom-color: rgb(255, 204, 0);
   border-bottom-style: solid;
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 204, 0);
   border-left-style: solid;
   border-left-width: 3px;
@@ -219,9 +238,13 @@ html body thead {
 
 html body tr {
   border-bottom-color: rgb(255, 204, 0);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 204, 0);
+  border-left-width: 0px;
   border-right-color: rgb(255, 204, 0);
+  border-right-width: 0px;
   border-top-color: rgb(255, 204, 0);
+  border-top-width: 0px;
 }`,
     code: `html body code {
   background-color: var(--code-background, rgb(54, 47, 70));
@@ -887,9 +910,13 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 
 html body h1 {
   border-bottom-color: rgb(255, 255, 0);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 0);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 0);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 0);
+  border-top-width: 0px;
   color: var(--color-alt-1, rgb(255, 255, 0));
   font-family: var(--h1-font, "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
@@ -900,54 +927,78 @@ html body h1.article-title {
 
 html body h2 {
   border-bottom-color: rgb(255, 230, 0);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 230, 0);
+  border-left-width: 0px;
   border-right-color: rgb(255, 230, 0);
+  border-right-width: 0px;
   border-top-color: rgb(255, 230, 0);
+  border-top-width: 0px;
   color: var(--color-alt-2, rgb(255, 230, 0));
   font-family: var(--h2-font, "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html body h2.page-title, html h2.page-title a {
   border-bottom-color: rgb(138, 92, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(138, 92, 245);
+  border-left-width: 0px;
   border-right-color: rgb(138, 92, 245);
+  border-right-width: 0px;
   border-top-color: rgb(138, 92, 245);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(138, 92, 245));
   font-family: var(--inline-title-font, "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html body h3 {
   border-bottom-color: rgb(255, 204, 0);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 204, 0);
+  border-left-width: 0px;
   border-right-color: rgb(255, 204, 0);
+  border-right-width: 0px;
   border-top-color: rgb(255, 204, 0);
+  border-top-width: 0px;
   color: var(--color-alt-3, rgb(255, 204, 0));
   font-family: var(--h3-font, "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html body h4 {
   border-bottom-color: rgb(255, 178, 0);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 178, 0);
+  border-left-width: 0px;
   border-right-color: rgb(255, 178, 0);
+  border-right-width: 0px;
   border-top-color: rgb(255, 178, 0);
+  border-top-width: 0px;
   color: var(--color-alt-4, rgb(255, 178, 0));
   font-family: var(--h4-font, "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html body h5 {
   border-bottom-color: rgb(255, 153, 0);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 153, 0);
+  border-left-width: 0px;
   border-right-color: rgb(255, 153, 0);
+  border-right-width: 0px;
   border-top-color: rgb(255, 153, 0);
+  border-top-width: 0px;
   color: var(--color-alt-5, rgb(255, 153, 0));
   font-family: var(--h5-font, "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }
 
 html body h6 {
   border-bottom-color: rgb(255, 128, 0);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 128, 0);
+  border-left-width: 0px;
   border-right-color: rgb(255, 128, 0);
+  border-right-width: 0px;
   border-top-color: rgb(255, 128, 0);
+  border-top-width: 0px;
   color: var(--color-alt-6, rgb(255, 128, 0));
   font-family: var(--h6-font, "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
 }`,
@@ -967,16 +1018,24 @@ html body .explorer .nav-files-container a:hover {
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(138, 92, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(138, 92, 245);
+  border-left-width: 0px;
   border-right-color: rgb(138, 92, 245);
+  border-right-width: 0px;
   border-top-color: rgb(138, 92, 245);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(138, 92, 245));
 }`,
     darkmode: `html body .darkmode {
   border-bottom-color: rgb(138, 92, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(138, 92, 245);
+  border-left-width: 0px;
   border-right-color: rgb(138, 92, 245);
+  border-right-width: 0px;
   border-top-color: rgb(138, 92, 245);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(138, 92, 245));
 }
 
@@ -1001,9 +1060,13 @@ html body .metadata-properties {
 }`,
     misc: `html body .page-header h2.page-title {
   border-bottom-color: rgb(138, 92, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(138, 92, 245);
+  border-left-width: 0px;
   border-right-color: rgb(138, 92, 245);
+  border-right-width: 0px;
   border-top-color: rgb(138, 92, 245);
+  border-top-width: 0px;
   color: var(--color-default, rgb(138, 92, 245));
 }
 

@@ -2648,7 +2648,7 @@ body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: var(--bold-color, rgb(19, 150, 160));
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-external-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family:
@@ -2730,7 +2730,7 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-unresolved-color, rgb(111, 183, 78));
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-unresolved-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family:
@@ -3446,7 +3446,7 @@ body body.theme-light .markdown-rendered blockquote {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: var(--blockquote-font-style);
   line-height: 22.4px;
   padding-bottom: 4px;
   padding-top: 4px;
@@ -5463,7 +5463,7 @@ body body.theme-light .page-header .page-title {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light .math-block {
-  background-color: var(--background-modifier-hover);
+  background-color: rgba(0, 0, 0, 0);
   color: var(--bold-color, rgb(31, 41, 92));
   border-color: rgb(31, 41, 92);
   border-width: 0px;
@@ -5570,7 +5570,7 @@ body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: var(--bold-color, rgb(24, 193, 205));
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-external-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family:
@@ -5652,7 +5652,7 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-unresolved-color, rgb(111, 183, 78));
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-unresolved-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family:
@@ -6368,7 +6368,7 @@ body body.theme-dark .markdown-rendered blockquote {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: var(--blockquote-font-style);
   line-height: 22.4px;
   padding-bottom: 4px;
   padding-top: 4px;
@@ -8384,7 +8384,7 @@ body body.theme-dark .page-header .page-title {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .math-block {
-  background-color: var(--background-modifier-hover);
+  background-color: rgba(0, 0, 0, 0);
   color: var(--bold-color, rgb(195, 200, 223));
   border-color: rgb(195, 200, 223);
   border-width: 0px;

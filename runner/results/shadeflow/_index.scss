@@ -262,7 +262,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-external-color, rgb(0, 0, 0));
     cursor: var(--cursor-link);
-    filter: none;
+    filter: var(--link-external-filter);
     backdrop-filter: none;
     box-shadow: none;
     font-family:
@@ -286,6 +286,7 @@ body {
     text-decoration-color: rgb(0, 0, 0);
     text-decoration-line: var(--link-external-decoration);
     text-decoration-style: solid;
+    text-decoration-thickness: var(--link-decoration-thickness);
     transition: opacity 0.14s ease-in-out;
     transform: none;
     user-select: text;
@@ -328,6 +329,7 @@ body {
     text-decoration-color: rgb(0, 0, 0);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: solid;
+    text-decoration-thickness: var(--link-decoration-thickness);
     transition: opacity 0.14s ease-in-out;
     transform: none;
     user-select: text;
@@ -345,7 +347,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-unresolved-color, rgb(30, 30, 31));
     cursor: var(--cursor-link);
-    filter: none;
+    filter: var(--link-unresolved-filter);
     backdrop-filter: none;
     box-shadow: none;
     font-family:
@@ -369,6 +371,7 @@ body {
     text-decoration-color: var(--link-unresolved-decoration-color, rgba(30, 30, 31, 0.3));
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
+    text-decoration-thickness: var(--link-decoration-thickness);
     transition: opacity 0.14s ease-in-out;
     transform: none;
     user-select: text;
@@ -1089,7 +1092,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: var(--blockquote-font-style);
     line-height: 28px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -1288,10 +1291,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing);
-    margin-bottom: 36px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px 0px 36px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1423,7 +1423,7 @@ body {
     line-height: var(--h6-line-height, 28px);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: normal;
+    letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3885,7 +3885,7 @@ body {
   }
 
   .katex-display {
-    background-color: var(--background-modifier-hover);
+    background-color: rgba(0, 0, 0, 0);
     color: rgb(0, 0, 0);
     border-color: rgb(0, 0, 0);
     border-width: 0px;
@@ -11830,7 +11830,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-external-color, rgb(255, 255, 255));
       cursor: var(--cursor-link);
-      filter: none;
+      filter: var(--link-external-filter);
       backdrop-filter: none;
       box-shadow: none;
       font-family:
@@ -11854,6 +11854,7 @@ html[saved-theme="dark"] {
       text-decoration-color: rgb(255, 255, 255);
       text-decoration-line: var(--link-external-decoration);
       text-decoration-style: solid;
+      text-decoration-thickness: var(--link-decoration-thickness);
       transition: opacity 0.14s ease-in-out;
       transform: none;
       user-select: text;
@@ -11896,6 +11897,7 @@ html[saved-theme="dark"] {
       text-decoration-color: rgb(255, 255, 255);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: solid;
+      text-decoration-thickness: var(--link-decoration-thickness);
       transition: opacity 0.14s ease-in-out;
       transform: none;
       user-select: text;
@@ -11913,7 +11915,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-unresolved-color, rgb(255, 255, 255));
       cursor: var(--cursor-link);
-      filter: none;
+      filter: var(--link-unresolved-filter);
       backdrop-filter: none;
       box-shadow: none;
       font-family:
@@ -11937,6 +11939,7 @@ html[saved-theme="dark"] {
       text-decoration-color: var(--link-unresolved-decoration-color, rgba(255, 255, 255, 0.3));
       text-decoration-line: var(--link-decoration);
       text-decoration-style: var(--link-unresolved-decoration-style);
+      text-decoration-thickness: var(--link-decoration-thickness);
       transition: opacity 0.14s ease-in-out;
       transform: none;
       user-select: text;
@@ -12657,7 +12660,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 400;
-      font-style: normal;
+      font-style: var(--blockquote-font-style);
       line-height: 28px;
       padding-bottom: 0px;
       padding-top: 0px;
@@ -12856,10 +12859,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing);
-      margin-bottom: 36px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0px 0px 36px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
@@ -12991,7 +12991,7 @@ html[saved-theme="dark"] {
       line-height: var(--h6-line-height, 28px);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: normal;
+      letter-spacing: var(--h6-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -15453,7 +15453,7 @@ html[saved-theme="dark"] {
     }
 
     .katex-display {
-      background-color: var(--background-modifier-hover);
+      background-color: rgba(0, 0, 0, 0);
       color: rgb(212, 212, 212);
       border-color: rgb(212, 212, 212);
       border-width: 0px;

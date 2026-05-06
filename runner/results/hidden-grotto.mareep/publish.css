@@ -4170,7 +4170,7 @@ body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: var(--grotto-link-color, rgb(86, 115, 159));
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-external-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family: Quicksand;
@@ -4180,6 +4180,7 @@ body body.theme-light .markdown-rendered a.external-link {
   text-decoration-color: rgb(86, 115, 159);
   text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -4206,6 +4207,7 @@ body body.theme-light .markdown-rendered a.internal-link {
   text-decoration-color: rgb(86, 115, 159);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -4222,7 +4224,7 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-unresolved-color, rgb(86, 115, 159));
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-unresolved-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family: Quicksand;
@@ -4235,6 +4237,7 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   );
   text-decoration-line: var(--link-decoration);
   text-decoration-style: var(--link-unresolved-decoration-style);
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -4783,7 +4786,7 @@ body body.theme-light .markdown-rendered blockquote {
   color: var(--grotto-blockquote-color, rgb(61, 61, 61));
   font-family: Quicksand;
   font-weight: 500;
-  font-style: normal;
+  font-style: var(--blockquote-font-style);
   line-height: 24px;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -5066,7 +5069,7 @@ body body.theme-light .published-container .markdown-rendered h6 {
   line-height: var(--grotto-header-line-height, 32px);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: normal;
+  letter-spacing: var(--h6-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px 7px;
@@ -6500,7 +6503,7 @@ body body.theme-light .page-header .page-title {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light .math-block {
-  background-color: var(--background-modifier-hover);
+  background-color: rgba(0, 0, 0, 0);
   color: rgb(61, 61, 61);
   border-color: rgb(61, 61, 61);
   border-width: 0px;
@@ -6607,7 +6610,7 @@ body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: var(--grotto-link-color, rgb(86, 115, 159));
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-external-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family: Quicksand;
@@ -6617,6 +6620,7 @@ body body.theme-dark .markdown-rendered a.external-link {
   text-decoration-color: rgb(86, 115, 159);
   text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -6643,6 +6647,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
   text-decoration-color: rgb(86, 115, 159);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -6659,7 +6664,7 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-unresolved-color, rgb(86, 115, 159));
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-unresolved-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family: Quicksand;
@@ -6672,6 +6677,7 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   );
   text-decoration-line: var(--link-decoration);
   text-decoration-style: var(--link-unresolved-decoration-style);
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -7220,7 +7226,7 @@ body body.theme-dark .markdown-rendered blockquote {
   color: var(--grotto-blockquote-color, rgb(239, 233, 220));
   font-family: Quicksand;
   font-weight: 500;
-  font-style: normal;
+  font-style: var(--blockquote-font-style);
   line-height: 24px;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -7503,7 +7509,7 @@ body body.theme-dark .published-container .markdown-rendered h6 {
   line-height: var(--grotto-header-line-height, 32px);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: normal;
+  letter-spacing: var(--h6-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px 7px;
@@ -8934,7 +8940,7 @@ body body.theme-dark .page-header .page-title {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .math-block {
-  background-color: var(--background-modifier-hover);
+  background-color: rgba(0, 0, 0, 0);
   color: rgb(239, 233, 220);
   border-color: rgb(239, 233, 220);
   border-width: 0px;

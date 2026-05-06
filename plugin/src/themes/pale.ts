@@ -105,6 +105,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(128, 128, 128);
+  border-left-width: 0px;
 }`,
     typography: `html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-radius: 5px;
@@ -115,16 +116,24 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 
 html[saved-theme="dark"] body td {
   border-bottom-color: rgba(140, 140, 140, 0.78);
+  border-bottom-width: 0px;
   border-left-color: rgba(140, 140, 140, 0.78);
+  border-left-width: 0px;
   border-right-color: rgba(140, 140, 140, 0.78);
+  border-right-width: 0px;
   border-top-color: rgba(140, 140, 140, 0.78);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body th {
   border-bottom-color: rgba(140, 140, 140, 0.78);
+  border-bottom-width: 0px;
   border-left-color: rgba(140, 140, 140, 0.78);
+  border-left-width: 0px;
   border-right-color: rgba(140, 140, 140, 0.78);
+  border-right-width: 0px;
   border-top-color: rgba(140, 140, 140, 0.78);
+  border-top-width: 0px;
 }`,
     code: `html[saved-theme="dark"] body code {
   background-color: var(--code-background, rgb(35, 35, 35));
@@ -140,17 +149,23 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body img {
   border-bottom-color: rgb(217, 216, 216);
+  border-bottom-width: 0px;
   border-left-color: rgb(217, 216, 216);
+  border-left-width: 0px;
   border-right-color: rgb(217, 216, 216);
+  border-right-width: 0px;
   border-top-color: rgb(217, 216, 216);
+  border-top-width: 0px;
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6.66667px;
+  margin-top: 0px;
   width: var(--checkbox-size, 20px);
 }
 
@@ -540,9 +555,13 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
 
 html[saved-theme="dark"] body h1 {
   border-bottom-color: rgb(217, 216, 216);
+  border-bottom-width: 0px;
   border-left-color: rgb(217, 216, 216);
+  border-left-width: 0px;
   border-right-color: rgb(217, 216, 216);
+  border-right-width: 0px;
   border-top-color: rgb(217, 216, 216);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(217, 216, 216));
 }
 
@@ -552,55 +571,81 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(212, 212, 212));
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   border-bottom-color: rgb(217, 216, 216);
+  border-bottom-width: 0px;
   border-left-color: rgb(217, 216, 216);
+  border-left-width: 0px;
   border-right-color: rgb(217, 216, 216);
+  border-right-width: 0px;
   border-top-color: rgb(217, 216, 216);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(217, 216, 216));
 }
 
 html[saved-theme="dark"] body h3 {
   border-bottom-color: rgb(180, 180, 180);
+  border-bottom-width: 0px;
   border-left-color: rgb(180, 180, 180);
+  border-left-width: 0px;
   border-right-color: rgb(180, 180, 180);
+  border-right-width: 0px;
   border-top-color: rgb(180, 180, 180);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(180, 180, 180));
 }
 
 html[saved-theme="dark"] body h4 {
   border-bottom-color: rgb(166, 166, 166);
+  border-bottom-width: 0px;
   border-left-color: rgb(166, 166, 166);
+  border-left-width: 0px;
   border-right-color: rgb(166, 166, 166);
+  border-right-width: 0px;
   border-top-color: rgb(166, 166, 166);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(166, 166, 166));
 }
 
 html[saved-theme="dark"] body h5 {
   border-bottom-color: rgb(154, 154, 154);
+  border-bottom-width: 0px;
   border-left-color: rgb(154, 154, 154);
+  border-left-width: 0px;
   border-right-color: rgb(154, 154, 154);
+  border-right-width: 0px;
   border-top-color: rgb(154, 154, 154);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(154, 154, 154));
 }
 
 html[saved-theme="dark"] body h6 {
   border-bottom-color: rgb(146, 146, 146);
+  border-bottom-width: 0px;
   border-left-color: rgb(146, 146, 146);
+  border-left-width: 0px;
   border-right-color: rgb(146, 146, 146);
+  border-right-width: 0px;
   border-top-color: rgb(146, 146, 146);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(146, 146, 146));
 }
 
 html[saved-theme="dark"] body hr {
   border-bottom-color: rgb(128, 128, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(128, 128, 128);
+  border-left-width: 0px;
   border-right-color: rgb(128, 128, 128);
   border-right-width: 0px;
 }`,
@@ -632,9 +677,13 @@ html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(221, 221, 221));
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
@@ -683,9 +732,13 @@ html[saved-theme="dark"] body .stacked-page-header {
     misc: `html[saved-theme="dark"] body kbd {
   background-color: var(--code-background, rgb(35, 35, 35));
   border-bottom-color: rgb(196, 196, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(196, 196, 196);
+  border-left-width: 0px;
   border-right-color: rgb(196, 196, 196);
+  border-right-width: 0px;
   border-top-color: rgb(196, 196, 196);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(196, 196, 196));
 }`,
   },
@@ -805,6 +858,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, rgba(255, 255, 255, 0.062));
   background-color: var(--tab-container-background, rgba(255, 255, 255, 0.063));
   border-left-color: rgb(128, 128, 128);
+  border-left-width: 0px;
 }`,
     typography: `html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
   border-radius: 5px;
@@ -815,16 +869,24 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 
 html[saved-theme="light"] body td {
   border-bottom-color: rgba(140, 140, 140, 0.78);
+  border-bottom-width: 0px;
   border-left-color: rgba(140, 140, 140, 0.78);
+  border-left-width: 0px;
   border-right-color: rgba(140, 140, 140, 0.78);
+  border-right-width: 0px;
   border-top-color: rgba(140, 140, 140, 0.78);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body th {
   border-bottom-color: rgba(140, 140, 140, 0.78);
+  border-bottom-width: 0px;
   border-left-color: rgba(140, 140, 140, 0.78);
+  border-left-width: 0px;
   border-right-color: rgba(140, 140, 140, 0.78);
+  border-right-width: 0px;
   border-top-color: rgba(140, 140, 140, 0.78);
+  border-top-width: 0px;
 }`,
     code: `html[saved-theme="light"] body code {
   background-color: var(--code-background, rgb(41, 41, 41));
@@ -840,17 +902,23 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body img {
   border-bottom-color: rgba(36, 36, 36, 0.78);
+  border-bottom-width: 0px;
   border-left-color: rgba(36, 36, 36, 0.78);
+  border-left-width: 0px;
   border-right-color: rgba(36, 36, 36, 0.78);
+  border-right-width: 0px;
   border-top-color: rgba(36, 36, 36, 0.78);
+  border-top-width: 0px;
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 6.66667px;
+  margin-top: 0px;
   width: var(--checkbox-size, 20px);
 }
 
@@ -1240,9 +1308,13 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
 
 html[saved-theme="light"] body h1 {
   border-bottom-color: rgba(36, 36, 36, 0.78);
+  border-bottom-width: 0px;
   border-left-color: rgba(36, 36, 36, 0.78);
+  border-left-width: 0px;
   border-right-color: rgba(36, 36, 36, 0.78);
+  border-right-width: 0px;
   border-top-color: rgba(36, 36, 36, 0.78);
+  border-top-width: 0px;
   color: var(--h1-color, rgba(36, 36, 36, 0.78));
 }
 
@@ -1252,55 +1324,81 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   border-bottom-color: rgba(36, 36, 36, 0.78);
+  border-bottom-width: 0px;
   border-left-color: rgba(36, 36, 36, 0.78);
+  border-left-width: 0px;
   border-right-color: rgba(36, 36, 36, 0.78);
+  border-right-width: 0px;
   border-top-color: rgba(36, 36, 36, 0.78);
+  border-top-width: 0px;
   color: var(--h2-color, rgba(36, 36, 36, 0.78));
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   border-bottom-color: rgba(36, 36, 36, 0.78);
+  border-bottom-width: 0px;
   border-left-color: rgba(36, 36, 36, 0.78);
+  border-left-width: 0px;
   border-right-color: rgba(36, 36, 36, 0.78);
+  border-right-width: 0px;
   border-top-color: rgba(36, 36, 36, 0.78);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgba(36, 36, 36, 0.78));
 }
 
 html[saved-theme="light"] body h3 {
   border-bottom-color: rgba(45, 45, 45, 0.78);
+  border-bottom-width: 0px;
   border-left-color: rgba(45, 45, 45, 0.78);
+  border-left-width: 0px;
   border-right-color: rgba(45, 45, 45, 0.78);
+  border-right-width: 0px;
   border-top-color: rgba(45, 45, 45, 0.78);
+  border-top-width: 0px;
   color: var(--h3-color, rgba(45, 45, 45, 0.78));
 }
 
 html[saved-theme="light"] body h4 {
   border-bottom-color: rgba(54, 54, 54, 0.78);
+  border-bottom-width: 0px;
   border-left-color: rgba(54, 54, 54, 0.78);
+  border-left-width: 0px;
   border-right-color: rgba(54, 54, 54, 0.78);
+  border-right-width: 0px;
   border-top-color: rgba(54, 54, 54, 0.78);
+  border-top-width: 0px;
   color: var(--h4-color, rgba(54, 54, 54, 0.78));
 }
 
 html[saved-theme="light"] body h5 {
   border-bottom-color: rgba(62, 62, 62, 0.78);
+  border-bottom-width: 0px;
   border-left-color: rgba(62, 62, 62, 0.78);
+  border-left-width: 0px;
   border-right-color: rgba(62, 62, 62, 0.78);
+  border-right-width: 0px;
   border-top-color: rgba(62, 62, 62, 0.78);
+  border-top-width: 0px;
   color: var(--h5-color, rgba(62, 62, 62, 0.78));
 }
 
 html[saved-theme="light"] body h6 {
   border-bottom-color: rgba(97, 97, 97, 0.78);
+  border-bottom-width: 0px;
   border-left-color: rgba(97, 97, 97, 0.78);
+  border-left-width: 0px;
   border-right-color: rgba(97, 97, 97, 0.78);
+  border-right-width: 0px;
   border-top-color: rgba(97, 97, 97, 0.78);
+  border-top-width: 0px;
   color: var(--h6-color, rgba(97, 97, 97, 0.78));
 }
 
 html[saved-theme="light"] body hr {
   border-bottom-color: rgb(128, 128, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(128, 128, 128);
+  border-left-width: 0px;
   border-right-color: rgb(128, 128, 128);
   border-right-width: 0px;
 }`,
@@ -1332,9 +1430,13 @@ html[saved-theme="light"] body .explorer .nav-files-container .is-active {
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(82, 82, 82);
+  border-bottom-width: 0px;
   border-left-color: rgb(82, 82, 82);
+  border-left-width: 0px;
   border-right-color: rgb(82, 82, 82);
+  border-right-width: 0px;
   border-top-color: rgb(82, 82, 82);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(82, 82, 82));
 }`,
     footer: `html[saved-theme="light"] body footer {
@@ -1364,9 +1466,13 @@ html[saved-theme="light"] body ul.section-ul {
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
   border-bottom-color: rgb(237, 237, 237);
+  border-bottom-width: 0px;
   border-left-color: rgb(237, 237, 237);
+  border-left-width: 0px;
   border-right-color: rgb(237, 237, 237);
+  border-right-width: 0px;
   border-top-color: rgb(237, 237, 237);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(237, 237, 237));
   cursor: var(--cursor, pointer);
 }
@@ -1402,9 +1508,13 @@ html[saved-theme="light"] body .stacked-page-header {
 html[saved-theme="light"] body kbd {
   background-color: var(--code-background, rgb(41, 41, 41));
   border-bottom-color: rgb(196, 196, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(196, 196, 196);
+  border-left-width: 0px;
   border-right-color: rgb(196, 196, 196);
+  border-right-width: 0px;
   border-top-color: rgb(196, 196, 196);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(196, 196, 196));
 }`,
   },

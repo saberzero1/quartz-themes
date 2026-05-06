@@ -98,6 +98,7 @@ html body .page > div#quartz-body div.sidebar.left {
 
 html body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(128, 128, 128);
+  border-left-width: 0px;
 }
 
 html body html {
@@ -198,16 +199,24 @@ html body a.internal-link.broken {
   color: var(--color-text-paragraph, rgb(192, 205, 243));
   margin-bottom: 5px;
   margin-left: 0px;
+  margin-right: 0px;
   margin-top: 5px;
+  padding-bottom: 0px;
   padding-left: 10px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body ul > li {
   color: var(--color-text-paragraph, rgb(192, 205, 243));
   margin-bottom: 5px;
   margin-left: 0px;
+  margin-right: 0px;
   margin-top: 5px;
+  padding-bottom: 0px;
   padding-left: 10px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--color-text-link, rgb(111, 161, 255));
@@ -219,20 +228,28 @@ html body blockquote {
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
 }
 
 html body table {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html body tbody tr:nth-child(even) {
@@ -277,27 +294,39 @@ html body th {
 
 html body thead {
   border-bottom-color: rgb(218, 218, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
+  border-top-width: 0px;
 }
 
 html body tr {
   border-bottom-color: rgb(218, 218, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
+  border-top-width: 0px;
 }`,
     code: `html body code {
   background-color: var(--color-text-code-background, rgb(5, 6, 8));
   border-bottom-color: rgb(0, 201, 167);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(0, 201, 167);
+  border-left-width: 0px;
   border-right-color: rgb(0, 201, 167);
+  border-right-width: 0px;
   border-top-color: rgb(0, 201, 167);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--color-text-inline-code, rgb(0, 201, 167));
   padding-bottom: 2.8px;
   padding-left: 10px;
@@ -307,9 +336,13 @@ html body tr {
 
 html body pre:has(> code) {
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -317,9 +350,13 @@ html body pre:has(> code) {
 }`,
     images: `html body audio {
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
 }
 
 html body figcaption {
@@ -328,30 +365,45 @@ html body figcaption {
 
 html body figure {
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
 }
 
 html body img {
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
 }
 
 html body video {
   border-bottom-color: rgb(192, 205, 243);
-  border-left-color: rgb(192, 205, 243);
-  border-right-color: rgb(192, 205, 243);
-  border-top-color: rgb(192, 205, 243);
-}`,
-    embeds: `html body .transclude {
-  border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
   border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
+}`,
+    embeds: `html body .transclude {
+  border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
+  border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
+  border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
+  border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
   color: rgb(192, 205, 243);
 }`,
     checkboxes: `html body input[type=checkbox] {
@@ -367,8 +419,10 @@ html body video {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-top-width: 0px;
+  margin-bottom: 0px;
   margin-left: 10px;
   margin-right: 0px;
+  margin-top: 0px;
   width: var(--checkbox-size, 22px);
 }
 
@@ -930,9 +984,13 @@ html body .callout > .callout-content {
 html body .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary, 83, 223, 221);
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
   color: rgb(192, 205, 243);
 }
 
@@ -947,9 +1005,13 @@ html body .callout[data-callout="abstract"] > .callout-content {
 html body .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug, 251, 70, 76);
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
   color: rgb(192, 205, 243);
 }
 
@@ -964,9 +1026,13 @@ html body .callout[data-callout="bug"] > .callout-content {
 html body .callout[data-callout="danger"] {
   --callout-color: var(--callout-error, 251, 70, 76);
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
   color: rgb(192, 205, 243);
 }
 
@@ -981,9 +1047,13 @@ html body .callout[data-callout="danger"] > .callout-content {
 html body .callout[data-callout="example"] {
   --callout-color: var(--callout-example, 168, 130, 255);
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
   color: rgb(192, 205, 243);
 }
 
@@ -998,9 +1068,13 @@ html body .callout[data-callout="example"] > .callout-content {
 html body .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail, 251, 70, 76);
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
   color: rgb(192, 205, 243);
 }
 
@@ -1015,9 +1089,13 @@ html body .callout[data-callout="failure"] > .callout-content {
 html body .callout[data-callout="info"] {
   --callout-color: var(--callout-info, 2, 122, 255);
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
   color: rgb(192, 205, 243);
 }
 
@@ -1032,9 +1110,13 @@ html body .callout[data-callout="info"] > .callout-content {
 html body .callout[data-callout="note"] {
   --callout-color: var(--callout-default, 2, 122, 255);
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
   color: rgb(192, 205, 243);
 }
 
@@ -1049,9 +1131,13 @@ html body .callout[data-callout="note"] > .callout-content {
 html body .callout[data-callout="question"] {
   --callout-color: var(--callout-question, 233, 151, 63);
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
   color: rgb(192, 205, 243);
 }
 
@@ -1066,9 +1152,13 @@ html body .callout[data-callout="question"] > .callout-content {
 html body .callout[data-callout="quote"] {
   --callout-color: var(--callout-quote, 158, 158, 158);
   border-bottom-color: rgb(218, 218, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="quote"] .callout-title {
@@ -1082,9 +1172,13 @@ html body .callout[data-callout="quote"] > .callout-content {
 html body .callout[data-callout="success"] {
   --callout-color: var(--callout-success, 68, 207, 110);
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
   color: rgb(192, 205, 243);
 }
 
@@ -1099,9 +1193,13 @@ html body .callout[data-callout="success"] > .callout-content {
 html body .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip, 83, 223, 221);
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
   color: rgb(192, 205, 243);
 }
 
@@ -1116,9 +1214,13 @@ html body .callout[data-callout="tip"] > .callout-content {
 html body .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo, 2, 122, 255);
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
   color: rgb(192, 205, 243);
 }
 
@@ -1133,9 +1235,13 @@ html body .callout[data-callout="todo"] > .callout-content {
 html body .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning, 233, 151, 63);
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
   color: rgb(192, 205, 243);
 }
 
@@ -1242,16 +1348,24 @@ html body .search > .search-container > .search-space > input {
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-color: rgb(166, 138, 249);
+  border-bottom-width: 0px;
   border-left-color: rgb(166, 138, 249);
+  border-left-width: 0px;
   border-right-color: rgb(166, 138, 249);
+  border-right-width: 0px;
   border-top-color: rgb(166, 138, 249);
+  border-top-width: 0px;
 }
 
 html body h1 {
   border-bottom-color: rgb(255, 111, 205);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 111, 205);
+  border-left-width: 0px;
   border-right-color: rgb(255, 111, 205);
+  border-right-width: 0px;
   border-top-color: rgb(255, 111, 205);
+  border-top-width: 0px;
   color: var(--color-title-h1, rgb(255, 111, 205));
   font-family: var(--color-family-primary, Inter, sans-serif);
   font-size: var(--color-size-4xtra-large, 32px);
@@ -1262,9 +1376,13 @@ html body h1 {
 
 html body h2 {
   border-bottom-color: rgb(255, 111, 145);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 111, 145);
+  border-left-width: 0px;
   border-right-color: rgb(255, 111, 145);
+  border-right-width: 0px;
   border-top-color: rgb(255, 111, 145);
+  border-top-width: 0px;
   color: var(--color-title-h2, rgb(255, 111, 145));
   font-family: var(--color-family-primary, Inter, sans-serif);
   font-size: var(--color-size-3xtra-large, 28px);
@@ -1275,9 +1393,13 @@ html body h2 {
 
 html body h3 {
   border-bottom-color: rgb(255, 184, 108);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 184, 108);
+  border-left-width: 0px;
   border-right-color: rgb(255, 184, 108);
+  border-right-width: 0px;
   border-top-color: rgb(255, 184, 108);
+  border-top-width: 0px;
   color: var(--color-title-h3, rgb(255, 184, 108));
   font-family: var(--color-family-primary, Inter, sans-serif);
   font-size: var(--color-size-2xtra-large, 24px);
@@ -1288,9 +1410,13 @@ html body h3 {
 
 html body h4 {
   border-bottom-color: rgb(255, 240, 108);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 240, 108);
+  border-left-width: 0px;
   border-right-color: rgb(255, 240, 108);
+  border-right-width: 0px;
   border-top-color: rgb(255, 240, 108);
+  border-top-width: 0px;
   color: var(--color-title-h4, rgb(255, 240, 108));
   font-family: var(--color-family-primary, Inter, sans-serif);
   font-size: var(--color-size-xtra-large, 20px);
@@ -1301,9 +1427,13 @@ html body h4 {
 
 html body h5 {
   border-bottom-color: rgb(197, 228, 120);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 228, 120);
+  border-left-width: 0px;
   border-right-color: rgb(197, 228, 120);
+  border-right-width: 0px;
   border-top-color: rgb(197, 228, 120);
+  border-top-width: 0px;
   color: var(--color-title-h5, rgb(197, 228, 120));
   font-family: var(--color-family-primary, Inter, sans-serif);
   font-size: var(--color-size-large, 18.4px);
@@ -1314,9 +1444,13 @@ html body h5 {
 
 html body h6 {
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
   color: var(--color-title-h6, rgb(192, 205, 243));
   font-family: var(--color-family-primary, Inter, sans-serif);
   font-size: var(--color-size-large, 18.4px);
@@ -1325,16 +1459,22 @@ html body h6 {
 
 html body hr {
   border-bottom-color: rgb(128, 128, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(128, 128, 128);
+  border-left-width: 0px;
   border-right-color: rgb(128, 128, 128);
   border-right-width: 0px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
 }`,
     explorer: `html body .nav-files-container .tree-item-children {
   border-left-color: rgb(218, 218, 218);
@@ -1356,9 +1496,11 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
     footer: `html body footer {
   background-color: var(--color-primary-900, rgb(21, 22, 31));
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
   border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
   border-top-width: 0px;
   color: var(--color-text-quote, rgb(192, 205, 243));
@@ -1402,9 +1544,13 @@ html body .bases-table thead th {
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgb(179, 179, 179);
+  border-bottom-width: 0px;
   border-left-color: rgb(179, 179, 179);
+  border-left-width: 0px;
   border-right-color: rgb(179, 179, 179);
+  border-right-width: 0px;
   border-top-color: rgb(179, 179, 179);
+  border-top-width: 0px;
 }
 
 html body .note-properties {
@@ -1419,9 +1565,13 @@ html body .stacked-page-header {
 }`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
   color: rgb(192, 205, 243);
 }
 
@@ -1431,9 +1581,13 @@ html body .navigation-progress {
 
 html body .page-header h2.page-title {
   border-bottom-color: rgb(173, 185, 219);
+  border-bottom-width: 0px;
   border-left-color: rgb(173, 185, 219);
+  border-left-width: 0px;
   border-right-color: rgb(173, 185, 219);
+  border-right-width: 0px;
   border-top-color: rgb(173, 185, 219);
+  border-top-width: 0px;
   color: var(--color-element-icon, rgb(173, 185, 219));
 }
 
@@ -1443,9 +1597,13 @@ html body abbr {
 
 html body progress {
   border-bottom-color: rgb(192, 205, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(192, 205, 243);
+  border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
+  border-right-width: 0px;
   border-top-color: rgb(192, 205, 243);
+  border-top-width: 0px;
 }
 
 html body sub {
@@ -1458,9 +1616,13 @@ html body sup {
 
 html body ul.tags > li {
   border-bottom-color: rgb(111, 161, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(111, 161, 255);
+  border-left-width: 0px;
   border-right-color: rgb(111, 161, 255);
+  border-right-width: 0px;
   border-top-color: rgb(111, 161, 255);
+  border-top-width: 0px;
   color: var(--color-text-link, rgb(111, 161, 255));
 }`,
   },

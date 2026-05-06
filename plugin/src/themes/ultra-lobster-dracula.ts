@@ -572,12 +572,14 @@ html body .page > div#quartz-body div.sidebar {
 
 html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
 }
 
 html body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #1a1e24);
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   color: rgb(248, 248, 242);
 }`,
     typography: `html body .markdown-rendered p > b, html b {
@@ -677,32 +679,52 @@ html body a.internal-link.broken {
 }`,
     lists: `html body dd {
   border-bottom-color: rgb(248, 248, 242);
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body dt {
   border-bottom-color: rgb(248, 248, 242);
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body ol > li {
   color: rgb(248, 248, 242);
+  margin-bottom: 0px;
   margin-left: 31.9681px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
   padding-left: 8px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body ul > li {
   color: rgb(248, 248, 242);
+  margin-bottom: 0px;
   margin-left: 31.9681px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
   padding-left: 8px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body ul.overflow {
@@ -733,13 +755,19 @@ html body blockquote {
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   line-height: 26.4px;
   padding-bottom: 16px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 16px;
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(248, 248, 242);
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
+  border-top-width: 0px;
 }
 
 html body table {
@@ -766,6 +794,9 @@ html body table {
   margin-right: 16px;
   margin-top: var(--heading-spacing, 24px);
   padding-bottom: 8px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body td {
@@ -809,27 +840,39 @@ html body th {
 
 html body thead {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }
 
 html body tr {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }`,
     code: `html body code {
   background-color: var(--code-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(98, 114, 164);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(98, 114, 164);
+  border-left-width: 0px;
   border-right-color: rgb(98, 114, 164);
+  border-right-width: 0px;
   border-top-color: rgb(98, 114, 164);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--ec-codeFg, rgb(98, 114, 164));
   font-family: var(--ec-codeFontFml, Monaspace, monospace);
   padding-bottom: 12px;
@@ -841,9 +884,13 @@ html body tr {
 html body pre:has(> code) {
   background-color: var(--code-background, rgb(68, 71, 90));
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -851,9 +898,13 @@ html body pre:has(> code) {
 }`,
     images: `html body audio {
   border-bottom-color: rgb(248, 248, 242);
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
+  border-top-width: 0px;
 }
 
 html body figcaption {
@@ -864,23 +915,35 @@ html body figcaption {
 html body figure {
   --code-background: var(--ec-frm-edBg, #44475a);
   border-bottom-color: rgb(248, 248, 242);
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
+  border-top-width: 0px;
 }
 
 html body img {
   border-bottom-color: rgb(254, 254, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(254, 254, 250);
+  border-left-width: 0px;
   border-right-color: rgb(254, 254, 250);
+  border-right-width: 0px;
   border-top-color: rgb(254, 254, 250);
+  border-top-width: 0px;
 }
 
 html body video {
   border-bottom-color: rgb(248, 248, 242);
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
+  border-top-width: 0px;
 }`,
     embeds: `html body .file-embed {
   background-color: rgb(from var(--color-base-25) r g b/0.6);
@@ -906,6 +969,7 @@ html body video {
 
 html body .footnotes {
   border-top-color: rgb(248, 248, 242);
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }
 
@@ -933,11 +997,15 @@ html body .transclude {
 html body .transclude-inner {
   border-bottom-color: rgb(248, 248, 242);
   border-bottom-style: solid;
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
   border-right-style: solid;
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
   border-top-style: solid;
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }`,
     checkboxes: `html body .katex-display > .katex {
@@ -952,11 +1020,15 @@ html body input[type=checkbox] {
   border-bottom-color: color(srgb 0.972549 0.972549 0.94902 / 0.15);
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.972549 0.972549 0.94902 / 0.15);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.972549 0.972549 0.94902 / 0.15);
+  border-right-width: 0px;
   border-top-color: color(srgb 0.972549 0.972549 0.94902 / 0.15);
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+  border-top-width: 0px;
   transition: 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
   width: var(--checkbox-size, 18px);
 }
@@ -2184,8 +2256,11 @@ html body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(139, 198, 253);
+  border-left-width: 0px;
   border-right-color: rgb(139, 198, 253);
+  border-right-width: 0px;
   border-top-color: rgb(139, 198, 253);
+  border-top-width: 0px;
   color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
@@ -2528,11 +2603,15 @@ html body .callout[data-callout="abstract"] {
   border-bottom-color: rgb(248, 248, 242);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }
 
@@ -2542,8 +2621,11 @@ html body .callout[data-callout="abstract"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(139, 198, 253);
+  border-left-width: 0px;
   border-right-color: rgb(139, 198, 253);
+  border-right-width: 0px;
   border-top-color: rgb(139, 198, 253);
+  border-top-width: 0px;
   color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
@@ -2570,11 +2652,15 @@ html body .callout[data-callout="bug"] {
   border-bottom-color: rgb(248, 248, 242);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }
 
@@ -2584,8 +2670,11 @@ html body .callout[data-callout="bug"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(139, 198, 253);
+  border-left-width: 0px;
   border-right-color: rgb(139, 198, 253);
+  border-right-width: 0px;
   border-top-color: rgb(139, 198, 253);
+  border-top-width: 0px;
   color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
@@ -2612,11 +2701,15 @@ html body .callout[data-callout="danger"] {
   border-bottom-color: rgb(248, 248, 242);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }
 
@@ -2626,8 +2719,11 @@ html body .callout[data-callout="danger"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(139, 198, 253);
+  border-left-width: 0px;
   border-right-color: rgb(139, 198, 253);
+  border-right-width: 0px;
   border-top-color: rgb(139, 198, 253);
+  border-top-width: 0px;
   color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
@@ -2654,11 +2750,15 @@ html body .callout[data-callout="example"] {
   border-bottom-color: rgb(248, 248, 242);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }
 
@@ -2668,8 +2768,11 @@ html body .callout[data-callout="example"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(139, 198, 253);
+  border-left-width: 0px;
   border-right-color: rgb(139, 198, 253);
+  border-right-width: 0px;
   border-top-color: rgb(139, 198, 253);
+  border-top-width: 0px;
   color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
@@ -2696,11 +2799,15 @@ html body .callout[data-callout="failure"] {
   border-bottom-color: rgb(248, 248, 242);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }
 
@@ -2710,8 +2817,11 @@ html body .callout[data-callout="failure"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(139, 198, 253);
+  border-left-width: 0px;
   border-right-color: rgb(139, 198, 253);
+  border-right-width: 0px;
   border-top-color: rgb(139, 198, 253);
+  border-top-width: 0px;
   color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
@@ -2738,11 +2848,15 @@ html body .callout[data-callout="info"] {
   border-bottom-color: rgb(248, 248, 242);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }
 
@@ -2752,8 +2866,11 @@ html body .callout[data-callout="info"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(139, 198, 253);
+  border-left-width: 0px;
   border-right-color: rgb(139, 198, 253);
+  border-right-width: 0px;
   border-top-color: rgb(139, 198, 253);
+  border-top-width: 0px;
   color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
@@ -2780,11 +2897,15 @@ html body .callout[data-callout="note"] {
   border-bottom-color: rgb(248, 248, 242);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }
 
@@ -2794,8 +2915,11 @@ html body .callout[data-callout="note"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(139, 198, 253);
+  border-left-width: 0px;
   border-right-color: rgb(139, 198, 253);
+  border-right-width: 0px;
   border-top-color: rgb(139, 198, 253);
+  border-top-width: 0px;
   color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
@@ -2822,11 +2946,15 @@ html body .callout[data-callout="question"] {
   border-bottom-color: rgb(248, 248, 242);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }
 
@@ -2836,8 +2964,11 @@ html body .callout[data-callout="question"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(139, 198, 253);
+  border-left-width: 0px;
   border-right-color: rgb(139, 198, 253);
+  border-right-width: 0px;
   border-top-color: rgb(139, 198, 253);
+  border-top-width: 0px;
   color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
@@ -2864,11 +2995,15 @@ html body .callout[data-callout="quote"] {
   border-bottom-color: rgb(248, 248, 242);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }
 
@@ -2878,8 +3013,11 @@ html body .callout[data-callout="quote"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(139, 198, 253);
+  border-left-width: 0px;
   border-right-color: rgb(139, 198, 253);
+  border-right-width: 0px;
   border-top-color: rgb(139, 198, 253);
+  border-top-width: 0px;
   color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
@@ -2906,11 +3044,15 @@ html body .callout[data-callout="success"] {
   border-bottom-color: rgb(248, 248, 242);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }
 
@@ -2920,8 +3062,11 @@ html body .callout[data-callout="success"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(139, 198, 253);
+  border-left-width: 0px;
   border-right-color: rgb(139, 198, 253);
+  border-right-width: 0px;
   border-top-color: rgb(139, 198, 253);
+  border-top-width: 0px;
   color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
@@ -2948,11 +3093,15 @@ html body .callout[data-callout="tip"] {
   border-bottom-color: rgb(248, 248, 242);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }
 
@@ -2962,8 +3111,11 @@ html body .callout[data-callout="tip"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(139, 198, 253);
+  border-left-width: 0px;
   border-right-color: rgb(139, 198, 253);
+  border-right-width: 0px;
   border-top-color: rgb(139, 198, 253);
+  border-top-width: 0px;
   color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
@@ -2990,11 +3142,15 @@ html body .callout[data-callout="todo"] {
   border-bottom-color: rgb(248, 248, 242);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }
 
@@ -3004,8 +3160,11 @@ html body .callout[data-callout="todo"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(139, 198, 253);
+  border-left-width: 0px;
   border-right-color: rgb(139, 198, 253);
+  border-right-width: 0px;
   border-top-color: rgb(139, 198, 253);
+  border-top-width: 0px;
   color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
@@ -3032,11 +3191,15 @@ html body .callout[data-callout="warning"] {
   border-bottom-color: rgb(248, 248, 242);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }
 
@@ -3046,8 +3209,11 @@ html body .callout[data-callout="warning"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(139, 198, 253);
+  border-left-width: 0px;
   border-right-color: rgb(139, 198, 253);
+  border-right-width: 0px;
   border-top-color: rgb(139, 198, 253);
+  border-top-width: 0px;
   color: rgba(var(--callout-color), 1);
   padding-bottom: 12px;
   padding-left: 18px;
@@ -3127,11 +3293,15 @@ html body .callout[data-callout="warning"] {
   border-bottom-color: color(srgb 0.972549 0.972549 0.94902 / 0.1);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.972549 0.972549 0.94902 / 0.1);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.972549 0.972549 0.94902 / 0.1);
+  border-right-width: 0px;
   border-top-color: color(srgb 0.972549 0.972549 0.94902 / 0.1);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  border-top-width: 0px;
   color: var(--text-normal, rgb(248, 248, 242));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -3139,9 +3309,13 @@ html body .callout[data-callout="warning"] {
 html body .search > .search-container > .search-space {
   background-color: var(--prompt-background, rgb(40, 42, 54));
   border-bottom-color: color(srgb 0.972549 0.972549 0.94902 / 0.08);
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.972549 0.972549 0.94902 / 0.08);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.972549 0.972549 0.94902 / 0.08);
+  border-right-width: 0px;
   border-top-color: color(srgb 0.972549 0.972549 0.94902 / 0.08);
+  border-top-width: 0px;
   box-shadow: 0 40px 80px -20px rgb(from var(--mono-rgb-0) r g b/0.6),
         inset 0 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.1);
 }
@@ -3159,9 +3333,13 @@ html body .search > .search-container > .search-space > .search-layout > .result
 
 html body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(248, 248, 242);
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-description {
@@ -3175,9 +3353,13 @@ html body .search > .search-container > .search-space > .search-layout > .result
 
 html body .search > .search-container > .search-space > .search-layout, html .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: color(srgb 0.972549 0.972549 0.94902 / 0.08);
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.972549 0.972549 0.94902 / 0.08);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.972549 0.972549 0.94902 / 0.08);
+  border-right-width: 0px;
   border-top-color: color(srgb 0.972549 0.972549 0.94902 / 0.08);
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space > input {
@@ -3185,6 +3367,7 @@ html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(68, 71, 90);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 71, 90);
   border-left-style: solid;
   border-left-width: 1px;
@@ -3202,9 +3385,13 @@ html body .search > .search-container > .search-space > input {
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
   background-color: var(--interactive-hover, rgb(79, 82, 105));
   border-bottom-color: rgb(248, 248, 242);
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }
 
@@ -3249,9 +3436,13 @@ html body a.internal-link.tag-link::before {
 html body h1 {
   --font-weight: var(--h1-weight, 900);
   border-bottom-color: rgb(254, 254, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(254, 254, 250);
+  border-left-width: 0px;
   border-right-color: rgb(254, 254, 250);
+  border-right-width: 0px;
   border-top-color: rgb(254, 254, 250);
+  border-top-width: 0px;
   color: var(--ulu-h1-text-color, var(--h1-color, var(--color-base-100)));
   font-family: var(--h1-font, Getai);
   font-size: var(--h1-size, 48px);
@@ -3269,9 +3460,13 @@ html body h1.article-title {
 html body h2 {
   --font-weight: var(--h2-weight, 600);
   border-bottom-color: rgb(139, 198, 253);
+  border-bottom-width: 0px;
   border-left-color: rgb(139, 198, 253);
+  border-left-width: 0px;
   border-right-color: rgb(139, 198, 253);
+  border-right-width: 0px;
   border-top-color: rgb(139, 198, 253);
+  border-top-width: 0px;
   color: var(--ulu-h2-text-color, var(--h2-color, var(--color-accent)));
   font-family: var(--h2-font, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   font-size: var(--h2-size, 24px);
@@ -3279,13 +3474,20 @@ html body h2 {
   letter-spacing: var(--h2-letter-spacing, -0.36px);
   line-height: var(--h2-line-height, 28.8px);
   padding-bottom: 7.2px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body h2.page-title, html h2.page-title a {
   border-bottom-color: rgb(254, 254, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(254, 254, 250);
+  border-left-width: 0px;
   border-right-color: rgb(254, 254, 250);
+  border-right-width: 0px;
   border-top-color: rgb(254, 254, 250);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(254, 254, 250));
   font-family: var(--inline-title-font, Getai);
   font-size: var(--inline-title-size, 48px);
@@ -3293,6 +3495,9 @@ html body h2.page-title, html h2.page-title a {
   letter-spacing: -0.72px;
   line-height: var(--inline-title-line-height, 57.6px);
   margin-bottom: 24px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body h2::after {
@@ -3325,9 +3530,13 @@ html body h2::after {
 html body h3 {
   --font-weight: var(--h3-weight, 600);
   border-bottom-color: rgb(254, 254, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(254, 254, 250);
+  border-left-width: 0px;
   border-right-color: rgb(254, 254, 250);
+  border-right-width: 0px;
   border-top-color: rgb(254, 254, 250);
+  border-top-width: 0px;
   color: var(--ulu-h3-text-color, var(--h3-color, var(--color-base-100)));
   font-family: var(--h3-font, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   font-weight: var(--font-weight, 600);
@@ -3337,9 +3546,13 @@ html body h3 {
 html body h4 {
   --font-weight: var(--h4-weight, 600);
   border-bottom-color: rgb(254, 254, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(254, 254, 250);
+  border-left-width: 0px;
   border-right-color: rgb(254, 254, 250);
+  border-right-width: 0px;
   border-top-color: rgb(254, 254, 250);
+  border-top-width: 0px;
   color: var(--ulu-h4-text-color, var(--h4-color, var(--color-base-100)));
   font-family: var(--h4-font, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   font-weight: var(--font-weight, 600);
@@ -3349,9 +3562,13 @@ html body h4 {
 html body h5 {
   --font-weight: var(--h5-weight, 600);
   border-bottom-color: rgb(254, 254, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(254, 254, 250);
+  border-left-width: 0px;
   border-right-color: rgb(254, 254, 250);
+  border-right-width: 0px;
   border-top-color: rgb(254, 254, 250);
+  border-top-width: 0px;
   color: var(--ulu-h5-text-color, var(--h5-color, var(--color-base-100)));
   font-family: var(--h5-font, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   font-weight: var(--font-weight, 600);
@@ -3361,9 +3578,13 @@ html body h5 {
 
 html body h6 {
   border-bottom-color: rgb(254, 254, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(254, 254, 250);
+  border-left-width: 0px;
   border-right-color: rgb(254, 254, 250);
+  border-right-width: 0px;
   border-top-color: rgb(254, 254, 250);
+  border-top-width: 0px;
   color: var(--ulu-h6-text-color, var(--h6-color, var(--color-base-100)));
   font-family: var(--h6-font, "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   letter-spacing: var(--h6-letter-spacing, -0.24px);
@@ -3372,20 +3593,28 @@ html body h6 {
 
 html body hr {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 139, 198, 253);
   border-bottom-color: rgb(248, 248, 242);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -3393,6 +3622,7 @@ html body hr {
 }`,
     explorer: `html body .nav-files-container .tree-item-children {
   border-left-color: rgb(40, 42, 54);
+  border-left-width: 0px;
 }
 
 html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
@@ -3457,10 +3687,12 @@ html body .explorer .nav-files-container .folder-outer > ul {
   border-bottom-right-radius: 8px;
   border-bottom-width: 1px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
   border-right-width: 1px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(98, 114, 164));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -3475,9 +3707,13 @@ html body footer ul li a {
 
 html body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(248, 248, 242);
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }
 
@@ -3491,9 +3727,13 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 }`,
     listPage: `html body li.section-li {
   border-bottom-color: rgb(248, 248, 242);
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
+  border-top-width: 0px;
 }
 
 html body li.section-li > .section .meta {
@@ -3507,9 +3747,13 @@ html body li.section-li > .section > .desc > h3 > a {
 
 html body ul.section-ul {
   border-bottom-color: rgb(248, 248, 242);
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
+  border-top-width: 0px;
 }`,
     darkmode: `html body .darkmode {
   border-bottom-color: rgba(0, 0, 0, 0);
@@ -3622,14 +3866,19 @@ html body .metadata-container .metadata-property {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(98, 114, 164);
+  border-left-width: 0px;
   border-right-color: rgb(98, 114, 164);
+  border-right-width: 0px;
   border-top-color: rgb(98, 114, 164);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  border-top-width: 0px;
   color: rgb(98, 114, 164);
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  margin-bottom: 0px;
   margin-left: -12px;
   margin-right: -12px;
+  margin-top: 0px;
   padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
@@ -3638,9 +3887,13 @@ html body .metadata-container .metadata-property {
 
 html body .metadata-properties {
   border-bottom-color: rgb(98, 114, 164);
+  border-bottom-width: 0px;
   border-left-color: rgb(98, 114, 164);
+  border-left-width: 0px;
   border-right-color: rgb(98, 114, 164);
+  border-right-width: 0px;
   border-top-color: rgb(98, 114, 164);
+  border-top-width: 0px;
   color: rgb(98, 114, 164);
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -3723,9 +3976,13 @@ html body .stacked-page.active {
 }`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(248, 248, 242);
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
+  border-top-width: 0px;
   color: rgb(248, 248, 242);
 }
 
@@ -3735,9 +3992,13 @@ html body .navigation-progress {
 
 html body .page-header h2.page-title {
   border-bottom-color: rgb(248, 248, 242);
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(248, 248, 242));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -3748,9 +4009,13 @@ html body abbr {
 
 html body details {
   border-bottom-color: rgb(248, 248, 242);
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
+  border-top-width: 0px;
 }
 
 html body input[type=text] {
@@ -3758,22 +4023,33 @@ html body input[type=text] {
   border-bottom-color: rgb(98, 114, 164);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  border-bottom-width: 0px;
   border-left-color: rgb(98, 114, 164);
+  border-left-width: 0px;
   border-right-color: rgb(98, 114, 164);
+  border-right-width: 0px;
   border-top-color: rgb(98, 114, 164);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  border-top-width: 0px;
   color: var(--text-normal, rgb(98, 114, 164));
   font-family: "??", Instrument, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  padding-bottom: 0px;
   padding-left: 28px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body kbd {
   background-color: var(--code-background, color(srgb 0.545854 0.777182 0.992146 / 0.7));
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: var(--text-on-accent, rgb(255, 255, 255));
   font-family: var(--font-monospace, Monaspace, monospace);
   font-size: var(--code-size, 12px);
@@ -3785,9 +4061,13 @@ html body kbd {
 
 html body progress {
   border-bottom-color: rgb(248, 248, 242);
+  border-bottom-width: 0px;
   border-left-color: rgb(248, 248, 242);
+  border-left-width: 0px;
   border-right-color: rgb(248, 248, 242);
+  border-right-width: 0px;
   border-top-color: rgb(248, 248, 242);
+  border-top-width: 0px;
 }
 
 html body sub {

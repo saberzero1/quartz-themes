@@ -142,10 +142,12 @@ html[saved-theme="dark"] body {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(31, 31, 31);
+  border-right-width: 0px;
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(31, 31, 31);
+  border-left-width: 0px;
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: var(--bold-color, rgb(200, 200, 200));
@@ -214,6 +216,8 @@ html[saved-theme="dark"] body a.internal-link.broken {
 
 html[saved-theme="dark"] body dl {
   margin-bottom: 14.4px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 14.4px;
 }
 
@@ -223,14 +227,24 @@ html[saved-theme="dark"] body dt {
 }
 
 html[saved-theme="dark"] body ol > li {
+  margin-bottom: 0px;
   margin-left: 26.9822px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.08px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.08px);
 }
 
 html[saved-theme="dark"] body ul > li {
+  margin-bottom: 0px;
   margin-left: 26.9822px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.08px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.08px);
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
@@ -239,14 +253,20 @@ html[saved-theme="dark"] body ul > li {
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(200, 200, 200);
+  border-bottom-width: 0px;
   border-left-color: rgb(200, 200, 200);
+  border-left-width: 0px;
   border-right-color: rgb(200, 200, 200);
+  border-right-width: 0px;
   border-top-color: rgb(200, 200, 200);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body table {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: calc(var(--heading-spacing) - 12px);
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: calc(var(--heading-spacing) + 5px);
 }`,
     code: `html[saved-theme="dark"] body code {
@@ -257,9 +277,13 @@ html[saved-theme="dark"] body table {
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(200, 200, 200);
+  border-bottom-width: 0px;
   border-left-color: rgb(200, 200, 200);
+  border-left-width: 0px;
   border-right-color: rgb(200, 200, 200);
+  border-right-width: 0px;
   border-top-color: rgb(200, 200, 200);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body figcaption {
@@ -269,28 +293,43 @@ html[saved-theme="dark"] body figcaption {
 
 html[saved-theme="dark"] body figure {
   border-bottom-color: rgb(200, 200, 200);
+  border-bottom-width: 0px;
   border-left-color: rgb(200, 200, 200);
+  border-left-width: 0px;
   border-right-color: rgb(200, 200, 200);
+  border-right-width: 0px;
   border-top-color: rgb(200, 200, 200);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body img {
   border-bottom-color: rgb(62, 62, 62);
+  border-bottom-width: 0px;
   border-left-color: rgb(62, 62, 62);
+  border-left-width: 0px;
   border-right-color: rgb(62, 62, 62);
+  border-right-width: 0px;
   border-top-color: rgb(62, 62, 62);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body video {
   border-bottom-color: rgb(200, 200, 200);
+  border-bottom-width: 0px;
   border-left-color: rgb(200, 200, 200);
+  border-left-width: 0px;
   border-right-color: rgb(200, 200, 200);
+  border-right-width: 0px;
   border-top-color: rgb(200, 200, 200);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(200, 200, 200);
+  border-bottom-width: 0px;
   border-right-color: rgb(200, 200, 200);
+  border-right-width: 0px;
   border-top-color: rgb(200, 200, 200);
+  border-top-width: 0px;
   color: rgb(200, 200, 200);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
@@ -915,16 +954,26 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: var(--heading-text-color, rgb(255, 255, 255));
   font-family: var(--h1-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-size: var(--size-h1, 24px);
   letter-spacing: var(--h1-letter-spacing, -0.36px);
   line-height: var(--h1-line-height, 28.8px);
   margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -933,16 +982,26 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: var(--heading-text-color, rgb(255, 255, 255));
   font-family: var(--h2-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-size: var(--size-h2, 20.4px);
   letter-spacing: var(--h2-letter-spacing, -0.2244px);
   line-height: var(--h2-line-height, 24.48px);
   margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
@@ -951,67 +1010,113 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
   letter-spacing: -0.349488px;
   line-height: var(--inline-title-line-height, 27.959px);
   margin-bottom: 11.6496px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body h3 {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: var(--heading-text-color, rgb(255, 255, 255));
   font-family: var(--h3-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-size: var(--size-h3, 20px);
   letter-spacing: var(--h3-letter-spacing, -0.16px);
   line-height: var(--h3-line-height, 24px);
   margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body h4 {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: var(--heading-text-color, rgb(255, 255, 255));
   font-family: var(--h4-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-size: var(--size-h4, 15.6px);
   letter-spacing: var(--h4-letter-spacing, -0.078px);
   line-height: var(--h4-line-height, 18.72px);
   margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body h5 {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: var(--heading-text-color, rgb(255, 255, 255));
   font-family: var(--h5-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-size: var(--size-h5, 13.792px);
   letter-spacing: var(--h5-letter-spacing, -0.027584px);
   line-height: var(--h5-line-height, 16.5504px);
   margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body h6 {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: var(--heading-text-color, rgb(255, 255, 255));
   font-family: var(--h6-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-size: var(--size-h6, 12px);
   line-height: var(--h6-line-height, 14.4px);
   margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body hr {
   border-bottom-color: rgb(31, 31, 31);
+  border-bottom-width: 0px;
   border-left-color: rgb(31, 31, 31);
+  border-left-width: 0px;
   border-right-color: rgb(31, 31, 31);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -1048,9 +1153,13 @@ html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
 }`,
     footer: `html[saved-theme="dark"] body footer {
   border-bottom-color: rgb(31, 31, 31);
+  border-bottom-width: 0px;
   border-left-color: rgb(31, 31, 31);
+  border-left-width: 0px;
   border-right-color: rgb(31, 31, 31);
+  border-right-width: 0px;
   border-top-color: rgb(31, 31, 31);
+  border-top-width: 0px;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
@@ -1086,6 +1195,9 @@ html[saved-theme="dark"] body ul.section-ul {
     properties: `html[saved-theme="dark"] body .metadata {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-bottom: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .metadata-container .metadata-property {
@@ -1118,9 +1230,13 @@ html[saved-theme="dark"] body .note-properties-tags {
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(200, 200, 200);
+  border-bottom-width: 0px;
   border-left-color: rgb(200, 200, 200);
+  border-left-width: 0px;
   border-right-color: rgb(200, 200, 200);
+  border-right-width: 0px;
   border-top-color: rgb(200, 200, 200);
+  border-top-width: 0px;
   color: rgb(200, 200, 200);
 }
 
@@ -1147,9 +1263,13 @@ html[saved-theme="dark"] body kbd {
 
 html[saved-theme="dark"] body progress {
   border-bottom-color: rgb(200, 200, 200);
+  border-bottom-width: 0px;
   border-left-color: rgb(200, 200, 200);
+  border-left-width: 0px;
   border-right-color: rgb(200, 200, 200);
+  border-right-width: 0px;
   border-top-color: rgb(200, 200, 200);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body sub {
@@ -1261,10 +1381,12 @@ html[saved-theme="light"] body {
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(240, 240, 240);
+  border-right-width: 0px;
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(240, 240, 240);
+  border-left-width: 0px;
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1315,6 +1437,8 @@ html[saved-theme="light"] body a.internal-link.broken {
 
 html[saved-theme="light"] body dl {
   margin-bottom: 14.4px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 14.4px;
 }
 
@@ -1324,14 +1448,24 @@ html[saved-theme="light"] body dt {
 }
 
 html[saved-theme="light"] body ol > li {
+  margin-bottom: 0px;
   margin-left: 26.9822px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.08px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.08px);
 }
 
 html[saved-theme="light"] body ul > li {
+  margin-bottom: 0px;
   margin-left: 26.9822px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.08px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.08px);
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
@@ -1341,6 +1475,8 @@ html[saved-theme="light"] body ul > li {
     tables: `html[saved-theme="light"] body table {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: calc(var(--heading-spacing) - 12px);
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: calc(var(--heading-spacing) + 5px);
 }`,
     code: `html[saved-theme="light"] body code {
@@ -1355,9 +1491,13 @@ html[saved-theme="light"] body ul > li {
 
 html[saved-theme="light"] body img {
   border-bottom-color: rgb(62, 62, 62);
+  border-bottom-width: 0px;
   border-left-color: rgb(62, 62, 62);
+  border-left-width: 0px;
   border-right-color: rgb(62, 62, 62);
+  border-right-width: 0px;
   border-top-color: rgb(62, 62, 62);
+  border-top-width: 0px;
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1912,16 +2052,26 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   border-bottom-color: rgb(55, 53, 47);
+  border-bottom-width: 0px;
   border-left-color: rgb(55, 53, 47);
+  border-left-width: 0px;
   border-right-color: rgb(55, 53, 47);
+  border-right-width: 0px;
   border-top-color: rgb(55, 53, 47);
+  border-top-width: 0px;
   color: var(--heading-text-color, rgb(55, 53, 47));
   font-family: var(--h1-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-size: var(--size-h1, 24px);
   letter-spacing: var(--h1-letter-spacing, -0.36px);
   line-height: var(--h1-line-height, 28.8px);
   margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -1930,16 +2080,26 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   border-bottom-color: rgb(55, 53, 47);
+  border-bottom-width: 0px;
   border-left-color: rgb(55, 53, 47);
+  border-left-width: 0px;
   border-right-color: rgb(55, 53, 47);
+  border-right-width: 0px;
   border-top-color: rgb(55, 53, 47);
+  border-top-width: 0px;
   color: var(--heading-text-color, rgb(55, 53, 47));
   font-family: var(--h2-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-size: var(--size-h2, 20.4px);
   letter-spacing: var(--h2-letter-spacing, -0.2244px);
   line-height: var(--h2-line-height, 24.48px);
   margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
@@ -1948,67 +2108,113 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
   letter-spacing: -0.349488px;
   line-height: var(--inline-title-line-height, 27.959px);
   margin-bottom: 11.6496px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body h3 {
   border-bottom-color: rgb(55, 53, 47);
+  border-bottom-width: 0px;
   border-left-color: rgb(55, 53, 47);
+  border-left-width: 0px;
   border-right-color: rgb(55, 53, 47);
+  border-right-width: 0px;
   border-top-color: rgb(55, 53, 47);
+  border-top-width: 0px;
   color: var(--heading-text-color, rgb(55, 53, 47));
   font-family: var(--h3-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-size: var(--size-h3, 20px);
   letter-spacing: var(--h3-letter-spacing, -0.16px);
   line-height: var(--h3-line-height, 24px);
   margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body h4 {
   border-bottom-color: rgb(55, 53, 47);
+  border-bottom-width: 0px;
   border-left-color: rgb(55, 53, 47);
+  border-left-width: 0px;
   border-right-color: rgb(55, 53, 47);
+  border-right-width: 0px;
   border-top-color: rgb(55, 53, 47);
+  border-top-width: 0px;
   color: var(--heading-text-color, rgb(55, 53, 47));
   font-family: var(--h4-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-size: var(--size-h4, 15.6px);
   letter-spacing: var(--h4-letter-spacing, -0.078px);
   line-height: var(--h4-line-height, 18.72px);
   margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body h5 {
   border-bottom-color: rgb(55, 53, 47);
+  border-bottom-width: 0px;
   border-left-color: rgb(55, 53, 47);
+  border-left-width: 0px;
   border-right-color: rgb(55, 53, 47);
+  border-right-width: 0px;
   border-top-color: rgb(55, 53, 47);
+  border-top-width: 0px;
   color: var(--heading-text-color, rgb(55, 53, 47));
   font-family: var(--h5-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-size: var(--size-h5, 13.792px);
   letter-spacing: var(--h5-letter-spacing, -0.027584px);
   line-height: var(--h5-line-height, 16.5504px);
   margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body h6 {
   border-bottom-color: rgb(55, 53, 47);
+  border-bottom-width: 0px;
   border-left-color: rgb(55, 53, 47);
+  border-left-width: 0px;
   border-right-color: rgb(55, 53, 47);
+  border-right-width: 0px;
   border-top-color: rgb(55, 53, 47);
+  border-top-width: 0px;
   color: var(--heading-text-color, rgb(55, 53, 47));
   font-family: var(--h6-font, "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-size: var(--size-h6, 12px);
   line-height: var(--h6-line-height, 14.4px);
   margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body hr {
   border-bottom-color: rgb(240, 240, 240);
+  border-bottom-width: 0px;
   border-left-color: rgb(240, 240, 240);
+  border-left-width: 0px;
   border-right-color: rgb(240, 240, 240);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
@@ -2045,9 +2251,13 @@ html[saved-theme="light"] body .explorer .nav-files-container a:hover {
 }`,
     footer: `html[saved-theme="light"] body footer {
   border-bottom-color: rgb(240, 240, 240);
+  border-bottom-width: 0px;
   border-left-color: rgb(240, 240, 240);
+  border-left-width: 0px;
   border-right-color: rgb(240, 240, 240);
+  border-right-width: 0px;
   border-top-color: rgb(240, 240, 240);
+  border-top-width: 0px;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
@@ -2083,6 +2293,9 @@ html[saved-theme="light"] body ul.section-ul {
     properties: `html[saved-theme="light"] body .metadata {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-bottom: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .metadata-container .metadata-property {

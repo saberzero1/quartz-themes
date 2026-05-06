@@ -95,22 +95,34 @@ html[saved-theme="dark"] body html {
   --infobox-header: #F2EDFF;
 }`,
     lists: `html[saved-theme="dark"] body ol > li {
+  padding-bottom: 0px;
   padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body ul > li {
+  padding-bottom: 0px;
   padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   line-height: 22.5px;
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 10px;
 }`,
     code: `html[saved-theme="dark"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -118,11 +130,17 @@ html[saved-theme="dark"] body ul > li {
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(218, 218, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
+  border-top-width: 0px;
   margin-bottom: 2px;
+  margin-left: 0px;
   margin-right: 4px;
+  margin-top: 0px;
   transition: background-color 0.2s ease-out;
 }
 
@@ -671,6 +689,8 @@ html[saved-theme="dark"] body h6 {
     misc: `html[saved-theme="dark"] body .page-header h2.page-title {
   line-height: 25px;
   margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 5px;
 }`,
   },
@@ -720,22 +740,34 @@ html[saved-theme="light"] body html {
   --infobox-header: #F2EDFF;
 }`,
     lists: `html[saved-theme="light"] body ol > li {
+  padding-bottom: 0px;
   padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body ul > li {
+  padding-bottom: 0px;
   padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
   line-height: 22.5px;
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 10px;
 }`,
     code: `html[saved-theme="light"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -743,11 +775,17 @@ html[saved-theme="light"] body ul > li {
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(34, 34, 34);
+  border-bottom-width: 0px;
   border-left-color: rgb(34, 34, 34);
+  border-left-width: 0px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
+  border-top-width: 0px;
   margin-bottom: 2px;
+  margin-left: 0px;
   margin-right: 4px;
+  margin-top: 0px;
   transition: background-color 0.2s ease-out;
 }
 
@@ -1296,6 +1334,8 @@ html[saved-theme="light"] body h6 {
     misc: `html[saved-theme="light"] body .page-header h2.page-title {
   line-height: 25px;
   margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 5px;
 }`,
   },

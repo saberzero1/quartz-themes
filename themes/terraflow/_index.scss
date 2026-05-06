@@ -549,9 +549,9 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(217, 119, 86, 0.08);
-    color: var(--callout-color);
+    color: var(--link-color);
     cursor: var(--cursor-link);
-    filter: none;
+    filter: var(--link-external-filter);
     backdrop-filter: none;
     box-shadow: none;
     font-family:
@@ -571,9 +571,10 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(217, 119, 86) none 0px;
     text-decoration: underline;
-    text-decoration-color: var(--callout-color, var(--primary-color));
+    text-decoration-color: rgb(217, 119, 86);
     text-decoration-line: var(--link-external-decoration);
     text-decoration-style: solid;
+    text-decoration-thickness: var(--link-decoration-thickness);
     transition:
       color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
       background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
@@ -596,7 +597,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(217, 119, 86, 0.08);
-    color: hsl(from var(--callout-color) h 90% 85%);
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -618,9 +619,10 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(217, 119, 86) none 0px;
     text-decoration: underline;
-    text-decoration-color: var(--callout-color, var(--primary-color));
+    text-decoration-color: rgb(217, 119, 86);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: solid;
+    text-decoration-thickness: var(--link-decoration-thickness);
     transition:
       color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
       background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
@@ -642,9 +644,9 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(217, 119, 86, 0.08);
-    color: hsl(from var(--callout-color) h 90% 85%);
+    color: var(--link-color);
     cursor: var(--cursor-link);
-    filter: none;
+    filter: var(--link-unresolved-filter);
     backdrop-filter: none;
     box-shadow: none;
     font-family:
@@ -664,9 +666,10 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(217, 119, 86) none 0px;
     text-decoration: underline rgba(138, 92, 245, 0.3);
-    text-decoration-color: var(--callout-color, var(--primary-color));
+    text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
+    text-decoration-thickness: var(--link-decoration-thickness);
     transition:
       color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
       background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
@@ -746,7 +749,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal);
+    color: var(--emphasis-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -787,7 +790,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal);
+    color: var(--emphasis-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -828,7 +831,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal);
+    color: var(--emphasis-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -869,7 +872,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal);
+    color: var(--emphasis-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -988,7 +991,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal);
+    color: var(--emphasis-color);
     cursor: grab;
     font-family:
       ui-sans-serif,
@@ -1018,8 +1021,8 @@ body {
   }
 
   .text-highlight {
-    background-color: rgba(var(--highlight-bg-rgb, var(--primary-color-rgb)), 0.34);
-    color: var(--highlight-bg-light-color);
+    background-color: var(--text-highlight-bg);
+    color: var(--text-normal);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1061,7 +1064,7 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: hsl(from var(--callout-color) h s calc(l * 1.1));
+    color: rgb(61, 46, 26);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1083,7 +1086,7 @@ body {
     font-weight: 400;
     outline: rgb(61, 46, 26) none 0px;
     text-decoration: line-through;
-    text-decoration-color: hsl(from var(--callout-color) h s calc(l * 1.1));
+    text-decoration-color: rgb(61, 46, 26);
     text-decoration-line: line-through;
     text-decoration-style: solid;
     transition: all;
@@ -1185,7 +1188,7 @@ body {
   }
 
   a.internal-link.tag-link::before {
-    color: rgb(61, 46, 26);
+    color: var(--text-normal);
   }
 
   ul > li {
@@ -1263,7 +1266,7 @@ body {
   }
 
   code {
-    background-color: rgba(var(--primary-color-rgb), 0.1);
+    background-color: var(--code-background);
     border: 1px solid rgba(217, 119, 86, 0.1);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -1305,7 +1308,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: rgba(var(--primary-color-rgb), 0.2);
+    background-color: var(--background-secondary-alt);
     border: 2px solid rgba(217, 119, 86, 0.15);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1389,7 +1392,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: var(--blockquote-font-style);
     line-height: 21.6px;
     padding-bottom: 5px;
     padding-top: 5px;
@@ -1401,7 +1404,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--link-color-hover);
+    color: var(--link-color);
     text-decoration: underline rgb(138, 92, 245);
   }
 
@@ -1434,7 +1437,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--background-secondary);
+    background-color: rgba(var(--background-primary-rgb), 0.94);
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -1546,7 +1549,7 @@ body {
     line-height: var(--line-tight);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--tracking-tight);
+    letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(var(--heading-primary-rgb), var(--heading-bg-opacity));
     background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05));
     background: rgba(217, 119, 86, 0.2) linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05)) repeat scroll 0% 0% / auto padding-box border-box;
@@ -1572,14 +1575,14 @@ body {
   }
 
   h2 {
-    color: hsl(from var(--callout-color) h s calc(l * 1.4));
+    color: hsl(from var(--heading-secondary) h s calc(l * var(--heading-text-multiplier)));
     font-family: var(--heading-font);
     font-size: var(--h2-size);
     font-weight: var(--weight-semibold);
     line-height: var(--line-tight);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--tracking-tight);
+    letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(var(--heading-secondary-rgb), var(--heading-bg-opacity));
     background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05));
     background: rgba(184, 105, 44, 0.2) linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05)) repeat scroll 0% 0% / auto padding-box border-box;
@@ -1588,10 +1591,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1608,14 +1608,14 @@ body {
   }
 
   h3 {
-    color: hsl(from var(--callout-color) h s calc(l * 1.4));
+    color: hsl(from var(--heading-tertiary) h s calc(l * var(--heading-text-multiplier)));
     font-family: var(--heading-font);
     font-size: var(--h3-size);
     font-weight: var(--weight-semibold);
     line-height: var(--line-tight);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--tracking-snug);
+    letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(var(--heading-tertiary-rgb), var(--heading-bg-opacity));
     background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05));
     background: rgba(154, 134, 60, 0.2) linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05)) repeat scroll 0% 0% / auto padding-box border-box;
@@ -1624,10 +1624,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1644,7 +1641,7 @@ body {
   }
 
   h4 {
-    color: hsl(from var(--callout-color) h s calc(l * 1.4));
+    color: hsl(from var(--heading-quaternary) h s calc(l * var(--heading-text-multiplier)));
     font-family: var(--heading-font);
     font-size: var(--h4-size);
     font-weight: var(--weight-semibold);
@@ -1660,10 +1657,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1680,7 +1674,7 @@ body {
   }
 
   h5 {
-    color: hsl(from var(--callout-color) h s calc(l * 1.4));
+    color: hsl(from var(--heading-quinary) h s calc(l * var(--heading-text-multiplier)));
     font-family: var(--heading-font);
     font-size: var(--h5-size);
     font-weight: var(--weight-semibold);
@@ -1696,10 +1690,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1716,7 +1707,7 @@ body {
   }
 
   h6 {
-    color: hsl(from var(--callout-color) h s calc(l * 1.4));
+    color: hsl(from var(--heading-senary) h s calc(l * var(--heading-text-multiplier)));
     font-family: var(--heading-font);
     font-size: var(--h6-size);
     font-weight: var(--weight-semibold);
@@ -2220,10 +2211,10 @@ body {
   }
 
   .callout > .callout-content {
-    background-color: rgba(var(--callout-color-rgb), 0.3);
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: hsl(from var(--callout-color) h s calc(l * 0.6));
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2238,7 +2229,7 @@ body {
     background:
       radial-gradient(at 100% 100%, rgba(217, 119, 86, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
       rgba(217, 119, 86, 0.12) linear-gradient(135deg, rgba(217, 119, 86, 0.01) 0%, rgba(217, 119, 86, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: rgb(61, 46, 26);
     mix-blend-mode: normal;
     border: 0px solid rgb(61, 46, 26);
     border-left: 3px solid rgb(217, 119, 86);
@@ -2281,10 +2272,10 @@ body {
   }
 
   .callout[data-callout="note"] > .callout-content {
-    background-color: rgba(var(--callout-color-rgb), 0.3);
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: hsl(from var(--callout-color) h s calc(l * 0.6));
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2299,7 +2290,7 @@ body {
     background:
       radial-gradient(at 100% 100%, rgba(121, 141, 93, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
       rgba(121, 141, 93, 0.12) linear-gradient(135deg, rgba(121, 141, 93, 0.01) 0%, rgba(121, 141, 93, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: rgb(61, 46, 26);
     mix-blend-mode: normal;
     border: 0px solid rgb(61, 46, 26);
     border-left: 3px solid rgb(121, 141, 93);
@@ -2342,10 +2333,10 @@ body {
   }
 
   .callout[data-callout="abstract"] > .callout-content {
-    background-color: rgba(var(--callout-color-rgb), 0.3);
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: hsl(from var(--callout-color) h s calc(l * 0.6));
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2360,7 +2351,7 @@ body {
     background:
       radial-gradient(at 100% 100%, rgba(212, 175, 55, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
       rgba(212, 175, 55, 0.12) linear-gradient(135deg, rgba(212, 175, 55, 0.01) 0%, rgba(212, 175, 55, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: rgb(61, 46, 26);
     mix-blend-mode: normal;
     border: 0px solid rgb(61, 46, 26);
     border-left: 3px solid rgb(212, 175, 55);
@@ -2403,10 +2394,10 @@ body {
   }
 
   .callout[data-callout="info"] > .callout-content {
-    background-color: rgba(var(--callout-color-rgb), 0.3);
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: hsl(from var(--callout-color) h s calc(l * 0.6));
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2421,7 +2412,7 @@ body {
     background:
       radial-gradient(at 100% 100%, rgba(121, 141, 93, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
       rgba(121, 141, 93, 0.12) linear-gradient(135deg, rgba(121, 141, 93, 0.01) 0%, rgba(121, 141, 93, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: rgb(61, 46, 26);
     mix-blend-mode: normal;
     border: 0px solid rgb(61, 46, 26);
     border-left: 3px solid rgb(121, 141, 93);
@@ -2464,10 +2455,10 @@ body {
   }
 
   .callout[data-callout="todo"] > .callout-content {
-    background-color: rgba(var(--callout-color-rgb), 0.3);
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: hsl(from var(--callout-color) h s calc(l * 0.6));
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2482,7 +2473,7 @@ body {
     background:
       radial-gradient(at 100% 100%, rgba(121, 141, 93, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
       rgba(121, 141, 93, 0.12) linear-gradient(135deg, rgba(121, 141, 93, 0.01) 0%, rgba(121, 141, 93, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: rgb(61, 46, 26);
     mix-blend-mode: normal;
     border: 0px solid rgb(61, 46, 26);
     border-left: 3px solid rgb(121, 141, 93);
@@ -2525,10 +2516,10 @@ body {
   }
 
   .callout[data-callout="tip"] > .callout-content {
-    background-color: rgba(var(--callout-color-rgb), 0.3);
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: hsl(from var(--callout-color) h s calc(l * 0.6));
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2543,7 +2534,7 @@ body {
     background:
       radial-gradient(at 100% 100%, rgba(121, 141, 93, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
       rgba(121, 141, 93, 0.12) linear-gradient(135deg, rgba(121, 141, 93, 0.01) 0%, rgba(121, 141, 93, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: rgb(61, 46, 26);
     mix-blend-mode: normal;
     border: 0px solid rgb(61, 46, 26);
     border-left: 3px solid rgb(121, 141, 93);
@@ -2586,10 +2577,10 @@ body {
   }
 
   .callout[data-callout="success"] > .callout-content {
-    background-color: rgba(var(--callout-color-rgb), 0.3);
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: hsl(from var(--callout-color) h s calc(l * 0.6));
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2604,7 +2595,7 @@ body {
     background:
       radial-gradient(at 100% 100%, rgba(230, 126, 34, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
       rgba(230, 126, 34, 0.12) linear-gradient(135deg, rgba(230, 126, 34, 0.01) 0%, rgba(230, 126, 34, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: rgb(61, 46, 26);
     mix-blend-mode: normal;
     border: 0px solid rgb(61, 46, 26);
     border-left: 3px solid rgb(230, 126, 34);
@@ -2647,10 +2638,10 @@ body {
   }
 
   .callout[data-callout="question"] > .callout-content {
-    background-color: rgba(var(--callout-color-rgb), 0.3);
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: hsl(from var(--callout-color) h s calc(l * 0.6));
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2665,7 +2656,7 @@ body {
     background:
       radial-gradient(at 100% 100%, rgba(230, 126, 34, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
       rgba(230, 126, 34, 0.12) linear-gradient(135deg, rgba(230, 126, 34, 0.01) 0%, rgba(230, 126, 34, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: rgb(61, 46, 26);
     mix-blend-mode: normal;
     border: 0px solid rgb(61, 46, 26);
     border-left: 3px solid rgb(230, 126, 34);
@@ -2708,10 +2699,10 @@ body {
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: rgba(var(--callout-color-rgb), 0.3);
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: hsl(from var(--callout-color) h s calc(l * 0.6));
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2726,7 +2717,7 @@ body {
     background:
       radial-gradient(at 100% 100%, rgba(192, 57, 43, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
       rgba(192, 57, 43, 0.12) linear-gradient(135deg, rgba(192, 57, 43, 0.01) 0%, rgba(192, 57, 43, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: rgb(61, 46, 26);
     mix-blend-mode: normal;
     border: 0px solid rgb(61, 46, 26);
     border-left: 3px solid rgb(192, 57, 43);
@@ -2769,10 +2760,10 @@ body {
   }
 
   .callout[data-callout="danger"] > .callout-content {
-    background-color: rgba(var(--callout-color-rgb), 0.3);
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: hsl(from var(--callout-color) h s calc(l * 0.6));
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2787,7 +2778,7 @@ body {
     background:
       radial-gradient(at 100% 100%, rgba(192, 57, 43, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
       rgba(192, 57, 43, 0.12) linear-gradient(135deg, rgba(192, 57, 43, 0.01) 0%, rgba(192, 57, 43, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: rgb(61, 46, 26);
     mix-blend-mode: normal;
     border: 0px solid rgb(61, 46, 26);
     border-left: 3px solid rgb(192, 57, 43);
@@ -2830,10 +2821,10 @@ body {
   }
 
   .callout[data-callout="failure"] > .callout-content {
-    background-color: rgba(var(--callout-color-rgb), 0.3);
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: hsl(from var(--callout-color) h s calc(l * 0.6));
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2848,7 +2839,7 @@ body {
     background:
       radial-gradient(at 100% 100%, rgba(192, 57, 43, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
       rgba(192, 57, 43, 0.12) linear-gradient(135deg, rgba(192, 57, 43, 0.01) 0%, rgba(192, 57, 43, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: rgb(61, 46, 26);
     mix-blend-mode: normal;
     border: 0px solid rgb(61, 46, 26);
     border-left: 3px solid rgb(192, 57, 43);
@@ -2891,10 +2882,10 @@ body {
   }
 
   .callout[data-callout="bug"] > .callout-content {
-    background-color: rgba(var(--callout-color-rgb), 0.3);
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: hsl(from var(--callout-color) h s calc(l * 0.6));
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2909,7 +2900,7 @@ body {
     background:
       radial-gradient(at 100% 100%, rgba(119, 144, 136, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
       rgba(119, 144, 136, 0.12) linear-gradient(135deg, rgba(119, 144, 136, 0.01) 0%, rgba(119, 144, 136, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: rgb(61, 46, 26);
     mix-blend-mode: normal;
     border: 0px solid rgb(61, 46, 26);
     border-left: 3px solid rgb(119, 144, 136);
@@ -2952,10 +2943,10 @@ body {
   }
 
   .callout[data-callout="example"] > .callout-content {
-    background-color: rgba(var(--callout-color-rgb), 0.3);
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: hsl(from var(--callout-color) h s calc(l * 0.6));
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2970,7 +2961,7 @@ body {
     background:
       radial-gradient(at 100% 100%, rgba(119, 144, 136, 0.15) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
       rgba(119, 144, 136, 0.12) linear-gradient(135deg, rgba(119, 144, 136, 0.01) 0%, rgba(119, 144, 136, 0.03) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: rgb(61, 46, 26);
     mix-blend-mode: normal;
     border: 0px solid rgb(61, 46, 26);
     border-left: 3px solid rgb(119, 144, 136);
@@ -3013,10 +3004,10 @@ body {
   }
 
   .callout[data-callout="quote"] > .callout-content {
-    background-color: rgba(var(--callout-color-rgb), 0.3);
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--callout-color);
+    color: hsl(from var(--callout-color) h s calc(l * 0.6));
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -3053,10 +3044,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 16px 0px 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -3086,9 +3074,9 @@ body {
   }
 
   th {
-    background-color: rgb(174, 78, 54);
-    color: var(--table-header-color);
-    font-weight: var(--table-header-weight);
+    background-color: var(--emphasis-color);
+    color: var(--background-primary);
+    font-weight: var(--weight-semibold);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
@@ -3098,7 +3086,7 @@ body {
     border-right: 1px solid rgb(224, 224, 224);
     border-top: var(--table-header-border-width) solid rgb(224, 224, 224);
     border-bottom: 1px solid rgb(224, 224, 224);
-    border-top-left-radius: 12px;
+    border-top-left-radius: var(--r3);
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -3915,9 +3903,9 @@ body {
   }
 
   .bases-table thead th {
-    background-color: rgb(174, 78, 54);
-    color: var(--table-header-color);
-    font-weight: var(--table-header-weight);
+    background-color: var(--emphasis-color);
+    color: var(--background-primary);
+    font-weight: var(--weight-semibold);
     border-color: rgb(224, 224, 224);
   }
 
@@ -3937,8 +3925,8 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--background-primary);
-    background-color: var(--emphasis-color);
+    color: var(--text-normal);
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
@@ -4207,7 +4195,7 @@ body {
   }
 
   .katex-display {
-    background-color: var(--background-modifier-hover);
+    background-color: rgba(0, 0, 0, 0);
     color: rgb(61, 46, 26);
     border-color: rgb(61, 46, 26);
     border-width: 0px;
@@ -4309,7 +4297,7 @@ body {
 
   ul.tags > li {
     background-color: var(--tag-background);
-    color: var(--link-color-hover);
+    color: var(--link-color);
     border: 0px solid rgba(219, 120, 87, 0.15);
     border-bottom-color: rgb(217, 119, 86);
     border-top-left-radius: 6px;
@@ -4433,11 +4421,9 @@ body {
     background-color: rgba(var(--callout-video-rgb), 0.12);
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 16px;
-    border-color: rgb(61, 46, 26);
     border-top-left-radius: 16px;
     border-top-right-radius: 6px;
-    color: var(--callout-color);
-    font-weight: var(--weight-semibold);
+    color: rgb(61, 46, 26);
     --callout-color-rgb: var(--callout-video-rgb);
     --layer-status-bar: 15;
     background-image: radial-gradient(at 100% 100%, rgba(166, 124, 82, 0.15) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(166, 124, 82, 0.01) 0%, rgba(166, 124, 82, 0.03) 100%);
@@ -4606,9 +4592,12 @@ body {
     --touch-radius-xxs: 24px;
     --traffic-lights-offset-x: 40px;
     --traffic-lights-offset-y: 40px;
+    border-bottom-color: rgb(61, 46, 26);
     border-bottom-width: 0px;
     border-left: 3px solid rgb(166, 124, 82);
+    border-right-color: rgb(61, 46, 26);
     border-right-width: 0px;
+    border-top-color: rgb(61, 46, 26);
     border-top-width: 0px;
     font-family:
       ui-sans-serif,
@@ -9835,9 +9824,9 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(240, 145, 111, 0.08);
-      color: var(--callout-color);
+      color: var(--link-color);
       cursor: var(--cursor-link);
-      filter: none;
+      filter: var(--link-external-filter);
       backdrop-filter: none;
       box-shadow: none;
       font-family:
@@ -9857,9 +9846,10 @@ html[saved-theme="dark"] {
       font-weight: var(--link-weight);
       outline: rgb(240, 145, 111) none 0px;
       text-decoration: underline;
-      text-decoration-color: var(--callout-color, var(--primary-color));
+      text-decoration-color: rgb(240, 145, 111);
       text-decoration-line: var(--link-external-decoration);
       text-decoration-style: solid;
+      text-decoration-thickness: var(--link-decoration-thickness);
       transition:
         color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
         background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
@@ -9882,7 +9872,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(240, 145, 111, 0.08);
-      color: hsl(from var(--callout-color) h 90% 85%);
+      color: var(--link-color);
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
@@ -9904,9 +9894,10 @@ html[saved-theme="dark"] {
       font-weight: var(--link-weight);
       outline: rgb(240, 145, 111) none 0px;
       text-decoration: underline;
-      text-decoration-color: var(--callout-color, var(--primary-color));
+      text-decoration-color: rgb(240, 145, 111);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: solid;
+      text-decoration-thickness: var(--link-decoration-thickness);
       transition:
         color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
         background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
@@ -9928,9 +9919,9 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(240, 145, 111, 0.08);
-      color: hsl(from var(--callout-color) h 90% 85%);
+      color: var(--link-color);
       cursor: var(--cursor-link);
-      filter: none;
+      filter: var(--link-unresolved-filter);
       backdrop-filter: none;
       box-shadow: none;
       font-family:
@@ -9950,9 +9941,10 @@ html[saved-theme="dark"] {
       font-weight: var(--link-weight);
       outline: rgb(240, 145, 111) none 0px;
       text-decoration: underline rgba(138, 92, 245, 0.3);
-      text-decoration-color: var(--callout-color, var(--primary-color));
+      text-decoration-color: var(--link-unresolved-decoration-color);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: var(--link-unresolved-decoration-style);
+      text-decoration-thickness: var(--link-decoration-thickness);
       transition:
         color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
         background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
@@ -10032,7 +10024,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-normal);
+      color: var(--emphasis-color-light);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -10073,7 +10065,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-normal);
+      color: var(--emphasis-color-light);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -10114,7 +10106,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > em,
     em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-normal);
+      color: var(--emphasis-color-light);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -10155,7 +10147,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > i,
     i {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-normal);
+      color: var(--emphasis-color-light);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -10274,7 +10266,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-normal);
+      color: var(--emphasis-color-light);
       cursor: grab;
       font-family:
         ui-sans-serif,
@@ -10304,8 +10296,8 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: rgba(var(--highlight-bg-rgb, var(--primary-color-rgb)), 0.34);
-      color: var(--highlight-bg-light-color);
+      background-color: var(--text-highlight-bg);
+      color: var(--text-normal);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -10369,7 +10361,7 @@ html[saved-theme="dark"] {
       font-weight: 400;
       outline: rgb(242, 168, 130) none 0px;
       text-decoration: line-through;
-      text-decoration-color: hsl(from var(--callout-color) h s calc(l * 1.1));
+      text-decoration-color: rgb(242, 168, 130);
       text-decoration-line: line-through;
       text-decoration-style: solid;
       transition: all;
@@ -10471,7 +10463,7 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.tag-link::before {
-      color: rgb(232, 220, 198);
+      color: var(--text-normal);
     }
 
     ul > li {
@@ -10549,7 +10541,7 @@ html[saved-theme="dark"] {
     }
 
     code {
-      background-color: rgba(var(--primary-color-rgb), 0.1);
+      background-color: var(--code-background);
       border: 1px solid rgba(240, 145, 111, 0.15);
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
@@ -10675,7 +10667,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 400;
-      font-style: normal;
+      font-style: var(--blockquote-font-style);
       line-height: 21.6px;
       padding-bottom: 5px;
       padding-top: 5px;
@@ -10687,7 +10679,7 @@ html[saved-theme="dark"] {
     }
 
     .data-footnote-backref {
-      color: var(--link-color-hover);
+      color: var(--link-color);
       text-decoration: underline rgb(166, 138, 249);
     }
 
@@ -10720,7 +10712,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space {
-      background-color: var(--background-secondary);
+      background-color: var(--glass-bg);
       border: 1px solid rgba(255, 255, 255, 0.2);
       border-top-left-radius: 16px;
       border-top-right-radius: 16px;
@@ -10832,7 +10824,7 @@ html[saved-theme="dark"] {
       line-height: var(--line-tight);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--tracking-tight);
+      letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(var(--heading-primary-rgb), var(--heading-bg-opacity));
       background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05));
       background: rgba(242, 168, 130, 0.2) linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05)) repeat scroll 0% 0% / auto padding-box border-box;
@@ -10858,14 +10850,14 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: hsl(from var(--heading-secondary) h s calc(l * var(--heading-text-multiplier)));
       font-family: var(--heading-font);
       font-size: var(--h2-size);
       font-weight: var(--weight-semibold);
       line-height: var(--line-tight);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--tracking-tight);
+      letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(var(--heading-secondary-rgb), var(--heading-bg-opacity));
       background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05));
       background: rgba(139, 168, 145, 0.2) linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05)) repeat scroll 0% 0% / auto padding-box border-box;
@@ -10874,10 +10866,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing);
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
@@ -10894,14 +10883,14 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: hsl(from var(--heading-tertiary) h s calc(l * var(--heading-text-multiplier)));
       font-family: var(--heading-font);
       font-size: var(--h3-size);
       font-weight: var(--weight-semibold);
       line-height: var(--line-tight);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--tracking-snug);
+      letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(var(--heading-tertiary-rgb), var(--heading-bg-opacity));
       background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05));
       background: rgba(181, 168, 212, 0.2) linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05)) repeat scroll 0% 0% / auto padding-box border-box;
@@ -10910,10 +10899,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing);
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
@@ -10930,7 +10916,7 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: hsl(from var(--heading-quaternary) h s calc(l * var(--heading-text-multiplier)));
       font-family: var(--heading-font);
       font-size: var(--h4-size);
       font-weight: var(--weight-semibold);
@@ -10946,10 +10932,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing);
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
@@ -10966,7 +10949,7 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: hsl(from var(--heading-quinary) h s calc(l * var(--heading-text-multiplier)));
       font-family: var(--heading-font);
       font-size: var(--h5-size);
       font-weight: var(--weight-semibold);
@@ -10982,10 +10965,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing);
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
@@ -11002,7 +10982,7 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: hsl(from var(--heading-senary) h s calc(l * var(--heading-text-multiplier)));
       font-family: var(--heading-font);
       font-size: var(--h6-size);
       font-weight: var(--weight-semibold);
@@ -11479,7 +11459,7 @@ html[saved-theme="dark"] {
 
     .callout .callout-title {
       --callout-color: #f2b399;
-      color: hsl(from var(--callout-color) h s calc(l * 0.7));
+      color: hsl(from var(--callout-color) h s calc(l * 1.2));
       gap: 13.2px;
       border: 0px color(srgb 0.984041 0.906701 0.874783);
       border-top-left-radius: 0px;
@@ -11506,10 +11486,10 @@ html[saved-theme="dark"] {
     }
 
     .callout > .callout-content {
-      background-color: rgba(var(--callout-color-rgb), 0.35);
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.1));
+      color: hsl(from var(--callout-color) h s calc(l * 1.3));
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -11524,7 +11504,7 @@ html[saved-theme="dark"] {
       background:
         radial-gradient(at 100% 100%, rgba(242, 168, 130, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
         rgba(242, 168, 130, 0.12) linear-gradient(135deg, rgba(242, 168, 130, 0.05) 0%, rgba(242, 168, 130, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: rgb(232, 220, 198);
       mix-blend-mode: normal;
       border: 0px solid rgb(232, 220, 198);
       border-left: 3px solid rgb(242, 168, 130);
@@ -11540,7 +11520,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="note"] .callout-title {
       --callout-color: #f2b399;
-      color: hsl(from var(--callout-color) h s calc(l * 0.7));
+      color: hsl(from var(--callout-color) h s calc(l * 1.2));
       gap: 13.2px;
       border: 0px color(srgb 0.984041 0.906701 0.874783);
       border-top-left-radius: 0px;
@@ -11567,10 +11547,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] > .callout-content {
-      background-color: rgba(var(--callout-color-rgb), 0.35);
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.1));
+      color: hsl(from var(--callout-color) h s calc(l * 1.3));
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -11585,7 +11565,7 @@ html[saved-theme="dark"] {
       background:
         radial-gradient(at 100% 100%, rgba(168, 196, 122, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
         rgba(168, 196, 122, 0.12) linear-gradient(135deg, rgba(168, 196, 122, 0.05) 0%, rgba(168, 196, 122, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: rgb(232, 220, 198);
       mix-blend-mode: normal;
       border: 0px solid rgb(232, 220, 198);
       border-left: 3px solid rgb(168, 196, 122);
@@ -11601,7 +11581,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="abstract"] .callout-title {
       --callout-color: #f2b399;
-      color: hsl(from var(--callout-color) h s calc(l * 0.7));
+      color: hsl(from var(--callout-color) h s calc(l * 1.2));
       gap: 13.2px;
       border: 0px color(srgb 0.984041 0.906701 0.874783);
       border-top-left-radius: 0px;
@@ -11628,10 +11608,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] > .callout-content {
-      background-color: rgba(var(--callout-color-rgb), 0.35);
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.1));
+      color: hsl(from var(--callout-color) h s calc(l * 1.3));
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -11646,7 +11626,7 @@ html[saved-theme="dark"] {
       background:
         radial-gradient(at 100% 100%, rgba(233, 213, 163, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
         rgba(233, 213, 163, 0.12) linear-gradient(135deg, rgba(233, 213, 163, 0.05) 0%, rgba(233, 213, 163, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: rgb(232, 220, 198);
       mix-blend-mode: normal;
       border: 0px solid rgb(232, 220, 198);
       border-left: 3px solid rgb(233, 213, 163);
@@ -11662,7 +11642,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="info"] .callout-title {
       --callout-color: #f2b399;
-      color: hsl(from var(--callout-color) h s calc(l * 0.7));
+      color: hsl(from var(--callout-color) h s calc(l * 1.2));
       gap: 13.2px;
       border: 0px color(srgb 0.984041 0.906701 0.874783);
       border-top-left-radius: 0px;
@@ -11689,10 +11669,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] > .callout-content {
-      background-color: rgba(var(--callout-color-rgb), 0.35);
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.1));
+      color: hsl(from var(--callout-color) h s calc(l * 1.3));
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -11707,7 +11687,7 @@ html[saved-theme="dark"] {
       background:
         radial-gradient(at 100% 100%, rgba(168, 196, 122, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
         rgba(168, 196, 122, 0.12) linear-gradient(135deg, rgba(168, 196, 122, 0.05) 0%, rgba(168, 196, 122, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: rgb(232, 220, 198);
       mix-blend-mode: normal;
       border: 0px solid rgb(232, 220, 198);
       border-left: 3px solid rgb(168, 196, 122);
@@ -11723,7 +11703,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="todo"] .callout-title {
       --callout-color: #f2b399;
-      color: hsl(from var(--callout-color) h s calc(l * 0.7));
+      color: hsl(from var(--callout-color) h s calc(l * 1.2));
       gap: 13.2px;
       border: 0px color(srgb 0.984041 0.906701 0.874783);
       border-top-left-radius: 0px;
@@ -11750,10 +11730,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] > .callout-content {
-      background-color: rgba(var(--callout-color-rgb), 0.35);
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.1));
+      color: hsl(from var(--callout-color) h s calc(l * 1.3));
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -11768,7 +11748,7 @@ html[saved-theme="dark"] {
       background:
         radial-gradient(at 100% 100%, rgba(168, 196, 122, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
         rgba(168, 196, 122, 0.12) linear-gradient(135deg, rgba(168, 196, 122, 0.05) 0%, rgba(168, 196, 122, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: rgb(232, 220, 198);
       mix-blend-mode: normal;
       border: 0px solid rgb(232, 220, 198);
       border-left: 3px solid rgb(168, 196, 122);
@@ -11784,7 +11764,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="tip"] .callout-title {
       --callout-color: #f2b399;
-      color: hsl(from var(--callout-color) h s calc(l * 0.7));
+      color: hsl(from var(--callout-color) h s calc(l * 1.2));
       gap: 13.2px;
       border: 0px color(srgb 0.984041 0.906701 0.874783);
       border-top-left-radius: 0px;
@@ -11811,10 +11791,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] > .callout-content {
-      background-color: rgba(var(--callout-color-rgb), 0.35);
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.1));
+      color: hsl(from var(--callout-color) h s calc(l * 1.3));
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -11829,7 +11809,7 @@ html[saved-theme="dark"] {
       background:
         radial-gradient(at 100% 100%, rgba(168, 196, 122, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
         rgba(168, 196, 122, 0.12) linear-gradient(135deg, rgba(168, 196, 122, 0.05) 0%, rgba(168, 196, 122, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: rgb(232, 220, 198);
       mix-blend-mode: normal;
       border: 0px solid rgb(232, 220, 198);
       border-left: 3px solid rgb(168, 196, 122);
@@ -11845,7 +11825,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="success"] .callout-title {
       --callout-color: #f2b399;
-      color: hsl(from var(--callout-color) h s calc(l * 0.7));
+      color: hsl(from var(--callout-color) h s calc(l * 1.2));
       gap: 13.2px;
       border: 0px color(srgb 0.984041 0.906701 0.874783);
       border-top-left-radius: 0px;
@@ -11872,10 +11852,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] > .callout-content {
-      background-color: rgba(var(--callout-color-rgb), 0.35);
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.1));
+      color: hsl(from var(--callout-color) h s calc(l * 1.3));
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -11890,7 +11870,7 @@ html[saved-theme="dark"] {
       background:
         radial-gradient(at 100% 100%, rgba(243, 156, 18, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
         rgba(243, 156, 18, 0.12) linear-gradient(135deg, rgba(243, 156, 18, 0.05) 0%, rgba(243, 156, 18, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: rgb(232, 220, 198);
       mix-blend-mode: normal;
       border: 0px solid rgb(232, 220, 198);
       border-left: 3px solid rgb(243, 156, 18);
@@ -11906,7 +11886,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="question"] .callout-title {
       --callout-color: #f2b399;
-      color: hsl(from var(--callout-color) h s calc(l * 0.7));
+      color: hsl(from var(--callout-color) h s calc(l * 1.2));
       gap: 13.2px;
       border: 0px color(srgb 0.984041 0.906701 0.874783);
       border-top-left-radius: 0px;
@@ -11933,10 +11913,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] > .callout-content {
-      background-color: rgba(var(--callout-color-rgb), 0.35);
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.1));
+      color: hsl(from var(--callout-color) h s calc(l * 1.3));
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -11951,7 +11931,7 @@ html[saved-theme="dark"] {
       background:
         radial-gradient(at 100% 100%, rgba(243, 156, 18, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
         rgba(243, 156, 18, 0.12) linear-gradient(135deg, rgba(243, 156, 18, 0.05) 0%, rgba(243, 156, 18, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: rgb(232, 220, 198);
       mix-blend-mode: normal;
       border: 0px solid rgb(232, 220, 198);
       border-left: 3px solid rgb(243, 156, 18);
@@ -11967,7 +11947,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="warning"] .callout-title {
       --callout-color: #f2b399;
-      color: hsl(from var(--callout-color) h s calc(l * 0.7));
+      color: hsl(from var(--callout-color) h s calc(l * 1.2));
       gap: 13.2px;
       border: 0px color(srgb 0.984041 0.906701 0.874783);
       border-top-left-radius: 0px;
@@ -11994,10 +11974,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] > .callout-content {
-      background-color: rgba(var(--callout-color-rgb), 0.35);
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.1));
+      color: hsl(from var(--callout-color) h s calc(l * 1.3));
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -12012,7 +11992,7 @@ html[saved-theme="dark"] {
       background:
         radial-gradient(at 100% 100%, rgba(231, 76, 60, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
         rgba(231, 76, 60, 0.12) linear-gradient(135deg, rgba(231, 76, 60, 0.05) 0%, rgba(231, 76, 60, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: rgb(232, 220, 198);
       mix-blend-mode: normal;
       border: 0px solid rgb(232, 220, 198);
       border-left: 3px solid rgb(231, 76, 60);
@@ -12028,7 +12008,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="danger"] .callout-title {
       --callout-color: #f2b399;
-      color: hsl(from var(--callout-color) h s calc(l * 0.7));
+      color: hsl(from var(--callout-color) h s calc(l * 1.2));
       gap: 13.2px;
       border: 0px color(srgb 0.984041 0.906701 0.874783);
       border-top-left-radius: 0px;
@@ -12055,10 +12035,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] > .callout-content {
-      background-color: rgba(var(--callout-color-rgb), 0.35);
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.1));
+      color: hsl(from var(--callout-color) h s calc(l * 1.3));
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -12073,7 +12053,7 @@ html[saved-theme="dark"] {
       background:
         radial-gradient(at 100% 100%, rgba(231, 76, 60, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
         rgba(231, 76, 60, 0.12) linear-gradient(135deg, rgba(231, 76, 60, 0.05) 0%, rgba(231, 76, 60, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: rgb(232, 220, 198);
       mix-blend-mode: normal;
       border: 0px solid rgb(232, 220, 198);
       border-left: 3px solid rgb(231, 76, 60);
@@ -12089,7 +12069,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="failure"] .callout-title {
       --callout-color: #f2b399;
-      color: hsl(from var(--callout-color) h s calc(l * 0.7));
+      color: hsl(from var(--callout-color) h s calc(l * 1.2));
       gap: 13.2px;
       border: 0px color(srgb 0.984041 0.906701 0.874783);
       border-top-left-radius: 0px;
@@ -12116,10 +12096,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] > .callout-content {
-      background-color: rgba(var(--callout-color-rgb), 0.35);
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.1));
+      color: hsl(from var(--callout-color) h s calc(l * 1.3));
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -12134,7 +12114,7 @@ html[saved-theme="dark"] {
       background:
         radial-gradient(at 100% 100%, rgba(231, 76, 60, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
         rgba(231, 76, 60, 0.12) linear-gradient(135deg, rgba(231, 76, 60, 0.05) 0%, rgba(231, 76, 60, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: rgb(232, 220, 198);
       mix-blend-mode: normal;
       border: 0px solid rgb(232, 220, 198);
       border-left: 3px solid rgb(231, 76, 60);
@@ -12150,7 +12130,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="bug"] .callout-title {
       --callout-color: #f2b399;
-      color: hsl(from var(--callout-color) h s calc(l * 0.7));
+      color: hsl(from var(--callout-color) h s calc(l * 1.2));
       gap: 13.2px;
       border: 0px color(srgb 0.984041 0.906701 0.874783);
       border-top-left-radius: 0px;
@@ -12177,10 +12157,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] > .callout-content {
-      background-color: rgba(var(--callout-color-rgb), 0.35);
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.1));
+      color: hsl(from var(--callout-color) h s calc(l * 1.3));
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -12195,7 +12175,7 @@ html[saved-theme="dark"] {
       background:
         radial-gradient(at 100% 100%, rgba(149, 179, 170, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
         rgba(149, 179, 170, 0.12) linear-gradient(135deg, rgba(149, 179, 170, 0.05) 0%, rgba(149, 179, 170, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: rgb(232, 220, 198);
       mix-blend-mode: normal;
       border: 0px solid rgb(232, 220, 198);
       border-left: 3px solid rgb(149, 179, 170);
@@ -12211,7 +12191,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="example"] .callout-title {
       --callout-color: #f2b399;
-      color: hsl(from var(--callout-color) h s calc(l * 0.7));
+      color: hsl(from var(--callout-color) h s calc(l * 1.2));
       gap: 13.2px;
       border: 0px color(srgb 0.984041 0.906701 0.874783);
       border-top-left-radius: 0px;
@@ -12238,10 +12218,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] > .callout-content {
-      background-color: rgba(var(--callout-color-rgb), 0.35);
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.1));
+      color: hsl(from var(--callout-color) h s calc(l * 1.3));
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -12256,7 +12236,7 @@ html[saved-theme="dark"] {
       background:
         radial-gradient(at 100% 100%, rgba(149, 179, 170, 0.25) 0%, rgba(0, 0, 0, 0) 70%) repeat scroll 0% 0% / auto padding-box border-box,
         rgba(149, 179, 170, 0.12) linear-gradient(135deg, rgba(149, 179, 170, 0.05) 0%, rgba(149, 179, 170, 0.1) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
+      color: rgb(232, 220, 198);
       mix-blend-mode: normal;
       border: 0px solid rgb(232, 220, 198);
       border-left: 3px solid rgb(149, 179, 170);
@@ -12272,7 +12252,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="quote"] .callout-title {
       --callout-color: #f2b399;
-      color: hsl(from var(--callout-color) h s calc(l * 0.7));
+      color: hsl(from var(--callout-color) h s calc(l * 1.2));
       gap: 13.2px;
       border: 0px color(srgb 0.984041 0.906701 0.874783);
       border-top-left-radius: 0px;
@@ -12299,10 +12279,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] > .callout-content {
-      background-color: rgba(var(--callout-color-rgb), 0.35);
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: hsl(from var(--callout-color) h s calc(l * 1.1));
+      color: hsl(from var(--callout-color) h s calc(l * 1.3));
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -12339,10 +12319,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin-top: var(--heading-spacing);
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 16px 0px 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
       margin-inline-end: 0px;
@@ -12372,9 +12349,9 @@ html[saved-theme="dark"] {
     }
 
     th {
-      background-color: rgb(226, 122, 90);
-      color: var(--table-header-color);
-      font-weight: var(--table-header-weight);
+      background-color: var(--emphasis-color);
+      color: var(--text-normal);
+      font-weight: var(--weight-semibold);
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
@@ -12384,7 +12361,7 @@ html[saved-theme="dark"] {
       border-right: 1px solid rgb(54, 54, 54);
       border-top: var(--table-header-border-width) solid rgb(54, 54, 54);
       border-bottom: 1px solid rgb(54, 54, 54);
-      border-top-left-radius: 12px;
+      border-top-left-radius: var(--r3);
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
@@ -13201,9 +13178,9 @@ html[saved-theme="dark"] {
     }
 
     .bases-table thead th {
-      background-color: rgb(226, 122, 90);
-      color: var(--table-header-color);
-      font-weight: var(--table-header-weight);
+      background-color: var(--emphasis-color);
+      color: var(--text-normal);
+      font-weight: var(--weight-semibold);
       border-color: rgb(54, 54, 54);
     }
 
@@ -13224,7 +13201,7 @@ html[saved-theme="dark"] {
 
     .canvas-node-file {
       color: var(--text-normal);
-      background-color: rgba(var(--primary-color-rgb), 0.08);
+      background-color: rgba(0, 0, 0, 0);
     }
 
     .canvas-sidebar {
@@ -13494,7 +13471,7 @@ html[saved-theme="dark"] {
     }
 
     .katex-display {
-      background-color: var(--background-modifier-hover);
+      background-color: rgba(0, 0, 0, 0);
       color: rgb(232, 220, 198);
       border-color: rgb(232, 220, 198);
       border-width: 0px;
@@ -13596,7 +13573,7 @@ html[saved-theme="dark"] {
 
     ul.tags > li {
       background-color: var(--tag-background);
-      color: var(--link-color-hover);
+      color: var(--link-color);
       border: 0px solid rgba(219, 120, 87, 0.15);
       border-bottom-color: rgb(240, 145, 111);
       border-top-left-radius: 6px;
@@ -13720,11 +13697,9 @@ html[saved-theme="dark"] {
       background-color: rgba(var(--callout-video-rgb), 0.12);
       border-bottom-left-radius: 6px;
       border-bottom-right-radius: 16px;
-      border-color: rgb(232, 220, 198);
       border-top-left-radius: 16px;
       border-top-right-radius: 6px;
-      color: hsl(from var(--callout-color) h s calc(l * 1.4));
-      font-weight: var(--weight-semibold);
+      color: rgb(232, 220, 198);
       --callout-color-rgb: var(--callout-video-rgb);
       --layer-status-bar: 15;
       background-image: radial-gradient(at 100% 100%, rgba(242, 179, 153, 0.25) 0%, rgba(0, 0, 0, 0) 70%), linear-gradient(135deg, rgba(242, 179, 153, 0.05) 0%, rgba(242, 179, 153, 0.1) 100%);
@@ -13893,9 +13868,12 @@ html[saved-theme="dark"] {
       --touch-radius-xxs: 24px;
       --traffic-lights-offset-x: 40px;
       --traffic-lights-offset-y: 40px;
+      border-bottom-color: rgb(232, 220, 198);
       border-bottom-width: 0px;
       border-left: 3px solid rgb(242, 179, 153);
+      border-right-color: rgb(232, 220, 198);
       border-right-width: 0px;
+      border-top-color: rgb(232, 220, 198);
       border-top-width: 0px;
       font-family:
         ui-sans-serif,

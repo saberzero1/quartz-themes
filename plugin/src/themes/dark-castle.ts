@@ -512,12 +512,14 @@ html body .page > div#quartz-body div.sidebar {
 
 html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(41, 41, 41);
+  border-right-width: 0px;
 }
 
 html body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #000000);
   background-color: var(--tab-container-background, rgb(0, 0, 0));
   border-left-color: rgb(41, 41, 41);
+  border-left-width: 0px;
   color: rgb(255, 213, 128);
 }`,
     typography: `html body .markdown-rendered p > b, html b {
@@ -599,17 +601,25 @@ html body a.internal-link.broken {
 }`,
     lists: `html body dd {
   border-bottom-color: rgb(255, 213, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
 html body dt {
   border-bottom-color: rgb(255, 213, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
@@ -623,9 +633,13 @@ html body ul > li {
 
 html body ul.overflow {
   border-bottom-color: rgb(255, 213, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
+  border-top-width: 0px;
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--text-faint, rgb(255, 128, 64));
@@ -636,9 +650,13 @@ html body blockquote {
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(255, 213, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
+  border-top-width: 0px;
 }
 
 html body table {
@@ -655,17 +673,25 @@ html body tbody tr:nth-child(odd) {
 
 html body td {
   border-bottom-color: rgb(41, 41, 41);
+  border-bottom-width: 0px;
   border-left-color: rgb(41, 41, 41);
+  border-left-width: 0px;
   border-right-color: rgb(41, 41, 41);
+  border-right-width: 0px;
   border-top-color: rgb(41, 41, 41);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(255, 213, 128));
 }
 
 html body th {
   border-bottom-color: rgb(41, 41, 41);
+  border-bottom-width: 0px;
   border-left-color: rgb(41, 41, 41);
+  border-left-width: 0px;
   border-right-color: rgb(41, 41, 41);
+  border-right-width: 0px;
   border-top-color: rgb(41, 41, 41);
+  border-top-width: 0px;
   color: var(--table-header-color, rgb(255, 213, 128));
 }
 
@@ -677,11 +703,15 @@ html body tr {
   border-bottom-color: rgb(41, 41, 41);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(41, 41, 41);
+  border-left-width: 0px;
   border-right-color: rgb(41, 41, 41);
+  border-right-width: 0px;
   border-top-color: rgb(41, 41, 41);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(8, 210, 32));
 }
 
@@ -690,17 +720,25 @@ html body pre:has(> code) {
   border-bottom-color: rgb(41, 41, 41);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(41, 41, 41);
+  border-left-width: 0px;
   border-right-color: rgb(41, 41, 41);
+  border-right-width: 0px;
   border-top-color: rgb(41, 41, 41);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }`,
     images: `html body audio {
   border-bottom-color: rgb(255, 213, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
+  border-top-width: 0px;
 }
 
 html body figcaption {
@@ -712,69 +750,98 @@ html body figure {
   border-bottom-color: rgb(255, 213, 128);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }
 
 html body img {
   border-bottom-color: rgb(186, 230, 126);
+  border-bottom-width: 0px;
   border-left-color: rgb(186, 230, 126);
+  border-left-width: 0px;
   border-right-color: rgb(186, 230, 126);
+  border-right-width: 0px;
   border-top-color: rgb(186, 230, 126);
+  border-top-width: 0px;
 }
 
 html body video {
   border-bottom-color: rgb(255, 213, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
+  border-top-width: 0px;
 }`,
     embeds: `html body .file-embed {
   background-color: var(--background-primary-alt, rgb(41, 41, 41));
   border-bottom-color: rgb(156, 156, 156);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(156, 156, 156);
+  border-left-width: 0px;
   border-radius: 4px;
   border-right-color: rgb(156, 156, 156);
+  border-right-width: 0px;
   border-top-color: rgb(156, 156, 156);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: var(--text-muted, rgb(156, 156, 156));
 }
 
 html body .footnotes {
   border-top-color: rgb(255, 213, 128);
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
 html body .transclude {
   border-bottom-color: rgb(255, 213, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 128, 64);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
 html body .transclude-inner {
   border-bottom-color: rgb(255, 213, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(170, 27, 134);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(170, 27, 134);
+  border-left-width: 0px;
   border-right-color: rgb(170, 27, 134);
+  border-right-width: 0px;
   border-top-color: rgb(170, 27, 134);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }
 
 html body li.task-list-item[data-task="#"] {
@@ -1327,9 +1394,13 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
     callouts: `html body .callout .callout-title {
   --callout-color: 112, 153, 219;
   border-bottom-color: rgb(112, 153, 219);
+  border-bottom-width: 0px;
   border-left-color: rgb(112, 153, 219);
+  border-left-width: 0px;
   border-right-color: rgb(112, 153, 219);
+  border-right-width: 0px;
   border-top-color: rgb(112, 153, 219);
+  border-top-width: 0px;
 }
 
 html body .callout .callout-title > .callout-title-inner > p {
@@ -1346,20 +1417,28 @@ html body .callout[data-callout="abstract"] {
   border-bottom-color: rgba(92, 207, 230, 0.25);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgba(92, 207, 230, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(92, 207, 230, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(92, 207, 230, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
 html body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 112, 153, 219;
   border-bottom-color: rgb(112, 153, 219);
+  border-bottom-width: 0px;
   border-left-color: rgb(112, 153, 219);
+  border-left-width: 0px;
   border-right-color: rgb(112, 153, 219);
+  border-right-width: 0px;
   border-top-color: rgb(112, 153, 219);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -1376,20 +1455,28 @@ html body .callout[data-callout="bug"] {
   border-bottom-color: rgba(239, 107, 115, 0.25);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgba(239, 107, 115, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(239, 107, 115, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(239, 107, 115, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
 html body .callout[data-callout="bug"] .callout-title {
   --callout-color: 112, 153, 219;
   border-bottom-color: rgb(112, 153, 219);
+  border-bottom-width: 0px;
   border-left-color: rgb(112, 153, 219);
+  border-left-width: 0px;
   border-right-color: rgb(112, 153, 219);
+  border-right-width: 0px;
   border-top-color: rgb(112, 153, 219);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -1406,20 +1493,28 @@ html body .callout[data-callout="danger"] {
   border-bottom-color: rgba(239, 107, 115, 0.25);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgba(239, 107, 115, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(239, 107, 115, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(239, 107, 115, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
 html body .callout[data-callout="danger"] .callout-title {
   --callout-color: 112, 153, 219;
   border-bottom-color: rgb(112, 153, 219);
+  border-bottom-width: 0px;
   border-left-color: rgb(112, 153, 219);
+  border-left-width: 0px;
   border-right-color: rgb(112, 153, 219);
+  border-right-width: 0px;
   border-top-color: rgb(112, 153, 219);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -1436,20 +1531,28 @@ html body .callout[data-callout="example"] {
   border-bottom-color: rgba(195, 166, 255, 0.25);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgba(195, 166, 255, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(195, 166, 255, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(195, 166, 255, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
 html body .callout[data-callout="example"] .callout-title {
   --callout-color: 112, 153, 219;
   border-bottom-color: rgb(112, 153, 219);
+  border-bottom-width: 0px;
   border-left-color: rgb(112, 153, 219);
+  border-left-width: 0px;
   border-right-color: rgb(112, 153, 219);
+  border-right-width: 0px;
   border-top-color: rgb(112, 153, 219);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -1466,20 +1569,28 @@ html body .callout[data-callout="failure"] {
   border-bottom-color: rgba(239, 107, 115, 0.25);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgba(239, 107, 115, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(239, 107, 115, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(239, 107, 115, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
 html body .callout[data-callout="failure"] .callout-title {
   --callout-color: 112, 153, 219;
   border-bottom-color: rgb(112, 153, 219);
+  border-bottom-width: 0px;
   border-left-color: rgb(112, 153, 219);
+  border-left-width: 0px;
   border-right-color: rgb(112, 153, 219);
+  border-right-width: 0px;
   border-top-color: rgb(112, 153, 219);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -1496,20 +1607,28 @@ html body .callout[data-callout="info"] {
   border-bottom-color: rgba(112, 153, 219, 0.25);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgba(112, 153, 219, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(112, 153, 219, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(112, 153, 219, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
 html body .callout[data-callout="info"] .callout-title {
   --callout-color: 112, 153, 219;
   border-bottom-color: rgb(112, 153, 219);
+  border-bottom-width: 0px;
   border-left-color: rgb(112, 153, 219);
+  border-left-width: 0px;
   border-right-color: rgb(112, 153, 219);
+  border-right-width: 0px;
   border-top-color: rgb(112, 153, 219);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -1526,20 +1645,28 @@ html body .callout[data-callout="note"] {
   border-bottom-color: rgba(112, 153, 219, 0.25);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgba(112, 153, 219, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(112, 153, 219, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(112, 153, 219, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
 html body .callout[data-callout="note"] .callout-title {
   --callout-color: 112, 153, 219;
   border-bottom-color: rgb(112, 153, 219);
+  border-bottom-width: 0px;
   border-left-color: rgb(112, 153, 219);
+  border-left-width: 0px;
   border-right-color: rgb(112, 153, 219);
+  border-right-width: 0px;
   border-top-color: rgb(112, 153, 219);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -1556,20 +1683,28 @@ html body .callout[data-callout="question"] {
   border-bottom-color: rgba(255, 174, 87, 0.25);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 174, 87, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(255, 174, 87, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(255, 174, 87, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
 html body .callout[data-callout="question"] .callout-title {
   --callout-color: 112, 153, 219;
   border-bottom-color: rgb(112, 153, 219);
+  border-bottom-width: 0px;
   border-left-color: rgb(112, 153, 219);
+  border-left-width: 0px;
   border-right-color: rgb(112, 153, 219);
+  border-right-width: 0px;
   border-top-color: rgb(112, 153, 219);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -1592,9 +1727,13 @@ html body .callout[data-callout="quote"] {
 html body .callout[data-callout="quote"] .callout-title {
   --callout-color: 112, 153, 219;
   border-bottom-color: rgb(112, 153, 219);
+  border-bottom-width: 0px;
   border-left-color: rgb(112, 153, 219);
+  border-left-width: 0px;
   border-right-color: rgb(112, 153, 219);
+  border-right-width: 0px;
   border-top-color: rgb(112, 153, 219);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -1611,20 +1750,28 @@ html body .callout[data-callout="success"] {
   border-bottom-color: rgba(186, 230, 126, 0.25);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgba(186, 230, 126, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(186, 230, 126, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(186, 230, 126, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
 html body .callout[data-callout="success"] .callout-title {
   --callout-color: 112, 153, 219;
   border-bottom-color: rgb(112, 153, 219);
+  border-bottom-width: 0px;
   border-left-color: rgb(112, 153, 219);
+  border-left-width: 0px;
   border-right-color: rgb(112, 153, 219);
+  border-right-width: 0px;
   border-top-color: rgb(112, 153, 219);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -1641,20 +1788,28 @@ html body .callout[data-callout="tip"] {
   border-bottom-color: rgba(92, 207, 230, 0.25);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgba(92, 207, 230, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(92, 207, 230, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(92, 207, 230, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
 html body .callout[data-callout="tip"] .callout-title {
   --callout-color: 112, 153, 219;
   border-bottom-color: rgb(112, 153, 219);
+  border-bottom-width: 0px;
   border-left-color: rgb(112, 153, 219);
+  border-left-width: 0px;
   border-right-color: rgb(112, 153, 219);
+  border-right-width: 0px;
   border-top-color: rgb(112, 153, 219);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -1671,20 +1826,28 @@ html body .callout[data-callout="todo"] {
   border-bottom-color: rgba(112, 153, 219, 0.25);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgba(112, 153, 219, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(112, 153, 219, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(112, 153, 219, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
 html body .callout[data-callout="todo"] .callout-title {
   --callout-color: 112, 153, 219;
   border-bottom-color: rgb(112, 153, 219);
+  border-bottom-width: 0px;
   border-left-color: rgb(112, 153, 219);
+  border-left-width: 0px;
   border-right-color: rgb(112, 153, 219);
+  border-right-width: 0px;
   border-top-color: rgb(112, 153, 219);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -1701,20 +1864,28 @@ html body .callout[data-callout="warning"] {
   border-bottom-color: rgba(255, 174, 87, 0.25);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 174, 87, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(255, 174, 87, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(255, 174, 87, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
 html body .callout[data-callout="warning"] .callout-title {
   --callout-color: 112, 153, 219;
   border-bottom-color: rgb(112, 153, 219);
+  border-bottom-width: 0px;
   border-left-color: rgb(112, 153, 219);
+  border-left-width: 0px;
   border-right-color: rgb(112, 153, 219);
+  border-right-width: 0px;
   border-top-color: rgb(112, 153, 219);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -1783,9 +1954,13 @@ html body .callout[data-callout="warning"] {
     search: `html body .search > .search-button {
   background-color: var(--background-primary, rgb(0, 0, 0));
   border-bottom-color: rgb(41, 41, 41);
+  border-bottom-width: 0px;
   border-left-color: rgb(41, 41, 41);
+  border-left-width: 0px;
   border-right-color: rgb(41, 41, 41);
+  border-right-width: 0px;
   border-top-color: rgb(41, 41, 41);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(255, 213, 128));
 }
 
@@ -1794,11 +1969,15 @@ html body .search > .search-container > .search-space {
   border-bottom-color: rgb(87, 87, 87);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+  border-bottom-width: 0px;
   border-left-color: rgb(87, 87, 87);
+  border-left-width: 0px;
   border-right-color: rgb(87, 87, 87);
+  border-right-width: 0px;
   border-top-color: rgb(87, 87, 87);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space > * {
@@ -1815,11 +1994,15 @@ html body .search > .search-container > .search-space > .search-layout > .result
   border-bottom-color: rgb(255, 213, 128);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-description {
@@ -1835,18 +2018,26 @@ html body .search > .search-container > .search-space > .search-layout, html .se
   border-bottom-color: rgb(87, 87, 87);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+  border-bottom-width: 0px;
   border-left-color: rgb(87, 87, 87);
+  border-left-width: 0px;
   border-right-color: rgb(87, 87, 87);
+  border-right-width: 0px;
   border-top-color: rgb(87, 87, 87);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 128, 64);
+  border-left-width: 0px;
   border-right-color: rgb(255, 128, 64);
+  border-right-width: 0px;
   border-top-color: rgb(255, 128, 64);
+  border-top-width: 0px;
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
@@ -1854,11 +2045,15 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   border-bottom-color: rgb(255, 213, 128);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
@@ -1883,9 +2078,13 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-decoration-hover: var(--tag-decoration-hover, underline);
   background-color: var(--pill-background, rgb(0, 123, 136));
   border-bottom-color: rgba(255, 204, 102, 0.15);
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 204, 102, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(255, 204, 102, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(255, 204, 102, 0.15);
+  border-top-width: 0px;
   color: var(--pill-color, rgb(255, 255, 255));
 }
 
@@ -1895,9 +2094,13 @@ html body a.internal-link.tag-link::before {
 
 html body h1 {
   border-bottom-color: rgb(186, 230, 126);
+  border-bottom-width: 0px;
   border-left-color: rgb(186, 230, 126);
+  border-left-width: 0px;
   border-right-color: rgb(186, 230, 126);
+  border-right-width: 0px;
   border-top-color: rgb(186, 230, 126);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(186, 230, 126));
 }
 
@@ -1908,27 +2111,39 @@ html body h1.article-title {
 html body h2 {
   --font-weight: var(--h2-weight, 675);
   border-bottom-color: rgb(255, 0, 15);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 0, 15);
+  border-left-width: 0px;
   border-right-color: rgb(255, 0, 15);
+  border-right-width: 0px;
   border-top-color: rgb(255, 0, 15);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(255, 0, 15));
   font-weight: var(--font-weight, 675);
 }
 
 html body h2.page-title, html h2.page-title a {
   border-bottom-color: rgb(186, 230, 126);
+  border-bottom-width: 0px;
   border-left-color: rgb(186, 230, 126);
+  border-left-width: 0px;
   border-right-color: rgb(186, 230, 126);
+  border-right-width: 0px;
   border-top-color: rgb(186, 230, 126);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(186, 230, 126));
 }
 
 html body h3 {
   --font-weight: var(--h3-weight, 650);
   border-bottom-color: rgb(255, 0, 15);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 0, 15);
+  border-left-width: 0px;
   border-right-color: rgb(255, 0, 15);
+  border-right-width: 0px;
   border-top-color: rgb(255, 0, 15);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(255, 0, 15));
   font-weight: var(--font-weight, 650);
 }
@@ -1936,9 +2151,13 @@ html body h3 {
 html body h4 {
   --font-weight: var(--h4-weight, 625);
   border-bottom-color: rgb(255, 0, 15);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 0, 15);
+  border-left-width: 0px;
   border-right-color: rgb(255, 0, 15);
+  border-right-width: 0px;
   border-top-color: rgb(255, 0, 15);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(255, 0, 15));
   font-weight: var(--font-weight, 625);
 }
@@ -1946,9 +2165,13 @@ html body h4 {
 html body h5 {
   --font-weight: var(--h5-weight, 600);
   border-bottom-color: rgb(255, 0, 15);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 0, 15);
+  border-left-width: 0px;
   border-right-color: rgb(255, 0, 15);
+  border-right-width: 0px;
   border-top-color: rgb(255, 0, 15);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(255, 0, 15));
   font-weight: var(--font-weight, 600);
 }
@@ -1956,29 +2179,43 @@ html body h5 {
 html body h6 {
   --font-weight: var(--h6-weight, 575);
   border-bottom-color: rgb(255, 0, 15);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 0, 15);
+  border-left-width: 0px;
   border-right-color: rgb(255, 0, 15);
+  border-right-width: 0px;
   border-top-color: rgb(255, 0, 15);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(255, 0, 15));
   font-weight: var(--font-weight, 575);
 }
 
 html body hr {
   border-bottom-color: rgb(41, 41, 41);
+  border-bottom-width: 0px;
   border-left-color: rgb(41, 41, 41);
+  border-left-width: 0px;
   border-right-color: rgb(41, 41, 41);
+  border-right-width: 0px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 112, 153, 219);
   border-bottom-color: rgba(112, 153, 219, 0.25);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgba(112, 153, 219, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(112, 153, 219, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(112, 153, 219, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
   padding-right: 24px;
+  padding-top: 0px;
 }`,
     explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: var(--nav-item-color, rgb(156, 156, 156));
@@ -2014,20 +2251,28 @@ html body .explorer .nav-files-container .collapse-icon svg {
   border-bottom-color: rgb(156, 156, 156);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(156, 156, 156);
+  border-left-width: 0px;
   border-right-color: rgb(156, 156, 156);
+  border-right-width: 0px;
   border-top-color: rgb(156, 156, 156);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(156, 156, 156));
 }`,
     footer: `html body footer {
   background-color: var(--status-bar-background, rgb(0, 0, 0));
   border-bottom-color: rgb(41, 41, 41);
+  border-bottom-width: 0px;
   border-left-color: rgb(41, 41, 41);
+  border-left-width: 0px;
   border-right-color: rgb(41, 41, 41);
+  border-right-width: 0px;
   border-top-color: rgb(41, 41, 41);
   border-top-left-radius: 4px;
+  border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(156, 156, 156));
 }
 
@@ -2040,9 +2285,13 @@ html body footer ul li a {
 
 html body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(255, 213, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
@@ -2055,9 +2304,13 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 }`,
     listPage: `html body li.section-li {
   border-bottom-color: rgb(255, 213, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
+  border-top-width: 0px;
 }
 
 html body li.section-li > .section .meta {
@@ -2070,19 +2323,27 @@ html body li.section-li > .section > .desc > h3 > a {
 
 html body ul.section-ul {
   border-bottom-color: rgb(255, 213, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
+  border-top-width: 0px;
 }`,
     darkmode: `html body .darkmode {
   border-bottom-color: rgb(156, 156, 156);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(156, 156, 156);
+  border-left-width: 0px;
   border-right-color: rgb(156, 156, 156);
+  border-right-width: 0px;
   border-top-color: rgb(156, 156, 156);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(156, 156, 156));
 }
 
@@ -2094,11 +2355,15 @@ html body .darkmode svg {
   border-bottom-color: rgb(156, 156, 156);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(156, 156, 156);
+  border-left-width: 0px;
   border-right-color: rgb(156, 156, 156);
+  border-right-width: 0px;
   border-top-color: rgb(156, 156, 156);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(156, 156, 156);
 }
 
@@ -2135,25 +2400,37 @@ html body .bases-table thead th {
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgb(41, 41, 41);
+  border-bottom-width: 0px;
   border-left-color: rgb(41, 41, 41);
+  border-left-width: 0px;
   border-right-color: rgb(41, 41, 41);
+  border-right-width: 0px;
   border-top-color: rgb(41, 41, 41);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(156, 156, 156));
 }
 
 html body .metadata-container .metadata-property {
   border-bottom-color: rgb(156, 156, 156);
+  border-bottom-width: 0px;
   border-left-color: rgb(156, 156, 156);
+  border-left-width: 0px;
   border-right-color: rgb(156, 156, 156);
+  border-right-width: 0px;
   border-top-color: rgb(156, 156, 156);
+  border-top-width: 0px;
   color: rgb(156, 156, 156);
 }
 
 html body .metadata-properties {
   border-bottom-color: rgb(156, 156, 156);
+  border-bottom-width: 0px;
   border-left-color: rgb(156, 156, 156);
+  border-left-width: 0px;
   border-right-color: rgb(156, 156, 156);
+  border-right-width: 0px;
   border-top-color: rgb(156, 156, 156);
+  border-top-width: 0px;
   color: rgb(156, 156, 156);
 }
 
@@ -2202,9 +2479,13 @@ html body div#quartz-root {
 
 html body ol.overflow {
   border-bottom-color: rgb(255, 213, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
+  border-top-width: 0px;
 }`,
     stacked: `html body .stacked-page {
   background-color: var(--background-secondary, rgb(0, 0, 0));
@@ -2220,9 +2501,13 @@ html body .stacked-page.active {
 }`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(255, 213, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
+  border-top-width: 0px;
   color: rgb(255, 213, 128);
 }
 
@@ -2232,9 +2517,13 @@ html body .navigation-progress {
 
 html body .page-header h2.page-title {
   border-bottom-color: rgb(255, 213, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(255, 213, 128));
 }
 
@@ -2244,16 +2533,24 @@ html body abbr {
 
 html body details {
   border-bottom-color: rgb(255, 213, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
+  border-top-width: 0px;
 }
 
 html body input[type=text] {
   border-bottom-color: rgb(77, 188, 237);
+  border-bottom-width: 0px;
   border-left-color: rgb(77, 188, 237);
+  border-left-width: 0px;
   border-right-color: rgb(77, 188, 237);
+  border-right-width: 0px;
   border-top-color: rgb(77, 188, 237);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(77, 188, 237));
 }
 
@@ -2262,19 +2559,27 @@ html body kbd {
   border-bottom-color: rgb(8, 210, 32);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(8, 210, 32);
+  border-left-width: 0px;
   border-right-color: rgb(8, 210, 32);
+  border-right-width: 0px;
   border-top-color: rgb(8, 210, 32);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(8, 210, 32));
 }
 
 html body progress {
   border-bottom-color: rgb(255, 213, 128);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 128);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 128);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 128);
+  border-top-width: 0px;
 }
 
 html body sub {
@@ -2294,11 +2599,15 @@ html body ul.tags > li {
   border-bottom-color: rgba(255, 204, 102, 0.15);
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 204, 102, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(255, 204, 102, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(255, 204, 102, 0.15);
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
+  border-top-width: 0px;
   color: var(--tag-color, rgb(255, 255, 255));
 }`,
   },

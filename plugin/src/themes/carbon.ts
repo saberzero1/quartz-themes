@@ -270,6 +270,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
@@ -369,41 +370,63 @@ html[saved-theme="dark"] body a.internal-link.broken {
 }`,
     lists: `html[saved-theme="dark"] body dd {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
   color: rgb(244, 244, 244);
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 html[saved-theme="dark"] body dt {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
   color: rgb(244, 244, 244);
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(244, 244, 244);
+  margin-bottom: 0px;
   margin-left: 28.8001px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 0.8px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 0.8px);
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(244, 244, 244);
+  margin-bottom: 0px;
   margin-left: 28.8001px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 0.8px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 0.8px);
 }
 
 html[saved-theme="dark"] body ul.overflow {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   color: var(--blockquote-color, rgb(244, 244, 244));
@@ -412,9 +435,13 @@ html[saved-theme="dark"] body ul.overflow {
     tables: `html[saved-theme="dark"] body .table-container {
   background-color: var(--background-secondary, rgb(38, 38, 38));
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body table {
@@ -453,11 +480,15 @@ html[saved-theme="dark"] body thead {
   border-bottom-color: rgb(111, 111, 111);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(111, 111, 111);
+  border-left-width: 0px;
   border-right-color: rgb(111, 111, 111);
+  border-right-width: 0px;
   border-top-color: rgb(111, 111, 111);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(244, 244, 244));
   font-family: var(--font-monospace, "IBM Plex Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace);
 }
@@ -466,11 +497,15 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -478,9 +513,13 @@ html[saved-theme="dark"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body figcaption {
@@ -492,25 +531,37 @@ html[saved-theme="dark"] body figure {
   border-bottom-color: rgb(244, 244, 244);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body img {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body video {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: var(--background-secondary, rgb(38, 38, 38));
@@ -520,6 +571,8 @@ html[saved-theme="dark"] body video {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 12px;
   padding-bottom: 6px;
   padding-left: 24px;
@@ -529,18 +582,24 @@ html[saved-theme="dark"] body video {
 
 html[saved-theme="dark"] body .footnotes {
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
   color: rgb(244, 244, 244);
 }
 
 html[saved-theme="dark"] body .transclude {
   background-color: var(--background-secondary, rgb(38, 38, 38));
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
   border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
   color: rgb(244, 244, 244);
   margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 12px;
   padding-bottom: 6px;
   padding-left: 24px;
@@ -550,9 +609,13 @@ html[saved-theme="dark"] body .transclude {
 
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
   color: rgb(244, 244, 244);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
@@ -1397,6 +1460,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-bottom-color: rgb(111, 111, 111);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
   border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
@@ -1432,11 +1496,15 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
   border-bottom-color: rgb(244, 244, 244);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
@@ -1457,20 +1525,28 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   background-color: var(--background-secondary, rgb(38, 38, 38));
   border-bottom-color: rgb(111, 111, 111);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
   border-bottom-color: rgb(244, 244, 244);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(244, 244, 244);
 }
 
@@ -1493,9 +1569,13 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   --pill-color-remove-hover: var(--tag-color-hover, hsl(216, 100.98%, 60.95%));
   background-color: var(--pill-background, rgba(16, 100, 254, 0.1));
   border-bottom-color: rgba(16, 100, 254, 0.15);
+  border-bottom-width: 0px;
   border-left-color: rgba(16, 100, 254, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(16, 100, 254, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(16, 100, 254, 0.15);
+  border-top-width: 0px;
   color: var(--pill-color, rgb(56, 136, 255));
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
@@ -1507,9 +1587,13 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 html[saved-theme="dark"] body h1 {
   --font-weight: var(--h1-weight, 400);
   border-bottom-color: rgb(56, 136, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(56, 136, 255);
+  border-left-width: 0px;
   border-right-color: rgb(56, 136, 255);
+  border-right-width: 0px;
   border-top-color: rgb(56, 136, 255);
+  border-top-width: 0px;
   color: var(--text-accent, rgb(56, 136, 255));
   font-family: var(--h1-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
   font-size: var(--h1-size, 32px);
@@ -1526,9 +1610,13 @@ html[saved-theme="dark"] body h1.article-title {
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 400);
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(244, 244, 244));
   font-family: var(--h2-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
   font-size: var(--h2-size, 28px);
@@ -1539,9 +1627,13 @@ html[saved-theme="dark"] body h2 {
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   border-bottom-color: rgb(56, 136, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(56, 136, 255);
+  border-left-width: 0px;
   border-right-color: rgb(56, 136, 255);
+  border-right-width: 0px;
   border-top-color: rgb(56, 136, 255);
+  border-top-width: 0px;
   color: var(--text-accent, rgb(56, 136, 255));
   font-family: var(--inline-title-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
   font-weight: var(--inline-title-weight, 400);
@@ -1549,22 +1641,33 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 
 html[saved-theme="dark"] body h3 {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(244, 244, 244));
   font-family: var(--h3-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
   font-size: var(--h3-size, 16px);
   letter-spacing: var(--h3-letter-spacing, -0.128px);
   line-height: var(--h3-line-height, 20.8px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
 }
 
 html[saved-theme="dark"] body h4 {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(244, 244, 244));
   font-family: var(--h4-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
   font-size: var(--h4-size, 16px);
@@ -1574,9 +1677,13 @@ html[saved-theme="dark"] body h4 {
 
 html[saved-theme="dark"] body h5 {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(244, 244, 244));
   font-family: var(--h5-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
   font-size: var(--h5-size, 16px);
@@ -1586,9 +1693,13 @@ html[saved-theme="dark"] body h5 {
 
 html[saved-theme="dark"] body h6 {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(244, 244, 244));
   font-family: var(--h6-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
@@ -1601,6 +1712,7 @@ html[saved-theme="dark"] body hr {
   border-left-style: solid;
   border-left-width: 1px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -1642,19 +1754,27 @@ html[saved-theme="dark"] body li.depth-0 {
   border-bottom-color: rgb(244, 244, 244);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(244, 244, 244));
 }`,
     footer: `html[saved-theme="dark"] body footer {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 0px;
+  border-top-width: 0px;
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
@@ -1664,9 +1784,13 @@ html[saved-theme="dark"] body li.depth-0 {
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
   color: rgb(244, 244, 244);
 }
 
@@ -1675,9 +1799,13 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body li.section-li > .section .meta {
@@ -1686,19 +1814,27 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 
 html[saved-theme="dark"] body ul.section-ul {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-color: rgb(141, 141, 141);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(141, 141, 141);
+  border-left-width: 0px;
   border-right-color: rgb(141, 141, 141);
+  border-right-width: 0px;
   border-top-color: rgb(141, 141, 141);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(141, 141, 141));
 }
 
@@ -1742,9 +1878,13 @@ html[saved-theme="dark"] body .canvas-sidebar {
     properties: `html[saved-theme="dark"] body .metadata {
   background-color: var(--table-headers, rgb(51, 51, 51));
   border-bottom-color: rgb(111, 111, 111);
+  border-bottom-width: 0px;
   border-left-color: rgb(111, 111, 111);
+  border-left-width: 0px;
   border-right-color: rgb(111, 111, 111);
+  border-right-width: 0px;
   border-top-color: rgb(111, 111, 111);
+  border-top-width: 0px;
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
@@ -1819,9 +1959,13 @@ html[saved-theme="dark"] body div#quartz-root {
 
 html[saved-theme="dark"] body ol.overflow {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
   border-color: rgb(244, 244, 244);
@@ -1836,17 +1980,25 @@ html[saved-theme="dark"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
   color: rgb(244, 244, 244);
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(244, 244, 244));
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-size: 14px;
@@ -1859,9 +2011,13 @@ html[saved-theme="dark"] body abbr {
 
 html[saved-theme="dark"] body details {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body input[type=text] {
@@ -1869,6 +2025,8 @@ html[saved-theme="dark"] body input[type=text] {
   border-bottom-width: 1px;
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   padding-bottom: var(--size-4-2, 8px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--size-4-2, 8px);
 }
 
@@ -1876,20 +2034,28 @@ html[saved-theme="dark"] body kbd {
   border-bottom-color: rgb(244, 244, 244);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(244, 244, 244));
   font-family: var(--font-monospace, "IBM Plex Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace);
 }
 
 html[saved-theme="dark"] body progress {
   border-bottom-color: rgb(244, 244, 244);
+  border-bottom-width: 0px;
   border-left-color: rgb(244, 244, 244);
+  border-left-width: 0px;
   border-right-color: rgb(244, 244, 244);
+  border-right-width: 0px;
   border-top-color: rgb(244, 244, 244);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body sub {
@@ -1909,11 +2075,15 @@ html[saved-theme="dark"] body ul.tags > li {
   border-bottom-color: rgba(16, 100, 254, 0.15);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgba(16, 100, 254, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(16, 100, 254, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(16, 100, 254, 0.15);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--tag-color, rgb(56, 136, 255));
 }`,
   },
@@ -2122,6 +2292,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
@@ -2223,41 +2394,63 @@ html[saved-theme="light"] body a.internal-link.broken {
 }`,
     lists: `html[saved-theme="light"] body dd {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: rgb(38, 38, 38);
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 html[saved-theme="light"] body dt {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: rgb(38, 38, 38);
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(38, 38, 38);
+  margin-bottom: 0px;
   margin-left: 28.8001px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 0.8px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 0.8px);
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(38, 38, 38);
+  margin-bottom: 0px;
   margin-left: 28.8001px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 0.8px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 0.8px);
 }
 
 html[saved-theme="light"] body ul.overflow {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
   color: var(--blockquote-color, rgb(38, 38, 38));
@@ -2266,9 +2459,13 @@ html[saved-theme="light"] body ul.overflow {
     tables: `html[saved-theme="light"] body .table-container {
   background-color: var(--background-secondary, rgb(244, 244, 244));
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body table {
@@ -2307,11 +2504,15 @@ html[saved-theme="light"] body thead {
   border-bottom-color: rgb(141, 141, 141);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(141, 141, 141);
+  border-left-width: 0px;
   border-right-color: rgb(141, 141, 141);
+  border-right-width: 0px;
   border-top-color: rgb(141, 141, 141);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(38, 38, 38));
   font-family: var(--font-monospace, "IBM Plex Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace);
 }
@@ -2320,11 +2521,15 @@ html[saved-theme="light"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -2332,9 +2537,13 @@ html[saved-theme="light"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body figcaption {
@@ -2346,25 +2555,37 @@ html[saved-theme="light"] body figure {
   border-bottom-color: rgb(38, 38, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body img {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body video {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
   background-color: var(--background-secondary, rgb(244, 244, 244));
@@ -2374,6 +2595,8 @@ html[saved-theme="light"] body video {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 12px;
   padding-bottom: 6px;
   padding-left: 24px;
@@ -2383,18 +2606,24 @@ html[saved-theme="light"] body video {
 
 html[saved-theme="light"] body .footnotes {
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: rgb(38, 38, 38);
 }
 
 html[saved-theme="light"] body .transclude {
   background-color: var(--background-secondary, rgb(244, 244, 244));
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
   border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: rgb(38, 38, 38);
   margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 12px;
   padding-bottom: 6px;
   padding-left: 24px;
@@ -2404,9 +2633,13 @@ html[saved-theme="light"] body .transclude {
 
 html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: rgb(38, 38, 38);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
@@ -3249,6 +3482,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-bottom-color: rgb(141, 141, 141);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
   border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
@@ -3283,11 +3517,15 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
   border-bottom-color: rgb(38, 38, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-description {
@@ -3308,20 +3546,28 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
   background-color: var(--background-secondary, rgb(244, 244, 244));
   border-bottom-color: rgb(141, 141, 141);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
   border-bottom-color: rgb(38, 38, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(38, 38, 38);
 }
 
@@ -3344,9 +3590,13 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-remove-hover: var(--tag-color-hover, #0f62fe);
   background-color: var(--pill-background, rgba(16, 100, 254, 0.1));
   border-bottom-color: rgba(16, 100, 254, 0.15);
+  border-bottom-width: 0px;
   border-left-color: rgba(16, 100, 254, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(16, 100, 254, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(16, 100, 254, 0.15);
+  border-top-width: 0px;
   color: var(--pill-color, rgb(15, 98, 254));
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
@@ -3358,9 +3608,13 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 html[saved-theme="light"] body h1 {
   --font-weight: var(--h1-weight, 400);
   border-bottom-color: rgb(15, 98, 254);
+  border-bottom-width: 0px;
   border-left-color: rgb(15, 98, 254);
+  border-left-width: 0px;
   border-right-color: rgb(15, 98, 254);
+  border-right-width: 0px;
   border-top-color: rgb(15, 98, 254);
+  border-top-width: 0px;
   color: var(--text-accent, rgb(15, 98, 254));
   font-family: var(--h1-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
   font-size: var(--h1-size, 32px);
@@ -3377,9 +3631,13 @@ html[saved-theme="light"] body h1.article-title {
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 400);
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(38, 38, 38));
   font-family: var(--h2-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
   font-size: var(--h2-size, 28px);
@@ -3390,9 +3648,13 @@ html[saved-theme="light"] body h2 {
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   border-bottom-color: rgb(15, 98, 254);
+  border-bottom-width: 0px;
   border-left-color: rgb(15, 98, 254);
+  border-left-width: 0px;
   border-right-color: rgb(15, 98, 254);
+  border-right-width: 0px;
   border-top-color: rgb(15, 98, 254);
+  border-top-width: 0px;
   color: var(--text-accent, rgb(15, 98, 254));
   font-family: var(--inline-title-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
   font-weight: var(--inline-title-weight, 400);
@@ -3400,22 +3662,33 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 
 html[saved-theme="light"] body h3 {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(38, 38, 38));
   font-family: var(--h3-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
   font-size: var(--h3-size, 16px);
   letter-spacing: var(--h3-letter-spacing, -0.128px);
   line-height: var(--h3-line-height, 20.8px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
 }
 
 html[saved-theme="light"] body h4 {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(38, 38, 38));
   font-family: var(--h4-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
   font-size: var(--h4-size, 16px);
@@ -3425,9 +3698,13 @@ html[saved-theme="light"] body h4 {
 
 html[saved-theme="light"] body h5 {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(38, 38, 38));
   font-family: var(--h5-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
   font-size: var(--h5-size, 16px);
@@ -3437,9 +3714,13 @@ html[saved-theme="light"] body h5 {
 
 html[saved-theme="light"] body h6 {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(38, 38, 38));
   font-family: var(--h6-font, "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif);
 }
@@ -3452,6 +3733,7 @@ html[saved-theme="light"] body hr {
   border-left-style: solid;
   border-left-width: 1px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
@@ -3493,20 +3775,28 @@ html[saved-theme="light"] body li.depth-0 {
   border-bottom-color: rgb(38, 38, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(38, 38, 38));
 }`,
     footer: `html[saved-theme="light"] body footer {
   background-color: var(--status-bar-background, rgb(244, 244, 244));
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 0px;
+  border-top-width: 0px;
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
@@ -3516,9 +3806,13 @@ html[saved-theme="light"] body li.depth-0 {
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: rgb(38, 38, 38);
 }
 
@@ -3527,9 +3821,13 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body li.section-li > .section .meta {
@@ -3538,19 +3836,27 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 
 html[saved-theme="light"] body ul.section-ul {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
   border-bottom-color: rgb(141, 141, 141);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(141, 141, 141);
+  border-left-width: 0px;
   border-right-color: rgb(141, 141, 141);
+  border-right-width: 0px;
   border-top-color: rgb(141, 141, 141);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(141, 141, 141));
 }
 
@@ -3594,9 +3900,13 @@ html[saved-theme="light"] body .canvas-sidebar {
     properties: `html[saved-theme="light"] body .metadata {
   background-color: var(--table-headers, rgb(232, 232, 232));
   border-bottom-color: rgb(141, 141, 141);
+  border-bottom-width: 0px;
   border-left-color: rgb(141, 141, 141);
+  border-left-width: 0px;
   border-right-color: rgb(141, 141, 141);
+  border-right-width: 0px;
   border-top-color: rgb(141, 141, 141);
+  border-top-width: 0px;
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
@@ -3670,9 +3980,13 @@ html[saved-theme="light"] body div#quartz-root {
 
 html[saved-theme="light"] body ol.overflow {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
   background-color: var(--background-secondary, rgb(244, 244, 244));
@@ -3688,9 +4002,13 @@ html[saved-theme="light"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="light"] body .katex-display {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: rgb(38, 38, 38);
 }
 
@@ -3700,9 +4018,13 @@ html[saved-theme="light"] body .navigation-progress {
 
 html[saved-theme="light"] body .page-header h2.page-title {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(38, 38, 38));
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-size: 14px;
@@ -3715,9 +4037,13 @@ html[saved-theme="light"] body abbr {
 
 html[saved-theme="light"] body details {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body input[type=text] {
@@ -3725,6 +4051,8 @@ html[saved-theme="light"] body input[type=text] {
   border-bottom-width: 1px;
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   padding-bottom: var(--size-4-2, 8px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--size-4-2, 8px);
 }
 
@@ -3732,20 +4060,28 @@ html[saved-theme="light"] body kbd {
   border-bottom-color: rgb(38, 38, 38);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(38, 38, 38));
   font-family: var(--font-monospace, "IBM Plex Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace);
 }
 
 html[saved-theme="light"] body progress {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body sub {
@@ -3765,11 +4101,15 @@ html[saved-theme="light"] body ul.tags > li {
   border-bottom-color: rgba(16, 100, 254, 0.15);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgba(16, 100, 254, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(16, 100, 254, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(16, 100, 254, 0.15);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--tag-color, rgb(15, 98, 254));
 }`,
   },

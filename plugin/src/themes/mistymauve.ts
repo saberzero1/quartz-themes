@@ -183,23 +183,35 @@ html[saved-theme="dark"] body a.internal-link.broken {
 }`,
     tables: `html[saved-theme="dark"] body td {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body th {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: var(--table-header-color, rgb(226, 104, 104));
 }`,
     code: `html[saved-theme="dark"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -207,9 +219,13 @@ html[saved-theme="dark"] body th {
 }`,
     images: `html[saved-theme="dark"] body img {
   border-bottom-color: rgb(237, 237, 237);
+  border-bottom-width: 0px;
   border-left-color: rgb(237, 237, 237);
+  border-left-width: 0px;
   border-right-color: rgb(237, 237, 237);
+  border-right-width: 0px;
   border-top-color: rgb(237, 237, 237);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(218, 218, 218);
@@ -411,11 +427,15 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   border-bottom-color: rgba(83, 223, 221, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(83, 223, 221, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(83, 223, 221, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(83, 223, 221, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
@@ -427,11 +447,15 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
   border-bottom-color: rgba(251, 70, 76, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(251, 70, 76, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(251, 70, 76, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(251, 70, 76, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
@@ -443,11 +467,15 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
   border-bottom-color: rgba(251, 70, 76, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(251, 70, 76, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(251, 70, 76, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(251, 70, 76, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
@@ -459,11 +487,15 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
   border-bottom-color: rgba(168, 130, 255, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(168, 130, 255, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(168, 130, 255, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(168, 130, 255, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
@@ -475,11 +507,15 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
   border-bottom-color: rgba(251, 70, 76, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(251, 70, 76, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(251, 70, 76, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(251, 70, 76, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
@@ -491,11 +527,15 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
   border-bottom-color: rgba(2, 122, 255, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(2, 122, 255, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(2, 122, 255, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(2, 122, 255, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
@@ -507,11 +547,15 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
   border-bottom-color: rgba(2, 122, 255, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(2, 122, 255, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(2, 122, 255, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(2, 122, 255, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
@@ -523,11 +567,15 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
   border-bottom-color: rgba(233, 151, 63, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(233, 151, 63, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(233, 151, 63, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(233, 151, 63, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
@@ -539,11 +587,15 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
   border-bottom-color: rgba(158, 158, 158, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(158, 158, 158, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(158, 158, 158, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(158, 158, 158, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
@@ -555,11 +607,15 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
   border-bottom-color: rgba(68, 207, 110, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(68, 207, 110, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(68, 207, 110, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(68, 207, 110, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
@@ -571,11 +627,15 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
   border-bottom-color: rgba(83, 223, 221, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(83, 223, 221, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(83, 223, 221, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(83, 223, 221, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
@@ -587,11 +647,15 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
   border-bottom-color: rgba(2, 122, 255, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(2, 122, 255, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(2, 122, 255, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(2, 122, 255, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
@@ -603,11 +667,15 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-bottom-color: rgba(233, 151, 63, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(233, 151, 63, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(233, 151, 63, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(233, 151, 63, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
@@ -680,9 +748,13 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --pill-color-remove-hover: var(--tag-color-hover, hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15)));
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(218, 218, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
+  border-top-width: 0px;
   color: var(--pill-color, rgb(218, 218, 218));
 }
 
@@ -693,9 +765,13 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 html[saved-theme="dark"] body h1 {
   --font-weight: var(--h1-weight, 400);
   border-bottom-color: rgb(237, 237, 237);
+  border-bottom-width: 0px;
   border-left-color: rgb(237, 237, 237);
+  border-left-width: 0px;
   border-right-color: rgb(237, 237, 237);
+  border-right-width: 0px;
   border-top-color: rgb(237, 237, 237);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(237, 237, 237));
   font-family: var(--h1-font, Arvo, serif);
   font-size: var(--h1-size, 32px);
@@ -713,9 +789,13 @@ html[saved-theme="dark"] body h1.article-title {
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 400);
   border-bottom-color: rgb(237, 237, 237);
+  border-bottom-width: 0px;
   border-left-color: rgb(237, 237, 237);
+  border-left-width: 0px;
   border-right-color: rgb(237, 237, 237);
+  border-right-width: 0px;
   border-top-color: rgb(237, 237, 237);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(237, 237, 237));
   font-family: var(--h2-font, Arvo, serif);
   font-size: var(--h2-size, 27.2px);
@@ -726,9 +806,13 @@ html[saved-theme="dark"] body h2 {
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   border-bottom-color: rgb(226, 104, 104);
+  border-bottom-width: 0px;
   border-left-color: rgb(226, 104, 104);
+  border-left-width: 0px;
   border-right-color: rgb(226, 104, 104);
+  border-right-width: 0px;
   border-top-color: rgb(226, 104, 104);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(226, 104, 104));
   font-family: var(--inline-title-font, "Permanent Marker", cursive);
   font-size: var(--inline-title-size, 38.4px);
@@ -736,14 +820,21 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
   letter-spacing: -0.576px;
   line-height: var(--inline-title-line-height, 46.08px);
   margin-bottom: 19.2px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, 400);
   border-bottom-color: rgb(237, 237, 237);
+  border-bottom-width: 0px;
   border-left-color: rgb(237, 237, 237);
+  border-left-width: 0px;
   border-right-color: rgb(237, 237, 237);
+  border-right-width: 0px;
   border-top-color: rgb(237, 237, 237);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(237, 237, 237));
   font-family: var(--h3-font, Arvo, serif);
   font-size: var(--h3-size, 24px);
@@ -755,9 +846,13 @@ html[saved-theme="dark"] body h3 {
 html[saved-theme="dark"] body h4 {
   --font-weight: var(--h4-weight, 400);
   border-bottom-color: rgb(237, 237, 237);
+  border-bottom-width: 0px;
   border-left-color: rgb(237, 237, 237);
+  border-left-width: 0px;
   border-right-color: rgb(237, 237, 237);
+  border-right-width: 0px;
   border-top-color: rgb(237, 237, 237);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(237, 237, 237));
   font-family: var(--h4-font, Arvo, serif);
   font-size: var(--h4-size, 20.8px);
@@ -769,9 +864,13 @@ html[saved-theme="dark"] body h4 {
 html[saved-theme="dark"] body h5 {
   --font-weight: var(--h5-weight, 400);
   border-bottom-color: rgb(237, 237, 237);
+  border-bottom-width: 0px;
   border-left-color: rgb(237, 237, 237);
+  border-left-width: 0px;
   border-right-color: rgb(237, 237, 237);
+  border-right-width: 0px;
   border-top-color: rgb(237, 237, 237);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(237, 237, 237));
   font-family: var(--h5-font, Arvo, serif);
   font-size: var(--h5-size, 17.6px);
@@ -783,9 +882,13 @@ html[saved-theme="dark"] body h5 {
 html[saved-theme="dark"] body h6 {
   --font-weight: var(--h6-weight, 400);
   border-bottom-color: rgb(237, 237, 237);
+  border-bottom-width: 0px;
   border-left-color: rgb(237, 237, 237);
+  border-left-width: 0px;
   border-right-color: rgb(237, 237, 237);
+  border-right-width: 0px;
   border-top-color: rgb(237, 237, 237);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(237, 237, 237));
   font-family: var(--h6-font, Arvo, serif);
   font-size: var(--h6-size, 12.8px);
@@ -797,11 +900,15 @@ html[saved-theme="dark"] body h6 {
   border-bottom-color: rgba(2, 122, 255, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(2, 122, 255, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(2, 122, 255, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(2, 122, 255, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-width: 0px;
@@ -818,22 +925,30 @@ html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
   border-bottom-color: rgb(255, 135, 135);
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 135, 135);
+  border-left-width: 0px;
   border-right-color: rgb(255, 135, 135);
+  border-right-width: 0px;
   border-top-color: rgb(255, 135, 135);
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(255, 135, 135));
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-color: rgb(255, 135, 135);
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 135, 135);
+  border-left-width: 0px;
   border-right-color: rgb(255, 135, 135);
+  border-right-width: 0px;
   border-top-color: rgb(255, 135, 135);
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(255, 135, 135));
 }
 
@@ -860,9 +975,13 @@ html[saved-theme="dark"] body .darkmode svg {
     misc: `html[saved-theme="dark"] body ul.tags > li {
   background-color: var(--tag-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(218, 218, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
+  border-top-width: 0px;
   color: var(--tag-color, rgb(218, 218, 218));
 }`,
   },
@@ -1070,23 +1189,35 @@ html[saved-theme="light"] body a.internal-link.broken {
 }`,
     tables: `html[saved-theme="light"] body td {
   border-bottom-color: rgb(0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body th {
   border-bottom-color: rgb(0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
+  border-top-width: 0px;
   color: var(--table-header-color, rgb(226, 104, 104));
 }`,
     code: `html[saved-theme="light"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -1094,9 +1225,13 @@ html[saved-theme="light"] body th {
 }`,
     images: `html[saved-theme="light"] body img {
   border-bottom-color: rgb(255, 135, 135);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 135, 135);
+  border-left-width: 0px;
   border-right-color: rgb(255, 135, 135);
+  border-right-width: 0px;
   border-top-color: rgb(255, 135, 135);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="light"] body .transclude {
   border-left-color: rgb(34, 34, 34);
@@ -1300,11 +1435,15 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
   border-bottom-color: rgba(0, 191, 188, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 191, 188, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(0, 191, 188, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(0, 191, 188, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title {
@@ -1316,11 +1455,15 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
   border-bottom-color: rgba(233, 49, 71, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(233, 49, 71, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(233, 49, 71, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(233, 49, 71, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
@@ -1332,11 +1475,15 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
   border-bottom-color: rgba(233, 49, 71, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(233, 49, 71, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(233, 49, 71, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(233, 49, 71, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
@@ -1348,11 +1495,15 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
   border-bottom-color: rgba(120, 82, 238, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(120, 82, 238, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(120, 82, 238, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(120, 82, 238, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
@@ -1364,11 +1515,15 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
   border-bottom-color: rgba(233, 49, 71, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(233, 49, 71, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(233, 49, 71, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(233, 49, 71, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
@@ -1380,11 +1535,15 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
   border-bottom-color: rgba(8, 109, 221, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(8, 109, 221, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(8, 109, 221, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(8, 109, 221, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
@@ -1396,11 +1555,15 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
   border-bottom-color: rgba(8, 109, 221, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(8, 109, 221, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(8, 109, 221, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(8, 109, 221, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
@@ -1412,11 +1575,15 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
   border-bottom-color: rgba(236, 117, 0, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(236, 117, 0, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(236, 117, 0, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(236, 117, 0, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title {
@@ -1428,11 +1595,15 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
   border-bottom-color: rgba(158, 158, 158, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(158, 158, 158, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(158, 158, 158, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(158, 158, 158, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
@@ -1444,11 +1615,15 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
   border-bottom-color: rgba(8, 185, 78, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(8, 185, 78, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(8, 185, 78, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(8, 185, 78, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
@@ -1460,11 +1635,15 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
   border-bottom-color: rgba(0, 191, 188, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 191, 188, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(0, 191, 188, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(0, 191, 188, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
@@ -1476,11 +1655,15 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
   border-bottom-color: rgba(8, 109, 221, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(8, 109, 221, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(8, 109, 221, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(8, 109, 221, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
@@ -1492,11 +1675,15 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-bottom-color: rgba(236, 117, 0, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(236, 117, 0, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(236, 117, 0, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(236, 117, 0, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
@@ -1564,6 +1751,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(237, 237, 237);
+  border-bottom-width: 0px;
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
@@ -1577,9 +1765,13 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-remove-hover: var(--tag-color-hover, hsl(#d8d9cf, 91%, 55%));
   background-color: var(--pill-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(34, 34, 34);
+  border-bottom-width: 0px;
   border-left-color: rgb(34, 34, 34);
+  border-left-width: 0px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
+  border-top-width: 0px;
   color: var(--pill-color, rgb(34, 34, 34));
 }
 
@@ -1590,9 +1782,13 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 html[saved-theme="light"] body h1 {
   --font-weight: var(--h1-weight, 400);
   border-bottom-color: rgb(255, 135, 135);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 135, 135);
+  border-left-width: 0px;
   border-right-color: rgb(255, 135, 135);
+  border-right-width: 0px;
   border-top-color: rgb(255, 135, 135);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(255, 135, 135));
   font-family: var(--h1-font, Arvo, serif);
   font-size: var(--h1-size, 32px);
@@ -1610,9 +1806,13 @@ html[saved-theme="light"] body h1.article-title {
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 400);
   border-bottom-color: rgb(255, 135, 135);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 135, 135);
+  border-left-width: 0px;
   border-right-color: rgb(255, 135, 135);
+  border-right-width: 0px;
   border-top-color: rgb(255, 135, 135);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(255, 135, 135));
   font-family: var(--h2-font, Arvo, serif);
   font-size: var(--h2-size, 27.2px);
@@ -1623,9 +1823,13 @@ html[saved-theme="light"] body h2 {
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   border-bottom-color: rgb(226, 104, 104);
+  border-bottom-width: 0px;
   border-left-color: rgb(226, 104, 104);
+  border-left-width: 0px;
   border-right-color: rgb(226, 104, 104);
+  border-right-width: 0px;
   border-top-color: rgb(226, 104, 104);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(226, 104, 104));
   font-family: var(--inline-title-font, "Permanent Marker", cursive);
   font-size: var(--inline-title-size, 38.4px);
@@ -1633,14 +1837,21 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
   letter-spacing: -0.576px;
   line-height: var(--inline-title-line-height, 46.08px);
   margin-bottom: 19.2px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, 400);
   border-bottom-color: rgb(255, 135, 135);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 135, 135);
+  border-left-width: 0px;
   border-right-color: rgb(255, 135, 135);
+  border-right-width: 0px;
   border-top-color: rgb(255, 135, 135);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(255, 135, 135));
   font-family: var(--h3-font, Arvo, serif);
   font-size: var(--h3-size, 24px);
@@ -1652,9 +1863,13 @@ html[saved-theme="light"] body h3 {
 html[saved-theme="light"] body h4 {
   --font-weight: var(--h4-weight, 400);
   border-bottom-color: rgb(255, 135, 135);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 135, 135);
+  border-left-width: 0px;
   border-right-color: rgb(255, 135, 135);
+  border-right-width: 0px;
   border-top-color: rgb(255, 135, 135);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(255, 135, 135));
   font-family: var(--h4-font, Arvo, serif);
   font-size: var(--h4-size, 20.8px);
@@ -1666,9 +1881,13 @@ html[saved-theme="light"] body h4 {
 html[saved-theme="light"] body h5 {
   --font-weight: var(--h5-weight, 400);
   border-bottom-color: rgb(255, 135, 135);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 135, 135);
+  border-left-width: 0px;
   border-right-color: rgb(255, 135, 135);
+  border-right-width: 0px;
   border-top-color: rgb(255, 135, 135);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(255, 135, 135));
   font-family: var(--h5-font, Arvo, serif);
   font-size: var(--h5-size, 17.6px);
@@ -1680,9 +1899,13 @@ html[saved-theme="light"] body h5 {
 html[saved-theme="light"] body h6 {
   --font-weight: var(--h6-weight, 400);
   border-bottom-color: rgb(255, 135, 135);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 135, 135);
+  border-left-width: 0px;
   border-right-color: rgb(255, 135, 135);
+  border-right-width: 0px;
   border-top-color: rgb(255, 135, 135);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(255, 135, 135));
   font-family: var(--h6-font, Arvo, serif);
   font-size: var(--h6-size, 12.8px);
@@ -1694,11 +1917,15 @@ html[saved-theme="light"] body h6 {
   border-bottom-color: rgba(8, 109, 221, 0.7);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgba(8, 109, 221, 0.7);
+  border-left-width: 0px;
   border-right-color: rgba(8, 109, 221, 0.7);
+  border-right-width: 0px;
   border-top-color: rgba(8, 109, 221, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container .tree-item-children {
   border-left-width: 0px;
@@ -1715,11 +1942,15 @@ html[saved-theme="light"] body .explorer .nav-files-container .is-active {
   border-bottom-color: rgb(255, 135, 135);
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 135, 135);
+  border-left-width: 0px;
   border-right-color: rgb(255, 135, 135);
+  border-right-width: 0px;
   border-top-color: rgb(255, 135, 135);
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(255, 135, 135));
 }`,
     footer: `html[saved-theme="light"] body footer {
@@ -1729,11 +1960,15 @@ html[saved-theme="light"] body .explorer .nav-files-container .is-active {
   border-bottom-color: rgb(255, 135, 135);
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 135, 135);
+  border-left-width: 0px;
   border-right-color: rgb(255, 135, 135);
+  border-right-width: 0px;
   border-top-color: rgb(255, 135, 135);
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(255, 135, 135));
 }
 
@@ -1774,9 +2009,13 @@ html[saved-theme="light"] body div#quartz-root {
 html[saved-theme="light"] body ul.tags > li {
   background-color: var(--tag-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(34, 34, 34);
+  border-bottom-width: 0px;
   border-left-color: rgb(34, 34, 34);
+  border-left-width: 0px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
+  border-top-width: 0px;
   color: var(--tag-color, rgb(34, 34, 34));
 }`,
   },

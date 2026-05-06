@@ -103,40 +103,58 @@ html body .page > div#quartz-body div.sidebar {
 
 html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(97, 255, 202);
+  border-right-width: 0px;
 }
 
 html body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #110f18);
   background-color: var(--tab-container-background, rgb(17, 15, 24));
   border-left-color: rgb(97, 255, 202);
+  border-left-width: 0px;
 }`,
     tables: `html body td {
   border-bottom-color: rgb(97, 255, 202);
+  border-bottom-width: 0px;
   border-left-color: rgb(97, 255, 202);
+  border-left-width: 0px;
   border-right-color: rgb(97, 255, 202);
+  border-right-width: 0px;
   border-top-color: rgb(97, 255, 202);
+  border-top-width: 0px;
 }
 
 html body th {
   border-bottom-color: rgb(97, 255, 202);
+  border-bottom-width: 0px;
   border-left-color: rgb(97, 255, 202);
+  border-left-width: 0px;
   border-right-color: rgb(97, 255, 202);
+  border-right-width: 0px;
   border-top-color: rgb(97, 255, 202);
+  border-top-width: 0px;
 }`,
     code: `html body code {
   background-color: var(--code-background, rgb(17, 15, 24));
   border-bottom-color: rgb(97, 255, 202);
+  border-bottom-width: 0px;
   border-left-color: rgb(97, 255, 202);
+  border-left-width: 0px;
   border-right-color: rgb(97, 255, 202);
+  border-right-width: 0px;
   border-top-color: rgb(97, 255, 202);
+  border-top-width: 0px;
 }
 
 html body pre:has(> code) {
   background-color: var(--code-background, rgb(17, 15, 24));
   border-bottom-color: rgb(97, 255, 202);
+  border-bottom-width: 0px;
   border-left-color: rgb(97, 255, 202);
+  border-left-width: 0px;
   border-right-color: rgb(97, 255, 202);
+  border-right-width: 0px;
   border-top-color: rgb(97, 255, 202);
+  border-top-width: 0px;
 }`,
     images: `html body figure {
   --code-background: var(--ec-frm-edBg, #110f18);
@@ -495,9 +513,13 @@ html body .callout[data-callout="warning"] {
 }`,
     search: `html body .search > .search-button {
   border-bottom-color: rgb(97, 255, 202);
+  border-bottom-width: 0px;
   border-left-color: rgb(97, 255, 202);
+  border-left-width: 0px;
   border-right-color: rgb(97, 255, 202);
+  border-right-width: 0px;
   border-top-color: rgb(97, 255, 202);
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space {
@@ -506,18 +528,23 @@ html body .search > .search-container > .search-space {
 
 html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(17, 15, 24);
+  border-bottom-width: 0px;
 }
 
 html body hr {
   border-bottom-color: rgb(97, 255, 202);
+  border-bottom-width: 0px;
   border-left-color: rgb(97, 255, 202);
+  border-left-width: 0px;
   border-right-color: rgb(97, 255, 202);
+  border-right-width: 0px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
 }`,
     explorer: `html body .nav-files-container .tree-item-children {
   border-left-color: rgb(237, 236, 238);
+  border-left-width: 0px;
 }
 
 html body .explorer .nav-files-container .folder-outer > ul {
@@ -526,9 +553,13 @@ html body .explorer .nav-files-container .folder-outer > ul {
     footer: `html body footer {
   background-color: var(--status-bar-background, rgb(17, 15, 24));
   border-bottom-color: rgb(97, 255, 202);
+  border-bottom-width: 0px;
   border-left-color: rgb(97, 255, 202);
+  border-left-width: 0px;
   border-right-color: rgb(97, 255, 202);
+  border-right-width: 0px;
   border-top-color: rgb(97, 255, 202);
+  border-top-width: 0px;
 }`,
     canvas: `html body .canvas-sidebar {
   background-color: var(--background-secondary, rgb(17, 15, 24));
@@ -538,9 +569,13 @@ html body .explorer .nav-files-container .folder-outer > ul {
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgb(97, 255, 202);
+  border-bottom-width: 0px;
   border-left-color: rgb(97, 255, 202);
+  border-left-width: 0px;
   border-right-color: rgb(97, 255, 202);
+  border-right-width: 0px;
   border-top-color: rgb(97, 255, 202);
+  border-top-width: 0px;
 }
 
 html body .note-properties {

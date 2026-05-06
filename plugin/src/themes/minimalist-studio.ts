@@ -294,11 +294,15 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   border-bottom-color: rgba(0, 191, 188, 0.25);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 191, 188, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(0, 191, 188, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(0, 191, 188, 0.25);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
@@ -362,11 +366,15 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
   border-bottom-color: rgba(120, 82, 238, 0.25);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(120, 82, 238, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(120, 82, 238, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(120, 82, 238, 0.25);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
@@ -451,11 +459,15 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
   border-bottom-color: rgba(255, 144, 0, 0.25);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 144, 0, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(255, 144, 0, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(255, 144, 0, 0.25);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
@@ -519,11 +531,15 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
   border-bottom-color: rgba(0, 191, 188, 0.25);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 191, 188, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(0, 191, 188, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(0, 191, 188, 0.25);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
@@ -566,11 +582,15 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-bottom-color: rgba(255, 144, 0, 0.25);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 144, 0, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(255, 144, 0, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(255, 144, 0, 0.25);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
@@ -707,10 +727,14 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  padding-bottom: 0px;
   padding-left: 20px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-style: dashed;
+  border-left-width: 0px;
 }`,
   },
   light: {
@@ -752,9 +776,13 @@ html[saved-theme="light"] body {
     code: `html[saved-theme="light"] body code {
   background-color: color(from var(--color-base-70) srgb r g b / 0.1);
   border-bottom-color: rgb(227, 227, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(227, 227, 227);
+  border-left-width: 0px;
   border-right-color: rgb(227, 227, 227);
+  border-right-width: 0px;
   border-top-color: rgb(227, 227, 227);
+  border-top-width: 0px;
   padding-bottom: 1.82px;
   padding-left: 6.3px;
   padding-right: 6.3px;
@@ -765,11 +793,15 @@ html[saved-theme="light"] body pre:has(> code) {
   border-bottom-color: rgb(227, 227, 227);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(227, 227, 227);
+  border-left-width: 0px;
   border-right-color: rgb(227, 227, 227);
+  border-right-width: 0px;
   border-top-color: rgb(227, 227, 227);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="light"] body .transclude {
   border-left-color: rgb(34, 34, 34);
@@ -1369,10 +1401,14 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  padding-bottom: 0px;
   padding-left: 20px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container .tree-item-children {
   border-left-style: dashed;
+  border-left-width: 0px;
 }`,
   },
 };

@@ -138,6 +138,7 @@ html body pre:has(> code) {
 
 html body .transclude {
   border-left-color: rgb(108, 65, 216);
+  border-left-width: 0px;
 }`,
     checkboxes: `html body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
@@ -356,12 +357,15 @@ html body .callout[data-callout="abstract"] {
   border-bottom-color: rgb(83, 223, 221);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(83, 223, 221);
   border-left-width: 4px;
   border-right-color: rgb(83, 223, 221);
+  border-right-width: 0px;
   border-top-color: rgb(83, 223, 221);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="abstract"] .callout-title {
@@ -392,12 +396,15 @@ html body .callout[data-callout="bug"] {
   border-bottom-color: rgb(251, 70, 76);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(251, 70, 76);
   border-left-width: 4px;
   border-right-color: rgb(251, 70, 76);
+  border-right-width: 0px;
   border-top-color: rgb(251, 70, 76);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="bug"] .callout-title {
@@ -428,12 +435,15 @@ html body .callout[data-callout="danger"] {
   border-bottom-color: rgb(251, 70, 76);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(251, 70, 76);
   border-left-width: 4px;
   border-right-color: rgb(251, 70, 76);
+  border-right-width: 0px;
   border-top-color: rgb(251, 70, 76);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="danger"] .callout-title {
@@ -464,12 +474,15 @@ html body .callout[data-callout="example"] {
   border-bottom-color: rgb(168, 130, 255);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(168, 130, 255);
   border-left-width: 4px;
   border-right-color: rgb(168, 130, 255);
+  border-right-width: 0px;
   border-top-color: rgb(168, 130, 255);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="example"] .callout-title {
@@ -500,12 +513,15 @@ html body .callout[data-callout="failure"] {
   border-bottom-color: rgb(251, 70, 76);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(251, 70, 76);
   border-left-width: 4px;
   border-right-color: rgb(251, 70, 76);
+  border-right-width: 0px;
   border-top-color: rgb(251, 70, 76);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="failure"] .callout-title {
@@ -536,12 +552,15 @@ html body .callout[data-callout="info"] {
   border-bottom-color: rgb(2, 122, 255);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(2, 122, 255);
   border-left-width: 4px;
   border-right-color: rgb(2, 122, 255);
+  border-right-width: 0px;
   border-top-color: rgb(2, 122, 255);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="info"] .callout-title {
@@ -572,12 +591,15 @@ html body .callout[data-callout="note"] {
   border-bottom-color: rgb(2, 122, 255);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(2, 122, 255);
   border-left-width: 4px;
   border-right-color: rgb(2, 122, 255);
+  border-right-width: 0px;
   border-top-color: rgb(2, 122, 255);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="note"] .callout-title {
@@ -608,12 +630,15 @@ html body .callout[data-callout="question"] {
   border-bottom-color: rgb(233, 151, 63);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(233, 151, 63);
   border-left-width: 4px;
   border-right-color: rgb(233, 151, 63);
+  border-right-width: 0px;
   border-top-color: rgb(233, 151, 63);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="question"] .callout-title {
@@ -644,12 +669,15 @@ html body .callout[data-callout="quote"] {
   border-bottom-color: rgb(158, 158, 158);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(158, 158, 158);
   border-left-width: 4px;
   border-right-color: rgb(158, 158, 158);
+  border-right-width: 0px;
   border-top-color: rgb(158, 158, 158);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="quote"] .callout-title {
@@ -680,12 +708,15 @@ html body .callout[data-callout="success"] {
   border-bottom-color: rgb(68, 207, 110);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 207, 110);
   border-left-width: 4px;
   border-right-color: rgb(68, 207, 110);
+  border-right-width: 0px;
   border-top-color: rgb(68, 207, 110);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="success"] .callout-title {
@@ -716,12 +747,15 @@ html body .callout[data-callout="tip"] {
   border-bottom-color: rgb(83, 223, 221);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(83, 223, 221);
   border-left-width: 4px;
   border-right-color: rgb(83, 223, 221);
+  border-right-width: 0px;
   border-top-color: rgb(83, 223, 221);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="tip"] .callout-title {
@@ -752,12 +786,15 @@ html body .callout[data-callout="todo"] {
   border-bottom-color: rgb(2, 122, 255);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(2, 122, 255);
   border-left-width: 4px;
   border-right-color: rgb(2, 122, 255);
+  border-right-width: 0px;
   border-top-color: rgb(2, 122, 255);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="todo"] .callout-title {
@@ -788,12 +825,15 @@ html body .callout[data-callout="warning"] {
   border-bottom-color: rgb(233, 151, 63);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(233, 151, 63);
   border-left-width: 4px;
   border-right-color: rgb(233, 151, 63);
+  border-right-width: 0px;
   border-top-color: rgb(233, 151, 63);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="warning"] .callout-title {
@@ -894,12 +934,15 @@ html body a.internal-link.tag-link::before {
   border-bottom-color: rgb(2, 122, 255);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(2, 122, 255);
   border-left-width: 4px;
   border-right-color: rgb(2, 122, 255);
+  border-right-width: 0px;
   border-top-color: rgb(2, 122, 255);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -922,9 +965,13 @@ html body div#quartz-root {
     misc: `html body kbd {
   background-color: var(--code-background, rgb(22, 22, 22));
   border-bottom-color: rgb(251, 70, 59);
+  border-bottom-width: 0px;
   border-left-color: rgb(251, 70, 59);
+  border-left-width: 0px;
   border-right-color: rgb(251, 70, 59);
+  border-right-width: 0px;
   border-top-color: rgb(251, 70, 59);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(251, 70, 59));
 }
 

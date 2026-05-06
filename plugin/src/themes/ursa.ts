@@ -165,12 +165,14 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #1E2022);
   background-color: var(--tab-container-background, rgb(30, 32, 34));
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   color: rgb(221, 221, 221);
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
@@ -258,9 +260,13 @@ html[saved-theme="dark"] body a.internal-link.broken {
 }`,
     lists: `html[saved-theme="dark"] body dd {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
   color: rgb(221, 221, 221);
   font-family: Avenir, "Avenir Next";
   font-size: 15px;
@@ -268,14 +274,20 @@ html[saved-theme="dark"] body a.internal-link.broken {
 
 html[saved-theme="dark"] body dl {
   margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 15px;
 }
 
 html[saved-theme="dark"] body dt {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
   color: rgb(221, 221, 221);
   font-family: Avenir, "Avenir Next";
   font-size: 15px;
@@ -283,23 +295,37 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(221, 221, 221);
+  margin-bottom: 0px;
   margin-left: 22.5px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.125px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.125px);
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(221, 221, 221);
+  margin-bottom: 0px;
   margin-left: 22.5px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.125px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.125px);
 }
 
 html[saved-theme="dark"] body ul.overflow {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: var(--text-a, rgb(107, 202, 251));
@@ -312,9 +338,13 @@ html[saved-theme="dark"] body blockquote {
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body table {
@@ -324,17 +354,25 @@ html[saved-theme="dark"] body table {
 
 html[saved-theme="dark"] body td {
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
   border-top-color: rgba(146, 161, 161, 0.48);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(221, 221, 221));
 }
 
 html[saved-theme="dark"] body th {
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
   border-top-color: rgba(146, 161, 161, 0.48);
+  border-top-width: 0px;
   color: var(--table-header-color, rgb(221, 221, 221));
   font-weight: var(--table-header-weight, 800);
 }
@@ -347,13 +385,18 @@ html[saved-theme="dark"] body thead {
 
 html[saved-theme="dark"] body tr {
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
 }`,
     code: `html[saved-theme="dark"] body code {
   background-color: var(--pre-code, rgb(37, 37, 37));
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
   border-top-color: rgba(146, 161, 161, 0.48);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(221, 221, 221));
   padding-bottom: 2.025px;
   padding-left: 4.05px;
@@ -364,9 +407,13 @@ html[saved-theme="dark"] body tr {
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: var(--code-background, rgb(30, 32, 34));
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
   border-top-color: rgba(146, 161, 161, 0.48);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -374,9 +421,13 @@ html[saved-theme="dark"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body figcaption {
@@ -386,23 +437,35 @@ html[saved-theme="dark"] body figcaption {
 html[saved-theme="dark"] body figure {
   --code-background: var(--ec-frm-edBg, #1E2022);
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body img {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body video {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(30, 32, 34));
@@ -410,40 +473,62 @@ html[saved-theme="dark"] body video {
 
 html[saved-theme="dark"] body .footnotes {
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
   color: rgb(221, 221, 221);
 }
 
 html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(146, 161, 161);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
   color: rgb(221, 221, 221);
+  padding-bottom: 0px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
   color: rgb(221, 221, 221);
+  margin-bottom: 0px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: 0px;
+  padding-bottom: 0px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 0px;
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(167, 176, 179);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+  border-bottom-width: 0px;
   border-left-color: rgb(167, 176, 179);
+  border-left-width: 0px;
   border-right-color: rgb(167, 176, 179);
+  border-right-width: 0px;
   border-top-color: rgb(167, 176, 179);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  border-top-width: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
   margin-right: 0px;
+  margin-top: 0px;
   width: var(--checkbox-size, 16.6562px);
 }
 
@@ -1573,9 +1658,13 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
   border-top-color: rgba(146, 161, 161, 0.48);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(221, 221, 221));
   font-family: Avenir, "Avenir Next";
 }
@@ -1597,9 +1686,13 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
@@ -1613,17 +1706,25 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(30, 32, 34);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
   background-color: var(--pre-code, rgb(37, 37, 37));
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
   color: rgb(221, 221, 221);
 }
 
@@ -1645,9 +1746,13 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
 
 html[saved-theme="dark"] body h1 {
   border-bottom-color: rgb(203, 219, 229);
+  border-bottom-width: 0px;
   border-left-color: rgb(203, 219, 229);
+  border-left-width: 0px;
   border-right-color: rgb(203, 219, 229);
+  border-right-width: 0px;
   border-top-color: rgb(203, 219, 229);
+  border-top-width: 0px;
   color: var(--text-title-h1, rgb(203, 219, 229));
   font-family: var(--font-family-preview, Avenir, "Avenir Next");
   font-size: var(--h1-size, 28px);
@@ -1688,9 +1793,13 @@ html[saved-theme="dark"] body h1::before {
 
 html[saved-theme="dark"] body h2 {
   border-bottom-color: rgb(203, 219, 229);
+  border-bottom-width: 0px;
   border-left-color: rgb(203, 219, 229);
+  border-left-width: 0px;
   border-right-color: rgb(203, 219, 229);
+  border-right-width: 0px;
   border-top-color: rgb(203, 219, 229);
+  border-top-width: 0px;
   color: var(--text-title-h2, rgb(203, 219, 229));
   font-family: var(--font-family-preview, Avenir, "Avenir Next");
   font-size: var(--h2-size, 26px);
@@ -1701,15 +1810,22 @@ html[saved-theme="dark"] body h2 {
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(221, 221, 221));
   font-family: var(--inline-title-font, Avenir, "Avenir Next");
   font-size: var(--inline-title-size, 24.27px);
   letter-spacing: -0.36405px;
   line-height: var(--inline-title-line-height, 29.124px);
   margin-bottom: 12.135px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body h2::before {
@@ -1739,9 +1855,13 @@ html[saved-theme="dark"] body h2::before {
 
 html[saved-theme="dark"] body h3 {
   border-bottom-color: rgb(203, 219, 229);
+  border-bottom-width: 0px;
   border-left-color: rgb(203, 219, 229);
+  border-left-width: 0px;
   border-right-color: rgb(203, 219, 229);
+  border-right-width: 0px;
   border-top-color: rgb(203, 219, 229);
+  border-top-width: 0px;
   color: var(--text-title-h3, rgb(203, 219, 229));
   font-family: var(--font-family-preview, Avenir, "Avenir Next");
   font-size: var(--h3-size, 22px);
@@ -1777,9 +1897,13 @@ html[saved-theme="dark"] body h3::before {
 
 html[saved-theme="dark"] body h4 {
   border-bottom-color: rgb(203, 219, 229);
+  border-bottom-width: 0px;
   border-left-color: rgb(203, 219, 229);
+  border-left-width: 0px;
   border-right-color: rgb(203, 219, 229);
+  border-right-width: 0px;
   border-top-color: rgb(203, 219, 229);
+  border-top-width: 0px;
   color: var(--text-title-h4, rgb(203, 219, 229));
   font-family: var(--font-family-preview, Avenir, "Avenir Next");
   font-size: var(--h4-size, 20px);
@@ -1815,9 +1939,13 @@ html[saved-theme="dark"] body h4::before {
 
 html[saved-theme="dark"] body h5 {
   border-bottom-color: rgb(203, 219, 229);
+  border-bottom-width: 0px;
   border-left-color: rgb(203, 219, 229);
+  border-left-width: 0px;
   border-right-color: rgb(203, 219, 229);
+  border-right-width: 0px;
   border-top-color: rgb(203, 219, 229);
+  border-top-width: 0px;
   color: var(--text-title-h5, rgb(203, 219, 229));
   font-family: var(--font-family-preview, Avenir, "Avenir Next");
   font-size: var(--h5-size, 18px);
@@ -1853,9 +1981,13 @@ html[saved-theme="dark"] body h5::before {
 
 html[saved-theme="dark"] body h6 {
   border-bottom-color: rgb(203, 219, 229);
+  border-bottom-width: 0px;
   border-left-color: rgb(203, 219, 229);
+  border-left-width: 0px;
   border-right-color: rgb(203, 219, 229);
+  border-right-width: 0px;
   border-top-color: rgb(203, 219, 229);
+  border-top-width: 0px;
   color: var(--text-title-h5, rgb(203, 219, 229));
   font-family: var(--font-family-preview, Avenir, "Avenir Next");
 }
@@ -1887,8 +2019,11 @@ html[saved-theme="dark"] body h6::before {
 
 html[saved-theme="dark"] body hr {
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -1918,9 +2053,13 @@ html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg 
     footer: `html[saved-theme="dark"] body footer {
   background-color: var(--status-bar-background, rgb(30, 32, 34));
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
   border-top-color: rgba(146, 161, 161, 0.48);
+  border-top-width: 0px;
   font-family: Avenir, "Avenir Next";
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
@@ -1930,9 +2069,13 @@ html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg 
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
   color: rgb(221, 221, 221);
 }
 
@@ -1946,9 +2089,13 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body li.section-li > .section .meta {
@@ -1962,9 +2109,13 @@ html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
 
 html[saved-theme="dark"] body ul.section-ul {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
 }`,
     breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-element p {
   color: var(--text-faint, rgb(178, 178, 178));
@@ -1996,9 +2147,13 @@ html[saved-theme="dark"] body .canvas-sidebar {
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
   border-top-color: rgba(146, 161, 161, 0.48);
+  border-top-width: 0px;
   font-family: Avenir, "Avenir Next";
 }
 
@@ -2035,9 +2190,13 @@ html[saved-theme="dark"] body div#quartz-root {
 
 html[saved-theme="dark"] body ol.overflow {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
   background-color: var(--background-secondary, rgb(30, 32, 34));
@@ -2053,9 +2212,13 @@ html[saved-theme="dark"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
   color: rgb(221, 221, 221);
 }
 
@@ -2065,9 +2228,13 @@ html[saved-theme="dark"] body .navigation-progress {
 
 html[saved-theme="dark"] body .page-header h2.page-title {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(221, 221, 221));
 }
 
@@ -2077,17 +2244,25 @@ html[saved-theme="dark"] body abbr {
 
 html[saved-theme="dark"] body details {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body kbd {
   background-color: var(--code-background, rgb(30, 32, 34));
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(221, 221, 221));
   font-size: var(--code-size, 13.125px);
   padding-bottom: 1.3125px;
@@ -2098,9 +2273,13 @@ html[saved-theme="dark"] body kbd {
 
 html[saved-theme="dark"] body progress {
   border-bottom-color: rgb(221, 221, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 221, 221);
+  border-left-width: 0px;
   border-right-color: rgb(221, 221, 221);
+  border-right-width: 0px;
   border-top-color: rgb(221, 221, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body sub {
@@ -2290,12 +2469,14 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #FBFBFB);
   background-color: var(--tab-container-background, rgb(251, 251, 251));
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   color: rgb(51, 51, 51);
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
@@ -2383,9 +2564,13 @@ html[saved-theme="light"] body a.internal-link.broken {
 }`,
     lists: `html[saved-theme="light"] body dd {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: rgb(51, 51, 51);
   font-family: Avenir, "Avenir Next";
   font-size: 15px;
@@ -2393,14 +2578,20 @@ html[saved-theme="light"] body a.internal-link.broken {
 
 html[saved-theme="light"] body dl {
   margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 15px;
 }
 
 html[saved-theme="light"] body dt {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: rgb(51, 51, 51);
   font-family: Avenir, "Avenir Next";
   font-size: 15px;
@@ -2408,23 +2599,37 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(51, 51, 51);
+  margin-bottom: 0px;
   margin-left: 22.5px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.125px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.125px);
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(51, 51, 51);
+  margin-bottom: 0px;
   margin-left: 22.5px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.125px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.125px);
 }
 
 html[saved-theme="light"] body ul.overflow {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: var(--text-a, rgb(219, 77, 82));
@@ -2437,9 +2642,13 @@ html[saved-theme="light"] body blockquote {
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body table {
@@ -2449,17 +2658,25 @@ html[saved-theme="light"] body table {
 
 html[saved-theme="light"] body td {
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
   border-top-color: rgba(146, 161, 161, 0.48);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(51, 51, 51));
 }
 
 html[saved-theme="light"] body th {
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
   border-top-color: rgba(146, 161, 161, 0.48);
+  border-top-width: 0px;
   color: var(--table-header-color, rgb(51, 51, 51));
   font-weight: var(--table-header-weight, 800);
 }
@@ -2472,13 +2689,18 @@ html[saved-theme="light"] body thead {
 
 html[saved-theme="light"] body tr {
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
 }`,
     code: `html[saved-theme="light"] body code {
   background-color: var(--pre-code, rgb(255, 255, 255));
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
   border-top-color: rgba(146, 161, 161, 0.48);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(51, 51, 51));
   padding-bottom: 2.025px;
   padding-left: 4.05px;
@@ -2489,9 +2711,13 @@ html[saved-theme="light"] body tr {
 html[saved-theme="light"] body pre:has(> code) {
   background-color: var(--code-background, rgb(251, 251, 251));
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
   border-top-color: rgba(146, 161, 161, 0.48);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -2499,9 +2725,13 @@ html[saved-theme="light"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body figcaption {
@@ -2511,23 +2741,35 @@ html[saved-theme="light"] body figcaption {
 html[saved-theme="light"] body figure {
   --code-background: var(--ec-frm-edBg, #FBFBFB);
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body img {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body video {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(251, 251, 251));
@@ -2535,40 +2777,62 @@ html[saved-theme="light"] body video {
 
 html[saved-theme="light"] body .footnotes {
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: rgb(51, 51, 51);
 }
 
 html[saved-theme="light"] body .transclude {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(146, 161, 161);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: rgb(51, 51, 51);
+  padding-bottom: 0px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: rgb(51, 51, 51);
+  margin-bottom: 0px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: 0px;
+  padding-bottom: 0px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 0px;
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(167, 176, 179);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+  border-bottom-width: 0px;
   border-left-color: rgb(167, 176, 179);
+  border-left-width: 0px;
   border-right-color: rgb(167, 176, 179);
+  border-right-width: 0px;
   border-top-color: rgb(167, 176, 179);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  border-top-width: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
   margin-right: 0px;
+  margin-top: 0px;
   width: var(--checkbox-size, 16.6562px);
 }
 
@@ -3698,9 +3962,13 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
   border-top-color: rgba(146, 161, 161, 0.48);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(51, 51, 51));
   font-family: Avenir, "Avenir Next";
 }
@@ -3722,9 +3990,13 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-description {
@@ -3738,17 +4010,25 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(251, 251, 251);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
   background-color: var(--pre-code, rgb(255, 255, 255));
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: rgb(51, 51, 51);
 }
 
@@ -3770,9 +4050,13 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
 
 html[saved-theme="light"] body h1 {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: var(--text-title-h1, rgb(51, 51, 51));
   font-family: var(--font-family-preview, Avenir, "Avenir Next");
   font-size: var(--h1-size, 28px);
@@ -3813,9 +4097,13 @@ html[saved-theme="light"] body h1::before {
 
 html[saved-theme="light"] body h2 {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: var(--text-title-h2, rgb(51, 51, 51));
   font-family: var(--font-family-preview, Avenir, "Avenir Next");
   font-size: var(--h2-size, 26px);
@@ -3826,15 +4114,22 @@ html[saved-theme="light"] body h2 {
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(51, 51, 51));
   font-family: var(--inline-title-font, Avenir, "Avenir Next");
   font-size: var(--inline-title-size, 24.27px);
   letter-spacing: -0.36405px;
   line-height: var(--inline-title-line-height, 29.124px);
   margin-bottom: 12.135px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body h2::before {
@@ -3864,9 +4159,13 @@ html[saved-theme="light"] body h2::before {
 
 html[saved-theme="light"] body h3 {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: var(--text-title-h3, rgb(51, 51, 51));
   font-family: var(--font-family-preview, Avenir, "Avenir Next");
   font-size: var(--h3-size, 22px);
@@ -3902,9 +4201,13 @@ html[saved-theme="light"] body h3::before {
 
 html[saved-theme="light"] body h4 {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: var(--text-title-h4, rgb(51, 51, 51));
   font-family: var(--font-family-preview, Avenir, "Avenir Next");
   font-size: var(--h4-size, 20px);
@@ -3940,9 +4243,13 @@ html[saved-theme="light"] body h4::before {
 
 html[saved-theme="light"] body h5 {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: var(--text-title-h5, rgb(51, 51, 51));
   font-family: var(--font-family-preview, Avenir, "Avenir Next");
   font-size: var(--h5-size, 18px);
@@ -3978,9 +4285,13 @@ html[saved-theme="light"] body h5::before {
 
 html[saved-theme="light"] body h6 {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: var(--text-title-h5, rgb(51, 51, 51));
   font-family: var(--font-family-preview, Avenir, "Avenir Next");
 }
@@ -4012,8 +4323,11 @@ html[saved-theme="light"] body h6::before {
 
 html[saved-theme="light"] body hr {
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
@@ -4043,9 +4357,13 @@ html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg
     footer: `html[saved-theme="light"] body footer {
   background-color: var(--status-bar-background, rgb(251, 251, 251));
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
   border-top-color: rgba(146, 161, 161, 0.48);
+  border-top-width: 0px;
   font-family: Avenir, "Avenir Next";
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
@@ -4055,9 +4373,13 @@ html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: rgb(51, 51, 51);
 }
 
@@ -4071,9 +4393,13 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body li.section-li > .section .meta {
@@ -4087,9 +4413,13 @@ html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
 
 html[saved-theme="light"] body ul.section-ul {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
 }`,
     breadcrumbs: `html[saved-theme="light"] body .breadcrumb-element p {
   color: var(--text-faint, rgb(178, 178, 178));
@@ -4121,9 +4451,13 @@ html[saved-theme="light"] body .canvas-sidebar {
 }`,
     properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-bottom-width: 0px;
   border-left-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 0px;
   border-right-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 0px;
   border-top-color: rgba(146, 161, 161, 0.48);
+  border-top-width: 0px;
   font-family: Avenir, "Avenir Next";
 }
 
@@ -4160,9 +4494,13 @@ html[saved-theme="light"] body div#quartz-root {
 
 html[saved-theme="light"] body ol.overflow {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
   background-color: var(--background-secondary, rgb(251, 251, 251));
@@ -4178,9 +4516,13 @@ html[saved-theme="light"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="light"] body .katex-display {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: rgb(51, 51, 51);
 }
 
@@ -4190,9 +4532,13 @@ html[saved-theme="light"] body .navigation-progress {
 
 html[saved-theme="light"] body .page-header h2.page-title {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(51, 51, 51));
 }
 
@@ -4202,17 +4548,25 @@ html[saved-theme="light"] body abbr {
 
 html[saved-theme="light"] body details {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body kbd {
   background-color: var(--code-background, rgb(251, 251, 251));
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(51, 51, 51));
   font-size: var(--code-size, 13.125px);
   padding-bottom: 1.3125px;
@@ -4223,9 +4577,13 @@ html[saved-theme="light"] body kbd {
 
 html[saved-theme="light"] body progress {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body sub {

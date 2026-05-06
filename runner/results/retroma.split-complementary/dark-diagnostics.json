@@ -1,0 +1,11 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--tag-padding-x",
+      "references": "--size-4-1",
+      "selector": "ul.tags > li",
+      "aspect": "misc"
+    }
+  ]
+}

@@ -213,12 +213,14 @@ html body .page > div#quartz-body div.sidebar {
 
 html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(106, 106, 106);
+  border-right-width: 0px;
 }
 
 html body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #252526);
   background-color: var(--tab-container-background, rgb(37, 37, 38));
   border-left-color: rgb(106, 106, 106);
+  border-left-width: 0px;
 }
 
 html body html {
@@ -358,6 +360,8 @@ html body a.internal-link.broken {
 
 html body dl {
   margin-bottom: 18px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 18px;
 }
 
@@ -367,14 +371,24 @@ html body dt {
 }
 
 html body ol > li {
+  margin-bottom: 0px;
   margin-left: 30.0322px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.35px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.35px);
 }
 
 html body ul > li {
+  margin-bottom: 0px;
   margin-left: 30.0322px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.35px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.35px);
 }`,
     blockquotes: `html body .data-footnote-backref {
@@ -387,6 +401,8 @@ html body blockquote {
   font-family: var(--content-font-family-code, Consolas, monaco, monospace);
   line-height: 27px;
   padding-bottom: 4px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 4px;
 }`,
     tables: `html body table {
@@ -395,23 +411,35 @@ html body blockquote {
 
 html body td {
   border-bottom-color: rgb(106, 106, 106);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 106, 106);
+  border-left-width: 0px;
   border-right-color: rgb(106, 106, 106);
+  border-right-width: 0px;
   border-top-color: rgb(106, 106, 106);
+  border-top-width: 0px;
 }
 
 html body th {
   border-bottom-color: rgb(106, 106, 106);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 106, 106);
+  border-left-width: 0px;
   border-right-color: rgb(106, 106, 106);
+  border-right-width: 0px;
   border-top-color: rgb(106, 106, 106);
+  border-top-width: 0px;
 }`,
     code: `html body code {
   background-color: var(--code-background, rgb(30, 30, 30));
   border-bottom-color: rgb(106, 106, 106);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 106, 106);
+  border-left-width: 0px;
   border-right-color: rgb(106, 106, 106);
+  border-right-width: 0px;
   border-top-color: rgb(106, 106, 106);
+  border-top-width: 0px;
   color: var(--content-code-line, rgb(0, 176, 255));
   padding-bottom: 2.3625px;
   padding-left: 4.725px;
@@ -422,9 +450,13 @@ html body th {
 html body pre:has(> code) {
   background-color: var(--code-background, rgb(30, 30, 30));
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -439,12 +471,17 @@ html body pre:has(> code) {
 
 html body .transclude {
   border-left-color: rgb(76, 120, 204);
+  border-left-width: 0px;
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(81, 86, 99);
+  border-bottom-width: 0px;
   border-left-color: rgb(81, 86, 99);
+  border-left-width: 0px;
   border-right-color: rgb(81, 86, 99);
+  border-right-width: 0px;
   border-top-color: rgb(81, 86, 99);
+  border-top-width: 0px;
 }
 
 html body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
@@ -800,9 +837,13 @@ html body .callout[data-callout="warning"] {
     search: `html body .search > .search-button {
   background-color: rgba(0, 0, 0, 0.3);
   border-bottom-color: rgb(106, 106, 106);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 106, 106);
+  border-left-width: 0px;
   border-right-color: rgb(106, 106, 106);
+  border-right-width: 0px;
   border-top-color: rgb(106, 106, 106);
+  border-top-width: 0px;
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
 }
 
@@ -812,6 +853,7 @@ html body .search > .search-container > .search-space > * {
 
 html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(37, 37, 38);
+  border-bottom-width: 0px;
 }
 
 html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
@@ -834,9 +876,13 @@ html body a.internal-link.tag-link::before {
 
 html body h1 {
   border-bottom-color: rgb(86, 156, 214);
+  border-bottom-width: 0px;
   border-left-color: rgb(86, 156, 214);
+  border-left-width: 0px;
   border-right-color: rgb(86, 156, 214);
+  border-right-width: 0px;
   border-top-color: rgb(86, 156, 214);
+  border-top-width: 0px;
   color: var(--content-title-h1, rgb(86, 156, 214));
   font-family: var(--h1-font, "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif);
   font-size: var(--h1-size, 29.124px);
@@ -844,6 +890,9 @@ html body h1 {
   letter-spacing: var(--h1-letter-spacing, -0.43686px);
   line-height: var(--line-height-headers, 29.124px);
   margin-bottom: 27px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body h1.article-title {
@@ -852,15 +901,22 @@ html body h1.article-title {
 
 html body h2 {
   border-bottom-color: rgb(220, 220, 170);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 220, 170);
+  border-left-width: 0px;
   border-right-color: rgb(220, 220, 170);
+  border-right-width: 0px;
   border-top-color: rgb(220, 220, 170);
+  border-top-width: 0px;
   color: var(--content-title-h2, rgb(220, 220, 170));
   font-family: var(--h2-font, "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif);
   font-size: var(--h2-size, 26.316px);
   letter-spacing: var(--h2-letter-spacing, -0.289476px);
   line-height: var(--h2-line-height, 31.5792px);
   margin-bottom: 27px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body h2.page-title, html h2.page-title a {
@@ -869,67 +925,97 @@ html body h2.page-title, html h2.page-title a {
   letter-spacing: -0.43686px;
   line-height: var(--inline-title-line-height, 34.9488px);
   margin-bottom: 14.562px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body h3 {
   border-bottom-color: rgb(156, 220, 254);
+  border-bottom-width: 0px;
   border-left-color: rgb(156, 220, 254);
+  border-left-width: 0px;
   border-right-color: rgb(156, 220, 254);
+  border-right-width: 0px;
   border-top-color: rgb(156, 220, 254);
+  border-top-width: 0px;
   color: var(--content-title-h3, rgb(156, 220, 254));
   font-family: var(--h3-font, "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif);
   font-size: var(--h3-size, 23.724px);
   letter-spacing: var(--h3-letter-spacing, -0.189792px);
   line-height: var(--h3-line-height, 30.8412px);
   margin-bottom: 27px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 27px);
 }
 
 html body h4 {
   border-bottom-color: rgb(197, 134, 192);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 134, 192);
+  border-left-width: 0px;
   border-right-color: rgb(197, 134, 192);
+  border-right-width: 0px;
   border-top-color: rgb(197, 134, 192);
+  border-top-width: 0px;
   color: var(--content-title-h4, rgb(197, 134, 192));
   font-family: var(--h4-font, "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif);
   font-size: var(--h4-size, 21.384px);
   letter-spacing: var(--h4-letter-spacing, -0.10692px);
   line-height: var(--h4-line-height, 29.9376px);
   margin-bottom: 27px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 27px);
 }
 
 html body h5 {
   border-bottom-color: rgb(206, 145, 120);
+  border-bottom-width: 0px;
   border-left-color: rgb(206, 145, 120);
+  border-left-width: 0px;
   border-right-color: rgb(206, 145, 120);
+  border-right-width: 0px;
   border-top-color: rgb(206, 145, 120);
+  border-top-width: 0px;
   color: var(--content-title-h5, rgb(206, 145, 120));
   font-family: var(--h5-font, "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif);
   font-size: var(--h5-size, 19.368px);
   letter-spacing: var(--h5-letter-spacing, -0.038736px);
   line-height: var(--h5-line-height, 29.052px);
   margin-bottom: 27px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 27px);
 }
 
 html body h6 {
   border-bottom-color: rgb(78, 201, 176);
+  border-bottom-width: 0px;
   border-left-color: rgb(78, 201, 176);
+  border-left-width: 0px;
   border-right-color: rgb(78, 201, 176);
+  border-right-width: 0px;
   border-top-color: rgb(78, 201, 176);
+  border-top-width: 0px;
   color: var(--content-title-h6, rgb(78, 201, 176));
   font-family: var(--h6-font, "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif);
   font-size: var(--h6-size, 18px);
   line-height: var(--h6-line-height, 27px);
   margin-bottom: 27px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 27px;
 }
 
 html body hr {
   border-bottom-color: rgb(106, 106, 106);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 106, 106);
+  border-left-width: 0px;
   border-right-color: rgb(106, 106, 106);
+  border-right-width: 0px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -951,12 +1037,15 @@ html body .explorer .nav-files-container .collapse-icon svg {
   border-bottom-color: rgb(24, 25, 30);
   border-bottom-width: 1px;
   border-left-color: rgb(24, 25, 30);
+  border-left-width: 0px;
   border-right-color: rgb(24, 25, 30);
   border-right-width: 1px;
   border-top-color: rgb(24, 25, 30);
+  border-top-width: 0px;
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
   padding-bottom: 0px;
   padding-left: 20px;
+  padding-right: 0px;
   padding-top: 0px;
 }`,
     recentNotes: `html body .recent-notes > h3 {
@@ -992,9 +1081,13 @@ html body li.section-li > .section .meta {
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgb(106, 106, 106);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 106, 106);
+  border-left-width: 0px;
   border-right-color: rgb(106, 106, 106);
+  border-right-width: 0px;
   border-top-color: rgb(106, 106, 106);
+  border-top-width: 0px;
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
 }
 

@@ -259,12 +259,14 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(66, 73, 88);
+  border-right-width: 0px;
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #11161d);
   background-color: var(--tab-container-background, rgb(17, 22, 29));
   border-left-color: rgb(66, 73, 88);
+  border-left-width: 0px;
   color: rgb(222, 222, 222);
 }
 
@@ -384,37 +386,55 @@ html[saved-theme="dark"] body a.internal-link.broken {
 }`,
     lists: `html[saved-theme="dark"] body dd {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
   color: rgb(222, 222, 222);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
 html[saved-theme="dark"] body dt {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
   color: rgb(222, 222, 222);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(222, 222, 222);
+  margin-bottom: 0px;
   margin-left: 24px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(222, 222, 222);
+  margin-bottom: 0px;
   margin-left: 24px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   color: var(--quote-color, rgb(61, 154, 216));
@@ -422,9 +442,13 @@ html[saved-theme="dark"] body ul.overflow {
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body table {
@@ -434,25 +458,37 @@ html[saved-theme="dark"] body table {
 
 html[saved-theme="dark"] body td {
   border-bottom-color: rgb(66, 73, 88);
+  border-bottom-width: 0px;
   border-left-color: rgb(66, 73, 88);
+  border-left-width: 0px;
   border-right-color: rgb(66, 73, 88);
+  border-right-width: 0px;
   border-top-color: rgb(66, 73, 88);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(222, 222, 222));
 }
 
 html[saved-theme="dark"] body th {
   border-bottom-color: rgb(66, 73, 88);
+  border-bottom-width: 0px;
   border-left-color: rgb(66, 73, 88);
+  border-left-width: 0px;
   border-right-color: rgb(66, 73, 88);
+  border-right-width: 0px;
   border-top-color: rgb(66, 73, 88);
+  border-top-width: 0px;
   color: var(--table-header-color, rgb(222, 222, 222));
 }`,
     code: `html[saved-theme="dark"] body code {
   background-color: var(--code-background, rgb(19, 22, 27));
   border-bottom-color: rgb(66, 73, 88);
+  border-bottom-width: 0px;
   border-left-color: rgb(66, 73, 88);
+  border-left-width: 0px;
   border-right-color: rgb(66, 73, 88);
+  border-right-width: 0px;
   border-top-color: rgb(66, 73, 88);
+  border-top-width: 0px;
   color: var(--cyan, rgb(15, 179, 255));
   font-family: var(--font-monospace, "JetBrains Mono NL", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", monospace);
 }
@@ -460,17 +496,27 @@ html[saved-theme="dark"] body th {
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: var(--code-background, rgb(19, 22, 27));
   border-bottom-color: rgb(66, 73, 88);
+  border-bottom-width: 0px;
   border-left-color: rgb(66, 73, 88);
+  border-left-width: 0px;
   border-right-color: rgb(66, 73, 88);
+  border-right-width: 0px;
   border-top-color: rgb(66, 73, 88);
+  border-top-width: 0px;
+  padding-bottom: 0px;
   padding-left: 12px;
   padding-right: 12px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body figcaption {
@@ -480,57 +526,82 @@ html[saved-theme="dark"] body figcaption {
 html[saved-theme="dark"] body figure {
   --code-background: var(--ec-frm-edBg, #13161b);
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body img {
   border-bottom-color: rgb(222, 222, 222);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-radius: 5px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   box-shadow: rgba(128, 128, 128, 0.3) 1px 1px 1px 0px;
 }
 
 html[saved-theme="dark"] body video {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(19, 22, 27));
   border-bottom-color: rgb(187, 187, 187);
+  border-bottom-width: 0px;
   border-left-color: rgb(187, 187, 187);
+  border-left-width: 0px;
   border-right-color: rgb(187, 187, 187);
+  border-right-width: 0px;
   border-top-color: rgb(187, 187, 187);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(187, 187, 187));
 }
 
 html[saved-theme="dark"] body .footnotes {
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
   color: rgb(222, 222, 222);
 }
 
 html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(76, 120, 204);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
   color: rgb(222, 222, 222);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
   color: rgb(222, 222, 222);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
@@ -1617,9 +1688,13 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgba(0, 0, 0, 0.3);
   border-bottom-color: rgb(66, 73, 88);
+  border-bottom-width: 0px;
   border-left-color: rgb(66, 73, 88);
+  border-left-width: 0px;
   border-right-color: rgb(66, 73, 88);
+  border-right-width: 0px;
   border-top-color: rgb(66, 73, 88);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(222, 222, 222));
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
@@ -1641,9 +1716,13 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
@@ -1656,16 +1735,24 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(17, 22, 29);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
   color: rgb(222, 222, 222);
 }
 
@@ -1688,9 +1775,13 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   border-bottom-color: rgb(121, 107, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(121, 107, 245);
+  border-left-width: 0px;
   border-right-color: rgb(121, 107, 245);
+  border-right-width: 0px;
   border-top-color: rgb(121, 107, 245);
+  border-top-width: 0px;
   color: var(--text-title-h1, rgb(121, 107, 245));
   font-family: var(--font-family-preview, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
   font-weight: var(--font-weight-title, 600);
@@ -1703,62 +1794,89 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   border-bottom-color: rgb(131, 121, 236);
+  border-bottom-width: 0px;
   border-left-color: rgb(131, 121, 236);
+  border-left-width: 0px;
   border-right-color: rgb(131, 121, 236);
+  border-right-width: 0px;
   border-top-color: rgb(131, 121, 236);
+  border-top-width: 0px;
   color: var(--text-title-h2, rgb(131, 121, 236));
   font-family: var(--h2-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(222, 222, 222));
   font-family: var(--inline-title-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
 
 html[saved-theme="dark"] body h3 {
   border-bottom-color: rgb(162, 162, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(162, 162, 210);
+  border-left-width: 0px;
   border-right-color: rgb(162, 162, 210);
+  border-right-width: 0px;
   border-top-color: rgb(162, 162, 210);
+  border-top-width: 0px;
   color: var(--text-title-h3, rgb(162, 162, 210));
   font-family: var(--h3-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
 
 html[saved-theme="dark"] body h4 {
   border-bottom-color: rgb(251, 214, 203);
+  border-bottom-width: 0px;
   border-left-color: rgb(251, 214, 203);
+  border-left-width: 0px;
   border-right-color: rgb(251, 214, 203);
+  border-right-width: 0px;
   border-top-color: rgb(251, 214, 203);
+  border-top-width: 0px;
   color: var(--text-title-h4, rgb(251, 214, 203));
   font-family: var(--h4-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
 
 html[saved-theme="dark"] body h5 {
   border-bottom-color: rgb(213, 149, 124);
+  border-bottom-width: 0px;
   border-left-color: rgb(213, 149, 124);
+  border-left-width: 0px;
   border-right-color: rgb(213, 149, 124);
+  border-right-width: 0px;
   border-top-color: rgb(213, 149, 124);
+  border-top-width: 0px;
   color: var(--text-title-h5, rgb(213, 149, 124));
   font-family: var(--h5-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
 
 html[saved-theme="dark"] body h6 {
   border-bottom-color: rgb(207, 94, 68);
+  border-bottom-width: 0px;
   border-left-color: rgb(207, 94, 68);
+  border-left-width: 0px;
   border-right-color: rgb(207, 94, 68);
+  border-right-width: 0px;
   border-top-color: rgb(207, 94, 68);
+  border-top-width: 0px;
   color: var(--text-title-h6, rgb(207, 94, 68));
   font-family: var(--h6-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
 
 html[saved-theme="dark"] body hr {
   border-bottom-color: rgb(66, 73, 88);
+  border-bottom-width: 0px;
   border-left-color: rgb(66, 73, 88);
+  border-left-width: 0px;
   border-right-color: rgb(66, 73, 88);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -1789,9 +1907,13 @@ html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(187, 187, 187);
+  border-bottom-width: 0px;
   border-left-color: rgb(187, 187, 187);
+  border-left-width: 0px;
   border-right-color: rgb(187, 187, 187);
+  border-right-width: 0px;
   border-top-color: rgb(187, 187, 187);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(187, 187, 187));
 }`,
     footer: `html[saved-theme="dark"] body footer {
@@ -1800,13 +1922,16 @@ html[saved-theme="dark"] body .explorer .nav-files-container .is-active {
   border-bottom-color: rgb(24, 25, 30);
   border-bottom-width: 1px;
   border-left-color: rgb(24, 25, 30);
+  border-left-width: 0px;
   border-right-color: rgb(24, 25, 30);
   border-right-width: 1px;
   border-top-color: rgb(24, 25, 30);
+  border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(187, 187, 187));
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   padding-bottom: 0px;
   padding-left: 20px;
+  padding-right: 0px;
   padding-top: 0px;
 }
 
@@ -1820,9 +1945,13 @@ html[saved-theme="dark"] body footer ul li a {
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
   color: rgb(222, 222, 222);
 }
 
@@ -1836,9 +1965,13 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body li.section-li > .section .meta {
@@ -1852,15 +1985,23 @@ html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
 
 html[saved-theme="dark"] body ul.section-ul {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-color: rgb(187, 187, 187);
+  border-bottom-width: 0px;
   border-left-color: rgb(187, 187, 187);
+  border-left-width: 0px;
   border-right-color: rgb(187, 187, 187);
+  border-right-width: 0px;
   border-top-color: rgb(187, 187, 187);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(187, 187, 187));
 }
 
@@ -1870,9 +2011,13 @@ html[saved-theme="dark"] body .darkmode svg {
 }`,
     breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-container {
   border-bottom-color: rgb(187, 187, 187);
+  border-bottom-width: 0px;
   border-left-color: rgb(187, 187, 187);
+  border-left-width: 0px;
   border-right-color: rgb(187, 187, 187);
+  border-right-width: 0px;
   border-top-color: rgb(187, 187, 187);
+  border-top-width: 0px;
   color: rgb(187, 187, 187);
 }
 
@@ -1905,27 +2050,39 @@ html[saved-theme="dark"] body .canvas-sidebar {
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(66, 73, 88);
+  border-bottom-width: 0px;
   border-left-color: rgb(66, 73, 88);
+  border-left-width: 0px;
   border-right-color: rgb(66, 73, 88);
+  border-right-width: 0px;
   border-top-color: rgb(66, 73, 88);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(187, 187, 187));
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
 html[saved-theme="dark"] body .metadata-container .metadata-property {
   border-bottom-color: rgb(187, 187, 187);
+  border-bottom-width: 0px;
   border-left-color: rgb(187, 187, 187);
+  border-left-width: 0px;
   border-right-color: rgb(187, 187, 187);
+  border-right-width: 0px;
   border-top-color: rgb(187, 187, 187);
+  border-top-width: 0px;
   color: rgb(187, 187, 187);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(187, 187, 187);
+  border-bottom-width: 0px;
   border-left-color: rgb(187, 187, 187);
+  border-left-width: 0px;
   border-right-color: rgb(187, 187, 187);
+  border-right-width: 0px;
   border-top-color: rgb(187, 187, 187);
+  border-top-width: 0px;
   color: rgb(187, 187, 187);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
@@ -1969,9 +2126,13 @@ html[saved-theme="dark"] body div#quartz-root {
 
 html[saved-theme="dark"] body ol.overflow {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
   background-color: var(--background-secondary, rgb(17, 22, 29));
@@ -1987,9 +2148,13 @@ html[saved-theme="dark"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
   color: rgb(222, 222, 222);
 }
 
@@ -2000,9 +2165,13 @@ html[saved-theme="dark"] body .navigation-progress {
 
 html[saved-theme="dark"] body .page-header h2.page-title {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(222, 222, 222));
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
@@ -2013,34 +2182,50 @@ html[saved-theme="dark"] body abbr {
 
 html[saved-theme="dark"] body details {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body input[type=text] {
   border-bottom-color: rgb(187, 187, 187);
+  border-bottom-width: 0px;
   border-left-color: rgb(187, 187, 187);
+  border-left-width: 0px;
   border-right-color: rgb(187, 187, 187);
+  border-right-width: 0px;
   border-top-color: rgb(187, 187, 187);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(187, 187, 187));
 }
 
 html[saved-theme="dark"] body kbd {
   background-color: var(--code-background, rgb(19, 22, 27));
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(222, 222, 222));
   font-family: var(--font-monospace, "JetBrains Mono NL", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", monospace);
 }
 
 html[saved-theme="dark"] body progress {
   border-bottom-color: rgb(222, 222, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(222, 222, 222);
+  border-left-width: 0px;
   border-right-color: rgb(222, 222, 222);
+  border-right-width: 0px;
   border-top-color: rgb(222, 222, 222);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body sub {
@@ -2249,11 +2434,17 @@ html[saved-theme="light"] body dt {
 }
 
 html[saved-theme="light"] body ol > li {
+  margin-bottom: 0px;
   margin-left: 24px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body ul > li {
+  margin-bottom: 0px;
   margin-left: 24px;
+  margin-right: 0px;
+  margin-top: 0px;
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
   color: var(--quote-color, rgb(61, 154, 216));
@@ -2268,8 +2459,10 @@ html[saved-theme="light"] body ul > li {
 }
 
 html[saved-theme="light"] body pre:has(> code) {
+  padding-bottom: 0px;
   padding-left: 12px;
   padding-right: 12px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="light"] body img {
   border-bottom-left-radius: 5px;
@@ -2952,9 +3145,13 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   border-bottom-color: rgb(121, 107, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(121, 107, 245);
+  border-left-width: 0px;
   border-right-color: rgb(121, 107, 245);
+  border-right-width: 0px;
   border-top-color: rgb(121, 107, 245);
+  border-top-width: 0px;
   color: var(--text-title-h1, rgb(121, 107, 245));
   font-family: var(--font-family-preview, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
   font-weight: var(--font-weight-title, 600);
@@ -2963,9 +3160,13 @@ html[saved-theme="light"] body h1 {
 
 html[saved-theme="light"] body h2 {
   border-bottom-color: rgb(144, 135, 248);
+  border-bottom-width: 0px;
   border-left-color: rgb(144, 135, 248);
+  border-left-width: 0px;
   border-right-color: rgb(144, 135, 248);
+  border-right-width: 0px;
   border-top-color: rgb(144, 135, 248);
+  border-top-width: 0px;
   color: var(--text-title-h2, rgb(144, 135, 248));
   font-family: var(--h2-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
@@ -2976,36 +3177,52 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 
 html[saved-theme="light"] body h3 {
   border-bottom-color: rgb(174, 174, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(174, 174, 255);
+  border-left-width: 0px;
   border-right-color: rgb(174, 174, 255);
+  border-right-width: 0px;
   border-top-color: rgb(174, 174, 255);
+  border-top-width: 0px;
   color: var(--text-title-h3, rgb(174, 174, 255));
   font-family: var(--h3-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
 
 html[saved-theme="light"] body h4 {
   border-bottom-color: rgb(255, 189, 169);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 189, 169);
+  border-left-width: 0px;
   border-right-color: rgb(255, 189, 169);
+  border-right-width: 0px;
   border-top-color: rgb(255, 189, 169);
+  border-top-width: 0px;
   color: var(--text-title-h4, rgb(255, 189, 169));
   font-family: var(--h4-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
 
 html[saved-theme="light"] body h5 {
   border-bottom-color: rgb(250, 173, 143);
+  border-bottom-width: 0px;
   border-left-color: rgb(250, 173, 143);
+  border-left-width: 0px;
   border-right-color: rgb(250, 173, 143);
+  border-right-width: 0px;
   border-top-color: rgb(250, 173, 143);
+  border-top-width: 0px;
   color: var(--text-title-h5, rgb(250, 173, 143));
   font-family: var(--h5-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }
 
 html[saved-theme="light"] body h6 {
   border-bottom-color: rgb(245, 107, 77);
+  border-bottom-width: 0px;
   border-left-color: rgb(245, 107, 77);
+  border-left-width: 0px;
   border-right-color: rgb(245, 107, 77);
+  border-right-width: 0px;
   border-top-color: rgb(245, 107, 77);
+  border-top-width: 0px;
   color: var(--text-title-h6, rgb(245, 107, 77));
   font-family: var(--h6-font, "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif);
 }`,
@@ -3026,12 +3243,15 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
   border-bottom-color: rgb(92, 92, 92);
   border-bottom-width: 1px;
   border-left-color: rgb(92, 92, 92);
+  border-left-width: 0px;
   border-right-color: rgb(92, 92, 92);
   border-right-width: 1px;
   border-top-color: rgb(92, 92, 92);
+  border-top-width: 0px;
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   padding-bottom: 0px;
   padding-left: 20px;
+  padding-right: 0px;
   padding-top: 0px;
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
@@ -3086,9 +3306,13 @@ html[saved-theme="light"] body .page-header h2.page-title {
 
 html[saved-theme="light"] body kbd {
   border-bottom-color: rgb(8, 8, 8);
+  border-bottom-width: 0px;
   border-left-color: rgb(8, 8, 8);
+  border-left-width: 0px;
   border-right-color: rgb(8, 8, 8);
+  border-right-width: 0px;
   border-top-color: rgb(8, 8, 8);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(8, 8, 8));
   font-family: var(--font-monospace, "JetBrains Mono NL", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", monospace);
 }

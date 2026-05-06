@@ -132,10 +132,12 @@ html body {
 
 html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
 }
 
 html body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
 }
 
 html body html {
@@ -157,33 +159,48 @@ html body li.task-list-item input[type="checkbox"]:checked {
   line-height: 20.8px;
 }`,
     tables: `html body table {
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
   text-align: justify;
 }
 
 html body td {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
 }
 
 html body th {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
 }`,
     code: `html body code {
   background-color: var(--code-background, rgb(0, 0, 0));
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(212, 212, 212));
   padding-bottom: 2.4px;
   padding-left: 4.8px;
@@ -196,11 +213,15 @@ html body pre:has(> code) {
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
 }`,
     images: `html body figcaption {
   text-align: justify;
@@ -217,9 +238,13 @@ html body figure {
 
 html body img {
   border-bottom-color: rgb(0, 187, 0);
+  border-bottom-width: 0px;
   border-left-color: rgb(0, 187, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 187, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 187, 0);
+  border-top-width: 0px;
 }`,
     embeds: `html body .file-embed {
   border-bottom-left-radius: 0px;
@@ -644,11 +669,15 @@ html body .callout[data-callout="warning"] {
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space {
@@ -716,8 +745,10 @@ html body h1 {
   font-weight: var(--font-weight, 600);
   letter-spacing: var(--h1-letter-spacing, -0.24px);
   line-height: var(--h1-line-height, 24px);
+  padding-bottom: 0px;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0px;
 }
 
 html body h1.article-title {
@@ -744,8 +775,10 @@ html body h2 {
   font-weight: var(--font-weight, 600);
   letter-spacing: var(--h2-letter-spacing, -0.176px);
   line-height: var(--h2-line-height, 24px);
+  padding-bottom: 0px;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0px;
 }
 
 html body h2.page-title, html h2.page-title a {
@@ -761,8 +794,10 @@ html body h2.page-title, html h2.page-title a {
   margin-bottom: var(--file-folding-offset, 24px);
   margin-left: calc(var(--file-folding-offset)*-1);
   margin-right: calc(var(--file-folding-offset)*-1);
+  margin-top: 0px;
   padding-bottom: 4px;
   padding-left: 8px;
+  padding-right: 0px;
   padding-top: 4px;
 }
 
@@ -785,9 +820,14 @@ html body h3 {
   font-weight: var(--font-weight, 600);
   letter-spacing: var(--h3-letter-spacing, -0.128px);
   line-height: var(--h3-line-height, 24px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
+  padding-bottom: 0px;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0px;
 }
 
 html body h4 {
@@ -809,9 +849,14 @@ html body h4 {
   font-weight: var(--font-weight, 600);
   letter-spacing: var(--h4-letter-spacing, -0.08px);
   line-height: var(--h4-line-height, 24px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
+  padding-bottom: 0px;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0px;
 }
 
 html body h5 {
@@ -833,9 +878,14 @@ html body h5 {
   font-weight: var(--font-weight, 600);
   letter-spacing: var(--h5-letter-spacing, -0.032px);
   line-height: var(--h5-line-height, 24px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
+  padding-bottom: 0px;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0px;
 }
 
 html body h6 {
@@ -852,15 +902,23 @@ html body h6 {
   border-top-style: solid;
   border-top-width: 1px;
   color: var(--h6-color, rgb(0, 187, 0));
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 0px;
+  padding-bottom: 0px;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0px;
 }
 
 html body hr {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -887,12 +945,15 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-width: 1px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
   border-right-width: 1px;
   border-top-color: rgb(64, 64, 64);
   border-top-left-radius: 0px;
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
+  padding-right: 0px;
   padding-top: 0px;
 }`,
     darkmode: `html body .darkmode {
@@ -921,7 +982,12 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
   border-top-color: rgb(64, 64, 64);
   border-top-width: 1px;
   margin-bottom: var(--file-folding-offset, 24px);
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 0px;
 }
 
@@ -954,11 +1020,15 @@ html body kbd {
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(212, 212, 212));
   font-size: var(--code-size, 16px);
   padding-bottom: 1.6px;

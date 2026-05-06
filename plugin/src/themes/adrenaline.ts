@@ -143,12 +143,14 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgba(105, 105, 105, 0.44);
+  border-right-width: 0px;
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, hsl(258, 0.98%, 15%));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgba(105, 105, 105, 0.44);
+  border-left-width: 0px;
   color: rgb(209, 209, 209);
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
@@ -208,36 +210,54 @@ html[saved-theme="dark"] body p {
 }`,
     lists: `html[saved-theme="dark"] body dd {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
   color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body dt {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
   color: rgb(209, 209, 209);
   font-weight: 350;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(209, 209, 209);
+  margin-bottom: 0px;
   margin-left: 25.6px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(209, 209, 209);
+  margin-bottom: 0px;
   margin-left: 25.6px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: var(--text-faint, rgb(138, 92, 245));
@@ -251,20 +271,30 @@ html[saved-theme="dark"] body blockquote {
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body table {
   color: rgb(209, 209, 209);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 15px);
 }
 
 html[saved-theme="dark"] body td {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
   border-top-width: 0px;
   color: var(--table-text-color, rgb(209, 209, 209));
@@ -273,10 +303,14 @@ html[saved-theme="dark"] body td {
 
 html[saved-theme="dark"] body th {
   border-bottom-color: rgb(218, 218, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: var(--table-border-radius, 8px);
+  border-top-width: 0px;
   font-weight: var(--custom-font-weight, 350);
   letter-spacing: var(--custom-letter-spacing, .1px);
 }`,
@@ -289,9 +323,13 @@ html[saved-theme="dark"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body figcaption {
@@ -301,53 +339,77 @@ html[saved-theme="dark"] body figcaption {
 html[saved-theme="dark"] body figure {
   --code-background: var(--ec-frm-edBg, hsl(258, -7%, 10%, 100%));
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body img {
   border-bottom-color: rgb(209, 209, 209);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-radius: 10px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body video {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="dark"] body .footnotes {
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
   color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
   color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
   color: rgb(209, 209, 209);
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(138, 92, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(138, 92, 245);
+  border-left-width: 0px;
   border-right-color: rgb(138, 92, 245);
+  border-right-width: 0px;
   border-top-color: rgb(138, 92, 245);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
@@ -899,10 +961,13 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -1250,10 +1315,13 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -1295,10 +1363,13 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -1650,10 +1721,13 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -1695,10 +1769,13 @@ html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -1740,10 +1817,13 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -1785,10 +1865,13 @@ html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -1830,10 +1913,13 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -1875,10 +1961,13 @@ html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -1920,10 +2009,13 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -1965,10 +2057,13 @@ html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -2010,10 +2105,13 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -2055,10 +2153,13 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -2100,10 +2201,13 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -2201,9 +2305,13 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
@@ -2217,13 +2325,18 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(38, 38, 39);
+  border-bottom-width: 0px;
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
   color: rgb(209, 209, 209);
 }
 
@@ -2237,9 +2350,13 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
 
 html[saved-theme="dark"] body h1 {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
   color: var(--custom-h1-color, var(--general-heading-color, unset));
   font-size: var(--h1-size, 22.4px);
   letter-spacing: var(--custom-letter-spacing, .1px);
@@ -2279,9 +2396,13 @@ html[saved-theme="dark"] body h1::before {
 
 html[saved-theme="dark"] body h2 {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
   color: var(--custom-h2-color, var(--general-heading-color, unset));
   font-size: var(--h2-size, 20.8px);
   letter-spacing: var(--custom-letter-spacing, .1px);
@@ -2290,9 +2411,13 @@ html[saved-theme="dark"] body h2 {
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(209, 209, 209));
 }
 
@@ -2325,9 +2450,13 @@ html[saved-theme="dark"] body h2::before {
 
 html[saved-theme="dark"] body h3 {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
   color: var(--custom-h3-color, var(--general-heading-color, unset));
   font-size: var(--h3-size, 19.2px);
   letter-spacing: var(--custom-letter-spacing, .1px);
@@ -2363,40 +2492,64 @@ html[saved-theme="dark"] body h3::before {
 
 html[saved-theme="dark"] body h4 {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
   color: var(--custom-h4-color, var(--general-heading-color, unset));
   font-size: var(--h4-size, 17.6px);
   letter-spacing: var(--custom-letter-spacing, .1px);
   line-height: var(--h4-line-height, 24.64px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body h5 {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
   color: var(--custom-h5-color, var(--general-heading-color, unset));
   letter-spacing: var(--custom-letter-spacing, .1px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body h6 {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
   color: var(--custom-h6-color, var(--general-heading-color, unset));
   letter-spacing: var(--custom-letter-spacing, .1px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body hr {
   border-bottom-color: rgba(105, 105, 105, 0.44);
+  border-bottom-width: 0px;
   border-left-color: rgba(105, 105, 105, 0.44);
+  border-left-width: 0px;
   border-right-color: rgba(105, 105, 105, 0.44);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -2430,9 +2583,13 @@ html[saved-theme="dark"] body li.depth-0 {
     footer: `html[saved-theme="dark"] body footer {
   background-color: var(--status-bar-background, rgb(38, 38, 39));
   border-bottom-color: rgba(105, 105, 105, 0.44);
+  border-bottom-width: 0px;
   border-left-color: rgba(105, 105, 105, 0.44);
+  border-left-width: 0px;
   border-right-color: rgba(105, 105, 105, 0.44);
+  border-right-width: 0px;
   border-top-color: rgba(105, 105, 105, 0.44);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body footer ul li a {
@@ -2445,23 +2602,35 @@ html[saved-theme="dark"] body footer ul li a {
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
   color: rgb(209, 209, 209);
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body ul.section-ul {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
   --text-color: var(--colored-accent-i1, hsl(258, 88%, -1700%));
@@ -2472,10 +2641,13 @@ html[saved-theme="dark"] body ul.section-ul {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--icon-color, rgba(0, 0, 0, 0));
 }
 
@@ -2526,9 +2698,13 @@ html[saved-theme="dark"] body div#quartz-root {
 
 html[saved-theme="dark"] body ol.overflow {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
   background-color: var(--background-secondary, rgb(38, 38, 39));
@@ -2544,9 +2720,13 @@ html[saved-theme="dark"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
   color: rgb(209, 209, 209);
 }
 
@@ -2564,9 +2744,13 @@ html[saved-theme="dark"] body abbr {
 
 html[saved-theme="dark"] body details {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body kbd {
@@ -2575,9 +2759,13 @@ html[saved-theme="dark"] body kbd {
 
 html[saved-theme="dark"] body progress {
   border-bottom-color: rgb(209, 209, 209);
+  border-bottom-width: 0px;
   border-left-color: rgb(209, 209, 209);
+  border-left-width: 0px;
   border-right-color: rgb(209, 209, 209);
+  border-right-width: 0px;
   border-top-color: rgb(209, 209, 209);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body sub {
@@ -2737,12 +2925,14 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgba(200, 200, 200, 0.44);
+  border-right-width: 0px;
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, hsl(258, 9.8%, 96%));
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgba(200, 200, 200, 0.44);
+  border-left-width: 0px;
   color: rgb(25, 25, 25);
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
@@ -2807,36 +2997,54 @@ html[saved-theme="light"] body p {
 }`,
     lists: `html[saved-theme="light"] body dd {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
   color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body dt {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
   color: rgb(25, 25, 25);
   font-weight: 350;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(25, 25, 25);
+  margin-bottom: 0px;
   margin-left: 25.6px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(25, 25, 25);
+  margin-bottom: 0px;
   margin-left: 25.6px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body ul.overflow {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: var(--text-faint, rgb(138, 92, 245));
@@ -2850,20 +3058,30 @@ html[saved-theme="light"] body blockquote {
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body table {
   color: rgb(25, 25, 25);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 15px);
 }
 
 html[saved-theme="light"] body td {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
   border-top-width: 0px;
   color: var(--table-text-color, rgb(25, 25, 25));
@@ -2872,10 +3090,14 @@ html[saved-theme="light"] body td {
 
 html[saved-theme="light"] body th {
   border-bottom-color: rgb(34, 34, 34);
+  border-bottom-width: 0px;
   border-left-color: rgb(34, 34, 34);
+  border-left-width: 0px;
   border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: var(--table-border-radius, 8px);
+  border-top-width: 0px;
   font-weight: var(--custom-font-weight, 350);
   letter-spacing: var(--custom-letter-spacing, .1px);
 }`,
@@ -2888,9 +3110,13 @@ html[saved-theme="light"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body figcaption {
@@ -2900,54 +3126,79 @@ html[saved-theme="light"] body figcaption {
 html[saved-theme="light"] body figure {
   --code-background: var(--ec-frm-edBg, rgb(234, 234, 234));
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body img {
   border-bottom-color: rgb(25, 25, 25);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-radius: 10px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body video {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="light"] body .footnotes {
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
   color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body .transclude {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(138, 92, 245);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
   color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
   color: rgb(25, 25, 25);
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(138, 92, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(138, 92, 245);
+  border-left-width: 0px;
   border-right-color: rgb(138, 92, 245);
+  border-right-width: 0px;
   border-top-color: rgb(138, 92, 245);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="#"] {
@@ -3499,10 +3750,13 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -3846,10 +4100,13 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -3891,10 +4148,13 @@ html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -4242,10 +4502,13 @@ html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -4287,10 +4550,13 @@ html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -4332,10 +4598,13 @@ html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -4377,10 +4646,13 @@ html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -4422,10 +4694,13 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -4467,10 +4742,13 @@ html[saved-theme="light"] body .callout[data-callout="question"] .callout-title 
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -4512,10 +4790,13 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -4557,10 +4838,13 @@ html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -4602,10 +4886,13 @@ html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -4647,10 +4934,13 @@ html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -4692,10 +4982,13 @@ html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--colored-accent-i1, rgb(0, 0, 0));
   padding-bottom: 6px;
   padding-left: 10px;
@@ -4797,9 +5090,13 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-description {
@@ -4813,13 +5110,18 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(244, 244, 246);
+  border-bottom-width: 0px;
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
   color: rgb(25, 25, 25);
 }
 
@@ -4833,9 +5135,13 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
 
 html[saved-theme="light"] body h1 {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
   color: var(--custom-h1-color, var(--general-heading-color, unset));
   font-size: var(--h1-size, 22.4px);
   letter-spacing: var(--custom-letter-spacing, .1px);
@@ -4875,9 +5181,13 @@ html[saved-theme="light"] body h1::before {
 
 html[saved-theme="light"] body h2 {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
   color: var(--custom-h2-color, var(--general-heading-color, unset));
   font-size: var(--h2-size, 20.8px);
   letter-spacing: var(--custom-letter-spacing, .1px);
@@ -4886,9 +5196,13 @@ html[saved-theme="light"] body h2 {
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(25, 25, 25));
 }
 
@@ -4921,9 +5235,13 @@ html[saved-theme="light"] body h2::before {
 
 html[saved-theme="light"] body h3 {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
   color: var(--custom-h3-color, var(--general-heading-color, unset));
   font-size: var(--h3-size, 19.2px);
   letter-spacing: var(--custom-letter-spacing, .1px);
@@ -4959,40 +5277,64 @@ html[saved-theme="light"] body h3::before {
 
 html[saved-theme="light"] body h4 {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
   color: var(--custom-h4-color, var(--general-heading-color, unset));
   font-size: var(--h4-size, 17.6px);
   letter-spacing: var(--custom-letter-spacing, .1px);
   line-height: var(--h4-line-height, 24.64px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body h5 {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
   color: var(--custom-h5-color, var(--general-heading-color, unset));
   letter-spacing: var(--custom-letter-spacing, .1px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body h6 {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
   color: var(--custom-h6-color, var(--general-heading-color, unset));
   letter-spacing: var(--custom-letter-spacing, .1px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body hr {
   border-bottom-color: rgba(200, 200, 200, 0.44);
+  border-bottom-width: 0px;
   border-left-color: rgba(200, 200, 200, 0.44);
+  border-left-width: 0px;
   border-right-color: rgba(200, 200, 200, 0.44);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
@@ -5025,17 +5367,25 @@ html[saved-theme="light"] body li.depth-0 {
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(138, 92, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(138, 92, 245);
+  border-left-width: 0px;
   border-right-color: rgb(138, 92, 245);
+  border-right-width: 0px;
   border-top-color: rgb(138, 92, 245);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(138, 92, 245));
 }`,
     footer: `html[saved-theme="light"] body footer {
   background-color: var(--status-bar-background, rgb(244, 244, 246));
   border-bottom-color: rgba(200, 200, 200, 0.44);
+  border-bottom-width: 0px;
   border-left-color: rgba(200, 200, 200, 0.44);
+  border-left-width: 0px;
   border-right-color: rgba(200, 200, 200, 0.44);
+  border-right-width: 0px;
   border-top-color: rgba(200, 200, 200, 0.44);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body footer ul li a {
@@ -5048,23 +5398,35 @@ html[saved-theme="light"] body footer ul li a {
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
   color: rgb(25, 25, 25);
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body ul.section-ul {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
   --text-color: var(--colored-accent-i1, hsl(258, 88%, -1700%));
@@ -5075,10 +5437,13 @@ html[saved-theme="light"] body ul.section-ul {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--icon-color, rgba(0, 0, 0, 0));
 }
 
@@ -5129,9 +5494,13 @@ html[saved-theme="light"] body div#quartz-root {
 
 html[saved-theme="light"] body ol.overflow {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
   background-color: var(--background-secondary, rgb(244, 244, 246));
@@ -5147,9 +5516,13 @@ html[saved-theme="light"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="light"] body .katex-display {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
   color: rgb(25, 25, 25);
 }
 
@@ -5167,9 +5540,13 @@ html[saved-theme="light"] body abbr {
 
 html[saved-theme="light"] body details {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body kbd {
@@ -5178,9 +5555,13 @@ html[saved-theme="light"] body kbd {
 
 html[saved-theme="light"] body progress {
   border-bottom-color: rgb(25, 25, 25);
+  border-bottom-width: 0px;
   border-left-color: rgb(25, 25, 25);
+  border-left-width: 0px;
   border-right-color: rgb(25, 25, 25);
+  border-right-width: 0px;
   border-top-color: rgb(25, 25, 25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body sub {

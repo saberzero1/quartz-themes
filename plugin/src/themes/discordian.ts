@@ -283,12 +283,14 @@ html body .page > div#quartz-body div.sidebar {
 
 html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(33, 35, 38);
+  border-right-width: 0px;
 }
 
 html body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #2B2D31);
   background-color: var(--tab-container-background, rgb(43, 45, 49));
   border-left-color: rgb(33, 35, 38);
+  border-left-width: 0px;
   color: rgb(208, 209, 210);
 }
 
@@ -412,18 +414,26 @@ html body a.internal-link.broken {
 }`,
     lists: `html body dd {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
   color: rgb(208, 209, 210);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 html body dt {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
   color: rgb(208, 209, 210);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -432,6 +442,7 @@ html body ol > li {
   color: rgb(208, 209, 210);
   margin-bottom: 4px;
   margin-left: 26.6953px;
+  margin-right: 0px;
   margin-top: 4px;
 }
 
@@ -439,14 +450,19 @@ html body ul > li {
   color: rgb(208, 209, 210);
   margin-bottom: 4px;
   margin-left: 26.6953px;
+  margin-right: 0px;
   margin-top: 4px;
 }
 
 html body ul.overflow {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--text-a, rgb(228, 129, 192));
@@ -460,14 +476,21 @@ html body blockquote {
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
 }
 
 html body table {
   color: rgb(208, 209, 210);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 32px);
 }
 
@@ -505,13 +528,18 @@ html body thead {
 
 html body tr {
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
 }`,
     code: `html body code {
   background-color: var(--discord-yellow-bg, rgba(250, 168, 25, 0.1));
   border-bottom-color: rgb(33, 35, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(33, 35, 38);
+  border-left-width: 0px;
   border-right-color: rgb(33, 35, 38);
+  border-right-width: 0px;
   border-top-color: rgb(33, 35, 38);
+  border-top-width: 0px;
   color: var(--markup-code, rgb(244, 167, 67));
   padding-bottom: 1px;
   padding-left: 4.8px;
@@ -522,15 +550,23 @@ html body tr {
 html body pre:has(> code) {
   background-color: var(--background-code-preview, rgb(41, 44, 46));
   border-bottom-color: rgb(33, 35, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(33, 35, 38);
+  border-left-width: 0px;
   border-right-color: rgb(33, 35, 38);
+  border-right-width: 0px;
   border-top-color: rgb(33, 35, 38);
+  border-top-width: 0px;
 }`,
     images: `html body audio {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
 }
 
 html body figcaption {
@@ -541,67 +577,101 @@ html body figcaption {
 html body figure {
   --code-background: var(--ec-frm-edBg, hsla(232, 14%, 31%, 1));
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
 }
 
 html body img {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
 }
 
 html body video {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
 }`,
     embeds: `html body .file-embed {
   background-color: var(--background-primary-alt, rgb(68, 71, 90));
   border-bottom-color: rgb(141, 145, 150);
+  border-bottom-width: 0px;
   border-left-color: rgb(141, 145, 150);
+  border-left-width: 0px;
   border-right-color: rgb(141, 145, 150);
+  border-right-width: 0px;
   border-top-color: rgb(141, 145, 150);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(141, 145, 150));
 }
 
 html body .footnotes {
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
   color: rgb(208, 209, 210);
 }
 
 html body .transclude {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
   color: rgb(208, 209, 210);
+  padding-bottom: 0px;
   padding-left: 8px;
   padding-right: 4px;
+  padding-top: 0px;
 }
 
 html body .transclude-inner {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
   color: rgb(208, 209, 210);
+  margin-bottom: 0px;
   margin-left: 8px;
   margin-right: 4px;
+  margin-top: 0px;
+  padding-bottom: 0px;
   padding-left: 8px;
   padding-right: 4px;
+  padding-top: 0px;
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(156, 156, 156);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+  border-bottom-width: 0px;
   border-left-color: rgb(156, 156, 156);
+  border-left-width: 0px;
   border-right-color: rgb(156, 156, 156);
+  border-right-width: 0px;
   border-top-color: rgb(156, 156, 156);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  border-top-width: 0px;
   width: var(--checkbox-size, 22px);
 }
 
@@ -1389,11 +1459,15 @@ html body .callout[data-callout="warning"] {
   border-bottom-color: rgb(33, 35, 38);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(33, 35, 38);
+  border-left-width: 0px;
   border-right-color: rgb(33, 35, 38);
+  border-right-width: 0px;
   border-top-color: rgb(33, 35, 38);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: var(--text-muted, rgb(141, 145, 150));
   font-family: var(--default-font, Catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
@@ -1421,11 +1495,15 @@ html body .search > .search-container > .search-space > .search-layout > .result
   border-bottom-color: rgb(208, 209, 210);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-description {
@@ -1449,11 +1527,15 @@ html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(33, 35, 38);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(33, 35, 38);
+  border-left-width: 0px;
   border-right-color: rgb(33, 35, 38);
+  border-right-width: 0px;
   border-top-color: rgb(33, 35, 38);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
 
@@ -1462,11 +1544,15 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   border-bottom-color: rgb(208, 209, 210);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  border-top-width: 0px;
   color: rgb(208, 209, 210);
 }
 
@@ -1494,9 +1580,13 @@ html body a.internal-link.tag-link::before {
 
 html body h1 {
   border-bottom-color: rgb(138, 135, 197);
+  border-bottom-width: 0px;
   border-left-color: rgb(138, 135, 197);
+  border-left-width: 0px;
   border-right-color: rgb(138, 135, 197);
+  border-right-width: 0px;
   border-top-color: rgb(138, 135, 197);
+  border-top-width: 0px;
   color: var(--text-title-h1, rgb(138, 135, 197));
   font-family: var(--h1-font, "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-size: var(--h1-size, 32px);
@@ -1504,6 +1594,9 @@ html body h1 {
   letter-spacing: var(--h1-letter-spacing, -0.48px);
   line-height: var(--h1-line-height, 40px);
   margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body h1.article-title {
@@ -1512,9 +1605,13 @@ html body h1.article-title {
 
 html body h2 {
   border-bottom-color: rgb(140, 149, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(140, 149, 212);
+  border-left-width: 0px;
   border-right-color: rgb(140, 149, 212);
+  border-right-width: 0px;
   border-top-color: rgb(140, 149, 212);
+  border-top-width: 0px;
   color: var(--text-title-h2, rgb(140, 149, 212));
   font-family: var(--h2-font, "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-size: var(--h2-size, 26px);
@@ -1522,22 +1619,33 @@ html body h2 {
   letter-spacing: var(--h2-letter-spacing, -0.286px);
   line-height: var(--h2-line-height, 32.5px);
   margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body h2.page-title, html h2.page-title a {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(208, 209, 210));
   font-family: var(--inline-title-font, "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
 
 html body h3 {
   border-bottom-color: rgb(140, 149, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(140, 149, 212);
+  border-left-width: 0px;
   border-right-color: rgb(140, 149, 212);
+  border-right-width: 0px;
   border-top-color: rgb(140, 149, 212);
+  border-top-width: 0px;
   color: var(--text-title-h3, rgb(140, 149, 212));
   font-family: var(--h3-font, "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-size: var(--h3-size, 22px);
@@ -1545,14 +1653,20 @@ html body h3 {
   letter-spacing: var(--h3-letter-spacing, -0.176px);
   line-height: var(--h3-line-height, 27.5px);
   margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 10px);
 }
 
 html body h4 {
   border-bottom-color: rgb(140, 149, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(140, 149, 212);
+  border-left-width: 0px;
   border-right-color: rgb(140, 149, 212);
+  border-right-width: 0px;
   border-top-color: rgb(140, 149, 212);
+  border-top-width: 0px;
   color: var(--text-title-h4, rgb(140, 149, 212));
   font-family: var(--h4-font, "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-size: var(--h4-size, 18px);
@@ -1560,14 +1674,20 @@ html body h4 {
   letter-spacing: var(--h4-letter-spacing, -0.09px);
   line-height: var(--h4-line-height, 22.5px);
   margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 10px);
 }
 
 html body h5 {
   border-bottom-color: rgb(140, 149, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(140, 149, 212);
+  border-left-width: 0px;
   border-right-color: rgb(140, 149, 212);
+  border-right-width: 0px;
   border-top-color: rgb(140, 149, 212);
+  border-top-width: 0px;
   color: var(--text-title-h5, rgb(140, 149, 212));
   font-family: var(--h5-font, "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-size: var(--h5-size, 18px);
@@ -1575,25 +1695,36 @@ html body h5 {
   letter-spacing: var(--h5-letter-spacing, -0.036px);
   line-height: var(--h5-line-height, 22.5px);
   margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 10px);
 }
 
 html body h6 {
   border-bottom-color: rgb(120, 144, 151);
+  border-bottom-width: 0px;
   border-left-color: rgb(120, 144, 151);
+  border-left-width: 0px;
   border-right-color: rgb(120, 144, 151);
+  border-right-width: 0px;
   border-top-color: rgb(120, 144, 151);
+  border-top-width: 0px;
   color: var(--text-title-h6, rgb(120, 144, 151));
   font-family: var(--h6-font, "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif);
   line-height: var(--h6-line-height, 20px);
   margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 10px;
 }
 
 html body hr {
   border-bottom-color: rgb(33, 35, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(33, 35, 38);
+  border-left-width: 0px;
   border-right-color: rgb(33, 35, 38);
+  border-right-width: 0px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -1632,17 +1763,25 @@ html body .explorer .nav-files-container .collapse-icon svg {
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(141, 145, 150);
+  border-bottom-width: 0px;
   border-left-color: rgb(141, 145, 150);
+  border-left-width: 0px;
   border-right-color: rgb(141, 145, 150);
+  border-right-width: 0px;
   border-top-color: rgb(141, 145, 150);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(141, 145, 150));
 }`,
     footer: `html body footer {
   background-color: var(--status-bar-background, rgb(43, 45, 49));
   border-bottom-color: rgb(33, 35, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(33, 35, 38);
+  border-left-width: 0px;
   border-right-color: rgb(33, 35, 38);
+  border-right-width: 0px;
   border-top-color: rgb(33, 35, 38);
+  border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(141, 145, 150));
   font-family: Catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -1657,9 +1796,13 @@ html body footer ul li a {
 
 html body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
   color: rgb(208, 209, 210);
 }
 
@@ -1673,9 +1816,13 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 }`,
     listPage: `html body li.section-li {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
 }
 
 html body li.section-li > .section .meta {
@@ -1689,15 +1836,23 @@ html body li.section-li > .section > .desc > h3 > a {
 
 html body ul.section-ul {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
 }`,
     darkmode: `html body .darkmode {
   border-bottom-color: rgb(141, 145, 150);
+  border-bottom-width: 0px;
   border-left-color: rgb(141, 145, 150);
+  border-left-width: 0px;
   border-right-color: rgb(141, 145, 150);
+  border-right-width: 0px;
   border-top-color: rgb(141, 145, 150);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(141, 145, 150));
 }
 
@@ -1707,9 +1862,13 @@ html body .darkmode svg {
 }`,
     breadcrumbs: `html body .breadcrumb-container {
   border-bottom-color: rgb(141, 145, 150);
+  border-bottom-width: 0px;
   border-left-color: rgb(141, 145, 150);
+  border-left-width: 0px;
   border-right-color: rgb(141, 145, 150);
+  border-right-width: 0px;
   border-top-color: rgb(141, 145, 150);
+  border-top-width: 0px;
   color: rgb(141, 145, 150);
 }
 
@@ -1744,27 +1903,39 @@ html body .canvas-sidebar {
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgb(33, 35, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(33, 35, 38);
+  border-left-width: 0px;
   border-right-color: rgb(33, 35, 38);
+  border-right-width: 0px;
   border-top-color: rgb(33, 35, 38);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(141, 145, 150));
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 html body .metadata-container .metadata-property {
   border-bottom-color: rgb(141, 145, 150);
+  border-bottom-width: 0px;
   border-left-color: rgb(141, 145, 150);
+  border-left-width: 0px;
   border-right-color: rgb(141, 145, 150);
+  border-right-width: 0px;
   border-top-color: rgb(141, 145, 150);
+  border-top-width: 0px;
   color: rgb(141, 145, 150);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 html body .metadata-properties {
   border-bottom-color: rgb(141, 145, 150);
+  border-bottom-width: 0px;
   border-left-color: rgb(141, 145, 150);
+  border-left-width: 0px;
   border-right-color: rgb(141, 145, 150);
+  border-right-width: 0px;
   border-top-color: rgb(141, 145, 150);
+  border-top-width: 0px;
   color: rgb(141, 145, 150);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -1810,9 +1981,13 @@ html body div#quartz-root {
 
 html body ol.overflow {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
 }`,
     stacked: `html body .stacked-page {
   background-color: var(--background-secondary, rgb(43, 45, 49));
@@ -1828,9 +2003,13 @@ html body .stacked-page.active {
 }`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
   color: rgb(208, 209, 210);
 }
 
@@ -1840,9 +2019,13 @@ html body .navigation-progress {
 
 html body .page-header h2.page-title {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(208, 209, 210));
   font-family: var(--font-editor, "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif);
   line-height: 32px;
@@ -1854,9 +2037,13 @@ html body abbr {
 
 html body details {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
 }
 
 html body input[type=text] {
@@ -1864,11 +2051,15 @@ html body input[type=text] {
   border-bottom-color: rgb(33, 35, 38);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(33, 35, 38);
+  border-left-width: 0px;
   border-right-color: rgb(33, 35, 38);
+  border-right-width: 0px;
   border-top-color: rgb(33, 35, 38);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: var(--text-muted, rgb(141, 145, 150));
   font-family: var(--default-font, Catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif);
 }
@@ -1876,17 +2067,25 @@ html body input[type=text] {
 html body kbd {
   background-color: var(--code-background, rgb(68, 71, 90));
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(208, 209, 210));
 }
 
 html body progress {
   border-bottom-color: rgb(208, 209, 210);
+  border-bottom-width: 0px;
   border-left-color: rgb(208, 209, 210);
+  border-left-width: 0px;
   border-right-color: rgb(208, 209, 210);
+  border-right-width: 0px;
   border-top-color: rgb(208, 209, 210);
+  border-top-width: 0px;
 }
 
 html body sub {

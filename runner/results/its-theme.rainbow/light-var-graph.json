@@ -536,7 +536,7 @@
       "--headers",
       "--h1-color"
     ],
-    "body:not(.callout-no-metadata) .callout.callout[data-callout~=\"Metadata\" i]:not([data-callout-metadata~=\"no-strong\"]": [
+    "body:not(.callout-no-metadata) .callout.callout[data-callout~=\"Metadata\" i]:not([data-callout-metadata~=\"no-strong\"], [data-callout-metadata~=\"no-str\"])": [
       "--callout-color"
     ]
   },
@@ -656,15 +656,25 @@
   "--checkbox-border-color": {
     "body": ["--text-faint"],
     ".theme-dark": ["--accent"],
-    ".list-bullet-color.list-bullet-color :is(ul": ["--rainbow-1"],
-    ".list-bullet-color.list-bullet-color :is(ul ul": ["--rainbow-2"],
-    ".list-bullet-color.list-bullet-color :is(ul ul ul": ["--rainbow-3"],
-    ".list-bullet-color.list-bullet-color :is(ul ul ul ul": ["--rainbow-4"],
-    ".list-bullet-color.list-bullet-color :is(ul ul ul ul ul": ["--rainbow-5"],
-    ".list-bullet-color.list-bullet-color :is(ul ul ul ul ul ul": [
+    ".list-bullet-color.list-bullet-color :is(ul, ol) li .task-list-item-checkbox": [
+      "--rainbow-1"
+    ],
+    ".list-bullet-color.list-bullet-color :is(ul ul, ol ol) li .task-list-item-checkbox": [
+      "--rainbow-2"
+    ],
+    ".list-bullet-color.list-bullet-color :is(ul ul ul, ol ol ol) li .task-list-item-checkbox": [
+      "--rainbow-3"
+    ],
+    ".list-bullet-color.list-bullet-color :is(ul ul ul ul, ol ol ol ol) li .task-list-item-checkbox": [
+      "--rainbow-4"
+    ],
+    ".list-bullet-color.list-bullet-color :is(ul ul ul ul ul, ol ol ol ol ol) li .task-list-item-checkbox": [
+      "--rainbow-5"
+    ],
+    ".list-bullet-color.list-bullet-color :is(ul ul ul ul ul ul, ol ol ol ol ol ol) li .task-list-item-checkbox": [
       "--rainbow-6"
     ],
-    ".list-bullet-color.list-bullet-color :is(ul ul ul ul ul ul ul": [
+    ".list-bullet-color.list-bullet-color :is(ul ul ul ul ul ul ul, ol ol ol ol ol ol ol) li .task-list-item-checkbox": [
       "--accent"
     ],
     ".slrvb-g": ["--accent"]
@@ -712,19 +722,35 @@
   "--collapse-icon-color": {
     "body": ["--text-faint"],
     ".alternate-indent .is-live-preview .HyperMD-list-line-2": ["--text-dl"],
-    ".illusion.illusion :is(.markdown-preview-view": ["--headers"]
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--headers"
+    ]
   },
   "--collapse-icon-color-collapsed": {
     "body": ["--text-accent"],
     ".theme-dark": ["--inactive"],
     ".alternate-indent .is-live-preview .HyperMD-list-line-2": ["--text-dl"],
-    ".illusion.illusion :is(.markdown-preview-view": ["--text-dl"],
-    ".illusion-h1 :is(.markdown-preview-view": ["--accent-text"],
-    ".illusion-h2 :is(.markdown-preview-view": ["--accent-text"],
-    ".illusion-h3 :is(.markdown-preview-view": ["--accent-text"],
-    ".illusion-h4 :is(.markdown-preview-view": ["--accent-text"],
-    ".illusion-h5 :is(.markdown-preview-view": ["--accent-text"],
-    ".illusion-h6 :is(.markdown-preview-view": ["--accent-text"]
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--text-dl"
+    ],
+    ".illusion-h1 :is(.markdown-preview-view, .is-live-preview) h1[data-heading]": [
+      "--accent-text"
+    ],
+    ".illusion-h2 :is(.markdown-preview-view, .is-live-preview) h2[data-heading]": [
+      "--accent-text"
+    ],
+    ".illusion-h3 :is(.markdown-preview-view, .is-live-preview) h3[data-heading]": [
+      "--accent-text"
+    ],
+    ".illusion-h4 :is(.markdown-preview-view, .is-live-preview) h4[data-heading]": [
+      "--accent-text"
+    ],
+    ".illusion-h5 :is(.markdown-preview-view, .is-live-preview) h5[data-heading]": [
+      "--accent-text"
+    ],
+    ".illusion-h6 :is(.markdown-preview-view, .is-live-preview) h6[data-heading]": [
+      "--accent-text"
+    ]
   },
   "--dialog-max-width": {
     ".is-phone .modal-container": [
@@ -901,7 +927,9 @@
   "--graph-node-attachment": { "body": ["--graph-img"] },
   "--heading-formatting": {
     "body": ["--inactive"],
-    ".illusion.illusion :is(.markdown-preview-view": ["--illusion-header-text"]
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--illusion-header-text"
+    ]
   },
   "--heading-spacing": { "body": ["--p-spacing"] },
   "--h1-color": {
@@ -909,8 +937,12 @@
     ".canvas-milanote .canvas-node .canvas-node-content.markdown-embed:not(.is-loaded)": [
       "--text"
     ],
-    ".illusion.illusion :is(.markdown-preview-view": ["--illusion-header-text"],
-    ".illusion-h1 :is(.markdown-preview-view": ["--illusion-header-text"],
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--illusion-header-text"
+    ],
+    ".illusion-h1 :is(.markdown-preview-view, .is-live-preview) h1[data-heading]": [
+      "--illusion-header-text"
+    ],
     ".dnd.dnd": ["--headers"],
     ".theme-dark .pathfinder": ["--headers"],
     ".theme-light .pathfinder": ["--headers"],
@@ -921,8 +953,12 @@
     ".canvas-milanote .canvas-node .canvas-node-content.markdown-embed:not(.is-loaded)": [
       "--text"
     ],
-    ".illusion.illusion :is(.markdown-preview-view": ["--illusion-header-text"],
-    ".illusion-h2 :is(.markdown-preview-view": ["--illusion-header-text"],
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--illusion-header-text"
+    ],
+    ".illusion-h2 :is(.markdown-preview-view, .is-live-preview) h2[data-heading]": [
+      "--illusion-header-text"
+    ],
     ".slrvb-g": ["--headers"]
   },
   "--h3-color": {
@@ -930,8 +966,12 @@
     ".canvas-milanote .canvas-node .canvas-node-content.markdown-embed:not(.is-loaded)": [
       "--text"
     ],
-    ".illusion.illusion :is(.markdown-preview-view": ["--illusion-header-text"],
-    ".illusion-h3 :is(.markdown-preview-view": ["--illusion-header-text"],
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--illusion-header-text"
+    ],
+    ".illusion-h3 :is(.markdown-preview-view, .is-live-preview) h3[data-heading]": [
+      "--illusion-header-text"
+    ],
     ".dnd.dnd": ["--embed-h"],
     ".slrvb-g": ["--headers"]
   },
@@ -940,8 +980,12 @@
     ".canvas-milanote .canvas-node .canvas-node-content.markdown-embed:not(.is-loaded)": [
       "--text"
     ],
-    ".illusion.illusion :is(.markdown-preview-view": ["--illusion-header-text"],
-    ".illusion-h4 :is(.markdown-preview-view": ["--illusion-header-text"],
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--illusion-header-text"
+    ],
+    ".illusion-h4 :is(.markdown-preview-view, .is-live-preview) h4[data-heading]": [
+      "--illusion-header-text"
+    ],
     ".slrvb-g": ["--headers"]
   },
   "--h5-color": {
@@ -949,8 +993,12 @@
     ".canvas-milanote .canvas-node .canvas-node-content.markdown-embed:not(.is-loaded)": [
       "--text"
     ],
-    ".illusion.illusion :is(.markdown-preview-view": ["--illusion-header-text"],
-    ".illusion-h5 :is(.markdown-preview-view": ["--illusion-header-text"],
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--illusion-header-text"
+    ],
+    ".illusion-h5 :is(.markdown-preview-view, .is-live-preview) h5[data-heading]": [
+      "--illusion-header-text"
+    ],
     ".slrvb-g": ["--headers"]
   },
   "--h6-color": {
@@ -958,8 +1006,12 @@
     ".canvas-milanote .canvas-node .canvas-node-content.markdown-embed:not(.is-loaded)": [
       "--text"
     ],
-    ".illusion.illusion :is(.markdown-preview-view": ["--illusion-header-text"],
-    ".illusion-h6 :is(.markdown-preview-view": ["--illusion-header-text"],
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--illusion-header-text"
+    ],
+    ".illusion-h6 :is(.markdown-preview-view, .is-live-preview) h6[data-heading]": [
+      "--illusion-header-text"
+    ],
     ".theme-dark .pathfinder": ["--text"],
     ".slrvb-g": ["--headers"]
   },
@@ -1188,7 +1240,9 @@
     ".mobile-tab-switcher-menu-button-chevron": ["--icon-s"],
     ".mobile-tab .mobile-tab-pin": ["--icon-m"],
     ".mobile-tab-preview-empty": ["--icon-xl"],
-    ":is(.mod-left-split": ["--sidebar-tab-icon-size"],
+    ":is(.mod-left-split, .mod-right-split) .workspace-tab-header-inner-icon .svg-icon": [
+      "--sidebar-tab-icon-size"
+    ],
     ".workspace-ribbon .side-dock-ribbon-action .svg-icon": [
       "--ribbon-icon-size"
     ]
@@ -1301,7 +1355,9 @@
     ".mobile-tab-switcher-menubar": ["--icon-l-stroke-width"],
     ".mobile-tab-switcher-menu-button-chevron": ["--icon-s-stroke-width"],
     ".mobile-tab-preview-empty": ["--icon-xl-stroke-width"],
-    ":is(.mod-left-split": ["--sidebar-tab-icon-stroke"],
+    ":is(.mod-left-split, .mod-right-split) .workspace-tab-header-inner-icon .svg-icon": [
+      "--sidebar-tab-icon-stroke"
+    ],
     ".workspace-ribbon .side-dock-ribbon-action .svg-icon": [
       "--ribbon-icon-stroke"
     ]
@@ -1374,8 +1430,12 @@
   },
   "--icon-color-focused": {
     "body": ["--text"],
-    ":is(.mod-left-split": ["--sidebar-icon-color-active"],
-    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split": ["--text"]
+    ":is(.mod-left-split, .mod-right-split) .workspace-tab-header.is-active .workspace-tab-header-inner-icon": [
+      "--sidebar-icon-color-active"
+    ],
+    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split, .mod-right-split.mod-right-split)": [
+      "--text"
+    ]
   },
   "--clickable-icon-radius": {
     "body": ["--radius-s"],
@@ -1390,12 +1450,12 @@
   "--indentation-guide-color": {
     "body": ["--mono-rgb-100"],
     ".theme-dark": ["--lines"],
-    ":is(ul": ["--list-color-1"],
-    ":is(ul ul": ["--list-color-2"],
-    ":is(ul ul ul": ["--list-color-3"],
-    ":is(ul ul ul ul": ["--list-color-4"],
-    ":is(ul ul ul ul ul": ["--list-color-5"],
-    ":is(ul ul ul ul ul ul": ["--list-color-6"],
+    ":is(ul, ol) > li": ["--list-color-1"],
+    ":is(ul ul, ol ol) > li": ["--list-color-2"],
+    ":is(ul ul ul, ol ol ol) > li": ["--list-color-3"],
+    ":is(ul ul ul ul, ol ol ol ol) > li": ["--list-color-4"],
+    ":is(ul ul ul ul ul, ol ol ol ol ol) > li": ["--list-color-5"],
+    ":is(ul ul ul ul ul ul, ol ol ol ol ol ol) > li": ["--list-color-6"],
     ".slrvb-g": ["--lines"]
   },
   "--indentation-guide-color-active": {
@@ -1542,7 +1602,9 @@
     "body": ["--text-faint"],
     ".theme-dark": ["--accent"],
     ".list-default-bullet": ["--text-faint"],
-    ".list-bullet-side-lines :is(ul": ["--accent2"],
+    ".list-bullet-side-lines :is(ul, ol) > li:nth-child(2n)::before": [
+      "--accent2"
+    ],
     ".slrvb-g": ["--accent"]
   },
   "--list-marker-color-hover": {
@@ -2010,33 +2072,49 @@
   "--tab-background-active": { "body": ["--note"] },
   "--tab-text-color": {
     "body": ["--inactive"],
-    ":is(.mod-left-split": ["--text"],
+    ":is(.mod-left-split, .mod-right-split) .workspace-tab-header.is-active": [
+      "--text"
+    ],
     ".titlebar-colors.titlebar-colors.titlebar-colors": ["--text-dl"]
   },
   "--tab-text-color-active": {
     "body": ["--text"],
-    ":is(.mod-left-split": ["--text-dl"]
+    ":is(.mod-left-split, .mod-right-split) .workspace-tab-header.is-active": [
+      "--text-dl"
+    ]
   },
   "--tab-text-color-focused": {
     "body": ["--inactive"],
-    ":is(.mod-left-split": ["--text"],
+    ":is(.mod-left-split, .mod-right-split) .workspace-tab-header.is-active": [
+      "--text"
+    ],
     ".titlebar-colors.titlebar-colors.titlebar-colors": ["--text-dl"]
   },
   "--tab-text-color-focused-active": {
     "body": ["--text"],
-    ":is(.mod-left-split": ["--text-dl"],
+    ":is(.mod-left-split, .mod-right-split) .workspace-tab-header.is-active": [
+      "--text-dl"
+    ],
     ".titlebar-bubbles.titlebar-bubbles.titlebar-bubbles": ["--text"],
-    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split": ["--text"]
+    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split, .mod-right-split.mod-right-split) .is-active.is-active": [
+      "--text"
+    ]
   },
   "--tab-text-color-focused-highlighted": { "body": ["--text-accent"] },
   "--tab-text-color-focused-active-current": {
     "body": ["--text"],
-    ":is(.mod-left-split": ["--sidebar-icon-color-active"],
-    ".titlebar-colors.titlebar-colors.titlebar-colors :is(.mod-left-split": [
+    ":is(.mod-left-split, .mod-right-split) .workspace-tab-header.is-active": [
+      "--sidebar-icon-color-active"
+    ],
+    ".titlebar-colors.titlebar-colors.titlebar-colors :is(.mod-left-split, .mod-right-split) .workspace-tab-header.is-active": [
       "--text"
     ],
-    ".titlebar-bubbles :is(.mod-left-split": ["--text"],
-    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split": ["--text"]
+    ".titlebar-bubbles :is(.mod-left-split, .mod-right-split, .mod-root)": [
+      "--text"
+    ],
+    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split, .mod-right-split.mod-right-split) .is-active.is-active": [
+      "--text"
+    ]
   },
   "--tab-font-size": {
     "body": ["--font-size"],
@@ -2047,7 +2125,9 @@
     ".sidebar-toggle-button": ["--titlebar-background"],
     "body.is-focused .sidebar-toggle-button": ["--titlebar-background-focused"],
     ".titlebar-colors.titlebar-colors.titlebar-colors": ["--dark-accent"],
-    ".sidebar-tabs-tabular :is(.mod-left-split": ["--outer-bar"]
+    ".sidebar-tabs-tabular :is(.mod-left-split, .mod-right-split, .workspace-ribbon.mod-left)": [
+      "--outer-bar"
+    ]
   },
   "--tab-divider-color": {
     "body": ["--hr"],
@@ -2057,11 +2137,15 @@
   "--tab-curve": { "body": ["--radius-s"] },
   "--tab-radius": {
     "body": ["--radius-s"],
-    ".titlebar-bubbles :is(.mod-left-split": ["--radius-m"]
+    ".titlebar-bubbles :is(.mod-left-split, .mod-right-split, .mod-root)": [
+      "--radius-m"
+    ]
   },
   "--tab-radius-active": {
     "body": ["--radius-s"],
-    ".titlebar-bubbles :is(.mod-left-split": ["--radius-m"]
+    ".titlebar-bubbles :is(.mod-left-split, .mod-right-split, .mod-root)": [
+      "--radius-m"
+    ]
   },
   "--tab-switcher-menubar-background": { "body": ["--background-secondary"] },
   "--tab-switcher-background": { "body": ["--background-secondary"] },
@@ -2137,7 +2221,7 @@
   "--table-line-height": { "body": ["--line-height-tight"] },
   "--table-text-size": {
     "body": ["--font-text-size"],
-    ".callout.callout:is([data-callout-metadata~=\"text-small\"]": [
+    ".callout.callout:is([data-callout-metadata~=\"text-small\"], [data-callout-metadata~=\"txt-s\"]) > .callout-content > *": [
       "--font-smallest"
     ]
   },
@@ -2201,7 +2285,7 @@
     "body:not(.disable-source-styling) .cm-s-obsidian.markdown-source-view:not(.is-live-preview)": [
       "--font-size"
     ],
-    ".callout.callout:is([data-callout-metadata~=\"text-small\"]": [
+    ".callout.callout:is([data-callout-metadata~=\"text-small\"], [data-callout-metadata~=\"txt-s\"]) > .callout-content > *": [
       "--font-smallest"
     ]
   },
@@ -2250,7 +2334,9 @@
     "body.is-frameless.in-progress": ["--background-primary"],
     ".is-tablet.theme-dark": ["--background-primary"],
     ".titlebar-colors.titlebar-colors.titlebar-colors": ["--dark-accent"],
-    ".sidebar-tabs-tabular :is(.mod-left-split": ["--outer-bar"]
+    ".sidebar-tabs-tabular :is(.mod-left-split, .mod-right-split, .workspace-ribbon.mod-left)": [
+      "--outer-bar"
+    ]
   },
   "--titlebar-background-focused": {
     "body": ["--outer-bar"],
@@ -2324,7 +2410,9 @@
   "--background-modifier-hover": {
     "body": ["--hvr-active"],
     ".is-mobile.theme-dark": ["--mono-rgb-100"],
-    ":is(.mod-left-split": ["--sidebar-tab-background-color"],
+    ":is(.mod-left-split, .mod-right-split) .workspace-tab-header.is-active": [
+      "--sidebar-tab-background-color"
+    ],
     ".workspace-tab-header-container": ["--sidebar-tab-background-color"],
     ".is-mobile.is-mobile": ["--hvr-active"],
     ".mini": ["--td"],
@@ -2540,7 +2628,7 @@
     ".s-d.s-d": ["--font-default"]
   },
   "--font-text-size": {
-    ".callout.callout:is([data-callout-metadata~=\"text-small\"]": [
+    ".callout.callout:is([data-callout-metadata~=\"text-small\"], [data-callout-metadata~=\"txt-s\"]) > .callout-content > *": [
       "--font-smallest"
     ]
   },
@@ -2571,76 +2659,76 @@
     ".callout[data-callout=\"bug\"]": ["--callout-bug"],
     ".callout[data-callout=\"example\"]": ["--callout-example"],
     ".callout[data-callout=\"quote\"]": ["--callout-quote"],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-blue\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-blue\"], [data-callout-metadata~=\"c-blue\"], [data-callout-metadata~=\"background-color-blue\"], [data-callout-metadata~=\"bg-c-blue\"]) > .callout-title": [
       "--callout-title"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-blue\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-blue\"], [data-callout-metadata~=\"bg-c-blue\"])": [
       "--callout-blue"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-green\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-green\"], [data-callout-metadata~=\"c-green\"], [data-callout-metadata~=\"background-color-green\"], [data-callout-metadata~=\"bg-c-green\"]) > .callout-title": [
       "--callout-title"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-green\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-green\"], [data-callout-metadata~=\"bg-c-green\"])": [
       "--callout-green"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-orange\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-orange\"], [data-callout-metadata~=\"c-orange\"], [data-callout-metadata~=\"background-color-orange\"], [data-callout-metadata~=\"bg-c-orange\"]) > .callout-title": [
       "--callout-title"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-orange\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-orange\"], [data-callout-metadata~=\"bg-c-orange\"])": [
       "--callout-orange"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-red\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-red\"], [data-callout-metadata~=\"c-red\"], [data-callout-metadata~=\"background-color-red\"], [data-callout-metadata~=\"bg-c-red\"]) > .callout-title": [
       "--callout-title"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-red\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-red\"], [data-callout-metadata~=\"bg-c-red\"])": [
       "--callout-red"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-purple\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-purple\"], [data-callout-metadata~=\"c-purple\"], [data-callout-metadata~=\"background-color-purple\"], [data-callout-metadata~=\"bg-c-purple\"]) > .callout-title": [
       "--callout-title"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-purple\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-purple\"], [data-callout-metadata~=\"bg-c-purple\"])": [
       "--callout-purple"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-gray\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-gray\"], [data-callout-metadata~=\"c-gray\"], [data-callout-metadata~=\"background-color-gray\"], [data-callout-metadata~=\"bg-c-gray\"]) > .callout-title": [
       "--callout-title"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-gray\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-gray\"], [data-callout-metadata~=\"bg-c-gray\"])": [
       "--callout-gray"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-yellow\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-yellow\"], [data-callout-metadata~=\"c-yellow\"], [data-callout-metadata~=\"background-color-yellow\"], [data-callout-metadata~=\"bg-c-yellow\"]) > .callout-title": [
       "--callout-title"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-yellow\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-yellow\"], [data-callout-metadata~=\"bg-c-yellow\"])": [
       "--callout-yellow"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-pink\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-pink\"], [data-callout-metadata~=\"c-pink\"], [data-callout-metadata~=\"background-color-pink\"], [data-callout-metadata~=\"bg-c-pink\"]) > .callout-title": [
       "--callout-title"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-pink\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-pink\"], [data-callout-metadata~=\"bg-c-pink\"])": [
       "--callout-pink"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-brown\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-brown\"], [data-callout-metadata~=\"c-brown\"], [data-callout-metadata~=\"background-color-brown\"], [data-callout-metadata~=\"bg-c-brown\"]) > .callout-title": [
       "--callout-title"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-brown\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-brown\"], [data-callout-metadata~=\"bg-c-brown\"])": [
       "--callout-brown"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-black\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-black\"], [data-callout-metadata~=\"c-black\"], [data-callout-metadata~=\"background-color-black\"], [data-callout-metadata~=\"bg-c-black\"]) > .callout-title": [
       "--callout-title"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-black\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-black\"], [data-callout-metadata~=\"bg-c-black\"])": [
       "--callout-black"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-white\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-white\"], [data-callout-metadata~=\"c-white\"], [data-callout-metadata~=\"background-color-white\"], [data-callout-metadata~=\"bg-c-white\"]) > .callout-title": [
       "--callout-title"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-white\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-white\"], [data-callout-metadata~=\"bg-c-white\"])": [
       "--callout-white"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-plain\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-plain\"], [data-callout-metadata~=\"c-plain\"], [data-callout-metadata~=\"background-color-plain\"], [data-callout-metadata~=\"bg-c-plain\"]) > .callout-title": [
       "--callout-title"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-plain\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-color-plain\"], [data-callout-metadata~=\"bg-c-plain\"])": [
       "--callout-plain"
     ],
     ".callout.callout[data-callout~=\"infobox\"]": [
@@ -2649,7 +2737,12 @@
     ],
     ".callout.callout[data-callout=\"statblocks\"]": ["--accent-rgb"],
     ".callout[data-callout*=\"column\"]": ["--text-normal"],
-    "body:not(.default-callout-quote": ["--color-accent"]
+    "body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout=\"quote\"]": [
+      "--color-accent"
+    ],
+    "body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout=\"quote\"][data-callout-metadata~=\"author\"]": [
+      "--color-accent"
+    ]
   },
   "--pill-corner-shape": {
     ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill": [
@@ -2836,7 +2929,7 @@
     ".s-d.s-d": ["--font-default"]
   },
   "--header-border-line-height": {
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-border-line-height"
     ]
   },
@@ -2899,10 +2992,10 @@
   "--h1-border-line-height": {
     "body": ["--header-border-line-height"],
     ".writing.writing": ["--header-border-line-height"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-border-line-height"
     ],
-    ".illusion-h1 :is(.markdown-preview-view": [
+    ".illusion-h1 :is(.markdown-preview-view, .is-live-preview) h1[data-heading]": [
       "--illusion-border-line-height"
     ],
     ".h-line.h-line": ["--header-border-line-height"],
@@ -2912,10 +3005,10 @@
   "--h2-border-line-height": {
     "body": ["--header-border-line-height"],
     ".writing.writing": ["--header-border-line-height"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-border-line-height"
     ],
-    ".illusion-h2 :is(.markdown-preview-view": [
+    ".illusion-h2 :is(.markdown-preview-view, .is-live-preview) h2[data-heading]": [
       "--illusion-border-line-height"
     ],
     ".h-line.h-line": ["--header-border-line-height"],
@@ -2925,10 +3018,10 @@
   "--h3-border-line-height": {
     "body": ["--header-border-line-height"],
     ".writing.writing": ["--header-border-line-height"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-border-line-height"
     ],
-    ".illusion-h3 :is(.markdown-preview-view": [
+    ".illusion-h3 :is(.markdown-preview-view, .is-live-preview) h3[data-heading]": [
       "--illusion-border-line-height"
     ],
     ".h-line.h-line": ["--header-border-line-height"],
@@ -2939,10 +3032,10 @@
     "body": ["--header-border-line-height"],
     ".block-language-encounter": ["--header-border-height"],
     ".writing.writing": ["--header-border-line-height"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-border-line-height"
     ],
-    ".illusion-h4 :is(.markdown-preview-view": [
+    ".illusion-h4 :is(.markdown-preview-view, .is-live-preview) h4[data-heading]": [
       "--illusion-border-line-height"
     ],
     ".h-line.h-line": ["--header-border-line-height"],
@@ -2952,10 +3045,10 @@
   "--h5-border-line-height": {
     "body": ["--header-border-line-height"],
     ".writing.writing": ["--header-border-line-height"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-border-line-height"
     ],
-    ".illusion-h5 :is(.markdown-preview-view": [
+    ".illusion-h5 :is(.markdown-preview-view, .is-live-preview) h5[data-heading]": [
       "--illusion-border-line-height"
     ],
     ".h-line.h-line": ["--header-border-line-height"],
@@ -2965,10 +3058,10 @@
   "--h6-border-line-height": {
     "body": ["--header-border-line-height"],
     ".writing.writing": ["--header-border-line-height"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-border-line-height"
     ],
-    ".illusion-h6 :is(.markdown-preview-view": [
+    ".illusion-h6 :is(.markdown-preview-view, .is-live-preview) h6[data-heading]": [
       "--illusion-border-line-height"
     ],
     ".h-line.h-line": ["--header-border-line-height"],
@@ -3131,8 +3224,15 @@
   "--sidebar-icon-color-active": {
     ".theme-dark": ["--text-dl"],
     ".titlebar-colors.titlebar-colors.titlebar-colors.theme-light": ["--text"],
-    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split": ["--text"],
-    ".sidebar-tabs-tabular :is(.mod-left-split": ["--lite-accent"]
+    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split, .mod-right-split.mod-right-split)": [
+      "--headers"
+    ],
+    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split, .mod-right-split.mod-right-split) .is-active.is-active:hover": [
+      "--text"
+    ],
+    ".sidebar-tabs-tabular :is(.mod-left-split, .mod-right-split, .workspace-ribbon.mod-left)": [
+      "--lite-accent"
+    ]
   },
   "--file-icon-color": {
     ".theme-dark": ["--inactive"],
@@ -3183,7 +3283,9 @@
   "--tab-stacked-shadow-color": { "body": ["--drop-shadow"] },
   "--popover-background": { "body": ["--background-primary"] },
   "--headers": {
-    ".illusion.illusion :is(.markdown-preview-view": ["--illusion-header-text"],
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--illusion-header-text"
+    ],
     ".theme-dark.mini": ["--text"],
     ".theme-light.mini": ["--text"],
     ".theme-dark .notion": ["--text"],
@@ -3210,7 +3312,8 @@
   },
   "--list-numbered-color": {
     ".theme-dark": ["--headers"],
-    ".list-bullet-side-lines :is(ul": ["--accent2"],
+    ".list-bullet-side-lines :is(ul, ol) li": ["--headers"],
+    ".list-bullet-side-lines :is(ul, ol) > li:nth-child(2n)": ["--accent2"],
     ".slrvb-g": ["--lite-accent"]
   },
   "--embed-bg": {
@@ -3901,8 +4004,12 @@
   "--sidebar-tab-background-color": {
     ".theme-dark": ["--bttn"],
     ".titlebar-colors.titlebar-colors.titlebar-colors": ["--note"],
-    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split": ["--note"],
-    ".sidebar-tabs-tabular :is(.mod-left-split": ["--note"]
+    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split, .mod-right-split.mod-right-split)": [
+      "--note"
+    ],
+    ".sidebar-tabs-tabular :is(.mod-left-split, .mod-right-split, .workspace-ribbon.mod-left)": [
+      "--note"
+    ]
   },
   "--ribbon-border-color": { ".theme-dark": ["--outer-bar"] },
   "--ribbon-icon-stroke": { ".theme-dark": ["--icon-l-stroke-width"] },
@@ -3917,37 +4024,53 @@
     ".titlebar-colors.titlebar-colors.titlebar-colors .sidebar-toggle-button": [
       "--text-on-accent"
     ],
-    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split": [
+    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split, .mod-right-split.mod-right-split)": [
       "--inactive"
     ],
-    ".sidebar-tabs-tabular :is(.mod-left-split": ["--soft-text"]
+    ".sidebar-tabs-tabular :is(.mod-left-split, .mod-right-split, .workspace-ribbon.mod-left)": [
+      "--soft-text"
+    ]
   },
   "--sidebar-tab-icon-stroke": { ".theme-dark": ["--icon-l-stroke-width"] },
   "--sidebar-tab-background-color-hover": {
     ".theme-dark": ["--accent"],
-    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split": ["--accent"],
+    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split, .mod-right-split.mod-right-split) .is-active.is-active:hover": [
+      "--accent"
+    ],
     ".slrvb-g": ["--accent"]
   },
   "--sidebar-tab-color-hover": {
     ".theme-dark": ["--text-on-accent"],
-    ".is-mobile :is(.workspace-drawer-tab-select": ["--text-normal"],
+    ".is-mobile :is(.workspace-drawer-tab-select, .workspace-drawer-tab-options-list) .workspace-tab-header-inner:hover": [
+      "--text-normal"
+    ],
     ".titlebar-colors.titlebar-colors.titlebar-colors .workspace-tab-header.is-active": [
       "--text"
     ],
     ".titlebar-bubbles.titlebar-bubbles.titlebar-bubbles": ["--text-dl"]
   },
   "--sidebar-tab-border-color": {
-    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split": [
+    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split, .mod-right-split.mod-right-split)": [
+      "--inactive"
+    ],
+    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split, .mod-right-split.mod-right-split) .is-active.is-active": [
+      "--sidebar-icon-color-active"
+    ],
+    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split, .mod-right-split.mod-right-split) .is-active.is-active:hover": [
       "--sidebar-tab-border-color-active"
     ]
   },
   "--sidebar-tab-border-color-active": {
     ".theme-dark": ["--bttn"],
-    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split": ["--headers"]
+    ".sidebar-tabs-underline :is(.mod-left-split.mod-left-split, .mod-right-split.mod-right-split)": [
+      "--headers"
+    ]
   },
   "--sidebar-tab-padding": {
     ".theme-dark": ["--size-4-3"],
-    ".sidebar-tabs-tabular :is(.mod-left-split": ["--size-4-4"]
+    ".sidebar-tabs-tabular :is(.mod-left-split, .mod-right-split, .workspace-ribbon.mod-left)": [
+      "--size-4-4"
+    ]
   },
   "--tab-text-color-hover": {
     ".is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon": [
@@ -3955,7 +4078,9 @@
     ],
     "body": ["--text"],
     ".titlebar-bubbles.titlebar-bubbles.titlebar-bubbles": ["--text"],
-    ".titlebar-bubbles :is(.mod-left-split": ["--text-on-accent"]
+    ".titlebar-bubbles :is(.mod-left-split, .mod-right-split, .mod-root)": [
+      "--text-on-accent"
+    ]
   },
   "--search-border": { "body": ["--box-border"] },
   "--search-box-shadow": { "body": ["--shadow-s"] },
@@ -3992,93 +4117,117 @@
     ".sizing-large.sizing-large": ["--font-text-size"]
   },
   "--header-padding": {
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-header-padding"
     ]
   },
   "--h1-padding": {
     "body": ["--header-padding"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-header-padding"
     ],
-    ".illusion-h1 :is(.markdown-preview-view": ["--illusion-header-padding"]
+    ".illusion-h1 :is(.markdown-preview-view, .is-live-preview) h1[data-heading]": [
+      "--illusion-header-padding"
+    ]
   },
   "--h2-padding": {
     "body": ["--header-padding"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-header-padding"
     ],
-    ".illusion-h2 :is(.markdown-preview-view": ["--illusion-header-padding"]
+    ".illusion-h2 :is(.markdown-preview-view, .is-live-preview) h2[data-heading]": [
+      "--illusion-header-padding"
+    ]
   },
   "--h3-padding": {
     "body": ["--header-padding"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-header-padding"
     ],
-    ".illusion-h3 :is(.markdown-preview-view": ["--illusion-header-padding"]
+    ".illusion-h3 :is(.markdown-preview-view, .is-live-preview) h3[data-heading]": [
+      "--illusion-header-padding"
+    ]
   },
   "--h4-padding": {
     "body": ["--header-padding"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-header-padding"
     ],
-    ".illusion-h4 :is(.markdown-preview-view": ["--illusion-header-padding"]
+    ".illusion-h4 :is(.markdown-preview-view, .is-live-preview) h4[data-heading]": [
+      "--illusion-header-padding"
+    ]
   },
   "--h5-padding": {
     "body": ["--header-padding"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-header-padding"
     ],
-    ".illusion-h5 :is(.markdown-preview-view": ["--illusion-header-padding"]
+    ".illusion-h5 :is(.markdown-preview-view, .is-live-preview) h5[data-heading]": [
+      "--illusion-header-padding"
+    ]
   },
   "--h6-padding": {
     "body": ["--header-padding"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-header-padding"
     ],
-    ".illusion-h6 :is(.markdown-preview-view": ["--illusion-header-padding"]
+    ".illusion-h6 :is(.markdown-preview-view, .is-live-preview) h6[data-heading]": [
+      "--illusion-header-padding"
+    ]
   },
   "--h1-background": {
     "body": ["--header-background"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-h1-background"
     ],
-    ".illusion-h1 :is(.markdown-preview-view": ["--illusion-h1-background"]
+    ".illusion-h1 :is(.markdown-preview-view, .is-live-preview) h1[data-heading]": [
+      "--illusion-h1-background"
+    ]
   },
   "--h2-background": {
     "body": ["--header-background"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-h2-background"
     ],
-    ".illusion-h2 :is(.markdown-preview-view": ["--illusion-h2-background"]
+    ".illusion-h2 :is(.markdown-preview-view, .is-live-preview) h2[data-heading]": [
+      "--illusion-h2-background"
+    ]
   },
   "--h3-background": {
     "body": ["--header-background"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-h3-background"
     ],
-    ".illusion-h3 :is(.markdown-preview-view": ["--illusion-h3-background"]
+    ".illusion-h3 :is(.markdown-preview-view, .is-live-preview) h3[data-heading]": [
+      "--illusion-h3-background"
+    ]
   },
   "--h4-background": {
     "body": ["--header-background"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-h4-background"
     ],
-    ".illusion-h4 :is(.markdown-preview-view": ["--illusion-h4-background"]
+    ".illusion-h4 :is(.markdown-preview-view, .is-live-preview) h4[data-heading]": [
+      "--illusion-h4-background"
+    ]
   },
   "--h5-background": {
     "body": ["--header-background"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-h5-background"
     ],
-    ".illusion-h5 :is(.markdown-preview-view": ["--illusion-h5-background"]
+    ".illusion-h5 :is(.markdown-preview-view, .is-live-preview) h5[data-heading]": [
+      "--illusion-h5-background"
+    ]
   },
   "--h6-background": {
     "body": ["--header-background"],
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-h6-background"
     ],
-    ".illusion-h6 :is(.markdown-preview-view": ["--illusion-h6-background"]
+    ".illusion-h6 :is(.markdown-preview-view, .is-live-preview) h6[data-heading]": [
+      "--illusion-h6-background"
+    ]
   },
   "--h1-border-color": { "body": ["--theme-rainbow-1"] },
   "--h2-border-color": { "body": ["--theme-rainbow-2"] },
@@ -4167,88 +4316,128 @@
     ".illusion.illusion .callout[data-callout~=\"infobox\"] [data-heading]": [
       "--illusion-box-shadow"
     ],
-    ".illusion.illusion :is(.markdown-preview-view": ["--illusion-box-shadow"]
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--illusion-box-shadow"
+    ]
   },
   "--h1-shadow": {
     "body": ["--header-shadow"],
     ".illusion.illusion .callout[data-callout~=\"infobox\"] [data-heading]": [
       "--header-shadow"
     ],
-    ".illusion.illusion :is(.markdown-preview-view": ["--illusion-box-shadow"],
-    ".illusion-h1 :is(.markdown-preview-view": ["--illusion-box-shadow"]
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--illusion-box-shadow"
+    ],
+    ".illusion-h1 :is(.markdown-preview-view, .is-live-preview) h1[data-heading]": [
+      "--illusion-box-shadow"
+    ]
   },
   "--h2-shadow": {
     "body": ["--header-shadow"],
     ".illusion.illusion .callout[data-callout~=\"infobox\"] [data-heading]": [
       "--header-shadow"
     ],
-    ".illusion.illusion :is(.markdown-preview-view": ["--illusion-box-shadow"],
-    ".illusion-h2 :is(.markdown-preview-view": ["--illusion-box-shadow"]
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--illusion-box-shadow"
+    ],
+    ".illusion-h2 :is(.markdown-preview-view, .is-live-preview) h2[data-heading]": [
+      "--illusion-box-shadow"
+    ]
   },
   "--h3-shadow": {
     "body": ["--header-shadow"],
     ".illusion.illusion .callout[data-callout~=\"infobox\"] [data-heading]": [
       "--header-shadow"
     ],
-    ".illusion.illusion :is(.markdown-preview-view": ["--illusion-box-shadow"],
-    ".illusion-h3 :is(.markdown-preview-view": ["--illusion-box-shadow"]
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--illusion-box-shadow"
+    ],
+    ".illusion-h3 :is(.markdown-preview-view, .is-live-preview) h3[data-heading]": [
+      "--illusion-box-shadow"
+    ]
   },
   "--h4-shadow": {
     "body": ["--header-shadow"],
     ".illusion.illusion .callout[data-callout~=\"infobox\"] [data-heading]": [
       "--header-shadow"
     ],
-    ".illusion.illusion :is(.markdown-preview-view": ["--illusion-box-shadow"],
-    ".illusion-h4 :is(.markdown-preview-view": ["--illusion-box-shadow"]
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--illusion-box-shadow"
+    ],
+    ".illusion-h4 :is(.markdown-preview-view, .is-live-preview) h4[data-heading]": [
+      "--illusion-box-shadow"
+    ]
   },
   "--h5-shadow": {
     "body": ["--header-shadow"],
     ".illusion.illusion .callout[data-callout~=\"infobox\"] [data-heading]": [
       "--header-shadow"
     ],
-    ".illusion.illusion :is(.markdown-preview-view": ["--illusion-box-shadow"]
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--illusion-box-shadow"
+    ]
   },
   "--h6-shadow": {
     "body": ["--header-shadow"],
     ".illusion.illusion .callout[data-callout~=\"infobox\"] [data-heading]": [
       "--header-shadow"
     ],
-    ".illusion.illusion :is(.markdown-preview-view": ["--illusion-box-shadow"],
-    ".illusion-h5 :is(.markdown-preview-view": ["--illusion-box-shadow"],
-    ".illusion-h6 :is(.markdown-preview-view": ["--illusion-box-shadow"]
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--illusion-box-shadow"
+    ],
+    ".illusion-h5 :is(.markdown-preview-view, .is-live-preview) h5[data-heading]": [
+      "--illusion-box-shadow"
+    ],
+    ".illusion-h6 :is(.markdown-preview-view, .is-live-preview) h6[data-heading]": [
+      "--illusion-box-shadow"
+    ]
   },
   "--header-arrow-icon-size": {
-    ".illusion.illusion :is(.markdown-preview-view": [
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
       "--illusion-header-arrow-icon-size"
     ],
-    ".illusion-h1 :is(.markdown-preview-view": [
+    ".illusion-h1 :is(.markdown-preview-view, .is-live-preview) h1[data-heading]": [
       "--illusion-header-arrow-icon-size"
     ],
-    ".illusion-h2 :is(.markdown-preview-view": [
+    ".illusion-h2 :is(.markdown-preview-view, .is-live-preview) h2[data-heading]": [
       "--illusion-header-arrow-icon-size"
     ],
-    ".illusion-h3 :is(.markdown-preview-view": [
+    ".illusion-h3 :is(.markdown-preview-view, .is-live-preview) h3[data-heading]": [
       "--illusion-header-arrow-icon-size"
     ],
-    ".illusion-h4 :is(.markdown-preview-view": [
+    ".illusion-h4 :is(.markdown-preview-view, .is-live-preview) h4[data-heading]": [
       "--illusion-header-arrow-icon-size"
     ],
-    ".illusion-h5 :is(.markdown-preview-view": [
+    ".illusion-h5 :is(.markdown-preview-view, .is-live-preview) h5[data-heading]": [
       "--illusion-header-arrow-icon-size"
     ],
-    ".illusion-h6 :is(.markdown-preview-view": [
+    ".illusion-h6 :is(.markdown-preview-view, .is-live-preview) h6[data-heading]": [
       "--illusion-header-arrow-icon-size"
     ]
   },
   "--header-arrow-icon-color": {
     "body": ["--collapse-icon-color"],
-    ".illusion.illusion :is(.markdown-preview-view": ["--text-dl"],
-    ".illusion-h1 :is(.markdown-preview-view": ["--illusion-header-text"],
-    ".illusion-h2 :is(.markdown-preview-view": ["--illusion-header-text"],
-    ".illusion-h3 :is(.markdown-preview-view": ["--illusion-header-text"],
-    ".illusion-h4 :is(.markdown-preview-view": ["--illusion-header-text"],
-    ".illusion-h5 :is(.markdown-preview-view": ["--illusion-header-text"],
-    ".illusion-h6 :is(.markdown-preview-view": ["--illusion-header-text"]
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--text-dl"
+    ],
+    ".illusion-h1 :is(.markdown-preview-view, .is-live-preview) h1[data-heading]": [
+      "--illusion-header-text"
+    ],
+    ".illusion-h2 :is(.markdown-preview-view, .is-live-preview) h2[data-heading]": [
+      "--illusion-header-text"
+    ],
+    ".illusion-h3 :is(.markdown-preview-view, .is-live-preview) h3[data-heading]": [
+      "--illusion-header-text"
+    ],
+    ".illusion-h4 :is(.markdown-preview-view, .is-live-preview) h4[data-heading]": [
+      "--illusion-header-text"
+    ],
+    ".illusion-h5 :is(.markdown-preview-view, .is-live-preview) h5[data-heading]": [
+      "--illusion-header-text"
+    ],
+    ".illusion-h6 :is(.markdown-preview-view, .is-live-preview) h6[data-heading]": [
+      "--illusion-header-text"
+    ]
   },
   "--pane-background": { "body": ["--note"] },
   "--link-border": { ".link-notion": ["--hr"] },
@@ -4353,7 +4542,7 @@
   "--code-shadow": { "body": ["--outline"] },
   "--hr-icon-background": {
     "body": ["--note"],
-    ":is(.mod-left-split": ["--side-bar"],
+    ":is(.mod-left-split, .mod-right-split)": ["--side-bar"],
     ".kanban-plugin__item hr": ["--kanban-card-title-background"],
     ".embed-dark-background": ["--embed-bg"],
     ".slrvb-g": ["--note"]
@@ -4523,17 +4712,39 @@
     ".dataview-cards": ["--text"],
     ".slrvb-g": ["--dataview-th-color"]
   },
-  "--he-title-bar-active-fg": { "body:is(.theme-dark": ["--text"] },
-  "--he-title-bar-active-pinned-bg": { "body:is(.theme-dark": ["--note"] },
-  "--he-title-bar-active-action": { "body:is(.theme-dark": ["--lite-accent"] },
-  "--he-title-bar-active-bg": { "body:is(.theme-dark": ["--embed-bg"] },
-  "--he-title-bar-inactive-fg": { "body:is(.theme-dark": ["--inactive"] },
-  "--he-title-bar-inactive-bg": { "body:is(.theme-dark": ["--note"] },
-  "--he-title-bar-inactive-pinned-bg": { "body:is(.theme-dark": ["--note"] },
-  "--he-title-bar-inactive-action": { "body:is(.theme-dark": ["--soft-text"] },
-  "--he-popover-border-radius": { "body:is(.theme-dark": ["--radius-s"] },
-  "--he-text-on-accent-inactive": { "body:is(.theme-dark": ["--text"] },
-  "--he-text-on-accent-active": { "body:is(.theme-dark": ["--headers"] },
+  "--he-title-bar-active-fg": {
+    "body:is(.theme-dark, .theme-light)": ["--text"]
+  },
+  "--he-title-bar-active-pinned-bg": {
+    "body:is(.theme-dark, .theme-light)": ["--note"]
+  },
+  "--he-title-bar-active-action": {
+    "body:is(.theme-dark, .theme-light)": ["--lite-accent"]
+  },
+  "--he-title-bar-active-bg": {
+    "body:is(.theme-dark, .theme-light)": ["--embed-bg"]
+  },
+  "--he-title-bar-inactive-fg": {
+    "body:is(.theme-dark, .theme-light)": ["--inactive"]
+  },
+  "--he-title-bar-inactive-bg": {
+    "body:is(.theme-dark, .theme-light)": ["--note"]
+  },
+  "--he-title-bar-inactive-pinned-bg": {
+    "body:is(.theme-dark, .theme-light)": ["--note"]
+  },
+  "--he-title-bar-inactive-action": {
+    "body:is(.theme-dark, .theme-light)": ["--soft-text"]
+  },
+  "--he-popover-border-radius": {
+    "body:is(.theme-dark, .theme-light)": ["--radius-s"]
+  },
+  "--he-text-on-accent-inactive": {
+    "body:is(.theme-dark, .theme-light)": ["--text"]
+  },
+  "--he-text-on-accent-active": {
+    "body:is(.theme-dark, .theme-light)": ["--headers"]
+  },
   "--kanban-lane-background": { "body": ["--code-bg"] },
   "--kanban-lane-border": {
     "body": ["--box-border-m"],
@@ -4724,97 +4935,147 @@
   },
   "--image-border-color": { "body": ["--background-modifier-border"] },
   "--image-border-background": { "body": ["--td"] },
-  "--image-adj-size-h": { ":is(.view-content": ["--tall"] },
-  "--image-adj-size-w": { ":is(.view-content": ["--tall"] },
+  "--image-adj-size-h": {
+    ":is(.view-content, .popover) img[alt][alt]:not([alt*=\"relative\"])[alt*=\"hmicro\"]": [
+      "--micro"
+    ],
+    ":is(.view-content, .popover) img[alt][alt]:not([alt*=\"relative\"])[alt*=\"htiny\"]": [
+      "--tiny"
+    ],
+    ":is(.view-content, .popover) img[alt][alt]:not([alt*=\"relative\"])[alt*=\"hsmall\"]": [
+      "--small"
+    ],
+    ":is(.view-content, .popover) img[alt][alt]:not([alt*=\"relative\"])[alt*=\"hs-med\"]": [
+      "--small-med"
+    ],
+    ":is(.view-content, .popover) img[alt][alt]:not([alt*=\"relative\"])[alt*=\"hm-sm\"]": [
+      "--med-small"
+    ],
+    ":is(.view-content, .popover) img[alt][alt]:not([alt*=\"relative\"])[alt*=\"hmed\"]": [
+      "--medium"
+    ],
+    ":is(.view-content, .popover) img[alt][alt]:not([alt*=\"relative\"])[alt*=\"hm-tl\"]": [
+      "--med-tall"
+    ],
+    ":is(.view-content, .popover) img[alt][alt]:not([alt*=\"relative\"])[alt*=\"htall\"]": [
+      "--tall"
+    ]
+  },
+  "--image-adj-size-w": {
+    ":is(.view-content, .popover) img[alt][alt]:not([alt*=\"relative\"])[alt*=\"wmicro\"]": [
+      "--micro"
+    ],
+    ":is(.view-content, .popover) img[alt][alt]:not([alt*=\"relative\"])[alt*=\"wtiny\"]": [
+      "--tiny"
+    ],
+    ":is(.view-content, .popover) img[alt][alt]:not([alt*=\"relative\"])[alt*=\"wsmall\"]": [
+      "--small"
+    ],
+    ":is(.view-content, .popover) img[alt][alt]:not([alt*=\"relative\"])[alt*=\"ws-med\"]": [
+      "--small-med"
+    ],
+    ":is(.view-content, .popover) img[alt][alt]:not([alt*=\"relative\"])[alt*=\"wm-sm\"]": [
+      "--med-small"
+    ],
+    ":is(.view-content, .popover) img[alt][alt]:not([alt*=\"relative\"])[alt*=\"wmed\"]": [
+      "--medium"
+    ],
+    ":is(.view-content, .popover) img[alt][alt]:not([alt*=\"relative\"])[alt*=\"wm-tl\"]": [
+      "--med-tall"
+    ],
+    ":is(.view-content, .popover) img[alt][alt]:not([alt*=\"relative\"])[alt*=\"wtall\"]": [
+      "--tall"
+    ]
+  },
   "--img-adj-portrait-size": {
-    "img:is([alt~=\"portrait\"]": ["--med-small"],
+    "img:is([alt~=\"portrait\"], [alt*=\"portrait+\"])": ["--med-small"],
     "img[alt~=\"portrait+small\"]": ["--small-med"],
     "img[alt~=\"portrait+tall\"]": ["--medium"]
   },
   "--callout-title": {
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-blue\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-blue\"], [data-callout-metadata~=\"c-blue\"], [data-callout-metadata~=\"background-color-blue\"], [data-callout-metadata~=\"bg-c-blue\"])": [
       "--callout-blue"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-green\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-green\"], [data-callout-metadata~=\"c-green\"], [data-callout-metadata~=\"background-color-green\"], [data-callout-metadata~=\"bg-c-green\"])": [
       "--callout-green"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-orange\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-orange\"], [data-callout-metadata~=\"c-orange\"], [data-callout-metadata~=\"background-color-orange\"], [data-callout-metadata~=\"bg-c-orange\"])": [
       "--callout-orange"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-red\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-red\"], [data-callout-metadata~=\"c-red\"], [data-callout-metadata~=\"background-color-red\"], [data-callout-metadata~=\"bg-c-red\"])": [
       "--callout-red"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-purple\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-purple\"], [data-callout-metadata~=\"c-purple\"], [data-callout-metadata~=\"background-color-purple\"], [data-callout-metadata~=\"bg-c-purple\"])": [
       "--callout-purple"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-gray\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-gray\"], [data-callout-metadata~=\"c-gray\"], [data-callout-metadata~=\"background-color-gray\"], [data-callout-metadata~=\"bg-c-gray\"])": [
       "--callout-gray"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-yellow\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-yellow\"], [data-callout-metadata~=\"c-yellow\"], [data-callout-metadata~=\"background-color-yellow\"], [data-callout-metadata~=\"bg-c-yellow\"])": [
       "--callout-yellow"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-pink\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-pink\"], [data-callout-metadata~=\"c-pink\"], [data-callout-metadata~=\"background-color-pink\"], [data-callout-metadata~=\"bg-c-pink\"])": [
       "--callout-pink"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-brown\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-brown\"], [data-callout-metadata~=\"c-brown\"], [data-callout-metadata~=\"background-color-brown\"], [data-callout-metadata~=\"bg-c-brown\"])": [
       "--callout-brown"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-black\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-black\"], [data-callout-metadata~=\"c-black\"], [data-callout-metadata~=\"background-color-black\"], [data-callout-metadata~=\"bg-c-black\"])": [
       "--callout-black"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-white\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-white\"], [data-callout-metadata~=\"c-white\"], [data-callout-metadata~=\"background-color-white\"], [data-callout-metadata~=\"bg-c-white\"])": [
       "--callout-white"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"color-plain\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"color-plain\"], [data-callout-metadata~=\"c-plain\"], [data-callout-metadata~=\"background-color-plain\"], [data-callout-metadata~=\"bg-c-plain\"])": [
       "--callout-plain"
     ]
   },
   "--callout-background": {
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-blue\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-blue\"], [data-callout-metadata~=\"bg-blue\"], [data-callout-metadata~=\"background-color-blue\"], [data-callout-metadata~=\"bg-c-blue\"])": [
       "--callout-blue",
       "--callout-color-opacity"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-green\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-green\"], [data-callout-metadata~=\"bg-green\"], [data-callout-metadata~=\"background-color-green\"], [data-callout-metadata~=\"bg-c-green\"])": [
       "--callout-green",
       "--callout-color-opacity"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-orange\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-orange\"], [data-callout-metadata~=\"bg-orange\"], [data-callout-metadata~=\"background-color-orange\"], [data-callout-metadata~=\"bg-c-orange\"])": [
       "--callout-orange",
       "--callout-color-opacity"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-red\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-red\"], [data-callout-metadata~=\"bg-red\"], [data-callout-metadata~=\"background-color-red\"], [data-callout-metadata~=\"bg-c-red\"])": [
       "--callout-red",
       "--callout-color-opacity"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-purple\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-purple\"], [data-callout-metadata~=\"bg-purple\"], [data-callout-metadata~=\"background-color-purple\"], [data-callout-metadata~=\"bg-c-purple\"])": [
       "--callout-purple",
       "--callout-color-opacity"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-gray\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-gray\"], [data-callout-metadata~=\"bg-gray\"], [data-callout-metadata~=\"background-color-gray\"], [data-callout-metadata~=\"bg-c-gray\"])": [
       "--callout-gray",
       "--callout-color-opacity"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-yellow\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-yellow\"], [data-callout-metadata~=\"bg-yellow\"], [data-callout-metadata~=\"background-color-yellow\"], [data-callout-metadata~=\"bg-c-yellow\"])": [
       "--callout-yellow",
       "--callout-color-opacity"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-pink\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-pink\"], [data-callout-metadata~=\"bg-pink\"], [data-callout-metadata~=\"background-color-pink\"], [data-callout-metadata~=\"bg-c-pink\"])": [
       "--callout-pink",
       "--callout-color-opacity"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-brown\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-brown\"], [data-callout-metadata~=\"bg-brown\"], [data-callout-metadata~=\"background-color-brown\"], [data-callout-metadata~=\"bg-c-brown\"])": [
       "--callout-brown",
       "--callout-color-opacity"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-black\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-black\"], [data-callout-metadata~=\"bg-black\"], [data-callout-metadata~=\"background-color-black\"], [data-callout-metadata~=\"bg-c-black\"])": [
       "--callout-black",
       "--callout-color-opacity"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-white\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-white\"], [data-callout-metadata~=\"bg-white\"], [data-callout-metadata~=\"background-color-white\"], [data-callout-metadata~=\"bg-c-white\"])": [
       "--callout-white",
       "--callout-color-opacity"
     ],
-    ".callout.callout.callout:is([data-callout-metadata~=\"background-plain\"]": [
+    ".callout.callout.callout:is([data-callout-metadata~=\"background-plain\"], [data-callout-metadata~=\"bg-plain\"], [data-callout-metadata~=\"background-color-plain\"], [data-callout-metadata~=\"bg-c-plain\"])": [
       "--callout-plain",
       "--callout-color-opacity"
     ]
@@ -4825,7 +5086,7 @@
     "body:not(.callout-no-metadata) .callout.callout[data-callout~=\"Metadata\" i][data-callout-metadata*=\"bg-\"]": [
       "--callout-background"
     ],
-    ".callout-bordered .callout:not([data-callout-metadata~=\"callout-block\"]": [
+    ".callout-bordered .callout:not([data-callout-metadata~=\"callout-block\"], [data-callout-metadata~=\"co-block\"], [data-callout-metadata~=\"callout-original\"], [data-callout-metadata~=\"co-o\"], [data-callout-metadata~=\"alt-line\"]):not([data-callout=\"aside\"], [data-callout=\"blank\"], [data-callout=\"captions\"], [data-callout=\"cards\"], [data-callout=\"checks\"], [data-callout=\"column\"], [data-callout=\"grid\"], [data-callout=\"infobox\"], [data-callout=\"kanban\"], [data-callout=\"metadata\"], [data-callout=\"quotes\"], [data-callout=\"recite\"], [data-callout=\"statblocks\"], [data-callout=\"timeline\"])[data-callout-metadata*=\"bg-\"]": [
       "--callout-background"
     ]
   },
@@ -4856,7 +5117,7 @@
     "body:not(.callout-no-metadata) .callout.callout[data-callout~=\"Metadata\" i]": [
       "--outline"
     ],
-    ".callout-bordered .callout:not([data-callout-metadata~=\"callout-block\"]": [
+    ".callout-bordered .callout:not([data-callout-metadata~=\"callout-block\"], [data-callout-metadata~=\"co-block\"], [data-callout-metadata~=\"callout-original\"], [data-callout-metadata~=\"co-o\"], [data-callout-metadata~=\"alt-line\"]):not([data-callout=\"aside\"], [data-callout=\"blank\"], [data-callout=\"captions\"], [data-callout=\"cards\"], [data-callout=\"checks\"], [data-callout=\"column\"], [data-callout=\"grid\"], [data-callout=\"infobox\"], [data-callout=\"kanban\"], [data-callout=\"metadata\"], [data-callout=\"quotes\"], [data-callout=\"recite\"], [data-callout=\"statblocks\"], [data-callout=\"timeline\"])": [
       "--outline"
     ]
   },
@@ -4888,7 +5149,7 @@
   "--paper-edges-ui": { ".paper": ["--outline"] },
   "--titlebar-bubble-colors": {
     ".titlebar-colors.titlebar-colors.titlebar-colors": ["--outline"],
-    ".titlebar-bubbles :is(.mod-left-split": [
+    ".titlebar-bubbles :is(.mod-left-split, .mod-right-split, .mod-root) .workspace-tab-header:not(.is-active)": [
       "--titlebar-bubble-colors-inactive"
     ]
   },
@@ -4960,7 +5221,9 @@
   },
   "--illusion-header-arrow-color": { "body": ["--illusion-header-text"] },
   "--header-arrow-color": {
-    ".illusion.illusion :is(.markdown-preview-view": ["--illusion-header-text"]
+    ".illusion.illusion :is(.markdown-preview-view, .is-live-preview) :is(h1, h2, h3, h4, h5, h6)[data-heading]": [
+      "--illusion-header-text"
+    ]
   },
   "--indicator-heading-size": {
     ".heading-indicator .is-live-preview .HyperMD-header.HyperMD-header-1": [

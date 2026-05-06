@@ -500,6 +500,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
@@ -659,6 +660,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   --vault-profile-color-hover: var(--vault-profile-color, #dadada);
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -727,14 +729,24 @@ html[saved-theme="dark"] body dt {
 }
 
 html[saved-theme="dark"] body ol > li {
+  margin-bottom: 0px;
   margin-left: 30.1875px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 2.8px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 2.8px);
 }
 
 html[saved-theme="dark"] body ul > li {
+  margin-bottom: 0px;
   margin-left: 30.1875px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 2.8px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 2.8px);
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
@@ -742,10 +754,15 @@ html[saved-theme="dark"] body ul > li {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   line-height: 25.6px;
   padding-bottom: 16px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 16px;
 }`,
     tables: `html[saved-theme="dark"] body table {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 28px);
 }
 
@@ -760,6 +777,8 @@ html[saved-theme="dark"] body td {
   border-right-width: 0px;
   border-top-left-radius: 8px;
   padding-bottom: 8px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 8px;
   text-align: var(--table-text-align-body, start);
 }
@@ -768,14 +787,19 @@ html[saved-theme="dark"] body th {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
   border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   font-weight: var(--table-header-weight, 700);
   padding-bottom: 8px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 8px;
   text-align: var(--table-text-align-header, start);
 }`,
@@ -799,11 +823,15 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -839,6 +867,7 @@ html[saved-theme="dark"] body video {
   background-color: var(--embed-background, rgb(36, 36, 36));
   border-bottom-right-radius: 8px;
   border-left-color: rgb(102, 102, 102);
+  border-left-width: 0px;
   border-radius: 0px 8px 8px 0px;
   border-top-right-radius: 8px;
 }
@@ -1660,9 +1689,13 @@ html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="check
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   --callout-color: 86, 148, 218;
   border-bottom-color: rgb(86, 148, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(86, 148, 218);
+  border-left-width: 0px;
   border-right-color: rgb(86, 148, 218);
+  border-right-width: 0px;
   border-top-color: rgb(86, 148, 218);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -1692,9 +1725,13 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 86, 148, 218;
   border-bottom-color: rgb(86, 148, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(86, 148, 218);
+  border-left-width: 0px;
   border-right-color: rgb(86, 148, 218);
+  border-right-width: 0px;
   border-top-color: rgb(86, 148, 218);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -2066,9 +2103,13 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 86, 148, 218;
   border-bottom-color: rgb(86, 148, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(86, 148, 218);
+  border-left-width: 0px;
   border-right-color: rgb(86, 148, 218);
+  border-right-width: 0px;
   border-top-color: rgb(86, 148, 218);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -2098,9 +2139,13 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 86, 148, 218;
   border-bottom-color: rgb(86, 148, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(86, 148, 218);
+  border-left-width: 0px;
   border-right-color: rgb(86, 148, 218);
+  border-right-width: 0px;
   border-top-color: rgb(86, 148, 218);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -2130,9 +2175,13 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 86, 148, 218;
   border-bottom-color: rgb(86, 148, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(86, 148, 218);
+  border-left-width: 0px;
   border-right-color: rgb(86, 148, 218);
+  border-right-width: 0px;
   border-top-color: rgb(86, 148, 218);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -2162,9 +2211,13 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 86, 148, 218;
   border-bottom-color: rgb(86, 148, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(86, 148, 218);
+  border-left-width: 0px;
   border-right-color: rgb(86, 148, 218);
+  border-right-width: 0px;
   border-top-color: rgb(86, 148, 218);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -2194,9 +2247,13 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 86, 148, 218;
   border-bottom-color: rgb(86, 148, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(86, 148, 218);
+  border-left-width: 0px;
   border-right-color: rgb(86, 148, 218);
+  border-right-width: 0px;
   border-top-color: rgb(86, 148, 218);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -2226,9 +2283,13 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 86, 148, 218;
   border-bottom-color: rgb(86, 148, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(86, 148, 218);
+  border-left-width: 0px;
   border-right-color: rgb(86, 148, 218);
+  border-right-width: 0px;
   border-top-color: rgb(86, 148, 218);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -2600,9 +2661,13 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 86, 148, 218;
   border-bottom-color: rgb(86, 148, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(86, 148, 218);
+  border-left-width: 0px;
   border-right-color: rgb(86, 148, 218);
+  border-right-width: 0px;
   border-top-color: rgb(86, 148, 218);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -2627,9 +2692,13 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 86, 148, 218;
   border-bottom-color: rgb(86, 148, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(86, 148, 218);
+  border-left-width: 0px;
   border-right-color: rgb(86, 148, 218);
+  border-right-width: 0px;
   border-top-color: rgb(86, 148, 218);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -2659,9 +2728,13 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 86, 148, 218;
   border-bottom-color: rgb(86, 148, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(86, 148, 218);
+  border-left-width: 0px;
   border-right-color: rgb(86, 148, 218);
+  border-right-width: 0px;
   border-top-color: rgb(86, 148, 218);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -2691,9 +2764,13 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 86, 148, 218;
   border-bottom-color: rgb(86, 148, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(86, 148, 218);
+  border-left-width: 0px;
   border-right-color: rgb(86, 148, 218);
+  border-right-width: 0px;
   border-top-color: rgb(86, 148, 218);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -2723,9 +2800,13 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 86, 148, 218;
   border-bottom-color: rgb(86, 148, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(86, 148, 218);
+  border-left-width: 0px;
   border-right-color: rgb(86, 148, 218);
+  border-right-width: 0px;
   border-top-color: rgb(86, 148, 218);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -2755,9 +2836,13 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 86, 148, 218;
   border-bottom-color: rgb(86, 148, 218);
+  border-bottom-width: 0px;
   border-left-color: rgb(86, 148, 218);
+  border-left-width: 0px;
   border-right-color: rgb(86, 148, 218);
+  border-right-width: 0px;
   border-top-color: rgb(86, 148, 218);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -2844,11 +2929,15 @@ html[saved-theme="dark"] body .search > .search-container > .search-space {
   border-bottom-color: rgb(54, 54, 54);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgb(54, 54, 54);
+  border-left-width: 0px;
   border-right-color: rgb(54, 54, 54);
+  border-right-width: 0px;
   border-top-color: rgb(54, 54, 54);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
   box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.25) 0px 14px 62px 0px);
 }
 
@@ -2867,15 +2956,20 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
   border-bottom-color: rgb(54, 54, 54);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgb(54, 54, 54);
+  border-left-width: 0px;
   border-right-color: rgb(54, 54, 54);
+  border-right-width: 0px;
   border-top-color: rgb(54, 54, 54);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: var(--divider-color, rgb(54, 54, 54));
+  border-bottom-width: 0px;
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
@@ -2911,11 +3005,17 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
 html[saved-theme="dark"] body h1 {
   font-family: var(--h1-font, "??", "Instrument Serif");
   margin-bottom: 28px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body h2 {
   font-family: var(--h2-font, "??", "Instrument Serif");
   margin-bottom: 28px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
@@ -2954,32 +3054,44 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 html[saved-theme="dark"] body h3 {
   font-family: var(--h3-font, "??", "Instrument Serif");
   margin-bottom: 28px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="dark"] body h4 {
   font-family: var(--h4-font, "??", "Instrument Serif");
   margin-bottom: 28px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="dark"] body h5 {
   font-family: var(--h5-font, "??", "Instrument Serif");
   margin-bottom: 28px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="dark"] body h6 {
   font-family: var(--h6-font, "??", "Instrument Serif");
   margin-bottom: 28px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 28px;
 }
 
 html[saved-theme="dark"] body hr {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 86, 148, 218);
@@ -3020,9 +3132,11 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
     footer: `html[saved-theme="dark"] body footer {
   background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(179, 179, 179);
+  border-bottom-width: 0px;
   border-left-color: rgb(179, 179, 179);
   border-left-width: 0px;
   border-right-color: rgb(179, 179, 179);
+  border-right-width: 0px;
   border-top-color: rgb(179, 179, 179);
   border-top-left-radius: 12px;
   border-top-width: 0px;
@@ -3048,11 +3162,15 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
   border-bottom-color: rgb(102, 102, 102);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(102, 102, 102);
+  border-left-width: 0px;
   border-right-color: rgb(102, 102, 102);
+  border-right-width: 0px;
   border-top-color: rgb(102, 102, 102);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(102, 102, 102);
 }
 
@@ -3634,6 +3752,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
@@ -3794,6 +3913,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   --vault-profile-color-hover: var(--vault-profile-color, #222222);
   background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3862,14 +3982,24 @@ html[saved-theme="light"] body dt {
 }
 
 html[saved-theme="light"] body ol > li {
+  margin-bottom: 0px;
   margin-left: 30.1875px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 2.8px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 2.8px);
 }
 
 html[saved-theme="light"] body ul > li {
+  margin-bottom: 0px;
   margin-left: 30.1875px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 2.8px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 2.8px);
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
@@ -3877,10 +4007,15 @@ html[saved-theme="light"] body ul > li {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   line-height: 25.6px;
   padding-bottom: 16px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 16px;
 }`,
     tables: `html[saved-theme="light"] body table {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 28px);
 }
 
@@ -3895,6 +4030,8 @@ html[saved-theme="light"] body td {
   border-right-width: 0px;
   border-top-left-radius: 8px;
   padding-bottom: 8px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 8px;
   text-align: var(--table-text-align-body, start);
 }
@@ -3903,14 +4040,19 @@ html[saved-theme="light"] body th {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(34, 34, 34);
   border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   font-weight: var(--table-header-weight, 700);
   padding-bottom: 8px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 8px;
   text-align: var(--table-text-align-header, start);
 }`,
@@ -3934,11 +4076,15 @@ html[saved-theme="light"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -3974,6 +4120,7 @@ html[saved-theme="light"] body video {
   background-color: var(--embed-background, rgb(250, 250, 250));
   border-bottom-right-radius: 8px;
   border-left-color: rgb(171, 171, 171);
+  border-left-width: 0px;
   border-radius: 0px 8px 8px 0px;
   border-top-right-radius: 8px;
 }
@@ -4795,9 +4942,13 @@ html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="chec
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   --callout-color: 106, 173, 250;
   border-bottom-color: rgb(106, 173, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 173, 250);
+  border-left-width: 0px;
   border-right-color: rgb(106, 173, 250);
+  border-right-width: 0px;
   border-top-color: rgb(106, 173, 250);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -4827,9 +4978,13 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 106, 173, 250;
   border-bottom-color: rgb(106, 173, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 173, 250);
+  border-left-width: 0px;
   border-right-color: rgb(106, 173, 250);
+  border-right-width: 0px;
   border-top-color: rgb(106, 173, 250);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -5199,9 +5354,13 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 106, 173, 250;
   border-bottom-color: rgb(106, 173, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 173, 250);
+  border-left-width: 0px;
   border-right-color: rgb(106, 173, 250);
+  border-right-width: 0px;
   border-top-color: rgb(106, 173, 250);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -5231,9 +5390,13 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 106, 173, 250;
   border-bottom-color: rgb(106, 173, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 173, 250);
+  border-left-width: 0px;
   border-right-color: rgb(106, 173, 250);
+  border-right-width: 0px;
   border-top-color: rgb(106, 173, 250);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -5263,9 +5426,13 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 106, 173, 250;
   border-bottom-color: rgb(106, 173, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 173, 250);
+  border-left-width: 0px;
   border-right-color: rgb(106, 173, 250);
+  border-right-width: 0px;
   border-top-color: rgb(106, 173, 250);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -5295,9 +5462,13 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 106, 173, 250;
   border-bottom-color: rgb(106, 173, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 173, 250);
+  border-left-width: 0px;
   border-right-color: rgb(106, 173, 250);
+  border-right-width: 0px;
   border-top-color: rgb(106, 173, 250);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -5327,9 +5498,13 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 106, 173, 250;
   border-bottom-color: rgb(106, 173, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 173, 250);
+  border-left-width: 0px;
   border-right-color: rgb(106, 173, 250);
+  border-right-width: 0px;
   border-top-color: rgb(106, 173, 250);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -5359,9 +5534,13 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 106, 173, 250;
   border-bottom-color: rgb(106, 173, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 173, 250);
+  border-left-width: 0px;
   border-right-color: rgb(106, 173, 250);
+  border-right-width: 0px;
   border-top-color: rgb(106, 173, 250);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -5731,9 +5910,13 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 106, 173, 250;
   border-bottom-color: rgb(106, 173, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 173, 250);
+  border-left-width: 0px;
   border-right-color: rgb(106, 173, 250);
+  border-right-width: 0px;
   border-top-color: rgb(106, 173, 250);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -5758,9 +5941,13 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 106, 173, 250;
   border-bottom-color: rgb(106, 173, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 173, 250);
+  border-left-width: 0px;
   border-right-color: rgb(106, 173, 250);
+  border-right-width: 0px;
   border-top-color: rgb(106, 173, 250);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -5790,9 +5977,13 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 106, 173, 250;
   border-bottom-color: rgb(106, 173, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 173, 250);
+  border-left-width: 0px;
   border-right-color: rgb(106, 173, 250);
+  border-right-width: 0px;
   border-top-color: rgb(106, 173, 250);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -5822,9 +6013,13 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 106, 173, 250;
   border-bottom-color: rgb(106, 173, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 173, 250);
+  border-left-width: 0px;
   border-right-color: rgb(106, 173, 250);
+  border-right-width: 0px;
   border-top-color: rgb(106, 173, 250);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -5854,9 +6049,13 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 106, 173, 250;
   border-bottom-color: rgb(106, 173, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 173, 250);
+  border-left-width: 0px;
   border-right-color: rgb(106, 173, 250);
+  border-right-width: 0px;
   border-top-color: rgb(106, 173, 250);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -5886,9 +6085,13 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 106, 173, 250;
   border-bottom-color: rgb(106, 173, 250);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 173, 250);
+  border-left-width: 0px;
   border-right-color: rgb(106, 173, 250);
+  border-right-width: 0px;
   border-top-color: rgb(106, 173, 250);
+  border-top-width: 0px;
   gap: 8px;
 }
 
@@ -5974,11 +6177,15 @@ html[saved-theme="light"] body .search > .search-container > .search-space {
   border-bottom-color: rgb(224, 224, 224);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgb(224, 224, 224);
+  border-left-width: 0px;
   border-right-color: rgb(224, 224, 224);
+  border-right-width: 0px;
   border-top-color: rgb(224, 224, 224);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
   box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.25) 0px 14px 62px 0px);
 }
 
@@ -5997,15 +6204,20 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
   border-bottom-color: rgb(224, 224, 224);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-width: 0px;
   border-left-color: rgb(224, 224, 224);
+  border-left-width: 0px;
   border-right-color: rgb(224, 224, 224);
+  border-right-width: 0px;
   border-top-color: rgb(224, 224, 224);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: var(--divider-color, rgb(224, 224, 224));
+  border-bottom-width: 0px;
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
@@ -6041,11 +6253,17 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
 html[saved-theme="light"] body h1 {
   font-family: var(--h1-font, "??", "Instrument Serif");
   margin-bottom: 28px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body h2 {
   font-family: var(--h2-font, "??", "Instrument Serif");
   margin-bottom: 28px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
@@ -6084,32 +6302,44 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 html[saved-theme="light"] body h3 {
   font-family: var(--h3-font, "??", "Instrument Serif");
   margin-bottom: 28px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="light"] body h4 {
   font-family: var(--h4-font, "??", "Instrument Serif");
   margin-bottom: 28px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="light"] body h5 {
   font-family: var(--h5-font, "??", "Instrument Serif");
   margin-bottom: 28px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 28px);
 }
 
 html[saved-theme="light"] body h6 {
   font-family: var(--h6-font, "??", "Instrument Serif");
   margin-bottom: 28px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 28px;
 }
 
 html[saved-theme="light"] body hr {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 106, 173, 250);
@@ -6150,9 +6380,11 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
     footer: `html[saved-theme="light"] body footer {
   background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(92, 92, 92);
+  border-bottom-width: 0px;
   border-left-color: rgb(92, 92, 92);
   border-left-width: 0px;
   border-right-color: rgb(92, 92, 92);
+  border-right-width: 0px;
   border-top-color: rgb(92, 92, 92);
   border-top-left-radius: 12px;
   border-top-width: 0px;
@@ -6178,11 +6410,15 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
   border-bottom-color: rgb(171, 171, 171);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(171, 171, 171);
+  border-left-width: 0px;
   border-right-color: rgb(171, 171, 171);
+  border-right-width: 0px;
   border-top-color: rgb(171, 171, 171);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(171, 171, 171);
 }
 

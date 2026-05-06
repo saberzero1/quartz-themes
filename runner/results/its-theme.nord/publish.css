@@ -112,7 +112,7 @@ body.theme-light {
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: 20px 30px;
+  --callout-padding: var(--size-4-3) var(--size-4-4);
   --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
@@ -584,10 +584,10 @@ body.theme-light {
   --blur-saturation: 1.5 !important;
   --bold-modifier: 500 !important;
   --border-width: 1px !important;
-  --callout-border-opacity: 0.7;
-  --callout-border-width: 0 0 0 4px;
+  --callout-border-opacity: 0.25;
+  --callout-border-width: 0px;
   --callout-content-background: transparent;
-  --callout-content-padding: 0 30px 0 0;
+  --callout-content-padding: 0;
   --callout-quote: 158, 158, 158;
   --callout-title-padding: 0;
   --canvas-color: 166, 180, 204 !important;
@@ -1019,14 +1019,14 @@ body.theme-light {
   --nav-item-weight-active: 700 !important;
   --hr-width: auto !important;
   --vault-font: var(--font) !important;
-  --he-title-bar-active-action: #3c66a8 !important;
-  --he-title-bar-active-bg: #eceff4 !important;
-  --he-title-bar-active-fg: #4c566a !important;
-  --he-title-bar-active-pinned-bg: #fbfbfc !important;
-  --he-title-bar-inactive-action: #7e8dac !important;
-  --he-title-bar-inactive-bg: #fbfbfc !important;
-  --he-title-bar-inactive-fg: #7e8dac !important;
-  --he-title-bar-inactive-pinned-bg: #fbfbfc !important;
+  --he-title-bar-active-action: var(--lite-accent) !important;
+  --he-title-bar-active-bg: var(--embed-bg) !important;
+  --he-title-bar-active-fg: var(--text) !important;
+  --he-title-bar-active-pinned-bg: var(--note) !important;
+  --he-title-bar-inactive-action: var(--soft-text) !important;
+  --he-title-bar-inactive-bg: var(--note) !important;
+  --he-title-bar-inactive-fg: var(--inactive) !important;
+  --he-title-bar-inactive-pinned-bg: var(--note) !important;
   --graph-arrow: var(--soft-text) !important;
   --graph-tag: var(--headers) !important;
   --tag-text: var(--accent2-lite) !important;
@@ -1052,8 +1052,8 @@ body.theme-light {
   --callout-margin: 5px 0;
   --graph-bg: var(--outer-bar) !important;
   --input-bg: var(--td) !important;
-  --he-text-on-accent-active: #88c0d0 !important;
-  --he-text-on-accent-inactive: #4c566a !important;
+  --he-text-on-accent-active: var(--headers) !important;
+  --he-text-on-accent-inactive: var(--text) !important;
   --fg: var(--accent) !important;
   --font:
     "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif !important;
@@ -1175,7 +1175,7 @@ body.theme-light {
   --h6-border-right-color: var(--h6-border-line-color) !important;
   --h6-padding: var(--header-padding) !important;
   --h6-shadow: var(--header-shadow) !important;
-  --he-popover-border-radius: 0 !important;
+  --he-popover-border-radius: var(--radius-s) !important;
   --header-arrow-icon-color: var(--collapse-icon-color) !important;
   --header-border-line-color: var(--table) !important;
   --heading-spacing-bottom: var(--heading-spacing) !important;
@@ -1566,7 +1566,7 @@ body.theme-dark {
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: 20px 30px;
+  --callout-padding: var(--size-4-3) var(--size-4-4);
   --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
@@ -2036,10 +2036,10 @@ body.theme-dark {
   --blur-saturation: 1.5 !important;
   --bold-modifier: 500 !important;
   --border-width: 1px !important;
-  --callout-border-opacity: 0.7;
-  --callout-border-width: 0 0 0 4px;
+  --callout-border-opacity: 0.25;
+  --callout-border-width: 0px;
   --callout-content-background: transparent;
-  --callout-content-padding: 0 30px 0 0;
+  --callout-content-padding: 0;
   --callout-quote: 158, 158, 158;
   --callout-title-padding: 0;
   --canvas-color: 88, 100, 159 !important;
@@ -2931,7 +2931,7 @@ body body.theme-light .markdown-rendered a.external-link {
   background-color: var(--link-background);
   color: var(--link-external-color);
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-external-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family: var(--link-external-font);
@@ -2941,6 +2941,7 @@ body body.theme-light .markdown-rendered a.external-link {
   text-decoration-color: rgb(143, 188, 187);
   text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -2967,6 +2968,7 @@ body body.theme-light .markdown-rendered a.internal-link {
   text-decoration-color: rgb(143, 188, 187);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -2983,7 +2985,7 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: var(--link-background);
   color: var(--link-unresolved-color);
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-unresolved-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family: var(--link-font);
@@ -2993,6 +2995,7 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   text-decoration-color: var(--link-unresolved-decoration-color);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: var(--link-unresolved-decoration-style);
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -3672,7 +3675,7 @@ body body.theme-light .markdown-rendered blockquote {
     "Microsoft YaHei Light",
     sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: var(--blockquote-font-style);
   line-height: 24px;
   padding-bottom: 12px;
   padding-top: 12px;
@@ -3833,7 +3836,7 @@ body body.theme-light .published-container .markdown-rendered h1 {
   width: var(--h1-border-line-width);
   height: auto;
   content: "";
-  display: block;
+  display: var(--header-border-line-left);
 }
 body body.theme-light .published-container .markdown-rendered h2 {
   color: rgb(136, 192, 208);
@@ -3870,7 +3873,7 @@ body body.theme-light .published-container .markdown-rendered h2 {
   width: var(--h2-border-line-width);
   height: auto;
   content: "";
-  display: block;
+  display: var(--header-border-line-left);
 }
 body body.theme-light .published-container .markdown-rendered h3 {
   color: rgb(136, 192, 208);
@@ -3907,7 +3910,7 @@ body body.theme-light .published-container .markdown-rendered h3 {
   width: var(--h3-border-line-width);
   height: auto;
   content: "";
-  display: block;
+  display: var(--header-border-line-left);
 }
 body body.theme-light .published-container .markdown-rendered h4 {
   color: rgb(136, 192, 208);
@@ -3944,7 +3947,7 @@ body body.theme-light .published-container .markdown-rendered h4 {
   width: var(--h4-border-line-width);
   height: auto;
   content: "";
-  display: block;
+  display: var(--header-border-line-left);
 }
 body body.theme-light .published-container .markdown-rendered h5 {
   color: rgb(136, 192, 208);
@@ -3981,7 +3984,7 @@ body body.theme-light .published-container .markdown-rendered h5 {
   width: var(--h5-border-line-width);
   height: auto;
   content: "";
-  display: block;
+  display: var(--header-border-line-left);
 }
 body body.theme-light .published-container .markdown-rendered h6 {
   color: rgb(136, 192, 208);
@@ -3991,7 +3994,7 @@ body body.theme-light .published-container .markdown-rendered h6 {
   line-height: var(--h6-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: normal;
+  letter-spacing: var(--h6-letter-spacing);
   background-color: rgb(181, 193, 212);
   background-image: none;
   background: rgb(181, 193, 212) none repeat scroll 0% 0% / auto padding-box
@@ -4018,7 +4021,7 @@ body body.theme-light .published-container .markdown-rendered h6 {
   width: var(--h6-border-line-width);
   height: auto;
   content: "";
-  display: block;
+  display: var(--header-border-line-left);
 }
 body
   body.theme-light
@@ -4591,7 +4594,7 @@ body body.theme-light .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="quote"] {
-  --callout-color: var(--callout-quote);
+  --callout-color: var(--color-accent);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -4661,10 +4664,7 @@ body body.theme-light .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin-top: var(--heading-spacing);
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 16px 0px 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -4885,10 +4885,7 @@ body body.theme-light .internal-embed {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   margin: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: var(--callout-cards-notion-padding);
-  padding-right: var(--callout-cards-notion-padding);
+  padding: 0px;
 }
 body body.theme-light .markdown-embed {
   background-color: var(--embed-background);
@@ -4917,10 +4914,7 @@ body body.theme-light .file-embed {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   margin: 0px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: var(--callout-cards-notion-padding);
-  padding-right: var(--callout-cards-notion-padding);
+  padding: 8px;
 }
 body body.theme-light .metadata-container {
   background-color: var(--metadata-background);
@@ -5650,7 +5644,7 @@ body body.theme-light .page-header .page-title {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light .math-block {
-  background-color: var(--background-modifier-hover);
+  background-color: rgba(0, 0, 0, 0);
   color: rgb(76, 86, 106);
   border-color: rgb(76, 86, 106);
   border-width: 0px;
@@ -5757,7 +5751,7 @@ body body.theme-dark .markdown-rendered a.external-link {
   background-color: var(--link-background);
   color: var(--link-external-color);
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-external-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family: var(--link-external-font);
@@ -5767,6 +5761,7 @@ body body.theme-dark .markdown-rendered a.external-link {
   text-decoration-color: rgb(136, 192, 208);
   text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -5793,6 +5788,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
   text-decoration-color: rgb(136, 192, 208);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -5809,7 +5805,7 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: var(--link-background);
   color: var(--link-unresolved-color);
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-unresolved-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family: var(--link-font);
@@ -5819,6 +5815,7 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   text-decoration-color: var(--link-unresolved-decoration-color);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: var(--link-unresolved-decoration-style);
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -6498,7 +6495,7 @@ body body.theme-dark .markdown-rendered blockquote {
     "Microsoft YaHei Light",
     sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: var(--blockquote-font-style);
   line-height: 24px;
   padding-bottom: 12px;
   padding-top: 12px;
@@ -6659,7 +6656,7 @@ body body.theme-dark .published-container .markdown-rendered h1 {
   width: var(--h1-border-line-width);
   height: auto;
   content: "";
-  display: block;
+  display: var(--header-border-line-left);
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
   color: rgb(136, 192, 208);
@@ -6696,7 +6693,7 @@ body body.theme-dark .published-container .markdown-rendered h2 {
   width: var(--h2-border-line-width);
   height: auto;
   content: "";
-  display: block;
+  display: var(--header-border-line-left);
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
   color: rgb(136, 192, 208);
@@ -6733,7 +6730,7 @@ body body.theme-dark .published-container .markdown-rendered h3 {
   width: var(--h3-border-line-width);
   height: auto;
   content: "";
-  display: block;
+  display: var(--header-border-line-left);
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
   color: rgb(136, 192, 208);
@@ -6770,7 +6767,7 @@ body body.theme-dark .published-container .markdown-rendered h4 {
   width: var(--h4-border-line-width);
   height: auto;
   content: "";
-  display: block;
+  display: var(--header-border-line-left);
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
   color: rgb(136, 192, 208);
@@ -6807,7 +6804,7 @@ body body.theme-dark .published-container .markdown-rendered h5 {
   width: var(--h5-border-line-width);
   height: auto;
   content: "";
-  display: block;
+  display: var(--header-border-line-left);
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
   color: rgb(136, 192, 208);
@@ -6817,7 +6814,7 @@ body body.theme-dark .published-container .markdown-rendered h6 {
   line-height: var(--h6-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: normal;
+  letter-spacing: var(--h6-letter-spacing);
   background-color: rgb(67, 76, 94);
   background-image: none;
   background: rgb(67, 76, 94) none repeat scroll 0% 0% / auto padding-box
@@ -6844,7 +6841,7 @@ body body.theme-dark .published-container .markdown-rendered h6 {
   width: var(--h6-border-line-width);
   height: auto;
   content: "";
-  display: block;
+  display: var(--header-border-line-left);
 }
 body
   body.theme-dark
@@ -7417,7 +7414,7 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="quote"] {
-  --callout-color: var(--callout-quote);
+  --callout-color: var(--color-accent);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
@@ -7487,10 +7484,7 @@ body body.theme-dark .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin-top: var(--heading-spacing);
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 16px 0px 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -7711,10 +7705,7 @@ body body.theme-dark .internal-embed {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   margin: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: var(--callout-cards-notion-padding);
-  padding-right: var(--callout-cards-notion-padding);
+  padding: 0px;
 }
 body body.theme-dark .markdown-embed {
   background-color: var(--embed-background);
@@ -7743,10 +7734,7 @@ body body.theme-dark .file-embed {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   margin: 0px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: var(--callout-cards-notion-padding);
-  padding-right: var(--callout-cards-notion-padding);
+  padding: 8px;
 }
 body body.theme-dark .metadata-container {
   background-color: var(--metadata-background);
@@ -8476,7 +8464,7 @@ body body.theme-dark .page-header .page-title {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .math-block {
-  background-color: var(--background-modifier-hover);
+  background-color: rgba(0, 0, 0, 0);
   color: rgb(236, 239, 244);
   border-color: rgb(236, 239, 244);
   border-width: 0px;

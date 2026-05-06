@@ -452,12 +452,14 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #171717);
   background-color: var(--tab-container-background, rgb(23, 23, 23));
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   color: rgb(212, 212, 212);
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
@@ -580,37 +582,55 @@ html[saved-theme="dark"] body a.internal-link.broken {
 }`,
     lists: `html[saved-theme="dark"] body dd {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="dark"] body dt {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(212, 212, 212);
+  margin-bottom: 0px;
   margin-left: 26.6953px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(212, 212, 212);
+  margin-bottom: 0px;
   margin-left: 26.6953px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: var(--link-color, rgb(217, 217, 217));
@@ -622,18 +642,26 @@ html[saved-theme="dark"] body blockquote {
   color: var(--text-muted, rgb(115, 115, 115));
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 20px;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body table {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
@@ -641,9 +669,13 @@ html[saved-theme="dark"] body table {
 html[saved-theme="dark"] body td {
   background-color: var(--color-accent-o10, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(212, 212, 212));
   padding-bottom: 8px;
   padding-left: 16px;
@@ -654,9 +686,13 @@ html[saved-theme="dark"] body td {
 
 html[saved-theme="dark"] body th {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   color: var(--text-strong, rgb(245, 245, 245));
   font-weight: var(--table-header-weight, 400);
   padding-bottom: 8px;
@@ -669,23 +705,31 @@ html[saved-theme="dark"] body th {
 
 html[saved-theme="dark"] body thead {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body tr {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }`,
     code: `html[saved-theme="dark"] body code {
   background-color: var(--code-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
   border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--ec-codeFg, rgb(115, 115, 115));
   font-family: var(--ec-codeFontFml, iawriter-mono, Nitti, Menlo, Courier, monospace);
   padding-bottom: 12px;
@@ -715,9 +759,13 @@ html[saved-theme="dark"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body figcaption {
@@ -730,53 +778,78 @@ html[saved-theme="dark"] body figure {
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body img {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body video {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(38, 38, 38));
   border-bottom-color: rgb(115, 115, 115);
+  border-bottom-width: 0px;
   border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
   border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(115, 115, 115));
 }
 
 html[saved-theme="dark"] body .footnotes {
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(204, 204, 204);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: rgb(212, 212, 212);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
@@ -791,11 +864,15 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(179, 179, 179);
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
+  border-bottom-width: 0px;
   border-left-color: rgb(179, 179, 179);
+  border-left-width: 0px;
   border-right-color: rgb(179, 179, 179);
+  border-right-width: 0px;
   border-top-color: rgb(179, 179, 179);
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+  border-top-width: 0px;
   transition: background-color 0.2s, border-color 0.2s;
 }
 
@@ -2021,9 +2098,13 @@ html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="check
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   --callout-color: 2, 122, 255;
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(212, 212, 212));
 }
 
@@ -2053,9 +2134,13 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 2, 122, 255;
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(212, 212, 212));
 }
 
@@ -2085,9 +2170,13 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 2, 122, 255;
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(212, 212, 212));
 }
 
@@ -2117,9 +2206,13 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 2, 122, 255;
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(212, 212, 212));
 }
 
@@ -2149,9 +2242,13 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 2, 122, 255;
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(212, 212, 212));
 }
 
@@ -2181,9 +2278,13 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 2, 122, 255;
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(212, 212, 212));
 }
 
@@ -2213,9 +2314,13 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 2, 122, 255;
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(212, 212, 212));
 }
 
@@ -2245,9 +2350,13 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 2, 122, 255;
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(212, 212, 212));
 }
 
@@ -2277,9 +2386,13 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 2, 122, 255;
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(212, 212, 212));
 }
 
@@ -2309,9 +2422,13 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 2, 122, 255;
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(212, 212, 212));
 }
 
@@ -2341,9 +2458,13 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 2, 122, 255;
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(212, 212, 212));
 }
 
@@ -2373,9 +2494,13 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 2, 122, 255;
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(212, 212, 212));
 }
 
@@ -2405,9 +2530,13 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 2, 122, 255;
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(212, 212, 212));
 }
 
@@ -2437,9 +2566,13 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 2, 122, 255;
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(212, 212, 212));
 }
 
@@ -2520,11 +2653,15 @@ html[saved-theme="dark"] body .search > .search-container > .search-space {
   border-bottom-color: rgba(230, 230, 230, 0.6);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgba(230, 230, 230, 0.6);
+  border-left-width: 0px;
   border-right-color: rgba(230, 230, 230, 0.6);
+  border-right-width: 0px;
   border-top-color: rgba(230, 230, 230, 0.6);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > * {
@@ -2542,11 +2679,15 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
   border-top-left-radius: 1.875px;
   border-top-right-radius: 1.875px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
@@ -2561,29 +2702,41 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
   border-bottom-color: rgba(230, 230, 230, 0.6);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgba(230, 230, 230, 0.6);
+  border-left-width: 0px;
   border-right-color: rgba(230, 230, 230, 0.6);
+  border-right-width: 0px;
   border-top-color: rgba(230, 230, 230, 0.6);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(115, 115, 115);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
   border-top-left-radius: 1.875px;
   border-top-right-radius: 1.875px;
+  border-top-width: 0px;
   color: rgb(212, 212, 212);
 }
 
@@ -2631,9 +2784,13 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 html[saved-theme="dark"] body h1 {
   background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--text-strong, rgb(212, 212, 212));
   font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-size: var(--font-h1-size, 36px);
@@ -2641,6 +2798,9 @@ html[saved-theme="dark"] body h1 {
   letter-spacing: var(--h1-letter-spacing, -0.54px);
   line-height: var(--h1-line-height, 54px);
   margin-bottom: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -2704,9 +2864,13 @@ html[saved-theme="dark"] body h1::before {
 html[saved-theme="dark"] body h2 {
   background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(212, 212, 212));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-size: var(--font-h2-size, 30px);
@@ -2714,13 +2878,20 @@ html[saved-theme="dark"] body h2 {
   letter-spacing: var(--h2-letter-spacing, -0.33px);
   line-height: var(--h2-line-height, 45px);
   margin-bottom: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   border-bottom-color: rgb(245, 245, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(245, 245, 245);
+  border-left-width: 0px;
   border-right-color: rgb(245, 245, 245);
+  border-right-width: 0px;
   border-top-color: rgb(245, 245, 245);
+  border-top-width: 0px;
   color: var(--text-strong, rgb(245, 245, 245));
   font-family: var(--inline-title-font, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-size: var(--inline-title-size, 32px);
@@ -2728,6 +2899,9 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
   letter-spacing: -0.48px;
   line-height: var(--inline-title-line-height, 38.4px);
   margin-bottom: 16px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body h2::after {
@@ -2785,9 +2959,13 @@ html[saved-theme="dark"] body h2::before {
 html[saved-theme="dark"] body h3 {
   background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(212, 212, 212));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-size: var(--font-h3-size, 24px);
@@ -2795,6 +2973,8 @@ html[saved-theme="dark"] body h3 {
   letter-spacing: var(--h3-letter-spacing, -0.192px);
   line-height: var(--h3-line-height, 36px);
   margin-bottom: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 40px);
 }
 
@@ -2853,9 +3033,13 @@ html[saved-theme="dark"] body h3::before {
 html[saved-theme="dark"] body h4 {
   background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(212, 212, 212));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-size: var(--font-h4-size, 20px);
@@ -2863,6 +3047,8 @@ html[saved-theme="dark"] body h4 {
   letter-spacing: var(--h4-letter-spacing, -0.1px);
   line-height: var(--h4-line-height, 30px);
   margin-bottom: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 40px);
 }
 
@@ -2921,9 +3107,13 @@ html[saved-theme="dark"] body h4::before {
 html[saved-theme="dark"] body h5 {
   background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(212, 212, 212));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-size: var(--font-h5-size, 18px);
@@ -2931,6 +3121,8 @@ html[saved-theme="dark"] body h5 {
   letter-spacing: var(--h5-letter-spacing, -0.036px);
   line-height: var(--h5-line-height, 27px);
   margin-bottom: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 40px);
 }
 
@@ -2988,14 +3180,20 @@ html[saved-theme="dark"] body h5::before {
 
 html[saved-theme="dark"] body h6 {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(212, 212, 212));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-size: var(--font-h6-size, 16px);
   font-weight: var(--font-h6-weight, 400);
   margin-bottom: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 40px;
 }
 
@@ -3053,8 +3251,11 @@ html[saved-theme="dark"] body h6::before {
 
 html[saved-theme="dark"] body hr {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -3105,11 +3306,15 @@ html[saved-theme="dark"] body li.depth-0 {
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
+  border-bottom-width: 0px;
   border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
   border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 1.875px;
   border-top-right-radius: 1.875px;
+  border-top-width: 0px;
   color: var(--text-muted, rgb(115, 115, 115));
   cursor: var(--cursor, pointer);
 }`,
@@ -3118,11 +3323,15 @@ html[saved-theme="dark"] body li.depth-0 {
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 1.5px;
   border-bottom-right-radius: 1.5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
   border-top-left-radius: 1.5px;
   border-top-right-radius: 1.5px;
+  border-top-width: 0px;
   color: var(--text-normal, rgb(212, 212, 212));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
@@ -3137,9 +3346,13 @@ html[saved-theme="dark"] body footer ul li a {
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
   color: rgb(212, 212, 212);
 }
 
@@ -3153,9 +3366,13 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body li.section-li > .section .meta {
@@ -3169,19 +3386,27 @@ html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
 
 html[saved-theme="dark"] body ul.section-ul {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
+  border-bottom-width: 0px;
   border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
   border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 1.875px;
   border-top-right-radius: 1.875px;
+  border-top-width: 0px;
   color: var(--text-muted, rgb(115, 115, 115));
   cursor: var(--cursor, pointer);
 }
@@ -3194,11 +3419,15 @@ html[saved-theme="dark"] body .darkmode svg {
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 1.625px;
   border-bottom-right-radius: 1.625px;
+  border-bottom-width: 0px;
   border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
   border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 1.625px;
   border-top-right-radius: 1.625px;
+  border-top-width: 0px;
   color: var(--text-muted, rgb(115, 115, 115));
 }
 
@@ -3243,20 +3472,28 @@ html[saved-theme="dark"] body .metadata-container .metadata-property {
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
   border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(115, 115, 115);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(115, 115, 115);
+  border-bottom-width: 0px;
   border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
   border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
+  border-top-width: 0px;
   color: rgb(115, 115, 115);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
@@ -3305,9 +3542,13 @@ html[saved-theme="dark"] body div#quartz-root {
 
 html[saved-theme="dark"] body ol.overflow {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
   background-color: var(--background-secondary, rgb(23, 23, 23));
@@ -3323,9 +3564,13 @@ html[saved-theme="dark"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(245, 245, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(245, 245, 245);
+  border-left-width: 0px;
   border-right-color: rgb(245, 245, 245);
+  border-right-width: 0px;
   border-top-color: rgb(245, 245, 245);
+  border-top-width: 0px;
   color: var(--text-strong, rgb(245, 245, 245));
 }
 
@@ -3335,9 +3580,13 @@ html[saved-theme="dark"] body .navigation-progress {
 
 html[saved-theme="dark"] body .page-header h2.page-title {
   border-bottom-color: rgb(245, 245, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(245, 245, 245);
+  border-left-width: 0px;
   border-right-color: rgb(245, 245, 245);
+  border-right-width: 0px;
   border-top-color: rgb(245, 245, 245);
+  border-top-width: 0px;
   color: var(--text-strong, rgb(245, 245, 245));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   text-decoration: underline;
@@ -3349,16 +3598,24 @@ html[saved-theme="dark"] body abbr {
 
 html[saved-theme="dark"] body details {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body input[type=text] {
   border-bottom-color: rgb(115, 115, 115);
+  border-bottom-width: 0px;
   border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
   border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(115, 115, 115));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
@@ -3368,20 +3625,28 @@ html[saved-theme="dark"] body kbd {
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 1.75px;
   border-bottom-right-radius: 1.75px;
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
   border-top-left-radius: 1.75px;
   border-top-right-radius: 1.75px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(212, 212, 212));
   font-family: var(--font-monospace, iawriter-mono, Nitti, Menlo, Courier, monospace);
 }
 
 html[saved-theme="dark"] body progress {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
   border-top-color: rgb(212, 212, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body sub {
@@ -3864,12 +4129,14 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #f5f5f5);
   background-color: var(--tab-container-background, rgb(245, 245, 245));
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   color: rgb(64, 64, 64);
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
@@ -3992,37 +4259,55 @@ html[saved-theme="light"] body a.internal-link.broken {
 }`,
     lists: `html[saved-theme="light"] body dd {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="light"] body dt {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(64, 64, 64);
+  margin-bottom: 0px;
   margin-left: 26.6953px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(64, 64, 64);
+  margin-bottom: 0px;
   margin-left: 26.6953px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body ul.overflow {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: var(--link-color, rgb(13, 13, 13));
@@ -4034,18 +4319,26 @@ html[saved-theme="light"] body blockquote {
   color: var(--text-muted, rgb(115, 115, 115));
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 20px;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body table {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
@@ -4053,9 +4346,13 @@ html[saved-theme="light"] body table {
 html[saved-theme="light"] body td {
   background-color: var(--color-accent-o10, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(64, 64, 64));
   padding-bottom: 8px;
   padding-left: 16px;
@@ -4066,9 +4363,13 @@ html[saved-theme="light"] body td {
 
 html[saved-theme="light"] body th {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   color: var(--text-strong, rgb(23, 23, 23));
   font-weight: var(--table-header-weight, 400);
   padding-bottom: 8px;
@@ -4081,23 +4382,31 @@ html[saved-theme="light"] body th {
 
 html[saved-theme="light"] body thead {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body tr {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }`,
     code: `html[saved-theme="light"] body code {
   background-color: var(--code-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
   border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--ec-codeFg, rgb(115, 115, 115));
   font-family: var(--ec-codeFontFml, iawriter-mono, Nitti, Menlo, Courier, monospace);
   padding-bottom: 12px;
@@ -4127,9 +4436,13 @@ html[saved-theme="light"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body figcaption {
@@ -4142,53 +4455,78 @@ html[saved-theme="light"] body figure {
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body img {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body video {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(229, 229, 229));
   border-bottom-color: rgb(115, 115, 115);
+  border-bottom-width: 0px;
   border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
   border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(115, 115, 115));
 }
 
 html[saved-theme="light"] body .footnotes {
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body .transclude {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: rgb(64, 64, 64);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
@@ -4203,11 +4541,15 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(92, 92, 92);
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
+  border-bottom-width: 0px;
   border-left-color: rgb(92, 92, 92);
+  border-left-width: 0px;
   border-right-color: rgb(92, 92, 92);
+  border-right-width: 0px;
   border-top-color: rgb(92, 92, 92);
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+  border-top-width: 0px;
   transition: background-color 0.2s, border-color 0.2s;
 }
 
@@ -5433,9 +5775,13 @@ html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="chec
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(64, 64, 64));
 }
 
@@ -5465,9 +5811,13 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(64, 64, 64));
 }
 
@@ -5497,9 +5847,13 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(64, 64, 64));
 }
 
@@ -5529,9 +5883,13 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(64, 64, 64));
 }
 
@@ -5561,9 +5919,13 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(64, 64, 64));
 }
 
@@ -5593,9 +5955,13 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(64, 64, 64));
 }
 
@@ -5625,9 +5991,13 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(64, 64, 64));
 }
 
@@ -5657,9 +6027,13 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(64, 64, 64));
 }
 
@@ -5689,9 +6063,13 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(64, 64, 64));
 }
 
@@ -5721,9 +6099,13 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(64, 64, 64));
 }
 
@@ -5753,9 +6135,13 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(64, 64, 64));
 }
 
@@ -5785,9 +6171,13 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(64, 64, 64));
 }
 
@@ -5817,9 +6207,13 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(64, 64, 64));
 }
 
@@ -5849,9 +6243,13 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(64, 64, 64));
 }
 
@@ -5932,11 +6330,15 @@ html[saved-theme="light"] body .search > .search-container > .search-space {
   border-bottom-color: rgba(26, 26, 26, 0.6);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgba(26, 26, 26, 0.6);
+  border-left-width: 0px;
   border-right-color: rgba(26, 26, 26, 0.6);
+  border-right-width: 0px;
   border-top-color: rgba(26, 26, 26, 0.6);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > * {
@@ -5954,11 +6356,15 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
   border-top-left-radius: 1.875px;
   border-top-right-radius: 1.875px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-description {
@@ -5973,29 +6379,41 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
   border-bottom-color: rgba(26, 26, 26, 0.6);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgba(26, 26, 26, 0.6);
+  border-left-width: 0px;
   border-right-color: rgba(26, 26, 26, 0.6);
+  border-right-width: 0px;
   border-top-color: rgba(26, 26, 26, 0.6);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(115, 115, 115);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
   border-top-left-radius: 1.875px;
   border-top-right-radius: 1.875px;
+  border-top-width: 0px;
   color: rgb(64, 64, 64);
 }
 
@@ -6043,9 +6461,13 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 html[saved-theme="light"] body h1 {
   background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--text-strong, rgb(64, 64, 64));
   font-family: var(--font-text, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-size: var(--font-h1-size, 36px);
@@ -6053,6 +6475,9 @@ html[saved-theme="light"] body h1 {
   letter-spacing: var(--h1-letter-spacing, -0.54px);
   line-height: var(--h1-line-height, 54px);
   margin-bottom: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -6116,9 +6541,13 @@ html[saved-theme="light"] body h1::before {
 html[saved-theme="light"] body h2 {
   background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(64, 64, 64));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-size: var(--font-h2-size, 30px);
@@ -6126,13 +6555,20 @@ html[saved-theme="light"] body h2 {
   letter-spacing: var(--h2-letter-spacing, -0.33px);
   line-height: var(--h2-line-height, 45px);
   margin-bottom: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   border-bottom-color: rgb(23, 23, 23);
+  border-bottom-width: 0px;
   border-left-color: rgb(23, 23, 23);
+  border-left-width: 0px;
   border-right-color: rgb(23, 23, 23);
+  border-right-width: 0px;
   border-top-color: rgb(23, 23, 23);
+  border-top-width: 0px;
   color: var(--text-strong, rgb(23, 23, 23));
   font-family: var(--inline-title-font, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-size: var(--inline-title-size, 32px);
@@ -6140,6 +6576,9 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
   letter-spacing: -0.48px;
   line-height: var(--inline-title-line-height, 38.4px);
   margin-bottom: 16px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body h2::after {
@@ -6197,9 +6636,13 @@ html[saved-theme="light"] body h2::before {
 html[saved-theme="light"] body h3 {
   background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(64, 64, 64));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-size: var(--font-h3-size, 24px);
@@ -6207,6 +6650,8 @@ html[saved-theme="light"] body h3 {
   letter-spacing: var(--h3-letter-spacing, -0.192px);
   line-height: var(--h3-line-height, 36px);
   margin-bottom: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 40px);
 }
 
@@ -6265,9 +6710,13 @@ html[saved-theme="light"] body h3::before {
 html[saved-theme="light"] body h4 {
   background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(64, 64, 64));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-size: var(--font-h4-size, 20px);
@@ -6275,6 +6724,8 @@ html[saved-theme="light"] body h4 {
   letter-spacing: var(--h4-letter-spacing, -0.1px);
   line-height: var(--h4-line-height, 30px);
   margin-bottom: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 40px);
 }
 
@@ -6333,9 +6784,13 @@ html[saved-theme="light"] body h4::before {
 html[saved-theme="light"] body h5 {
   background-color: var(--text-normal, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(64, 64, 64));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-size: var(--font-h5-size, 18px);
@@ -6343,6 +6798,8 @@ html[saved-theme="light"] body h5 {
   letter-spacing: var(--h5-letter-spacing, -0.036px);
   line-height: var(--h5-line-height, 27px);
   margin-bottom: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 40px);
 }
 
@@ -6400,14 +6857,20 @@ html[saved-theme="light"] body h5::before {
 
 html[saved-theme="light"] body h6 {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(64, 64, 64));
   font-family: var(--font-header, "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif);
   font-size: var(--font-h6-size, 16px);
   font-weight: var(--font-h6-weight, 400);
   margin-bottom: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 40px;
 }
 
@@ -6465,8 +6928,11 @@ html[saved-theme="light"] body h6::before {
 
 html[saved-theme="light"] body hr {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(212, 212, 212);
+  border-left-width: 0px;
   border-right-color: rgb(212, 212, 212);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
@@ -6517,11 +6983,15 @@ html[saved-theme="light"] body li.depth-0 {
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
+  border-bottom-width: 0px;
   border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
   border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 1.875px;
   border-top-right-radius: 1.875px;
+  border-top-width: 0px;
   color: var(--text-muted, rgb(115, 115, 115));
   cursor: var(--cursor, pointer);
 }`,
@@ -6530,11 +7000,15 @@ html[saved-theme="light"] body li.depth-0 {
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 1.5px;
   border-bottom-right-radius: 1.5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
   border-top-left-radius: 1.5px;
   border-top-right-radius: 1.5px;
+  border-top-width: 0px;
   color: var(--text-normal, rgb(64, 64, 64));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
@@ -6549,9 +7023,13 @@ html[saved-theme="light"] body footer ul li a {
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
   color: rgb(64, 64, 64);
 }
 
@@ -6565,9 +7043,13 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body li.section-li > .section .meta {
@@ -6581,19 +7063,27 @@ html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
 
 html[saved-theme="light"] body ul.section-ul {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
+  border-bottom-width: 0px;
   border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
   border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 1.875px;
   border-top-right-radius: 1.875px;
+  border-top-width: 0px;
   color: var(--text-muted, rgb(115, 115, 115));
   cursor: var(--cursor, pointer);
 }
@@ -6606,11 +7096,15 @@ html[saved-theme="light"] body .darkmode svg {
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 1.625px;
   border-bottom-right-radius: 1.625px;
+  border-bottom-width: 0px;
   border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
   border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 1.625px;
   border-top-right-radius: 1.625px;
+  border-top-width: 0px;
   color: var(--text-muted, rgb(115, 115, 115));
 }
 
@@ -6655,20 +7149,28 @@ html[saved-theme="light"] body .metadata-container .metadata-property {
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
   border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(115, 115, 115);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(115, 115, 115);
+  border-bottom-width: 0px;
   border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
   border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
+  border-top-width: 0px;
   color: rgb(115, 115, 115);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
@@ -6717,9 +7219,13 @@ html[saved-theme="light"] body div#quartz-root {
 
 html[saved-theme="light"] body ol.overflow {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
   background-color: var(--background-secondary, rgb(245, 245, 245));
@@ -6735,9 +7241,13 @@ html[saved-theme="light"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="light"] body .katex-display {
   border-bottom-color: rgb(23, 23, 23);
+  border-bottom-width: 0px;
   border-left-color: rgb(23, 23, 23);
+  border-left-width: 0px;
   border-right-color: rgb(23, 23, 23);
+  border-right-width: 0px;
   border-top-color: rgb(23, 23, 23);
+  border-top-width: 0px;
   color: var(--text-strong, rgb(23, 23, 23));
 }
 
@@ -6747,9 +7257,13 @@ html[saved-theme="light"] body .navigation-progress {
 
 html[saved-theme="light"] body .page-header h2.page-title {
   border-bottom-color: rgb(23, 23, 23);
+  border-bottom-width: 0px;
   border-left-color: rgb(23, 23, 23);
+  border-left-width: 0px;
   border-right-color: rgb(23, 23, 23);
+  border-right-width: 0px;
   border-top-color: rgb(23, 23, 23);
+  border-top-width: 0px;
   color: var(--text-strong, rgb(23, 23, 23));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   text-decoration: underline;
@@ -6761,16 +7275,24 @@ html[saved-theme="light"] body abbr {
 
 html[saved-theme="light"] body details {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body input[type=text] {
   border-bottom-color: rgb(115, 115, 115);
+  border-bottom-width: 0px;
   border-left-color: rgb(115, 115, 115);
+  border-left-width: 0px;
   border-right-color: rgb(115, 115, 115);
+  border-right-width: 0px;
   border-top-color: rgb(115, 115, 115);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(115, 115, 115));
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
@@ -6780,20 +7302,28 @@ html[saved-theme="light"] body kbd {
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 1.75px;
   border-bottom-right-radius: 1.75px;
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
   border-top-left-radius: 1.75px;
   border-top-right-radius: 1.75px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(64, 64, 64));
   font-family: var(--font-monospace, iawriter-mono, Nitti, Menlo, Courier, monospace);
 }
 
 html[saved-theme="light"] body progress {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-width: 0px;
   border-left-color: rgb(64, 64, 64);
+  border-left-width: 0px;
   border-right-color: rgb(64, 64, 64);
+  border-right-width: 0px;
   border-top-color: rgb(64, 64, 64);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body sub {

@@ -445,6 +445,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
@@ -455,6 +456,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   ));
   background-color: var(--tab-container-background, rgb(58, 52, 46));
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   color: rgb(197, 184, 161);
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
@@ -537,37 +539,55 @@ html[saved-theme="dark"] body a.internal-link.broken {
 }`,
     lists: `html[saved-theme="dark"] body dd {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
   color: rgb(197, 184, 161);
   font-family: "iA Writer Quattro S";
 }
 
 html[saved-theme="dark"] body dt {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
   color: rgb(197, 184, 161);
   font-family: "iA Writer Quattro S";
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(197, 184, 161);
+  margin-bottom: 0px;
   margin-left: 28.8001px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(197, 184, 161);
+  margin-bottom: 0px;
   margin-left: 28.8001px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: var(--text-faint, rgb(158, 158, 158));
@@ -579,9 +599,13 @@ html[saved-theme="dark"] body blockquote {
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body table {
@@ -591,9 +615,13 @@ html[saved-theme="dark"] body table {
 
 html[saved-theme="dark"] body td {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(197, 184, 161));
   padding-bottom: 2.66667px;
   padding-left: 10.6667px;
@@ -603,9 +631,13 @@ html[saved-theme="dark"] body td {
 
 html[saved-theme="dark"] body th {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: var(--table-header-color, rgb(197, 184, 161));
   padding-bottom: 5.33333px;
   padding-left: 10.6667px;
@@ -617,11 +649,15 @@ html[saved-theme="dark"] body th {
   border-bottom-color: rgb(51, 51, 51);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(108, 153, 187));
   font-family: var(--font-monospace, "??", "??", "JetBrains Mono");
   padding-bottom: 2.4px;
@@ -635,17 +671,25 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-bottom-color: rgb(51, 51, 51);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body figcaption {
@@ -658,58 +702,83 @@ html[saved-theme="dark"] body figure {
   border-bottom-color: rgb(197, 184, 161);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body img {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body video {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(32, 32, 32));
   border-bottom-color: rgb(153, 153, 153);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(153, 153, 153);
+  border-left-width: 0px;
   border-radius: 5px;
   border-right-color: rgb(153, 153, 153);
+  border-right-width: 0px;
   border-top-color: rgb(153, 153, 153);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--text-muted, rgb(153, 153, 153));
 }
 
 html[saved-theme="dark"] body .footnotes {
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
   color: rgb(197, 184, 161);
 }
 
 html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(109, 180, 120);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
   color: rgb(197, 184, 161);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
   color: rgb(197, 184, 161);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
@@ -724,11 +793,15 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(158, 158, 158);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(158, 158, 158);
+  border-left-width: 0px;
   border-right-color: rgb(158, 158, 158);
+  border-right-width: 0px;
   border-top-color: rgb(158, 158, 158);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
@@ -1565,9 +1638,13 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgba(0, 0, 0, 0.3);
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(197, 184, 161));
   font-family: "??", "iA Writer Quattro S", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -1595,11 +1672,15 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
   border-bottom-color: rgb(197, 184, 161);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
@@ -1619,20 +1700,28 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(58, 52, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
   border-bottom-color: rgb(197, 184, 161);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(197, 184, 161);
 }
 
@@ -1657,13 +1746,20 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
 html[saved-theme="dark"] body h1 {
   --font-weight: var(--h1-weight, 600);
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(197, 184, 161));
   font-family: var(--h1-font, "iA Writer Quattro S");
   font-weight: var(--font-weight, 600);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -1674,9 +1770,13 @@ html[saved-theme="dark"] body h1.article-title {
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 600);
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(197, 184, 161));
   font-family: var(--h2-font, "iA Writer Quattro S");
   font-weight: var(--font-weight, 600);
@@ -1684,9 +1784,13 @@ html[saved-theme="dark"] body h2 {
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(197, 184, 161));
   font-family: var(--inline-title-font, "iA Writer Quattro S");
   font-weight: var(--inline-title-weight, 600);
@@ -1695,9 +1799,13 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, 550);
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(197, 184, 161));
   font-family: var(--h3-font, "iA Writer Quattro S");
   font-weight: var(--font-weight, 550);
@@ -1706,9 +1814,13 @@ html[saved-theme="dark"] body h3 {
 html[saved-theme="dark"] body h4 {
   --font-weight: var(--h4-weight, 550);
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(197, 184, 161));
   font-family: var(--h4-font, "iA Writer Quattro S");
   font-weight: var(--font-weight, 550);
@@ -1717,9 +1829,13 @@ html[saved-theme="dark"] body h4 {
 html[saved-theme="dark"] body h5 {
   --font-weight: var(--h5-weight, 550);
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(197, 184, 161));
   font-family: var(--h5-font, "iA Writer Quattro S");
   font-weight: var(--font-weight, 550);
@@ -1728,9 +1844,13 @@ html[saved-theme="dark"] body h5 {
 html[saved-theme="dark"] body h6 {
   --font-weight: var(--h6-weight, 550);
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(197, 184, 161));
   font-family: var(--h6-font, "iA Writer Quattro S");
   font-weight: var(--font-weight, 550);
@@ -1738,8 +1858,11 @@ html[saved-theme="dark"] body h6 {
 
 html[saved-theme="dark"] body hr {
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -1780,20 +1903,28 @@ html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg 
   border-bottom-color: rgb(153, 153, 153);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(153, 153, 153);
+  border-left-width: 0px;
   border-right-color: rgb(153, 153, 153);
+  border-right-width: 0px;
   border-top-color: rgb(153, 153, 153);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(153, 153, 153));
 }`,
     footer: `html[saved-theme="dark"] body footer {
   background-color: var(--status-bar-background, rgb(58, 52, 46));
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
   border-top-left-radius: 5px;
+  border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(153, 153, 153));
   font-family: "??", "iA Writer Quattro S", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -1808,9 +1939,13 @@ html[saved-theme="dark"] body footer ul li a {
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
   color: rgb(197, 184, 161);
 }
 
@@ -1824,9 +1959,13 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body li.section-li > .section .meta {
@@ -1840,19 +1979,27 @@ html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
 
 html[saved-theme="dark"] body ul.section-ul {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-color: rgb(153, 153, 153);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(153, 153, 153);
+  border-left-width: 0px;
   border-right-color: rgb(153, 153, 153);
+  border-right-width: 0px;
   border-top-color: rgb(153, 153, 153);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(153, 153, 153));
 }
 
@@ -1864,11 +2011,15 @@ html[saved-theme="dark"] body .darkmode svg {
   border-bottom-color: rgb(153, 153, 153);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(153, 153, 153);
+  border-left-width: 0px;
   border-right-color: rgb(153, 153, 153);
+  border-right-width: 0px;
   border-top-color: rgb(153, 153, 153);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(153, 153, 153);
 }
 
@@ -1903,27 +2054,39 @@ html[saved-theme="dark"] body .canvas-sidebar {
     properties: `html[saved-theme="dark"] body .metadata {
   --input-height: var(--metadata-input-height, 2rem);
   border-bottom-color: rgb(51, 51, 51);
+  border-bottom-width: 0px;
   border-left-color: rgb(51, 51, 51);
+  border-left-width: 0px;
   border-right-color: rgb(51, 51, 51);
+  border-right-width: 0px;
   border-top-color: rgb(51, 51, 51);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(153, 153, 153));
   font-family: "iA Writer Quattro S";
 }
 
 html[saved-theme="dark"] body .metadata-container .metadata-property {
   border-bottom-color: rgb(153, 153, 153);
+  border-bottom-width: 0px;
   border-left-color: rgb(153, 153, 153);
+  border-left-width: 0px;
   border-right-color: rgb(153, 153, 153);
+  border-right-width: 0px;
   border-top-color: rgb(153, 153, 153);
+  border-top-width: 0px;
   color: rgb(153, 153, 153);
   font-family: "iA Writer Quattro S";
 }
 
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(153, 153, 153);
+  border-bottom-width: 0px;
   border-left-color: rgb(153, 153, 153);
+  border-left-width: 0px;
   border-right-color: rgb(153, 153, 153);
+  border-right-width: 0px;
   border-top-color: rgb(153, 153, 153);
+  border-top-width: 0px;
   color: rgb(153, 153, 153);
   font-family: "iA Writer Quattro S";
 }
@@ -1966,9 +2129,13 @@ html[saved-theme="dark"] body div#quartz-root {
 
 html[saved-theme="dark"] body ol.overflow {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
   background-color: var(--background-secondary, rgb(58, 52, 46));
@@ -1984,9 +2151,13 @@ html[saved-theme="dark"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
   color: rgb(197, 184, 161);
 }
 
@@ -1996,9 +2167,13 @@ html[saved-theme="dark"] body .navigation-progress {
 
 html[saved-theme="dark"] body .page-header h2.page-title {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(197, 184, 161));
   font-family: "??", "iA Writer Quattro S", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   line-height: 19.5px;
@@ -2010,16 +2185,24 @@ html[saved-theme="dark"] body abbr {
 
 html[saved-theme="dark"] body details {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body input[type=text] {
   border-bottom-color: rgb(153, 153, 153);
+  border-bottom-width: 0px;
   border-left-color: rgb(153, 153, 153);
+  border-left-width: 0px;
   border-right-color: rgb(153, 153, 153);
+  border-right-width: 0px;
   border-top-color: rgb(153, 153, 153);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(153, 153, 153));
   font-family: "??", "iA Writer Quattro S", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -2029,11 +2212,15 @@ html[saved-theme="dark"] body kbd {
   border-bottom-color: rgb(108, 153, 187);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(108, 153, 187);
+  border-left-width: 0px;
   border-right-color: rgb(108, 153, 187);
+  border-right-width: 0px;
   border-top-color: rgb(108, 153, 187);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(108, 153, 187));
   font-family: var(--font-monospace, "??", "??", "JetBrains Mono");
   font-size: var(--code-size, 16px);
@@ -2045,9 +2232,13 @@ html[saved-theme="dark"] body kbd {
 
 html[saved-theme="dark"] body progress {
   border-bottom-color: rgb(197, 184, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 184, 161);
+  border-left-width: 0px;
   border-right-color: rgb(197, 184, 161);
+  border-right-width: 0px;
   border-top-color: rgb(197, 184, 161);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body sub {
@@ -2739,6 +2930,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(230, 230, 230);
+  border-right-width: 0px;
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
@@ -2749,6 +2941,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   ));
   background-color: var(--tab-container-background, rgb(228, 220, 200));
   border-left-color: rgb(230, 230, 230);
+  border-left-width: 0px;
   color: rgb(38, 38, 38);
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
@@ -2839,37 +3032,55 @@ html[saved-theme="light"] body a.internal-link.broken {
 }`,
     lists: `html[saved-theme="light"] body dd {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: rgb(38, 38, 38);
   font-family: "iA Writer Quattro S";
 }
 
 html[saved-theme="light"] body dt {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: rgb(38, 38, 38);
   font-family: "iA Writer Quattro S";
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(38, 38, 38);
+  margin-bottom: 0px;
   margin-left: 28.8001px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(38, 38, 38);
+  margin-bottom: 0px;
   margin-left: 28.8001px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body ul.overflow {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: var(--text-faint, rgb(158, 158, 158));
@@ -2881,9 +3092,13 @@ html[saved-theme="light"] body blockquote {
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body table {
@@ -2893,9 +3108,13 @@ html[saved-theme="light"] body table {
 
 html[saved-theme="light"] body td {
   border-bottom-color: rgb(230, 230, 230);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 230, 230);
+  border-left-width: 0px;
   border-right-color: rgb(230, 230, 230);
+  border-right-width: 0px;
   border-top-color: rgb(230, 230, 230);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(38, 38, 38));
   padding-bottom: 2.66667px;
   padding-left: 10.6667px;
@@ -2905,9 +3124,13 @@ html[saved-theme="light"] body td {
 
 html[saved-theme="light"] body th {
   border-bottom-color: rgb(230, 230, 230);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 230, 230);
+  border-left-width: 0px;
   border-right-color: rgb(230, 230, 230);
+  border-right-width: 0px;
   border-top-color: rgb(230, 230, 230);
+  border-top-width: 0px;
   color: var(--table-header-color, rgb(38, 38, 38));
   padding-bottom: 5.33333px;
   padding-left: 10.6667px;
@@ -2919,11 +3142,15 @@ html[saved-theme="light"] body th {
   border-bottom-color: rgb(230, 230, 230);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 230, 230);
+  border-left-width: 0px;
   border-right-color: rgb(230, 230, 230);
+  border-right-width: 0px;
   border-top-color: rgb(230, 230, 230);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(108, 153, 187));
   font-family: var(--font-monospace, "??", "??", "JetBrains Mono");
   padding-bottom: 2.4px;
@@ -2937,17 +3164,25 @@ html[saved-theme="light"] body pre:has(> code) {
   border-bottom-color: rgb(230, 230, 230);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 230, 230);
+  border-left-width: 0px;
   border-right-color: rgb(230, 230, 230);
+  border-right-width: 0px;
   border-top-color: rgb(230, 230, 230);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body figcaption {
@@ -2960,58 +3195,83 @@ html[saved-theme="light"] body figure {
   border-bottom-color: rgb(38, 38, 38);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body img {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body video {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(252, 245, 228));
   border-bottom-color: rgb(89, 89, 89);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 89, 89);
+  border-left-width: 0px;
   border-radius: 5px;
   border-right-color: rgb(89, 89, 89);
+  border-right-width: 0px;
   border-top-color: rgb(89, 89, 89);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-width: 0px;
   color: var(--text-muted, rgb(89, 89, 89));
 }
 
 html[saved-theme="light"] body .footnotes {
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: rgb(38, 38, 38);
 }
 
 html[saved-theme="light"] body .transclude {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(109, 180, 120);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: rgb(38, 38, 38);
 }
 
 html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: rgb(38, 38, 38);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
@@ -3026,11 +3286,15 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(158, 158, 158);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(158, 158, 158);
+  border-left-width: 0px;
   border-right-color: rgb(158, 158, 158);
+  border-right-width: 0px;
   border-top-color: rgb(158, 158, 158);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="#"] {
@@ -3866,9 +4130,13 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   border-bottom-color: rgb(230, 230, 230);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 230, 230);
+  border-left-width: 0px;
   border-right-color: rgb(230, 230, 230);
+  border-right-width: 0px;
   border-top-color: rgb(230, 230, 230);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(38, 38, 38));
   font-family: "??", "iA Writer Quattro S", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -3896,11 +4164,15 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
   border-bottom-color: rgb(38, 38, 38);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-description {
@@ -3920,20 +4192,28 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(228, 220, 200);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
   border-bottom-color: rgb(38, 38, 38);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(38, 38, 38);
 }
 
@@ -3983,13 +4263,20 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 html[saved-theme="light"] body h1 {
   --font-weight: var(--h1-weight, 600);
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(38, 38, 38));
   font-family: var(--h1-font, "iA Writer Quattro S");
   font-weight: var(--font-weight, 600);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -4000,9 +4287,13 @@ html[saved-theme="light"] body h1.article-title {
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 600);
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(38, 38, 38));
   font-family: var(--h2-font, "iA Writer Quattro S");
   font-weight: var(--font-weight, 600);
@@ -4010,9 +4301,13 @@ html[saved-theme="light"] body h2 {
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(38, 38, 38));
   font-family: var(--inline-title-font, "iA Writer Quattro S");
   font-weight: var(--inline-title-weight, 600);
@@ -4021,9 +4316,13 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, 550);
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(38, 38, 38));
   font-family: var(--h3-font, "iA Writer Quattro S");
   font-weight: var(--font-weight, 550);
@@ -4032,9 +4331,13 @@ html[saved-theme="light"] body h3 {
 html[saved-theme="light"] body h4 {
   --font-weight: var(--h4-weight, 550);
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(38, 38, 38));
   font-family: var(--h4-font, "iA Writer Quattro S");
   font-weight: var(--font-weight, 550);
@@ -4043,9 +4346,13 @@ html[saved-theme="light"] body h4 {
 html[saved-theme="light"] body h5 {
   --font-weight: var(--h5-weight, 550);
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(38, 38, 38));
   font-family: var(--h5-font, "iA Writer Quattro S");
   font-weight: var(--font-weight, 550);
@@ -4054,9 +4361,13 @@ html[saved-theme="light"] body h5 {
 html[saved-theme="light"] body h6 {
   --font-weight: var(--h6-weight, 550);
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(38, 38, 38));
   font-family: var(--h6-font, "iA Writer Quattro S");
   font-weight: var(--font-weight, 550);
@@ -4064,8 +4375,11 @@ html[saved-theme="light"] body h6 {
 
 html[saved-theme="light"] body hr {
   border-bottom-color: rgb(230, 230, 230);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 230, 230);
+  border-left-width: 0px;
   border-right-color: rgb(230, 230, 230);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
@@ -4106,20 +4420,28 @@ html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg
   border-bottom-color: rgb(89, 89, 89);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 89, 89);
+  border-left-width: 0px;
   border-right-color: rgb(89, 89, 89);
+  border-right-width: 0px;
   border-top-color: rgb(89, 89, 89);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(89, 89, 89));
 }`,
     footer: `html[saved-theme="light"] body footer {
   background-color: var(--status-bar-background, rgb(228, 220, 200));
   border-bottom-color: rgb(230, 230, 230);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 230, 230);
+  border-left-width: 0px;
   border-right-color: rgb(230, 230, 230);
+  border-right-width: 0px;
   border-top-color: rgb(230, 230, 230);
   border-top-left-radius: 5px;
+  border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(89, 89, 89));
   font-family: "??", "iA Writer Quattro S", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -4134,9 +4456,13 @@ html[saved-theme="light"] body footer ul li a {
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: rgb(38, 38, 38);
 }
 
@@ -4150,9 +4476,13 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body li.section-li > .section .meta {
@@ -4166,19 +4496,27 @@ html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
 
 html[saved-theme="light"] body ul.section-ul {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
   border-bottom-color: rgb(89, 89, 89);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 89, 89);
+  border-left-width: 0px;
   border-right-color: rgb(89, 89, 89);
+  border-right-width: 0px;
   border-top-color: rgb(89, 89, 89);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(89, 89, 89));
 }
 
@@ -4190,11 +4528,15 @@ html[saved-theme="light"] body .darkmode svg {
   border-bottom-color: rgb(89, 89, 89);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 89, 89);
+  border-left-width: 0px;
   border-right-color: rgb(89, 89, 89);
+  border-right-width: 0px;
   border-top-color: rgb(89, 89, 89);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: rgb(89, 89, 89);
 }
 
@@ -4229,27 +4571,39 @@ html[saved-theme="light"] body .canvas-sidebar {
     properties: `html[saved-theme="light"] body .metadata {
   --input-height: var(--metadata-input-height, 2rem);
   border-bottom-color: rgb(230, 230, 230);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 230, 230);
+  border-left-width: 0px;
   border-right-color: rgb(230, 230, 230);
+  border-right-width: 0px;
   border-top-color: rgb(230, 230, 230);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(89, 89, 89));
   font-family: "iA Writer Quattro S";
 }
 
 html[saved-theme="light"] body .metadata-container .metadata-property {
   border-bottom-color: rgb(89, 89, 89);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 89, 89);
+  border-left-width: 0px;
   border-right-color: rgb(89, 89, 89);
+  border-right-width: 0px;
   border-top-color: rgb(89, 89, 89);
+  border-top-width: 0px;
   color: rgb(89, 89, 89);
   font-family: "iA Writer Quattro S";
 }
 
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(89, 89, 89);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 89, 89);
+  border-left-width: 0px;
   border-right-color: rgb(89, 89, 89);
+  border-right-width: 0px;
   border-top-color: rgb(89, 89, 89);
+  border-top-width: 0px;
   color: rgb(89, 89, 89);
   font-family: "iA Writer Quattro S";
 }
@@ -4313,9 +4667,13 @@ html[saved-theme="light"] body div#quartz-root {
 
 html[saved-theme="light"] body ol.overflow {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
   background-color: var(--background-secondary, rgb(228, 220, 200));
@@ -4331,9 +4689,13 @@ html[saved-theme="light"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="light"] body .katex-display {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: rgb(38, 38, 38);
 }
 
@@ -4343,9 +4705,13 @@ html[saved-theme="light"] body .navigation-progress {
 
 html[saved-theme="light"] body .page-header h2.page-title {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(38, 38, 38));
   font-family: "??", "iA Writer Quattro S", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   line-height: 19.5px;
@@ -4357,16 +4723,24 @@ html[saved-theme="light"] body abbr {
 
 html[saved-theme="light"] body details {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body input[type=text] {
   border-bottom-color: rgb(89, 89, 89);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 89, 89);
+  border-left-width: 0px;
   border-right-color: rgb(89, 89, 89);
+  border-right-width: 0px;
   border-top-color: rgb(89, 89, 89);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(89, 89, 89));
   font-family: "??", "iA Writer Quattro S", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -4376,11 +4750,15 @@ html[saved-theme="light"] body kbd {
   border-bottom-color: rgb(108, 153, 187);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-bottom-width: 0px;
   border-left-color: rgb(108, 153, 187);
+  border-left-width: 0px;
   border-right-color: rgb(108, 153, 187);
+  border-right-width: 0px;
   border-top-color: rgb(108, 153, 187);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(108, 153, 187));
   font-family: var(--font-monospace, "??", "??", "JetBrains Mono");
   font-size: var(--code-size, 16px);
@@ -4392,9 +4770,13 @@ html[saved-theme="light"] body kbd {
 
 html[saved-theme="light"] body progress {
   border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0px;
   border-left-color: rgb(38, 38, 38);
+  border-left-width: 0px;
   border-right-color: rgb(38, 38, 38);
+  border-right-width: 0px;
   border-top-color: rgb(38, 38, 38);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body sub {

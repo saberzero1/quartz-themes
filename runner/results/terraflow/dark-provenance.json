@@ -1968,7 +1968,10 @@
     "--focus-ring-color": ":root *",
     "--nav-item-color": ".nav-files-container > div > .nav-folder",
     "--nav-item-color-hover": ".nav-files-container > div > .nav-folder",
-    "--nav-collapse-icon-color": ".nav-files-container > div > .nav-folder"
+    "--nav-collapse-icon-color": ".nav-files-container > div > .nav-folder",
+    "--folder-color": ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+2)",
+    "--folder-text-color": ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+2)",
+    "--folder-heading-rgb": ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+2)"
   },
   ".nav-file-title": { "--focus-ring-color": ":root *" },
   ".nav-file-title-content": { "--focus-ring-color": ":root *" },
@@ -2038,9 +2041,9 @@
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
-    "--callout-color": ":is(.callout[data-callout=\"note\"]",
+    "--callout-color": ":is(.callout[data-callout=\"note\"], .callout[data-callout=\"default\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-note, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-default)",
     "--callout-icon": ".callout",
-    "--callout-color-rgb": ":is(.callout[data-callout=\"note\"]"
+    "--callout-color-rgb": ":is(.callout[data-callout=\"note\"], .callout[data-callout=\"default\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-note, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-default)"
   },
   ".callout[data-callout=\"note\"] > .callout-title > .callout-icon > svg.svg-icon": {
     "--focus-ring-color": ":root *"
@@ -2059,9 +2062,9 @@
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
-    "--callout-color": ".callout[data-callout=\"abstract\"]",
+    "--callout-color": ":is(.callout[data-callout=\"success\"], .callout[data-callout=\"check\"], .callout[data-callout=\"done\"], .callout[data-callout=\"todo\"], .callout[data-callout=\"tip\"], .callout[data-callout=\"hint\"], .callout[data-callout=\"summary\"], .callout[data-callout=\"abstract\"], .callout[data-callout=\"tldr\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-success, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-check, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-done, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-todo, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tip, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-hint, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-summary, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-abstract, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tldr)",
     "--callout-icon": ".callout[data-callout=\"abstract\"]",
-    "--callout-color-rgb": ".callout[data-callout=\"abstract\"]"
+    "--callout-color-rgb": ":is(.callout[data-callout=\"success\"], .callout[data-callout=\"check\"], .callout[data-callout=\"done\"], .callout[data-callout=\"todo\"], .callout[data-callout=\"tip\"], .callout[data-callout=\"hint\"], .callout[data-callout=\"summary\"], .callout[data-callout=\"abstract\"], .callout[data-callout=\"tldr\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-success, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-check, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-done, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-todo, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tip, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-hint, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-summary, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-abstract, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tldr)"
   },
   "svg.lucide-clipboard-list.svg-icon": { "--focus-ring-color": ":root *" },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"info\"]": {
@@ -2071,9 +2074,9 @@
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
-    "--callout-color": ":is(.callout[data-callout=\"info\"]",
+    "--callout-color": ":is(.callout[data-callout=\"info\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-info)",
     "--callout-icon": ".callout[data-callout=\"info\"]",
-    "--callout-color-rgb": ":is(.callout[data-callout=\"info\"]"
+    "--callout-color-rgb": ":is(.callout[data-callout=\"info\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-info)"
   },
   "svg.lucide-info.svg-icon": { "--focus-ring-color": ":root *" },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"todo\"]": {
@@ -2083,9 +2086,9 @@
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
-    "--callout-color": ".callout[data-callout=\"todo\"]",
+    "--callout-color": ":is(.callout[data-callout=\"success\"], .callout[data-callout=\"check\"], .callout[data-callout=\"done\"], .callout[data-callout=\"todo\"], .callout[data-callout=\"tip\"], .callout[data-callout=\"hint\"], .callout[data-callout=\"summary\"], .callout[data-callout=\"abstract\"], .callout[data-callout=\"tldr\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-success, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-check, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-done, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-todo, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tip, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-hint, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-summary, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-abstract, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tldr)",
     "--callout-icon": ".callout[data-callout=\"todo\"]",
-    "--callout-color-rgb": ".callout[data-callout=\"todo\"]"
+    "--callout-color-rgb": ":is(.callout[data-callout=\"success\"], .callout[data-callout=\"check\"], .callout[data-callout=\"done\"], .callout[data-callout=\"todo\"], .callout[data-callout=\"tip\"], .callout[data-callout=\"hint\"], .callout[data-callout=\"summary\"], .callout[data-callout=\"abstract\"], .callout[data-callout=\"tldr\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-success, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-check, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-done, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-todo, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tip, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-hint, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-summary, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-abstract, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tldr)"
   },
   "svg.lucide-check-circle-2.svg-icon": { "--focus-ring-color": ":root *" },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"tip\"]": {
@@ -2095,9 +2098,9 @@
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
-    "--callout-color": ".callout[data-callout=\"tip\"]",
+    "--callout-color": ":is(.callout[data-callout=\"success\"], .callout[data-callout=\"check\"], .callout[data-callout=\"done\"], .callout[data-callout=\"todo\"], .callout[data-callout=\"tip\"], .callout[data-callout=\"hint\"], .callout[data-callout=\"summary\"], .callout[data-callout=\"abstract\"], .callout[data-callout=\"tldr\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-success, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-check, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-done, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-todo, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tip, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-hint, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-summary, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-abstract, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tldr)",
     "--callout-icon": ".callout[data-callout=\"tip\"]",
-    "--callout-color-rgb": ".callout[data-callout=\"tip\"]"
+    "--callout-color-rgb": ":is(.callout[data-callout=\"success\"], .callout[data-callout=\"check\"], .callout[data-callout=\"done\"], .callout[data-callout=\"todo\"], .callout[data-callout=\"tip\"], .callout[data-callout=\"hint\"], .callout[data-callout=\"summary\"], .callout[data-callout=\"abstract\"], .callout[data-callout=\"tldr\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-success, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-check, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-done, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-todo, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tip, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-hint, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-summary, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-abstract, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tldr)"
   },
   "svg.lucide-flame.svg-icon": { "--focus-ring-color": ":root *" },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"success\"]": {
@@ -2107,9 +2110,9 @@
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
-    "--callout-color": ":is(.callout[data-callout=\"success\"]",
+    "--callout-color": ":is(.callout[data-callout=\"success\"], .callout[data-callout=\"check\"], .callout[data-callout=\"done\"], .callout[data-callout=\"todo\"], .callout[data-callout=\"tip\"], .callout[data-callout=\"hint\"], .callout[data-callout=\"summary\"], .callout[data-callout=\"abstract\"], .callout[data-callout=\"tldr\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-success, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-check, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-done, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-todo, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tip, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-hint, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-summary, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-abstract, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tldr)",
     "--callout-icon": ".callout[data-callout=\"success\"]",
-    "--callout-color-rgb": ":is(.callout[data-callout=\"success\"]"
+    "--callout-color-rgb": ":is(.callout[data-callout=\"success\"], .callout[data-callout=\"check\"], .callout[data-callout=\"done\"], .callout[data-callout=\"todo\"], .callout[data-callout=\"tip\"], .callout[data-callout=\"hint\"], .callout[data-callout=\"summary\"], .callout[data-callout=\"abstract\"], .callout[data-callout=\"tldr\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-success, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-check, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-done, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-todo, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tip, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-hint, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-summary, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-abstract, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tldr)"
   },
   "svg.lucide-check.svg-icon": { "--focus-ring-color": ":root *" },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"question\"]": {
@@ -2119,9 +2122,9 @@
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
-    "--callout-color": ".callout[data-callout=\"question\"]",
+    "--callout-color": ":is(.callout[data-callout=\"warning\"], .callout[data-callout=\"caution\"], .callout[data-callout=\"attention\"], .callout[data-callout=\"question\"], .callout[data-callout=\"help\"], .callout[data-callout=\"faq\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-warning, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-caution, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-attention, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-question, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-help, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-faq)",
     "--callout-icon": ".callout[data-callout=\"question\"]",
-    "--callout-color-rgb": ".callout[data-callout=\"question\"]"
+    "--callout-color-rgb": ":is(.callout[data-callout=\"warning\"], .callout[data-callout=\"caution\"], .callout[data-callout=\"attention\"], .callout[data-callout=\"question\"], .callout[data-callout=\"help\"], .callout[data-callout=\"faq\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-warning, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-caution, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-attention, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-question, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-help, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-faq)"
   },
   "svg.lucide-help-circle.svg-icon": { "--focus-ring-color": ":root *" },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"warning\"]": {
@@ -2131,9 +2134,9 @@
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
-    "--callout-color": ":is(.callout[data-callout=\"warning\"]",
+    "--callout-color": ":is(.callout[data-callout=\"warning\"], .callout[data-callout=\"caution\"], .callout[data-callout=\"attention\"], .callout[data-callout=\"question\"], .callout[data-callout=\"help\"], .callout[data-callout=\"faq\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-warning, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-caution, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-attention, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-question, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-help, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-faq)",
     "--callout-icon": ".callout[data-callout=\"warning\"]",
-    "--callout-color-rgb": ":is(.callout[data-callout=\"warning\"]"
+    "--callout-color-rgb": ":is(.callout[data-callout=\"warning\"], .callout[data-callout=\"caution\"], .callout[data-callout=\"attention\"], .callout[data-callout=\"question\"], .callout[data-callout=\"help\"], .callout[data-callout=\"faq\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-warning, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-caution, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-attention, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-question, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-help, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-faq)"
   },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"danger\"]": {
     "--focus-ring-color": ":root *",
@@ -2142,9 +2145,9 @@
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
-    "--callout-color": ":is(.callout[data-callout=\"danger\"]",
+    "--callout-color": ":is(.callout[data-callout=\"danger\"], .callout[data-callout=\"error\"], .callout[data-callout=\"failure\"], .callout[data-callout=\"bug\"], .callout[data-callout=\"important\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-danger, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-error, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-failure, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-bug, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-important)",
     "--callout-icon": ".callout[data-callout=\"danger\"]",
-    "--callout-color-rgb": ":is(.callout[data-callout=\"danger\"]"
+    "--callout-color-rgb": ":is(.callout[data-callout=\"danger\"], .callout[data-callout=\"error\"], .callout[data-callout=\"failure\"], .callout[data-callout=\"bug\"], .callout[data-callout=\"important\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-danger, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-error, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-failure, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-bug, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-important)"
   },
   "svg.lucide-zap.svg-icon": { "--focus-ring-color": ":root *" },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"failure\"]": {
@@ -2154,9 +2157,9 @@
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
-    "--callout-color": ".callout[data-callout=\"failure\"]",
+    "--callout-color": ":is(.callout[data-callout=\"danger\"], .callout[data-callout=\"error\"], .callout[data-callout=\"failure\"], .callout[data-callout=\"bug\"], .callout[data-callout=\"important\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-danger, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-error, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-failure, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-bug, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-important)",
     "--callout-icon": ".callout[data-callout=\"failure\"]",
-    "--callout-color-rgb": ".callout[data-callout=\"failure\"]"
+    "--callout-color-rgb": ":is(.callout[data-callout=\"danger\"], .callout[data-callout=\"error\"], .callout[data-callout=\"failure\"], .callout[data-callout=\"bug\"], .callout[data-callout=\"important\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-danger, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-error, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-failure, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-bug, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-important)"
   },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"bug\"]": {
     "--focus-ring-color": ":root *",
@@ -2165,9 +2168,9 @@
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
-    "--callout-color": ".callout[data-callout=\"bug\"]",
+    "--callout-color": ":is(.callout[data-callout=\"danger\"], .callout[data-callout=\"error\"], .callout[data-callout=\"failure\"], .callout[data-callout=\"bug\"], .callout[data-callout=\"important\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-danger, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-error, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-failure, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-bug, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-important)",
     "--callout-icon": ".callout[data-callout=\"bug\"]",
-    "--callout-color-rgb": ".callout[data-callout=\"bug\"]"
+    "--callout-color-rgb": ":is(.callout[data-callout=\"danger\"], .callout[data-callout=\"error\"], .callout[data-callout=\"failure\"], .callout[data-callout=\"bug\"], .callout[data-callout=\"important\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-danger, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-error, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-failure, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-bug, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-important)"
   },
   "svg.lucide-bug.svg-icon": { "--focus-ring-color": ":root *" },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"example\"]": {
@@ -2177,9 +2180,9 @@
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
-    "--callout-color": ":is(.callout[data-callout=\"example\"]",
+    "--callout-color": ":is(.callout[data-callout=\"example\"], .callout[data-callout=\"quote\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-example, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-quote)",
     "--callout-icon": ".callout[data-callout=\"example\"]",
-    "--callout-color-rgb": ":is(.callout[data-callout=\"example\"]"
+    "--callout-color-rgb": ":is(.callout[data-callout=\"example\"], .callout[data-callout=\"quote\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-example, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-quote)"
   },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"quote\"]": {
     "--focus-ring-color": ":root *",
@@ -2188,9 +2191,9 @@
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
-    "--callout-color": ".callout[data-callout=\"quote\"]",
+    "--callout-color": ":is(.callout[data-callout=\"example\"], .callout[data-callout=\"quote\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-example, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-quote)",
     "--callout-icon": ".callout[data-callout=\"quote\"]",
-    "--callout-color-rgb": ".callout[data-callout=\"quote\"]"
+    "--callout-color-rgb": ":is(.callout[data-callout=\"example\"], .callout[data-callout=\"quote\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-example, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-quote)"
   },
   "svg.lucide-quote.svg-icon": { "--focus-ring-color": ":root *" },
   "mjx-container.MathJax": { "--focus-ring-color": ":root *" },
@@ -2251,8 +2254,8 @@
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
-    "--callout-color": ":is(.callout[data-callout=\"video\"]",
-    "--callout-icon": ":is(.callout[data-callout=\"video\"]",
-    "--callout-color-rgb": ":is(.callout[data-callout=\"video\"]"
+    "--callout-color": ":is(.callout[data-callout=\"video\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-video)",
+    "--callout-icon": ":is(.callout[data-callout=\"video\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-video)",
+    "--callout-color-rgb": ":is(.callout[data-callout=\"video\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-video)"
   }
 }

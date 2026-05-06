@@ -272,7 +272,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-external-color, rgb(10, 124, 255));
     cursor: var(--cursor-link);
-    filter: none;
+    filter: var(--link-external-filter);
     backdrop-filter: none;
     box-shadow: none;
     font-family:
@@ -307,6 +307,7 @@ body {
     text-decoration-color: rgb(10, 124, 255);
     text-decoration-line: var(--link-external-decoration);
     text-decoration-style: solid;
+    text-decoration-thickness: var(--link-decoration-thickness);
     transition: opacity 0.15s ease-in-out;
     transform: none;
     user-select: text;
@@ -360,6 +361,7 @@ body {
     text-decoration-color: rgb(10, 124, 255);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: solid;
+    text-decoration-thickness: var(--link-decoration-thickness);
     transition: opacity 0.15s ease-in-out;
     transform: none;
     user-select: text;
@@ -377,7 +379,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: var(--link-unresolved-color, oklch(0.637864 0.198104 257.288 / 0.7));
     cursor: var(--cursor-link);
-    filter: none;
+    filter: var(--link-unresolved-filter);
     backdrop-filter: none;
     box-shadow: none;
     font-family:
@@ -412,6 +414,7 @@ body {
     text-decoration-color: var(--link-unresolved-decoration-color, rgba(10, 124, 255, 0.3));
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
+    text-decoration-thickness: var(--link-decoration-thickness);
     transition: opacity 0.15s ease-in-out;
     transform: none;
     user-select: text;
@@ -1242,7 +1245,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 420;
-    font-style: normal;
+    font-style: var(--blockquote-font-style);
     line-height: 25.6px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -1463,10 +1466,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing);
-    margin-bottom: 18px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px 0px 18px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -4256,7 +4256,7 @@ body {
   }
 
   .katex-display {
-    background-color: var(--background-modifier-hover);
+    background-color: rgba(0, 0, 0, 0);
     color: oklch(0.3 0.0005 281);
     border-color: oklch(0.3 0.0005 281);
     border-width: 0px;
@@ -19705,7 +19705,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-external-color, oklab(0.740346 0.0424797 0.0641277));
       cursor: var(--cursor-link);
-      filter: none;
+      filter: var(--link-external-filter);
       backdrop-filter: none;
       box-shadow: none;
       font-family:
@@ -19740,6 +19740,7 @@ html[saved-theme="dark"] {
       text-decoration-color: oklab(0.740346 0.0424797 0.0641277);
       text-decoration-line: var(--link-external-decoration);
       text-decoration-style: solid;
+      text-decoration-thickness: var(--link-decoration-thickness);
       transition: opacity 0.15s ease-in-out;
       transform: none;
       user-select: text;
@@ -19793,6 +19794,7 @@ html[saved-theme="dark"] {
       text-decoration-color: oklab(0.740346 0.0424797 0.0641277);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: solid;
+      text-decoration-thickness: var(--link-decoration-thickness);
       transition: opacity 0.15s ease-in-out;
       transform: none;
       user-select: text;
@@ -19810,7 +19812,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       color: var(--link-unresolved-color, oklch(0.740346 0.0769213 56.4786 / 0.75));
       cursor: var(--cursor-link);
-      filter: none;
+      filter: var(--link-unresolved-filter);
       backdrop-filter: none;
       box-shadow: none;
       font-family:
@@ -19845,6 +19847,7 @@ html[saved-theme="dark"] {
       text-decoration-color: var(--link-unresolved-decoration-color, rgba(180, 105, 45, 0.3));
       text-decoration-line: var(--link-decoration);
       text-decoration-style: var(--link-unresolved-decoration-style);
+      text-decoration-thickness: var(--link-decoration-thickness);
       transition: opacity 0.15s ease-in-out;
       transform: none;
       user-select: text;
@@ -20675,7 +20678,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 420;
-      font-style: normal;
+      font-style: var(--blockquote-font-style);
       line-height: 25.6px;
       padding-bottom: 0px;
       padding-top: 0px;
@@ -20896,10 +20899,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing);
-      margin-bottom: 18px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0px 0px 18px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
@@ -23689,7 +23689,7 @@ html[saved-theme="dark"] {
     }
 
     .katex-display {
-      background-color: var(--background-modifier-hover);
+      background-color: rgba(0, 0, 0, 0);
       color: oklch(0.85 0.01 64);
       border-color: oklch(0.85 0.01 64);
       border-width: 0px;

@@ -241,12 +241,14 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(73, 77, 85);
+  border-right-width: 0px;
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #2f3237);
   background-color: var(--tab-container-background, rgb(51, 54, 60));
   border-left-color: rgb(73, 77, 85);
+  border-left-width: 0px;
   color: rgb(210, 217, 212);
 }
 
@@ -395,17 +397,25 @@ html[saved-theme="dark"] body a.internal-link.broken {
 }`,
     lists: `html[saved-theme="dark"] body dd {
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
   color: rgb(210, 217, 212);
 }
 
 html[saved-theme="dark"] body dt {
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
   color: rgb(210, 217, 212);
 }
 
@@ -419,9 +429,13 @@ html[saved-theme="dark"] body ul > li {
 
 html[saved-theme="dark"] body ul.overflow {
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: var(--text-faint, rgb(136, 221, 193));
@@ -432,9 +446,13 @@ html[saved-theme="dark"] body blockquote {
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body table {
@@ -458,9 +476,13 @@ html[saved-theme="dark"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body figcaption {
@@ -470,60 +492,89 @@ html[saved-theme="dark"] body figcaption {
 html[saved-theme="dark"] body figure {
   --code-background: var(--ec-frm-edBg, #383c42);
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body img {
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body video {
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(56, 60, 66));
   border-bottom-color: rgb(129, 140, 132);
+  border-bottom-width: 0px;
   border-left-color: rgb(129, 140, 132);
+  border-left-width: 0px;
   border-right-color: rgb(129, 140, 132);
+  border-right-width: 0px;
   border-top-color: rgb(129, 140, 132);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(129, 140, 132));
 }
 
 html[saved-theme="dark"] body .footnotes {
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
   color: rgb(210, 217, 212);
 }
 
 html[saved-theme="dark"] body .transclude {
   background-color: var(--embed-background, rgb(54, 57, 63));
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 102, 120);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
   color: rgb(210, 217, 212);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
   background-color: var(--embed-background, rgb(54, 57, 63));
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
   color: rgb(210, 217, 212);
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(94, 104, 97);
+  border-bottom-width: 0px;
   border-left-color: rgb(94, 104, 97);
+  border-left-width: 0px;
   border-right-color: rgb(94, 104, 97);
+  border-right-width: 0px;
   border-top-color: rgb(94, 104, 97);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
@@ -1325,9 +1376,13 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
@@ -1340,16 +1395,24 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(47, 50, 55);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
   color: rgb(210, 217, 212);
 }
 
@@ -1371,9 +1434,13 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   border-bottom-color: rgb(228, 235, 230);
+  border-bottom-width: 0px;
   border-left-color: rgb(228, 235, 230);
+  border-left-width: 0px;
   border-right-color: rgb(228, 235, 230);
+  border-right-width: 0px;
   border-top-color: rgb(228, 235, 230);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(228, 235, 230));
 }
 
@@ -1383,56 +1450,83 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   border-bottom-color: rgb(228, 235, 230);
+  border-bottom-width: 0px;
   border-left-color: rgb(228, 235, 230);
+  border-left-width: 0px;
   border-right-color: rgb(228, 235, 230);
+  border-right-width: 0px;
   border-top-color: rgb(228, 235, 230);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(228, 235, 230));
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   border-bottom-color: rgb(255, 122, 138);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 122, 138);
+  border-left-width: 0px;
   border-right-color: rgb(255, 122, 138);
+  border-right-width: 0px;
   border-top-color: rgb(255, 122, 138);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(255, 122, 138));
 }
 
 html[saved-theme="dark"] body h3 {
   border-bottom-color: rgb(228, 235, 230);
+  border-bottom-width: 0px;
   border-left-color: rgb(228, 235, 230);
+  border-left-width: 0px;
   border-right-color: rgb(228, 235, 230);
+  border-right-width: 0px;
   border-top-color: rgb(228, 235, 230);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(228, 235, 230));
 }
 
 html[saved-theme="dark"] body h4 {
   border-bottom-color: rgb(228, 235, 230);
+  border-bottom-width: 0px;
   border-left-color: rgb(228, 235, 230);
+  border-left-width: 0px;
   border-right-color: rgb(228, 235, 230);
+  border-right-width: 0px;
   border-top-color: rgb(228, 235, 230);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(228, 235, 230));
 }
 
 html[saved-theme="dark"] body h5 {
   border-bottom-color: rgb(228, 235, 230);
+  border-bottom-width: 0px;
   border-left-color: rgb(228, 235, 230);
+  border-left-width: 0px;
   border-right-color: rgb(228, 235, 230);
+  border-right-width: 0px;
   border-top-color: rgb(228, 235, 230);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(228, 235, 230));
 }
 
 html[saved-theme="dark"] body h6 {
   border-bottom-color: rgb(228, 235, 230);
+  border-bottom-width: 0px;
   border-left-color: rgb(228, 235, 230);
+  border-left-width: 0px;
   border-right-color: rgb(228, 235, 230);
+  border-right-width: 0px;
   border-top-color: rgb(228, 235, 230);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(228, 235, 230));
 }
 
 html[saved-theme="dark"] body hr {
   border-bottom-color: rgb(73, 77, 85);
+  border-bottom-width: 0px;
   border-left-color: rgb(73, 77, 85);
+  border-left-width: 0px;
   border-right-color: rgb(73, 77, 85);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -1469,17 +1563,25 @@ html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg 
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(255, 102, 120);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 102, 120);
+  border-left-width: 0px;
   border-right-color: rgb(255, 102, 120);
+  border-right-width: 0px;
   border-top-color: rgb(255, 102, 120);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(255, 102, 120));
 }`,
     footer: `html[saved-theme="dark"] body footer {
   background-color: var(--status-bar-background, rgb(47, 50, 55));
   border-bottom-color: rgb(73, 77, 85);
+  border-bottom-width: 0px;
   border-left-color: rgb(73, 77, 85);
+  border-left-width: 0px;
   border-right-color: rgb(73, 77, 85);
+  border-right-width: 0px;
   border-top-color: rgb(73, 77, 85);
+  border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(129, 140, 132));
 }
 
@@ -1492,9 +1594,13 @@ html[saved-theme="dark"] body footer ul li a {
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
   color: rgb(210, 217, 212);
 }
 
@@ -1507,9 +1613,13 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body li.section-li > .section .meta {
@@ -1522,15 +1632,23 @@ html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
 
 html[saved-theme="dark"] body ul.section-ul {
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-color: rgb(255, 102, 120);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 102, 120);
+  border-left-width: 0px;
   border-right-color: rgb(255, 102, 120);
+  border-right-width: 0px;
   border-top-color: rgb(255, 102, 120);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(255, 102, 120));
 }
 
@@ -1540,9 +1658,13 @@ html[saved-theme="dark"] body .darkmode svg {
 }`,
     breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-container {
   border-bottom-color: rgb(129, 140, 132);
+  border-bottom-width: 0px;
   border-left-color: rgb(129, 140, 132);
+  border-left-width: 0px;
   border-right-color: rgb(129, 140, 132);
+  border-right-width: 0px;
   border-top-color: rgb(129, 140, 132);
+  border-top-width: 0px;
   color: rgb(129, 140, 132);
 }
 
@@ -1579,17 +1701,25 @@ html[saved-theme="dark"] body .canvas-sidebar {
 
 html[saved-theme="dark"] body .metadata-container .metadata-property {
   border-bottom-color: rgb(129, 140, 132);
+  border-bottom-width: 0px;
   border-left-color: rgb(129, 140, 132);
+  border-left-width: 0px;
   border-right-color: rgb(129, 140, 132);
+  border-right-width: 0px;
   border-top-color: rgb(129, 140, 132);
+  border-top-width: 0px;
   color: rgb(129, 140, 132);
 }
 
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(129, 140, 132);
+  border-bottom-width: 0px;
   border-left-color: rgb(129, 140, 132);
+  border-left-width: 0px;
   border-right-color: rgb(129, 140, 132);
+  border-right-width: 0px;
   border-top-color: rgb(129, 140, 132);
+  border-top-width: 0px;
   color: rgb(129, 140, 132);
 }
 
@@ -1628,9 +1758,13 @@ html[saved-theme="dark"] body div#quartz-root {
 
 html[saved-theme="dark"] body ol.overflow {
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
   background-color: var(--background-secondary, rgb(51, 54, 60));
@@ -1646,9 +1780,13 @@ html[saved-theme="dark"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
   color: rgb(210, 217, 212);
 }
 
@@ -1658,9 +1796,13 @@ html[saved-theme="dark"] body .navigation-progress {
 
 html[saved-theme="dark"] body .page-header h2.page-title {
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(210, 217, 212));
 }
 
@@ -1670,33 +1812,49 @@ html[saved-theme="dark"] body abbr {
 
 html[saved-theme="dark"] body details {
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body input[type=text] {
   border-bottom-color: rgb(129, 140, 132);
+  border-bottom-width: 0px;
   border-left-color: rgb(129, 140, 132);
+  border-left-width: 0px;
   border-right-color: rgb(129, 140, 132);
+  border-right-width: 0px;
   border-top-color: rgb(129, 140, 132);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(129, 140, 132));
 }
 
 html[saved-theme="dark"] body kbd {
   background-color: var(--code-background, rgb(56, 60, 66));
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(210, 217, 212));
 }
 
 html[saved-theme="dark"] body progress {
   border-bottom-color: rgb(210, 217, 212);
+  border-bottom-width: 0px;
   border-left-color: rgb(210, 217, 212);
+  border-left-width: 0px;
   border-right-color: rgb(210, 217, 212);
+  border-right-width: 0px;
   border-top-color: rgb(210, 217, 212);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body sub {
@@ -1981,12 +2139,14 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #f6fbf7);
   background-color: var(--tab-container-background, rgb(246, 251, 247));
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   color: rgb(63, 70, 66);
 }
 
@@ -2138,17 +2298,25 @@ html[saved-theme="light"] body a.internal-link.broken {
 }`,
     lists: `html[saved-theme="light"] body dd {
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
   color: rgb(63, 70, 66);
 }
 
 html[saved-theme="light"] body dt {
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
   color: rgb(63, 70, 66);
 }
 
@@ -2162,9 +2330,13 @@ html[saved-theme="light"] body ul > li {
 
 html[saved-theme="light"] body ul.overflow {
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: var(--text-faint, rgb(60, 182, 140));
@@ -2175,9 +2347,13 @@ html[saved-theme="light"] body blockquote {
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body table {
@@ -2186,40 +2362,60 @@ html[saved-theme="light"] body table {
 
 html[saved-theme="light"] body td {
   border-bottom-color: rgb(197, 213, 201);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 213, 201);
+  border-left-width: 0px;
   border-right-color: rgb(197, 213, 201);
+  border-right-width: 0px;
   border-top-color: rgb(197, 213, 201);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(63, 70, 66));
 }
 
 html[saved-theme="light"] body th {
   border-bottom-color: rgb(197, 213, 201);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 213, 201);
+  border-left-width: 0px;
   border-right-color: rgb(197, 213, 201);
+  border-right-width: 0px;
   border-top-color: rgb(197, 213, 201);
+  border-top-width: 0px;
   color: var(--table-header-color, rgb(63, 70, 66));
 }`,
     code: `html[saved-theme="light"] body code {
   background-color: var(--code-background, rgb(231, 242, 238));
   border-bottom-color: rgb(197, 213, 201);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 213, 201);
+  border-left-width: 0px;
   border-right-color: rgb(197, 213, 201);
+  border-right-width: 0px;
   border-top-color: rgb(197, 213, 201);
+  border-top-width: 0px;
   color: var(--syntax-keyword, rgb(255, 107, 130));
 }
 
 html[saved-theme="light"] body pre:has(> code) {
   background-color: var(--code-background, rgb(231, 242, 238));
   border-bottom-color: rgb(197, 213, 201);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 213, 201);
+  border-left-width: 0px;
   border-right-color: rgb(197, 213, 201);
+  border-right-width: 0px;
   border-top-color: rgb(197, 213, 201);
+  border-top-width: 0px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body figcaption {
@@ -2229,60 +2425,89 @@ html[saved-theme="light"] body figcaption {
 html[saved-theme="light"] body figure {
   --code-background: var(--ec-frm-edBg, #e7f2ee);
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body img {
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body video {
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(240, 247, 245));
   border-bottom-color: rgb(110, 121, 114);
+  border-bottom-width: 0px;
   border-left-color: rgb(110, 121, 114);
+  border-left-width: 0px;
   border-right-color: rgb(110, 121, 114);
+  border-right-width: 0px;
   border-top-color: rgb(110, 121, 114);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(110, 121, 114));
 }
 
 html[saved-theme="light"] body .footnotes {
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
   color: rgb(63, 70, 66);
 }
 
 html[saved-theme="light"] body .transclude {
   background-color: var(--embed-background, rgb(240, 247, 245));
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 93, 112);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
   color: rgb(63, 70, 66);
 }
 
 html[saved-theme="light"] body .transclude-inner {
   background-color: var(--embed-background, rgb(240, 247, 245));
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
   color: rgb(63, 70, 66);
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(139, 151, 143);
+  border-bottom-width: 0px;
   border-left-color: rgb(139, 151, 143);
+  border-left-width: 0px;
   border-right-color: rgb(139, 151, 143);
+  border-right-width: 0px;
   border-top-color: rgb(139, 151, 143);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="#"] {
@@ -3067,18 +3292,26 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(246, 251, 247);
   border-bottom-color: rgb(197, 213, 201);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 213, 201);
+  border-left-width: 0px;
   border-right-color: rgb(197, 213, 201);
+  border-right-width: 0px;
   border-top-color: rgb(197, 213, 201);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(63, 70, 66));
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
   background-color: var(--prompt-background, rgb(240, 247, 245));
   border-bottom-color: rgb(197, 213, 201);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 213, 201);
+  border-left-width: 0px;
   border-right-color: rgb(197, 213, 201);
+  border-right-width: 0px;
   border-top-color: rgb(197, 213, 201);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > * {
@@ -3093,9 +3326,13 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-description {
@@ -3109,24 +3346,36 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgb(197, 213, 201);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 213, 201);
+  border-left-width: 0px;
   border-right-color: rgb(197, 213, 201);
+  border-right-width: 0px;
   border-top-color: rgb(197, 213, 201);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(246, 251, 247);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
   background-color: var(--background-modifier-hover, rgb(231, 242, 238));
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
   color: rgb(63, 70, 66);
 }
 
@@ -3146,9 +3395,13 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-remove-hover: var(--tag-color-hover, #3cb68c);
   background-color: var(--pill-background, rgba(221, 95, 110, 0.1));
   border-bottom-color: rgba(221, 95, 110, 0.15);
+  border-bottom-width: 0px;
   border-left-color: rgba(221, 95, 110, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(221, 95, 110, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(221, 95, 110, 0.15);
+  border-top-width: 0px;
   color: var(--pill-color, rgb(60, 182, 140));
 }
 
@@ -3158,9 +3411,13 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   border-bottom-color: rgb(31, 37, 33);
+  border-bottom-width: 0px;
   border-left-color: rgb(31, 37, 33);
+  border-left-width: 0px;
   border-right-color: rgb(31, 37, 33);
+  border-right-width: 0px;
   border-top-color: rgb(31, 37, 33);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(31, 37, 33));
 }
 
@@ -3170,57 +3427,85 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   border-bottom-color: rgb(31, 37, 33);
+  border-bottom-width: 0px;
   border-left-color: rgb(31, 37, 33);
+  border-left-width: 0px;
   border-right-color: rgb(31, 37, 33);
+  border-right-width: 0px;
   border-top-color: rgb(31, 37, 33);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(31, 37, 33));
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   border-bottom-color: rgb(255, 122, 138);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 122, 138);
+  border-left-width: 0px;
   border-right-color: rgb(255, 122, 138);
+  border-right-width: 0px;
   border-top-color: rgb(255, 122, 138);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(255, 122, 138));
 }
 
 html[saved-theme="light"] body h3 {
   border-bottom-color: rgb(31, 37, 33);
+  border-bottom-width: 0px;
   border-left-color: rgb(31, 37, 33);
+  border-left-width: 0px;
   border-right-color: rgb(31, 37, 33);
+  border-right-width: 0px;
   border-top-color: rgb(31, 37, 33);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(31, 37, 33));
 }
 
 html[saved-theme="light"] body h4 {
   border-bottom-color: rgb(31, 37, 33);
+  border-bottom-width: 0px;
   border-left-color: rgb(31, 37, 33);
+  border-left-width: 0px;
   border-right-color: rgb(31, 37, 33);
+  border-right-width: 0px;
   border-top-color: rgb(31, 37, 33);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(31, 37, 33));
 }
 
 html[saved-theme="light"] body h5 {
   border-bottom-color: rgb(31, 37, 33);
+  border-bottom-width: 0px;
   border-left-color: rgb(31, 37, 33);
+  border-left-width: 0px;
   border-right-color: rgb(31, 37, 33);
+  border-right-width: 0px;
   border-top-color: rgb(31, 37, 33);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(31, 37, 33));
 }
 
 html[saved-theme="light"] body h6 {
   border-bottom-color: rgb(31, 37, 33);
+  border-bottom-width: 0px;
   border-left-color: rgb(31, 37, 33);
+  border-left-width: 0px;
   border-right-color: rgb(31, 37, 33);
+  border-right-width: 0px;
   border-top-color: rgb(31, 37, 33);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(31, 37, 33));
 }
 
 html[saved-theme="light"] body hr {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
@@ -3257,17 +3542,25 @@ html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(255, 93, 112);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 93, 112);
+  border-left-width: 0px;
   border-right-color: rgb(255, 93, 112);
+  border-right-width: 0px;
   border-top-color: rgb(255, 93, 112);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(255, 93, 112));
 }`,
     footer: `html[saved-theme="light"] body footer {
   background-color: var(--status-bar-background, rgb(246, 251, 247));
   border-bottom-color: rgb(197, 213, 201);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 213, 201);
+  border-left-width: 0px;
   border-right-color: rgb(197, 213, 201);
+  border-right-width: 0px;
   border-top-color: rgb(197, 213, 201);
+  border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(110, 121, 114));
 }
 
@@ -3280,9 +3573,13 @@ html[saved-theme="light"] body footer ul li a {
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
   color: rgb(63, 70, 66);
 }
 
@@ -3295,9 +3592,13 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body li.section-li > .section .meta {
@@ -3310,15 +3611,23 @@ html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
 
 html[saved-theme="light"] body ul.section-ul {
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
   border-bottom-color: rgb(255, 93, 112);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 93, 112);
+  border-left-width: 0px;
   border-right-color: rgb(255, 93, 112);
+  border-right-width: 0px;
   border-top-color: rgb(255, 93, 112);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(255, 93, 112));
 }
 
@@ -3328,9 +3637,13 @@ html[saved-theme="light"] body .darkmode svg {
 }`,
     breadcrumbs: `html[saved-theme="light"] body .breadcrumb-container {
   border-bottom-color: rgb(110, 121, 114);
+  border-bottom-width: 0px;
   border-left-color: rgb(110, 121, 114);
+  border-left-width: 0px;
   border-right-color: rgb(110, 121, 114);
+  border-right-width: 0px;
   border-top-color: rgb(110, 121, 114);
+  border-top-width: 0px;
   color: rgb(110, 121, 114);
 }
 
@@ -3364,25 +3677,37 @@ html[saved-theme="light"] body .canvas-sidebar {
 }`,
     properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgb(197, 213, 201);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 213, 201);
+  border-left-width: 0px;
   border-right-color: rgb(197, 213, 201);
+  border-right-width: 0px;
   border-top-color: rgb(197, 213, 201);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(110, 121, 114));
 }
 
 html[saved-theme="light"] body .metadata-container .metadata-property {
   border-bottom-color: rgb(110, 121, 114);
+  border-bottom-width: 0px;
   border-left-color: rgb(110, 121, 114);
+  border-left-width: 0px;
   border-right-color: rgb(110, 121, 114);
+  border-right-width: 0px;
   border-top-color: rgb(110, 121, 114);
+  border-top-width: 0px;
   color: rgb(110, 121, 114);
 }
 
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(110, 121, 114);
+  border-bottom-width: 0px;
   border-left-color: rgb(110, 121, 114);
+  border-left-width: 0px;
   border-right-color: rgb(110, 121, 114);
+  border-right-width: 0px;
   border-top-color: rgb(110, 121, 114);
+  border-top-width: 0px;
   color: rgb(110, 121, 114);
 }
 
@@ -3430,9 +3755,13 @@ html[saved-theme="light"] body div#quartz-root {
 
 html[saved-theme="light"] body ol.overflow {
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
   background-color: var(--sidebar-background, rgb(246, 251, 247));
@@ -3448,9 +3777,13 @@ html[saved-theme="light"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="light"] body .katex-display {
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
   color: rgb(63, 70, 66);
 }
 
@@ -3460,9 +3793,13 @@ html[saved-theme="light"] body .navigation-progress {
 
 html[saved-theme="light"] body .page-header h2.page-title {
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(63, 70, 66));
 }
 
@@ -3472,33 +3809,49 @@ html[saved-theme="light"] body abbr {
 
 html[saved-theme="light"] body details {
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body input[type=text] {
   border-bottom-color: rgb(110, 121, 114);
+  border-bottom-width: 0px;
   border-left-color: rgb(110, 121, 114);
+  border-left-width: 0px;
   border-right-color: rgb(110, 121, 114);
+  border-right-width: 0px;
   border-top-color: rgb(110, 121, 114);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(110, 121, 114));
 }
 
 html[saved-theme="light"] body kbd {
   background-color: var(--code-background, rgb(231, 242, 238));
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(63, 70, 66));
 }
 
 html[saved-theme="light"] body progress {
   border-bottom-color: rgb(63, 70, 66);
+  border-bottom-width: 0px;
   border-left-color: rgb(63, 70, 66);
+  border-left-width: 0px;
   border-right-color: rgb(63, 70, 66);
+  border-right-width: 0px;
   border-top-color: rgb(63, 70, 66);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body sub {
@@ -3516,9 +3869,13 @@ html[saved-theme="light"] body sup {
 html[saved-theme="light"] body ul.tags > li {
   background-color: var(--tag-background, rgba(221, 95, 110, 0.1));
   border-bottom-color: rgba(221, 95, 110, 0.15);
+  border-bottom-width: 0px;
   border-left-color: rgba(221, 95, 110, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(221, 95, 110, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(221, 95, 110, 0.15);
+  border-top-width: 0px;
   color: var(--tag-color, rgb(60, 182, 140));
 }`,
   },

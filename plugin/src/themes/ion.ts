@@ -245,12 +245,14 @@ html body .page > div#quartz-body div.sidebar {
 
 html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
 }
 
 html body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #000);
   background-color: var(--tab-container-background, rgb(0, 0, 0));
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }`,
     typography: `html body .markdown-rendered p > b, html b {
@@ -345,17 +347,25 @@ html body a.internal-link.broken {
 }`,
     lists: `html body dd {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
 html body dt {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
@@ -369,9 +379,13 @@ html body ul > li {
 
 html body ul.overflow {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
 }`,
     blockquotes: `html body .data-footnote-backref {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.04167em hsl(258, 88%, 50%)) drop-shadow(0px 0px 0.04167em hsl(258, 88%, 50%)));
@@ -385,9 +399,13 @@ html body blockquote {
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
 }
 
 html body table {
@@ -396,18 +414,26 @@ html body table {
 
 html body td {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   box-shadow: var(--bloom-box, rgba(191, 106, 64, 0.3) 0px 0px 1.5px 1.5px inset) inset;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
 html body th {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   box-shadow: rgba(191, 106, 64, 0.3) 0px 0px 1.5px 1.5px inset;
   color: var(--ion-color, rgb(236, 210, 198));
 }`,
@@ -415,24 +441,36 @@ html body th {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0em hsl(20, 50%, 50%)) drop-shadow(0px 0px 0em hsl(20, 50%, 50%)));
   background-color: var(--code-background, rgb(0, 0, 0));
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(230, 196, 179));
 }
 
 html body pre:has(> code) {
   background-color: var(--code-background, rgb(0, 0, 0));
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }`,
     images: `html body audio {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
 }
 
 html body figcaption {
@@ -442,50 +480,74 @@ html body figcaption {
 html body figure {
   --code-background: var(--ec-frm-edBg, #000);
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
 }
 
 html body img {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
 }
 
 html body video {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
 }`,
     embeds: `html body .file-embed {
   background-color: var(--background-primary-alt, rgb(0, 0, 0));
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
 html body .footnotes {
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
 html body .transclude {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
 html body .transclude-inner {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }`,
     checkboxes: `html body input[type=checkbox] {
@@ -493,9 +555,13 @@ html body .transclude-inner {
   --ion-h: var(--accent-h, 258);
   --ion-s: var(--accent-s, 88%);
   border-bottom-color: rgb(117, 63, 243);
+  border-bottom-width: 0px;
   border-left-color: rgb(117, 63, 243);
+  border-left-width: 0px;
   border-right-color: rgb(117, 63, 243);
+  border-right-width: 0px;
   border-top-color: rgb(117, 63, 243);
+  border-top-width: 0px;
 }
 
 html body li.task-list-item[data-task="#"] {
@@ -1051,9 +1117,13 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
   --ion-h: var(--callout-h, 217);
   --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 239, 255);
+  border-left-width: 0px;
   border-right-color: rgb(230, 239, 255);
+  border-right-width: 0px;
   border-top-color: rgb(230, 239, 255);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
@@ -1094,9 +1164,13 @@ html body .callout[data-callout="abstract"] .callout-title {
   --ion-h: var(--callout-h, 217);
   --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 239, 255);
+  border-left-width: 0px;
   border-right-color: rgb(230, 239, 255);
+  border-right-width: 0px;
   border-top-color: rgb(230, 239, 255);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
@@ -1137,9 +1211,13 @@ html body .callout[data-callout="bug"] .callout-title {
   --ion-h: var(--callout-h, 217);
   --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 239, 255);
+  border-left-width: 0px;
   border-right-color: rgb(230, 239, 255);
+  border-right-width: 0px;
   border-top-color: rgb(230, 239, 255);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
@@ -1180,9 +1258,13 @@ html body .callout[data-callout="danger"] .callout-title {
   --ion-h: var(--callout-h, 217);
   --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 239, 255);
+  border-left-width: 0px;
   border-right-color: rgb(230, 239, 255);
+  border-right-width: 0px;
   border-top-color: rgb(230, 239, 255);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
@@ -1223,9 +1305,13 @@ html body .callout[data-callout="example"] .callout-title {
   --ion-h: var(--callout-h, 217);
   --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 239, 255);
+  border-left-width: 0px;
   border-right-color: rgb(230, 239, 255);
+  border-right-width: 0px;
   border-top-color: rgb(230, 239, 255);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
@@ -1266,9 +1352,13 @@ html body .callout[data-callout="failure"] .callout-title {
   --ion-h: var(--callout-h, 217);
   --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 239, 255);
+  border-left-width: 0px;
   border-right-color: rgb(230, 239, 255);
+  border-right-width: 0px;
   border-top-color: rgb(230, 239, 255);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
@@ -1309,9 +1399,13 @@ html body .callout[data-callout="info"] .callout-title {
   --ion-h: var(--callout-h, 217);
   --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 239, 255);
+  border-left-width: 0px;
   border-right-color: rgb(230, 239, 255);
+  border-right-width: 0px;
   border-top-color: rgb(230, 239, 255);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
@@ -1352,9 +1446,13 @@ html body .callout[data-callout="note"] .callout-title {
   --ion-h: var(--callout-h, 217);
   --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 239, 255);
+  border-left-width: 0px;
   border-right-color: rgb(230, 239, 255);
+  border-right-width: 0px;
   border-top-color: rgb(230, 239, 255);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
@@ -1395,9 +1493,13 @@ html body .callout[data-callout="question"] .callout-title {
   --ion-h: var(--callout-h, 217);
   --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 239, 255);
+  border-left-width: 0px;
   border-right-color: rgb(230, 239, 255);
+  border-right-width: 0px;
   border-top-color: rgb(230, 239, 255);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
@@ -1438,9 +1540,13 @@ html body .callout[data-callout="quote"] .callout-title {
   --ion-h: var(--callout-h, 217);
   --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 239, 255);
+  border-left-width: 0px;
   border-right-color: rgb(230, 239, 255);
+  border-right-width: 0px;
   border-top-color: rgb(230, 239, 255);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
@@ -1481,9 +1587,13 @@ html body .callout[data-callout="success"] .callout-title {
   --ion-h: var(--callout-h, 217);
   --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 239, 255);
+  border-left-width: 0px;
   border-right-color: rgb(230, 239, 255);
+  border-right-width: 0px;
   border-top-color: rgb(230, 239, 255);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
@@ -1524,9 +1634,13 @@ html body .callout[data-callout="tip"] .callout-title {
   --ion-h: var(--callout-h, 217);
   --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 239, 255);
+  border-left-width: 0px;
   border-right-color: rgb(230, 239, 255);
+  border-right-width: 0px;
   border-top-color: rgb(230, 239, 255);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
@@ -1567,9 +1681,13 @@ html body .callout[data-callout="todo"] .callout-title {
   --ion-h: var(--callout-h, 217);
   --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 239, 255);
+  border-left-width: 0px;
   border-right-color: rgb(230, 239, 255);
+  border-right-width: 0px;
   border-top-color: rgb(230, 239, 255);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
@@ -1610,9 +1728,13 @@ html body .callout[data-callout="warning"] .callout-title {
   --ion-h: var(--callout-h, 217);
   --ion-s: var(--callout-s, 100%);
   border-bottom-color: rgb(230, 239, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(230, 239, 255);
+  border-left-width: 0px;
   border-right-color: rgb(230, 239, 255);
+  border-right-width: 0px;
   border-top-color: rgb(230, 239, 255);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(230, 239, 255));
 }
 
@@ -1688,18 +1810,26 @@ html body .callout[data-callout="warning"] {
     search: `html body .search > .search-button {
   background-color: rgb(0, 0, 0);
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
 html body .search > .search-container > .search-space {
   background-color: var(--prompt-background, rgb(0, 0, 0));
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   box-shadow: var(--border-bloom, rgba(191, 106, 64, 0.3) 0px 0px 1.5px 1.5px, rgba(191, 106, 64, 0.3) 0px 0px 1.5px 1.5px inset);
 }
 
@@ -1715,9 +1845,13 @@ html body .search > .search-container > .search-space > .search-layout > .result
 
 html body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-description {
@@ -1730,24 +1864,35 @@ html body .search > .search-container > .search-space > .search-layout > .result
 
 html body .search > .search-container > .search-space > .search-layout, html .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(236, 210, 198);
   border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
@@ -1766,9 +1911,13 @@ html body a.internal-link.tag-link::before {
 html body h1 {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(10, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(10, 100%, 50%)));
   border-bottom-color: rgb(255, 213, 204);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 213, 204);
+  border-left-width: 0px;
   border-right-color: rgb(255, 213, 204);
+  border-right-width: 0px;
   border-top-color: rgb(255, 213, 204);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(255, 213, 204));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
@@ -1781,9 +1930,13 @@ html body h1.article-title {
 html body h2 {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(60, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(60, 100%, 50%)));
   border-bottom-color: rgb(255, 255, 204);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 204);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 204);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 204);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(255, 255, 204));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
@@ -1791,9 +1944,13 @@ html body h2 {
 html body h2.page-title, html h2.page-title a {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(20, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(20, 100%, 50%)));
   border-bottom-color: rgb(255, 221, 204);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 221, 204);
+  border-left-width: 0px;
   border-right-color: rgb(255, 221, 204);
+  border-right-width: 0px;
   border-top-color: rgb(255, 221, 204);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(255, 221, 204));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
@@ -1801,9 +1958,13 @@ html body h2.page-title, html h2.page-title a {
 html body h3 {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(110, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(110, 100%, 50%)));
   border-bottom-color: rgb(213, 255, 204);
+  border-bottom-width: 0px;
   border-left-color: rgb(213, 255, 204);
+  border-left-width: 0px;
   border-right-color: rgb(213, 255, 204);
+  border-right-width: 0px;
   border-top-color: rgb(213, 255, 204);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(213, 255, 204));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
@@ -1811,9 +1972,13 @@ html body h3 {
 html body h4 {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(160, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(160, 100%, 50%)));
   border-bottom-color: rgb(204, 255, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(204, 255, 238);
+  border-left-width: 0px;
   border-right-color: rgb(204, 255, 238);
+  border-right-width: 0px;
   border-top-color: rgb(204, 255, 238);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(204, 255, 238));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
@@ -1821,9 +1986,13 @@ html body h4 {
 html body h5 {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(210, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(210, 100%, 50%)));
   border-bottom-color: rgb(204, 230, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(204, 230, 255);
+  border-left-width: 0px;
   border-right-color: rgb(204, 230, 255);
+  border-right-width: 0px;
   border-top-color: rgb(204, 230, 255);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(204, 230, 255));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
@@ -1831,18 +2000,26 @@ html body h5 {
 html body h6 {
   --icon-bloom: var(--bloom-drop) var(--bloom-drop, drop-shadow(0px 0px 0.08333em hsl(260, 100%, 50%)) drop-shadow(0px 0px 0.08333em hsl(260, 100%, 50%)));
   border-bottom-color: rgb(221, 204, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 204, 255);
+  border-left-width: 0px;
   border-right-color: rgb(221, 204, 255);
+  border-right-width: 0px;
   border-top-color: rgb(221, 204, 255);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(221, 204, 255));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
 
 html body hr {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -1886,17 +2063,25 @@ html body .explorer .nav-files-container .collapse-icon svg {
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }`,
     footer: `html body footer {
   background-color: var(--status-bar-background, rgb(0, 0, 0));
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
@@ -1909,9 +2094,13 @@ html body footer ul li a {
 
 html body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
@@ -1924,9 +2113,13 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 }`,
     listPage: `html body li.section-li {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
 }
 
 html body li.section-li > .section .meta {
@@ -1939,15 +2132,23 @@ html body li.section-li > .section > .desc > h3 > a {
 
 html body ul.section-ul {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
 }`,
     darkmode: `html body .darkmode {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
@@ -1957,9 +2158,13 @@ html body .darkmode svg {
 }`,
     breadcrumbs: `html body .breadcrumb-container {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
@@ -1992,25 +2197,37 @@ html body .canvas-sidebar {
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
 html body .metadata-container .metadata-property {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
 html body .metadata-properties {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
@@ -2049,9 +2266,13 @@ html body div#quartz-root {
 
 html body ol.overflow {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
 }`,
     stacked: `html body .stacked-page {
   background-color: var(--background-secondary, rgb(0, 0, 0));
@@ -2067,9 +2288,13 @@ html body .stacked-page.active {
 }`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
@@ -2079,9 +2304,13 @@ html body .navigation-progress {
 
 html body .page-header h2.page-title {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
   text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size)/2), 1em) var(--bloom-color);
 }
@@ -2092,33 +2321,49 @@ html body abbr {
 
 html body details {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
 }
 
 html body input[type=text] {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
 html body kbd {
   background-color: var(--code-background, rgb(0, 0, 0));
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
   color: var(--ion-color, rgb(236, 210, 198));
 }
 
 html body progress {
   border-bottom-color: rgb(236, 210, 198);
+  border-bottom-width: 0px;
   border-left-color: rgb(236, 210, 198);
+  border-left-width: 0px;
   border-right-color: rgb(236, 210, 198);
+  border-right-width: 0px;
   border-top-color: rgb(236, 210, 198);
+  border-top-width: 0px;
 }
 
 html body sub {

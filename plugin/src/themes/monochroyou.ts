@@ -136,12 +136,14 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, hsl(258, 30%, 12%));
   background-color: var(--tab-container-background, rgb(27, 21, 40));
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
 }`,
     typography: `html[saved-theme="dark"] body .text-highlight {
   background-color: var(--text-highlight-bg, rgb(31, 0, 102));
@@ -157,27 +159,39 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
 }`,
     tables: `html[saved-theme="dark"] body td {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body th {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }`,
     code: `html[saved-theme="dark"] body code {
   background-color: var(--code-background, rgb(15, 0, 51));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(184, 153, 255));
 }
 
@@ -186,11 +200,15 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
+  border-top-width: 0px;
 }`,
     images: `html[saved-theme="dark"] body figure {
   --code-background: var(--ec-frm-edBg, hsl(258, 100%, 10%));
@@ -612,9 +630,13 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
@@ -630,6 +652,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(27, 21, 40);
+  border-bottom-width: 0px;
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
@@ -661,8 +684,11 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body hr {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -695,9 +721,13 @@ html[saved-theme="dark"] body .explorer .nav-files-container a:hover {
     footer: `html[saved-theme="dark"] body footer {
   background-color: var(--status-bar-background, rgb(27, 21, 40));
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: var(--nav-item-color, rgb(255, 255, 255));
@@ -733,9 +763,13 @@ html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .note-properties {
@@ -770,11 +804,15 @@ html[saved-theme="dark"] body kbd {
   border-bottom-color: rgb(184, 153, 255);
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
+  border-bottom-width: 0px;
   border-left-color: rgb(184, 153, 255);
+  border-left-width: 0px;
   border-right-color: rgb(184, 153, 255);
+  border-right-width: 0px;
   border-top-color: rgb(184, 153, 255);
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(184, 153, 255));
 }
 
@@ -975,6 +1013,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
@@ -986,6 +1025,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 	));
   background-color: var(--tab-container-background, rgba(138, 92, 245, 0.02));
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
 }`,
     typography: `html[saved-theme="light"] body .text-highlight {
   background-color: var(--text-highlight-bg, rgb(201, 179, 255));
@@ -1006,27 +1046,39 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked 
 }`,
     tables: `html[saved-theme="light"] body td {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body th {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }`,
     code: `html[saved-theme="light"] body code {
   background-color: var(--code-background, rgb(230, 219, 255));
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(47, 0, 158));
 }
 
@@ -1035,11 +1087,15 @@ html[saved-theme="light"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
+  border-top-width: 0px;
 }`,
     images: `html[saved-theme="light"] body figure {
   --code-background: var(--ec-frm-edBg, hsl(258, 100%, 93%));
@@ -1050,6 +1106,7 @@ html[saved-theme="light"] body pre:has(> code) {
 }`,
     embeds: `html[saved-theme="light"] body .transclude {
   border-left-color: rgb(47, 0, 158);
+  border-left-width: 0px;
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-left-radius: 100px;
@@ -1464,9 +1521,13 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
@@ -1482,6 +1543,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgba(138, 92, 245, 0.02);
+  border-bottom-width: 0px;
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
@@ -1513,8 +1575,11 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body hr {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
@@ -1547,9 +1612,13 @@ html[saved-theme="light"] body .explorer .nav-files-container a:hover {
     footer: `html[saved-theme="light"] body footer {
   background-color: var(--status-bar-background, rgba(138, 92, 245, 0.02));
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: var(--nav-item-color, rgb(0, 0, 0));
@@ -1585,9 +1654,13 @@ html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
 }`,
     properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -1622,11 +1695,15 @@ html[saved-theme="light"] body kbd {
   border-bottom-color: rgb(47, 0, 158);
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
+  border-bottom-width: 0px;
   border-left-color: rgb(47, 0, 158);
+  border-left-width: 0px;
   border-right-color: rgb(47, 0, 158);
+  border-right-width: 0px;
   border-top-color: rgb(47, 0, 158);
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(47, 0, 158));
 }
 

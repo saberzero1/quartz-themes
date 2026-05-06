@@ -46,24 +46,15 @@ body.theme-light {
     from var(--background-primary) 70% c h
   ) !important;
   --background-modifier-border-hover: var(--color-base-35) !important;
-  --background-modifier-error: var(
-    --color-red,
-    oklch(from #d32f2f 50% 30% h)
-  ) !important;
-  --background-modifier-error-hover: var(
-    --color-red,
-    oklch(from #d32f2f 50% 30% h)
-  ) !important;
+  --background-modifier-error: var(--color-red) !important;
+  --background-modifier-error-hover: var(--color-red) !important;
   --background-modifier-error-rgb: var(--color-red-rgb) !important;
   --background-modifier-form-field: var(--color-base-00) !important;
   --background-modifier-form-field-hover: var(
     --background-modifier-form-field
   ) !important;
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067) !important;
-  --background-modifier-success: var(
-    --color-green,
-    oklch(from #4caf50 50% 30% h)
-  ) !important;
+  --background-modifier-success: var(--color-green) !important;
   --background-modifier-success-rgb: var(--color-green-rgb) !important;
   --background-primary: oklch(
     from var(--accent-2) 93% calc(c * var(--chroma-accent)) h
@@ -80,103 +71,36 @@ body.theme-light {
   --bases-cards-background: oklch(
     from var(--background-tertiary) 85% c h
   ) !important;
-  --bases-cards-border-width: var(--border-width, 4px) !important;
+  --bases-cards-border-width: 4px !important;
   --bases-cards-corner-shape: var(--corner-shape) !important;
-  --bases-cards-cover-background: var(
-    --background-primary-alt,
-    oklch(
-      from
-        oklch(
-          from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-        )
-        75% calc(c * 0.4) h
-    )
-  ) !important;
+  --bases-cards-cover-background: var(--background-primary-alt) !important;
   --bases-cards-font-size: var(--font-smaller) !important;
   --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
-  --bases-embed-border-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            80% calc(c * 0.4) h
-        )
-        l c h
-    )
-  ) !important;
-  --bases-embed-border-radius: var(--window-border-radius, 12px) !important;
+  --bases-embed-border-color: var(--background-modifier-border) !important;
+  --bases-embed-border-radius: var(--window-border-radius) !important;
   --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller) !important;
   --bases-group-heading-property-weight: var(--font-normal) !important;
   --bases-group-heading-value-size: var(--font-smaller) !important;
   --bases-group-heading-value-weight: var(--font-semibold) !important;
-  --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: var(
-    --table-border-color,
-    oklch(from #222222 50% c h / 50%)
-  ) !important;
-  --bases-table-cell-background-active: var(
-    --background-primary,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        93% calc(c * 0.4) h
-    )
-  ) !important;
+  --bases-header-border-width: 0 !important;
+  --bases-table-border-color: var(--table-border-color) !important;
+  --bases-table-cell-background-active: var(--background-primary) !important;
   --bases-table-cell-background-disabled: var(
-    --background-primary-alt,
-    oklch(
-      from
-        oklch(
-          from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-        )
-        75% calc(c * 0.4) h
-    )
+    --background-primary-alt
   ) !important;
   --bases-table-cell-background-selected: var(--table-selection) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width) !important;
-  --bases-table-container-border-radius: var(--radius-s, 8px) !important;
+  --bases-table-container-border-radius: var(--radius-s) !important;
   --bases-table-container-border-width: var(--border-width) !important;
   --bases-table-font-size: var(--font-smaller) !important;
-  --bases-table-group-background: var(
-    --background-primary-alt,
-    oklch(
-      from
-        oklch(
-          from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-        )
-        75% calc(c * 0.4) h
-    )
-  ) !important;
-  --bases-table-header-background: var(
-    --background-primary,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        93% calc(c * 0.4) h
-    )
-  ) !important;
+  --bases-table-group-background: var(--background-primary-alt) !important;
+  --bases-table-header-background: var(--background-primary) !important;
   --bases-table-header-background-hover: var(
     --background-modifier-hover
   ) !important;
@@ -186,25 +110,12 @@ body.theme-light {
     transparent var(--size-4-6),
     black var(--size-4-6)
   ) !important;
-  --bases-table-header-weight: var(--font-weight, 100) !important;
+  --bases-table-header-weight: 100 !important;
   --bases-table-row-background-hover: var(
     --table-row-background-hover
   ) !important;
   --bases-table-row-border-width: var(--border-width) !important;
-  --bases-table-summary-background: var(
-    --background-primary,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        93% calc(c * 0.4) h
-    )
-  ) !important;
+  --bases-table-summary-background: var(--background-primary) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover
   ) !important;
@@ -232,7 +143,7 @@ body.theme-light {
     brightness(var(--blur-brightness)) !important;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
   --button-corner-shape: var(--corner-shape) !important;
-  --button-radius: var(--input-radius, 12px) !important;
+  --button-radius: var(--input-radius) !important;
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-bug: var(--color-red-rgb);
   --callout-default: var(--color-blue-rgb);
@@ -244,27 +155,14 @@ body.theme-light {
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
     var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--window-border-radius, 12px);
+  --callout-radius: var(--window-border-radius);
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --canvas-background: var(
-    --background-paper,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        98% calc(c * 0.4) h
-    )
-  ) !important;
+  --canvas-background: var(--background-paper) !important;
   --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color-1: var(--color-red-rgb) !important;
   --canvas-color-2: var(--color-orange-rgb) !important;
@@ -274,94 +172,40 @@ body.theme-light {
   --canvas-color-6: var(--color-purple-rgb) !important;
   --canvas-controls-icon-size: var(--icon-s) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
-  --canvas-controls-radius: var(--radius-s, 8px) !important;
+  --canvas-controls-radius: var(--radius-s) !important;
   --canvas-dot-pattern: oklch(
     from var(--text-normal) l c h / var(--retroma-canvas-dot-opacity)
   ) !important;
   --caret-color: var(--text-normal) !important;
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: var(
-    --background-secondary,
-    oklch(
-      from
-        oklch(
-          from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-        )
-        80% calc(c * 0.4) h
-    )
-  ) !important;
-  --checkbox-color-hover: var(
-    --background-secondary-alt,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 5)
-        )
-        65% calc(c * 0.4) h
-    )
-  ) !important;
-  --checkbox-marker-color: var(
-    --background-paper,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        98% calc(c * 0.4) h
-    )
-  ) !important;
-  --checkbox-radius: var(--window-border-radius, 12px) !important;
+  --checkbox-color: var(--background-secondary) !important;
+  --checkbox-color-hover: var(--background-secondary-alt) !important;
+  --checkbox-marker-color: var(--background-paper) !important;
+  --checkbox-radius: var(--window-border-radius) !important;
   --checkbox-size: var(--font-text-size) !important;
   --checklist-done-color: var(--text-muted) !important;
-  --clickable-icon-radius: var(--radius-s, 8px) !important;
+  --clickable-icon-radius: var(--radius-s) !important;
   --code-background: oklch(
     from var(--background-secondary) 85% c h / 50%
   ) !important;
-  --code-border-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            80% calc(c * 0.4) h
-        )
-        l c h
-    )
-  ) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(
-    --color-yellow,
-    oklch(from #ffeb3b 50% 30% h)
-  ) !important;
-  --code-important: var(
-    --color-orange,
-    oklch(from #ff9800 50% 30% h)
-  ) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red, oklch(from #d32f2f 50% 30% h)) !important;
-  --code-property: var(--color-cyan, oklch(from #00bcd4 50% 30% h)) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--window-border-radius, 12px) !important;
+  --code-radius: var(--window-border-radius) !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green, oklch(from #4caf50 50% 30% h)) !important;
-  --code-tag: var(--color-red, oklch(from #d32f2f 50% 30% h)) !important;
-  --code-value: var(--color-purple, oklch(from #673ab7 50% 30% h)) !important;
-  --collapse-icon-color: var(--text-muted, #5c5c5c) !important;
-  --collapse-icon-color-collapsed: var(--text-faint, #ababab) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
+  --collapse-icon-color: var(--text-muted) !important;
+  --collapse-icon-color-collapsed: var(--text-faint) !important;
   --color-accent: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -379,22 +223,9 @@ body.theme-light {
   ) !important;
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
-  --divider-color: var(
-    --titlebar-background,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 5)
-        )
-        65% calc(c * 0.4) h
-    )
-  ) !important;
+  --divider-color: var(--titlebar-background) !important;
   --divider-color-hover: var(--interactive-accent) !important;
-  --dropdown-background: var(--background-paper, #ffffff) !important;
+  --dropdown-background: var(--background-paper) !important;
   --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
@@ -406,34 +237,12 @@ body.theme-light {
     inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: var(
-    --background-primary,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        93% calc(c * 0.4) h
-    )
-  ) !important;
-  --file-header-background-focused: var(
-    --background-secondary,
-    oklch(
-      from
-        oklch(
-          from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-        )
-        80% calc(c * 0.4) h
-    )
-  ) !important;
+  --file-header-background: var(--background-primary) !important;
+  --file-header-background-focused: var(--background-secondary) !important;
   --file-header-border: var(--border-width) solid transparent !important;
   --file-header-font: var(--font-interface) !important;
   --file-header-font-size: var(--font-ui-small) !important;
-  --file-margins: var(--size-4-4, 16px) !important;
+  --file-margins: var(--size-4-4) !important;
   --file-margins-x: var(--size-4-8) !important;
   --file-margins-y: var(--size-4-8) !important;
   --flair-background: var(--interactive-normal) !important;
@@ -453,20 +262,7 @@ body.theme-light {
   --font-text:
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-weight: var(--font-normal) !important;
-  --footnote-divider-color: var(
-    --metadata-divider-color,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            80% calc(c * 0.4) h
-        )
-        l c h
-    )
-  ) !important;
+  --footnote-divider-color: var(--metadata-divider-color) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus
   ) !important;
@@ -481,22 +277,16 @@ body.theme-light {
   --footnote-line-height: var(--line-height-normal) !important;
   --footnote-padding-block: var(--size-2-3) !important;
   --footnote-padding-inline: var(--size-2-3) !important;
-  --footnote-radius: var(--radius-s, 8px) !important;
+  --footnote-radius: var(--radius-s) !important;
   --footnote-size: var(--font-smaller) !important;
   --graph-line: var(
     --color-base-35,
     var(--background-modifier-border-focus)
   ) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(
-    --color-yellow,
-    oklch(from #ffeb3b 50% 30% h)
-  ) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(
-    --color-green,
-    oklch(from #4caf50 50% 30% h)
-  ) !important;
+  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --h5-line-height: var(--line-height-normal) !important;
@@ -519,7 +309,7 @@ body.theme-light {
   --inline-title-style: var(--h1-style) !important;
   --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: var(--h1-weight) !important;
-  --input-border-width: var(--border-width, 2px) !important;
+  --input-border-width: 2px !important;
   --input-corner-shape: var(--corner-shape) !important;
   --input-date-separator: var(--text-faint) !important;
   --input-font-weight: var(--font-normal) !important;
@@ -537,10 +327,7 @@ body.theme-light {
   --link-color-hover: oklch(
     from var(--link-color) var(--lightness) var(--chroma) h / 80%
   ) !important;
-  --link-external-color: var(
-    --color-red,
-    oklch(from #d32f2f 50% 30% h)
-  ) !important;
+  --link-external-color: var(--color-red) !important;
   --link-external-color-hover: oklch(
     from var(--link-external-color) var(--lightness) var(--chroma) h / 80%
   ) !important;
@@ -551,59 +338,20 @@ body.theme-light {
     var(--interactive-accent-hsl),
     0.3
   ) !important;
-  --link-weight: var(--font-bold, 700) !important;
+  --link-weight: var(--font-bold) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-marker-color: var(--text-faint) !important;
   --list-marker-color-collapsed: var(--text-accent) !important;
   --list-marker-color-hover: var(--text-muted) !important;
-  --menu-background: var(
-    --background-paper,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        98% calc(c * 0.4) h
-    )
-  ) !important;
+  --menu-background: var(--background-paper) !important;
   --menu-border-color: var(--background-modifier-border-hover) !important;
   --menu-border-width: var(--border-width) !important;
   --menu-corner-shape: var(--corner-shape) !important;
   --menu-padding: var(--size-2-3) !important;
   --menu-radius: var(--radius-m) !important;
   --menu-shadow: var(--shadow-s) !important;
-  --metadata-border-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            80% calc(c * 0.4) h
-        )
-        l c h
-    )
-  ) !important;
-  --metadata-divider-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            80% calc(c * 0.4) h
-        )
-        l c h
-    )
-  ) !important;
+  --metadata-border-color: var(--background-modifier-border) !important;
+  --metadata-divider-color: var(--background-modifier-border) !important;
   --metadata-input-background-active: var(
     --background-modifier-hover
   ) !important;
@@ -631,27 +379,14 @@ body.theme-light {
   --metadata-property-corner-shape-hover: var(--corner-shape) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small) !important;
-  --modal-background: var(
-    --background-primary,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        93% calc(c * 0.4) h
-    )
-  ) !important;
+  --modal-background: var(--background-primary) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
   --modal-border-width: var(--border-width) !important;
   --modal-radius: var(--radius-l) !important;
-  --nav-collapse-icon-color: var(--collapse-icon-color, #5c5c5c) !important;
+  --nav-collapse-icon-color: var(--collapse-icon-color) !important;
   --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
   --nav-heading-color: var(--text-normal) !important;
   --nav-heading-color-collapsed: var(--text-faint) !important;
@@ -660,23 +395,10 @@ body.theme-light {
   --nav-heading-weight: var(--font-medium) !important;
   --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: var(--indentation-guide-color) !important;
-  --nav-indentation-guide-width: var(--indentation-guide-width, 2px) !important;
+  --nav-indentation-guide-width: 2px !important;
   --nav-item-background-active: var(--background-modifier-hover) !important;
   --nav-item-background-hover: var(--background-modifier-hover) !important;
-  --nav-item-background-selected: var(
-    --text-selection,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        80% 30% h / 75%
-    )
-  ) !important;
+  --nav-item-background-selected: var(--text-selection) !important;
   --nav-item-children-margin-start: var(--size-4-3) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
   --nav-item-color: var(--text-muted) !important;
@@ -688,73 +410,21 @@ body.theme-light {
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6) !important;
   --nav-item-parent-padding: var(--nav-item-padding) !important;
-  --nav-item-radius: var(--button-border-radius, 8px) !important;
+  --nav-item-radius: var(--button-border-radius) !important;
   --nav-item-size: var(--font-ui-small) !important;
-  --nav-tag-color: var(--text-muted, #5c5c5c) !important;
+  --nav-tag-color: var(--text-muted) !important;
   --nav-tag-color-active: var(--text-muted) !important;
   --nav-tag-color-hover: var(--text-muted) !important;
-  --nav-tag-radius: var(--radius-s, 8px) !important;
+  --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
-  --pdf-background: var(
-    --background-primary,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        93% calc(c * 0.4) h
-    )
-  ) !important;
-  --pdf-page-background: var(
-    --background-primary,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        93% calc(c * 0.4) h
-    )
-  ) !important;
+  --pdf-background: var(--background-primary) !important;
+  --pdf-page-background: var(--background-primary) !important;
   --pdf-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: var(
-    --background-primary,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        93% calc(c * 0.4) h
-    )
-  ) !important;
+  --pdf-sidebar-background: var(--background-primary) !important;
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
-  --pill-border-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            80% calc(c * 0.4) h
-        )
-        l c h
-    )
-  ) !important;
+  --pill-border-color: var(--background-modifier-border) !important;
   --pill-border-color-hover: var(--background-modifier-border-hover) !important;
   --pill-border-width: var(--border-width) !important;
   --pill-color: var(--text-muted) !important;
@@ -763,20 +433,7 @@ body.theme-light {
   --pill-color-remove-hover: var(--text-accent) !important;
   --popover-font-size: var(--font-text-size) !important;
   --preferred-text-scale: 1 !important;
-  --prompt-background: var(
-    --background-primary,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        93% calc(c * 0.4) h
-    )
-  ) !important;
+  --prompt-background: var(--background-primary) !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -784,26 +441,8 @@ body.theme-light {
   --prompt-border-width: var(--border-width) !important;
   --raised-background: var(--blur-background) !important;
   --raised-blur: var(--blur-s) !important;
-  --ribbon-background: var(
-    --background-secondary,
-    oklch(
-      from
-        oklch(
-          from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-        )
-        80% calc(c * 0.4) h
-    )
-  ) !important;
-  --ribbon-background-collapsed: var(
-    --ribbon-background,
-    oklch(
-      from
-        oklch(
-          from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-        )
-        80% calc(c * 0.4) h
-    )
-  ) !important;
+  --ribbon-background: var(--background-secondary) !important;
+  --ribbon-background-collapsed: var(--ribbon-background) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
@@ -815,108 +454,28 @@ body.theme-light {
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
   --search-clear-button-color: var(--text-muted) !important;
   --search-icon-color: var(--text-muted) !important;
-  --search-result-background: var(
-    --background-primary,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        93% calc(c * 0.4) h
-    )
-  ) !important;
+  --search-result-background: var(--background-primary) !important;
   --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
   --setting-group-heading-weight: var(--font-semibold) !important;
-  --setting-items-background: var(
-    --background-primary,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        93% calc(c * 0.4) h
-    )
-  ) !important;
-  --setting-items-border-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            80% calc(c * 0.4) h
-        )
-        l c h
-    )
-  ) !important;
+  --setting-items-background: var(--background-primary) !important;
+  --setting-items-border-color: var(--background-modifier-border) !important;
   --setting-items-padding: var(--size-4-5) !important;
-  --setting-items-radius: var(--window-border-radius, 12px) !important;
+  --setting-items-radius: var(--window-border-radius) !important;
   --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
-  --shiki-code-background: var(
-    --code-background,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            80% calc(c * 0.4) h
-        )
-        85% c h / 50%
-    )
-  ) !important;
-  --shiki-code-block-border-radius: var(--code-radius, 12px) !important;
+  --shiki-code-background: var(--code-background) !important;
+  --shiki-code-block-border-radius: var(--code-radius) !important;
   --shiki-code-block-spacing: var(--p-spacing) !important;
   --shiki-code-comment: var(--text-faint) !important;
-  --shiki-code-function: var(
-    --color-green,
-    oklch(from #4caf50 50% 30% h)
-  ) !important;
-  --shiki-code-important: var(
-    --color-orange,
-    oklch(from #ff9800 50% 30% h)
-  ) !important;
+  --shiki-code-function: var(--color-green) !important;
+  --shiki-code-important: var(--color-orange) !important;
   --shiki-code-keyword: var(--color-pink) !important;
   --shiki-code-normal: var(--text-muted) !important;
-  --shiki-code-property: var(
-    --color-cyan,
-    oklch(from #00bcd4 50% 30% h)
-  ) !important;
+  --shiki-code-property: var(--color-cyan) !important;
   --shiki-code-punctuation: var(--text-muted) !important;
-  --shiki-code-string: var(
-    --color-yellow,
-    oklch(from #ffeb3b 50% 30% h)
-  ) !important;
-  --shiki-code-value: var(
-    --color-purple,
-    oklch(from #673ab7 50% 30% h)
-  ) !important;
-  --shiki-gutter-border-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            80% calc(c * 0.4) h
-        )
-        l c h
-    )
-  ) !important;
+  --shiki-code-string: var(--color-yellow) !important;
+  --shiki-code-value: var(--color-purple) !important;
+  --shiki-gutter-border-color: var(--background-modifier-border) !important;
   --shiki-gutter-border-width: var(--border-width) !important;
   --shiki-gutter-text-color: var(--text-faint) !important;
   --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
@@ -940,145 +499,38 @@ body.theme-light {
   ) !important;
   --slider-thumb-border-width: var(--border-width) !important;
   --slider-thumb-radius: var(--slider-thumb-height) !important;
-  --slider-track-background: var(
-    --interactive-active,
-    oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 50% c h / 50%)
-  ) !important;
-  --status-bar-background: var(
-    --background-tertiary,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        60% calc(c * 0.4) h
-    )
-  ) !important;
-  --status-bar-border-color: var(
-    --divider-color,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 5)
-        )
-        65% calc(c * 0.4) h
-    )
-  ) !important;
+  --slider-track-background: var(--interactive-active) !important;
+  --status-bar-background: var(--background-tertiary) !important;
+  --status-bar-border-color: var(--divider-color) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: var(--font-ui-smaller) !important;
   --status-bar-radius: var(--radius-m) 0 0 0 !important;
   --status-bar-text-color: var(--text-muted) !important;
-  --suggestion-background: var(
-    --background-primary,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        93% calc(c * 0.4) h
-    )
-  ) !important;
+  --suggestion-background: var(--background-primary) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
-  --sync-avatar-color-1: var(
-    --color-red,
-    oklch(from #d32f2f 50% 30% h)
-  ) !important;
-  --sync-avatar-color-2: var(
-    --color-orange,
-    oklch(from #ff9800 50% 30% h)
-  ) !important;
-  --sync-avatar-color-3: var(
-    --color-yellow,
-    oklch(from #ffeb3b 50% 30% h)
-  ) !important;
-  --sync-avatar-color-4: var(
-    --color-green,
-    oklch(from #4caf50 50% 30% h)
-  ) !important;
-  --sync-avatar-color-5: var(
-    --color-cyan,
-    oklch(from #00bcd4 50% 30% h)
-  ) !important;
-  --sync-avatar-color-6: var(
-    --color-blue,
-    oklch(from #2196f3 50% 30% h)
-  ) !important;
-  --sync-avatar-color-7: var(
-    --color-purple,
-    oklch(from #673ab7 50% 30% h)
-  ) !important;
+  --sync-avatar-color-1: var(--color-red) !important;
+  --sync-avatar-color-2: var(--color-orange) !important;
+  --sync-avatar-color-3: var(--color-yellow) !important;
+  --sync-avatar-color-4: var(--color-green) !important;
+  --sync-avatar-color-5: var(--color-cyan) !important;
+  --sync-avatar-color-6: var(--color-blue) !important;
+  --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
-  --tab-background-active: var(
-    --background-primary,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        93% calc(c * 0.4) h
-    )
-  ) !important;
-  --tab-container-background: var(
-    --background-secondary,
-    oklch(
-      from
-        oklch(
-          from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-        )
-        80% calc(c * 0.4) h
-    )
-  ) !important;
+  --tab-background-active: var(--background-primary) !important;
+  --tab-container-background: var(--background-secondary) !important;
   --tab-divider-color: var(--background-modifier-border-hover) !important;
   --tab-font-size: var(--font-ui-small) !important;
-  --tab-outline-color: var(
-    --divider-color,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 5)
-        )
-        65% calc(c * 0.4) h
-    )
-  ) !important;
-  --tab-radius: var(--radius-s, 8px) !important;
+  --tab-outline-color: var(--divider-color) !important;
+  --tab-radius: var(--radius-s) !important;
   --tab-stacked-font-size: var(--font-ui-small) !important;
-  --tab-stacked-header-width: var(--header-height, 48px) !important;
-  --tab-switcher-background: var(
-    --background-secondary,
-    oklch(
-      from
-        oklch(
-          from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-        )
-        80% calc(c * 0.4) h
-    )
-  ) !important;
+  --tab-stacked-header-width: var(--header-height) !important;
+  --tab-switcher-background: var(--background-secondary) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
     var(--background-secondary),
     transparent
   ) !important;
-  --tab-switcher-preview-radius: var(--window-border-radius, 12px) !important;
+  --tab-switcher-preview-radius: var(--window-border-radius) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
   --tab-text-color: var(--text-faint) !important;
@@ -1087,20 +539,7 @@ body.theme-light {
   --tab-text-color-focused-active: var(--text-muted) !important;
   --tab-text-color-focused-active-current: var(--text-normal) !important;
   --tab-text-color-focused-highlighted: var(--text-accent) !important;
-  --table-add-button-border-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            80% calc(c * 0.4) h
-        )
-        l c h
-    )
-  ) !important;
+  --table-add-button-border-color: var(--background-modifier-border) !important;
   --table-add-button-border-width: var(--table-border-width) !important;
   --table-border-color: oklch(
     from var(--table-header-color) 50% c h / 50%
@@ -1116,10 +555,7 @@ body.theme-light {
   --table-header-background: oklch(
     from var(--accent-1) 50% c h / 30%
   ) !important;
-  --table-header-border-color: var(
-    --table-border-color,
-    oklch(from #222222 50% c h / 50%)
-  ) !important;
+  --table-header-border-color: var(--table-border-color) !important;
   --table-header-border-width: var(--table-border-width) !important;
   --table-header-color: var(--text-normal) !important;
   --table-header-size: var(--table-text-size) !important;
@@ -1147,7 +583,7 @@ body.theme-light {
   --tag-size: var(--font-smaller) !important;
   --text-accent: var(--color-accent) !important;
   --text-accent-hover: var(--color-accent-2) !important;
-  --text-error: var(--color-red, oklch(from #d32f2f 50% 30% h)) !important;
+  --text-error: var(--color-red) !important;
   --text-faint: var(--color-base-50) !important;
   --text-highlight-bg: oklch(
     from var(--accent-1) 80% var(--chroma) h / 75%
@@ -1157,52 +593,26 @@ body.theme-light {
   --text-selection: oklch(
     from var(--accent-2) 80% var(--chroma) h / 75%
   ) !important;
-  --text-success: var(--color-green, oklch(from #4caf50 50% 30% h)) !important;
-  --text-warning: var(--color-orange, oklch(from #ff9800 50% 30% h)) !important;
+  --text-success: var(--color-green) !important;
+  --text-warning: var(--color-orange) !important;
   --titlebar-background: oklch(
     from var(--accent-1) 65% calc(c * var(--chroma-accent)) h
   ) !important;
-  --titlebar-background-focused: var(
-    --titlebar-background,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 5)
-        )
-        65% calc(c * 0.4) h
-    )
-  ) !important;
-  --titlebar-border-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            80% calc(c * 0.4) h
-        )
-        l c h
-    )
-  ) !important;
+  --titlebar-background-focused: var(--titlebar-background) !important;
+  --titlebar-border-color: var(--background-modifier-border) !important;
   --titlebar-text-color: var(--text-muted) !important;
   --titlebar-text-color-focused: oklch(
     from var(--background-paper) 100% c h
   ) !important;
   --titlebar-text-weight: var(--font-bold) !important;
   --touch-radius-l: var(--touch-size-l) !important;
-  --touch-radius-m: var(--button-border-radius, 8px) !important;
-  --touch-radius-s: var(--button-border-radius, 8px) !important;
+  --touch-radius-m: var(--button-border-radius) !important;
+  --touch-radius-s: var(--button-border-radius) !important;
   --touch-radius-xl: var(--touch-size-xl) !important;
-  --touch-radius-xs: var(--button-border-radius, 8px) !important;
-  --touch-radius-xxs: var(--button-border-radius, 8px) !important;
-  --traffic-lights-offset-x: var(--header-height, 48px) !important;
-  --traffic-lights-offset-y: var(--header-height, 48px) !important;
+  --touch-radius-xs: var(--button-border-radius) !important;
+  --touch-radius-xxs: var(--button-border-radius) !important;
+  --traffic-lights-offset-x: var(--header-height) !important;
+  --traffic-lights-offset-y: var(--header-height) !important;
   --vault-profile-color: var(--text-normal) !important;
   --vault-profile-color-hover: var(--vault-profile-color) !important;
   --vault-profile-font-size: var(--font-ui-small) !important;
@@ -1210,7 +620,7 @@ body.theme-light {
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
   --input-height: 30px !important;
   --input-border-width-focus: 2px !important;
-  --input-radius: var(--window-border-radius, 12px) !important;
+  --input-radius: var(--window-border-radius) !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
   --pill-focus-left-adjust: -4px !important;
@@ -1251,7 +661,7 @@ body.theme-light {
   --blockquote-background-color: oklch(
     from var(--background-secondary) l c h / 40%
   ) !important;
-  --blockquote-border-thickness: var(--size-2-2, 4px) !important;
+  --blockquote-border-thickness: var(--size-2-2) !important;
   --blockquote-font-style: normal !important;
   --blur-brightness: 1.15 !important;
   --blur-opacity-m: 90% !important;
@@ -1263,7 +673,7 @@ body.theme-light {
   --bold-modifier: 200 !important;
   --border-width: 1px !important;
   --callout-border-opacity: 0.25;
-  --callout-border-width: var(--size-4-1, 4px);
+  --callout-border-width: var(--size-4-1);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
   --callout-quote: 158, 158, 158;
@@ -1484,14 +894,14 @@ body.theme-light {
   --metadata-background: oklch(
     from var(--background-secondary) l c h / 75%
   ) !important;
-  --metadata-border-radius: var(--window-border-radius, 12px) !important;
+  --metadata-border-radius: var(--window-border-radius) !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
-  --metadata-gap: var(--size-4-2, 8px) !important;
+  --metadata-gap: var(--size-4-2) !important;
   --metadata-input-background: transparent !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -1503,44 +913,12 @@ body.theme-light {
   ) !important;
   --metadata-label-width: 8em !important;
   --metadata-max-width: none !important;
-  --metadata-property-background: var(
-    --background-paper,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        98% calc(c * 0.4) h
-    )
-  ) !important;
-  --metadata-property-background-hover: var(
-    --background-paper,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        98% calc(c * 0.4) h
-    )
-  ) !important;
+  --metadata-property-background: var(--background-paper) !important;
+  --metadata-property-background-hover: var(--background-paper) !important;
   --metadata-property-padding: 0 !important;
-  --metadata-property-radius: var(--window-border-radius, 12px) !important;
-  --metadata-property-radius-focus: var(
-    --window-border-radius,
-    12px
-  ) !important;
-  --metadata-property-radius-hover: var(
-    --window-border-radius,
-    12px
-  ) !important;
+  --metadata-property-radius: var(--window-border-radius) !important;
+  --metadata-property-radius-focus: var(--window-border-radius) !important;
+  --metadata-property-radius-hover: var(--window-border-radius) !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
   --modal-height: 85vh !important;
@@ -1575,8 +953,8 @@ body.theme-light {
   --prompt-max-width: 80vw !important;
   --prompt-width: 700px !important;
   --radius-l: 12px !important;
-  --radius-m: var(--button-border-radius, 8px) !important;
-  --radius-s: var(--button-border-radius, 8px) !important;
+  --radius-m: var(--button-border-radius) !important;
+  --radius-s: var(--button-border-radius) !important;
   --radius-xl: 16px !important;
   --raised-mask:
     linear-gradient(white, white) padding-box,
@@ -1633,7 +1011,7 @@ body.theme-light {
   --slider-thumb-height: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-height: var(--size-2-3, 6px) !important;
+  --slider-track-height: var(--size-2-3) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-position: fixed !important;
   --suggestion-backdrop-filter: none !important;
@@ -1670,7 +1048,7 @@ body.theme-light {
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
-  --tag-radius: var(--button-border-radius, 8px) !important;
+  --tag-radius: var(--button-border-radius) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
@@ -1710,17 +1088,14 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
-  --inline-title-color: var(
-    --h1-color,
-    oklch(from #d32f2f 50% 30% h)
-  ) !important;
+  --inline-title-color: var(--h1-color) !important;
   --shadow-edges: 0 0 transparent !important;
-  --h1-color: var(--color-red, oklch(from #d32f2f 50% 30% h)) !important;
-  --h2-color: var(--color-orange, oklch(from #ff9800 50% 30% h)) !important;
-  --h3-color: var(--color-yellow, oklch(from #ffeb3b 50% 30% h)) !important;
-  --h4-color: var(--color-green, oklch(from #4caf50 50% 30% h)) !important;
-  --h5-color: var(--color-blue, oklch(from #2196f3 50% 30% h)) !important;
-  --h6-color: var(--color-indigo, oklch(from #3f51b5 50% 30% h)) !important;
+  --h1-color: var(--color-red) !important;
+  --h2-color: var(--color-orange) !important;
+  --h3-color: var(--color-yellow) !important;
+  --h4-color: var(--color-green) !important;
+  --h5-color: var(--color-blue) !important;
+  --h6-color: var(--color-indigo) !important;
   --bold-color: oklch(
     from var(--base-accent) calc(var(--lightness) - 15%) var(--chroma)
       calc(h + 100)
@@ -1729,8 +1104,8 @@ body.theme-light {
     from var(--base-accent) calc(var(--lightness) - 15%) var(--chroma)
       calc(h + 200)
   ) !important;
-  --button-text: var(--text-normal, #222222) !important;
-  --radius-xs: var(--button-border-radius, 8px) !important;
+  --button-text: var(--text-normal) !important;
+  --radius-xs: var(--button-border-radius) !important;
   --background-tertiary: oklch(
     from var(--accent-2) 60% calc(c * var(--chroma-accent)) h
   ) !important;
@@ -1740,27 +1115,14 @@ body.theme-light {
   --color-teal: oklch(
     from var(--hue-teal) var(--lightness) var(--chroma) h
   ) !important;
-  --settings-background: var(
-    --background-paper,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        98% calc(c * 0.4) h
-    )
-  ) !important;
+  --settings-background: var(--background-paper) !important;
   --img-border-radius: 0px !important;
   --box-shadow:
     inset -2px -2px oklch(from var(--background-secondary) 50% c h),
     inset 2px 2px oklch(from var(--background-secondary) 100% c h) !important;
   --button-border-radius: 8px !important;
   --window-border-radius: 12px !important;
-  --metadata-label-font-weight: var(--font-bold, 700) !important;
+  --metadata-label-font-weight: var(--font-bold) !important;
   --folder-color-1: oklch(
     from var(--hue-red) var(--lightness) var(--chroma-folder) h
   ) !important;
@@ -1817,20 +1179,7 @@ body.theme-light {
     from var(--background-secondary-alt) 85% c h
   ) !important;
   --button-hover: oklch(from var(--background-paper) l c h) !important;
-  --button-normal: var(
-    --background-primary,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        93% calc(c * 0.4) h
-    )
-  ) !important;
+  --button-normal: var(--background-primary) !important;
   --color-amber: oklch(
     from var(--hue-amber) var(--lightness) var(--chroma) h
   ) !important;
@@ -1849,10 +1198,7 @@ body.theme-light {
   --color-violet: oklch(
     from var(--hue-violet) var(--lightness) var(--chroma) h
   ) !important;
-  --folder-accent: var(
-    --base-accent,
-    oklch(from hsl(257, 88.88%, 70.95%) l c h)
-  ) !important;
+  --folder-accent: var(--base-accent) !important;
   --folder-color-13: oklch(
     from var(--hue-magenta) var(--lightness) var(--chroma-folder) h
   ) !important;
@@ -1867,34 +1213,12 @@ body.theme-light {
   ) !important;
   --interactive-active: oklch(from var(--base-accent) 50% c h / 50%) !important;
   --outline-color: oklch(from var(--base-accent) 25% c h) !important;
-  --radius-xxs: var(--button-border-radius, 8px) !important;
-  --retroma-folder-bg-color: var(
-    --background-primary,
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 355)
-        )
-        93% calc(c * 0.4) h
-    )
-  ) !important;
+  --radius-xxs: var(--button-border-radius) !important;
+  --retroma-folder-bg-color: var(--background-primary) !important;
   --retroma-folder-border: 1px solid
     oklch(from var(--accent-2) 55% var(--chroma-folder) h / 50%) !important;
   --retroma-folder-box-shadow: -1px 1px 0px var(--background-tertiary) !important;
-  --strong-emphasis: var(
-    --italic-color,
-    oklch(
-      from
-        oklch(
-          from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-        )
-        calc(50% - 15%) 30% calc(h + 200)
-    )
-  ) !important;
+  --strong-emphasis: var(--italic-color) !important;
   --table-data-background: oklch(from var(--base-accent) l c h / 7%) !important;
   --chroma: 30% !important;
   --chroma-accent: 0.4 !important;
@@ -1938,24 +1262,15 @@ body.theme-dark {
     from var(--background-primary) 70% c h
   ) !important;
   --background-modifier-border-hover: var(--color-base-35) !important;
-  --background-modifier-error: var(
-    --color-red,
-    oklch(from #d32f2f 70% 20% h)
-  ) !important;
-  --background-modifier-error-hover: var(
-    --color-red,
-    oklch(from #d32f2f 70% 20% h)
-  ) !important;
+  --background-modifier-error: var(--color-red) !important;
+  --background-modifier-error-hover: var(--color-red) !important;
   --background-modifier-error-rgb: var(--color-red-rgb) !important;
   --background-modifier-form-field: var(--color-base-25) !important;
   --background-modifier-form-field-hover: var(
     --background-modifier-form-field
   ) !important;
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067) !important;
-  --background-modifier-success: var(
-    --color-green,
-    oklch(from #4caf50 70% 20% h)
-  ) !important;
+  --background-modifier-success: var(--color-green) !important;
   --background-modifier-success-rgb: var(--color-green-rgb) !important;
   --background-primary: oklch(
     from var(--accent-2) calc(var(--lightness-accent) - 0.02)
@@ -1976,77 +1291,36 @@ body.theme-dark {
   --bases-cards-background: oklch(
     from var(--background-tertiary) 25% c h
   ) !important;
-  --bases-cards-border-width: var(--border-width, 4px) !important;
+  --bases-cards-border-width: 4px !important;
   --bases-cards-corner-shape: var(--corner-shape) !important;
-  --bases-cards-cover-background: var(
-    --background-primary-alt,
-    oklch(
-      from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04) calc(c * 0.3)
-        h
-    )
-  ) !important;
+  --bases-cards-cover-background: var(--background-primary-alt) !important;
   --bases-cards-font-size: var(--font-smaller) !important;
   --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
-  --bases-embed-border-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
-            calc(c * 0.3) h
-        )
-        l c h
-    )
-  ) !important;
-  --bases-embed-border-radius: var(--window-border-radius, 12px) !important;
+  --bases-embed-border-color: var(--background-modifier-border) !important;
+  --bases-embed-border-radius: var(--window-border-radius) !important;
   --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller) !important;
   --bases-group-heading-property-weight: var(--font-normal) !important;
   --bases-group-heading-value-size: var(--font-smaller) !important;
   --bases-group-heading-value-weight: var(--font-semibold) !important;
-  --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: var(
-    --table-border-color,
-    oklch(from #dadada 50% c h / 50%)
-  ) !important;
-  --bases-table-cell-background-active: var(
-    --background-primary,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        calc(0.24 - 0.02) calc(c * 0.3) h
-    )
-  ) !important;
+  --bases-header-border-width: 0 !important;
+  --bases-table-border-color: var(--table-border-color) !important;
+  --bases-table-cell-background-active: var(--background-primary) !important;
   --bases-table-cell-background-disabled: var(
-    --background-primary-alt,
-    oklch(
-      from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04) calc(c * 0.3)
-        h
-    )
+    --background-primary-alt
   ) !important;
   --bases-table-cell-background-selected: var(--table-selection) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width) !important;
-  --bases-table-container-border-radius: var(--radius-s, 8px) !important;
+  --bases-table-container-border-radius: var(--radius-s) !important;
   --bases-table-container-border-width: var(--border-width) !important;
   --bases-table-font-size: var(--font-smaller) !important;
-  --bases-table-group-background: var(
-    --background-primary-alt,
-    oklch(
-      from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04) calc(c * 0.3)
-        h
-    )
-  ) !important;
-  --bases-table-header-background: var(
-    --background-primary,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        calc(0.24 - 0.02) calc(c * 0.3) h
-    )
-  ) !important;
+  --bases-table-group-background: var(--background-primary-alt) !important;
+  --bases-table-header-background: var(--background-primary) !important;
   --bases-table-header-background-hover: var(
     --background-modifier-hover
   ) !important;
@@ -2056,18 +1330,12 @@ body.theme-dark {
     transparent var(--size-4-6),
     black var(--size-4-6)
   ) !important;
-  --bases-table-header-weight: var(--font-weight, 100) !important;
+  --bases-table-header-weight: 100 !important;
   --bases-table-row-background-hover: var(
     --table-row-background-hover
   ) !important;
   --bases-table-row-border-width: var(--border-width) !important;
-  --bases-table-summary-background: var(
-    --background-primary,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        calc(0.24 - 0.02) calc(c * 0.3) h
-    )
-  ) !important;
+  --bases-table-summary-background: var(--background-primary) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover
   ) !important;
@@ -2095,7 +1363,7 @@ body.theme-dark {
     brightness(var(--blur-brightness)) !important;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier)) !important;
   --button-corner-shape: var(--corner-shape) !important;
-  --button-radius: var(--input-radius, 12px) !important;
+  --button-radius: var(--input-radius) !important;
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-bug: var(--color-red-rgb);
   --callout-default: var(--color-blue-rgb);
@@ -2107,20 +1375,14 @@ body.theme-dark {
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
     var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--window-border-radius, 12px);
+  --callout-radius: var(--window-border-radius);
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --canvas-background: var(
-    --background-paper,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        0.24 calc(c * 0.3) h
-    )
-  ) !important;
+  --canvas-background: var(--background-paper) !important;
   --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color-1: var(--color-red-rgb) !important;
   --canvas-color-2: var(--color-orange-rgb) !important;
@@ -2130,74 +1392,40 @@ body.theme-dark {
   --canvas-color-6: var(--color-purple-rgb) !important;
   --canvas-controls-icon-size: var(--icon-s) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
-  --canvas-controls-radius: var(--radius-s, 8px) !important;
+  --canvas-controls-radius: var(--radius-s) !important;
   --canvas-dot-pattern: oklch(
     from var(--text-normal) l c h / var(--retroma-canvas-dot-opacity)
   ) !important;
   --caret-color: var(--text-normal) !important;
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: var(
-    --background-secondary,
-    oklch(
-      from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3)
-        h
-    )
-  ) !important;
-  --checkbox-color-hover: var(
-    --background-secondary-alt,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5))
-        calc(0.24 - 0.08) calc(c * 0.3) h
-    )
-  ) !important;
-  --checkbox-marker-color: var(
-    --background-paper,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        0.24 calc(c * 0.3) h
-    )
-  ) !important;
-  --checkbox-radius: var(--window-border-radius, 12px) !important;
+  --checkbox-color: var(--background-secondary) !important;
+  --checkbox-color-hover: var(--background-secondary-alt) !important;
+  --checkbox-marker-color: var(--background-paper) !important;
+  --checkbox-radius: var(--window-border-radius) !important;
   --checkbox-size: var(--font-text-size) !important;
   --checklist-done-color: var(--text-muted) !important;
-  --clickable-icon-radius: var(--radius-s, 8px) !important;
+  --clickable-icon-radius: var(--radius-s) !important;
   --code-background: oklch(
     from var(--background-secondary) 10% c h / 50%
   ) !important;
-  --code-border-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
-            calc(c * 0.3) h
-        )
-        l c h
-    )
-  ) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(
-    --color-yellow,
-    oklch(from #ffeb3b 70% 20% h)
-  ) !important;
-  --code-important: var(
-    --color-orange,
-    oklch(from #ff9800 70% 20% h)
-  ) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red, oklch(from #d32f2f 70% 20% h)) !important;
-  --code-property: var(--color-cyan, oklch(from #00bcd4 70% 20% h)) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--window-border-radius, 12px) !important;
+  --code-radius: var(--window-border-radius) !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green, oklch(from #4caf50 70% 20% h)) !important;
-  --code-tag: var(--color-red, oklch(from #d32f2f 70% 20% h)) !important;
-  --code-value: var(--color-purple, oklch(from #673ab7 70% 20% h)) !important;
-  --collapse-icon-color: var(--text-muted, #b3b3b3) !important;
-  --collapse-icon-color-collapsed: var(--text-faint, #666666) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
+  --collapse-icon-color: var(--text-muted) !important;
+  --collapse-icon-color-collapsed: var(--text-faint) !important;
   --color-accent: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -2215,15 +1443,9 @@ body.theme-dark {
   ) !important;
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
-  --divider-color: var(
-    --titlebar-background,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5))
-        calc(0.24 - 0.12) calc(c * 0.3) h
-    )
-  ) !important;
+  --divider-color: var(--titlebar-background) !important;
   --divider-color-hover: var(--interactive-accent) !important;
-  --dropdown-background: var(--background-paper, #363636) !important;
+  --dropdown-background: var(--background-paper) !important;
   --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
@@ -2235,24 +1457,12 @@ body.theme-dark {
     inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: var(
-    --background-primary,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        calc(0.24 - 0.02) calc(c * 0.3) h
-    )
-  ) !important;
-  --file-header-background-focused: var(
-    --background-secondary,
-    oklch(
-      from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3)
-        h
-    )
-  ) !important;
+  --file-header-background: var(--background-primary) !important;
+  --file-header-background-focused: var(--background-secondary) !important;
   --file-header-border: var(--border-width) solid transparent !important;
   --file-header-font: var(--font-interface) !important;
   --file-header-font-size: var(--font-ui-small) !important;
-  --file-margins: var(--size-4-4, 16px) !important;
+  --file-margins: var(--size-4-4) !important;
   --file-margins-x: var(--size-4-8) !important;
   --file-margins-y: var(--size-4-8) !important;
   --flair-background: var(--interactive-normal) !important;
@@ -2272,17 +1482,7 @@ body.theme-dark {
   --font-text:
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-weight: var(--font-normal) !important;
-  --footnote-divider-color: var(
-    --metadata-divider-color,
-    oklch(
-      from
-        oklch(
-          from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
-            calc(c * 0.3) h
-        )
-        l c h
-    )
-  ) !important;
+  --footnote-divider-color: var(--metadata-divider-color) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus
   ) !important;
@@ -2297,22 +1497,16 @@ body.theme-dark {
   --footnote-line-height: var(--line-height-normal) !important;
   --footnote-padding-block: var(--size-2-3) !important;
   --footnote-padding-inline: var(--size-2-3) !important;
-  --footnote-radius: var(--radius-s, 8px) !important;
+  --footnote-radius: var(--radius-s) !important;
   --footnote-size: var(--font-smaller) !important;
   --graph-line: var(
     --color-base-35,
     var(--background-modifier-border-focus)
   ) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(
-    --color-yellow,
-    oklch(from #ffeb3b 70% 20% h)
-  ) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(
-    --color-green,
-    oklch(from #4caf50 70% 20% h)
-  ) !important;
+  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --h5-line-height: var(--line-height-normal) !important;
@@ -2335,7 +1529,7 @@ body.theme-dark {
   --inline-title-style: var(--h1-style) !important;
   --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: var(--h1-weight) !important;
-  --input-border-width: var(--border-width, 2px) !important;
+  --input-border-width: 2px !important;
   --input-corner-shape: var(--corner-shape) !important;
   --input-date-separator: var(--text-faint) !important;
   --input-font-weight: var(--font-normal) !important;
@@ -2353,10 +1547,7 @@ body.theme-dark {
   --link-color-hover: oklch(
     from var(--link-color) calc(var(--lightness) + 10%) var(--chroma) h / 80%
   ) !important;
-  --link-external-color: var(
-    --color-red,
-    oklch(from #d32f2f 70% 20% h)
-  ) !important;
+  --link-external-color: var(--color-red) !important;
   --link-external-color-hover: oklch(
     from var(--link-external-color) var(--lightness) var(--chroma) h / 80%
   ) !important;
@@ -2367,46 +1558,20 @@ body.theme-dark {
     var(--interactive-accent-hsl),
     0.3
   ) !important;
-  --link-weight: var(--font-bold, 700) !important;
+  --link-weight: var(--font-bold) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-marker-color: var(--text-faint) !important;
   --list-marker-color-collapsed: var(--text-accent) !important;
   --list-marker-color-hover: var(--text-muted) !important;
-  --menu-background: var(
-    --background-paper,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        0.24 calc(c * 0.3) h
-    )
-  ) !important;
+  --menu-background: var(--background-paper) !important;
   --menu-border-color: var(--background-modifier-border-hover) !important;
   --menu-border-width: var(--border-width) !important;
   --menu-corner-shape: var(--corner-shape) !important;
   --menu-padding: var(--size-2-3) !important;
   --menu-radius: var(--radius-m) !important;
   --menu-shadow: var(--shadow-s) !important;
-  --metadata-border-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
-            calc(c * 0.3) h
-        )
-        l c h
-    )
-  ) !important;
-  --metadata-divider-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
-            calc(c * 0.3) h
-        )
-        l c h
-    )
-  ) !important;
+  --metadata-border-color: var(--background-modifier-border) !important;
+  --metadata-divider-color: var(--background-modifier-border) !important;
   --metadata-input-background-active: var(
     --background-modifier-hover
   ) !important;
@@ -2434,20 +1599,14 @@ body.theme-dark {
   --metadata-property-corner-shape-hover: var(--corner-shape) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small) !important;
-  --modal-background: var(
-    --background-primary,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        calc(0.24 - 0.02) calc(c * 0.3) h
-    )
-  ) !important;
+  --modal-background: var(--background-primary) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
   --modal-border-width: var(--border-width) !important;
   --modal-radius: var(--radius-l) !important;
-  --nav-collapse-icon-color: var(--collapse-icon-color, #b3b3b3) !important;
+  --nav-collapse-icon-color: var(--collapse-icon-color) !important;
   --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
   --nav-heading-color: var(--text-normal) !important;
   --nav-heading-color-collapsed: var(--text-faint) !important;
@@ -2456,16 +1615,10 @@ body.theme-dark {
   --nav-heading-weight: var(--font-medium) !important;
   --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: var(--indentation-guide-color) !important;
-  --nav-indentation-guide-width: var(--indentation-guide-width, 2px) !important;
+  --nav-indentation-guide-width: 2px !important;
   --nav-item-background-active: var(--background-modifier-hover) !important;
   --nav-item-background-hover: var(--background-modifier-hover) !important;
-  --nav-item-background-selected: var(
-    --text-selection,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        45% c h / 75%
-    )
-  ) !important;
+  --nav-item-background-selected: var(--text-selection) !important;
   --nav-item-children-margin-start: var(--size-4-3) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
   --nav-item-color: var(--text-muted) !important;
@@ -2477,47 +1630,19 @@ body.theme-dark {
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6) !important;
   --nav-item-parent-padding: var(--nav-item-padding) !important;
-  --nav-item-radius: var(--button-border-radius, 8px) !important;
+  --nav-item-radius: var(--button-border-radius) !important;
   --nav-item-size: var(--font-ui-small) !important;
-  --nav-tag-color: var(--text-muted, #b3b3b3) !important;
+  --nav-tag-color: var(--text-muted) !important;
   --nav-tag-color-active: var(--text-muted) !important;
   --nav-tag-color-hover: var(--text-muted) !important;
-  --nav-tag-radius: var(--radius-s, 8px) !important;
+  --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
-  --pdf-background: var(
-    --background-primary,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        calc(0.24 - 0.02) calc(c * 0.3) h
-    )
-  ) !important;
-  --pdf-page-background: var(
-    --background-primary,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        calc(0.24 - 0.02) calc(c * 0.3) h
-    )
-  ) !important;
+  --pdf-background: var(--background-primary) !important;
+  --pdf-page-background: var(--background-primary) !important;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pdf-sidebar-background: var(
-    --background-primary,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        calc(0.24 - 0.02) calc(c * 0.3) h
-    )
-  ) !important;
+  --pdf-sidebar-background: var(--background-primary) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pill-border-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
-            calc(c * 0.3) h
-        )
-        l c h
-    )
-  ) !important;
+  --pill-border-color: var(--background-modifier-border) !important;
   --pill-border-color-hover: var(--background-modifier-border-hover) !important;
   --pill-border-width: var(--border-width) !important;
   --pill-color: var(--text-muted) !important;
@@ -2526,13 +1651,7 @@ body.theme-dark {
   --pill-color-remove-hover: var(--text-accent) !important;
   --popover-font-size: var(--font-text-size) !important;
   --preferred-text-scale: 1 !important;
-  --prompt-background: var(
-    --background-primary,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        calc(0.24 - 0.02) calc(c * 0.3) h
-    )
-  ) !important;
+  --prompt-background: var(--background-primary) !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -2540,20 +1659,8 @@ body.theme-dark {
   --prompt-border-width: var(--border-width) !important;
   --raised-background: var(--blur-background) !important;
   --raised-blur: var(--blur-s) !important;
-  --ribbon-background: var(
-    --background-secondary,
-    oklch(
-      from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3)
-        h
-    )
-  ) !important;
-  --ribbon-background-collapsed: var(
-    --ribbon-background,
-    oklch(
-      from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3)
-        h
-    )
-  ) !important;
+  --ribbon-background: var(--background-secondary) !important;
+  --ribbon-background-collapsed: var(--ribbon-background) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
@@ -2565,85 +1672,28 @@ body.theme-dark {
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
   --search-clear-button-color: var(--text-muted) !important;
   --search-icon-color: var(--text-muted) !important;
-  --search-result-background: var(
-    --background-primary,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        calc(0.24 - 0.02) calc(c * 0.3) h
-    )
-  ) !important;
+  --search-result-background: var(--background-primary) !important;
   --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
   --setting-group-heading-weight: var(--font-semibold) !important;
-  --setting-items-background: var(
-    --background-primary,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        calc(0.24 - 0.02) calc(c * 0.3) h
-    )
-  ) !important;
-  --setting-items-border-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
-            calc(c * 0.3) h
-        )
-        l c h
-    )
-  ) !important;
+  --setting-items-background: var(--background-primary) !important;
+  --setting-items-border-color: var(--background-modifier-border) !important;
   --setting-items-padding: var(--size-4-5) !important;
   --setting-items-radius: var(--radius-l) !important;
   --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
-  --shiki-code-background: var(
-    --code-background,
-    oklch(
-      from
-        oklch(
-          from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
-            calc(c * 0.3) h
-        )
-        10% c h / 50%
-    )
-  ) !important;
-  --shiki-code-block-border-radius: var(--code-radius, 12px) !important;
+  --shiki-code-background: var(--code-background) !important;
+  --shiki-code-block-border-radius: var(--code-radius) !important;
   --shiki-code-block-spacing: var(--p-spacing) !important;
   --shiki-code-comment: var(--text-faint) !important;
-  --shiki-code-function: var(
-    --color-green,
-    oklch(from #4caf50 70% 20% h)
-  ) !important;
-  --shiki-code-important: var(
-    --color-orange,
-    oklch(from #ff9800 70% 20% h)
-  ) !important;
+  --shiki-code-function: var(--color-green) !important;
+  --shiki-code-important: var(--color-orange) !important;
   --shiki-code-keyword: var(--color-pink) !important;
   --shiki-code-normal: var(--text-muted) !important;
-  --shiki-code-property: var(
-    --color-cyan,
-    oklch(from #00bcd4 70% 20% h)
-  ) !important;
+  --shiki-code-property: var(--color-cyan) !important;
   --shiki-code-punctuation: var(--text-muted) !important;
-  --shiki-code-string: var(
-    --color-yellow,
-    oklch(from #ffeb3b 70% 20% h)
-  ) !important;
-  --shiki-code-value: var(
-    --color-purple,
-    oklch(from #673ab7 70% 20% h)
-  ) !important;
-  --shiki-gutter-border-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
-            calc(c * 0.3) h
-        )
-        l c h
-    )
-  ) !important;
+  --shiki-code-string: var(--color-yellow) !important;
+  --shiki-code-value: var(--color-purple) !important;
+  --shiki-gutter-border-color: var(--background-modifier-border) !important;
   --shiki-gutter-border-width: var(--border-width) !important;
   --shiki-gutter-text-color: var(--text-faint) !important;
   --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
@@ -2667,104 +1717,38 @@ body.theme-dark {
   ) !important;
   --slider-thumb-border-width: var(--border-width) !important;
   --slider-thumb-radius: var(--slider-thumb-height) !important;
-  --slider-track-background: var(
-    --interactive-active,
-    oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 50%)
-  ) !important;
-  --status-bar-background: var(
-    --background-tertiary,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        calc(0.24 - 0.1) calc(c * 0.3) h
-    )
-  ) !important;
-  --status-bar-border-color: var(
-    --divider-color,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5))
-        calc(0.24 - 0.12) calc(c * 0.3) h
-    )
-  ) !important;
+  --slider-track-background: var(--interactive-active) !important;
+  --status-bar-background: var(--background-tertiary) !important;
+  --status-bar-border-color: var(--divider-color) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: var(--font-ui-smaller) !important;
   --status-bar-radius: var(--radius-m) 0 0 0 !important;
   --status-bar-text-color: var(--text-muted) !important;
-  --suggestion-background: var(
-    --background-primary,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        calc(0.24 - 0.02) calc(c * 0.3) h
-    )
-  ) !important;
+  --suggestion-background: var(--background-primary) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
-  --sync-avatar-color-1: var(
-    --color-red,
-    oklch(from #d32f2f 70% 20% h)
-  ) !important;
-  --sync-avatar-color-2: var(
-    --color-orange,
-    oklch(from #ff9800 70% 20% h)
-  ) !important;
-  --sync-avatar-color-3: var(
-    --color-yellow,
-    oklch(from #ffeb3b 70% 20% h)
-  ) !important;
-  --sync-avatar-color-4: var(
-    --color-green,
-    oklch(from #4caf50 70% 20% h)
-  ) !important;
-  --sync-avatar-color-5: var(
-    --color-cyan,
-    oklch(from #00bcd4 70% 20% h)
-  ) !important;
-  --sync-avatar-color-6: var(
-    --color-blue,
-    oklch(from #2196f3 70% 20% h)
-  ) !important;
-  --sync-avatar-color-7: var(
-    --color-purple,
-    oklch(from #673ab7 70% 20% h)
-  ) !important;
+  --sync-avatar-color-1: var(--color-red) !important;
+  --sync-avatar-color-2: var(--color-orange) !important;
+  --sync-avatar-color-3: var(--color-yellow) !important;
+  --sync-avatar-color-4: var(--color-green) !important;
+  --sync-avatar-color-5: var(--color-cyan) !important;
+  --sync-avatar-color-6: var(--color-blue) !important;
+  --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
-  --tab-background-active: var(
-    --background-primary,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        calc(0.24 - 0.02) calc(c * 0.3) h
-    )
-  ) !important;
-  --tab-container-background: var(
-    --background-secondary,
-    oklch(
-      from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3)
-        h
-    )
-  ) !important;
+  --tab-background-active: var(--background-primary) !important;
+  --tab-container-background: var(--background-secondary) !important;
   --tab-divider-color: var(--background-modifier-border-hover) !important;
   --tab-font-size: var(--font-ui-small) !important;
-  --tab-outline-color: var(
-    --divider-color,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5))
-        calc(0.24 - 0.12) calc(c * 0.3) h
-    )
-  ) !important;
-  --tab-radius: var(--radius-s, 8px) !important;
+  --tab-outline-color: var(--divider-color) !important;
+  --tab-radius: var(--radius-s) !important;
   --tab-stacked-font-size: var(--font-ui-small) !important;
-  --tab-stacked-header-width: var(--header-height, 48px) !important;
-  --tab-switcher-background: var(
-    --background-secondary,
-    oklch(
-      from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3)
-        h
-    )
-  ) !important;
+  --tab-stacked-header-width: var(--header-height) !important;
+  --tab-switcher-background: var(--background-secondary) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
     var(--background-secondary),
     transparent
   ) !important;
-  --tab-switcher-preview-radius: var(--window-border-radius, 12px) !important;
+  --tab-switcher-preview-radius: var(--window-border-radius) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
   --tab-text-color: var(--text-faint) !important;
@@ -2773,17 +1757,7 @@ body.theme-dark {
   --tab-text-color-focused-active: var(--text-muted) !important;
   --tab-text-color-focused-active-current: var(--text-normal) !important;
   --tab-text-color-focused-highlighted: var(--text-accent) !important;
-  --table-add-button-border-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
-            calc(c * 0.3) h
-        )
-        l c h
-    )
-  ) !important;
+  --table-add-button-border-color: var(--background-modifier-border) !important;
   --table-add-button-border-width: var(--table-border-width) !important;
   --table-border-color: oklch(
     from var(--table-header-color) 50% c h / 50%
@@ -2799,10 +1773,7 @@ body.theme-dark {
   --table-header-background: oklch(
     from var(--accent-1) 50% c h / 30%
   ) !important;
-  --table-header-border-color: var(
-    --table-border-color,
-    oklch(from #dadada 50% c h / 50%)
-  ) !important;
+  --table-header-border-color: var(--table-border-color) !important;
   --table-header-border-width: var(--table-border-width) !important;
   --table-header-color: var(--text-normal) !important;
   --table-header-size: var(--table-text-size) !important;
@@ -2830,7 +1801,7 @@ body.theme-dark {
   --tag-size: var(--font-smaller) !important;
   --text-accent: var(--color-accent-1) !important;
   --text-accent-hover: var(--color-accent-2) !important;
-  --text-error: var(--color-red, oklch(from #d32f2f 70% 20% h)) !important;
+  --text-error: var(--color-red) !important;
   --text-faint: var(--color-base-50) !important;
   --text-highlight-bg: oklch(
     from var(--accent-1) 50% var(--chroma) h / 75%
@@ -2838,41 +1809,25 @@ body.theme-dark {
   --text-muted: var(--color-base-70) !important;
   --text-normal: var(--color-base-100) !important;
   --text-selection: oklch(from var(--accent-2) 45% c h / 75%) !important;
-  --text-success: var(--color-green, oklch(from #4caf50 70% 20% h)) !important;
-  --text-warning: var(--color-orange, oklch(from #ff9800 70% 20% h)) !important;
+  --text-success: var(--color-green) !important;
+  --text-warning: var(--color-orange) !important;
   --titlebar-background: oklch(
     from var(--accent-1) calc(var(--lightness-accent) - 0.12)
       calc(c * var(--chroma-accent)) h
   ) !important;
-  --titlebar-background-focused: var(
-    --titlebar-background,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 5))
-        calc(0.24 - 0.12) calc(c * 0.3) h
-    )
-  ) !important;
-  --titlebar-border-color: var(
-    --background-modifier-border,
-    oklch(
-      from
-        oklch(
-          from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
-            calc(c * 0.3) h
-        )
-        l c h
-    )
-  ) !important;
+  --titlebar-background-focused: var(--titlebar-background) !important;
+  --titlebar-border-color: var(--background-modifier-border) !important;
   --titlebar-text-color: var(--text-muted) !important;
   --titlebar-text-color-focused: var(--text-normal) !important;
   --titlebar-text-weight: var(--font-bold) !important;
   --touch-radius-l: var(--touch-size-l) !important;
-  --touch-radius-m: var(--button-border-radius, 8px) !important;
-  --touch-radius-s: var(--button-border-radius, 8px) !important;
+  --touch-radius-m: var(--button-border-radius) !important;
+  --touch-radius-s: var(--button-border-radius) !important;
   --touch-radius-xl: var(--touch-size-xl) !important;
-  --touch-radius-xs: var(--button-border-radius, 8px) !important;
-  --touch-radius-xxs: var(--button-border-radius, 8px) !important;
-  --traffic-lights-offset-x: var(--header-height, 48px) !important;
-  --traffic-lights-offset-y: var(--header-height, 48px) !important;
+  --touch-radius-xs: var(--button-border-radius) !important;
+  --touch-radius-xxs: var(--button-border-radius) !important;
+  --traffic-lights-offset-x: var(--header-height) !important;
+  --traffic-lights-offset-y: var(--header-height) !important;
   --vault-profile-color: var(--text-normal) !important;
   --vault-profile-color-hover: var(--vault-profile-color) !important;
   --vault-profile-font-size: var(--font-ui-small) !important;
@@ -2880,7 +1835,7 @@ body.theme-dark {
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
   --input-height: 30px !important;
   --input-border-width-focus: 2px !important;
-  --input-radius: var(--window-border-radius, 12px) !important;
+  --input-radius: var(--window-border-radius) !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
   --pill-focus-left-adjust: -4px !important;
@@ -2921,7 +1876,7 @@ body.theme-dark {
   --blockquote-background-color: oklch(
     from var(--background-secondary) l c h / 40%
   ) !important;
-  --blockquote-border-thickness: var(--size-2-2, 4px) !important;
+  --blockquote-border-thickness: var(--size-2-2) !important;
   --blockquote-font-style: normal !important;
   --blur-brightness: 1.15 !important;
   --blur-opacity-m: 90% !important;
@@ -2933,7 +1888,7 @@ body.theme-dark {
   --bold-modifier: 200 !important;
   --border-width: 1px !important;
   --callout-border-opacity: 0.25;
-  --callout-border-width: var(--size-4-1, 4px);
+  --callout-border-width: var(--size-4-1);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
   --callout-quote: 158, 158, 158;
@@ -3154,14 +2109,14 @@ body.theme-dark {
   --metadata-background: oklch(
     from var(--background-secondary) l c h / 75%
   ) !important;
-  --metadata-border-radius: var(--window-border-radius, 12px) !important;
+  --metadata-border-radius: var(--window-border-radius) !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
-  --metadata-gap: var(--size-4-2, 8px) !important;
+  --metadata-gap: var(--size-4-2) !important;
   --metadata-input-background: transparent !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -3173,30 +2128,12 @@ body.theme-dark {
   ) !important;
   --metadata-label-width: 8em !important;
   --metadata-max-width: none !important;
-  --metadata-property-background: var(
-    --background-paper,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        0.24 calc(c * 0.3) h
-    )
-  ) !important;
-  --metadata-property-background-hover: var(
-    --background-paper,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        0.24 calc(c * 0.3) h
-    )
-  ) !important;
+  --metadata-property-background: var(--background-paper) !important;
+  --metadata-property-background-hover: var(--background-paper) !important;
   --metadata-property-padding: 0 !important;
-  --metadata-property-radius: var(--window-border-radius, 12px) !important;
-  --metadata-property-radius-focus: var(
-    --window-border-radius,
-    12px
-  ) !important;
-  --metadata-property-radius-hover: var(
-    --window-border-radius,
-    12px
-  ) !important;
+  --metadata-property-radius: var(--window-border-radius) !important;
+  --metadata-property-radius-focus: var(--window-border-radius) !important;
+  --metadata-property-radius-hover: var(--window-border-radius) !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
   --modal-height: 85vh !important;
@@ -3231,8 +2168,8 @@ body.theme-dark {
   --prompt-max-width: 80vw !important;
   --prompt-width: 700px !important;
   --radius-l: 12px !important;
-  --radius-m: var(--button-border-radius, 8px) !important;
-  --radius-s: var(--button-border-radius, 8px) !important;
+  --radius-m: var(--button-border-radius) !important;
+  --radius-s: var(--button-border-radius) !important;
   --radius-xl: 16px !important;
   --raised-mask:
     linear-gradient(white, white) padding-box,
@@ -3283,7 +2220,7 @@ body.theme-dark {
   --slider-thumb-height: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-height: var(--size-2-3, 6px) !important;
+  --slider-track-height: var(--size-2-3) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-position: fixed !important;
   --suggestion-backdrop-filter: none !important;
@@ -3320,7 +2257,7 @@ body.theme-dark {
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
-  --tag-radius: var(--button-border-radius, 8px) !important;
+  --tag-radius: var(--button-border-radius) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
@@ -3356,16 +2293,13 @@ body.theme-dark {
   --accent-2: oklch(
     from var(--base-accent) l c calc(h + var(--rotation-2))
   ) !important;
-  --inline-title-color: var(
-    --h1-color,
-    oklch(from #d32f2f 70% 20% h)
-  ) !important;
-  --h1-color: var(--color-red, oklch(from #d32f2f 70% 20% h)) !important;
-  --h2-color: var(--color-orange, oklch(from #ff9800 70% 20% h)) !important;
-  --h3-color: var(--color-yellow, oklch(from #ffeb3b 70% 20% h)) !important;
-  --h4-color: var(--color-green, oklch(from #4caf50 70% 20% h)) !important;
-  --h5-color: var(--color-blue, oklch(from #2196f3 70% 20% h)) !important;
-  --h6-color: var(--color-indigo, oklch(from #3f51b5 70% 20% h)) !important;
+  --inline-title-color: var(--h1-color) !important;
+  --h1-color: var(--color-red) !important;
+  --h2-color: var(--color-orange) !important;
+  --h3-color: var(--color-yellow) !important;
+  --h4-color: var(--color-green) !important;
+  --h5-color: var(--color-blue) !important;
+  --h6-color: var(--color-indigo) !important;
   --bold-color: oklch(
     from var(--base-accent) calc(var(--lightness) + 10%) var(--chroma)
       calc(h + 100)
@@ -3374,8 +2308,8 @@ body.theme-dark {
     from var(--base-accent) calc(var(--lightness) + 10%) var(--chroma)
       calc(h + 200)
   ) !important;
-  --button-text: var(--text-normal, #dadada) !important;
-  --radius-xs: var(--button-border-radius, 8px) !important;
+  --button-text: var(--text-normal) !important;
+  --radius-xs: var(--button-border-radius) !important;
   --background-tertiary: oklch(
     from var(--accent-2) calc(var(--lightness-accent) - 0.1)
       calc(c * var(--chroma-accent)) h
@@ -3386,20 +2320,14 @@ body.theme-dark {
   --color-teal: oklch(
     from var(--hue-teal) var(--lightness) var(--chroma) h
   ) !important;
-  --settings-background: var(
-    --background-paper,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        0.24 calc(c * 0.3) h
-    )
-  ) !important;
+  --settings-background: var(--background-paper) !important;
   --img-border-radius: 0px !important;
   --box-shadow:
     inset -2px -2px oklch(from var(--background-secondary) 0% c h),
     inset 2px 2px oklch(from var(--background-secondary) 50% c h) !important;
   --button-border-radius: 8px !important;
   --window-border-radius: 12px !important;
-  --metadata-label-font-weight: var(--font-bold, 700) !important;
+  --metadata-label-font-weight: var(--font-bold) !important;
   --folder-color-1: oklch(
     from var(--hue-red) var(--lightness) var(--chroma-folder) h
   ) !important;
@@ -3455,13 +2383,7 @@ body.theme-dark {
     inset 1px 1px oklch(from var(--background-secondary) 50% c h) !important;
   --button-active: oklch(from var(--background-secondary) 25% c h) !important;
   --button-hover: oklch(from var(--background-paper) l c h) !important;
-  --button-normal: var(
-    --background-primary,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        calc(0.24 - 0.02) calc(c * 0.3) h
-    )
-  ) !important;
+  --button-normal: var(--background-primary) !important;
   --color-amber: oklch(
     from var(--hue-amber) var(--lightness) var(--chroma) h
   ) !important;
@@ -3480,10 +2402,7 @@ body.theme-dark {
   --color-violet: oklch(
     from var(--hue-violet) var(--lightness) var(--chroma) h
   ) !important;
-  --folder-accent: var(
-    --base-accent,
-    oklch(from hsl(258, 88%, 66%) l c h)
-  ) !important;
+  --folder-accent: var(--base-accent) !important;
   --folder-color-13: oklch(
     from var(--hue-magenta) var(--lightness) var(--chroma-folder) h
   ) !important;
@@ -3498,24 +2417,12 @@ body.theme-dark {
   ) !important;
   --interactive-active: oklch(from var(--base-accent) 50% c h / 50%) !important;
   --outline-color: oklch(from var(--base-accent) 25% c h) !important;
-  --radius-xxs: var(--button-border-radius, 8px) !important;
-  --retroma-folder-bg-color: var(
-    --background-primary,
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 355))
-        calc(0.24 - 0.02) calc(c * 0.3) h
-    )
-  ) !important;
+  --radius-xxs: var(--button-border-radius) !important;
+  --retroma-folder-bg-color: var(--background-primary) !important;
   --retroma-folder-border: 1px solid
     oklch(from var(--accent-2) 55% var(--chroma-folder) h / 50%) !important;
   --retroma-folder-box-shadow: -1px 1px 0px var(--background-tertiary) !important;
-  --strong-emphasis: var(
-    --italic-color,
-    oklch(
-      from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20%
-        calc(h + 200)
-    )
-  ) !important;
+  --strong-emphasis: var(--italic-color) !important;
   --table-data-background: oklch(from var(--base-accent) l c h / 7%) !important;
   --chroma: 20% !important;
   --chroma-accent: 0.3 !important;
@@ -3569,9 +2476,9 @@ body {
 }
 body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--link-external-color, oklch(50% 0.12 26.4067deg));
+  color: var(--link-external-color);
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-external-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family:
@@ -3588,12 +2495,13 @@ body body.theme-light .markdown-rendered a.external-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 700);
+  font-weight: var(--link-weight);
   outline: oklch(50% 0.12 26.4067deg) none 0px;
   text-decoration: underline;
   text-decoration-color: oklch(50% 0.12 26.4067deg);
   text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -3608,7 +2516,7 @@ body body.theme-light .markdown-rendered a.external-link {
 }
 body body.theme-light .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--link-color, oklch(35% 0.12 293.559deg));
+  color: var(--link-color);
   cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
@@ -3627,12 +2535,13 @@ body body.theme-light .markdown-rendered a.internal-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 700);
+  font-weight: var(--link-weight);
   outline: oklch(35% 0.12 293.559deg) none 0px;
   text-decoration: underline;
   text-decoration-color: oklch(35% 0.12 293.559deg);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -3647,9 +2556,9 @@ body body.theme-light .markdown-rendered a.internal-link {
 }
 body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--link-unresolved-color, oklch(50% 0.12 293.559deg / 0.6));
+  color: var(--link-unresolved-color);
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-unresolved-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family:
@@ -3666,12 +2575,13 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 700);
+  font-weight: var(--link-weight);
   outline: oklch(50% 0.12 293.559deg / 0.6) none 0px;
   text-decoration: underline rgba(138, 92, 245, 0.3);
   text-decoration-color: var(--link-unresolved-decoration-color);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: var(--link-unresolved-decoration-style);
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -3738,7 +2648,7 @@ body body.theme-light .markdown-rendered p {
 }
 body body.theme-light strong {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--bold-color, oklch(35% 0.12 33.5585deg));
+  color: var(--bold-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3777,7 +2687,7 @@ body body.theme-light strong {
 }
 body body.theme-light b {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--bold-color, oklch(35% 0.12 33.5585deg));
+  color: var(--bold-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3816,7 +2726,7 @@ body body.theme-light b {
 }
 body body.theme-light em {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--italic-color, oklch(35% 0.12 133.559deg));
+  color: var(--italic-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3855,7 +2765,7 @@ body body.theme-light em {
 }
 body body.theme-light i {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--italic-color, oklch(35% 0.12 133.559deg));
+  color: var(--italic-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3968,7 +2878,7 @@ body body.theme-light s {
 }
 body body.theme-light strong > em {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--strong-emphasis, oklch(35% 0.12 133.559deg));
+  color: var(--strong-emphasis);
   cursor: grab;
   font-family:
     ui-sans-serif,
@@ -3997,7 +2907,7 @@ body body.theme-light strong > em {
   animation-play-state: running;
 }
 body body.theme-light .markdown-rendered mark {
-  background-color: var(--text-highlight-bg, oklch(80% 0.12 298.559deg / 0.75));
+  background-color: var(--text-highlight-bg);
   color: var(--text-normal);
   cursor: grab;
   filter: none;
@@ -4122,7 +3032,7 @@ body body.theme-light .markdown-rendered hr {
 body body.theme-light div.multi-select-pill {
   align-items: normal;
   background-color: var(--pill-background);
-  color: var(--pill-color, oklch(40% 0.189218 293.559deg / 0.75));
+  color: var(--pill-color);
   display: flex;
   font-family:
     ui-sans-serif,
@@ -4228,10 +3138,7 @@ body body.theme-light .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-light .markdown-rendered code {
-  background-color: var(
-    --code-background,
-    oklch(85% 0.0756873 293.559deg / 0.5)
-  );
+  background-color: var(--code-background);
   border: 0px solid oklch(80% 0.0756873 293.559deg);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -4271,10 +3178,7 @@ body body.theme-light .markdown-rendered pre > code {
 }
 body body.theme-light :not(pre) > code[class*="language-"],
 body body.theme-light pre[class*="language-"] {
-  background-color: var(
-    --code-background,
-    oklch(85% 0.0756873 293.559deg / 0.5)
-  );
+  background-color: var(--code-background);
   border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -4341,10 +3245,7 @@ body
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-light .markdown-rendered blockquote {
-  background-color: var(
-    --blockquote-background-color,
-    oklch(80% 0.0756873 293.559deg / 0.4)
-  );
+  background-color: var(--blockquote-background-color);
   color: var(--blockquote-color);
   font-family:
     ui-sans-serif,
@@ -4361,7 +3262,7 @@ body body.theme-light .markdown-rendered blockquote {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: var(--blockquote-font-style);
   line-height: 24px;
   padding-bottom: 4px;
   padding-top: 4px;
@@ -4376,7 +3277,7 @@ body body.theme-light .footnote-backref {
   text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
-  background-color: var(--background-paper, oklch(98% 0.0756873 288.559deg));
+  background-color: var(--background-paper);
   border: 1px solid oklch(25% 0.189218 293.559deg);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -4403,7 +3304,7 @@ body body.theme-light .site-body-left-column input.search-bar {
     sans-serif;
 }
 body body.theme-light .search-results {
-  background-color: var(--prompt-background, oklch(93% 0.0756873 288.559deg));
+  background-color: var(--prompt-background);
   border: 4px ridge oklch(93% 0.0756873 288.559deg);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -4413,7 +3314,7 @@ body body.theme-light .search-results {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  box-shadow: var(--shadow-l, oklch(0% 0 0deg / 0.4) 0px 0px 12px 2px);
+  box-shadow: var(--shadow-l);
 }
 body body.theme-light .search-results > * {
   background-color: rgba(0, 0, 0, 0);
@@ -4670,7 +3571,7 @@ body body.theme-light .published-container .markdown-rendered h6 {
   line-height: var(--h6-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: normal;
+  letter-spacing: var(--h6-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -4703,7 +3604,7 @@ body
   .outline-view
   .tree-item
   > .tree-item-self {
-  font-weight: var(--nav-item-weight, 700);
+  font-weight: var(--nav-item-weight);
 }
 body
   body.theme-light
@@ -4755,7 +3656,7 @@ body body.theme-light body {
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
-  --callout-color: var(--callout-default, 8, 109, 221);
+  --callout-color: var(--callout-default);
   border: 4px solid rgba(8, 109, 221, 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -4817,7 +3718,7 @@ body body.theme-light .callout > .callout-content {
   padding-inline-start: 0px;
 }
 body body.theme-light .callout[data-callout="abstract"] {
-  --callout-color: var(--callout-summary, 0, 191, 188);
+  --callout-color: var(--callout-summary);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4858,7 +3759,7 @@ body body.theme-light .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="info"] {
-  --callout-color: var(--callout-info, 8, 109, 221);
+  --callout-color: var(--callout-info);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4899,7 +3800,7 @@ body body.theme-light .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="todo"] {
-  --callout-color: var(--callout-todo, 8, 109, 221);
+  --callout-color: var(--callout-todo);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4940,7 +3841,7 @@ body body.theme-light .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="tip"] {
-  --callout-color: var(--callout-tip, 0, 191, 188);
+  --callout-color: var(--callout-tip);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4981,7 +3882,7 @@ body body.theme-light .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="success"] {
-  --callout-color: var(--callout-success, 8, 185, 78);
+  --callout-color: var(--callout-success);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5022,7 +3923,7 @@ body body.theme-light .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="question"] {
-  --callout-color: var(--callout-question, 236, 117, 0);
+  --callout-color: var(--callout-question);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5063,7 +3964,7 @@ body body.theme-light .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="warning"] {
-  --callout-color: var(--callout-warning, 236, 117, 0);
+  --callout-color: var(--callout-warning);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5104,7 +4005,7 @@ body body.theme-light .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="danger"] {
-  --callout-color: var(--callout-error, 233, 49, 71);
+  --callout-color: var(--callout-error);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5145,7 +4046,7 @@ body body.theme-light .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="failure"] {
-  --callout-color: var(--callout-fail, 233, 49, 71);
+  --callout-color: var(--callout-fail);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5186,7 +4087,7 @@ body body.theme-light .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="bug"] {
-  --callout-color: var(--callout-bug, 233, 49, 71);
+  --callout-color: var(--callout-bug);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5227,7 +4128,7 @@ body body.theme-light .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="example"] {
-  --callout-color: var(--callout-example, 120, 82, 238);
+  --callout-color: var(--callout-example);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto
@@ -5268,7 +4169,7 @@ body body.theme-light .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="quote"] {
-  --callout-color: var(--callout-quote, 158, 158, 158);
+  --callout-color: var(--callout-quote);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -5337,10 +4238,7 @@ body body.theme-light .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin-top: var(--heading-spacing);
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 16px 0px 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -5381,7 +4279,7 @@ body body.theme-light .markdown-rendered th {
   border-top: var(--table-header-border-width) solid
     oklch(50% 0.0000125793 23.5283deg / 0.5);
   border-bottom: 1px solid oklch(50% 0.0000125793 23.5283deg / 0.5);
-  border-top-left-radius: var(--window-border-radius, 12px);
+  border-top-left-radius: var(--window-border-radius);
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -5396,10 +4294,7 @@ body body.theme-light .markdown-rendered th {
   padding-inline-start: 1px;
 }
 body body.theme-light .markdown-rendered td {
-  background-color: var(
-    --table-data-background,
-    oklch(65.3792% 0.189218 293.559deg / 0.07)
-  );
+  background-color: var(--table-data-background);
   color: var(--table-text-color);
   font-weight: 400;
   text-align: start;
@@ -5424,10 +4319,7 @@ body body.theme-light .markdown-rendered td {
   padding-inline-start: 1px;
 }
 body body.theme-light .markdown-rendered tr {
-  background-color: var(
-    --table-header-background,
-    oklch(50% 0.189218 298.559deg / 0.3)
-  );
+  background-color: var(--table-header-background);
   border: 0px oklch(93% 0.0756873 288.559deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -5587,10 +4479,7 @@ body body.theme-light .markdown-embed {
   padding: 0px;
 }
 body body.theme-light .file-embed {
-  background-color: var(
-    --background-primary-alt,
-    oklch(75% 0.0756873 293.559deg)
-  );
+  background-color: var(--background-primary-alt);
   color: var(--text-muted);
   border-radius: 8px;
   border-color: rgb(92, 92, 92);
@@ -5603,10 +4492,7 @@ body body.theme-light .file-embed {
   padding: 8px;
 }
 body body.theme-light .metadata-container {
-  background-color: var(
-    --metadata-background,
-    oklch(80% 0.0756873 293.559deg / 0.75)
-  );
+  background-color: var(--metadata-background);
   color: var(--text-muted);
   font-family:
     ui-sans-serif,
@@ -5657,10 +4543,7 @@ body body.theme-light .metadata-properties {
   padding: 0px;
 }
 body body.theme-light .metadata-container .metadata-property {
-  background-color: var(
-    --metadata-property-background,
-    oklch(98% 0.0756873 288.559deg)
-  );
+  background-color: var(--metadata-property-background);
   color: rgb(92, 92, 92);
   font-family:
     ui-sans-serif,
@@ -5811,10 +4694,7 @@ body body.theme-light details[open] {
   padding-inline-start: 0px;
 }
 body body.theme-light kbd {
-  background-color: var(
-    --code-background,
-    oklch(85% 0.0756873 293.559deg / 0.5)
-  );
+  background-color: var(--code-background);
   box-shadow: 0 0 0 1px oklch(from var(--text-normal) l c h/25%);
   color: var(--code-normal);
   font-family: var(--font-monospace);
@@ -6113,7 +4993,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: var(--folder-color, oklch(50% 0.12 26.4067deg));
+  color: var(--folder-color);
   cursor: var(--cursor);
   font-family:
     ui-sans-serif,
@@ -6129,7 +5009,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 700);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(34, 34, 34);
 }
 body
@@ -6140,7 +5020,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: var(--folder-color, oklch(50% 0.12 26.4067deg));
+  color: var(--folder-color);
   cursor: var(--cursor);
   font-family:
     ui-sans-serif,
@@ -6156,13 +5036,13 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 700);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
-  background-color: var(--button-normal, oklch(93% 0.0756873 288.559deg));
-  color: var(--text-muted, rgb(92, 92, 92));
-  cursor: var(--cursor, pointer);
+  background-color: var(--button-normal);
+  color: var(--text-muted);
+  cursor: var(--cursor);
   border: 1px solid oklch(25% 0.189218 293.559deg);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -6170,10 +5050,7 @@ body body.theme-light .clickable-icon {
   border-bottom-right-radius: 8px;
 }
 body body.theme-light .site-footer {
-  background-color: var(
-    --status-bar-background,
-    oklch(60% 0.0756873 288.559deg)
-  );
+  background-color: var(--status-bar-background);
   color: oklch(from var(--background-paper) 100% c h);
   font-family:
     ui-sans-serif,
@@ -6256,7 +5133,7 @@ body body.theme-light .nav-file-title-content {
     sans-serif;
 }
 body body.theme-light .nav-files-container {
-  background-color: var(--background-paper, oklch(98% 0.0756873 288.559deg));
+  background-color: var(--background-paper);
   border: 4px ridge oklch(93% 0.0756873 288.559deg);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -6264,9 +5141,9 @@ body body.theme-light .nav-files-container {
   border-bottom-right-radius: 12px;
 }
 body body.theme-light .site-body-left-column-site-theme-toggle {
-  background-color: var(--button-normal, oklch(93% 0.0756873 288.559deg));
-  color: var(--text-muted, rgb(92, 92, 92));
-  cursor: var(--cursor, pointer);
+  background-color: var(--button-normal);
+  color: var(--text-muted);
+  cursor: var(--cursor);
   border: 1px solid oklch(25% 0.189218 293.559deg);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -6336,7 +5213,7 @@ body body.theme-light .page-header .page-title {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light .math-block {
-  background-color: var(--background-modifier-hover);
+  background-color: rgba(0, 0, 0, 0);
   color: rgb(34, 34, 34);
   border-color: rgb(34, 34, 34);
   border-width: 0px;
@@ -6417,8 +5294,8 @@ body body.theme-light pre > code [data-highlighted-chars] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .tag {
-  background-color: var(--tag-background, oklch(40% 0.189218 293.559deg / 0.1));
-  color: var(--tag-color, oklch(40% 0.189218 293.559deg / 0.75));
+  background-color: var(--tag-background);
+  color: var(--tag-color);
   border: 1px solid oklch(40% 0.189218 293.559deg / 0.75);
   border-left-width: 4px;
   border-top-left-radius: 8px;
@@ -6441,9 +5318,9 @@ body body.theme-light .search-highlight {
 }
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--link-external-color, oklch(70% 0.08 26.4067deg));
+  color: var(--link-external-color);
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-external-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family:
@@ -6460,12 +5337,13 @@ body body.theme-dark .markdown-rendered a.external-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 700);
+  font-weight: var(--link-weight);
   outline: oklch(70% 0.08 26.4067deg) none 0px;
   text-decoration: underline;
   text-decoration-color: oklch(70% 0.08 26.4067deg);
   text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -6480,7 +5358,7 @@ body body.theme-dark .markdown-rendered a.external-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--link-color, oklch(80% 0.08 292.489deg));
+  color: var(--link-color);
   cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
@@ -6499,12 +5377,13 @@ body body.theme-dark .markdown-rendered a.internal-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 700);
+  font-weight: var(--link-weight);
   outline: oklch(80% 0.08 292.489deg) none 0px;
   text-decoration: underline;
   text-decoration-color: oklch(80% 0.08 292.489deg);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -6519,9 +5398,9 @@ body body.theme-dark .markdown-rendered a.internal-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--link-unresolved-color, oklch(80% 0.08 292.489deg / 0.6));
+  color: var(--link-unresolved-color);
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-unresolved-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family:
@@ -6538,12 +5417,13 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--link-weight, 700);
+  font-weight: var(--link-weight);
   outline: oklch(80% 0.08 292.489deg / 0.6) none 0px;
   text-decoration: underline rgba(138, 92, 245, 0.3);
   text-decoration-color: var(--link-unresolved-decoration-color);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: var(--link-unresolved-decoration-style);
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.14s ease-in-out;
   transform: none;
   user-select: text;
@@ -6610,7 +5490,7 @@ body body.theme-dark .markdown-rendered p {
 }
 body body.theme-dark strong {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--bold-color, oklch(80% 0.08 32.4895deg));
+  color: var(--bold-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -6649,7 +5529,7 @@ body body.theme-dark strong {
 }
 body body.theme-dark b {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--bold-color, oklch(80% 0.08 32.4895deg));
+  color: var(--bold-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -6688,7 +5568,7 @@ body body.theme-dark b {
 }
 body body.theme-dark em {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--italic-color, oklch(80% 0.08 132.489deg));
+  color: var(--italic-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -6727,7 +5607,7 @@ body body.theme-dark em {
 }
 body body.theme-dark i {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--italic-color, oklch(80% 0.08 132.489deg));
+  color: var(--italic-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -6840,7 +5720,7 @@ body body.theme-dark s {
 }
 body body.theme-dark strong > em {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--strong-emphasis, oklch(80% 0.08 132.489deg));
+  color: var(--strong-emphasis);
   cursor: grab;
   font-family:
     ui-sans-serif,
@@ -6869,7 +5749,7 @@ body body.theme-dark strong > em {
   animation-play-state: running;
 }
 body body.theme-dark .markdown-rendered mark {
-  background-color: var(--text-highlight-bg, oklch(50% 0.08 297.489deg / 0.75));
+  background-color: var(--text-highlight-bg);
   color: var(--text-normal);
   cursor: grab;
   filter: none;
@@ -6994,7 +5874,7 @@ body body.theme-dark .markdown-rendered hr {
 body body.theme-dark div.multi-select-pill {
   align-items: normal;
   background-color: var(--pill-background);
-  color: var(--pill-color, oklch(80% 0.21722 292.489deg / 0.75));
+  color: var(--pill-color);
   display: flex;
   font-family:
     ui-sans-serif,
@@ -7100,10 +5980,7 @@ body body.theme-dark .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-dark .markdown-rendered code {
-  background-color: var(
-    --code-background,
-    oklch(10% 0.0651659 292.489deg / 0.5)
-  );
+  background-color: var(--code-background);
   border: 0px solid oklch(18% 0.0651659 292.489deg);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -7143,10 +6020,7 @@ body body.theme-dark .markdown-rendered pre > code {
 }
 body body.theme-dark :not(pre) > code[class*="language-"],
 body body.theme-dark pre[class*="language-"] {
-  background-color: var(
-    --code-background,
-    oklch(10% 0.0651659 292.489deg / 0.5)
-  );
+  background-color: var(--code-background);
   border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -7213,10 +6087,7 @@ body
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-dark .markdown-rendered blockquote {
-  background-color: var(
-    --blockquote-background-color,
-    oklch(18% 0.0651659 292.489deg / 0.4)
-  );
+  background-color: var(--blockquote-background-color);
   color: var(--blockquote-color);
   font-family:
     ui-sans-serif,
@@ -7233,7 +6104,7 @@ body body.theme-dark .markdown-rendered blockquote {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: var(--blockquote-font-style);
   line-height: 24px;
   padding-bottom: 4px;
   padding-top: 4px;
@@ -7248,7 +6119,7 @@ body body.theme-dark .footnote-backref {
   text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
-  background-color: var(--background-paper, oklch(24% 0.0651659 287.49deg));
+  background-color: var(--background-paper);
   border: 1px solid oklch(25% 0.21722 292.489deg);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -7275,7 +6146,7 @@ body body.theme-dark .site-body-left-column input.search-bar {
     sans-serif;
 }
 body body.theme-dark .search-results {
-  background-color: var(--prompt-background, oklch(22% 0.0651659 287.49deg));
+  background-color: var(--prompt-background);
   border: 4px ridge oklch(22% 0.0651659 287.49deg);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -7285,7 +6156,7 @@ body body.theme-dark .search-results {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  box-shadow: var(--shadow-l, oklch(0% 0 0deg / 0.4) 0px 0px 12px 2px);
+  box-shadow: var(--shadow-l);
 }
 body body.theme-dark .search-results > * {
   background-color: rgba(0, 0, 0, 0);
@@ -7542,7 +6413,7 @@ body body.theme-dark .published-container .markdown-rendered h6 {
   line-height: var(--h6-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: normal;
+  letter-spacing: var(--h6-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -7575,7 +6446,7 @@ body
   .outline-view
   .tree-item
   > .tree-item-self {
-  font-weight: var(--nav-item-weight, 700);
+  font-weight: var(--nav-item-weight);
 }
 body
   body.theme-dark
@@ -7627,7 +6498,7 @@ body body.theme-dark body {
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {
-  --callout-color: var(--callout-default, 2, 122, 255);
+  --callout-color: var(--callout-default);
   border: 4px solid rgba(2, 122, 255, 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -7689,7 +6560,7 @@ body body.theme-dark .callout > .callout-content {
   padding-inline-start: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
-  --callout-color: var(--callout-summary, 83, 223, 221);
+  --callout-color: var(--callout-summary);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -7730,7 +6601,7 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="info"] {
-  --callout-color: var(--callout-info, 2, 122, 255);
+  --callout-color: var(--callout-info);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -7771,7 +6642,7 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="todo"] {
-  --callout-color: var(--callout-todo, 2, 122, 255);
+  --callout-color: var(--callout-todo);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -7812,7 +6683,7 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="tip"] {
-  --callout-color: var(--callout-tip, 83, 223, 221);
+  --callout-color: var(--callout-tip);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -7853,7 +6724,7 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="success"] {
-  --callout-color: var(--callout-success, 68, 207, 110);
+  --callout-color: var(--callout-success);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
@@ -7894,7 +6765,7 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="question"] {
-  --callout-color: var(--callout-question, 233, 151, 63);
+  --callout-color: var(--callout-question);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -7935,7 +6806,7 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="warning"] {
-  --callout-color: var(--callout-warning, 233, 151, 63);
+  --callout-color: var(--callout-warning);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -7976,7 +6847,7 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="danger"] {
-  --callout-color: var(--callout-error, 251, 70, 76);
+  --callout-color: var(--callout-error);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -8017,7 +6888,7 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="failure"] {
-  --callout-color: var(--callout-fail, 251, 70, 76);
+  --callout-color: var(--callout-fail);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -8058,7 +6929,7 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="bug"] {
-  --callout-color: var(--callout-bug, 251, 70, 76);
+  --callout-color: var(--callout-bug);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -8099,7 +6970,7 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="example"] {
-  --callout-color: var(--callout-example, 168, 130, 255);
+  --callout-color: var(--callout-example);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
@@ -8140,7 +7011,7 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="quote"] {
-  --callout-color: var(--callout-quote, 158, 158, 158);
+  --callout-color: var(--callout-quote);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -8209,10 +7080,7 @@ body body.theme-dark .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin-top: var(--heading-spacing);
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 16px 0px 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -8253,7 +7121,7 @@ body body.theme-dark .markdown-rendered th {
   border-top: var(--table-header-border-width) solid
     oklch(50% 0.000044365 23.517deg / 0.5);
   border-bottom: 1px solid oklch(50% 0.000044365 23.517deg / 0.5);
-  border-top-left-radius: var(--window-border-radius, 12px);
+  border-top-left-radius: var(--window-border-radius);
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -8268,10 +7136,7 @@ body body.theme-dark .markdown-rendered th {
   padding-inline-start: 1px;
 }
 body body.theme-dark .markdown-rendered td {
-  background-color: var(
-    --table-data-background,
-    oklch(60.3458% 0.21722 292.489deg / 0.07)
-  );
+  background-color: var(--table-data-background);
   color: var(--table-text-color);
   font-weight: 400;
   text-align: start;
@@ -8296,10 +7161,7 @@ body body.theme-dark .markdown-rendered td {
   padding-inline-start: 1px;
 }
 body body.theme-dark .markdown-rendered tr {
-  background-color: var(
-    --table-header-background,
-    oklch(50% 0.21722 297.489deg / 0.3)
-  );
+  background-color: var(--table-header-background);
   border: 0px oklch(22% 0.0651659 287.49deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -8459,10 +7321,7 @@ body body.theme-dark .markdown-embed {
   padding: 0px;
 }
 body body.theme-dark .file-embed {
-  background-color: var(
-    --background-primary-alt,
-    oklch(20% 0.0651659 292.489deg)
-  );
+  background-color: var(--background-primary-alt);
   color: var(--text-muted);
   border-radius: 8px;
   border-color: rgb(179, 179, 179);
@@ -8475,10 +7334,7 @@ body body.theme-dark .file-embed {
   padding: 8px;
 }
 body body.theme-dark .metadata-container {
-  background-color: var(
-    --metadata-background,
-    oklch(18% 0.0651659 292.489deg / 0.75)
-  );
+  background-color: var(--metadata-background);
   color: var(--text-muted);
   font-family:
     ui-sans-serif,
@@ -8529,10 +7385,7 @@ body body.theme-dark .metadata-properties {
   padding: 0px;
 }
 body body.theme-dark .metadata-container .metadata-property {
-  background-color: var(
-    --metadata-property-background,
-    oklch(24% 0.0651659 287.49deg)
-  );
+  background-color: var(--metadata-property-background);
   color: rgb(179, 179, 179);
   font-family:
     ui-sans-serif,
@@ -8683,10 +7536,7 @@ body body.theme-dark details[open] {
   padding-inline-start: 0px;
 }
 body body.theme-dark kbd {
-  background-color: var(
-    --code-background,
-    oklch(10% 0.0651659 292.489deg / 0.5)
-  );
+  background-color: var(--code-background);
   box-shadow: 0 0 0 1px oklch(from var(--text-normal) l c h/25%);
   color: var(--code-normal);
   font-family: var(--font-monospace);
@@ -8985,7 +7835,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: var(--folder-color, oklch(70% 0.08 26.4067deg));
+  color: var(--folder-color);
   cursor: var(--cursor);
   font-family:
     ui-sans-serif,
@@ -9001,7 +7851,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 700);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(218, 218, 218);
 }
 body
@@ -9012,7 +7862,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: var(--folder-color, oklch(70% 0.08 26.4067deg));
+  color: var(--folder-color);
   cursor: var(--cursor);
   font-family:
     ui-sans-serif,
@@ -9028,13 +7878,13 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 700);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
-  background-color: var(--button-normal, oklch(22% 0.0651659 287.49deg));
-  color: var(--text-muted, rgb(179, 179, 179));
-  cursor: var(--cursor, pointer);
+  background-color: var(--button-normal);
+  color: var(--text-muted);
+  cursor: var(--cursor);
   border: 1px solid oklch(25% 0.21722 292.489deg);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -9042,10 +7892,7 @@ body body.theme-dark .clickable-icon {
   border-bottom-right-radius: 8px;
 }
 body body.theme-dark .site-footer {
-  background-color: var(
-    --status-bar-background,
-    oklch(14% 0.0651659 287.49deg)
-  );
+  background-color: var(--status-bar-background);
   color: var(--status-bar-text-color);
   font-family:
     ui-sans-serif,
@@ -9128,7 +7975,7 @@ body body.theme-dark .nav-file-title-content {
     sans-serif;
 }
 body body.theme-dark .nav-files-container {
-  background-color: var(--background-paper, oklch(24% 0.0651659 287.49deg));
+  background-color: var(--background-paper);
   border: 4px ridge oklch(22% 0.0651659 287.49deg);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -9136,9 +7983,9 @@ body body.theme-dark .nav-files-container {
   border-bottom-right-radius: 12px;
 }
 body body.theme-dark .site-body-left-column-site-theme-toggle {
-  background-color: var(--button-normal, oklch(22% 0.0651659 287.49deg));
-  color: var(--text-muted, rgb(179, 179, 179));
-  cursor: var(--cursor, pointer);
+  background-color: var(--button-normal);
+  color: var(--text-muted);
+  cursor: var(--cursor);
   border: 1px solid oklch(25% 0.21722 292.489deg);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -9208,7 +8055,7 @@ body body.theme-dark .page-header .page-title {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .math-block {
-  background-color: var(--background-modifier-hover);
+  background-color: rgba(0, 0, 0, 0);
   color: rgb(218, 218, 218);
   border-color: rgb(218, 218, 218);
   border-width: 0px;
@@ -9289,8 +8136,8 @@ body body.theme-dark pre > code [data-highlighted-chars] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .tag {
-  background-color: var(--tag-background, oklch(80% 0.21722 292.489deg / 0.1));
-  color: var(--tag-color, oklch(80% 0.21722 292.489deg / 0.75));
+  background-color: var(--tag-background);
+  color: var(--tag-color);
   border: 1px solid oklch(80% 0.21722 292.489deg / 0.75);
   border-left-width: 4px;
   border-top-left-radius: 8px;

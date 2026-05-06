@@ -1413,7 +1413,7 @@ body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-external-color, rgb(120, 88, 111));
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-external-filter);
   backdrop-filter: none;
   box-shadow: rgba(0, 0, 0, 0) 0px 3px 0px 0px;
   font-family: Petrona;
@@ -1423,6 +1423,7 @@ body body.theme-light .markdown-rendered a.external-link {
   text-decoration-color: var(--interactive-accent, rgb(120, 88, 111));
   text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: box-shadow 0.1s ease-out;
   transform: none;
   user-select: text;
@@ -1449,6 +1450,7 @@ body body.theme-light .markdown-rendered a.internal-link {
   text-decoration-color: rgb(120, 88, 111);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: box-shadow 0.1s ease-out;
   transform: none;
   user-select: text;
@@ -1465,7 +1467,7 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-unresolved-color, rgb(120, 88, 111));
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-unresolved-filter);
   backdrop-filter: none;
   box-shadow: rgba(0, 0, 0, 0) 0px 3px 0px 0px;
   font-family: Petrona;
@@ -1475,6 +1477,7 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   text-decoration-color: var(--link-unresolved-decoration-color);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: var(--link-unresolved-decoration-style);
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: box-shadow 0.1s ease-out;
   transform: none;
   user-select: text;
@@ -2334,7 +2337,7 @@ body body.theme-light .published-container .markdown-rendered h6 {
   line-height: var(--h6-line-height, 27px);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: normal;
+  letter-spacing: var(--h6-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 5px 0px;
@@ -2988,7 +2991,7 @@ body body.theme-light .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin-top: var(--heading-spacing);
+  margin-top: 16px;
   margin-bottom: var(--editor-line-height-rem, 0px);
   margin-left: 185.031px;
   margin-right: 185.031px;
@@ -3865,7 +3868,7 @@ body body.theme-light .page-header .page-title {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light .math-block {
-  background-color: var(--background-modifier-hover);
+  background-color: rgba(0, 0, 0, 0);
   color: rgba(0, 0, 0, 0.9);
   border-color: rgba(0, 0, 0, 0.9);
   border-width: 0px;

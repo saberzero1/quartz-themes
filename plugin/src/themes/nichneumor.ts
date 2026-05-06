@@ -307,12 +307,14 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(65, 66, 79);
+  border-right-width: 0px;
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #31333c);
   background-color: var(--tab-container-background, rgb(26, 27, 32));
   border-left-color: rgb(65, 66, 79);
+  border-left-width: 0px;
   color: rgb(221, 223, 238);
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
@@ -368,17 +370,25 @@ html[saved-theme="dark"] body p {
 }`,
     lists: `html[saved-theme="dark"] body dd {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
 html[saved-theme="dark"] body dt {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
@@ -392,9 +402,13 @@ html[saved-theme="dark"] body ul > li {
 
 html[saved-theme="dark"] body ul.overflow {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: var(--text-faint, rgb(88, 90, 107));
@@ -405,9 +419,13 @@ html[saved-theme="dark"] body blockquote {
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body table {
@@ -416,34 +434,50 @@ html[saved-theme="dark"] body table {
 
 html[saved-theme="dark"] body td {
   border-bottom-color: rgb(65, 66, 79);
+  border-bottom-width: 0px;
   border-left-color: rgb(65, 66, 79);
+  border-left-width: 0px;
   border-right-color: rgb(65, 66, 79);
+  border-right-width: 0px;
   border-top-color: rgb(65, 66, 79);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(221, 223, 238));
 }
 
 html[saved-theme="dark"] body th {
   border-bottom-color: rgb(65, 66, 79);
+  border-bottom-width: 0px;
   border-left-color: rgb(65, 66, 79);
+  border-left-width: 0px;
   border-right-color: rgb(65, 66, 79);
+  border-right-width: 0px;
   border-top-color: rgb(65, 66, 79);
+  border-top-width: 0px;
   color: var(--table-header-color, rgb(221, 223, 238));
 }`,
     code: `html[saved-theme="dark"] body code {
   background-color: var(--code-background, rgb(42, 43, 51));
   border-bottom-color: rgb(65, 66, 79);
+  border-bottom-width: 0px;
   border-left-color: rgb(65, 66, 79);
+  border-left-width: 0px;
   border-right-color: rgb(65, 66, 79);
+  border-right-width: 0px;
   border-top-color: rgb(65, 66, 79);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(221, 223, 238));
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: var(--code-background, rgb(42, 43, 51));
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -453,11 +487,15 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-bottom-color: rgb(221, 223, 238);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body figcaption {
@@ -467,67 +505,95 @@ html[saved-theme="dark"] body figcaption {
 html[saved-theme="dark"] body figure {
   --code-background: var(--ec-frm-edBg, #2a2b33);
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body img {
   border-bottom-color: rgb(221, 223, 238);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-radius: 10px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body video {
   border-bottom-color: rgb(221, 223, 238);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-radius: 10px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(42, 43, 51));
   border-bottom-color: rgb(177, 179, 194);
+  border-bottom-width: 0px;
   border-left-color: rgb(177, 179, 194);
+  border-left-width: 0px;
   border-right-color: rgb(177, 179, 194);
+  border-right-width: 0px;
   border-top-color: rgb(177, 179, 194);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(177, 179, 194));
 }
 
 html[saved-theme="dark"] body .footnotes {
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
 html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(88, 90, 107);
+  border-bottom-width: 0px;
   border-left-color: rgb(88, 90, 107);
+  border-left-width: 0px;
   border-right-color: rgb(88, 90, 107);
+  border-right-width: 0px;
   border-top-color: rgb(88, 90, 107);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
@@ -1080,9 +1146,13 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(8, 109, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(8, 109, 221);
+  border-left-width: 0px;
   border-right-color: rgb(8, 109, 221);
+  border-right-width: 0px;
   border-top-color: rgb(8, 109, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
@@ -1097,18 +1167,26 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary, 0, 191, 188);
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(0, 191, 188, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 191, 188, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(0, 191, 188, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(0, 191, 188, 0.25);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(8, 109, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(8, 109, 221);
+  border-left-width: 0px;
   border-right-color: rgb(8, 109, 221);
+  border-right-width: 0px;
   border-top-color: rgb(8, 109, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -1123,18 +1201,26 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug, 233, 49, 71);
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(233, 49, 71, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(233, 49, 71, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(233, 49, 71, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(233, 49, 71, 0.25);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(8, 109, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(8, 109, 221);
+  border-left-width: 0px;
   border-right-color: rgb(8, 109, 221);
+  border-right-width: 0px;
   border-top-color: rgb(8, 109, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -1149,18 +1235,26 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
   --callout-color: var(--callout-error, 233, 49, 71);
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(233, 49, 71, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(233, 49, 71, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(233, 49, 71, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(233, 49, 71, 0.25);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(8, 109, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(8, 109, 221);
+  border-left-width: 0px;
   border-right-color: rgb(8, 109, 221);
+  border-right-width: 0px;
   border-top-color: rgb(8, 109, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -1175,18 +1269,26 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
   --callout-color: var(--callout-example, 120, 82, 238);
   background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(120, 82, 238, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(120, 82, 238, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(120, 82, 238, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(120, 82, 238, 0.25);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(8, 109, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(8, 109, 221);
+  border-left-width: 0px;
   border-right-color: rgb(8, 109, 221);
+  border-right-width: 0px;
   border-top-color: rgb(8, 109, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -1201,18 +1303,26 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail, 233, 49, 71);
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(233, 49, 71, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(233, 49, 71, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(233, 49, 71, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(233, 49, 71, 0.25);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(8, 109, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(8, 109, 221);
+  border-left-width: 0px;
   border-right-color: rgb(8, 109, 221);
+  border-right-width: 0px;
   border-top-color: rgb(8, 109, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -1227,18 +1337,26 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
   --callout-color: var(--callout-info, 8, 109, 221);
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(8, 109, 221, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(8, 109, 221, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(8, 109, 221, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(8, 109, 221, 0.25);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(8, 109, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(8, 109, 221);
+  border-left-width: 0px;
   border-right-color: rgb(8, 109, 221);
+  border-right-width: 0px;
   border-top-color: rgb(8, 109, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -1253,18 +1371,26 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
   --callout-color: var(--callout-default, 8, 109, 221);
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(8, 109, 221, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(8, 109, 221, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(8, 109, 221, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(8, 109, 221, 0.25);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(8, 109, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(8, 109, 221);
+  border-left-width: 0px;
   border-right-color: rgb(8, 109, 221);
+  border-right-width: 0px;
   border-top-color: rgb(8, 109, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -1279,18 +1405,26 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
   --callout-color: var(--callout-question, 236, 117, 0);
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(236, 117, 0, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(236, 117, 0, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(236, 117, 0, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(236, 117, 0, 0.25);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(8, 109, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(8, 109, 221);
+  border-left-width: 0px;
   border-right-color: rgb(8, 109, 221);
+  border-right-width: 0px;
   border-top-color: rgb(8, 109, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -1309,9 +1443,13 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(8, 109, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(8, 109, 221);
+  border-left-width: 0px;
   border-right-color: rgb(8, 109, 221);
+  border-right-width: 0px;
   border-top-color: rgb(8, 109, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -1326,18 +1464,26 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
   --callout-color: var(--callout-success, 8, 185, 78);
   background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(8, 185, 78, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(8, 185, 78, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(8, 185, 78, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(8, 185, 78, 0.25);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(8, 109, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(8, 109, 221);
+  border-left-width: 0px;
   border-right-color: rgb(8, 109, 221);
+  border-right-width: 0px;
   border-top-color: rgb(8, 109, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -1352,18 +1498,26 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip, 0, 191, 188);
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(0, 191, 188, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 191, 188, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(0, 191, 188, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(0, 191, 188, 0.25);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(8, 109, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(8, 109, 221);
+  border-left-width: 0px;
   border-right-color: rgb(8, 109, 221);
+  border-right-width: 0px;
   border-top-color: rgb(8, 109, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -1378,18 +1532,26 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo, 8, 109, 221);
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(8, 109, 221, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(8, 109, 221, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(8, 109, 221, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(8, 109, 221, 0.25);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(8, 109, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(8, 109, 221);
+  border-left-width: 0px;
   border-right-color: rgb(8, 109, 221);
+  border-right-width: 0px;
   border-top-color: rgb(8, 109, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -1404,18 +1566,26 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning, 236, 117, 0);
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(236, 117, 0, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(236, 117, 0, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(236, 117, 0, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(236, 117, 0, 0.25);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgb(8, 109, 221);
+  border-bottom-width: 0px;
   border-left-color: rgb(8, 109, 221);
+  border-left-width: 0px;
   border-right-color: rgb(8, 109, 221);
+  border-right-width: 0px;
   border-top-color: rgb(8, 109, 221);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -1484,9 +1654,13 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgb(57, 59, 70);
   border-bottom-color: rgb(65, 66, 79);
+  border-bottom-width: 0px;
   border-left-color: rgb(65, 66, 79);
+  border-left-width: 0px;
   border-right-color: rgb(65, 66, 79);
+  border-right-width: 0px;
   border-top-color: rgb(65, 66, 79);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(221, 223, 238));
 }
 
@@ -1495,11 +1669,15 @@ html[saved-theme="dark"] body .search > .search-container > .search-space {
   border-bottom-color: rgb(80, 82, 98);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
   border-left-color: rgb(80, 82, 98);
+  border-left-width: 0px;
   border-right-color: rgb(80, 82, 98);
+  border-right-width: 0px;
   border-top-color: rgb(80, 82, 98);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
   box-shadow: var(--box-shadow, rgb(10, 11, 13) 4px 4px 8px 0px, rgb(42, 43, 51) -4px -4px 8px 0px);
 }
 
@@ -1515,9 +1693,13 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
@@ -1532,25 +1714,37 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
   border-bottom-color: rgb(80, 82, 98);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
   border-left-color: rgb(80, 82, 98);
+  border-left-width: 0px;
   border-right-color: rgb(80, 82, 98);
+  border-right-width: 0px;
   border-top-color: rgb(80, 82, 98);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(49, 51, 60);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
@@ -1560,9 +1754,13 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 
 html[saved-theme="dark"] body h1 {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(221, 223, 238));
   font-size: var(--h1-size, 32px);
   letter-spacing: var(--h1-letter-spacing, -0.48px);
@@ -1577,9 +1775,13 @@ html[saved-theme="dark"] body h1.article-title {
 
 html[saved-theme="dark"] body h2 {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(221, 223, 238));
   font-size: var(--h2-size, 27.2px);
   letter-spacing: var(--h2-letter-spacing, -0.2992px);
@@ -1589,21 +1791,32 @@ html[saved-theme="dark"] body h2 {
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(221, 223, 238));
   font-size: var(--inline-title-size, 32px);
   letter-spacing: -0.48px;
   line-height: var(--inline-title-line-height, 38.4px);
   margin-bottom: 16px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body h3 {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(221, 223, 238));
   font-size: var(--h3-size, 24px);
   letter-spacing: var(--h3-letter-spacing, -0.192px);
@@ -1613,9 +1826,13 @@ html[saved-theme="dark"] body h3 {
 
 html[saved-theme="dark"] body h4 {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(221, 223, 238));
   font-size: var(--h4-size, 20.8px);
   letter-spacing: var(--h4-letter-spacing, -0.104px);
@@ -1625,9 +1842,13 @@ html[saved-theme="dark"] body h4 {
 
 html[saved-theme="dark"] body h5 {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(221, 223, 238));
   font-size: var(--h5-size, 19.2px);
   letter-spacing: var(--h5-letter-spacing, -0.0384px);
@@ -1637,9 +1858,13 @@ html[saved-theme="dark"] body h5 {
 
 html[saved-theme="dark"] body h6 {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(221, 223, 238));
   font-size: var(--h6-size, 17.6px);
   line-height: var(--h6-line-height, 26.4px);
@@ -1648,15 +1873,22 @@ html[saved-theme="dark"] body h6 {
 
 html[saved-theme="dark"] body hr {
   border-bottom-color: rgb(65, 66, 79);
+  border-bottom-width: 0px;
   border-left-color: rgb(65, 66, 79);
+  border-left-width: 0px;
   border-right-color: rgb(65, 66, 79);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
   border-bottom-color: rgba(8, 109, 221, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(8, 109, 221, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(8, 109, 221, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(8, 109, 221, 0.25);
+  border-top-width: 0px;
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: var(--nav-item-color, rgb(177, 179, 194));
@@ -1686,9 +1918,13 @@ html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg 
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(177, 179, 194);
+  border-bottom-width: 0px;
   border-left-color: rgb(177, 179, 194);
+  border-left-width: 0px;
   border-right-color: rgb(177, 179, 194);
+  border-right-width: 0px;
   border-top-color: rgb(177, 179, 194);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(177, 179, 194));
 }`,
     footer: `html[saved-theme="dark"] body footer {
@@ -1698,11 +1934,13 @@ html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg 
   border-bottom-right-radius: 10px;
   border-bottom-width: 1px;
   border-left-color: rgb(65, 66, 79);
+  border-left-width: 0px;
   border-right-color: rgb(65, 66, 79);
   border-right-width: 1px;
   border-top-color: rgb(65, 66, 79);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(177, 179, 194));
 }
 
@@ -1715,9 +1953,13 @@ html[saved-theme="dark"] body footer ul li a {
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
@@ -1730,9 +1972,13 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body li.section-li > .section .meta {
@@ -1745,15 +1991,23 @@ html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
 
 html[saved-theme="dark"] body ul.section-ul {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-color: rgb(177, 179, 194);
+  border-bottom-width: 0px;
   border-left-color: rgb(177, 179, 194);
+  border-left-width: 0px;
   border-right-color: rgb(177, 179, 194);
+  border-right-width: 0px;
   border-top-color: rgb(177, 179, 194);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(177, 179, 194));
 }
 
@@ -1763,9 +2017,13 @@ html[saved-theme="dark"] body .darkmode svg {
 }`,
     breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-container {
   border-bottom-color: rgb(177, 179, 194);
+  border-bottom-width: 0px;
   border-left-color: rgb(177, 179, 194);
+  border-left-width: 0px;
   border-right-color: rgb(177, 179, 194);
+  border-right-width: 0px;
   border-top-color: rgb(177, 179, 194);
+  border-top-width: 0px;
   color: rgb(177, 179, 194);
 }
 
@@ -1801,25 +2059,37 @@ html[saved-theme="dark"] body .canvas-sidebar {
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(65, 66, 79);
+  border-bottom-width: 0px;
   border-left-color: rgb(65, 66, 79);
+  border-left-width: 0px;
   border-right-color: rgb(65, 66, 79);
+  border-right-width: 0px;
   border-top-color: rgb(65, 66, 79);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(177, 179, 194));
 }
 
 html[saved-theme="dark"] body .metadata-container .metadata-property {
   border-bottom-color: rgb(177, 179, 194);
+  border-bottom-width: 0px;
   border-left-color: rgb(177, 179, 194);
+  border-left-width: 0px;
   border-right-color: rgb(177, 179, 194);
+  border-right-width: 0px;
   border-top-color: rgb(177, 179, 194);
+  border-top-width: 0px;
   color: rgb(177, 179, 194);
 }
 
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(177, 179, 194);
+  border-bottom-width: 0px;
   border-left-color: rgb(177, 179, 194);
+  border-left-width: 0px;
   border-right-color: rgb(177, 179, 194);
+  border-right-width: 0px;
   border-top-color: rgb(177, 179, 194);
+  border-top-width: 0px;
   color: rgb(177, 179, 194);
 }
 
@@ -1854,9 +2124,13 @@ html[saved-theme="dark"] body div#quartz-root {
 
 html[saved-theme="dark"] body ol.overflow {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
   background-color: var(--background-secondary, rgb(26, 27, 32));
@@ -1873,9 +2147,13 @@ html[saved-theme="dark"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
   color: rgb(221, 223, 238);
 }
 
@@ -1885,9 +2163,13 @@ html[saved-theme="dark"] body .navigation-progress {
 
 html[saved-theme="dark"] body .page-header h2.page-title {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(221, 223, 238));
 }
 
@@ -1897,33 +2179,49 @@ html[saved-theme="dark"] body abbr {
 
 html[saved-theme="dark"] body details {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body input[type=text] {
   border-bottom-color: rgb(177, 179, 194);
+  border-bottom-width: 0px;
   border-left-color: rgb(177, 179, 194);
+  border-left-width: 0px;
   border-right-color: rgb(177, 179, 194);
+  border-right-width: 0px;
   border-top-color: rgb(177, 179, 194);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(177, 179, 194));
 }
 
 html[saved-theme="dark"] body kbd {
   background-color: var(--code-background, rgb(42, 43, 51));
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(221, 223, 238));
 }
 
 html[saved-theme="dark"] body progress {
   border-bottom-color: rgb(221, 223, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 223, 238);
+  border-left-width: 0px;
   border-right-color: rgb(221, 223, 238);
+  border-right-width: 0px;
   border-top-color: rgb(221, 223, 238);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body sub {
@@ -2221,12 +2519,14 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(193, 184, 174);
+  border-right-width: 0px;
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #cbc2b8);
   background-color: var(--tab-container-background, rgb(219, 209, 198));
   border-left-color: rgb(193, 184, 174);
+  border-left-width: 0px;
   color: rgb(37, 36, 35);
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
@@ -2282,17 +2582,25 @@ html[saved-theme="light"] body p {
 }`,
     lists: `html[saved-theme="light"] body dd {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
   color: rgb(37, 36, 35);
 }
 
 html[saved-theme="light"] body dt {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
   color: rgb(37, 36, 35);
 }
 
@@ -2306,9 +2614,13 @@ html[saved-theme="light"] body ul > li {
 
 html[saved-theme="light"] body ul.overflow {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: var(--text-faint, rgb(152, 146, 140));
@@ -2319,9 +2631,13 @@ html[saved-theme="light"] body blockquote {
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body table {
@@ -2330,34 +2646,50 @@ html[saved-theme="light"] body table {
 
 html[saved-theme="light"] body td {
   border-bottom-color: rgb(193, 184, 174);
+  border-bottom-width: 0px;
   border-left-color: rgb(193, 184, 174);
+  border-left-width: 0px;
   border-right-color: rgb(193, 184, 174);
+  border-right-width: 0px;
   border-top-color: rgb(193, 184, 174);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(37, 36, 35));
 }
 
 html[saved-theme="light"] body th {
   border-bottom-color: rgb(193, 184, 174);
+  border-bottom-width: 0px;
   border-left-color: rgb(193, 184, 174);
+  border-left-width: 0px;
   border-right-color: rgb(193, 184, 174);
+  border-right-width: 0px;
   border-top-color: rgb(193, 184, 174);
+  border-top-width: 0px;
   color: var(--table-header-color, rgb(37, 36, 35));
 }`,
     code: `html[saved-theme="light"] body code {
   background-color: var(--code-background, rgb(209, 199, 189));
   border-bottom-color: rgb(193, 184, 174);
+  border-bottom-width: 0px;
   border-left-color: rgb(193, 184, 174);
+  border-left-width: 0px;
   border-right-color: rgb(193, 184, 174);
+  border-right-width: 0px;
   border-top-color: rgb(193, 184, 174);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(37, 36, 35));
 }
 
 html[saved-theme="light"] body pre:has(> code) {
   background-color: var(--code-background, rgb(209, 199, 189));
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -2367,11 +2699,15 @@ html[saved-theme="light"] body pre:has(> code) {
   border-bottom-color: rgb(37, 36, 35);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body figcaption {
@@ -2381,67 +2717,95 @@ html[saved-theme="light"] body figcaption {
 html[saved-theme="light"] body figure {
   --code-background: var(--ec-frm-edBg, #d1c7bd);
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body img {
   border-bottom-color: rgb(37, 36, 35);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-radius: 10px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body video {
   border-bottom-color: rgb(37, 36, 35);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-radius: 10px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(209, 199, 189));
   border-bottom-color: rgb(84, 80, 77);
+  border-bottom-width: 0px;
   border-left-color: rgb(84, 80, 77);
+  border-left-width: 0px;
   border-right-color: rgb(84, 80, 77);
+  border-right-width: 0px;
   border-top-color: rgb(84, 80, 77);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(84, 80, 77));
 }
 
 html[saved-theme="light"] body .footnotes {
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
   color: rgb(37, 36, 35);
 }
 
 html[saved-theme="light"] body .transclude {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
   color: rgb(37, 36, 35);
 }
 
 html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
   color: rgb(37, 36, 35);
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(152, 146, 140);
+  border-bottom-width: 0px;
   border-left-color: rgb(152, 146, 140);
+  border-left-width: 0px;
   border-right-color: rgb(152, 146, 140);
+  border-right-width: 0px;
   border-top-color: rgb(152, 146, 140);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="#"] {
@@ -3226,9 +3590,13 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(219, 209, 198);
   border-bottom-color: rgb(193, 184, 174);
+  border-bottom-width: 0px;
   border-left-color: rgb(193, 184, 174);
+  border-left-width: 0px;
   border-right-color: rgb(193, 184, 174);
+  border-right-width: 0px;
   border-top-color: rgb(193, 184, 174);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(37, 36, 35));
 }
 
@@ -3237,11 +3605,15 @@ html[saved-theme="light"] body .search > .search-container > .search-space {
   border-bottom-color: rgb(182, 174, 165);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
   border-left-color: rgb(182, 174, 165);
+  border-left-width: 0px;
   border-right-color: rgb(182, 174, 165);
+  border-right-width: 0px;
   border-top-color: rgb(182, 174, 165);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
   box-shadow: var(--box-shadow, rgb(186, 178, 168) 4px 4px 8px 0px, rgb(252, 240, 228) -4px -4px 8px 0px);
 }
 
@@ -3257,9 +3629,13 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-description {
@@ -3274,25 +3650,37 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
   border-bottom-color: rgb(182, 174, 165);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
   border-left-color: rgb(182, 174, 165);
+  border-left-width: 0px;
   border-right-color: rgb(182, 174, 165);
+  border-right-width: 0px;
   border-top-color: rgb(182, 174, 165);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(203, 194, 184);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
   color: rgb(37, 36, 35);
 }
 
@@ -3302,9 +3690,13 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 
 html[saved-theme="light"] body h1 {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(37, 36, 35));
   font-size: var(--h1-size, 32px);
   letter-spacing: var(--h1-letter-spacing, -0.48px);
@@ -3319,9 +3711,13 @@ html[saved-theme="light"] body h1.article-title {
 
 html[saved-theme="light"] body h2 {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(37, 36, 35));
   font-size: var(--h2-size, 27.2px);
   letter-spacing: var(--h2-letter-spacing, -0.2992px);
@@ -3331,21 +3727,32 @@ html[saved-theme="light"] body h2 {
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(37, 36, 35));
   font-size: var(--inline-title-size, 32px);
   letter-spacing: -0.48px;
   line-height: var(--inline-title-line-height, 38.4px);
   margin-bottom: 16px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body h3 {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(37, 36, 35));
   font-size: var(--h3-size, 24px);
   letter-spacing: var(--h3-letter-spacing, -0.192px);
@@ -3355,9 +3762,13 @@ html[saved-theme="light"] body h3 {
 
 html[saved-theme="light"] body h4 {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(37, 36, 35));
   font-size: var(--h4-size, 20.8px);
   letter-spacing: var(--h4-letter-spacing, -0.104px);
@@ -3367,9 +3778,13 @@ html[saved-theme="light"] body h4 {
 
 html[saved-theme="light"] body h5 {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(37, 36, 35));
   font-size: var(--h5-size, 19.2px);
   letter-spacing: var(--h5-letter-spacing, -0.0384px);
@@ -3379,9 +3794,13 @@ html[saved-theme="light"] body h5 {
 
 html[saved-theme="light"] body h6 {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(37, 36, 35));
   font-size: var(--h6-size, 17.6px);
   line-height: var(--h6-line-height, 26.4px);
@@ -3390,8 +3809,11 @@ html[saved-theme="light"] body h6 {
 
 html[saved-theme="light"] body hr {
   border-bottom-color: rgb(193, 184, 174);
+  border-bottom-width: 0px;
   border-left-color: rgb(193, 184, 174);
+  border-left-width: 0px;
   border-right-color: rgb(193, 184, 174);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
@@ -3424,9 +3846,13 @@ html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(84, 80, 77);
+  border-bottom-width: 0px;
   border-left-color: rgb(84, 80, 77);
+  border-left-width: 0px;
   border-right-color: rgb(84, 80, 77);
+  border-right-width: 0px;
   border-top-color: rgb(84, 80, 77);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(84, 80, 77));
 }`,
     footer: `html[saved-theme="light"] body footer {
@@ -3436,11 +3862,13 @@ html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg
   border-bottom-right-radius: 10px;
   border-bottom-width: 1px;
   border-left-color: rgb(193, 184, 174);
+  border-left-width: 0px;
   border-right-color: rgb(193, 184, 174);
   border-right-width: 1px;
   border-top-color: rgb(193, 184, 174);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(84, 80, 77));
 }
 
@@ -3453,9 +3881,13 @@ html[saved-theme="light"] body footer ul li a {
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
   color: rgb(37, 36, 35);
 }
 
@@ -3468,9 +3900,13 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body li.section-li > .section .meta {
@@ -3483,15 +3919,23 @@ html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
 
 html[saved-theme="light"] body ul.section-ul {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
   border-bottom-color: rgb(84, 80, 77);
+  border-bottom-width: 0px;
   border-left-color: rgb(84, 80, 77);
+  border-left-width: 0px;
   border-right-color: rgb(84, 80, 77);
+  border-right-width: 0px;
   border-top-color: rgb(84, 80, 77);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(84, 80, 77));
 }
 
@@ -3501,9 +3945,13 @@ html[saved-theme="light"] body .darkmode svg {
 }`,
     breadcrumbs: `html[saved-theme="light"] body .breadcrumb-container {
   border-bottom-color: rgb(84, 80, 77);
+  border-bottom-width: 0px;
   border-left-color: rgb(84, 80, 77);
+  border-left-width: 0px;
   border-right-color: rgb(84, 80, 77);
+  border-right-width: 0px;
   border-top-color: rgb(84, 80, 77);
+  border-top-width: 0px;
   color: rgb(84, 80, 77);
 }
 
@@ -3539,25 +3987,37 @@ html[saved-theme="light"] body .canvas-sidebar {
 }`,
     properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgb(193, 184, 174);
+  border-bottom-width: 0px;
   border-left-color: rgb(193, 184, 174);
+  border-left-width: 0px;
   border-right-color: rgb(193, 184, 174);
+  border-right-width: 0px;
   border-top-color: rgb(193, 184, 174);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(84, 80, 77));
 }
 
 html[saved-theme="light"] body .metadata-container .metadata-property {
   border-bottom-color: rgb(84, 80, 77);
+  border-bottom-width: 0px;
   border-left-color: rgb(84, 80, 77);
+  border-left-width: 0px;
   border-right-color: rgb(84, 80, 77);
+  border-right-width: 0px;
   border-top-color: rgb(84, 80, 77);
+  border-top-width: 0px;
   color: rgb(84, 80, 77);
 }
 
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(84, 80, 77);
+  border-bottom-width: 0px;
   border-left-color: rgb(84, 80, 77);
+  border-left-width: 0px;
   border-right-color: rgb(84, 80, 77);
+  border-right-width: 0px;
   border-top-color: rgb(84, 80, 77);
+  border-top-width: 0px;
   color: rgb(84, 80, 77);
 }
 
@@ -3592,9 +4052,13 @@ html[saved-theme="light"] body div#quartz-root {
 
 html[saved-theme="light"] body ol.overflow {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
   background-color: var(--background-secondary, rgb(219, 209, 198));
@@ -3611,9 +4075,13 @@ html[saved-theme="light"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="light"] body .katex-display {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
   color: rgb(37, 36, 35);
 }
 
@@ -3623,9 +4091,13 @@ html[saved-theme="light"] body .navigation-progress {
 
 html[saved-theme="light"] body .page-header h2.page-title {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(37, 36, 35));
 }
 
@@ -3635,33 +4107,49 @@ html[saved-theme="light"] body abbr {
 
 html[saved-theme="light"] body details {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body input[type=text] {
   border-bottom-color: rgb(84, 80, 77);
+  border-bottom-width: 0px;
   border-left-color: rgb(84, 80, 77);
+  border-left-width: 0px;
   border-right-color: rgb(84, 80, 77);
+  border-right-width: 0px;
   border-top-color: rgb(84, 80, 77);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(84, 80, 77));
 }
 
 html[saved-theme="light"] body kbd {
   background-color: var(--code-background, rgb(209, 199, 189));
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(37, 36, 35));
 }
 
 html[saved-theme="light"] body progress {
   border-bottom-color: rgb(37, 36, 35);
+  border-bottom-width: 0px;
   border-left-color: rgb(37, 36, 35);
+  border-left-width: 0px;
   border-right-color: rgb(37, 36, 35);
+  border-right-width: 0px;
   border-top-color: rgb(37, 36, 35);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body sub {

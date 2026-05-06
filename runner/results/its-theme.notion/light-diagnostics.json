@@ -2,16 +2,10 @@
   "conflicts": [],
   "brokenBridges": [
     {
-      "property": "--sidebar-tab-padding",
-      "references": "--size-4-4",
-      "selector": ".page > div#quartz-body div.sidebar.right",
-      "aspect": "base"
-    },
-    {
-      "property": "--tab-text-color-hover",
-      "references": "--text-on-accent",
-      "selector": ".page > div#quartz-body div.sidebar.right",
-      "aspect": "base"
+      "property": "--callout-color",
+      "references": "--color-accent",
+      "selector": ".callout[data-callout=\"quote\"]",
+      "aspect": "callouts"
     },
     {
       "property": "--callout-content-background",

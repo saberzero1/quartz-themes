@@ -42,14 +42,20 @@ html[saved-theme="dark"] body html {
   text-decoration-color: rgb(0, 0, 0);
 }`,
     tables: `html[saved-theme="dark"] body table {
+  margin-bottom: 0px;
   margin-left: 218.391px;
   margin-right: 218.391px;
+  margin-top: 0px;
 }`,
     code: `html[saved-theme="dark"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -59,11 +65,15 @@ html[saved-theme="dark"] body html {
   border-bottom-color: rgb(179, 179, 179);
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
+  border-bottom-width: 0px;
   border-left-color: rgb(179, 179, 179);
+  border-left-width: 0px;
   border-right-color: rgb(179, 179, 179);
+  border-right-width: 0px;
   border-top-color: rgb(179, 179, 179);
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
@@ -836,14 +846,20 @@ html[saved-theme="light"] body html {
   text-decoration-color: rgb(0, 0, 0);
 }`,
     tables: `html[saved-theme="light"] body table {
+  margin-bottom: 0px;
   margin-left: 218.391px;
   margin-right: 218.391px;
+  margin-top: 0px;
 }`,
     code: `html[saved-theme="light"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -853,11 +869,15 @@ html[saved-theme="light"] body html {
   border-bottom-color: rgb(92, 92, 92);
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
+  border-bottom-width: 0px;
   border-left-color: rgb(92, 92, 92);
+  border-left-width: 0px;
   border-right-color: rgb(92, 92, 92);
+  border-right-width: 0px;
   border-top-color: rgb(92, 92, 92);
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {

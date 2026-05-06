@@ -532,9 +532,11 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
     footer: `html body footer {
   background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(179, 179, 179);
+  border-bottom-width: 0px;
   border-left-color: rgb(179, 179, 179);
   border-left-width: 0px;
   border-right-color: rgb(179, 179, 179);
+  border-right-width: 0px;
   border-top-color: rgb(179, 179, 179);
   border-top-width: 0px;
 }`,

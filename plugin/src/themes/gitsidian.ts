@@ -95,40 +95,64 @@ html[saved-theme="dark"] body a.internal-link.broken {
 }`,
     lists: `html[saved-theme="dark"] body dd {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: rgb(36, 41, 46);
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   margin-bottom: 16px;
   margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body dl {
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 0px;
 }
 
 html[saved-theme="dark"] body dt {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: rgb(36, 41, 46);
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 600;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 16px;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(36, 41, 46);
+  margin-bottom: 0px;
   margin-left: 26.6953px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(36, 41, 46);
+  margin-bottom: 0px;
   margin-left: 26.6953px;
+  margin-right: 0px;
+  margin-top: 0px;
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: var(--text-faint, rgb(3, 102, 214));
@@ -141,6 +165,9 @@ html[saved-theme="dark"] body blockquote {
     tables: `html[saved-theme="dark"] body table {
   color: rgb(36, 41, 46);
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
 }
 
@@ -150,9 +177,13 @@ html[saved-theme="dark"] body tbody tr:nth-child(even) {
 
 html[saved-theme="dark"] body td {
   border-bottom-color: rgb(223, 226, 229);
+  border-bottom-width: 0px;
   border-left-color: rgb(223, 226, 229);
+  border-left-width: 0px;
   border-right-color: rgb(223, 226, 229);
+  border-right-width: 0px;
   border-top-color: rgb(223, 226, 229);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(36, 41, 46));
   padding-bottom: 6px;
   padding-left: 13px;
@@ -202,14 +233,18 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   padding-bottom: 16px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 16px;
 }`,
     embeds: `html[saved-theme="dark"] body .footnotes {
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: rgb(36, 41, 46);
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   margin-bottom: 4px;
+  margin-left: 0px;
   margin-right: 6.88px;
   margin-top: 1.28px;
 }
@@ -928,9 +963,13 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
@@ -943,9 +982,13 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: rgb(36, 41, 46);
 }
 
@@ -958,8 +1001,11 @@ html[saved-theme="dark"] body h1 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(36, 41, 46));
   font-family: var(--h1-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji");
   font-size: var(--h1-size, 32px);
@@ -967,6 +1013,9 @@ html[saved-theme="dark"] body h1 {
   letter-spacing: var(--h1-letter-spacing, -0.48px);
   line-height: var(--h1-line-height, 40px);
   padding-bottom: 9.6px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -978,8 +1027,11 @@ html[saved-theme="dark"] body h2 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(36, 41, 46));
   font-family: var(--h2-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji");
   font-size: var(--h2-size, 24px);
@@ -987,68 +1039,103 @@ html[saved-theme="dark"] body h2 {
   letter-spacing: var(--h2-letter-spacing, -0.264px);
   line-height: var(--h2-line-height, 30px);
   padding-bottom: 7.2px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(36, 41, 46));
   font-family: var(--inline-title-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji");
 }
 
 html[saved-theme="dark"] body h3 {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(36, 41, 46));
   font-family: var(--h3-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji");
   font-size: var(--h3-size, 20px);
   font-weight: var(--font-weight, 600);
   letter-spacing: var(--h3-letter-spacing, -0.16px);
   line-height: var(--h3-line-height, 25px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 24px);
 }
 
 html[saved-theme="dark"] body h4 {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(36, 41, 46));
   font-family: var(--h4-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji");
   font-size: var(--h4-size, 16px);
   font-weight: var(--font-weight, 600);
   letter-spacing: var(--h4-letter-spacing, -0.08px);
   line-height: var(--h4-line-height, 20px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 24px);
 }
 
 html[saved-theme="dark"] body h5 {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(36, 41, 46));
   font-family: var(--h5-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji");
   font-size: var(--h5-size, 14px);
   font-weight: var(--font-weight, 600);
   letter-spacing: var(--h5-letter-spacing, -0.028px);
   line-height: var(--h5-line-height, 17.5px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 24px);
 }
 
 html[saved-theme="dark"] body h6 {
   border-bottom-color: rgb(106, 115, 125);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 115, 125);
+  border-left-width: 0px;
   border-right-color: rgb(106, 115, 125);
+  border-right-width: 0px;
   border-top-color: rgb(106, 115, 125);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(106, 115, 125));
   font-family: var(--h6-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji");
   font-size: var(--h6-size, 13.6px);
   line-height: var(--h6-line-height, 17px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 24px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
@@ -1078,9 +1165,13 @@ html[saved-theme="dark"] body .metadata-properties {
 
 html[saved-theme="dark"] body details {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body kbd {
@@ -1229,40 +1320,64 @@ html[saved-theme="light"] body a.internal-link.broken {
 }`,
     lists: `html[saved-theme="light"] body dd {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: rgb(36, 41, 46);
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   margin-bottom: 16px;
   margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body dl {
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 0px;
 }
 
 html[saved-theme="light"] body dt {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: rgb(36, 41, 46);
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 600;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 16px;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(36, 41, 46);
+  margin-bottom: 0px;
   margin-left: 26.6953px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(36, 41, 46);
+  margin-bottom: 0px;
   margin-left: 26.6953px;
+  margin-right: 0px;
+  margin-top: 0px;
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: var(--text-faint, rgb(3, 102, 214));
@@ -1275,6 +1390,9 @@ html[saved-theme="light"] body blockquote {
     tables: `html[saved-theme="light"] body table {
   color: rgb(36, 41, 46);
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
 }
 
@@ -1284,9 +1402,13 @@ html[saved-theme="light"] body tbody tr:nth-child(even) {
 
 html[saved-theme="light"] body td {
   border-bottom-color: rgb(223, 226, 229);
+  border-bottom-width: 0px;
   border-left-color: rgb(223, 226, 229);
+  border-left-width: 0px;
   border-right-color: rgb(223, 226, 229);
+  border-right-width: 0px;
   border-top-color: rgb(223, 226, 229);
+  border-top-width: 0px;
   color: var(--table-text-color, rgb(36, 41, 46));
   padding-bottom: 6px;
   padding-left: 13px;
@@ -1336,14 +1458,18 @@ html[saved-theme="light"] body pre:has(> code) {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   padding-bottom: 16px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 16px;
 }`,
     embeds: `html[saved-theme="light"] body .footnotes {
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: rgb(36, 41, 46);
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   margin-bottom: 4px;
+  margin-left: 0px;
   margin-right: 6.88px;
   margin-top: 1.28px;
 }
@@ -2062,9 +2188,13 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-description {
@@ -2077,9 +2207,13 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: rgb(36, 41, 46);
 }
 
@@ -2092,8 +2226,11 @@ html[saved-theme="light"] body h1 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(36, 41, 46));
   font-family: var(--h1-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji");
   font-size: var(--h1-size, 32px);
@@ -2101,6 +2238,9 @@ html[saved-theme="light"] body h1 {
   letter-spacing: var(--h1-letter-spacing, -0.48px);
   line-height: var(--h1-line-height, 40px);
   padding-bottom: 9.6px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -2112,8 +2252,11 @@ html[saved-theme="light"] body h2 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(36, 41, 46));
   font-family: var(--h2-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji");
   font-size: var(--h2-size, 24px);
@@ -2121,68 +2264,103 @@ html[saved-theme="light"] body h2 {
   letter-spacing: var(--h2-letter-spacing, -0.264px);
   line-height: var(--h2-line-height, 30px);
   padding-bottom: 7.2px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(36, 41, 46));
   font-family: var(--inline-title-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji");
 }
 
 html[saved-theme="light"] body h3 {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(36, 41, 46));
   font-family: var(--h3-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji");
   font-size: var(--h3-size, 20px);
   font-weight: var(--font-weight, 600);
   letter-spacing: var(--h3-letter-spacing, -0.16px);
   line-height: var(--h3-line-height, 25px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 24px);
 }
 
 html[saved-theme="light"] body h4 {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(36, 41, 46));
   font-family: var(--h4-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji");
   font-size: var(--h4-size, 16px);
   font-weight: var(--font-weight, 600);
   letter-spacing: var(--h4-letter-spacing, -0.08px);
   line-height: var(--h4-line-height, 20px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 24px);
 }
 
 html[saved-theme="light"] body h5 {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(36, 41, 46));
   font-family: var(--h5-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji");
   font-size: var(--h5-size, 14px);
   font-weight: var(--font-weight, 600);
   letter-spacing: var(--h5-letter-spacing, -0.028px);
   line-height: var(--h5-line-height, 17.5px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 24px);
 }
 
 html[saved-theme="light"] body h6 {
   border-bottom-color: rgb(106, 115, 125);
+  border-bottom-width: 0px;
   border-left-color: rgb(106, 115, 125);
+  border-left-width: 0px;
   border-right-color: rgb(106, 115, 125);
+  border-right-width: 0px;
   border-top-color: rgb(106, 115, 125);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(106, 115, 125));
   font-family: var(--h6-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji");
   font-size: var(--h6-size, 13.6px);
   line-height: var(--h6-line-height, 17px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 24px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
@@ -2212,9 +2390,13 @@ html[saved-theme="light"] body .metadata-properties {
 
 html[saved-theme="light"] body details {
   border-bottom-color: rgb(36, 41, 46);
+  border-bottom-width: 0px;
   border-left-color: rgb(36, 41, 46);
+  border-left-width: 0px;
   border-right-color: rgb(36, 41, 46);
+  border-right-width: 0px;
   border-top-color: rgb(36, 41, 46);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body kbd {

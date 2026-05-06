@@ -376,6 +376,7 @@ html body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, rgba(0, 0, 0, 0.03));
   background-color: var(--background-primary, rgb(244, 226, 205));
   border-left-color: rgba(0, 0, 0, 0.2);
+  border-left-width: 0px;
   color: rgba(0, 0, 0, 0.9);
 }`,
     typography: `html body .markdown-rendered p > b, html b {
@@ -482,9 +483,13 @@ html body li.task-list-item[data-task="_"] {
 }`,
     lists: `html body dd {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.9);
   font-family: Petrona;
   font-size: 18px;
@@ -492,14 +497,20 @@ html body li.task-list-item[data-task="_"] {
 
 html body dl {
   margin-bottom: 18px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 18px;
 }
 
 html body dt {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.9);
   font-family: Petrona;
   font-size: 18px;
@@ -507,23 +518,37 @@ html body dt {
 
 html body ol > li {
   color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 0px;
   margin-left: 27px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.35px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.35px);
 }
 
 html body ul > li {
   color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 0px;
   margin-left: 27px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.35px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.35px);
 }
 
 html body ul.overflow {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--text-faint, rgba(0, 0, 0, 0.3));
@@ -536,13 +561,19 @@ html body blockquote {
   font-style: var(--blockquote-font-style, italic);
   line-height: 21.6px;
   padding-bottom: 11px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 11px;
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
 }
 
 html body table {
@@ -563,16 +594,19 @@ html body table {
   margin-bottom: var(--editor-line-height-rem, 0px);
   margin-left: 185.031px;
   margin-right: 185.031px;
+  margin-top: 0px;
   text-align: justify;
 }
 
 html body td {
   border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
   border-left-width: var(--table-column-first-border-width, 0px);
   border-right-color: rgba(0, 0, 0, 0.9);
   border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.2);
+  border-top-width: 0px;
   color: var(--table-text-color, rgba(0, 0, 0, 0.9));
   padding-bottom: 10px;
   padding-left: 15px;
@@ -604,27 +638,39 @@ html body th {
 
 html body thead {
   border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.2);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.2);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.2);
+  border-top-width: 0px;
 }
 
 html body tr {
   border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.2);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.2);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.2);
+  border-top-width: 0px;
 }`,
     code: `html body code {
   background-color: var(--code-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgba(0, 0, 0, 0.5);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.5);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.5);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.5);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--ec-codeFg, rgba(0, 0, 0, 0.5));
   font-family: var(--ec-codeFontFml, "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
   padding-bottom: 12px;
@@ -636,9 +682,13 @@ html body tr {
 html body pre:has(> code) {
   background-color: var(--code-background, rgba(0, 0, 0, 0.03));
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -646,9 +696,13 @@ html body pre:has(> code) {
 }`,
     images: `html body audio {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
 }
 
 html body figcaption {
@@ -660,56 +714,81 @@ html body figcaption {
 html body figure {
   --code-background: var(--ec-frm-edBg, rgba(0, 0, 0, 0.03));
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
 }
 
 html body img {
   border-bottom-color: rgba(0, 0, 0, 0.9);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-radius: 4px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  border-top-width: 0px;
 }
 
 html body video {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
 }`,
     embeds: `html body .file-embed {
   background-color: var(--background-primary-alt, rgba(0, 0, 0, 0.03));
   border-bottom-color: rgba(0, 0, 0, 0.5);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.5);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.5);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.5);
+  border-top-width: 0px;
   color: var(--text-muted, rgba(0, 0, 0, 0.5));
 }
 
 html body .footnotes {
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.9);
 }
 
 html body .transclude {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgb(140, 108, 145);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.9);
 }
 
 html body .transclude-inner {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.9);
 }`,
     checkboxes: `html body html {
@@ -797,10 +876,17 @@ html body .transclude-inner {
 
 html body input[type=checkbox] {
   border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.4);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.4);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.4);
+  border-top-width: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
   margin-right: 6px;
+  margin-top: 0px;
 }
 
 html body li.task-list-item[data-task="#"] {
@@ -1431,9 +1517,13 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
     callouts: `html body .callout .callout-title {
   --callout-color: 28, 129, 176;
   border-bottom-color: rgb(28, 129, 176);
+  border-bottom-width: 0px;
   border-left-color: rgb(28, 129, 176);
+  border-left-width: 0px;
   border-right-color: rgb(28, 129, 176);
+  border-right-width: 0px;
   border-top-color: rgb(28, 129, 176);
+  border-top-width: 0px;
 }
 
 html body .callout .callout-title > .callout-title-inner > p {
@@ -1452,9 +1542,13 @@ html body .callout[data-callout="abstract"] {
 html body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 28, 129, 176;
   border-bottom-color: rgb(28, 129, 176);
+  border-bottom-width: 0px;
   border-left-color: rgb(28, 129, 176);
+  border-left-width: 0px;
   border-right-color: rgb(28, 129, 176);
+  border-right-width: 0px;
   border-top-color: rgb(28, 129, 176);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -1469,18 +1563,26 @@ html body .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug, 175, 62, 77);
   background: rgba(175, 62, 77, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(175, 62, 77, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(175, 62, 77, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(175, 62, 77, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(175, 62, 77, 0.25);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.9);
 }
 
 html body .callout[data-callout="bug"] .callout-title {
   --callout-color: 28, 129, 176;
   border-bottom-color: rgb(28, 129, 176);
+  border-bottom-width: 0px;
   border-left-color: rgb(28, 129, 176);
+  border-left-width: 0px;
   border-right-color: rgb(28, 129, 176);
+  border-right-width: 0px;
   border-top-color: rgb(28, 129, 176);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -1495,18 +1597,26 @@ html body .callout[data-callout="danger"] {
   --callout-color: var(--callout-error, 175, 62, 77);
   background: rgba(175, 62, 77, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(175, 62, 77, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(175, 62, 77, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(175, 62, 77, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(175, 62, 77, 0.25);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.9);
 }
 
 html body .callout[data-callout="danger"] .callout-title {
   --callout-color: 28, 129, 176;
   border-bottom-color: rgb(28, 129, 176);
+  border-bottom-width: 0px;
   border-left-color: rgb(28, 129, 176);
+  border-left-width: 0px;
   border-right-color: rgb(28, 129, 176);
+  border-right-width: 0px;
   border-top-color: rgb(28, 129, 176);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -1521,18 +1631,26 @@ html body .callout[data-callout="example"] {
   --callout-color: var(--callout-example, 140, 108, 145);
   background: rgba(140, 108, 145, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(140, 108, 145, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(140, 108, 145, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(140, 108, 145, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(140, 108, 145, 0.25);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.9);
 }
 
 html body .callout[data-callout="example"] .callout-title {
   --callout-color: 28, 129, 176;
   border-bottom-color: rgb(28, 129, 176);
+  border-bottom-width: 0px;
   border-left-color: rgb(28, 129, 176);
+  border-left-width: 0px;
   border-right-color: rgb(28, 129, 176);
+  border-right-width: 0px;
   border-top-color: rgb(28, 129, 176);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -1547,18 +1665,26 @@ html body .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail, 175, 62, 77);
   background: rgba(175, 62, 77, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(175, 62, 77, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(175, 62, 77, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(175, 62, 77, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(175, 62, 77, 0.25);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.9);
 }
 
 html body .callout[data-callout="failure"] .callout-title {
   --callout-color: 28, 129, 176;
   border-bottom-color: rgb(28, 129, 176);
+  border-bottom-width: 0px;
   border-left-color: rgb(28, 129, 176);
+  border-left-width: 0px;
   border-right-color: rgb(28, 129, 176);
+  border-right-width: 0px;
   border-top-color: rgb(28, 129, 176);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -1573,18 +1699,26 @@ html body .callout[data-callout="info"] {
   --callout-color: var(--callout-info, 28, 129, 176);
   background: rgba(28, 129, 176, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(28, 129, 176, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(28, 129, 176, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(28, 129, 176, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(28, 129, 176, 0.25);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.9);
 }
 
 html body .callout[data-callout="info"] .callout-title {
   --callout-color: 28, 129, 176;
   border-bottom-color: rgb(28, 129, 176);
+  border-bottom-width: 0px;
   border-left-color: rgb(28, 129, 176);
+  border-left-width: 0px;
   border-right-color: rgb(28, 129, 176);
+  border-right-width: 0px;
   border-top-color: rgb(28, 129, 176);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -1599,18 +1733,26 @@ html body .callout[data-callout="note"] {
   --callout-color: var(--callout-default, 28, 129, 176);
   background: rgba(28, 129, 176, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(28, 129, 176, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(28, 129, 176, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(28, 129, 176, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(28, 129, 176, 0.25);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.9);
 }
 
 html body .callout[data-callout="note"] .callout-title {
   --callout-color: 28, 129, 176;
   border-bottom-color: rgb(28, 129, 176);
+  border-bottom-width: 0px;
   border-left-color: rgb(28, 129, 176);
+  border-left-width: 0px;
   border-right-color: rgb(28, 129, 176);
+  border-right-width: 0px;
   border-top-color: rgb(28, 129, 176);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -1629,9 +1771,13 @@ html body .callout[data-callout="question"] {
 html body .callout[data-callout="question"] .callout-title {
   --callout-color: 28, 129, 176;
   border-bottom-color: rgb(28, 129, 176);
+  border-bottom-width: 0px;
   border-left-color: rgb(28, 129, 176);
+  border-left-width: 0px;
   border-right-color: rgb(28, 129, 176);
+  border-right-width: 0px;
   border-top-color: rgb(28, 129, 176);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -1650,9 +1796,13 @@ html body .callout[data-callout="quote"] {
 html body .callout[data-callout="quote"] .callout-title {
   --callout-color: 28, 129, 176;
   border-bottom-color: rgb(28, 129, 176);
+  border-bottom-width: 0px;
   border-left-color: rgb(28, 129, 176);
+  border-left-width: 0px;
   border-right-color: rgb(28, 129, 176);
+  border-right-width: 0px;
   border-top-color: rgb(28, 129, 176);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -1667,18 +1817,26 @@ html body .callout[data-callout="success"] {
   --callout-color: var(--callout-success, 80, 193, 178);
   background: rgba(80, 193, 178, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(80, 193, 178, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(80, 193, 178, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(80, 193, 178, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(80, 193, 178, 0.25);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.9);
 }
 
 html body .callout[data-callout="success"] .callout-title {
   --callout-color: 28, 129, 176;
   border-bottom-color: rgb(28, 129, 176);
+  border-bottom-width: 0px;
   border-left-color: rgb(28, 129, 176);
+  border-left-width: 0px;
   border-right-color: rgb(28, 129, 176);
+  border-right-width: 0px;
   border-top-color: rgb(28, 129, 176);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -1697,9 +1855,13 @@ html body .callout[data-callout="tip"] {
 html body .callout[data-callout="tip"] .callout-title {
   --callout-color: 28, 129, 176;
   border-bottom-color: rgb(28, 129, 176);
+  border-bottom-width: 0px;
   border-left-color: rgb(28, 129, 176);
+  border-left-width: 0px;
   border-right-color: rgb(28, 129, 176);
+  border-right-width: 0px;
   border-top-color: rgb(28, 129, 176);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -1714,18 +1876,26 @@ html body .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo, 28, 129, 176);
   background: rgba(28, 129, 176, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(28, 129, 176, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(28, 129, 176, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(28, 129, 176, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(28, 129, 176, 0.25);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.9);
 }
 
 html body .callout[data-callout="todo"] .callout-title {
   --callout-color: 28, 129, 176;
   border-bottom-color: rgb(28, 129, 176);
+  border-bottom-width: 0px;
   border-left-color: rgb(28, 129, 176);
+  border-left-width: 0px;
   border-right-color: rgb(28, 129, 176);
+  border-right-width: 0px;
   border-top-color: rgb(28, 129, 176);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -1744,9 +1914,13 @@ html body .callout[data-callout="warning"] {
 html body .callout[data-callout="warning"] .callout-title {
   --callout-color: 28, 129, 176;
   border-bottom-color: rgb(28, 129, 176);
+  border-bottom-width: 0px;
   border-left-color: rgb(28, 129, 176);
+  border-left-width: 0px;
   border-right-color: rgb(28, 129, 176);
+  border-right-width: 0px;
   border-top-color: rgb(28, 129, 176);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -1817,11 +1991,15 @@ html body .callout[data-callout="warning"] {
   border-bottom-color: rgba(0, 0, 0, 0.1);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.1);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.1);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.1);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: var(--text-normal, rgba(0, 0, 0, 0.9));
   font-family: var(--text, Quicksand);
 }
@@ -1844,9 +2022,13 @@ html body .search > .search-container > .search-space > .search-layout > .result
 
 html body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-description {
@@ -1865,18 +2047,25 @@ html body .search > .search-container > .search-space > input {
   border-bottom-right-radius: 8px;
   border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.1);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.1);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.1);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
   background-color: var(--shade-20, rgba(0, 0, 0, 0.2));
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.9);
 }
 
@@ -1910,8 +2099,11 @@ html body h1 {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
   color: var(--h1-color, rgba(0, 0, 0, 0.9));
   font-family: var(--h1-font, Petrona);
   font-size: var(--h1-size, 29.124px);
@@ -1919,8 +2111,12 @@ html body h1 {
   letter-spacing: var(--h1-letter-spacing, -0.43686px);
   line-height: var(--h1-line-height, 34.9488px);
   margin-bottom: calc(var(--h2-margin-bottom)*var(--editor-line-height-small-rem));
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: calc(var(--h2-margin-top)*var(--editor-line-height-small-rem));
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 15px;
 }
 
@@ -1933,9 +2129,13 @@ html body h1.article-title {
 html body h2 {
   --font-weight: var(--h2-weight, 500);
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
   color: var(--h2-color, rgba(0, 0, 0, 0.9));
   font-family: var(--h2-font, Petrona);
   font-size: var(--h2-size, 26.316px);
@@ -1943,16 +2143,24 @@ html body h2 {
   letter-spacing: var(--h2-letter-spacing, -0.289476px);
   line-height: var(--h2-line-height, 31.5792px);
   margin-bottom: calc(var(--h2-margin-bottom)*var(--editor-line-height-small-rem));
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: calc(var(--h2-margin-top)*var(--editor-line-height-small-rem));
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 5px;
 }
 
 html body h2.page-title, html h2.page-title a {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgba(0, 0, 0, 0.9));
   font-family: var(--inline-title-font, Petrona);
   font-size: var(--inline-title-size, 29.124px);
@@ -1960,14 +2168,21 @@ html body h2.page-title, html h2.page-title a {
   letter-spacing: -0.43686px;
   line-height: var(--inline-title-line-height, 34.9488px);
   margin-bottom: 14.562px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body h3 {
   --font-weight: var(--h3-weight, 500);
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
   color: var(--h3-color, rgba(0, 0, 0, 0.9));
   font-family: var(--h3-font, Petrona);
   font-size: var(--h3-size, 23.724px);
@@ -1976,17 +2191,24 @@ html body h3 {
   line-height: var(--h3-line-height, 30.8412px);
   margin-bottom: calc(var(--h3-margin-bottom)*var(--editor-line-height-small-rem));
   margin-left: 11px;
+  margin-right: 0px;
   margin-top: calc(var(--h3-margin-top)*var(--editor-line-height-small-rem));
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 5px;
 }
 
 html body h4 {
   --font-weight: var(--h4-weight, 500);
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
   color: var(--h4-color, rgba(0, 0, 0, 0.9));
   font-family: var(--h4-font, Petrona);
   font-size: var(--h4-size, 21.384px);
@@ -1995,17 +2217,24 @@ html body h4 {
   line-height: var(--h4-line-height, 29.9376px);
   margin-bottom: calc(var(--h4-margin-bottom)*var(--editor-line-height-small-rem));
   margin-left: 22px;
+  margin-right: 0px;
   margin-top: calc(var(--h4-margin-top)*var(--editor-line-height-small-rem));
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 5px;
 }
 
 html body h5 {
   --font-weight: var(--h5-weight, 500);
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
   color: var(--h5-color, rgba(0, 0, 0, 0.9));
   font-family: var(--h5-font, Petrona);
   font-size: var(--h5-size, 19.368px);
@@ -2013,42 +2242,62 @@ html body h5 {
   letter-spacing: var(--h5-letter-spacing, -0.038736px);
   line-height: var(--h5-line-height, 29.052px);
   margin-bottom: calc(var(--h5-margin-bottom)*var(--editor-line-height-small-rem));
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: calc(var(--h5-margin-top)*var(--editor-line-height-small-rem));
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 5px;
 }
 
 html body h6 {
   --font-weight: var(--h6-weight, 500);
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
   color: var(--text-normal, rgba(0, 0, 0, 0.9));
   font-family: var(--h6-font, Petrona);
   font-size: var(--h6-size, 18px);
   font-weight: var(--h6-weight, 500);
   line-height: var(--h6-line-height, 27px);
   margin-bottom: calc(var(--h6-margin-bottom)*var(--editor-line-height-small-rem));
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: calc(var(--h6-margin-top)*var(--editor-line-height-small-rem));
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 5px;
 }
 
 html body hr {
   border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.2);
+  border-left-width: 0px;
   border-right-color: rgb(128, 128, 128);
   border-right-width: 0px;
   margin-bottom: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 25px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 28, 129, 176);
   border-bottom-color: rgba(28, 129, 176, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(28, 129, 176, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(28, 129, 176, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(28, 129, 176, 0.25);
+  border-top-width: 0px;
 }`,
     explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: var(--text-normal, rgba(0, 0, 0, 0.9));
@@ -2086,23 +2335,32 @@ html body li.depth-0 {
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgba(0, 0, 0, 0.5);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.5);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.5);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.5);
+  border-top-width: 0px;
   color: var(--text-muted, rgba(0, 0, 0, 0.5));
 }`,
     footer: `html body footer {
   background-color: var(--status-bar-background, rgba(0, 0, 0, 0.1));
   border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.2);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.2);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.2);
   border-top-left-radius: var(--radius-m, 8px);
+  border-top-width: 0px;
   color: var(--text-muted, rgba(0, 0, 0, 0.5));
   font-family: Quicksand;
   font-size: var(--status-bar-font-size, 11px);
   padding-bottom: 8px;
   padding-left: 0px;
+  padding-right: 0px;
   padding-top: 8px;
 }
 
@@ -2117,9 +2375,13 @@ html body footer ul li a {
 
 html body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.9);
 }
 
@@ -2133,9 +2395,13 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 }`,
     listPage: `html body li.section-li {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
 }
 
 html body li.section-li > .section .meta {
@@ -2149,15 +2415,23 @@ html body li.section-li > .section > .desc > h3 > a {
 
 html body ul.section-ul {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
 }`,
     darkmode: `html body .darkmode {
   border-bottom-color: rgba(0, 0, 0, 0.5);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.5);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.5);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.5);
+  border-top-width: 0px;
   color: var(--icon-color, rgba(0, 0, 0, 0.5));
 }
 
@@ -2168,9 +2442,13 @@ html body .darkmode svg {
 }`,
     breadcrumbs: `html body .breadcrumb-container {
   border-bottom-color: rgba(0, 0, 0, 0.5);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.5);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.5);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.5);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -2210,27 +2488,39 @@ html body .bases-table thead th {
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.2);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.2);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.2);
+  border-top-width: 0px;
   color: var(--text-muted, rgba(0, 0, 0, 0.5));
   font-family: Petrona;
 }
 
 html body .metadata-container .metadata-property {
   border-bottom-color: rgba(0, 0, 0, 0.5);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.5);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.5);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.5);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.5);
   font-family: Petrona;
 }
 
 html body .metadata-properties {
   border-bottom-color: rgba(0, 0, 0, 0.5);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.5);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.5);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.5);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.5);
   font-family: Petrona;
 }
@@ -2279,9 +2569,13 @@ html body div#quartz-root {
 
 html body ol.overflow {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
 }`,
     stacked: `html body .stacked-page {
   background-color: var(--background-secondary, rgba(0, 0, 0, 0));
@@ -2297,9 +2591,13 @@ html body .stacked-page.active {
 }`,
     misc: `html body .katex-display {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
   color: rgba(0, 0, 0, 0.9);
 }
 
@@ -2309,16 +2607,25 @@ html body .navigation-progress {
 
 html body .page-header h2.page-title {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
   color: var(--text-normal, rgba(0, 0, 0, 0.9));
   font-family: "??", "??", Petrona, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
+  margin-bottom: 0px;
   margin-left: 7px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 3px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 3px;
 }
 
@@ -2328,9 +2635,13 @@ html body abbr {
 
 html body details {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
 }
 
 html body input[type=text] {
@@ -2338,11 +2649,15 @@ html body input[type=text] {
   border-bottom-color: rgba(0, 0, 0, 0.1);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.1);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.1);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.1);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: var(--text-normal, rgba(0, 0, 0, 0.5));
   font-family: var(--text, Quicksand);
   padding-bottom: 5px;
@@ -2354,9 +2669,13 @@ html body input[type=text] {
 html body kbd {
   background-color: var(--code-background, rgba(0, 0, 0, 0.03));
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
   color: var(--code-normal, rgba(0, 0, 0, 0.9));
   font-size: var(--code-size, 15.75px);
   padding-bottom: 1.575px;
@@ -2367,9 +2686,13 @@ html body kbd {
 
 html body progress {
   border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-width: 0px;
 }
 
 html body sub {

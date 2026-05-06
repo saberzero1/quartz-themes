@@ -163,12 +163,14 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-right-width: 0px;
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #1a1a1a);
   background-color: var(--tab-container-background, rgb(26, 26, 26));
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-left-width: 0px;
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: var(--bold-color, rgba(0, 0, 0, 0));
@@ -249,27 +251,39 @@ html[saved-theme="dark"] body a.internal-link.broken {
 }`,
     tables: `html[saved-theme="dark"] body td {
   border-bottom-color: rgb(138, 92, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(138, 92, 245);
+  border-left-width: 0px;
   border-right-color: rgb(138, 92, 245);
+  border-right-width: 0px;
   border-top-color: rgb(138, 92, 245);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body th {
   border-bottom-color: rgb(138, 92, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(138, 92, 245);
+  border-left-width: 0px;
   border-right-color: rgb(138, 92, 245);
+  border-right-width: 0px;
   border-top-color: rgb(138, 92, 245);
+  border-top-width: 0px;
 }`,
     code: `html[saved-theme="dark"] body code {
   background-color: var(--accent-opacity-10, color(srgb 0.54032 0.3608 0.9592 / 0.1));
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
   border-bottom-left-radius: 4.8px;
   border-bottom-right-radius: 4.8px;
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-right-width: 0px;
   border-top-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
   border-top-left-radius: 4.8px;
   border-top-right-radius: 4.8px;
+  border-top-width: 0px;
   color: var(--theme-color, rgb(138, 92, 245));
   padding-bottom: 0px;
   padding-left: 5px;
@@ -280,9 +294,13 @@ html[saved-theme="dark"] body th {
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: var(--code-background, rgb(13, 11, 18));
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-right-width: 0px;
   border-top-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-top-width: 0px;
 }`,
     images: `html[saved-theme="dark"] body figcaption {
   font-family: "??", "??", Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -296,9 +314,13 @@ html[saved-theme="dark"] body figure {
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: color(srgb 0.678224 0.55256 0.97144);
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.678224 0.55256 0.97144);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.678224 0.55256 0.97144);
+  border-right-width: 0px;
   border-top-color: color(srgb 0.678224 0.55256 0.97144);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
@@ -498,9 +520,13 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
@@ -516,9 +542,13 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -1146,17 +1176,25 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
   background: rgba(255, 80, 80, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-color), var(--callout-background-opacity));
   border-bottom-color: rgba(255, 80, 80, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 80, 80, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(255, 80, 80, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(255, 80, 80, 0.25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -2096,9 +2134,13 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -2114,9 +2156,13 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -2132,9 +2178,13 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -3378,17 +3428,25 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
   background: rgba(50, 150, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-color), var(--callout-background-opacity));
   border-bottom-color: rgba(50, 150, 255, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(50, 150, 255, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(50, 150, 255, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(50, 150, 255, 0.25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -3708,17 +3766,25 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
   background: rgba(150, 100, 250, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-color), var(--callout-background-opacity));
   border-bottom-color: rgba(150, 100, 250, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(150, 100, 250, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(150, 100, 250, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(150, 100, 250, 0.25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -4042,9 +4108,13 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -4056,17 +4126,25 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
   background: rgba(50, 150, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-color), var(--callout-background-opacity));
   border-bottom-color: rgba(50, 150, 255, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(50, 150, 255, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(50, 150, 255, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(50, 150, 255, 0.25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -4386,17 +4464,25 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
   background: rgba(50, 200, 100, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-color), var(--callout-background-opacity));
   border-bottom-color: rgba(50, 200, 100, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(50, 200, 100, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(50, 200, 100, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(50, 200, 100, 0.25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -5040,9 +5126,13 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -5058,9 +5148,13 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -5072,17 +5166,25 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   background: rgba(255, 204, 0, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-color), var(--callout-background-opacity));
   border-bottom-color: rgba(255, 204, 0, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 204, 0, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(255, 204, 0, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(255, 204, 0, 0.25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -5202,9 +5304,13 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-right-width: 0px;
   border-top-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-top-width: 0px;
   font-family: "??", "??", Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -5214,6 +5320,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space {
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(26, 26, 26);
+  border-bottom-width: 0px;
 }
 
 html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
@@ -5242,14 +5349,23 @@ html[saved-theme="dark"] body h1 {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 229, 255);
+  border-left-width: 0px;
   border-right-color: rgb(0, 229, 255);
+  border-right-width: 0px;
   border-top-color: rgb(0, 229, 255);
+  border-top-width: 0px;
   color: var(--text-title-h1, rgb(0, 229, 255));
   font-size: var(--h1-size, 34px);
   letter-spacing: var(--h1-letter-spacing, -0.51px);
   line-height: var(--h1-line-height, 40.8px);
   margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-shadow: 0 0 0.5em var(--text-title-h1);
 }
 
@@ -5258,14 +5374,23 @@ html[saved-theme="dark"] body h2 {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(255, 202, 40);
+  border-left-width: 0px;
   border-right-color: rgb(255, 202, 40);
+  border-right-width: 0px;
   border-top-color: rgb(255, 202, 40);
+  border-top-width: 0px;
   color: var(--text-title-h2, rgb(255, 202, 40));
   font-size: var(--h2-size, 26px);
   letter-spacing: var(--h2-letter-spacing, -0.286px);
   line-height: var(--h2-line-height, 31.2px);
   margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-shadow: 0 0 0.5em var(--text-title-h2);
 }
 
@@ -5274,15 +5399,23 @@ html[saved-theme="dark"] body h3 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(255, 93, 104);
+  border-left-width: 0px;
   border-right-color: rgb(255, 93, 104);
+  border-right-width: 0px;
   border-top-color: rgb(255, 93, 104);
+  border-top-width: 0px;
   color: var(--text-title-h3, rgb(255, 93, 104));
   font-size: var(--h3-size, 22px);
   letter-spacing: var(--h3-letter-spacing, -0.176px);
   line-height: var(--h3-line-height, 28.6px);
   margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 45px);
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-shadow: 0 0 0.5em var(--text-title-h3);
 }
 
@@ -5291,15 +5424,23 @@ html[saved-theme="dark"] body h4 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(213, 0, 249);
+  border-left-width: 0px;
   border-right-color: rgb(213, 0, 249);
+  border-right-width: 0px;
   border-top-color: rgb(213, 0, 249);
+  border-top-width: 0px;
   color: var(--text-title-h4, rgb(213, 0, 249));
   font-size: var(--h4-size, 18px);
   letter-spacing: var(--h4-letter-spacing, -0.09px);
   line-height: var(--h4-line-height, 25.2px);
   margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 45px);
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-shadow: 0 0 0.5em var(--text-title-h4);
 }
 
@@ -5308,15 +5449,23 @@ html[saved-theme="dark"] body h5 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(46, 204, 113);
+  border-left-width: 0px;
   border-right-color: rgb(46, 204, 113);
+  border-right-width: 0px;
   border-top-color: rgb(46, 204, 113);
+  border-top-width: 0px;
   color: var(--text-title-h5, rgb(46, 204, 113));
   font-size: var(--h5-size, 18px);
   letter-spacing: var(--h5-letter-spacing, -0.036px);
   line-height: var(--h5-line-height, 27px);
   margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 45px);
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-shadow: 0 0 0.5em var(--text-title-h5);
 }
 
@@ -5325,28 +5474,43 @@ html[saved-theme="dark"] body h6 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(219, 62, 177);
+  border-left-width: 0px;
   border-right-color: rgb(219, 62, 177);
+  border-right-width: 0px;
   border-top-color: rgb(219, 62, 177);
+  border-top-width: 0px;
   color: var(--text-title-h6, rgb(219, 62, 177));
   font-size: var(--h6-size, 18px);
   line-height: var(--h6-line-height, 27px);
   margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 45px;
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-shadow: 0 0 0.5em var(--text-title-h6);
 }
 
 html[saved-theme="dark"] body hr {
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-color-purple, 150, 100, 250);
   border-bottom-color: rgba(150, 100, 250, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(150, 100, 250, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(150, 100, 250, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(150, 100, 250, 0.25);
+  border-top-width: 0px;
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: "??", "??", Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5358,9 +5522,13 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
     footer: `html[saved-theme="dark"] body footer {
   background-color: var(--status-bar-background, rgb(26, 26, 26));
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-right-width: 0px;
   border-top-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-top-width: 0px;
   font-family: "??", "??", Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
@@ -5376,9 +5544,13 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
     darkmode: `html[saved-theme="dark"] body .darkmode {
   background-color: color(srgb 0.54032 0.3608 0.9592 / 0.1);
   border-bottom-color: rgb(138, 92, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(138, 92, 245);
+  border-left-width: 0px;
   border-right-color: rgb(138, 92, 245);
+  border-right-width: 0px;
   border-top-color: rgb(138, 92, 245);
+  border-top-width: 0px;
   color: var(--theme-color, rgb(138, 92, 245));
 }
 
@@ -5397,9 +5569,13 @@ html[saved-theme="dark"] body .darkmode svg {
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-right-width: 0px;
   border-top-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .metadata-property-key {
@@ -5596,12 +5772,14 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-right-width: 0px;
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #eeeeee);
   background-color: var(--tab-container-background, rgb(238, 238, 238));
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-left-width: 0px;
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: var(--bold-color, rgba(0, 0, 0, 0));
@@ -5687,27 +5865,39 @@ html[saved-theme="light"] body a.internal-link.broken {
 }`,
     tables: `html[saved-theme="light"] body td {
   border-bottom-color: rgb(138, 92, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(138, 92, 245);
+  border-left-width: 0px;
   border-right-color: rgb(138, 92, 245);
+  border-right-width: 0px;
   border-top-color: rgb(138, 92, 245);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body th {
   border-bottom-color: rgb(138, 92, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(138, 92, 245);
+  border-left-width: 0px;
   border-right-color: rgb(138, 92, 245);
+  border-right-width: 0px;
   border-top-color: rgb(138, 92, 245);
+  border-top-width: 0px;
 }`,
     code: `html[saved-theme="light"] body code {
   background-color: var(--accent-opacity-10, color(srgb 0.54032 0.3608 0.9592 / 0.1));
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
   border-bottom-left-radius: 4.8px;
   border-bottom-right-radius: 4.8px;
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-right-width: 0px;
   border-top-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
   border-top-left-radius: 4.8px;
   border-top-right-radius: 4.8px;
+  border-top-width: 0px;
   color: var(--theme-color, rgb(138, 92, 245));
   padding-bottom: 0px;
   padding-left: 5px;
@@ -5718,9 +5908,13 @@ html[saved-theme="light"] body th {
 html[saved-theme="light"] body pre:has(> code) {
   background-color: var(--code-background, rgb(255, 255, 255));
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-right-width: 0px;
   border-top-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-top-width: 0px;
 }`,
     images: `html[saved-theme="light"] body figcaption {
   font-family: "??", "??", Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5734,9 +5928,13 @@ html[saved-theme="light"] body figure {
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: color(srgb 0.678224 0.55256 0.97144);
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.678224 0.55256 0.97144);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.678224 0.55256 0.97144);
+  border-right-width: 0px;
   border-top-color: color(srgb 0.678224 0.55256 0.97144);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
@@ -5934,9 +6132,13 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
@@ -5952,9 +6154,13 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -6578,17 +6784,25 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
   background: rgba(255, 80, 80, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-color), var(--callout-background-opacity));
   border-bottom-color: rgba(255, 80, 80, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 80, 80, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(255, 80, 80, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(255, 80, 80, 0.25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -7522,9 +7736,13 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -7540,9 +7758,13 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -7558,9 +7780,13 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -8796,17 +9022,25 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
   background: rgba(50, 150, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-color), var(--callout-background-opacity));
   border-bottom-color: rgba(50, 150, 255, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(50, 150, 255, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(50, 150, 255, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(50, 150, 255, 0.25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -9124,17 +9358,25 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
   background: rgba(150, 100, 250, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-color), var(--callout-background-opacity));
   border-bottom-color: rgba(150, 100, 250, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(150, 100, 250, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(150, 100, 250, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(150, 100, 250, 0.25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -9456,9 +9698,13 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -9470,17 +9716,25 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
   background: rgba(50, 150, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-color), var(--callout-background-opacity));
   border-bottom-color: rgba(50, 150, 255, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(50, 150, 255, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(50, 150, 255, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(50, 150, 255, 0.25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -9798,17 +10052,25 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
   background: rgba(50, 200, 100, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-color), var(--callout-background-opacity));
   border-bottom-color: rgba(50, 200, 100, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(50, 200, 100, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(50, 200, 100, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(50, 200, 100, 0.25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -10448,9 +10710,13 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -10466,9 +10732,13 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -10480,17 +10750,25 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   background: rgba(255, 204, 0, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(var(--callout-color), var(--callout-background-opacity));
   border-bottom-color: rgba(255, 204, 0, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 204, 0, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(255, 204, 0, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(255, 204, 0, 0.25);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 50, 150, 255;
   border-bottom-color: rgb(50, 150, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 150, 255);
+  border-left-width: 0px;
   border-right-color: rgb(50, 150, 255);
+  border-right-width: 0px;
   border-top-color: rgb(50, 150, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -10610,14 +10888,19 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-right-width: 0px;
   border-top-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-top-width: 0px;
   font-family: "??", "??", Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(238, 238, 238);
+  border-bottom-width: 0px;
 }
 
 html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
@@ -10639,14 +10922,23 @@ html[saved-theme="light"] body h1 {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(0, 229, 255);
+  border-left-width: 0px;
   border-right-color: rgb(0, 229, 255);
+  border-right-width: 0px;
   border-top-color: rgb(0, 229, 255);
+  border-top-width: 0px;
   color: var(--text-title-h1, rgb(0, 229, 255));
   font-size: var(--h1-size, 34px);
   letter-spacing: var(--h1-letter-spacing, -0.51px);
   line-height: var(--h1-line-height, 40.8px);
   margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-shadow: 0 0 0.5em var(--text-title-h1);
 }
 
@@ -10655,14 +10947,23 @@ html[saved-theme="light"] body h2 {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-left-color: rgb(255, 202, 40);
+  border-left-width: 0px;
   border-right-color: rgb(255, 202, 40);
+  border-right-width: 0px;
   border-top-color: rgb(255, 202, 40);
+  border-top-width: 0px;
   color: var(--text-title-h2, rgb(255, 202, 40));
   font-size: var(--h2-size, 26px);
   letter-spacing: var(--h2-letter-spacing, -0.286px);
   line-height: var(--h2-line-height, 31.2px);
   margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-shadow: 0 0 0.5em var(--text-title-h2);
 }
 
@@ -10671,15 +10972,23 @@ html[saved-theme="light"] body h3 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(255, 93, 104);
+  border-left-width: 0px;
   border-right-color: rgb(255, 93, 104);
+  border-right-width: 0px;
   border-top-color: rgb(255, 93, 104);
+  border-top-width: 0px;
   color: var(--text-title-h3, rgb(255, 93, 104));
   font-size: var(--h3-size, 22px);
   letter-spacing: var(--h3-letter-spacing, -0.176px);
   line-height: var(--h3-line-height, 28.6px);
   margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 45px);
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-shadow: 0 0 0.5em var(--text-title-h3);
 }
 
@@ -10688,15 +10997,23 @@ html[saved-theme="light"] body h4 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(213, 0, 249);
+  border-left-width: 0px;
   border-right-color: rgb(213, 0, 249);
+  border-right-width: 0px;
   border-top-color: rgb(213, 0, 249);
+  border-top-width: 0px;
   color: var(--text-title-h4, rgb(213, 0, 249));
   font-size: var(--h4-size, 18px);
   letter-spacing: var(--h4-letter-spacing, -0.09px);
   line-height: var(--h4-line-height, 25.2px);
   margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 45px);
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-shadow: 0 0 0.5em var(--text-title-h4);
 }
 
@@ -10705,15 +11022,23 @@ html[saved-theme="light"] body h5 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(46, 204, 113);
+  border-left-width: 0px;
   border-right-color: rgb(46, 204, 113);
+  border-right-width: 0px;
   border-top-color: rgb(46, 204, 113);
+  border-top-width: 0px;
   color: var(--text-title-h5, rgb(46, 204, 113));
   font-size: var(--h5-size, 18px);
   letter-spacing: var(--h5-letter-spacing, -0.036px);
   line-height: var(--h5-line-height, 27px);
   margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 45px);
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-shadow: 0 0 0.5em var(--text-title-h5);
 }
 
@@ -10722,28 +11047,43 @@ html[saved-theme="light"] body h6 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(219, 62, 177);
+  border-left-width: 0px;
   border-right-color: rgb(219, 62, 177);
+  border-right-width: 0px;
   border-top-color: rgb(219, 62, 177);
+  border-top-width: 0px;
   color: var(--text-title-h6, rgb(219, 62, 177));
   font-size: var(--h6-size, 18px);
   line-height: var(--h6-line-height, 27px);
   margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 45px;
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-shadow: 0 0 0.5em var(--text-title-h6);
 }
 
 html[saved-theme="light"] body hr {
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-color-purple, 150, 100, 250);
   border-bottom-color: rgba(150, 100, 250, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(150, 100, 250, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(150, 100, 250, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(150, 100, 250, 0.25);
+  border-top-width: 0px;
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: "??", "??", Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10755,9 +11095,13 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
     footer: `html[saved-theme="light"] body footer {
   background-color: var(--status-bar-background, rgb(238, 238, 238));
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-right-width: 0px;
   border-top-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-top-width: 0px;
   font-family: "??", "??", Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
@@ -10773,9 +11117,13 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
     darkmode: `html[saved-theme="light"] body .darkmode {
   background-color: color(srgb 0.54032 0.3608 0.9592 / 0.1);
   border-bottom-color: rgb(138, 92, 245);
+  border-bottom-width: 0px;
   border-left-color: rgb(138, 92, 245);
+  border-left-width: 0px;
   border-right-color: rgb(138, 92, 245);
+  border-right-width: 0px;
   border-top-color: rgb(138, 92, 245);
+  border-top-width: 0px;
   color: var(--theme-color, rgb(138, 92, 245));
 }
 
@@ -10791,9 +11139,13 @@ html[saved-theme="light"] body .darkmode svg {
 }`,
     properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-bottom-width: 0px;
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-left-width: 0px;
   border-right-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-right-width: 0px;
   border-top-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .metadata-property-key {

@@ -501,7 +501,7 @@
   "--callout-padding": {
     "body": ["--size-4-3", "--size-4-3", "--size-4-3", "--size-4-6"],
     ".mod-rtl": ["--size-4-3", "--size-4-6", "--size-4-3", "--size-4-3"],
-    ".callout-style-3:is(.theme-light": [
+    ".callout-style-3:is(.theme-light, .theme-dark)": [
       "--size-4-3",
       "--size-4-3",
       "--size-4-3",
@@ -514,7 +514,7 @@
     ".callout-style-1.theme-dark": ["--radius-s"],
     ".callout-style-2.theme-light": ["--radius-s"],
     ".callout-style-2.theme-dark": ["--radius-s"],
-    ".callout-style-3:is(.theme-light": ["--radius-s"],
+    ".callout-style-3:is(.theme-light, .theme-dark)": ["--radius-s"],
     ".callout-style-4.theme-light": ["--radius-s"],
     ".callout-style-4.theme-dark": ["--radius-s"]
   },

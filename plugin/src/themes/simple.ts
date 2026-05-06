@@ -136,10 +136,12 @@ html[saved-theme="dark"] body {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(50, 50, 50);
+  border-right-width: 0px;
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(50, 50, 50);
+  border-left-width: 0px;
 }`,
     typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -192,20 +194,32 @@ html[saved-theme="dark"] body dt {
 }
 
 html[saved-theme="dark"] body ol > li {
+  margin-bottom: 0px;
   margin-left: 29.9997px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 5px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 5px);
 }
 
 html[saved-theme="dark"] body ul > li {
+  margin-bottom: 0px;
   margin-left: 29.9997px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 5px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 5px);
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   background-color: var(--blockquote-background-color, rgb(36, 36, 36));
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-bottom: 24px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 24px;
 }`,
     tables: `html[saved-theme="dark"] body table {
@@ -220,9 +234,13 @@ html[saved-theme="dark"] body ul > li {
 
 html[saved-theme="dark"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -234,9 +252,13 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body video {
   border-bottom-color: rgb(179, 179, 179);
+  border-bottom-width: 0px;
   border-left-color: rgb(179, 179, 179);
+  border-left-width: 0px;
   border-right-color: rgb(179, 179, 179);
+  border-right-width: 0px;
   border-top-color: rgb(179, 179, 179);
+  border-top-width: 0px;
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -785,7 +807,12 @@ html[saved-theme="dark"] body h1 {
   letter-spacing: var(--h1-letter-spacing, -0.396px);
   line-height: var(--h1-line-height, 31.68px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 3px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 10px;
 }
 
@@ -797,7 +824,12 @@ html[saved-theme="dark"] body h2 {
   letter-spacing: var(--h2-letter-spacing, -0.2552px);
   line-height: var(--h2-line-height, 27.84px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--h2-margin-bottom, 3px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--h2-margin-top, 10px);
 }
 
@@ -813,8 +845,12 @@ html[saved-theme="dark"] body h3 {
   letter-spacing: var(--h3-letter-spacing, -0.1664px);
   line-height: var(--h3-line-height, 24.96px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
   padding-bottom: var(--h3-margin-bottom, 3px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--h3-margin-top, 10px);
 }
 
@@ -826,8 +862,12 @@ html[saved-theme="dark"] body h4 {
   letter-spacing: var(--h4-letter-spacing, -0.092px);
   line-height: var(--h4-line-height, 22.08px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
   padding-bottom: var(--h4-margin-bottom, 3px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--h4-margin-top, 10px);
 }
 
@@ -839,8 +879,12 @@ html[saved-theme="dark"] body h5 {
   letter-spacing: var(--h5-letter-spacing, -0.032px);
   line-height: var(--h5-line-height, 19.2px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
   padding-bottom: var(--h5-margin-bottom, 3px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--h5-margin-top, 10px);
 }
 
@@ -850,15 +894,22 @@ html[saved-theme="dark"] body h6 {
   font-size: var(--size-h6, 13.92px);
   line-height: var(--h6-line-height, 16.704px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 0px;
   padding-bottom: var(--h6-margin-bottom, 3px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--h6-margin-top, 10px);
 }
 
 html[saved-theme="dark"] body hr {
   border-bottom-color: rgb(50, 50, 50);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 50, 50);
+  border-left-width: 0px;
   border-right-color: rgb(50, 50, 50);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -879,9 +930,13 @@ html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.o
 }`,
     footer: `html[saved-theme="dark"] body footer {
   border-bottom-color: rgb(50, 50, 50);
+  border-bottom-width: 0px;
   border-left-color: rgb(50, 50, 50);
+  border-left-width: 0px;
   border-right-color: rgb(50, 50, 50);
+  border-right-width: 0px;
   border-top-color: rgb(50, 50, 50);
+  border-top-width: 0px;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: var(--status-bar-font-size, 11px);
 }
@@ -908,8 +963,14 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 
 html[saved-theme="dark"] body .metadata-container .metadata-property {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0px;
   margin-left: -10px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
   padding-left: 10px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .metadata-properties {
@@ -929,9 +990,13 @@ html[saved-theme="dark"] body .note-properties-tags {
 }`,
     misc: `html[saved-theme="dark"] body .page-header h2.page-title {
   border-bottom-color: rgb(153, 153, 153);
+  border-bottom-width: 0px;
   border-left-color: rgb(153, 153, 153);
+  border-left-width: 0px;
   border-right-color: rgb(153, 153, 153);
+  border-right-width: 0px;
   border-top-color: rgb(153, 153, 153);
+  border-top-width: 0px;
   color: var(--color-base-60, rgb(153, 153, 153));
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -956,9 +1021,13 @@ html[saved-theme="dark"] body kbd {
 
 html[saved-theme="dark"] body progress {
   border-bottom-color: rgb(179, 179, 179);
+  border-bottom-width: 0px;
   border-left-color: rgb(179, 179, 179);
+  border-left-width: 0px;
   border-right-color: rgb(179, 179, 179);
+  border-right-width: 0px;
   border-top-color: rgb(179, 179, 179);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body sub {
@@ -1062,10 +1131,12 @@ html[saved-theme="light"] body {
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(238, 238, 238);
+  border-right-width: 0px;
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(238, 238, 238);
+  border-left-width: 0px;
 }`,
     typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1118,20 +1189,32 @@ html[saved-theme="light"] body dt {
 }
 
 html[saved-theme="light"] body ol > li {
+  margin-bottom: 0px;
   margin-left: 29.9997px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 5px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 5px);
 }
 
 html[saved-theme="light"] body ul > li {
+  margin-bottom: 0px;
   margin-left: 29.9997px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 5px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 5px);
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
   background-color: var(--blockquote-background-color, rgb(250, 250, 250));
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-bottom: 24px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 24px;
 }`,
     tables: `html[saved-theme="light"] body table {
@@ -1146,9 +1229,13 @@ html[saved-theme="light"] body ul > li {
 
 html[saved-theme="light"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -1704,7 +1791,12 @@ html[saved-theme="light"] body h1 {
   letter-spacing: var(--h1-letter-spacing, -0.396px);
   line-height: var(--h1-line-height, 31.68px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 3px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 10px;
 }
 
@@ -1716,7 +1808,12 @@ html[saved-theme="light"] body h2 {
   letter-spacing: var(--h2-letter-spacing, -0.2552px);
   line-height: var(--h2-line-height, 27.84px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--h2-margin-bottom, 3px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--h2-margin-top, 10px);
 }
 
@@ -1732,8 +1829,12 @@ html[saved-theme="light"] body h3 {
   letter-spacing: var(--h3-letter-spacing, -0.1664px);
   line-height: var(--h3-line-height, 24.96px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
   padding-bottom: var(--h3-margin-bottom, 3px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--h3-margin-top, 10px);
 }
 
@@ -1745,8 +1846,12 @@ html[saved-theme="light"] body h4 {
   letter-spacing: var(--h4-letter-spacing, -0.092px);
   line-height: var(--h4-line-height, 22.08px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
   padding-bottom: var(--h4-margin-bottom, 3px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--h4-margin-top, 10px);
 }
 
@@ -1758,8 +1863,12 @@ html[saved-theme="light"] body h5 {
   letter-spacing: var(--h5-letter-spacing, -0.032px);
   line-height: var(--h5-line-height, 19.2px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 0px);
   padding-bottom: var(--h5-margin-bottom, 3px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--h5-margin-top, 10px);
 }
 
@@ -1769,15 +1878,22 @@ html[saved-theme="light"] body h6 {
   font-size: var(--size-h6, 13.92px);
   line-height: var(--h6-line-height, 16.704px);
   margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 0px;
   padding-bottom: var(--h6-margin-bottom, 3px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--h6-margin-top, 10px);
 }
 
 html[saved-theme="light"] body hr {
   border-bottom-color: rgb(238, 238, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(238, 238, 238);
+  border-left-width: 0px;
   border-right-color: rgb(238, 238, 238);
+  border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 8, 109, 221);
@@ -1798,9 +1914,13 @@ html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.
 }`,
     footer: `html[saved-theme="light"] body footer {
   border-bottom-color: rgb(238, 238, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(238, 238, 238);
+  border-left-width: 0px;
   border-right-color: rgb(238, 238, 238);
+  border-right-width: 0px;
   border-top-color: rgb(238, 238, 238);
+  border-top-width: 0px;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: var(--status-bar-font-size, 11px);
 }
@@ -1827,8 +1947,14 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 
 html[saved-theme="light"] body .metadata-container .metadata-property {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0px;
   margin-left: -10px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
   padding-left: 10px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .metadata-properties {
@@ -1848,9 +1974,13 @@ html[saved-theme="light"] body .note-properties-tags {
 }`,
     misc: `html[saved-theme="light"] body .page-header h2.page-title {
   border-bottom-color: rgb(112, 112, 112);
+  border-bottom-width: 0px;
   border-left-color: rgb(112, 112, 112);
+  border-left-width: 0px;
   border-right-color: rgb(112, 112, 112);
+  border-right-width: 0px;
   border-top-color: rgb(112, 112, 112);
+  border-top-width: 0px;
   color: var(--color-base-60, rgb(112, 112, 112));
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;

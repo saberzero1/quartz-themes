@@ -55,10 +55,13 @@ html body a.internal-link.broken {
 html body blockquote {
   background-color: var(--blockquote-background-color, rgb(54, 54, 54));
   padding-bottom: 16px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 16px;
 }`,
     tables: `html body table {
   background-color: rgb(54, 54, 54);
+  margin-bottom: 0px;
   margin-left: 33.0469px;
   margin-right: 33.0625px;
   margin-top: var(--heading-spacing, 0px);
@@ -66,9 +69,13 @@ html body blockquote {
 
 html body td {
   border-bottom-color: rgb(179, 179, 179);
+  border-bottom-width: 0px;
   border-left-color: rgb(179, 179, 179);
+  border-left-width: 0px;
   border-right-color: rgb(179, 179, 179);
+  border-right-width: 0px;
   border-top-color: rgb(179, 179, 179);
+  border-top-width: 0px;
   padding-bottom: 12.8px;
   padding-left: 12.8px;
   padding-right: 12.8px;
@@ -78,9 +85,13 @@ html body td {
 html body th {
   background-color: rgb(102, 102, 102);
   border-bottom-color: rgb(179, 179, 179);
+  border-bottom-width: 0px;
   border-left-color: rgb(179, 179, 179);
+  border-left-width: 0px;
   border-right-color: rgb(179, 179, 179);
+  border-right-width: 0px;
   border-top-color: rgb(179, 179, 179);
+  border-top-width: 0px;
   color: var(--background-secondary, rgb(38, 38, 38));
   padding-bottom: 12.8px;
   padding-left: 12.8px;
@@ -106,9 +117,13 @@ html body thead {
 
 html body tr {
   border-bottom-color: rgb(179, 179, 179);
+  border-bottom-width: 0px;
   border-left-color: rgb(179, 179, 179);
+  border-left-width: 0px;
   border-right-color: rgb(179, 179, 179);
+  border-right-width: 0px;
   border-top-color: rgb(179, 179, 179);
+  border-top-width: 0px;
 }`,
     code: `html body code {
   background-color: var(--code-background, rgb(38, 38, 38));
@@ -124,9 +139,13 @@ html body tr {
 
 html body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;

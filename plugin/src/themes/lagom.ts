@@ -182,20 +182,32 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(166, 138, 249));
 }`,
     lists: `html[saved-theme="dark"] body ol > li {
+  margin-bottom: 0px;
   margin-left: 45px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 2px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 2px);
 }
 
 html[saved-theme="dark"] body ul > li {
+  margin-bottom: 0px;
   margin-left: 45px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 2px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 2px);
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   letter-spacing: 0.1px;
   line-height: 21px;
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 10px;
 }`,
     tables: `html[saved-theme="dark"] body table {
@@ -207,6 +219,9 @@ html[saved-theme="dark"] body ul > li {
   border-bottom-width: 1px;
   border-top-left-radius: 11.5px;
   border-top-right-radius: 11.5px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 8px);
   text-align: justify;
 }
@@ -232,22 +247,28 @@ html[saved-theme="dark"] body th {
 
 html[saved-theme="dark"] body thead {
   border-bottom-color: rgb(54, 54, 54);
+  border-bottom-width: 0px;
 }
 
 html[saved-theme="dark"] body tr {
   background-color: var(--background-primary, rgb(30, 30, 30));
   border-bottom-color: rgb(54, 54, 54);
+  border-bottom-width: 0px;
 }`,
     code: `html[saved-theme="dark"] body code {
   background-color: var(--code-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(179, 179, 179);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(179, 179, 179);
+  border-left-width: 0px;
   border-right-color: rgb(179, 179, 179);
+  border-right-width: 0px;
   border-top-color: rgb(179, 179, 179);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--ec-codeFg, rgb(179, 179, 179));
   font-family: var(--ec-codeFontFml, "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
   padding-bottom: 12px;
@@ -309,6 +330,7 @@ html[saved-theme="dark"] body img {
   border-top-style: solid;
   border-top-width: 1px;
   padding-bottom: 7px;
+  padding-left: 0px;
   padding-right: 7px;
   padding-top: 15px;
 }
@@ -317,12 +339,16 @@ html[saved-theme="dark"] body .transclude-inner {
   border-bottom-left-radius: 11.5px;
   border-bottom-right-radius: 11.5px;
   border-bottom-style: solid;
+  border-bottom-width: 0px;
   border-radius: 11.5px;
   border-right-style: solid;
+  border-right-width: 0px;
   border-top-left-radius: 11.5px;
   border-top-right-radius: 11.5px;
   border-top-style: solid;
+  border-top-width: 0px;
   padding-bottom: 7px;
+  padding-left: 0px;
   padding-right: 7px;
   padding-top: 15px;
 }`,
@@ -331,7 +357,10 @@ html[saved-theme="dark"] body .transclude-inner {
   border-bottom-right-radius: 11.5px;
   border-top-left-radius: 11.5px;
   border-top-right-radius: 11.5px;
+  margin-bottom: 0px;
+  margin-left: 0px;
   margin-right: 10px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
@@ -2076,6 +2105,8 @@ html[saved-theme="dark"] body h1 {
   letter-spacing: var(--h1-letter-spacing, -0.3px);
   line-height: var(--headers-space-simetry, 26px);
   margin-bottom: 18px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 18px;
 }
 
@@ -2089,6 +2120,8 @@ html[saved-theme="dark"] body h2 {
   letter-spacing: var(--h2-letter-spacing, -0.198px);
   line-height: var(--headers-space-simetry, 23.4px);
   margin-bottom: 18px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 18px);
 }
 
@@ -2114,6 +2147,8 @@ html[saved-theme="dark"] body h3 {
   letter-spacing: var(--h3-letter-spacing, -0.136px);
   line-height: var(--headers-space-simetry, 22.1px);
   margin-bottom: 18px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 18px);
 }
 
@@ -2122,6 +2157,8 @@ html[saved-theme="dark"] body h4 {
   letter-spacing: var(--h4-letter-spacing, -0.07px);
   line-height: var(--headers-space-simetry, 18.2px);
   margin-bottom: 18px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 18px);
 }
 
@@ -2130,17 +2167,23 @@ html[saved-theme="dark"] body h5 {
   letter-spacing: var(--h5-letter-spacing, -0.024px);
   line-height: var(--headers-space-simetry, 15.6px);
   margin-bottom: 18px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 18px);
 }
 
 html[saved-theme="dark"] body h6 {
   line-height: var(--headers-space-simetry, 20.8px);
   margin-bottom: 18px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 18px;
 }
 
 html[saved-theme="dark"] body hr {
   margin-bottom: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 30px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
@@ -2236,8 +2279,13 @@ html[saved-theme="dark"] body .bases-table thead th {
   border-bottom-width: 2px;
   border-top-style: dotted;
   border-top-width: 2px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 10px;
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 5px;
 }
 
@@ -2444,20 +2492,32 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
   text-decoration-color: var(--link-unresolved-decoration-color, rgb(138, 92, 245));
 }`,
     lists: `html[saved-theme="light"] body ol > li {
+  margin-bottom: 0px;
   margin-left: 45px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 2px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 2px);
 }
 
 html[saved-theme="light"] body ul > li {
+  margin-bottom: 0px;
   margin-left: 45px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 2px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 2px);
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
   letter-spacing: 0.1px;
   line-height: 21px;
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 10px;
 }`,
     tables: `html[saved-theme="light"] body table {
@@ -2469,6 +2529,9 @@ html[saved-theme="light"] body ul > li {
   border-bottom-width: 1px;
   border-top-left-radius: 11.5px;
   border-top-right-radius: 11.5px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 8px);
   text-align: justify;
 }
@@ -2494,22 +2557,28 @@ html[saved-theme="light"] body th {
 
 html[saved-theme="light"] body thead {
   border-bottom-color: rgb(224, 224, 224);
+  border-bottom-width: 0px;
 }
 
 html[saved-theme="light"] body tr {
   background-color: var(--background-primary, rgb(255, 255, 255));
   border-bottom-color: rgb(224, 224, 224);
+  border-bottom-width: 0px;
 }`,
     code: `html[saved-theme="light"] body code {
   background-color: var(--code-background, rgba(0, 0, 0, 0));
   border-bottom-color: rgb(92, 92, 92);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(92, 92, 92);
+  border-left-width: 0px;
   border-right-color: rgb(92, 92, 92);
+  border-right-width: 0px;
   border-top-color: rgb(92, 92, 92);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: var(--ec-codeFg, rgb(92, 92, 92));
   font-family: var(--ec-codeFontFml, "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
   padding-bottom: 12px;
@@ -2571,6 +2640,7 @@ html[saved-theme="light"] body img {
   border-top-style: solid;
   border-top-width: 1px;
   padding-bottom: 7px;
+  padding-left: 0px;
   padding-right: 7px;
   padding-top: 15px;
 }
@@ -2579,12 +2649,16 @@ html[saved-theme="light"] body .transclude-inner {
   border-bottom-left-radius: 11.5px;
   border-bottom-right-radius: 11.5px;
   border-bottom-style: solid;
+  border-bottom-width: 0px;
   border-radius: 11.5px;
   border-right-style: solid;
+  border-right-width: 0px;
   border-top-left-radius: 11.5px;
   border-top-right-radius: 11.5px;
   border-top-style: solid;
+  border-top-width: 0px;
   padding-bottom: 7px;
+  padding-left: 0px;
   padding-right: 7px;
   padding-top: 15px;
 }`,
@@ -2593,7 +2667,10 @@ html[saved-theme="light"] body .transclude-inner {
   border-bottom-right-radius: 11.5px;
   border-top-left-radius: 11.5px;
   border-top-right-radius: 11.5px;
+  margin-bottom: 0px;
+  margin-left: 0px;
   margin-right: 10px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
@@ -4330,6 +4407,8 @@ html[saved-theme="light"] body h1 {
   letter-spacing: var(--h1-letter-spacing, -0.3px);
   line-height: var(--headers-space-simetry, 26px);
   margin-bottom: 18px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 18px;
 }
 
@@ -4343,6 +4422,8 @@ html[saved-theme="light"] body h2 {
   letter-spacing: var(--h2-letter-spacing, -0.198px);
   line-height: var(--headers-space-simetry, 23.4px);
   margin-bottom: 18px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 18px);
 }
 
@@ -4368,6 +4449,8 @@ html[saved-theme="light"] body h3 {
   letter-spacing: var(--h3-letter-spacing, -0.136px);
   line-height: var(--headers-space-simetry, 22.1px);
   margin-bottom: 18px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 18px);
 }
 
@@ -4376,6 +4459,8 @@ html[saved-theme="light"] body h4 {
   letter-spacing: var(--h4-letter-spacing, -0.07px);
   line-height: var(--headers-space-simetry, 18.2px);
   margin-bottom: 18px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 18px);
 }
 
@@ -4384,17 +4469,23 @@ html[saved-theme="light"] body h5 {
   letter-spacing: var(--h5-letter-spacing, -0.024px);
   line-height: var(--headers-space-simetry, 15.6px);
   margin-bottom: 18px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 18px);
 }
 
 html[saved-theme="light"] body h6 {
   line-height: var(--headers-space-simetry, 20.8px);
   margin-bottom: 18px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 18px;
 }
 
 html[saved-theme="light"] body hr {
   margin-bottom: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 30px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
@@ -4490,8 +4581,13 @@ html[saved-theme="light"] body .bases-table thead th {
   border-bottom-width: 2px;
   border-top-style: dotted;
   border-top-width: 2px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 10px;
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 5px;
 }
 

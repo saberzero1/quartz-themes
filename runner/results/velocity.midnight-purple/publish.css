@@ -3724,7 +3724,7 @@ body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-external-color, rgb(10, 124, 255));
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-external-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family:
@@ -3759,6 +3759,7 @@ body body.theme-light .markdown-rendered a.external-link {
   text-decoration-color: rgb(10, 124, 255);
   text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.15s ease-in-out;
   transform: none;
   user-select: text;
@@ -3810,6 +3811,7 @@ body body.theme-light .markdown-rendered a.internal-link {
   text-decoration-color: rgb(10, 124, 255);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.15s ease-in-out;
   transform: none;
   user-select: text;
@@ -3829,7 +3831,7 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
     oklch(63.7864% 0.198104 257.288deg / 0.7)
   );
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-unresolved-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family:
@@ -3867,6 +3869,7 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   );
   text-decoration-line: var(--link-decoration);
   text-decoration-style: var(--link-unresolved-decoration-style);
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.15s ease-in-out;
   transform: none;
   user-select: text;
@@ -4669,7 +4672,7 @@ body body.theme-light .markdown-rendered blockquote {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 420;
-  font-style: normal;
+  font-style: var(--blockquote-font-style);
   line-height: 25.6px;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -7191,7 +7194,7 @@ body body.theme-light .page-header .page-title {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light .math-block {
-  background-color: var(--background-modifier-hover);
+  background-color: rgba(0, 0, 0, 0);
   color: oklch(30% 0.0005 281deg);
   border-color: oklch(30% 0.0005 281deg);
   border-width: 0px;
@@ -7298,7 +7301,7 @@ body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-external-color, oklab(72.5479% 0.0468805 -0.125265));
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-external-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family:
@@ -7333,6 +7336,7 @@ body body.theme-dark .markdown-rendered a.external-link {
   text-decoration-color: oklab(72.5479% 0.0468805 -0.125265);
   text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.15s ease-in-out;
   transform: none;
   user-select: text;
@@ -7384,6 +7388,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
   text-decoration-color: oklab(72.5479% 0.0468805 -0.125265);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.15s ease-in-out;
   transform: none;
   user-select: text;
@@ -7403,7 +7408,7 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
     oklch(72.5479% 0.13375 290.518deg / 0.75)
   );
   cursor: var(--cursor-link);
-  filter: none;
+  filter: var(--link-unresolved-filter);
   backdrop-filter: none;
   box-shadow: none;
   font-family:
@@ -7441,6 +7446,7 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   );
   text-decoration-line: var(--link-decoration);
   text-decoration-style: var(--link-unresolved-decoration-style);
+  text-decoration-thickness: var(--link-decoration-thickness);
   transition: opacity 0.15s ease-in-out;
   transform: none;
   user-select: text;
@@ -8249,7 +8255,7 @@ body body.theme-dark .markdown-rendered blockquote {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 420;
-  font-style: normal;
+  font-style: var(--blockquote-font-style);
   line-height: 25.6px;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -10777,7 +10783,7 @@ body body.theme-dark .page-header .page-title {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .math-block {
-  background-color: var(--background-modifier-hover);
+  background-color: rgba(0, 0, 0, 0);
   color: oklch(85% 0.0125 318deg);
   border-color: oklch(85% 0.0125 318deg);
   border-width: 0px;

@@ -145,10 +145,12 @@ html body {
 
 html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(197, 230, 229);
+  border-right-width: 0px;
 }
 
 html body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(197, 230, 229);
+  border-left-width: 0px;
 }
 
 html body html {
@@ -245,11 +247,17 @@ html body a.internal-link.broken {
 }`,
     lists: `html body ol > li {
   margin-bottom: 8px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   text-align: left;
 }
 
 html body ul > li {
   margin-bottom: 8px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   text-align: left;
 }`,
     blockquotes: `html body blockquote {
@@ -258,6 +266,9 @@ html body ul > li {
   font-weight: 500;
   line-height: 25.6px;
   padding-bottom: var(--padding-bq-bottom, 32px);
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     tables: `html body table {
   font-family: var(--font-serif, Petrona, serif);
@@ -291,21 +302,32 @@ html body th {
 html body tr {
   background-color: var(--background-primary, rgb(30, 30, 30));
   border-bottom-color: rgb(22, 23, 30);
+  border-bottom-width: 0px;
   border-left-color: rgb(22, 23, 30);
+  border-left-width: 0px;
   border-right-color: rgb(22, 23, 30);
+  border-right-width: 0px;
   border-top-color: rgb(22, 23, 30);
+  border-top-width: 0px;
 }`,
     code: `html body code {
   background-color: var(--codeblock-bg-color, rgba(60, 60, 60, 0.5));
   color: var(--code-editor-color, rgb(141, 195, 199));
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 1.4px;
 }
 
 html body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -320,17 +342,21 @@ html body figure {
 }`,
     embeds: `html body .transclude {
   border-left-color: rgb(159, 54, 60);
+  border-left-width: 0px;
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(191, 191, 191);
   border-bottom-left-radius: 13.3333px;
   border-bottom-right-radius: 13.3333px;
+  border-bottom-width: 0px;
   border-left-color: rgb(191, 191, 191);
   border-left-width: 2px;
   border-right-color: rgb(191, 191, 191);
+  border-right-width: 0px;
   border-top-color: rgb(191, 191, 191);
   border-top-left-radius: 13.3333px;
   border-top-right-radius: 13.3333px;
+  border-top-width: 0px;
   padding-bottom: 5.33333px;
   padding-left: 5.33333px;
   padding-right: 5.33333px;
@@ -709,9 +735,13 @@ html body a.internal-link.tag-link::before {
 
 html body h1 {
   border-bottom-color: rgb(241, 240, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(241, 240, 238);
+  border-left-width: 0px;
   border-right-color: rgb(241, 240, 238);
+  border-right-width: 0px;
   border-top-color: rgb(241, 240, 238);
+  border-top-width: 0px;
   color: var(--title-color, rgb(241, 240, 238));
   font-family: var(--font-smallcaps, "Vollkorn SC", serif);
   font-size: var(--font-size-huge, 33.6px);
@@ -721,61 +751,93 @@ html body h1 {
 
 html body h2 {
   border-bottom-color: rgb(241, 240, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(241, 240, 238);
+  border-left-width: 0px;
   border-right-color: rgb(241, 240, 238);
+  border-right-width: 0px;
   border-top-color: rgb(241, 240, 238);
+  border-top-width: 0px;
   color: var(--title-color, rgb(241, 240, 238));
   font-family: var(--font-serif, Petrona, serif);
   font-size: var(--font-size-larger, 30.4px);
   letter-spacing: var(--h2-letter-spacing, -0.3344px);
   line-height: var(--h2-line-height, 36.48px);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--margin-header-top, 24.32px);
 }
 
 html body h3 {
   border-bottom-color: rgb(241, 240, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(241, 240, 238);
+  border-left-width: 0px;
   border-right-color: rgb(241, 240, 238);
+  border-right-width: 0px;
   border-top-color: rgb(241, 240, 238);
+  border-top-width: 0px;
   color: var(--title-color, rgb(241, 240, 238));
   font-family: var(--font-smallcaps, "Vollkorn SC", serif);
   font-size: var(--font-size-large, 25.6px);
   letter-spacing: var(--h3-letter-spacing, -0.2048px);
   line-height: var(--h3-line-height, 33.28px);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--margin-header-top, 20.48px);
 }
 
 html body h4 {
   border-bottom-color: rgb(241, 240, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(241, 240, 238);
+  border-left-width: 0px;
   border-right-color: rgb(241, 240, 238);
+  border-right-width: 0px;
   border-top-color: rgb(241, 240, 238);
+  border-top-width: 0px;
   color: var(--title-color, rgb(241, 240, 238));
   font-family: var(--font-serif, Petrona, serif);
   font-size: var(--font-size-bigger, 24px);
   letter-spacing: var(--h4-letter-spacing, -0.12px);
   line-height: var(--h4-line-height, 33.6px);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--margin-header-top, 19.2px);
 }
 
 html body h5 {
   border-bottom-color: rgb(241, 240, 238);
+  border-bottom-width: 0px;
   border-left-color: rgb(241, 240, 238);
+  border-left-width: 0px;
   border-right-color: rgb(241, 240, 238);
+  border-right-width: 0px;
   border-top-color: rgb(241, 240, 238);
+  border-top-width: 0px;
   color: var(--title-color, rgb(241, 240, 238));
   font-family: var(--font-smallcaps, "Vollkorn SC", serif);
   font-size: var(--font-size-big, 19.2px);
   letter-spacing: var(--h5-letter-spacing, -0.0384px);
   line-height: var(--h5-line-height, 28.8px);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--margin-header-top, 15.36px);
 }
 
 html body h6 {
   border-bottom-color: rgb(137, 137, 137);
+  border-bottom-width: 0px;
   border-left-color: rgb(137, 137, 137);
+  border-left-width: 0px;
   border-right-color: rgb(137, 137, 137);
+  border-right-width: 0px;
   border-top-color: rgb(137, 137, 137);
+  border-top-width: 0px;
   color: var(--subtitle-color, rgb(137, 137, 137));
   font-family: var(--font-smallcaps, "Vollkorn SC", serif);
   font-size: var(--font-size-plus, 17.6px);
@@ -784,9 +846,13 @@ html body h6 {
 
 html body hr {
   border-bottom-color: rgb(197, 230, 229);
+  border-bottom-width: 0px;
   border-left-color: rgb(197, 230, 229);
+  border-left-width: 0px;
   border-right-color: rgb(197, 230, 229);
+  border-right-width: 0px;
   border-top-color: rgb(197, 230, 229);
+  border-top-width: 0px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);

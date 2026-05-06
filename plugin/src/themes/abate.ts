@@ -206,11 +206,15 @@ html body .page > div#quartz-body div.sidebar.right {
 }`,
     lists: `html body ol > li {
   padding-bottom: var(--list-spacing, 3.2px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 3.2px);
 }
 
 html body ul > li {
   padding-bottom: var(--list-spacing, 3.2px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 3.2px);
 }`,
     code: `html body code {
@@ -220,9 +224,13 @@ html body ul > li {
 html body pre:has(> code) {
   background-color: var(--code-background, rgb(253, 246, 227));
   border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -234,9 +242,13 @@ html body pre:has(> code) {
 
 html body img {
   border-bottom-color: rgb(15, 71, 97);
+  border-bottom-width: 0px;
   border-left-color: rgb(15, 71, 97);
+  border-left-width: 0px;
   border-right-color: rgb(15, 71, 97);
+  border-right-width: 0px;
   border-top-color: rgb(15, 71, 97);
+  border-top-width: 0px;
 }`,
     embeds: `html body .file-embed {
   background-color: var(--background-primary-alt, rgb(253, 246, 227));
@@ -715,6 +727,7 @@ html body .search > .search-container > .search-space > .search-layout > .result
 
 html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(253, 246, 227);
+  border-bottom-width: 0px;
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
@@ -742,9 +755,13 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
 
 html body h1 {
   border-bottom-color: rgb(15, 71, 97);
+  border-bottom-width: 0px;
   border-left-color: rgb(15, 71, 97);
+  border-left-width: 0px;
   border-right-color: rgb(15, 71, 97);
+  border-right-width: 0px;
   border-top-color: rgb(15, 71, 97);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(15, 71, 97));
   font-size: var(--h1-size, 32px);
   letter-spacing: var(--h1-letter-spacing, -0.48px);
@@ -760,9 +777,13 @@ html body h1.article-title {
 html body h2 {
   --font-weight: var(--h2-weight, 600);
   border-bottom-color: rgb(18, 89, 122);
+  border-bottom-width: 0px;
   border-left-color: rgb(18, 89, 122);
+  border-left-width: 0px;
   border-right-color: rgb(18, 89, 122);
+  border-right-width: 0px;
   border-top-color: rgb(18, 89, 122);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(18, 89, 122));
   font-size: var(--h2-size, 25.6px);
   font-weight: var(--font-weight, 600);
@@ -772,23 +793,34 @@ html body h2 {
 
 html body h2.page-title, html h2.page-title a {
   border-bottom-color: rgb(0, 0, 0);
+  border-bottom-width: 0px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(0, 0, 0));
   font-size: var(--inline-title-size, 40px);
   font-weight: var(--inline-title-weight, 900);
   letter-spacing: -0.6px;
   line-height: var(--inline-title-line-height, 60px);
   margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body h3 {
   --font-weight: var(--h3-weight, 400);
   border-bottom-color: rgb(22, 108, 148);
+  border-bottom-width: 0px;
   border-left-color: rgb(22, 108, 148);
+  border-left-width: 0px;
   border-right-color: rgb(22, 108, 148);
+  border-right-width: 0px;
   border-top-color: rgb(22, 108, 148);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(22, 108, 148));
   font-size: var(--h3-size, 21.6px);
   font-weight: var(--font-weight, 400);
@@ -799,9 +831,13 @@ html body h3 {
 html body h4 {
   --font-weight: var(--h4-weight, 400);
   border-bottom-color: rgb(26, 126, 173);
+  border-bottom-width: 0px;
   border-left-color: rgb(26, 126, 173);
+  border-left-width: 0px;
   border-right-color: rgb(26, 126, 173);
+  border-right-width: 0px;
   border-top-color: rgb(26, 126, 173);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(26, 126, 173));
   font-size: var(--h4-size, 19.2px);
   font-weight: var(--font-weight, 400);
@@ -812,9 +848,13 @@ html body h4 {
 html body h5 {
   --font-weight: var(--h5-weight, 300);
   border-bottom-color: rgb(30, 145, 199);
+  border-bottom-width: 0px;
   border-left-color: rgb(30, 145, 199);
+  border-left-width: 0px;
   border-right-color: rgb(30, 145, 199);
+  border-right-width: 0px;
   border-top-color: rgb(30, 145, 199);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(30, 145, 199));
   font-size: var(--h5-size, 19.2px);
   font-weight: var(--font-weight, 300);
@@ -825,9 +865,13 @@ html body h5 {
 html body h6 {
   --font-weight: var(--h6-weight, 300);
   border-bottom-color: rgb(34, 164, 224);
+  border-bottom-width: 0px;
   border-left-color: rgb(34, 164, 224);
+  border-left-width: 0px;
   border-right-color: rgb(34, 164, 224);
+  border-right-width: 0px;
   border-top-color: rgb(34, 164, 224);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(34, 164, 224));
   font-size: var(--h6-size, 17.6px);
   font-weight: var(--font-weight, 300);

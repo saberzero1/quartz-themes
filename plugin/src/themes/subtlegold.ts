@@ -370,37 +370,55 @@ html[saved-theme="dark"] body a.internal-link.broken {
 }`,
     lists: `html[saved-theme="dark"] body dd {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
   font-family: "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 }
 
 html[saved-theme="dark"] body dt {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
   font-family: "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(220, 221, 222);
+  margin-bottom: 0px;
   margin-left: 26.6953px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(220, 221, 222);
+  margin-bottom: 0px;
   margin-left: 26.6953px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: var(--text-faint, rgb(85, 85, 85));
@@ -412,9 +430,13 @@ html[saved-theme="dark"] body blockquote {
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body table {
@@ -445,13 +467,19 @@ html[saved-theme="dark"] body pre:has(> code) {
   background-color: var(--code-background, rgb(26, 26, 26));
   overflow-x: scroll;
   padding-bottom: 8px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 8px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body figcaption {
@@ -462,52 +490,80 @@ html[saved-theme="dark"] body figcaption {
 html[saved-theme="dark"] body figure {
   --code-background: var(--ec-frm-edBg, #1a1a1a);
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body img {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body video {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(26, 26, 26));
   border-bottom-color: rgb(136, 136, 136);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 136, 136);
+  border-left-width: 0px;
   border-right-color: rgb(136, 136, 136);
+  border-right-width: 0px;
   border-top-color: rgb(136, 136, 136);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(136, 136, 136));
 }
 
 html[saved-theme="dark"] body .footnotes {
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
 html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(214, 186, 124);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
+  padding-bottom: 0px;
   padding-left: 24px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
@@ -520,11 +576,17 @@ html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(85, 85, 85);
+  border-bottom-width: 0px;
   border-left-color: rgb(85, 85, 85);
+  border-left-width: 0px;
   border-right-color: rgb(85, 85, 85);
+  border-right-width: 0px;
   border-top-color: rgb(85, 85, 85);
+  border-top-width: 0px;
+  margin-bottom: 0px;
   margin-left: -21px;
   margin-right: 6px;
+  margin-top: 0px;
   width: var(--checkbox-size, 15px);
 }
 
@@ -1747,9 +1809,13 @@ html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="check
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
@@ -1765,18 +1831,26 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary, 0, 176, 255);
   background: rgba(0, 176, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(0, 176, 255, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 176, 255, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(0, 176, 255, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(0, 176, 255, 0.25);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -1792,18 +1866,26 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug, 245, 0, 87);
   background: rgba(245, 0, 87, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(245, 0, 87, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(245, 0, 87, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(245, 0, 87, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(245, 0, 87, 0.25);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -1819,18 +1901,26 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
   --callout-color: var(--callout-error, 255, 23, 68);
   background: rgba(255, 23, 68, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(255, 23, 68, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 23, 68, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(255, 23, 68, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(255, 23, 68, 0.25);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -1846,18 +1936,26 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
   --callout-color: var(--callout-example, 124, 77, 255);
   background: rgba(124, 77, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(124, 77, 255, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(124, 77, 255, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(124, 77, 255, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(124, 77, 255, 0.25);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -1873,18 +1971,26 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail, 255, 82, 82);
   background: rgba(255, 82, 82, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(255, 82, 82, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 82, 82, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(255, 82, 82, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(255, 82, 82, 0.25);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -1900,18 +2006,26 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
   --callout-color: var(--callout-info, 0, 184, 212);
   background: rgba(0, 184, 212, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(0, 184, 212, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 184, 212, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(0, 184, 212, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(0, 184, 212, 0.25);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -1927,18 +2041,26 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
   --callout-color: var(--callout-default, 68, 138, 255);
   background: rgba(68, 138, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(68, 138, 255, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(68, 138, 255, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(68, 138, 255, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(68, 138, 255, 0.25);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -1954,18 +2076,26 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
   --callout-color: var(--callout-question, 100, 221, 23);
   background: rgba(100, 221, 23, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(100, 221, 23, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(100, 221, 23, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(100, 221, 23, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(100, 221, 23, 0.25);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -1985,9 +2115,13 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -2003,18 +2137,26 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
   --callout-color: var(--callout-success, 0, 200, 83);
   background: rgba(0, 200, 83, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(0, 200, 83, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 200, 83, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(0, 200, 83, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(0, 200, 83, 0.25);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -2030,18 +2172,26 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip, 0, 191, 165);
   background: rgba(0, 191, 165, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(0, 191, 165, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 191, 165, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(0, 191, 165, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(0, 191, 165, 0.25);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2057,18 +2207,26 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo, 0, 184, 212);
   background: rgba(0, 184, 212, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(0, 184, 212, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 184, 212, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(0, 184, 212, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(0, 184, 212, 0.25);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -2084,18 +2242,26 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning, 255, 145, 0);
   background: rgba(255, 145, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(255, 145, 0, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 145, 0, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(255, 145, 0, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(255, 145, 0, 0.25);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -2189,9 +2355,13 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
@@ -2213,17 +2383,25 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   background-color: var(--background-primary, rgb(32, 32, 32));
   border-bottom-color: rgb(22, 22, 22);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
   background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.075));
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
@@ -2243,9 +2421,13 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
   --pill-color-remove-hover: var(--tag-color-hover, #d6ba7c);
   background-color: var(--pill-background, rgba(213, 185, 123, 0.1));
   border-bottom-color: rgba(213, 185, 123, 0.15);
+  border-bottom-width: 0px;
   border-left-color: rgba(213, 185, 123, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(213, 185, 123, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(213, 185, 123, 0.15);
+  border-top-width: 0px;
   color: var(--pill-color, rgb(214, 186, 124));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 }
@@ -2256,9 +2438,13 @@ html[saved-theme="dark"] body a.internal-link.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(220, 221, 222));
   font-family: var(--h1-font, "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
   font-size: var(--h1-size, 32px);
@@ -2266,6 +2452,9 @@ html[saved-theme="dark"] body h1 {
   letter-spacing: var(--h1-letter-spacing, -0.48px);
   line-height: var(--h1-line-height, 38.4px);
   margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body h1.article-title {
@@ -2276,9 +2465,13 @@ html[saved-theme="dark"] body h1.article-title {
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 600);
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(220, 221, 222));
   font-family: var(--h2-font, "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
   font-size: var(--h2-size, 25.6px);
@@ -2286,28 +2479,45 @@ html[saved-theme="dark"] body h2 {
   letter-spacing: var(--h2-letter-spacing, -0.384px);
   line-height: var(--h2-line-height, 30.72px);
   margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(220, 221, 222));
   font-family: var(--inline-title-font, "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
   font-size: var(--inline-title-size, 32px);
   letter-spacing: -0.48px;
   line-height: var(--inline-title-line-height, 38.4px);
   margin-bottom: 16px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 16px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, 600);
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(220, 221, 222));
   font-family: var(--h3-font, "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
   font-size: var(--h3-size, 21.92px);
@@ -2315,15 +2525,21 @@ html[saved-theme="dark"] body h3 {
   letter-spacing: var(--h3-letter-spacing, -0.3288px);
   line-height: var(--h3-line-height, 28.496px);
   margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 15px);
 }
 
 html[saved-theme="dark"] body h4 {
   --font-weight: var(--h4-weight, 600);
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(220, 221, 222));
   font-family: var(--h4-font, "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
   font-size: var(--h4-size, 20px);
@@ -2331,15 +2547,21 @@ html[saved-theme="dark"] body h4 {
   letter-spacing: var(--h4-letter-spacing, 0.3px);
   line-height: var(--h4-line-height, 28px);
   margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 15px);
 }
 
 html[saved-theme="dark"] body h5 {
   --font-weight: var(--h5-weight, 600);
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(220, 221, 222));
   font-family: var(--h5-font, "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
   font-size: var(--h5-size, 17.92px);
@@ -2347,14 +2569,20 @@ html[saved-theme="dark"] body h5 {
   letter-spacing: var(--h5-letter-spacing, 0.2688px);
   line-height: var(--h5-line-height, 26.88px);
   margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 15px);
 }
 
 html[saved-theme="dark"] body h6 {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(220, 221, 222));
   font-family: var(--h6-font, "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
   font-size: var(--h6-size, 17.92px);
@@ -2362,6 +2590,8 @@ html[saved-theme="dark"] body h6 {
   letter-spacing: var(--h6-letter-spacing, 0.2688px);
   line-height: var(--h6-line-height, 26.88px);
   margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 15px;
 }
 
@@ -2371,9 +2601,13 @@ html[saved-theme="dark"] body hr {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: var(--callout-default, 68, 138, 255);
   border-bottom-color: rgba(68, 138, 255, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(68, 138, 255, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(68, 138, 255, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(68, 138, 255, 0.25);
+  border-top-width: 0px;
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: var(--nav-item-color, rgb(136, 136, 136));
@@ -2409,9 +2643,13 @@ html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg 
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(136, 136, 136);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 136, 136);
+  border-left-width: 0px;
   border-right-color: rgb(136, 136, 136);
+  border-right-width: 0px;
   border-top-color: rgb(136, 136, 136);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(136, 136, 136));
 }`,
     footer: `html[saved-theme="dark"] body footer {
@@ -2430,9 +2668,13 @@ html[saved-theme="dark"] body footer ul li a {
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
@@ -2446,9 +2688,13 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body li.section-li > .section .meta {
@@ -2462,15 +2708,23 @@ html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
 
 html[saved-theme="dark"] body ul.section-ul {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-color: rgb(136, 136, 136);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 136, 136);
+  border-left-width: 0px;
   border-right-color: rgb(136, 136, 136);
+  border-right-width: 0px;
   border-top-color: rgb(136, 136, 136);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(136, 136, 136));
 }
 
@@ -2480,9 +2734,13 @@ html[saved-theme="dark"] body .darkmode svg {
 }`,
     breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-container {
   border-bottom-color: rgb(136, 136, 136);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 136, 136);
+  border-left-width: 0px;
   border-right-color: rgb(136, 136, 136);
+  border-right-width: 0px;
   border-top-color: rgb(136, 136, 136);
+  border-top-width: 0px;
   color: rgb(136, 136, 136);
 }
 
@@ -2521,18 +2779,26 @@ html[saved-theme="dark"] body .canvas-sidebar {
 
 html[saved-theme="dark"] body .metadata-container .metadata-property {
   border-bottom-color: rgb(136, 136, 136);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 136, 136);
+  border-left-width: 0px;
   border-right-color: rgb(136, 136, 136);
+  border-right-width: 0px;
   border-top-color: rgb(136, 136, 136);
+  border-top-width: 0px;
   color: rgb(136, 136, 136);
   font-family: "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 }
 
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(136, 136, 136);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 136, 136);
+  border-left-width: 0px;
   border-right-color: rgb(136, 136, 136);
+  border-right-width: 0px;
   border-top-color: rgb(136, 136, 136);
+  border-top-width: 0px;
   color: rgb(136, 136, 136);
   font-family: "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 }
@@ -2579,9 +2845,13 @@ html[saved-theme="dark"] body div#quartz-root {
 
 html[saved-theme="dark"] body ol.overflow {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
   background-color: var(--background-secondary, rgb(22, 22, 22));
@@ -2593,9 +2863,13 @@ html[saved-theme="dark"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: rgb(220, 221, 222);
 }
 
@@ -2605,15 +2879,21 @@ html[saved-theme="dark"] body .navigation-progress {
 
 html[saved-theme="dark"] body .page-header h2.page-title {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(220, 221, 222));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   font-size: var(--file-header-font-size, 13px);
   font-weight: var(--file-header-font-weight, 400);
+  padding-bottom: 0px;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -2622,17 +2902,25 @@ html[saved-theme="dark"] body abbr {
 
 html[saved-theme="dark"] body details {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body input[type=text] {
   background-color: rgb(42, 42, 42);
   border-bottom-color: rgb(54, 54, 54);
+  border-bottom-width: 0px;
   border-left-color: rgb(54, 54, 54);
+  border-left-width: 0px;
   border-right-color: rgb(54, 54, 54);
+  border-right-width: 0px;
   border-top-color: rgb(54, 54, 54);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(220, 221, 222));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 }
@@ -2640,9 +2928,13 @@ html[saved-theme="dark"] body input[type=text] {
 html[saved-theme="dark"] body kbd {
   background-color: var(--code-background, rgb(26, 26, 26));
   border-bottom-color: rgb(136, 136, 136);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 136, 136);
+  border-left-width: 0px;
   border-right-color: rgb(136, 136, 136);
+  border-right-width: 0px;
   border-top-color: rgb(136, 136, 136);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(136, 136, 136));
   font-family: var(--font-interface, "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
   font-size: var(--font-ui-smaller, 12px);
@@ -2654,9 +2946,13 @@ html[saved-theme="dark"] body kbd {
 
 html[saved-theme="dark"] body progress {
   border-bottom-color: rgb(220, 221, 222);
+  border-bottom-width: 0px;
   border-left-color: rgb(220, 221, 222);
+  border-left-width: 0px;
   border-right-color: rgb(220, 221, 222);
+  border-right-width: 0px;
   border-top-color: rgb(220, 221, 222);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body sub {
@@ -2675,9 +2971,13 @@ html[saved-theme="dark"] body sup {
 html[saved-theme="dark"] body ul.tags > li {
   background-color: var(--tag-background, rgba(213, 185, 123, 0.1));
   border-bottom-color: rgba(213, 185, 123, 0.15);
+  border-bottom-width: 0px;
   border-left-color: rgba(213, 185, 123, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(213, 185, 123, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(213, 185, 123, 0.15);
+  border-top-width: 0px;
   color: var(--tag-color, rgb(214, 186, 124));
 }`,
   },
@@ -2984,37 +3284,55 @@ html[saved-theme="light"] body a.internal-link.broken {
 }`,
     lists: `html[saved-theme="light"] body dd {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
   font-family: "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 }
 
 html[saved-theme="light"] body dt {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
   font-family: "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(44, 44, 44);
+  margin-bottom: 0px;
   margin-left: 26.6953px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(44, 44, 44);
+  margin-bottom: 0px;
   margin-left: 26.6953px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body ul.overflow {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: var(--text-faint, rgb(150, 150, 150));
@@ -3026,9 +3344,13 @@ html[saved-theme="light"] body blockquote {
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body table {
@@ -3057,13 +3379,19 @@ html[saved-theme="light"] body th {
 html[saved-theme="light"] body pre:has(> code) {
   overflow-x: scroll;
   padding-bottom: 8px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 8px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body figcaption {
@@ -3073,43 +3401,67 @@ html[saved-theme="light"] body figcaption {
 
 html[saved-theme="light"] body figure {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body img {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body video {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="light"] body .footnotes {
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
 }
 
 html[saved-theme="light"] body .transclude {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(214, 186, 124);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
+  padding-bottom: 0px;
   padding-left: 24px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
@@ -3122,11 +3474,17 @@ html[saved-theme="light"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(150, 150, 150);
+  border-bottom-width: 0px;
   border-left-color: rgb(150, 150, 150);
+  border-left-width: 0px;
   border-right-color: rgb(150, 150, 150);
+  border-right-width: 0px;
   border-top-color: rgb(150, 150, 150);
+  border-top-width: 0px;
+  margin-bottom: 0px;
   margin-left: -21px;
   margin-right: 6px;
+  margin-top: 0px;
   width: var(--checkbox-size, 15px);
 }
 
@@ -4341,9 +4699,13 @@ html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="chec
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
@@ -4359,18 +4721,26 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary, 0, 176, 255);
   background: rgba(0, 176, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(0, 176, 255, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 176, 255, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(0, 176, 255, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(0, 176, 255, 0.25);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -4386,18 +4756,26 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug, 245, 0, 87);
   background: rgba(245, 0, 87, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(245, 0, 87, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(245, 0, 87, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(245, 0, 87, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(245, 0, 87, 0.25);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -4413,18 +4791,26 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
   --callout-color: var(--callout-error, 255, 23, 68);
   background: rgba(255, 23, 68, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(255, 23, 68, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 23, 68, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(255, 23, 68, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(255, 23, 68, 0.25);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -4440,18 +4826,26 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
   --callout-color: var(--callout-example, 124, 77, 255);
   background: rgba(124, 77, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(124, 77, 255, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(124, 77, 255, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(124, 77, 255, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(124, 77, 255, 0.25);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -4467,18 +4861,26 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail, 255, 82, 82);
   background: rgba(255, 82, 82, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(255, 82, 82, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 82, 82, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(255, 82, 82, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(255, 82, 82, 0.25);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -4494,18 +4896,26 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
   --callout-color: var(--callout-info, 0, 184, 212);
   background: rgba(0, 184, 212, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(0, 184, 212, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 184, 212, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(0, 184, 212, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(0, 184, 212, 0.25);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -4521,18 +4931,26 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
   --callout-color: var(--callout-default, 68, 138, 255);
   background: rgba(68, 138, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(68, 138, 255, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(68, 138, 255, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(68, 138, 255, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(68, 138, 255, 0.25);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -4548,18 +4966,26 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
   --callout-color: var(--callout-question, 100, 221, 23);
   background: rgba(100, 221, 23, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(100, 221, 23, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(100, 221, 23, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(100, 221, 23, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(100, 221, 23, 0.25);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -4579,9 +5005,13 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -4597,18 +5027,26 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
   --callout-color: var(--callout-success, 0, 200, 83);
   background: rgba(0, 200, 83, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(0, 200, 83, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 200, 83, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(0, 200, 83, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(0, 200, 83, 0.25);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -4624,18 +5062,26 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip, 0, 191, 165);
   background: rgba(0, 191, 165, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(0, 191, 165, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 191, 165, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(0, 191, 165, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(0, 191, 165, 0.25);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -4651,18 +5097,26 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo, 0, 184, 212);
   background: rgba(0, 184, 212, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(0, 184, 212, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 184, 212, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(0, 184, 212, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(0, 184, 212, 0.25);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -4678,18 +5132,26 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning, 255, 145, 0);
   background: rgba(255, 145, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   border-bottom-color: rgba(255, 145, 0, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 145, 0, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(255, 145, 0, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(255, 145, 0, 0.25);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 68, 138, 255;
   border-bottom-color: rgb(68, 138, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(68, 138, 255);
+  border-left-width: 0px;
   border-right-color: rgb(68, 138, 255);
+  border-right-width: 0px;
   border-top-color: rgb(68, 138, 255);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -4783,9 +5245,13 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-description {
@@ -4807,16 +5273,23 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
   background-color: var(--background-primary, rgb(250, 250, 250));
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
   background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0.075));
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
 }
 
@@ -4836,9 +5309,13 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-remove-hover: var(--tag-color-hover, #d6ba7c);
   background-color: var(--pill-background, rgba(213, 185, 123, 0.1));
   border-bottom-color: rgba(213, 185, 123, 0.15);
+  border-bottom-width: 0px;
   border-left-color: rgba(213, 185, 123, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(213, 185, 123, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(213, 185, 123, 0.15);
+  border-top-width: 0px;
   color: var(--pill-color, rgb(214, 186, 124));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 }
@@ -4849,9 +5326,13 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(44, 44, 44));
   font-family: var(--h1-font, "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
   font-size: var(--h1-size, 32px);
@@ -4859,6 +5340,9 @@ html[saved-theme="light"] body h1 {
   letter-spacing: var(--h1-letter-spacing, -0.48px);
   line-height: var(--h1-line-height, 38.4px);
   margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body h1.article-title {
@@ -4869,9 +5353,13 @@ html[saved-theme="light"] body h1.article-title {
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 600);
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(44, 44, 44));
   font-family: var(--h2-font, "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
   font-size: var(--h2-size, 25.6px);
@@ -4879,28 +5367,45 @@ html[saved-theme="light"] body h2 {
   letter-spacing: var(--h2-letter-spacing, -0.384px);
   line-height: var(--h2-line-height, 30.72px);
   margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(44, 44, 44));
   font-family: var(--inline-title-font, "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
   font-size: var(--inline-title-size, 32px);
   letter-spacing: -0.48px;
   line-height: var(--inline-title-line-height, 38.4px);
   margin-bottom: 16px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 16px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, 600);
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(44, 44, 44));
   font-family: var(--h3-font, "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
   font-size: var(--h3-size, 21.92px);
@@ -4908,15 +5413,21 @@ html[saved-theme="light"] body h3 {
   letter-spacing: var(--h3-letter-spacing, -0.3288px);
   line-height: var(--h3-line-height, 28.496px);
   margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 15px);
 }
 
 html[saved-theme="light"] body h4 {
   --font-weight: var(--h4-weight, 600);
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(44, 44, 44));
   font-family: var(--h4-font, "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
   font-size: var(--h4-size, 20px);
@@ -4924,15 +5435,21 @@ html[saved-theme="light"] body h4 {
   letter-spacing: var(--h4-letter-spacing, 0.3px);
   line-height: var(--h4-line-height, 28px);
   margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 15px);
 }
 
 html[saved-theme="light"] body h5 {
   --font-weight: var(--h5-weight, 600);
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(44, 44, 44));
   font-family: var(--h5-font, "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
   font-size: var(--h5-size, 17.92px);
@@ -4940,14 +5457,20 @@ html[saved-theme="light"] body h5 {
   letter-spacing: var(--h5-letter-spacing, 0.2688px);
   line-height: var(--h5-line-height, 26.88px);
   margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 15px);
 }
 
 html[saved-theme="light"] body h6 {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(44, 44, 44));
   font-family: var(--h6-font, "??", "??", "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
   font-size: var(--h6-size, 17.92px);
@@ -4955,6 +5478,8 @@ html[saved-theme="light"] body h6 {
   letter-spacing: var(--h6-letter-spacing, 0.2688px);
   line-height: var(--h6-line-height, 26.88px);
   margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 15px;
 }
 
@@ -4964,9 +5489,13 @@ html[saved-theme="light"] body hr {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: var(--callout-default, 68, 138, 255);
   border-bottom-color: rgba(68, 138, 255, 0.25);
+  border-bottom-width: 0px;
   border-left-color: rgba(68, 138, 255, 0.25);
+  border-left-width: 0px;
   border-right-color: rgba(68, 138, 255, 0.25);
+  border-right-width: 0px;
   border-top-color: rgba(68, 138, 255, 0.25);
+  border-top-width: 0px;
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -5004,9 +5533,13 @@ html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
 }
 
@@ -5015,9 +5548,13 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body li.section-li > .section .meta {
@@ -5026,9 +5563,13 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 
 html[saved-theme="light"] body ul.section-ul {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
 }`,
     breadcrumbs: `html[saved-theme="light"] body .breadcrumb-element p {
   color: var(--text-faint, rgb(150, 150, 150));
@@ -5098,9 +5639,13 @@ html[saved-theme="light"] body div#quartz-root {
 
 html[saved-theme="light"] body ol.overflow {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
   border-color: rgb(44, 44, 44);
@@ -5111,23 +5656,33 @@ html[saved-theme="light"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="light"] body .katex-display {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(44, 44, 44));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   font-size: var(--file-header-font-size, 13px);
   font-weight: var(--file-header-font-weight, 400);
+  padding-bottom: 0px;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body abbr {
@@ -5136,26 +5691,38 @@ html[saved-theme="light"] body abbr {
 
 html[saved-theme="light"] body details {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body input[type=text] {
   background-color: rgb(255, 255, 255);
   border-bottom-color: rgb(224, 224, 224);
+  border-bottom-width: 0px;
   border-left-color: rgb(224, 224, 224);
+  border-left-width: 0px;
   border-right-color: rgb(224, 224, 224);
+  border-right-width: 0px;
   border-top-color: rgb(224, 224, 224);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(44, 44, 44));
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 }
 
 html[saved-theme="light"] body kbd {
   border-bottom-color: rgb(92, 92, 92);
+  border-bottom-width: 0px;
   border-left-color: rgb(92, 92, 92);
+  border-left-width: 0px;
   border-right-color: rgb(92, 92, 92);
+  border-right-width: 0px;
   border-top-color: rgb(92, 92, 92);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(92, 92, 92));
   font-family: var(--font-interface, "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif);
   font-size: var(--font-ui-smaller, 12px);
@@ -5167,9 +5734,13 @@ html[saved-theme="light"] body kbd {
 
 html[saved-theme="light"] body progress {
   border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 0px;
   border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
   border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
   border-top-color: rgb(44, 44, 44);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body sub {
@@ -5188,9 +5759,13 @@ html[saved-theme="light"] body sup {
 html[saved-theme="light"] body ul.tags > li {
   background-color: var(--tag-background, rgba(213, 185, 123, 0.1));
   border-bottom-color: rgba(213, 185, 123, 0.15);
+  border-bottom-width: 0px;
   border-left-color: rgba(213, 185, 123, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(213, 185, 123, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(213, 185, 123, 0.15);
+  border-top-width: 0px;
   color: var(--tag-color, rgb(214, 186, 124));
 }`,
   },

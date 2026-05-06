@@ -238,6 +238,8 @@ html body a.internal-link.broken {
 
 html body dl {
   margin-bottom: 14.4px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 14.4px;
 }
 
@@ -248,15 +250,25 @@ html body dt {
 
 html body ol > li {
   color: rgb(218, 231, 246);
+  margin-bottom: 0px;
   margin-left: 26.5672px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.08px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.08px);
 }
 
 html body ul > li {
   color: rgb(218, 231, 246);
+  margin-bottom: 0px;
   margin-left: 26.5672px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: var(--list-spacing, 1.08px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 1.08px);
 }`,
     blockquotes: `html body .data-footnote-backref {
@@ -284,9 +296,13 @@ html body th {
 }`,
     images: `html body video {
   border-bottom-color: rgb(218, 231, 246);
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 231, 246);
+  border-left-width: 0px;
   border-right-color: rgb(218, 231, 246);
+  border-right-width: 0px;
   border-top-color: rgb(218, 231, 246);
+  border-top-width: 0px;
 }`,
     checkboxes: `html body .katex-display > .katex {
   font-family: "Fira Code", monospace;
@@ -1017,9 +1033,13 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
 
 html body h1 {
   border-bottom-color: rgb(135, 232, 206);
+  border-bottom-width: 0px;
   border-left-color: rgb(135, 232, 206);
+  border-left-width: 0px;
   border-right-color: rgb(135, 232, 206);
+  border-right-width: 0px;
   border-top-color: rgb(135, 232, 206);
+  border-top-width: 0px;
   color: var(--accent, rgb(135, 232, 206));
   font-family: var(--h1-font, "Fira Code", monospace);
   font-size: var(--h1-size, 23.2992px);
@@ -1036,8 +1056,11 @@ html body h2 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgb(95, 88, 157);
+  border-left-width: 0px;
   border-right-color: rgb(95, 88, 157);
+  border-right-width: 0px;
   border-top-color: rgb(95, 88, 157);
+  border-top-width: 0px;
   color: var(--purple, rgb(95, 88, 157));
   font-family: var(--h2-font, "Fira Code", monospace);
   font-size: var(--h2-size, 21.0528px);
@@ -1051,13 +1074,20 @@ html body h2.page-title, html h2.page-title a {
   letter-spacing: -0.349488px;
   line-height: var(--inline-title-line-height, 27.959px);
   margin-bottom: 11.6496px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body h3 {
   border-bottom-color: rgb(140, 134, 187);
+  border-bottom-width: 0px;
   border-left-color: rgb(140, 134, 187);
+  border-left-width: 0px;
   border-right-color: rgb(140, 134, 187);
+  border-right-width: 0px;
   border-top-color: rgb(140, 134, 187);
+  border-top-width: 0px;
   color: var(--purple-light-3, rgb(140, 134, 187));
   font-family: var(--h3-font, "Fira Code", monospace);
   font-size: var(--h3-size, 18.9792px);
@@ -1068,9 +1098,13 @@ html body h3 {
 
 html body h4 {
   border-bottom-color: rgb(95, 88, 157);
+  border-bottom-width: 0px;
   border-left-color: rgb(95, 88, 157);
+  border-left-width: 0px;
   border-right-color: rgb(95, 88, 157);
+  border-right-width: 0px;
   border-top-color: rgb(95, 88, 157);
+  border-top-width: 0px;
   color: var(--purple, rgb(95, 88, 157));
   font-family: var(--h4-font, "Fira Code", monospace);
   font-size: var(--h4-size, 17.1072px);
@@ -1081,9 +1115,13 @@ html body h4 {
 
 html body h5 {
   border-bottom-color: rgb(135, 232, 206);
+  border-bottom-width: 0px;
   border-left-color: rgb(135, 232, 206);
+  border-left-width: 0px;
   border-right-color: rgb(135, 232, 206);
+  border-right-width: 0px;
   border-top-color: rgb(135, 232, 206);
+  border-top-width: 0px;
   color: var(--accent, rgb(135, 232, 206));
   font-family: var(--h5-font, "Fira Code", monospace);
   font-size: var(--h5-size, 15.4944px);
@@ -1093,9 +1131,13 @@ html body h5 {
 
 html body h6 {
   border-bottom-color: rgb(95, 88, 157);
+  border-bottom-width: 0px;
   border-left-color: rgb(95, 88, 157);
+  border-left-width: 0px;
   border-right-color: rgb(95, 88, 157);
+  border-right-width: 0px;
   border-top-color: rgb(95, 88, 157);
+  border-top-width: 0px;
   color: var(--purple, rgb(95, 88, 157));
   font-family: var(--h6-font, "Fira Code", monospace);
   font-size: var(--h6-size, 14.4px);
@@ -1114,6 +1156,7 @@ html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-
     footer: `html body footer {
   background-color: var(--editor-background, rgb(17, 17, 19));
   border-top-color: rgb(95, 88, 157);
+  border-top-width: 0px;
   font-family: "Fira Code", monospace;
 }
 
@@ -1179,9 +1222,13 @@ html body .stacked-page-header {
 
 html body .page-header h2.page-title {
   border-bottom-color: rgb(218, 231, 246);
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 231, 246);
+  border-left-width: 0px;
   border-right-color: rgb(218, 231, 246);
+  border-right-width: 0px;
   border-top-color: rgb(218, 231, 246);
+  border-top-width: 0px;
   color: var(--editor-title, rgb(218, 231, 246));
 }
 
@@ -1199,9 +1246,13 @@ html body kbd {
 
 html body progress {
   border-bottom-color: rgb(218, 231, 246);
+  border-bottom-width: 0px;
   border-left-color: rgb(218, 231, 246);
+  border-left-width: 0px;
   border-right-color: rgb(218, 231, 246);
+  border-right-width: 0px;
   border-top-color: rgb(218, 231, 246);
+  border-top-width: 0px;
 }
 
 html body sub {

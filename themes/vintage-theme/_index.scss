@@ -437,7 +437,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: var(--text-a, rgb(209, 99, 62));
     cursor: var(--cursor-link);
-    filter: none;
+    filter: var(--link-external-filter);
     backdrop-filter: none;
     box-shadow: none;
     font-family: Newsreader, Georgia, serif;
@@ -447,6 +447,7 @@ body {
     text-decoration-color: rgb(209, 99, 62);
     text-decoration-line: var(--link-external-decoration);
     text-decoration-style: solid;
+    text-decoration-thickness: var(--link-decoration-thickness);
     transition: 0.7s ease-in-out;
     transform: none;
     user-select: text;
@@ -475,6 +476,7 @@ body {
     text-decoration-color: rgb(209, 99, 62);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: solid;
+    text-decoration-thickness: var(--link-decoration-thickness);
     transition: opacity 0.14s ease-in-out;
     transform: none;
     user-select: text;
@@ -492,7 +494,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: var(--text-a, rgb(209, 99, 62));
     cursor: var(--cursor-link);
-    filter: none;
+    filter: var(--link-unresolved-filter);
     backdrop-filter: none;
     box-shadow: none;
     font-family: Newsreader, Georgia, serif;
@@ -1429,7 +1431,7 @@ body {
     line-height: var(--h6-line-height, 19px);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: normal;
+    letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3786,7 +3788,7 @@ body {
   }
 
   .katex-display {
-    background-color: var(--background-modifier-hover);
+    background-color: rgba(0, 0, 0, 0);
     color: rgb(227, 218, 207);
     border-color: rgb(227, 218, 207);
     border-width: 0px;

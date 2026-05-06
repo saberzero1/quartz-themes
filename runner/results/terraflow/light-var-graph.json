@@ -1850,14 +1850,30 @@
     ".callout[data-callout=\"bug\"]": ["--callout-bug"],
     ".callout[data-callout=\"example\"]": ["--callout-example"],
     ".callout[data-callout=\"quote\"]": ["--callout-quote"],
-    ":is(.callout[data-callout=\"note\"]": ["--callout-note"],
-    ":is(.callout[data-callout=\"info\"]": ["--callout-info"],
-    ":is(.callout[data-callout=\"warning\"]": ["--callout-warning"],
-    ":is(.callout[data-callout=\"success\"]": ["--callout-success"],
-    ":is(.callout[data-callout=\"danger\"]": ["--callout-danger"],
-    ":is(.callout[data-callout=\"example\"]": ["--callout-example"],
-    ":is(.callout[data-callout=\"cite\"]": ["--callout-cite"],
-    ":is(.callout[data-callout=\"video\"]": ["--callout-video"]
+    ":is(.callout[data-callout=\"note\"], .callout[data-callout=\"default\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-note, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-default)": [
+      "--callout-note"
+    ],
+    ":is(.callout[data-callout=\"info\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-info)": [
+      "--callout-info"
+    ],
+    ":is(.callout[data-callout=\"warning\"], .callout[data-callout=\"caution\"], .callout[data-callout=\"attention\"], .callout[data-callout=\"question\"], .callout[data-callout=\"help\"], .callout[data-callout=\"faq\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-warning, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-caution, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-attention, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-question, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-help, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-faq)": [
+      "--callout-warning"
+    ],
+    ":is(.callout[data-callout=\"success\"], .callout[data-callout=\"check\"], .callout[data-callout=\"done\"], .callout[data-callout=\"todo\"], .callout[data-callout=\"tip\"], .callout[data-callout=\"hint\"], .callout[data-callout=\"summary\"], .callout[data-callout=\"abstract\"], .callout[data-callout=\"tldr\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-success, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-check, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-done, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-todo, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tip, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-hint, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-summary, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-abstract, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tldr)": [
+      "--callout-success"
+    ],
+    ":is(.callout[data-callout=\"danger\"], .callout[data-callout=\"error\"], .callout[data-callout=\"failure\"], .callout[data-callout=\"bug\"], .callout[data-callout=\"important\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-danger, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-error, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-failure, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-bug, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-important)": [
+      "--callout-danger"
+    ],
+    ":is(.callout[data-callout=\"example\"], .callout[data-callout=\"quote\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-example, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-quote)": [
+      "--callout-example"
+    ],
+    ":is(.callout[data-callout=\"cite\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-cite)": [
+      "--callout-cite"
+    ],
+    ":is(.callout[data-callout=\"video\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-video)": [
+      "--callout-video"
+    ]
   },
   "--pill-corner-shape": {
     ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill": [
@@ -2156,15 +2172,72 @@
   },
   "--folder-color": {
     "body.enable-monochrome.theme-light": ["--emphasis-color"],
-    ":is(.theme-light": ["--heading-senary-rgb", "--theme-folder-opacity"]
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+1)": [
+      "--heading-primary-rgb",
+      "--theme-folder-opacity"
+    ],
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+2)": [
+      "--heading-secondary-rgb",
+      "--theme-folder-opacity"
+    ],
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+3)": [
+      "--heading-tertiary-rgb",
+      "--theme-folder-opacity"
+    ],
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+4)": [
+      "--heading-quaternary-rgb",
+      "--theme-folder-opacity"
+    ],
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+5)": [
+      "--heading-quinary-rgb",
+      "--theme-folder-opacity"
+    ],
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+6)": [
+      "--heading-senary-rgb",
+      "--theme-folder-opacity"
+    ]
   },
   "--folder-text-color": {
     "body.enable-monochrome.theme-light": ["--text-normal"],
-    ":is(.theme-light": ["--heading-senary"]
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+1)": [
+      "--heading-primary"
+    ],
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+2)": [
+      "--heading-secondary"
+    ],
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+3)": [
+      "--heading-tertiary"
+    ],
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+4)": [
+      "--heading-quaternary"
+    ],
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+5)": [
+      "--heading-quinary"
+    ],
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+6)": [
+      "--heading-senary"
+    ]
   },
   "--folder-heading-rgb": {
     "body.enable-monochrome.theme-light": ["--heading-primary-rgb"],
-    ":is(.theme-light": ["--heading-senary-rgb"]
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+1)": [
+      "--heading-primary-rgb"
+    ],
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+2)": [
+      "--heading-secondary-rgb"
+    ],
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+3)": [
+      "--heading-tertiary-rgb"
+    ],
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+4)": [
+      "--heading-quaternary-rgb"
+    ],
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+5)": [
+      "--heading-quinary-rgb"
+    ],
+    ":is(.theme-light, .theme-dark) .nav-files-container > div > .nav-folder:nth-child(6n+6)": [
+      "--heading-senary-rgb"
+    ]
   },
   "--scale": {
     ".markdown-preview-view h1": ["--heading-scale-1"],
@@ -2183,14 +2256,30 @@
     ".markdown-preview-view h6": ["--heading-scale-x-6"]
   },
   "--callout-color-rgb": {
-    ":is(.callout[data-callout=\"note\"]": ["--callout-note-rgb"],
-    ":is(.callout[data-callout=\"info\"]": ["--callout-info-rgb"],
-    ":is(.callout[data-callout=\"warning\"]": ["--callout-warning-rgb"],
-    ":is(.callout[data-callout=\"success\"]": ["--callout-success-rgb"],
-    ":is(.callout[data-callout=\"danger\"]": ["--callout-danger-rgb"],
-    ":is(.callout[data-callout=\"example\"]": ["--callout-example-rgb"],
-    ":is(.callout[data-callout=\"cite\"]": ["--callout-cite-rgb"],
-    ":is(.callout[data-callout=\"video\"]": ["--callout-video-rgb"]
+    ":is(.callout[data-callout=\"note\"], .callout[data-callout=\"default\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-note, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-default)": [
+      "--callout-note-rgb"
+    ],
+    ":is(.callout[data-callout=\"info\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-info)": [
+      "--callout-info-rgb"
+    ],
+    ":is(.callout[data-callout=\"warning\"], .callout[data-callout=\"caution\"], .callout[data-callout=\"attention\"], .callout[data-callout=\"question\"], .callout[data-callout=\"help\"], .callout[data-callout=\"faq\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-warning, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-caution, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-attention, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-question, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-help, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-faq)": [
+      "--callout-warning-rgb"
+    ],
+    ":is(.callout[data-callout=\"success\"], .callout[data-callout=\"check\"], .callout[data-callout=\"done\"], .callout[data-callout=\"todo\"], .callout[data-callout=\"tip\"], .callout[data-callout=\"hint\"], .callout[data-callout=\"summary\"], .callout[data-callout=\"abstract\"], .callout[data-callout=\"tldr\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-success, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-check, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-done, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-todo, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tip, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-hint, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-summary, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-abstract, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tldr)": [
+      "--callout-success-rgb"
+    ],
+    ":is(.callout[data-callout=\"danger\"], .callout[data-callout=\"error\"], .callout[data-callout=\"failure\"], .callout[data-callout=\"bug\"], .callout[data-callout=\"important\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-danger, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-error, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-failure, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-bug, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-important)": [
+      "--callout-danger-rgb"
+    ],
+    ":is(.callout[data-callout=\"example\"], .callout[data-callout=\"quote\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-example, .markdown-source-view.mod-cm6 .cm-callout.cm-callout-quote)": [
+      "--callout-example-rgb"
+    ],
+    ":is(.callout[data-callout=\"cite\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-cite)": [
+      "--callout-cite-rgb"
+    ],
+    ":is(.callout[data-callout=\"video\"], .markdown-source-view.mod-cm6 .cm-callout.cm-callout-video)": [
+      "--callout-video-rgb"
+    ]
   },
   "--card-bg": { "body.layout-card": ["--background-primary"] },
   "--depth-2": {

@@ -163,12 +163,14 @@ html body .page > div#quartz-body div.sidebar {
 
 html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(153, 153, 153);
+  border-right-width: 0px;
 }
 
 html body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #1a1b26);
   background-color: var(--tab-container-background, rgb(26, 27, 38));
   border-left-color: rgb(153, 153, 153);
+  border-left-width: 0px;
 }`,
     typography: `html body .markdown-rendered p > b, html b {
   color: var(--bold-color, rgb(187, 154, 247));
@@ -212,31 +214,47 @@ html body li.task-list-item input[type="checkbox"] {
 }`,
     tables: `html body td {
   border-bottom-color: rgb(153, 153, 153);
+  border-bottom-width: 0px;
   border-left-color: rgb(153, 153, 153);
+  border-left-width: 0px;
   border-right-color: rgb(153, 153, 153);
+  border-right-width: 0px;
   border-top-color: rgb(153, 153, 153);
+  border-top-width: 0px;
 }
 
 html body th {
   border-bottom-color: rgb(153, 153, 153);
+  border-bottom-width: 0px;
   border-left-color: rgb(153, 153, 153);
+  border-left-width: 0px;
   border-right-color: rgb(153, 153, 153);
+  border-right-width: 0px;
   border-top-color: rgb(153, 153, 153);
+  border-top-width: 0px;
 }`,
     code: `html body code {
   background-color: var(--code-background, rgb(26, 27, 38));
   border-bottom-color: rgb(153, 153, 153);
+  border-bottom-width: 0px;
   border-left-color: rgb(153, 153, 153);
+  border-left-width: 0px;
   border-right-color: rgb(153, 153, 153);
+  border-right-width: 0px;
   border-top-color: rgb(153, 153, 153);
+  border-top-width: 0px;
 }
 
 html body pre:has(> code) {
   background-color: var(--code-background, rgb(26, 27, 38));
   border-bottom-color: rgb(153, 153, 153);
+  border-bottom-width: 0px;
   border-left-color: rgb(153, 153, 153);
+  border-left-width: 0px;
   border-right-color: rgb(153, 153, 153);
+  border-right-width: 0px;
   border-top-color: rgb(153, 153, 153);
+  border-top-width: 0px;
 }`,
     images: `html body figure {
   --code-background: var(--ec-frm-edBg, #1a1b26);
@@ -244,18 +262,26 @@ html body pre:has(> code) {
 
 html body img {
   border-bottom-color: rgb(122, 162, 247);
+  border-bottom-width: 0px;
   border-left-color: rgb(122, 162, 247);
+  border-left-width: 0px;
   border-right-color: rgb(122, 162, 247);
+  border-right-width: 0px;
   border-top-color: rgb(122, 162, 247);
+  border-top-width: 0px;
 }`,
     embeds: `html body .file-embed {
   background-color: var(--background-primary-alt, rgb(26, 27, 38));
 }`,
     checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgba(86, 95, 137, 0.533);
+  border-bottom-width: 0px;
   border-left-color: rgba(86, 95, 137, 0.533);
+  border-left-width: 0px;
   border-right-color: rgba(86, 95, 137, 0.533);
+  border-right-width: 0px;
   border-top-color: rgba(86, 95, 137, 0.533);
+  border-top-width: 0px;
 }
 
 html body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
@@ -612,9 +638,13 @@ html body .callout[data-callout="warning"] {
 }`,
     search: `html body .search > .search-button {
   border-bottom-color: rgb(153, 153, 153);
+  border-bottom-width: 0px;
   border-left-color: rgb(153, 153, 153);
+  border-left-width: 0px;
   border-right-color: rgb(153, 153, 153);
+  border-right-width: 0px;
   border-top-color: rgb(153, 153, 153);
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space {
@@ -623,13 +653,18 @@ html body .search > .search-container > .search-space {
 
 html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(26, 27, 38);
+  border-bottom-width: 0px;
 }
 
 html body h1 {
   border-bottom-color: rgb(122, 162, 247);
+  border-bottom-width: 0px;
   border-left-color: rgb(122, 162, 247);
+  border-left-width: 0px;
   border-right-color: rgb(122, 162, 247);
+  border-right-width: 0px;
   border-top-color: rgb(122, 162, 247);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(122, 162, 247));
   font-size: var(--h1-size, 20px);
   letter-spacing: var(--h1-letter-spacing, -0.3px);
@@ -643,9 +678,13 @@ html body h1.article-title {
 
 html body h2 {
   border-bottom-color: rgb(122, 162, 247);
+  border-bottom-width: 0px;
   border-left-color: rgb(122, 162, 247);
+  border-left-width: 0px;
   border-right-color: rgb(122, 162, 247);
+  border-right-width: 0px;
   border-top-color: rgb(122, 162, 247);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(122, 162, 247));
   font-size: var(--h2-size, 20px);
   letter-spacing: var(--h2-letter-spacing, -0.22px);
@@ -656,21 +695,32 @@ html body h2.page-title, html h2.page-title a {
   background: rgba(0, 0, 0, 0) -webkit-radial-gradient(center, rgb(187, 154, 247), rgb(247, 118, 142)) repeat scroll 0% 0% / auto padding-box text;
   background-image: radial-gradient(center, rgb(187, 154, 247), rgb(247, 118, 142));
   border-bottom-color: rgb(122, 162, 247);
+  border-bottom-width: 0px;
   border-left-color: rgb(122, 162, 247);
+  border-left-width: 0px;
   border-right-color: rgb(122, 162, 247);
+  border-right-width: 0px;
   border-top-color: rgb(122, 162, 247);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(122, 162, 247));
   font-size: var(--inline-title-size, 20px);
   letter-spacing: -0.3px;
   line-height: var(--inline-title-line-height, 24px);
   margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body h3 {
   border-bottom-color: rgb(122, 162, 247);
+  border-bottom-width: 0px;
   border-left-color: rgb(122, 162, 247);
+  border-left-width: 0px;
   border-right-color: rgb(122, 162, 247);
+  border-right-width: 0px;
   border-top-color: rgb(122, 162, 247);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(122, 162, 247));
   font-size: var(--h3-size, 20px);
   letter-spacing: var(--h3-letter-spacing, -0.16px);
@@ -679,9 +729,13 @@ html body h3 {
 
 html body h4 {
   border-bottom-color: rgb(122, 162, 247);
+  border-bottom-width: 0px;
   border-left-color: rgb(122, 162, 247);
+  border-left-width: 0px;
   border-right-color: rgb(122, 162, 247);
+  border-right-width: 0px;
   border-top-color: rgb(122, 162, 247);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(122, 162, 247));
   font-size: var(--h4-size, 20px);
   letter-spacing: var(--h4-letter-spacing, -0.1px);
@@ -690,9 +744,13 @@ html body h4 {
 
 html body h5 {
   border-bottom-color: rgb(122, 162, 247);
+  border-bottom-width: 0px;
   border-left-color: rgb(122, 162, 247);
+  border-left-width: 0px;
   border-right-color: rgb(122, 162, 247);
+  border-right-width: 0px;
   border-top-color: rgb(122, 162, 247);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(122, 162, 247));
   font-size: var(--h5-size, 20px);
   letter-spacing: var(--h5-letter-spacing, -0.04px);
@@ -701,9 +759,13 @@ html body h5 {
 
 html body h6 {
   border-bottom-color: rgb(122, 162, 247);
+  border-bottom-width: 0px;
   border-left-color: rgb(122, 162, 247);
+  border-left-width: 0px;
   border-right-color: rgb(122, 162, 247);
+  border-right-width: 0px;
   border-top-color: rgb(122, 162, 247);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(122, 162, 247));
   font-size: var(--h6-size, 20px);
   line-height: var(--h6-line-height, 30px);
@@ -711,8 +773,11 @@ html body h6 {
 
 html body hr {
   border-bottom-color: rgb(153, 153, 153);
+  border-bottom-width: 0px;
   border-left-color: rgb(153, 153, 153);
+  border-left-width: 0px;
   border-right-color: rgb(153, 153, 153);
+  border-right-width: 0px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 2, 122, 255);
@@ -723,9 +788,13 @@ html body hr {
     footer: `html body footer {
   background-color: var(--status-bar-background, rgb(26, 27, 38));
   border-bottom-color: rgb(153, 153, 153);
+  border-bottom-width: 0px;
   border-left-color: rgb(153, 153, 153);
+  border-left-width: 0px;
   border-right-color: rgb(153, 153, 153);
+  border-right-width: 0px;
   border-top-color: rgb(153, 153, 153);
+  border-top-width: 0px;
   font-size: var(--status-bar-font-size, 13px);
 }
 
@@ -743,9 +812,13 @@ html body footer ul li a {
 }`,
     properties: `html body .metadata {
   border-bottom-color: rgb(153, 153, 153);
+  border-bottom-width: 0px;
   border-left-color: rgb(153, 153, 153);
+  border-left-width: 0px;
   border-right-color: rgb(153, 153, 153);
+  border-right-width: 0px;
   border-top-color: rgb(153, 153, 153);
+  border-top-width: 0px;
 }
 
 html body .note-properties {

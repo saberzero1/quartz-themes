@@ -408,12 +408,14 @@ html body .page > div#quartz-body div.sidebar {
 
 html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(81, 81, 81);
+  border-right-width: 0px;
 }
 
 html body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #212121);
   background-color: var(--tab-container-background, rgb(33, 33, 33));
   border-left-color: rgb(81, 81, 81);
+  border-left-width: 0px;
   color: rgb(255, 255, 255);
 }
 
@@ -599,18 +601,26 @@ html body a.internal-link.broken {
 }`,
     lists: `html body dd {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: rgb(255, 255, 255);
   font-family: "??", "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body dt {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: rgb(255, 255, 255);
   font-family: "??", "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -618,20 +628,28 @@ html body dt {
 html body ol > li {
   color: rgb(255, 255, 255);
   padding-bottom: var(--list-spacing, 2px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 2px);
 }
 
 html body ul > li {
   color: rgb(255, 255, 255);
   padding-bottom: var(--list-spacing, 2px);
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: var(--list-spacing, 2px);
 }
 
 html body ul.overflow {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: var(--text-faint, rgba(255, 255, 255, 0.6));
@@ -644,9 +662,13 @@ html body blockquote {
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
 }
 
 html body table {
@@ -677,11 +699,15 @@ html body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -689,9 +715,13 @@ html body pre:has(> code) {
 }`,
     images: `html body audio {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
 }
 
 html body figcaption {
@@ -703,52 +733,77 @@ html body figure {
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  border-top-width: 0px;
 }
 
 html body img {
   border-bottom-color: rgb(148, 149, 155);
+  border-bottom-width: 0px;
   border-left-color: rgb(148, 149, 155);
+  border-left-width: 0px;
   border-right-color: rgb(148, 149, 155);
+  border-right-width: 0px;
   border-top-color: rgb(148, 149, 155);
+  border-top-width: 0px;
 }
 
 html body video {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
 }`,
     embeds: `html body .file-embed {
   border-bottom-color: rgba(255, 255, 255, 0.8);
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 255, 255, 0.8);
+  border-left-width: 0px;
   border-right-color: rgba(255, 255, 255, 0.8);
+  border-right-width: 0px;
   border-top-color: rgba(255, 255, 255, 0.8);
+  border-top-width: 0px;
   color: var(--text-muted, rgba(255, 255, 255, 0.8));
 }
 
 html body .footnotes {
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: rgb(255, 255, 255);
 }
 
 html body .transclude {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 122, 163);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: rgb(255, 255, 255);
 }
 
 html body .transclude-inner {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: rgb(255, 255, 255);
 }`,
     checkboxes: `html body .katex-display > .katex {
@@ -761,10 +816,17 @@ html body .katex-display > .katex > .katex-html {
 
 html body input[type=checkbox] {
   border-bottom-color: rgb(148, 149, 155);
+  border-bottom-width: 0px;
   border-left-color: rgb(148, 149, 155);
+  border-left-width: 0px;
   border-right-color: rgb(148, 149, 155);
+  border-right-width: 0px;
   border-top-color: rgb(148, 149, 155);
+  border-top-width: 0px;
+  margin-bottom: 0px;
   margin-left: -36px;
+  margin-right: 0px;
+  margin-top: 0px;
   width: var(--checkbox-size, 24px);
 }
 
@@ -1318,9 +1380,13 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
     callouts: `html body .callout .callout-title {
   --callout-color: 104, 144, 215;
   border-bottom-color: rgb(104, 144, 215);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 144, 215);
+  border-left-width: 0px;
   border-right-color: rgb(104, 144, 215);
+  border-right-width: 0px;
   border-top-color: rgb(104, 144, 215);
+  border-top-width: 0px;
 }
 
 html body .callout .callout-title > .callout-title-inner > p {
@@ -1352,9 +1418,13 @@ html body .callout[data-callout="abstract"] {
 html body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 104, 144, 215;
   border-bottom-color: rgb(104, 144, 215);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 144, 215);
+  border-left-width: 0px;
   border-right-color: rgb(104, 144, 215);
+  border-right-width: 0px;
   border-top-color: rgb(104, 144, 215);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -1386,9 +1456,13 @@ html body .callout[data-callout="bug"] {
 html body .callout[data-callout="bug"] .callout-title {
   --callout-color: 104, 144, 215;
   border-bottom-color: rgb(104, 144, 215);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 144, 215);
+  border-left-width: 0px;
   border-right-color: rgb(104, 144, 215);
+  border-right-width: 0px;
   border-top-color: rgb(104, 144, 215);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -1420,9 +1494,13 @@ html body .callout[data-callout="danger"] {
 html body .callout[data-callout="danger"] .callout-title {
   --callout-color: 104, 144, 215;
   border-bottom-color: rgb(104, 144, 215);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 144, 215);
+  border-left-width: 0px;
   border-right-color: rgb(104, 144, 215);
+  border-right-width: 0px;
   border-top-color: rgb(104, 144, 215);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -1454,9 +1532,13 @@ html body .callout[data-callout="example"] {
 html body .callout[data-callout="example"] .callout-title {
   --callout-color: 104, 144, 215;
   border-bottom-color: rgb(104, 144, 215);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 144, 215);
+  border-left-width: 0px;
   border-right-color: rgb(104, 144, 215);
+  border-right-width: 0px;
   border-top-color: rgb(104, 144, 215);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -1488,9 +1570,13 @@ html body .callout[data-callout="failure"] {
 html body .callout[data-callout="failure"] .callout-title {
   --callout-color: 104, 144, 215;
   border-bottom-color: rgb(104, 144, 215);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 144, 215);
+  border-left-width: 0px;
   border-right-color: rgb(104, 144, 215);
+  border-right-width: 0px;
   border-top-color: rgb(104, 144, 215);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -1522,9 +1608,13 @@ html body .callout[data-callout="info"] {
 html body .callout[data-callout="info"] .callout-title {
   --callout-color: 104, 144, 215;
   border-bottom-color: rgb(104, 144, 215);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 144, 215);
+  border-left-width: 0px;
   border-right-color: rgb(104, 144, 215);
+  border-right-width: 0px;
   border-top-color: rgb(104, 144, 215);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -1556,9 +1646,13 @@ html body .callout[data-callout="note"] {
 html body .callout[data-callout="note"] .callout-title {
   --callout-color: 104, 144, 215;
   border-bottom-color: rgb(104, 144, 215);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 144, 215);
+  border-left-width: 0px;
   border-right-color: rgb(104, 144, 215);
+  border-right-width: 0px;
   border-top-color: rgb(104, 144, 215);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -1590,9 +1684,13 @@ html body .callout[data-callout="question"] {
 html body .callout[data-callout="question"] .callout-title {
   --callout-color: 104, 144, 215;
   border-bottom-color: rgb(104, 144, 215);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 144, 215);
+  border-left-width: 0px;
   border-right-color: rgb(104, 144, 215);
+  border-right-width: 0px;
   border-top-color: rgb(104, 144, 215);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -1624,9 +1722,13 @@ html body .callout[data-callout="quote"] {
 html body .callout[data-callout="quote"] .callout-title {
   --callout-color: 104, 144, 215;
   border-bottom-color: rgb(104, 144, 215);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 144, 215);
+  border-left-width: 0px;
   border-right-color: rgb(104, 144, 215);
+  border-right-width: 0px;
   border-top-color: rgb(104, 144, 215);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -1658,9 +1760,13 @@ html body .callout[data-callout="success"] {
 html body .callout[data-callout="success"] .callout-title {
   --callout-color: 104, 144, 215;
   border-bottom-color: rgb(104, 144, 215);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 144, 215);
+  border-left-width: 0px;
   border-right-color: rgb(104, 144, 215);
+  border-right-width: 0px;
   border-top-color: rgb(104, 144, 215);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -1692,9 +1798,13 @@ html body .callout[data-callout="tip"] {
 html body .callout[data-callout="tip"] .callout-title {
   --callout-color: 104, 144, 215;
   border-bottom-color: rgb(104, 144, 215);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 144, 215);
+  border-left-width: 0px;
   border-right-color: rgb(104, 144, 215);
+  border-right-width: 0px;
   border-top-color: rgb(104, 144, 215);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -1726,9 +1836,13 @@ html body .callout[data-callout="todo"] {
 html body .callout[data-callout="todo"] .callout-title {
   --callout-color: 104, 144, 215;
   border-bottom-color: rgb(104, 144, 215);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 144, 215);
+  border-left-width: 0px;
   border-right-color: rgb(104, 144, 215);
+  border-right-width: 0px;
   border-top-color: rgb(104, 144, 215);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -1760,9 +1874,13 @@ html body .callout[data-callout="warning"] {
 html body .callout[data-callout="warning"] .callout-title {
   --callout-color: 104, 144, 215;
   border-bottom-color: rgb(104, 144, 215);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 144, 215);
+  border-left-width: 0px;
   border-right-color: rgb(104, 144, 215);
+  border-right-width: 0px;
   border-top-color: rgb(104, 144, 215);
+  border-top-width: 0px;
 }
 
 html body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -1865,9 +1983,13 @@ html body .search > .search-container > .search-space > .search-layout > .result
 
 html body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-description {
@@ -1897,15 +2019,22 @@ html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(33, 33, 33);
   border-bottom-width: 2px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: rgb(255, 255, 255);
 }
 
@@ -1925,9 +2054,13 @@ html body a.internal-link.tag-link, html .search > .search-container > .search-s
   --pill-weight: var(--tag-weight, 100);
   background-color: var(--pill-background, rgba(136, 122, 163, 0.5));
   border-bottom-color: rgba(136, 122, 163, 0.15);
+  border-bottom-width: 0px;
   border-left-color: rgba(136, 122, 163, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(136, 122, 163, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(136, 122, 163, 0.15);
+  border-top-width: 0px;
   color: var(--pill-color, rgb(221, 208, 196));
   font-weight: var(--pill-weight, 100);
 }
@@ -1939,9 +2072,13 @@ html body a.internal-link.tag-link::before {
 html body h1 {
   --font-weight: var(--h1-weight, 900);
   border-bottom-color: rgb(148, 149, 155);
+  border-bottom-width: 0px;
   border-left-color: rgb(148, 149, 155);
+  border-left-width: 0px;
   border-right-color: rgb(148, 149, 155);
+  border-right-width: 0px;
   border-top-color: rgb(148, 149, 155);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(148, 149, 155));
   font-family: var(--h1-font, "??", "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   font-weight: var(--font-weight, 900);
@@ -1957,9 +2094,13 @@ html body h1.article-title {
 html body h2 {
   --font-weight: var(--h2-weight, 900);
   border-bottom-color: rgb(96, 190, 190);
+  border-bottom-width: 0px;
   border-left-color: rgb(96, 190, 190);
+  border-left-width: 0px;
   border-right-color: rgb(96, 190, 190);
+  border-right-width: 0px;
   border-top-color: rgb(96, 190, 190);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(96, 190, 190));
   font-family: var(--h2-font, "??", "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   font-weight: var(--font-weight, 900);
@@ -1968,9 +2109,13 @@ html body h2 {
 
 html body h2.page-title, html h2.page-title a {
   border-bottom-color: rgb(148, 149, 155);
+  border-bottom-width: 0px;
   border-left-color: rgb(148, 149, 155);
+  border-left-width: 0px;
   border-right-color: rgb(148, 149, 155);
+  border-right-width: 0px;
   border-top-color: rgb(148, 149, 155);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(148, 149, 155));
   font-family: var(--inline-title-font, "??", "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   font-size: var(--inline-title-size, 28px);
@@ -1978,14 +2123,21 @@ html body h2.page-title, html h2.page-title a {
   letter-spacing: -0.42px;
   line-height: var(--inline-title-line-height, 33.6px);
   margin-bottom: 14px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html body h3 {
   --font-weight: var(--h3-weight, 900);
   border-bottom-color: rgb(204, 131, 189);
+  border-bottom-width: 0px;
   border-left-color: rgb(204, 131, 189);
+  border-left-width: 0px;
   border-right-color: rgb(204, 131, 189);
+  border-right-width: 0px;
   border-top-color: rgb(204, 131, 189);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(204, 131, 189));
   font-family: var(--h3-font, "??", "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   font-weight: var(--font-weight, 900);
@@ -1995,9 +2147,13 @@ html body h3 {
 html body h4 {
   --font-weight: var(--h4-weight, 900);
   border-bottom-color: rgb(219, 187, 67);
+  border-bottom-width: 0px;
   border-left-color: rgb(219, 187, 67);
+  border-left-width: 0px;
   border-right-color: rgb(219, 187, 67);
+  border-right-width: 0px;
   border-top-color: rgb(219, 187, 67);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(219, 187, 67));
   font-family: var(--h4-font, "??", "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   font-weight: var(--font-weight, 900);
@@ -2007,9 +2163,13 @@ html body h4 {
 html body h5 {
   --font-weight: var(--h5-weight, 900);
   border-bottom-color: rgb(182, 96, 86);
+  border-bottom-width: 0px;
   border-left-color: rgb(182, 96, 86);
+  border-left-width: 0px;
   border-right-color: rgb(182, 96, 86);
+  border-right-width: 0px;
   border-top-color: rgb(182, 96, 86);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(182, 96, 86));
   font-family: var(--h5-font, "??", "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   font-weight: var(--font-weight, 900);
@@ -2019,9 +2179,13 @@ html body h5 {
 html body h6 {
   --font-weight: var(--h6-weight, 900);
   border-bottom-color: rgb(104, 144, 215);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 144, 215);
+  border-left-width: 0px;
   border-right-color: rgb(104, 144, 215);
+  border-right-width: 0px;
   border-top-color: rgb(104, 144, 215);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(104, 144, 215));
   font-family: var(--h6-font, "??", "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
   font-weight: var(--font-weight, 900);
@@ -2030,8 +2194,11 @@ html body h6 {
 
 html body hr {
   border-bottom-color: rgb(81, 81, 81);
+  border-bottom-width: 0px;
   border-left-color: rgb(81, 81, 81);
+  border-left-width: 0px;
   border-right-color: rgb(81, 81, 81);
+  border-right-width: 0px;
 }`,
     scrollbars: `html body .callout {
   --callout-color: var(--callout-default, 104, 144, 215);
@@ -2084,17 +2251,23 @@ html body .explorer .nav-files-container .collapse-icon svg {
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(221, 208, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 208, 196);
+  border-left-width: 0px;
   border-right-color: rgb(221, 208, 196);
+  border-right-width: 0px;
   border-top-color: rgb(221, 208, 196);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(221, 208, 196));
 }`,
     footer: `html body footer {
   background-color: var(--status-bar-background, rgb(20, 21, 21));
   border-bottom-color: rgb(81, 81, 81);
+  border-bottom-width: 0px;
   border-left-color: rgb(81, 81, 81);
   border-left-width: 2px;
   border-right-color: rgb(81, 81, 81);
+  border-right-width: 0px;
   border-top-color: rgb(81, 81, 81);
   border-top-width: 2px;
   color: var(--status-bar-text-color, rgb(136, 122, 163));
@@ -2111,9 +2284,13 @@ html body footer ul li a {
 
 html body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: rgb(255, 255, 255);
 }
 
@@ -2126,9 +2303,13 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 }`,
     listPage: `html body li.section-li {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
 }
 
 html body li.section-li > .section .meta {
@@ -2141,15 +2322,23 @@ html body li.section-li > .section > .desc > h3 > a {
 
 html body ul.section-ul {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
 }`,
     darkmode: `html body .darkmode {
   border-bottom-color: rgb(221, 208, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(221, 208, 196);
+  border-left-width: 0px;
   border-right-color: rgb(221, 208, 196);
+  border-right-width: 0px;
   border-top-color: rgb(221, 208, 196);
+  border-top-width: 0px;
   color: var(--icon-color, rgb(221, 208, 196));
 }
 
@@ -2159,9 +2348,13 @@ html body .darkmode svg {
 }`,
     breadcrumbs: `html body .breadcrumb-container {
   border-bottom-color: rgba(255, 255, 255, 0.8);
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 255, 255, 0.8);
+  border-left-width: 0px;
   border-right-color: rgba(255, 255, 255, 0.8);
+  border-right-width: 0px;
   border-top-color: rgba(255, 255, 255, 0.8);
+  border-top-width: 0px;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -2199,18 +2392,26 @@ html body .canvas-sidebar {
 
 html body .metadata-container .metadata-property {
   border-bottom-color: rgba(255, 255, 255, 0.8);
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 255, 255, 0.8);
+  border-left-width: 0px;
   border-right-color: rgba(255, 255, 255, 0.8);
+  border-right-width: 0px;
   border-top-color: rgba(255, 255, 255, 0.8);
+  border-top-width: 0px;
   color: rgba(255, 255, 255, 0.8);
   font-family: "??", "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body .metadata-properties {
   border-bottom-color: rgba(255, 255, 255, 0.8);
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 255, 255, 0.8);
+  border-left-width: 0px;
   border-right-color: rgba(255, 255, 255, 0.8);
+  border-right-width: 0px;
   border-top-color: rgba(255, 255, 255, 0.8);
+  border-top-width: 0px;
   color: rgba(255, 255, 255, 0.8);
   font-family: "??", "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -2256,9 +2457,13 @@ html body div#quartz-root {
 
 html body ol.overflow {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
 }`,
     stacked: `html body .stacked-page {
   background-color: var(--background-secondary, rgb(33, 33, 33));
@@ -2270,9 +2475,13 @@ html body .stacked-page.active {
 }`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: rgb(255, 255, 255);
 }
 
@@ -2282,9 +2491,13 @@ html body .navigation-progress {
 
 html body .page-header h2.page-title {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(255, 255, 255));
   font-size: 12px;
   line-height: 15.6px;
@@ -2296,33 +2509,49 @@ html body abbr {
 
 html body details {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
 }
 
 html body input[type=text] {
   border-bottom-color: rgba(255, 255, 255, 0.8);
+  border-bottom-width: 0px;
   border-left-color: rgba(255, 255, 255, 0.8);
+  border-left-width: 0px;
   border-right-color: rgba(255, 255, 255, 0.8);
+  border-right-width: 0px;
   border-top-color: rgba(255, 255, 255, 0.8);
+  border-top-width: 0px;
   color: var(--text-normal, rgba(255, 255, 255, 0.8));
 }
 
 html body kbd {
   background-color: var(--code-background, rgb(20, 21, 21));
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
   color: var(--code-normal, rgb(255, 255, 255));
 }
 
 html body progress {
   border-bottom-color: rgb(255, 255, 255);
+  border-bottom-width: 0px;
   border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
   border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
   border-top-color: rgb(255, 255, 255);
+  border-top-width: 0px;
 }
 
 html body sub {
@@ -2340,9 +2569,13 @@ html body sup {
 html body ul.tags > li {
   background-color: var(--tag-background, rgba(136, 122, 163, 0.5));
   border-bottom-color: rgba(136, 122, 163, 0.15);
+  border-bottom-width: 0px;
   border-left-color: rgba(136, 122, 163, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(136, 122, 163, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(136, 122, 163, 0.15);
+  border-top-width: 0px;
   color: var(--tag-color, rgb(221, 208, 196));
 }`,
   },

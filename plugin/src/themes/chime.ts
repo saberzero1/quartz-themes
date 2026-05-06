@@ -366,6 +366,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #2f2837);
   background-color: var(--tab-container-background, rgb(47, 40, 55));
   border-left-color: rgb(78, 69, 96);
+  border-left-width: 0px;
   color: rgb(160, 167, 196);
 }
 
@@ -452,37 +453,55 @@ html[saved-theme="dark"] body a.internal-link.broken {
 }`,
     lists: `html[saved-theme="dark"] body dd {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
   font-family: "??", "??", Arima, cursive;
 }
 
 html[saved-theme="dark"] body dt {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
   font-family: "??", "??", Arima, cursive;
 }
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(160, 167, 196);
+  margin-bottom: 0px;
   margin-left: 24px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body ul > li {
   color: rgb(160, 167, 196);
+  margin-bottom: 0px;
   margin-left: 24px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: var(--text-faint, rgb(125, 127, 149));
@@ -495,13 +514,19 @@ html[saved-theme="dark"] body blockquote {
   font-style: var(--blockquote-font-style, italic);
   line-height: 27.2px;
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 10px;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body table {
@@ -545,17 +570,22 @@ html[saved-theme="dark"] body thead {
 
 html[saved-theme="dark"] body tr {
   border-bottom-color: rgb(197, 182, 252);
+  border-bottom-width: 0px;
 }`,
     code: `html[saved-theme="dark"] body code {
   background-color: var(--code-background, rgb(65, 59, 78));
   border-bottom-color: rgb(78, 69, 96);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(78, 69, 96);
+  border-left-width: 0px;
   border-right-color: rgb(78, 69, 96);
+  border-right-width: 0px;
   border-top-color: rgb(78, 69, 96);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(160, 167, 196));
 }
 
@@ -564,11 +594,15 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -576,9 +610,13 @@ html[saved-theme="dark"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body figcaption {
@@ -591,62 +629,86 @@ html[saved-theme="dark"] body figure {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body img {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-radius: 10px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body video {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(65, 59, 78));
   border-bottom-color: rgb(127, 131, 161);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
   border-left-color: rgb(127, 131, 161);
+  border-left-width: 0px;
   border-radius: 10px;
   border-right-color: rgb(127, 131, 161);
+  border-right-width: 0px;
   border-top-color: rgb(127, 131, 161);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
   color: var(--text-muted, rgb(127, 131, 161));
 }
 
 html[saved-theme="dark"] body .footnotes {
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
@@ -661,11 +723,15 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(125, 127, 149);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(125, 127, 149);
+  border-left-width: 0px;
   border-right-color: rgb(125, 127, 149);
+  border-right-width: 0px;
   border-top-color: rgb(125, 127, 149);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
@@ -1220,9 +1286,13 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
@@ -1240,20 +1310,28 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -1271,20 +1349,28 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -1302,20 +1388,28 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -1333,20 +1427,28 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -1364,20 +1466,28 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -1395,20 +1505,28 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -1426,20 +1544,28 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -1457,20 +1583,28 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -1488,20 +1622,28 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -1519,20 +1661,28 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -1550,20 +1700,28 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -1581,20 +1739,28 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -1612,20 +1778,28 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -1694,9 +1868,13 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgb(85, 84, 110);
   border-bottom-color: rgb(78, 69, 96);
+  border-bottom-width: 0px;
   border-left-color: rgb(78, 69, 96);
+  border-left-width: 0px;
   border-right-color: rgb(78, 69, 96);
+  border-right-width: 0px;
   border-top-color: rgb(78, 69, 96);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(160, 167, 196));
   font-family: "??", "??", "??", Arima, cursive;
 }
@@ -1704,9 +1882,13 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 html[saved-theme="dark"] body .search > .search-container > .search-space {
   background-color: var(--prompt-background, rgb(59, 51, 71));
   border-bottom-color: rgb(98, 111, 134);
+  border-bottom-width: 0px;
   border-left-color: rgb(98, 111, 134);
+  border-left-width: 0px;
   border-right-color: rgb(98, 111, 134);
+  border-right-width: 0px;
   border-top-color: rgb(98, 111, 134);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > * {
@@ -1724,11 +1906,15 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
@@ -1741,27 +1927,39 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgb(98, 111, 134);
+  border-bottom-width: 0px;
   border-left-color: rgb(98, 111, 134);
+  border-left-width: 0px;
   border-right-color: rgb(98, 111, 134);
+  border-right-width: 0px;
   border-top-color: rgb(98, 111, 134);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(47, 40, 55);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
@@ -1779,9 +1977,13 @@ html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"]
 
 html[saved-theme="dark"] body h1 {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(160, 167, 196));
   font-family: var(--h1-font, "??", "??", Arima, cursive);
 }
@@ -1793,9 +1995,13 @@ html[saved-theme="dark"] body h1.article-title {
 html[saved-theme="dark"] body h2 {
   --font-weight: var(--h2-weight, 600);
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(160, 167, 196));
   font-family: var(--h2-font, "??", "??", Arima, cursive);
   font-weight: var(--font-weight, 600);
@@ -1803,9 +2009,13 @@ html[saved-theme="dark"] body h2 {
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(160, 167, 196));
   font-family: var(--inline-title-font, "??", "??", Arima, cursive);
 }
@@ -1813,54 +2023,84 @@ html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-ti
 html[saved-theme="dark"] body h3 {
   --font-weight: var(--h3-weight, 600);
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(160, 167, 196));
   font-family: var(--h3-font, "??", "??", Arima, cursive);
   font-weight: var(--font-weight, 600);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 42.176px);
 }
 
 html[saved-theme="dark"] body h4 {
   --font-weight: var(--h4-weight, 600);
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(160, 167, 196));
   font-family: var(--h4-font, "??", "??", Arima, cursive);
   font-weight: var(--font-weight, 600);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 38.016px);
 }
 
 html[saved-theme="dark"] body h5 {
   --font-weight: var(--h5-weight, 600);
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(160, 167, 196));
   font-family: var(--h5-font, "??", "??", Arima, cursive);
   font-weight: var(--font-weight, 600);
   line-height: var(--h5-line-height, 29.2672px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 34.432px);
 }
 
 html[saved-theme="dark"] body h6 {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(160, 167, 196));
   font-family: var(--h6-font, "??", "??", Arima, cursive);
   line-height: var(--h6-line-height, 27.2px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 32px;
 }
 
 html[saved-theme="dark"] body hr {
   border-bottom-color: rgb(78, 69, 96);
+  border-bottom-width: 0px;
   border-left-color: rgb(78, 69, 96);
+  border-left-width: 0px;
   border-right-color: rgb(78, 69, 96);
   border-right-style: var(--line-style, solid);
   border-right-width: 0px;
@@ -1870,11 +2110,15 @@ html[saved-theme="dark"] body hr {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }`,
     explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: var(--nav-item-color, rgb(127, 131, 161));
@@ -1908,20 +2152,28 @@ html[saved-theme="dark"] body .explorer .nav-files-container .collapse-icon svg 
   border-bottom-color: rgb(127, 131, 161);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(127, 131, 161);
+  border-left-width: 0px;
   border-right-color: rgb(127, 131, 161);
+  border-right-width: 0px;
   border-top-color: rgb(127, 131, 161);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(127, 131, 161));
 }`,
     footer: `html[saved-theme="dark"] body footer {
   background-color: var(--status-bar-background, rgb(47, 40, 55));
   border-bottom-color: rgb(78, 69, 96);
+  border-bottom-width: 0px;
   border-left-color: rgb(78, 69, 96);
+  border-left-width: 0px;
   border-right-color: rgb(78, 69, 96);
+  border-right-width: 0px;
   border-top-color: rgb(78, 69, 96);
   border-top-left-radius: 10px;
+  border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(127, 131, 161));
   font-family: "??", "??", "??", Arima, cursive;
 }
@@ -1936,9 +2188,13 @@ html[saved-theme="dark"] body footer ul li a {
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
@@ -1952,9 +2208,13 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body li.section-li > .section .meta {
@@ -1968,19 +2228,27 @@ html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
 
 html[saved-theme="dark"] body ul.section-ul {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-color: rgb(127, 131, 161);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(127, 131, 161);
+  border-left-width: 0px;
   border-right-color: rgb(127, 131, 161);
+  border-right-width: 0px;
   border-top-color: rgb(127, 131, 161);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(127, 131, 161));
 }
 
@@ -1992,11 +2260,15 @@ html[saved-theme="dark"] body .darkmode svg {
   border-bottom-color: rgb(125, 127, 149);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(125, 127, 149);
+  border-left-width: 0px;
   border-right-color: rgb(125, 127, 149);
+  border-right-width: 0px;
   border-top-color: rgb(125, 127, 149);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: var(--text-faint, rgb(125, 127, 149));
 }
 
@@ -2034,27 +2306,39 @@ html[saved-theme="dark"] body .bases-table thead th {
 }`,
     properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(78, 69, 96);
+  border-bottom-width: 0px;
   border-left-color: rgb(78, 69, 96);
+  border-left-width: 0px;
   border-right-color: rgb(78, 69, 96);
+  border-right-width: 0px;
   border-top-color: rgb(78, 69, 96);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(127, 131, 161));
   font-family: "??", "??", Arima, cursive;
 }
 
 html[saved-theme="dark"] body .metadata-container .metadata-property {
   border-bottom-color: rgb(127, 131, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(127, 131, 161);
+  border-left-width: 0px;
   border-right-color: rgb(127, 131, 161);
+  border-right-width: 0px;
   border-top-color: rgb(127, 131, 161);
+  border-top-width: 0px;
   color: rgb(127, 131, 161);
   font-family: "??", "??", Arima, cursive;
 }
 
 html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(127, 131, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(127, 131, 161);
+  border-left-width: 0px;
   border-right-color: rgb(127, 131, 161);
+  border-right-width: 0px;
   border-top-color: rgb(127, 131, 161);
+  border-top-width: 0px;
   color: rgb(127, 131, 161);
   font-family: "??", "??", Arima, cursive;
 }
@@ -2092,9 +2376,13 @@ html[saved-theme="dark"] body div#quartz-root {
 
 html[saved-theme="dark"] body ol.overflow {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="dark"] body .stacked-page {
   background-color: var(--background-secondary, rgba(0, 0, 0, 0));
@@ -2110,9 +2398,13 @@ html[saved-theme="dark"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
   color: rgb(160, 167, 196);
 }
 
@@ -2122,9 +2414,13 @@ html[saved-theme="dark"] body .navigation-progress {
 
 html[saved-theme="dark"] body .page-header h2.page-title {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(160, 167, 196));
   font-family: "??", "??", "??", Arima, cursive;
   font-size: 14px;
@@ -2137,16 +2433,24 @@ html[saved-theme="dark"] body abbr {
 
 html[saved-theme="dark"] body details {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body input[type=text] {
   border-bottom-color: rgb(127, 131, 161);
+  border-bottom-width: 0px;
   border-left-color: rgb(127, 131, 161);
+  border-left-width: 0px;
   border-right-color: rgb(127, 131, 161);
+  border-right-width: 0px;
   border-top-color: rgb(127, 131, 161);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(127, 131, 161));
   font-family: "??", "??", "??", Arima, cursive;
 }
@@ -2156,19 +2460,27 @@ html[saved-theme="dark"] body kbd {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(160, 167, 196));
 }
 
 html[saved-theme="dark"] body progress {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-width: 0px;
   border-left-color: rgb(160, 167, 196);
+  border-left-width: 0px;
   border-right-color: rgb(160, 167, 196);
+  border-right-width: 0px;
   border-top-color: rgb(160, 167, 196);
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body sub {
@@ -2566,6 +2878,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   --bases-table-header-background: var(--background-secondary, #f4ebeb);
   background-color: var(--tab-container-background, rgb(244, 235, 235));
   border-left-color: rgba(206, 194, 197, 0.467);
+  border-left-width: 0px;
   color: rgb(89, 79, 103);
 }
 
@@ -2666,37 +2979,55 @@ html[saved-theme="light"] body a.internal-link.broken {
 }`,
     lists: `html[saved-theme="light"] body dd {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
   font-family: "??", "??", Arima, cursive;
 }
 
 html[saved-theme="light"] body dt {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
   font-family: "??", "??", Arima, cursive;
 }
 
 html[saved-theme="light"] body ol > li {
   color: rgb(89, 79, 103);
+  margin-bottom: 0px;
   margin-left: 24px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body ul > li {
   color: rgb(89, 79, 103);
+  margin-bottom: 0px;
   margin-left: 24px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 html[saved-theme="light"] body ul.overflow {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: var(--text-faint, rgb(163, 145, 163));
@@ -2709,13 +3040,19 @@ html[saved-theme="light"] body blockquote {
   font-style: var(--blockquote-font-style, italic);
   line-height: 27.2px;
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 10px;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body table {
@@ -2759,17 +3096,22 @@ html[saved-theme="light"] body thead {
 
 html[saved-theme="light"] body tr {
   border-bottom-color: rgb(210, 171, 197);
+  border-bottom-width: 0px;
 }`,
     code: `html[saved-theme="light"] body code {
   background-color: var(--code-background, rgb(240, 233, 228));
   border-bottom-color: rgba(206, 194, 197, 0.467);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(206, 194, 197, 0.467);
+  border-left-width: 0px;
   border-right-color: rgba(206, 194, 197, 0.467);
+  border-right-width: 0px;
   border-top-color: rgba(206, 194, 197, 0.467);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(89, 79, 103));
 }
 
@@ -2778,11 +3120,15 @@ html[saved-theme="light"] body pre:has(> code) {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -2790,9 +3136,13 @@ html[saved-theme="light"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body figcaption {
@@ -2805,63 +3155,88 @@ html[saved-theme="light"] body figure {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body img {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-radius: 10px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body video {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
   background-color: var(--background-primary-alt, rgb(240, 233, 228));
   border-bottom-color: rgb(104, 90, 104);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 90, 104);
+  border-left-width: 0px;
   border-radius: 10px;
   border-right-color: rgb(104, 90, 104);
+  border-right-width: 0px;
   border-top-color: rgb(104, 90, 104);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top-width: 0px;
   color: var(--text-muted, rgb(104, 90, 104));
 }
 
 html[saved-theme="light"] body .footnotes {
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body .transclude {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(201, 155, 184);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
@@ -2876,11 +3251,15 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(163, 145, 163);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(163, 145, 163);
+  border-left-width: 0px;
   border-right-color: rgb(163, 145, 163);
+  border-right-width: 0px;
   border-top-color: rgb(163, 145, 163);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="#"] {
@@ -3435,9 +3814,13 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
@@ -3455,20 +3838,28 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -3486,20 +3877,28 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -3517,20 +3916,28 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -3548,20 +3955,28 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -3579,20 +3994,28 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -3610,20 +4033,28 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -3641,20 +4072,28 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -3672,20 +4111,28 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -3703,20 +4150,28 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -3734,20 +4189,28 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -3765,20 +4228,28 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -3796,20 +4267,28 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -3827,20 +4306,28 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
   --callout-color: 136, 198, 227;
   border-bottom-color: rgb(136, 198, 227);
+  border-bottom-width: 0px;
   border-left-color: rgb(136, 198, 227);
+  border-left-width: 0px;
   border-right-color: rgb(136, 198, 227);
+  border-right-width: 0px;
   border-top-color: rgb(136, 198, 227);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -3909,9 +4396,13 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(248, 243, 242);
   border-bottom-color: rgba(206, 194, 197, 0.467);
+  border-bottom-width: 0px;
   border-left-color: rgba(206, 194, 197, 0.467);
+  border-left-width: 0px;
   border-right-color: rgba(206, 194, 197, 0.467);
+  border-right-width: 0px;
   border-top-color: rgba(206, 194, 197, 0.467);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(89, 79, 103));
   font-family: "??", "??", "??", Arima, cursive;
 }
@@ -3919,9 +4410,13 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 html[saved-theme="light"] body .search > .search-container > .search-space {
   background-color: var(--prompt-background, rgb(248, 243, 242));
   border-bottom-color: rgb(182, 164, 178);
+  border-bottom-width: 0px;
   border-left-color: rgb(182, 164, 178);
+  border-left-width: 0px;
   border-right-color: rgb(182, 164, 178);
+  border-right-width: 0px;
   border-top-color: rgb(182, 164, 178);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > * {
@@ -3939,11 +4434,15 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-description {
@@ -3956,27 +4455,39 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgb(182, 164, 178);
+  border-bottom-width: 0px;
   border-left-color: rgb(182, 164, 178);
+  border-left-width: 0px;
   border-right-color: rgb(182, 164, 178);
+  border-right-width: 0px;
   border-top-color: rgb(182, 164, 178);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(244, 235, 235);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
@@ -3999,9 +4510,13 @@ html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light
   --pill-color-remove-hover: var(--tag-color-hover, hsl(323, 30%, 65%));
   background-color: var(--pill-background, rgba(193, 139, 172, 0.1));
   border-bottom-color: rgba(193, 139, 172, 0.15);
+  border-bottom-width: 0px;
   border-left-color: rgba(193, 139, 172, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(193, 139, 172, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(193, 139, 172, 0.15);
+  border-top-width: 0px;
   color: var(--pill-color, rgb(193, 139, 172));
   font-family: "??", "??", "??", Arima, cursive;
 }
@@ -4012,9 +4527,13 @@ html[saved-theme="light"] body a.internal-link.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
   color: var(--h1-color, rgb(89, 79, 103));
   font-family: var(--h1-font, "??", "??", Arima, cursive);
 }
@@ -4026,9 +4545,13 @@ html[saved-theme="light"] body h1.article-title {
 html[saved-theme="light"] body h2 {
   --font-weight: var(--h2-weight, 600);
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
   color: var(--h2-color, rgb(89, 79, 103));
   font-family: var(--h2-font, "??", "??", Arima, cursive);
   font-weight: var(--font-weight, 600);
@@ -4036,9 +4559,13 @@ html[saved-theme="light"] body h2 {
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
   color: var(--inline-title-color, rgb(89, 79, 103));
   font-family: var(--inline-title-font, "??", "??", Arima, cursive);
 }
@@ -4046,54 +4573,84 @@ html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-
 html[saved-theme="light"] body h3 {
   --font-weight: var(--h3-weight, 600);
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
   color: var(--h3-color, rgb(89, 79, 103));
   font-family: var(--h3-font, "??", "??", Arima, cursive);
   font-weight: var(--font-weight, 600);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 42.176px);
 }
 
 html[saved-theme="light"] body h4 {
   --font-weight: var(--h4-weight, 600);
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
   color: var(--h4-color, rgb(89, 79, 103));
   font-family: var(--h4-font, "??", "??", Arima, cursive);
   font-weight: var(--font-weight, 600);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 38.016px);
 }
 
 html[saved-theme="light"] body h5 {
   --font-weight: var(--h5-weight, 600);
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
   color: var(--h5-color, rgb(89, 79, 103));
   font-family: var(--h5-font, "??", "??", Arima, cursive);
   font-weight: var(--font-weight, 600);
   line-height: var(--h5-line-height, 29.2672px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: var(--heading-spacing, 34.432px);
 }
 
 html[saved-theme="light"] body h6 {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
   color: var(--h6-color, rgb(89, 79, 103));
   font-family: var(--h6-font, "??", "??", Arima, cursive);
   line-height: var(--h6-line-height, 27.2px);
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 32px;
 }
 
 html[saved-theme="light"] body hr {
   border-bottom-color: rgba(206, 194, 197, 0.467);
+  border-bottom-width: 0px;
   border-left-color: rgba(206, 194, 197, 0.467);
+  border-left-width: 0px;
   border-right-color: rgba(206, 194, 197, 0.467);
   border-right-style: var(--line-style, solid);
   border-right-width: 0px;
@@ -4103,11 +4660,15 @@ html[saved-theme="light"] body hr {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
 }`,
     explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: var(--nav-item-color, rgb(104, 90, 104));
@@ -4141,20 +4702,28 @@ html[saved-theme="light"] body .explorer .nav-files-container .collapse-icon svg
   border-bottom-color: rgb(104, 90, 104);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 90, 104);
+  border-left-width: 0px;
   border-right-color: rgb(104, 90, 104);
+  border-right-width: 0px;
   border-top-color: rgb(104, 90, 104);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(104, 90, 104));
 }`,
     footer: `html[saved-theme="light"] body footer {
   background-color: var(--status-bar-background, rgb(244, 235, 235));
   border-bottom-color: rgba(206, 194, 197, 0.467);
+  border-bottom-width: 0px;
   border-left-color: rgba(206, 194, 197, 0.467);
+  border-left-width: 0px;
   border-right-color: rgba(206, 194, 197, 0.467);
+  border-right-width: 0px;
   border-top-color: rgba(206, 194, 197, 0.467);
   border-top-left-radius: 10px;
+  border-top-width: 0px;
   color: var(--status-bar-text-color, rgb(104, 90, 104));
   font-family: "??", "??", "??", Arima, cursive;
 }
@@ -4169,9 +4738,13 @@ html[saved-theme="light"] body footer ul li a {
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
@@ -4185,9 +4758,13 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body li.section-li > .section .meta {
@@ -4201,19 +4778,27 @@ html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
 
 html[saved-theme="light"] body ul.section-ul {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
   border-bottom-color: rgb(104, 90, 104);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 90, 104);
+  border-left-width: 0px;
   border-right-color: rgb(104, 90, 104);
+  border-right-width: 0px;
   border-top-color: rgb(104, 90, 104);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: var(--icon-color, rgb(104, 90, 104));
 }
 
@@ -4225,11 +4810,15 @@ html[saved-theme="light"] body .darkmode svg {
   border-bottom-color: rgb(163, 145, 163);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(163, 145, 163);
+  border-left-width: 0px;
   border-right-color: rgb(163, 145, 163);
+  border-right-width: 0px;
   border-top-color: rgb(163, 145, 163);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: var(--text-faint, rgb(163, 145, 163));
 }
 
@@ -4267,27 +4856,39 @@ html[saved-theme="light"] body .bases-table thead th {
 }`,
     properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgba(206, 194, 197, 0.467);
+  border-bottom-width: 0px;
   border-left-color: rgba(206, 194, 197, 0.467);
+  border-left-width: 0px;
   border-right-color: rgba(206, 194, 197, 0.467);
+  border-right-width: 0px;
   border-top-color: rgba(206, 194, 197, 0.467);
+  border-top-width: 0px;
   color: var(--text-muted, rgb(104, 90, 104));
   font-family: "??", "??", Arima, cursive;
 }
 
 html[saved-theme="light"] body .metadata-container .metadata-property {
   border-bottom-color: rgb(104, 90, 104);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 90, 104);
+  border-left-width: 0px;
   border-right-color: rgb(104, 90, 104);
+  border-right-width: 0px;
   border-top-color: rgb(104, 90, 104);
+  border-top-width: 0px;
   color: rgb(104, 90, 104);
   font-family: "??", "??", Arima, cursive;
 }
 
 html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(104, 90, 104);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 90, 104);
+  border-left-width: 0px;
   border-right-color: rgb(104, 90, 104);
+  border-right-width: 0px;
   border-top-color: rgb(104, 90, 104);
+  border-top-width: 0px;
   color: rgb(104, 90, 104);
   font-family: "??", "??", Arima, cursive;
 }
@@ -4338,9 +4939,13 @@ html[saved-theme="light"] body div#quartz-root {
 
 html[saved-theme="light"] body ol.overflow {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
 }`,
     stacked: `html[saved-theme="light"] body .stacked-page {
   background-color: var(--background-secondary, rgba(0, 0, 0, 0));
@@ -4356,9 +4961,13 @@ html[saved-theme="light"] body .stacked-page.active {
 }`,
     misc: `html[saved-theme="light"] body .katex-display {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
   color: rgb(89, 79, 103);
 }
 
@@ -4368,9 +4977,13 @@ html[saved-theme="light"] body .navigation-progress {
 
 html[saved-theme="light"] body .page-header h2.page-title {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(89, 79, 103));
   font-family: "??", "??", "??", Arima, cursive;
   font-size: 14px;
@@ -4383,16 +4996,24 @@ html[saved-theme="light"] body abbr {
 
 html[saved-theme="light"] body details {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body input[type=text] {
   border-bottom-color: rgb(104, 90, 104);
+  border-bottom-width: 0px;
   border-left-color: rgb(104, 90, 104);
+  border-left-width: 0px;
   border-right-color: rgb(104, 90, 104);
+  border-right-width: 0px;
   border-top-color: rgb(104, 90, 104);
+  border-top-width: 0px;
   color: var(--text-normal, rgb(104, 90, 104));
   font-family: "??", "??", "??", Arima, cursive;
 }
@@ -4402,19 +5023,27 @@ html[saved-theme="light"] body kbd {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-top-width: 0px;
   color: var(--code-normal, rgb(89, 79, 103));
 }
 
 html[saved-theme="light"] body progress {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-width: 0px;
   border-left-color: rgb(89, 79, 103);
+  border-left-width: 0px;
   border-right-color: rgb(89, 79, 103);
+  border-right-width: 0px;
   border-top-color: rgb(89, 79, 103);
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body sub {
@@ -4432,9 +5061,13 @@ html[saved-theme="light"] body sup {
 html[saved-theme="light"] body ul.tags > li {
   background-color: var(--tag-background, rgba(193, 139, 172, 0.1));
   border-bottom-color: rgba(193, 139, 172, 0.15);
+  border-bottom-width: 0px;
   border-left-color: rgba(193, 139, 172, 0.15);
+  border-left-width: 0px;
   border-right-color: rgba(193, 139, 172, 0.15);
+  border-right-width: 0px;
   border-top-color: rgba(193, 139, 172, 0.15);
+  border-top-width: 0px;
   color: var(--tag-color, rgb(193, 139, 172));
 }`,
   },
