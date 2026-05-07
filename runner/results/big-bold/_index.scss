@@ -3637,7 +3637,7 @@ body {
     border-radius: 7px;
     box-shadow: var(--shadow-s, rgba(0, 0, 0, 0.027) 0px 1px 2px 0px, rgba(0, 0, 0, 0.043) 0px 3.4px 6.7px 0px, rgba(0, 0, 0, 0.07) 0px 15px 30px 0px);
     filter: contrast(1.04) saturate(1.05);
-    max-width: none;
+    max-width: 100%;
     object-fit: fill;
     border: 0px rgb(37, 37, 37);
     border-top-left-radius: 7px;
@@ -3701,7 +3701,7 @@ body {
     border-radius: 0px;
     box-shadow: none;
     filter: none;
-    max-width: none;
+    max-width: 100%;
     object-fit: contain;
     border: 0px rgb(37, 37, 37);
     border-top-left-radius: 0px;
@@ -3840,7 +3840,7 @@ body {
   progress {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
-    height: 15px;
+    height: 6px;
     border: 0px rgb(37, 37, 37);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -20568,7 +20568,7 @@ html[saved-theme="dark"] {
       border-radius: 7px;
       box-shadow: var(--shadow-s, rgba(0, 0, 0, 0.12) 0px 1px 2px 0px, rgba(0, 0, 0, 0.18) 0px 3.4px 6.7px 0px, rgba(0, 0, 0, 0.3) 0px 15px 30px 0px);
       filter: brightness(0.9);
-      max-width: none;
+      max-width: 100%;
       object-fit: fill;
       border: 0px rgb(200, 212, 230);
       border-top-left-radius: 7px;
@@ -20632,7 +20632,7 @@ html[saved-theme="dark"] {
       border-radius: 0px;
       box-shadow: none;
       filter: none;
-      max-width: none;
+      max-width: 100%;
       object-fit: contain;
       border: 0px rgb(200, 212, 230);
       border-top-left-radius: 0px;
@@ -20771,7 +20771,7 @@ html[saved-theme="dark"] {
     progress {
       accent-color: auto;
       background-color: rgba(0, 0, 0, 0);
-      height: 15px;
+      height: 6px;
       border: 0px rgb(200, 212, 230);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;

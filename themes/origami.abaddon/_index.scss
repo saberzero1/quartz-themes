@@ -2815,7 +2815,7 @@ body {
     border-radius: 12px;
     box-shadow: none;
     filter: none;
-    max-width: none;
+    max-width: 100%;
     object-fit: fill;
     border: 0px rgb(198, 198, 198);
     border-top-left-radius: var(--radius-l, 12px);
@@ -2894,7 +2894,7 @@ body {
     border-radius: 0px;
     box-shadow: none;
     filter: none;
-    max-width: none;
+    max-width: 100%;
     object-fit: contain;
     border: 0px rgb(188, 172, 143);
     border-top-left-radius: var(--radius-l, 0px);
@@ -3078,7 +3078,7 @@ body {
   progress {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
-    height: 15px;
+    height: 6px;
     border: 0px rgb(188, 172, 143);
     border-top-left-radius: var(--radius-l, 0px);
     border-top-right-radius: var(--radius-l, 0px);

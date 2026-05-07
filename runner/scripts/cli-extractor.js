@@ -166,6 +166,11 @@ const STYLE_PROPERTIES = [
   "user-select",
   "vertical-align",
   "white-space",
+  "height",
+  "max-height",
+  "max-width",
+  "min-height",
+  "min-width",
   "width",
   "-webkit-mask-image",
   "-webkit-mask-position",
@@ -625,6 +630,8 @@ function generateFullExtractionScript(selectors) {
       "--callout-icon",
     ]);
 
+    const provenanceMap = {};
+
     function getAllCssVars(style, baseline, selector, el) {
       const vars = {};
       const isCallout = selector && selector.includes(".callout");
@@ -632,14 +639,21 @@ function generateFullExtractionScript(selectors) {
         const val = style.getPropertyValue(prop);
         if (val && val.trim()) {
           const trimmed = val.trim();
-          // If a baseline is provided, only include vars that differ from it
-          // Exception: always preserve callout-critical vars on callout elements
           if (baseline && baseline[prop] !== undefined && baseline[prop] === trimmed) {
             if (!(isCallout && CALLOUT_PRESERVE_VARS.has(prop))) {
               continue;
             }
           }
-          vars[prop] = el ? resolveAuthoredValue(el, prop, trimmed) : trimmed;
+          vars[prop] = el ? resolveCssomValue(el, prop, trimmed) : trimmed;
+
+          if (el) {
+            const prov = getProvenance(el, prop);
+            if (prov) {
+              const key = selector || "html";
+              if (!provenanceMap[key]) provenanceMap[key] = {};
+              provenanceMap[key][prop] = prov.selector;
+            }
+          }
         }
       }
       return vars;
@@ -659,28 +673,74 @@ function generateFullExtractionScript(selectors) {
       "text-decoration": ["text-decoration-color","text-decoration-line","text-decoration-style","text-decoration-thickness"],
     };
 
+    // Split a string by commas, respecting parentheses nesting.
+    // e.g. "h1, :is(h2, h3), h4" → ["h1", ":is(h2, h3)", "h4"]
+    function splitRespectingParens(str) {
+      const result = [];
+      let current = "";
+      let depth = 0;
+      for (const ch of str) {
+        if (ch === "(" || ch === "[") depth++;
+        else if (ch === ")" || ch === "]") depth--;
+        if (ch === "," && depth === 0) {
+          result.push(current.trim());
+          current = "";
+          continue;
+        }
+        current += ch;
+      }
+      if (current.trim()) result.push(current.trim());
+      return result;
+    }
+
+    // Extract the balanced content of the first occurrence of
+    // :<name>(...) from a selector string, handling nested parens.
+    // Returns { start, end, content } or null.
+    function extractFunctionalPseudo(str, name) {
+      const prefix = ":" + name + "(";
+      const idx = str.indexOf(prefix);
+      if (idx === -1) return null;
+      const contentStart = idx + prefix.length;
+      let depth = 1;
+      let i = contentStart;
+      while (i < str.length && depth > 0) {
+        if (str[i] === "(") depth++;
+        else if (str[i] === ")") depth--;
+        i++;
+      }
+      return {
+        start: idx,
+        end: i, // position after the closing ")"
+        content: str.slice(contentStart, i - 1),
+      };
+    }
+
     function computeSpecificity(selector) {
       let s = selector.trim();
       let a = 0, b = 0, c = 0;
 
-      // Strip :where() content (0 specificity)
-      s = s.replace(/:where\([^)]*\)/g, "");
+      // Strip :where() content (0 specificity) — handle nested parens
+      let whereMatch;
+      while ((whereMatch = extractFunctionalPseudo(s, "where")) !== null) {
+        s = s.slice(0, whereMatch.start) + s.slice(whereMatch.end);
+      }
 
       // Handle :is(), :not(), :has() — take max specificity of arguments
-      const pseudoFuncRe = /:(is|not|has)\(([^)]*)\)/g;
-      let funcMatch;
-      while ((funcMatch = pseudoFuncRe.exec(s)) !== null) {
-        const args = funcMatch[2].split(",");
-        let maxA = 0, maxB = 0, maxC = 0;
-        for (const arg of args) {
-          const [ia, ib, ic] = computeSpecificity(arg);
-          if (ia > maxA || (ia === maxA && ib > maxB) || (ia === maxA && ib === maxB && ic > maxC)) {
-            maxA = ia; maxB = ib; maxC = ic;
+      for (const fn of ["is", "not", "has"]) {
+        let fnMatch;
+        while ((fnMatch = extractFunctionalPseudo(s, fn)) !== null) {
+          const args = splitRespectingParens(fnMatch.content);
+          let maxA = 0, maxB = 0, maxC = 0;
+          for (const arg of args) {
+            const [ia, ib, ic] = computeSpecificity(arg);
+            if (ia > maxA || (ia === maxA && ib > maxB) || (ia === maxA && ib === maxB && ic > maxC)) {
+              maxA = ia; maxB = ib; maxC = ic;
+            }
           }
+          a += maxA; b += maxB; c += maxC;
+          s = s.slice(0, fnMatch.start) + s.slice(fnMatch.end);
         }
-        a += maxA; b += maxB; c += maxC;
       }
-      s = s.replace(pseudoFuncRe, "");
 
       // #id
       const ids = s.match(/#[a-zA-Z_-][a-zA-Z0-9_-]*/g);
@@ -717,11 +777,56 @@ function generateFullExtractionScript(selectors) {
       return a[2] - b[2];
     }
 
-    function buildVarCandidateIndex() {
+    // ─── CSSOM Rule Index ─────────────────────────────────────────────
+    // Indexes ALL custom property declarations and standard property
+    // declarations containing var() references from all stylesheets.
+    // Enables reading declared values directly from the winning rule.
+    // Tracks @layer membership for layer-aware cascade resolution.
+    function buildRuleIndex() {
       const index = new Map();
       let order = 0;
 
-      function processRule(rule, containerApplies) {
+      // @layer order tracking: layers declared earlier have lower priority.
+      // Unlayered rules get layerIndex = -1 (beat all layered rules per spec).
+      const layerOrder = new Map();
+      let nextLayerIndex = 0;
+
+      function registerLayer(name) {
+        if (!layerOrder.has(name)) {
+          layerOrder.set(name, nextLayerIndex++);
+        }
+      }
+
+      // First pass: discover layer declaration order from @layer statements
+      function discoverLayers(rules) {
+        for (const rule of rules) {
+          if (rule.constructor && rule.constructor.name === "CSSLayerStatementRule") {
+            const names = rule.nameList || (rule.name ? [rule.name] : []);
+            for (const n of names) registerLayer(n);
+          } else if (rule.constructor && rule.constructor.name === "CSSLayerBlockRule") {
+            registerLayer(rule.name || "");
+          }
+          if (rule.cssRules) discoverLayers(rule.cssRules);
+        }
+      }
+
+      for (const sheet of document.styleSheets) {
+        try {
+          if (sheet.cssRules) discoverLayers(sheet.cssRules);
+        } catch (e) {}
+      }
+
+      function processRuleForIndex(rule, containerApplies, currentLayer) {
+        // Handle @layer block rules
+        if (rule.constructor && rule.constructor.name === "CSSLayerBlockRule") {
+          const layerName = rule.name || "";
+          registerLayer(layerName);
+          for (const nested of rule.cssRules) {
+            processRuleForIndex(nested, containerApplies, layerName);
+          }
+          return;
+        }
+
         if (rule.cssRules && rule.cssRules.length > 0 && !rule.selectorText) {
           let applies = containerApplies;
           if (rule.type === CSSRule.MEDIA_RULE) {
@@ -732,29 +837,38 @@ function generateFullExtractionScript(selectors) {
             catch (e) { applies = true; }
           }
           for (const nested of rule.cssRules) {
-            processRule(nested, applies);
+            processRuleForIndex(nested, applies, currentLayer);
           }
           return;
         }
 
         if (!rule.selectorText || !rule.style) return;
 
+        const layerIdx = currentLayer !== null ? (layerOrder.get(currentLayer) ?? 0) : -1;
+
         for (let i = 0; i < rule.style.length; i++) {
           const prop = rule.style[i];
           const val = rule.style.getPropertyValue(prop);
-          if (!val || !val.includes("var(")) continue;
+          if (!val) continue;
+          const trimmedVal = val.trim();
+          if (!trimmedVal) continue;
+
+          const isCustom = prop.startsWith("--");
+          if (!isCustom && !trimmedVal.includes("var(")) continue;
+
           const important = rule.style.getPropertyPriority(prop) === "important";
-          const selectors = rule.selectorText.split(",").map(s => s.trim());
+          const selectors = splitRespectingParens(rule.selectorText);
           const specs = selectors.map(s => computeSpecificity(s));
 
           if (!index.has(prop)) index.set(prop, []);
           index.get(prop).push({
             selectors,
             specs,
-            value: val.trim(),
+            value: trimmedVal,
             important,
             order: order++,
             containerApplies,
+            layerIndex: layerIdx,
           });
 
           // Shorthand: also register for longhands
@@ -765,11 +879,12 @@ function generateFullExtractionScript(selectors) {
               index.get(lh).push({
                 selectors,
                 specs,
-                value: val.trim(),
+                value: trimmedVal,
                 important,
                 order: order++,
                 containerApplies,
                 isShorthand: prop,
+                layerIndex: layerIdx,
               });
             }
           }
@@ -781,7 +896,7 @@ function generateFullExtractionScript(selectors) {
           const rules = sheet.cssRules || sheet.rules;
           if (!rules) continue;
           for (const rule of rules) {
-            processRule(rule, true);
+            processRuleForIndex(rule, true, null);
           }
         } catch (e) {
           // CORS or access error, skip
@@ -791,7 +906,222 @@ function generateFullExtractionScript(selectors) {
       return index;
     }
 
-    const varCandidateIndex = buildVarCandidateIndex();
+    const cssomRuleIndex = buildRuleIndex();
+
+    // Cascade resolution: finds the winning rule for a property on an
+    // element. Returns { value, selector, important, order } or null.
+    function findWinningRule(el, prop) {
+      const candidates = cssomRuleIndex.get(prop);
+      if (!candidates || candidates.length === 0) return null;
+
+      let winner = null;
+      let winnerSpec = [-1, -1, -1];
+      let winnerOrder = -1;
+      let winnerImportant = false;
+      let winnerSelector = null;
+      let winnerLayer = -2;
+
+      for (const candidate of candidates) {
+        if (!candidate.containerApplies) continue;
+        let matchedSpec = null;
+        let matchedSelector = null;
+        for (let i = 0; i < candidate.selectors.length; i++) {
+          if (elMatchesSelector(el, candidate.selectors[i])) {
+            const spec = candidate.specs[i];
+            if (!matchedSpec || specificityCmp(spec, matchedSpec) > 0) {
+              matchedSpec = spec;
+              matchedSelector = candidate.selectors[i];
+            }
+          }
+        }
+        if (!matchedSpec) continue;
+
+        const candLayer = candidate.layerIndex !== undefined ? candidate.layerIndex : -1;
+        let dominated = false;
+
+        if (!winnerImportant && candidate.important) {
+          dominated = true;
+        } else if (winnerImportant && !candidate.important) {
+          dominated = false;
+        } else if (winnerImportant === candidate.important) {
+          // Layer comparison: unlayered (-1) beats layered (>=0);
+          // among layered, higher index wins (later-declared layer)
+          if (candLayer !== winnerLayer) {
+            if (candLayer === -1) dominated = true;
+            else if (winnerLayer === -1) dominated = false;
+            else dominated = candLayer > winnerLayer;
+          } else {
+            dominated = specificityCmp(matchedSpec, winnerSpec) > 0 ||
+              (specificityCmp(matchedSpec, winnerSpec) === 0 && candidate.order > winnerOrder);
+          }
+        }
+
+        if (!winner || dominated) {
+          winner = candidate;
+          winnerSpec = matchedSpec;
+          winnerOrder = candidate.order;
+          winnerImportant = candidate.important;
+          winnerSelector = matchedSelector;
+          winnerLayer = candLayer;
+        }
+      }
+
+      if (!winner) return null;
+      return { candidate: winner, selector: winnerSelector, specificity: winnerSpec };
+    }
+
+    function getDeclaredValue(el, prop) {
+      const result = findWinningRule(el, prop);
+      if (!result) return null;
+      const { candidate } = result;
+
+      // Handle shorthand → longhand extraction
+      if (candidate.isShorthand) {
+        const token = extractVarToken(candidate.value, prop);
+        if (token) {
+          const fc = token.indexOf(",");
+          const fp = token.indexOf("(");
+          if (fc > fp && fc !== -1) return token;
+          return token;
+        }
+        return null;
+      }
+
+      return candidate.value;
+    }
+
+    // Source provenance: returns which selector won for a property
+    function getProvenance(el, prop) {
+      const result = findWinningRule(el, prop);
+      if (!result) return null;
+      return {
+        selector: result.selector,
+        specificity: result.specificity,
+        important: result.candidate.important,
+      };
+    }
+
+    // Pseudo-element aware cascade resolution. Finds the winning rule
+    // for a property on a pseudo-element by matching selectors that
+    // contain the pseudo suffix (::before, ::after, etc.)
+    function findWinningRuleForPseudo(el, pseudo, prop) {
+      const candidates = cssomRuleIndex.get(prop);
+      if (!candidates || candidates.length === 0) return null;
+
+      const pseudoRe = new RegExp(":{1,2}" + pseudo.replace(/^:{1,2}/, "") + "\\s*$");
+
+      let winner = null;
+      let winnerSpec = [-1, -1, -1];
+      let winnerOrder = -1;
+      let winnerImportant = false;
+      let winnerLayer = -2;
+
+      for (const candidate of candidates) {
+        if (!candidate.containerApplies) continue;
+        let matchedSpec = null;
+        for (let i = 0; i < candidate.selectors.length; i++) {
+          const sel = candidate.selectors[i];
+          if (!pseudoRe.test(sel)) continue;
+          const baseSel = sel.replace(pseudoRe, "").trim() || "*";
+          if (elMatchesSelector(el, baseSel)) {
+            const spec = candidate.specs[i];
+            if (!matchedSpec || specificityCmp(spec, matchedSpec) > 0) {
+              matchedSpec = spec;
+            }
+          }
+        }
+        if (!matchedSpec) continue;
+
+        const candLayer = candidate.layerIndex !== undefined ? candidate.layerIndex : -1;
+        let dominated = false;
+
+        if (!winnerImportant && candidate.important) {
+          dominated = true;
+        } else if (winnerImportant && !candidate.important) {
+          dominated = false;
+        } else if (winnerImportant === candidate.important) {
+          if (candLayer !== winnerLayer) {
+            if (candLayer === -1) dominated = true;
+            else if (winnerLayer === -1) dominated = false;
+            else dominated = candLayer > winnerLayer;
+          } else {
+            dominated = specificityCmp(matchedSpec, winnerSpec) > 0 ||
+              (specificityCmp(matchedSpec, winnerSpec) === 0 && candidate.order > winnerOrder);
+          }
+        }
+
+        if (!winner || dominated) {
+          winner = candidate;
+          winnerSpec = matchedSpec;
+          winnerOrder = candidate.order;
+          winnerImportant = candidate.important;
+          winnerLayer = candLayer;
+        }
+      }
+
+      if (!winner) return null;
+      return { candidate: winner, specificity: winnerSpec };
+    }
+
+    function getDeclaredValueForPseudo(el, pseudo, prop) {
+      const result = findWinningRuleForPseudo(el, pseudo, prop);
+      if (!result) return null;
+      const { candidate } = result;
+
+      if (candidate.isShorthand) {
+        const token = extractVarToken(candidate.value, prop);
+        if (token) {
+          const fc = token.indexOf(",");
+          const fp = token.indexOf("(");
+          if (fc > fp && fc !== -1) return token;
+          return token;
+        }
+        return null;
+      }
+
+      return candidate.value;
+    }
+
+    function resolveCssomValueForPseudo(el, pseudo, prop, computedValue) {
+      const declared = getDeclaredValueForPseudo(el, pseudo, prop);
+      if (!declared) return computedValue;
+
+      if (declared.includes("var(")) {
+        return injectFallbacks(declared, el);
+      }
+
+      return declared;
+    }
+
+    // CSSOM-first: Inject computed fallback values into var() calls
+    // that lack them. e.g. "var(--color)" → "var(--color, #ff0000)"
+    function injectFallbacks(declaredValue, el) {
+      return declaredValue.replace(
+        /var\(\s*(--[a-zA-Z0-9_-]+)\s*\)/g,
+        (match, varName) => {
+          const resolved = el
+            ? window.getComputedStyle(el).getPropertyValue(varName)?.trim()
+            : null;
+          if (resolved) return "var(" + varName + ", " + resolved + ")";
+          return match;
+        }
+      );
+    }
+
+    // CSSOM-first: Resolve value for a property using CSSOM rule index.
+    // Falls back to computedValue when no CSSOM match is found.
+    function resolveCssomValue(el, prop, computedValue) {
+      const declared = getDeclaredValue(el, prop);
+      if (!declared) return computedValue;
+
+      // If the declared value contains var(), inject fallbacks
+      if (declared.includes("var(")) {
+        return injectFallbacks(declared, el);
+      }
+
+      // Declared value is a plain value (no var references) — use it
+      return declared;
+    }
 
     let matchCache = new Map();
     let matchCacheEl = null;
@@ -823,88 +1153,18 @@ function generateFullExtractionScript(selectors) {
       return null;
     }
 
-    function resolveAuthoredValue(el, prop, computedValue) {
-      const candidates = varCandidateIndex.get(prop);
-      if (!candidates || candidates.length === 0) return computedValue;
-
-      let winner = null;
-      let winnerSpec = [-1, -1, -1];
-      let winnerOrder = -1;
-      let winnerImportant = false;
-
-      for (const candidate of candidates) {
-        if (!candidate.containerApplies) continue;
-        let matchedSpec = null;
-        for (let i = 0; i < candidate.selectors.length; i++) {
-          if (elMatchesSelector(el, candidate.selectors[i])) {
-            const spec = candidate.specs[i];
-            if (!matchedSpec || specificityCmp(spec, matchedSpec) > 0) {
-              matchedSpec = spec;
-            }
-          }
-        }
-        if (!matchedSpec) continue;
-
-        const dominated =
-          (!winnerImportant && candidate.important) ||
-          (winnerImportant === candidate.important && (
-            specificityCmp(matchedSpec, winnerSpec) > 0 ||
-            (specificityCmp(matchedSpec, winnerSpec) === 0 && candidate.order > winnerOrder)
-          ));
-
-        if (!winner || dominated) {
-          winner = candidate;
-          winnerSpec = matchedSpec;
-          winnerOrder = candidate.order;
-          winnerImportant = candidate.important;
-        }
-      }
-
-      if (!winner) return computedValue;
-
-      if (winner.isShorthand) {
-        const token = extractVarToken(winner.value, prop);
-        if (token) {
-          const fc = token.indexOf(",");
-          const fp = token.indexOf("(");
-          if (fc > fp && fc !== -1) return token;
-          const lp = token.lastIndexOf(")");
-          if (lp === -1) return computedValue;
-          return token.slice(0, lp) + ", " + computedValue + token.slice(lp);
-        }
-        return computedValue;
-      }
-
-      const authored = winner.value;
-
-      // Inject computed fallbacks into var() calls that lack one.
-      // "rgb(var(--ctp-base))" → "rgb(var(--ctp-base, 30, 30, 46))"
-      const injected = authored.replace(
-        /var\(\s*(--[a-zA-Z0-9_-]+)\s*\)/g,
-        (match, varName) => {
-          const refComputed = el
-            ? window.getComputedStyle(el).getPropertyValue(varName)?.trim()
-            : null;
-          if (refComputed) return "var(" + varName + ", " + refComputed + ")";
-          return match;
-        }
-      );
-      if (injected !== authored) return injected;
-      if (authored.includes("var(") && authored.includes(",")) return authored;
-      if (authored.startsWith("var(") && !authored.includes(",")) {
-        const lastParen = authored.lastIndexOf(")");
-        if (lastParen !== -1) return authored.slice(0, lastParen) + ", " + computedValue + authored.slice(lastParen);
-      }
-      return injected;
-    }
-
     function getStandardProps(style, el) {
       const props = {};
       for (const prop of styleProps) {
         const val = style.getPropertyValue(prop);
-        if (val && val.trim() && val !== "none" && val !== "normal" && val !== "auto") {
-          const computed = val.trim();
-          props[prop] = el ? resolveAuthoredValue(el, prop, computed) : computed;
+        const trimmed = val?.trim();
+        if (trimmed && trimmed !== "none" && trimmed !== "normal" && trimmed !== "auto") {
+          props[prop] = el ? resolveCssomValue(el, prop, trimmed) : trimmed;
+        } else if (el) {
+          const declared = getDeclaredValue(el, prop);
+          if (declared && declared.includes("var(")) {
+            props[prop] = injectFallbacks(declared, el);
+          }
         }
       }
       return props;
@@ -921,8 +1181,33 @@ function generateFullExtractionScript(selectors) {
           const hasMask = maskImage && maskImage !== "none";
           if (!hasContent && !hasMask) continue;
 
-          const extracted = { ...getAllCssVars(pseudoStyle, baseline, undefined, el), ...getStandardProps(pseudoStyle, el) };
-          if (hasContent) extracted["content"] = content.trim();
+          const extracted = {};
+
+          for (const prop of allVarNames) {
+            const val = pseudoStyle.getPropertyValue(prop);
+            if (val && val.trim()) {
+              const trimmed = val.trim();
+              if (baseline && baseline[prop] !== undefined && baseline[prop] === trimmed) continue;
+              extracted[prop] = resolveCssomValueForPseudo(el, pseudo, prop, trimmed);
+            }
+          }
+
+          for (const prop of styleProps) {
+            const val = pseudoStyle.getPropertyValue(prop);
+            const trimmed = val?.trim();
+            if (trimmed && trimmed !== "none" && trimmed !== "normal" && trimmed !== "auto") {
+              extracted[prop] = resolveCssomValueForPseudo(el, pseudo, prop, trimmed);
+            } else {
+              const declared = getDeclaredValueForPseudo(el, pseudo, prop);
+              if (declared && declared.includes("var(")) {
+                extracted[prop] = injectFallbacks(declared, el);
+              }
+            }
+          }
+
+          if (hasContent) {
+            extracted["content"] = resolveCssomValueForPseudo(el, pseudo, "content", content.trim());
+          }
 
           if (Object.keys(extracted).length > 0) {
             const pseudoKey = selector + pseudo;
@@ -1050,6 +1335,89 @@ function generateFullExtractionScript(selectors) {
       JSON.stringify(results, null, 2)
     );
 
+    // Write provenance metadata (which CSS selector declared each property)
+    const provenanceFile = RESULT_FILE.replace(/\.json$/, "-provenance.json");
+    fs.writeFileSync(provenanceFile, JSON.stringify(provenanceMap, null, 2));
+
+    // Build and write variable dependency graph
+    const varDependencyGraph = {};
+    for (const [prop, candidates] of cssomRuleIndex.entries()) {
+      if (!prop.startsWith("--")) continue;
+      for (const candidate of candidates) {
+        if (!candidate.value.includes("var(")) continue;
+        const refs = [];
+        let searchPos = 0;
+        while (true) {
+          const varIdx = candidate.value.indexOf("var(", searchPos);
+          if (varIdx === -1) break;
+          const afterParen = candidate.value.slice(varIdx + 4).trimStart();
+          if (afterParen.startsWith("--")) {
+            const endIdx = afterParen.search(/[^a-zA-Z0-9_-]/);
+            const name = endIdx === -1 ? afterParen : afterParen.slice(0, endIdx);
+            if (name.length > 2) refs.push(name);
+          }
+          searchPos = varIdx + 4;
+        }
+        if (refs.length > 0) {
+          if (!varDependencyGraph[prop]) varDependencyGraph[prop] = {};
+          const selectorKey = candidate.selectors[0] || "(unknown)";
+          varDependencyGraph[prop][selectorKey] = refs;
+        }
+      }
+    }
+    const dependencyFile = RESULT_FILE.replace(/\.json$/, "-var-graph.json");
+    fs.writeFileSync(dependencyFile, JSON.stringify(varDependencyGraph, null, 2));
+
+    // Build alternates: find non-winning candidates gated by body class
+    // selectors that would win if those classes were toggled (Style Settings)
+    const bodyClassRe = /\bbody\.([a-zA-Z0-9_-]+)/;
+    const alternatesMap = {};
+
+    for (const [resultSelector, props] of Object.entries(results)) {
+      if (resultSelector.includes("::")) continue;
+      const el = resultSelector === "html" ? document.documentElement
+        : resultSelector === "body" ? document.body
+        : document.querySelector(resultSelector);
+      if (!el) continue;
+
+      for (const prop of Object.keys(props)) {
+        const candidates = cssomRuleIndex.get(prop);
+        if (!candidates || candidates.length < 2) continue;
+
+        for (const candidate of candidates) {
+          if (!candidate.containerApplies) continue;
+          for (const sel of candidate.selectors) {
+            const classMatch = sel.match(bodyClassRe);
+            if (!classMatch) continue;
+            const bodyClass = classMatch[1];
+
+            if (document.body.classList.contains(bodyClass)) continue;
+
+            const baseSel = sel.replace(bodyClassRe, "body").replace(/\s+/g, " ").trim();
+            let matches = false;
+            try { matches = el.matches(baseSel) || el.matches(sel.replace(bodyClassRe, "")); }
+            catch (e) {}
+            if (!matches && resultSelector !== "body" && resultSelector !== "html") continue;
+
+            const altValue = candidate.value.includes("var(")
+              ? injectFallbacks(candidate.value, el)
+              : candidate.value;
+
+            if (altValue === props[prop]) continue;
+
+            if (!alternatesMap[resultSelector]) alternatesMap[resultSelector] = {};
+            if (!alternatesMap[resultSelector][prop]) alternatesMap[resultSelector][prop] = {};
+            alternatesMap[resultSelector][prop]["body." + bodyClass] = altValue;
+          }
+        }
+      }
+    }
+
+    const alternatesFile = RESULT_FILE.replace(/\.json$/, "-alternates.json");
+    if (Object.keys(alternatesMap).length > 0) {
+      fs.writeFileSync(alternatesFile, JSON.stringify(alternatesMap, null, 2));
+    }
+
     return Object.keys(results).length;
   } catch (topLevelError) {
     try {
@@ -1150,6 +1518,30 @@ async function extractFull(cli, selectors, retries = 2) {
         const content = readFileSync(TEMP_RESULT_FILE, "utf-8");
         try {
           const parsed = JSON.parse(content);
+          const provenanceTmp = TEMP_RESULT_FILE.replace(
+            /\.json$/,
+            "-provenance.json",
+          );
+          const varGraphTmp = TEMP_RESULT_FILE.replace(
+            /\.json$/,
+            "-var-graph.json",
+          );
+          const alternatesTmp = TEMP_RESULT_FILE.replace(
+            /\.json$/,
+            "-alternates.json",
+          );
+          parsed.__provenance = existsSync(provenanceTmp)
+            ? JSON.parse(readFileSync(provenanceTmp, "utf-8"))
+            : null;
+          parsed.__varGraph = existsSync(varGraphTmp)
+            ? JSON.parse(readFileSync(varGraphTmp, "utf-8"))
+            : null;
+          parsed.__alternates = existsSync(alternatesTmp)
+            ? JSON.parse(readFileSync(alternatesTmp, "utf-8"))
+            : null;
+          if (existsSync(provenanceTmp)) unlinkSync(provenanceTmp);
+          if (existsSync(varGraphTmp)) unlinkSync(varGraphTmp);
+          if (existsSync(alternatesTmp)) unlinkSync(alternatesTmp);
           if (existsSync(TEMP_SCRIPT_FILE)) unlinkSync(TEMP_SCRIPT_FILE);
           if (existsSync(TEMP_RESULT_FILE)) unlinkSync(TEMP_RESULT_FILE);
           if (existsSync(TEMP_ERROR_FILE)) unlinkSync(TEMP_ERROR_FILE);
@@ -1286,6 +1678,9 @@ async function expandFileExplorer(cli) {
 
 async function extractModeStyles(cli, selectors, extraFiles = []) {
   const modeResults = {};
+  const modeProvenance = {};
+  const modeVarGraph = {};
+  const modeAlternates = {};
 
   for (const file of [...EXTRACTION_FILES, ...extraFiles]) {
     const fileStart = Date.now();
@@ -1328,6 +1723,19 @@ async function extractModeStyles(cli, selectors, extraFiles = []) {
       }
     }
 
+    if (fileResults.__provenance) {
+      Object.assign(modeProvenance, fileResults.__provenance);
+      delete fileResults.__provenance;
+    }
+    if (fileResults.__varGraph) {
+      Object.assign(modeVarGraph, fileResults.__varGraph);
+      delete fileResults.__varGraph;
+    }
+    if (fileResults.__alternates) {
+      Object.assign(modeAlternates, fileResults.__alternates);
+      delete fileResults.__alternates;
+    }
+
     const count = Object.keys(fileResults).length;
     for (const [selector, styles] of Object.entries(fileResults)) {
       modeResults[selector] = { ...modeResults[selector], ...styles };
@@ -1337,6 +1745,9 @@ async function extractModeStyles(cli, selectors, extraFiles = []) {
     console.log(`    ${file}: ${count} selectors (${fileTime}s)`);
   }
 
+  modeResults.__provenance = modeProvenance;
+  modeResults.__varGraph = modeVarGraph;
+  modeResults.__alternates = modeAlternates;
   return modeResults;
 }
 
@@ -1369,6 +1780,9 @@ async function extractBaseline(cli, selectors) {
     await expandFileExplorer(cli);
 
     results[mode] = await extractModeStyles(cli, selectors);
+    delete results[mode].__provenance;
+    delete results[mode].__varGraph;
+    delete results[mode].__alternates;
     saveBaseline(mode, results[mode]);
     console.log(
       `  Baseline ${mode}: ${Object.keys(results[mode]).length} selectors saved`,
@@ -1582,8 +1996,17 @@ async function extractThemeStyles(cli, themeName, baseline, manifest = {}) {
     await expandFileExplorer(cli);
 
     const rawResults = await extractModeStyles(cli, allSelectors, extraFiles);
+    const provenance = rawResults.__provenance;
+    delete rawResults.__provenance;
+    const varGraph = rawResults.__varGraph;
+    delete rawResults.__varGraph;
+    const alternates = rawResults.__alternates;
+    delete rawResults.__alternates;
     const modeBaseline = baseline ? baseline[mode] : null;
     results[mode] = deduplicateAgainstBaseline(rawResults, modeBaseline);
+    results[mode + "Provenance"] = provenance;
+    results[mode + "VarGraph"] = varGraph;
+    results[mode + "Alternates"] = alternates;
 
     // Extract syntax highlighting token colors for this mode
     codeTokens[mode] = await extractCodeTokenColors(cli);
@@ -1675,6 +2098,36 @@ function saveResults(themeName, results, codeTokens, domStructure) {
         JSON.stringify(domStructure.light, null, 2),
       );
       console.log(`  Saved: ${themeDir}/light-dom.json`);
+    }
+  }
+
+  for (const mode of ["dark", "light"]) {
+    if (
+      results[mode + "Provenance"] &&
+      Object.keys(results[mode + "Provenance"]).length > 0
+    ) {
+      writeFileSync(
+        join(themeDir, `${mode}-provenance.json`),
+        JSON.stringify(results[mode + "Provenance"], null, 2),
+      );
+    }
+    if (
+      results[mode + "VarGraph"] &&
+      Object.keys(results[mode + "VarGraph"]).length > 0
+    ) {
+      writeFileSync(
+        join(themeDir, `${mode}-var-graph.json`),
+        JSON.stringify(results[mode + "VarGraph"], null, 2),
+      );
+    }
+    if (
+      results[mode + "Alternates"] &&
+      Object.keys(results[mode + "Alternates"]).length > 0
+    ) {
+      writeFileSync(
+        join(themeDir, `${mode}-alternates.json`),
+        JSON.stringify(results[mode + "Alternates"], null, 2),
+      );
     }
   }
 }

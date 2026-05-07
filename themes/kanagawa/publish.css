@@ -5083,7 +5083,7 @@ body body.theme-light .markdown-rendered img {
   border-radius: 0px;
   box-shadow: none;
   filter: none;
-  max-width: none;
+  max-width: 100%;
   object-fit: fill;
   border: 0px rgb(200, 64, 83);
   border-top-left-radius: 0px;
@@ -5157,7 +5157,7 @@ body body.theme-light .markdown-rendered video {
   border-radius: 0px;
   box-shadow: none;
   filter: none;
-  max-width: none;
+  max-width: 100%;
   object-fit: contain;
   border: 0px rgb(84, 84, 100);
   border-top-left-radius: 0px;
@@ -5350,7 +5350,7 @@ body body.theme-light .metadata-property-value {
 body body.theme-light progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
-  height: 15px;
+  height: 6px;
   border: 0px rgb(84, 84, 100);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -8276,7 +8276,7 @@ body body.theme-dark .markdown-rendered img {
   border-radius: 0px;
   box-shadow: none;
   filter: none;
-  max-width: none;
+  max-width: 100%;
   object-fit: fill;
   border: 0px rgb(204, 36, 29);
   border-top-left-radius: 0px;
@@ -8350,7 +8350,7 @@ body body.theme-dark .markdown-rendered video {
   border-radius: 0px;
   box-shadow: none;
   filter: none;
-  max-width: none;
+  max-width: 100%;
   object-fit: contain;
   border: 0px rgb(220, 215, 186);
   border-top-left-radius: 0px;
@@ -8543,7 +8543,7 @@ body body.theme-dark .metadata-property-value {
 body body.theme-dark progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
-  height: 15px;
+  height: 6px;
   border: 0px rgb(220, 215, 186);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;

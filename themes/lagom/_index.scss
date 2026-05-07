@@ -2972,7 +2972,7 @@ body {
     border-radius: 11.5px;
     box-shadow: var(--background-modifier-box-shadow, rgba(0, 0, 0, 0.1) 0px 0px 2.5px 0px) 0px 0px 2.5px 0px;
     filter: saturate(1.05);
-    max-width: none;
+    max-width: 100%;
     object-fit: fill;
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 11.5px;
@@ -3049,7 +3049,7 @@ body {
     border-radius: 0px;
     box-shadow: none;
     filter: none;
-    max-width: none;
+    max-width: 100%;
     object-fit: contain;
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
@@ -3225,7 +3225,7 @@ body {
   progress {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
-    height: 15px;
+    height: 6px;
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -8504,7 +8504,7 @@ html[saved-theme="dark"] {
       border-radius: 11.5px;
       box-shadow: var(--background-modifier-box-shadow, rgba(0, 0, 0, 0.3) 0px 0px 2.5px 0px) 0px 0px 2.5px 0px;
       filter: grayscale(1);
-      max-width: none;
+      max-width: 100%;
       object-fit: fill;
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 11.5px;
@@ -8581,7 +8581,7 @@ html[saved-theme="dark"] {
       border-radius: 0px;
       box-shadow: none;
       filter: none;
-      max-width: none;
+      max-width: 100%;
       object-fit: contain;
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;
@@ -8757,7 +8757,7 @@ html[saved-theme="dark"] {
     progress {
       accent-color: auto;
       background-color: rgba(0, 0, 0, 0);
-      height: 15px;
+      height: 6px;
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;

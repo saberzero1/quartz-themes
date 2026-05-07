@@ -3331,7 +3331,7 @@ body {
       rgba(0, 0, 0, 0.12) 0px 1px 3px 0px,
       rgba(0, 0, 0, 0.24) 0px 1px 2px 0px;
     filter: none;
-    max-width: none;
+    max-width: 100%;
     object-fit: fill;
     border: 0px rgb(0, 112, 224);
     border-top-left-radius: 4px;
@@ -3415,7 +3415,7 @@ body {
     border-radius: 0px;
     box-shadow: none;
     filter: none;
-    max-width: none;
+    max-width: 100%;
     object-fit: contain;
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
@@ -3615,7 +3615,7 @@ body {
   progress {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
-    height: 15px;
+    height: 6px;
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -16768,7 +16768,7 @@ html[saved-theme="dark"] {
         rgba(0, 0, 0, 0.12) 0px 1px 3px 0px,
         rgba(0, 0, 0, 0.24) 0px 1px 2px 0px;
       filter: none;
-      max-width: none;
+      max-width: 100%;
       object-fit: fill;
       border: 0px rgb(0, 112, 224);
       border-top-left-radius: 4px;
@@ -16852,7 +16852,7 @@ html[saved-theme="dark"] {
       border-radius: 0px;
       box-shadow: none;
       filter: none;
-      max-width: none;
+      max-width: 100%;
       object-fit: contain;
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;
@@ -17052,7 +17052,7 @@ html[saved-theme="dark"] {
     progress {
       accent-color: auto;
       background-color: rgba(0, 0, 0, 0);
-      height: 15px;
+      height: 6px;
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;

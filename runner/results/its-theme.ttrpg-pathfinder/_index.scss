@@ -1880,7 +1880,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h1-border-line-width);
-    height: auto;
+    height: var(--h1-border-line-height);
     background-color: rgb(0, 0, 0);
     background-image: none;
     background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1905,7 +1905,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h2-border-line-width);
-    height: auto;
+    height: var(--h2-border-line-height);
     background-color: rgb(0, 0, 0);
     background-image: none;
     background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1930,7 +1930,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h3-border-line-width);
-    height: auto;
+    height: var(--h3-border-line-height);
     background-color: rgb(0, 0, 0);
     background-image: none;
     background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1955,7 +1955,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h4-border-line-width);
-    height: auto;
+    height: var(--h4-border-line-height);
     background-color: rgb(0, 0, 0);
     background-image: none;
     background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1980,7 +1980,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h5-border-line-width);
-    height: auto;
+    height: var(--h5-border-line-height);
     background-color: rgb(0, 0, 0);
     background-image: none;
     background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2005,7 +2005,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h6-border-line-width);
-    height: auto;
+    height: var(--h6-border-line-height);
     background-color: rgb(0, 0, 0);
     background-image: none;
     background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2055,7 +2055,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h1-border-line-width);
-    height: auto;
+    height: var(--h1-border-line-height);
     background-color: rgb(0, 0, 0);
     background-image: none;
     background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2080,7 +2080,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h2-border-line-width);
-    height: auto;
+    height: var(--h2-border-line-height);
     background-color: rgb(0, 0, 0);
     background-image: none;
     background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2105,7 +2105,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h3-border-line-width);
-    height: auto;
+    height: var(--h3-border-line-height);
     background-color: rgb(0, 0, 0);
     background-image: none;
     background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2130,7 +2130,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h4-border-line-width);
-    height: auto;
+    height: var(--h4-border-line-height);
     background-color: rgb(0, 0, 0);
     background-image: none;
     background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2155,7 +2155,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h5-border-line-width);
-    height: auto;
+    height: var(--h5-border-line-height);
     background-color: rgb(0, 0, 0);
     background-image: none;
     background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2180,7 +2180,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h6-border-line-width);
-    height: auto;
+    height: var(--h6-border-line-height);
     background-color: rgb(0, 0, 0);
     background-image: none;
     background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3215,7 +3215,7 @@ body {
     border-radius: 0px;
     box-shadow: none;
     filter: none;
-    max-width: none;
+    max-width: 100%;
     object-fit: fill;
     border: 0px rgb(202, 151, 89);
     border-top-left-radius: 0px;
@@ -3292,7 +3292,7 @@ body {
     border-radius: 0px;
     box-shadow: none;
     filter: none;
-    max-width: none;
+    max-width: 100%;
     object-fit: contain;
     border: 0px rgb(57, 54, 54);
     border-top-left-radius: 0px;
@@ -3474,7 +3474,7 @@ body {
   progress {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
-    height: 15px;
+    height: 6px;
     border: 0px rgb(57, 54, 54);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -28101,7 +28101,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h1-border-line-width);
-      height: auto;
+      height: var(--h1-border-line-height);
       background-color: rgb(101, 33, 33);
       background-image: none;
       background: rgb(101, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28126,7 +28126,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h2-border-line-width);
-      height: auto;
+      height: var(--h2-border-line-height);
       background-color: rgb(101, 33, 33);
       background-image: none;
       background: rgb(101, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28151,7 +28151,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h3-border-line-width);
-      height: auto;
+      height: var(--h3-border-line-height);
       background-color: rgb(101, 33, 33);
       background-image: none;
       background: rgb(101, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28176,7 +28176,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h4-border-line-width);
-      height: auto;
+      height: var(--h4-border-line-height);
       background-color: rgb(101, 33, 33);
       background-image: none;
       background: rgb(101, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28201,7 +28201,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h5-border-line-width);
-      height: auto;
+      height: var(--h5-border-line-height);
       background-color: rgb(101, 33, 33);
       background-image: none;
       background: rgb(101, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28226,7 +28226,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h6-border-line-width);
-      height: auto;
+      height: var(--h6-border-line-height);
       background-color: rgb(101, 33, 33);
       background-image: none;
       background: rgb(101, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28276,7 +28276,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h1-border-line-width);
-      height: auto;
+      height: var(--h1-border-line-height);
       background-color: rgb(101, 33, 33);
       background-image: none;
       background: rgb(101, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28301,7 +28301,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h2-border-line-width);
-      height: auto;
+      height: var(--h2-border-line-height);
       background-color: rgb(101, 33, 33);
       background-image: none;
       background: rgb(101, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28326,7 +28326,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h3-border-line-width);
-      height: auto;
+      height: var(--h3-border-line-height);
       background-color: rgb(101, 33, 33);
       background-image: none;
       background: rgb(101, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28351,7 +28351,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h4-border-line-width);
-      height: auto;
+      height: var(--h4-border-line-height);
       background-color: rgb(101, 33, 33);
       background-image: none;
       background: rgb(101, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28376,7 +28376,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h5-border-line-width);
-      height: auto;
+      height: var(--h5-border-line-height);
       background-color: rgb(101, 33, 33);
       background-image: none;
       background: rgb(101, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28401,7 +28401,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h6-border-line-width);
-      height: auto;
+      height: var(--h6-border-line-height);
       background-color: rgb(101, 33, 33);
       background-image: none;
       background: rgb(101, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -29436,7 +29436,7 @@ html[saved-theme="dark"] {
       border-radius: 0px;
       box-shadow: none;
       filter: none;
-      max-width: none;
+      max-width: 100%;
       object-fit: fill;
       border: 0px rgb(221, 175, 120);
       border-top-left-radius: 0px;
@@ -29513,7 +29513,7 @@ html[saved-theme="dark"] {
       border-radius: 0px;
       box-shadow: none;
       filter: none;
-      max-width: none;
+      max-width: 100%;
       object-fit: contain;
       border: 0px rgb(188, 202, 216);
       border-top-left-radius: 0px;
@@ -29695,7 +29695,7 @@ html[saved-theme="dark"] {
     progress {
       accent-color: auto;
       background-color: rgba(0, 0, 0, 0);
-      height: 15px;
+      height: 6px;
       border: 0px rgb(188, 202, 216);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;

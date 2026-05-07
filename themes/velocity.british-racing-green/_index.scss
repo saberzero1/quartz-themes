@@ -3012,7 +3012,7 @@ body {
     border-radius: 10px;
     box-shadow: none;
     filter: none;
-    max-width: none;
+    max-width: 100%;
     object-fit: fill;
     border: 0px oklch(0.24 0.0005 281);
     border-top-left-radius: var(--radius-xs, 10px);
@@ -3101,7 +3101,7 @@ body {
     border-radius: 10px;
     box-shadow: none;
     filter: none;
-    max-width: none;
+    max-width: 100%;
     object-fit: contain;
     border: 0px oklch(0.3 0.0005 281);
     border-top-left-radius: 10px;
@@ -3314,7 +3314,7 @@ body {
   progress {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
-    height: 15px;
+    height: 6px;
     border: 0px oklch(0.3 0.0005 281);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -22445,7 +22445,7 @@ html[saved-theme="dark"] {
       border-radius: 10px;
       box-shadow: none;
       filter: none;
-      max-width: none;
+      max-width: 100%;
       object-fit: fill;
       border: 0px oklch(0.895 0.0005 190);
       border-top-left-radius: var(--radius-xs, 10px);
@@ -22534,7 +22534,7 @@ html[saved-theme="dark"] {
       border-radius: 10px;
       box-shadow: none;
       filter: none;
-      max-width: none;
+      max-width: 100%;
       object-fit: contain;
       border: 0px oklch(0.85 0.0125 190);
       border-top-left-radius: 10px;
@@ -22747,7 +22747,7 @@ html[saved-theme="dark"] {
     progress {
       accent-color: auto;
       background-color: rgba(0, 0, 0, 0);
-      height: 15px;
+      height: 6px;
       border: 0px oklch(0.85 0.0125 190);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;

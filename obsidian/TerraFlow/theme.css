@@ -46,6 +46,38 @@ settings:
                 value: calm-focus-theme
 
     -
+        id: focus-mode-heading
+        title: 🔬 Deep Focus Mode
+        description: Science-backed single-switch mode — sepia/warm-dark palette, neutral headings, flattened chrome, 68ch measure. Overrides any active season palette.
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: focus-mode
+        title: Enable Deep Focus Mode
+        description: Activates warm sepia (light) or warm dark (dark) palette, collapses heading colour hierarchy, kills decorative backgrounds and animations, and hides the ribbon and status bar. Overrides whatever season is active.
+        type: class-toggle
+        default: false
+    -
+        id: focus-mode-dim-paragraphs
+        title: Typewriter Dimming
+        description: Fade non-active lines to ~50% opacity in live-preview (iA Writer style). Reading mode dims all paragraphs until hovered.
+        type: class-toggle
+        default: false
+    -
+        id: focus-mode-hide-sidebars
+        title: Hide Sidebar Panels
+        description: Collapse the left and right sidebar content panels so only the editor canvas is visible.
+        type: class-toggle
+        default: false
+    -
+        id: focus-mode-keep-chrome
+        title: Keep Ribbon & Status Bar
+        description: Escape hatch — show ribbon and status bar even in Focus Mode. Palette and heading neutralisation remain active.
+        type: class-toggle
+        default: false
+
+    -
         id: visual-appearance-heading
         title: 🎨 Visual & Appearance
         type: heading
@@ -2349,6 +2381,344 @@ body.theme-dark.enable-monochrome {
 .theme-light.enable-monochrome :is(mark, .cm-highlight, mark:hover, .cm-highlight:hover) {
     background-color: #ffeb3b !important;
     color: #000000 !important;
+}
+
+/* ========================================= */
+/*             DEEP FOCUS MODE               */
+/*  Science: sepia palette (Wang 2018),      */
+/*  low chroma (Munsell), 68ch measure       */
+/*  (Bringhurst), hierarchy by weight only   */
+/* ========================================= */
+
+/* --- Shared neutralizations (same in light and dark) --- */
+body.focus-mode {
+    /* All callout types collapse to a single muted tone */
+    --callout-note: var(--text-muted);
+    --callout-note-rgb: var(--text-normal-rgb);
+    --callout-info: var(--text-muted);
+    --callout-info-rgb: var(--text-normal-rgb);
+    --callout-warning: var(--text-muted);
+    --callout-warning-rgb: var(--text-normal-rgb);
+    --callout-success: var(--text-muted);
+    --callout-success-rgb: var(--text-normal-rgb);
+    --callout-danger: var(--text-muted);
+    --callout-danger-rgb: var(--text-normal-rgb);
+    --callout-example: var(--text-muted);
+    --callout-example-rgb: var(--text-normal-rgb);
+    --callout-cite: var(--text-muted);
+    --callout-cite-rgb: var(--text-normal-rgb);
+    --callout-video: var(--text-muted);
+    --callout-video-rgb: var(--text-normal-rgb);
+    --callout-quote: var(--text-muted);
+    --callout-quote-rgb: var(--text-normal-rgb);
+
+    /* Syntax highlighting collapses to neutral hierarchy */
+    --code-normal: var(--text-normal);
+    --code-comment: var(--text-faint);
+    --code-function: var(--text-normal);
+    --code-important: var(--text-normal);
+    --code-keyword: var(--text-normal);
+    --code-property: var(--text-normal);
+    --code-punctuation: var(--text-muted);
+    --code-string: var(--text-muted);
+    --code-tag: var(--text-normal);
+    --code-value: var(--text-normal);
+
+    /* Force-bind seasonal accent chains to the focus-mode accent */
+    --primary-color: var(--interactive-accent);
+    --primary-color-dark: var(--interactive-accent-hover);
+    --emphasis-color: var(--interactive-accent);
+    --emphasis-color-light: var(--interactive-accent-hover);
+    --checkbox-color: var(--interactive-accent);
+    --blockquote-border-color: var(--text-muted);
+    --link-unresolved-color: var(--text-muted);
+    --folder-color: var(--text-muted);
+}
+
+/* --- Sepia palette: light --- */
+body.focus-mode.theme-light {
+    --background-primary: #F6EFE0;
+    --background-primary-rgb: 246, 239, 224;
+    --background-secondary: #EDE5D2;
+    --background-secondary-rgb: 237, 229, 210;
+    --background-secondary-alt: #E5DCC4;
+    --setting-items-background: var(--background-secondary);
+
+    --text-normal: #3A3329;
+    --text-normal-rgb: 58, 51, 41;
+    --text-muted: #7A7060;
+    --text-faint: #A39A88;
+
+    --interactive-accent: #6B7F5C;
+    --interactive-accent-rgb: 107, 127, 92;
+    --interactive-accent-hover: #5A6E4D;
+    --text-accent: #6B7F5C;
+    --text-accent-hover: #5A6E4D;
+    --text-selection: rgba(107, 127, 92, 0.18);
+
+    --link-color: #5A6E4D;
+    --link-color-hover: #4A5E3D;
+
+    /* Native Obsidian accent HSL — sage */
+    --accent-h: 94;
+    --accent-s: 16%;
+    --accent-l: 43%;
+    --primary-color-rgb: 107, 127, 92;
+
+    /* Code surface */
+    --code-background: var(--background-secondary);
+
+    /* Scrollbars + selection surfaces */
+    --scrollbar-thumb: rgba(58, 51, 41, 0.18);
+    --scrollbar-track: rgba(58, 51, 41, 0.05);
+
+    /* Highlights */
+    --highlight-bg: #E8DDB8;
+    --highlight-bg-rgb: 232, 221, 184;
+    --highlight-bg-dark: #D6C99C;
+    --highlight-bg-dark-color: #2D1F0E;
+
+    /* Tabs + surfaces */
+    --tab-bg-inactive: transparent;
+    --tab-bg-inactive-hover: rgba(58, 51, 41, 0.05);
+    --surface-accent: var(--background-secondary);
+    --surface-accent-rgb: 237, 229, 210;
+    --surface-dark: #36342E;
+    --surface-dark-rgb: 54, 52, 46;
+
+    /* Collapse all heading levels to one neutral tone */
+    --heading-primary: #2D2820;
+    --heading-primary-rgb: 45, 40, 32;
+    --heading-secondary: #2D2820;
+    --heading-secondary-rgb: 45, 40, 32;
+    --heading-tertiary: #2D2820;
+    --heading-tertiary-rgb: 45, 40, 32;
+    --heading-quaternary: #2D2820;
+    --heading-quaternary-rgb: 45, 40, 32;
+    --heading-quinary: #2D2820;
+    --heading-quinary-rgb: 45, 40, 32;
+    --heading-senary: #2D2820;
+    --heading-senary-rgb: 45, 40, 32;
+    --heading-bg-opacity: 0;
+
+    /* Layout */
+    --file-line-width: 68ch;
+    --editor-max-width: 68ch;
+    --reading-max-width: 68ch;
+
+    /* Structural chrome */
+    --divider-color: rgba(58, 51, 41, 0.1);
+    --background-modifier-border: rgba(58, 51, 41, 0.1);
+}
+
+/* --- Warm dark palette --- */
+body.focus-mode.theme-dark {
+    --background-primary: #1F1B16;
+    --background-primary-rgb: 31, 27, 22;
+    --background-secondary: #2A2520;
+    --background-secondary-rgb: 42, 37, 32;
+    --background-secondary-alt: #332D26;
+    --setting-items-background: var(--background-secondary);
+
+    --text-normal: #D8CBB3;
+    --text-normal-rgb: 216, 203, 179;
+    --text-muted: #8A7E68;
+    --text-faint: #5C5246;
+
+    --interactive-accent: #A39873;
+    --interactive-accent-rgb: 163, 152, 115;
+    --interactive-accent-hover: #BFB089;
+    --text-accent: #A39873;
+    --text-accent-hover: #BFB089;
+    --text-selection: rgba(163, 152, 115, 0.20);
+
+    --link-color: #BFB089;
+    --link-color-hover: #D4C9A0;
+
+    /* Native Obsidian accent HSL — warm sand */
+    --accent-h: 46;
+    --accent-s: 21%;
+    --accent-l: 55%;
+    --primary-color-rgb: 163, 152, 115;
+
+    /* Code surface */
+    --code-background: var(--background-secondary);
+
+    /* Scrollbars + selection surfaces */
+    --scrollbar-thumb: rgba(216, 203, 179, 0.18);
+    --scrollbar-track: rgba(216, 203, 179, 0.05);
+
+    /* Highlights */
+    --highlight-bg: #4A4030;
+    --highlight-bg-rgb: 74, 64, 48;
+    --highlight-bg-dark: #5C5040;
+    --highlight-bg-dark-color: #E8DCC4;
+
+    /* Tabs + surfaces */
+    --tab-bg-inactive: transparent;
+    --tab-bg-inactive-hover: rgba(216, 203, 179, 0.05);
+    --surface-accent: var(--background-secondary);
+    --surface-accent-rgb: 42, 37, 32;
+    --surface-dark: #1A1612;
+    --surface-dark-rgb: 26, 22, 18;
+
+    /* Collapse all heading levels to one warm tone */
+    --heading-primary: #E8DCC4;
+    --heading-primary-rgb: 232, 220, 196;
+    --heading-secondary: #E8DCC4;
+    --heading-secondary-rgb: 232, 220, 196;
+    --heading-tertiary: #E8DCC4;
+    --heading-tertiary-rgb: 232, 220, 196;
+    --heading-quaternary: #E8DCC4;
+    --heading-quaternary-rgb: 232, 220, 196;
+    --heading-quinary: #E8DCC4;
+    --heading-quinary-rgb: 232, 220, 196;
+    --heading-senary: #E8DCC4;
+    --heading-senary-rgb: 232, 220, 196;
+    --heading-bg-opacity: 0;
+
+    /* Layout */
+    --file-line-width: 68ch;
+    --editor-max-width: 68ch;
+    --reading-max-width: 68ch;
+
+    /* Structural chrome */
+    --divider-color: rgba(216, 203, 179, 0.1);
+    --background-modifier-border: rgba(216, 203, 179, 0.1);
+}
+
+/* --- Kill heading backgrounds and colour hierarchy --- */
+body.focus-mode :is(
+    .markdown-preview-view h1, .markdown-preview-view h2, .markdown-preview-view h3,
+    .markdown-preview-view h4, .markdown-preview-view h5, .markdown-preview-view h6,
+    .markdown-source-view.mod-cm6 .cm-line .cm-header-1,
+    .markdown-source-view.mod-cm6 .cm-line .cm-header-2,
+    .markdown-source-view.mod-cm6 .cm-line .cm-header-3,
+    .markdown-source-view.mod-cm6 .cm-line .cm-header-4,
+    .markdown-source-view.mod-cm6 .cm-line .cm-header-5,
+    .markdown-source-view.mod-cm6 .cm-line .cm-header-6
+) {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    padding-inline: 0 !important;
+    border-radius: 0 !important;
+    color: var(--heading-primary) !important;
+}
+
+/* --- Mute callout decorations — structure survives, colour noise goes --- */
+body.focus-mode :is(.callout, .cm-callout) {
+    background-color: var(--background-secondary) !important;
+    border-inline-start-color: var(--text-muted) !important;
+}
+
+body.focus-mode .callout .callout-title {
+    color: var(--text-normal) !important;
+    text-shadow: none !important;
+}
+
+body.focus-mode .callout .callout-icon {
+    color: var(--text-muted) !important;
+}
+
+/* --- Mute tag chips --- */
+body.focus-mode.tag-chips {
+    --tag-color: var(--text-faint);
+    --tag-color-hover: var(--text-muted);
+    --tag-border-color: rgba(58, 51, 41, 0.15);
+    --tag-border-color-hover: rgba(58, 51, 41, 0.25);
+}
+
+body.focus-mode.theme-dark.tag-chips {
+    --tag-border-color: rgba(216, 203, 179, 0.12);
+    --tag-border-color-hover: rgba(216, 203, 179, 0.22);
+}
+
+/* --- Plain underline links — override glow and wavy styles --- */
+body.focus-mode :is(
+    .markdown-rendered a, .markdown-rendered .internal-link, .markdown-rendered .external-link,
+    .markdown-source-view.mod-cm6 .cm-link:not(.cm-formatting),
+    .markdown-source-view.mod-cm6 .cm-url:not(.cm-formatting),
+    .markdown-source-view.mod-cm6 .cm-hmd-internal-link:not(.cm-formatting),
+    .markdown-source-view.mod-cm6 .cm-hmd-external-link:not(.cm-formatting)
+) {
+    text-shadow: none !important;
+    box-shadow: none !important;
+    background: none !important;
+    background-color: transparent !important;
+    text-decoration: underline !important;
+    text-decoration-style: solid !important;
+    text-decoration-color: var(--link-color) !important;
+    animation: none !important;
+}
+
+/* --- Kill all transitions & animations --- */
+body.focus-mode * {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+}
+
+/* --- Hide status bar + ribbon (escape hatch: focus-mode-keep-chrome restores them) --- */
+body.focus-mode:not(.focus-mode-keep-chrome) .status-bar {
+    display: none !important;
+}
+
+body.focus-mode:not(.focus-mode-keep-chrome) .workspace-ribbon.side-dock-ribbon {
+    display: none !important;
+}
+
+/* --- Mute tab bar — active tab gets a subtle accent underline only --- */
+body.focus-mode .workspace-tab-header.is-active {
+    background-color: transparent !important;
+    border-block-end: 2px solid var(--interactive-accent) !important;
+    box-shadow: none !important;
+}
+
+body.focus-mode .workspace-tab-header:not(.is-active) {
+    background-color: transparent !important;
+    opacity: 0.55;
+}
+
+/* --- Mute frontmatter / properties pane --- */
+body.focus-mode .metadata-container {
+    opacity: 0.6;
+}
+
+body.focus-mode .metadata-container:hover {
+    opacity: 1;
+    transition: opacity 0.15s ease !important;
+}
+
+body.focus-mode .metadata-container .metadata-property-key {
+    color: var(--text-muted) !important;
+}
+
+/* ---- Sub-toggle: Typewriter Dimming ---- */
+body.focus-mode.focus-mode-dim-paragraphs .markdown-source-view.mod-cm6 .cm-line:not(.cm-active):not(.HyperMD-header-1):not(.HyperMD-header-2):not(.HyperMD-header-3):not(.HyperMD-header-4):not(.HyperMD-header-5):not(.HyperMD-header-6) {
+    opacity: 0.5;
+}
+
+body.focus-mode.focus-mode-dim-paragraphs .markdown-source-view.mod-cm6 .cm-line.cm-active {
+    opacity: 1;
+}
+
+body.focus-mode.focus-mode-dim-paragraphs .markdown-preview-view p {
+    opacity: 0.55;
+}
+
+body.focus-mode.focus-mode-dim-paragraphs .markdown-preview-view p:hover {
+    opacity: 1;
+    transition: opacity 0.15s ease !important;
+}
+
+/* ---- Sub-toggle: Hide Sidebar Panels ---- */
+body.focus-mode.focus-mode-hide-sidebars .workspace-split.mod-left-split,
+body.focus-mode.focus-mode-hide-sidebars .workspace-split.mod-right-split {
+    display: none !important;
 }
 
 /* Global Transitions */

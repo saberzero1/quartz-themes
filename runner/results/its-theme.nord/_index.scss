@@ -1879,7 +1879,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h1-border-line-width);
-    height: auto;
+    height: var(--h1-border-line-height);
     background-color: rgb(181, 193, 212);
     background-image: none;
     background: rgb(181, 193, 212) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1904,7 +1904,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h2-border-line-width);
-    height: auto;
+    height: var(--h2-border-line-height);
     background-color: rgb(181, 193, 212);
     background-image: none;
     background: rgb(181, 193, 212) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1929,7 +1929,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h3-border-line-width);
-    height: auto;
+    height: var(--h3-border-line-height);
     background-color: rgb(181, 193, 212);
     background-image: none;
     background: rgb(181, 193, 212) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1954,7 +1954,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h4-border-line-width);
-    height: auto;
+    height: var(--h4-border-line-height);
     background-color: rgb(181, 193, 212);
     background-image: none;
     background: rgb(181, 193, 212) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1979,7 +1979,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h5-border-line-width);
-    height: auto;
+    height: var(--h5-border-line-height);
     background-color: rgb(181, 193, 212);
     background-image: none;
     background: rgb(181, 193, 212) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2004,7 +2004,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h6-border-line-width);
-    height: auto;
+    height: var(--h6-border-line-height);
     background-color: rgb(181, 193, 212);
     background-image: none;
     background: rgb(181, 193, 212) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2054,7 +2054,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h1-border-line-width);
-    height: auto;
+    height: var(--h1-border-line-height);
     background-color: rgb(181, 193, 212);
     background-image: none;
     background: rgb(181, 193, 212) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2079,7 +2079,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h2-border-line-width);
-    height: auto;
+    height: var(--h2-border-line-height);
     background-color: rgb(181, 193, 212);
     background-image: none;
     background: rgb(181, 193, 212) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2104,7 +2104,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h3-border-line-width);
-    height: auto;
+    height: var(--h3-border-line-height);
     background-color: rgb(181, 193, 212);
     background-image: none;
     background: rgb(181, 193, 212) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2129,7 +2129,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h4-border-line-width);
-    height: auto;
+    height: var(--h4-border-line-height);
     background-color: rgb(181, 193, 212);
     background-image: none;
     background: rgb(181, 193, 212) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2154,7 +2154,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h5-border-line-width);
-    height: auto;
+    height: var(--h5-border-line-height);
     background-color: rgb(181, 193, 212);
     background-image: none;
     background: rgb(181, 193, 212) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2179,7 +2179,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h6-border-line-width);
-    height: auto;
+    height: var(--h6-border-line-height);
     background-color: rgb(181, 193, 212);
     background-image: none;
     background: rgb(181, 193, 212) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3214,7 +3214,7 @@ body {
     border-radius: 0px;
     box-shadow: none;
     filter: none;
-    max-width: none;
+    max-width: 100%;
     object-fit: fill;
     border: 0px rgb(136, 192, 208);
     border-top-left-radius: 0px;
@@ -3291,7 +3291,7 @@ body {
     border-radius: 0px;
     box-shadow: none;
     filter: none;
-    max-width: none;
+    max-width: 100%;
     object-fit: contain;
     border: 0px rgb(76, 86, 106);
     border-top-left-radius: 0px;
@@ -3473,7 +3473,7 @@ body {
   progress {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
-    height: 15px;
+    height: 6px;
     border: 0px rgb(76, 86, 106);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -28387,7 +28387,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h1-border-line-width);
-      height: auto;
+      height: var(--h1-border-line-height);
       background-color: rgb(67, 76, 94);
       background-image: none;
       background: rgb(67, 76, 94) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28412,7 +28412,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h2-border-line-width);
-      height: auto;
+      height: var(--h2-border-line-height);
       background-color: rgb(67, 76, 94);
       background-image: none;
       background: rgb(67, 76, 94) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28437,7 +28437,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h3-border-line-width);
-      height: auto;
+      height: var(--h3-border-line-height);
       background-color: rgb(67, 76, 94);
       background-image: none;
       background: rgb(67, 76, 94) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28462,7 +28462,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h4-border-line-width);
-      height: auto;
+      height: var(--h4-border-line-height);
       background-color: rgb(67, 76, 94);
       background-image: none;
       background: rgb(67, 76, 94) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28487,7 +28487,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h5-border-line-width);
-      height: auto;
+      height: var(--h5-border-line-height);
       background-color: rgb(67, 76, 94);
       background-image: none;
       background: rgb(67, 76, 94) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28512,7 +28512,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h6-border-line-width);
-      height: auto;
+      height: var(--h6-border-line-height);
       background-color: rgb(67, 76, 94);
       background-image: none;
       background: rgb(67, 76, 94) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28562,7 +28562,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h1-border-line-width);
-      height: auto;
+      height: var(--h1-border-line-height);
       background-color: rgb(67, 76, 94);
       background-image: none;
       background: rgb(67, 76, 94) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28587,7 +28587,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h2-border-line-width);
-      height: auto;
+      height: var(--h2-border-line-height);
       background-color: rgb(67, 76, 94);
       background-image: none;
       background: rgb(67, 76, 94) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28612,7 +28612,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h3-border-line-width);
-      height: auto;
+      height: var(--h3-border-line-height);
       background-color: rgb(67, 76, 94);
       background-image: none;
       background: rgb(67, 76, 94) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28637,7 +28637,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h4-border-line-width);
-      height: auto;
+      height: var(--h4-border-line-height);
       background-color: rgb(67, 76, 94);
       background-image: none;
       background: rgb(67, 76, 94) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28662,7 +28662,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h5-border-line-width);
-      height: auto;
+      height: var(--h5-border-line-height);
       background-color: rgb(67, 76, 94);
       background-image: none;
       background: rgb(67, 76, 94) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -28687,7 +28687,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: var(--h6-border-line-width);
-      height: auto;
+      height: var(--h6-border-line-height);
       background-color: rgb(67, 76, 94);
       background-image: none;
       background: rgb(67, 76, 94) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -29722,7 +29722,7 @@ html[saved-theme="dark"] {
       border-radius: 0px;
       box-shadow: none;
       filter: none;
-      max-width: none;
+      max-width: 100%;
       object-fit: fill;
       border: 0px rgb(136, 192, 208);
       border-top-left-radius: 0px;
@@ -29799,7 +29799,7 @@ html[saved-theme="dark"] {
       border-radius: 0px;
       box-shadow: none;
       filter: none;
-      max-width: none;
+      max-width: 100%;
       object-fit: contain;
       border: 0px rgb(236, 239, 244);
       border-top-left-radius: 0px;
@@ -29981,7 +29981,7 @@ html[saved-theme="dark"] {
     progress {
       accent-color: auto;
       background-color: rgba(0, 0, 0, 0);
-      height: 15px;
+      height: 6px;
       border: 0px rgb(236, 239, 244);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
