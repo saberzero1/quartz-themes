@@ -2242,6 +2242,7 @@ export const config = [
     pseudoElement: "",
     properties: ["color", "text-decoration", "text-decoration-color"],
   },
+  // misc
   {
     obsidianSelector: `::selection`,
     publishSelector: `::selection`,
@@ -2817,6 +2818,7 @@ export const config = [
     properties: ["background-color", ...defaults.border],
   },
   // === FOOTNOTES SECTION ===
+  // misc
   {
     obsidianSelector: `.footnotes`,
     publishSelector: `.footnotes`,
@@ -2839,6 +2841,7 @@ export const config = [
     properties: ["background-color", ...defaults.border],
   },
   // === SPACER ELEMENT ===
+  // misc
   {
     obsidianSelector: `.workspace-leaf-content`,
     publishSelector: null,

@@ -156,6 +156,20 @@
               "icon": "lucide-list",
               "title": "Outline of syntax-samples"
             }
+          },
+          {
+            "id": "2c88e6c40eac1f50",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
           }
         ],
         "currentTab": 3

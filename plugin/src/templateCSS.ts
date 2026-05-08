@@ -618,6 +618,13 @@ body a.internal-link {
       margin-top: 0;
       margin-bottom: 0.67rem;
     }
+    h2.page-title {
+      font-size: 1rem;
+    }
+    backlinks > h3, .graph > h3, .explorer-toggle > h2 {
+      font-size: 1.318rem;
+      margin-bottom: 0;
+    }
   }
 }
 `;
