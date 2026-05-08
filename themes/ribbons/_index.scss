@@ -7,7 +7,7 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
+  --callout-blend-mode: normal;
   --callout-bug: var(--color-red-rgb);
   --callout-default: var(--color-blue-rgb);
   --callout-error: var(--color-red-rgb);
@@ -24,21 +24,21 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--text-faint, rgba(80, 80, 80, 0.65)) !important;
+  --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary, #fbf8f4) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--text-faint, rgba(80, 80, 80, 0.65)) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, black) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
@@ -47,18 +47,18 @@
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
-  --collapse-icon-color: var(--text-faint, rgba(80, 80, 80, 0.65)) !important;
+  --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, rgba(80, 80, 80, 0.65)) !important;
-  --graph-text: var(--text-normal, black) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
   --icon-color-active: var(--text-accent) !important;
-  --icon-color-focused: var(--text-normal, black) !important;
+  --icon-color-focused: var(--text-normal) !important;
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
@@ -93,7 +93,7 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
+  --callout-blend-mode: normal;
   --callout-bug: var(--color-red-rgb);
   --callout-default: var(--color-blue-rgb);
   --callout-error: var(--color-red-rgb);
@@ -110,21 +110,21 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--text-faint, #e1d0b388) !important;
+  --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary, #292d25) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--text-faint, #e1d0b388) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, #c7b89e) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
@@ -133,18 +133,18 @@
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
-  --collapse-icon-color: var(--text-faint, #e1d0b388) !important;
+  --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, #e1d0b388) !important;
-  --graph-text: var(--text-normal, #c7b89e) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
   --icon-color-active: var(--text-accent) !important;
-  --icon-color-focused: var(--text-normal, #c7b89e) !important;
+  --icon-color-focused: var(--text-normal) !important;
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
@@ -216,20 +216,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(251, 248, 244));
-    color: var(--text-normal, rgb(0, 0, 0));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(251, 248, 244));
+    background-color: var(--background-primary);
     color: rgb(0, 0, 0);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(241, 237, 246));
+    background-color: var(--background-secondary);
     color: rgb(0, 0, 0);
   }
 
@@ -237,12 +237,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(241, 237, 246));
+    background-color: var(--tab-container-background);
     color: rgb(0, 0, 0);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(241, 237, 246));
+    background-color: var(--tab-container-background);
     color: rgb(0, 0, 0);
     border-left: 0px rgb(224, 224, 224);
   }
@@ -442,7 +442,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(0, 0, 0));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -485,7 +485,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(0, 0, 0));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -528,7 +528,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(0, 0, 0));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -571,7 +571,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(0, 0, 0));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -692,7 +692,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(0, 0, 0));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       "My Text font",
@@ -725,7 +725,7 @@ body {
 
   .text-highlight {
     background-color: var(--text-highlight-bg);
-    color: var(--text-normal, rgb(0, 0, 0));
+    color: var(--text-normal);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -981,7 +981,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-normal, rgb(0, 0, 0));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     padding: 2.1px 4.2px;
     padding-block-end: 0px;
@@ -1077,13 +1077,13 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    color: var(--text-faint, rgba(80, 80, 80, 0.65));
+    color: var(--text-faint);
     font-family: "My Quote font", "New York Small";
     font-weight: 400;
-    font-style: var(--blockquote-font-style, italic);
-    line-height: var(--line-height-normal, 19.2px);
-    padding-bottom: var(--size-4-2, 8px);
-    padding-top: var(--size-4-2, 8px);
+    font-style: var(--blockquote-font-style);
+    line-height: var(--line-height-normal);
+    padding-bottom: var(--size-4-2);
+    padding-top: var(--size-4-2);
     padding-inline-start: 0px;
     margin-inline-start: 40px;
     margin-inline-end: 40px;
@@ -1092,7 +1092,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgba(80, 80, 80, 0.65));
+    color: var(--text-faint);
     text-decoration: underline rgb(138, 92, 245);
   }
 
@@ -1107,7 +1107,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(0, 0, 0));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1125,7 +1125,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(251, 248, 244));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(189, 189, 189);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1230,8 +1230,8 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(75, 37, 77));
-    font-family: var(--h1-font, "My Title font", "SF Compact Display");
+    color: var(--h1-color);
+    font-family: var(--h1-font);
     font-size: var(--h1-size);
     font-weight: var(--font-weight);
     line-height: var(--h1-line-height);
@@ -1263,8 +1263,8 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(0, 0, 0));
-    font-family: var(--h2-font, "My Text font", "New York", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--h2-color);
+    font-family: var(--h2-font);
     font-size: var(--h2-size);
     font-weight: var(--font-weight);
     line-height: var(--h2-line-height);
@@ -1296,10 +1296,10 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(119, 34, 13));
-    font-family: var(--h3-font, "My Headings font", "New York Extra Large");
+    color: var(--h3-color);
+    font-family: var(--h3-font);
     font-size: var(--h3-size);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
     line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -1329,8 +1329,8 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(119, 34, 13));
-    font-family: var(--h4-font, "My Text font", "New York", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--h4-color);
+    font-family: var(--h4-font);
     font-size: var(--h4-size);
     font-weight: var(--font-weight);
     line-height: var(--h4-line-height);
@@ -1362,10 +1362,10 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(119, 34, 13));
-    font-family: var(--h5-font, "My Table font", "SF Compact Rounded");
+    color: var(--h5-color);
+    font-family: var(--h5-font);
     font-size: var(--h5-size);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
     line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -1395,8 +1395,8 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(0, 0, 0));
-    font-family: var(--h6-font, "My Text font", "New York", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--h6-color);
+    font-family: var(--h6-font);
     font-size: var(--h6-size);
     font-weight: var(--font-weight);
     line-height: var(--h6-line-height);
@@ -1429,8 +1429,8 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(75, 37, 77));
-    font-family: var(--inline-title-font, "My Title font", "SF Compact Display");
+    color: var(--inline-title-color);
+    font-family: var(--inline-title-font);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
     line-height: var(--inline-title-line-height);
@@ -1851,7 +1851,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1893,7 +1893,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -1910,7 +1910,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1951,7 +1951,7 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -1968,7 +1968,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2009,7 +2009,7 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2026,7 +2026,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2067,7 +2067,7 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2084,7 +2084,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2125,7 +2125,7 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2142,7 +2142,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2183,7 +2183,7 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2200,7 +2200,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2241,7 +2241,7 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2258,7 +2258,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2299,7 +2299,7 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2316,7 +2316,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2357,7 +2357,7 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2374,7 +2374,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2415,7 +2415,7 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2432,7 +2432,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2473,7 +2473,7 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2490,7 +2490,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2531,7 +2531,7 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2548,7 +2548,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2589,7 +2589,7 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2606,7 +2606,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2647,7 +2647,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2694,10 +2694,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 0px);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -2727,9 +2724,9 @@ body {
   }
 
   th {
-    background-color: var(--text-title, rgb(75, 37, 77));
-    color: var(--background-primary, rgb(251, 248, 244));
-    font-weight: var(--table-header-weight, 400);
+    background-color: var(--text-title);
+    color: var(--background-primary);
+    font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
@@ -2756,13 +2753,13 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(0, 0, 0));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    border-left: var(--table-column-first-border-width, 0px) solid rgb(251, 248, 244);
+    border-left: var(--table-column-first-border-width) solid rgb(251, 248, 244);
     border-right: 0px solid rgb(251, 248, 244);
     border-top: 1px solid rgb(75, 37, 77);
     border-bottom: 1px solid rgb(224, 224, 224);
@@ -3188,7 +3185,7 @@ body {
   kbd {
     background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(0, 0, 0));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     font-size: var(--code-size);
     border: 0px rgb(0, 0, 0);
@@ -3570,9 +3567,9 @@ body {
   }
 
   .bases-table thead th {
-    background-color: var(--text-title, rgb(75, 37, 77));
-    color: var(--background-primary, rgb(251, 248, 244));
-    font-weight: var(--table-header-weight, 400);
+    background-color: var(--text-title);
+    color: var(--background-primary);
+    font-weight: var(--table-header-weight);
     border-color: rgb(75, 37, 77);
   }
 
@@ -3592,12 +3589,12 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(0, 0, 0));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-primary, rgb(251, 248, 244));
+    background-color: var(--background-primary);
     border-color: rgb(0, 0, 0);
     box-shadow: var(--input-shadow);
   }
@@ -3650,7 +3647,7 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(241, 237, 246));
+    background-color: var(--status-bar-background);
     color: var(--status-bar-text-color);
     font-family:
       ui-sans-serif,
@@ -3811,7 +3808,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgba(80, 80, 80, 0.65));
+    color: var(--text-faint);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3829,11 +3826,11 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(241, 237, 246));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(0, 0, 0));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4002,7 +3999,7 @@ body {
 
   .stacked-page {
     border-color: rgb(0, 0, 0);
-    background-color: var(--background-secondary, rgb(241, 237, 246));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
@@ -4014,16 +4011,12 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(75, 37, 77));
+    color: var(--inline-title-color);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
 
   .callout[data-callout="combat"] {
-    --background-primary: #fbf8f4;
-    --background-secondary: #f1edf6;
-    --callout-blend-mode: normal;
-    --callout-color: var(--callout-default, 0, 0, 0);
     --canvas-background: #fbf8f4;
     --caret-color: black;
     --checkbox-border-color: rgba(80, 80, 80, 0.65);
@@ -4053,8 +4046,6 @@ body {
     --tab-text-color-focused-active-current: black;
     --table-drag-handle-color: rgba(80, 80, 80, 0.65);
     --table-header-color: black;
-    --text-faint: rgba(80, 80, 80, 0.65);
-    --text-normal: black;
     color: rgb(0, 0, 0);
     font-family:
       "My Text font",
@@ -4104,6 +4095,7 @@ body {
     --button-corner-shape: round;
     --button-radius: 5px;
     --callout-bug: 233, 49, 71;
+    --callout-color: 0, 0, 0;
     --callout-default: 8, 109, 221;
     --callout-error: 233, 49, 71;
     --callout-example: 120, 82, 238;
@@ -4137,7 +4129,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -4178,8 +4169,13 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #fbf8f4 65%, transparent) linear-gradient(#fbf8f4, color-mix(in srgb, #fbf8f4 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
@@ -4295,10 +4291,6 @@ body {
   }
 
   .callout[data-callout="letter"] {
-    --background-primary: #fbf8f4;
-    --background-secondary: #f1edf6;
-    --callout-blend-mode: normal;
-    --callout-color: var(--callout-default, 0, 0, 0);
     --canvas-background: #fbf8f4;
     --caret-color: black;
     --checkbox-border-color: rgba(80, 80, 80, 0.65);
@@ -4328,8 +4320,6 @@ body {
     --tab-text-color-focused-active-current: black;
     --table-drag-handle-color: rgba(80, 80, 80, 0.65);
     --table-header-color: black;
-    --text-faint: rgba(80, 80, 80, 0.65);
-    --text-normal: black;
     color: rgb(0, 0, 0);
     font-family:
       "My Text font",
@@ -4379,6 +4369,7 @@ body {
     --button-corner-shape: round;
     --button-radius: 5px;
     --callout-bug: 233, 49, 71;
+    --callout-color: 0, 0, 0;
     --callout-default: 8, 109, 221;
     --callout-error: 233, 49, 71;
     --callout-example: 120, 82, 238;
@@ -4412,7 +4403,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -4453,8 +4443,13 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #fbf8f4 65%, transparent) linear-gradient(#fbf8f4, color-mix(in srgb, #fbf8f4 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
@@ -4570,10 +4565,6 @@ body {
   }
 
   .callout[data-callout="rules"] {
-    --background-primary: #fbf8f4;
-    --background-secondary: #f1edf6;
-    --callout-blend-mode: normal;
-    --callout-color: var(--callout-default, 0, 0, 0);
     --canvas-background: #fbf8f4;
     --caret-color: black;
     --checkbox-border-color: rgba(80, 80, 80, 0.65);
@@ -4603,8 +4594,6 @@ body {
     --tab-text-color-focused-active-current: black;
     --table-drag-handle-color: rgba(80, 80, 80, 0.65);
     --table-header-color: black;
-    --text-faint: rgba(80, 80, 80, 0.65);
-    --text-normal: black;
     color: rgb(0, 0, 0);
     font-family: "My Title font", "SF Compact Display";
     --el-margin-bottom: 1em;
@@ -4639,6 +4628,7 @@ body {
     --button-corner-shape: round;
     --button-radius: 5px;
     --callout-bug: 233, 49, 71;
+    --callout-color: 0, 0, 0;
     --callout-default: 8, 109, 221;
     --callout-error: 233, 49, 71;
     --callout-example: 120, 82, 238;
@@ -4672,7 +4662,6 @@ body {
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -4713,8 +4702,13 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #fbf8f4 65%, transparent) linear-gradient(#fbf8f4, color-mix(in srgb, #fbf8f4 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
@@ -4832,9 +4826,6 @@ body {
 
   li.task-list-item[data-task="_"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -4861,8 +4852,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4881,9 +4870,6 @@ body {
 
   li.task-list-item[data-task=","] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -4910,8 +4896,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4930,9 +4914,6 @@ body {
 
   li.task-list-item[data-task=";"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -4959,8 +4940,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4979,9 +4958,6 @@ body {
 
   li.task-list-item[data-task=":"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5008,8 +4984,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5028,9 +5002,6 @@ body {
 
   li.task-list-item[data-task="."] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5057,8 +5028,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5077,9 +5046,6 @@ body {
 
   li.task-list-item[data-task="'"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5106,8 +5072,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5126,9 +5090,6 @@ body {
 
   li.task-list-item[data-task="@"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5155,8 +5116,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5175,9 +5134,6 @@ body {
 
   li.task-list-item[data-task="&"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5204,8 +5160,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5224,9 +5178,6 @@ body {
 
   li.task-list-item[data-task="#"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5253,8 +5204,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5273,9 +5222,6 @@ body {
 
   li.task-list-item[data-task="%"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5302,8 +5248,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5322,9 +5266,6 @@ body {
 
   li.task-list-item[data-task="`"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5351,8 +5292,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5371,9 +5310,6 @@ body {
 
   li.task-list-item[data-task="+"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5400,8 +5336,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5420,9 +5354,6 @@ body {
 
   li.task-list-item[data-task="<"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5449,8 +5380,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5469,9 +5398,6 @@ body {
 
   li.task-list-item[data-task="="] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5498,8 +5424,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5518,9 +5442,6 @@ body {
 
   li.task-list-item[data-task="|"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5547,8 +5468,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5567,9 +5486,6 @@ body {
 
   li.task-list-item[data-task="~"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5596,8 +5512,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5616,9 +5530,6 @@ body {
 
   li.task-list-item[data-task="$"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5645,8 +5556,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5665,9 +5574,6 @@ body {
 
   li.task-list-item[data-task="0"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5694,8 +5600,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5714,9 +5618,6 @@ body {
 
   li.task-list-item[data-task="1"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5743,8 +5644,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5763,9 +5662,6 @@ body {
 
   li.task-list-item[data-task="2"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5792,8 +5688,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5812,9 +5706,6 @@ body {
 
   li.task-list-item[data-task="3"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5841,8 +5732,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5861,9 +5750,6 @@ body {
 
   li.task-list-item[data-task="4"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5890,8 +5776,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5910,9 +5794,6 @@ body {
 
   li.task-list-item[data-task="5"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5939,8 +5820,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5959,9 +5838,6 @@ body {
 
   li.task-list-item[data-task="6"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5988,8 +5864,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6008,9 +5882,6 @@ body {
 
   li.task-list-item[data-task="7"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6037,8 +5908,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6057,9 +5926,6 @@ body {
 
   li.task-list-item[data-task="8"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6086,8 +5952,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6106,9 +5970,6 @@ body {
 
   li.task-list-item[data-task="9"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6135,8 +5996,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6155,9 +6014,6 @@ body {
 
   li.task-list-item[data-task="a"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6184,8 +6040,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6204,9 +6058,6 @@ body {
 
   li.task-list-item[data-task="A"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6233,8 +6084,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6253,9 +6102,6 @@ body {
 
   li.task-list-item[data-task="B"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6282,8 +6128,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6302,9 +6146,6 @@ body {
 
   li.task-list-item[data-task="C"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6331,8 +6172,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6351,9 +6190,6 @@ body {
 
   li.task-list-item[data-task="D"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6380,8 +6216,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6400,9 +6234,6 @@ body {
 
   li.task-list-item[data-task="e"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6429,8 +6260,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6449,9 +6278,6 @@ body {
 
   li.task-list-item[data-task="E"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6478,8 +6304,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6498,9 +6322,6 @@ body {
 
   li.task-list-item[data-task="F"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6527,8 +6348,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6547,9 +6366,6 @@ body {
 
   li.task-list-item[data-task="g"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6576,8 +6392,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6596,9 +6410,6 @@ body {
 
   li.task-list-item[data-task="G"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6625,8 +6436,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6645,9 +6454,6 @@ body {
 
   li.task-list-item[data-task="h"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6674,8 +6480,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6694,9 +6498,6 @@ body {
 
   li.task-list-item[data-task="H"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6723,8 +6524,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6743,9 +6542,6 @@ body {
 
   li.task-list-item[data-task="j"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6772,8 +6568,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6792,9 +6586,6 @@ body {
 
   li.task-list-item[data-task="J"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6821,8 +6612,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6841,9 +6630,6 @@ body {
 
   li.task-list-item[data-task="K"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6870,8 +6656,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6890,9 +6674,6 @@ body {
 
   li.task-list-item[data-task="L"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6919,8 +6700,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6939,9 +6718,6 @@ body {
 
   li.task-list-item[data-task="m"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6968,8 +6744,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6988,9 +6762,6 @@ body {
 
   li.task-list-item[data-task="M"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7017,8 +6788,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7037,9 +6806,6 @@ body {
 
   li.task-list-item[data-task="n"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7066,8 +6832,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7086,9 +6850,6 @@ body {
 
   li.task-list-item[data-task="N"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7115,8 +6876,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7135,9 +6894,6 @@ body {
 
   li.task-list-item[data-task="o"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7164,8 +6920,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7184,9 +6938,6 @@ body {
 
   li.task-list-item[data-task="O"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7213,8 +6964,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7233,9 +6982,6 @@ body {
 
   li.task-list-item[data-task="P"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7262,8 +7008,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7282,9 +7026,6 @@ body {
 
   li.task-list-item[data-task="q"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7311,8 +7052,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7331,9 +7070,6 @@ body {
 
   li.task-list-item[data-task="Q"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7360,8 +7096,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7380,9 +7114,6 @@ body {
 
   li.task-list-item[data-task="r"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7409,8 +7140,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7429,9 +7158,6 @@ body {
 
   li.task-list-item[data-task="R"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7458,8 +7184,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7478,9 +7202,6 @@ body {
 
   li.task-list-item[data-task="s"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7507,8 +7228,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7527,9 +7246,6 @@ body {
 
   li.task-list-item[data-task="t"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7556,8 +7272,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7576,9 +7290,6 @@ body {
 
   li.task-list-item[data-task="T"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7605,8 +7316,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7625,9 +7334,6 @@ body {
 
   li.task-list-item[data-task="U"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7654,8 +7360,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7674,9 +7378,6 @@ body {
 
   li.task-list-item[data-task="v"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7703,8 +7404,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7723,9 +7422,6 @@ body {
 
   li.task-list-item[data-task="V"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7752,8 +7448,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7772,9 +7466,6 @@ body {
 
   li.task-list-item[data-task="W"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7801,8 +7492,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7821,9 +7510,6 @@ body {
 
   li.task-list-item[data-task="y"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7850,8 +7536,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7870,9 +7554,6 @@ body {
 
   li.task-list-item[data-task="Y"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7899,8 +7580,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7919,9 +7598,6 @@ body {
 
   li.task-list-item[data-task="z"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7948,8 +7624,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7968,9 +7642,6 @@ body {
 
   li.task-list-item[data-task="Z"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
-    --background-secondary: #f6f6f6;
-    --callout-blend-mode: darken;
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7997,8 +7668,6 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-drag-handle-color: #ababab;
     --table-header-color: #222222;
-    --text-faint: #ababab;
-    --text-normal: #222222;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -8714,20 +8383,20 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 html[saved-theme="dark"] {
   body {
     div#quartz-root {
-      background-color: var(--background-primary, rgb(41, 45, 37));
-      color: var(--text-normal, rgb(199, 184, 158));
+      background-color: var(--background-primary);
+      color: var(--text-normal);
     }
 
     &[data-slug],
     &[data-slug] .page > div#quartz-body,
     .page > div#quartz-body div.center,
     .page > div#quartz-body footer {
-      background-color: var(--background-primary, rgb(41, 45, 37));
+      background-color: var(--background-primary);
       color: rgb(199, 184, 158);
     }
 
     .page > div#quartz-body div.sidebar {
-      background-color: var(--background-secondary, rgb(59, 52, 46));
+      background-color: var(--background-secondary);
       color: rgb(199, 184, 158);
     }
 
@@ -8735,12 +8404,12 @@ html[saved-theme="dark"] {
     .page > div#quartz-body div.sidebar.left,
     .page > div#quartz-body div.sidebar.left:has(.explorer),
     .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-      background-color: var(--tab-container-background, rgb(59, 52, 46));
+      background-color: var(--tab-container-background);
       color: rgb(199, 184, 158);
     }
 
     .page > div#quartz-body div.sidebar.right {
-      background-color: var(--tab-container-background, rgb(59, 52, 46));
+      background-color: var(--tab-container-background);
       color: rgb(199, 184, 158);
       border-left: 0px rgb(54, 54, 54);
     }
@@ -8940,7 +8609,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(199, 184, 158));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -8983,7 +8652,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(199, 184, 158));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -9026,7 +8695,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > em,
     em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(199, 184, 158));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -9069,7 +8738,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > i,
     i {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(199, 184, 158));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -9190,7 +8859,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(199, 184, 158));
+      color: var(--italic-color);
       cursor: grab;
       font-family:
         "My Text font",
@@ -9223,7 +8892,7 @@ html[saved-theme="dark"] {
 
     .text-highlight {
       background-color: var(--text-highlight-bg);
-      color: var(--text-normal, rgb(199, 184, 158));
+      color: var(--text-normal);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -9479,7 +9148,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--code-normal, rgb(199, 184, 158));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       padding: 2.1px 4.2px;
       padding-block-end: 0px;
@@ -9575,13 +9244,13 @@ html[saved-theme="dark"] {
 
     blockquote {
       background-color: var(--blockquote-background-color);
-      color: var(--text-faint, rgba(225, 208, 179, 0.533));
+      color: var(--text-faint);
       font-family: "My Quote font", "New York Small";
       font-weight: 400;
-      font-style: var(--blockquote-font-style, italic);
-      line-height: var(--line-height-normal, 19.2px);
-      padding-bottom: var(--size-4-2, 8px);
-      padding-top: var(--size-4-2, 8px);
+      font-style: var(--blockquote-font-style);
+      line-height: var(--line-height-normal);
+      padding-bottom: var(--size-4-2);
+      padding-top: var(--size-4-2);
       padding-inline-start: 0px;
       margin-inline-start: 40px;
       margin-inline-end: 40px;
@@ -9590,7 +9259,7 @@ html[saved-theme="dark"] {
     }
 
     .data-footnote-backref {
-      color: var(--text-faint, rgba(225, 208, 179, 0.533));
+      color: var(--text-faint);
       text-decoration: underline rgb(166, 138, 249);
     }
 
@@ -9605,7 +9274,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--text-normal, rgb(199, 184, 158));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -9623,7 +9292,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space {
-      background-color: var(--prompt-background, rgb(41, 45, 37));
+      background-color: var(--prompt-background);
       border: 1px solid rgb(85, 85, 85);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -9728,8 +9397,8 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--h1-color, rgb(197, 148, 69));
-      font-family: var(--h1-font, "My Title font", "SF Compact Display");
+      color: var(--h1-color);
+      font-family: var(--h1-font);
       font-size: var(--h1-size);
       font-weight: var(--font-weight);
       line-height: var(--h1-line-height);
@@ -9761,8 +9430,8 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--h2-color, rgb(199, 184, 158));
-      font-family: var(--h2-font, "My Text font", "New York", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--h2-color);
+      font-family: var(--h2-font);
       font-size: var(--h2-size);
       font-weight: var(--font-weight);
       line-height: var(--h2-line-height);
@@ -9794,10 +9463,10 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--h3-color, rgb(216, 136, 116));
-      font-family: var(--h3-font, "My Headings font", "New York Extra Large");
+      color: var(--h3-color);
+      font-family: var(--h3-font);
       font-size: var(--h3-size);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
       line-height: var(--h3-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
@@ -9827,8 +9496,8 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--h4-color, rgb(216, 136, 116));
-      font-family: var(--h4-font, "My Text font", "New York", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--h4-color);
+      font-family: var(--h4-font);
       font-size: var(--h4-size);
       font-weight: var(--font-weight);
       line-height: var(--h4-line-height);
@@ -9860,10 +9529,10 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--h5-color, rgb(216, 136, 116));
-      font-family: var(--h5-font, "My Table font", "SF Compact Rounded");
+      color: var(--h5-color);
+      font-family: var(--h5-font);
       font-size: var(--h5-size);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
       line-height: var(--h5-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
@@ -9893,8 +9562,8 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--h6-color, rgb(199, 184, 158));
-      font-family: var(--h6-font, "My Text font", "New York", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--h6-color);
+      font-family: var(--h6-font);
       font-size: var(--h6-size);
       font-weight: var(--font-weight);
       line-height: var(--h6-line-height);
@@ -9927,8 +9596,8 @@ html[saved-theme="dark"] {
 
     h2.page-title,
     h2.page-title a {
-      color: var(--inline-title-color, rgb(197, 148, 69));
-      font-family: var(--inline-title-font, "My Title font", "SF Compact Display");
+      color: var(--inline-title-color);
+      font-family: var(--inline-title-font);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
       line-height: var(--inline-title-line-height);
@@ -10349,7 +10018,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       border: 0px solid rgba(2, 122, 255, 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -10391,7 +10060,7 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(0, 0, 0));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -10408,7 +10077,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10449,7 +10118,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(0, 0, 0));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -10466,7 +10135,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 83, 223, 221);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10507,7 +10176,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(0, 0, 0));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -10524,7 +10193,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 2, 122, 255);
+      --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10565,7 +10234,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(0, 0, 0));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -10582,7 +10251,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 2, 122, 255);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10623,7 +10292,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(0, 0, 0));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -10640,7 +10309,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 83, 223, 221);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10681,7 +10350,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(0, 0, 0));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -10698,7 +10367,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 68, 207, 110);
+      --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10739,7 +10408,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(0, 0, 0));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -10756,7 +10425,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10797,7 +10466,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(0, 0, 0));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -10814,7 +10483,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 233, 151, 63);
+      --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10855,7 +10524,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(0, 0, 0));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -10872,7 +10541,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 251, 70, 76);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10913,7 +10582,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(0, 0, 0));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -10930,7 +10599,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 251, 70, 76);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10971,7 +10640,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(0, 0, 0));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -10988,7 +10657,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 251, 70, 76);
+      --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11029,7 +10698,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(0, 0, 0));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -11046,7 +10715,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 168, 130, 255);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11087,7 +10756,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(0, 0, 0));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -11104,7 +10773,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 158, 158, 158);
+      --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11145,7 +10814,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(0, 0, 0));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -11192,10 +10861,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin-top: var(--heading-spacing, 0px);
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
       margin-inline-end: 0px;
@@ -11225,9 +10891,9 @@ html[saved-theme="dark"] {
     }
 
     th {
-      background-color: var(--text-title, rgb(197, 148, 69));
-      color: var(--background-primary, rgb(41, 45, 37));
-      font-weight: var(--table-header-weight, 400);
+      background-color: var(--text-title);
+      color: var(--background-primary);
+      font-weight: var(--table-header-weight);
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
@@ -11254,13 +10920,13 @@ html[saved-theme="dark"] {
 
     td {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-text-color, rgb(199, 184, 158));
+      color: var(--table-text-color);
       font-weight: 400;
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      border-left: var(--table-column-first-border-width, 0px) solid rgb(41, 45, 37);
+      border-left: var(--table-column-first-border-width) solid rgb(41, 45, 37);
       border-right: 0px solid rgb(41, 45, 37);
       border-top: 1px solid rgb(197, 148, 69);
       border-bottom: 1px solid rgb(54, 54, 54);
@@ -11686,7 +11352,7 @@ html[saved-theme="dark"] {
     kbd {
       background-color: var(--code-background);
       box-shadow: none;
-      color: var(--code-normal, rgb(199, 184, 158));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       font-size: var(--code-size);
       border: 0px rgb(199, 184, 158);
@@ -12068,9 +11734,9 @@ html[saved-theme="dark"] {
     }
 
     .bases-table thead th {
-      background-color: var(--text-title, rgb(197, 148, 69));
-      color: var(--background-primary, rgb(41, 45, 37));
-      font-weight: var(--table-header-weight, 400);
+      background-color: var(--text-title);
+      color: var(--background-primary);
+      font-weight: var(--table-header-weight);
       border-color: rgb(197, 148, 69);
     }
 
@@ -12090,12 +11756,12 @@ html[saved-theme="dark"] {
     }
 
     .canvas-node-file {
-      color: var(--text-normal, rgb(199, 184, 158));
+      color: var(--text-normal);
       background-color: rgba(0, 0, 0, 0);
     }
 
     .canvas-sidebar {
-      background-color: var(--background-secondary, rgb(59, 52, 46));
+      background-color: var(--background-secondary);
       border-color: rgb(199, 184, 158);
       box-shadow: var(--input-shadow);
     }
@@ -12148,7 +11814,7 @@ html[saved-theme="dark"] {
     }
 
     footer {
-      background-color: var(--status-bar-background, rgb(59, 52, 46));
+      background-color: var(--status-bar-background);
       color: var(--status-bar-text-color);
       font-family:
         ui-sans-serif,
@@ -12309,7 +11975,7 @@ html[saved-theme="dark"] {
     }
 
     .breadcrumb-element p {
-      color: var(--text-faint, rgba(225, 208, 179, 0.533));
+      color: var(--text-faint);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -12327,11 +11993,11 @@ html[saved-theme="dark"] {
     }
 
     .navigation-progress {
-      background-color: var(--status-bar-background, rgb(59, 52, 46));
+      background-color: var(--status-bar-background);
     }
 
     .page-header h2.page-title {
-      color: var(--text-normal, rgb(199, 184, 158));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -12500,7 +12166,7 @@ html[saved-theme="dark"] {
 
     .stacked-page {
       border-color: rgb(199, 184, 158);
-      background-color: var(--background-secondary, rgb(59, 52, 46));
+      background-color: var(--background-secondary);
     }
 
     .stacked-page-header {
@@ -12512,16 +12178,12 @@ html[saved-theme="dark"] {
     }
 
     h1.article-title {
-      color: var(--inline-title-color, rgb(197, 148, 69));
+      color: var(--inline-title-color);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
     }
 
     .callout[data-callout="combat"] {
-      --background-primary: #292d25;
-      --background-secondary: #3b342e;
-      --callout-blend-mode: normal;
-      --callout-color: var(--callout-default, 0, 0, 0);
       --canvas-background: #292d25;
       --caret-color: #c7b89e;
       --checkbox-border-color: #e1d0b388;
@@ -12551,8 +12213,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #c7b89e;
       --table-drag-handle-color: #e1d0b388;
       --table-header-color: #c7b89e;
-      --text-faint: #e1d0b388;
-      --text-normal: #c7b89e;
       color: rgb(199, 184, 158);
       font-family:
         "My Text font",
@@ -12602,6 +12262,7 @@ html[saved-theme="dark"] {
       --button-corner-shape: round;
       --button-radius: 5px;
       --callout-bug: 251, 70, 76;
+      --callout-color: 0, 0, 0;
       --callout-default: 2, 122, 255;
       --callout-error: 251, 70, 76;
       --callout-example: 168, 130, 255;
@@ -12635,7 +12296,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -12676,8 +12336,13 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #363636;
       --pdf-thumbnail-shadow: 0 0 0 1px #363636;
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
@@ -12793,10 +12458,6 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="letter"] {
-      --background-primary: #292d25;
-      --background-secondary: #3b342e;
-      --callout-blend-mode: normal;
-      --callout-color: var(--callout-default, 0, 0, 0);
       --canvas-background: #292d25;
       --caret-color: #c7b89e;
       --checkbox-border-color: #e1d0b388;
@@ -12826,8 +12487,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #c7b89e;
       --table-drag-handle-color: #e1d0b388;
       --table-header-color: #c7b89e;
-      --text-faint: #e1d0b388;
-      --text-normal: #c7b89e;
       color: rgb(199, 184, 158);
       font-family:
         "My Text font",
@@ -12877,6 +12536,7 @@ html[saved-theme="dark"] {
       --button-corner-shape: round;
       --button-radius: 5px;
       --callout-bug: 251, 70, 76;
+      --callout-color: 0, 0, 0;
       --callout-default: 2, 122, 255;
       --callout-error: 251, 70, 76;
       --callout-example: 168, 130, 255;
@@ -12910,7 +12570,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -12951,8 +12610,13 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #363636;
       --pdf-thumbnail-shadow: 0 0 0 1px #363636;
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
@@ -13068,10 +12732,6 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="rules"] {
-      --background-primary: #292d25;
-      --background-secondary: #3b342e;
-      --callout-blend-mode: normal;
-      --callout-color: var(--callout-default, 0, 0, 0);
       --canvas-background: #292d25;
       --caret-color: #c7b89e;
       --checkbox-border-color: #e1d0b388;
@@ -13101,8 +12761,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #c7b89e;
       --table-drag-handle-color: #e1d0b388;
       --table-header-color: #c7b89e;
-      --text-faint: #e1d0b388;
-      --text-normal: #c7b89e;
       color: rgb(199, 184, 158);
       font-family: "My Title font", "SF Compact Display";
       --el-margin-bottom: 1em;
@@ -13137,6 +12795,7 @@ html[saved-theme="dark"] {
       --button-corner-shape: round;
       --button-radius: 5px;
       --callout-bug: 251, 70, 76;
+      --callout-color: 0, 0, 0;
       --callout-default: 2, 122, 255;
       --callout-error: 251, 70, 76;
       --callout-example: 168, 130, 255;
@@ -13170,7 +12829,6 @@ html[saved-theme="dark"] {
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -13211,8 +12869,13 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #363636;
       --pdf-thumbnail-shadow: 0 0 0 1px #363636;
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
@@ -13330,9 +12993,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="_"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -13359,8 +13019,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13379,9 +13037,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task=","] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -13408,8 +13063,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13428,9 +13081,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task=";"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -13457,8 +13107,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13477,9 +13125,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task=":"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -13506,8 +13151,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13526,9 +13169,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="."] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -13555,8 +13195,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13575,9 +13213,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="'"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -13604,8 +13239,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13624,9 +13257,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="@"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -13653,8 +13283,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13673,9 +13301,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="&"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -13702,8 +13327,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13722,9 +13345,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="#"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -13751,8 +13371,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13771,9 +13389,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="%"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -13800,8 +13415,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13820,9 +13433,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="`"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -13849,8 +13459,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13869,9 +13477,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="+"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -13898,8 +13503,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13918,9 +13521,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="<"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -13947,8 +13547,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13967,9 +13565,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="="] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -13996,8 +13591,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14016,9 +13609,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="|"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14045,8 +13635,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14065,9 +13653,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="~"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14094,8 +13679,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14114,9 +13697,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="$"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14143,8 +13723,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14163,9 +13741,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="0"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14192,8 +13767,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14212,9 +13785,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="1"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14241,8 +13811,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14261,9 +13829,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="2"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14290,8 +13855,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14310,9 +13873,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="3"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14339,8 +13899,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14359,9 +13917,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="4"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14388,8 +13943,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14408,9 +13961,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="5"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14437,8 +13987,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14457,9 +14005,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="6"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14486,8 +14031,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14506,9 +14049,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="7"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14535,8 +14075,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14555,9 +14093,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="8"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14584,8 +14119,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14604,9 +14137,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="9"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14633,8 +14163,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14653,9 +14181,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="a"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14682,8 +14207,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14702,9 +14225,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="A"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14731,8 +14251,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14751,9 +14269,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="B"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14780,8 +14295,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14800,9 +14313,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="C"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14829,8 +14339,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14849,9 +14357,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="D"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14878,8 +14383,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14898,9 +14401,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="e"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14927,8 +14427,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14947,9 +14445,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="E"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -14976,8 +14471,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14996,9 +14489,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="F"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15025,8 +14515,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15045,9 +14533,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="g"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15074,8 +14559,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15094,9 +14577,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="G"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15123,8 +14603,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15143,9 +14621,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="h"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15172,8 +14647,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15192,9 +14665,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="H"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15221,8 +14691,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15241,9 +14709,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="j"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15270,8 +14735,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15290,9 +14753,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="J"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15319,8 +14779,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15339,9 +14797,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="K"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15368,8 +14823,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15388,9 +14841,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="L"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15417,8 +14867,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15437,9 +14885,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="m"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15466,8 +14911,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15486,9 +14929,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="M"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15515,8 +14955,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15535,9 +14973,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="n"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15564,8 +14999,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15584,9 +15017,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="N"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15613,8 +15043,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15633,9 +15061,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="o"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15662,8 +15087,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15682,9 +15105,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="O"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15711,8 +15131,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15731,9 +15149,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="P"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15760,8 +15175,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15780,9 +15193,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="q"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15809,8 +15219,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15829,9 +15237,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="Q"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15858,8 +15263,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15878,9 +15281,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="r"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15907,8 +15307,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15927,9 +15325,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="R"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -15956,8 +15351,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15976,9 +15369,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="s"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -16005,8 +15395,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -16025,9 +15413,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="t"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -16054,8 +15439,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -16074,9 +15457,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="T"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -16103,8 +15483,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -16123,9 +15501,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="U"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -16152,8 +15527,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -16172,9 +15545,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="v"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -16201,8 +15571,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -16221,9 +15589,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="V"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -16250,8 +15615,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -16270,9 +15633,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="W"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -16299,8 +15659,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -16319,9 +15677,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="y"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -16348,8 +15703,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -16368,9 +15721,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="Y"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -16397,8 +15747,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -16417,9 +15765,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="z"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -16446,8 +15791,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -16466,9 +15809,6 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="Z"] {
       color: rgb(199, 184, 158);
-      --background-primary: #1e1e1e;
-      --background-secondary: #262626;
-      --callout-blend-mode: lighten;
       --canvas-background: #1e1e1e;
       --caret-color: #dadada;
       --checkbox-border-color: #666666;
@@ -16495,8 +15835,6 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-drag-handle-color: #666666;
       --table-header-color: #dadada;
-      --text-faint: #666666;
-      --text-normal: #dadada;
       font-family:
         ui-sans-serif,
         -apple-system,

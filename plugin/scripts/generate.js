@@ -805,7 +805,9 @@ function buildModeCSS(
   aspectMap,
   warnings,
   classToggleVarPrefixes,
+  sidecars = {},
 ) {
+  const { varGraph, provenance } = sidecars;
   const aspectSelectors = new Map();
   const baseVars = {};
 
@@ -861,12 +863,59 @@ function buildModeCSS(
     "--codeFont": ["--font-monospace", "--font-text", "--font-interface"],
   };
 
+  // Build a reverse dependency map from var-graph: "which vars reference this one?"
+  const reverseVarGraph = {};
+  if (varGraph) {
+    for (const [varName, selectorRefs] of Object.entries(varGraph)) {
+      for (const deps of Object.values(selectorRefs)) {
+        for (const dep of deps) {
+          if (!reverseVarGraph[dep]) reverseVarGraph[dep] = [];
+          reverseVarGraph[dep].push(varName);
+        }
+      }
+    }
+  }
+
+  // Follow a var() chain up to maxDepth levels to find the actual leaf value
+  function resolveVarChain(varName, maxDepth = 3) {
+    const value = baseVars[varName];
+    if (!value || !value.includes("var(") || maxDepth <= 0)
+      return value || null;
+    const refMatch = value.match(/var\(\s*(--[^,)]+)/);
+    if (!refMatch) return value;
+    const refName = refMatch[1].trim();
+    if (baseVars[refName]) return baseVars[refName];
+    return resolveVarChain(refName, maxDepth - 1);
+  }
+
   for (const [quartzVar, sources] of Object.entries(derivedQuartzVars)) {
     if (baseVars[quartzVar]) continue;
+
+    // Try hardcoded sources first
+    let resolved = false;
     for (const source of sources) {
       if (baseVars[source]) {
         baseVars[quartzVar] = `var(${source}, ${baseVars[source]})`;
+        resolved = true;
         break;
+      }
+    }
+    if (resolved) continue;
+
+    // Fallback: use var-graph to find indirect paths
+    if (varGraph) {
+      for (const source of sources) {
+        const referrers = reverseVarGraph[source];
+        if (!referrers) continue;
+        for (const referrer of referrers) {
+          if (baseVars[referrer]) {
+            const leaf = resolveVarChain(referrer) || baseVars[referrer];
+            baseVars[quartzVar] = `var(${referrer}, ${leaf})`;
+            resolved = true;
+            break;
+          }
+        }
+        if (resolved) break;
       }
     }
   }
@@ -917,8 +966,10 @@ function buildModeCSS(
         selectorMap.set(selector, propMap);
       }
       if (propMap.has(prop) && propMap.get(prop) !== normalized) {
+        const existingSource = provenance?.[mapping.obsidianSelector]?.[prop];
+        const detail = existingSource ? ` (source: ${existingSource})` : "";
         warnings.add(
-          `[overwrite] ${selector} :: ${prop} overwritten (${mapping.obsidianSelector})`,
+          `[overwrite] ${selector} :: ${prop} overwritten (${mapping.obsidianSelector})${detail}`,
         );
       }
       propMap.set(prop, normalized);
@@ -980,6 +1031,47 @@ function buildModeCSS(
       }
     }
   });
+
+  // Post-processing: ensure shorthand property coherence.
+  // When the baseline diff strips default values (e.g. border-width: 0px) but
+  // retains non-default related properties (e.g. border-color, border-style),
+  // browsers apply their initial values (border-width: medium ≈ 3px) instead
+  // of the intended 0px. Fix by injecting explicit zero/default values when
+  // sibling properties are present but the width/size is missing.
+  const SIDES = ["top", "right", "bottom", "left"];
+  for (const [, selectorMap] of aspectSelectors) {
+    for (const [, propMap] of selectorMap) {
+      // Border coherence: if color or style is set, ensure width is too
+      for (const side of SIDES) {
+        const hasColor = propMap.has(`border-${side}-color`);
+        const hasStyle = propMap.has(`border-${side}-style`);
+        const hasWidth = propMap.has(`border-${side}-width`);
+        if ((hasColor || hasStyle) && !hasWidth) {
+          propMap.set(`border-${side}-width`, "0px");
+        }
+      }
+      // Padding coherence: if any padding side is set, ensure all are explicit
+      const paddingSides = SIDES.map((s) => `padding-${s}`);
+      const hasSomePadding = paddingSides.some((p) => propMap.has(p));
+      if (hasSomePadding) {
+        for (const p of paddingSides) {
+          if (!propMap.has(p)) {
+            propMap.set(p, "0px");
+          }
+        }
+      }
+      // Margin coherence: if any margin side is set, ensure all are explicit
+      const marginSides = SIDES.map((s) => `margin-${s}`);
+      const hasSomeMargin = marginSides.some((p) => propMap.has(p));
+      if (hasSomeMargin) {
+        for (const p of marginSides) {
+          if (!propMap.has(p)) {
+            propMap.set(p, "0px");
+          }
+        }
+      }
+    }
+  }
 
   const aspectCSS = {};
   const baseSelector = "body";
@@ -1119,66 +1211,37 @@ function buildModeCSS(
     }
   }
 
+  if (provenance) {
+    const diagnostics = { conflicts: [], brokenBridges: [] };
+
+    // Detect bridge variables referencing non-existent vars
+    for (const [aspect, selectorMap] of aspectSelectors) {
+      for (const [selector, propMap] of selectorMap) {
+        for (const [prop, value] of propMap) {
+          if (!prop.startsWith("--") || typeof value !== "string") continue;
+          const refMatch = value.match(/var\(\s*(--[^,)]+)/);
+          if (!refMatch) continue;
+          const refName = refMatch[1].trim();
+          if (!baseVars[refName] && !propMap.has(refName)) {
+            diagnostics.brokenBridges.push({
+              property: prop,
+              references: refName,
+              selector,
+              aspect,
+            });
+          }
+        }
+      }
+    }
+
+    aspectCSS.__diagnostics = diagnostics;
+  }
+
   return aspectCSS;
 }
 
 function renderThemeModule(themeData) {
-  const lines = [];
-  lines.push('import type { ThemeData } from "../types.js";');
-  lines.push("");
-  lines.push("export const theme: ThemeData = {");
-  lines.push("  meta: {");
-  lines.push(`    name: ${JSON.stringify(themeData.meta.name)},`);
-  lines.push(`    modes: ${JSON.stringify(themeData.meta.modes)},`);
-  lines.push(`    variations: ${JSON.stringify(themeData.meta.variations)},`);
-  lines.push(`    fonts: ${JSON.stringify(themeData.meta.fonts)},`);
-  if (themeData.meta.fontFiles && themeData.meta.fontFiles.length > 0) {
-    lines.push(`    fontFiles: ${JSON.stringify(themeData.meta.fontFiles)},`);
-  }
-  if (themeData.meta.fontDir) {
-    lines.push(`    fontDir: ${JSON.stringify(themeData.meta.fontDir)},`);
-  }
-  if (themeData.meta.styleSettingsId) {
-    lines.push(
-      `    styleSettingsId: ${JSON.stringify(themeData.meta.styleSettingsId)},`,
-    );
-  }
-  lines.push("  },");
-
-  for (const mode of ["dark", "light"]) {
-    lines.push(`  ${mode}: {`);
-    const modeData = themeData[mode] || {};
-    for (const aspect of ASPECT_ORDER) {
-      if (modeData[aspect]) {
-        lines.push(`    ${aspect}: ${toTemplateLiteral(modeData[aspect])},`);
-      }
-    }
-    lines.push("  },");
-  }
-
-  if (themeData.extras) {
-    lines.push(`  extras: ${toTemplateLiteral(themeData.extras)},`);
-  }
-
-  if (
-    themeData.classSettings &&
-    Object.keys(themeData.classSettings).length > 0
-  ) {
-    lines.push("  classSettings: {");
-    for (const [className, entry] of Object.entries(themeData.classSettings)) {
-      const parts = [];
-      if (entry.general)
-        parts.push(`general: ${toTemplateLiteral(entry.general)}`);
-      if (entry.dark) parts.push(`dark: ${toTemplateLiteral(entry.dark)}`);
-      if (entry.light) parts.push(`light: ${toTemplateLiteral(entry.light)}`);
-      lines.push(`    ${JSON.stringify(className)}: { ${parts.join(", ")} },`);
-    }
-    lines.push("  },");
-  }
-
-  lines.push("};");
-  lines.push("");
-  return lines.join("\n");
+  return JSON.stringify(themeData, null, 2);
 }
 
 const reservedIdentifiers = new Set([
@@ -1226,18 +1289,7 @@ function toIdentifier(value) {
 
 function renderRegistry(themeEntries, themeMetas) {
   const lines = [];
-  lines.push('import type { ThemeData, ThemeMeta } from "../types.js";');
-  for (const entry of themeEntries) {
-    lines.push(
-      `import { theme as ${entry.importId} } from ${JSON.stringify(`./${entry.fileBaseName}.js`)};`,
-    );
-  }
-  lines.push("");
-  lines.push("export const themeData: Record<string, ThemeData> = {");
-  for (const entry of themeEntries) {
-    lines.push(`  ${JSON.stringify(entry.id)}: ${entry.importId},`);
-  }
-  lines.push("};");
+  lines.push('import type { ThemeMeta } from "../types.js";');
   lines.push("");
   lines.push("export const themeMetas: Record<string, ThemeMeta> = {");
   for (const [themeId, meta] of themeMetas) {
@@ -1251,6 +1303,22 @@ function renderRegistry(themeEntries, themeMetas) {
   lines.push("};");
   lines.push("");
   return lines.join("\n");
+}
+
+function mergeBaseline(baseline, diff) {
+  if (!diff) return null;
+  if (!baseline) return diff;
+  const merged = {};
+  for (const [selector, props] of Object.entries(baseline)) {
+    merged[selector] = { ...props };
+  }
+  for (const [selector, props] of Object.entries(diff)) {
+    if (!merged[selector]) merged[selector] = {};
+    for (const [prop, value] of Object.entries(props)) {
+      merged[selector][prop] = value;
+    }
+  }
+  return merged;
 }
 
 async function readJsonIfExists(filePath) {
@@ -1272,7 +1340,11 @@ async function clearOutputDirectory() {
   const entries = await fs.readdir(outputDir, { withFileTypes: true });
   await Promise.all(
     entries
-      .filter((entry) => entry.isFile() && entry.name.endsWith(".ts"))
+      .filter(
+        (entry) =>
+          entry.isFile() &&
+          (entry.name.endsWith(".ts") || entry.name.endsWith(".json")),
+      )
       .map((entry) => fs.unlink(path.join(outputDir, entry.name))),
   );
 }
@@ -1337,10 +1409,20 @@ async function main() {
   const themeMetas = [];
   const usedIdentifiers = new Set();
 
+  const baselineDir = path.join(resultsDir, "_baseline");
+  const baselineDark = await readJsonIfExists(
+    path.join(baselineDir, "dark.json"),
+  );
+  const baselineLight = await readJsonIfExists(
+    path.join(baselineDir, "light.json"),
+  );
+
   for (const themeId of themeDirs) {
     const themeDir = path.join(resultsDir, themeId);
-    const darkData = await readJsonIfExists(path.join(themeDir, "dark.json"));
-    const lightData = await readJsonIfExists(path.join(themeDir, "light.json"));
+    const darkDiff = await readJsonIfExists(path.join(themeDir, "dark.json"));
+    const lightDiff = await readJsonIfExists(path.join(themeDir, "light.json"));
+    const darkData = mergeBaseline(baselineDark, darkDiff);
+    const lightData = mergeBaseline(baselineLight, lightDiff);
     const hasDark = Boolean(darkData);
     const hasLight = Boolean(lightData);
     if (!hasDark && !hasLight) {
@@ -1450,6 +1532,29 @@ async function main() {
       }
     }
 
+    const darkSidecars = {
+      varGraph: await readJsonIfExists(
+        path.join(themeDir, "dark-var-graph.json"),
+      ),
+      provenance: await readJsonIfExists(
+        path.join(themeDir, "dark-provenance.json"),
+      ),
+      alternates: await readJsonIfExists(
+        path.join(themeDir, "dark-alternates.json"),
+      ),
+    };
+    const lightSidecars = {
+      varGraph: await readJsonIfExists(
+        path.join(themeDir, "light-var-graph.json"),
+      ),
+      provenance: await readJsonIfExists(
+        path.join(themeDir, "light-provenance.json"),
+      ),
+      alternates: await readJsonIfExists(
+        path.join(themeDir, "light-alternates.json"),
+      ),
+    };
+
     const darkAspectCSS = hasDark
       ? buildModeCSS(
           darkData,
@@ -1459,6 +1564,7 @@ async function main() {
           effectiveAspectMap,
           warnings,
           classToggleVarPrefixes,
+          darkSidecars,
         )
       : {};
     const lightAspectCSS = hasLight
@@ -1470,51 +1576,13 @@ async function main() {
           effectiveAspectMap,
           warnings,
           classToggleVarPrefixes,
+          lightSidecars,
         )
       : {};
 
-    // Obsidian's stub is identical to `_baseline`, so the diff-based
-    // extractor emits an empty `base` aspect. Graft `_baseline`'s `base`
-    // onto `obsidian` so it actually renders Obsidian's default palette.
-    if (themeId === "obsidian") {
-      const baselineDir = path.join(resultsDir, "_baseline");
-      const baselineDark = await readJsonIfExists(
-        path.join(baselineDir, "dark.json"),
-      );
-      const baselineLight = await readJsonIfExists(
-        path.join(baselineDir, "light.json"),
-      );
-      if (baselineDark && hasDark) {
-        const baselineDarkCSS = buildModeCSS(
-          baselineDark,
-          "dark",
-          bothModes,
-          config,
-          aspectMap,
-          warnings,
-        );
-        if (baselineDarkCSS.base) {
-          darkAspectCSS.base = baselineDarkCSS.base;
-        }
-      }
-      if (baselineLight && hasLight) {
-        const baselineLightCSS = buildModeCSS(
-          baselineLight,
-          "light",
-          bothModes,
-          config,
-          aspectMap,
-          warnings,
-        );
-        if (baselineLightCSS.base) {
-          lightAspectCSS.base = baselineLightCSS.base;
-        }
-      }
-    }
-
     const normalizedId = resolveThemeKey(themeId, themesMeta);
     const fileBaseName = normalizedId.replace(/[^a-zA-Z0-9-_]/g, "-");
-    const outputPath = path.join(outputDir, `${fileBaseName}.ts`);
+    const outputPath = path.join(outputDir, `${fileBaseName}.json`);
 
     let extras = null;
     try {
@@ -1534,7 +1602,76 @@ async function main() {
       );
     }
 
-    const classSettings = extractClassSettings(themeId, allStyleSettings);
+    let classSettings = extractClassSettings(themeId, allStyleSettings);
+
+    // Enrich classSettings with variable overrides from alternates data.
+    // alternates.json contains variable values that would win under different
+    // body class states (Style Settings toggles). Merge these as CSS variable
+    // override blocks into the corresponding classSettings entries.
+    const classToggleIds = new Set();
+    if (allStyleSettings) {
+      for (const s of allStyleSettings) {
+        if (!s?.type) continue;
+        if (s.type === "class-toggle" && s.id) classToggleIds.add(s.id);
+        if (s.type === "class-select" && s.options) {
+          for (const opt of s.options) {
+            if (opt?.value) classToggleIds.add(opt.value);
+          }
+        }
+      }
+    }
+
+    if (classToggleIds.size > 0) {
+      for (const [mode, sidecars] of [
+        ["dark", darkSidecars],
+        ["light", lightSidecars],
+      ]) {
+        const alternates = sidecars.alternates;
+        if (!alternates) continue;
+
+        for (const [selector, props] of Object.entries(alternates)) {
+          for (const [prop, toggleMap] of Object.entries(props)) {
+            for (const [bodyClassKey, altValue] of Object.entries(toggleMap)) {
+              const className = bodyClassKey.replace(/^body\./, "");
+              if (!classToggleIds.has(className)) continue;
+
+              if (!classSettings) classSettings = {};
+              if (!classSettings[className]) classSettings[className] = {};
+
+              const varLine = `  ${prop}: ${altValue};`;
+              const modeKey = mode === "dark" ? "dark" : "light";
+              const existing = classSettings[className][modeKey] || "";
+              if (!existing.includes(`${prop}:`)) {
+                const block = existing
+                  ? existing.replace(/\}\s*$/, `\n${varLine}\n}`)
+                  : `:root {\n${varLine}\n}`;
+                classSettings[className][modeKey] = block;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Extract and write diagnostics, then remove from aspectCSS
+    for (const [mode, aspectCSS] of [
+      ["dark", darkAspectCSS],
+      ["light", lightAspectCSS],
+    ]) {
+      if (aspectCSS.__diagnostics) {
+        const diag = aspectCSS.__diagnostics;
+        delete aspectCSS.__diagnostics;
+        const total =
+          (diag.conflicts?.length || 0) + (diag.brokenBridges?.length || 0);
+        if (total > 0) {
+          const diagPath = path.join(themeDir, `${mode}-diagnostics.json`);
+          await fs.writeFile(diagPath, JSON.stringify(diag, null, 2), "utf8");
+          console.log(
+            `  ${themeId} ${mode}: ${diag.conflicts?.length || 0} conflicts, ${diag.brokenBridges?.length || 0} broken bridges → ${diagPath}`,
+          );
+        }
+      }
+    }
 
     const moduleContent = renderThemeModule({
       meta,

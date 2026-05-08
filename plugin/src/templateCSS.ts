@@ -579,7 +579,44 @@ body a.internal-link {
 :root[saved-theme="light"] {
   body {
     .graph > h3, .backlinks > h3, button.desktop-explorer h2 {
+      font-size: 1.12rem;
+    }
+  }
+}
+
+/* typography improvements */
+:root[saved-theme="dark"],
+:root[saved-theme="light"] {
+  body {
+    h1 {
+      font-size: 1.618rem;
+      margin-top: 0;
+      margin-bottom: 0.67rem;
+    }
+    h2 {
+      font-size: 1.462rem;
+      margin-top: 0;
+      margin-bottom: 0.67rem;
+    }
+    h3 {
+      font-size: 1.318rem;
+      margin-top: 0;
+      margin-bottom: 0.67rem;
+    }
+    h4 {
+      font-size: 1.188rem;
+      margin-top: 0;
+      margin-bottom: 0.67rem;
+    }
+    h5 {
+      font-size: 1.076rem;
+      margin-top: 0;
+      margin-bottom: 0.67rem;
+    }
+    h6 {
       font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 0.67rem;
     }
   }
 }

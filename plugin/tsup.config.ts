@@ -10,4 +10,6 @@ export default defineConfig({
   target: "es2022",
   splitting: false,
   outDir: "dist",
+  onSuccess:
+    "mkdir -p dist/themes && cp src/themes/*.json dist/themes/ 2>/dev/null || true",
 });

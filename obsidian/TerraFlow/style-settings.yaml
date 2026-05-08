@@ -31,6 +31,32 @@
           value: paper-theme
         - label: 🍃 Calm Focus
           value: calm-focus-theme
+    - id: focus-mode-heading
+      title: 🔬 Deep Focus Mode
+      description: Science-backed single-switch mode — sepia/warm-dark palette, neutral headings, flattened chrome, 68ch measure. Overrides any active season palette.
+      type: heading
+      level: 2
+      collapsed: true
+    - id: focus-mode
+      title: Enable Deep Focus Mode
+      description: Activates warm sepia (light) or warm dark (dark) palette, collapses heading colour hierarchy, kills decorative backgrounds and animations, and hides the ribbon and status bar. Overrides whatever season is active.
+      type: class-toggle
+      default: false
+    - id: focus-mode-dim-paragraphs
+      title: Typewriter Dimming
+      description: Fade non-active lines to ~50% opacity in live-preview (iA Writer style). Reading mode dims all paragraphs until hovered.
+      type: class-toggle
+      default: false
+    - id: focus-mode-hide-sidebars
+      title: Hide Sidebar Panels
+      description: Collapse the left and right sidebar content panels so only the editor canvas is visible.
+      type: class-toggle
+      default: false
+    - id: focus-mode-keep-chrome
+      title: Keep Ribbon & Status Bar
+      description: Escape hatch — show ribbon and status bar even in Focus Mode. Palette and heading neutralisation remain active.
+      type: class-toggle
+      default: false
     - id: visual-appearance-heading
       title: 🎨 Visual & Appearance
       type: heading

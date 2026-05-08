@@ -1,0 +1,29 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--h",
+      "references": "--h-raw",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--w",
+      "references": "--w-raw",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--code-background",
+      "references": "--ec-frm-edBg",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--header-border-radius",
+      "references": "--ec-brdRad",
+      "selector": "figure",
+      "aspect": "images"
+    }
+  ]
+}

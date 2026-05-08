@@ -28,15 +28,15 @@ build:
 
 [group('extract')]
 extract: build
-  node --expose-gc --max-old-space-size=12288 ./runner/scripts/extract.js -- --waitforTimeout=300000
+  node --expose-gc --max-old-space-size=30720 ./runner/scripts/extract.js -- --waitforTimeout=300000
 
 [group('extract')]
 extract-baseline: build
-  FORCE_BASELINE=true node --expose-gc --max-old-space-size=12288 ./runner/scripts/extract.js -- --waitforTimeout=300000
+  FORCE_BASELINE=true node --expose-gc --max-old-space-size=30720 ./runner/scripts/extract.js -- --waitforTimeout=300000
 
 [group('extract')]
 compile:
-  node --max-old-space-size=24576 ./runner/scripts/compile.js "" --auto
+  node --max-old-space-size=30720 ./runner/scripts/compile.js "" --auto
 
 [group('cli-extract'), doc('Compile a single theme')]
 cli-compile-theme themeName:
@@ -63,7 +63,7 @@ cli-extract-fonts:
 
 [group('plugin')]
 generate-plugin:
-  node --max-old-space-size=24576 ./plugin/scripts/generate.js --auto
+  node --max-old-space-size=30720 ./plugin/scripts/generate.js --auto
   npm --prefix ./plugin run build
 
 [group('cli-extract'), doc('Extract a single theme using CLI (requires running Obsidian)')]

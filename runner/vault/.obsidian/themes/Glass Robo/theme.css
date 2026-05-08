@@ -89,6 +89,14 @@ settings:
     title: Mobile Toolbar Single Row Layout
     description: Displays the toolbar in a single row ( just for mobile devices) 
     type: class-toggle
+
+-
+    id: one_row_mobile_toolbar_bottom_offset
+    title: Mobile Toolbar Bottom Offset
+    description: "Adjust the vertical position of the single-row mobile toolbar (default: 25px)."
+    type: variable-number
+    default: 70
+    format: px
 -
     id: glass-background-color-settings
     title: App background color
@@ -4748,7 +4756,7 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
 }
 .is-mobile .mobile-toolbar .mobile-toolbar-options-container .mobile-toolbar-options-list-container {
   border-radius: 5px;
-  bottom: 25px;
+  bottom: var(--one_row_mobile_toolbar_bottom_offset, 25px);
   position: relative;
   height: 70px;
 }

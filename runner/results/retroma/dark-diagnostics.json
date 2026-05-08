@@ -2,10 +2,16 @@
   "conflicts": [],
   "brokenBridges": [
     {
-      "property": "--tag-padding-x",
-      "references": "--size-4-1",
-      "selector": "ul.tags > li",
-      "aspect": "misc"
+      "property": "--code-background",
+      "references": "--ec-frm-edBg",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--header-border-radius",
+      "references": "--ec-brdRad",
+      "selector": "figure",
+      "aspect": "images"
     }
   ]
 }

@@ -14,46 +14,22 @@
       "aspect": "toc"
     },
     {
-      "property": "--callout-color",
-      "references": "--mono-rgb-0",
-      "selector": ".callout[data-callout=\"autopsy\"]",
-      "aspect": "callouts"
-    },
-    {
-      "property": "--callout-title-color",
-      "references": "--mono-rgb-100",
-      "selector": ".callout[data-callout=\"autopsy\"]",
-      "aspect": "callouts"
-    },
-    {
       "property": "--art-deco-color",
       "references": "--callout-color",
       "selector": ".callout[data-callout=\"comic-panel\"]",
       "aspect": "callouts"
     },
     {
-      "property": "--callout-content-padding",
-      "references": "--size-4-4",
-      "selector": ".callout[data-callout=\"comic\"]",
-      "aspect": "callouts"
+      "property": "--code-background",
+      "references": "--ec-frm-edBg",
+      "selector": "figure",
+      "aspect": "images"
     },
     {
-      "property": "--callout-content-padding",
-      "references": "--size-4-3",
-      "selector": ".callout[data-callout=\"conversation-outline\"]",
-      "aspect": "callouts"
-    },
-    {
-      "property": "--callout-content-padding",
-      "references": "--size-4-3",
-      "selector": ".callout[data-callout=\"conversation\"]",
-      "aspect": "callouts"
-    },
-    {
-      "property": "--callout-email-color",
-      "references": "--mono-rgb-100",
-      "selector": ".callout[data-callout=\"email\"]",
-      "aspect": "callouts"
+      "property": "--header-border-radius",
+      "references": "--ec-brdRad",
+      "selector": "figure",
+      "aspect": "images"
     },
     {
       "property": "--nav-item-background-hover",
@@ -78,12 +54,6 @@
       "references": "--folder-color",
       "selector": ".nav-files-container li:has(> .folder-outer.open) > .nav-folder-title",
       "aspect": "explorer"
-    },
-    {
-      "property": "--background-modifier-hover",
-      "references": "--mono-rgb-0",
-      "selector": ".stacked-page-header",
-      "aspect": "stacked"
     }
   ]
 }

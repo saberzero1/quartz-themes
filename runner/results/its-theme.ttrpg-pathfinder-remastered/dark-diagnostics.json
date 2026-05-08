@@ -2,12 +2,6 @@
   "conflicts": [],
   "brokenBridges": [
     {
-      "property": "--callout-color",
-      "references": "--color-accent",
-      "selector": ".callout[data-callout=\"quote\"]",
-      "aspect": "callouts"
-    },
-    {
       "property": "--callout-content-background",
       "references": "--callout-background",
       "selector": ".callout[data-callout=\"timeline\"]",
@@ -18,6 +12,18 @@
       "references": "--callout-title",
       "selector": ".callout[data-callout=\"timeline\"]",
       "aspect": "callouts"
+    },
+    {
+      "property": "--code-background",
+      "references": "--ec-frm-edBg",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--header-border-radius",
+      "references": "--ec-brdRad",
+      "selector": "figure",
+      "aspect": "images"
     }
   ]
 }
