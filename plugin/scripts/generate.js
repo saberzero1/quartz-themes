@@ -179,9 +179,13 @@ const commentAspectMatchers = [
       "superscript",
       "abbrev",
       "backlinks",
+      "footnotes",
       "progress",
       "page title",
       "math",
+      "keyboard",
+      "spacer",
+      "minor gaps",
       "mermaid",
       "tags list",
       "text highlight",
@@ -677,7 +681,7 @@ function buildCalloutBridgeVars(data) {
   return bridgeVars;
 }
 
-function buildCheckboxIconCSS(data, baseSelector, htmlSelector) {
+function buildCheckboxIconCSS(data, diffData, baseSelector, htmlSelector) {
   const escapeAttrValue = (value) =>
     value.replace(/\\/g, "\\\\").replace(/"/g, '\\"');
 
@@ -723,8 +727,16 @@ function buildCheckboxIconCSS(data, baseSelector, htmlSelector) {
     return value;
   };
 
-  const entries = Object.entries(data).filter(([selector]) =>
-    selector.startsWith('input[data-task="'),
+  const diffKeys = diffData
+    ? new Set(
+        Object.keys(diffData).filter((s) => s.startsWith('input[data-task="')),
+      )
+    : null;
+
+  const entries = Object.entries(data).filter(
+    ([selector]) =>
+      selector.startsWith('input[data-task="') &&
+      (!diffKeys || diffKeys.has(selector)),
   );
   if (entries.length === 0) return "";
 
@@ -739,6 +751,9 @@ function buildCheckboxIconCSS(data, baseSelector, htmlSelector) {
       /^input\[data-task="([\s\S]*?)"\](?:::after)?$/,
     );
     if (!taskMatch) continue;
+    const isAfter = selector.includes("::after");
+    const taskChar = escapeAttrValue(taskMatch[1]);
+
     const hasMaskImage =
       typeof props["mask-image"] === "string" ||
       typeof props["-webkit-mask-image"] === "string";
@@ -755,10 +770,99 @@ function buildCheckboxIconCSS(data, baseSelector, htmlSelector) {
       colorValue !== "none" &&
       colorValue !== "normal" &&
       colorValue !== "inherit";
+    const bgColorValue = props["background-color"];
+    const hasBgColor =
+      typeof bgColorValue === "string" &&
+      bgColorValue !== "rgba(0, 0, 0, 0)" &&
+      bgColorValue !== "transparent" &&
+      bgColorValue !== "none";
+
+    if (isAfter) {
+      if (hasContent) {
+        const quartzSel = `${baseSelector} li.task-list-item[data-task=\"${taskChar}\"] input[type=\"checkbox\"]::after`;
+        const lines = [];
+        for (const [prop, value] of Object.entries(props)) {
+          if (!value || value === "none" || value === "normal") continue;
+          if (prop === "-webkit-mask-image" || prop === "mask-image") continue;
+          const normalized =
+            prop === "content" ? normalizeSvgDataUriValue(value) : value;
+          lines.push(`  ${prop}: ${normalized};`);
+        }
+        if (lines.length > 0) {
+          const htmlScoped = `${htmlSelector} ${quartzSel}`;
+          blocks.push(`${htmlScoped} {\n${lines.join("\n")}\n}`);
+        }
+        continue;
+      }
+
+      const baseSel = `input[data-task="${taskMatch[1]}"]`;
+      const baseEntry = grouped.get(baseSel);
+      const baseHasMask =
+        baseEntry &&
+        (typeof baseEntry["mask-image"] === "string" ||
+          typeof baseEntry["-webkit-mask-image"] === "string");
+
+      if (hasMaskImage && baseHasMask) {
+        const afterLines = [];
+        if (hasColor) afterLines.push(`  color: ${colorValue};`);
+        if (hasBgColor) afterLines.push(`  background-color: ${bgColorValue};`);
+        if (afterLines.length > 0) {
+          const quartzAfterSel = `${baseSelector} li.task-list-item[data-task=\"${taskChar}\"] input[type=\"checkbox\"]::after`;
+          const htmlScoped = `${htmlSelector} ${quartzAfterSel}`;
+          blocks.push(`${htmlScoped} {\n${afterLines.join("\n")}\n}`);
+        }
+        continue;
+      }
+
+      if (hasMaskImage && !baseHasMask) {
+        const diffAfterEntry = diffData
+          ? diffData[`input[data-task="${taskMatch[1]}"]::after`]
+          : null;
+        const diffHasMask =
+          diffAfterEntry &&
+          (typeof diffAfterEntry["mask-image"] === "string" ||
+            typeof diffAfterEntry["-webkit-mask-image"] === "string");
+
+        if (diffHasMask) {
+          const maskValue = props["mask-image"] || props["-webkit-mask-image"];
+          const normalized = normalizeMaskImage(maskValue);
+          const baseLine = [];
+          baseLine.push(`  mask-image: ${normalized};`);
+          baseLine.push(`  -webkit-mask-image: ${normalized};`);
+          baseLine.push(`  mask-size: contain;`);
+          baseLine.push(`  -webkit-mask-size: contain;`);
+          baseLine.push(`  mask-repeat: no-repeat;`);
+          baseLine.push(`  -webkit-mask-repeat: no-repeat;`);
+          const quartzBaseSel = `${baseSelector} li.task-list-item[data-task=\"${taskChar}\"] input[type=\"checkbox\"]`;
+          blocks.push(
+            `${htmlSelector} ${quartzBaseSel} {\n${baseLine.join("\n")}\n}`,
+          );
+        }
+        const afterLines = [];
+        if (hasColor) afterLines.push(`  color: ${colorValue};`);
+        if (hasBgColor) afterLines.push(`  background-color: ${bgColorValue};`);
+        if (afterLines.length > 0) {
+          const quartzAfterSel = `${baseSelector} li.task-list-item[data-task=\"${taskChar}\"] input[type=\"checkbox\"]::after`;
+          blocks.push(
+            `${htmlSelector} ${quartzAfterSel} {\n${afterLines.join("\n")}\n}`,
+          );
+        }
+        continue;
+      }
+
+      const afterLines = [];
+      if (hasColor) afterLines.push(`  color: ${colorValue};`);
+      if (hasBgColor) afterLines.push(`  background-color: ${bgColorValue};`);
+      if (afterLines.length > 0) {
+        const quartzAfterSel = `${baseSelector} li.task-list-item[data-task=\"${taskChar}\"] input[type=\"checkbox\"]::after`;
+        const htmlScoped = `${htmlSelector} ${quartzAfterSel}`;
+        blocks.push(`${htmlScoped} {\n${afterLines.join("\n")}\n}`);
+      }
+      continue;
+    }
+
     if (!hasMaskImage && !hasContent && !hasColor) continue;
-    const taskChar = escapeAttrValue(taskMatch[1]);
-    const pseudoSuffix = selector.includes("::after") ? "::after" : "";
-    const quartzSelector = `${baseSelector} li.task-list-item[data-task=\"${taskChar}\"] input[type=\"checkbox\"]${pseudoSuffix}`;
+    const quartzSelector = `${baseSelector} li.task-list-item[data-task=\"${taskChar}\"] input[type=\"checkbox\"]`;
     const lines = [];
     for (const [prop, value] of Object.entries(props)) {
       if (!value || value === "none" || value === "normal") continue;
@@ -806,6 +910,7 @@ function buildModeCSS(
   warnings,
   classToggleVarPrefixes,
   sidecars = {},
+  diffData = null,
 ) {
   const { varGraph, provenance } = sidecars;
   const aspectSelectors = new Map();
@@ -1095,6 +1200,7 @@ function buildModeCSS(
   );
   const extraCheckboxIconCSS = buildCheckboxIconCSS(
     data,
+    diffData,
     baseSelector,
     htmlSelector,
   );
@@ -1565,6 +1671,7 @@ async function main() {
           warnings,
           classToggleVarPrefixes,
           darkSidecars,
+          darkDiff,
         )
       : {};
     const lightAspectCSS = hasLight
@@ -1577,6 +1684,7 @@ async function main() {
           warnings,
           classToggleVarPrefixes,
           lightSidecars,
+          lightDiff,
         )
       : {};
 
