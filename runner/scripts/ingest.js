@@ -377,7 +377,7 @@ const files = getFilesUnderDirectory("./runner/results/").filter(
 
 function getFilesUnderDirectory(dirPath) {
   try {
-    const items = readdirSync(dirPath);
+    const items = readdirSync(dirPath).sort();
 
     const files = [];
     items.forEach((item) => {

@@ -486,7 +486,7 @@ function stringToRgb(cssValue) {
 function getFilesUnderDirectory(dirPath) {
   try {
     // Read the directory contents
-    const items = readdirSync(dirPath);
+    const items = readdirSync(dirPath).sort();
 
     // Initialize an array to hold the file paths
     const files = [];

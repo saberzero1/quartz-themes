@@ -459,7 +459,8 @@ function resolveThemeFolderName(themeName) {
 
   const installedThemes = readdirSync(themesDir, { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
-    .map((entry) => entry.name);
+    .map((entry) => entry.name)
+    .sort();
 
   const match = installedThemes.find(
     (t) =>

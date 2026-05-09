@@ -473,7 +473,8 @@ function writeVariationManifest(variationName, baseName) {
 export function extractFontsFromDir(themesDir) {
   const dirs = readdirSync(themesDir, { withFileTypes: true })
     .filter((d) => d.isDirectory())
-    .map((d) => d.name);
+    .map((d) => d.name)
+    .sort();
 
   const themes = [];
   for (const dir of dirs) {

@@ -15,7 +15,8 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
@@ -27,7 +28,10 @@
   --checkbox-border-color: var(--text-faint, rgb(150, 155, 170)) !important;
   --checkbox-border-color-hover: var(--text-muted, #888) !important;
   --checkbox-color: var(--interactive-accent, hsl(219, 56%, 58%)) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, hsl(216, 57.12%, 66.7%)) !important;
+  --checkbox-color-hover: var(
+    --interactive-accent-hover,
+    hsl(216, 57.12%, 66.7%)
+  ) !important;
   --checkbox-marker-color: var(--background-primary, #2e3440) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
@@ -48,7 +52,10 @@
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint, rgb(150, 155, 170)) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, hsl(216, 57.12%, 66.7%)) !important;
+  --collapse-icon-color-collapsed: var(
+    --text-accent,
+    hsl(216, 57.12%, 66.7%)
+  ) !important;
   --graph-line: var(--brighter-graph-line, hsl(219, 56%, 65%)) !important;
   --graph-node: var(--text-muted, #888) !important;
   --graph-node-attachment: var(--color-yellow) !important;
@@ -115,7 +122,8 @@ html {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/dust/material-icons.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/dust/material-icons.woff2")
+    format("woff2");
 }
 
 body {
@@ -263,7 +271,10 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(122, 160, 219) none 0px;
     text-decoration: rgba(88, 130, 208, 0.3);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgba(88, 130, 208, 0.3));
+    text-decoration-color: var(
+      --link-unresolved-decoration-color,
+      rgba(88, 130, 208, 0.3)
+    );
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
@@ -691,9 +702,24 @@ body {
     animation-play-state: running;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: var(--background-modifier-hover);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -706,7 +732,18 @@ body {
     color: rgb(220, 221, 222);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(
+      ~ .result-card.focus:not(
+          :has(~ .result-card:hover, ~ .result-card:focus)
+        ),
+      ~ .result-card:focus,
+      ~ .result-card:hover
+    ) {
     background-color: var(--background-modifier-hover);
     border: 0px rgb(220, 221, 222);
     border-top-left-radius: 4px;
@@ -741,7 +778,15 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card
+    > ul
+    > li
+    > .match-tag {
     align-items: normal;
     background-color: var(--pill-background, rgba(88, 130, 208, 0.1));
     color: var(--pill-color, rgb(122, 160, 219));
@@ -866,7 +911,12 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: var(--code-normal, rgb(200, 211, 245));
-    font-family: var(--font-monospace, "Fira Code", "Source Code Pro", monospace);
+    font-family: var(
+      --font-monospace,
+      "Fira Code",
+      "Source Code Pro",
+      monospace
+    );
     padding: 2.8px 5.6px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1103,24 +1153,79 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container {
     color: rgb(220, 221, 222);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(220, 221, 222);
     font-weight: 400;
     background-color: var(--background-modifier-hover);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-description {
     color: rgb(220, 221, 222);
   }
 
@@ -1135,7 +1240,8 @@ body {
     letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1168,7 +1274,8 @@ body {
     letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1201,7 +1308,8 @@ body {
     letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1234,7 +1342,8 @@ body {
     letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1267,7 +1376,8 @@ body {
     letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1300,7 +1410,8 @@ body {
     letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1334,7 +1445,8 @@ body {
     letter-spacing: -0.38832px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1784,7 +1896,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -1795,7 +1908,8 @@ body {
   .callout > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(220, 221, 222);
     padding: 0px;
     padding-block-end: 0px;
@@ -1808,7 +1922,8 @@ body {
     --callout-color: var(--callout-default, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(220, 221, 222);
     mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
@@ -1842,7 +1957,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -1853,7 +1969,8 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(220, 221, 222);
     padding: 0px;
     padding-block-end: 0px;
@@ -1866,7 +1983,8 @@ body {
     --callout-color: var(--callout-summary, 83, 223, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(220, 221, 222);
     mix-blend-mode: normal;
     border: 0px solid rgba(83, 223, 221, 0.25);
@@ -1900,7 +2018,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -1911,7 +2030,8 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(220, 221, 222);
     padding: 0px;
     padding-block-end: 0px;
@@ -1924,7 +2044,8 @@ body {
     --callout-color: var(--callout-info, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(220, 221, 222);
     mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
@@ -1958,7 +2079,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -1969,7 +2091,8 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(220, 221, 222);
     padding: 0px;
     padding-block-end: 0px;
@@ -1982,7 +2105,8 @@ body {
     --callout-color: var(--callout-todo, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(220, 221, 222);
     mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
@@ -2016,7 +2140,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -2027,7 +2152,8 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(220, 221, 222);
     padding: 0px;
     padding-block-end: 0px;
@@ -2040,7 +2166,8 @@ body {
     --callout-color: var(--callout-tip, 83, 223, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(220, 221, 222);
     mix-blend-mode: normal;
     border: 0px solid rgba(83, 223, 221, 0.25);
@@ -2074,7 +2201,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2085,7 +2213,8 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(220, 221, 222);
     padding: 0px;
     padding-block-end: 0px;
@@ -2098,7 +2227,8 @@ body {
     --callout-color: var(--callout-success, 68, 207, 110);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(220, 221, 222);
     mix-blend-mode: normal;
     border: 0px solid rgba(68, 207, 110, 0.25);
@@ -2132,7 +2262,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -2143,7 +2274,8 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(220, 221, 222);
     padding: 0px;
     padding-block-end: 0px;
@@ -2156,7 +2288,8 @@ body {
     --callout-color: var(--callout-question, 233, 151, 63);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(220, 221, 222);
     mix-blend-mode: normal;
     border: 0px solid rgba(233, 151, 63, 0.25);
@@ -2190,7 +2323,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -2201,7 +2335,8 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(220, 221, 222);
     padding: 0px;
     padding-block-end: 0px;
@@ -2214,7 +2349,8 @@ body {
     --callout-color: var(--callout-warning, 233, 151, 63);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(220, 221, 222);
     mix-blend-mode: normal;
     border: 0px solid rgba(233, 151, 63, 0.25);
@@ -2248,7 +2384,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -2259,7 +2396,8 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(220, 221, 222);
     padding: 0px;
     padding-block-end: 0px;
@@ -2272,7 +2410,8 @@ body {
     --callout-color: var(--callout-error, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(220, 221, 222);
     mix-blend-mode: normal;
     border: 0px solid rgba(251, 70, 76, 0.25);
@@ -2306,7 +2445,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -2317,7 +2457,8 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(220, 221, 222);
     padding: 0px;
     padding-block-end: 0px;
@@ -2330,7 +2471,8 @@ body {
     --callout-color: var(--callout-fail, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(220, 221, 222);
     mix-blend-mode: normal;
     border: 0px solid rgba(251, 70, 76, 0.25);
@@ -2364,7 +2506,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -2375,7 +2518,8 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(220, 221, 222);
     padding: 0px;
     padding-block-end: 0px;
@@ -2388,7 +2532,8 @@ body {
     --callout-color: var(--callout-bug, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(220, 221, 222);
     mix-blend-mode: normal;
     border: 0px solid rgba(251, 70, 76, 0.25);
@@ -2422,7 +2567,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -2433,7 +2579,8 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(220, 221, 222);
     padding: 0px;
     padding-block-end: 0px;
@@ -2446,7 +2593,8 @@ body {
     --callout-color: var(--callout-example, 168, 130, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(220, 221, 222);
     mix-blend-mode: normal;
     border: 0px solid rgba(168, 130, 255, 0.25);
@@ -2480,7 +2628,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -2491,7 +2640,8 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(220, 221, 222);
     padding: 0px;
     padding-block-end: 0px;
@@ -2504,7 +2654,8 @@ body {
     --callout-color: var(--callout-quote, 158, 158, 158);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(220, 221, 222);
     mix-blend-mode: normal;
     border: 0px solid rgba(158, 158, 158, 0.25);
@@ -2538,7 +2689,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -2549,7 +2701,8 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(220, 221, 222);
     padding: 0px;
     padding-block-end: 0px;
@@ -3066,7 +3219,12 @@ body {
     background-color: var(--code-background, rgb(39, 44, 56));
     box-shadow: none;
     color: var(--code-normal, rgb(220, 221, 222));
-    font-family: var(--font-monospace, "Fira Code", "Source Code Pro", monospace);
+    font-family: var(
+      --font-monospace,
+      "Fira Code",
+      "Source Code Pro",
+      monospace
+    );
     font-size: var(--code-size);
     border: 0px rgb(220, 221, 222);
     border-top-left-radius: 4px;
@@ -3719,7 +3877,8 @@ body {
     font-weight: 600;
     line-height: 16.9px;
     background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     margin: 0px;
     border-color: rgb(220, 221, 222);
@@ -3901,7 +4060,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -3921,7 +4081,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -3946,7 +4109,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -3958,7 +4122,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -4008,7 +4176,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -4028,7 +4197,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -4053,7 +4225,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -4065,7 +4238,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -4115,7 +4292,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -4135,7 +4313,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -4160,7 +4341,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -4172,7 +4354,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -4222,7 +4408,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -4242,7 +4429,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -4267,7 +4457,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -4279,7 +4470,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -4329,7 +4524,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -4349,7 +4545,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -4374,7 +4573,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -4386,7 +4586,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -4436,7 +4640,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -4456,7 +4661,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -4481,7 +4689,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -4493,7 +4702,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -4543,7 +4756,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -4563,7 +4777,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -4588,7 +4805,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -4600,7 +4818,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -4650,7 +4872,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -4670,7 +4893,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -4695,7 +4921,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -4707,7 +4934,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -4757,7 +4988,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -4777,7 +5009,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -4802,7 +5037,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -4814,7 +5050,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -4864,7 +5104,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -4884,7 +5125,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -4909,7 +5153,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -4921,7 +5166,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -4971,7 +5220,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -4991,7 +5241,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -5016,7 +5269,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5028,7 +5282,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -5078,7 +5336,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5098,7 +5357,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -5123,7 +5385,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5135,7 +5398,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -5185,7 +5452,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5205,7 +5473,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -5230,7 +5501,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5242,7 +5514,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -5292,7 +5568,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5312,7 +5589,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -5337,7 +5617,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5349,7 +5630,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -5399,7 +5684,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5419,7 +5705,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -5444,7 +5733,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5456,7 +5746,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -5506,7 +5800,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5526,7 +5821,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -5551,7 +5849,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5563,7 +5862,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -5613,7 +5916,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5633,7 +5937,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -5658,7 +5965,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5670,7 +5978,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -5720,7 +6032,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5740,7 +6053,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -5765,7 +6081,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5777,7 +6094,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -5827,7 +6148,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5847,7 +6169,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -5872,7 +6197,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5884,7 +6210,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -5934,7 +6264,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5954,7 +6285,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -5979,7 +6313,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5991,7 +6326,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -6041,7 +6380,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -6061,7 +6401,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -6086,7 +6429,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6098,7 +6442,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -6148,7 +6496,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -6168,7 +6517,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -6193,7 +6545,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6205,7 +6558,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -6255,7 +6612,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -6275,7 +6633,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -6300,7 +6661,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6312,7 +6674,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -6362,7 +6728,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -6382,7 +6749,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -6407,7 +6777,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6419,7 +6790,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -6469,7 +6844,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -6489,7 +6865,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -6514,7 +6893,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6526,7 +6906,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -6576,7 +6960,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -6596,7 +6981,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -6621,7 +7009,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6633,7 +7022,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -6683,7 +7076,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -6703,7 +7097,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -6728,7 +7125,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6740,7 +7138,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -6790,7 +7192,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -6810,7 +7213,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -6835,7 +7241,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6847,7 +7254,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -6897,7 +7308,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -6917,7 +7329,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -6942,7 +7357,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6954,7 +7370,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -7004,7 +7424,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7024,7 +7445,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -7049,7 +7473,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7061,7 +7486,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -7111,7 +7540,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7131,7 +7561,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -7156,7 +7589,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7168,7 +7602,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -7218,7 +7656,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7238,7 +7677,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -7263,7 +7705,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7275,7 +7718,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -7325,7 +7772,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7345,7 +7793,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -7370,7 +7821,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7382,7 +7834,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -7432,7 +7888,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7452,7 +7909,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -7477,7 +7937,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7489,7 +7950,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -7539,7 +8004,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7559,7 +8025,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -7584,7 +8053,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7596,7 +8066,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -7646,7 +8120,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7666,7 +8141,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -7691,7 +8169,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7703,7 +8182,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -7753,7 +8236,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7773,7 +8257,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -7798,7 +8285,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7810,7 +8298,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -7860,7 +8352,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7880,7 +8373,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -7905,7 +8401,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7917,7 +8414,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -7967,7 +8468,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7987,7 +8489,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -8012,7 +8517,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8024,7 +8530,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -8074,7 +8584,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8094,7 +8605,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -8119,7 +8633,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8131,7 +8646,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -8181,7 +8700,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8201,7 +8721,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -8226,7 +8749,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8238,7 +8762,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -8288,7 +8816,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8308,7 +8837,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -8333,7 +8865,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8345,7 +8878,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -8395,7 +8932,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8415,7 +8953,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -8440,7 +8981,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8452,7 +8994,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -8502,7 +9048,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8522,7 +9069,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -8547,7 +9097,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8559,7 +9110,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -8609,7 +9164,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8629,7 +9185,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -8654,7 +9213,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8666,7 +9226,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -8716,7 +9280,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8736,7 +9301,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -8761,7 +9329,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8773,7 +9342,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -8823,7 +9396,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8843,7 +9417,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -8868,7 +9445,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8880,7 +9458,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -8930,7 +9512,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8950,7 +9533,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -8975,7 +9561,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8987,7 +9574,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -9037,7 +9628,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -9057,7 +9649,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -9082,7 +9677,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9094,7 +9690,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -9144,7 +9744,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -9164,7 +9765,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -9189,7 +9793,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9201,7 +9806,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -9251,7 +9860,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -9271,7 +9881,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -9296,7 +9909,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9308,7 +9922,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -9358,7 +9976,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -9378,7 +9997,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -9403,7 +10025,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9415,7 +10038,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -9465,7 +10092,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -9485,7 +10113,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -9510,7 +10141,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9522,7 +10154,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -9572,7 +10208,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -9592,7 +10229,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -9617,7 +10257,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9629,7 +10270,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -9679,7 +10324,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -9699,7 +10345,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -9724,7 +10373,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9736,7 +10386,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -9786,7 +10440,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -9806,7 +10461,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -9831,7 +10489,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9843,7 +10502,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -9893,7 +10556,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -9913,7 +10577,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -9938,7 +10605,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9950,7 +10618,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -10000,7 +10672,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10020,7 +10693,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -10045,7 +10721,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -10057,7 +10734,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -10107,7 +10788,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10127,7 +10809,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -10152,7 +10837,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -10164,7 +10850,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -10214,7 +10904,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10234,7 +10925,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -10259,7 +10953,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -10271,7 +10966,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -10321,7 +11020,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10341,7 +11041,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -10366,7 +11069,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -10378,7 +11082,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -10428,7 +11136,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10448,7 +11157,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -10473,7 +11185,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -10485,7 +11198,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -10535,7 +11252,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10555,7 +11273,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -10580,7 +11301,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -10592,7 +11314,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -10642,7 +11368,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10662,7 +11389,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -10687,7 +11417,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -10699,7 +11430,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -10749,7 +11484,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10769,7 +11505,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -10794,7 +11533,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -10806,7 +11546,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -10856,7 +11600,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10876,7 +11621,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -10901,7 +11649,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -10913,7 +11662,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -10963,7 +11716,8 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10983,7 +11737,10 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
@@ -11008,7 +11765,8 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent)
+      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -11020,7 +11778,11 @@ body {
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
@@ -11804,7 +12566,10 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
+      background: var(
+        --collapse-icon-color-collapsed,
+        var(--quartz-icon-color)
+      );
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

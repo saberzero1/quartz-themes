@@ -28,19 +28,19 @@ build:
 
 [group('extract')]
 extract: build
-  node --expose-gc --max-old-space-size=30720 ./runner/scripts/extract.js -- --waitforTimeout=300000
+  bun --expose-gc ./runner/scripts/extract.js -- --waitforTimeout=300000
 
 [group('extract')]
 extract-baseline: build
-  FORCE_BASELINE=true node --expose-gc --max-old-space-size=30720 ./runner/scripts/extract.js -- --waitforTimeout=300000
+  FORCE_BASELINE=true bun --expose-gc ./runner/scripts/extract.js -- --waitforTimeout=300000
 
 [group('extract')]
 compile:
-  node --max-old-space-size=30720 ./runner/scripts/compile.js "" --auto
+  bun ./runner/scripts/compile.js "" --auto
 
 [group('cli-extract'), doc('Compile a single theme')]
 cli-compile-theme themeName:
-  node ./runner/scripts/compile.js "{{themeName}}" --auto
+  bun ./runner/scripts/compile.js "{{themeName}}" --auto
 
 [group('extract')]
 convert:
@@ -54,16 +54,16 @@ recompile: compile convert
 
 [group('cli-extract'), doc('Recompile a single theme')]
 cli-recompile-theme themeName:
-  node ./runner/scripts/compile.js "{{themeName}}" --auto
+  bun ./runner/scripts/compile.js "{{themeName}}" --auto
   bun ./convert.js
 
 [group('cli-extract')]
 cli-extract-fonts:
-  node ./runner/scripts/font-extractor.js --all ./runner/vault
+  bun ./runner/scripts/font-extractor.js --all ./runner/vault
 
 [group('plugin')]
 generate-plugin:
-  node --max-old-space-size=30720 ./plugin/scripts/generate.js --auto
+  bun ./plugin/scripts/generate.js --auto
   npm --prefix ./plugin run build
 
 [group('cli-extract'), doc('Extract a single theme using CLI (requires running Obsidian)')]
@@ -99,16 +99,16 @@ style-settings:
 
 [group('database')]
 ingest:
-  node ./runner/scripts/ingest.js
+  bun ./runner/scripts/ingest.js
 
 [group('database')]
 prepare:
-  node ./runner/scripts/prep.js
-  node ./runner/scripts/prep.js
+  bun ./runner/scripts/prep.js
+  bun ./runner/scripts/prep.js
 
 [group('database')]
 prepare-baseline:
-  FORCE_PREP=true node ./runner/scripts/prep.js
+  FORCE_PREP=true bun ./runner/scripts/prep.js
 
 [group('database')]
 drop:
@@ -121,7 +121,7 @@ rebuild: drop ingest
 
 [group('cli-extract'), doc('Generate custom callout manifest and vault files')]
 generate-callout-manifest:
-  node ./extensions/generate-callout-manifest.mjs
+  bun ./extensions/generate-callout-manifest.mjs
 
 [group('testing')]
 update-quartz themeName="its-theme":

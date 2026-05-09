@@ -130,6 +130,7 @@ config.forEach((mapping) => {
 
 const fontCache = new Map();
 const fontFiles = readdirSync("./extras/fonts")
+  .sort()
   .filter((file) => file.endsWith(".scss"))
   .map((file) => file.replace(/\.scss$/, ""));
 const availableFonts = new Set(fontFiles);

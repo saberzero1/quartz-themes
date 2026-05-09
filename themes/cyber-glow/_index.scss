@@ -15,7 +15,8 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb, 128, 128, 0);
   --callout-info: var(--color-blue-rgb, 0, 128, 106);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s, 3px);
   --callout-success: var(--color-green-rgb, 0, 128, 64);
@@ -27,13 +28,25 @@
   --checkbox-border-color: var(--text-faint, #5c5c5c) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent, hsl(198, 78%, 60.2%)) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, hsl(195, 79.56%, 73.6%)) !important;
-  --checkbox-marker-color: var(--background-primary, rgba(230, 229, 229, 0.45)) !important;
+  --checkbox-color-hover: var(
+    --interactive-accent-hover,
+    hsl(195, 79.56%, 73.6%)
+  ) !important;
+  --checkbox-marker-color: var(
+    --background-primary,
+    rgba(230, 229, 229, 0.45)
+  ) !important;
   --checkbox-radius: var(--radius-s, 3px) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, rgba(225, 225, 225, 0.75)) !important;
+  --code-background: var(
+    --background-primary-alt,
+    rgba(225, 225, 225, 0.75)
+  ) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover, hsla(198, 78%, 64%, 0.15)) !important;
+  --code-bracket-background: var(
+    --background-modifier-hover,
+    hsla(198, 78%, 64%, 0.15)
+  ) !important;
   --code-comment: var(--text-faint, #5c5c5c) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
@@ -48,8 +61,14 @@
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint, #5c5c5c) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, hsl(198, 58%, 54%)) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --collapse-icon-color-collapsed: var(
+    --text-accent,
+    hsl(198, 58%, 54%)
+  ) !important;
+  --graph-line: var(
+    --color-base-35,
+    var(--background-modifier-border-focus)
+  ) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent, hsl(198, 58%, 54%)) !important;
@@ -159,7 +178,8 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb, 255, 255, 0);
   --callout-info: var(--color-blue-rgb, 128, 255, 212);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s, 3px);
   --callout-success: var(--color-green-rgb, 0, 255, 128);
@@ -171,13 +191,25 @@
   --checkbox-border-color: var(--text-faint, #b3b3b3) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent, hsl(198, 63%, 57%)) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, hsl(198, 63%, 53.2%)) !important;
-  --checkbox-marker-color: var(--background-primary, rgba(0, 0, 0, 0.45)) !important;
+  --checkbox-color-hover: var(
+    --interactive-accent-hover,
+    hsl(198, 63%, 53.2%)
+  ) !important;
+  --checkbox-marker-color: var(
+    --background-primary,
+    rgba(0, 0, 0, 0.45)
+  ) !important;
   --checkbox-radius: var(--radius-s, 3px) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, rgba(30, 30, 30, 0.75)) !important;
+  --code-background: var(
+    --background-primary-alt,
+    rgba(30, 30, 30, 0.75)
+  ) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover, hsla(198, 63%, 57%, 0.15)) !important;
+  --code-bracket-background: var(
+    --background-modifier-hover,
+    hsla(198, 63%, 57%, 0.15)
+  ) !important;
   --code-comment: var(--text-faint, #b3b3b3) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
@@ -192,8 +224,14 @@
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint, #b3b3b3) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, hsl(198, 63%, 53.2%)) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --collapse-icon-color-collapsed: var(
+    --text-accent,
+    hsl(198, 63%, 53.2%)
+  ) !important;
+  --graph-line: var(
+    --color-base-35,
+    var(--background-modifier-border-focus)
+  ) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent, hsl(198, 63%, 53.2%)) !important;
@@ -327,30 +365,37 @@ html {
   font-family: "OxaniumFira";
   font-style: normal italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/cyber-glow/oxaniumfira.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/cyber-glow/oxaniumfira.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Space Wham";
   font-style: normal italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/cyber-glow/space-wham.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/cyber-glow/space-wham.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Edwardian Script ITC";
   font-style: normal italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/cyber-glow/edwardian-script-itc.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/cyber-glow/edwardian-script-itc.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Orbitron";
   font-style: normal italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/cyber-glow/orbitron.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/cyber-glow/orbitron.woff2")
+    format("woff2");
 }
 
 body {
   div#quartz-root {
-    background-color: var(--customewindowhighlightaccent, rgba(230, 229, 229, 0.45));
+    background-color: var(
+      --customewindowhighlightaccent,
+      rgba(230, 229, 229, 0.45)
+    );
     color: var(--text-normal);
   }
 
@@ -454,7 +499,10 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(70, 165, 206) none 0px;
     text-decoration: underline rgba(92, 192, 235, 0.3);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgba(92, 192, 235, 0.3));
+    text-decoration-color: var(
+      --link-unresolved-decoration-color,
+      rgba(92, 192, 235, 0.3)
+    );
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
@@ -779,9 +827,24 @@ body {
     animation-play-state: running;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: var(--text-selection, rgba(92, 192, 235, 0.35));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -794,7 +857,18 @@ body {
     color: var(--text-on-accent, rgb(255, 255, 255));
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(
+      ~ .result-card.focus:not(
+          :has(~ .result-card:hover, ~ .result-card:focus)
+        ),
+      ~ .result-card:focus,
+      ~ .result-card:hover
+    ) {
     background-color: var(--text-selection, rgba(92, 192, 235, 0.35));
     border-color: rgba(0, 0, 0, 0) rgb(255, 255, 255);
     border-style: solid none;
@@ -811,7 +885,8 @@ body {
   }
 
   hr {
-    border-color: rgb(128, 128, 128) rgb(128, 128, 128) rgb(224, 224, 224) rgb(224, 224, 224);
+    border-color: rgb(128, 128, 128) rgb(128, 128, 128) rgb(224, 224, 224)
+      rgb(224, 224, 224);
     border-style: solid solid none none;
     border-width: 0px 2px 0px 0px;
     border-top-left-radius: 0px;
@@ -831,7 +906,15 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card
+    > ul
+    > li
+    > .match-tag {
     align-items: normal;
     background-color: var(--pill-background, rgba(92, 192, 235, 0.1));
     color: var(--pill-color, rgb(70, 165, 206));
@@ -1042,7 +1125,10 @@ body {
   }
 
   blockquote {
-    background-color: var(--blockquote-background-color, rgba(225, 225, 225, 0.75));
+    background-color: var(
+      --blockquote-background-color,
+      rgba(225, 225, 225, 0.75)
+    );
     color: var(--blockquote-color);
     font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
     font-weight: 400;
@@ -1153,24 +1239,79 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container {
     color: var(--text-on-accent, rgb(255, 255, 255));
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: var(--text-on-accent, rgb(255, 255, 255));
     font-weight: 400;
     background-color: var(--text-selection, rgba(92, 192, 235, 0.35));
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-description {
     color: var(--text-on-accent, rgb(255, 255, 255));
   }
 
@@ -1190,7 +1331,8 @@ body {
     letter-spacing: var(--h1-letter-spacing, 1px);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1227,7 +1369,8 @@ body {
     letter-spacing: var(--h2-letter-spacing, 1px);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px 0px 3px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1264,7 +1407,8 @@ body {
     letter-spacing: var(--h3-letter-spacing, 1px);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px 0px 3px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1301,7 +1445,8 @@ body {
     letter-spacing: var(--h4-letter-spacing, 1px);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px 0px 3px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1338,7 +1483,8 @@ body {
     letter-spacing: var(--h5-letter-spacing, 1px);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px 0px 3px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1375,7 +1521,8 @@ body {
     letter-spacing: var(--h6-letter-spacing, 1px);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px 0px 3px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1400,7 +1547,13 @@ body {
   h2.page-title,
   h2.page-title a {
     color: var(--inline-title-color);
-    font-family: var(--inline-title-font, OxaniumFira, Inter, Rubik, "Segoe UI");
+    font-family: var(
+      --inline-title-font,
+      OxaniumFira,
+      Inter,
+      Rubik,
+      "Segoe UI"
+    );
     font-size: var(--inline-title-size, 34px);
     font-weight: var(--inline-title-weight, 500);
     line-height: var(--inline-title-line-height, 40.8px);
@@ -1409,7 +1562,8 @@ body {
     letter-spacing: -0.51px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1619,7 +1773,8 @@ body {
     height: auto;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     content: "H1";
     display: inline;
     color: var(--text-normal, rgb(70, 165, 206));
@@ -1647,7 +1802,8 @@ body {
     height: auto;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     content: "H2";
     display: inline;
     color: var(--text-normal, rgb(12, 208, 208));
@@ -1675,7 +1831,8 @@ body {
     height: auto;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     content: "H3";
     display: inline;
     color: var(--text-normal, rgb(0, 210, 0));
@@ -1703,7 +1860,8 @@ body {
     height: auto;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     content: "H4";
     display: inline;
     color: var(--text-normal, rgb(255, 172, 28));
@@ -1731,7 +1889,8 @@ body {
     height: auto;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     content: "H5";
     display: inline;
     color: var(--text-normal, rgb(255, 0, 0));
@@ -1756,7 +1915,8 @@ body {
     height: auto;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     content: "H6";
     display: inline;
     color: var(--text-normal, rgb(255, 0, 255));
@@ -1878,7 +2038,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(var(--callout-color), 0.27);
     background-image: none;
-    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto
+      padding-box border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -1889,7 +2050,8 @@ body {
   .callout > .callout-content {
     background-color: rgba(var(--callout-color), 0.25);
     background-image: none;
-    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 2%;
     padding-block-end: 0px;
@@ -1900,9 +2062,13 @@ body {
 
   .callout[data-callout="note"] {
     --callout-color: var(--callout-default, 20, 20, 20);
-    background-color: var(--customewindowhighlightaccent, rgba(92, 192, 235, 0.1));
+    background-color: var(
+      --customewindowhighlightaccent,
+      rgba(92, 192, 235, 0.1)
+    );
     background-image: none;
-    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid rgba(20, 20, 20, 0.25);
@@ -1937,7 +2103,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(var(--callout-color), 0.27);
     background-image: none;
-    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto
+      padding-box border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -1948,7 +2115,8 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: rgba(var(--callout-color), 0.25);
     background-image: none;
-    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 2%;
     padding-block-end: 0px;
@@ -1959,9 +2127,13 @@ body {
 
   .callout[data-callout="abstract"] {
     --callout-color: var(--callout-summary, 90, 128, 0);
-    background-color: var(--customewindowhighlightaccent, rgba(92, 192, 235, 0.1));
+    background-color: var(
+      --customewindowhighlightaccent,
+      rgba(92, 192, 235, 0.1)
+    );
     background-image: none;
-    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid rgba(90, 128, 0, 0.25);
@@ -1996,7 +2168,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(var(--callout-color), 0.27);
     background-image: none;
-    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto
+      padding-box border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -2007,7 +2180,8 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: rgba(var(--callout-color), 0.25);
     background-image: none;
-    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 2%;
     padding-block-end: 0px;
@@ -2018,9 +2192,13 @@ body {
 
   .callout[data-callout="info"] {
     --callout-color: var(--callout-info, 0, 128, 106);
-    background-color: var(--customewindowhighlightaccent, rgba(92, 192, 235, 0.1));
+    background-color: var(
+      --customewindowhighlightaccent,
+      rgba(92, 192, 235, 0.1)
+    );
     background-image: none;
-    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid rgba(0, 128, 106, 0.25);
@@ -2055,7 +2233,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(var(--callout-color), 0.27);
     background-image: none;
-    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto
+      padding-box border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -2066,7 +2245,8 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: rgba(var(--callout-color), 0.25);
     background-image: none;
-    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 2%;
     padding-block-end: 0px;
@@ -2077,9 +2257,13 @@ body {
 
   .callout[data-callout="todo"] {
     --callout-color: var(--callout-todo, 100, 128, 128);
-    background-color: var(--customewindowhighlightaccent, rgba(92, 192, 235, 0.1));
+    background-color: var(
+      --customewindowhighlightaccent,
+      rgba(92, 192, 235, 0.1)
+    );
     background-image: none;
-    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid rgba(100, 128, 128, 0.25);
@@ -2114,7 +2298,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(var(--callout-color), 0.27);
     background-image: none;
-    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto
+      padding-box border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -2125,7 +2310,8 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: rgba(var(--callout-color), 0.25);
     background-image: none;
-    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 2%;
     padding-block-end: 0px;
@@ -2136,9 +2322,13 @@ body {
 
   .callout[data-callout="tip"] {
     --callout-color: var(--callout-tip, 128, 128, 0);
-    background-color: var(--customewindowhighlightaccent, rgba(92, 192, 235, 0.1));
+    background-color: var(
+      --customewindowhighlightaccent,
+      rgba(92, 192, 235, 0.1)
+    );
     background-image: none;
-    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid rgba(128, 128, 0, 0.25);
@@ -2173,7 +2363,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(var(--callout-color), 0.27);
     background-image: none;
-    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto
+      padding-box border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2184,7 +2375,8 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: rgba(var(--callout-color), 0.25);
     background-image: none;
-    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 2%;
     padding-block-end: 0px;
@@ -2195,9 +2387,13 @@ body {
 
   .callout[data-callout="success"] {
     --callout-color: var(--callout-success, 0, 128, 64);
-    background-color: var(--customewindowhighlightaccent, rgba(92, 192, 235, 0.1));
+    background-color: var(
+      --customewindowhighlightaccent,
+      rgba(92, 192, 235, 0.1)
+    );
     background-image: none;
-    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid rgba(0, 128, 64, 0.25);
@@ -2232,7 +2428,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(var(--callout-color), 0.27);
     background-image: none;
-    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto
+      padding-box border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -2243,7 +2440,8 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: rgba(var(--callout-color), 0.25);
     background-image: none;
-    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 2%;
     padding-block-end: 0px;
@@ -2254,9 +2452,13 @@ body {
 
   .callout[data-callout="question"] {
     --callout-color: var(--callout-help, 0, 128, 128);
-    background-color: var(--customewindowhighlightaccent, rgba(92, 192, 235, 0.1));
+    background-color: var(
+      --customewindowhighlightaccent,
+      rgba(92, 192, 235, 0.1)
+    );
     background-image: none;
-    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid rgba(0, 128, 128, 0.25);
@@ -2291,7 +2493,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(var(--callout-color), 0.27);
     background-image: none;
-    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto
+      padding-box border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -2302,7 +2505,8 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: rgba(var(--callout-color), 0.25);
     background-image: none;
-    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 2%;
     padding-block-end: 0px;
@@ -2313,9 +2517,13 @@ body {
 
   .callout[data-callout="warning"] {
     --callout-color: var(--callout-warning, 153, 77, 0);
-    background-color: var(--customewindowhighlightaccent, rgba(92, 192, 235, 0.1));
+    background-color: var(
+      --customewindowhighlightaccent,
+      rgba(92, 192, 235, 0.1)
+    );
     background-image: none;
-    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid rgba(153, 77, 0, 0.25);
@@ -2350,7 +2558,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(var(--callout-color), 0.27);
     background-image: none;
-    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto
+      padding-box border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -2361,7 +2570,8 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: rgba(var(--callout-color), 0.25);
     background-image: none;
-    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 2%;
     padding-block-end: 0px;
@@ -2372,9 +2582,13 @@ body {
 
   .callout[data-callout="danger"] {
     --callout-color: var(--callout-error, 153, 40, 0);
-    background-color: var(--customewindowhighlightaccent, rgba(92, 192, 235, 0.1));
+    background-color: var(
+      --customewindowhighlightaccent,
+      rgba(92, 192, 235, 0.1)
+    );
     background-image: none;
-    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid rgba(153, 40, 0, 0.25);
@@ -2409,7 +2623,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(var(--callout-color), 0.27);
     background-image: none;
-    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto
+      padding-box border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -2420,7 +2635,8 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: rgba(var(--callout-color), 0.25);
     background-image: none;
-    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 2%;
     padding-block-end: 0px;
@@ -2431,9 +2647,13 @@ body {
 
   .callout[data-callout="failure"] {
     --callout-color: var(--callout-fail, 233, 49, 71);
-    background-color: var(--customewindowhighlightaccent, rgba(92, 192, 235, 0.1));
+    background-color: var(
+      --customewindowhighlightaccent,
+      rgba(92, 192, 235, 0.1)
+    );
     background-image: none;
-    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid rgba(233, 49, 71, 0.25);
@@ -2468,7 +2688,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(var(--callout-color), 0.27);
     background-image: none;
-    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto
+      padding-box border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -2479,7 +2700,8 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: rgba(var(--callout-color), 0.25);
     background-image: none;
-    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 2%;
     padding-block-end: 0px;
@@ -2490,9 +2712,13 @@ body {
 
   .callout[data-callout="bug"] {
     --callout-color: var(--callout-bug, 128, 0, 77);
-    background-color: var(--customewindowhighlightaccent, rgba(92, 192, 235, 0.1));
+    background-color: var(
+      --customewindowhighlightaccent,
+      rgba(92, 192, 235, 0.1)
+    );
     background-image: none;
-    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid rgba(128, 0, 77, 0.25);
@@ -2527,7 +2753,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(var(--callout-color), 0.27);
     background-image: none;
-    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto
+      padding-box border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -2538,7 +2765,8 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: rgba(var(--callout-color), 0.25);
     background-image: none;
-    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 2%;
     padding-block-end: 0px;
@@ -2549,9 +2777,13 @@ body {
 
   .callout[data-callout="example"] {
     --callout-color: var(--callout-example, 110, 80, 128);
-    background-color: var(--customewindowhighlightaccent, rgba(92, 192, 235, 0.1));
+    background-color: var(
+      --customewindowhighlightaccent,
+      rgba(92, 192, 235, 0.1)
+    );
     background-image: none;
-    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(92, 192, 235, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid rgba(110, 80, 128, 0.25);
@@ -2586,7 +2818,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(var(--callout-color), 0.27);
     background-image: none;
-    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto
+      padding-box border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -2597,7 +2830,8 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: rgba(var(--callout-color), 0.25);
     background-image: none;
-    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 2%;
     padding-block-end: 0px;
@@ -2610,7 +2844,8 @@ body {
     --callout-color: var(--callout-quote, 153, 122, 102);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid rgba(153, 122, 102, 0.25);
@@ -2645,7 +2880,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(var(--callout-color), 0.27);
     background-image: none;
-    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(20, 20, 20, 0.27) none repeat scroll 0% 0% / auto
+      padding-box border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -2656,7 +2892,8 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: rgba(var(--callout-color), 0.25);
     background-image: none;
-    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(102, 187, 106, 0.25) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 2%;
     padding-block-end: 0px;
@@ -2979,14 +3216,26 @@ body {
 
   .metadata-property-key {
     color: rgb(92, 92, 92);
-    font-family: var(--metadata-label-font, OxaniumFira, Inter, Rubik, "Segoe UI");
+    font-family: var(
+      --metadata-label-font,
+      OxaniumFira,
+      Inter,
+      Rubik,
+      "Segoe UI"
+    );
     font-size: 16px;
     font-weight: 400;
   }
 
   .metadata-property-value {
     color: rgb(92, 92, 92);
-    font-family: var(--metadata-input-font, OxaniumFira, Inter, Rubik, "Segoe UI");
+    font-family: var(
+      --metadata-input-font,
+      OxaniumFira,
+      Inter,
+      Rubik,
+      "Segoe UI"
+    );
     font-size: 16px;
   }
 
@@ -3602,7 +3851,8 @@ body {
     font-weight: 400;
     line-height: 16.9px;
     background-color: var(--activetitle-bg, rgba(92, 192, 235, 0.3));
-    background: rgba(92, 192, 235, 0.3) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(92, 192, 235, 0.3) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     padding: 5px;
     margin: 0px 0px 0px 5px;
     border-top-color: rgb(255, 255, 255);
@@ -3846,7 +4096,11 @@ body {
     --tab-divider-color: transparent;
     --tab-radius: 3px;
     --tab-switcher-background: rgba(194, 194, 194, 0.45);
-    --tab-switcher-menubar-background: linear-gradient(to top, rgba(194, 194, 194, 0.45), transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      rgba(194, 194, 194, 0.45),
+      transparent
+    );
     --tab-switcher-preview-radius: 3px;
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(198, 58%, 54%);
     --tab-text-color: #5c5c5c;
@@ -3932,7 +4186,15 @@ body {
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary-alt: #fafafa;
     --background-secondary-alt: #f6f4f4b7;
-    --blur-background: color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent) linear-gradient(rgba(230, 229, 229, 0.45), color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent));
+    --blur-background: color-mix(
+        in srgb,
+        rgba(230, 229, 229, 0.45) 65%,
+        transparent
+      )
+      linear-gradient(
+        rgba(230, 229, 229, 0.45),
+        color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent)
+      );
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
     --blur-s: blur(6px) saturate(1.5) brightness(1.15);
@@ -3960,7 +4222,10 @@ body {
     --dropdown-padding: 0 1.9em 0 0.8em;
     --flair-background: rgb(230, 229, 229);
     --flair-color: #222222;
-    --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --font-print: "??", "??", "??", "Arial";
     --font-weight: 400;
     --graph-line: #d4d4d4;
@@ -3980,11 +4245,22 @@ body {
     --menu-border-width: 1px;
     --menu-corner-shape: round;
     --menu-padding: 6px;
-    --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+    --menu-shadow:
+      0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+      0px 15px 30px rgba(0, 0, 0, 0.07);
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
-    --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --pdf-thumbnail-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
     --popover-font-size: 16px;
-    --raised-background: color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent) linear-gradient(rgba(230, 229, 229, 0.45), color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent));
+    --raised-background: color-mix(
+        in srgb,
+        rgba(230, 229, 229, 0.45) 65%,
+        transparent
+      )
+      linear-gradient(
+        rgba(230, 229, 229, 0.45),
+        color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent)
+      );
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
@@ -4033,7 +4309,11 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-add-button-border-color: #e0e0e0;
     --table-add-button-border-width: 1px;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
@@ -4146,7 +4426,11 @@ body {
     --tab-divider-color: transparent;
     --tab-radius: 3px;
     --tab-switcher-background: rgba(194, 194, 194, 0.45);
-    --tab-switcher-menubar-background: linear-gradient(to top, rgba(194, 194, 194, 0.45), transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      rgba(194, 194, 194, 0.45),
+      transparent
+    );
     --tab-switcher-preview-radius: 3px;
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(198, 58%, 54%);
     --tab-text-color: #5c5c5c;
@@ -4232,7 +4516,15 @@ body {
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary-alt: #fafafa;
     --background-secondary-alt: #f6f4f4b7;
-    --blur-background: color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent) linear-gradient(rgba(230, 229, 229, 0.45), color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent));
+    --blur-background: color-mix(
+        in srgb,
+        rgba(230, 229, 229, 0.45) 65%,
+        transparent
+      )
+      linear-gradient(
+        rgba(230, 229, 229, 0.45),
+        color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent)
+      );
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
     --blur-s: blur(6px) saturate(1.5) brightness(1.15);
@@ -4260,7 +4552,10 @@ body {
     --dropdown-padding: 0 1.9em 0 0.8em;
     --flair-background: rgb(230, 229, 229);
     --flair-color: #222222;
-    --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --font-print: "??", "??", "??", "Arial";
     --font-weight: 400;
     --graph-line: #d4d4d4;
@@ -4280,11 +4575,22 @@ body {
     --menu-border-width: 1px;
     --menu-corner-shape: round;
     --menu-padding: 6px;
-    --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+    --menu-shadow:
+      0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+      0px 15px 30px rgba(0, 0, 0, 0.07);
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
-    --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --pdf-thumbnail-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
     --popover-font-size: 16px;
-    --raised-background: color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent) linear-gradient(rgba(230, 229, 229, 0.45), color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent));
+    --raised-background: color-mix(
+        in srgb,
+        rgba(230, 229, 229, 0.45) 65%,
+        transparent
+      )
+      linear-gradient(
+        rgba(230, 229, 229, 0.45),
+        color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent)
+      );
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
@@ -4333,7 +4639,11 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-add-button-border-color: #e0e0e0;
     --table-add-button-border-width: 1px;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
@@ -4446,7 +4756,11 @@ body {
     --tab-divider-color: transparent;
     --tab-radius: 3px;
     --tab-switcher-background: rgba(194, 194, 194, 0.45);
-    --tab-switcher-menubar-background: linear-gradient(to top, rgba(194, 194, 194, 0.45), transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      rgba(194, 194, 194, 0.45),
+      transparent
+    );
     --tab-switcher-preview-radius: 3px;
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(198, 58%, 54%);
     --tab-text-color: #5c5c5c;
@@ -4532,7 +4846,15 @@ body {
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary-alt: #fafafa;
     --background-secondary-alt: #f6f4f4b7;
-    --blur-background: color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent) linear-gradient(rgba(230, 229, 229, 0.45), color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent));
+    --blur-background: color-mix(
+        in srgb,
+        rgba(230, 229, 229, 0.45) 65%,
+        transparent
+      )
+      linear-gradient(
+        rgba(230, 229, 229, 0.45),
+        color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent)
+      );
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
     --blur-s: blur(6px) saturate(1.5) brightness(1.15);
@@ -4560,7 +4882,10 @@ body {
     --dropdown-padding: 0 1.9em 0 0.8em;
     --flair-background: rgb(230, 229, 229);
     --flair-color: #222222;
-    --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --font-print: "??", "??", "??", "Arial";
     --font-weight: 400;
     --graph-line: #d4d4d4;
@@ -4580,11 +4905,22 @@ body {
     --menu-border-width: 1px;
     --menu-corner-shape: round;
     --menu-padding: 6px;
-    --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+    --menu-shadow:
+      0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+      0px 15px 30px rgba(0, 0, 0, 0.07);
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
-    --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --pdf-thumbnail-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
     --popover-font-size: 16px;
-    --raised-background: color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent) linear-gradient(rgba(230, 229, 229, 0.45), color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent));
+    --raised-background: color-mix(
+        in srgb,
+        rgba(230, 229, 229, 0.45) 65%,
+        transparent
+      )
+      linear-gradient(
+        rgba(230, 229, 229, 0.45),
+        color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent)
+      );
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
@@ -4633,7 +4969,11 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-add-button-border-color: #e0e0e0;
     --table-add-button-border-width: 1px;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
@@ -4747,7 +5087,11 @@ body {
     --tab-divider-color: transparent;
     --tab-radius: 3px;
     --tab-switcher-background: rgba(194, 194, 194, 0.45);
-    --tab-switcher-menubar-background: linear-gradient(to top, rgba(194, 194, 194, 0.45), transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      rgba(194, 194, 194, 0.45),
+      transparent
+    );
     --tab-switcher-preview-radius: 3px;
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(198, 58%, 54%);
     --tab-text-color: #5c5c5c;
@@ -4833,7 +5177,15 @@ body {
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary-alt: #fafafa;
     --background-secondary-alt: #f6f4f4b7;
-    --blur-background: color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent) linear-gradient(rgba(230, 229, 229, 0.45), color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent));
+    --blur-background: color-mix(
+        in srgb,
+        rgba(230, 229, 229, 0.45) 65%,
+        transparent
+      )
+      linear-gradient(
+        rgba(230, 229, 229, 0.45),
+        color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent)
+      );
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
     --blur-s: blur(6px) saturate(1.5) brightness(1.15);
@@ -4861,7 +5213,10 @@ body {
     --dropdown-padding: 0 1.9em 0 0.8em;
     --flair-background: rgb(230, 229, 229);
     --flair-color: #222222;
-    --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --font-monospace:
+      "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     --font-print: "??", "??", "??", "Arial";
     --font-weight: 400;
     --graph-line: #d4d4d4;
@@ -4881,11 +5236,22 @@ body {
     --menu-border-width: 1px;
     --menu-corner-shape: round;
     --menu-padding: 6px;
-    --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+    --menu-shadow:
+      0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+      0px 15px 30px rgba(0, 0, 0, 0.07);
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
-    --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --pdf-thumbnail-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
     --popover-font-size: 16px;
-    --raised-background: color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent) linear-gradient(rgba(230, 229, 229, 0.45), color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent));
+    --raised-background: color-mix(
+        in srgb,
+        rgba(230, 229, 229, 0.45) 65%,
+        transparent
+      )
+      linear-gradient(
+        rgba(230, 229, 229, 0.45),
+        color-mix(in srgb, rgba(230, 229, 229, 0.45) 65%, transparent)
+      );
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
@@ -4934,7 +5300,11 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --table-add-button-border-color: #e0e0e0;
     --table-add-button-border-width: 1px;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
@@ -5009,9 +5379,18 @@ body {
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-mermaid:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
@@ -5040,7 +5419,11 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #f6f6f6,
+      transparent
+    );
     --tab-switcher-preview-radius: 16px;
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
@@ -5111,9 +5494,18 @@ body {
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-mermaid:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
@@ -5142,7 +5534,11 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #f6f6f6,
+      transparent
+    );
     --tab-switcher-preview-radius: 16px;
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
@@ -5840,7 +6236,10 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 html[saved-theme="dark"] {
   body {
     div#quartz-root {
-      background-color: var(--customewindowhighlightaccent, rgba(0, 0, 0, 0.45));
+      background-color: var(
+        --customewindowhighlightaccent,
+        rgba(0, 0, 0, 0.45)
+      );
       color: var(--text-normal);
     }
 
@@ -5944,7 +6343,10 @@ html[saved-theme="dark"] {
       font-weight: var(--link-weight);
       outline: rgb(60, 166, 211) none 0px;
       text-decoration: underline rgba(76, 173, 214, 0.3);
-      text-decoration-color: var(--link-unresolved-decoration-color, rgba(76, 173, 214, 0.3));
+      text-decoration-color: var(
+        --link-unresolved-decoration-color,
+        rgba(76, 173, 214, 0.3)
+      );
       text-decoration-line: var(--link-decoration);
       text-decoration-style: var(--link-unresolved-decoration-style);
       text-decoration-thickness: var(--link-decoration-thickness);
@@ -6269,9 +6671,24 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: var(--text-selection, rgba(76, 173, 214, 0.35));
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
@@ -6284,7 +6701,18 @@ html[saved-theme="dark"] {
       color: var(--text-on-accent, rgb(255, 255, 255));
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:has(
+        ~ .result-card.focus:not(
+            :has(~ .result-card:hover, ~ .result-card:focus)
+          ),
+        ~ .result-card:focus,
+        ~ .result-card:hover
+      ) {
       background-color: var(--text-selection, rgba(76, 173, 214, 0.35));
       border-color: rgba(0, 0, 0, 0) rgb(255, 255, 255);
       border-style: solid none;
@@ -6301,7 +6729,8 @@ html[saved-theme="dark"] {
     }
 
     hr {
-      border-color: rgb(128, 128, 128) rgb(128, 128, 128) rgb(54, 54, 54) rgb(54, 54, 54);
+      border-color: rgb(128, 128, 128) rgb(128, 128, 128) rgb(54, 54, 54)
+        rgb(54, 54, 54);
       border-style: solid solid none none;
       border-width: 0px 2px 0px 0px;
       border-top-left-radius: 0px;
@@ -6321,7 +6750,15 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.tag-link,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card
+      > ul
+      > li
+      > .match-tag {
       align-items: normal;
       background-color: var(--pill-background, rgba(76, 173, 214, 0.1));
       color: var(--pill-color, rgb(60, 166, 211));
@@ -6532,7 +6969,10 @@ html[saved-theme="dark"] {
     }
 
     blockquote {
-      background-color: var(--blockquote-background-color, rgba(30, 30, 30, 0.75));
+      background-color: var(
+        --blockquote-background-color,
+        rgba(30, 30, 30, 0.75)
+      );
       color: var(--blockquote-color);
       font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
       font-weight: 400;
@@ -6629,7 +7069,10 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout,
-    .search > .search-container > .search-space > .search-layout.display-results {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout.display-results {
       border-color: rgb(85, 85, 85) rgb(218, 218, 218);
       border-style: solid;
       border-width: 1px 2px;
@@ -6643,24 +7086,81 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container {
       color: var(--text-on-accent, rgb(255, 255, 255));
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(
+        :has(~ .result-card:hover, ~ .result-card:focus)
+      ) {
       color: var(--text-on-accent, rgb(255, 255, 255));
       font-weight: 400;
       background-color: var(--text-selection, rgba(76, 173, 214, 0.35));
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-description {
       color: var(--text-on-accent, rgb(255, 255, 255));
     }
 
@@ -6680,7 +7180,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h1-letter-spacing, 1px);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6717,7 +7218,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h2-letter-spacing, 1px);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px 0px 3px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6754,7 +7256,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h3-letter-spacing, 1px);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px 0px 3px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6791,7 +7294,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h4-letter-spacing, 1px);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px 0px 3px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6828,7 +7332,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h5-letter-spacing, 1px);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px 0px 3px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6865,7 +7370,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h6-letter-spacing, 1px);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px 0px 3px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6890,7 +7396,13 @@ html[saved-theme="dark"] {
     h2.page-title,
     h2.page-title a {
       color: var(--inline-title-color);
-      font-family: var(--inline-title-font, OxaniumFira, Inter, Rubik, "Segoe UI");
+      font-family: var(
+        --inline-title-font,
+        OxaniumFira,
+        Inter,
+        Rubik,
+        "Segoe UI"
+      );
       font-size: var(--inline-title-size, 34px);
       font-weight: var(--inline-title-weight, 500);
       line-height: var(--inline-title-line-height, 40.8px);
@@ -6899,7 +7411,8 @@ html[saved-theme="dark"] {
       letter-spacing: -0.51px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7109,7 +7622,8 @@ html[saved-theme="dark"] {
       height: auto;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       content: "H1";
       display: inline;
       color: var(--text-normal, rgb(60, 166, 211));
@@ -7137,7 +7651,8 @@ html[saved-theme="dark"] {
       height: auto;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       content: "H2";
       display: inline;
       color: var(--text-normal, rgb(12, 208, 208));
@@ -7165,7 +7680,8 @@ html[saved-theme="dark"] {
       height: auto;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       content: "H3";
       display: inline;
       color: var(--text-normal, rgb(0, 210, 0));
@@ -7193,7 +7709,8 @@ html[saved-theme="dark"] {
       height: auto;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       content: "H4";
       display: inline;
       color: var(--text-normal, rgb(255, 172, 28));
@@ -7221,7 +7738,8 @@ html[saved-theme="dark"] {
       height: auto;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       content: "H5";
       display: inline;
       color: var(--text-normal, rgb(255, 0, 0));
@@ -7246,7 +7764,8 @@ html[saved-theme="dark"] {
       height: auto;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       content: "H6";
       display: inline;
       color: var(--text-normal, rgb(255, 0, 255));
@@ -7368,7 +7887,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(var(--callout-color), 0.27);
       background-image: none;
-      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto
+        padding-box border-box;
     }
 
     .callout .callout-title > .callout-title-inner > p {
@@ -7379,7 +7899,8 @@ html[saved-theme="dark"] {
     .callout > .callout-content {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
-      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 2%;
       padding-block-end: 0px;
@@ -7390,9 +7911,13 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="note"] {
       --callout-color: var(--callout-default, 240, 240, 255);
-      background-color: var(--customewindowhighlightaccent, rgba(76, 173, 214, 0.1));
+      background-color: var(
+        --customewindowhighlightaccent,
+        rgba(76, 173, 214, 0.1)
+      );
       background-image: none;
-      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       mix-blend-mode: normal;
       border: 0px solid rgba(240, 240, 255, 0.25);
@@ -7427,7 +7952,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(var(--callout-color), 0.27);
       background-image: none;
-      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto
+        padding-box border-box;
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -7438,7 +7964,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="note"] > .callout-content {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
-      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 2%;
       padding-block-end: 0px;
@@ -7449,9 +7976,13 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="abstract"] {
       --callout-color: var(--callout-summary, 180, 255, 0);
-      background-color: var(--customewindowhighlightaccent, rgba(76, 173, 214, 0.1));
+      background-color: var(
+        --customewindowhighlightaccent,
+        rgba(76, 173, 214, 0.1)
+      );
       background-image: none;
-      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       mix-blend-mode: normal;
       border: 0px solid rgba(180, 255, 0, 0.25);
@@ -7486,10 +8017,14 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(var(--callout-color), 0.27);
       background-image: none;
-      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto
+        padding-box border-box;
     }
 
-    .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+    .callout[data-callout="abstract"]
+      .callout-title
+      > .callout-title-inner
+      > p {
       color: var(--callout-title-color, rgb(240, 240, 255));
       font-weight: var(--font-weight);
     }
@@ -7497,7 +8032,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="abstract"] > .callout-content {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
-      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 2%;
       padding-block-end: 0px;
@@ -7508,9 +8044,13 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="info"] {
       --callout-color: var(--callout-info, 128, 255, 212);
-      background-color: var(--customewindowhighlightaccent, rgba(76, 173, 214, 0.1));
+      background-color: var(
+        --customewindowhighlightaccent,
+        rgba(76, 173, 214, 0.1)
+      );
       background-image: none;
-      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       mix-blend-mode: normal;
       border: 0px solid rgba(128, 255, 212, 0.25);
@@ -7545,7 +8085,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(var(--callout-color), 0.27);
       background-image: none;
-      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto
+        padding-box border-box;
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -7556,7 +8097,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="info"] > .callout-content {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
-      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 2%;
       padding-block-end: 0px;
@@ -7567,9 +8109,13 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="todo"] {
       --callout-color: var(--callout-todo, 200, 255, 255);
-      background-color: var(--customewindowhighlightaccent, rgba(76, 173, 214, 0.1));
+      background-color: var(
+        --customewindowhighlightaccent,
+        rgba(76, 173, 214, 0.1)
+      );
       background-image: none;
-      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       mix-blend-mode: normal;
       border: 0px solid rgba(200, 255, 255, 0.25);
@@ -7604,7 +8150,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(var(--callout-color), 0.27);
       background-image: none;
-      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto
+        padding-box border-box;
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -7615,7 +8162,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="todo"] > .callout-content {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
-      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 2%;
       padding-block-end: 0px;
@@ -7626,9 +8174,13 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="tip"] {
       --callout-color: var(--callout-tip, 255, 255, 0);
-      background-color: var(--customewindowhighlightaccent, rgba(76, 173, 214, 0.1));
+      background-color: var(
+        --customewindowhighlightaccent,
+        rgba(76, 173, 214, 0.1)
+      );
       background-image: none;
-      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       mix-blend-mode: normal;
       border: 0px solid rgba(255, 255, 0, 0.25);
@@ -7663,7 +8215,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(var(--callout-color), 0.27);
       background-image: none;
-      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto
+        padding-box border-box;
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -7674,7 +8227,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="tip"] > .callout-content {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
-      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 2%;
       padding-block-end: 0px;
@@ -7685,9 +8239,13 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="success"] {
       --callout-color: var(--callout-success, 0, 255, 128);
-      background-color: var(--customewindowhighlightaccent, rgba(76, 173, 214, 0.1));
+      background-color: var(
+        --customewindowhighlightaccent,
+        rgba(76, 173, 214, 0.1)
+      );
       background-image: none;
-      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       mix-blend-mode: normal;
       border: 0px solid rgba(0, 255, 128, 0.25);
@@ -7722,7 +8280,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(var(--callout-color), 0.27);
       background-image: none;
-      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto
+        padding-box border-box;
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -7733,7 +8292,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="success"] > .callout-content {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
-      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 2%;
       padding-block-end: 0px;
@@ -7744,9 +8304,13 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="question"] {
       --callout-color: var(--callout-help, 0, 255, 255);
-      background-color: var(--customewindowhighlightaccent, rgba(76, 173, 214, 0.1));
+      background-color: var(
+        --customewindowhighlightaccent,
+        rgba(76, 173, 214, 0.1)
+      );
       background-image: none;
-      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       mix-blend-mode: normal;
       border: 0px solid rgba(0, 255, 255, 0.25);
@@ -7781,10 +8345,14 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(var(--callout-color), 0.27);
       background-image: none;
-      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto
+        padding-box border-box;
     }
 
-    .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+    .callout[data-callout="question"]
+      .callout-title
+      > .callout-title-inner
+      > p {
       color: var(--callout-title-color, rgb(240, 240, 255));
       font-weight: var(--font-weight);
     }
@@ -7792,7 +8360,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="question"] > .callout-content {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
-      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 2%;
       padding-block-end: 0px;
@@ -7803,9 +8372,13 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="warning"] {
       --callout-color: var(--callout-warning, 255, 128, 0);
-      background-color: var(--customewindowhighlightaccent, rgba(76, 173, 214, 0.1));
+      background-color: var(
+        --customewindowhighlightaccent,
+        rgba(76, 173, 214, 0.1)
+      );
       background-image: none;
-      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       mix-blend-mode: normal;
       border: 0px solid rgba(255, 128, 0, 0.25);
@@ -7840,7 +8413,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(var(--callout-color), 0.27);
       background-image: none;
-      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto
+        padding-box border-box;
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -7851,7 +8425,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="warning"] > .callout-content {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
-      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 2%;
       padding-block-end: 0px;
@@ -7862,9 +8437,13 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="danger"] {
       --callout-color: var(--callout-error, 255, 70, 0);
-      background-color: var(--customewindowhighlightaccent, rgba(76, 173, 214, 0.1));
+      background-color: var(
+        --customewindowhighlightaccent,
+        rgba(76, 173, 214, 0.1)
+      );
       background-image: none;
-      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       mix-blend-mode: normal;
       border: 0px solid rgba(255, 70, 0, 0.25);
@@ -7899,7 +8478,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(var(--callout-color), 0.27);
       background-image: none;
-      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto
+        padding-box border-box;
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -7910,7 +8490,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="danger"] > .callout-content {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
-      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 2%;
       padding-block-end: 0px;
@@ -7921,9 +8502,13 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="failure"] {
       --callout-color: var(--callout-fail, 251, 70, 76);
-      background-color: var(--customewindowhighlightaccent, rgba(76, 173, 214, 0.1));
+      background-color: var(
+        --customewindowhighlightaccent,
+        rgba(76, 173, 214, 0.1)
+      );
       background-image: none;
-      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       mix-blend-mode: normal;
       border: 0px solid rgba(251, 70, 76, 0.25);
@@ -7958,7 +8543,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(var(--callout-color), 0.27);
       background-image: none;
-      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto
+        padding-box border-box;
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -7969,7 +8555,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="failure"] > .callout-content {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
-      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 2%;
       padding-block-end: 0px;
@@ -7980,9 +8567,13 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="bug"] {
       --callout-color: var(--callout-bug, 255, 0, 153);
-      background-color: var(--customewindowhighlightaccent, rgba(76, 173, 214, 0.1));
+      background-color: var(
+        --customewindowhighlightaccent,
+        rgba(76, 173, 214, 0.1)
+      );
       background-image: none;
-      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       mix-blend-mode: normal;
       border: 0px solid rgba(255, 0, 153, 0.25);
@@ -8017,7 +8608,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(var(--callout-color), 0.27);
       background-image: none;
-      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto
+        padding-box border-box;
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -8028,7 +8620,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="bug"] > .callout-content {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
-      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 2%;
       padding-block-end: 0px;
@@ -8039,9 +8632,13 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="example"] {
       --callout-color: var(--callout-example, 220, 160, 255);
-      background-color: var(--customewindowhighlightaccent, rgba(76, 173, 214, 0.1));
+      background-color: var(
+        --customewindowhighlightaccent,
+        rgba(76, 173, 214, 0.1)
+      );
       background-image: none;
-      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(76, 173, 214, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       mix-blend-mode: normal;
       border: 0px solid rgba(220, 160, 255, 0.25);
@@ -8076,7 +8673,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(var(--callout-color), 0.27);
       background-image: none;
-      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto
+        padding-box border-box;
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -8087,7 +8685,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="example"] > .callout-content {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
-      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 2%;
       padding-block-end: 0px;
@@ -8100,7 +8699,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-quote, 255, 204, 153);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(218, 218, 218);
       mix-blend-mode: normal;
       border: 0px solid rgba(255, 204, 153, 0.25);
@@ -8135,7 +8735,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(var(--callout-color), 0.27);
       background-image: none;
-      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(240, 240, 255, 0.27) none repeat scroll 0% 0% / auto
+        padding-box border-box;
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -8146,7 +8747,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="quote"] > .callout-content {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
-      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(178, 223, 181, 0.25) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(218, 218, 218);
       padding: 2%;
       padding-block-end: 0px;
@@ -8209,7 +8811,8 @@ html[saved-theme="dark"] {
       box-shadow: inset 0em 0em 0.35em var(--text-accent);
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
-      border-left: var(--table-column-first-border-width) solid rgb(60, 166, 211);
+      border-left: var(--table-column-first-border-width) solid
+        rgb(60, 166, 211);
       border-right: 1px solid rgb(60, 166, 211);
       border-top: var(--table-header-border-width) solid rgb(60, 166, 211);
       border-bottom: 1px solid rgb(60, 166, 211);
@@ -8237,7 +8840,8 @@ html[saved-theme="dark"] {
       box-shadow: inset 0em 0em 0.35em var(--text-accent);
       text-decoration: rgb(218, 218, 218);
       border: 1px solid rgb(60, 166, 211);
-      border-left: var(--table-column-first-border-width) solid rgb(60, 166, 211);
+      border-left: var(--table-column-first-border-width) solid
+        rgb(60, 166, 211);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8469,14 +9073,26 @@ html[saved-theme="dark"] {
 
     .metadata-property-key {
       color: rgb(179, 179, 179);
-      font-family: var(--metadata-label-font, OxaniumFira, Inter, Rubik, "Segoe UI");
+      font-family: var(
+        --metadata-label-font,
+        OxaniumFira,
+        Inter,
+        Rubik,
+        "Segoe UI"
+      );
       font-size: 16px;
       font-weight: 400;
     }
 
     .metadata-property-value {
       color: rgb(179, 179, 179);
-      font-family: var(--metadata-input-font, OxaniumFira, Inter, Rubik, "Segoe UI");
+      font-family: var(
+        --metadata-input-font,
+        OxaniumFira,
+        Inter,
+        Rubik,
+        "Segoe UI"
+      );
       font-size: 16px;
     }
 
@@ -8859,7 +9475,9 @@ html[saved-theme="dark"] {
       transition-timing-function: ease;
     }
 
-    .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+    .nav-files-container
+      li:has(> .folder-outer:not(.open))
+      > .nav-folder-title {
       color: var(--nav-item-color);
       cursor: var(--cursor);
       font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
@@ -9092,7 +9710,8 @@ html[saved-theme="dark"] {
       font-weight: 400;
       line-height: 16.9px;
       background-color: var(--activetitle-bg, rgba(76, 173, 214, 0.3));
-      background: rgba(76, 173, 214, 0.3) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(76, 173, 214, 0.3) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       padding: 5px;
       margin: 0px 0px 0px 5px;
       border-top-color: rgb(255, 255, 255);
@@ -9336,7 +9955,11 @@ html[saved-theme="dark"] {
       --tab-divider-color: transparent;
       --tab-radius: 3px;
       --tab-switcher-background: rgba(30, 30, 30, 0.45);
-      --tab-switcher-menubar-background: linear-gradient(to top, rgba(30, 30, 30, 0.45), transparent);
+      --tab-switcher-menubar-background: linear-gradient(
+        to top,
+        rgba(30, 30, 30, 0.45),
+        transparent
+      );
       --tab-switcher-preview-radius: 3px;
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(198, 63%, 57%);
       --tab-text-color: #b3b3b3;
@@ -9424,7 +10047,8 @@ html[saved-theme="dark"] {
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary-alt: #242424;
       --background-secondary-alt: #363636;
-      --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+      --blur-background: color-mix(in srgb, #363636 65%, transparent)
+        linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
       --blur-s: blur(6px) saturate(1.5) brightness(1.15);
@@ -9452,7 +10076,10 @@ html[saved-theme="dark"] {
       --dropdown-padding: 0 1.9em 0 0.8em;
       --flair-background: #363636;
       --flair-color: #dadada;
-      --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+      --font-monospace:
+        "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono",
+        "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
+        "Consolas", "Source Code Pro", monospace;
       --font-print: "??", "??", "??", "Arial";
       --font-weight: 400;
       --graph-line: #3f3f3f;
@@ -9472,11 +10099,14 @@ html[saved-theme="dark"] {
       --menu-border-width: 1px;
       --menu-corner-shape: round;
       --menu-padding: 6px;
-      --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+      --menu-shadow:
+        0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+        0px 15px 30px rgba(0, 0, 0, 0.3);
       --pdf-shadow: 0 0 0 1px #363636;
       --pdf-thumbnail-shadow: 0 0 0 1px #363636;
       --popover-font-size: 16px;
-      --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+      --raised-background: color-mix(in srgb, #363636 65%, transparent)
+        linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
       --search-clear-button-color: #b3b3b3;
       --search-icon-color: #b3b3b3;
@@ -9525,7 +10155,11 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-add-button-border-color: #363636;
       --table-add-button-border-width: 1px;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       --table-column-alt-background: transparent;
       --table-column-first-border-width: 1px;
       --table-column-last-border-width: 1px;
@@ -9638,7 +10272,11 @@ html[saved-theme="dark"] {
       --tab-divider-color: transparent;
       --tab-radius: 3px;
       --tab-switcher-background: rgba(30, 30, 30, 0.45);
-      --tab-switcher-menubar-background: linear-gradient(to top, rgba(30, 30, 30, 0.45), transparent);
+      --tab-switcher-menubar-background: linear-gradient(
+        to top,
+        rgba(30, 30, 30, 0.45),
+        transparent
+      );
       --tab-switcher-preview-radius: 3px;
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(198, 63%, 57%);
       --tab-text-color: #b3b3b3;
@@ -9726,7 +10364,8 @@ html[saved-theme="dark"] {
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary-alt: #242424;
       --background-secondary-alt: #363636;
-      --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+      --blur-background: color-mix(in srgb, #363636 65%, transparent)
+        linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
       --blur-s: blur(6px) saturate(1.5) brightness(1.15);
@@ -9754,7 +10393,10 @@ html[saved-theme="dark"] {
       --dropdown-padding: 0 1.9em 0 0.8em;
       --flair-background: #363636;
       --flair-color: #dadada;
-      --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+      --font-monospace:
+        "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono",
+        "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
+        "Consolas", "Source Code Pro", monospace;
       --font-print: "??", "??", "??", "Arial";
       --font-weight: 400;
       --graph-line: #3f3f3f;
@@ -9774,11 +10416,14 @@ html[saved-theme="dark"] {
       --menu-border-width: 1px;
       --menu-corner-shape: round;
       --menu-padding: 6px;
-      --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+      --menu-shadow:
+        0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+        0px 15px 30px rgba(0, 0, 0, 0.3);
       --pdf-shadow: 0 0 0 1px #363636;
       --pdf-thumbnail-shadow: 0 0 0 1px #363636;
       --popover-font-size: 16px;
-      --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+      --raised-background: color-mix(in srgb, #363636 65%, transparent)
+        linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
       --search-clear-button-color: #b3b3b3;
       --search-icon-color: #b3b3b3;
@@ -9827,7 +10472,11 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-add-button-border-color: #363636;
       --table-add-button-border-width: 1px;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       --table-column-alt-background: transparent;
       --table-column-first-border-width: 1px;
       --table-column-last-border-width: 1px;
@@ -9940,7 +10589,11 @@ html[saved-theme="dark"] {
       --tab-divider-color: transparent;
       --tab-radius: 3px;
       --tab-switcher-background: rgba(30, 30, 30, 0.45);
-      --tab-switcher-menubar-background: linear-gradient(to top, rgba(30, 30, 30, 0.45), transparent);
+      --tab-switcher-menubar-background: linear-gradient(
+        to top,
+        rgba(30, 30, 30, 0.45),
+        transparent
+      );
       --tab-switcher-preview-radius: 3px;
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(198, 63%, 57%);
       --tab-text-color: #b3b3b3;
@@ -10028,7 +10681,8 @@ html[saved-theme="dark"] {
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary-alt: #242424;
       --background-secondary-alt: #363636;
-      --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+      --blur-background: color-mix(in srgb, #363636 65%, transparent)
+        linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
       --blur-s: blur(6px) saturate(1.5) brightness(1.15);
@@ -10056,7 +10710,10 @@ html[saved-theme="dark"] {
       --dropdown-padding: 0 1.9em 0 0.8em;
       --flair-background: #363636;
       --flair-color: #dadada;
-      --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+      --font-monospace:
+        "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono",
+        "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
+        "Consolas", "Source Code Pro", monospace;
       --font-print: "??", "??", "??", "Arial";
       --font-weight: 400;
       --graph-line: #3f3f3f;
@@ -10076,11 +10733,14 @@ html[saved-theme="dark"] {
       --menu-border-width: 1px;
       --menu-corner-shape: round;
       --menu-padding: 6px;
-      --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+      --menu-shadow:
+        0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+        0px 15px 30px rgba(0, 0, 0, 0.3);
       --pdf-shadow: 0 0 0 1px #363636;
       --pdf-thumbnail-shadow: 0 0 0 1px #363636;
       --popover-font-size: 16px;
-      --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+      --raised-background: color-mix(in srgb, #363636 65%, transparent)
+        linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
       --search-clear-button-color: #b3b3b3;
       --search-icon-color: #b3b3b3;
@@ -10129,7 +10789,11 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-add-button-border-color: #363636;
       --table-add-button-border-width: 1px;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       --table-column-alt-background: transparent;
       --table-column-first-border-width: 1px;
       --table-column-last-border-width: 1px;
@@ -10243,7 +10907,11 @@ html[saved-theme="dark"] {
       --tab-divider-color: transparent;
       --tab-radius: 3px;
       --tab-switcher-background: rgba(30, 30, 30, 0.45);
-      --tab-switcher-menubar-background: linear-gradient(to top, rgba(30, 30, 30, 0.45), transparent);
+      --tab-switcher-menubar-background: linear-gradient(
+        to top,
+        rgba(30, 30, 30, 0.45),
+        transparent
+      );
       --tab-switcher-preview-radius: 3px;
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(198, 63%, 57%);
       --tab-text-color: #b3b3b3;
@@ -10331,7 +10999,8 @@ html[saved-theme="dark"] {
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary-alt: #242424;
       --background-secondary-alt: #363636;
-      --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+      --blur-background: color-mix(in srgb, #363636 65%, transparent)
+        linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
       --blur-s: blur(6px) saturate(1.5) brightness(1.15);
@@ -10359,7 +11028,10 @@ html[saved-theme="dark"] {
       --dropdown-padding: 0 1.9em 0 0.8em;
       --flair-background: #363636;
       --flair-color: #dadada;
-      --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+      --font-monospace:
+        "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono",
+        "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
+        "Consolas", "Source Code Pro", monospace;
       --font-print: "??", "??", "??", "Arial";
       --font-weight: 400;
       --graph-line: #3f3f3f;
@@ -10379,11 +11051,14 @@ html[saved-theme="dark"] {
       --menu-border-width: 1px;
       --menu-corner-shape: round;
       --menu-padding: 6px;
-      --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+      --menu-shadow:
+        0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+        0px 15px 30px rgba(0, 0, 0, 0.3);
       --pdf-shadow: 0 0 0 1px #363636;
       --pdf-thumbnail-shadow: 0 0 0 1px #363636;
       --popover-font-size: 16px;
-      --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+      --raised-background: color-mix(in srgb, #363636 65%, transparent)
+        linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
       --search-clear-button-color: #b3b3b3;
       --search-icon-color: #b3b3b3;
@@ -10432,7 +11107,11 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --table-add-button-border-color: #363636;
       --table-add-button-border-width: 1px;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       --table-column-alt-background: transparent;
       --table-column-first-border-width: 1px;
       --table-column-last-border-width: 1px;
@@ -10507,9 +11186,18 @@ html[saved-theme="dark"] {
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-      --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-      --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+      --font-interface:
+        ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+        "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+      --font-mermaid:
+        ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+        "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+      --font-text:
+        ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+        "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
@@ -10538,7 +11226,11 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-radius: 4px;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+      --tab-switcher-menubar-background: linear-gradient(
+        to top,
+        #262626,
+        transparent
+      );
       --tab-switcher-preview-radius: 16px;
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
@@ -10609,9 +11301,18 @@ html[saved-theme="dark"] {
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-      --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-      --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+      --font-interface:
+        ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+        "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+      --font-mermaid:
+        ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+        "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+      --font-text:
+        ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+        "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
@@ -10640,7 +11341,11 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-radius: 4px;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+      --tab-switcher-menubar-background: linear-gradient(
+        to top,
+        #262626,
+        transparent
+      );
       --tab-switcher-preview-radius: 16px;
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
@@ -11442,7 +12147,10 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
+      background: var(
+        --collapse-icon-color-collapsed,
+        var(--quartz-icon-color)
+      );
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }
@@ -11861,24 +12569,56 @@ blockquote.callout {
   }
 
   &[data-callout="caption"] {
-    --color: rgb(var(--callout-caption, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-caption, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-caption, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-caption, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-caption, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-caption, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="grid"] {
-    --color: rgb(var(--callout-grid, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-grid, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-grid, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-grid, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-grid, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-grid, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="infobox"] {
-    --color: rgb(var(--callout-infobox, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-infobox, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-infobox, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-infobox, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-infobox, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-infobox, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="kith"] {
-    --color: rgb(var(--callout-kith, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-kith, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-kith, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-kith, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-kith, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-kith, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
 }
 

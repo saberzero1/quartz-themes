@@ -64,7 +64,8 @@ function resolveThemeFolderName(themeSlug) {
   const target = slugifyName(themeSlug);
   const dirs = readdirSync(themesDir, { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
-    .map((entry) => entry.name);
+    .map((entry) => entry.name)
+    .sort();
 
   const exact = dirs.find((dir) => slugifyName(dir) === target);
   return exact || null;
@@ -170,7 +171,8 @@ function resolveObsidianDirName(themeSlug) {
   const target = slugifyName(themeSlug);
   const dirs = readdirSync(OBSIDIAN_DIR, { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
-    .map((entry) => entry.name);
+    .map((entry) => entry.name)
+    .sort();
   return dirs.find((dir) => slugifyName(dir) === target) || null;
 }
 

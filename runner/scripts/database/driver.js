@@ -1,4 +1,4 @@
-import Database from "better-sqlite3";
+import { Database } from "bun:sqlite";
 
 let db = null;
 
@@ -59,12 +59,10 @@ const initializeDb = (dbPath = "styles.db") => {
     console.warn("Database already initialized. Reusing existing connection.");
     return;
   }
-  db = new Database(dbPath, {
-    /* verbose: console.log */
-  });
-  db.pragma("foreign_keys = ON;");
-  db.pragma("journal_mode = WAL;"); // Better concurrency
-  db.exec(schema);
+  db = new Database(dbPath);
+  db.run("PRAGMA foreign_keys = ON;");
+  db.run("PRAGMA journal_mode = WAL;"); // Better concurrency
+  db.run(schema);
 
   // Prepare all statements once
   preparedStatements.insertTheme = db.prepare(

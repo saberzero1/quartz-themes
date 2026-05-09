@@ -31,17 +31,22 @@ let testingMode = false;
 const testingTheme = "brutalist";
 
 const cacheDir = resolve(".obsidian-cache");
-const themeList = readdirSync("./runner/vault/.obsidian/themes").filter(
-  (file) =>
-    (file.endsWith(".css") || file.endsWith(".json")) &&
-    !["obsidian-theme-list.json", "obsidian-theme-list-removed.json"].includes(
-      file,
-    ),
-);
-const pluginList = readdirSync("./runner/vault/.obsidian/plugins").filter(
-  (file) =>
-    file.endsWith(".js") || file.endsWith(".json") || file.endsWith(".css"),
-);
+const themeList = readdirSync("./runner/vault/.obsidian/themes")
+  .sort()
+  .filter(
+    (file) =>
+      (file.endsWith(".css") || file.endsWith(".json")) &&
+      ![
+        "obsidian-theme-list.json",
+        "obsidian-theme-list-removed.json",
+      ].includes(file),
+  );
+const pluginList = readdirSync("./runner/vault/.obsidian/plugins")
+  .sort()
+  .filter(
+    (file) =>
+      file.endsWith(".js") || file.endsWith(".json") || file.endsWith(".css"),
+  );
 
 /*
  * NOTE: Make sure to set the saved workspace layouts to reading mode!

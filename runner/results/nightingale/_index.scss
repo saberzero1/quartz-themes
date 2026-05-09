@@ -15,7 +15,8 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
@@ -24,15 +25,27 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--text-faint, rgba(122, 162, 247, 0.8)) !important;
+  --checkbox-border-color: var(
+    --text-faint,
+    rgba(122, 162, 247, 0.8)
+  ) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: var(--interactive-accent, rgba(27, 128, 210, 0.842)) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, rgba(14, 210, 247, 0.8)) !important;
+  --checkbox-color: var(
+    --interactive-accent,
+    rgba(27, 128, 210, 0.842)
+  ) !important;
+  --checkbox-color-hover: var(
+    --interactive-accent-hover,
+    rgba(14, 210, 247, 0.8)
+  ) !important;
   --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-secondary, #15111e) !important;
-  --code-border-color: var(--background-modifier-border, rgba(14, 210, 247, 0.05)) !important;
+  --code-border-color: var(
+    --background-modifier-border,
+    rgba(14, 210, 247, 0.05)
+  ) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint, rgba(122, 162, 247, 0.8)) !important;
   --code-function: var(--color-yellow) !important;
@@ -48,13 +61,22 @@
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint, rgba(122, 162, 247, 0.8)) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, rgba(184, 71, 255, 0.8)) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --collapse-icon-color-collapsed: var(
+    --text-accent,
+    rgba(184, 71, 255, 0.8)
+  ) !important;
+  --graph-line: var(
+    --color-base-35,
+    var(--background-modifier-border-focus)
+  ) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent, rgba(184, 71, 255, 0.8)) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, rgba(122, 162, 247, 0.8)) !important;
+  --graph-node-unresolved: var(
+    --text-faint,
+    rgba(122, 162, 247, 0.8)
+  ) !important;
   --graph-text: var(--text-normal, #b7b7b7) !important;
   --icon-color: var(--text-muted) !important;
   --icon-color-active: var(--text-accent, rgba(184, 71, 255, 0.8)) !important;
@@ -117,8 +139,12 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/inconsolata/v32/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp4U8WRL2l3WdycuJDETf.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inconsolata/v32/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp4U8WRL2l3WdycuJDETf.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
@@ -126,8 +152,12 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/inconsolata/v32/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp4U8WRP2l3WdycuJDETf.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inconsolata/v32/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp4U8WRP2l3WdycuJDETf.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
@@ -135,8 +165,12 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/inconsolata/v32/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp4U8WR32l3WdycuJDA.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inconsolata/v32/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp4U8WR32l3WdycuJDA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -144,8 +178,10 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/notosans/v39/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9X6VLYyWtZ3rKW9w.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/notosans/v39/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9X6VLYyWtZ3rKW9w.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
@@ -153,7 +189,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/notosans/v39/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9e6VLYyWtZ3rKW9w.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/notosans/v39/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9e6VLYyWtZ3rKW9w.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -162,8 +199,11 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/notosans/v39/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9b6VLYyWtZ3rKW9w.woff2) format("woff2");
-  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  src: url(https://fonts.gstatic.com/s/notosans/v39/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9b6VLYyWtZ3rKW9w.woff2)
+    format("woff2");
+  unicode-range:
+    U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC,
+    U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
 }
 
 @font-face {
@@ -171,7 +211,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/notosans/v39/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9W6VLYyWtZ3rKW9w.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/notosans/v39/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9W6VLYyWtZ3rKW9w.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -180,8 +221,10 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/notosans/v39/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9Z6VLYyWtZ3rKW9w.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/notosans/v39/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9Z6VLYyWtZ3rKW9w.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
@@ -189,8 +232,12 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/notosans/v39/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9V6VLYyWtZ3rKW9w.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/notosans/v39/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9V6VLYyWtZ3rKW9w.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
@@ -198,8 +245,12 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/notosans/v39/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9U6VLYyWtZ3rKW9w.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/notosans/v39/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9U6VLYyWtZ3rKW9w.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
@@ -207,8 +258,12 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/notosans/v39/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9a6VLYyWtZ3rI.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/notosans/v39/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9a6VLYyWtZ3rI.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -216,8 +271,10 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
@@ -225,7 +282,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -234,7 +292,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -243,8 +302,10 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
@@ -252,8 +313,21 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A,
+    U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346,
+    U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6,
+    U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043,
+    U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C,
+    U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121,
+    U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2,
+    U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319,
+    U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1,
+    U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB,
+    U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE,
+    U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
 }
 
 @font-face {
@@ -261,8 +335,32 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4,
+    U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3,
+    U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF,
+    U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF,
+    U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0,
+    U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F,
+    U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315,
+    U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382,
+    U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6,
+    U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7,
+    U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444,
+    U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0,
+    U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA,
+    U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB,
+    U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513,
+    U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D,
+    U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC,
+    U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC,
+    U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887,
+    U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B,
+    U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C,
+    U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8,
+    U+1FB00-1FBFF;
 }
 
 @font-face {
@@ -270,8 +368,12 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
@@ -279,8 +381,12 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
@@ -288,23 +394,30 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -312,7 +425,8 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -320,32 +434,46 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -354,23 +482,28 @@ html {
   font-display: swap;
   font-weight: 400;
   src:
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff") format("woff");
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff")
+      format("woff");
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -378,32 +511,46 @@ html {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Monaco";
@@ -418,15 +565,18 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -434,7 +584,8 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -442,55 +593,82 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFUkU1dYPFkZVOA6w.woff2) format("woff2");
-  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC4, U+10EFC-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFUkU1dYPFkZVOA6w.woff2)
+    format("woff2");
+  unicode-range:
+    U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1,
+    U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF,
+    U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC4,
+    U+10EFC-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24,
+    U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47,
+    U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59,
+    U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A,
+    U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89,
+    U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
 }
 
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWkU1dYPFkZVOA6w.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWkU1dYPFkZVOA6w.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFU0U1dYPFkZVOA6w.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFU0U1dYPFkZVOA6w.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -498,24 +676,34 @@ html {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFVUU1dYPFkZVOA6w.woff2) format("woff2");
-  unicode-range: U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFVUU1dYPFkZVOA6w.woff2)
+    format("woff2");
+  unicode-range:
+    U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
 }
 
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWUU1dYPFkZVOA6w.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWUU1dYPFkZVOA6w.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFV0U1dYPFkZVO.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFV0U1dYPFkZVO.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 body {
@@ -1099,9 +1287,24 @@ body {
     animation-play-state: running;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: var(--background-modifier-hover);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1114,7 +1317,18 @@ body {
     color: rgb(183, 183, 183);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(
+      ~ .result-card.focus:not(
+          :has(~ .result-card:hover, ~ .result-card:focus)
+        ),
+      ~ .result-card:focus,
+      ~ .result-card:hover
+    ) {
     background-color: var(--background-modifier-hover);
     border: 0px rgb(183, 183, 183);
     border-top-left-radius: 4px;
@@ -1129,7 +1343,8 @@ body {
   }
 
   hr {
-    border-color: rgb(128, 128, 128) rgba(14, 210, 247, 0.05) rgba(14, 210, 247, 0.05);
+    border-color: rgb(128, 128, 128) rgba(14, 210, 247, 0.05)
+      rgba(14, 210, 247, 0.05);
     border-style: solid solid none none;
     border-width: 0px 1px 0px 0px;
     border-top-left-radius: 0px;
@@ -1149,7 +1364,15 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card
+    > ul
+    > li
+    > .match-tag {
     align-items: normal;
     background-color: var(--pill-background);
     color: var(--pill-color, rgba(184, 71, 255, 0.8));
@@ -1527,30 +1750,91 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container {
     color: rgb(183, 183, 183);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(183, 183, 183);
     font-weight: 400;
     background-color: var(--background-modifier-hover);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-description {
     color: rgb(183, 183, 183);
   }
 
   h1 {
     color: var(--h1-color, rgb(183, 183, 183));
-    font-family: var(--title-font, "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif);
+    font-family: var(
+      --title-font,
+      "Optima LT Std",
+      "Microsoft Yahei",
+      "Noto Sans SC",
+      sans-serif
+    );
     font-size: var(--h1-size, 44px);
     font-weight: var(--font-weight, 600);
     line-height: var(--h1-line-height, 52.8px);
@@ -1558,8 +1842,18 @@ body {
     text-decoration: rgb(218, 218, 218);
     letter-spacing: var(--h1-letter-spacing, -0.66px);
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(170deg, var(--text-title-1) 0%, var(--text-title-2) 100%);
-    background: rgba(0, 0, 0, 0) linear-gradient(170deg, rgba(216, 253, 7, 0.8) 0%, rgba(253, 49, 6, 0.8) 100%) repeat scroll 0% 0% / auto padding-box text;
+    background-image: linear-gradient(
+      170deg,
+      var(--text-title-1) 0%,
+      var(--text-title-2) 100%
+    );
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(
+        170deg,
+        rgba(216, 253, 7, 0.8) 0%,
+        rgba(253, 49, 6, 0.8) 100%
+      )
+      repeat scroll 0% 0% / auto padding-box text;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1583,7 +1877,13 @@ body {
 
   h2 {
     color: var(--h2-color, rgb(183, 183, 183));
-    font-family: var(--title-font, "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif);
+    font-family: var(
+      --title-font,
+      "Optima LT Std",
+      "Microsoft Yahei",
+      "Noto Sans SC",
+      sans-serif
+    );
     font-size: var(--h2-size, 36px);
     font-weight: var(--font-weight, 600);
     line-height: var(--h2-line-height, 43.2px);
@@ -1591,8 +1891,18 @@ body {
     text-decoration: rgb(218, 218, 218);
     letter-spacing: var(--h2-letter-spacing, -0.396px);
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(170deg, var(--text-title-1) 0%, var(--text-title-2) 100%);
-    background: rgba(0, 0, 0, 0) linear-gradient(170deg, rgba(216, 253, 7, 0.8) 0%, rgba(253, 49, 6, 0.8) 100%) repeat scroll 0% 0% / auto padding-box text;
+    background-image: linear-gradient(
+      170deg,
+      var(--text-title-1) 0%,
+      var(--text-title-2) 100%
+    );
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(
+        170deg,
+        rgba(216, 253, 7, 0.8) 0%,
+        rgba(253, 49, 6, 0.8) 100%
+      )
+      repeat scroll 0% 0% / auto padding-box text;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1616,7 +1926,13 @@ body {
 
   h3 {
     color: var(--h3-color, rgb(183, 183, 183));
-    font-family: var(--title-font, "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif);
+    font-family: var(
+      --title-font,
+      "Optima LT Std",
+      "Microsoft Yahei",
+      "Noto Sans SC",
+      sans-serif
+    );
     font-size: var(--h3-size, 30px);
     font-weight: var(--font-weight, 550);
     line-height: var(--h3-line-height, 39px);
@@ -1624,8 +1940,18 @@ body {
     text-decoration: rgb(218, 218, 218);
     letter-spacing: var(--h3-letter-spacing, -0.24px);
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(170deg, var(--text-title-1) 0%, var(--text-title-2) 100%);
-    background: rgba(0, 0, 0, 0) linear-gradient(170deg, rgba(216, 253, 7, 0.8) 0%, rgba(253, 49, 6, 0.8) 100%) repeat scroll 0% 0% / auto padding-box text;
+    background-image: linear-gradient(
+      170deg,
+      var(--text-title-1) 0%,
+      var(--text-title-2) 100%
+    );
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(
+        170deg,
+        rgba(216, 253, 7, 0.8) 0%,
+        rgba(253, 49, 6, 0.8) 100%
+      )
+      repeat scroll 0% 0% / auto padding-box text;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1649,7 +1975,13 @@ body {
 
   h4 {
     color: var(--h4-color, rgb(183, 183, 183));
-    font-family: var(--title-font, "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif);
+    font-family: var(
+      --title-font,
+      "Optima LT Std",
+      "Microsoft Yahei",
+      "Noto Sans SC",
+      sans-serif
+    );
     font-size: var(--h4-size, 26px);
     font-weight: var(--font-weight, 550);
     line-height: var(--h4-line-height, 36.4px);
@@ -1657,8 +1989,18 @@ body {
     text-decoration: rgb(218, 218, 218);
     letter-spacing: var(--h4-letter-spacing, -0.13px);
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(170deg, var(--text-title-1) 0%, var(--text-title-2) 100%);
-    background: rgba(0, 0, 0, 0) linear-gradient(170deg, rgba(216, 253, 7, 0.8) 0%, rgba(253, 49, 6, 0.8) 100%) repeat scroll 0% 0% / auto padding-box text;
+    background-image: linear-gradient(
+      170deg,
+      var(--text-title-1) 0%,
+      var(--text-title-2) 100%
+    );
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(
+        170deg,
+        rgba(216, 253, 7, 0.8) 0%,
+        rgba(253, 49, 6, 0.8) 100%
+      )
+      repeat scroll 0% 0% / auto padding-box text;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1682,7 +2024,13 @@ body {
 
   h5 {
     color: var(--h5-color, rgb(183, 183, 183));
-    font-family: var(--title-font, "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif);
+    font-family: var(
+      --title-font,
+      "Optima LT Std",
+      "Microsoft Yahei",
+      "Noto Sans SC",
+      sans-serif
+    );
     font-size: var(--h5-size, 22px);
     font-weight: var(--font-weight, 500);
     line-height: var(--h5-line-height, 33px);
@@ -1690,8 +2038,18 @@ body {
     text-decoration: rgb(218, 218, 218);
     letter-spacing: var(--h5-letter-spacing, -0.044px);
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(170deg, var(--text-title-1) 0%, var(--text-title-2) 100%);
-    background: rgba(0, 0, 0, 0) linear-gradient(170deg, rgba(216, 253, 7, 0.8) 0%, rgba(253, 49, 6, 0.8) 100%) repeat scroll 0% 0% / auto padding-box text;
+    background-image: linear-gradient(
+      170deg,
+      var(--text-title-1) 0%,
+      var(--text-title-2) 100%
+    );
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(
+        170deg,
+        rgba(216, 253, 7, 0.8) 0%,
+        rgba(253, 49, 6, 0.8) 100%
+      )
+      repeat scroll 0% 0% / auto padding-box text;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1715,7 +2073,13 @@ body {
 
   h6 {
     color: var(--h6-color, rgb(183, 183, 183));
-    font-family: var(--title-font, "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif);
+    font-family: var(
+      --title-font,
+      "Optima LT Std",
+      "Microsoft Yahei",
+      "Noto Sans SC",
+      sans-serif
+    );
     font-size: var(--h6-size, 20px);
     font-weight: var(--font-weight, 500);
     line-height: var(--h6-line-height, 30px);
@@ -1723,8 +2087,18 @@ body {
     text-decoration: rgb(218, 218, 218);
     letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(170deg, var(--text-title-1) 0%, var(--text-title-2) 100%);
-    background: rgba(0, 0, 0, 0) linear-gradient(170deg, rgba(216, 253, 7, 0.8) 0%, rgba(253, 49, 6, 0.8) 100%) repeat scroll 0% 0% / auto padding-box text;
+    background-image: linear-gradient(
+      170deg,
+      var(--text-title-1) 0%,
+      var(--text-title-2) 100%
+    );
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(
+        170deg,
+        rgba(216, 253, 7, 0.8) 0%,
+        rgba(253, 49, 6, 0.8) 100%
+      )
+      repeat scroll 0% 0% / auto padding-box text;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1757,8 +2131,18 @@ body {
     text-decoration: rgb(218, 218, 218);
     letter-spacing: -0.66px;
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(170deg, var(--text-title-1) 0%, var(--text-title-2) 100%);
-    background: rgba(0, 0, 0, 0) linear-gradient(170deg, rgba(216, 253, 7, 0.8) 0%, rgba(253, 49, 6, 0.8) 100%) repeat scroll 0% 0% / auto padding-box text;
+    background-image: linear-gradient(
+      170deg,
+      var(--text-title-1) 0%,
+      var(--text-title-2) 100%
+    );
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(
+        170deg,
+        rgba(216, 253, 7, 0.8) 0%,
+        rgba(253, 49, 6, 0.8) 100%
+      )
+      repeat scroll 0% 0% / auto padding-box text;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2208,7 +2592,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -2219,7 +2604,8 @@ body {
   .callout > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(183, 183, 183);
     padding: 0px;
     padding-block-end: 0px;
@@ -2232,7 +2618,8 @@ body {
     --callout-color: var(--callout-default, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(183, 183, 183);
     mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
@@ -2266,7 +2653,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -2277,7 +2665,8 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(183, 183, 183);
     padding: 0px;
     padding-block-end: 0px;
@@ -2290,7 +2679,8 @@ body {
     --callout-color: var(--callout-summary, 83, 223, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(183, 183, 183);
     mix-blend-mode: normal;
     border: 0px solid rgba(83, 223, 221, 0.25);
@@ -2324,7 +2714,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -2335,7 +2726,8 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(183, 183, 183);
     padding: 0px;
     padding-block-end: 0px;
@@ -2348,7 +2740,8 @@ body {
     --callout-color: var(--callout-info, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(183, 183, 183);
     mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
@@ -2382,7 +2775,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -2393,7 +2787,8 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(183, 183, 183);
     padding: 0px;
     padding-block-end: 0px;
@@ -2406,7 +2801,8 @@ body {
     --callout-color: var(--callout-todo, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(183, 183, 183);
     mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
@@ -2440,7 +2836,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -2451,7 +2848,8 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(183, 183, 183);
     padding: 0px;
     padding-block-end: 0px;
@@ -2464,7 +2862,8 @@ body {
     --callout-color: var(--callout-tip, 83, 223, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(183, 183, 183);
     mix-blend-mode: normal;
     border: 0px solid rgba(83, 223, 221, 0.25);
@@ -2498,7 +2897,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2509,7 +2909,8 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(183, 183, 183);
     padding: 0px;
     padding-block-end: 0px;
@@ -2522,7 +2923,8 @@ body {
     --callout-color: var(--callout-success, 68, 207, 110);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(183, 183, 183);
     mix-blend-mode: normal;
     border: 0px solid rgba(68, 207, 110, 0.25);
@@ -2556,7 +2958,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -2567,7 +2970,8 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(183, 183, 183);
     padding: 0px;
     padding-block-end: 0px;
@@ -2580,7 +2984,8 @@ body {
     --callout-color: var(--callout-question, 233, 151, 63);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(183, 183, 183);
     mix-blend-mode: normal;
     border: 0px solid rgba(233, 151, 63, 0.25);
@@ -2614,7 +3019,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -2625,7 +3031,8 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(183, 183, 183);
     padding: 0px;
     padding-block-end: 0px;
@@ -2638,7 +3045,8 @@ body {
     --callout-color: var(--callout-warning, 233, 151, 63);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(183, 183, 183);
     mix-blend-mode: normal;
     border: 0px solid rgba(233, 151, 63, 0.25);
@@ -2672,7 +3080,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -2683,7 +3092,8 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(183, 183, 183);
     padding: 0px;
     padding-block-end: 0px;
@@ -2696,7 +3106,8 @@ body {
     --callout-color: var(--callout-error, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(183, 183, 183);
     mix-blend-mode: normal;
     border: 0px solid rgba(251, 70, 76, 0.25);
@@ -2730,7 +3141,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -2741,7 +3153,8 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(183, 183, 183);
     padding: 0px;
     padding-block-end: 0px;
@@ -2754,7 +3167,8 @@ body {
     --callout-color: var(--callout-fail, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(183, 183, 183);
     mix-blend-mode: normal;
     border: 0px solid rgba(251, 70, 76, 0.25);
@@ -2788,7 +3202,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -2799,7 +3214,8 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(183, 183, 183);
     padding: 0px;
     padding-block-end: 0px;
@@ -2812,7 +3228,8 @@ body {
     --callout-color: var(--callout-bug, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(183, 183, 183);
     mix-blend-mode: normal;
     border: 0px solid rgba(251, 70, 76, 0.25);
@@ -2846,7 +3263,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -2857,7 +3275,8 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(183, 183, 183);
     padding: 0px;
     padding-block-end: 0px;
@@ -2870,7 +3289,8 @@ body {
     --callout-color: var(--callout-example, 168, 130, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(183, 183, 183);
     mix-blend-mode: normal;
     border: 0px solid rgba(168, 130, 255, 0.25);
@@ -2904,7 +3324,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -2915,7 +3336,8 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(183, 183, 183);
     padding: 0px;
     padding-block-end: 0px;
@@ -2928,7 +3350,8 @@ body {
     --callout-color: var(--callout-quote, 158, 158, 158);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(183, 183, 183);
     mix-blend-mode: normal;
     border: 0px solid rgba(158, 158, 158, 0.25);
@@ -2962,7 +3385,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -2973,7 +3397,8 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(183, 183, 183);
     padding: 0px;
     padding-block-end: 0px;
@@ -3049,7 +3474,8 @@ body {
     box-shadow: none;
     text-decoration: rgb(218, 218, 218);
     letter-spacing: normal;
-    border-left: var(--table-column-first-border-width) solid rgba(14, 210, 247, 0.05);
+    border-left: var(--table-column-first-border-width) solid
+      rgba(14, 210, 247, 0.05);
     border-right: 1px solid rgba(14, 210, 247, 0.05);
     border-top: var(--table-header-border-width) solid rgba(14, 210, 247, 0.05);
     border-bottom: 1px solid rgba(14, 210, 247, 0.05);
@@ -3077,7 +3503,8 @@ body {
     box-shadow: none;
     text-decoration: rgb(218, 218, 218);
     border: 1px solid rgba(14, 210, 247, 0.05);
-    border-left: var(--table-column-first-border-width) solid rgba(14, 210, 247, 0.05);
+    border-left: var(--table-column-first-border-width) solid
+      rgba(14, 210, 247, 0.05);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3368,14 +3795,60 @@ body {
 
   .metadata-property-key {
     color: rgb(179, 179, 179);
-    font-family: var(--metadata-label-font, "Avenir LT Std", Helvetica, Arial, "Amazon Ember", Rubik, Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    font-family: var(
+      --metadata-label-font,
+      "Avenir LT Std",
+      Helvetica,
+      Arial,
+      "Amazon Ember",
+      Rubik,
+      Roboto,
+      sans-serif,
+      sans-serif,
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif
+    );
     font-size: 16px;
     font-weight: 400;
   }
 
   .metadata-property-value {
     color: rgb(179, 179, 179);
-    font-family: var(--metadata-input-font, "Avenir LT Std", Helvetica, Arial, "Amazon Ember", Rubik, Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    font-family: var(
+      --metadata-input-font,
+      "Avenir LT Std",
+      Helvetica,
+      Arial,
+      "Amazon Ember",
+      Rubik,
+      Roboto,
+      sans-serif,
+      sans-serif,
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif
+    );
     font-size: 16px;
   }
 
@@ -4204,12 +4677,19 @@ body {
 
   .page-header h2.page-title {
     color: var(--text-normal, rgb(183, 183, 183));
-    font-family: var(--title-font, "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif);
+    font-family: var(
+      --title-font,
+      "Optima LT Std",
+      "Microsoft Yahei",
+      "Noto Sans SC",
+      sans-serif
+    );
     font-size: 16px;
     font-weight: var(--h2-weight, 600);
     line-height: 20.8px;
     background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     margin: 0px;
     border-color: rgb(183, 183, 183);
@@ -4392,7 +4872,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -4411,7 +4894,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -4447,7 +4934,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -4466,7 +4956,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -4502,7 +4996,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -4521,7 +5018,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -4557,7 +5058,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -4576,7 +5080,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -4612,7 +5120,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -4631,7 +5142,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -4667,7 +5182,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -4686,7 +5204,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -4722,7 +5244,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -4741,7 +5266,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -4777,7 +5306,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -4796,7 +5328,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -4832,7 +5368,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -4851,7 +5390,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -4887,7 +5430,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -4906,7 +5452,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -4942,7 +5492,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -4961,7 +5514,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -4997,7 +5554,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5016,7 +5576,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5052,7 +5616,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5071,7 +5638,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5107,7 +5678,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5126,7 +5700,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5162,7 +5740,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5181,7 +5762,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5217,7 +5802,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5236,7 +5824,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5272,7 +5864,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5291,7 +5886,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5327,7 +5926,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5346,7 +5948,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5382,7 +5988,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5401,7 +6010,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5437,7 +6050,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5456,7 +6072,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5492,7 +6112,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5511,7 +6134,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5547,7 +6174,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5566,7 +6196,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5602,7 +6236,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5621,7 +6258,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5657,7 +6298,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5676,7 +6320,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5712,7 +6360,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5731,7 +6382,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5767,7 +6422,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5786,7 +6444,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5822,7 +6484,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5841,7 +6506,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5877,7 +6546,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5896,7 +6568,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5932,7 +6608,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -5951,7 +6630,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -5987,7 +6670,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6006,7 +6692,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6042,7 +6732,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6061,7 +6754,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6097,7 +6794,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6116,7 +6816,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6152,7 +6856,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6171,7 +6878,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6207,7 +6918,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6226,7 +6940,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6262,7 +6980,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6281,7 +7002,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6317,7 +7042,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6336,7 +7064,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6372,7 +7104,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6391,7 +7126,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6427,7 +7166,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6446,7 +7188,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6482,7 +7228,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6501,7 +7250,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6537,7 +7290,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6556,7 +7312,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6592,7 +7352,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6611,7 +7374,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6647,7 +7414,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6666,7 +7436,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6702,7 +7476,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6721,7 +7498,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6757,7 +7538,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6776,7 +7560,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6812,7 +7600,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6831,7 +7622,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6867,7 +7662,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6886,7 +7684,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6922,7 +7724,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6941,7 +7746,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -6977,7 +7786,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -6996,7 +7808,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -7032,7 +7848,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -7051,7 +7870,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -7087,7 +7910,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -7106,7 +7932,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -7142,7 +7972,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -7161,7 +7994,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -7197,7 +8034,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -7216,7 +8056,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -7252,7 +8096,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -7271,7 +8118,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -7307,7 +8158,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -7326,7 +8180,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -7362,7 +8220,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -7381,7 +8242,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -7417,7 +8282,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -7436,7 +8304,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -7472,7 +8344,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -7491,7 +8366,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -7527,7 +8406,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -7546,7 +8428,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -7582,7 +8468,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -7601,7 +8490,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -7637,7 +8530,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -7656,7 +8552,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -7692,7 +8592,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -7711,7 +8614,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -7747,7 +8654,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -7766,7 +8676,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -7802,7 +8716,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -7821,7 +8738,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -7857,7 +8778,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -7876,7 +8800,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -7912,7 +8840,10 @@ body {
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
-    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface:
+      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
@@ -7931,7 +8862,11 @@ body {
     --setting-items-border-color: #363636;
     --tab-outline-color: #363636;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
+    --tab-switcher-menubar-background: linear-gradient(
+      to top,
+      #262626,
+      transparent
+    );
     --tab-text-color: #666666;
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
@@ -8952,7 +9887,10 @@ li.task-list-item[data-task="v"] input[type="checkbox"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
+      background: var(
+        --collapse-icon-color-collapsed,
+        var(--quartz-icon-color)
+      );
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

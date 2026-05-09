@@ -329,7 +329,8 @@ function resolveThemeFolderName(themeName) {
 
   const installedThemes = readdirSync(themesDir, { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
-    .map((entry) => entry.name);
+    .map((entry) => entry.name)
+    .sort();
 
   const match = installedThemes.find(
     (t) =>
@@ -1012,7 +1013,8 @@ async function main() {
           (existsSync(join(RESULTS_DIR, d.name, "dark.json")) ||
             existsSync(join(RESULTS_DIR, d.name, "light.json"))),
       )
-      .map((d) => d.name);
+      .map((d) => d.name)
+      .sort();
     themesToVerify = dirs;
     console.log(`\nVerifying all ${dirs.length} extracted themes...\n`);
   } else if (arg) {
