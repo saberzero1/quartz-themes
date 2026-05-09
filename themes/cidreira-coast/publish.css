@@ -3743,13 +3743,6 @@ body body.theme-light .site-footer {
   font-family: Quicksand;
   font-size: var(--status-bar-font-size, 11px);
   text-align: start;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-style: solid;
-  border-width: 1px 0px 0px 1px;
-  border-top-left-radius: var(--radius-m, 8px);
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 0px;

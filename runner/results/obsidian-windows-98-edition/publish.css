@@ -3568,13 +3568,6 @@ body body.theme-dark .site-footer {
   font-family: "Pixelated MS Sans Serif";
   font-size: var(--status-bar-font-size);
   text-align: start;
-  border-color: rgb(0, 0, 0) rgb(54, 54, 54) rgb(54, 54, 54);
-  border-style: solid;
-  border-width: 0px 0px 0px 1px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 3px;
   padding-bottom: 1px;
   padding-left: 1px;

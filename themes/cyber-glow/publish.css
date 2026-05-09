@@ -5020,12 +5020,6 @@ body body.theme-light .site-footer {
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
   font-size: var(--status-bar-font-size);
   text-align: start;
-  border: solid rgb(92, 92, 92);
-  border-width: 0px 0px 1px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;
@@ -7584,12 +7578,6 @@ body body.theme-dark .site-footer {
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
   font-size: var(--status-bar-font-size);
   text-align: start;
-  border: solid rgb(179, 179, 179);
-  border-width: 0px 0px 1px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;

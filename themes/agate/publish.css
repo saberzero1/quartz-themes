@@ -4020,11 +4020,6 @@ body body.theme-light .site-footer {
     sans-serif;
   font-size: var(--status-bar-font-size);
   text-align: start;
-  border: 1px solid rgba(20, 20, 20, 0.2);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;

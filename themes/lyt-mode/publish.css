@@ -4732,11 +4732,6 @@ body body.theme-dark .site-footer {
     sans-serif;
   font-size: var(--status-bar-font-size, 13px);
   text-align: start;
-  border: 0px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;

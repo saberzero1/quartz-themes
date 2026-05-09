@@ -5622,13 +5622,6 @@ body body.theme-light .site-footer {
   font-family: "Noto Serif KR", serif;
   font-size: var(--status-bar-font-size);
   text-align: start;
-  border-color: rgb(224, 224, 224);
-  border-style: solid;
-  border-width: 1px 0px 0px 1px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;

@@ -5113,13 +5113,6 @@ body body.theme-light .site-footer {
     sans-serif;
   font-size: var(--status-bar-font-size);
   text-align: start;
-  border-color: rgb(153, 204, 167);
-  border-style: solid;
-  border-width: 1px 0px 0px 1px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;
@@ -7958,13 +7951,6 @@ body body.theme-dark .site-footer {
     sans-serif;
   font-size: var(--status-bar-font-size);
   text-align: start;
-  border-color: rgb(0, 41, 34);
-  border-style: solid;
-  border-width: 1px 0px 0px 1px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;

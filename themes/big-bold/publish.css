@@ -6825,13 +6825,6 @@ body body.theme-light .site-footer {
   font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-size: var(--status-bar-font-size);
   text-align: start;
-  border-color: rgba(159, 159, 159, 0.4);
-  border-style: solid;
-  border-width: 1px 0px 0px 1px;
-  border-top-left-radius: 14px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;
@@ -9426,13 +9419,6 @@ body body.theme-dark .site-footer {
   font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-size: var(--status-bar-font-size);
   text-align: start;
-  border-color: rgb(41, 49, 61);
-  border-style: solid;
-  border-width: 1px 0px 0px 1px;
-  border-top-left-radius: 14px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;

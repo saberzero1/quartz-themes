@@ -5683,11 +5683,6 @@ body body.theme-light .site-footer {
     sans-serif;
   font-size: var(--font-adaptive-smallest, 11px);
   text-align: start;
-  border: 0px solid rgb(227, 232, 239);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;
@@ -8533,11 +8528,6 @@ body body.theme-dark .site-footer {
     sans-serif;
   font-size: var(--font-adaptive-smallest, 11px);
   text-align: start;
-  border: 0px solid rgb(45, 49, 57);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;

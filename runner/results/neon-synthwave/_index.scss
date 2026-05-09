@@ -15,8 +15,7 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
-    var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s, 5px);
   --callout-success: var(--color-green-rgb);
@@ -50,10 +49,7 @@
   --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint, #bd93f9) !important;
   --collapse-icon-color-collapsed: var(--text-accent, #ff1690) !important;
-  --graph-line: var(
-    --color-base-35,
-    var(--background-modifier-border-focus)
-  ) !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted, #8be9fd) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent, #ff1690) !important;
@@ -121,26 +117,22 @@ html {
   font-weight: 400;
   src:
     local("Avenir"),
-    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff")
-      format("woff");
+    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff") format("woff");
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -148,8 +140,7 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -157,64 +148,47 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -222,8 +196,7 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -231,46 +204,32 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -278,10 +237,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
@@ -289,8 +246,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -299,8 +255,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -309,10 +264,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
@@ -320,21 +273,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A,
-    U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346,
-    U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6,
-    U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043,
-    U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C,
-    U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121,
-    U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2,
-    U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319,
-    U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1,
-    U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB,
-    U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE,
-    U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
 }
 
 @font-face {
@@ -342,32 +282,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4,
-    U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3,
-    U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF,
-    U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF,
-    U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0,
-    U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F,
-    U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315,
-    U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382,
-    U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6,
-    U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7,
-    U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444,
-    U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0,
-    U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA,
-    U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB,
-    U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513,
-    U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D,
-    U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC,
-    U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC,
-    U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887,
-    U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B,
-    U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C,
-    U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8,
-    U+1FB00-1FBFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
 }
 
 @font-face {
@@ -375,12 +291,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
@@ -388,12 +300,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
@@ -401,12 +309,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -415,28 +319,23 @@ html {
   font-display: swap;
   font-weight: 400;
   src:
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff")
-      format("woff");
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -444,46 +343,32 @@ html {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Monaco";
@@ -1067,24 +952,9 @@ body {
     animation-play-state: running;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: var(--background-modifier-hover);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -1097,18 +967,7 @@ body {
     color: rgb(212, 245, 255);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:has(
-      ~ .result-card.focus:not(
-          :has(~ .result-card:hover, ~ .result-card:focus)
-        ),
-      ~ .result-card:focus,
-      ~ .result-card:hover
-    ) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
     background-color: var(--background-modifier-hover);
     border: 0px rgb(212, 245, 255);
     border-top-left-radius: 5px;
@@ -1143,15 +1002,7 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card
-    > ul
-    > li
-    > .match-tag {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: var(--pill-background);
     color: var(--pill-color, rgb(255, 22, 144));
@@ -1513,79 +1364,24 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container {
+  .search > .search-container > .search-space > .search-layout > .results-container {
     color: rgb(212, 245, 255);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(212, 245, 255);
     font-weight: 400;
     background-color: var(--background-modifier-hover);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-description {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
     color: rgb(212, 245, 255);
   }
 
@@ -1600,8 +1396,7 @@ body {
     letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1634,8 +1429,7 @@ body {
     letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1668,8 +1462,7 @@ body {
     letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1702,8 +1495,7 @@ body {
     letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1736,8 +1528,7 @@ body {
     letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1770,8 +1561,7 @@ body {
     letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1805,8 +1595,7 @@ body {
     letter-spacing: -0.38832px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2256,8 +2045,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -2268,8 +2056,7 @@ body {
   .callout > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     padding: 0px;
     padding-block-end: 0px;
@@ -2282,8 +2069,7 @@ body {
     --callout-color: var(--callout-default, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
@@ -2317,8 +2103,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -2329,8 +2114,7 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     padding: 0px;
     padding-block-end: 0px;
@@ -2343,8 +2127,7 @@ body {
     --callout-color: var(--callout-summary, 83, 223, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     mix-blend-mode: normal;
     border: 0px solid rgba(83, 223, 221, 0.25);
@@ -2378,8 +2161,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -2390,8 +2172,7 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     padding: 0px;
     padding-block-end: 0px;
@@ -2404,8 +2185,7 @@ body {
     --callout-color: var(--callout-info, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
@@ -2439,8 +2219,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -2451,8 +2230,7 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     padding: 0px;
     padding-block-end: 0px;
@@ -2465,8 +2243,7 @@ body {
     --callout-color: var(--callout-todo, 2, 122, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
@@ -2500,8 +2277,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -2512,8 +2288,7 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     padding: 0px;
     padding-block-end: 0px;
@@ -2526,8 +2301,7 @@ body {
     --callout-color: var(--callout-tip, 83, 223, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     mix-blend-mode: normal;
     border: 0px solid rgba(83, 223, 221, 0.25);
@@ -2561,8 +2335,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2573,8 +2346,7 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     padding: 0px;
     padding-block-end: 0px;
@@ -2587,8 +2359,7 @@ body {
     --callout-color: var(--callout-success, 68, 207, 110);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     mix-blend-mode: normal;
     border: 0px solid rgba(68, 207, 110, 0.25);
@@ -2622,8 +2393,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -2634,8 +2404,7 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     padding: 0px;
     padding-block-end: 0px;
@@ -2648,8 +2417,7 @@ body {
     --callout-color: var(--callout-question, 233, 151, 63);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     mix-blend-mode: normal;
     border: 0px solid rgba(233, 151, 63, 0.25);
@@ -2683,8 +2451,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -2695,8 +2462,7 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     padding: 0px;
     padding-block-end: 0px;
@@ -2709,8 +2475,7 @@ body {
     --callout-color: var(--callout-warning, 233, 151, 63);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     mix-blend-mode: normal;
     border: 0px solid rgba(233, 151, 63, 0.25);
@@ -2744,8 +2509,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -2756,8 +2520,7 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     padding: 0px;
     padding-block-end: 0px;
@@ -2770,8 +2533,7 @@ body {
     --callout-color: var(--callout-error, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     mix-blend-mode: normal;
     border: 0px solid rgba(251, 70, 76, 0.25);
@@ -2805,8 +2567,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -2817,8 +2578,7 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     padding: 0px;
     padding-block-end: 0px;
@@ -2831,8 +2591,7 @@ body {
     --callout-color: var(--callout-fail, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     mix-blend-mode: normal;
     border: 0px solid rgba(251, 70, 76, 0.25);
@@ -2866,8 +2625,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -2878,8 +2636,7 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     padding: 0px;
     padding-block-end: 0px;
@@ -2892,8 +2649,7 @@ body {
     --callout-color: var(--callout-bug, 251, 70, 76);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     mix-blend-mode: normal;
     border: 0px solid rgba(251, 70, 76, 0.25);
@@ -2927,8 +2683,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -2939,8 +2694,7 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     padding: 0px;
     padding-block-end: 0px;
@@ -2953,8 +2707,7 @@ body {
     --callout-color: var(--callout-example, 168, 130, 255);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     mix-blend-mode: normal;
     border: 0px solid rgba(168, 130, 255, 0.25);
@@ -2988,8 +2741,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -3000,8 +2752,7 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     padding: 0px;
     padding-block-end: 0px;
@@ -3014,8 +2765,7 @@ body {
     --callout-color: var(--callout-quote, 158, 158, 158);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     mix-blend-mode: normal;
     border: 0px solid rgba(158, 158, 158, 0.25);
@@ -3049,8 +2799,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -3061,8 +2810,7 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(212, 245, 255);
     padding: 0px;
     padding-block-end: 0px;
@@ -3948,6 +3696,32 @@ body {
     border-left: 1px solid rgba(255, 255, 255, 0.12);
   }
 
+  .explorer .explorer-content ul.explorer-ul li > a::before {
+    content: normal;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: start;
+    color: rgb(218, 218, 218);
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: repeat;
+  }
+
   .nav-files-container {
     background-color: rgba(0, 0, 0, 0);
   }
@@ -4055,13 +3829,6 @@ body {
       sans-serif;
     font-size: var(--status-bar-font-size);
     text-align: start;
-    border-color: rgb(253, 139, 253);
-    border-style: solid;
-    border-width: 1px 0px 0px 1px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 4px;
@@ -4239,8 +4006,7 @@ body {
     font-weight: 400;
     line-height: 16.9px;
     background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     margin: 0px;
     border-color: rgb(212, 245, 255);
@@ -4415,8 +4181,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -4459,8 +4224,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -4474,11 +4238,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -4510,8 +4270,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -4554,8 +4313,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -4569,11 +4327,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -4605,8 +4359,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -4649,8 +4402,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -4664,11 +4416,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -4700,8 +4448,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -4744,8 +4491,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -4759,11 +4505,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -4795,8 +4537,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -4839,8 +4580,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -4854,11 +4594,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -4890,8 +4626,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -4934,8 +4669,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -4949,11 +4683,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -4985,8 +4715,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -5029,8 +4758,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5044,11 +4772,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -5080,8 +4804,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -5124,8 +4847,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5139,11 +4861,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -5175,8 +4893,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -5219,8 +4936,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5234,11 +4950,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -5270,8 +4982,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -5314,8 +5025,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5329,11 +5039,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -5365,8 +5071,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -5409,8 +5114,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5424,11 +5128,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -5460,8 +5160,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -5504,8 +5203,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5519,11 +5217,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -5555,8 +5249,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -5599,8 +5292,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5614,11 +5306,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -5650,8 +5338,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -5694,8 +5381,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5709,11 +5395,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -5745,8 +5427,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -5789,8 +5470,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5804,11 +5484,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -5840,8 +5516,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -5884,8 +5559,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5899,11 +5573,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -5935,8 +5605,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -5979,8 +5648,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5994,11 +5662,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -6030,8 +5694,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -6074,8 +5737,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6089,11 +5751,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -6125,8 +5783,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -6169,8 +5826,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6184,11 +5840,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -6220,8 +5872,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -6264,8 +5915,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6279,11 +5929,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -6315,8 +5961,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -6359,8 +6004,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6374,11 +6018,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -6410,8 +6050,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -6454,8 +6093,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6469,11 +6107,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -6505,8 +6139,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -6549,8 +6182,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6564,11 +6196,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -6600,8 +6228,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -6644,8 +6271,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6659,11 +6285,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -6695,8 +6317,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -6739,8 +6360,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6754,11 +6374,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -6790,8 +6406,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -6834,8 +6449,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6849,11 +6463,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -6885,8 +6495,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -6929,8 +6538,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6944,11 +6552,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -6980,8 +6584,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -7024,8 +6627,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7039,11 +6641,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -7075,8 +6673,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -7119,8 +6716,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7134,11 +6730,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -7170,8 +6762,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -7214,8 +6805,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7229,11 +6819,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -7265,8 +6851,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -7309,8 +6894,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7324,11 +6908,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -7360,8 +6940,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -7404,8 +6983,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7419,11 +6997,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -7455,8 +7029,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -7499,8 +7072,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7514,11 +7086,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -7550,8 +7118,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -7594,8 +7161,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7609,11 +7175,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -7645,8 +7207,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -7689,8 +7250,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7704,11 +7264,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -7740,8 +7296,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -7784,8 +7339,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7799,11 +7353,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -7835,8 +7385,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -7879,8 +7428,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7894,11 +7442,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -7930,8 +7474,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -7974,8 +7517,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7989,11 +7531,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -8025,8 +7563,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -8069,8 +7606,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8084,11 +7620,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -8120,8 +7652,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -8164,8 +7695,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8179,11 +7709,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -8215,8 +7741,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -8259,8 +7784,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8274,11 +7798,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -8310,8 +7830,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -8354,8 +7873,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8369,11 +7887,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -8405,8 +7919,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -8449,8 +7962,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8464,11 +7976,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -8500,8 +8008,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -8544,8 +8051,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8559,11 +8065,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -8595,8 +8097,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -8639,8 +8140,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8654,11 +8154,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -8690,8 +8186,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -8734,8 +8229,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8749,11 +8243,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -8785,8 +8275,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -8829,8 +8318,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8844,11 +8332,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -8880,8 +8364,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -8924,8 +8407,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8939,11 +8421,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -8975,8 +8453,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -9019,8 +8496,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9034,11 +8510,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -9070,8 +8542,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -9114,8 +8585,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9129,11 +8599,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -9165,8 +8631,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -9209,8 +8674,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9224,11 +8688,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -9260,8 +8720,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -9304,8 +8763,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9319,11 +8777,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -9355,8 +8809,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -9399,8 +8852,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9414,11 +8866,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -9450,8 +8898,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -9494,8 +8941,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9509,11 +8955,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -9545,8 +8987,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -9589,8 +9030,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9604,11 +9044,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -9640,8 +9076,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -9684,8 +9119,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9699,11 +9133,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -9735,8 +9165,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -9779,8 +9208,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9794,11 +9222,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -9830,8 +9254,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -9874,8 +9297,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9889,11 +9311,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -9925,8 +9343,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -9969,8 +9386,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9984,11 +9400,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -10020,8 +9432,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -10064,8 +9475,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10079,11 +9489,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -10115,8 +9521,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -10159,8 +9564,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10174,11 +9578,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -10210,8 +9610,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -10254,8 +9653,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10269,11 +9667,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -10305,8 +9699,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -10349,8 +9742,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10364,11 +9756,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -10400,8 +9788,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -10444,8 +9831,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10459,11 +9845,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -10495,8 +9877,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -10539,8 +9920,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10554,11 +9934,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -10590,8 +9966,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -10634,8 +10009,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10649,11 +10023,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -10685,8 +10055,7 @@ body {
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
-    --blur-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-radius: 4px;
     --canvas-background: #1e1e1e;
     --canvas-controls-radius: 4px;
@@ -10729,8 +10098,7 @@ body {
     --pdf-shadow: 0 0 0 1px #363636;
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-    --raised-background: color-mix(in srgb, #363636 65%, transparent)
-      linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
+    --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10744,11 +10112,7 @@ body {
     --tab-outline-color: #363636;
     --tab-radius: 4px;
     --tab-switcher-background: #262626;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #262626,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-text-color: #666666;
     --tab-text-color-active: #b3b3b3;
     --tab-text-color-focused: #b3b3b3;
@@ -11521,10 +10885,7 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(
-        --collapse-icon-color-collapsed,
-        var(--quartz-icon-color)
-      );
+      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

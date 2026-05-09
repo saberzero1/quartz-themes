@@ -15,8 +15,7 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
-    var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
@@ -50,10 +49,7 @@
   --code-value: var(--color-purple, #a37acc) !important;
   --collapse-icon-color: var(--text-faint, #bbb) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(
-    --color-base-35,
-    var(--background-modifier-border-focus)
-  ) !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted, #888) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -106,8 +102,7 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
-    var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
@@ -141,10 +136,7 @@
   --code-value: var(--color-purple, #dfbfff) !important;
   --collapse-icon-color: var(--text-faint, #555) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(
-    --color-base-35,
-    var(--background-modifier-border-focus)
-  ) !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted, #777) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -221,15 +213,13 @@ html {
   font-family: "Cascadia Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/kiwi-mono/cascadia-mono.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/kiwi-mono/cascadia-mono.woff2") format("woff2");
 }
 @font-face {
   font-family: "Cascadia Mono";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/kiwi-mono/cascadia-mono-1.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/kiwi-mono/cascadia-mono-1.woff2") format("woff2");
 }
 
 body {
@@ -805,24 +795,9 @@ body {
     animation-play-state: running;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: var(--background-modifier-hover);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -835,18 +810,7 @@ body {
     color: rgb(68, 68, 68);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:has(
-      ~ .result-card.focus:not(
-          :has(~ .result-card:hover, ~ .result-card:focus)
-        ),
-      ~ .result-card:focus,
-      ~ .result-card:hover
-    ) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
     background-color: var(--background-modifier-hover);
     border: 0px rgb(68, 68, 68);
     border-top-left-radius: 4px;
@@ -881,15 +845,7 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card
-    > ul
-    > li
-    > .match-tag {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: var(--pill-background);
     color: var(--pill-color);
@@ -1251,79 +1207,24 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container {
+  .search > .search-container > .search-space > .search-layout > .results-container {
     color: rgb(68, 68, 68);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(68, 68, 68);
     font-weight: 400;
     background-color: var(--background-modifier-hover);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-description {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
     color: rgb(68, 68, 68);
   }
 
@@ -1338,8 +1239,7 @@ body {
     letter-spacing: var(--h1-letter-spacing, -0.45px);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1372,8 +1272,7 @@ body {
     letter-spacing: var(--h2-letter-spacing, -0.28875px);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1406,8 +1305,7 @@ body {
     letter-spacing: var(--h3-letter-spacing, -0.18px);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1443,8 +1341,7 @@ body {
     letter-spacing: var(--h4-letter-spacing, -0.075px);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1480,8 +1377,7 @@ body {
     letter-spacing: var(--h5-letter-spacing, -0.03px);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1517,8 +1413,7 @@ body {
     letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1552,8 +1447,7 @@ body {
     letter-spacing: -0.38832px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2004,8 +1898,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -2016,8 +1909,7 @@ body {
   .callout > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 109, 221);
     padding: 0px;
     padding-block-end: 0px;
@@ -2030,8 +1922,7 @@ body {
     --callout-color: var(--callout-default, 8, 109, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 109, 221);
     mix-blend-mode: normal;
     border: 0px solid rgb(8, 109, 221);
@@ -2066,8 +1957,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -2078,8 +1968,7 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 109, 221);
     padding: 0px;
     padding-block-end: 0px;
@@ -2092,8 +1981,7 @@ body {
     --callout-color: var(--callout-summary, 0, 191, 188);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(0, 191, 188);
     mix-blend-mode: normal;
     border: 0px solid rgb(0, 191, 188);
@@ -2128,8 +2016,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -2140,8 +2027,7 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 109, 221);
     padding: 0px;
     padding-block-end: 0px;
@@ -2154,8 +2040,7 @@ body {
     --callout-color: var(--callout-info, 8, 109, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 109, 221);
     mix-blend-mode: normal;
     border: 0px solid rgb(8, 109, 221);
@@ -2190,8 +2075,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -2202,8 +2086,7 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 109, 221);
     padding: 0px;
     padding-block-end: 0px;
@@ -2216,8 +2099,7 @@ body {
     --callout-color: var(--callout-todo, 8, 109, 221);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 109, 221);
     mix-blend-mode: normal;
     border: 0px solid rgb(8, 109, 221);
@@ -2252,8 +2134,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -2264,8 +2145,7 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 109, 221);
     padding: 0px;
     padding-block-end: 0px;
@@ -2278,8 +2158,7 @@ body {
     --callout-color: var(--callout-tip, 0, 191, 188);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(0, 191, 188);
     mix-blend-mode: normal;
     border: 0px solid rgb(0, 191, 188);
@@ -2314,8 +2193,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2326,8 +2204,7 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 109, 221);
     padding: 0px;
     padding-block-end: 0px;
@@ -2340,8 +2217,7 @@ body {
     --callout-color: var(--callout-success, 8, 185, 78);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 185, 78);
     mix-blend-mode: normal;
     border: 0px solid rgb(8, 185, 78);
@@ -2376,8 +2252,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -2388,8 +2263,7 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 109, 221);
     padding: 0px;
     padding-block-end: 0px;
@@ -2402,8 +2276,7 @@ body {
     --callout-color: var(--callout-question, 236, 117, 0);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(236, 117, 0);
     mix-blend-mode: normal;
     border: 0px solid rgb(236, 117, 0);
@@ -2438,8 +2311,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -2450,8 +2322,7 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 109, 221);
     padding: 0px;
     padding-block-end: 0px;
@@ -2464,8 +2335,7 @@ body {
     --callout-color: var(--callout-warning, 236, 117, 0);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(236, 117, 0);
     mix-blend-mode: normal;
     border: 0px solid rgb(236, 117, 0);
@@ -2500,8 +2370,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -2512,8 +2381,7 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 109, 221);
     padding: 0px;
     padding-block-end: 0px;
@@ -2526,8 +2394,7 @@ body {
     --callout-color: var(--callout-error, 233, 49, 71);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(233, 49, 71);
     mix-blend-mode: normal;
     border: 0px solid rgb(233, 49, 71);
@@ -2562,8 +2429,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -2574,8 +2440,7 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 109, 221);
     padding: 0px;
     padding-block-end: 0px;
@@ -2588,8 +2453,7 @@ body {
     --callout-color: var(--callout-fail, 233, 49, 71);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(233, 49, 71);
     mix-blend-mode: normal;
     border: 0px solid rgb(233, 49, 71);
@@ -2624,8 +2488,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -2636,8 +2499,7 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 109, 221);
     padding: 0px;
     padding-block-end: 0px;
@@ -2650,8 +2512,7 @@ body {
     --callout-color: var(--callout-bug, 233, 49, 71);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(233, 49, 71);
     mix-blend-mode: normal;
     border: 0px solid rgb(233, 49, 71);
@@ -2686,8 +2547,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -2698,8 +2558,7 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 109, 221);
     padding: 0px;
     padding-block-end: 0px;
@@ -2712,8 +2571,7 @@ body {
     --callout-color: var(--callout-example, 120, 82, 238);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(120, 82, 238);
     mix-blend-mode: normal;
     border: 0px solid rgb(120, 82, 238);
@@ -2748,8 +2606,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -2760,8 +2617,7 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 109, 221);
     padding: 0px;
     padding-block-end: 0px;
@@ -2774,8 +2630,7 @@ body {
     --callout-color: var(--callout-quote, 158, 158, 158);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(158, 158, 158);
     mix-blend-mode: normal;
     border: 0px solid rgb(158, 158, 158);
@@ -2810,8 +2665,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -2822,8 +2676,7 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(8, 109, 221);
     padding: 0px;
     padding-block-end: 0px;
@@ -3585,17 +3438,11 @@ body {
     text-align: center;
     white-space-collapse: collapse;
     text-wrap-mode: wrap;
-    font-family:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-      "Source Code Pro", monospace;
+    font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
   }
 
   .katex-display > .katex > .katex-html {
-    font-family:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-      "Source Code Pro", monospace;
+    font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
   }
 
   .katex > .katex-html {
@@ -3687,6 +3534,32 @@ body {
 
   .nav-files-container .tree-item-children {
     border-left: 1px solid rgba(0, 0, 0, 0);
+  }
+
+  .explorer .explorer-content ul.explorer-ul li > a::before {
+    content: normal;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: start;
+    color: rgb(34, 34, 34);
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: repeat;
   }
 
   .nav-files-container {
@@ -3796,13 +3669,6 @@ body {
       sans-serif;
     font-size: var(--status-bar-font-size);
     text-align: start;
-    border-color: rgba(0, 0, 0, 0);
-    border-style: solid;
-    border-width: 1px 0px 0px 1px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 4px;
@@ -3980,8 +3846,7 @@ body {
     font-weight: 400;
     line-height: 16.9px;
     background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     margin: 0px;
     border-color: rgb(68, 68, 68);
@@ -4190,11 +4055,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -4283,11 +4144,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -4376,11 +4233,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -4469,11 +4322,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -4562,11 +4411,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -4655,11 +4500,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -4748,11 +4589,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -4841,11 +4678,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -4934,11 +4767,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5027,11 +4856,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5120,11 +4945,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5213,11 +5034,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5306,11 +5123,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5399,11 +5212,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5492,11 +5301,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5585,11 +5390,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5678,11 +5479,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5771,11 +5568,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5864,11 +5657,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5957,11 +5746,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6050,11 +5835,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6143,11 +5924,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6236,11 +6013,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6329,11 +6102,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6422,11 +6191,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6515,11 +6280,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6608,11 +6369,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6701,11 +6458,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6794,11 +6547,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6887,11 +6636,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6980,11 +6725,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7073,11 +6814,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7166,11 +6903,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7259,11 +6992,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7352,11 +7081,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7445,11 +7170,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7538,11 +7259,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7631,11 +7348,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7724,11 +7437,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7817,11 +7526,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7910,11 +7615,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8003,11 +7704,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8096,11 +7793,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8189,11 +7882,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8282,11 +7971,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8375,11 +8060,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8468,11 +8149,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8561,11 +8238,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8654,11 +8327,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8747,11 +8416,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8840,11 +8505,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8933,11 +8594,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -9026,11 +8683,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -9119,11 +8772,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -9212,11 +8861,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -9305,11 +8950,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -9398,11 +9039,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -9491,11 +9128,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -9584,11 +9217,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -9677,11 +9306,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -9770,11 +9395,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -9863,11 +9484,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -9956,11 +9573,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -10049,11 +9662,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -10142,11 +9751,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -10235,11 +9840,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -10328,11 +9929,7 @@ body {
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -11598,24 +11195,9 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: var(--background-modifier-hover);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -11628,18 +11210,7 @@ html[saved-theme="dark"] {
       color: rgb(170, 170, 170);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:has(
-        ~ .result-card.focus:not(
-            :has(~ .result-card:hover, ~ .result-card:focus)
-          ),
-        ~ .result-card:focus,
-        ~ .result-card:hover
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
       background-color: var(--background-modifier-hover);
       border: 0px rgb(170, 170, 170);
       border-top-left-radius: 4px;
@@ -11674,15 +11245,7 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.tag-link,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card
-      > ul
-      > li
-      > .match-tag {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
       background-color: var(--pill-background);
       color: var(--pill-color);
@@ -12032,10 +11595,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout.display-results {
+    .search > .search-container > .search-space > .search-layout.display-results {
       border: 1px solid rgb(85, 85, 85);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -12047,81 +11607,24 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container {
+    .search > .search-container > .search-space > .search-layout > .results-container {
       color: rgb(170, 170, 170);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(
-        :has(~ .result-card:hover, ~ .result-card:focus)
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: rgb(170, 170, 170);
       font-weight: 400;
       background-color: var(--background-modifier-hover);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-description {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
       color: rgb(170, 170, 170);
     }
 
@@ -12136,8 +11639,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h1-letter-spacing, -0.45px);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -12170,8 +11672,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h2-letter-spacing, -0.28875px);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -12204,8 +11705,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h3-letter-spacing, -0.18px);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -12241,8 +11741,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h4-letter-spacing, -0.075px);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -12278,8 +11777,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h5-letter-spacing, -0.03px);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -12315,8 +11813,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h6-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -12350,8 +11847,7 @@ html[saved-theme="dark"] {
       letter-spacing: -0.38832px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -12802,8 +12298,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout .callout-title > .callout-title-inner > p {
@@ -12814,8 +12309,7 @@ html[saved-theme="dark"] {
     .callout > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(2, 122, 255);
       padding: 0px;
       padding-block-end: 0px;
@@ -12828,8 +12322,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-default, 2, 122, 255);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(2, 122, 255);
       mix-blend-mode: normal;
       border: 0px solid rgb(2, 122, 255);
@@ -12864,8 +12357,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -12876,8 +12368,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="note"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(2, 122, 255);
       padding: 0px;
       padding-block-end: 0px;
@@ -12890,8 +12381,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-summary, 83, 223, 221);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(83, 223, 221);
       mix-blend-mode: normal;
       border: 0px solid rgb(83, 223, 221);
@@ -12926,14 +12416,10 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
-    .callout[data-callout="abstract"]
-      .callout-title
-      > .callout-title-inner
-      > p {
+    .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
@@ -12941,8 +12427,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="abstract"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(2, 122, 255);
       padding: 0px;
       padding-block-end: 0px;
@@ -12955,8 +12440,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-info, 2, 122, 255);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(2, 122, 255);
       mix-blend-mode: normal;
       border: 0px solid rgb(2, 122, 255);
@@ -12991,8 +12475,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -13003,8 +12486,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="info"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(2, 122, 255);
       padding: 0px;
       padding-block-end: 0px;
@@ -13017,8 +12499,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-todo, 2, 122, 255);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(2, 122, 255);
       mix-blend-mode: normal;
       border: 0px solid rgb(2, 122, 255);
@@ -13053,8 +12534,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -13065,8 +12545,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="todo"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(2, 122, 255);
       padding: 0px;
       padding-block-end: 0px;
@@ -13079,8 +12558,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-tip, 83, 223, 221);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(83, 223, 221);
       mix-blend-mode: normal;
       border: 0px solid rgb(83, 223, 221);
@@ -13115,8 +12593,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -13127,8 +12604,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="tip"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(2, 122, 255);
       padding: 0px;
       padding-block-end: 0px;
@@ -13141,8 +12617,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-success, 68, 207, 110);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(68, 207, 110);
       mix-blend-mode: normal;
       border: 0px solid rgb(68, 207, 110);
@@ -13177,8 +12652,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -13189,8 +12663,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="success"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(2, 122, 255);
       padding: 0px;
       padding-block-end: 0px;
@@ -13203,8 +12676,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-question, 233, 151, 63);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(233, 151, 63);
       mix-blend-mode: normal;
       border: 0px solid rgb(233, 151, 63);
@@ -13239,14 +12711,10 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
-    .callout[data-callout="question"]
-      .callout-title
-      > .callout-title-inner
-      > p {
+    .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
@@ -13254,8 +12722,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="question"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(2, 122, 255);
       padding: 0px;
       padding-block-end: 0px;
@@ -13268,8 +12735,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-warning, 233, 151, 63);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(233, 151, 63);
       mix-blend-mode: normal;
       border: 0px solid rgb(233, 151, 63);
@@ -13304,8 +12770,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -13316,8 +12781,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="warning"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(2, 122, 255);
       padding: 0px;
       padding-block-end: 0px;
@@ -13330,8 +12794,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-error, 251, 70, 76);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(251, 70, 76);
       mix-blend-mode: normal;
       border: 0px solid rgb(251, 70, 76);
@@ -13366,8 +12829,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -13378,8 +12840,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="danger"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(2, 122, 255);
       padding: 0px;
       padding-block-end: 0px;
@@ -13392,8 +12853,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-fail, 251, 70, 76);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(251, 70, 76);
       mix-blend-mode: normal;
       border: 0px solid rgb(251, 70, 76);
@@ -13428,8 +12888,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -13440,8 +12899,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="failure"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(2, 122, 255);
       padding: 0px;
       padding-block-end: 0px;
@@ -13454,8 +12912,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-bug, 251, 70, 76);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(251, 70, 76);
       mix-blend-mode: normal;
       border: 0px solid rgb(251, 70, 76);
@@ -13490,8 +12947,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -13502,8 +12958,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="bug"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(2, 122, 255);
       padding: 0px;
       padding-block-end: 0px;
@@ -13516,8 +12971,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-example, 168, 130, 255);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(168, 130, 255);
       mix-blend-mode: normal;
       border: 0px solid rgb(168, 130, 255);
@@ -13552,8 +13006,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -13564,8 +13017,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="example"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(2, 122, 255);
       padding: 0px;
       padding-block-end: 0px;
@@ -13578,8 +13030,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-quote, 158, 158, 158);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(158, 158, 158);
       mix-blend-mode: normal;
       border: 0px solid rgb(158, 158, 158);
@@ -13614,8 +13065,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -13626,8 +13076,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="quote"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(2, 122, 255);
       padding: 0px;
       padding-block-end: 0px;
@@ -14389,17 +13838,11 @@ html[saved-theme="dark"] {
       text-align: center;
       white-space-collapse: collapse;
       text-wrap-mode: wrap;
-      font-family:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-        "Source Code Pro", monospace;
+      font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
     }
 
     .katex-display > .katex > .katex-html {
-      font-family:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-        "Source Code Pro", monospace;
+      font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
     }
 
     .katex > .katex-html {
@@ -14447,9 +13890,7 @@ html[saved-theme="dark"] {
       transition-timing-function: ease;
     }
 
-    .nav-files-container
-      li:has(> .folder-outer:not(.open))
-      > .nav-folder-title {
+    .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
       color: var(--nav-item-color, rgb(119, 119, 119));
       cursor: var(--cursor);
       font-family:
@@ -14493,6 +13934,32 @@ html[saved-theme="dark"] {
 
     .nav-files-container .tree-item-children {
       border-left: 1px solid rgba(0, 0, 0, 0);
+    }
+
+    .explorer .explorer-content ul.explorer-ul li > a::before {
+      content: normal;
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      text-align: start;
+      color: rgb(218, 218, 218);
+      width: auto;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0);
+      background-repeat: repeat;
     }
 
     .nav-files-container {
@@ -14602,13 +14069,6 @@ html[saved-theme="dark"] {
         sans-serif;
       font-size: var(--status-bar-font-size);
       text-align: start;
-      border-color: rgba(0, 0, 0, 0);
-      border-style: solid;
-      border-width: 1px 0px 0px 1px;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
       padding-top: 4px;
       padding-bottom: 4px;
       padding-left: 4px;
@@ -14786,8 +14246,7 @@ html[saved-theme="dark"] {
       font-weight: 400;
       line-height: 16.9px;
       background-color: rgba(0, 0, 0, 0);
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       margin: 0px;
       border-color: rgb(170, 170, 170);
@@ -14996,11 +14455,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -15089,11 +14544,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -15182,11 +14633,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -15275,11 +14722,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -15368,11 +14811,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -15461,11 +14900,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -15554,11 +14989,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -15647,11 +15078,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -15740,11 +15167,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -15833,11 +15256,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -15926,11 +15345,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -16019,11 +15434,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -16112,11 +15523,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -16205,11 +15612,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -16298,11 +15701,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -16391,11 +15790,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -16484,11 +15879,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -16577,11 +15968,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -16670,11 +16057,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -16763,11 +16146,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -16856,11 +16235,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -16949,11 +16324,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -17042,11 +16413,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -17135,11 +16502,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -17228,11 +16591,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -17321,11 +16680,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -17414,11 +16769,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -17507,11 +16858,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -17600,11 +16947,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -17693,11 +17036,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -17786,11 +17125,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -17879,11 +17214,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -17972,11 +17303,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -18065,11 +17392,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -18158,11 +17481,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -18251,11 +17570,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -18344,11 +17659,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -18437,11 +17748,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -18530,11 +17837,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -18623,11 +17926,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -18716,11 +18015,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -18809,11 +18104,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -18902,11 +18193,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -18995,11 +18282,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -19088,11 +18371,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -19181,11 +18460,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -19274,11 +18549,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -19367,11 +18638,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -19460,11 +18727,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -19553,11 +18816,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -19646,11 +18905,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -19739,11 +18994,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -19832,11 +19083,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -19925,11 +19172,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -20018,11 +19261,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -20111,11 +19350,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -20204,11 +19439,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -20297,11 +19528,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -20390,11 +19617,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -20483,11 +19706,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -20576,11 +19795,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -20669,11 +19884,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -20762,11 +19973,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -20855,11 +20062,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -20948,11 +20151,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -21041,11 +20240,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -21134,11 +20329,7 @@ html[saved-theme="dark"] {
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
       --tab-text-color-focused: #b3b3b3;
@@ -21937,10 +21128,7 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(
-        --collapse-icon-color-collapsed,
-        var(--quartz-icon-color)
-      );
+      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

@@ -4182,13 +4182,6 @@ body body.theme-dark .site-footer {
   font-family: Avenir, "Avenir Next", sans-serif;
   font-size: var(--font-size-status-bar, 16px);
   text-align: start;
-  border-color: rgb(248, 248, 242) rgb(255, 255, 255) rgb(255, 255, 255);
-  border-style: solid;
-  border-width: 0px 0px 0px 1px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;

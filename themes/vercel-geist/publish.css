@@ -5401,13 +5401,6 @@ body body.theme-light .site-footer {
     "Segoe UI Symbol";
   font-size: var(--font-size-status-bar, 14px);
   text-align: start;
-  border-color: rgb(136, 136, 136) rgb(234, 234, 234) rgb(234, 234, 234);
-  border-style: solid;
-  border-width: 0px 0px 0px 1px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;
@@ -8282,13 +8275,6 @@ body body.theme-dark .site-footer {
     "Segoe UI Symbol";
   font-size: var(--font-size-status-bar, 14px);
   text-align: start;
-  border-color: rgb(136, 136, 136) rgb(51, 51, 51) rgb(51, 51, 51);
-  border-style: solid;
-  border-width: 0px 0px 0px 1px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;

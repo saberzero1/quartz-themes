@@ -5309,14 +5309,6 @@ body body.theme-light .site-footer {
   font-family: Recursive, nasin-nanpa;
   font-size: var(--status-bar-font-size);
   text-align: start;
-  border-color: rgb(222, 214, 204) rgb(71, 64, 50) rgb(71, 64, 50)
-    rgb(222, 214, 204);
-  border-style: solid;
-  border-width: 1px 0px 0px 1px;
-  border-top-left-radius: var(--vr-border-radius-normal, 8px);
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 2px;
@@ -7859,14 +7851,6 @@ body body.theme-dark .site-footer {
   font-family: Recursive, nasin-nanpa;
   font-size: var(--status-bar-font-size);
   text-align: start;
-  border-color: rgb(54, 48, 42) rgb(240, 211, 201) rgb(240, 211, 201)
-    rgb(54, 48, 42);
-  border-style: solid;
-  border-width: 1px 0px 0px 1px;
-  border-top-left-radius: var(--vr-border-radius-normal, 8px);
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 2px;

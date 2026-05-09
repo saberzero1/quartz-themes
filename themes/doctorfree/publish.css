@@ -5303,12 +5303,6 @@ body body.theme-light .site-footer {
   font-family: Karla, "Avenir Next", Helvetica, Arial, sans-serif;
   font-size: var(--font-size-status-bar, 18px);
   text-align: start;
-  border: 0px solid rgb(16, 16, 20);
-  border-left-width: 1px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 8px;
   padding-bottom: 6px;
   padding-left: 10px;
@@ -8101,12 +8095,6 @@ body body.theme-dark .site-footer {
   font-family: Karla, "Avenir Next", Helvetica, Arial, sans-serif;
   font-size: var(--font-size-status-bar, 18px);
   text-align: start;
-  border: 0px solid rgb(16, 16, 20);
-  border-left-width: 1px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 8px;
   padding-bottom: 6px;
   padding-left: 10px;

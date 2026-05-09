@@ -7798,13 +7798,6 @@ body body.theme-light .site-footer {
     "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   font-size: var(--status-bar-font-size);
   text-align: start;
-  border-color: rgb(64, 64, 64);
-  border-style: solid;
-  border-width: 1px 0px 0px 1px;
-  border-top-left-radius: 1.5px;
-  border-top-right-radius: 1.5px;
-  border-bottom-left-radius: 1.5px;
-  border-bottom-right-radius: 1.5px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;
@@ -10559,13 +10552,6 @@ body body.theme-dark .site-footer {
     "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   font-size: var(--status-bar-font-size);
   text-align: start;
-  border-color: rgb(212, 212, 212);
-  border-style: solid;
-  border-width: 1px 0px 0px 1px;
-  border-top-left-radius: 1.5px;
-  border-top-right-radius: 1.5px;
-  border-bottom-left-radius: 1.5px;
-  border-bottom-right-radius: 1.5px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;

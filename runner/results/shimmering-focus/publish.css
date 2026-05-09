@@ -5310,14 +5310,6 @@ body body.theme-light .site-footer {
     sans-serif;
   font-size: var(--status-bar-font-size, 15px);
   text-align: start;
-  border-color: rgb(239, 240, 245) rgb(230, 231, 240) rgb(230, 231, 240)
-    rgb(239, 240, 245);
-  border-style: groove solid solid groove;
-  border-width: 2px 0px 0px 2px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 4px;
@@ -8232,13 +8224,6 @@ body body.theme-dark .site-footer {
     sans-serif;
   font-size: var(--status-bar-font-size, 15px);
   text-align: start;
-  border-color: rgb(35, 37, 47) rgb(48, 50, 65) rgb(48, 50, 65) rgb(35, 37, 47);
-  border-style: groove solid solid groove;
-  border-width: 2px 0px 0px 2px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 4px;

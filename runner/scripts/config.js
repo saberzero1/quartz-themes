@@ -2359,7 +2359,71 @@ export const config = [
     publishSelector: null,
     quartzSelector: ".nav-files-container .tree-item-children",
     pseudoElement: "",
-    properties: ["border-left-color", "border-left-width", "border-left-style"],
+    properties: [
+      "border-left-color",
+      "border-left-width",
+      "border-left-style",
+      "border-inline-start",
+    ],
+  },
+  // explorer: folder icon open
+  {
+    obsidianSelector: `.nav-folder:not(.is-collapsed) > .nav-folder-title .nav-folder-title-content::before`,
+    publishSelector: null,
+    quartzSelector:
+      ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container::before",
+    psuedoElement: "",
+    properties: [
+      "content",
+      "font-family",
+      "font-size",
+      "font-weight",
+      "text-align",
+      "color",
+      "width",
+      "height",
+      "background-color",
+      "background-repeat",
+    ],
+  },
+  // explorer: folder icon closed
+  {
+    obsidianSelector: `.nav-folder-children .nav-folder-title .nav-folder-title-content::before`,
+    publishSelector: null,
+    quartzSelecotr:
+      ".explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container::before",
+    psuedoElement: "",
+    properties: [
+      "content",
+      "font-family",
+      "font-size",
+      "font-weight",
+      "text-align",
+      "color",
+      "width",
+      "height",
+      "background-color",
+      "background-repeat",
+    ],
+  },
+  // explorer: file icon
+  {
+    obsidianSelector: `div.tree-item-children.nav-folder-children > div.tree-item.nav-file > .nav-file-title .nav-file-title-content::before`,
+    publishSelector: null,
+    quartzSelector: ".explorer .explorer-content ul.explorer-ul li > a::before",
+    psuedoElement: "",
+    properties: [
+      "content",
+      "font-family",
+      "font-size",
+      "font-weight",
+      "text-align",
+      "color",
+      "width",
+      "height",
+      "background-color",
+      "background-repeat",
+    ],
   },
   // explorer: container background
   {
@@ -2670,7 +2734,6 @@ export const config = [
       "font-family",
       "font-size",
       "text-align",
-      ...defaults.border,
       ...defaults.padding,
     ],
   },

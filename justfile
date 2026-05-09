@@ -36,7 +36,7 @@ extract-baseline: build
 
 [group('extract')]
 compile:
-  bun ./runner/scripts/compile.js "" --auto
+  bun --smol ./runner/scripts/compile.js "" --auto
 
 [group('cli-extract'), doc('Compile a single theme')]
 cli-compile-theme themeName:
@@ -63,7 +63,7 @@ cli-extract-fonts:
 
 [group('plugin')]
 generate-plugin:
-  bun ./plugin/scripts/generate.js --auto
+  bun --smol ./plugin/scripts/generate.js --auto
   npm --prefix ./plugin run build
 
 [group('cli-extract'), doc('Extract a single theme using CLI (requires running Obsidian)')]
