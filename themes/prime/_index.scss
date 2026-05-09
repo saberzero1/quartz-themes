@@ -3812,8 +3812,8 @@ body {
     border-left: 2px solid rgba(0, 0, 0, 0.12);
   }
 
-  .explorer .explorer-content ul.explorer-ul li > a::before {
-    content: normal;
+  .explorer .folder-container > div {
+    color: rgb(92, 92, 92);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3828,14 +3828,30 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .explorer .explorer-content ul.explorer-ul li > a::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath d='M9 2.00318V2H19.9978C20.5513 2 21 2.45531 21 2.9918V21.0082C21 21.556 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5501 3 20.9932V8L9 2.00318ZM5.82918 8H9V4.83086L5.82918 8ZM11 4V9C11 9.55228 10.5523 10 10 10H5V20H19V4H11Z' fill='rgb(116, 116, 116)'%3E%3C/path%3E%3C/svg%3E");
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 13px;
     font-weight: 400;
     text-align: start;
-    color: rgb(34, 34, 34);
-    width: auto;
-    height: auto;
+    color: rgb(116, 116, 116);
     background-color: rgba(0, 0, 0, 0);
-    background-repeat: repeat;
   }
 
   .nav-files-container {
@@ -17063,8 +17079,8 @@ html[saved-theme="dark"] {
       border-left: 2px solid rgba(255, 255, 255, 0.12);
     }
 
-    .explorer .explorer-content ul.explorer-ul li > a::before {
-      content: normal;
+    .explorer .folder-container > div {
+      color: rgb(179, 179, 179);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -17079,14 +17095,30 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-size: 15px;
+      font-weight: 400;
+    }
+
+    .explorer .explorer-content ul.explorer-ul li > a::before {
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath d='M9 2.00318V2H19.9978C20.5513 2 21 2.45531 21 2.9918V21.0082C21 21.556 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5501 3 20.9932V8L9 2.00318ZM5.82918 8H9V4.83086L5.82918 8ZM11 4V9C11 9.55228 10.5523 10 10 10H5V20H19V4H11Z' fill='rgb(192, 192, 192)'%3E%3C/path%3E%3C/svg%3E");
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      font-size: 13px;
       font-weight: 400;
       text-align: start;
-      color: rgb(218, 218, 218);
-      width: auto;
-      height: auto;
+      color: rgb(192, 192, 192);
       background-color: rgba(0, 0, 0, 0);
-      background-repeat: repeat;
     }
 
     .nav-files-container {

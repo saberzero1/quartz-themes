@@ -2366,6 +2366,14 @@ export const config = [
       "border-inline-start",
     ],
   },
+  // explorer: folder title content (base element for ::before icon extraction)
+  {
+    obsidianSelector: `.nav-folder-title-content`,
+    publishSelector: null,
+    quartzSelector: ".explorer .folder-container > div",
+    pseudoElement: "",
+    properties: ["color", "font-family", "font-weight"],
+  },
   // explorer: folder icon open
   {
     obsidianSelector: `.nav-folder:not(.is-collapsed) > .nav-folder-title .nav-folder-title-content::before`,
@@ -2408,10 +2416,10 @@ export const config = [
   },
   // explorer: file icon
   {
-    obsidianSelector: `div.tree-item-children.nav-folder-children > div.tree-item.nav-file > .nav-file-title .nav-file-title-content::before`,
+    obsidianSelector: `.nav-file-title-content::before`,
     publishSelector: null,
     quartzSelector: ".explorer .explorer-content ul.explorer-ul li > a::before",
-    pseudoElement: "",
+    pseudoElement: "::before",
     properties: [
       "content",
       "font-family",

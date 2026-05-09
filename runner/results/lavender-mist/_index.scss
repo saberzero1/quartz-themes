@@ -4285,8 +4285,8 @@ body {
     border-left: 1px solid rgba(0, 0, 0, 0.12);
   }
 
-  .explorer .explorer-content ul.explorer-ul li > a::before {
-    content: normal;
+  .explorer .folder-container > div {
+    color: rgb(92, 92, 92);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4301,14 +4301,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: 15px;
     font-weight: 400;
-    text-align: start;
-    color: rgb(34, 34, 34);
-    width: auto;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0);
-    background-repeat: repeat;
   }
 
   .nav-files-container {

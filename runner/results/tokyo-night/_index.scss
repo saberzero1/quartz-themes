@@ -3912,9 +3912,10 @@ body {
     border-left: 2px solid rgb(220, 222, 226);
   }
 
-  .explorer .explorer-content ul.explorer-ul li > a::before {
-    content: normal;
+  .explorer .folder-container > div {
+    color: rgb(39, 46, 75);
     font-family:
+      '"JetBrains Mono", monospace, "Inter", sans-serif',
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -3928,14 +3929,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: 15px;
     font-weight: 400;
-    text-align: start;
-    color: rgb(34, 34, 34);
-    width: auto;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0);
-    background-repeat: repeat;
   }
 
   .nav-files-container {
@@ -18783,9 +18777,10 @@ html[saved-theme="dark"] {
       border-left: 2px solid rgb(41, 46, 66);
     }
 
-    .explorer .explorer-content ul.explorer-ul li > a::before {
-      content: normal;
+    .explorer .folder-container > div {
+      color: rgb(169, 177, 214);
       font-family:
+        '"JetBrains Mono", monospace, "Inter", sans-serif',
         ui-sans-serif,
         -apple-system,
         BlinkMacSystemFont,
@@ -18799,14 +18794,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-size: 15px;
       font-weight: 400;
-      text-align: start;
-      color: rgb(218, 218, 218);
-      width: auto;
-      height: auto;
-      background-color: rgba(0, 0, 0, 0);
-      background-repeat: repeat;
     }
 
     .nav-files-container {

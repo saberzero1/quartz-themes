@@ -1247,20 +1247,28 @@ function generateFullExtractionScript(selectors) {
       }
     }
 
+    const seenBaseSelectors = new Set();
+
     for (const selector of selectors) {
       try {
-        const el = document.querySelector(selector);
+        const baseSelector = selector.replace(/::[\w-]+(\(.*?\))?$/g, "").trim();
+        if (!baseSelector) continue;
+        if (seenBaseSelectors.has(baseSelector)) {
+          if (baseSelector !== selector) continue;
+        }
+        seenBaseSelectors.add(baseSelector);
+
+        const el = document.querySelector(baseSelector);
         if (!el) continue;
 
         const style = window.getComputedStyle(el);
-        const extracted = { ...getAllCssVars(style, cssVarBaseline, selector, el), ...getStandardProps(style, el) };
+        const extracted = { ...getAllCssVars(style, cssVarBaseline, baseSelector, el), ...getStandardProps(style, el) };
 
         if (Object.keys(extracted).length > 0) {
-          results[selector] = { ...results[selector], ...extracted };
+          results[baseSelector] = { ...results[baseSelector], ...extracted };
         }
 
-        // Extract pseudo-element styles for this selector
-        extractPseudoStyles(el, selector, cssVarBaseline);
+        extractPseudoStyles(el, baseSelector, cssVarBaseline);
       } catch (e) {
         // Invalid selector, skip
       }

@@ -3294,30 +3294,10 @@ body {
     border-left: 1px solid rgba(0, 0, 0, 0.12);
   }
 
-  .explorer .explorer-content ul.explorer-ul li > a::before {
-    content: normal;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    font-size: 15px;
+  .explorer .folder-container > div {
+    color: rgb(8, 185, 78);
+    font-family: Courier, monospace;
     font-weight: 400;
-    text-align: start;
-    color: rgb(34, 34, 34);
-    width: auto;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0);
-    background-repeat: repeat;
   }
 
   .nav-files-container {
@@ -14407,30 +14387,10 @@ html[saved-theme="dark"] {
       border-left: 1px solid rgba(255, 255, 255, 0.12);
     }
 
-    .explorer .explorer-content ul.explorer-ul li > a::before {
-      content: normal;
-      font-family:
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
-      font-size: 15px;
+    .explorer .folder-container > div {
+      color: rgb(68, 207, 110);
+      font-family: Courier, monospace;
       font-weight: 400;
-      text-align: start;
-      color: rgb(218, 218, 218);
-      width: auto;
-      height: auto;
-      background-color: rgba(0, 0, 0, 0);
-      background-repeat: repeat;
     }
 
     .nav-files-container {
