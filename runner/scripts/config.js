@@ -2372,7 +2372,7 @@ export const config = [
     publishSelector: null,
     quartzSelector:
       ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container::before",
-    psuedoElement: "",
+    pseudoElement: "",
     properties: [
       "content",
       "font-family",
@@ -2390,9 +2390,9 @@ export const config = [
   {
     obsidianSelector: `.nav-folder-children .nav-folder-title .nav-folder-title-content::before`,
     publishSelector: null,
-    quartzSelecotr:
+    quartzSelector:
       ".explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container::before",
-    psuedoElement: "",
+    pseudoElement: "",
     properties: [
       "content",
       "font-family",
@@ -2411,7 +2411,7 @@ export const config = [
     obsidianSelector: `div.tree-item-children.nav-folder-children > div.tree-item.nav-file > .nav-file-title .nav-file-title-content::before`,
     publishSelector: null,
     quartzSelector: ".explorer .explorer-content ul.explorer-ul li > a::before",
-    psuedoElement: "",
+    pseudoElement: "",
     properties: [
       "content",
       "font-family",

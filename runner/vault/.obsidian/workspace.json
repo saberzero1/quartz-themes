@@ -194,7 +194,6 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "theme-callouts/its-theme.md",
     "theme-bases/bases-cards.md",
     "theme-bases/bases-list.md",
     "theme-bases/bases-table.md",
@@ -215,6 +214,7 @@
     "callouts.md",
     "headings.md",
     "general.md",
+    "theme-callouts/its-theme.md",
     "folder/unopened/skipme.md",
     "folder/unopened",
     "theme-callouts/vauxhall.md",
