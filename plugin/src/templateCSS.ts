@@ -176,46 +176,6 @@ export const TEMPLATE_CSS = `
   }
 }
 
-/* ICONS */
-button.readermode {
-  & > svg {
-    display: none;
-  }
-  /* lucide book-open icon */
-  --readermode-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stb3Blbi1pY29uIGx1Y2lkZS1ib29rLW9wZW4iPjxwYXRoIGQ9Ik0xMiA3djE0Ii8+PHBhdGggZD0iTTMgMThhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTFoNWE0IDQgMCAwIDEgNCA0IDQgNCAwIDAgMSA0LTRoNWExIDEgMCAwIDEgMSAxdjEzYTEgMSAwIDAgMS0xIDFoLTZhMyAzIDAgMCAwLTMgMyAzIDMgMCAwIDAtMy0zeiIvPjwvc3ZnPg==');
-  background: var(--quartz-icon-color);
-  mask-image: var(--readermode-icon);
-  -webkit-mask-image: var(--readermode-icon);
-  width: 24px;
-  height: 24px;
-}
-
-button.global-graph-icon {
-  & > svg {
-    display: none;
-  }
-  /* lucide git-fork icon */
-  --graph-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdC1mb3JrLWljb24gbHVjaWRlLWdpdC1mb3JrIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIzIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNMTggOXYyYzAgLjYtLjQgMS0xIDFIN2MtLjYgMC0xLS40LTEtMVY5Ii8+PHBhdGggZD0iTTEyIDEydjMiLz48L3N2Zz4=');
-  background: var(--quartz-icon-color);
-  mask-image: var(--graph-icon);
-  -webkit-mask-image: var(--graph-icon);
-  width: 24px;
-  height: 24px;
-}
-
-button.darkmode {
-  & > svg {
-    display: none !important;
-  }
-  /* lucide moon icon */
-  --moon-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vb24taWNvbiBsdWNpZGUtbW9vbiI+PHBhdGggZD0iTTEyIDNhNiA2IDAgMCAwIDkgOSA5IDkgMCAxIDEtOS05WiIvPjwvc3ZnPg==');
-  /* lucide sun icon */
-  --sun-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXN1bi1pY29uIGx1Y2lkZS1zdW4iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjQiLz48cGF0aCBkPSJNMTIgMnYyIi8+PHBhdGggZD0iTTEyIDIwdjIiLz48cGF0aCBkPSJtNC45MyA0LjkzIDEuNDEgMS40MSIvPjxwYXRoIGQ9Im0xNy42NiAxNy42NiAxLjQxIDEuNDEiLz48cGF0aCBkPSJNMiAxMmgyIi8+PHBhdGggZD0iTTIwIDEyaDIiLz48cGF0aCBkPSJtNi4zNCAxNy42Ni0xLjQxIDEuNDEiLz48cGF0aCBkPSJtMTkuMDcgNC45My0xLjQxIDEuNDEiLz48L3N2Zz4=');
-  background: var(--quartz-icon-color);
-  width: 24px;
-  height: 24px;
-}
-
 .explorer svg,
 button.toc-header .fold,
 .global-graph-icon,
@@ -226,7 +186,9 @@ button.toc-header .fold,
 }
 
 @media all and (max-width: 1200px) {
-  html body .page > div#quartz-body div.sidebar.right {
+:root[saved-theme="dark"],
+:root[saved-theme="light"] {
+  &body .page > div#quartz-body div.sidebar.right {
     background-color: transparent;
     border-left: none;
   }
@@ -517,20 +479,6 @@ blockquote.callout {
   }
 }
 
-:root[saved-theme="light"] {
-  button.darkmode {
-    mask-image: var(--sun-icon);
-    -webkit-mask-image: var(--sun-icon);
-  }
-}
-
-:root[saved-theme="dark"] {
-  button.darkmode {
-    mask-image: var(--moon-icon);
-    -webkit-mask-image: var(--moon-icon);
-  }
-}
-
 :root[reader-mode="on"] {
   body[data-slug] {
     div#quartz-root.page {
@@ -574,57 +522,73 @@ body a.internal-link {
   }
 }
 
-/* Fix: heading sizing */
-:root[saved-theme="dark"],
-:root[saved-theme="light"] {
-  body {
-    .graph > h3, .backlinks > h3, button.desktop-explorer h2 {
-      font-size: 1.12rem;
-    }
-  }
+`;
+
+/**
+ * Styles that must override both Quartz base and theme CSS.
+ * Injected in @layer quartz-themes-base (above obsidian-theme,
+ * below un-layered custom.scss).
+ */
+export const TEMPLATE_OVERRIDE_CSS = `
+/* heading sizes */
+h1 { font-size: 1.618rem; margin-top: 0; margin-bottom: 0.67rem; }
+h2 { font-size: 1.462rem; margin-top: 0; margin-bottom: 0.67rem; }
+h3 { font-size: 1.318rem; margin-top: 0; margin-bottom: 0.67rem; }
+h4 { font-size: 1.188rem; margin-top: 0; margin-bottom: 0.67rem; }
+h5 { font-size: 1.076rem; margin-top: 0; margin-bottom: 0.67rem; }
+h6 { font-size: 1rem; margin-top: 0; margin-bottom: 0.67rem; }
+h2.page-title { font-size: 1rem; }
+.backlinks > h3,
+.graph > h3,
+.explorer-toggle > h2 {
+  font-size: 1.318rem;
+  margin-bottom: 0;
 }
 
-/* typography improvements */
-:root[saved-theme="dark"],
-:root[saved-theme="light"] {
-  body {
-    h1 {
-      font-size: 1.618rem;
-      margin-top: 0;
-      margin-bottom: 0.67rem;
-    }
-    h2 {
-      font-size: 1.462rem;
-      margin-top: 0;
-      margin-bottom: 0.67rem;
-    }
-    h3 {
-      font-size: 1.318rem;
-      margin-top: 0;
-      margin-bottom: 0.67rem;
-    }
-    h4 {
-      font-size: 1.188rem;
-      margin-top: 0;
-      margin-bottom: 0.67rem;
-    }
-    h5 {
-      font-size: 1.076rem;
-      margin-top: 0;
-      margin-bottom: 0.67rem;
-    }
-    h6 {
-      font-size: 1rem;
-      margin-top: 0;
-      margin-bottom: 0.67rem;
-    }
-    h2.page-title {
-      font-size: 1rem;
-    }
-    backlinks > h3, .graph > h3, .explorer-toggle > h2 {
-      font-size: 1.318rem;
-      margin-bottom: 0;
-    }
-  }
+/* icon buttons — mask-image icons need a visible background */
+button.readermode {
+  & > svg { display: none; }
+  --readermode-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stb3Blbi1pY29uIGx1Y2lkZS1ib29rLW9wZW4iPjxwYXRoIGQ9Ik0xMiA3djE0Ii8+PHBhdGggZD0iTTMgMThhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTFoNWE0IDQgMCAwIDEgNCA0IDQgNCAwIDAgMSA0LTRoNWExIDEgMCAwIDEgMSAxdjEzYTEgMSAwIDAgMS0xIDFoLTZhMyAzIDAgMCAwLTMgMyAzIDMgMCAwIDAtMy0zeiIvPjwvc3ZnPg==');
+  background: var(--quartz-icon-color);
+  mask-image: var(--readermode-icon);
+  -webkit-mask-image: var(--readermode-icon);
+  width: 24px;
+  height: 24px;
+}
+
+button.global-graph-icon {
+  & > svg { display: none; }
+  --graph-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdC1mb3JrLWljb24gbHVjaWRlLWdpdC1mb3JrIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIzIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNMTggOXYyYzAgLjYtLjQgMS0xIDFIN2MtLjYgMC0xLS40LTEtMVY5Ii8+PHBhdGggZD0iTTEyIDEydjMiLz48L3N2Zz4=');
+  background: var(--quartz-icon-color);
+  mask-image: var(--graph-icon);
+  -webkit-mask-image: var(--graph-icon);
+  width: 24px;
+  height: 24px;
+}
+
+button.darkmode {
+  & > svg { display: none !important; }
+  --moon-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vb24taWNvbiBsdWNpZGUtbW9vbiI+PHBhdGggZD0iTTEyIDNhNiA2IDAgMCAwIDkgOSA5IDkgMCAxIDEtOS05WiIvPjwvc3ZnPg==');
+  --sun-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXN1bi1pY29uIGx1Y2lkZS1zdW4iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjQiLz48cGF0aCBkPSJNMTIgMnYyIi8+PHBhdGggZD0iTTEyIDIwdjIiLz48cGF0aCBkPSJtNC45MyA0LjkzIDEuNDEgMS40MSIvPjxwYXRoIGQ9Im0xNy42NiAxNy42NiAxLjQxIDEuNDEiLz48cGF0aCBkPSJNMiAxMmgyIi8+PHBhdGggZD0iTTIwIDEyaDIiLz48cGF0aCBkPSJtNi4zNCAxNy42Ni0xLjQxIDEuNDEiLz48cGF0aCBkPSJtMTkuMDcgNC45My0xLjQxIDEuNDEiLz48L3N2Zz4=');
+  background: var(--quartz-icon-color);
+  width: 24px;
+  height: 24px;
+}
+
+:root[saved-theme="light"] button.darkmode {
+  mask-image: var(--sun-icon);
+  -webkit-mask-image: var(--sun-icon);
+}
+:root[saved-theme="dark"] button.darkmode {
+  mask-image: var(--moon-icon);
+  -webkit-mask-image: var(--moon-icon);
+}
+
+/* explorer icons */
+.explorer .explorer-content .folder-container:before {
+  background: var(--quartz-icon-color);
+}
+.explorer .explorer-content ul.explorer-ul li > a:before {
+  background: var(--quartz-icon-color);
 }
 `;

@@ -14,6 +14,7 @@ import type {
 import type { ThemeOptions } from "./types";
 import { composeCSS } from "./composer";
 import { processStyleSettings, loadStyleSettings } from "./styleSettings";
+import { TEMPLATE_OVERRIDE_CSS } from "./templateCSS";
 
 const defaultOptions: ThemeOptions = { theme: "tokyo-night", mode: "both" };
 
@@ -60,8 +61,13 @@ export const QuartzTheme: QuartzTransformerPlugin<Partial<ThemeOptions>> = (
   if (resolvedCSS) {
     cssResources.push({
       content:
-        `@layer quartz-base, obsidian-theme, obsidian-theme-overrides;\n` +
+        `@layer quartz-base, obsidian-theme, obsidian-theme-overrides, quartz-themes-base;\n` +
         `@layer obsidian-theme {\n${resolvedCSS}\n}`,
+      inline: true,
+    });
+
+    cssResources.push({
+      content: `@layer quartz-themes-base {\n${TEMPLATE_OVERRIDE_CSS}\n}`,
       inline: true,
     });
   }

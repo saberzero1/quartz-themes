@@ -6,6 +6,130 @@ export interface ProcessedStyleSettings {
 }
 
 /**
+ * Obsidian selector fragments → Quartz equivalents.
+ * Applied after toggle-class rewriting so descendant selectors
+ * target the correct Quartz DOM structure.
+ *
+ * `null` means the selector targets Obsidian-only UI with no
+ * Quartz counterpart — rules containing these are dropped.
+ */
+const OBSIDIAN_TO_QUARTZ: [RegExp, string | null][] = [
+  // Explorer / file tree (specific before general)
+  [/\.nav-folder:not\(\.is-collapsed\)/g, "li:has(> .folder-outer.open)"],
+  [/\.nav-folder\.is-collapsed/g, "li:has(> .folder-outer:not(.open))"],
+  [
+    /\.nav-folder-title-content::before/g,
+    ".explorer .folder-container::before",
+  ],
+  [/\.nav-folder-title-content/g, ".explorer .folder-container > div"],
+  [
+    /\.nav-file-title-content::before/g,
+    ".explorer ul.explorer-ul li > a::before",
+  ],
+  [/\.nav-file-title-content/g, ".explorer .nav-files-container a"],
+  [
+    /\.nav-folder-title:not\(:hover\)/g,
+    ".explorer .nav-folder-title:not(:hover)",
+  ],
+  [/\.nav-folder-title(?=[\s,:{]|$)/g, ".explorer .nav-folder-title"],
+  [/\.nav-file-title(?=[\s,:{]|$)/g, ".explorer .nav-file-title"],
+  [/\.nav-folder-children/g, ".explorer .tree-item-children"],
+  [/\.nav-files-container/g, ".explorer .nav-files-container"],
+  [/\.nav-folder\.mod-root/g, ".explorer"],
+  [/\.nav-folder(?=[\s,:{]|$)/g, ".explorer li"],
+  [/\.nav-file(?=[\s,:{]|$)/g, ".explorer li"],
+  [/\.is-collapsed(?=[\s,:{]|$)/g, "li:has(> .folder-outer:not(.open))"],
+  [/\.collapse-icon/g, ".explorer .collapse-icon"],
+
+  // Metadata / properties
+  [/\.metadata-container/g, ".note-properties"],
+  [/\.metadata-property-key/g, ".note-properties-key"],
+  [/\.metadata-property-value/g, ".note-properties-value"],
+
+  // Reading view → Quartz rendered content
+  [/\.markdown-preview-view/g, "body"],
+  [/\.markdown-reading-view/g, "body"],
+
+  // Inline title → article title
+  [/\.inline-title/g, "h1.article-title"],
+
+  // Status bar → footer
+  [/\.status-bar/g, "footer"],
+
+  // Canvas (Quartz has canvas support)
+  [/\.canvas-node-container/g, ".canvas-node-content"],
+  [/\.canvas-node(?=[\s,:{]|$)/g, ".canvas-node"],
+
+  // Generic element translations
+  [/\.svg-icon/g, "svg"],
+
+  // Obsidian-only UI — drop rules containing these
+  [/\.markdown-source-view/g, null],
+  [/\.cm-editor/g, null],
+  [/\.cm-s-obsidian/g, null],
+  [/\.cm-hmd-/g, null],
+  [/\.cm-contentContainer/g, null],
+  [/\.cm-scroller/g, null],
+  [/\.cm-formatting-/g, null],
+  [/\.cm-line/g, null],
+  [/\.cm-active/g, null],
+  [/\.workspace-tab-header/g, null],
+  [/\.workspace-tabs/g, null],
+  [/\.workspace-tab-container/g, null],
+  [/\.workspace-leaf/g, null],
+  [/\.workspace-split/g, null],
+  [/\.workspace-ribbon/g, null],
+  [/\.workspace(?=[\s,:{]|$)/g, null],
+  [/\.mod-left-split/g, null],
+  [/\.mod-right-split/g, null],
+  [/\.mod-root\)/g, null],
+  [/\.mod-root(?=[\s,:{]|$)/g, null],
+  [/\.mod-cm6/g, null],
+  [/\.mod-top/g, null],
+  [/\.mod-vertical/g, null],
+  [/\.mod-horizontal/g, null],
+  [/\.mod-left(?=[\s,:{]|$)/g, null],
+  [/\.mod-right(?=[\s,:{]|$)/g, null],
+  [/\.mod-sidedock/g, null],
+  [/\.mod-active/g, null],
+  [/\.mod-settings/g, null],
+  [/\.mod-linux/g, null],
+  [/\.mod-macos/g, null],
+  [/\.mod-windows/g, null],
+  [/\.mod-ios/g, null],
+  [/\.view-header/g, null],
+  [/\.view-content/g, null],
+  [/\.pdfViewer/g, null],
+  [/\.pdf-thumbnail-view/g, null],
+  [/\.horizontal-tab-nav-item/g, null],
+  [/\.vertical-tab-nav-item/g, null],
+  [/\.HyperMD-/g, null],
+  [/\.mk-sidebar-/g, null],
+  [/\.file-explorer-flat/g, null],
+  [/\.is-live-preview/g, null],
+  [/\.is-mobile/g, null],
+  [/\.is-tablet/g, null],
+  [/\.is-focused/g, null],
+  [/\.is-popout-window/g, null],
+  [/\.app-container/g, null],
+  [/\.sidebar-toggle-button/g, null],
+  [/\.titlebar-button-container/g, null],
+  [/\.style-settings-container/g, null],
+  [/\.css-settings-manager/g, null],
+  [/\.setting-item/g, null],
+  [/\.markdown-preview-sizer/g, null],
+  [/\.print(?=[\s,:{]|$)/g, null],
+  [/\.is-checked/g, null],
+  [/\.is-phone/g, null],
+  [/\.clickable-icon/g, null],
+  [/\.modal-container/g, null],
+  [/\.modal-bg/g, null],
+  [/\.modal(?=[\s,:{]|$)/g, null],
+  [/\.dataview/g, null],
+  [/\.cm-header/g, null],
+];
+
+/**
  * Rewrite class-gated CSS so selectors apply unconditionally in Quartz.
  *
  * Obsidian's Style Settings plugin toggles classes on `<body>` at runtime.
@@ -16,34 +140,61 @@ export interface ProcessedStyleSettings {
  *   `.className`   → `:root`
  *   `.theme-dark`  → `:root[saved-theme="dark"]`
  *   `.theme-light` → `:root[saved-theme="light"]`
+ *
+ * Then translates known Obsidian element selectors to Quartz equivalents,
+ * dropping rules that target Obsidian-only UI.
  */
 function rewriteClassSelectors(css: string, className: string): string {
   const escapedClass = className.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const classRe = new RegExp(`\\.${escapedClass}(?=[.\\s:{]|$)`, "g");
 
-  return css.replace(/^([^\n{]*)\{/gm, (match, selectorGroup: string) => {
-    const rewritten = selectorGroup
-      .split(",")
-      .map((sel) => {
-        let s = sel.trim();
-        s = s.replace(
-          /\.theme-dark(?=[.\s,:{]|$)/g,
-          ':root[saved-theme="dark"]',
-        );
-        s = s.replace(
-          /\.theme-light(?=[.\s,:{]|$)/g,
-          ':root[saved-theme="light"]',
-        );
-        s = s.replace(classRe, ":root");
-        // Collapse `:root :root` → `:root` and
-        // `:root[...] :root` → `:root[...]` (descendant of itself is identity)
-        s = s.replace(/(:root(?:\[[^\]]*\])?)\s+:root\b/g, "$1");
-        return s.trim();
-      })
-      .join(", ");
+  return css
+    .replace(
+      /([^\n{}]+)\{([^}]*)\}/g,
+      (_block, selectorGroup: string, body: string) => {
+        const rewritten = selectorGroup
+          .split(",")
+          .map((sel: string) => {
+            let s = sel.trim();
+            s = s.replace(
+              /\.theme-dark(?=[.\s,:{]|$)/g,
+              ':root[saved-theme="dark"]',
+            );
+            s = s.replace(
+              /\.theme-light(?=[.\s,:{]|$)/g,
+              ':root[saved-theme="light"]',
+            );
+            s = s.replace(classRe, ":root");
+            s = s.replace(/(:root(?:\[[^\]]*\])?)\s+:root\b/g, "$1");
+            return s.trim();
+          })
+          .filter((sel: string) => {
+            for (const [pattern, replacement] of OBSIDIAN_TO_QUARTZ) {
+              if (replacement === null && pattern.test(sel)) {
+                pattern.lastIndex = 0;
+                return false;
+              }
+              pattern.lastIndex = 0;
+            }
+            return true;
+          })
+          .map((sel: string) => {
+            let s = sel;
+            for (const [pattern, replacement] of OBSIDIAN_TO_QUARTZ) {
+              if (replacement !== null) {
+                s = s.replace(pattern, replacement);
+              }
+            }
+            return s;
+          })
+          .join(", ");
 
-    return rewritten + " {";
-  });
+        if (!rewritten) return "";
+        return `${rewritten} {${body}}`;
+      },
+    )
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
 }
 
 export function processStyleSettings(
@@ -111,15 +262,16 @@ function emitClassSettingCSS(
   out: string[],
 ): void {
   if (entry.general) {
-    out.push(rewriteClassSelectors(entry.general, className));
+    const result = rewriteClassSelectors(entry.general, className);
+    if (result) out.push(result);
   }
   if (entry.dark) {
     const rewritten = rewriteClassSelectors(entry.dark, className);
-    out.push(wrapInDarkScope(rewritten));
+    if (rewritten) out.push(wrapInDarkScope(rewritten));
   }
   if (entry.light) {
     const rewritten = rewriteClassSelectors(entry.light, className);
-    out.push(wrapInLightScope(rewritten));
+    if (rewritten) out.push(wrapInLightScope(rewritten));
   }
 }
 

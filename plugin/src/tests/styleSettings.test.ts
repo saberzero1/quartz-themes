@@ -113,4 +113,73 @@ describe("processStyleSettings", () => {
     const matches = result.css.match(/--font-size: 16;/g);
     assert.equal(matches?.length, 2);
   });
+
+  test("class-toggle rewrites Obsidian explorer selectors to Quartz", () => {
+    const classMap = {
+      "bold-folders": {
+        general:
+          ".bold-folders .nav-folder-title-content {\nfont-weight: bold;\n}",
+      },
+    };
+    const result = processStyleSettings(
+      { "my-theme@@bold-folders": true },
+      "my-theme",
+      classMap,
+    );
+    assert.ok(
+      result.css.includes(".explorer .folder-container > div"),
+      `Expected Quartz explorer selector but got:\n${result.css}`,
+    );
+    assert.ok(
+      !result.css.includes(".nav-folder-title-content"),
+      "Obsidian selector should have been rewritten",
+    );
+    assert.ok(result.css.includes("font-weight: bold;"));
+  });
+
+  test("class-toggle drops rules with Obsidian-only selectors", () => {
+    const classMap = {
+      "my-opt": {
+        general: [
+          ".my-opt {\n--my-var: red;\n}",
+          ".my-opt .workspace-tab-header {\ncolor: blue;\n}",
+        ].join("\n"),
+      },
+    };
+    const result = processStyleSettings(
+      { "my-theme@@my-opt": true },
+      "my-theme",
+      classMap,
+    );
+    assert.ok(
+      result.css.includes("--my-var: red;"),
+      "Variable-only block should survive",
+    );
+    assert.ok(
+      !result.css.includes("workspace-tab-header"),
+      "Obsidian-only selector should be dropped",
+    );
+    assert.ok(
+      !result.css.includes("color: blue;"),
+      "Properties from dropped rule should not appear",
+    );
+  });
+
+  test("class-toggle with only Obsidian-only selectors produces empty output", () => {
+    const classMap = {
+      "editor-opt": {
+        general: ".editor-opt .cm-editor {\nfont-size: 14px;\n}",
+      },
+    };
+    const result = processStyleSettings(
+      { "my-theme@@editor-opt": true },
+      "my-theme",
+      classMap,
+    );
+    assert.equal(
+      result.css,
+      "",
+      "All-Obsidian class toggle should produce empty CSS",
+    );
+  });
 });

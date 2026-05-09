@@ -8,6 +8,7 @@ import {
   extractStyleSettings,
 } from "../../util/postcss-style-settings.mjs";
 import { sanitizeFilenamePreservingEmojis as sanitize } from "../../util/util.mjs";
+import { filterObsidianCSS } from "../../util/obsidian-selectors.mjs";
 
 const USE_AUTO_CONFIG = process.argv.includes("--auto");
 
@@ -75,7 +76,10 @@ function extractClassSettings(themeSlug, styleSettings) {
   const result = {};
   for (const classId of classSettingIds) {
     try {
-      const [general, dark, light] = extractClassToggleCss(css, classId);
+      let [general, dark, light] = extractClassToggleCss(css, classId);
+      if (general) general = filterObsidianCSS(general);
+      if (dark) dark = filterObsidianCSS(dark);
+      if (light) light = filterObsidianCSS(light);
       if (general || dark || light) {
         const entry = {};
         if (general) entry.general = general;
@@ -398,7 +402,12 @@ function sanitizeFontValue(value) {
   // Handles: '??', or '??' at end, with optional whitespace
   let cleaned = value.replace(/'\?\?'\s*,?\s*/g, "");
 
-  // After removing '??' entries, we may have orphaned leading single-quotes
+  // Remove entries that are just "??" (double-quoted double question marks)
+  // These appear in element-level computed styles from Obsidian extraction
+  // where CJK/emoji font names get mangled to literal question marks.
+  cleaned = cleaned.replace(/"\?\?"\s*,?\s*/g, "");
+
+  // After removing '??' / "??" entries, we may have orphaned leading single-quotes
   // from entries like '"JetBrains Mono", monospace, "Inter", sans-serif'
   // where the leading ' was part of the original quoting. Strip leading ' if
   // the value now starts with ' followed by a quote or letter.
@@ -1059,7 +1068,11 @@ function buildModeCSS(
           continue;
         }
       }
-      const normalized = normalizeSvgDataUriValue(value);
+      let normalized = normalizeSvgDataUriValue(value);
+      if (prop === "font-family" && normalized.includes("??")) {
+        normalized = sanitizeFontValue(normalized);
+        if (!normalized) continue;
+      }
       let selectorMap = aspectSelectors.get(aspect);
       if (!selectorMap) {
         selectorMap = new Map();
