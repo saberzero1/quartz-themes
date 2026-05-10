@@ -112,6 +112,7 @@
               just
               # Git for version control
               git
+              git-filter-repo
               # Additional development tools
               python3
             ]
